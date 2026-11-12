@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "month": "2026-10",
- "updated_kst": "2026-11-13T03:31:02+09:00",
+ "updated_kst": "2026-11-13T06:19:25+09:00",
  "items": [
   {
    "id": "goldman-what-happens-when-ai-spend-peaks",
@@ -518,6 +518,46 @@
    "note": "유튜브 자동 생성 자막(en) 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
   },
   {
+   "id": "gundlach-jeffrey-gundlach-ready-aim-aim-aim-aim-cnbc",
+   "group": "투자 거장",
+   "org": "DoubleLine Capital",
+   "person": "Jeffrey Gundlach",
+   "kind": "publication",
+   "title": "Jeffrey Gundlach: 준비, 조준, 조준, 조준, 조준 | CNBC",
+   "title_orig": "Jeffrey Gundlach: Ready, Aim, Aim, Aim, Aim | CNBC",
+   "url": "https://www.youtube.com/watch?v=RuCjUIjM8mo",
+   "outlet": "DoubleLine (유튜브)",
+   "published_kst": "2026-10-29T08:52:35+09:00",
+   "stance": {
+    "ai_tech": -1,
+    "market": -1
+   },
+   "args": [
+    "자금 조달·신용",
+    "밸류에이션",
+    "금리·거시",
+    "쏠림"
+   ],
+   "summary": "Gundlach는 연준이 행동을 미루고 있어 12월 금리 인상이 필요하다고 본다. AI 및 AI 연관 기업의 대규모 채권 발행에 대한 시장의 신용등급 불신과 스프레드 확대를 위기의 초기 신호로 보고, 주식 비중 30%를 등가중 S&P로만 담는 방어적 배분을 권한다.",
+   "points": [
+    "AI 및 AI 연관 기업의 대규모 채권 발행이 채권시장에서 호응을 얻지 못하고, 시장이 부여된 신용등급을 받아들이지 않고 있다.",
+    "스프레드 확대는 일시적 등락이 아니라 추세의 시작이며, 2006~2007년 서브프라임 BBB 국면을 연상시킨다고 본다.",
+    "국가 부채 증가와 AI 차입 수요가 금리에 실질적 압력을 주고 있다.",
+    "밸류에이션이 매우 높고 채권 스프레드가 벌어지고 있어 주식 비중을 30%로 낮추고 등가중 S&P만 권한다."
+   ],
+   "evidence": [
+    {
+     "ko": "밸류에이션이 매우 높고 채권 스프레드가 벌어지고 있어 주식 비중을 30%로 낮추고 등가중 S&P만 권한다.",
+     "orig": "I don't want all this exposure to the epicenter of the blast radius of the AI uh problems or developing problems."
+    }
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "유튜브 자동 생성 자막(en) 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
+  },
+  {
    "id": "blackrock-property-stocks-bonds-blackrock-sees-4-fold-jump",
    "group": "자산운용",
    "org": "BlackRock",
@@ -539,6 +579,46 @@
     "basis": "headline_only",
     "tier": "light"
    }
+  },
+  {
+   "id": "ark-anthropic-s-s-1-meta-s-90b-and-elon-s-warning-ca",
+   "group": "자산운용",
+   "org": "ARK Invest",
+   "person": null,
+   "kind": "publication",
+   "title": "Anthropic의 S-1, Meta의 900억 달러, 그리고 일론의 경고 | The Brainstorm 155",
+   "title_orig": "Anthropic’s S-1, Meta’s $90B, And Elon’s Warning Call | The Brainstorm 155",
+   "url": "https://www.youtube.com/watch?v=JHKjP8yIZMg",
+   "outlet": "ARK Invest (유튜브)",
+   "published_kst": "2026-10-29T05:00:30+09:00",
+   "stance": {
+    "ai_tech": 1,
+    "market": null
+   },
+   "args": [
+    "수요·채택",
+    "투자 회수",
+    "자금 조달·신용",
+    "경쟁·해자"
+   ],
+   "summary": "Anthropic S-1에서 확인된 수익성과 현물 컴퓨트 가격 상승을 근거로 AI 수요가 강하다고 본다. 반면 Meta 등 소비자 에이전트는 수익화까지 수년이 걸리고, 거액 자금 조달과 신규 클라우드 업체의 전력 연결 차질이 위험이라고 짚는다.",
+   "points": [
+    "Anthropic S-1은 높은 매출총이익률과 R&D 효율을 갖춘 기업사상 가장 인상적인 12개월 매출 성장을 보여준다.",
+    "기업용과 달리 소비자 에이전트 시장은 수익성을 입증하기까지 수십억 달러를 쓰게 될 것이다.",
+    "컴퓨트 한계 수요가 강해 현물 임대 가격이 계속 오르고 있다.",
+    "수익성이 뚜렷한 한 영역이 스택 전반에서 다른 참여자의 수익 구조를 압박하고 있다."
+   ],
+   "evidence": [
+    {
+     "ko": "수익성이 뚜렷한 한 영역이 스택 전반에서 다른 참여자의 수익 구조를 압박하고 있다.",
+     "orig": "kind of like at all layers of the stack, the compelling returns in this one very pointy part of the market are just squeezing everybody else's economics."
+    }
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "유튜브 자동 생성 자막(en) 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
   },
   {
    "id": "damodaran-the-anthropic-prospectus-arrives-my-but-not-the",
@@ -610,6 +690,72 @@
     "tier": "standard"
    },
    "note": "웹 페이지 본문 기준. 그림 24개 속 글자는 확인하지 못함"
+  },
+  {
+   "id": "ackman-bill-ackman-is-permanent-capital-an-investor-s-b",
+   "group": "투자 거장",
+   "org": "Pershing Square",
+   "person": "Bill Ackman",
+   "kind": "publication",
+   "title": "Bill Ackman: 영구 자본이 투자자의 가장 큰 강점인가? | 팟캐스트 | In Good Company",
+   "title_orig": "Bill Ackman: Is Permanent Capital an Investor’s Biggest Edge? | Podcast | In Good Company",
+   "url": "https://www.youtube.com/watch?v=T8nHLUlRGkg",
+   "outlet": "NBIM In Good Company (유튜브)",
+   "published_kst": "2026-10-28T15:00:38+09:00",
+   "stance": {
+    "ai_tech": 1,
+    "market": null
+   },
+   "args": [
+    "수요·채택",
+    "투자 회수",
+    "정책·지정학"
+   ],
+   "summary": "Ackman은 AI 설비투자 확대 발표로 주가가 빠진 Meta, Microsoft, Amazon을 매수했다고 밝히며, 이들이 포트폴리오의 약 3분의 1이라고 말한다. AI가 기업가 정신과 GDP·글로벌 성장의 폭발적 확대를 가져올 수 있다고 보며, 경쟁국 때문에 AI 속도를 늦추기 어렵다고 말한다.",
+   "points": [
+    "설비투자 확대로 실망을 안긴 Meta와 Microsoft를 주가 하락 국면에서 매수했다.",
+    "수요가 막대해 설비투자를 늘린다고 밝힌 기업의 주가가 오히려 하락한 것이 Microsoft 투자의 계기였다.",
+    "이들 AI 관련 종목이 Pershing Square 포트폴리오의 약 3분의 1을 차지한다.",
+    "AI가 기업가 정신과 전 세계 성장의 폭발적 확대를 이끌 수 있다고 본다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "유튜브 자동 생성 자막(en) 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
+  },
+  {
+   "id": "pimco-seeking-resilience-in-ai-related-credit",
+   "group": "자산운용",
+   "org": "PIMCO",
+   "person": null,
+   "kind": "publication",
+   "title": "AI 관련 신용에서 회복력 찾기",
+   "title_orig": "Seeking Resilience in AI-Related Credit",
+   "url": "https://www.youtube.com/watch?v=2tgTd4sG_KM",
+   "outlet": "PIMCO (유튜브)",
+   "published_kst": "2026-10-28T07:33:00+09:00",
+   "stance": {
+    "ai_tech": 0,
+    "market": null
+   },
+   "args": [
+    "투자 회수",
+    "자금 조달·신용",
+    "수요·채택"
+   ],
+   "summary": "PIMCO는 AI 승자를 맞히기보다 AI 호황과 'AI 겨울' 시나리오 모두에서 현금흐름이 견조한 기업을 매력적인 조건에 골라 투자한다고 밝힌다. AI 자금 수요로 스프레드와 금리가 오르며 기회가 생기지만, 투자 속도에 비해 수요와 현금흐름이 늦어질 위험도 함께 본다.",
+   "points": [
+    "AI 데이터센터·칩·에너지 인프라의 대규모 자금 수요가 스프레드와 금리를 끌어올려 투자 기회를 만든다.",
+    "승자 몇 곳을 고르기보다 여러 시나리오에서 현금흐름이 견조한 기업에 유리한 조건으로 투자하는 것이 목표다.",
+    "검토하는 거래 100건 중 기준에 맞는 것은 2건 정도로, 현금흐름·구조·보호장치를 엄격히 따진다.",
+    "핵심 쟁점은 AI가 세상을 바꾸느냐가 아니라 투자 속도를 정당화할 만큼 빠르게 바꾸느냐이며, 수요가 더디면 투자자에게 부정적 결과가 나올 수 있다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "유튜브 자동 생성 자막(en) 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
   },
   {
    "id": "a16z-databricks-the-future-of-the-firm",

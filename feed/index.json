@@ -1,7 +1,39 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-13T03:31:02+09:00",
+ "generated_kst": "2026-11-13T06:19:25+09:00",
  "reports": [
+  {
+   "slug": "sixsigma-tpu-hbm-16gb-384gb-hbm",
+   "type": "article",
+   "title": "식스시그마 : TPU 외부 판매와 칩당 HBM 확대가 겹쳐 구글이 엔비디아 다음 HBM 큰손이 된다",
+   "companies": [
+    {
+     "name": "Alphabet",
+     "ticker": null
+    },
+    {
+     "name": "삼성전자",
+     "ticker": null
+    },
+    {
+     "name": "SK하이닉스",
+     "ticker": null
+    },
+    {
+     "name": "NVIDIA",
+     "ticker": null
+    },
+    {
+     "name": "Anthropic",
+     "ticker": null
+    }
+   ],
+   "published_kst": "2026-11-13T06:16:22+09:00",
+   "revised_kst": "2026-11-13T06:16:22+09:00",
+   "revision": 1,
+   "summary": "영상은 TPU 한 개당 HBM 증가와 TPU의 외부 판매 확대를 겹쳐 2027년 구글이 엔비디아에 근접한 HBM 수요처가 된다고 주장한다. 구글 임원 발언으로 확인되는 것은 외부 판매 확대의 방향까지다. 규모를 정하는 수치(모건스탠리 추정, 앤트로픽 계약 금액)는 영상이 출처를 밝히지 않아 별도 확인이 필요하고, 칩당 HBM 증가 폭도 비교 기준에 따라 과장됐을 수 있다.",
+   "path": "reports/sixsigma-tpu-hbm-16gb-384gb-hbm.json"
+  },
   {
    "slug": "semianalysis-nvidia-and-the-world-without-jensen",
    "type": "article",
@@ -488,7 +520,7 @@
   }
  ],
  "street": {
-  "updated_kst": "2026-11-13T03:31:02+09:00",
+  "updated_kst": "2026-11-13T06:19:25+09:00",
   "path": "street.json"
  },
  "calendar": {
