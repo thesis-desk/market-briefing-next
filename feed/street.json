@@ -1,20 +1,20 @@
 {
  "schema": 1,
- "updated_kst": "2026-11-12T15:47:24+09:00",
+ "updated_kst": "2026-11-12T16:11:09+09:00",
  "window_days": 14,
  "items_days": 30,
  "index": {
   "ai_tech": {
    "value": -3,
    "label": "엇갈림",
-   "orgs": 31,
-   "items": 79
+   "orgs": 32,
+   "items": 81
   },
   "market": {
-   "value": -12,
+   "value": -14,
    "label": "엇갈림",
-   "orgs": 23,
-   "items": 47
+   "orgs": 24,
+   "items": 48
   },
   "by_group": [
    {
@@ -26,14 +26,14 @@
    },
    {
     "group": "PE·대체투자",
-    "ai_tech": -33,
-    "ai_tech_orgs": 3,
-    "market": null,
-    "market_orgs": 0
+    "ai_tech": -25,
+    "ai_tech_orgs": 4,
+    "market": -50,
+    "market_orgs": 1
    },
    {
     "group": "자산운용",
-    "ai_tech": 13,
+    "ai_tech": 11,
     "ai_tech_orgs": 6,
     "market": -7,
     "market_orgs": 7
@@ -84,10 +84,10 @@
    },
    {
     "week": "2026-11-09",
-    "ai_tech": 2,
-    "ai_tech_orgs": 19,
-    "market": -14,
-    "market_orgs": 16
+    "ai_tech": 1,
+    "ai_tech_orgs": 20,
+    "market": -16,
+    "market_orgs": 17
    }
   ],
   "args": {
@@ -172,6 +172,40 @@
  },
  "items": [
   {
+   "id": "ark-did-the-midterms-just-break-the-ai-trade-the-bra",
+   "group": "자산운용",
+   "org": "ARK Invest",
+   "person": null,
+   "kind": "publication",
+   "title": "중간선거가 AI 트레이드를 깨뜨렸나? | The Brainstorm 157",
+   "title_orig": "Did The Midterms Just Break The AI Trade? | The Brainstorm 157",
+   "url": "https://www.youtube.com/watch?v=82IKuUHVQBA",
+   "outlet": "ARK Invest (유튜브)",
+   "published_kst": "2026-11-12T06:30:26+09:00",
+   "stance": {
+    "ai_tech": 0,
+    "market": null
+   },
+   "args": [
+    "정책·지정학",
+    "경쟁·해자",
+    "전력·공급 제약",
+    "밸류에이션"
+   ],
+   "summary": "출연진은 중간선거가 데이터센터 건설을 늦추더라도 영향은 한계적이라고 본다. 다만 지연이 기존 빅테크에 유리하고 Anthropic·OpenAI에는 불리하다는 견해와, Anthropic의 성장세와 마진을 보면 오히려 유리하다는 견해로 갈린다. 2027년에는 프론티어 경쟁자가 늘어날 수 있다는 점과 하드웨어 거래의 쏠림 해소도 논의한다.",
+   "points": [
+    "데이터센터 건설이 늘면 지역사회가 AI를 강하게 지지하게 되어 정치적 반발을 상쇄할 것이라고 본다.",
+    "선거 결과로 절차가 지연되면 기존 빅테크 incumbents가 수혜를 입는다고 주장한다.",
+    "Anthropic의 성장률과 마진을 고려하면 1.1조 달러 밸류에이션에서도 Anthropic 입장이 유리하다고 본다.",
+    "2027년에는 프론티어에 경쟁자가 한두 곳 더 생길 경우를 가격에 반영했는지 물어야 한다고 말한다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "유튜브 영상의 음성을 음성 인식(Whisper)으로 받아 적은 전사 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
+  },
+  {
    "id": "morgan-stanley-midterms-could-delay-the-ai-buildout-not-derail",
    "group": "투자은행",
    "org": "Morgan Stanley",
@@ -203,6 +237,41 @@
     "basis": "full_text",
     "tier": "standard"
    }
+  },
+  {
+   "id": "oaktree-a-layman-thinks-about-ai",
+   "group": "PE·대체투자",
+   "org": "Oaktree Capital",
+   "person": "Howard Marks",
+   "kind": "publication",
+   "title": "비전문가가 AI를 생각하다",
+   "title_orig": "A Layman Thinks About AI",
+   "url": "https://www.youtube.com/watch?v=q0j9P61eOe4",
+   "outlet": "Oaktree (유튜브)",
+   "published_kst": "2026-11-12T00:16:03+09:00",
+   "stance": {
+    "ai_tech": 0,
+    "market": -1
+   },
+   "args": [
+    "투자 회수",
+    "쏠림",
+    "자금 조달·신용",
+    "경쟁·해자",
+    "밸류에이션"
+   ],
+   "summary": "하워드 막스는 AI 기술 자체는 강력하고 결과적으로 중대한 변화를 가져올 것이라고 보지만, 누가 이익을 얻을지와 투자 회수 여부는 예측 가능성이 매우 낮다고 말한다. AI에 대한 경제와 증시, 신용시장의 쏠림이 취약성을 키우고 있으며 부채 조달 규모도 우려된다고 지적한다. 다만 불확실성 때문에 투자를 포기할 것이 아니라 가격과 자신이 감당할 수 있는 위험을 따져야 한다고 결론짓는다.",
+   "points": [
+    "AI 방향은 비교적 예측 가능하지만 투자자가 보상받는 부분인 속도, 이익 규모, 수혜자는 훨씬 예측하기 어렵다.",
+    "경제와 주식·부채 시장이 AI라는 단일 부문에 과도하게 의존해 더 취약해졌다.",
+    "AI 관련 부채 발행이 올해 약 6,000억 달러에 이르러 투자등급 채권시장의 큰 비중을 차지하고 있다.",
+    "AI 투자가 충분한 수익을 낼지는 현 시점에서 사실상 믿음의 문제라고 본다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "유튜브 영상의 음성을 음성 인식(Whisper)으로 받아 적은 전사 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
   },
   {
    "id": "morgan-stanley-morgan-stanley-sees-a-buying-window-in-top-tier",
