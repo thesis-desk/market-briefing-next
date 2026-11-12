@@ -1,7 +1,25 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-12T10:41:54+09:00",
+ "generated_kst": "2026-11-12T11:09:17+09:00",
  "reports": [
+  {
+   "slug": "amd-3q26-earnings",
+   "type": "earnings",
+   "title": "AMD 3Q26 실적발표 : 2027년 매출 80%+ 전망, 4분기 GPU가 서버 CPU 추월",
+   "companies": [
+    {
+     "name": "AMD",
+     "ticker": "AMD"
+    }
+   ],
+   "event": "3Q26 실적 발표",
+   "event_date": "2026-11-03",
+   "published_kst": "2026-11-12T11:09:17+09:00",
+   "revised_kst": "2026-11-12T11:09:17+09:00",
+   "revision": 1,
+   "summary": "3Q26 매출은 133.8억 달러(전년 대비 +45%)로 가이던스 상단을 넘었고, 데이터센터는 전년 대비 97% 늘었다. 회사는 4분기 매출 +27%(전분기 대비)와 2027년 매출 80% 넘는 성장을 제시했다. 다만 재고·매출채권이 늘어 잉여현금흐름이 5.5억 달러로 줄었고, 4분기 매출총이익률은 GPU 비중 확대로 소폭 낮아진다. 고객 워런트는 GAAP 이익과 향후 주식 수를 흔드는 변수로 새로 등장했다.",
+   "path": "reports/amd-3q26-earnings.json"
+  },
   {
    "slug": "coreweave-3q26-earnings",
    "type": "earnings",
@@ -160,7 +178,7 @@
   "path": "street.json"
  },
  "calendar": {
-  "updated_kst": "2026-11-12T10:34:13+09:00",
+  "updated_kst": "2026-11-12T10:53:14+09:00",
   "path": "calendar.json"
  }
 }

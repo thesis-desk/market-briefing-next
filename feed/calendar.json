@@ -1,7 +1,20 @@
 {
  "schema": 1,
- "updated_kst": "2026-11-12T10:34:13+09:00",
+ "updated_kst": "2026-11-12T10:53:14+09:00",
  "events": [
+  {
+   "company": "AMD",
+   "ticker": "AMD",
+   "type": "earnings",
+   "period": "3Q26",
+   "date": "2026-11-03",
+   "confirmed": true,
+   "source_url": "https://ir.amd.com/news-events/press-releases/detail/1303/amd-reports-third-quarter-2026-financial-results",
+   "consensus_snapshot": false,
+   "report_slug": "amd-3q26-earnings",
+   "status": "published",
+   "note": "원문이 올라온 것을 보고 넣은 일정"
+  },
   {
    "company": "Hon Hai Precision",
    "ticker": "2317.TW",
