@@ -1,7 +1,21 @@
 {
  "schema": 1,
- "updated_kst": "2026-11-12T11:20:40+09:00",
+ "updated_kst": "2026-11-12T11:34:02+09:00",
  "events": [
+  {
+   "company": "Oracle",
+   "ticker": "ORCL",
+   "type": "investor_day",
+   "period": null,
+   "date": "2026-10-28",
+   "confirmed": true,
+   "official": false,
+   "source_url": "https://investor.oracle.com/investor-news/news-details/2026/Oracle-Investor-Day-2026-Accelerating-Value-Creation/default.aspx",
+   "consensus_snapshot": false,
+   "report_slug": "oracle-investor-day-2026",
+   "status": "published",
+   "note": "원문이 올라온 것을 보고 넣은 일정"
+  },
   {
    "company": "AMD",
    "ticker": "AMD",

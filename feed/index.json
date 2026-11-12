@@ -1,7 +1,25 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-12T11:20:40+09:00",
+ "generated_kst": "2026-11-12T11:50:14+09:00",
  "reports": [
+  {
+   "slug": "oracle-investor-day-2026",
+   "type": "investor_day",
+   "title": "Oracle 투자자의 날 2026 : 이번 사이클 외부 조달 200억 달러로 확정, FY2029 잉여현금흐름 300억 달러+",
+   "companies": [
+    {
+     "name": "Oracle",
+     "ticker": "ORCL"
+    }
+   ],
+   "event": "투자자의 날 2026",
+   "event_date": "2026-10-28",
+   "published_kst": "2026-11-12T11:50:14+09:00",
+   "revised_kst": "2026-11-12T11:50:14+09:00",
+   "revision": 1,
+   "summary": "Oracle은 FY2030 매출 2,250억 달러+·non-GAAP EPS 21달러+ 목표를 사실상 유지했습니다. 질의응답에서 공동 CEO는 숫자가 '숫자'에서 '숫자+'로 바뀌었다고 했고, 1년 전 목표가 같은 값이었다는 것은 이 언급에서 추론한 것입니다. 대신 이번 투자 사이클에 필요한 외부 자금을 200억 달러(주식·부채 각 100억 달러)로 확정했습니다. 잉여현금흐름 흑자 재전환 시점(FY2028 하반기)과 FY2029 300억 달러+라는 목표도 처음 숫자로 내놓았습니다. 이 숫자들은 이미 계약된 약 7GW가 제때 가동되고 원가가산형 계약 구조가 유지된다는 전제에 크게 기대고 있습니다.",
+   "path": "reports/oracle-investor-day-2026.json"
+  },
   {
    "slug": "amd-3q26-earnings",
    "type": "earnings",
@@ -178,7 +196,7 @@
   "path": "street.json"
  },
  "calendar": {
-  "updated_kst": "2026-11-12T11:20:40+09:00",
+  "updated_kst": "2026-11-12T11:34:02+09:00",
   "path": "calendar.json"
  }
 }
