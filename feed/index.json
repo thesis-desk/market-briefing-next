@@ -1,7 +1,41 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-12T15:21:14+09:00",
+ "generated_kst": "2026-11-12T15:47:24+09:00",
  "reports": [
+  {
+   "slug": "sk-hynix-3q26-earnings",
+   "type": "earnings",
+   "title": "SK하이닉스 3Q26 실적발표 : 영업이익률 80%, LTA로 27·28년 캐파 절반 확보",
+   "companies": [
+    {
+     "name": "SK하이닉스",
+     "ticker": "000660.KS"
+    }
+   ],
+   "event": "3Q26 실적 발표",
+   "event_date": "2026-10-28",
+   "published_kst": "2026-11-12T15:43:22+09:00",
+   "revised_kst": "2026-11-12T15:43:22+09:00",
+   "revision": 1,
+   "summary": "매출 104.6조 원, 영업이익률 80%로 영업 지표는 6개 분기 연속 최대치를 다시 썼다. 순이익은 투자자산 평가손실과 환손실 때문에 직전 분기의 절반 아래로 내려갔다. 이번 분기에 새로 나온 것은 두 가지다. 하나는 수요 가시성이다. LTA 14개사로 2027·28년 캐파의 50% 이상을 확보했고, 협의 물량을 포함하면 2029년까지 D램·HBM이 사실상 솔드아웃이다. 다른 하나는 FY26 주주환원 약 100조 원이다. 2027년 투자 규모, 솔리다임 재원 조달, LTA 가격 범위는 숫자로 공개하지 않았다.",
+   "path": "reports/sk-hynix-3q26-earnings.json"
+  },
+  {
+   "slug": "sources-amazon-aws-ceo-ai-boom-is-just-getting-started",
+   "type": "interview",
+   "title": "맷 가먼 AWS CEO 인터뷰 : 1조 달러 매출 목표의 근거와 2년 더 이어질 용량 부족",
+   "companies": [
+    {
+     "name": "Amazon (AWS)",
+     "ticker": null
+    }
+   ],
+   "published_kst": "2026-11-12T15:27:19+09:00",
+   "revised_kst": "2026-11-12T15:27:19+09:00",
+   "revision": 1,
+   "summary": "가먼은 AWS 성장 재가속의 동력을 학습 수요보다 두 가지로 설명했다. 하나는 'AI를 쓰려면 핵심 워크로드를 클라우드로 옮겨야 한다'는 이전 수요이고, 다른 하나는 수많은 고객에 흩어진 추론이다. 그는 수요가 공급을 크게 앞서 앞으로 2년가량 용량이 모자랄 것이라고 봤다. 다만 1조 달러 목표를 받칠 수치(추론 매출 비중, 약정 잔고, 투자 수익)는 내놓지 않아 근거는 여전히 정성적 신호에 머문다.",
+   "path": "reports/sources-amazon-aws-ceo-ai-boom-is-just-getting-started.json"
+  },
   {
    "slug": "oracle-investor-day-2026",
    "type": "investor_day",
@@ -194,11 +228,11 @@
   }
  ],
  "street": {
-  "updated_kst": "2026-11-12T12:16:20+09:00",
+  "updated_kst": "2026-11-12T15:47:24+09:00",
   "path": "street.json"
  },
  "calendar": {
-  "updated_kst": "2026-11-12T15:21:14+09:00",
+  "updated_kst": "2026-11-12T15:43:26+09:00",
   "path": "calendar.json"
  }
 }

@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "month": "2026-10",
- "updated_kst": "2026-11-12T12:16:20+09:00",
+ "updated_kst": "2026-11-12T15:47:24+09:00",
  "items": [
   {
    "id": "bofa-tech-bonds-are-diamonds-in-the-rough-bank-of-ame",
@@ -407,6 +407,45 @@
     {
      "ko": "지난주 Chanos는 SpaceX를 '세계 최대 네오클라우드'라고 불렀다.",
      "orig": "That's the business behind Chanos calling SpaceX \"the largest global neocloud\" last week."
+    }
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
+  },
+  {
+   "id": "burry-michael-burry-backs-ken-griffin-s-warning-that-g",
+   "group": "투자 거장",
+   "org": "Michael Burry",
+   "person": null,
+   "kind": "report",
+   "title": "Michael Burry, GPU 가격이 폭락할 수 있다는 Ken Griffin의 경고를 지지",
+   "title_orig": "Michael Burry backs Ken Griffin’s warning that GPU prices could crash",
+   "url": "https://cryptobriefing.com/michael-burry-ken-griffin-gpu-overcapacity",
+   "outlet": "Crypto Briefing",
+   "published_kst": "2026-10-26T10:56:00+09:00",
+   "stance": {
+    "ai_tech": -2,
+    "market": null
+   },
+   "args": [
+    "투자 회수",
+    "자금 조달·신용",
+    "전력·공급 제약"
+   ],
+   "summary": "Burry는 GPU 가격이 공급 과잉으로 붕괴할 수 있다는 Ken Griffin의 경고에 공개적으로 동조하며, 그 위험이 누구에게나 뻔히 보인다고 말했다. 대형 하이퍼스케일러가 하드웨어 감가상각 기간을 늘리고 있어 2026~2028년 감가상각비가 약 1,760억 달러 과소계상됐다고 추정했다. 하이퍼스케일러의 AI 투자와 얽힌 순환 금융 구조에 대해서도 거듭 경고해 왔다.",
+   "points": [
+    "Burry는 2026년 10월 26일, GPU 가격 붕괴 위험이 '머리가 제대로 돌아가는 사람이라면 대부분 뻔히 알 수 있는 것'이라고 말했다.",
+    "Burry는 가장 큰 하이퍼스케일러들이 칩 자체는 기술적으로 빠르게 구식이 되는데도 하드웨어의 감가상각 기간을 늘리고 있는 것으로 보인다고 주장한다.",
+    "Burry는 과소계상된 감가상각비가 2026~2028년에 약 1,760억 달러에 이를 것으로 추정한다.",
+    "Burry는 하이퍼스케일러의 AI 투자와 연결된 잠재적 순환 금융 구조에 대해 여러 차례 경고해 왔다."
+   ],
+   "evidence": [
+    {
+     "ko": "Burry는 2026년 10월 26일, GPU 가격 붕괴 위험이 '머리가 제대로 돌아가는 사람이라면 대부분 뻔히 알 수 있는 것'이라고 말했다.",
+     "orig": "On October 26, 2026, he said the risk is “obvious to most with a working brain cell.”"
     }
    ],
    "judged": {

@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated_kst": "2026-11-12T12:16:20+09:00",
+ "updated_kst": "2026-11-12T15:47:24+09:00",
  "window_days": 14,
  "items_days": 30,
  "index": {
@@ -8,13 +8,13 @@
    "value": -3,
    "label": "엇갈림",
    "orgs": 31,
-   "items": 77
+   "items": 79
   },
   "market": {
    "value": -12,
    "label": "엇갈림",
    "orgs": 23,
-   "items": 46
+   "items": 47
   },
   "by_group": [
    {
@@ -40,9 +40,9 @@
    },
    {
     "group": "투자은행",
-    "ai_tech": 13,
+    "ai_tech": 14,
     "ai_tech_orgs": 6,
-    "market": 22,
+    "market": 23,
     "market_orgs": 6
    },
    {
@@ -70,8 +70,8 @@
    },
    {
     "week": "2026-10-26",
-    "ai_tech": 1,
-    "ai_tech_orgs": 6,
+    "ai_tech": -13,
+    "ai_tech_orgs": 7,
     "market": 13,
     "market_orgs": 4
    },
@@ -79,7 +79,7 @@
     "week": "2026-11-02",
     "ai_tech": -2,
     "ai_tech_orgs": 21,
-    "market": -14,
+    "market": -13,
     "market_orgs": 14
    },
    {
@@ -140,15 +140,15 @@
     },
     {
      "tag": "자금 조달·신용",
-     "n": 15
+     "n": 16
     },
     {
      "tag": "금리·거시",
-     "n": 13
+     "n": 14
     },
     {
      "tag": "정책·지정학",
-     "n": 11
+     "n": 13
     },
     {
      "tag": "밸류에이션",
@@ -284,6 +284,29 @@
     "tier": "standard"
    },
    "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
+  },
+  {
+   "id": "goldman-ai-infrastructure-buildout-david-solomon-urges-u",
+   "group": "투자은행",
+   "org": "Goldman Sachs",
+   "person": null,
+   "kind": "report",
+   "title": "David Solomon(Goldman Sachs), AI 인프라의 미국 내 구축 촉구…투자가 해외로 옮겨갈 수 있다고 경고",
+   "title_orig": "AI infrastructure buildout: David Solomon urges US data centres; warns investment may move abroad",
+   "url": "https://www.msn.com/en-in/money/technology/ai-infrastructure-buildout-david-solomon-urges-us-data-centres-warns-investment-may-move-abroad/ar-AA2hdyIP",
+   "outlet": "The Times of India on MSN",
+   "published_kst": "2026-11-11T14:54:00+09:00",
+   "stance": {
+    "ai_tech": 1,
+    "market": null
+   },
+   "args": [
+    "정책·지정학"
+   ],
+   "judged": {
+    "basis": "headline_only",
+    "tier": "light"
+   }
   },
   {
    "id": "ark-cathie-wood-calls-humanoid-robots-a-26-trillion",
@@ -2958,6 +2981,42 @@
    }
   },
   {
+   "id": "morgan-stanley-morgan-stanley-says-pullback-could-come-but-it-s",
+   "group": "투자은행",
+   "org": "Morgan Stanley",
+   "person": null,
+   "kind": "report",
+   "title": "Morgan Stanley, 조정이 올 수 있지만 '엄청난 기회'라고 말해",
+   "title_orig": "Morgan Stanley Says Pullback Could Come, But It's a 'Massive Opportunity'",
+   "url": "https://news.sbs.co.kr/english/article.do?news_id=N1008825721",
+   "outlet": "SBS News",
+   "published_kst": "2026-11-02T10:25:00+09:00",
+   "stance": {
+    "ai_tech": 1,
+    "market": 1
+   },
+   "args": [
+    "자금 조달·신용",
+    "정책·지정학",
+    "금리·거시"
+   ],
+   "summary": "마이크 윌슨은 중간선거, AI 지출 우려, 유동성 제약으로 S&P 500이 약 9% 하락한 7,100선까지 일시 조정받을 수 있지만 이는 '엄청난 기회'라고 말했다. 조정이 끝나면 S&P 500이 8,000선까지 오르는 강세장이 펼쳐질 것으로 봤다. AI 기업의 자금 조달은 시장이 충분히 소화할 수 있다고 진단했다.",
+   "points": [
+    "미국 증시를 일시적으로 끌어내리는 조정이 올 수 있지만, 그것은 시장에 뛰어들 '엄청난 기회'가 될 것이라고 말했다.",
+    "미국 중간선거, AI 지출 우려, 유동성 제약 등의 요인으로 S&P 500이 직전 고점에서 약 9% 하락한 7,100선까지 일시적으로 떨어질 수 있다고 전망했다.",
+    "이란 전쟁이 증시에 부담을 주고 있지만, 단기 조정이 끝나면 S&P 500이 8,000선까지 오르는 강세장이 펼쳐질 것으로 전망했다.",
+    "중간선거는 늘 증시의 걸림돌이었지만, 과거 자료상 중간선거 6~12개월 뒤에는 시장이 100% 확률로 올랐다고 강조했다.",
+    "올해 선거에서는 트럼프 대통령이 선거 후 '뭔가 큰 일'을 하겠다고 시사한 탓에 불확실성이 투자자들을 압박하고 있다고 분석했다.",
+    "민주당이 아슬아슬한 차이로 하원을 가져가고 상원도 이길 것이라는 기대는 이미 시장에 상당 부분 반영돼 있다고 말했다. 다만 민주당이 큰 차이로 이기면 규제 강화나 데이터센터 확장 제동으로 이어질 수 있다고 덧붙였다.",
+    "닷컴 버블 때의 무분별한 주식 발행과 비슷하게 보느냐는 질문에, 현재 시장은 AI 기업의 자금 조달을 충분히 소화할 수 있고 약한 기업에는 더 높은 위험 스프레드를 요구하고 있다고 답했다. 기업들이 주식과 채권 발행 사이에서 균형을 잡고 있으며, 금리가 높아도 대형 우량 기업에는 성장 여력이 충분하다고 덧붙였다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
+  },
+  {
    "id": "bofa-tech-bonds-are-diamonds-in-the-rough-bank-of-ame",
    "group": "투자은행",
    "org": "Bank of America",
@@ -3361,6 +3420,45 @@
     {
      "ko": "지난주 Chanos는 SpaceX를 '세계 최대 네오클라우드'라고 불렀다.",
      "orig": "That's the business behind Chanos calling SpaceX \"the largest global neocloud\" last week."
+    }
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
+  },
+  {
+   "id": "burry-michael-burry-backs-ken-griffin-s-warning-that-g",
+   "group": "투자 거장",
+   "org": "Michael Burry",
+   "person": null,
+   "kind": "report",
+   "title": "Michael Burry, GPU 가격이 폭락할 수 있다는 Ken Griffin의 경고를 지지",
+   "title_orig": "Michael Burry backs Ken Griffin’s warning that GPU prices could crash",
+   "url": "https://cryptobriefing.com/michael-burry-ken-griffin-gpu-overcapacity",
+   "outlet": "Crypto Briefing",
+   "published_kst": "2026-10-26T10:56:00+09:00",
+   "stance": {
+    "ai_tech": -2,
+    "market": null
+   },
+   "args": [
+    "투자 회수",
+    "자금 조달·신용",
+    "전력·공급 제약"
+   ],
+   "summary": "Burry는 GPU 가격이 공급 과잉으로 붕괴할 수 있다는 Ken Griffin의 경고에 공개적으로 동조하며, 그 위험이 누구에게나 뻔히 보인다고 말했다. 대형 하이퍼스케일러가 하드웨어 감가상각 기간을 늘리고 있어 2026~2028년 감가상각비가 약 1,760억 달러 과소계상됐다고 추정했다. 하이퍼스케일러의 AI 투자와 얽힌 순환 금융 구조에 대해서도 거듭 경고해 왔다.",
+   "points": [
+    "Burry는 2026년 10월 26일, GPU 가격 붕괴 위험이 '머리가 제대로 돌아가는 사람이라면 대부분 뻔히 알 수 있는 것'이라고 말했다.",
+    "Burry는 가장 큰 하이퍼스케일러들이 칩 자체는 기술적으로 빠르게 구식이 되는데도 하드웨어의 감가상각 기간을 늘리고 있는 것으로 보인다고 주장한다.",
+    "Burry는 과소계상된 감가상각비가 2026~2028년에 약 1,760억 달러에 이를 것으로 추정한다.",
+    "Burry는 하이퍼스케일러의 AI 투자와 연결된 잠재적 순환 금융 구조에 대해 여러 차례 경고해 왔다."
+   ],
+   "evidence": [
+    {
+     "ko": "Burry는 2026년 10월 26일, GPU 가격 붕괴 위험이 '머리가 제대로 돌아가는 사람이라면 대부분 뻔히 알 수 있는 것'이라고 말했다.",
+     "orig": "On October 26, 2026, he said the risk is “obvious to most with a working brain cell.”"
     }
    ],
    "judged": {
