@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated_kst": "2026-11-12T21:17:43+09:00",
+ "updated_kst": "2026-11-13T00:24:44+09:00",
  "events": [
   {
    "company": "Oracle",
@@ -111,7 +111,7 @@
    "source_url": "https://www.honhai.com/en-us/investor-relations/investor-relations-activities/event-calendar",
    "consensus_snapshot": false,
    "report_slug": null,
-   "status": "scheduled",
+   "status": "queued",
    "note": "회사 IR 달력: 2026/11/12 3분기 실적 설명회"
   },
   {
@@ -138,8 +138,8 @@
    "official": true,
    "source_url": "https://nebius.com/newsroom/nebius-group-announces-date-of-third-quarter-2026-results-and-conference-call",
    "consensus_snapshot": true,
-   "report_slug": null,
-   "status": "scheduled",
+   "report_slug": "nebius-3q26-earnings",
+   "status": "published",
    "note": "회사 안내: 미국 현지 11월 12일 장 시작 전 발표, 콜은 한국시간 22시"
   },
   {

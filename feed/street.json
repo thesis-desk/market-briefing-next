@@ -1,20 +1,20 @@
 {
  "schema": 1,
- "updated_kst": "2026-11-12T21:28:19+09:00",
+ "updated_kst": "2026-11-13T00:39:26+09:00",
  "window_days": 14,
  "items_days": 30,
  "index": {
   "ai_tech": {
    "value": -5,
    "label": "엇갈림",
-   "orgs": 33,
-   "items": 89
+   "orgs": 35,
+   "items": 93
   },
   "market": {
-   "value": -14,
-   "label": "엇갈림",
-   "orgs": 24,
-   "items": 56
+   "value": -16,
+   "label": "경계 우위",
+   "orgs": 25,
+   "items": 59
   },
   "by_group": [
    {
@@ -26,14 +26,14 @@
    },
    {
     "group": "PE·대체투자",
-    "ai_tech": -25,
-    "ai_tech_orgs": 4,
+    "ai_tech": -17,
+    "ai_tech_orgs": 6,
     "market": -50,
-    "market_orgs": 1
+    "market_orgs": 2
    },
    {
     "group": "자산운용",
-    "ai_tech": 1,
+    "ai_tech": 0,
     "ai_tech_orgs": 7,
     "market": -6,
     "market_orgs": 7
@@ -70,22 +70,22 @@
    },
    {
     "week": "2026-10-26",
-    "ai_tech": -11,
-    "ai_tech_orgs": 8,
-    "market": 10,
-    "market_orgs": 5
+    "ai_tech": -14,
+    "ai_tech_orgs": 10,
+    "market": 0,
+    "market_orgs": 8
    },
    {
     "week": "2026-11-02",
-    "ai_tech": 0,
-    "ai_tech_orgs": 21,
+    "ai_tech": 5,
+    "ai_tech_orgs": 22,
     "market": -10,
     "market_orgs": 17
    },
    {
     "week": "2026-11-09",
     "ai_tech": -3,
-    "ai_tech_orgs": 21,
+    "ai_tech_orgs": 22,
     "market": -15,
     "market_orgs": 18
    }
@@ -94,19 +94,19 @@
    "caution": [
     {
      "tag": "투자 회수",
-     "n": 15
+     "n": 16
     },
     {
      "tag": "자금 조달·신용",
-     "n": 14
+     "n": 15
     },
     {
      "tag": "쏠림",
-     "n": 11
+     "n": 12
     },
     {
      "tag": "금리·거시",
-     "n": 11
+     "n": 12
     },
     {
      "tag": "밸류에이션",
@@ -132,11 +132,11 @@
    "optimism": [
     {
      "tag": "수요·채택",
-     "n": 25
+     "n": 26
     },
     {
      "tag": "투자 회수",
-     "n": 19
+     "n": 20
     },
     {
      "tag": "자금 조달·신용",
@@ -148,7 +148,7 @@
     },
     {
      "tag": "정책·지정학",
-     "n": 14
+     "n": 15
     },
     {
      "tag": "밸류에이션",
@@ -160,7 +160,7 @@
     },
     {
      "tag": "전력·공급 제약",
-     "n": 6
+     "n": 7
     },
     {
      "tag": "경쟁·해자",
@@ -171,6 +171,49 @@
   "method": "기관·인물마다 기간 안 입장 값의 평균을 내고 그 평균들을 다시 평균해 ×50"
  },
  "items": [
+  {
+   "id": "brookfield-up-to-10-trillion-riding-on-key-ai-question-says",
+   "group": "PE·대체투자",
+   "org": "Brookfield",
+   "person": null,
+   "kind": "report",
+   "title": "Brookfield CEO Bruce Flatt, 핵심 AI 질문에 최대 10조 달러가 걸려 있다",
+   "title_orig": "Up to $10 trillion riding on key AI question, says Brookfield CEO Bruce Flatt",
+   "url": "https://finance.yahoo.com/news/10-trillion-riding-key-ai-142931629.html",
+   "outlet": "Yahoo Finance",
+   "published_kst": "2026-11-12T15:29:00+09:00",
+   "stance": {
+    "ai_tech": 0,
+    "market": null
+   },
+   "args": [
+    "투자 회수",
+    "자금 조달·신용",
+    "수요·채택"
+   ],
+   "summary": "Flatt는 AI를 '우리 생애 최대의 투자 기회이자 위협'이라 부르며, 빠른 증설 경쟁에 5조~10조 달러가 걸려 있다고 말했다. 속도와 규모 때문에 누가 어떻게 돈을 벌지, 너무 빠르게 짓고 있지 않은지 판단하기 어렵다고 봤다. 반면 Brookfield는 장기 계약과 우량 거래상대방에 기반해 기술 위험을 거의 지지 않고 매력적인 위험조정 수익을 낸다고 밝혔다.",
+   "points": [
+    "AI의 급속한 부상은 '우리 생애 최대의 투자 기회이자 위협'이며, 빠르게 설비를 짓는 흐름에 5조~10조 달러가 걸려 있다.",
+    "도전과 기회를 동시에 만드는 것은 이 일이 벌어지는 속도와 규모 그 자체다. AI는 과거 기술 전환보다 누가 어떻게 돈을 벌지, 너무 빠르게 짓고 있는 것은 아닌지 가늠하기 더 어렵게 만든다.",
+    "거대언어모델(LLM) 기업들이 빠르게 움직이지 않으면 뒤처진다고 보는 가정이 맞는지는 '5조~10조 달러짜리 질문'이다.",
+    "분명한 한 가지는 이 이야기에서 자본이 최종 결정자가 될 것이며, 자본을 가진 쪽이 이긴다는 점이다.",
+    "Brookfield는 우량 거래상대방과의 장기 계약에 뒷받침되는 자산에 집중한다. 이런 자산에서는 기술 위험을 제한적으로만 지거나 전혀 지지 않으면서 매력적인 위험조정 수익을 얻을 수 있다.",
+    "Brookfield는 핵심 디지털 인프라 구축, 에너지 생산·연결, 대규모 자금 조달, 세계 최강 파트너와의 관계 구축에서 수십 년간 검증된 역량을 갖췄다. 그래서 이 기술 거인들에게 전력, 데이터센터, 컴퓨팅을 제공할 때 거래상대방 위험이 매우 낮고 창출하는 수익도 좋다.",
+    "Brookfield 내부에서도 LLM 기술을 매출 증대, 비용 절감, 사업 확장, 제조 혁신에 쓰고 있다. 초기 활용 성과가 강력하고 이제 막 시작했을 뿐이며, 마진이 10%가 아니라 그 몇 배 단위로 개선될 수 있다고 했다.",
+    "Brookfield 사장 Nick Goodman은 현재의 거시 환경이 Brookfield의 강점에 맞는다고 했다. 인플레이션 연동 수익, 가격 결정력, 안정적 현금흐름을 갖춘 실물자산에 집중하는 전략이 지속 성장에 유리한 위치를 만든다는 것이다."
+   ],
+   "evidence": [
+    {
+     "ko": "Brookfield 내부에서도 LLM 기술을 매출 증대, 비용 절감, 사업 확장, 제조 혁신에 쓰고 있다. 초기 활용 성과가 강력하고 이제 막 시작했을 뿐이며, 마진이 10%가 아니라 그 몇 배 단위로 개선될 수 있다고 했다.",
+     "orig": "\"This is very impactful for our business as margins could improve not by 10 per cent, but by quantums of that.\""
+    }
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
+  },
   {
    "id": "fidelity-if-the-ai-trade-is-over-says-fidelity-s-timmer-b",
    "group": "자산운용",
@@ -2794,6 +2837,40 @@
    "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
   },
   {
+   "id": "nbim-nextera-energy-ceo-powering-ai-and-nuclear-s-com",
+   "group": "자산운용",
+   "org": "노르웨이 국부펀드 (NBIM)",
+   "person": "John Ketchum",
+   "kind": "publication",
+   "title": "NextEra Energy CEO: AI에 전력을 공급하고 원전이 돌아오다 | 팟캐스트 | In Good Company",
+   "title_orig": "NextEra Energy CEO: Powering AI and Nuclear's Comeback | Podcast | In Good Company",
+   "url": "https://www.youtube.com/watch?v=be-8EqXml1M",
+   "outlet": "NBIM In Good Company (유튜브)",
+   "published_kst": "2026-11-04T15:00:26+09:00",
+   "stance": {
+    "ai_tech": 2,
+    "market": null
+   },
+   "args": [
+    "수요·채택",
+    "전력·공급 제약",
+    "정책·지정학",
+    "투자 회수"
+   ],
+   "summary": "NextEra CEO 케침은 AI 도입과 설비투자 확대로 전력 수요가 2~3년 전 정체 전망에서 20년 내 6배 증가 전망으로 바뀌었다고 말한다. AI 수요 전망이 크게 틀리려면 글로벌 경기침체로 AI 지출이 줄어야 한다고 보며, 장비 확보 제약은 규모의 이점으로 극복한다고 주장한다. 데이터센터 반발은 비용 자체 부담과 지역사회 약속으로 풀 수 있다고 본다.",
+   "points": [
+    "AI 수요로 전력 수요가 최근 24개월 사이 급변했으며 속도가 핵심이라고 본다.",
+    "전력 수요 증가는 데이터센터뿐 아니라 경제 전반에서 나온다고 설명한다.",
+    "수요 전망이 틀리려면 글로벌 경기침체로 AI 지출이 줄어드는 정도의 충격이 필요하다고 본다.",
+    "장비 확보가 업계의 역풍이지만 대량 구매 규모로 이를 경쟁우위로 바꾼다고 주장한다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "유튜브 자동 생성 자막(en) 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
+  },
+  {
    "id": "damodaran-dean-of-valuation-aswath-damodaran-trims-his-ant",
    "group": "투자 거장",
    "org": "NYU Stern",
@@ -3466,6 +3543,72 @@
    "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
   },
   {
+   "id": "doubleline-equities-tricky-fixed-income-treats-during-busy",
+   "group": "자산운용",
+   "org": "DoubleLine Capital",
+   "person": "Eric Dahl, Ryan Kimmel",
+   "kind": "publication",
+   "title": "주식은 까다롭고 채권은 호조, 연준 주간의 시장 정리",
+   "title_orig": "Equities Tricky, Fixed Income Treats During Busy Fed Week",
+   "url": "https://www.youtube.com/watch?v=ZuGC3zCrOTo",
+   "outlet": "DoubleLine (유튜브)",
+   "published_kst": "2026-10-31T09:31:46+09:00",
+   "stance": {
+    "ai_tech": -1,
+    "market": 0
+   },
+   "args": [
+    "자금 조달·신용",
+    "투자 회수",
+    "쏠림",
+    "금리·거시"
+   ],
+   "summary": "AI 설비투자에 대한 회의가 커지면서 기술주가 약세이고 반도체지수는 약세장에 들어섰다. 저등급 크레딧 스프레드도 벌어지고 있다. 반면 등가중 지수와 다른 업종은 오르고 VIX도 크게 높지 않아 위험자산 전반의 매도는 아니라고 본다. 연준은 인플레이션 때문에 인상 가능성을 열어 두고 있다.",
+   "points": [
+    "데이터센터 건설에 수천억~수조 달러가 필요하고 건설 비용까지 올라 AI 투자 서사에 부담이 된다.",
+    "AI 테마와 자금 조달 비용에 민감한 저등급 크레딧에서 스프레드가 크게 벌어지고 있다.",
+    "업종별 차별화는 주식 전체의 매도가 아니라 AI 종목에서 광범위한 주식 배분으로의 자금 이동을 뜻한다고 본다.",
+    "반도체지수가 약세장인 만큼 투자 심리가 안정됐다고 말하기는 어렵다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "유튜브 자동 생성 자막(en) 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
+  },
+  {
+   "id": "bridgewater-writing-the-next-textbook-nir-bar-dea-on-meritoc",
+   "group": "PE·대체투자",
+   "org": "Bridgewater Associates",
+   "person": "Nir Bar Dea",
+   "kind": "publication",
+   "title": "차세대 교과서 쓰기: Nir Bar Dea가 말하는 능력주의, AI, 그리고 탐험가들의 회사 만들기",
+   "title_orig": "Writing the Next Textbook: Nir Bar Dea on Meritocracy, AI, and Building a Firm of Explorers",
+   "url": "https://www.youtube.com/watch?v=ZSe1aIhViAk",
+   "outlet": "Bridgewater (유튜브)",
+   "published_kst": "2026-10-31T09:00:07+09:00",
+   "stance": {
+    "ai_tech": 0,
+    "market": -1
+   },
+   "args": [
+    "금리·거시",
+    "정책·지정학"
+   ],
+   "summary": "Bridgewater CEO는 미국의 큰 재정적자와 부채, 정책 여력이 매우 작은 상태에서 낙관적 전망이 깔린 점을 위험으로 본다. 세계화에서 민족주의로 거시 패러다임이 바뀌었다고 진단한다. AI는 크게 낙관하지만 안전·재정·지정학 한계에 부딪힐 수 있어 규제와 사회 대비가 필요하다고 주장한다.",
+   "points": [
+    "미국 부채·적자는 여러 조건과 얽혀 미래에 큰 위험을 만든다고 본다.",
+    "전망은 거의 최선의 시나리오인데 정책 당국의 완충 여력은 매우 작아, 문제가 생기면 정부·가계·기업에 충격이 커진다고 한다.",
+    "거시 패러다임이 세계화에서 민족주의로 완전히 바뀌었고 투자자는 이를 감안해야 한다고 한다.",
+    "AI는 훌륭할 수 있지만 안전·재정·지정학 한계에 걸릴 수 있어 결과가 크게 갈릴 수 있고, 안전 규제가 필요하다고 본다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "유튜브 자동 생성 자막(en) 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
+  },
+  {
    "id": "morgan-stanley-the-curious-calm-of-credit-markets",
    "group": "투자은행",
    "org": "Morgan Stanley",
@@ -3497,6 +3640,38 @@
     "basis": "full_text",
     "tier": "standard"
    }
+  },
+  {
+   "id": "pimco-fed-pauses-as-rate-recalibration-continues",
+   "group": "자산운용",
+   "org": "PIMCO",
+   "person": "Tiffany Wilding, Graham Westwood",
+   "kind": "publication",
+   "title": "연준, 금리 재조정 속에 동결",
+   "title_orig": "Fed Pauses as Rate Recalibration Continues",
+   "url": "https://www.youtube.com/watch?v=yGXuXNzldKY",
+   "outlet": "PIMCO (유튜브)",
+   "published_kst": "2026-10-31T00:06:24+09:00",
+   "stance": {
+    "ai_tech": null,
+    "market": 0
+   },
+   "args": [
+    "금리·거시",
+    "자금 조달·신용"
+   ],
+   "summary": "PIMCO는 연준이 10월에 정책금리를 3.75~4.0%로 동결했지만 긴축 기조는 유지했다고 본다. 12월 25bp 추가 인상을 기본 시나리오로 두고 2027년 초 한 차례 더 인상할 위험이 있다고 본다. 이후 장기간 동결이 이어질 것이며, 이번 조정은 장기 인상 사이클의 시작이 아니라 정책 재조정이라는 입장이다.",
+   "points": [
+    "12월 25bp 추가 인상을 예상하며, 2027년 초 한 차례 더 인상할 위험 뒤에 장기간 동결이 이어질 것으로 본다.",
+    "이번 인상은 장기 인상 사이클의 시작이 아니라 정책 재조정으로 본다.",
+    "저품질 차입자와 AI 밸류체인 일부에서 신용 스프레드가 확대돼 연준이 추가 인상을 서두르지 않을 여지가 생겼다.",
+    "장기금리 상승은 기간 프리미엄이 아니라 정책금리 기대 상승이 주도했다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "유튜브 자동 생성 자막(en) 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
   },
   {
    "id": "a16z-charts-of-the-week-job-fud-fades",

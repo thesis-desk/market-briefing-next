@@ -1,8 +1,51 @@
 {
  "schema": 1,
  "month": "2026-11",
- "updated_kst": "2026-11-12T21:28:19+09:00",
+ "updated_kst": "2026-11-13T00:39:26+09:00",
  "items": [
+  {
+   "id": "brookfield-up-to-10-trillion-riding-on-key-ai-question-says",
+   "group": "PE·대체투자",
+   "org": "Brookfield",
+   "person": null,
+   "kind": "report",
+   "title": "Brookfield CEO Bruce Flatt, 핵심 AI 질문에 최대 10조 달러가 걸려 있다",
+   "title_orig": "Up to $10 trillion riding on key AI question, says Brookfield CEO Bruce Flatt",
+   "url": "https://finance.yahoo.com/news/10-trillion-riding-key-ai-142931629.html",
+   "outlet": "Yahoo Finance",
+   "published_kst": "2026-11-12T15:29:00+09:00",
+   "stance": {
+    "ai_tech": 0,
+    "market": null
+   },
+   "args": [
+    "투자 회수",
+    "자금 조달·신용",
+    "수요·채택"
+   ],
+   "summary": "Flatt는 AI를 '우리 생애 최대의 투자 기회이자 위협'이라 부르며, 빠른 증설 경쟁에 5조~10조 달러가 걸려 있다고 말했다. 속도와 규모 때문에 누가 어떻게 돈을 벌지, 너무 빠르게 짓고 있지 않은지 판단하기 어렵다고 봤다. 반면 Brookfield는 장기 계약과 우량 거래상대방에 기반해 기술 위험을 거의 지지 않고 매력적인 위험조정 수익을 낸다고 밝혔다.",
+   "points": [
+    "AI의 급속한 부상은 '우리 생애 최대의 투자 기회이자 위협'이며, 빠르게 설비를 짓는 흐름에 5조~10조 달러가 걸려 있다.",
+    "도전과 기회를 동시에 만드는 것은 이 일이 벌어지는 속도와 규모 그 자체다. AI는 과거 기술 전환보다 누가 어떻게 돈을 벌지, 너무 빠르게 짓고 있는 것은 아닌지 가늠하기 더 어렵게 만든다.",
+    "거대언어모델(LLM) 기업들이 빠르게 움직이지 않으면 뒤처진다고 보는 가정이 맞는지는 '5조~10조 달러짜리 질문'이다.",
+    "분명한 한 가지는 이 이야기에서 자본이 최종 결정자가 될 것이며, 자본을 가진 쪽이 이긴다는 점이다.",
+    "Brookfield는 우량 거래상대방과의 장기 계약에 뒷받침되는 자산에 집중한다. 이런 자산에서는 기술 위험을 제한적으로만 지거나 전혀 지지 않으면서 매력적인 위험조정 수익을 얻을 수 있다.",
+    "Brookfield는 핵심 디지털 인프라 구축, 에너지 생산·연결, 대규모 자금 조달, 세계 최강 파트너와의 관계 구축에서 수십 년간 검증된 역량을 갖췄다. 그래서 이 기술 거인들에게 전력, 데이터센터, 컴퓨팅을 제공할 때 거래상대방 위험이 매우 낮고 창출하는 수익도 좋다.",
+    "Brookfield 내부에서도 LLM 기술을 매출 증대, 비용 절감, 사업 확장, 제조 혁신에 쓰고 있다. 초기 활용 성과가 강력하고 이제 막 시작했을 뿐이며, 마진이 10%가 아니라 그 몇 배 단위로 개선될 수 있다고 했다.",
+    "Brookfield 사장 Nick Goodman은 현재의 거시 환경이 Brookfield의 강점에 맞는다고 했다. 인플레이션 연동 수익, 가격 결정력, 안정적 현금흐름을 갖춘 실물자산에 집중하는 전략이 지속 성장에 유리한 위치를 만든다는 것이다."
+   ],
+   "evidence": [
+    {
+     "ko": "Brookfield 내부에서도 LLM 기술을 매출 증대, 비용 절감, 사업 확장, 제조 혁신에 쓰고 있다. 초기 활용 성과가 강력하고 이제 막 시작했을 뿐이며, 마진이 10%가 아니라 그 몇 배 단위로 개선될 수 있다고 했다.",
+     "orig": "\"This is very impactful for our business as margins could improve not by 10 per cent, but by quantums of that.\""
+    }
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
+  },
   {
    "id": "fidelity-if-the-ai-trade-is-over-says-fidelity-s-timmer-b",
    "group": "자산운용",
@@ -2624,6 +2667,40 @@
     "tier": "standard"
    },
    "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
+  },
+  {
+   "id": "nbim-nextera-energy-ceo-powering-ai-and-nuclear-s-com",
+   "group": "자산운용",
+   "org": "노르웨이 국부펀드 (NBIM)",
+   "person": "John Ketchum",
+   "kind": "publication",
+   "title": "NextEra Energy CEO: AI에 전력을 공급하고 원전이 돌아오다 | 팟캐스트 | In Good Company",
+   "title_orig": "NextEra Energy CEO: Powering AI and Nuclear's Comeback | Podcast | In Good Company",
+   "url": "https://www.youtube.com/watch?v=be-8EqXml1M",
+   "outlet": "NBIM In Good Company (유튜브)",
+   "published_kst": "2026-11-04T15:00:26+09:00",
+   "stance": {
+    "ai_tech": 2,
+    "market": null
+   },
+   "args": [
+    "수요·채택",
+    "전력·공급 제약",
+    "정책·지정학",
+    "투자 회수"
+   ],
+   "summary": "NextEra CEO 케침은 AI 도입과 설비투자 확대로 전력 수요가 2~3년 전 정체 전망에서 20년 내 6배 증가 전망으로 바뀌었다고 말한다. AI 수요 전망이 크게 틀리려면 글로벌 경기침체로 AI 지출이 줄어야 한다고 보며, 장비 확보 제약은 규모의 이점으로 극복한다고 주장한다. 데이터센터 반발은 비용 자체 부담과 지역사회 약속으로 풀 수 있다고 본다.",
+   "points": [
+    "AI 수요로 전력 수요가 최근 24개월 사이 급변했으며 속도가 핵심이라고 본다.",
+    "전력 수요 증가는 데이터센터뿐 아니라 경제 전반에서 나온다고 설명한다.",
+    "수요 전망이 틀리려면 글로벌 경기침체로 AI 지출이 줄어드는 정도의 충격이 필요하다고 본다.",
+    "장비 확보가 업계의 역풍이지만 대량 구매 규모로 이를 경쟁우위로 바꾼다고 주장한다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "유튜브 자동 생성 자막(en) 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
   },
   {
    "id": "damodaran-dean-of-valuation-aswath-damodaran-trims-his-ant",

@@ -1,7 +1,43 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-12T21:28:19+09:00",
+ "generated_kst": "2026-11-13T00:39:26+09:00",
  "reports": [
+  {
+   "slug": "nebius-3q26-earnings",
+   "type": "earnings",
+   "title": "Nebius 3Q26 실적발표 : 신규 계약 선수금이 CapEx를 넘었고, 올해 매출 일부는 내년으로 밀렸다",
+   "companies": [
+    {
+     "name": "Nebius",
+     "ticker": "NBIS"
+    }
+   ],
+   "event": "3Q26 실적 발표",
+   "event_date": "2026-11-12",
+   "published_kst": "2026-11-13T00:35:48+09:00",
+   "revised_kst": "2026-11-13T00:35:48+09:00",
+   "revision": 1,
+   "summary": "3분기 매출 $980.8M는 발표 전 컨센서스를 넘었습니다. 다만 그중 약 3분의 1은 반복되지 않는 에셋 라이트 매출이고, 코로케이션 지연으로 2026년 매출 가이던스 상단을 낮췄습니다. 반면 신규 계약 선수금이 CapEx의 100%를 넘었고, 회사는 2027년 매출 $12~13B와 4Q27 세전 손익분기를 처음 제시했습니다. 이에 따라 판단의 무게는 2027년 자체 사이트를 일정대로 가동하느냐로 옮겨 갔습니다.",
+   "path": "reports/nebius-3q26-earnings.json"
+  },
+  {
+   "slug": "latent-space-why-would-anthropic-go-public-now-jamin-ball",
+   "type": "interview",
+   "title": "Jamin Ball 인터뷰 : 앤트로픽 S-1이 보여 준 수익성과 상장으로 열려는 부채 조달",
+   "companies": [
+    {
+     "name": "Anthropic",
+     "ticker": null
+    }
+   ],
+   "event": "S-1 공개 후 나스닥 상장 추진",
+   "event_date": "2026-10-26",
+   "published_kst": "2026-11-13T00:23:23+09:00",
+   "revised_kst": "2026-11-13T00:23:23+09:00",
+   "revision": 1,
+   "summary": "Jamin Ball의 독해로는 앤트로픽 S-1의 핵심이 세 가지다. 서빙 컴퓨트 효율로 이미 흑자 구조를 만들었고, 상반기 순손실은 전환사채 평가손이며, 상장의 실익은 데이터센터 부채의 신용 기반을 여는 데 있다. 다만 효율 개선이 반복될지, 8,560억 달러 약정을 어떻게 조달할지, 프런티어 지위가 흔들릴 때 매출이 얼마나 빨리 빠지는지는 이번 대담에서 답해지지 않았다.",
+   "path": "reports/latent-space-why-would-anthropic-go-public-now-jamin-ball.json"
+  },
   {
    "slug": "sixsigma-model-4",
    "type": "article",
@@ -384,11 +420,11 @@
   }
  ],
  "street": {
-  "updated_kst": "2026-11-12T21:28:19+09:00",
+  "updated_kst": "2026-11-13T00:39:26+09:00",
   "path": "street.json"
  },
  "calendar": {
-  "updated_kst": "2026-11-12T21:17:43+09:00",
+  "updated_kst": "2026-11-13T00:24:44+09:00",
   "path": "calendar.json"
  }
 }
