@@ -1,7 +1,31 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-12T18:47:21+09:00",
+ "generated_kst": "2026-11-12T21:28:19+09:00",
  "reports": [
+  {
+   "slug": "sixsigma-model-4",
+   "type": "article",
+   "title": "식스시그마 : 재귀개선이 가능해지는 해는 2027년으로 당겨졌고, 앤트로픽은 오히려 자기 속도를 줄여 말했다",
+   "companies": [
+    {
+     "name": "Anthropic",
+     "ticker": null
+    },
+    {
+     "name": "Google",
+     "ticker": null
+    },
+    {
+     "name": "OpenAI",
+     "ticker": null
+    }
+   ],
+   "published_kst": "2026-11-12T21:17:40+09:00",
+   "revised_kst": "2026-11-12T21:17:40+09:00",
+   "revision": 1,
+   "summary": "영상은 앤트로픽 내부 측정, 구글·오픈AI의 움직임, 외부 기관 METR의 검증을 엮어 'AI가 AI 개발을 가속하는 단계가 왔고 재귀개선은 2027년에 가능해질 수 있다'고 주장한다. 가장 단단한 근거는 METR의 외부 검증이다. 다만 2027년이라는 시점은 앤트로픽 자체 지표와 판단에 크게 기대고 있고, 영상 전사의 오류도 많아서 숫자는 원출처로 확인해야 한다.",
+   "path": "reports/sixsigma-model-4.json"
+  },
   {
    "slug": "sixsigma-40",
    "type": "article",
@@ -360,11 +384,11 @@
   }
  ],
  "street": {
-  "updated_kst": "2026-11-12T16:11:09+09:00",
+  "updated_kst": "2026-11-12T21:28:19+09:00",
   "path": "street.json"
  },
  "calendar": {
-  "updated_kst": "2026-11-12T15:43:26+09:00",
+  "updated_kst": "2026-11-12T21:17:43+09:00",
   "path": "calendar.json"
  }
 }

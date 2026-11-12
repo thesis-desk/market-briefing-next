@@ -1,20 +1,20 @@
 {
  "schema": 1,
- "updated_kst": "2026-11-12T16:11:09+09:00",
+ "updated_kst": "2026-11-12T21:28:19+09:00",
  "window_days": 14,
  "items_days": 30,
  "index": {
   "ai_tech": {
-   "value": -3,
+   "value": -5,
    "label": "엇갈림",
-   "orgs": 32,
-   "items": 81
+   "orgs": 33,
+   "items": 89
   },
   "market": {
    "value": -14,
    "label": "엇갈림",
    "orgs": 24,
-   "items": 48
+   "items": 56
   },
   "by_group": [
    {
@@ -33,16 +33,16 @@
    },
    {
     "group": "자산운용",
-    "ai_tech": 11,
-    "ai_tech_orgs": 6,
-    "market": -7,
+    "ai_tech": 1,
+    "ai_tech_orgs": 7,
+    "market": -6,
     "market_orgs": 7
    },
    {
     "group": "투자은행",
-    "ai_tech": 14,
+    "ai_tech": 13,
     "ai_tech_orgs": 6,
-    "market": 23,
+    "market": 20,
     "market_orgs": 6
    },
    {
@@ -70,24 +70,24 @@
    },
    {
     "week": "2026-10-26",
-    "ai_tech": -13,
-    "ai_tech_orgs": 7,
-    "market": 13,
-    "market_orgs": 4
+    "ai_tech": -11,
+    "ai_tech_orgs": 8,
+    "market": 10,
+    "market_orgs": 5
    },
    {
     "week": "2026-11-02",
-    "ai_tech": -2,
+    "ai_tech": 0,
     "ai_tech_orgs": 21,
-    "market": -13,
-    "market_orgs": 14
+    "market": -10,
+    "market_orgs": 17
    },
    {
     "week": "2026-11-09",
-    "ai_tech": 1,
-    "ai_tech_orgs": 20,
-    "market": -16,
-    "market_orgs": 17
+    "ai_tech": -3,
+    "ai_tech_orgs": 21,
+    "market": -15,
+    "market_orgs": 18
    }
   ],
   "args": {
@@ -98,23 +98,23 @@
     },
     {
      "tag": "자금 조달·신용",
-     "n": 13
+     "n": 14
+    },
+    {
+     "tag": "쏠림",
+     "n": 11
     },
     {
      "tag": "금리·거시",
      "n": 11
     },
     {
-     "tag": "쏠림",
-     "n": 9
-    },
-    {
      "tag": "밸류에이션",
-     "n": 9
+     "n": 10
     },
     {
      "tag": "정책·지정학",
-     "n": 7
+     "n": 8
     },
     {
      "tag": "수요·채택",
@@ -132,23 +132,23 @@
    "optimism": [
     {
      "tag": "수요·채택",
-     "n": 23
+     "n": 25
     },
     {
      "tag": "투자 회수",
-     "n": 18
+     "n": 19
     },
     {
      "tag": "자금 조달·신용",
-     "n": 16
+     "n": 17
     },
     {
      "tag": "금리·거시",
-     "n": 14
+     "n": 16
     },
     {
      "tag": "정책·지정학",
-     "n": 13
+     "n": 14
     },
     {
      "tag": "밸류에이션",
@@ -156,7 +156,7 @@
     },
     {
      "tag": "쏠림",
-     "n": 7
+     "n": 8
     },
     {
      "tag": "전력·공급 제약",
@@ -171,6 +171,95 @@
   "method": "기관·인물마다 기간 안 입장 값의 평균을 내고 그 평균들을 다시 평균해 ×50"
  },
  "items": [
+  {
+   "id": "fidelity-if-the-ai-trade-is-over-says-fidelity-s-timmer-b",
+   "group": "자산운용",
+   "org": "Fidelity",
+   "person": null,
+   "kind": "report",
+   "title": "'AI 트레이드가 끝났다면,' Fidelity의 Timmer는 말한다 — 그렇다면 암호화폐는?",
+   "title_orig": "'If the AI Trade Is Over,' Says Fidelity's Timmer, but What About Crypto?",
+   "url": "https://cryptonews.net/news/bitcoin/33740170",
+   "outlet": "cryptonews",
+   "published_kst": "2026-11-12T13:00:00+09:00",
+   "stance": {
+    "ai_tech": -1,
+    "market": 0
+   },
+   "args": [
+    "쏠림"
+   ],
+   "summary": "Fidelity의 Jurrien Timmer는 AI 트레이드가 끝났을 수 있고, 지금의 강세장이 상승세를 이어가려면 해내야 할 일이 많다고 본다. 균등가중 S&P 500의 흐름은 비교적 건강해 보이지만, 지수가 소수 종목에 쏠린 시장에서는 그것만으로 지수를 계속 끌어올리기에 부족할 수 있다고 말했다.",
+   "points": [
+    "Fidelity의 Jurrien Timmer에 따르면 AI 트레이드가 끝났을 수 있으며, 지금까지 이어진 강세장이 상승 속도를 유지하려면 해내야 할 일이 많다.",
+    "Timmer는 소수 종목에 쏠린(top-heavy) 시장에서는 균등가중 S&P 500이 비교적 건강해 보이더라도 그것만으로는 지수를 계속 끌어올리기에 충분하지 않을 수 있다고 언급했다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
+  },
+  {
+   "id": "pimco-pimco-says-ai-borrowers-now-drive-nearly-half-of",
+   "group": "자산운용",
+   "org": "PIMCO",
+   "person": null,
+   "kind": "report",
+   "title": "PIMCO, 이제 AI 차입자가 미국 장기 투자등급 회사채 발행의 거의 절반을 차지한다고 밝혀",
+   "title_orig": "PIMCO says AI borrowers now drive nearly half of long-dated US investment-grade issuance",
+   "url": "https://cryptobriefing.com/pimco-ai-borrowers-long-dated-ig-issuance",
+   "outlet": "Crypto Briefing",
+   "published_kst": "2026-11-12T08:40:00+09:00",
+   "stance": {
+    "ai_tech": -1,
+    "market": 0
+   },
+   "args": [
+    "쏠림",
+    "자금 조달·신용",
+    "정책·지정학"
+   ],
+   "summary": "PIMCO의 Lotfi Karoui는 AI 관련 차입자가 만기 15년 초과 미국 투자등급 비금융 회사채 발행의 거의 절반을 차지해, 회사채만으로 짠 신용 포트폴리오의 분산 효과가 보기보다 낮다고 본다. AI 설비투자 재원이 영업현금흐름에서 부채로 옮겨가고 있다고 설명하며, 에이전시 MBS·고등급 비에이전시 MBS·신흥국 채권으로 분산할 것을 제안한다. PIMCO는 일부 AI 데이터센터 금융 보유분을 약 50% 줄였다.",
+   "points": [
+    "PIMCO의 Lotfi Karoui는 2026년 10월 말 기준, 올해 들어 만기 15년 초과 미국 투자등급 회사채 시장의 비금융 부문 총발행에서 AI 관련 차입자가 거의 절반을 차지했다고 말했다.",
+    "Karoui는 AI 관련 발행이 이제 더 넓은 채권시장에서 큰 비중을 차지하며, 회사채에만 의존해 구성한 신용 포트폴리오는 보기보다 분산이 덜 되어 있다고 본다.",
+    "PIMCO에 따르면 이 발행 급증은 주로 하이퍼스케일러와 데이터센터가 AI 인프라를 확대하며 생긴 자금 조달 수요와 관련돼 있다.",
+    "PIMCO는 예전에는 영업현금흐름으로 충당하던 지출이 점점 부채로 조달되고 있으며, 이를 이들 기업이 성장 비용을 치르는 방식의 상당한 변화라고 설명한다.",
+    "Karoui는 품질을 포기하지 않으면서 AI 비중이 큰 회사채 신용에서 분산하라고 처방하며, 추천 대상으로 에이전시 주택저당증권, 고등급 민간 주택저당채권, 신흥국 채권을 든다.",
+    "PIMCO는 신흥국 채권이 고품질 유동화 상품과 함께, AI 종목이 지배하는 투자등급 회사채보다 나은 위험 분산 효과와 매력적인 수익률을 제공한다고 본다.",
+    "PIMCO는 2026년 11월 미국 중간선거 결과가 제안된 규제로 개발 일정에 영향을 주어 데이터센터 부문에 잠재적 어려움을 줄 수 있다고 지적했다. 이런 흐름이 데이터센터 건설과 발행을 늦출 수 있다고 보지만, AI 구축에 필요한 전체 자금 조달 수요를 의미 있게 바꾸지는 않을 것으로 예상한다.",
+    "PIMCO는 Meta와 Oracle 관련 투자를 포함해 일부 경우에서 AI 데이터센터 금융 보유분을 약 50% 줄였다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
+  },
+  {
+   "id": "howard-marks-warren-buffett-s-1979-warning-may-be-the-perfect",
+   "group": "투자 거장",
+   "org": "Oaktree Capital",
+   "person": "Howard Marks",
+   "kind": "report",
+   "title": "하워드 막스: 버핏의 1979년 경고가 오늘날 AI 붐의 교훈일 수 있다… '불확실성은 사실 친구'",
+   "title_orig": "Warren Buffett’s 1979 warning may be the perfect lesson for today’s AI boom, says Howard Marks: ‘Uncertainty actually is the friend’",
+   "url": "https://www.msn.com/en-us/news/other/warren-buffett-s-1979-warning-may-be-the-perfect-lesson-for-today-s-ai-boom-says-howard-marks-uncertainty-actually-is-the-friend/ar-AA2hhffv",
+   "outlet": "Benzinga on MSN",
+   "published_kst": "2026-11-12T08:29:17+09:00",
+   "stance": {
+    "ai_tech": -1,
+    "market": null
+   },
+   "args": [
+    "밸류에이션"
+   ],
+   "judged": {
+    "basis": "headline_only",
+    "tier": "light"
+   }
+  },
   {
    "id": "ark-did-the-midterms-just-break-the-ai-trade-the-bra",
    "group": "자산운용",
@@ -2308,6 +2397,44 @@
    "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
   },
   {
+   "id": "el-erian-el-erian-says-stock-market-is-overdoing-it-on-ai",
+   "group": "투자 거장",
+   "org": "Mohamed El-Erian",
+   "person": null,
+   "kind": "report",
+   "title": "El-Erian, 나스닥이 조정 국면에 들어서자 주식시장이 AI 우려에 '과하게 반응하고 있다'고 말해",
+   "title_orig": "El-Erian Says Stock Market Is ‘Overdoing It’ On AI Fears As Nasdaq Enters Correction Territory",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/el-erian-says-stock-market-174818425.html",
+   "outlet": "Yahoo Finance",
+   "published_kst": "2026-11-05T18:48:00+09:00",
+   "stance": {
+    "ai_tech": 1,
+    "market": -1
+   },
+   "args": [
+    "수요·채택",
+    "쏠림",
+    "금리·거시",
+    "정책·지정학"
+   ],
+   "summary": "El-Erian은 AI에 대한 대중의 반발이 세계화 때 같은 실수를 반복하지 말라는 경고이지만 시장이 과민 반응하고 있다고 본다. AI 도입은 중단되지 않고 더 신중해질 것이라며 AI 잠재력에는 '완전히 낙관'하지만, 미국 경제가 AI에 크게 의존해 기술주 급락이 경제로 번질 수 있다고 경고했다. 국채 10년물 금리는 5% 안팎에 머물고 연준은 시장이 반영한 3회보다 적게 인상할 것으로 본다.",
+   "points": [
+    "우리는 세계화의 실수를 반복하지 말라는 시의적절한 경고를 받고 있다. '내버려 두자'는 정책은 많은 사람을 뒤처지게 하며, 이번 일은 이를 더 신중한 방식으로 해야 한다는 점을 일깨워 준다.",
+    "시장이 정치적·대중적 반발에 지나치게 반응하고 있다고 본다. 근본적으로는 AI를 아예 도입하지 않는 것이 아니라 더 영리한 방식으로 도입하게 될 것이다.",
+    "세계화 주제 자체는 좋았지만 분배 효과에 주의를 기울이지 않았고, 그 결과 세계화를 좌초시킨 거대한 반발을 맞았다. 우리는 경제적 이유와 국가안보상의 이유로 AI를 좌초시키고 싶지 않다.",
+    "업계의 접근 방식에 대한 우려에도 불구하고 AI가 경제에 이익을 줄 잠재력에 대해서는 '완전히 낙관'한다고 말했다.",
+    "미국 경제는 지금 AI에 크게 레버리지가 걸려 있다. AI 관련주의 급락은 기술 부문을 넘어 영향을 미칠 수 있는데, 경제가 AI 투자와 기술주 상승이 만든 부에 갈수록 의존하기 때문이다.",
+    "AI 지출과 기술주 상승이 경제성장, 생산성, 노동시장을 떠받쳐 왔다. 기술이 온갖 다른 요인을 막아 주는 방패 역할을 했기 때문에 이 수치들이 좋게 나온 것이다.",
+    "시장이 기술 부문에 의존하는 탓에 투자자가 다른 업종으로 자금을 옮기는 것만으로는 조정의 여파를 피하기 어렵다. 그런 전략은 시장에서 경제로의 파급이 없다고 가정하는 것이다.",
+    "미국 경제가 침체에 들어가지 않는 한 10년물 국채금리가 5% 안팎에 머물 것으로 예상한다. 재정적자가 이어지고 중국·일본·한국·노르웨이·걸프 국가 등 전통적 해외 매수자의 수요가 약해졌으며, 믿을 만한 미 국채 매수자들이 덜 믿을 만해졌다고 했다. 연준이 금리를 최소 한 번 더 올리겠지만 시장이 반영한 세 차례 인상은 오지 않을 것이라고 봤다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
+  },
+  {
    "id": "ackman-billionaire-bill-ackman-s-market-warning-resurfa",
    "group": "투자 거장",
    "org": "Pershing Square",
@@ -2364,6 +2491,40 @@
     "tier": "standard"
    },
    "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
+  },
+  {
+   "id": "goldman-john-waldron-on-gdp-growth-ai-and-the-m-a-outloo",
+   "group": "투자은행",
+   "org": "Goldman Sachs",
+   "person": "John Waldron",
+   "kind": "publication",
+   "title": "John Waldron이 말하는 GDP 성장, AI, M&A 전망",
+   "title_orig": "John Waldron on GDP Growth, AI, and the M&A Outlook",
+   "url": "https://www.youtube.com/watch?v=75SWUaCAeuQ",
+   "outlet": "Goldman Sachs (유튜브)",
+   "published_kst": "2026-11-05T06:55:02+09:00",
+   "stance": {
+    "ai_tech": 1,
+    "market": 1
+   },
+   "args": [
+    "수요·채택",
+    "투자 회수",
+    "금리·거시",
+    "자금 조달·신용"
+   ],
+   "summary": "Waldron은 미국 명목 성장률이 6%를 넘고 실질 성장률 2.5% 안팎으로 경제와 기업 실적이 탄탄하다며 건설적으로 본다. 인플레이션·금리·지정학 때문에 2027년 계획에는 다소 신중하지만, 대형 기업이 AI 지출에서 가치를 얻고 있고 M&A는 사상 최대가 될 것이며 AI 인프라 자금 조달 수요가 크다고 낙관한다.",
+   "points": [
+    "미국 명목 성장률이 6%를 넘고 실질 성장도 견조해 경제 전망을 건설적으로 본다.",
+    "대형 기업일수록 AI 지출에서 실제 가치를 얻으며 자본과 시장의 평가를 더 받는다.",
+    "올해 기업 M&A가 30~35% 늘어 사상 최대 해가 될 것이며 파이프라인도 강하다.",
+    "AI 구축과 인프라 수요로 막대한 자본 조달 수요가 생기며, 정부의 레버리지가 높아 민간이 더 큰 역할을 해야 한다고 본다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "유튜브 영상의 음성을 음성 인식(Whisper)으로 받아 적은 전사 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
   },
   {
    "id": "ark-ramp-s-economist-found-cracks-in-the-ai-thesis-t",
@@ -2669,6 +2830,40 @@
    "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
   },
   {
+   "id": "howard-marks-howard-marks-cnbc-the-exchange-2026",
+   "group": "투자 거장",
+   "org": "Oaktree Capital",
+   "person": "Howard Marks",
+   "kind": "publication",
+   "title": "Howard Marks: CNBC 'The Exchange' (2026)",
+   "title_orig": "Howard Marks: CNBC The Exchange (2026)",
+   "url": "https://www.youtube.com/watch?v=iw5c1t7KyoQ",
+   "outlet": "Oaktree (유튜브)",
+   "published_kst": "2026-11-04T07:51:23+09:00",
+   "stance": {
+    "ai_tech": 0,
+    "market": 0
+   },
+   "args": [
+    "투자 회수",
+    "자금 조달·신용",
+    "전력·공급 제약",
+    "수요·채택"
+   ],
+   "summary": "마크스는 AI를 자신이 본 중 가장 예측하기 어려운 대상으로 보고, 거품 여부와 투자 수익률은 알 수 없다고 말한다. AI에 투자하려면 상방이 있는 주식이 낫고, 신용은 전력 같은 안전한 방식으로만 접근한다고 한다. 사이클은 초입(3회)이며, 이번 같은 시장 흔들림은 과열을 막는 데 건강하다고 본다.",
+   "points": [
+    "AI는 제품 사용처, 판매량, 이익률, 승자와 패자를 가늠할 수 없어 자신의 경력에서 가장 예측하기 어려운 대상이라고 말한다.",
+    "채권에는 상방이 없으므로 불확실한 AI 국면에서는 대출 대신 주식을 사야 한다고 주장한다.",
+    "AI 인프라가 수 배로 늘어날 때 전력이 실질적인 병목이 될 것으로 보고, 그 분야에서 안전한 방식으로 투자한다.",
+    "미래 수요가 계속 도래하고 컴퓨트 수요가 강해 AI 사이클은 아직 초기 단계라고 본다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "유튜브 영상의 음성을 음성 인식(Whisper)으로 받아 적은 전사 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
+  },
+  {
    "id": "morgan-stanley-solving-ai-s-power-bottleneck",
    "group": "투자은행",
    "org": "Morgan Stanley",
@@ -2731,6 +2926,39 @@
     "basis": "full_text",
     "tier": "standard"
    }
+  },
+  {
+   "id": "pimco-cre-a-reset-not-a-replay",
+   "group": "자산운용",
+   "org": "PIMCO",
+   "person": "Latvi Karui, Russell Ganaway",
+   "kind": "publication",
+   "title": "CRE: 재설정이지 재현이 아니다",
+   "title_orig": "CRE: A Reset, Not a Replay",
+   "url": "https://www.youtube.com/watch?v=G_gCJoP_B3k",
+   "outlet": "PIMCO (유튜브)",
+   "published_kst": "2026-11-04T04:11:34+09:00",
+   "stance": {
+    "ai_tech": null,
+    "market": 0
+   },
+   "args": [
+    "밸류에이션",
+    "자금 조달·신용",
+    "금리·거시"
+   ],
+   "summary": "PIMCO는 실질금리 상승으로 상업용 부동산 가치가 다시 압박받을 수 있지만, 신용시장은 2023년 같은 충격 신호를 보이지 않는다고 본다. 이번 국면은 신용 악화의 시작이라기보다 할인율 중심의 가치 재조정이며, 만기 도래 물량과 재융자 비용 때문에 섹터별 편차는 클 것이라고 한다.",
+   "points": [
+    "대부분의 섹터에서 cap rate 스프레드가 역사적 하단 부근이라, 펀더멘털이 나빠지지 않아도 금리 압력에 가치가 취약하다.",
+    "REIT 주식은 크게 조정됐지만 REIT 채권과 CMBS는 견조해, 이번 국면은 신용 악화가 아닌 가치 재조정으로 해석된다.",
+    "2023년과 달리 금리 상승이 신용 공급 위축을 동반하지 않았다는 점이 핵심 차이다.",
+    "약한 자산과 차입자의 재융자 위험은 남아 있으나 전체 신용 환경은 더 건전하다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "유튜브 영상의 음성을 음성 인식(Whisper)으로 받아 적은 전사 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
   },
   {
    "id": "pimco-pimco-ceo-warns-ai-spending-spree-could-end-in-a",
@@ -2952,6 +3180,40 @@
    "note": "웹 페이지 본문 기준. 그림 5개 속 글자는 확인하지 못함"
   },
   {
+   "id": "blackrock-ai-s-rising-bill-of-expectations",
+   "group": "자산운용",
+   "org": "BlackRock",
+   "person": "Devan Athwani",
+   "kind": "publication",
+   "title": "AI에 대한 기대치 청구서가 커지고 있다",
+   "title_orig": "AI’s rising bill of expectations",
+   "url": "https://www.youtube.com/watch?v=BKxwtr14560",
+   "outlet": "BlackRock (유튜브)",
+   "published_kst": "2026-11-02T23:07:51+09:00",
+   "stance": {
+    "ai_tech": 0,
+    "market": 0
+   },
+   "args": [
+    "투자 회수",
+    "자금 조달·신용",
+    "쏠림",
+    "수요·채택"
+   ],
+   "summary": "블랙록은 2년간의 AI 투자 급증 이후 투자자들이 수익화 증거를 요구하며 AI 테마가 더 까다로운 단기 시험대에 올랐다고 본다. 하이퍼스케일러의 투자 부담과 부채 의존이 커지고 있지만, AI 채택이 이익 성장에 기여하는 초기 신호도 있어 AI 펀더멘털에 대한 확신은 유지한다. 지난달 미국 주식을 중립으로 하향했고 AI 노출은 선별적으로 가져간다.",
+   "points": [
+    "빅테크와 나머지 시장 간 이익 격차가 2022년 이후 처음 역전되어 매그니피센트 7의 초과 성과가 줄고 있다.",
+    "하이퍼스케일러의 지출이 급증해 설비투자 후 남는 현금이 거의 없다.",
+    "빅테크 밖에서도 AI 채택도가 높은 기업이 이익 성장률이 더 높아 채택 효과의 초기 신호가 보인다.",
+    "AI 구축이 점점 부채로 조달되면서 레버리지와 자금 조달 여력이 핵심 쟁점이 되고 있다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "유튜브 영상의 음성을 음성 인식(Whisper)으로 받아 적은 전사 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
+  },
+  {
    "id": "howard-marks-howard-marks-flags-a-credit-trap-inside-the-ai-b",
    "group": "투자 거장",
    "org": "Oaktree Capital",
@@ -3084,6 +3346,40 @@
     "tier": "standard"
    },
    "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
+  },
+  {
+   "id": "goldman-what-happens-when-ai-spend-peaks",
+   "group": "투자은행",
+   "org": "Goldman Sachs",
+   "person": "Dominic, Josh",
+   "kind": "publication",
+   "title": "AI 지출이 정점에 이르면 어떤 일이 벌어질까?",
+   "title_orig": "What Happens When AI Spend Peaks?",
+   "url": "https://www.youtube.com/watch?v=-_IASIF7OeI",
+   "outlet": "Goldman Sachs (유튜브)",
+   "published_kst": "2026-10-31T18:30:06+09:00",
+   "stance": {
+    "ai_tech": 0,
+    "market": 0
+   },
+   "args": [
+    "투자 회수",
+    "자금 조달·신용",
+    "금리·거시",
+    "정책·지정학"
+   ],
+   "summary": "AI 투자 테마는 3년간의 초강세 국면을 지나 투자 증가율 정점이 가까워졌고, 신용 조달과 수익화 경로에 의문이 남아 위험이 더 양면적이고 전형적인 이야기가 됐다고 본다. 지수는 6개월째 7,700 부근에서 횡보 중이며, 가장 큰 위험은 중동 갈등 확대와 에너지 가격 상승이라고 본다.",
+   "points": [
+    "AI 설비투자 확대의 정점이 멀지 않았고, 성장은 이어지겠지만 성장률의 정점은 가까이 와 있다고 본다.",
+    "AI 투자에 필요한 자금을 신용시장이 소화하는 과정에서 부진이 나타나고 있다.",
+    "AI 테마는 초강세 국면에서 위험 균형이 양면적인 전형적 국면으로 바뀌었다고 본다.",
+    "실적은 지수를 지탱하기엔 충분하지만 시장이 위로 돌파하게 할 만큼은 아니며, 가장 큰 위험은 중동 갈등 확대에 따른 에너지 가격 상승이다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "유튜브 영상의 음성을 음성 인식(Whisper)으로 받아 적은 전사 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
   },
   {
    "id": "bofa-tech-bonds-are-diamonds-in-the-rough-bank-of-ame",

@@ -1,8 +1,42 @@
 {
  "schema": 1,
  "month": "2026-10",
- "updated_kst": "2026-11-12T15:47:24+09:00",
+ "updated_kst": "2026-11-12T21:27:02+09:00",
  "items": [
+  {
+   "id": "goldman-what-happens-when-ai-spend-peaks",
+   "group": "투자은행",
+   "org": "Goldman Sachs",
+   "person": "Dominic, Josh",
+   "kind": "publication",
+   "title": "AI 지출이 정점에 이르면 어떤 일이 벌어질까?",
+   "title_orig": "What Happens When AI Spend Peaks?",
+   "url": "https://www.youtube.com/watch?v=-_IASIF7OeI",
+   "outlet": "Goldman Sachs (유튜브)",
+   "published_kst": "2026-10-31T18:30:06+09:00",
+   "stance": {
+    "ai_tech": 0,
+    "market": 0
+   },
+   "args": [
+    "투자 회수",
+    "자금 조달·신용",
+    "금리·거시",
+    "정책·지정학"
+   ],
+   "summary": "AI 투자 테마는 3년간의 초강세 국면을 지나 투자 증가율 정점이 가까워졌고, 신용 조달과 수익화 경로에 의문이 남아 위험이 더 양면적이고 전형적인 이야기가 됐다고 본다. 지수는 6개월째 7,700 부근에서 횡보 중이며, 가장 큰 위험은 중동 갈등 확대와 에너지 가격 상승이라고 본다.",
+   "points": [
+    "AI 설비투자 확대의 정점이 멀지 않았고, 성장은 이어지겠지만 성장률의 정점은 가까이 와 있다고 본다.",
+    "AI 투자에 필요한 자금을 신용시장이 소화하는 과정에서 부진이 나타나고 있다.",
+    "AI 테마는 초강세 국면에서 위험 균형이 양면적인 전형적 국면으로 바뀌었다고 본다.",
+    "실적은 지수를 지탱하기엔 충분하지만 시장이 위로 돌파하게 할 만큼은 아니며, 가장 큰 위험은 중동 갈등 확대에 따른 에너지 가격 상승이다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "유튜브 영상의 음성을 음성 인식(Whisper)으로 받아 적은 전사 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
+  },
   {
    "id": "bofa-tech-bonds-are-diamonds-in-the-rough-bank-of-ame",
    "group": "투자은행",
