@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-12T14:38:42+09:00",
+ "generated_kst": "2026-11-12T15:21:14+09:00",
  "reports": [
   {
    "slug": "oracle-investor-day-2026",
@@ -198,7 +198,7 @@
   "path": "street.json"
  },
  "calendar": {
-  "updated_kst": "2026-11-12T11:34:02+09:00",
+  "updated_kst": "2026-11-12T15:21:14+09:00",
   "path": "calendar.json"
  }
 }

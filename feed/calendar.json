@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated_kst": "2026-11-12T11:34:02+09:00",
+ "updated_kst": "2026-11-12T15:21:14+09:00",
  "events": [
   {
    "company": "Oracle",
@@ -17,6 +17,48 @@
    "note": "원문이 올라온 것을 보고 넣은 일정"
   },
   {
+   "company": "SK하이닉스",
+   "ticker": "000660.KS",
+   "type": "earnings",
+   "period": "3Q26",
+   "date": "2026-10-28",
+   "confirmed": true,
+   "official": false,
+   "source_url": "https://naver-ec.srkudos.com/view/000660/2026/3",
+   "consensus_snapshot": false,
+   "report_slug": null,
+   "status": "queued",
+   "note": "원문이 올라온 것을 보고 넣은 일정"
+  },
+  {
+   "company": "삼성전자",
+   "ticker": "005930.KS",
+   "type": "earnings",
+   "period": "3Q26",
+   "date": "2026-10-29",
+   "confirmed": true,
+   "official": false,
+   "source_url": "https://naver-ec.srkudos.com/view/005930/2026/3",
+   "consensus_snapshot": false,
+   "report_slug": null,
+   "status": "queued",
+   "note": "원문이 올라온 것을 보고 넣은 일정"
+  },
+  {
+   "company": "Samsung SDS",
+   "ticker": "018260.KS",
+   "type": "earnings",
+   "period": "3Q26",
+   "date": "2026-10-29",
+   "confirmed": true,
+   "official": false,
+   "source_url": "https://naver-ec.srkudos.com/view/018260/2026/3",
+   "consensus_snapshot": false,
+   "report_slug": null,
+   "status": "queued",
+   "note": "원문이 올라온 것을 보고 넣은 일정"
+  },
+  {
    "company": "AMD",
    "ticker": "AMD",
    "type": "earnings",
@@ -28,6 +70,20 @@
    "consensus_snapshot": false,
    "report_slug": "amd-3q26-earnings",
    "status": "published",
+   "note": "원문이 올라온 것을 보고 넣은 일정"
+  },
+  {
+   "company": "SK Telecom",
+   "ticker": "017670.KS",
+   "type": "earnings",
+   "period": "3Q26",
+   "date": "2026-11-04",
+   "confirmed": true,
+   "official": false,
+   "source_url": "https://naver-ec.srkudos.com/view/017670/2026/3",
+   "consensus_snapshot": false,
+   "report_slug": null,
+   "status": "queued",
    "note": "원문이 올라온 것을 보고 넣은 일정"
   },
   {
