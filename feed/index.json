@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-12T10:32:54+09:00",
+ "generated_kst": "2026-11-12T10:41:54+09:00",
  "reports": [
   {
    "slug": "coreweave-3q26-earnings",
@@ -111,8 +111,8 @@
    "event": "3Q26 실적 발표",
    "event_date": "2026-10-22",
    "published_kst": "2026-11-11T17:16:49+09:00",
-   "revised_kst": "2026-11-11T18:10:44+09:00",
-   "revision": 3,
+   "revised_kst": "2026-11-12T10:41:54+09:00",
+   "revision": 5,
    "summary": "매출이 전년 대비 138% 늘고 영업이익률도 올라 올해 세 번째로 연간 가이던스를 올렸다. 다만 출하가 급증하면서 계약자산과 재고에 현금이 묶여 분기 영업현금흐름이 적자로 돌았다. 성장의 질은 4분기 대금 회수와 4분기 발표에서 공개될 백로그 수치로 확인해야 한다.",
    "path": "reports/bloom-energy-3q26-earnings.json"
   },
@@ -160,7 +160,7 @@
   "path": "street.json"
  },
  "calendar": {
-  "updated_kst": "2026-11-12T10:32:07+09:00",
+  "updated_kst": "2026-11-12T10:34:13+09:00",
   "path": "calendar.json"
  }
 }
