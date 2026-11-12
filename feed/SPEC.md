@@ -184,7 +184,7 @@
 {
  "schema": 1, "updated_kst": "…",
  "events": [{"company": "Nvidia", "ticker": "NVDA", "type": "earnings", "period": null,
-             "date": "2026-11-18", "confirmed": true, "source_url": "…",
+             "date": "2026-11-18", "confirmed": true, "official": true, "source_url": "…",
              "consensus_snapshot": true, "report_slug": null, "status": "scheduled"}]
 }
 ```
@@ -192,6 +192,7 @@
 - `type`: `earnings` | `investor_day`.
 - `date` 는 **한국시간 기준 날짜**다. 미국 장 마감 뒤 발표는 미국 날짜보다 하루 늦게 적힌다.
 - `confirmed`: 실적 발표일은 야후 파이낸스가 추정이 아니라고 표시한 날짜만 `true` 다. 손으로 넣은 일정은 출처를 확인한 것이다.
+- `official`: 회사 IR(행사 달력, 일정 안내 보도자료)에서 확인한 날짜면 `true`, 야후 파이낸스 표기면 `false` 다. `true` 일 때 `source_url` 은 그 회사 페이지다.
 - `period`: 분기 이름을 아직 모르면 `null`. `ticker` 는 자기 주식이 거래되지 않는 회사면 `null`.
 - `consensus_snapshot`: 발표 전 7일 안에 받아 둔 주가·컨센서스 스냅샷이 있는가. 없으면 리포트에 "예상 대비"를 쓰지 않는다.
 - `status`
@@ -246,6 +247,7 @@
 - 용량 값에 기준(IT / 수전 / 기준 불명)을 붙이는 규칙과 `capacity` 필드를 더했다. 새로 쓰는 리포트부터 적용한다.
 - 대상 기업의 다음 실적 발표일 33건을 달력에 넣었다.
 
+- `calendar.json` 의 일정에 `official`(회사 IR 에서 확인한 날짜인가)을 더했다. 가까운 일정 5건(Nebius, Hon Hai, Applied Materials, Nvidia, Dell)을 회사 IR 로 확인했다.
 - 정기 수집에 실적 단계를 붙였다: 달력 갱신(하루 한 번), 원문 확인, 대기 목록에서 리포트 작성(하루 3편까지).
 
 못 한 것
