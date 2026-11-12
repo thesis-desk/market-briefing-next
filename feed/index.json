@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-12T13:51:03+09:00",
+ "generated_kst": "2026-11-12T14:38:42+09:00",
  "reports": [
   {
    "slug": "oracle-investor-day-2026",
@@ -59,7 +59,7 @@
   {
    "slug": "semianalysis-we-visited-chinas-stargate-in-inner",
    "type": "article",
-   "title": "SemiAnalysis : 중국 내몽골의 '스타게이트'급 캠퍼스는 수직계열화로 미국보다 빠르고 싸게 지어진다",
+   "title": "SemiAnalysis : 중국판 스타게이트 Galaxy는 수직계열화로 미국보다 빠르고 싸게 지어진다",
    "companies": [
     {
      "name": "Envision Group",
@@ -70,11 +70,11 @@
      "ticker": null
     },
     {
-     "name": "VNET",
+     "name": "CATL",
      "ticker": null
     },
     {
-     "name": "CATL",
+     "name": "VNET",
      "ticker": null
     },
     {
@@ -87,15 +87,15 @@
     }
    ],
    "published_kst": "2026-11-11T20:37:55+09:00",
-   "revised_kst": "2026-11-12T13:51:03+09:00",
-   "revision": 2,
-   "summary": "엔비전(Envision)의 울란차부 Galaxy 캠퍼스 현장 방문기다. 자체 풍력, 800V DC 시범, 중앙 칠러 없는 냉각을 갖춘 이 캠퍼스를 통해 중국 데이터센터가 1년 안에 낮은 단가로 지어지는 구조를 보여준다. 다만 핵심 수치 상당수가 운영사 제공 자료와 SemiAnalysis 유료 모델에 기대고 있어, 수익성과 실제 가동률은 이 글로 판단하기 어렵다고 본다.",
+   "revised_kst": "2026-11-12T14:38:42+09:00",
+   "revision": 4,
+   "summary": "내몽골 울란차부에 있는 Envision의 Galaxy 캠퍼스(IT 최대 800MW) 방문기다. 원문은 속도를 풍부한 현장 인력과 인허가 병행으로, capex 하락을 공급망 압축·국산화·IT 수율로 설명하며, 이를 현장 수치로 보여 준다. 새 정보는 800V DC를 SST에서 랙까지 보내는 실가동 하이퍼스케일 현장과 중앙 칠러 없는 단일 루프 냉각이다. 수직계열화는 이 캠퍼스를 관통하는 특징이지만, 글 스스로 우위가 될지는 이르다고 유보한다. 수익성과 가동률은 답하지 않았다.",
    "path": "reports/semianalysis-we-visited-chinas-stargate-in-inner.json"
   },
   {
    "slug": "semianalysis-tpu-strikes-the-king",
    "type": "article",
-   "title": "SemiAnalysis : 구글 TPUv7, 에이전트 추론 벤치마크에서 같은 FP8 기준이면 NVIDIA GPU보다 가격 대비 성능이 낫다",
+   "title": "SemiAnalysis : TPUv7이 에이전트형 추론 벤치마크에서 NVIDIA와 가성비로 맞선다",
    "companies": [
     {
      "name": "Google",
@@ -108,30 +108,32 @@
     {
      "name": "AMD",
      "ticker": null
+    },
+    {
+     "name": "Meta",
+     "ticker": null
     }
    ],
    "published_kst": "2026-11-11T20:29:30+09:00",
-   "revised_kst": "2026-11-12T13:51:03+09:00",
-   "revision": 2,
-   "summary": "이 글이 보여 준 것은 '같은 FP8 정밀도에서는 TPUv7이 B200·B300·GB300보다 1달러로 더 많은 토큰을 만든다'는 데까지다. FP4를 쓰는 최신 NVIDIA 구성과 비교하면 여러 구간에서 GPU가 앞서고, 결과는 몇 주 사이에도 달라진다. 가격 전제와 벤치마크 운영도 모두 글쓴이 쪽에 있다. 따라서 'TPU가 NVIDIA를 이겼다'보다는 'NVIDIA의 추론 가격 결정력에 실질적인 비교 대상이 생겼다'로 읽는 편이 맞다고 본다(확신 중간).",
+   "revised_kst": "2026-11-12T14:38:31+09:00",
+   "revision": 4,
+   "summary": "SemiAnalysis는 자사가 운영하는 InferenceX/AgentX에서 TPUv7의 첫 에이전트형 추론 결과를 냈고, Qwen3.5에서는 TPUv7이 FP8로 GB300 FP4까지 앞섰다고 주장한다. 반면 GLM에서는 100 tok/s/user 기준 GB300·GB200 FP4가 3.5~3.6배 앞선다. Kimi에서는 출시 때부터 외부 가격 기준으로 GB300에 뒤졌고, NVIDIA의 갱신 뒤 그 격차가 더 벌어졌다. 그래서 이 글은 'TPU가 추론의 실질적 선택지가 됐다'의 근거로는 쓸 만하지만, 'NVIDIA를 이겼다'의 근거로는 모델과 정밀도에 따라 갈린다고 본다.",
    "path": "reports/semianalysis-tpu-strikes-the-king.json"
   },
   {
    "slug": "20vc-mistral-ceo-why-openai-anthropic-will-come-for-your",
    "type": "interview",
-   "title": "Arthur Mensch(Mistral CEO) 인터뷰 : 주권 AI는 경제 문제다, 병목은 전기가 아니라 칩과 자본",
+   "title": "아르튀르 멘슈(Mistral CEO) 인터뷰 : 주권 AI의 경제학, 전력보다 칩·자본이 먼저인 병목",
    "companies": [
     {
      "name": "Mistral AI",
      "ticker": null
     }
    ],
-   "event": "20VC 인터뷰 (Arthur Mensch)",
-   "event_date": "2026-11-09",
    "published_kst": "2026-11-11T19:00:03+09:00",
-   "revised_kst": "2026-11-12T13:51:03+09:00",
-   "revision": 2,
-   "summary": "멘시는 주권 AI를 정치 문제가 아니라 무역수지·공급 안정성의 경제 문제로 규정했다. 또 Mistral이 모델 학습에서 자체 인프라, 고객 업무 애플리케이션까지 수직 통합한 ‘주권 AI 클라우드’로 바뀌었음을 분명히 했다. 다만 공개한 수치는 유럽 매출 비중(약 60%)과 자사 모델 트래픽 비중(약 80%) 정도이고 매출 규모·마진·설비 용량·부채는 내놓지 않아, 투자 판단에 쓸 정량 근거는 아직 얇다(해석).",
+   "revised_kst": "2026-11-12T14:35:06+09:00",
+   "revision": 3,
+   "summary": "Mistral은 모델 회사보다는 유럽에서 토큰을 생성하는 수직 통합 클라우드에 가까워졌다. 멘슈는 주권 AI를 정치가 아니라 무역수지·공급 안정성의 문제로 규정했고, 병목은 칩·자본·데이터이며 전력은 2029~30년부터라고 봤다. 다만 매출 규모·마진·보유 용량·부채 같은 숫자는 거의 내놓지 않아, 사업 전환이 잘 되고 있는지 판단하기는 아직 이르다.",
    "path": "reports/20vc-mistral-ceo-why-openai-anthropic-will-come-for-your.json"
   },
   {
@@ -155,7 +157,7 @@
   {
    "slug": "google-amin-vahdat-ai-infrastructure",
    "type": "interview",
-   "title": "Amin Vahdat 인터뷰 : FLOPS 대신 goodput, 칩보다 전력이 정하는 AI 인프라",
+   "title": "Amin Vahdat(구글) 인터뷰 : 굿풋으로 재는 AI 인프라, 에이전트가 바꾸는 데이터센터와 전력 제약",
    "companies": [
     {
      "name": "Google",
@@ -165,15 +167,15 @@
    "event": "Sequoia Training Data 팟캐스트 출연",
    "event_date": "2026-10-06",
    "published_kst": "2026-11-11T17:14:35+09:00",
-   "revised_kst": "2026-11-12T13:51:03+09:00",
-   "revision": 3,
-   "summary": "화자는 고장을 견디며 실제로 해낸 일(goodput)을 팀의 성과 지표로, 전력을 가장 근본적인 제약으로 꼽는다. 작성자는 이를 AI 인프라 경쟁의 축이 칩 사양에서 시스템 신뢰성과 전력 확보로 옮겨가는 신호로 읽는다. 투자 관점에서 가장 새로운 내용은 장기 실행 에이전트가 가속기뿐 아니라 CPU·네트워크·스토리지 수요까지 끌어올린다는 발언이다. 다만 회사 임원의 설명이라 비용·수익성 수치가 없으므로 따로 확인해야 한다.",
+   "revised_kst": "2026-11-12T14:32:36+09:00",
+   "revision": 4,
+   "summary": "구글 AI 인프라 책임자는 인프라를 칩 성능(FLOPS)이 아니라 굿풋으로 잰다. 굿풋은 고장을 겪으면서 실제로 해낸 일이고, 여기에 와트당 성과를 함께 본다. 투자 판단에 쓸 만한 내용은 세 가지다. 장기 에이전트가 가속기뿐 아니라 CPU·네트워크·스토리지 수요까지 끌어올린다. 7~8년 된 TPU가 지금도 100% 가동된다. 전력이 가장 근본적인 제약이며, 구글은 계통 연결을 선호하고 계통이 늦으면 기다림·일부 자가 발전·그 조합을 선택지로 둔다.",
    "path": "reports/google-amin-vahdat-ai-infrastructure.json"
   },
   {
    "slug": "semianalysis-spacex-ai-cloud",
    "type": "article",
-   "title": "SemiAnalysis : SpaceX는 2027년 13GW를 실제로 지어 세계 최대 AI 클라우드가 될 수 있다",
+   "title": "SemiAnalysis : SpaceX는 2027년 약 13GW를 지어 세계 최대 AI 클라우드가 된다",
    "companies": [
     {
      "name": "SpaceX",
@@ -185,9 +187,9 @@
     }
    ],
    "published_kst": "2026-11-11T16:50:36+09:00",
-   "revised_kst": "2026-11-12T13:51:03+09:00",
-   "revision": 3,
-   "summary": "SemiAnalysis는 위성사진과 지역 공시로 SpaceX의 데이터센터 착공 속도를 구체적으로 보여 주며 '2027년 13GW'가 허황된 목표가 아니라고 설득한다. 다만 같은 글이 전력 부족분, 가격 하락, 자금 소진, 소송을 모두 스스로 짚고 있다. 용량이 '지어진다'는 주장은 근거가 탄탄한 편이지만, '세계 최대 AI 클라우드로서 수익을 낸다'는 주장은 아직 전제가 많다고 본다.",
+   "revised_kst": "2026-11-12T14:31:53+09:00",
+   "revision": 4,
+   "summary": "SemiAnalysis는 SpaceX의 2027년 약 13GW 계획이 실현 가능하다고 본다. 위성사진과 지역 공시로 확인되는 건설 속도가 근거다. 다만 13GW 가운데 공사 중인 것은 3.6GW뿐이고, 전력은 짓는 도중에 찾고 있다. 매출 단가도 지금의 MW당 연 약 5,000만 달러에서 내려갈 것으로 글쓴이 스스로 예상한다. '지을 수 있다'는 주장보다 '같은 수익성으로 채울 수 있다'는 주장이 훨씬 약하다.",
    "path": "reports/semianalysis-spacex-ai-cloud.json"
   }
  ],
