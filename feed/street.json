@@ -1,14 +1,14 @@
 {
  "schema": 1,
- "updated_kst": "2026-11-12T09:16:31+09:00",
+ "updated_kst": "2026-11-12T12:16:20+09:00",
  "window_days": 14,
  "items_days": 30,
  "index": {
   "ai_tech": {
-   "value": -1,
+   "value": -3,
    "label": "엇갈림",
-   "orgs": 30,
-   "items": 76
+   "orgs": 31,
+   "items": 77
   },
   "market": {
    "value": -12,
@@ -26,8 +26,8 @@
    },
    {
     "group": "PE·대체투자",
-    "ai_tech": -25,
-    "ai_tech_orgs": 2,
+    "ai_tech": -33,
+    "ai_tech_orgs": 3,
     "market": null,
     "market_orgs": 0
    },
@@ -63,8 +63,8 @@
   "weekly": [
    {
     "week": "2026-10-19",
-    "ai_tech": 0,
-    "ai_tech_orgs": 4,
+    "ai_tech": -10,
+    "ai_tech_orgs": 5,
     "market": -50,
     "market_orgs": 4
    },
@@ -84,8 +84,8 @@
    },
    {
     "week": "2026-11-09",
-    "ai_tech": 5,
-    "ai_tech_orgs": 18,
+    "ai_tech": 2,
+    "ai_tech_orgs": 19,
     "market": -14,
     "market_orgs": 16
    }
@@ -98,11 +98,11 @@
     },
     {
      "tag": "자금 조달·신용",
-     "n": 12
+     "n": 13
     },
     {
      "tag": "금리·거시",
-     "n": 10
+     "n": 11
     },
     {
      "tag": "쏠림",
@@ -689,6 +689,30 @@
     "tier": "standard"
    },
    "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
+  },
+  {
+   "id": "carlyle-carlyle-s-thomas-warns-about-ai-infrastructure-f",
+   "group": "PE·대체투자",
+   "org": "Carlyle",
+   "person": null,
+   "kind": "report",
+   "title": "Carlyle의 Thomas, AI 인프라 자금 조달 위험 경고",
+   "title_orig": "Carlyle's Thomas Warns About AI Infrastructure Financing Risks",
+   "url": "https://www.marketscreener.com/news/carlyle-s-thomas-warns-about-ai-infrastructure-financing-risks-ce785edade8af422",
+   "outlet": "MarketScreener",
+   "published_kst": "2026-11-10T17:25:00+09:00",
+   "stance": {
+    "ai_tech": -1,
+    "market": null
+   },
+   "args": [
+    "자금 조달·신용",
+    "금리·거시"
+   ],
+   "judged": {
+    "basis": "headline_only",
+    "tier": "light"
+   }
   },
   {
    "id": "ark-cathie-wood-urges-federal-reserve-to-consider-ai",
@@ -3351,20 +3375,34 @@
    "org": "Bank of America",
    "person": null,
    "kind": "report",
-   "title": "뱅크오브아메리카(BofA), 대부분이 예상하지 못하는 2027년 증시 위험 경고",
+   "title": "Bank of America, 소수만 예상하는 2027년 주식시장 위험을 경고",
    "title_orig": "Bank of America warns of 2027 stock market risk few expect",
    "url": "https://www.aol.com/articles/bank-america-warns-2027-stock-134700000.html",
    "outlet": "AOL",
    "published_kst": "2026-10-25T15:47:00+09:00",
    "stance": {
-    "ai_tech": null,
+    "ai_tech": -1,
     "market": -1
    },
-   "args": [],
+   "args": [
+    "자금 조달·신용",
+    "투자 회수",
+    "쏠림"
+   ],
+   "summary": "하트넷은 AI 호황이 칩·데이터센터·전력에 대한 막대한 지출과 채권시장 차입에 기대고 있는데, 투자자들이 자금 조달이 어려워질 경우를 간과한다고 경고했다. 하이퍼스케일러 채권 스프레드가 200bp를 넘으면 강제 매도와 금융 불안이 올 수 있다고 봤다. 2027년 시나리오 중 신용 경색에 따른 디플레이션형 붕괴를 가장 우려한다.",
+   "points": [
+    "하트넷은 AI 투자에 필요한 자금을 조달하기 어려워질 경우 어떤 일이 벌어질지를 투자자들이 간과하고 있다고 우려한다.",
+    "BofA 반도체 애널리스트 비벡 아리아는 주요 클라우드 기업의 지출이 2026년 8,600억 달러에서 2027년 1조 2,000억 달러로 약 40% 늘어날 수 있다고 추정한다.",
+    "하트넷은 하이퍼스케일러 채권 스프레드가 기준 수익률보다 200bp(2%포인트) 넘게 벌어지면 강제 매도와 더 넓은 금융 스트레스를 촉발할 수 있다고 경고한다.",
+    "BofA 10월 펀드매니저 설문에서 90%가 연착륙 또는 무착륙을 예상했고 경착륙을 예상한 비중은 6%에 그쳤으며, 기술주 비중 확대는 2020년 8월 이후 가장 높았다.",
+    "하트넷이 가장 우려하는 시나리오는 디플레이션형 붕괴다. 신용이 비싸지고 약한 AI 차입자들이 어려움을 겪으며, 프로젝트 지연이 칩 제조사·건설업체 등 공급업체를 타격한다.",
+    "BofA는 투자자들이 이런 하방 위험을 제대로 인식하는지 의문을 제기하며, 단서가 채권 스프레드, 설비투자 가이던스, 현금흐름, 이익 추정 수정, 시장 참여 확산 여부에서 나타날 것이라고 본다."
+   ],
    "judged": {
-    "basis": "headline_only",
-    "tier": "light"
-   }
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
   },
   {
    "id": "tudor-jones-billionaire-paul-tudor-jones-warns-a-flood-of-ne",
@@ -3395,7 +3433,7 @@
    "org": "BlackRock",
    "person": null,
    "kind": "report",
-   "title": "래리 핀크 “미국인 은퇴 자금이 10조 달러 규모 AI 인프라를 떠받쳐야” — 자산을 지키라",
+   "title": "Larry Fink, 미국인의 퇴직 저축이 10조 달러 규모 AI 인프라 수요를 뒷받침해야 한다고 말해... 자산을 지켜라",
    "title_orig": "Larry Fink says Americans’ retirement savings need to fund $10 trillion AI infrastructure needs. Protect your wealth",
    "url": "https://finance.yahoo.com/technology/ai/articles/larry-fink-says-americans-retirement-104500238.html",
    "outlet": "Yahoo Finance",
@@ -3405,12 +3443,20 @@
     "market": null
    },
    "args": [
-    "자금 조달·신용"
+    "투자 회수",
+    "자금 조달·신용",
+    "수요·채택"
+   ],
+   "summary": "Larry Fink는 더 많은 미국인이 미국과 함께 성장한다는 생각을 갖게 되면 AI 인프라에 투자할 자금이 충분하고도 남을 것이라고 주장했다. 그는 향후 10년간 미국 내 데이터센터와 에너지 인프라 구축 규모를 약 10조 달러로 추산했다.",
+   "points": [
+    "더 많은 미국인이 미국과 함께 성장한다는 생각을 하도록 만들 수 있다면, 이 인프라에 투자하고도 남을 만큼 충분한 자금이 생길 것이다.",
+    "Fink는 당시 미국 전역의 데이터센터와 에너지 인프라 구축 규모가 향후 10년간 총 10조 달러에 이를 수 있다고 추산했다."
    ],
    "judged": {
-    "basis": "headline_only",
-    "tier": "light"
-   }
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
   },
   {
    "id": "damodaran-from-eyeballs-to-annual-run-rates-arr-buzzy-pric",

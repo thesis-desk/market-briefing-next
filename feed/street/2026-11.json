@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "month": "2026-11",
- "updated_kst": "2026-11-12T09:15:37+09:00",
+ "updated_kst": "2026-11-12T12:15:53+09:00",
  "items": [
   {
    "id": "morgan-stanley-midterms-could-delay-the-ai-buildout-not-derail",
@@ -521,6 +521,30 @@
     "tier": "standard"
    },
    "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
+  },
+  {
+   "id": "carlyle-carlyle-s-thomas-warns-about-ai-infrastructure-f",
+   "group": "PE·대체투자",
+   "org": "Carlyle",
+   "person": null,
+   "kind": "report",
+   "title": "Carlyle의 Thomas, AI 인프라 자금 조달 위험 경고",
+   "title_orig": "Carlyle's Thomas Warns About AI Infrastructure Financing Risks",
+   "url": "https://www.marketscreener.com/news/carlyle-s-thomas-warns-about-ai-infrastructure-financing-risks-ce785edade8af422",
+   "outlet": "MarketScreener",
+   "published_kst": "2026-11-10T17:25:00+09:00",
+   "stance": {
+    "ai_tech": -1,
+    "market": null
+   },
+   "args": [
+    "자금 조달·신용",
+    "금리·거시"
+   ],
+   "judged": {
+    "basis": "headline_only",
+    "tier": "light"
+   }
   },
   {
    "id": "ark-cathie-wood-urges-federal-reserve-to-consider-ai",
