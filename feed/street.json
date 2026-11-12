@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated_kst": "2026-11-13T00:39:26+09:00",
+ "updated_kst": "2026-11-13T03:31:02+09:00",
  "window_days": 14,
  "items_days": 30,
  "index": {
@@ -8,18 +8,18 @@
    "value": -5,
    "label": "엇갈림",
    "orgs": 35,
-   "items": 93
+   "items": 98
   },
   "market": {
    "value": -16,
    "label": "경계 우위",
    "orgs": 25,
-   "items": 59
+   "items": 60
   },
   "by_group": [
    {
     "group": "벤처캐피털",
-    "ai_tech": 42,
+    "ai_tech": 37,
     "ai_tech_orgs": 5,
     "market": null,
     "market_orgs": 0
@@ -33,16 +33,16 @@
    },
    {
     "group": "자산운용",
-    "ai_tech": 0,
+    "ai_tech": 1,
     "ai_tech_orgs": 7,
     "market": -6,
     "market_orgs": 7
    },
    {
     "group": "투자은행",
-    "ai_tech": 13,
+    "ai_tech": 14,
     "ai_tech_orgs": 6,
-    "market": 20,
+    "market": 18,
     "market_orgs": 6
    },
    {
@@ -54,7 +54,7 @@
    },
    {
     "group": "중앙은행·국제기구",
-    "ai_tech": -17,
+    "ai_tech": -12,
     "ai_tech_orgs": 2,
     "market": -12,
     "market_orgs": 2
@@ -63,17 +63,17 @@
   "weekly": [
    {
     "week": "2026-10-19",
-    "ai_tech": -10,
-    "ai_tech_orgs": 5,
-    "market": -50,
-    "market_orgs": 4
+    "ai_tech": -17,
+    "ai_tech_orgs": 6,
+    "market": -40,
+    "market_orgs": 5
    },
    {
     "week": "2026-10-26",
-    "ai_tech": -14,
-    "ai_tech_orgs": 10,
-    "market": 0,
-    "market_orgs": 8
+    "ai_tech": -11,
+    "ai_tech_orgs": 12,
+    "market": -6,
+    "market_orgs": 9
    },
    {
     "week": "2026-11-02",
@@ -84,8 +84,8 @@
    },
    {
     "week": "2026-11-09",
-    "ai_tech": -3,
-    "ai_tech_orgs": 22,
+    "ai_tech": -4,
+    "ai_tech_orgs": 23,
     "market": -15,
     "market_orgs": 18
    }
@@ -93,16 +93,16 @@
   "args": {
    "caution": [
     {
+     "tag": "자금 조달·신용",
+     "n": 16
+    },
+    {
      "tag": "투자 회수",
      "n": 16
     },
     {
-     "tag": "자금 조달·신용",
-     "n": 15
-    },
-    {
      "tag": "쏠림",
-     "n": 12
+     "n": 13
     },
     {
      "tag": "금리·거시",
@@ -114,7 +114,7 @@
     },
     {
      "tag": "정책·지정학",
-     "n": 8
+     "n": 9
     },
     {
      "tag": "수요·채택",
@@ -122,7 +122,7 @@
     },
     {
      "tag": "경쟁·해자",
-     "n": 1
+     "n": 2
     },
     {
      "tag": "전력·공급 제약",
@@ -132,7 +132,7 @@
    "optimism": [
     {
      "tag": "수요·채택",
-     "n": 26
+     "n": 27
     },
     {
      "tag": "투자 회수",
@@ -143,24 +143,24 @@
      "n": 17
     },
     {
-     "tag": "금리·거시",
+     "tag": "정책·지정학",
      "n": 16
     },
     {
-     "tag": "정책·지정학",
-     "n": 15
+     "tag": "금리·거시",
+     "n": 16
     },
     {
      "tag": "밸류에이션",
      "n": 9
     },
     {
-     "tag": "쏠림",
+     "tag": "전력·공급 제약",
      "n": 8
     },
     {
-     "tag": "전력·공급 제약",
-     "n": 7
+     "tag": "쏠림",
+     "n": 8
     },
     {
      "tag": "경쟁·해자",
@@ -242,6 +242,63 @@
     "tier": "standard"
    },
    "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
+  },
+  {
+   "id": "imf-imf-monitoring-ai-developments-too-early-to-say",
+   "group": "중앙은행·국제기구",
+   "org": "IMF",
+   "person": null,
+   "kind": "report",
+   "title": "IMF, AI 발전 모니터링 중…AI 재평가가 진행 중인지는 아직 판단하기 이르다",
+   "title_orig": "IMF monitoring AI developments, too early to say if AI reassessment underway",
+   "url": "https://www.charlotteobserver.com/news/business/article318047601.html",
+   "outlet": "Charlotte Observer",
+   "published_kst": "2026-11-12T12:49:00+09:00",
+   "stance": {
+    "ai_tech": 0,
+    "market": null
+   },
+   "args": [
+    "밸류에이션",
+    "정책·지정학"
+   ],
+   "judged": {
+    "basis": "headline_only",
+    "tier": "light"
+   }
+  },
+  {
+   "id": "theory-when-the-central-bank-of-ai-changes-chairs",
+   "group": "벤처캐피털",
+   "org": "Tomasz Tunguz (Theory Ventures)",
+   "person": "Tomasz Tunguz",
+   "kind": "publication",
+   "title": "AI 중앙은행이 의장을 바꿀 때",
+   "title_orig": "When the Central Bank of AI Changes Chairs",
+   "url": "https://tomtunguz.com/the-impact-of-jensens-resignation",
+   "outlet": "Tomasz Tunguz",
+   "published_kst": "2026-11-12T09:00:00+09:00",
+   "stance": {
+    "ai_tech": -1,
+    "market": null
+   },
+   "args": [
+    "자금 조달·신용",
+    "쏠림",
+    "경쟁·해자",
+    "정책·지정학"
+   ],
+   "summary": "Nvidia CEO 젠슨 황의 사임으로 'AI 중앙은행'의 수장이 바뀌었다고 보고, 지분투자·결제 조건 연장·임대 보증으로 AI 생태계를 떠받쳐온 Nvidia의 금융 역할이 긴축될 위험을 지적한다. 스타트업 생태계, 오픈소스 AI, 수출 통제, 커스텀 실리콘 경쟁에 미칠 영향을 나열하며 시장에 실질적 불확실성이 생겼다고 평가한다.",
+   "points": [
+    "Nvidia가 지분투자·인수·임대 보증으로 AI 구축을 금융으로 떠받쳐 왔기 때문에 이를 긴축하면 AI 경제가 둔화된다.",
+    "Nvidia는 칩 공급자, 주요 벤처 투자자, 앵커 고객, 임대 보증인을 동시에 맡아 스타트업과 칩 생태계를 전례 없이 결합했고, 이는 황의 개인적 신념과 관계에 의존했다.",
+    "Nvidia가 미국 오픈소스 AI 기업의 최대 구매자이자 자금 제공자였기에, 그 후원이 줄면 다른 기업들이 오픈소스 부담을 더 져야 한다.",
+    "단일 공급업체의 리더십 혼란은 커스텀 AI ASIC으로의 전환을 앞당긴다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   }
   },
   {
    "id": "pimco-pimco-says-ai-borrowers-now-drive-nearly-half-of",
@@ -3739,6 +3796,72 @@
    "note": "웹 페이지 본문 기준. 그림 2개 속 글자는 확인하지 못함"
   },
   {
+   "id": "goldman-brookfield-s-connor-teskey-on-the-real-bottlenec",
+   "group": "투자은행",
+   "org": "Goldman Sachs",
+   "person": "Connor Teskey",
+   "kind": "publication",
+   "title": "Brookfield의 Connor Teskey가 말하는 AI 구축의 진짜 병목",
+   "title_orig": "Brookfield’s Connor Teskey on the Real Bottleneck in the AI Buildout",
+   "url": "https://www.youtube.com/watch?v=eG0tQN5gqiI",
+   "outlet": "Goldman Sachs (유튜브)",
+   "published_kst": "2026-10-30T20:42:54+09:00",
+   "stance": {
+    "ai_tech": 2,
+    "market": null
+   },
+   "args": [
+    "수요·채택",
+    "전력·공급 제약",
+    "정책·지정학"
+   ],
+   "summary": "Brookfield의 Connor Teskey는 AI 인프라와 에너지 수요가 압도적이며, 시장이 말하는 수요의 취약성은 현장 펀더멘털과 동떨어졌다고 주장한다. 병목은 자본이나 수요가 아니라 부지·전력망·전력 공급을 실제로 완공할 수 있는 운영 역량이라고 본다. 유럽 등에서는 국가가 첫 수요처가 되는 '소버린 AI'가 과소평가된 수요 동인이라고 말한다.",
+   "points": [
+    "수요 증가세가 둔화·정체·감소하더라도 공급이 수요에 크게 못 미쳐 수급 불균형은 이어진다고 본다.",
+    "AI 구축의 병목은 자본이나 수요가 아니라 프로젝트를 실제로 완공할 수 있는 역량이다.",
+    "기업 수요가 촉매가 되지 못하는 지역에서는 국가가 AI 인프라 구축의 첫 수요처로 나서고 있으며 이는 과소평가된 수요 동인이다.",
+    "에너지·인프라의 자본 수요는 역사상 최대 수준이며 수익률도 매력적이고 이 흐름이 2020년대 말 이후까지 이어질 것으로 본다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "유튜브 자막(제작자 제공)(en) 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
+  },
+  {
+   "id": "goldman-bullish-options-trades-slow-amid-ai-uncertainty",
+   "group": "투자은행",
+   "org": "Goldman Sachs",
+   "person": "Lee Coppersmith",
+   "kind": "publication",
+   "title": "AI 불확실성 속에 강세 옵션 거래 둔화",
+   "title_orig": "Bullish Options Trades Slow amid AI Uncertainty",
+   "url": "https://www.youtube.com/watch?v=4vOo8HxxC38",
+   "outlet": "Goldman Sachs (유튜브)",
+   "published_kst": "2026-10-30T13:00:10+09:00",
+   "stance": {
+    "ai_tech": 0,
+    "market": 0
+   },
+   "args": [
+    "수요·채택",
+    "경쟁·해자",
+    "자금 조달·신용"
+   ],
+   "summary": "AI 수요는 여전히 매우 강하지만 경쟁이 심해져 실적 발표 후 주가 반응의 편차가 커졌고, 시장의 초점이 수요에서 자금 조달과 승자·패자로 옮겨갔다고 본다. 올해 발행 급증으로 AI 관련 신용 스프레드가 벌어졌고 콜옵션 매수는 줄었다. 옵션 내재 분포는 양쪽 모두 적정하며 변동성 수준이 높지 않아 연말까지 옵션 활용이 유효하다고 말한다.",
+   "points": [
+    "AI 수요는 매우 강하지만 경쟁이 심해져 실적 발표에 대한 시장 반응의 편차가 크게 늘었다.",
+    "2026년 발행량이 2025년의 약 세 배에 달해 공급 과잉이 AI 관련 신용 스프레드 확대로 이어지고 있다.",
+    "기관과 개인 모두 콜옵션 매수가 줄어 상승 꼬리 기대에 따른 수요가 약해졌다.",
+    "옵션이 내재한 분포가 양쪽 모두 적정하고 변동성 절대 수준이 낮아 연말까지 옵션으로 자본을 투입하기 좋은 시점이라고 본다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "유튜브 자막(제작자 제공)(en) 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
+  },
+  {
    "id": "fidelity-fidelity-s-timmer-warns-rising-rates-can-hurt-st",
    "group": "자산운용",
    "org": "Fidelity",
@@ -3771,6 +3894,106 @@
     "tier": "standard"
    },
    "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
+  },
+  {
+   "id": "pimco-is-ai-crowding-out-the-rest-of-the-economy",
+   "group": "자산운용",
+   "org": "PIMCO",
+   "person": "Tiffany Wilding",
+   "kind": "publication",
+   "title": "AI가 나머지 경제를 밀어내고 있는가?",
+   "title_orig": "Is AI Crowding Out the Rest of the Economy?",
+   "url": "https://www.youtube.com/watch?v=Thx8YGt51iI",
+   "outlet": "PIMCO (유튜브)",
+   "published_kst": "2026-10-30T07:16:54+09:00",
+   "stance": {
+    "ai_tech": 0,
+    "market": null
+   },
+   "args": [
+    "금리·거시",
+    "투자 회수",
+    "자금 조달·신용",
+    "전력·공급 제약"
+   ],
+   "summary": "AI 투자 붐이 미국 수요의 큰 축이지만 전체 성장률은 연 2~2.5% 수준에 그쳐, 다른 부문이 자리를 내주는 경제 재배분(구축효과)이 진행 중이라고 본다. 금리 상승의 부담은 주택·중소기업·고레버리지 기업·기존 설비투자가 지고, 하이퍼스케일러는 금리에 둔감하다. AI 붐 지속 여부보다 누가 그 자리를 만들어주는지와 조정이 질서 있게 이뤄지는지가 핵심 질문이라고 한다.",
+   "points": [
+    "AI 투자는 금리에 둔감해서 금리 상승의 조정 부담이 AI 밖의 부문으로 넘어간다.",
+    "수입 의존, 인프라 병목, 신용 선별이 재배분의 속도와 금리 압박 정도를 좌우한다.",
+    "생산성 향상과 공급 능력이 확대되기 전까지 핵심 질문은 AI 붐의 지속 여부가 아니라 누가 자리를 내주고 조정이 질서 있게 이뤄지는가이다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "유튜브 자동 생성 자막(en) 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
+  },
+  {
+   "id": "bridgewater-managing-cio-greg-jensen-shares-our-global-outlo",
+   "group": "PE·대체투자",
+   "org": "Bridgewater Associates",
+   "person": "Greg Jensen",
+   "kind": "publication",
+   "title": "Bridgewater 운용총괄 CIO Greg Jensen이 말하는 글로벌 전망",
+   "title_orig": "Managing CIO Greg Jensen Shares Our Global Outlook",
+   "url": "https://www.youtube.com/watch?v=57XYIdLlUqk",
+   "outlet": "Bridgewater (유튜브)",
+   "published_kst": "2026-10-29T21:46:24+09:00",
+   "stance": {
+    "ai_tech": -1,
+    "market": -1
+   },
+   "args": [
+    "밸류에이션",
+    "투자 회수",
+    "자금 조달·신용",
+    "금리·거시"
+   ],
+   "summary": "Jensen은 AI 설비투자가 전형적인 capex 사이클의 공급 대응 단계에 있다고 본다. 현재 주가는 2028년까지 막대한 이익 성장과 생산성 도약을 전제하는데, 그 조건은 달성하기 어렵다고 말한다. 채권, 통화, 이익 등 시장 전반도 파괴적 변화를 반영하지 않았다고 지적한다.",
+   "points": [
+    "AI 인프라 주가는 작년의 극단적 저평가에서 2028년까지 이익이 크게 늘고 그것이 지속된다는 전제를 반영하는 수준으로 바뀌었다.",
+    "현 가격이 정당화되려면 기업의 추론 비용 지출이 이익 대비 2028년에 약 22%까지 올라야 한다.",
+    "AI 주가를 뒷받침하려면 GDP의 9% 수준 자산 발행이 필요한데, 시장은 이를 반영하지 않고 있다.",
+    "채권·통화·이익 전반에서 시장은 AI와 중상주의가 가져올 파괴적 변화를 가격에 넣지 않았다고 본다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "유튜브 자동 생성 자막(en) 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
+  },
+  {
+   "id": "jpmorgan-sponsors-spreads-and-stress-testing-navigating-2",
+   "group": "투자은행",
+   "org": "JPMorgan",
+   "person": "Brian Trumantozzi",
+   "kind": "publication",
+   "title": "스폰서, 스프레드, 스트레스 테스트: 2026년 금리 재설정 헤쳐나가기",
+   "title_orig": "Sponsors, spreads and stress testing: Navigating 2026’s rate reset",
+   "url": "https://www.youtube.com/watch?v=Eyt4P-NvazY",
+   "outlet": "JPMorgan (유튜브)",
+   "published_kst": "2026-10-29T14:16:51+09:00",
+   "stance": {
+    "ai_tech": 0,
+    "market": -1
+   },
+   "args": [
+    "금리·거시",
+    "자금 조달·신용",
+    "투자 회수"
+   ],
+   "summary": "JPMorgan 레버리지 금융 책임자는 장기 금리 급등과 변동성 확대로 재무·헤징 환경이 달라졌고, 트리플C 스프레드가 300bp 넘게 벌어진 점을 경고 신호로 본다. 현재 시장을 떠받치는 것은 경기침체 부재와 AI·에너지 인프라 투자인데, 이 투자가 꺾이면 스프레드가 더 벌어질 수 있어 그 어느 때보다 신중하다고 말한다.",
+   "points": [
+    "하이일드 금리가 9월 초 이후 100bp 상승했으며, 비침체기에는 보기 드문 움직임이다.",
+    "BB·B 스프레드는 안정적인 반면 트리플C 스프레드만 300bp 넘게 확대돼, 저품질 신용에 대한 경고 신호일 수 있다.",
+    "시장의 강세는 경기침체가 없었기 때문이며, 이는 AI·에너지 인프라 투자에 크게 기댄다고 본다.",
+    "AI·인프라 투자가 의미 있게 약화되면 스프레드가 확대될 수 있으며, 화자는 오랜만에 가장 신중한 상태다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "유튜브 자동 생성 자막(en) 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
   },
   {
    "id": "blackrock-property-stocks-bonds-blackrock-sees-4-fold-jump",
@@ -4064,6 +4287,37 @@
     "basis": "headline_only",
     "tier": "light"
    }
+  },
+  {
+   "id": "citadel-billionaire-ken-griffin-says-we-may-be-in-a-bubb",
+   "group": "PE·대체투자",
+   "org": "Citadel",
+   "person": null,
+   "kind": "report",
+   "title": "억만장자 켄 그리핀, 우리가 버블 속에 있을 수 있다고 말하다. 역사가 말해주는 다음 국면은",
+   "title_orig": "Billionaire Ken Griffin Says We May Be in a Bubble. Here’s What History Says Happens Next.",
+   "url": "https://www.fool.com/investing/2026/10/24/billionaire-ken-griffin-says-we-may-be-in-a-bubble-here-s-what-history-says-happens-next",
+   "outlet": "The Motley Fool",
+   "published_kst": "2026-10-24T12:10:00+09:00",
+   "stance": {
+    "ai_tech": -1,
+    "market": 0
+   },
+   "args": [
+    "밸류에이션",
+    "쏠림"
+   ],
+   "summary": "Ken Griffin은 Bloomberg 인터뷰에서 현재 시점에 거의 확실히 버블이 존재한다고 말했다. 동시에 경제의 급진적 변화에는 대체로 버블이 얽혀 있으며, 버블 반대편에 있는 기업들이 수십 년간 시장 주도 기업이 된다고 보았다.",
+   "points": [
+    "현재 시점에는 거의 확실히 버블이 존재한다.",
+    "경제의 모든 급진적 변화는 대체로 버블과 얽혀 있다.",
+    "버블의 반대편에 서 있는 기업들, 즉 버블 이후에 살아남은 기업들이 수십 년간 시장 주도 기업이 된다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
   },
   {
    "id": "blackrock-larry-fink-says-americans-retirement-savings-nee",

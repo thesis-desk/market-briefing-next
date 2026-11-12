@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "month": "2026-11",
- "updated_kst": "2026-11-13T00:39:26+09:00",
+ "updated_kst": "2026-11-13T03:30:26+09:00",
  "items": [
   {
    "id": "brookfield-up-to-10-trillion-riding-on-key-ai-question-says",
@@ -74,6 +74,63 @@
     "tier": "standard"
    },
    "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
+  },
+  {
+   "id": "imf-imf-monitoring-ai-developments-too-early-to-say",
+   "group": "중앙은행·국제기구",
+   "org": "IMF",
+   "person": null,
+   "kind": "report",
+   "title": "IMF, AI 발전 모니터링 중…AI 재평가가 진행 중인지는 아직 판단하기 이르다",
+   "title_orig": "IMF monitoring AI developments, too early to say if AI reassessment underway",
+   "url": "https://www.charlotteobserver.com/news/business/article318047601.html",
+   "outlet": "Charlotte Observer",
+   "published_kst": "2026-11-12T12:49:00+09:00",
+   "stance": {
+    "ai_tech": 0,
+    "market": null
+   },
+   "args": [
+    "밸류에이션",
+    "정책·지정학"
+   ],
+   "judged": {
+    "basis": "headline_only",
+    "tier": "light"
+   }
+  },
+  {
+   "id": "theory-when-the-central-bank-of-ai-changes-chairs",
+   "group": "벤처캐피털",
+   "org": "Tomasz Tunguz (Theory Ventures)",
+   "person": "Tomasz Tunguz",
+   "kind": "publication",
+   "title": "AI 중앙은행이 의장을 바꿀 때",
+   "title_orig": "When the Central Bank of AI Changes Chairs",
+   "url": "https://tomtunguz.com/the-impact-of-jensens-resignation",
+   "outlet": "Tomasz Tunguz",
+   "published_kst": "2026-11-12T09:00:00+09:00",
+   "stance": {
+    "ai_tech": -1,
+    "market": null
+   },
+   "args": [
+    "자금 조달·신용",
+    "쏠림",
+    "경쟁·해자",
+    "정책·지정학"
+   ],
+   "summary": "Nvidia CEO 젠슨 황의 사임으로 'AI 중앙은행'의 수장이 바뀌었다고 보고, 지분투자·결제 조건 연장·임대 보증으로 AI 생태계를 떠받쳐온 Nvidia의 금융 역할이 긴축될 위험을 지적한다. 스타트업 생태계, 오픈소스 AI, 수출 통제, 커스텀 실리콘 경쟁에 미칠 영향을 나열하며 시장에 실질적 불확실성이 생겼다고 평가한다.",
+   "points": [
+    "Nvidia가 지분투자·인수·임대 보증으로 AI 구축을 금융으로 떠받쳐 왔기 때문에 이를 긴축하면 AI 경제가 둔화된다.",
+    "Nvidia는 칩 공급자, 주요 벤처 투자자, 앵커 고객, 임대 보증인을 동시에 맡아 스타트업과 칩 생태계를 전례 없이 결합했고, 이는 황의 개인적 신념과 관계에 의존했다.",
+    "Nvidia가 미국 오픈소스 AI 기업의 최대 구매자이자 자금 제공자였기에, 그 후원이 줄면 다른 기업들이 오픈소스 부담을 더 져야 한다.",
+    "단일 공급업체의 리더십 혼란은 커스텀 AI ASIC으로의 전환을 앞당긴다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   }
   },
   {
    "id": "pimco-pimco-says-ai-borrowers-now-drive-nearly-half-of",

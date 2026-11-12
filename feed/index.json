@@ -1,7 +1,75 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-13T00:39:26+09:00",
+ "generated_kst": "2026-11-13T03:31:02+09:00",
  "reports": [
+  {
+   "slug": "semianalysis-nvidia-and-the-world-without-jensen",
+   "type": "article",
+   "title": "SemiAnalysis : 젠슨 없는 엔비디아는 평범해지고, 그가 쥐고 있던 공급망은 경쟁사에 풀린다",
+   "companies": [
+    {
+     "name": "Nvidia",
+     "ticker": null
+    }
+   ],
+   "published_kst": "2026-11-13T03:27:22+09:00",
+   "revised_kst": "2026-11-13T03:27:22+09:00",
+   "revision": 1,
+   "summary": "SemiAnalysis는 젠슨 황 퇴진으로 엔비디아가 공급 우선권, 네오클라우드 보증 생태계, 수년짜리 장기 베팅을 함께 잃는다고 주장한다. 공급망·대차대조표 논거는 확인할 지표가 있어 무게가 있다. 반면 퇴진 배경 해석과 후계 전망은 추론이고, 글 안에서도 결론이 서로 엇갈린다.",
+   "path": "reports/semianalysis-nvidia-and-the-world-without-jensen.json"
+  },
+  {
+   "slug": "20vc-sequoia-leaves-london-close-scout-program-end-evergreen",
+   "type": "interview",
+   "title": "20VC 대담(제이슨 렘킨·로리 오드리스콜) : 앤트로픽 IPO와 AI 거래의 수요 검증, 세쿼이아 재편",
+   "companies": [
+    {
+     "name": "Sequoia Capital",
+     "ticker": null
+    },
+    {
+     "name": "Nvidia",
+     "ticker": null
+    },
+    {
+     "name": "Anthropic",
+     "ticker": null
+    },
+    {
+     "name": "OpenAI",
+     "ticker": null
+    },
+    {
+     "name": "Zipline",
+     "ticker": null
+    },
+    {
+     "name": "fal",
+     "ticker": null
+    },
+    {
+     "name": "Revolut",
+     "ticker": null
+    },
+    {
+     "name": "Fireworks AI",
+     "ticker": null
+    },
+    {
+     "name": "Cloudflare",
+     "ticker": null
+    },
+    {
+     "name": "Figma",
+     "ticker": null
+    }
+   ],
+   "published_kst": "2026-11-13T03:22:55+09:00",
+   "revised_kst": "2026-11-13T03:22:55+09:00",
+   "revision": 1,
+   "summary": "오드리스콜은 AI 거래가 꺾일지는 데이터센터·칩 같은 공급 측이 아니라 수요, 곧 OpenAI·앤트로픽의 ARR이 정한다고 보고, 렘킨은 시장의 자본 피로를 더 걱정한다. 앤트로픽 IPO는 그 수요를 처음으로 분기 공시로 검증할 계기다. 다만 후속 자본의 깊이, 토큰 가격 하락의 탄력성, 상시형 에이전트의 비용은 대담에서 답이 나오지 않은 위험으로 남았다.",
+   "path": "reports/20vc-sequoia-leaves-london-close-scout-program-end-evergreen.json"
+  },
   {
    "slug": "nebius-3q26-earnings",
    "type": "earnings",
@@ -420,7 +488,7 @@
   }
  ],
  "street": {
-  "updated_kst": "2026-11-13T00:39:26+09:00",
+  "updated_kst": "2026-11-13T03:31:02+09:00",
   "path": "street.json"
  },
  "calendar": {
