@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated_kst": "2026-11-13T20:14:55+09:00",
+ "updated_kst": "2026-11-13T23:15:46+09:00",
  "window_days": 14,
  "items_days": 30,
  "index": {
@@ -8,7 +8,7 @@
    "value": -4,
    "label": "엇갈림",
    "orgs": 41,
-   "items": 116
+   "items": 119
   },
   "market": {
    "value": -13,
@@ -19,7 +19,7 @@
   "by_group": [
    {
     "group": "벤처캐피털",
-    "ai_tech": 19,
+    "ai_tech": 21,
     "ai_tech_orgs": 9,
     "market": -25,
     "market_orgs": 2
@@ -33,7 +33,7 @@
    },
    {
     "group": "자산운용",
-    "ai_tech": -1,
+    "ai_tech": 0,
     "ai_tech_orgs": 7,
     "market": -6,
     "market_orgs": 7
@@ -47,7 +47,7 @@
    },
    {
     "group": "투자 거장",
-    "ai_tech": -34,
+    "ai_tech": -36,
     "ai_tech_orgs": 9,
     "market": -43,
     "market_orgs": 8
@@ -84,8 +84,8 @@
    },
    {
     "week": "2026-11-09",
-    "ai_tech": -1,
-    "ai_tech_orgs": 28,
+    "ai_tech": 1,
+    "ai_tech_orgs": 29,
     "market": -11,
     "market_orgs": 19
    }
@@ -94,11 +94,11 @@
    "caution": [
     {
      "tag": "투자 회수",
-     "n": 19
+     "n": 20
     },
     {
      "tag": "자금 조달·신용",
-     "n": 17
+     "n": 18
     },
     {
      "tag": "쏠림",
@@ -143,12 +143,12 @@
      "n": 20
     },
     {
-     "tag": "금리·거시",
-     "n": 18
+     "tag": "정책·지정학",
+     "n": 19
     },
     {
-     "tag": "정책·지정학",
-     "n": 17
+     "tag": "금리·거시",
+     "n": 19
     },
     {
      "tag": "전력·공급 제약",
@@ -238,6 +238,83 @@
    "note": "유튜브 자동 생성 자막(en) 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
   },
   {
+   "id": "chamath-chamath-palihapitiya-says-nvidia-oversight-would",
+   "group": "벤처캐피털",
+   "org": "Social Capital",
+   "person": "Chamath Palihapitiya",
+   "kind": "report",
+   "title": "차마스 팔리하피티야, 젠슨 황 퇴진 후 엔비디아 감독 강화는 '재앙'이라며 마이크로소프트 DOJ 시절 반복 경고",
+   "title_orig": "Chamath Palihapitiya says Nvidia oversight would be a ‘disaster’ after Jensen Huang's exit, warns against repeating Microsoft’s DOJ era",
+   "url": "https://www.msn.com/en-us/money/technology/chamath-palihapitiya-says-nvidia-oversight-would-be-a-disaster-after-jensen-huang-s-exit-warns-against-repeating-microsoft-s-doj-era/ar-AA2hn4Vc",
+   "outlet": "Benzinga on MSN",
+   "published_kst": "2026-11-13T13:15:18+09:00",
+   "stance": {
+    "ai_tech": 1,
+    "market": null
+   },
+   "args": [
+    "정책·지정학"
+   ],
+   "judged": {
+    "basis": "headline_only",
+    "tier": "light"
+   }
+  },
+  {
+   "id": "chanos-applied-digital-soars-20-in-a-week-jim-chanos-ca",
+   "group": "투자 거장",
+   "org": "Jim Chanos",
+   "person": null,
+   "kind": "report",
+   "title": "Applied Digital, 일주일 새 20% 급등. Jim Chanos는 수익을 기다리라는 말을 '말도 안 되는 서사'라고 평가",
+   "title_orig": "Applied Digital Soars 20% in a Week. Jim Chanos Calls the Wait for Profits a “Nonsensical Narrative”",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/applied-digital-soars-20-week-120517763.html",
+   "outlet": "Yahoo Finance",
+   "published_kst": "2026-11-13T13:06:00+09:00",
+   "stance": {
+    "ai_tech": -1,
+    "market": null
+   },
+   "args": [
+    "투자 회수",
+    "자금 조달·신용"
+   ],
+   "summary": "Jim Chanos는 비트코인 채굴업체에서 데이터센터 기업으로 전환한 회사들이 2029~30년에야 수익을 낼 것으로 예상된다고 지적했다. 이들이 개시 비용을 자본화하다가 매출이 발생한 뒤에야 비용을 반영하는 점을 들어 왜 그렇게 오래 걸리는지 물으며, 투자 홍보 세력이 이 '말도 안 되는 서사'를 그냥 넘어가게 두지 말라고 촉구했다.",
+   "points": [
+    "11월 8일 Jim Chanos(Chanos & Company 창업자)는 X에 비트코인 채굴업체에서 데이터센터 기업으로 전환한 회사들이 2029~30년까지는 수익을 내지 못할 것으로 예상된다고 적었다.",
+    "이들 기업은 매출이 발생할 때까지 개시 비용을 자본화하는데, 그렇다면 왜 이렇게 오래 걸리는지 물으며, 홍보하는 쪽이 이 말도 안 되는 서사를 그냥 넘기게 두지 말라고 말했다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
+  },
+  {
+   "id": "blackrock-we-will-be-in-a-recession-blackrock-ceo-larry-fi",
+   "group": "자산운용",
+   "org": "BlackRock",
+   "person": null,
+   "kind": "report",
+   "title": "블랙록 CEO 래리 핑크, 데이터센터 모라토리엄은 경기침체 위험이라며 AI 인프라 확대 재확인",
+   "title_orig": "We will be in a recession: BlackRock CEO Larry Fink warns a data center moratorium risks an economic crash",
+   "url": "https://www.msn.com/en-us/money/economy/we-will-be-in-a-recession-blackrock-ceo-larry-fink-warns-a-data-center-moratorium-risks-an-economic-crash/ar-AA2hmMCU",
+   "outlet": "Moneywise on MSN",
+   "published_kst": "2026-11-13T13:00:00+09:00",
+   "stance": {
+    "ai_tech": 2,
+    "market": null
+   },
+   "args": [
+    "정책·지정학",
+    "금리·거시"
+   ],
+   "judged": {
+    "basis": "headline_only",
+    "tier": "light"
+   }
+  },
+  {
    "id": "morgan-stanley-from-ai-to-air-conditioning-the-power-boom-in-as",
    "group": "투자은행",
    "org": "Morgan Stanley",
@@ -267,6 +344,43 @@
     "basis": "full_text",
     "tier": "standard"
    }
+  },
+  {
+   "id": "ackman-american-billionaire-bill-ackman-questions-anthr",
+   "group": "투자 거장",
+   "org": "Pershing Square",
+   "person": "Bill Ackman",
+   "kind": "report",
+   "title": "미국 억만장자 Bill Ackman, Anthropic의 1조 4천억 달러 IPO 기업가치에 의문 제기",
+   "title_orig": "American billionaire Bill Ackman questions Anthropic's $1.4 trillion IPO valuation",
+   "url": "https://www.billionaires.africa/2026/11/13/american-billionaire-bill-ackman-questions-anthropics-1-4-trillion-ipo-valuation",
+   "outlet": "billionaires",
+   "published_kst": "2026-11-13T02:01:00+09:00",
+   "stance": {
+    "ai_tech": 0,
+    "market": null
+   },
+   "args": [
+    "밸류에이션",
+    "투자 회수",
+    "경쟁·해자"
+   ],
+   "summary": "Ackman은 Anthropic을 금세기 가장 놀라운 사업 이야기일 수 있다고 평가했다. 그러나 성장이 워낙 빨라 기업 가치를 가늠하기 어렵고, 선두 유지 여부와 막대한 설비투자 비용도 예측하기 힘들어 저위험·고확신 투자를 지향하는 Pershing Square에는 맞지 않는다고 했다. 반면 Visa는 더 예측 가능한 투자로 비교했다.",
+   "points": [
+    "Anthropic의 비범한 성장 속도 때문에 이 사업의 실제 가치가 얼마인지 판단하기 어려워, 상장을 앞둔 Anthropic의 투자 매력에 의문을 제기했다.",
+    "Anthropic을 금세기 가장 놀라운 사업 이야기일 수 있다고 평가하면서도, 불확실한 미래가 Pershing Square의 투자 방식에는 맞지 않는다고 말했다.",
+    "우리는 스스로를 매우 낮은 위험을 추구하는 투자자로 여긴다. 매우 높은 확신을 갖고 예측할 수 있는 사업에 투자하고자 한다.",
+    "Anthropic이 비교적 젊은 회사에서 주요 AI 기업으로 성장한 과정은 놀랍다고 평가했지만, 투자자가 장기 가치를 정확히 산정할 수 있을지는 의문이라고 했다.",
+    "Anthropic의 전망은 예측하기 어려운 여러 요인에 달려 있으며, 특히 AI 산업에서 선두 위치를 유지할 수 있느냐가 관건이라고 설명했다.",
+    "Pershing Square가 보유한 기존 대기업 Visa와 이번 기회를 비교하며, Visa를 더 예측 가능한 투자로 본다고 말했다.",
+    "Anthropic이 경쟁 우위를 잃을 가능성은 사업의 경제성, 특히 AI 인프라를 유지하는 데 필요한 설비투자에 대한 의문을 낳는다고 말했다.",
+    "앞서 10월에는 AI가 이스라엘에서 1조 달러 규모 기업을 탄생시키는 데 도움이 될 수 있다고 예측했다고 기사는 전한다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
   },
   {
    "id": "howard-marks-oaktree-s-howard-marks-answers-12-questions-on-a",
