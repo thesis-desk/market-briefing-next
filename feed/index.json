@@ -1,7 +1,27 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-13T09:49:24+09:00",
+ "generated_kst": "2026-11-13T11:14:57+09:00",
  "reports": [
+  {
+   "slug": "sixsigma-ql1-eqyidm",
+   "type": "article",
+   "title": "식스시그마 : 하사비스는 '미래를 가상 세계에서 먼저 돌려 보는 방법'으로 30년을 일관했고, 지니 4는 그 방법을 현실 크기로 키우는 시도다",
+   "companies": [
+    {
+     "name": "Google DeepMind",
+     "ticker": null
+    },
+    {
+     "name": "Google",
+     "ticker": null
+    }
+   ],
+   "published_kst": "2026-11-13T11:14:57+09:00",
+   "revised_kst": "2026-11-13T11:14:57+09:00",
+   "revision": 1,
+   "summary": "영상의 주장은 하사비스의 모든 선택(체스, 테마파크, 알파고, 알파제로, 알파폴드, 지니 4)이 '가상 세계에서 미래를 돌려 보고 정답을 채점해 배운다'는 하나의 방법으로 이어진다는 것이다. 설득력 있는 서사지만, 현실처럼 채점이 어려운 영역에서 지니 4가 통하는지는 영상이 증거를 내놓지 않은 미검증 가설이며, 투자 판단에는 로봇·에이전트 훈련 성과 같은 외부 지표가 필요하다.",
+   "path": "reports/sixsigma-ql1-eqyidm.json"
+  },
   {
    "slug": "applied-materials-4q26-earnings",
    "type": "earnings",
