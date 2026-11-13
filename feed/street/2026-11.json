@@ -1,8 +1,73 @@
 {
  "schema": 1,
  "month": "2026-11",
- "updated_kst": "2026-11-14T02:27:27+09:00",
+ "updated_kst": "2026-11-14T08:19:19+09:00",
  "items": [
+  {
+   "id": "doubleline-broad-rally-for-stocks-bear-flattening-for-bonds",
+   "group": "자산운용",
+   "org": "DoubleLine Capital",
+   "person": "Mark Kimbro",
+   "kind": "publication",
+   "title": "주식은 폭넓은 반등, 채권은 베어 플래트닝",
+   "title_orig": "Broad Rally for Stocks, Bear Flattening for Bonds",
+   "url": "https://www.youtube.com/watch?v=Njwi5arqcJQ",
+   "outlet": "DoubleLine (유튜브)",
+   "published_kst": "2026-11-14T08:01:39+09:00",
+   "stance": {
+    "ai_tech": 0,
+    "market": 0
+   },
+   "args": [
+    "금리·거시",
+    "쏠림"
+   ],
+   "summary": "진행자들은 11개 업종이 모두 오른 폭넓은 주식 반등을 긍정적으로 본다. 엔비디아 시가총액 급감은 개별 이슈로 보고 AI 사이클 전체의 문제로 확대하지 않는다. 한편 예상보다 뜨거운 CPI로 연준의 추가 인상 기대가 커지면서 국채금리가 급등했고, 인플레이션이 넓게 퍼지고 있다고 경계한다.",
+   "points": [
+    "S&P 500의 11개 업종이 모두 오른 폭넓은 상승을 고무적으로 평가한다.",
+    "엔비디아 시가총액 약 1.9조 달러 증발은 특수한 개별 사안으로 본다.",
+    "10월 CPI가 시장 예상을 웃돌아 인플레이션 확산을 우려한다.",
+    "시장 서사가 AI 거품 우려에서 연준의 공격적 인상 필요성으로 빠르게 바뀌었다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "유튜브 자동 생성 자막(en) 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
+  },
+  {
+   "id": "morgan-stanley-can-ai-chip-demand-outrun-the-power-crunch",
+   "group": "투자은행",
+   "org": "Morgan Stanley",
+   "person": "Stephen Byrd, Joe Moore",
+   "kind": "publication",
+   "title": "AI 칩 수요가 전력난을 앞지를 수 있을까?",
+   "title_orig": "Can AI Chip Demand Outrun the Power Crunch?",
+   "url": "https://www.morganstanley.com/insights/podcasts/thoughts-on-the-market",
+   "outlet": "Morgan Stanley Thoughts on the Market",
+   "published_kst": "2026-11-14T08:00:00+09:00",
+   "stance": {
+    "ai_tech": 1,
+    "market": null
+   },
+   "args": [
+    "전력·공급 제약",
+    "정책·지정학",
+    "수요·채택",
+    "밸류에이션"
+   ],
+   "summary": "모건스탠리 연구진은 중간선거 이후 텍사스·오하이오 등에서 데이터센터 전력 부족이 30GW에서 30GW 중반대로 커지지만 이는 취소가 아닌 지연이라고 본다. AI 반도체는 2027년에 더 타이트해지고 2028년도 강하다고 보며, 주가는 2028년 둔화를 이미 반영했다고 주장한다. 다만 전력 등 다른 병목은 큰 위험으로 인정한다.",
+   "points": [
+    "중간선거 이후 전력 부족 규모는 30GW에서 30GW 중반대로 커지지만, 데이터센터 건설은 취소가 아니라 지연이다.",
+    "전력망 최적화로 부족분을 메운다는 기대는 과장이 크다고 본다.",
+    "반도체 공급 부족은 2027년에 더 심해지고 2028년까지도 강하게 이어질 것으로 본다.",
+    "시장은 2028년 둔화를 이미 주가에 반영하고 있는데, 화자는 그렇게 보지 않는다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   }
+  },
   {
    "id": "a16z-big-pharma-can-rival-big-software",
    "group": "벤처캐피털",

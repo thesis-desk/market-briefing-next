@@ -1,7 +1,29 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-14T05:17:48+09:00",
+ "generated_kst": "2026-11-14T08:19:19+09:00",
  "reports": [
+  {
+   "slug": "sixsigma-cfo",
+   "type": "article",
+   "title": "식스시그마 : 젠슨 없는 엔비디아의 쟁점은 칩이 아니라 CFO가 정하는 자본배분이다",
+   "companies": [
+    {
+     "name": "NVIDIA",
+     "ticker": "NVDA"
+    },
+    {
+     "name": "Apple",
+     "ticker": "AAPL"
+    }
+   ],
+   "event": "젠슨 황 CEO 퇴임 발표, 콜레트 크레스 CFO 임시 CEO 선임",
+   "event_date": "2026-11-12",
+   "published_kst": "2026-11-14T08:16:50+09:00",
+   "revised_kst": "2026-11-14T08:16:50+09:00",
+   "revision": 1,
+   "summary": "영상은 세미애널리시스의 '젠슨 없이는 안 돌아간다'는 반대 근거를 소개한 뒤, 같은 상황을 주주 쪽에서 보면 보증 축소와 환원 확대로 이어질 수 있다고 주장한다. 애플 비유와 보증 축소는 흥미로운 근거지만, 보증 축소는 젠슨 재임 중에 일어났고 크레스는 임시 CEO여서 이 낙관이 젠슨 이후에도 유지된다는 증거는 아직 없다(확신 중간). 11월 18일 첫 실적에서 보증·공급 약정 잔액과 환원 규모가 판단을 가른다.",
+   "path": "reports/sixsigma-cfo.json"
+  },
   {
    "slug": "decoder-nvidia-jensen-huang-resign-china-spy-scandal-ai",
    "type": "interview",
@@ -613,11 +635,11 @@
   }
  ],
  "street": {
-  "updated_kst": "2026-11-14T02:27:27+09:00",
+  "updated_kst": "2026-11-14T08:19:19+09:00",
   "path": "street.json"
  },
  "calendar": {
-  "updated_kst": "2026-11-14T05:17:48+09:00",
+  "updated_kst": "2026-11-14T08:16:52+09:00",
   "path": "calendar.json"
  }
 }
