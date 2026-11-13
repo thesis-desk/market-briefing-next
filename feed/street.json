@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated_kst": "2026-11-13T17:16:20+09:00",
+ "updated_kst": "2026-11-13T20:14:55+09:00",
  "window_days": 14,
  "items_days": 30,
  "index": {
@@ -8,7 +8,7 @@
    "value": -1,
    "label": "엇갈림",
    "orgs": 43,
-   "items": 118
+   "items": 119
   },
   "market": {
    "value": -13,
@@ -47,7 +47,7 @@
    },
    {
     "group": "투자 거장",
-    "ai_tech": -35,
+    "ai_tech": -34,
     "ai_tech_orgs": 9,
     "market": -43,
     "market_orgs": 8
@@ -266,6 +266,30 @@
    "judged": {
     "basis": "full_text",
     "tier": "standard"
+   }
+  },
+  {
+   "id": "howard-marks-oaktree-s-howard-marks-answers-12-questions-on-a",
+   "group": "투자 거장",
+   "org": "Oaktree Capital",
+   "person": "Howard Marks",
+   "kind": "report",
+   "title": "Oaktree의 하워드 막스, 인공지능에 관한 12가지 질문에 답하다",
+   "title_orig": "Oaktree's Howard Marks answers 12 questions on artificial intelligence",
+   "url": "https://www.moneycontrol.com/news/business/markets/oaktree-s-howard-marks-answers-12-questions-on-artificial-intelligence-14079473.html",
+   "outlet": "Moneycontrol",
+   "published_kst": "2026-11-13T01:24:00+09:00",
+   "stance": {
+    "ai_tech": 0,
+    "market": null
+   },
+   "args": [
+    "투자 회수",
+    "경쟁·해자"
+   ],
+   "judged": {
+    "basis": "headline_only",
+    "tier": "light"
    }
   },
   {

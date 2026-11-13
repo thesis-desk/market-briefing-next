@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "month": "2026-11",
- "updated_kst": "2026-11-13T17:15:52+09:00",
+ "updated_kst": "2026-11-13T20:14:55+09:00",
  "items": [
   {
    "id": "blackrock-278-how-to-build-a-balanced-portfolio-and-naviga",
@@ -98,6 +98,30 @@
    "judged": {
     "basis": "full_text",
     "tier": "standard"
+   }
+  },
+  {
+   "id": "howard-marks-oaktree-s-howard-marks-answers-12-questions-on-a",
+   "group": "투자 거장",
+   "org": "Oaktree Capital",
+   "person": "Howard Marks",
+   "kind": "report",
+   "title": "Oaktree의 하워드 막스, 인공지능에 관한 12가지 질문에 답하다",
+   "title_orig": "Oaktree's Howard Marks answers 12 questions on artificial intelligence",
+   "url": "https://www.moneycontrol.com/news/business/markets/oaktree-s-howard-marks-answers-12-questions-on-artificial-intelligence-14079473.html",
+   "outlet": "Moneycontrol",
+   "published_kst": "2026-11-13T01:24:00+09:00",
+   "stance": {
+    "ai_tech": 0,
+    "market": null
+   },
+   "args": [
+    "투자 회수",
+    "경쟁·해자"
+   ],
+   "judged": {
+    "basis": "headline_only",
+    "tier": "light"
    }
   },
   {
