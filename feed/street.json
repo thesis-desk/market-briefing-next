@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated_kst": "2026-11-13T11:18:44+09:00",
+ "updated_kst": "2026-11-13T14:17:24+09:00",
  "window_days": 14,
  "items_days": 30,
  "index": {
@@ -11,9 +11,9 @@
    "items": 116
   },
   "market": {
-   "value": -14,
+   "value": -13,
    "label": "엇갈림",
-   "orgs": 28,
+   "orgs": 29,
    "items": 63
   },
   "by_group": [
@@ -28,8 +28,8 @@
     "group": "PE·대체투자",
     "ai_tech": -8,
     "ai_tech_orgs": 8,
-    "market": -17,
-    "market_orgs": 3
+    "market": -12,
+    "market_orgs": 4
    },
    {
     "group": "자산운용",
@@ -40,9 +40,9 @@
    },
    {
     "group": "투자은행",
-    "ai_tech": 14,
+    "ai_tech": 15,
     "ai_tech_orgs": 6,
-    "market": 18,
+    "market": 20,
     "market_orgs": 6
    },
    {
@@ -80,7 +80,7 @@
     "ai_tech": 7,
     "ai_tech_orgs": 26,
     "market": -6,
-    "market_orgs": 19
+    "market_orgs": 20
    },
    {
     "week": "2026-11-09",
@@ -132,7 +132,7 @@
    "optimism": [
     {
      "tag": "수요·채택",
-     "n": 34
+     "n": 35
     },
     {
      "tag": "투자 회수",
@@ -140,11 +140,11 @@
     },
     {
      "tag": "자금 조달·신용",
-     "n": 20
+     "n": 21
     },
     {
      "tag": "정책·지정학",
-     "n": 18
+     "n": 19
     },
     {
      "tag": "금리·거시",
@@ -152,7 +152,7 @@
     },
     {
      "tag": "전력·공급 제약",
-     "n": 11
+     "n": 12
     },
     {
      "tag": "밸류에이션",
@@ -2765,6 +2765,39 @@
     "tier": "standard"
    },
    "note": "유튜브 자동 생성 자막(en) 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
+  },
+  {
+   "id": "blue-owl-blue-owl-sees-gains-as-election-results-limit-ai",
+   "group": "PE·대체투자",
+   "org": "Blue Owl",
+   "person": null,
+   "kind": "report",
+   "title": "Blue Owl, 선거 결과로 AI 컴퓨팅 공급이 제한되면서 수혜 기대",
+   "title_orig": "Blue Owl Sees Gains as Election Results Limit AI Compute Supply",
+   "url": "https://finance.yahoo.com/technology/ai/articles/blue-owl-sees-gains-election-223227214.html",
+   "outlet": "Yahoo Finance",
+   "published_kst": "2026-11-05T23:32:00+09:00",
+   "stance": {
+    "ai_tech": 1,
+    "market": 0
+   },
+   "args": [
+    "자금 조달·신용",
+    "전력·공급 제약",
+    "수요·채택",
+    "정책·지정학"
+   ],
+   "summary": "Blue Owl Technology Finance의 Erik Bissonnette는 자본이 희소해지면서 디지털 인프라 대출 스프레드가 당분간 더 벌어질 것이라 보았고, 컴퓨팅 수요는 변함이 없으나 정권 교체 여파로 공급은 더 제약될 수 있다고 말했다. Craig Packer는 매각한 대출이 모두 장부가 이상으로 팔렸다는 점을 들어 사모신용 평가의 신뢰가 높아질 것이라고 했다.",
+   "points": [
+    "스프레드가 앞으로 한동안 계속 확대될 것이라고 본다.",
+    "컴퓨팅 수요에는 변화가 없다. 다만 현재 보이는 변화와 정권 교체에서 비롯될 수 있는 여파를 감안하면 컴퓨팅 공급은 분명 다소 더 어려워질 것으로 본다.",
+    "이번 통화와 개별 대화에서 이 점을 강조하면, 매각된 대출 종목이 모두 OBDC에 있는 만큼 투자자들이 장부가(마크)의 품질에 대해 훨씬 더 높은 신뢰를 갖게 될 것으로 생각한다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
   },
   {
    "id": "blackstone-blackstone-president-jon-gray-warns-banks-face-a",
