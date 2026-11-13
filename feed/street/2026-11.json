@@ -1,8 +1,63 @@
 {
  "schema": 1,
  "month": "2026-11",
- "updated_kst": "2026-11-13T03:30:26+09:00",
+ "updated_kst": "2026-11-13T09:26:18+09:00",
  "items": [
+  {
+   "id": "morgan-stanley-from-ai-to-air-conditioning-the-power-boom-in-as",
+   "group": "투자은행",
+   "org": "Morgan Stanley",
+   "person": "Mayank Maheshwari",
+   "kind": "publication",
+   "title": "AI에서 에어컨까지: 아시아의 전력 붐",
+   "title_orig": "From AI to Air-Conditioning: The Power Boom in Asia",
+   "url": "https://www.morganstanley.com/insights/podcasts/thoughts-on-the-market",
+   "outlet": "Morgan Stanley Thoughts on the Market",
+   "published_kst": "2026-11-13T07:30:00+09:00",
+   "stance": {
+    "ai_tech": 1,
+    "market": null
+   },
+   "args": [
+    "수요·채택",
+    "전력·공급 제약"
+   ],
+   "summary": "전력 수요 확대는 AI만의 이야기가 아니며, 컨센서스는 2030년까지 필요한 전력량을 과소평가하고 있다고 주장한다. AI 에이전트와 데이터센터가 수요를 키우는 가운데 산업 프로젝트와 냉방도 수요를 늘리고, 아시아는 데이터센터 용량과 송배전망 투자가 크게 늘어날 것으로 본다. 설비 공급사보다 발전 사업자와 송배전망 인프라 보유자에게 더 큰 가치가 돌아갈 수 있다고 본다.",
+   "points": [
+    "2030년 세계 전력 사용량이 시장 추정치보다 15% 많은 약 36조 단위에 이를 수 있다고 본다.",
+    "AI 관련 수요는 증분 전력 수요의 약 4분의 1에 그치고, 나머지는 신규 산업 프로젝트와 냉방이 늘린다고 본다.",
+    "아시아의 데이터센터 용량 수요가 2030년까지 2025년의 약 4배인 84GW에 이를 수 있다고 추정한다.",
+    "투자자가 아시아의 전력 수요를 과소평가하고 있으며, 설비 공급사보다 발전 사업자와 송배전망 보유자가 더 큰 가치를 얻을 수 있다고 본다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   }
+  },
+  {
+   "id": "ackman-bill-ackman-says-microsoft-s-position-is-really",
+   "group": "투자 거장",
+   "org": "Pershing Square",
+   "person": "Bill Ackman",
+   "kind": "report",
+   "title": "빌 애크먼: 앤트로픽이 기업용 소프트웨어로 진출해도 마이크로소프트의 입지는 매우 강하다",
+   "title_orig": "Bill Ackman says Microsoft's position is really, really strong as Anthropic pushes into enterprise software",
+   "url": "https://www.msn.com/en-us/news/other/bill-ackman-says-microsofts-position-is-really-really-strong-as-anthropic-pushes-into-enterprise-software/ar-AA2hjJZ6",
+   "outlet": "Yahoo Finance on MSN",
+   "published_kst": "2026-11-12T23:38:17+09:00",
+   "stance": {
+    "ai_tech": 1,
+    "market": null
+   },
+   "args": [
+    "경쟁·해자",
+    "밸류에이션"
+   ],
+   "judged": {
+    "basis": "headline_only",
+    "tier": "light"
+   }
+  },
   {
    "id": "brookfield-up-to-10-trillion-riding-on-key-ai-question-says",
    "group": "PE·대체투자",

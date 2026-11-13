@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated_kst": "2026-11-13T00:24:44+09:00",
+ "updated_kst": "2026-11-13T09:14:48+09:00",
  "events": [
   {
    "company": "Oracle",
@@ -152,8 +152,8 @@
    "official": true,
    "source_url": "https://ir.appliedmaterials.com/events-and-presentations",
    "consensus_snapshot": false,
-   "report_slug": null,
-   "status": "scheduled",
+   "report_slug": "applied-materials-4q26-earnings",
+   "status": "published",
    "note": "회사 IR 달력: 미국 현지 11월 12일 회계 4분기 실적 콜"
   },
   {

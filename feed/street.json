@@ -1,20 +1,20 @@
 {
  "schema": 1,
- "updated_kst": "2026-11-13T06:19:25+09:00",
+ "updated_kst": "2026-11-13T09:26:28+09:00",
  "window_days": 14,
  "items_days": 30,
  "index": {
   "ai_tech": {
-   "value": -5,
+   "value": -6,
    "label": "엇갈림",
    "orgs": 35,
-   "items": 98
+   "items": 100
   },
   "market": {
    "value": -16,
    "label": "경계 우위",
    "orgs": 25,
-   "items": 60
+   "items": 59
   },
   "by_group": [
    {
@@ -26,14 +26,14 @@
    },
    {
     "group": "PE·대체투자",
-    "ai_tech": -17,
+    "ai_tech": -21,
     "ai_tech_orgs": 6,
     "market": -50,
     "market_orgs": 2
    },
    {
     "group": "자산운용",
-    "ai_tech": 1,
+    "ai_tech": 0,
     "ai_tech_orgs": 7,
     "market": -6,
     "market_orgs": 7
@@ -63,15 +63,15 @@
   "weekly": [
    {
     "week": "2026-10-19",
-    "ai_tech": -17,
-    "ai_tech_orgs": 6,
-    "market": -40,
-    "market_orgs": 5
+    "ai_tech": -14,
+    "ai_tech_orgs": 7,
+    "market": -33,
+    "market_orgs": 6
    },
    {
     "week": "2026-10-26",
-    "ai_tech": -6,
-    "ai_tech_orgs": 15,
+    "ai_tech": -8,
+    "ai_tech_orgs": 16,
     "market": -10,
     "market_orgs": 10
    },
@@ -84,8 +84,8 @@
    },
    {
     "week": "2026-11-09",
-    "ai_tech": -4,
-    "ai_tech_orgs": 23,
+    "ai_tech": -2,
+    "ai_tech_orgs": 24,
     "market": -15,
     "market_orgs": 18
    }
@@ -93,11 +93,11 @@
   "args": {
    "caution": [
     {
-     "tag": "자금 조달·신용",
-     "n": 16
+     "tag": "투자 회수",
+     "n": 17
     },
     {
-     "tag": "투자 회수",
+     "tag": "자금 조달·신용",
      "n": 16
     },
     {
@@ -118,7 +118,7 @@
     },
     {
      "tag": "수요·채택",
-     "n": 3
+     "n": 4
     },
     {
      "tag": "경쟁·해자",
@@ -132,7 +132,7 @@
    "optimism": [
     {
      "tag": "수요·채택",
-     "n": 27
+     "n": 28
     },
     {
      "tag": "투자 회수",
@@ -152,11 +152,11 @@
     },
     {
      "tag": "밸류에이션",
-     "n": 9
+     "n": 10
     },
     {
      "tag": "전력·공급 제약",
-     "n": 8
+     "n": 9
     },
     {
      "tag": "쏠림",
@@ -164,13 +164,68 @@
     },
     {
      "tag": "경쟁·해자",
-     "n": 4
+     "n": 5
     }
    ]
   },
   "method": "기관·인물마다 기간 안 입장 값의 평균을 내고 그 평균들을 다시 평균해 ×50"
  },
  "items": [
+  {
+   "id": "morgan-stanley-from-ai-to-air-conditioning-the-power-boom-in-as",
+   "group": "투자은행",
+   "org": "Morgan Stanley",
+   "person": "Mayank Maheshwari",
+   "kind": "publication",
+   "title": "AI에서 에어컨까지: 아시아의 전력 붐",
+   "title_orig": "From AI to Air-Conditioning: The Power Boom in Asia",
+   "url": "https://www.morganstanley.com/insights/podcasts/thoughts-on-the-market",
+   "outlet": "Morgan Stanley Thoughts on the Market",
+   "published_kst": "2026-11-13T07:30:00+09:00",
+   "stance": {
+    "ai_tech": 1,
+    "market": null
+   },
+   "args": [
+    "수요·채택",
+    "전력·공급 제약"
+   ],
+   "summary": "전력 수요 확대는 AI만의 이야기가 아니며, 컨센서스는 2030년까지 필요한 전력량을 과소평가하고 있다고 주장한다. AI 에이전트와 데이터센터가 수요를 키우는 가운데 산업 프로젝트와 냉방도 수요를 늘리고, 아시아는 데이터센터 용량과 송배전망 투자가 크게 늘어날 것으로 본다. 설비 공급사보다 발전 사업자와 송배전망 인프라 보유자에게 더 큰 가치가 돌아갈 수 있다고 본다.",
+   "points": [
+    "2030년 세계 전력 사용량이 시장 추정치보다 15% 많은 약 36조 단위에 이를 수 있다고 본다.",
+    "AI 관련 수요는 증분 전력 수요의 약 4분의 1에 그치고, 나머지는 신규 산업 프로젝트와 냉방이 늘린다고 본다.",
+    "아시아의 데이터센터 용량 수요가 2030년까지 2025년의 약 4배인 84GW에 이를 수 있다고 추정한다.",
+    "투자자가 아시아의 전력 수요를 과소평가하고 있으며, 설비 공급사보다 발전 사업자와 송배전망 보유자가 더 큰 가치를 얻을 수 있다고 본다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   }
+  },
+  {
+   "id": "ackman-bill-ackman-says-microsoft-s-position-is-really",
+   "group": "투자 거장",
+   "org": "Pershing Square",
+   "person": "Bill Ackman",
+   "kind": "report",
+   "title": "빌 애크먼: 앤트로픽이 기업용 소프트웨어로 진출해도 마이크로소프트의 입지는 매우 강하다",
+   "title_orig": "Bill Ackman says Microsoft's position is really, really strong as Anthropic pushes into enterprise software",
+   "url": "https://www.msn.com/en-us/news/other/bill-ackman-says-microsofts-position-is-really-really-strong-as-anthropic-pushes-into-enterprise-software/ar-AA2hjJZ6",
+   "outlet": "Yahoo Finance on MSN",
+   "published_kst": "2026-11-12T23:38:17+09:00",
+   "stance": {
+    "ai_tech": 1,
+    "market": null
+   },
+   "args": [
+    "경쟁·해자",
+    "밸류에이션"
+   ],
+   "judged": {
+    "basis": "headline_only",
+    "tier": "light"
+   }
+  },
   {
    "id": "brookfield-up-to-10-trillion-riding-on-key-ai-question-says",
    "group": "PE·대체투자",
@@ -3482,6 +3537,39 @@
    "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
   },
   {
+   "id": "apollo-businesses-outside-tech-are-seeing-zero-financia",
+   "group": "PE·대체투자",
+   "org": "Apollo",
+   "person": null,
+   "kind": "report",
+   "title": "Apollo 이코노미스트 \"기술 업종 밖 기업은 AI에서 '재무적 성과 전무'\"",
+   "title_orig": "Businesses outside tech are seeing 'zero financial payoff' from AI, Apollo economist says",
+   "url": "https://www.thecooldown.com/green-business/ai-payoff-businesses-outside-tech-economist",
+   "outlet": "The Cool Down",
+   "published_kst": "2026-10-31T19:09:00+09:00",
+   "stance": {
+    "ai_tech": -1,
+    "market": null
+   },
+   "args": [
+    "투자 회수",
+    "수요·채택"
+   ],
+   "summary": "Apollo의 수석 이코노미스트 Torsten Slok은 기술 업종 밖 기업들이 AI에서 재무적 이득을 거의 얻지 못하고 있다고 주장했다. 매그니피센트 7은 근로자당 매출과 이익률이 오르지만 나머지 S&P 493은 정체이며, AI가 생산성 증가율을 높인다는 징후도 아직 없다고 했다. AI의 성패는 S&P 493에서 가려질 것이라고 결론지었다.",
+   "points": [
+    "Apollo Global Management의 수석 이코노미스트 Torsten Slok은 기술 업종 밖의 기업들이 AI에서 '재무적 성과가 전혀 없는' 상태라고 말했다.",
+    "Slok은 노트에서 매그니피센트 7은 근로자당 매출이 늘고 있지만 S&P 493은 정체 상태이고, 이익률도 매그니피센트 7은 오르는 반면 S&P 493은 정체라고 썼다.",
+    "Slok은 AI가 생산성 증가율을 끌어올리고 있다는 징후가 여전히 전혀 없다고 덧붙였다.",
+    "Slok은 미국 주류 기업들이 토큰 지출을 성장의 원천이 아니라 이익률을 짓누르는 비용 센터로 보기 시작하며 물러서고 있다고 썼다.",
+    "Slok은 노트를 마무리하며, 결국 AI 이야기의 승패는 매그니피센트 7이 아니라 S&P 493에서 결정될 것이고, 지금까지는 기술 업종 밖에서 매출 성장이나 이익률이 개선되고 있다는 증거가 없다고 결론지었다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
+  },
+  {
    "id": "goldman-what-happens-when-ai-spend-peaks",
    "group": "투자은행",
    "org": "Goldman Sachs",
@@ -4236,6 +4324,40 @@
    "note": "유튜브 자동 생성 자막(en) 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
   },
   {
+   "id": "pimco-what-lies-beneath-your-stock-or-bond-index-with",
+   "group": "자산운용",
+   "org": "PIMCO",
+   "person": "Liz Ann Sonders",
+   "kind": "publication",
+   "title": "주식·채권 지수 아래에 숨은 것 — Liz Ann Sonders와 함께",
+   "title_orig": "What Lies Beneath (your stock or bond index) with Liz Ann Sonders",
+   "url": "https://www.youtube.com/watch?v=Vqv7F3Ky9qc",
+   "outlet": "PIMCO (유튜브)",
+   "published_kst": "2026-10-28T00:03:45+09:00",
+   "stance": {
+    "ai_tech": 0,
+    "market": 0
+   },
+   "args": [
+    "쏠림",
+    "투자 회수",
+    "자금 조달·신용",
+    "밸류에이션"
+   ],
+   "summary": "Liz Ann Sonders는 S&P 500이 사실상 AI 베팅으로 변했고 2026년 이익 증가분이 소수 종목에 쏠려 있다고 짚는다. 다만 지금의 약세는 종목별 문제이지 전체의 문제는 아니며, AI 이야기는 끝나지 않고 창작자에서 도입 기업으로 관심이 옮겨 가는 중이라고 본다. 진행자는 하이퍼스케일러의 채권 발행 비중이 커졌으니 신용을 엄선해야 한다고 덧붙인다.",
+   "points": [
+    "S&P 500은 상위 10개 종목이 약 40%를 차지해 사실상 AI에 베팅하는 지수가 되었다.",
+    "2026년 S&P 500 이익 증가 전망의 상당 부분이 엔비디아와 마이크론 두 종목에서 나온다.",
+    "AI 설비투자 호황이라는 이유만으로 관련주를 사는 시기는 지났고, 이제는 투자 여력과 수익화를 종목별로 따져야 한다.",
+    "채권 쪽에서도 하이퍼스케일러 발행 비중이 커져, 주식과 채권에서 AI 노출이 겹치지 않도록 주의해야 한다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "유튜브 자동 생성 자막(en) 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
+  },
+  {
    "id": "a16z-databricks-the-future-of-the-firm",
    "group": "벤처캐피털",
    "org": "Andreessen Horowitz (a16z)",
@@ -4300,6 +4422,45 @@
     "basis": "full_text",
     "tier": "standard"
    }
+  },
+  {
+   "id": "doubleline-sherman-says-show-me-the-math-on-ai",
+   "group": "자산운용",
+   "org": "DoubleLine Capital",
+   "person": "Jeffrey Sherman",
+   "kind": "publication",
+   "title": "Sherman Says: AI에 대한 계산을 보여 달라",
+   "title_orig": "Sherman Says: Show Me the Math on AI",
+   "url": "https://www.youtube.com/watch?v=ONUuQavWVF0",
+   "outlet": "DoubleLine (유튜브)",
+   "published_kst": "2026-10-26T22:56:57+09:00",
+   "stance": {
+    "ai_tech": -1,
+    "market": 0
+   },
+   "args": [
+    "투자 회수",
+    "자금 조달·신용",
+    "금리·거시"
+   ],
+   "summary": "Sherman은 AI 설비투자 확대가 아직 수익으로 연결되지 않았고, 부채 조달 급증으로 기술 업종 스프레드가 벌어졌다고 본다. AI 트레이드가 시험대에 오르겠지만 당장 무너지지는 않는다고 본다. 시장 전반은 금리 재평가가 상당 부분 끝나 박스권이 예상되며 캐리와 우량 단기 채권이 매력적이라고 말한다.",
+   "points": [
+    "AI 설비투자 확대가 어떤 투자수익률(ROI)로 정당화되는지 제시된 바가 거의 없다.",
+    "현재 지출 규모와 순환 금융 구조에서 AI 부채 확대의 수익 계산이 아직 맞아떨어지지 않는다.",
+    "기술 업종 회사채가 발행 급증을 소화하지 못해 투자등급 스프레드가 벤치마크보다 벌어졌다.",
+    "AI 트레이드와 설비투자는 시험대에 오르겠지만 아직 무너지지는 않는다고 본다."
+   ],
+   "evidence": [
+    {
+     "ko": "현재 지출 규모와 순환 금융 구조에서 AI 부채 확대의 수익 계산이 아직 맞아떨어지지 않는다.",
+     "orig": "no, I can't pencil out the math right yet."
+    }
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "유튜브 자동 생성 자막(en) 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
   },
   {
    "id": "chanos-jim-chanos-spacex-s-40-billion-chip-debt-raises",
@@ -4464,6 +4625,71 @@
     "tier": "standard"
    },
    "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
+  },
+  {
+   "id": "doubleline-fairly-choppy-markets-light-macro-heading-into-f",
+   "group": "자산운용",
+   "org": "DoubleLine Capital",
+   "person": "Jeff Mayberry",
+   "kind": "publication",
+   "title": "등락이 큰 시장, 연준 회의를 앞둔 가벼운 거시 일정",
+   "title_orig": "Fairly Choppy Markets, Light Macro Heading Into Fed Day",
+   "url": "https://www.youtube.com/watch?v=tmqQq4iE2Z4",
+   "outlet": "DoubleLine (유튜브)",
+   "published_kst": "2026-10-24T09:21:24+09:00",
+   "stance": {
+    "ai_tech": null,
+    "market": 0
+   },
+   "args": [
+    "금리·거시",
+    "쏠림"
+   ],
+   "summary": "진행자들은 이번 주 증시가 대형주 약세와 중소형·가치주 강세로 엇갈렸고, 10년물 금리는 5% 부근에서 등락한다고 짚는다. 10월 미국 PMI는 매우 강했지만 물가 압력도 매우 강했다고 평가한다. 다음 주 연준 회의에서는 금리 인상 확률이 10~20%이며 반대표 수가 관건이라고 본다.",
+   "points": [
+    "10월 S&P 글로벌 PMI는 성장이 매우 강했지만 물가 압력도 그만큼 강했다.",
+    "다음 주 발표될 근원·헤드라인 PCE 물가 전망치가 연준에 불리한 방향으로 움직이고 있다.",
+    "10년물 금리는 5% 부근에서 박스권을 보일 것으로 본다.",
+    "시장은 다음 주 연준 회의에서 금리 인상 가능성을 10~20% 정도로 반영하고 있다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "유튜브 자동 생성 자막(en) 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
+  },
+  {
+   "id": "doubleline-jeffrey-sherman-on-ai-debt-issuance-and-the-stre",
+   "group": "자산운용",
+   "org": "DoubleLine Capital",
+   "person": "Jeffrey Sherman",
+   "kind": "publication",
+   "title": "제프리 셔먼, AI 채권 발행과 트리플 C 등급의 압박을 말하다 | Bloomberg",
+   "title_orig": "Jeffrey Sherman on AI Debt Issuance and the Stress in Triple C | Bloomberg",
+   "url": "https://www.youtube.com/watch?v=o8HokvTKlzw",
+   "outlet": "DoubleLine (유튜브)",
+   "published_kst": "2026-10-24T01:31:44+09:00",
+   "stance": {
+    "ai_tech": 0,
+    "market": 0
+   },
+   "args": [
+    "자금 조달·신용",
+    "투자 회수",
+    "수요·채택"
+   ],
+   "summary": "하이퍼스케일러는 차입 비용이 오르기 전에 더 많이 발행할 유인이 있고, 수요도 받쳐 주어 발행이 소화되고 있다고 본다. 스프레드가 넓어진 만큼 일부 하이퍼스케일러·네오클라우드 채권을 조금씩 담기 시작했지만 큰 베팅은 아니라고 한다. CCC 등급은 약세이며 설비투자·자금 조달 의문이 이어지면 압박이 커질 것으로 보고, 아직 전이는 없다고 평가한다.",
+   "points": [
+    "하이퍼스케일러 채권은 수요가 받쳐 주어 지금까지 발행 물량이 시장에 소화되고 있다.",
+    "가격이 내려 매력이 생긴 하이퍼스케일러와 네오클라우드 채권을 소규모로 매수하기 시작했다.",
+    "CCC 등급 스프레드가 크게 넓어졌지만 낮은 등급 단일 B로는 번지지 않아 전이는 아직 없다고 본다.",
+    "설비투자와 자금 조달 필요에 대한 의문이 커지면 CCC 자산에 압박이 더 커질 것으로 본다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "유튜브 자동 생성 자막(en) 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
   },
   {
    "id": "blackrock-larry-fink-says-americans-retirement-savings-nee",
