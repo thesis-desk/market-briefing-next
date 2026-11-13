@@ -5,10 +5,10 @@
  "items_days": 30,
  "index": {
   "ai_tech": {
-   "value": -1,
+   "value": -4,
    "label": "엇갈림",
-   "orgs": 43,
-   "items": 118
+   "orgs": 41,
+   "items": 116
   },
   "market": {
    "value": -13,
@@ -19,8 +19,8 @@
   "by_group": [
    {
     "group": "벤처캐피털",
-    "ai_tech": 24,
-    "ai_tech_orgs": 11,
+    "ai_tech": 19,
+    "ai_tech_orgs": 9,
     "market": -25,
     "market_orgs": 2
    },
@@ -132,23 +132,23 @@
    "optimism": [
     {
      "tag": "수요·채택",
-     "n": 34
+     "n": 32
     },
     {
      "tag": "투자 회수",
-     "n": 24
+     "n": 23
     },
     {
      "tag": "자금 조달·신용",
-     "n": 21
-    },
-    {
-     "tag": "정책·지정학",
-     "n": 18
+     "n": 20
     },
     {
      "tag": "금리·거시",
      "n": 18
+    },
+    {
+     "tag": "정책·지정학",
+     "n": 17
     },
     {
      "tag": "전력·공급 제약",
