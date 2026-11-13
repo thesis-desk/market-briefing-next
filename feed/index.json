@@ -1,7 +1,27 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-14T02:27:27+09:00",
+ "generated_kst": "2026-11-14T05:17:48+09:00",
  "reports": [
+  {
+   "slug": "decoder-nvidia-jensen-huang-resign-china-spy-scandal-ai",
+   "type": "interview",
+   "title": "카일 챈(브루킹스) 인터뷰 : 엔비디아 스파이 스캔들로 본 중국의 의도와 수출통제의 향방",
+   "companies": [
+    {
+     "name": "Nvidia",
+     "ticker": null
+    },
+    {
+     "name": "Megaspeed",
+     "ticker": null
+    }
+   ],
+   "published_kst": "2026-11-14T05:17:45+09:00",
+   "revised_kst": "2026-11-14T05:17:45+09:00",
+   "revision": 1,
+   "summary": "이 대담은 젠슨 황 사임 직전에 녹음됐다. 카일 챈의 핵심 주장은 두 가지다. 중국이 젠슨 황에게서 얻으려던 것은 칩 설계 정보가 아니라 미국 정책 결정에 대한 가시성과 영향력이었을 가능성이 크다. 그리고 이 스캔들은 수출 완화를 가장 강하게 주장하던 인물을 무너뜨려 오히려 베이징에 역효과가 날 수 있다. 투자 관점에서는 수출통제 강화 쪽으로 정치 지형이 기우는 위험과, 네오클라우드 투자와 시장 신뢰를 떠받치던 '시장 조성자' 젠슨 황이 빠진 공백을 함께 봐야 한다.",
+   "path": "reports/decoder-nvidia-jensen-huang-resign-china-spy-scandal-ai.json"
+  },
   {
    "slug": "semianalysis-yt-ep-044-is-nvidia-over-emergency-pod-with",
    "type": "interview",
@@ -597,7 +617,7 @@
   "path": "street.json"
  },
  "calendar": {
-  "updated_kst": "2026-11-14T02:23:51+09:00",
+  "updated_kst": "2026-11-14T05:17:48+09:00",
   "path": "calendar.json"
  }
 }
