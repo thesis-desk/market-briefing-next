@@ -1,28 +1,28 @@
 {
  "schema": 1,
- "updated_kst": "2026-11-13T09:49:24+09:00",
+ "updated_kst": "2026-11-13T11:18:44+09:00",
  "window_days": 14,
  "items_days": 30,
  "index": {
   "ai_tech": {
    "value": -1,
    "label": "엇갈림",
-   "orgs": 42,
-   "items": 114
+   "orgs": 43,
+   "items": 116
   },
   "market": {
-   "value": -15,
-   "label": "경계 우위",
-   "orgs": 27,
-   "items": 62
+   "value": -14,
+   "label": "엇갈림",
+   "orgs": 28,
+   "items": 63
   },
   "by_group": [
    {
     "group": "벤처캐피털",
-    "ai_tech": 27,
-    "ai_tech_orgs": 10,
-    "market": -50,
-    "market_orgs": 1
+    "ai_tech": 24,
+    "ai_tech_orgs": 11,
+    "market": -25,
+    "market_orgs": 2
    },
    {
     "group": "PE·대체투자",
@@ -63,24 +63,24 @@
   "weekly": [
    {
     "week": "2026-10-19",
-    "ai_tech": 0,
-    "ai_tech_orgs": 8,
+    "ai_tech": 6,
+    "ai_tech_orgs": 9,
     "market": -29,
     "market_orgs": 7
    },
    {
     "week": "2026-10-26",
     "ai_tech": 3,
-    "ai_tech_orgs": 21,
+    "ai_tech_orgs": 22,
     "market": -14,
     "market_orgs": 11
    },
    {
     "week": "2026-11-02",
     "ai_tech": 7,
-    "ai_tech_orgs": 25,
+    "ai_tech_orgs": 26,
     "market": -6,
-    "market_orgs": 18
+    "market_orgs": 19
    },
    {
     "week": "2026-11-09",
@@ -2093,6 +2093,39 @@
    "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
   },
   {
+   "id": "boldstart-what-s-in-ai-infra-vc-523",
+   "group": "벤처캐피털",
+   "org": "Ed Sim (boldstart ventures)",
+   "person": "Ed Sim",
+   "kind": "publication",
+   "title": "AI/인프라/VC에서 뜨거운 것 #523",
+   "title_orig": "What’s 🔥 in AI/Infra/VC #523",
+   "url": "https://www.whatshot.vc/p/whats-in-aiinfravc-523",
+   "outlet": "What's Hot in AI/Infra/VC (Ed Sim)",
+   "published_kst": "2026-11-07T22:26:11+09:00",
+   "stance": {
+    "ai_tech": 0,
+    "market": 0
+   },
+   "args": [
+    "자금 조달·신용",
+    "쏠림",
+    "밸류에이션"
+   ],
+   "summary": "공개 시장이 AI와 설비 확대에 대한 전면적 위험 선호에서 중립으로 돌아섰고, CoreWeave 무담보채 금리 급등과 나스닥 급락이 위험 재평가를 보여준다고 본다. 최상위 AI 기업에 자금이 쏠려 후기 투자 심사가 길어지고 가격 조정도 나오지만, 이를 일시적 조정으로 보며 AI의 장기 전망에는 여전히 낙관적이다.",
+   "points": [
+    "CoreWeave 무담보채 금리가 6월 10% 미만에서 15~16%로 올라, 투자자들이 AI 관련 부채에 훨씬 높은 수익률을 요구한다.",
+    "OpenAI와 Anthropic 등 소수 기업이 상반기 스타트업 투자금의 대부분을 흡수해 자금이 극심하게 쏠려 있다.",
+    "현재의 위험 재평가는 일시적 조정일 수 있지만, 이를 전제로 자금 조달 계획을 세우면 안 된다고 본다.",
+    "AI 사이클은 아직 초기 단계이지만, 앞으로는 자금이 무작정 몰리지 않고 더 치밀한 계획이 필요해진다고 본다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "웹 페이지 본문 기준. 그림 6개 속 글자는 확인하지 못함"
+  },
+  {
    "id": "blackrock-larry-fink-says-americans-retirement-savings-sho",
    "group": "자산운용",
    "org": "BlackRock",
@@ -3927,6 +3960,39 @@
    "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
   },
   {
+   "id": "boldstart-what-s-in-ai-infra-vc-522",
+   "group": "벤처캐피털",
+   "org": "Ed Sim (boldstart ventures)",
+   "person": "Ed Sim",
+   "kind": "publication",
+   "title": "AI/인프라/VC에서 뜨는 것 #522",
+   "title_orig": "What’s 🔥 in AI/Infra/VC #522",
+   "url": "https://www.whatshot.vc/p/whats-in-aiinfravc-522",
+   "outlet": "What's Hot in AI/Infra/VC (Ed Sim)",
+   "published_kst": "2026-10-31T21:28:48+09:00",
+   "stance": {
+    "ai_tech": 0,
+    "market": null
+   },
+   "args": [
+    "쏠림",
+    "밸류에이션",
+    "자금 조달·신용"
+   ],
+   "summary": "AI 거래가 공개 시장에서 빠르게 풀리는 가운데, 벤처 자금이 소수 대형 딜과 대형 펀드로 쏠리고 초기 라운드 밸류에이션이 급등했다고 진단한다. 매출 성장은 전례 없지만 모든 회사가 대박을 낼 것처럼 가격이 매겨진 점이 문제라고 본다. 자금 조달이 빡빡해질수록 초기 단계에서 적정 규모와 진입가로 투자하는 전략이 유리하다고 주장한다.",
+   "points": [
+    "벤처 자금이 Anthropic과 OpenAI 등 소수 딜에 극단적으로 쏠려 있다.",
+    "매출 성장은 전례 없는 수준이지만 모든 기업이 대박을 낼 것처럼 가격이 매겨지는 것이 문제다.",
+    "초기 라운드 상위권 밸류에이션이 2023년 이후 몇 배로 뛰었다.",
+    "AI 거래가 풀리면서 막대한 자본이 계속 필요한 기업들에 대한 자금 공급 지속 가능성이 의심받고 있다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "웹 페이지 본문 기준. 그림 9개 속 글자는 확인하지 못함"
+  },
+  {
    "id": "apollo-businesses-outside-tech-are-seeing-zero-financia",
    "group": "PE·대체투자",
    "org": "Apollo",
@@ -5105,6 +5171,38 @@
     "basis": "headline_only",
     "tier": "light"
    }
+  },
+  {
+   "id": "boldstart-what-s-in-ai-infra-vc-521",
+   "group": "벤처캐피털",
+   "org": "Ed Sim (boldstart ventures)",
+   "person": "Ed Sim",
+   "kind": "publication",
+   "title": "AI/인프라/VC에서 뜨는 것 #521",
+   "title_orig": "What’s 🔥 in AI/Infra/VC #521",
+   "url": "https://www.whatshot.vc/p/whats-in-aiinfravc-521",
+   "outlet": "What's Hot in AI/Infra/VC (Ed Sim)",
+   "published_kst": "2026-10-24T21:26:29+09:00",
+   "stance": {
+    "ai_tech": 1,
+    "market": null
+   },
+   "args": [
+    "수요·채택",
+    "전력·공급 제약"
+   ],
+   "summary": "AI가 만드는 사이버 위협이 급격히 커지고 있고, 방어도 에이전트와 컴퓨팅을 상시 돌리는 방식으로 가야 한다고 주장한다. 버블 논쟁에서는 AWS 용량이 매진됐다는 Andy Jassy의 말을 믿는다고 밝히고, 자신의 포트폴리오 기업들도 컴퓨팅 부족을 체감한다고 본다. 앞으로 컴퓨팅이 훨씬 더 필요해질 것이라는 입장이다.",
+   "points": [
+    "버블 논쟁에서 저자는 Jassy의 말을 믿으며, 포트폴리오 기업들이 컴퓨팅 확보의 어려움을 몸소 겪고 있다고 본다.",
+    "저자가 인용한 Jassy의 발언에 따르면 데이터센터·전력·메모리 부족은 2027년 이후에도 이어질 수 있다.",
+    "사이버 보안도 갈수록 컴퓨팅 규모가 승패를 가르는 영역이 되고 있다고 본다.",
+    "AI 공격에 맞서려면 방어 쪽도 컴퓨팅을 대규모로 투입해야 한다고 주장한다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "웹 페이지 본문 기준. 그림 1개 속 글자는 확인하지 못함"
   },
   {
    "id": "citadel-billionaire-ken-griffin-says-we-may-be-in-a-bubb",

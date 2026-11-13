@@ -1,8 +1,41 @@
 {
  "schema": 1,
  "month": "2026-10",
- "updated_kst": "2026-11-13T09:47:20+09:00",
+ "updated_kst": "2026-11-13T11:18:44+09:00",
  "items": [
+  {
+   "id": "boldstart-what-s-in-ai-infra-vc-522",
+   "group": "벤처캐피털",
+   "org": "Ed Sim (boldstart ventures)",
+   "person": "Ed Sim",
+   "kind": "publication",
+   "title": "AI/인프라/VC에서 뜨는 것 #522",
+   "title_orig": "What’s 🔥 in AI/Infra/VC #522",
+   "url": "https://www.whatshot.vc/p/whats-in-aiinfravc-522",
+   "outlet": "What's Hot in AI/Infra/VC (Ed Sim)",
+   "published_kst": "2026-10-31T21:28:48+09:00",
+   "stance": {
+    "ai_tech": 0,
+    "market": null
+   },
+   "args": [
+    "쏠림",
+    "밸류에이션",
+    "자금 조달·신용"
+   ],
+   "summary": "AI 거래가 공개 시장에서 빠르게 풀리는 가운데, 벤처 자금이 소수 대형 딜과 대형 펀드로 쏠리고 초기 라운드 밸류에이션이 급등했다고 진단한다. 매출 성장은 전례 없지만 모든 회사가 대박을 낼 것처럼 가격이 매겨진 점이 문제라고 본다. 자금 조달이 빡빡해질수록 초기 단계에서 적정 규모와 진입가로 투자하는 전략이 유리하다고 주장한다.",
+   "points": [
+    "벤처 자금이 Anthropic과 OpenAI 등 소수 딜에 극단적으로 쏠려 있다.",
+    "매출 성장은 전례 없는 수준이지만 모든 기업이 대박을 낼 것처럼 가격이 매겨지는 것이 문제다.",
+    "초기 라운드 상위권 밸류에이션이 2023년 이후 몇 배로 뛰었다.",
+    "AI 거래가 풀리면서 막대한 자본이 계속 필요한 기업들에 대한 자금 공급 지속 가능성이 의심받고 있다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "웹 페이지 본문 기준. 그림 9개 속 글자는 확인하지 못함"
+  },
   {
    "id": "apollo-businesses-outside-tech-are-seeing-zero-financia",
    "group": "PE·대체투자",
@@ -1182,6 +1215,38 @@
     "basis": "headline_only",
     "tier": "light"
    }
+  },
+  {
+   "id": "boldstart-what-s-in-ai-infra-vc-521",
+   "group": "벤처캐피털",
+   "org": "Ed Sim (boldstart ventures)",
+   "person": "Ed Sim",
+   "kind": "publication",
+   "title": "AI/인프라/VC에서 뜨는 것 #521",
+   "title_orig": "What’s 🔥 in AI/Infra/VC #521",
+   "url": "https://www.whatshot.vc/p/whats-in-aiinfravc-521",
+   "outlet": "What's Hot in AI/Infra/VC (Ed Sim)",
+   "published_kst": "2026-10-24T21:26:29+09:00",
+   "stance": {
+    "ai_tech": 1,
+    "market": null
+   },
+   "args": [
+    "수요·채택",
+    "전력·공급 제약"
+   ],
+   "summary": "AI가 만드는 사이버 위협이 급격히 커지고 있고, 방어도 에이전트와 컴퓨팅을 상시 돌리는 방식으로 가야 한다고 주장한다. 버블 논쟁에서는 AWS 용량이 매진됐다는 Andy Jassy의 말을 믿는다고 밝히고, 자신의 포트폴리오 기업들도 컴퓨팅 부족을 체감한다고 본다. 앞으로 컴퓨팅이 훨씬 더 필요해질 것이라는 입장이다.",
+   "points": [
+    "버블 논쟁에서 저자는 Jassy의 말을 믿으며, 포트폴리오 기업들이 컴퓨팅 확보의 어려움을 몸소 겪고 있다고 본다.",
+    "저자가 인용한 Jassy의 발언에 따르면 데이터센터·전력·메모리 부족은 2027년 이후에도 이어질 수 있다.",
+    "사이버 보안도 갈수록 컴퓨팅 규모가 승패를 가르는 영역이 되고 있다고 본다.",
+    "AI 공격에 맞서려면 방어 쪽도 컴퓨팅을 대규모로 투입해야 한다고 주장한다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "웹 페이지 본문 기준. 그림 1개 속 글자는 확인하지 못함"
   },
   {
    "id": "citadel-billionaire-ken-griffin-says-we-may-be-in-a-bubb",
