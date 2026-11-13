@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "month": "2026-10",
- "updated_kst": "2026-11-13T09:26:28+09:00",
+ "updated_kst": "2026-11-13T09:47:20+09:00",
  "items": [
   {
    "id": "apollo-businesses-outside-tech-are-seeing-zero-financia",
@@ -113,6 +113,30 @@
     "tier": "standard"
    },
    "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
+  },
+  {
+   "id": "greylock-linkedin-cofounder-reid-hoffman-defends-ai-datac",
+   "group": "벤처캐피털",
+   "org": "Greylock",
+   "person": null,
+   "kind": "report",
+   "title": "Reid Hoffman, AI 데이터센터 비판에 반박하며 기술 기업에 조언",
+   "title_orig": "LinkedIn cofounder Reid Hoffman defends AI datacenters; his advice to tech companies ‘make sure the…’",
+   "url": "https://timesofindia.indiatimes.com/technology/tech-news/linkedin-cofounder-reid-hoffman-defends-ai-datacenters-his-advice-to-tech-companies-make-sure-the/articleshow/135396402.cms",
+   "outlet": "The Times of India",
+   "published_kst": "2026-10-31T11:40:00+09:00",
+   "stance": {
+    "ai_tech": 1,
+    "market": null
+   },
+   "args": [
+    "정책·지정학",
+    "전력·공급 제약"
+   ],
+   "judged": {
+    "basis": "headline_only",
+    "tier": "light"
+   }
   },
   {
    "id": "damodaran-dan-ives-says-anthropic-ipo-faces-a-perfect-stor",
@@ -349,6 +373,39 @@
     "tier": "standard"
    },
    "note": "웹 페이지 본문 기준. 그림 2개 속 글자는 확인하지 못함"
+  },
+  {
+   "id": "altimeter-clouded-judgement-10-30-26-dispelling-the-myths",
+   "group": "벤처캐피털",
+   "org": "Altimeter Capital",
+   "person": "Jamin Ball",
+   "kind": "publication",
+   "title": "Clouded Judgement 10.30.26 - Anthropic S-1에 대한 오해 바로잡기",
+   "title_orig": "Clouded Judgement 10.30.26 - Dispelling the Myths of the Anthropic S-1",
+   "url": "https://cloudedjudgement.substack.com/p/clouded-judgement-103026-dispelling",
+   "outlet": "Clouded Judgement (Jamin Ball)",
+   "published_kst": "2026-10-30T22:04:38+09:00",
+   "stance": {
+    "ai_tech": 1,
+    "market": null
+   },
+   "args": [
+    "투자 회수",
+    "자금 조달·신용",
+    "수요·채택"
+   ],
+   "summary": "Anthropic S-1을 둘러싼 부채 1,000억 달러 초과, 상반기 순손실 810억 달러 같은 비관론은 전환사채 평가 회계를 오해한 것이라고 반박한다. 실제로는 총 조달 1,410억 달러에 현금 1,340억 달러, 총이익률 85%로 수익성이 강하다고 본다. 다만 향후 컴퓨트 확대기에는 수익성이 적자로 돌아설 것으로 예상한다.",
+   "points": [
+    "대차대조표의 전환사채 약 1,080억 달러는 실제 차입이 아니며, 회사는 부채를 인출한 적이 없다.",
+    "상반기 810억 달러 순손실은 과거 전환사채·노트의 공정가치 평가 변동 때문이며 영업 실적이 나빠서가 아니다.",
+    "Anthropic은 2분기에 GAAP 기준 영업이익률 8%의 흑자를 냈다.",
+    "컴퓨트를 다시 늘리는 시기에는 수익성이 감소해 적자로 전환할 것으로 예상한다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "웹 페이지 본문 기준. 그림 13개 속 글자는 확인하지 못함"
   },
   {
    "id": "goldman-brookfield-s-connor-teskey-on-the-real-bottlenec",
@@ -858,6 +915,37 @@
    "note": "웹 페이지 본문 기준. 그림 10개 속 글자는 확인하지 못함"
   },
   {
+   "id": "blackstone-axios-co-founders-jim-vandehei-and-mike-allen-on",
+   "group": "PE·대체투자",
+   "org": "Blackstone",
+   "person": "John Watson",
+   "kind": "publication",
+   "title": "Axios 공동창업자 Jim VandeHei·Mike Allen이 말하는 2026 중간선거, AI, 삶 단순화",
+   "title_orig": "Axios Co-Founders Jim VandeHei and Mike Allen on the 2026 Midterms, AI, and Simplifying Your Life",
+   "url": "https://www.blackstone.com/insights/article/axios-co-founders-jim-vandehei-and-mike-allen-on-the-2026-midterms-ai-and-simplifying-your-life",
+   "outlet": "Blackstone Insights",
+   "published_kst": "2026-10-27T22:01:59+09:00",
+   "stance": {
+    "ai_tech": 2,
+    "market": null
+   },
+   "args": [
+    "수요·채택",
+    "자금 조달·신용"
+   ],
+   "summary": "Blackstone의 John Watson은 컴퓨트·네오클라우드 수요가 폭증하고 가격이 오르는 중이며, 컴퓨트의 경제적 중요성에 대한 의문은 이미 해소됐다고 말한다. 컴퓨트를 투자적격 고객 계약에만 의존하지 않고 자체로 금융 가능한 자산군으로 봐야 한다고 주장한다. 게스트 VandeHei도 AI가 모든 산업에 스며들었고 더 강해질 것이라고 본다.",
+   "points": [
+    "컴퓨트 수요가 폭발적이며 컴퓨트를 파는 사업 전반에서 가격이 오르고 있다.",
+    "가속 컴퓨트가 경제에 중요한가라는 질문은 이미 답이 나왔다고 본다.",
+    "컴퓨트 자체를 자산군으로 보고 그것이 만드는 경제적 가치에 걸맞게 조달해야 한다고 주장한다.",
+    "VandeHei는 AI가 이미 모든 산업에 스며들었고 속도가 더 붙을 것이라고 본다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   }
+  },
+  {
    "id": "morgan-stanley-the-next-stage-of-the-market-correction",
    "group": "투자은행",
    "org": "Morgan Stanley",
@@ -1003,6 +1091,39 @@
     "tier": "standard"
    },
    "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
+  },
+  {
+   "id": "blackstone-market-views-compute-scarcity-higher-rates-and-w",
+   "group": "PE·대체투자",
+   "org": "Blackstone",
+   "person": "Jon Gray",
+   "kind": "publication",
+   "title": "시장 전망: 컴퓨트 희소성, 금리 상승, 그리고 우리의 투자처",
+   "title_orig": "Market Views: Compute Scarcity, Higher Rates, and Where We’re Investing",
+   "url": "https://www.blackstone.com/insights/article/market-views-compute-scarcity-higher-rates-and-where-were-investing",
+   "outlet": "Blackstone Insights",
+   "published_kst": "2026-10-25T22:30:00+09:00",
+   "stance": {
+    "ai_tech": 2,
+    "market": 0
+   },
+   "args": [
+    "수요·채택",
+    "전력·공급 제약",
+    "투자 회수",
+    "금리·거시"
+   ],
+   "summary": "Jon Gray는 AI 거품 우려를 반박하며, 철도·통신 거품과 달리 수요가 폭발하는데 공급이 뒤처져 AI 인프라가 희소하다고 주장한다. 에너지 가격 상승과 금리 상승으로 자본비용이 오르고 있어 성장이 빠른 섹터를 고르고 장기적·규율 있는 투자를 해야 한다고 본다. 부동산과 사모신용은 고금리 부담에도 펀더멘털이 양호하다고 평가한다.",
+   "points": [
+    "과거 철도·통신 거품은 미래 수요를 추정해 레버리지로 용량을 지은 것이지만, 현재 AI 인프라는 수요가 폭발하고 공급이 뒤처진 정반대 상황이다.",
+    "전력·터빈·칩 부족과 인허가 난관으로 공급이 수요를 따라가지 못하고 있어 이 병목에 투자한다.",
+    "AI의 자본 수요와 전쟁·인플레이션이 전 세계 자본비용을 끌어올려 자산가치와 멀티플에 영향을 주므로 성장이 빠른 섹터가 중요하다.",
+    "연초의 사모신용 우려는 현실화되지 않았고, 변동금리 대출자는 금리 상승기에 수익이 늘어 신용이 매력적인 대안으로 보인다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   }
   },
   {
    "id": "bofa-bank-of-america-warns-of-2027-stock-market-risk",
