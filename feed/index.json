@@ -1,7 +1,24 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-13T23:15:46+09:00",
+ "generated_kst": "2026-11-14T02:27:27+09:00",
  "reports": [
+  {
+   "slug": "semianalysis-yt-ep-044-is-nvidia-over-emergency-pod-with",
+   "type": "interview",
+   "title": "Dylan Patel·Jordan Schneider·Jordan Nanos 긴급 대담 : 젠슨 황 사임 이후의 엔비디아, MATCH Act와 대중 수출통제",
+   "companies": [
+    {
+     "name": "NVIDIA",
+     "ticker": null
+    }
+   ],
+   "event": "젠슨 황 CEO 사임 발표 직후 긴급 대담",
+   "published_kst": "2026-11-14T02:22:29+09:00",
+   "revised_kst": "2026-11-14T02:22:29+09:00",
+   "revision": 1,
+   "summary": "젠슨 황 사임 직후의 대담에서 출연자들은 장비 통제(MATCH Act) 강화에는 같은 쪽에 섰지만, 중국의 해외 GPU 임대를 막는 RASA를 두고는 Dylan Patel(반대)과 Jordan Schneider(반론)가 갈렸다. 엔비디아에 대해서는 Rubin까지의 단기 실행은 괜찮다는 시각(Nanos)과 Rubin부터 밀릴 수 있다는 시각(Dylan)이 맞섰고, 로드맵 결단·공급망 우선 배정·임원 유지가 젠슨 개인에게 기대 왔다는 점이 위험으로 짚였다. 판단을 바꿀 변수는 향후 1년의 임원 이탈과 Rubin 램프 차질 여부다.",
+   "path": "reports/semianalysis-yt-ep-044-is-nvidia-over-emergency-pod-with.json"
+  },
   {
    "slug": "sixsigma-ql1-eqyidm",
    "type": "article",
@@ -576,11 +593,11 @@
   }
  ],
  "street": {
-  "updated_kst": "2026-11-13T23:15:46+09:00",
+  "updated_kst": "2026-11-14T02:27:27+09:00",
   "path": "street.json"
  },
  "calendar": {
-  "updated_kst": "2026-11-13T09:14:48+09:00",
+  "updated_kst": "2026-11-14T02:23:51+09:00",
   "path": "calendar.json"
  }
 }
