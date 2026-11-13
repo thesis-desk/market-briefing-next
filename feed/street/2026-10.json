@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "month": "2026-10",
- "updated_kst": "2026-11-13T11:18:44+09:00",
+ "updated_kst": "2026-11-13T17:16:20+09:00",
  "items": [
   {
    "id": "boldstart-what-s-in-ai-infra-vc-522",
@@ -977,6 +977,49 @@
     "basis": "full_text",
     "tier": "standard"
    }
+  },
+  {
+   "id": "blackrock-ai-corporate-bonds-beat-treasurys-blackrock-s-bo",
+   "group": "자산운용",
+   "org": "BlackRock",
+   "person": null,
+   "kind": "report",
+   "title": "BlackRock 채권 총괄 \"AI 회사채가 국채보다 낫다\"…7% 수익률 제시",
+   "title_orig": "AI corporate bonds beat Treasurys, BlackRock's bond chief says, citing 7% yields",
+   "url": "https://biz.heraldcorp.com/article/10916396",
+   "outlet": "Herald Business",
+   "published_kst": "2026-10-27T17:06:00+09:00",
+   "stance": {
+    "ai_tech": 1,
+    "market": 1
+   },
+   "args": [
+    "자금 조달·신용",
+    "밸류에이션",
+    "금리·거시"
+   ],
+   "summary": "Rick Rieder는 AI 인프라 자금 조달을 위해 발행되는 투자등급 회사채가 장기 미국 국채보다 매력적이라고 주장했다. 단기 single-A 회사채만으로 연 7% 안팎의 수익률을 얻으면서 듀레이션 위험도 피할 수 있다고 봤다. 반도체·컴퓨팅 주식의 밸류에이션도 합리적으로 보인다고 말했다.",
+   "points": [
+    "채권과 주식 시장 양쪽에서 이 정도 규모의 자본 형성은 본 적이 없다고 말했다. 현재 환경은 자신이 경험한 가장 흥미로운 투자 배경이라고 평가했다.",
+    "GPU와 데이터센터 등 AI 인프라 자금 조달을 위해 발행되는 투자등급 회사채에 특히 주목하고 있다고 밝혔다.",
+    "주말 내내 딜을 검토했고 실제로 상당한 규모로 참여했다고 말했다. AI 기업의 대규모 채권 발행이 진짜 투자 기회라는 확신을 보인 것이다.",
+    "10년물 국채 금리가 5%를 웃돌지만 시장의 다른 상품들에 밀려 우선순위 뒤로 밀려났다고 했다. 국채는 핵심 투자 대상이라기보다 주식의 바로미터에 가까워졌다고 평가했다.",
+    "단기 single-A 등급 회사채만 사도 연 7% 안팎의 수익률을 얻을 수 있고, 장기 국채에 따르는 듀레이션 위험도 피할 수 있다고 덧붙였다.",
+    "커리어의 상당 기간을 7% 금리 환경을 기다리며 보냈다고 말하며, 현재 채권 시장을 한 세대에 한 번 있을 투자 기회로 묘사했다.",
+    "우량 기업이 발행한 담보부 채권과 안정적인 현금흐름을 만드는 자산을 특히 선호한다고 말했다.",
+    "AI 투자 전반에 대해서는 반도체와 컴퓨팅 관련 주식의 밸류에이션도 합리적으로 보인다고 말했다."
+   ],
+   "evidence": [
+    {
+     "ko": "10년물 국채 금리가 5%를 웃돌지만 시장의 다른 상품들에 밀려 우선순위 뒤로 밀려났다고 했다. 국채는 핵심 투자 대상이라기보다 주식의 바로미터에 가까워졌다고 평가했다.",
+     "orig": "The 10-year Treasury is above 5%, but it's been pushed to the back of the line by other products in the market,\" he said. \"It's become more of a barometer for equities than a core investment."
+    }
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
   },
   {
    "id": "morgan-stanley-the-next-stage-of-the-market-correction",

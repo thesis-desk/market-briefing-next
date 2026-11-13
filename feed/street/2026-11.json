@@ -1,8 +1,74 @@
 {
  "schema": 1,
  "month": "2026-11",
- "updated_kst": "2026-11-13T14:17:24+09:00",
+ "updated_kst": "2026-11-13T17:15:52+09:00",
  "items": [
+  {
+   "id": "blackrock-278-how-to-build-a-balanced-portfolio-and-naviga",
+   "group": "자산운용",
+   "org": "BlackRock",
+   "person": "Christia Koulian",
+   "kind": "publication",
+   "title": "278: 균형 잡힌 포트폴리오 구축과 시장 변동성 대응: 투자 질문에 답하다",
+   "title_orig": "278: How to Build a Balanced Portfolio and Navigate Market Volatility: Your investing questions a...",
+   "url": "https://www.youtube.com/watch?v=G4rAfeZdUSI",
+   "outlet": "BlackRock (유튜브)",
+   "published_kst": "2026-11-13T14:13:31+09:00",
+   "stance": {
+    "ai_tech": 0,
+    "market": 0
+   },
+   "args": [
+    "쏠림",
+    "자금 조달·신용",
+    "금리·거시"
+   ],
+   "summary": "BlackRock의 Christia Koulian은 시장이 더 변동성 크고 쏠린 국면이라며, 단기 변동에 과잉 반응하지 말고 분산된 포트폴리오로 장기 투자를 유지하라고 말한다. AI 분야에서는 재무구조와 이익이 탄탄한 기업은 보상받고 투기적 영역은 벌을 받는 차별화가 나타나고 있다고 본다. AI 투자 자금 수요가 금리와 자본비용을 끌어올려 포트폴리오 쏠림이 커지고 있다고도 짚는다.",
+   "points": [
+    "현재 시장은 변동성이 크고 쏠림이 심한 국면이라 반응하고 싶은 유혹이 더 크다.",
+    "급락과 급반등이 가까이 붙어 나타나므로 최악의 시점에 시장을 떠나면 반등을 놓친다.",
+    "AI 안에서도 재무구조와 이익이 탄탄한 기업은 보상받고 투기적 영역은 최근 벌을 받았다.",
+    "AI 자금 수요로 금리가 오르고 포트폴리오 쏠림이 커져, AI 지출 밖에서 분산할 필요가 커졌다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "유튜브 자동 생성 자막(en) 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
+  },
+  {
+   "id": "blackrock-how-to-build-a-balanced-portfolio-and-navigate-m",
+   "group": "자산운용",
+   "org": "BlackRock",
+   "person": "Christie Aulian",
+   "kind": "publication",
+   "title": "균형 잡힌 포트폴리오 구성과 시장 변동성 대응 AMA | The Bid 투자 팟캐스트",
+   "title_orig": "How to Build a Balanced Portfolio and Navigate Market Volatility AMA | The Bid investing podcast",
+   "url": "https://www.youtube.com/watch?v=CSYb_WaIBZQ",
+   "outlet": "BlackRock (유튜브)",
+   "published_kst": "2026-11-13T14:00:20+09:00",
+   "stance": {
+    "ai_tech": 0,
+    "market": 0
+   },
+   "args": [
+    "쏠림",
+    "자금 조달·신용",
+    "금리·거시"
+   ],
+   "summary": "블랙록의 크리스티 아울리안은 2026년 시장이 변동성이 크고 쏠림이 심하다고 보면서도, 시점 선택을 피하고 변동성을 감수하며 투자를 유지하라고 조언한다. AI 분야에서는 자금 조달 부담과 금리 상승 속에 우량 기업은 보상받고 투기적 기업은 벌을 받는 차별화가 나타난다고 본다. AI 투자가 다른 투자를 전부 밀어낸 것은 아니지만 요구 수익률의 문턱이 높아졌고 분산이 더 필요하다고 말한다.",
+   "points": [
+    "현재 시장은 변동성이 더 크고 쏠림이 심한 국면이어서 시장 흐름에 과잉 반응하려는 유혹이 커졌다.",
+    "AI 시장에서는 재무구조와 실적이 탄탄한 우량 기업이 보상받고 투기적 영역은 최근 큰 타격을 입었다.",
+    "AI 구축 자금 조달 경쟁이 금리를 밀어 올려 다른 산업의 자본 비용도 높이고 있다.",
+    "시장은 일직선으로 오르지 않으므로 변동성을 감수해야 보상을 얻을 수 있다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "유튜브 자동 생성 자막(en) 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
+  },
   {
    "id": "morgan-stanley-from-ai-to-air-conditioning-the-power-boom-in-as",
    "group": "투자은행",
