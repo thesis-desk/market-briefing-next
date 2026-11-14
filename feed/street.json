@@ -7,14 +7,14 @@
   "ai_tech": {
    "value": -3,
    "label": "엇갈림",
-   "orgs": 41,
-   "items": 121
+   "orgs": 40,
+   "items": 119
   },
   "market": {
-   "value": -17,
+   "value": -15,
    "label": "경계 우위",
-   "orgs": 30,
-   "items": 65
+   "orgs": 29,
+   "items": 63
   },
   "by_group": [
    {
@@ -26,16 +26,16 @@
    },
    {
     "group": "PE·대체투자",
-    "ai_tech": -8,
-    "ai_tech_orgs": 8,
-    "market": -12,
-    "market_orgs": 4
+    "ai_tech": -9,
+    "ai_tech_orgs": 7,
+    "market": 0,
+    "market_orgs": 3
    },
    {
     "group": "자산운용",
-    "ai_tech": -1,
+    "ai_tech": 2,
     "ai_tech_orgs": 7,
-    "market": -7,
+    "market": -6,
     "market_orgs": 7
    },
    {
@@ -94,19 +94,19 @@
    "caution": [
     {
      "tag": "투자 회수",
-     "n": 20
+     "n": 19
     },
     {
      "tag": "자금 조달·신용",
-     "n": 18
+     "n": 17
     },
     {
      "tag": "쏠림",
-     "n": 14
+     "n": 13
     },
     {
      "tag": "금리·거시",
-     "n": 13
+     "n": 12
     },
     {
      "tag": "정책·지정학",
