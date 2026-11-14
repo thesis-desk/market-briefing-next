@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "month": "2026-11",
- "updated_kst": "2026-11-14T23:40:46+09:00",
+ "updated_kst": "2026-11-15T02:39:18+09:00",
  "items": [
   {
    "id": "boldstart-what-s-in-ai-infra-vc-524",
@@ -36,6 +36,49 @@
     "tier": "standard"
    },
    "note": "웹 페이지 본문 기준. 그림 4개 속 글자는 확인하지 못함"
+  },
+  {
+   "id": "bofa-bank-of-america-s-hartnett-maintains-cautious-ma",
+   "group": "투자은행",
+   "org": "Bank of America",
+   "person": null,
+   "kind": "report",
+   "title": "Bank of America의 Hartnett, 국채금리와 유가가 내릴 때까지 신중한 시장 전망 유지",
+   "title_orig": "Bank of America’s Hartnett maintains cautious market outlook until Treasury yields and oil prices decline",
+   "url": "https://www.msn.com/en-us/news/other/bank-of-america-s-hartnett-maintains-cautious-market-outlook-until-treasury-yields-and-oil-prices-decline/ar-AA2hrbuB",
+   "outlet": "InvestorsHub on MSN",
+   "published_kst": "2026-11-14T16:08:04+09:00",
+   "stance": {
+    "ai_tech": null,
+    "market": -1
+   },
+   "args": [
+    "금리·거시",
+    "쏠림",
+    "정책·지정학"
+   ],
+   "summary": "Hartnett 팀은 원유가 배럴당 70달러 아래로, 10년물 국채금리가 4.5% 아래로 내려오고 달러가 약해질 때까지 위험자산에 대해 방어적 입장을 유지하겠다고 밝혔다. S&P 500이 8,000 위로 오르는 시나리오와 7,000 아래로 떨어지는 시나리오를 함께 제시했다. 가계 주식 자산이 소비를 떠받쳐 경기침체 가능성을 낮춘다고 보면서도, 채권은 계속 피하는 'Anything But Bonds' 기조를 강화했다.",
+   "points": [
+    "Hartnett 팀은 위험자산에 대해 더 우호적인 입장을 취하기 위한 조건으로 국채금리 하락, 유가 하락, 달러 약세를 꼽으며 신중한 시장 전망을 유지하고 있다.",
+    "전략가들은 원유가 배럴당 70달러 아래로 떨어지고 10년물 미국 국채 수익률이 4.5% 아래로 내려갈 때까지 위험회피(risk-off) 기조를 유지할 계획이라고 밝혔다.",
+    "BofA는 유가가 이미 제시한 기준선을 향해 움직이고 있으며, 국채 수익률은 12월이나 1월에 4.5% 아래로 내려갈 수 있다고 본다.",
+    "달러 하락도 필요한 조건이지만 현재 통화는 반대 방향으로 움직이고 있으며, 전략가들은 달러가 2월 또는 3월에 정점에 이를 것으로 예상한다.",
+    "전략가들은 2026년 6월부터 2027년 5월 사이 전 세계에서 70회가 넘는 금리 인상을 예상하며, 현재의 긴축 사이클은 일러도 연준의 4월 FOMC 회의 이후에야 끝날 수 있다고 본다.",
+    "낙관 시나리오에서는 하락 때마다 이어지는 투자자 매수세에 힘입어 S&P 500이 8,000을 넘어설 수 있으며, 전략가들은 이 수요 원천을 '끝없는 저가매수 자금 흐름'이라고 표현했다. 비관 시나리오에서는 달러 강세, 유동성 감소, 추가 금리 인상이 경기 둔화와 겹치면 지수가 7,000 아래로 떨어질 수 있다.",
+    "정책 당국이 주식시장을 '대마불사(too big to fail)'로 여기는 경향이 커지면서 완전한 약세 포지션을 가진 투자자가 상대적으로 적다고 Hartnett 팀은 말했다. 대만의 150억 달러 증시 지원 펀드 등 아시아 각국의 시장 부양책을 근거로 들었다.",
+    "높은 가계 자산, 특히 고소득층의 자산이 소비를 계속 떠받쳐 경기침체 가능성을 낮출 수 있다고 Hartnett 팀은 주장했다."
+   ],
+   "evidence": [
+    {
+     "ko": "낙관 시나리오에서는 하락 때마다 이어지는 투자자 매수세에 힘입어 S&P 500이 8,000을 넘어설 수 있으며, 전략가들은 이 수요 원천을 '끝없는 저가매수 자금 흐름'이라고 표현했다. 비관 시나리오에서는 달러 강세, 유동성 감소, 추가 금리 인상이 경기 둔화와 겹치면 지수가 7,000 아래로 떨어질 수 있다.",
+     "orig": "The strategists described this potential source of demand as “insatiably buy-the-dip flows.”"
+    }
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
   },
   {
    "id": "softbank-the-man-who-keeps-betting-his-entire-fortune-on",
@@ -137,6 +180,47 @@
     "basis": "full_text",
     "tier": "standard"
    }
+  },
+  {
+   "id": "jpmorgan-jpmorgan-calls-another-record-year-for-u-s-high",
+   "group": "투자은행",
+   "org": "JPMorgan",
+   "person": null,
+   "kind": "report",
+   "title": "JPMorgan, 2027년 미국 투자등급 채권 발행 또 사상 최대 전망… AI 인프라 구축이 견인",
+   "title_orig": "JPMorgan calls another record year for U.S. high-grade bonds in 2027, powered by AI buildout",
+   "url": "https://www.briefs.co/news/jpmorgan-calls-another-record-year-for-u-s-high-grade-bonds",
+   "outlet": "briefs",
+   "published_kst": "2026-11-14T00:10:00+09:00",
+   "stance": {
+    "ai_tech": 1,
+    "market": 1
+   },
+   "args": [
+    "자금 조달·신용",
+    "투자 회수",
+    "쏠림",
+    "정책·지정학"
+   ],
+   "summary": "JPMorgan 전략가들은 AI 인프라 투자와 높은 재융자 수요에 힘입어 2027년 미국 투자등급 회사채 발행이 2조 1천억 달러로 올해(2조 달러)를 넘어 또 한 번 사상 최대를 기록할 것으로 본다. 기술·미디어가 순신규 발행을 주도하며 AI 설비투자 사이클에 대한 예측 민감도가 커졌다고 짚는다. 한편 M&A 채권 발행 감소, 데이터센터 인허가 지연, 헝지 외화 조달 확대 등은 발행을 줄일 수 있는 위험으로 제시했다.",
+   "points": [
+    "Nathaniel Rosenbaum 등 JPMorgan 전략가들은 AI 인프라 지출과 높은 재융자 수요가 주된 동력이 되어 또 한 번 사상 최대 발행 연도가 다가오고 있다고 말한다. 이들은 2027년 미국 투자등급 채권 발행액을 올해 예상치 2조 달러를 약간 웃도는 2조 1천억 달러로 본다.",
+    "전략가들은 시장 규모가 커짐에 따라 발행액이 2조 달러 이상인 해가 점점 일반적인 것이 될 수 있다고 덧붙였다.",
+    "Rosenbaum은 공급이 AI 인프라 구축에 자금을 대는 업종에 이례적으로 집중된 상태로 유지될 것이며, 이 때문에 JPMorgan의 전체 전망이 AI 설비투자 사이클에 더 민감해진다고 말했다. 기술·미디어 차입자가 순신규 발행을 주도해 합계 6,120억 달러(전체 투자등급 공급의 30% 가까이)를 조달할 것으로 예상되며, 여기에는 하이퍼스케일러 2,250억 달러와 데이터센터·컴퓨팅 칩 금융 관련 2,250억 달러가 포함된다.",
+    "JPMorgan은 역대급이었던 2026년 이후 M&A 관련 채권 공급이 전년 대비 52% 감소할 것으로 보면서도, 되살아난 '야성적 충동(animal spirits)'이 거래 활동과 전체 발행을 기본 시나리오 이상으로 끌어올릴 수 있다고 주장한다.",
+    "JPMorgan 팀은 민주당의 중간선거 선전 이후 여러 핵심 주에서 인허가·개발 장애물이 생겨 2028년 데이터센터 프로젝트가 지연되고 기술 기업의 차입이 줄 수 있다고 지적한다. 또 하이퍼스케일러가 더 많은 부채를 달러가 아닌 외화로 돌리는 흐름이 이어지면 발행이 추가로 줄 수 있다고 본다."
+   ],
+   "evidence": [
+    {
+     "ko": "JPMorgan은 역대급이었던 2026년 이후 M&A 관련 채권 공급이 전년 대비 52% 감소할 것으로 보면서도, 되살아난 '야성적 충동(animal spirits)'이 거래 활동과 전체 발행을 기본 시나리오 이상으로 끌어올릴 수 있다고 주장한다.",
+     "orig": "JPMorgan projects a 52% year-over-year decline in M&A bond supply after a historic 2026, yet argues that revived \"animal spirits\" may lift both deal activity and total issuance beyond their base case."
+    }
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
   },
   {
    "id": "a16z-big-pharma-can-rival-big-software",
