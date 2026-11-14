@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated_kst": "2026-11-14T23:09:12+09:00",
+ "updated_kst": "2026-11-14T23:15:00+09:00",
  "events": [
   {
    "company": "Oracle",
@@ -326,6 +326,19 @@
    "confirmed": false,
    "official": false,
    "source_url": "https://finance.yahoo.com/quote/TSM/",
+   "consensus_snapshot": false,
+   "report_slug": null,
+   "status": "scheduled"
+  },
+  {
+   "company": "Samsung Electro-Mechanics",
+   "ticker": "009150.KS",
+   "type": "earnings",
+   "period": null,
+   "date": "2027-01-21",
+   "confirmed": false,
+   "official": false,
+   "source_url": "https://finance.yahoo.com/quote/009150.KS/",
    "consensus_snapshot": false,
    "report_slug": null,
    "status": "scheduled"
