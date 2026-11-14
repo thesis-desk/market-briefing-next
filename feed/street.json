@@ -5,10 +5,10 @@
  "items_days": 30,
  "index": {
   "ai_tech": {
-   "value": -3,
+   "value": -2,
    "label": "엇갈림",
    "orgs": 40,
-   "items": 116
+   "items": 115
   },
   "market": {
    "value": -15,
@@ -26,7 +26,7 @@
    },
    {
     "group": "PE·대체투자",
-    "ai_tech": -2,
+    "ai_tech": 2,
     "ai_tech_orgs": 8,
     "market": 0,
     "market_orgs": 3
@@ -94,7 +94,7 @@
    "caution": [
     {
      "tag": "투자 회수",
-     "n": 18
+     "n": 17
     },
     {
      "tag": "자금 조달·신용",
@@ -117,11 +117,11 @@
      "n": 11
     },
     {
-     "tag": "수요·채택",
-     "n": 4
+     "tag": "경쟁·해자",
+     "n": 3
     },
     {
-     "tag": "경쟁·해자",
+     "tag": "수요·채택",
      "n": 3
     },
     {
