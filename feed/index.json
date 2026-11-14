@@ -1,7 +1,25 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-14T23:02:56+09:00",
+ "generated_kst": "2026-11-14T23:06:49+09:00",
  "reports": [
+  {
+   "slug": "morgan-stanley-can-ai-chip-demand-outrun-the-power-crunch",
+   "type": "article",
+   "title": "Morgan Stanley : 미국 데이터센터 전력 부족분은 커졌지만 지연일 뿐이고, AI 반도체는 2027년에 더 빠듯해진다",
+   "companies": [
+    {
+     "name": "Morgan Stanley",
+     "ticker": null
+    }
+   ],
+   "event": "Morgan Stanley Thoughts on the Market 팟캐스트",
+   "event_date": "2026-11-13",
+   "published_kst": "2026-11-14T23:06:49+09:00",
+   "revised_kst": "2026-11-14T23:06:49+09:00",
+   "revision": 1,
+   "summary": "모건스탠리는 중간선거 뒤 2028년까지의 미국 데이터센터 전력 부족분을 30GW에서 30GW대 중반으로 올렸다. 그러면서도 이를 취소가 아닌 지연으로 보고, 반도체 사이클을 늘려 주는 요인으로 읽는다. 다만 부족분이 커지는데도 칩 수요가 꺾이지 않는다는 결론은 '칩은 어디든 설치된다'는 대체 수요 가정에 기댄다. 이 가정을 받쳐 줄 숫자가 없어 2028년 전망은 아직 증명되지 않았다.",
+   "path": "reports/morgan-stanley-can-ai-chip-demand-outrun-the-power-crunch.json"
+  },
   {
    "slug": "20vc-google-loses-500b-in-12-hours-doordash-buys-instacart",
    "type": "interview",
@@ -779,7 +797,7 @@
   "path": "street.json"
  },
  "calendar": {
-  "updated_kst": "2026-11-14T23:02:56+09:00",
+  "updated_kst": "2026-11-14T23:05:12+09:00",
   "path": "calendar.json"
  }
 }

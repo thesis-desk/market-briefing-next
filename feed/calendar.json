@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated_kst": "2026-11-14T23:02:56+09:00",
+ "updated_kst": "2026-11-14T23:05:12+09:00",
  "events": [
   {
    "company": "Oracle",
@@ -56,6 +56,20 @@
    "consensus_snapshot": false,
    "report_slug": "samsung-sds-3q26-earnings",
    "status": "published",
+   "note": "원문이 올라온 것을 보고 넣은 일정"
+  },
+  {
+   "company": "Palantir",
+   "ticker": "PLTR",
+   "type": "earnings",
+   "period": "3Q26",
+   "date": "2026-11-02",
+   "confirmed": true,
+   "official": false,
+   "source_url": "https://stockanalysis.com/stocks/pltr/transcripts/722806-q3-2026/",
+   "consensus_snapshot": false,
+   "report_slug": null,
+   "status": "queued",
    "note": "원문이 올라온 것을 보고 넣은 일정"
   },
   {
