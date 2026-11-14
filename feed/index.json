@@ -1,7 +1,61 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-14T23:41:09+09:00",
+ "generated_kst": "2026-11-15T00:04:24+09:00",
  "reports": [
+  {
+   "slug": "palantir-2q26-earnings",
+   "type": "earnings",
+   "title": "Palantir 2Q26 실적발표 : 미국 상업 수주 $2.1B로 급반등, 연간 가이던스 11%p 상향",
+   "companies": [
+    {
+     "name": "Palantir",
+     "ticker": "PLTR"
+    }
+   ],
+   "event": "2Q26 실적 발표",
+   "event_date": "2026-08-03",
+   "published_kst": "2026-11-15T00:04:24+09:00",
+   "revised_kst": "2026-11-15T00:04:24+09:00",
+   "revision": 1,
+   "summary": "매출 성장률이 85%에서 93%로 다시 빨라졌다. 1분기에 $1.2B에 머물렀던 미국 상업 수주가 $2.1B로 뛰어 고성장이 이어질 근거가 생겼다. 다만 가이던스는 하반기 감속과 비용 급증을 함축한다. 매출총이익률 하락과 정부 쪽 수주 감소는 따로 지켜볼 대목이다.",
+   "path": "reports/palantir-2q26-earnings.json"
+  },
+  {
+   "slug": "palantir-1q26-earnings",
+   "type": "earnings",
+   "title": "Palantir 1Q26 실적발표 : 미국 매출 첫 세 자릿수 성장, 연간 가이던스 10%p 상향",
+   "companies": [
+    {
+     "name": "Palantir",
+     "ticker": "PLTR"
+    }
+   ],
+   "event": "1Q26 실적 발표",
+   "event_date": "2026-05-04",
+   "published_kst": "2026-11-14T23:55:27+09:00",
+   "revised_kst": "2026-11-14T23:55:27+09:00",
+   "revision": 1,
+   "summary": "매출 성장률이 85%로 11분기 연속 가속했고, 미국 매출은 처음으로 100%를 넘었다(+104%). 연간 매출 가이던스는 61%에서 71%로 올랐다. 다만 총 TCV는 4Q25 사상 최대치($4.3B)에서 $2.4B로 내려왔다. 가이던스 숫자를 맞춰 보면 미국 상업 외 사업이 급격히 감속하거나, 가이던스가 보수적으로 잡혔다는 뜻이 된다.",
+   "path": "reports/palantir-1q26-earnings.json"
+  },
+  {
+   "slug": "palantir-4q25-earnings",
+   "type": "earnings",
+   "title": "Palantir 4Q25 실적발표 : 미국 상업 137%로 3분기 연속 가속, 2026년 61% 성장 가이던스",
+   "companies": [
+    {
+     "name": "Palantir",
+     "ticker": "PLTR"
+    }
+   ],
+   "event": "4Q25 실적 발표",
+   "event_date": "2026-02-02",
+   "published_kst": "2026-11-14T23:44:51+09:00",
+   "revised_kst": "2026-11-14T23:44:51+09:00",
+   "revision": 1,
+   "summary": "미국 상업 매출이 93%→121%→137%로 세 분기 연속 빨라졌고, 조정 영업이익률도 57%로 함께 올랐다. 2026년 61% 성장 가이던스는 미국 상업이 최소 115% 커진다는 전제 위에 서 있다. 해외 상업 정체(연간 +2%)와 비용 증가 계획은 그대로 남았다.",
+   "path": "reports/palantir-4q25-earnings.json"
+  },
   {
    "slug": "ark-did-the-midterms-just-break-the-ai-trade-the-bra",
    "type": "article",
