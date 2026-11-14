@@ -5,22 +5,22 @@
  "items_days": 30,
  "index": {
   "ai_tech": {
-   "value": -3,
+   "value": -5,
    "label": "엇갈림",
-   "orgs": 40,
-   "items": 118
+   "orgs": 39,
+   "items": 116
   },
   "market": {
    "value": -15,
    "label": "경계 우위",
    "orgs": 29,
-   "items": 63
+   "items": 62
   },
   "by_group": [
    {
     "group": "벤처캐피털",
-    "ai_tech": 22,
-    "ai_tech_orgs": 9,
+    "ai_tech": 19,
+    "ai_tech_orgs": 8,
     "market": -25,
     "market_orgs": 2
    },
@@ -40,7 +40,7 @@
    },
    {
     "group": "투자은행",
-    "ai_tech": 13,
+    "ai_tech": 10,
     "ai_tech_orgs": 6,
     "market": 19,
     "market_orgs": 6
@@ -140,7 +140,7 @@
     },
     {
      "tag": "정책·지정학",
-     "n": 20
+     "n": 19
     },
     {
      "tag": "자금 조달·신용",
@@ -152,7 +152,7 @@
     },
     {
      "tag": "전력·공급 제약",
-     "n": 12
+     "n": 11
     },
     {
      "tag": "밸류에이션",
