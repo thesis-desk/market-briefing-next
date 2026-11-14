@@ -1,7 +1,67 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-14T23:23:15+09:00",
+ "generated_kst": "2026-11-14T23:35:57+09:00",
  "reports": [
+  {
+   "slug": "ark-did-the-midterms-just-break-the-ai-trade-the-bra",
+   "type": "article",
+   "title": "ARK Invest : 중간선거 충격은 데이터센터 일정의 10% 안팎이고, 연산 희소성은 Anthropic과 연산 보유자에게 유리하다(내부 반론: 2027년 경쟁 심화)",
+   "companies": [
+    {
+     "name": "Anthropic",
+     "ticker": null
+    },
+    {
+     "name": "OpenAI",
+     "ticker": null
+    },
+    {
+     "name": "SpaceX",
+     "ticker": null
+    },
+    {
+     "name": "Meta",
+     "ticker": null
+    },
+    {
+     "name": "Alphabet",
+     "ticker": null
+    },
+    {
+     "name": "Microsoft",
+     "ticker": null
+    },
+    {
+     "name": "NVIDIA",
+     "ticker": null
+    }
+   ],
+   "event": "ARK Invest The Brainstorm 157",
+   "event_date": "2026-11-11",
+   "published_kst": "2026-11-14T23:35:57+09:00",
+   "revised_kst": "2026-11-14T23:35:57+09:00",
+   "revision": 1,
+   "summary": "ARK 대담에서 Brett은 중간선거의 데이터센터 지연을 계획 대비 10% 안팎으로 봅니다. 연산이 귀해질수록 Anthropic·OpenAI는 웃돈을 내고 매출을 지키며, SpaceX 같은 연산 보유자는 추격보다 임대가 낫다고 판단합니다. 반면 Nick은 지연이 대형 기존 사업자에게 추격 시간을 주고 2027년 프론티어 경쟁이 거세진다고 맞섭니다. 논쟁의 축인 Anthropic 수치(연환산 매출 800억 달러, 총이익률 85%, 상장 가치 1.1조 달러 루머)는 출처가 밝혀지지 않은 대담 발언이므로 먼저 검증해야 합니다.",
+   "path": "reports/ark-did-the-midterms-just-break-the-ai-trade-the-bra.json"
+  },
+  {
+   "slug": "cisco-1q27-earnings",
+   "type": "earnings",
+   "title": "Cisco 1Q27 실적발표 : AI 목표 90억 달러로 상향, 하드웨어·메모리에 눌린 마진",
+   "companies": [
+    {
+     "name": "Cisco",
+     "ticker": "CSCO"
+    }
+   ],
+   "event": "1Q27 실적 발표",
+   "event_date": "2026-11-12",
+   "published_kst": "2026-11-14T23:28:38+09:00",
+   "revised_kst": "2026-11-14T23:28:38+09:00",
+   "revision": 1,
+   "summary": "매출 +24%, EPS +40%로 15년여 만의 최고 성장에 연간 매출 가이던스를 25억 달러 올렸고, 상향분의 40%는 하이퍼스케일러 밖 핵심 사업(네오클라우드·소버린·기업 AI 수요 포함)에서 나왔다. 대가는 하드웨어 비중 확대와 메모리 원가로 인한 마진 하락이다. 연간 가이던스는 하반기 영업이익률이 상반기보다 2%p 넘게 낮아진다는 뜻이어서, 성장의 지속성과 함께 마진 방어가 다음 관건이다.",
+   "path": "reports/cisco-1q27-earnings.json"
+  },
   {
    "slug": "palantir-3q26-earnings",
    "type": "earnings",
