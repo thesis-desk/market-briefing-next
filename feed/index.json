@@ -1,7 +1,69 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-14T17:28:37+09:00",
+ "generated_kst": "2026-11-14T20:31:42+09:00",
  "reports": [
+  {
+   "slug": "20vc-google-loses-500b-in-12-hours-doordash-buys-instacart",
+   "type": "interview",
+   "title": "20VC 주간 대담(Harry Stebbings·Jason Lemkin·Rory O'Driscoll) : Anthropic 성장 둔화와 가격 압력, 에이전트가 깎는 앱 사업",
+   "companies": [
+    {
+     "name": "Anthropic",
+     "ticker": null
+    },
+    {
+     "name": "OpenAI",
+     "ticker": null
+    },
+    {
+     "name": "Alphabet",
+     "ticker": null
+    },
+    {
+     "name": "DoorDash",
+     "ticker": null
+    },
+    {
+     "name": "Instacart",
+     "ticker": null
+    },
+    {
+     "name": "Cognition",
+     "ticker": null
+    },
+    {
+     "name": "Serval",
+     "ticker": null
+    },
+    {
+     "name": "Baseten",
+     "ticker": null
+    },
+    {
+     "name": "ServiceNow",
+     "ticker": null
+    },
+    {
+     "name": "Salesforce",
+     "ticker": null
+    },
+    {
+     "name": "Kalshi",
+     "ticker": null
+    },
+    {
+     "name": "Cohere",
+     "ticker": null
+    }
+   ],
+   "event": "20VC 주간 대담 에피소드",
+   "event_date": "2026-11-05",
+   "published_kst": "2026-11-14T20:31:37+09:00",
+   "revised_kst": "2026-11-14T20:31:37+09:00",
+   "revision": 1,
+   "summary": "출연진은 AI 수요는 꺾이지 않았지만 공급 측(모델 가격, 비상장 밸류, 신용)에서는 가격을 다시 매기는 중이라는 데 대체로 동의했다. 쟁점은 Anthropic의 분기 매출 순증이 줄어든 것이 가격 압력 탓인가였다. 에이전트가 Canva·DoorDash 같은 중간자 앱의 몫을 깎는다는 주장, 그리고 VC 출구가 M&A에 달려 있다는 사정도 이번 회차에서 함께 드러났다.",
+   "path": "reports/20vc-google-loses-500b-in-12-hours-doordash-buys-instacart.json"
+  },
   {
    "slug": "all-in-jensen-out-as-nvidia-ceo-spy-scandal-export",
    "type": "interview",
@@ -717,7 +779,7 @@
   "path": "street.json"
  },
  "calendar": {
-  "updated_kst": "2026-11-14T17:26:16+09:00",
+  "updated_kst": "2026-11-14T20:31:42+09:00",
   "path": "calendar.json"
  }
 }
