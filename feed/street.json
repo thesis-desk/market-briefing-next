@@ -1,14 +1,14 @@
 {
  "schema": 1,
- "updated_kst": "2026-11-14T17:28:37+09:00",
+ "updated_kst": "2026-11-14T23:23:15+09:00",
  "window_days": 14,
  "items_days": 30,
  "index": {
   "ai_tech": {
-   "value": -2,
+   "value": -5,
    "label": "엇갈림",
-   "orgs": 40,
-   "items": 114
+   "orgs": 41,
+   "items": 116
   },
   "market": {
    "value": -15,
@@ -19,8 +19,8 @@
   "by_group": [
    {
     "group": "벤처캐피털",
-    "ai_tech": 19,
-    "ai_tech_orgs": 8,
+    "ai_tech": 6,
+    "ai_tech_orgs": 9,
     "market": -25,
     "market_orgs": 2
    },
@@ -77,15 +77,15 @@
    },
    {
     "week": "2026-11-02",
-    "ai_tech": 7,
-    "ai_tech_orgs": 26,
+    "ai_tech": 3,
+    "ai_tech_orgs": 27,
     "market": -6,
     "market_orgs": 20
    },
    {
     "week": "2026-11-09",
-    "ai_tech": 3,
-    "ai_tech_orgs": 31,
+    "ai_tech": 2,
+    "ai_tech_orgs": 32,
     "market": -15,
     "market_orgs": 21
    }
@@ -105,15 +105,15 @@
      "n": 12
     },
     {
+     "tag": "밸류에이션",
+     "n": 12
+    },
+    {
      "tag": "금리·거시",
      "n": 12
     },
     {
      "tag": "정책·지정학",
-     "n": 11
-    },
-    {
-     "tag": "밸류에이션",
      "n": 11
     },
     {
@@ -171,6 +171,40 @@
   "method": "기관·인물마다 기간 안 입장 값의 평균을 내고 그 평균들을 다시 평균해 ×50"
  },
  "items": [
+  {
+   "id": "boldstart-what-s-in-ai-infra-vc-524",
+   "group": "벤처캐피털",
+   "org": "Ed Sim (boldstart ventures)",
+   "person": "Ed Sim",
+   "kind": "publication",
+   "title": "AI/인프라/VC에서 뜨거운 것 #524",
+   "title_orig": "What’s 🔥 in AI/Infra/VC #524",
+   "url": "https://www.whatshot.vc/p/whats-in-aiinfravc-524",
+   "outlet": "What's Hot in AI/Infra/VC (Ed Sim)",
+   "published_kst": "2026-11-14T22:06:38+09:00",
+   "stance": {
+    "ai_tech": 0,
+    "market": null
+   },
+   "args": [
+    "자금 조달·신용",
+    "정책·지정학",
+    "쏠림",
+    "경쟁·해자"
+   ],
+   "summary": "엔비디아가 젠슨 황의 퇴진으로 스타트업 자금과 컴퓨트 보증을 줄일 수 있고, 미국이 중국 오픈웨이트 모델을 제한할 가능성도 있다고 본다. 두 가지가 겹치면 스타트업이 대형 랩의 API에 더 의존하게 된다고 우려한다. 다만 오픈웨이트 AI가 사라지지는 않을 것이며 효율화 분야에는 기회가 있다고 본다.",
+   "points": [
+    "컴퓨트 자금 축소와 오픈 모델 접근 제한이 동시에 닥치면 스타트업이 이중 타격을 입을 수 있다고 우려한다.",
+    "엔비디아는 비상장사 지분 투자와 조건부 보증으로 AI 스타트업 자금 조달에 막대한 역할을 해 왔다.",
+    "후기 단계 투자에서 이미 라운드가 길어지고 가격 조정이 나타나고 있다고 전한다.",
+    "칩 규제가 중국산 모델 규제로 번질 수 있다는 점을 가장 크게 걱정한다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "웹 페이지 본문 기준. 그림 4개 속 글자는 확인하지 못함"
+  },
   {
    "id": "softbank-the-man-who-keeps-betting-his-entire-fortune-on",
    "group": "PE·대체투자",
@@ -3218,6 +3252,29 @@
     "tier": "standard"
    },
    "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
+  },
+  {
+   "id": "founders-fund-peter-thiel-s-lieutenant-warns-ai-bubble-could-b",
+   "group": "벤처캐피털",
+   "org": "Founders Fund",
+   "person": null,
+   "kind": "report",
+   "title": "Peter Thiel 측근, AI 거품이 2026년 말 전에 꺼질 수 있다고 경고",
+   "title_orig": "Peter Thiel’s lieutenant warns AI bubble could burst before end of 2026",
+   "url": "https://cryptobriefing.com/thiel-capital-selby-ai-bubble-warning",
+   "outlet": "Crypto Briefing",
+   "published_kst": "2026-11-05T19:51:00+09:00",
+   "stance": {
+    "ai_tech": -2,
+    "market": null
+   },
+   "args": [
+    "밸류에이션"
+   ],
+   "judged": {
+    "basis": "headline_only",
+    "tier": "light"
+   }
   },
   {
    "id": "el-erian-el-erian-says-stock-market-is-overdoing-it-on-ai",

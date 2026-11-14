@@ -1,7 +1,25 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-14T23:15:00+09:00",
+ "generated_kst": "2026-11-14T23:23:15+09:00",
  "reports": [
+  {
+   "slug": "palantir-3q26-earnings",
+   "type": "earnings",
+   "title": "Palantir 3Q26 실적발표 : 미국 상업이 정부를 추월, 계약은 짧아지고 RPO는 정체",
+   "companies": [
+    {
+     "name": "Palantir",
+     "ticker": "PLTR"
+    }
+   ],
+   "event": "3Q26 실적 발표",
+   "event_date": "2026-11-02",
+   "published_kst": "2026-11-14T23:19:09+09:00",
+   "revised_kst": "2026-11-14T23:19:09+09:00",
+   "revision": 1,
+   "summary": "매출 +96%, 미국 상업 +148%로 상장 후 최고 성장률을 냈고, 미국 상업 매출이 처음으로 미국 정부 매출을 넘었다. 다만 계약 기간이 짧아지면서 전체 TCV(+6%)와 RPO(전분기 대비 보합)가 매출 성장을 따라가지 못했다. 이 성장이 이어질지는 다음 분기 수주와 잔여 계약가치가 가른다.",
+   "path": "reports/palantir-3q26-earnings.json"
+  },
   {
    "slug": "morgan-stanley-can-ai-chip-demand-outrun-the-power-crunch",
    "type": "article",
@@ -793,11 +811,11 @@
   }
  ],
  "street": {
-  "updated_kst": "2026-11-14T17:28:37+09:00",
+  "updated_kst": "2026-11-14T23:23:15+09:00",
   "path": "street.json"
  },
  "calendar": {
-  "updated_kst": "2026-11-14T23:15:00+09:00",
+  "updated_kst": "2026-11-14T23:21:08+09:00",
   "path": "calendar.json"
  }
 }

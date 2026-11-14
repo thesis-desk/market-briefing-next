@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated_kst": "2026-11-14T23:15:00+09:00",
+ "updated_kst": "2026-11-14T23:21:08+09:00",
  "events": [
   {
    "company": "Oracle",
@@ -68,8 +68,8 @@
    "official": false,
    "source_url": "https://stockanalysis.com/stocks/pltr/transcripts/722806-q3-2026/",
    "consensus_snapshot": false,
-   "report_slug": null,
-   "status": "queued",
+   "report_slug": "palantir-3q26-earnings",
+   "status": "published",
    "note": "원문이 올라온 것을 보고 넣은 일정"
   },
   {
