@@ -8,13 +8,13 @@
    "value": -3,
    "label": "엇갈림",
    "orgs": 40,
-   "items": 117
+   "items": 116
   },
   "market": {
    "value": -15,
    "label": "경계 우위",
    "orgs": 29,
-   "items": 62
+   "items": 61
   },
   "by_group": [
    {
@@ -40,9 +40,9 @@
    },
    {
     "group": "투자은행",
-    "ai_tech": 10,
+    "ai_tech": 11,
     "ai_tech_orgs": 6,
-    "market": 19,
+    "market": 22,
     "market_orgs": 6
    },
    {
