@@ -1,7 +1,25 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-14T08:19:19+09:00",
+ "generated_kst": "2026-11-14T11:17:03+09:00",
  "reports": [
+  {
+   "slug": "sixsigma-ruuvcrnh8f8",
+   "type": "article",
+   "title": "식스시그마 : 민주당이 압승해도 정책·데이터센터·돈줄은 그대로 간다",
+   "companies": [
+    {
+     "name": "Meta",
+     "ticker": null
+    }
+   ],
+   "event": "2026 미국 중간선거 이후 데이터센터·정책·재정 전망",
+   "event_date": "2026-11-03",
+   "published_kst": "2026-11-14T11:17:00+09:00",
+   "revised_kst": "2026-11-14T11:17:00+09:00",
+   "revision": 1,
+   "summary": "영상의 \"바뀐 건 없다\"는 2027년 가동 물량(약 4분의 3이 공사 중)과 행정명령 경로에는 설득력이 있다. 그러나 미착공 상태인 2028년 물량, 특히 텍사스에는 과장이다. 판가름은 12월 16일 전의 예산·부채한도 처리 여부와 1월 말 빅테크 4분기 실적의 설비투자 전망에서 난다.",
+   "path": "reports/sixsigma-ruuvcrnh8f8.json"
+  },
   {
    "slug": "sixsigma-cfo",
    "type": "article",
@@ -639,7 +657,7 @@
   "path": "street.json"
  },
  "calendar": {
-  "updated_kst": "2026-11-14T08:16:52+09:00",
+  "updated_kst": "2026-11-14T11:17:03+09:00",
   "path": "calendar.json"
  }
 }
