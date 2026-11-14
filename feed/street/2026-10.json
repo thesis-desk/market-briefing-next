@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "month": "2026-10",
- "updated_kst": "2026-11-13T17:16:20+09:00",
+ "updated_kst": "2026-11-14T17:28:20+09:00",
  "items": [
   {
    "id": "boldstart-what-s-in-ai-infra-vc-522",
@@ -210,6 +210,30 @@
     "tier": "standard"
    },
    "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
+  },
+  {
+   "id": "chamath-chamath-palihapitiya-warns-ai-boom-has-a-borrowi",
+   "group": "벤처캐피털",
+   "org": "Social Capital",
+   "person": "Chamath Palihapitiya",
+   "kind": "report",
+   "title": "Chamath Palihapitiya, AI 붐의 차입 문제 경고…빅테크 부채 4,000억 달러 육박, 미 국채 수요 잠식 우려",
+   "title_orig": "Chamath Palihapitiya warns AI boom has a borrowing problem as big tech debt nears $400 billion, threatening to crowd out US Treasury demand: The entire US economy is levered to ...",
+   "url": "https://www.msn.com/en-us/news/other/chamath-palihapitiya-warns-ai-boom-has-a-borrowing-problem-as-big-tech-debt-nears-400-billion-threatening-to-crowd-out-us-treasury-demand-the-entire-us-economy-is-levered-to-the-ai-complex/ar-AA2gsEVe",
+   "outlet": "Benzinga on MSN",
+   "published_kst": "2026-10-31T09:50:39+09:00",
+   "stance": {
+    "ai_tech": -1,
+    "market": -1
+   },
+   "args": [
+    "자금 조달·신용",
+    "금리·거시"
+   ],
+   "judged": {
+    "basis": "headline_only",
+    "tier": "light"
+   }
   },
   {
    "id": "doubleline-equities-tricky-fixed-income-treats-during-busy",

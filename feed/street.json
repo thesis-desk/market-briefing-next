@@ -1,14 +1,14 @@
 {
  "schema": 1,
- "updated_kst": "2026-11-14T08:19:19+09:00",
+ "updated_kst": "2026-11-14T17:28:37+09:00",
  "window_days": 14,
  "items_days": 30,
  "index": {
   "ai_tech": {
-   "value": -5,
+   "value": -3,
    "label": "엇갈림",
-   "orgs": 39,
-   "items": 116
+   "orgs": 40,
+   "items": 117
   },
   "market": {
    "value": -15,
@@ -26,8 +26,8 @@
    },
    {
     "group": "PE·대체투자",
-    "ai_tech": -9,
-    "ai_tech_orgs": 7,
+    "ai_tech": -2,
+    "ai_tech_orgs": 8,
     "market": 0,
     "market_orgs": 3
    },
@@ -84,8 +84,8 @@
    },
    {
     "week": "2026-11-09",
-    "ai_tech": 1,
-    "ai_tech_orgs": 30,
+    "ai_tech": 3,
+    "ai_tech_orgs": 31,
     "market": -15,
     "market_orgs": 21
    }
@@ -151,11 +151,11 @@
      "n": 18
     },
     {
-     "tag": "전력·공급 제약",
-     "n": 11
+     "tag": "밸류에이션",
+     "n": 12
     },
     {
-     "tag": "밸류에이션",
+     "tag": "전력·공급 제약",
      "n": 11
     },
     {
@@ -171,6 +171,42 @@
   "method": "기관·인물마다 기간 안 입장 값의 평균을 내고 그 평균들을 다시 평균해 ×50"
  },
  "items": [
+  {
+   "id": "softbank-the-man-who-keeps-betting-his-entire-fortune-on",
+   "group": "PE·대체투자",
+   "org": "SoftBank",
+   "person": null,
+   "kind": "report",
+   "title": "775억 엔이 며칠 만에 사라져도 전 재산을 AI에 계속 거는 남자. 손정의의 성공을 분해한다 [성공자 과학]",
+   "title_orig": "The man who keeps betting his entire fortune on AI, even after 775 billion yen vanishes in a few days. Deconstructing Masayoshi Son's success [Successor Science]",
+   "url": "https://note.com/huge_mole9790/n/n706cf67b1897?hl=en",
+   "outlet": "note",
+   "published_kst": "2026-11-14T09:27:00+09:00",
+   "stance": {
+    "ai_tech": 1,
+    "market": null
+   },
+   "args": [
+    "밸류에이션"
+   ],
+   "summary": "손정의는 2026년 6월 주주총회에서 SoftBank를 황금알을 낳는 거위에 비유하며 부채를 뺀 보유 지분 가치가 16년 만에 3조 엔에서 74조 엔으로 늘었다고 말했다. WeWork 대손실 때는 반성하되 위축되지 않겠다고 했고, 50년 인생 계획을 고쳐 70대에도 경영 일선에 남겠다고 선언했다. AI 투자 사이클에 대한 평가를 직접 밝힌 발언은 없고, 기사는 그가 AI에 계속 베팅한다고 전한다.",
+   "points": [
+    "SoftBank는 황금알을 낳는 거위다. 16년 전 부채를 뺀 보유 지분 가치는 3조 엔이었는데 지금은 74조 엔이다. 알이 저절로 불어난 것이 아니라 거위가 낳은 것이라고 말했다.",
+    "미국 WeWork 투자에서 큰 손실을 본 뒤 \"반성은 하겠지만 위축되지는 않겠다\"고 말했다.",
+    "19세에 세운 \"50년 인생 계획\"을 고쳐 쓰고, 70대에도 경영 일선에 남겠다고 선언했다."
+   ],
+   "evidence": [
+    {
+     "ko": "SoftBank는 황금알을 낳는 거위다. 16년 전 부채를 뺀 보유 지분 가치는 3조 엔이었는데 지금은 74조 엔이다. 알이 저절로 불어난 것이 아니라 거위가 낳은 것이라고 말했다.",
+     "orig": "SoftBank is a goose that lays golden eggs. Sixteen years ago, the value of the shares after subtracting debt was 3 trillion yen. Now, it is 74 trillion yen. It is not that the eggs multiplied on their own. The goose laid them, he said."
+    }
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
+  },
   {
    "id": "doubleline-broad-rally-for-stocks-bear-flattening-for-bonds",
    "group": "자산운용",
@@ -4524,6 +4560,30 @@
     "tier": "standard"
    },
    "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
+  },
+  {
+   "id": "chamath-chamath-palihapitiya-warns-ai-boom-has-a-borrowi",
+   "group": "벤처캐피털",
+   "org": "Social Capital",
+   "person": "Chamath Palihapitiya",
+   "kind": "report",
+   "title": "Chamath Palihapitiya, AI 붐의 차입 문제 경고…빅테크 부채 4,000억 달러 육박, 미 국채 수요 잠식 우려",
+   "title_orig": "Chamath Palihapitiya warns AI boom has a borrowing problem as big tech debt nears $400 billion, threatening to crowd out US Treasury demand: The entire US economy is levered to ...",
+   "url": "https://www.msn.com/en-us/news/other/chamath-palihapitiya-warns-ai-boom-has-a-borrowing-problem-as-big-tech-debt-nears-400-billion-threatening-to-crowd-out-us-treasury-demand-the-entire-us-economy-is-levered-to-the-ai-complex/ar-AA2gsEVe",
+   "outlet": "Benzinga on MSN",
+   "published_kst": "2026-10-31T09:50:39+09:00",
+   "stance": {
+    "ai_tech": -1,
+    "market": -1
+   },
+   "args": [
+    "자금 조달·신용",
+    "금리·거시"
+   ],
+   "judged": {
+    "basis": "headline_only",
+    "tier": "light"
+   }
   },
   {
    "id": "doubleline-equities-tricky-fixed-income-treats-during-busy",

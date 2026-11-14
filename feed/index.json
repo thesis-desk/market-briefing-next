@@ -1,7 +1,28 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-14T15:23:12+09:00",
+ "generated_kst": "2026-11-14T17:28:37+09:00",
  "reports": [
+  {
+   "slug": "all-in-jensen-out-as-nvidia-ceo-spy-scandal-export",
+   "type": "interview",
+   "title": "올인 팟캐스트 4인 대담 : 젠슨 황 퇴진의 배후 논쟁과 ‘엔비디아 은행’ 정지·칩 통제 입법 위험",
+   "companies": [
+    {
+     "name": "Nvidia",
+     "ticker": null
+    },
+    {
+     "name": "Anthropic",
+     "ticker": null
+    }
+   ],
+   "event": "젠슨 황 엔비디아 CEO 퇴진",
+   "published_kst": "2026-11-14T17:26:12+09:00",
+   "revised_kst": "2026-11-14T17:26:12+09:00",
+   "revision": 1,
+   "summary": "진행자들은 젠슨 황 퇴진이 범죄 확인의 결과가 아니라는 데 대체로 뜻을 같이한다. 삭스는 확인된 범죄는 기밀 유출뿐이라고 보고, 프리드버그와 차마스는 이사회가 움직인 이유를 확인서·D&O 보험 같은 내부 통제 절차에서 찾는다. 누가 이득을 보는지는 갈렸지만(삭스는 중국·화웨이, 차마스는 아무도 아니라고 봤다), 엔비디아 신제품 주기의 둔화, 젠슨 개인이 움직이던 ‘Bank of Nvidia’ 자금 흐름의 정지, 정부 소유 킬스위치 입법이 공통 위험으로 거론됐다. 같은 주 로드쇼를 시작한 앤스로픽 IPO(연환산 매출의 약 17배)는 이 거시 충격에 가격이 좌우될 가능성이 크다는 것이 작성자의 해석이다.",
+   "path": "reports/all-in-jensen-out-as-nvidia-ceo-spy-scandal-export.json"
+  },
   {
    "slug": "youtube-300",
    "type": "article",
@@ -692,11 +713,11 @@
   }
  ],
  "street": {
-  "updated_kst": "2026-11-14T08:19:19+09:00",
+  "updated_kst": "2026-11-14T17:28:37+09:00",
   "path": "street.json"
  },
  "calendar": {
-  "updated_kst": "2026-11-14T14:16:32+09:00",
+  "updated_kst": "2026-11-14T17:26:16+09:00",
   "path": "calendar.json"
  }
 }
