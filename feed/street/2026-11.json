@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "month": "2026-11",
- "updated_kst": "2026-11-14T23:23:15+09:00",
+ "updated_kst": "2026-11-14T23:39:14+09:00",
  "items": [
   {
    "id": "boldstart-what-s-in-ai-infra-vc-524",
@@ -319,7 +319,7 @@
    "org": "BlackRock",
    "person": null,
    "kind": "report",
-   "title": "블랙록 CEO 래리 핑크, 데이터센터 모라토리엄은 경기침체 위험이라며 AI 인프라 확대 재확인",
+   "title": "우리는 침체에 빠질 것이다: BlackRock CEO 래리 핑크, 데이터센터 모라토리엄이 경제 붕괴 위험을 부른다고 경고",
    "title_orig": "We will be in a recession: BlackRock CEO Larry Fink warns a data center moratorium risks an economic crash",
    "url": "https://www.msn.com/en-us/money/economy/we-will-be-in-a-recession-blackrock-ceo-larry-fink-warns-a-data-center-moratorium-risks-an-economic-crash/ar-AA2hmMCU",
    "outlet": "Moneywise on MSN",
@@ -329,13 +329,23 @@
     "market": null
    },
    "args": [
-    "정책·지정학",
+    "수요·채택",
+    "전력·공급 제약",
+    "투자 회수",
     "금리·거시"
    ],
+   "summary": "Fink는 데이터센터 건설 중단이 시행되면 미국 경제가 침체에 빠질 것이라고 경고했다. AI 거품은 없으며 오히려 공급 부족과 수요 폭증 상태이므로 더 빠르게 투자해야 한다고 주장했다. 또한 국가부채 확대로 신용 수요가 커지는 만큼 민간 자본을 끌어들여야 한다고 말했다.",
+   "points": [
+    "미국에서 어떤 형태로든 데이터센터 모라토리엄이 시행되면 우리는 침체에 빠질 것이라고 10월 14일 CNBC 인터뷰에서 말했다.",
+    "데이터센터는 문제가 아니며, 그 어느 때보다 많은 새 일자리를 만들어내고 있다고 말했다.",
+    "5월 밀컨 연구소 글로벌 콘퍼런스 패널에서, 우리는 충분히 빠르게 움직이고 있지 않다고 보며 AI 거품은 없고 오히려 그 반대라고 말했다. 공급 부족이 있고, 수요는 누구도 예상하지 못했던 속도로 훨씬 빠르게 늘고 있으며, 이는 미국에서만 나타나는 현상이라고 했다.",
+    "9월 캐나다의 금융 토론회에서, 용량을 더 빨리 구축할수록 AI를 더 민주화해 모두가 이용할 수 있게 만들 수 있다고 말했다."
+   ],
    "judged": {
-    "basis": "headline_only",
-    "tier": "light"
-   }
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
   },
   {
    "id": "morgan-stanley-from-ai-to-air-conditioning-the-power-boom-in-as",
@@ -435,7 +445,7 @@
    "org": "Pershing Square",
    "person": "Bill Ackman",
    "kind": "report",
-   "title": "빌 애크먼: 앤트로픽이 기업용 소프트웨어로 진출해도 마이크로소프트의 입지는 매우 강하다",
+   "title": "Bill Ackman, Anthropic이 기업용 소프트웨어로 진출하는 가운데에도 Microsoft의 입지는 정말 매우 강력하다고 말해",
    "title_orig": "Bill Ackman says Microsoft's position is really, really strong as Anthropic pushes into enterprise software",
    "url": "https://www.msn.com/en-us/news/other/bill-ackman-says-microsofts-position-is-really-really-strong-as-anthropic-pushes-into-enterprise-software/ar-AA2hjJZ6",
    "outlet": "Yahoo Finance on MSN",
@@ -446,12 +456,18 @@
    },
    "args": [
     "경쟁·해자",
-    "밸류에이션"
+    "수요·채택"
+   ],
+   "summary": "Ackman은 Anthropic이 기업용 소프트웨어 도구로 영역을 넓히는 상황에서도 Microsoft에 대해 강세 입장을 유지한다. Microsoft가 새로운 AI 세대의 근로자를 지원하는 데 있어 최신 흐름을 잘 따라가고 있으며, 시장 지위가 매우 강력하다고 평가했다.",
+   "points": [
+    "Microsoft가 새로운 AI 세대의 근로자들이 AI를 쓸 수 있도록 하는 면에서 최신 흐름을 유지하며 매우 잘하고 있다고 본다.",
+    "Microsoft의 입지는 정말, 정말 강력하다고 본다. Microsoft의 입지는 여전히 강력하게 유지되고 있다고 생각한다."
    ],
    "judged": {
-    "basis": "headline_only",
-    "tier": "light"
-   }
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
   },
   {
    "id": "brookfield-up-to-10-trillion-riding-on-key-ai-question-says",
@@ -648,22 +664,34 @@
    "org": "Oaktree Capital",
    "person": "Howard Marks",
    "kind": "report",
-   "title": "하워드 막스: 버핏의 1979년 경고가 오늘날 AI 붐의 교훈일 수 있다… '불확실성은 사실 친구'",
+   "title": "워런 버핏의 1979년 경고가 오늘날 AI 붐에 완벽한 교훈일 수 있다고 하워드 막스는 말한다: '불확실성은 사실 친구다'",
    "title_orig": "Warren Buffett’s 1979 warning may be the perfect lesson for today’s AI boom, says Howard Marks: ‘Uncertainty actually is the friend’",
    "url": "https://www.msn.com/en-us/news/other/warren-buffett-s-1979-warning-may-be-the-perfect-lesson-for-today-s-ai-boom-says-howard-marks-uncertainty-actually-is-the-friend/ar-AA2hhffv",
    "outlet": "Benzinga on MSN",
    "published_kst": "2026-11-12T08:29:17+09:00",
    "stance": {
-    "ai_tech": -1,
+    "ai_tech": 0,
     "market": null
    },
    "args": [
-    "밸류에이션"
+    "투자 회수",
+    "자금 조달·신용",
+    "수요·채택"
+   ],
+   "summary": "Marks는 AI를 투자자에게 적어도 한 세대 만에 가장 중대하면서도 예측하기 어려운 변화로 규정했다. AI 인프라 투자가 충분한 수익을 낼지는 현재 '믿음의 문제'라고 보면서도, 투자를 멈출 것이 아니라 겸손하게 전략·비중·위험 감수를 조정하며 불확실성 속에서 행동해야 한다고 권고했다.",
+   "points": [
+    "투자자는 예측하기 어렵다는 이유로 AI 산업을 멀리해서는 안 된다고 메모에서 밝혔다. 메모 말미에 1979년 8월 6일자 포브스에 실린 워런 버핏의 발언을 인용했다.",
+    "버핏의 발언 중 \"불확실성은 사실 장기 가치를 사는 사람의 친구\"라는 대목을 강조했고, 이 1979년의 경고를 \"AI에 관한 메모의 완벽한 마무리\"라고 지칭했다.",
+    "AI를 \"적어도 한 세대 만에 투자자에게 가장 중대하면서도 가장 예측하기 어려운 변화\"라고 표현했다. AI에 투자하려면 기술의 진화, 컴퓨팅 수요, 자금 조달 가능성을 정확히 예측해야 한다고 짚었다.",
+    "AI 인프라에 투입된 수조 달러가 충분한 수익을 낼지 판단하는 것은 현재로서는 \"믿음의 문제\"라고 결론지었다.",
+    "올바른 대응은 투자 마비가 아니라고 고객에게 조언했다. 전략 선택, 포지션 크기, 위험 감수에서 \"보정된 겸손\"으로 이 분야에 접근하라고 권고했다.",
+    "\"불확실성 속에서도 행동하려는 의지\"가 필요하다고 강조했다. 투자자는 자신이 완전한 지식을 갖고 있지 않음을 받아들여야 하며, AI 분야가 반드시 의외의 일을 낳을 것이라고 경고했다."
    ],
    "judged": {
-    "basis": "headline_only",
-    "tier": "light"
-   }
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
   },
   {
    "id": "ark-did-the-midterms-just-break-the-ai-trade-the-bra",
@@ -877,22 +905,35 @@
    "org": "Goldman Sachs",
    "person": null,
    "kind": "report",
-   "title": "David Solomon(Goldman Sachs), AI 인프라의 미국 내 구축 촉구…투자가 해외로 옮겨갈 수 있다고 경고",
+   "title": "AI 인프라 구축: David Solomon, 미국 내 데이터센터 건설 촉구…투자가 해외로 옮겨갈 수 있다고 경고",
    "title_orig": "AI infrastructure buildout: David Solomon urges US data centres; warns investment may move abroad",
    "url": "https://www.msn.com/en-in/money/technology/ai-infrastructure-buildout-david-solomon-urges-us-data-centres-warns-investment-may-move-abroad/ar-AA2hdyIP",
    "outlet": "The Times of India on MSN",
    "published_kst": "2026-11-11T14:54:00+09:00",
    "stance": {
     "ai_tech": 1,
-    "market": null
+    "market": 1
    },
    "args": [
-    "정책·지정학"
+    "수요·채택",
+    "정책·지정학",
+    "투자 회수"
+   ],
+   "summary": "Solomon은 AI 인프라가 미국 밖으로 나가서는 안 되며, 데이터센터 건설에 대한 정치적 반발에도 책임 있게 지을 수 있다고 주장했다. AI 인프라와 관련 기술에 대한 투자·자금 조달 수요가 여전히 강하고, AI가 경제 생산성을 끌어올릴 장기 궤적을 깊이 믿는다고 밝혔다. 정치 환경 변화로 등락은 있겠지만 시장 환경은 여전히 꽤 건설적이라고 평가했다.",
+   "points": [
+    "우리는 이 인프라가 미국 밖으로 나가는 것을 결코 원하지 않는다. 컴퓨팅에 대한 수요가 존재하기 때문에 그렇게 되는 것이 자연스러운 흐름이다.",
+    "데이터센터 건설에 대한 정치적 반발에 맞서, 이 시설은 미국 경제에 필수적이며 책임 있게 지을 수 있다고 주장했다. 건설 반대가 투자를 해외로 밀어낼 수 있다고 경고했다.",
+    "정치 환경의 변화는 '재조정과 등락'을 만들어낼 요인 가운데 하나이며, 우리는 이미 그 일부를 보고 있다.",
+    "그럼에도 AI가 경제에서 생산성을 끌어올리는 힘의 장기 궤적을 여전히 깊이 믿는다.",
+    "Goldman Sachs는 최근 몇 주간 AI 자본시장 거래에 '매우 적극적'이었고 이런 활동이 이어질 것으로 예상한다고 말했다.",
+    "AI 인프라 구축과 AI 성장을 둘러싼 기술에 대한 투자 수요는 여전히 매우 강하다.",
+    "Anthropic IPO가 진행된다면 어떻게 전개될지는 두고 봐야 한다. 다만 시장 환경은 여전히 꽤 건설적이라고 본다."
    ],
    "judged": {
-    "basis": "headline_only",
-    "tier": "light"
-   }
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
   },
   {
    "id": "ark-cathie-wood-calls-humanoid-robots-a-26-trillion",
