@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-14T20:31:42+09:00",
+ "generated_kst": "2026-11-14T23:02:56+09:00",
  "reports": [
   {
    "slug": "20vc-google-loses-500b-in-12-hours-doordash-buys-instacart",
@@ -779,7 +779,7 @@
   "path": "street.json"
  },
  "calendar": {
-  "updated_kst": "2026-11-14T20:31:42+09:00",
+  "updated_kst": "2026-11-14T23:02:56+09:00",
   "path": "calendar.json"
  }
 }
