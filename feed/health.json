@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated_kst": "2026-11-14T23:06:49+09:00",
+ "updated_kst": "2026-11-14T23:09:12+09:00",
  "collectors": [
   {
    "name": "reports",
@@ -14,8 +14,8 @@
   },
   {
    "name": "calendar",
-   "items": 47,
-   "last_kst": "2026-11-14T23:05:12+09:00"
+   "items": 51,
+   "last_kst": "2026-11-14T23:09:12+09:00"
   }
  ],
  "missed": []
