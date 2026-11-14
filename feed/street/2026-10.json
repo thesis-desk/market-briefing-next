@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "month": "2026-10",
- "updated_kst": "2026-11-14T17:28:20+09:00",
+ "updated_kst": "2026-11-14T23:41:09+09:00",
  "items": [
   {
    "id": "boldstart-what-s-in-ai-infra-vc-522",
@@ -217,23 +217,43 @@
    "org": "Social Capital",
    "person": "Chamath Palihapitiya",
    "kind": "report",
-   "title": "Chamath Palihapitiya, AI 붐의 차입 문제 경고…빅테크 부채 4,000억 달러 육박, 미 국채 수요 잠식 우려",
+   "title": "Chamath Palihapitiya, AI 붐에 차입 문제가 있다고 경고: 빅테크 부채가 4,000억 달러에 육박해 미 국채 수요를 밀어낼 우려 — '미국 경제 전체가 AI 복합체에 레버리지로 묶여 있다'",
    "title_orig": "Chamath Palihapitiya warns AI boom has a borrowing problem as big tech debt nears $400 billion, threatening to crowd out US Treasury demand: The entire US economy is levered to ...",
    "url": "https://www.msn.com/en-us/news/other/chamath-palihapitiya-warns-ai-boom-has-a-borrowing-problem-as-big-tech-debt-nears-400-billion-threatening-to-crowd-out-us-treasury-demand-the-entire-us-economy-is-levered-to-the-ai-complex/ar-AA2gsEVe",
    "outlet": "Benzinga on MSN",
    "published_kst": "2026-10-31T09:50:39+09:00",
    "stance": {
     "ai_tech": -1,
-    "market": -1
+    "market": null
    },
    "args": [
     "자금 조달·신용",
+    "투자 회수",
+    "쏠림",
     "금리·거시"
    ],
+   "summary": "Palihapitiya는 AI 기업들의 부채가 약 3,400억~4,000억 달러에 달해 미 국채 수요를 밀어낼(crowding out) 수 있다고 경고했다. 미국 경제 전체가 7~8개 기업이 주도하는 AI 복합체에 레버리지로 묶여 있으며, 과거 현금 창출 기업들이 AI에 '대규모 지출 폭주'를 벌이며 현금이 줄고 차입이 늘었다고 봤다. 마이크로소프트만 부채를 절반으로 줄인 예외로 평가했다.",
+   "points": [
+    "AI 기업들의 부채가 추정 3,400억~4,000억 달러에 이르렀으며, 7~8개 기업이 대규모 지출을 주도하고 있어 미 국채 수요를 밀어낼(crowd out) 위험이 있다.",
+    "'7~8개 기업'이 이제 나라 전체의 분위기를 좌우한다.",
+    "미국 경제 전체가 AI 복합체에 레버리지로 묶여 있다.",
+    "이들 기업은 한때 수익성이 매우 높고 현금을 창출했으나, 지금은 AI에 그가 '대규모 지출 폭주(massive spending binge)'라 부른 상태에 들어서 있다.",
+    "과도한 지출이 현금을 소진시키고 있어 기업들이 부채를 조달할 수밖에 없다.",
+    "마이크로소프트는 예외이며, 동종 기업들이 훨씬 더 많이 빌리는 동안 CEO 사티아 나델라가 회사 부채를 절반으로 줄인 점을 높이 평가했다.",
+    "더 큰 우려는 '구축 효과(crowding out)'로, 한 집단의 대규모 차입이 다른 곳으로 갔을 투자자 자금을 흡수하는 현상이다.",
+    "2027년 말까지 AI 기업들의 자금 수요는 같은 기간 예상 미 국채 발행량의 약 30%에 해당하며, 이 기업들이 투자자 수요를 두고 국채와 경쟁하게 될 것이다."
+   ],
+   "evidence": [
+    {
+     "ko": "이들 기업은 한때 수익성이 매우 높고 현금을 창출했으나, 지금은 AI에 그가 '대규모 지출 폭주(massive spending binge)'라 부른 상태에 들어서 있다.",
+     "orig": "They are now in what he called a \"massive spending binge\" on AI."
+    }
+   ],
    "judged": {
-    "basis": "headline_only",
-    "tier": "light"
-   }
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
   },
   {
    "id": "doubleline-equities-tricky-fixed-income-treats-during-busy",
@@ -710,22 +730,36 @@
    "org": "BlackRock",
    "person": null,
    "kind": "report",
-   "title": "부동산·주식·채권: 블랙록, 2035년까지 인도 가계 투자 4배 증가 전망",
+   "title": "부동산·주식·채권: BlackRock, 2035년까지 인도 가계 투자가 4배 늘 것으로 전망",
    "title_orig": "Property, stocks & bonds: BlackRock sees 4-fold jump in Indian household investments by 2035",
    "url": "https://www.msn.com/en-in/money/economy/property-stocks-bonds-blackrock-sees-4-fold-jump-in-indian-household-investments-by-2035/ar-AA2gjzTM",
    "outlet": "Business Today on MSN",
    "published_kst": "2026-10-29T07:59:13+09:00",
    "stance": {
     "ai_tech": null,
-    "market": 1
+    "market": 0
    },
    "args": [
-    "수요·채택"
+    "밸류에이션",
+    "수요·채택",
+    "금리·거시"
+   ],
+   "summary": "BlackRock Investment Institute는 인도 가계가 2026~2035년 새로 취득하는 자산 중 자본시장 상품 비중이 100달러당 약 5달러에서 20달러로 4배 늘 수 있다고 시나리오를 제시했다. 장기적으로는 인도 주식 비중 확대 근거가 있다고 보면서도, 높은 밸류에이션과 불균등한 실적 전망 탓에 단기적으로는 중립을 유지한다.",
+   "points": [
+    "BlackRock은 2016~2025년 인도 가계가 실물·금융자산을 새로 취득할 때 100달러당 약 5달러가 자본시장 상품으로 들어갔다고 추정한다. 2026~2035년 시나리오에서는 이 수치가 20달러로 올라 자본시장에 배분되는 비중이 4배가 된다고 본다.",
+    "인도 가계가 2016~2025년에 취득한 실물·금융자산은 약 7.2조 달러로 추정되며, BlackRock의 시나리오는 2026~2035년 같은 수치를 15.8조 달러로 제시한다. 이는 부채를 차감하기 전 취득 자산 규모이며 가계 순자산을 뜻하지 않는다.",
+    "2016~2025년에는 부동산 등 실물자산이 가계 자산 취득의 거의 절반을 차지했다. BlackRock은 향후 10년간 예금·보험·퇴직상품을 포함한 금융자산이 신규 가계 자산 취득의 약 62%를 차지해, 과거 약 51%에서 높아질 것으로 예상한다.",
+    "BlackRock은 더 깊어진 주식·채권 시장이 특히 인프라, 혁신, 확장을 위한 자금이 필요한 기업의 조달 기회를 넓힐 것으로 본다. 보험·퇴직 자산이 늘면 장기 회사채와 인프라채 발행도 더 늘어날 수 있다고 본다.",
+    "BlackRock의 분석은 두 가지 투자 기회를 제시한다. 하나는 가계 저축이 금융시장으로 흘러들어가도록 돕는 기업이고, 다른 하나는 추가로 조달한 자금을 생산적으로 쓰는 기업이다.",
+    "BlackRock은 Aadhaar, UPI, 계좌 통합 조회 같은 인도의 디지털 금융 인프라가 금융 서비스 접근성을 높였다고 본다. 소득 증가와 투자 상품 확대가 금융시장 참여를 더 넓힐 수 있다고 본다.",
+    "BlackRock은 국내 기관이 38개월 연속 인도 주식을 순매수했으며 2026년 9월에도 외국인이 매도로 돌아선 가운데 약 80억 달러를 샀다고 짚었다. 이 지속적인 국내 매수를 시장을 떠받치는 현지 자본의 역할이 커지고 있다는 증거로 본다.",
+    "BlackRock은 2026년 인도 주식이 높은 밸류에이션과 불균등한 실적 전망 탓에 글로벌 및 신흥국 주식보다 부진했다고 말했다. 5년 이상의 기간으로는 인도 주식 비중을 늘릴 근거가 있다고 보지만 단기적으로는 중립을 유지하며, 개별 종목의 성과는 실적 성장 능력에 점점 더 좌우될 것으로 예상한다."
    ],
    "judged": {
-    "basis": "headline_only",
-    "tier": "light"
-   }
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
   },
   {
    "id": "ark-anthropic-s-s-1-meta-s-90b-and-elon-s-warning-ca",

@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated_kst": "2026-11-14T23:39:14+09:00",
+ "updated_kst": "2026-11-14T23:41:09+09:00",
  "window_days": 14,
  "items_days": 30,
  "index": {
@@ -8,13 +8,13 @@
    "value": -5,
    "label": "엇갈림",
    "orgs": 41,
-   "items": 116
+   "items": 117
   },
   "market": {
-   "value": -15,
-   "label": "경계 우위",
+   "value": -12,
+   "label": "엇갈림",
    "orgs": 29,
-   "items": 62
+   "items": 63
   },
   "by_group": [
    {
@@ -40,16 +40,16 @@
    },
    {
     "group": "투자은행",
-    "ai_tech": 11,
+    "ai_tech": 7,
     "ai_tech_orgs": 6,
     "market": 22,
     "market_orgs": 6
    },
    {
     "group": "투자 거장",
-    "ai_tech": -35,
+    "ai_tech": -33,
     "ai_tech_orgs": 9,
-    "market": -49,
+    "market": -39,
     "market_orgs": 9
    },
    {
@@ -72,19 +72,19 @@
     "week": "2026-10-26",
     "ai_tech": 5,
     "ai_tech_orgs": 23,
-    "market": -14,
+    "market": -16,
     "market_orgs": 11
    },
    {
     "week": "2026-11-02",
-    "ai_tech": 3,
+    "ai_tech": 5,
     "ai_tech_orgs": 27,
-    "market": -6,
-    "market_orgs": 20
+    "market": -4,
+    "market_orgs": 21
    },
    {
     "week": "2026-11-09",
-    "ai_tech": 3,
+    "ai_tech": 2,
     "ai_tech_orgs": 32,
     "market": -15,
     "market_orgs": 21
@@ -94,7 +94,7 @@
    "caution": [
     {
      "tag": "투자 회수",
-     "n": 17
+     "n": 18
     },
     {
      "tag": "자금 조달·신용",
@@ -102,11 +102,11 @@
     },
     {
      "tag": "쏠림",
-     "n": 12
+     "n": 14
     },
     {
      "tag": "금리·거시",
-     "n": 12
+     "n": 13
     },
     {
      "tag": "정책·지정학",
@@ -132,39 +132,39 @@
    "optimism": [
     {
      "tag": "수요·채택",
-     "n": 37
+     "n": 39
     },
     {
      "tag": "투자 회수",
-     "n": 25
+     "n": 26
+    },
+    {
+     "tag": "정책·지정학",
+     "n": 19
     },
     {
      "tag": "자금 조달·신용",
      "n": 19
     },
     {
-     "tag": "정책·지정학",
+     "tag": "금리·거시",
      "n": 18
     },
     {
-     "tag": "금리·거시",
-     "n": 18
+     "tag": "밸류에이션",
+     "n": 12
     },
     {
      "tag": "전력·공급 제약",
      "n": 12
     },
     {
-     "tag": "밸류에이션",
-     "n": 11
+     "tag": "경쟁·해자",
+     "n": 7
     },
     {
      "tag": "쏠림",
-     "n": 8
-    },
-    {
-     "tag": "경쟁·해자",
-     "n": 6
+     "n": 7
     }
    ]
   },
@@ -1109,7 +1109,7 @@
    "org": "ARK Invest",
    "person": null,
    "kind": "report",
-   "title": "캐시 우드, 휴머노이드 로봇을 향후 15년간 26조 달러 기회로 제시…'구현된 AI'가 언젠가 세계 GDP의 20%에 이를 수 있다고 말해",
+   "title": "캐시 우드, 휴머노이드 로봇을 향후 15년간 26조 달러 기회로 평가: '임바디드 AI'가 결국 세계 GDP의 20%에 맞먹을 수 있다",
    "title_orig": "Cathie Wood calls humanoid robots a $26 trillion opportunity over the next 15 years: 'Embodied AI' could eventually equal 20% of global GDP",
    "url": "https://www.msn.com/en-us/news/other/cathie-wood-calls-humanoid-robots-a-26-trillion-opportunity-over-the-next-15-years-embodied-ai-could-eventually-equal-20-of-global-gdp/ar-AA2hdOm5",
    "outlet": "Benzinga on MSN",
@@ -1119,12 +1119,24 @@
     "market": null
    },
    "args": [
-    "수요·채택"
+    "수요·채택",
+    "투자 회수"
+   ],
+   "summary": "캐시 우드는 휴머노이드 로봇이 향후 10~15년간 26조 달러 규모의 기회이며 세계 GDP의 약 20%에 해당한다고 주장했다. 로보택시는 10조 달러 규모로 더 빨리 열리고, 물리적 AI(로보틱스)가 소프트웨어보다 훨씬 빠르게 성장할 것이라고 봤다. AI 추론 비용이 연 99% 하락하며 AI가 모든 혁신의 최대 촉매라고 강조했다.",
+   "points": [
+    "기술 업계는 '임바디드 AI, 로보틱스'를 이제 막 건드리기 시작한 단계(\"hardly begun\")이며, ARK 연구원 타샤 키니와 대니얼은 휴머노이드 로봇 기회가 향후 10~15년간 26조 달러 규모라고 본다.",
+    "이 규모를 오늘날의 GDP에 비추어 보면 세계 GDP의 약 20%에 해당한다.",
+    "소프트웨어는 계속 올라갈 수 있겠지만 하드웨어만큼 빠르지는 않을 것이며, 그 또 다른 이유가 임바디드 AI, 로보틱스라고 말했다.",
+    "로보택시는 10조 달러 규모의 기회이며 휴머노이드 로봇보다 \"더 일찍\" 올 것이다.",
+    "시간이 지나면 수정 통계에서 GDP 대비 설비(장비) 비중이 올라가고 있음이 드러날 것이다.",
+    "AI 추론 비용이 매년 99%씩 떨어지고 있어 AI 기술의 폭넓은 도입이 가능해진다.",
+    "AI는 다른 모든 혁신에 대한 가장 큰 촉매이며 로보틱스와 직접 연결되어 있다."
    ],
    "judged": {
-    "basis": "headline_only",
-    "tier": "light"
-   }
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
   },
   {
    "id": "chanos-crwv-stock-surges-15-pre-market-as-coreweave-tou",
@@ -1132,7 +1144,7 @@
    "org": "Jim Chanos",
    "person": null,
    "kind": "report",
-   "title": "CoreWeave 주가, 1,330억 달러 수주잔고 발표에 장전 15% 급등…공매도 투자자 Jim Chanos는 세전 ROIC 2~3%의 낮은 자본수익률 경고",
+   "title": "CRWV 주가, CoreWeave의 1,330억 달러 수주잔고 발표에 프리마켓 15% 급등 — 그러나 공매도 투자자 Jim Chanos는 낮은 자본수익률 경고: '세전 ROIC 2~3%'",
    "title_orig": "CRWV stock surges 15% pre-market as CoreWeave touts $133 billion backlog — but short seller Jim Chanos warns of weak returns on capital: '2-3% pre-tax ROIC'",
    "url": "https://www.msn.com/en-us/news/other/crwv-stock-surges-15-pre-market-as-coreweave-touts-133-billion-backlog-but-short-seller-jim-chanos-warns-of-weak-returns-on-capital-2-3-pre-tax-roic/ar-AA2he0fD",
    "outlet": "Benzinga on MSN",
@@ -1142,12 +1154,21 @@
     "market": null
    },
    "args": [
-    "투자 회수"
+    "투자 회수",
+    "자금 조달·신용"
+   ],
+   "summary": "Chanos는 CoreWeave의 3분기 활성 메가와트당 연환산 매출이 전년 대비 감소했고, 매출 1달러를 내려고 자본 약 4달러를 쓰며 SBC 반영·자산수명 10년 가정 시 세전 ROIC가 2~3%에 그친다고 주장했다. 또한 현금이 빠듯하다며 조만간 추가 증자가 필요할 것이라고 봤다.",
+   "points": [
+    "CoreWeave의 3분기 연환산 평균 활성 메가와트당 매출은 920만 달러로, 전년 동기보다 감소했다.",
+    "CoreWeave는 여전히 매출 1달러를 만들어내는 데 자본 약 4달러를 쓰고 있으며, 주식보상비용을 반영하고 자산 수명을 10년으로 가정하면 사업의 세전 ROIC는 2~3%에 불과하다.",
+    "경영진이 설명한 고객 선수금에 이의를 제기하며 \"현금이 빠듯하다\"고 말했고, 자신이 계산한 당좌비율은 0.4배라고 제시했다.",
+    "자신의 생각으로는 CoreWeave가 곧 또 한 번의 증자를 해야 할 것이다."
    ],
    "judged": {
-    "basis": "headline_only",
-    "tier": "light"
-   }
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
   },
   {
    "id": "khosla-billionaire-venture-capitalist-vinod-khosla-says",
@@ -1376,22 +1397,34 @@
    "org": "UBS",
    "person": null,
    "kind": "report",
-   "title": "S&P 500은 2027년에도 계속 오를 수 있을까? UBS는 8,900을 베팅하지만 BofA는 쏠린 거래를 경고",
+   "title": "S&P 500은 2027년에도 계속 오를 수 있을까? UBS는 8,900에 베팅, BofA는 쏠림 거래 경고",
    "title_orig": "Can the S&P 500 keep rising in 2027? UBS bets on 8,900, but BofA warns of crowded trades",
    "url": "https://www.msn.com/en-us/money/economy/can-the-s-p-500-keep-rising-in-2027-ubs-bets-on-8-900-but-bofa-warns-of-crowded-trades/ar-AA2hb0Ji",
    "outlet": "Stocktwits on MSN",
    "published_kst": "2026-11-11T03:51:18+09:00",
    "stance": {
-    "ai_tech": null,
+    "ai_tech": 0,
     "market": 1
    },
    "args": [
-    "밸류에이션"
+    "밸류에이션",
+    "투자 회수",
+    "금리·거시",
+    "정책·지정학"
+   ],
+   "summary": "UBS는 2027년 말 S&P 500 목표치를 8,900으로 제시하며, 2026년 선행 PER이 약 20% 하락한 뒤에는 역사적으로 더 강한 수익률이 나왔다고 본다. AI 투자 수익, 규제, 금리·신용 스프레드, 유가, 자사주 매입 약화 등을 역풍으로 인정하고, 데이터센터 건설 중단으로 2028년 계획 용량의 약 30%가 위험하다고 짚었다.",
+   "points": [
+    "UBS는 2027년 말 S&P 500 목표치를 8,900으로 잡고 있으며, 역사적으로 한 해의 급격한 밸류에이션 하락 뒤에는 더 강한 수익률이 이어졌다고 말했다.",
+    "전략가 키스 파커는 노트에서 S&P 500의 선행 주가수익비율이 2026년에 약 20% 하락했다고 짚었고, UBS는 같은 기간 이익이 약 33% 늘어나는 흐름으로 보고 있다.",
+    "UBS는 S&P 500의 주당순이익이 2027년 18% 늘어 430달러, 2028년 14% 늘어 490달러가 될 것으로 본다. 8,900 목표치는 2028년 주당순이익의 약 18배이며, 2028년 말 목표치는 9,600이다.",
+    "UBS는 중간선거 이후 주(州) 차원의 데이터센터 건설 중단이 2028년 미국 계획 용량 증설분의 약 30%를 위험에 빠뜨린다고 지적했다.",
+    "UBS는 기술 하드웨어보다 반도체 매수를 권하고, 소프트웨어·하이퍼스케일러·헬스케어·금융을 비중 확대로 제시했다. 또한 러셀 2000보다 나스닥 100, 그리고 재무구조가 탄탄한 종목을 선호한다고 밝혔다."
    ],
    "judged": {
-    "basis": "headline_only",
-    "tier": "light"
-   }
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
   },
   {
    "id": "hussman-the-free-money-bubble",
@@ -1732,7 +1765,7 @@
    "org": "Bridgewater 창업자",
    "person": "Ray Dalio",
    "kind": "report",
-   "title": "레이 달리오 “채권 약세장 진행 중”…캐나다 채권·GIC·모기지에 주는 의미",
+   "title": "Ray Dalio, 우리는 채권 약세장에 있다고 말해. 캐나다 채권·GIC·주택담보대출에 미칠 영향",
    "title_orig": "Ray Dalio says we’re in a bond bear market. What it could mean for Canadian bonds, GICs and your mortgage",
    "url": "https://www.msn.com/en-ca/money/investment/ray-dalio-says-we-re-in-a-bond-bear-market-what-it-could-mean-for-canadian-bonds-gics-and-your-mortgage/ar-AA2h932l",
    "outlet": "Money.ca on MSN",
@@ -1742,12 +1775,20 @@
     "market": -1
    },
    "args": [
+    "자금 조달·신용",
     "금리·거시"
    ],
+   "summary": "Dalio는 CNBC 인터뷰에서 정부와 기업이 투자자 자금을 놓고 경쟁하면서 글로벌 채권 매도세가 이어질 것으로 본다고 밝혔다. 정부는 재정 적자를 메우고 기업은 AI 같은 대형 프로젝트 자금을 빌리므로, 차입자가 많아 더 높은 금리를 제시해야 할 것이라고 우려했다.",
+   "points": [
+    "글로벌 채권 매도세가 계속될 것으로 예상한다. 정부와 기업이 투자자의 돈을 얻기 위해 서로 경쟁하고 있기 때문이다.",
+    "우리는 채권 약세장에 있다.",
+    "정부는 예산 부족분을 메우기 위해 자금이 필요하고, 기업은 인공지능 같은 대형 프로젝트 자금을 조달하려 차입하고 있다. 차입자가 이렇게 많으면 돈을 구하기 위해 투자자에게 더 높은 금리를 제시해야 할 것이라는 것이 Dalio의 우려다."
+   ],
    "judged": {
-    "basis": "headline_only",
-    "tier": "light"
-   }
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
   },
   {
    "id": "boe-boe-s-breeden-sees-ai-selloff-as-a-welcome-price",
@@ -2128,7 +2169,7 @@
    "org": "JPMorgan CEO",
    "person": "Jamie Dimon",
    "kind": "report",
-   "title": "예상보다 나쁠 것: 제이미 다이먼의 신용 위기 경고가 경종을 울림. 충격이 오기 전 재정을 경기침체에 대비하는 법",
+   "title": "사람들이 예상하는 것보다 나쁘다: Jamie Dimon의 신용 위기 경고가 경종을 울린다 — 닥치기 전에 가계 재정을 침체에 대비하는 법",
    "title_orig": "Worse than people expect: Jamie Dimon’s credit crisis warning is raising alarms — how to recession-proof your finances before it hits",
    "url": "https://www.msn.com/en-us/money/other/worse-than-people-expect-jamie-dimon-s-credit-crisis-warning-is-raising-alarms-how-to-google-proof-your-finances-before-it-hits/ar-AA2h4oKB",
    "outlet": "Moneywise on MSN",
@@ -2138,12 +2179,21 @@
     "market": -1
    },
    "args": [
-    "자금 조달·신용"
+    "자금 조달·신용",
+    "금리·거시"
+   ],
+   "summary": "Dimon은 실적 콜에서 경기침체를 예측하는 것은 아니라면서도 JPMorgan은 경기침체와 스태그플레이션에 대비해야 한다고 말했다. 스태그플레이션, 장기 고금리, 신용 스프레드 확대가 겹치면 차환하는 레버리지 기업에 큰 부담이 된다고 보았다. 주주서한에서는 신용 사이클이 오면 레버리지 대출 전반의 손실이 예상보다 클 것이며 사모대출은 투명성이 낮다고 밝혔다.",
+   "points": [
+    "Dimon은 다음 신용 사이클이 오면 레버리지 대출의 손실이 시나리오 대비 \"사람들이 예상하는 것보다 나쁠\" 것이라고 거듭 경고해 왔다.",
+    "Dimon은 주주서한에서, 언젠가 올 신용 사이클이 닥치면 레버리지 대출 전반의 손실이 예상보다 높을 것이라고 밝혔다.",
+    "Dimon은 사모대출은 투명성이 높지 않아, 사람들이 실제 손실이 아니라 예측에 근거해 매도하게 될 것이라고 말했다.",
+    "Dimon은 경기침체가 오면 어느 업종이 가장 크게 타격받을지 예측하기 어렵다고 말했다."
    ],
    "judged": {
-    "basis": "headline_only",
-    "tier": "light"
-   }
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
   },
   {
    "id": "citi-citigroup-downgrades-us-equities-to-neutral-on-a",
@@ -2432,23 +2482,33 @@
    "org": "Paul Tudor Jones",
    "person": null,
    "kind": "report",
-   "title": "억만장자 폴 튜더 존스, AI와 IPO 공급이 시장을 덮치면서 2027년이 주식에 힘든 해가 될 수 있다고 경고. 지금 노후 자금을 지키라",
+   "title": "억만장자 Paul Tudor Jones, AI와 IPO 물량이 시장에 쏟아지면서 2027년이 주식에 힘든 해가 될 수 있다고 경고... 지금 노후 자금을 지켜라",
    "title_orig": "Billionaire Paul Tudor Jones warns 2027 could be a tough year for stocks as AI and IPO supply floods the market. Protect your nest egg now",
    "url": "https://www.msn.com/en-us/money/top-stocks/billionaire-paul-tudor-jones-warns-2027-could-be-a-tough-year-for-stocks-as-ai-and-ipo-supply-floods-the-market-protect-your-nest-egg-now/ar-AA2h0lic",
    "outlet": "Moneywise on MSN",
    "published_kst": "2026-11-08T14:05:00+09:00",
    "stance": {
     "ai_tech": -1,
-    "market": -2
+    "market": -1
    },
    "args": [
-    "자금 조달·신용",
-    "밸류에이션"
+    "밸류에이션",
+    "쏠림",
+    "투자 회수"
+   ],
+   "summary": "Paul Tudor Jones는 AI 투자 자금 조달을 위한 증資와 대형 IPO로 주식 공급이 늘어 2027년 주식시장이 매우 어려울 것이라고 보았다. 현재 시장을 1999년에 비교하면서도 2026년 말까지는 강한 마무리 여지가 있다고 보았고, 2027년에는 하루 종일 매도(숏) 포지션을 취하겠다고 밝혔다.",
+   "points": [
+    "2027년은 주식시장에 정말로 매우 어려운 해가 될 것이다.",
+    "2027년 한 해 내내 숏(매도) 포지션을 취하겠다.",
+    "자사주 매입과 인수합병이 시장에서 주식을 줄여 온 힘을, IPO·추가 증資·매각 제한 해제로 시장에 나오는 주식과 견주어 추적하고 있으며, 그 균형이 투자자에게 점점 불리해지고 있다고 본다.",
+    "SpaceX의 막대한 기업가치와 Anthropic·OpenAI의 예상 상장이 셈법을 바꾸고 있으며, 투자자 자금을 구하는 기업이 늘면 높은 주가를 유지하기 어려워질 수 있다.",
+    "현재 시장을 1999년에 비유하며, AI로 수혜를 보는 기업과 뒤처지는 기업 사이에 간극이 있다고 설명했다. 또한 2026년 말에는 강한 마감 여지가 있다고 보았다."
    ],
    "judged": {
-    "basis": "headline_only",
-    "tier": "light"
-   }
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
   },
   {
    "id": "chamath-chamath-palihapitiya-warns-ai-data-center-slowdo",
@@ -2567,7 +2627,7 @@
    "org": "BlackRock",
    "person": null,
    "kind": "report",
-   "title": "래리 핑크 “미국인의 은퇴 저축이 10조 달러 규모 AI 설비투자를 뒷받침해야” — 그 계획은 너무 위험한가?",
+   "title": "Larry Fink, 미국인의 퇴직 저축이 10조 달러 규모 AI 구축 자금을 대야 한다고 말해 — 그러나 이 계획은 너무 위험하지 않은가?",
    "title_orig": "Larry Fink says Americans' retirement savings should fund the $10 trillion AI buildout — but is that plan too risky?",
    "url": "https://www.msn.com/en-us/money/technology/larry-fink-says-americans-retirement-savings-should-fund-the-10-trillion-ai-buildout-but-is-that-plan-too-risky/ar-AA2gWXHU",
    "outlet": "Moneywise on MSN",
@@ -2577,13 +2637,20 @@
     "market": null
    },
    "args": [
+    "투자 회수",
     "자금 조달·신용",
-    "투자 회수"
+    "수요·채택"
+   ],
+   "summary": "Larry Fink는 올해 초 텍사스 방문 중, 데이터센터와 에너지 인프라 등 미국 내 AI 관련 건설에 향후 10년간 약 10조 달러가 들 수 있다고 추산했다. 더 많은 미국인이 미국과 함께 성장한다는 관점으로 투자하면 이 인프라에 투자할 자금은 충분하고도 남을 것이라고 보았다.",
+   "points": [
+    "더 많은 미국인이 미국과 함께 성장한다는 생각을 하도록 만들 수 있다면, 이 인프라에 투자할 자금은 충분하고도 남을 것이다. (올해 초 텍사스주 웨이코의 Texas State Technical College를 Greg Abbott 주지사와 함께 방문했을 때의 발언)",
+    "당시 Fink는 미국 전역의 데이터센터와 에너지 인프라 구축 규모가 향후 10년간 총 10조 달러에 이를 수 있다고 추산했다."
    ],
    "judged": {
-    "basis": "headline_only",
-    "tier": "light"
-   }
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
   },
   {
    "id": "el-erian-mohamed-el-erian-says-america-s-ai-let-it-rip-ap",
@@ -3361,22 +3428,35 @@
    "org": "Pershing Square",
    "person": "Bill Ackman",
    "kind": "report",
-   "title": "빌리어네어 빌 애크먼의 시장 경고 재부상, 주가 급락 속에서",
+   "title": "억만장자 Bill Ackman의 시장 경고가 주가 급락 속에 다시 주목받다",
    "title_orig": "Billionaire Bill Ackman's market warning resurfaces as stocks plunge",
    "url": "https://www.msn.com/en-us/news/other/billionaire-bill-ackman-s-market-warning-resurfaces-as-stocks-plunge/ar-AA2gQImX",
    "outlet": "TheStreet on MSN",
    "published_kst": "2026-11-05T18:09:21+09:00",
    "stance": {
-    "ai_tech": 1,
-    "market": -1
+    "ai_tech": 2,
+    "market": 0
    },
    "args": [
-    "쏠림"
+    "밸류에이션",
+    "수요·채택",
+    "정책·지정학",
+    "경쟁·해자"
+   ],
+   "summary": "Ackman은 레버리지와 투기적 거래로 주가가 터무니없는 수준까지 움직이는 시장이 나라와 사회에는 좋지 않다고 경고했다. 반면 올해 실적 기대가 크게 올랐고 성장에 비해 멀티플이 낮아 1920년대식 거품은 아니라고 봤다. 데이터센터에 대한 정치적 반발로 미국 AI 개발을 늦추는 데는 반대하며, 초지능은 세계적 경쟁이라고 주장했다.",
+   "points": [
+    "며칠에 한 번씩 시장이 망가졌다고 느낀다고 말했다. 주가가 자신에게는 말이 안 되는 가격에 거래되며, 장기 투자자가 터무니없이 싼 가격에 살 수 있다는 점은 좋지만 나라 전체로 보면 좋은 일이 아니라고 봤다.",
+    "레버리지가 95%에 달하던 카지노식 시장으로 돌아왔다고 말했다. 이것이 경제와 사회에 본질적으로 좋다고 보지 않으며, 주가의 큰 변동을 낳고 있다고 했다.",
+    "이러한 변동성은 Pershing Square에는 장기적으로 좋지만 나라에는 좋지 않다고 말했다.",
+    "Ramp 팀을 만났으며 믿을 수 없을 만큼 인상적인 회사라고 평가했다. 자신이 American Express라면 우려했을 것이라고 말했다.",
+    "초지능은 세계적 경쟁이며 미국이 2등으로 도달하는 것은 원치 않는다고 말했다. 이는 미국에 존재론적 문제라고 봤다.",
+    "일자리를 반길 주가 많이 있으며 미국에는 땅도 많다고 말했다."
    ],
    "judged": {
-    "basis": "headline_only",
-    "tier": "light"
-   }
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
   },
   {
    "id": "apollo-apollo-s-torsten-slok-says-ai-is-paying-off-for",
@@ -4316,22 +4396,35 @@
    "org": "DoubleLine Capital",
    "person": "Jeffrey Gundlach",
    "kind": "report",
-   "title": "나는 그냥 빠지고 싶다: 2007년 주택 붕괴를 예견한 억만장자 제프리 건들락, \"AI 주식에는 거의 아무것도 담지 말아야 한다\"",
+   "title": "나는 빠지고 싶다: 2007년 주택시장 붕괴를 예견한 억만장자 투자자 Jeffrey Gundlach, AI 주식은 거의 갖지 말아야 한다고 말하다",
    "title_orig": "I just want out: Billionaire investor Jeffrey Gundlach, who called the housing bust in 2007, says you should have almost nothing in AI stocks",
    "url": "https://www.msn.com/en-us/money/top-stocks/i-just-want-out-billionaire-investor-jeffrey-gundlach-who-called-the-housing-bust-in-2007-says-you-should-have-almost-nothing-in-ai-stocks/ar-AA2gAJVV",
    "outlet": "Moneywise on MSN",
    "published_kst": "2026-11-02T13:30:00+09:00",
    "stance": {
     "ai_tech": -2,
-    "market": null
+    "market": -1
    },
    "args": [
-    "밸류에이션"
+    "밸류에이션",
+    "쏠림",
+    "금리·거시"
+   ],
+   "summary": "Gundlach은 AI에 대한 서사가 낙관에서 우려로 바뀌고 있는데도 밸류에이션이 매우 높다며 AI 주식에서 빠지겠다고 밝혔다. AI 경쟁의 패자가 나오면서 위험자산이 크게 하락할 것으로 보고, 전량 매도나 공매도는 하지 않되 AI와 무관한 균등가중 주식, 채권, 실물자산 중심으로 구성할 것을 권한다. 내년 중 인플레이션이나 공급 충격이 올 가능성도 언급했다.",
+   "points": [
+    "과거에는 다른 형태의 주식 상품을 통해 AI를 일부 보유하는 것이 전혀 문제없다고 생각했다. 그러나 AI의 능력에 대한 우려와 속도 조절 요구가 나오는 지금은 \"나는 빠지고 싶다\"고 말했다.",
+    "어떤 것이 잘 굴러가고 사람들의 믿음이 크며 돈도 많이 벌리는 와중에, 서사가 \"이것이 우리 모두를 죽일 것\"이라는 식으로 상당히 급격하게 바뀌는 것은 다소 이상한 행태라고 말했다.",
+    "분위기가 \"긍정적인 면을 보자\"에서 \"잠깐, 모든 게 완벽하지는 않다\"로 바뀌었고 지금이 바로 그 지점인데, 이를 매우 높은 밸류에이션 상태에서 겪고 있다고 말했다.",
+    "AI라는 성배를 향한 경쟁에서 낙오자와 패자가 나올 것이고 반드시 그렇게 될 것이며, 이것이 위험자산의 다음 번 매우 큰 하락으로 이어질 것이라고 말했다.",
+    "전부 팔지는 않고 어떤 것도 공매도하지 않았지만, 가장 큰 타격을 입을 영역에서 점점 더 멀어지고 싶다고 말했다.",
+    "내년 중 인플레이션 충격이든 공급 충격이든 어떤 형태로든 충격이 오지 않는다면 놀랄 것이라고 말했다.",
+    "이제 주식에는 30%를 배분하되, 시가총액 가중이 아니라 균등가중 Fortune 500 지수만 권한다고 밝혔다. 이렇게 하면 포트폴리오에서 AI 비중이 거의 없어지며, 자신이 권하는 모든 것은 AI 노출과 완전히 분리되어 있다고 설명했다."
    ],
    "judged": {
-    "basis": "headline_only",
-    "tier": "light"
-   }
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
   },
   {
    "id": "morgan-stanley-morgan-stanley-says-pullback-could-come-but-it-s",
@@ -4665,23 +4758,43 @@
    "org": "Social Capital",
    "person": "Chamath Palihapitiya",
    "kind": "report",
-   "title": "Chamath Palihapitiya, AI 붐의 차입 문제 경고…빅테크 부채 4,000억 달러 육박, 미 국채 수요 잠식 우려",
+   "title": "Chamath Palihapitiya, AI 붐에 차입 문제가 있다고 경고: 빅테크 부채가 4,000억 달러에 육박해 미 국채 수요를 밀어낼 우려 — '미국 경제 전체가 AI 복합체에 레버리지로 묶여 있다'",
    "title_orig": "Chamath Palihapitiya warns AI boom has a borrowing problem as big tech debt nears $400 billion, threatening to crowd out US Treasury demand: The entire US economy is levered to ...",
    "url": "https://www.msn.com/en-us/news/other/chamath-palihapitiya-warns-ai-boom-has-a-borrowing-problem-as-big-tech-debt-nears-400-billion-threatening-to-crowd-out-us-treasury-demand-the-entire-us-economy-is-levered-to-the-ai-complex/ar-AA2gsEVe",
    "outlet": "Benzinga on MSN",
    "published_kst": "2026-10-31T09:50:39+09:00",
    "stance": {
     "ai_tech": -1,
-    "market": -1
+    "market": null
    },
    "args": [
     "자금 조달·신용",
+    "투자 회수",
+    "쏠림",
     "금리·거시"
    ],
+   "summary": "Palihapitiya는 AI 기업들의 부채가 약 3,400억~4,000억 달러에 달해 미 국채 수요를 밀어낼(crowding out) 수 있다고 경고했다. 미국 경제 전체가 7~8개 기업이 주도하는 AI 복합체에 레버리지로 묶여 있으며, 과거 현금 창출 기업들이 AI에 '대규모 지출 폭주'를 벌이며 현금이 줄고 차입이 늘었다고 봤다. 마이크로소프트만 부채를 절반으로 줄인 예외로 평가했다.",
+   "points": [
+    "AI 기업들의 부채가 추정 3,400억~4,000억 달러에 이르렀으며, 7~8개 기업이 대규모 지출을 주도하고 있어 미 국채 수요를 밀어낼(crowd out) 위험이 있다.",
+    "'7~8개 기업'이 이제 나라 전체의 분위기를 좌우한다.",
+    "미국 경제 전체가 AI 복합체에 레버리지로 묶여 있다.",
+    "이들 기업은 한때 수익성이 매우 높고 현금을 창출했으나, 지금은 AI에 그가 '대규모 지출 폭주(massive spending binge)'라 부른 상태에 들어서 있다.",
+    "과도한 지출이 현금을 소진시키고 있어 기업들이 부채를 조달할 수밖에 없다.",
+    "마이크로소프트는 예외이며, 동종 기업들이 훨씬 더 많이 빌리는 동안 CEO 사티아 나델라가 회사 부채를 절반으로 줄인 점을 높이 평가했다.",
+    "더 큰 우려는 '구축 효과(crowding out)'로, 한 집단의 대규모 차입이 다른 곳으로 갔을 투자자 자금을 흡수하는 현상이다.",
+    "2027년 말까지 AI 기업들의 자금 수요는 같은 기간 예상 미 국채 발행량의 약 30%에 해당하며, 이 기업들이 투자자 수요를 두고 국채와 경쟁하게 될 것이다."
+   ],
+   "evidence": [
+    {
+     "ko": "이들 기업은 한때 수익성이 매우 높고 현금을 창출했으나, 지금은 AI에 그가 '대규모 지출 폭주(massive spending binge)'라 부른 상태에 들어서 있다.",
+     "orig": "They are now in what he called a \"massive spending binge\" on AI."
+    }
+   ],
    "judged": {
-    "basis": "headline_only",
-    "tier": "light"
-   }
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
   },
   {
    "id": "doubleline-equities-tricky-fixed-income-treats-during-busy",
@@ -5158,22 +5271,36 @@
    "org": "BlackRock",
    "person": null,
    "kind": "report",
-   "title": "부동산·주식·채권: 블랙록, 2035년까지 인도 가계 투자 4배 증가 전망",
+   "title": "부동산·주식·채권: BlackRock, 2035년까지 인도 가계 투자가 4배 늘 것으로 전망",
    "title_orig": "Property, stocks & bonds: BlackRock sees 4-fold jump in Indian household investments by 2035",
    "url": "https://www.msn.com/en-in/money/economy/property-stocks-bonds-blackrock-sees-4-fold-jump-in-indian-household-investments-by-2035/ar-AA2gjzTM",
    "outlet": "Business Today on MSN",
    "published_kst": "2026-10-29T07:59:13+09:00",
    "stance": {
     "ai_tech": null,
-    "market": 1
+    "market": 0
    },
    "args": [
-    "수요·채택"
+    "밸류에이션",
+    "수요·채택",
+    "금리·거시"
+   ],
+   "summary": "BlackRock Investment Institute는 인도 가계가 2026~2035년 새로 취득하는 자산 중 자본시장 상품 비중이 100달러당 약 5달러에서 20달러로 4배 늘 수 있다고 시나리오를 제시했다. 장기적으로는 인도 주식 비중 확대 근거가 있다고 보면서도, 높은 밸류에이션과 불균등한 실적 전망 탓에 단기적으로는 중립을 유지한다.",
+   "points": [
+    "BlackRock은 2016~2025년 인도 가계가 실물·금융자산을 새로 취득할 때 100달러당 약 5달러가 자본시장 상품으로 들어갔다고 추정한다. 2026~2035년 시나리오에서는 이 수치가 20달러로 올라 자본시장에 배분되는 비중이 4배가 된다고 본다.",
+    "인도 가계가 2016~2025년에 취득한 실물·금융자산은 약 7.2조 달러로 추정되며, BlackRock의 시나리오는 2026~2035년 같은 수치를 15.8조 달러로 제시한다. 이는 부채를 차감하기 전 취득 자산 규모이며 가계 순자산을 뜻하지 않는다.",
+    "2016~2025년에는 부동산 등 실물자산이 가계 자산 취득의 거의 절반을 차지했다. BlackRock은 향후 10년간 예금·보험·퇴직상품을 포함한 금융자산이 신규 가계 자산 취득의 약 62%를 차지해, 과거 약 51%에서 높아질 것으로 예상한다.",
+    "BlackRock은 더 깊어진 주식·채권 시장이 특히 인프라, 혁신, 확장을 위한 자금이 필요한 기업의 조달 기회를 넓힐 것으로 본다. 보험·퇴직 자산이 늘면 장기 회사채와 인프라채 발행도 더 늘어날 수 있다고 본다.",
+    "BlackRock의 분석은 두 가지 투자 기회를 제시한다. 하나는 가계 저축이 금융시장으로 흘러들어가도록 돕는 기업이고, 다른 하나는 추가로 조달한 자금을 생산적으로 쓰는 기업이다.",
+    "BlackRock은 Aadhaar, UPI, 계좌 통합 조회 같은 인도의 디지털 금융 인프라가 금융 서비스 접근성을 높였다고 본다. 소득 증가와 투자 상품 확대가 금융시장 참여를 더 넓힐 수 있다고 본다.",
+    "BlackRock은 국내 기관이 38개월 연속 인도 주식을 순매수했으며 2026년 9월에도 외국인이 매도로 돌아선 가운데 약 80억 달러를 샀다고 짚었다. 이 지속적인 국내 매수를 시장을 떠받치는 현지 자본의 역할이 커지고 있다는 증거로 본다.",
+    "BlackRock은 2026년 인도 주식이 높은 밸류에이션과 불균등한 실적 전망 탓에 글로벌 및 신흥국 주식보다 부진했다고 말했다. 5년 이상의 기간으로는 인도 주식 비중을 늘릴 근거가 있다고 보지만 단기적으로는 중립을 유지하며, 개별 종목의 성과는 실적 성장 능력에 점점 더 좌우될 것으로 예상한다."
    ],
    "judged": {
-    "basis": "headline_only",
-    "tier": "light"
-   }
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
   },
   {
    "id": "ark-anthropic-s-s-1-meta-s-90b-and-elon-s-warning-ca",
