@@ -1,8 +1,42 @@
 {
  "schema": 1,
  "month": "2026-11",
- "updated_kst": "2026-11-15T11:19:38+09:00",
+ "updated_kst": "2026-11-16T02:19:54+09:00",
  "items": [
+  {
+   "id": "gundlach-bond-king-jeffrey-gundlach-is-not-interested-in",
+   "group": "투자 거장",
+   "org": "DoubleLine Capital",
+   "person": "Jeffrey Gundlach",
+   "kind": "report",
+   "title": "‘채권왕’ 제프리 건들락 “주식을 살 생각 없다”… 그의 경고는 10년간의 손실을 가리킨다",
+   "title_orig": "‘Bond King’ Jeffrey Gundlach Is “Not Interested in Buying Stocks.” His Warning Points to 10 Years of Losses",
+   "url": "https://247wallst.com/investing/2026/11/15/bond-king-jeffrey-gundlach-is-not-interested-in-buying-stocks-his-warning-points-to-10-years-of-losses",
+   "outlet": "24/7 Wall St.",
+   "published_kst": "2026-11-15T18:12:00+09:00",
+   "stance": {
+    "ai_tech": null,
+    "market": -2
+   },
+   "args": [
+    "밸류에이션",
+    "금리·거시"
+   ],
+   "summary": "Gundlach는 실질 기준 향후 수익률이 마이너스인 상황에서는 주식을 사고 싶지 않다고 밝혔다. 쉴러 CAPE가 42라는 점과 35 초과 구간의 과거 실질 수익률이 부진했다는 점을 근거로 들었고, 지금은 주식 비중 약 30%의 보수적 배분을 선호한다. 일반 P/E가 15 아래로 내려오면 S&P 500을 다시 고려하겠다고 했다.",
+   "points": [
+    "예상되는 향후 수익률이 실질 기준으로 마이너스일 때는 주식을 살 생각이 없다고 말했다.",
+    "2026년 중반 기준 S&P 500의 쉴러 CAPE 비율이 42라고 언급했다.",
+    "CAPE가 35를 넘은 뒤에는 이후 10년간 물가 조정 S&P 500 수익률이 플러스였던 적이 거의 없다고 말했다. 또한 CAPE 42 부근의 과거 실질 수익률은 대략 마이너스 6%에서 마이너스 8%였다고 덧붙였다.",
+    "인플레이션이 평균 2%라면 실질 수익률이 충분히 마이너스일 경우 명목 달러 기준으로도 손실이 날 수 있다고 지적했다.",
+    "자신에게 필요한 것은 자산 가격이 더 싸지는 것이라고 말했다.",
+    "S&P 500의 일반 P/E가 15 아래로 떨어지면 S&P 500을 다시 고려하겠다고 했고, 현재는 주식 비중 약 30%의 보수적 배분을 선호한다고 밝혔다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
+  },
   {
    "id": "burry-michael-burry-sees-2-chip-winners-in-nvidia-s-sh",
    "group": "투자 거장",

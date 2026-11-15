@@ -1,7 +1,51 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-15T23:38:49+09:00",
+ "generated_kst": "2026-11-16T02:19:54+09:00",
  "reports": [
+  {
+   "slug": "sixsigma-6-2032-5-10",
+   "type": "article",
+   "title": "식스시그마 : 커즈와일의 2032년은 사람 임상 5~10년이 줄어야 맞는데, 줄었다는 숫자는 후보 찾기에만 있다",
+   "companies": [
+    {
+     "name": "인실리코 메디슨",
+     "ticker": null
+    },
+    {
+     "name": "깅코 바이오웍스",
+     "ticker": null
+    },
+    {
+     "name": "에뮬레이트",
+     "ticker": null
+    },
+    {
+     "name": "언런",
+     "ticker": null
+    },
+    {
+     "name": "우시앱텍",
+     "ticker": null
+    },
+    {
+     "name": "구글 딥마인드",
+     "ticker": null
+    },
+    {
+     "name": "오픈AI",
+     "ticker": null
+    },
+    {
+     "name": "아이소모픽 랩스",
+     "ticker": null
+    }
+   ],
+   "published_kst": "2026-11-16T02:14:56+09:00",
+   "revised_kst": "2026-11-16T02:14:56+09:00",
+   "revision": 1,
+   "summary": "영상은 신약이 환자에게 닿는 네 단계 중 기간 단축이 숫자로 확인된 것은 후보 찾기(4년 반 → 18개월) 하나뿐이라고 본다. 따라서 2032년 예언의 판정은 사람 임상이 줄어드는지에 달렸다는 결론이다. 이 결론은 데이터가 얇은 곳에서는 신중하지만 '2032년 = 신약이 환자에게 닿는 시점'이라는 전제가 느슨해, 종목 판단에 쓰려면 3상 결과와 FDA 규정의 실제 적용 사례를 따로 확인해야 한다(확신 중간).",
+   "path": "reports/sixsigma-6-2032-5-10.json"
+  },
   {
    "slug": "sixsigma-45-10-ipo",
    "type": "article",
@@ -1091,11 +1135,11 @@
   }
  ],
  "street": {
-  "updated_kst": "2026-11-15T11:19:38+09:00",
+  "updated_kst": "2026-11-16T02:19:54+09:00",
   "path": "street.json"
  },
  "calendar": {
-  "updated_kst": "2026-11-15T02:33:14+09:00",
+  "updated_kst": "2026-11-16T02:15:00+09:00",
   "path": "calendar.json"
  }
 }
