@@ -1,7 +1,29 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-16T05:17:48+09:00",
+ "generated_kst": "2026-11-16T08:17:29+09:00",
  "reports": [
+  {
+   "slug": "sixsigma-yafypycpzpw",
+   "type": "article",
+   "title": "식스시그마 : 조사받는 고객사와 거래를 이어간 건 '규정에 기댄 선 긋기'였다는 해석, 청구서는 칩 위치 추적으로 온다",
+   "companies": [
+    {
+     "name": "엔비디아",
+     "ticker": "NVDA"
+    },
+    {
+     "name": "메가스피드",
+     "ticker": null
+    }
+   ],
+   "event": "젠슨 황 엔비디아 CEO·이사회 사임",
+   "event_date": "2026-11-12",
+   "published_kst": "2026-11-16T08:17:29+09:00",
+   "revised_kst": "2026-11-16T08:17:29+09:00",
+   "revision": 1,
+   "summary": "영상은 엔비디아가 조사받는 고객사 메가스피드와 거래를 이어간 이유를 올인 출연자 프리드버그의 추측대로 '규정을 어기지 않았다는 선 긋기'로 푼다. 타임라인은 공개 보도에 기대 쓸 만하지만 동기 설명은 반증하기 어려운 추측이다. 투자 변수는 동기보다 의회가 요구하는 칩 위치 추적·원격 차단을 누가 쥐느냐이며, 현재 판단은 엔비디아 단기 악재(확신 낮음)다.",
+   "path": "reports/sixsigma-yafypycpzpw.json"
+  },
   {
    "slug": "sixsigma-ai-35-65",
    "type": "article",
