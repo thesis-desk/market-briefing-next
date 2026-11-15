@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-15T05:34:43+09:00",
+ "generated_kst": "2026-11-15T09:52:35+09:00",
  "reports": [
   {
    "slug": "a16z-big-pharma-can-rival-big-software",
@@ -1028,6 +1028,24 @@
    "revision": 4,
    "summary": "SemiAnalysis는 SpaceX의 2027년 약 13GW 계획이 실현 가능하다고 본다. 위성사진과 지역 공시로 확인되는 건설 속도가 근거다. 다만 13GW 가운데 공사 중인 것은 3.6GW뿐이고, 전력은 짓는 도중에 찾고 있다. 매출 단가도 지금의 MW당 연 약 5,000만 달러에서 내려갈 것으로 글쓴이 스스로 예상한다. '지을 수 있다'는 주장보다 '같은 수익성으로 채울 수 있다'는 주장이 훨씬 약하다.",
    "path": "reports/semianalysis-spacex-ai-cloud.json"
+  },
+  {
+   "slug": "anthropic-s-1",
+   "type": "article",
+   "title": "Anthropic S-1 정정 2호 : 분기 매출 170억 달러, 9,009억 달러 컴퓨트 약정을 공모와 공급사 자금으로 떠받친다",
+   "companies": [
+    {
+     "name": "Anthropic",
+     "ticker": "ANT"
+    }
+   ],
+   "event": "S-1 정정 2호 제출(공모 조건 공개)",
+   "event_date": "2026-11-10",
+   "published_kst": "2026-11-10T20:29:24+09:00",
+   "revised_kst": "2026-11-15T09:52:35+09:00",
+   "revision": 1,
+   "summary": "Anthropic은 3분기 매출 170억 달러와 조정영업이익 흑자를 앞세워 공모가 범위 70~78달러(중간가 기준 기본 주식수 시가총액 약 9,680억 달러)로 상장에 나선다. 다만 9,009억 달러 컴퓨트 약정, 단기 컴퓨트에서 오는 이익률 압박, 그리고 공급사가 투자자·채권자·고객을 겸하는 순환 구조가 함께 공개됐다. 투자 판단은 매출이 약정 지출 속도를 따라잡는지에 달려 있다.",
+   "path": "reports/anthropic-s-1.json"
   }
  ],
  "street": {
