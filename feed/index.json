@@ -1,7 +1,25 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-15T11:19:38+09:00",
+ "generated_kst": "2026-11-15T14:18:25+09:00",
  "reports": [
+  {
+   "slug": "sixsigma-45-10-ipo",
+   "type": "article",
+   "title": "식스시그마 : 앤트로픽은 '매출 45배·컴퓨트 비용 10배'로 약정 9,009억 달러를 감당할 수 있다고 말한다",
+   "companies": [
+    {
+     "name": "Anthropic",
+     "ticker": "ANT"
+    }
+   ],
+   "event": "IPO 로드쇼",
+   "event_date": "2026-11-10",
+   "published_kst": "2026-11-15T14:18:25+09:00",
+   "revised_kst": "2026-11-15T14:18:25+09:00",
+   "revision": 1,
+   "summary": "로드쇼는 6개 분기 동안 매출 45배·컴퓨트 비용 10배라는 숫자로 약 9,009억 달러 약정을 감당할 수 있다고 설득한다. 다만 근거는 회사가 고른 지표와 사례이고, 분기별 컴퓨트 비용·지표 정의·약정 상대방은 영상에 없다. 공모가 상단 기준 기업가치는 3분기 연환산 매출의 20.6배 이상이라 가격은 성장 지속을 전제한다(확신 중간).",
+   "path": "reports/sixsigma-45-10-ipo.json"
+  },
   {
    "slug": "sixsigma-t-q3cum78em",
    "type": "article",
