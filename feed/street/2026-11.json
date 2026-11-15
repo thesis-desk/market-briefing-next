@@ -1,8 +1,31 @@
 {
  "schema": 1,
  "month": "2026-11",
- "updated_kst": "2026-11-15T02:39:18+09:00",
+ "updated_kst": "2026-11-15T11:19:38+09:00",
  "items": [
+  {
+   "id": "burry-michael-burry-sees-2-chip-winners-in-nvidia-s-sh",
+   "group": "투자 거장",
+   "org": "Michael Burry",
+   "person": null,
+   "kind": "report",
+   "title": "Michael Burry, 엔비디아 격변 속 칩 승자 2곳 지목",
+   "title_orig": "Michael Burry sees 2 chip winners in Nvidia’s shake-up",
+   "url": "https://www.thestreet.com/investing/michael-burry-amd-broadcom-nvidia-shakeup",
+   "outlet": "TheStreet",
+   "published_kst": "2026-11-15T01:00:00+09:00",
+   "stance": {
+    "ai_tech": -1,
+    "market": null
+   },
+   "args": [
+    "경쟁·해자"
+   ],
+   "judged": {
+    "basis": "headline_only",
+    "tier": "light"
+   }
+  },
   {
    "id": "boldstart-what-s-in-ai-infra-vc-524",
    "group": "벤처캐피털",
