@@ -1,7 +1,35 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-16T02:19:54+09:00",
+ "generated_kst": "2026-11-16T05:17:48+09:00",
  "reports": [
+  {
+   "slug": "sixsigma-ai-35-65",
+   "type": "article",
+   "title": "식스시그마 : 로봇을 따로 배우지 않은 AI가 로봇 전용 AI를 앞질렀다 — 로봇 회사의 데이터 해자를 다시 따져야 한다",
+   "companies": [
+    {
+     "name": "Anthropic",
+     "ticker": null
+    },
+    {
+     "name": "Boston Dynamics",
+     "ticker": null
+    },
+    {
+     "name": "Figure",
+     "ticker": null
+    },
+    {
+     "name": "OpenAI",
+     "ticker": null
+    }
+   ],
+   "published_kst": "2026-11-16T05:15:48+09:00",
+   "revised_kst": "2026-11-16T05:15:48+09:00",
+   "revision": 1,
+   "summary": "가상 로봇 시험에서 범용 AI가 로봇 전용 AI를 앞선 것은 '로봇 데이터가 해자'라는 서사를 약하게 하는 신호다. 다만 64.9%는 앤트로픽이 직접 잰 값이고 가상 환경 결과라 크기는 보수적으로 읽어야 한다. 쟁점은 실기 로봇에서도 같은 격차가 나는지, 그리고 모터·몸체 같은 하드웨어 역량이 어디까지 방어선이 되는지다. 확신은 중간 이하다.",
+   "path": "reports/sixsigma-ai-35-65.json"
+  },
   {
    "slug": "sixsigma-6-2032-5-10",
    "type": "article",
@@ -1135,7 +1163,7 @@
   }
  ],
  "street": {
-  "updated_kst": "2026-11-16T02:19:54+09:00",
+  "updated_kst": "2026-11-16T05:17:48+09:00",
   "path": "street.json"
  },
  "calendar": {

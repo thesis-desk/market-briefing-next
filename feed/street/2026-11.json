@@ -1,8 +1,31 @@
 {
  "schema": 1,
  "month": "2026-11",
- "updated_kst": "2026-11-16T02:19:54+09:00",
+ "updated_kst": "2026-11-16T05:17:48+09:00",
  "items": [
+  {
+   "id": "vanguard-vanguard-economists-say-inflation-might-be-bette",
+   "group": "자산운용",
+   "org": "Vanguard",
+   "person": null,
+   "kind": "report",
+   "title": "Vanguard 이코노미스트들: 인플레이션이 겉보기보다 나을 수 있다, 주식에는 좋은 소식이다",
+   "title_orig": "Vanguard Economists Say: Inflation Might Be Better Than It Looks. Here's Why That's Good News for Stocks.",
+   "url": "https://www.fool.com/investing/2026/11/15/vanguard-economists-say-inflation-might-be-better-than-it-looks-here-s-why-that-s-good-news-for-stocks",
+   "outlet": "The Motley Fool",
+   "published_kst": "2026-11-15T19:15:00+09:00",
+   "stance": {
+    "ai_tech": null,
+    "market": 1
+   },
+   "args": [
+    "금리·거시"
+   ],
+   "judged": {
+    "basis": "headline_only",
+    "tier": "light"
+   }
+  },
   {
    "id": "gundlach-bond-king-jeffrey-gundlach-is-not-interested-in",
    "group": "투자 거장",
