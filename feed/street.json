@@ -1,20 +1,20 @@
 {
  "schema": 1,
- "updated_kst": "2026-11-16T20:17:33+09:00",
+ "updated_kst": "2026-11-16T23:16:28+09:00",
  "window_days": 14,
  "items_days": 30,
  "index": {
   "ai_tech": {
-   "value": -3,
+   "value": -5,
    "label": "엇갈림",
-   "orgs": 40,
-   "items": 125
+   "orgs": 41,
+   "items": 124
   },
   "market": {
    "value": -14,
    "label": "엇갈림",
    "orgs": 27,
-   "items": 74
+   "items": 73
   },
   "by_group": [
    {
@@ -35,14 +35,14 @@
     "group": "자산운용",
     "ai_tech": 3,
     "ai_tech_orgs": 7,
-    "market": -3,
+    "market": -2,
     "market_orgs": 7
    },
    {
     "group": "투자은행",
-    "ai_tech": 5,
+    "ai_tech": 4,
     "ai_tech_orgs": 6,
-    "market": 14,
+    "market": 15,
     "market_orgs": 6
    },
    {
@@ -54,9 +54,9 @@
    },
    {
     "group": "투자 거장",
-    "ai_tech": -25,
-    "ai_tech_orgs": 8,
-    "market": -53,
+    "ai_tech": -33,
+    "ai_tech_orgs": 9,
+    "market": -51,
     "market_orgs": 8
    },
    {
@@ -98,17 +98,17 @@
    },
    {
     "week": "2026-11-16",
-    "ai_tech": 13,
-    "ai_tech_orgs": 4,
-    "market": 25,
-    "market_orgs": 2
+    "ai_tech": -10,
+    "ai_tech_orgs": 5,
+    "market": 0,
+    "market_orgs": 3
    }
   ],
   "args": {
    "caution": [
     {
      "tag": "투자 회수",
-     "n": 19
+     "n": 20
     },
     {
      "tag": "자금 조달·신용",
@@ -116,19 +116,19 @@
     },
     {
      "tag": "밸류에이션",
-     "n": 12
+     "n": 13
     },
     {
      "tag": "쏠림",
+     "n": 13
+    },
+    {
+     "tag": "금리·거시",
      "n": 12
     },
     {
      "tag": "정책·지정학",
      "n": 12
-    },
-    {
-     "tag": "금리·거시",
-     "n": 11
     },
     {
      "tag": "경쟁·해자",
@@ -146,11 +146,11 @@
    "optimism": [
     {
      "tag": "수요·채택",
-     "n": 43
+     "n": 42
     },
     {
      "tag": "투자 회수",
-     "n": 32
+     "n": 31
     },
     {
      "tag": "정책·지정학",
@@ -158,7 +158,7 @@
     },
     {
      "tag": "자금 조달·신용",
-     "n": 21
+     "n": 20
     },
     {
      "tag": "금리·거시",
@@ -174,7 +174,7 @@
     },
     {
      "tag": "쏠림",
-     "n": 11
+     "n": 10
     },
     {
      "tag": "경쟁·해자",
@@ -185,6 +185,43 @@
   "method": "기관·인물마다 기간 안 입장 값의 평균을 내고 그 평균들을 다시 평균해 ×50"
  },
  "items": [
+  {
+   "id": "gundlach-i-just-want-out-billionaire-investor-jeffrey-gun-2",
+   "group": "투자 거장",
+   "org": "DoubleLine Capital",
+   "person": "Jeffrey Gundlach",
+   "kind": "report",
+   "title": "나가고 싶다: 2007년 주택 붕괴를 예견한 억만장자 투자자 Jeffrey Gundlach, AI 주식 비중은 거의 없어야 한다고 말해",
+   "title_orig": "I just want out: Billionaire investor Jeffrey Gundlach, who called the housing bust in 2007, says you should have almost nothing in AI stocks",
+   "url": "https://www.msn.com/en-us/news/other/i-just-want-out-billionaire-investor-jeffrey-gundlach-who-called-the-housing-bust-in-2007-says-you-should-have-almost-nothing-in-ai-stocks/ar-AA2hxQP3",
+   "outlet": "Moneywise on MSN",
+   "published_kst": "2026-11-16T13:30:00+09:00",
+   "stance": {
+    "ai_tech": -2,
+    "market": -1
+   },
+   "args": [
+    "밸류에이션",
+    "쏠림",
+    "투자 회수",
+    "금리·거시"
+   ],
+   "summary": "Gundlach는 AI를 둘러싼 서사가 낙관에서 우려로 바뀌는 균열이 이미 나타났고, 이를 매우 높은 밸류에이션 상태에서 겪고 있다고 본다. AI 경쟁의 패자가 나오며 위험자산의 다음 큰 하락을 부를 것이라 보고 AI 중심부에서 멀어지겠다고 했다. 다만 전량 매도나 공매도는 하지 않으며, AI 노출 없는 자산배분(주식 30% 등)을 권한다.",
+   "points": [
+    "잘 굴러가고 큰 믿음과 큰 돈벌이가 있던 대상에 대해 서사가 '이것이 우리 모두를 죽일 것'이라는 식으로 급격히 바뀌는 것은 이상한 행태이며, AI 서사에 이미 균열이 나타나고 있다고 말했다.",
+    "분위기가 '밝은 면을 보자'에서 '잠깐, 모든 게 완벽하진 않다'로 바뀌었고, 현재 위치가 바로 거기인데 그것을 매우 높은 밸류에이션에서 겪고 있다고 말했다.",
+    "모든 것이 아름답게 보이던 시기는 지났으며, 시장이 실제로는 없는 문제까지 찾아내는 쪽으로 갈 수도 있다고 말했다.",
+    "AI 경쟁이라는 성배를 향한 레이스에서 낙오자와 패자가 나올 것이며, 이것이 위험자산의 다음 매우 큰 낙폭으로 이어질 것이라고 말했다.",
+    "전환점에 도달했다고 단정하지는 않지만 그에 가까워, 그 진원지에서 벗어나 있고 싶다고 했다. 모든 것을 팔지도, 무엇을 공매도하지도 않지만 가장 큰 타격을 입을 영역에서 점점 더 멀어지고 싶다고 말했다.",
+    "내년 중 인플레이션 충격이든 공급 충격이든 어떤 충격이 없다면 놀랄 것이며, 가장 두려운 것은 필요해질 청산의 날과 그에 따른 대응이 우리에게 크게 영향을 미칠 것이라는 점이라고 말했다.",
+    "현재 주식 30%를 동일가중 Fortune 500 지수로만 담을 것을 권하며, 포트폴리오의 40%가 AI인 상태가 아니라 거의 없는 상태, 즉 가능한 한 AI에서 멀어지는 구성이고 자신이 권하는 모든 것은 AI 노출과 완전히 분리되어 있다고 말했다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
+  },
   {
    "id": "imf-imf-warns-ai-financing-risks-could-unsettle-glob",
    "group": "중앙은행·국제기구",
