@@ -1,7 +1,35 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-17T02:28:15+09:00",
+ "generated_kst": "2026-11-17T05:19:26+09:00",
  "reports": [
+  {
+   "slug": "sixsigma-40-96",
+   "type": "article",
+   "title": "식스시그마 : 애크먼의 큰 손실과 큰 수익을 가른 것은 종목이 아니라 손실이 멈추는 지점이었다",
+   "companies": [
+    {
+     "name": "Pershing Square",
+     "ticker": null
+    },
+    {
+     "name": "Valeant Pharmaceuticals",
+     "ticker": null
+    },
+    {
+     "name": "Herbalife",
+     "ticker": null
+    },
+    {
+     "name": "MBIA",
+     "ticker": null
+    }
+   ],
+   "published_kst": "2026-11-17T05:16:21+09:00",
+   "revised_kst": "2026-11-17T05:16:21+09:00",
+   "revision": 1,
+   "summary": "영상은 허벌라이프 공매도와 밸리언트(본인 말로 각각 약 10억 달러, 약 40억 달러 손실), MBIA 신용부도스와프와 2020년 3월 지수 신용보험(2,700만 달러에서 26억 달러, 약 96배)을 대비한다. 서사는 설득력 있지만 밸리언트는 하락 중 늘린 지분의 대부분이 콜옵션이었으므로, 손실이 멈추지 않는 구조만으로는 설명되지 않고 포지션 크기와 매도 규율이 더 큰 변수로 보인다(확신 중간). 영상에 종목 판정의 근거는 없다.",
+   "path": "reports/sixsigma-40-96.json"
+  },
   {
    "slug": "bofa-bofa-ceo-brian-moynihan-talks-deals-pushed-into",
    "type": "article",
@@ -1239,7 +1267,7 @@
   }
  ],
  "street": {
-  "updated_kst": "2026-11-17T02:22:04+09:00",
+  "updated_kst": "2026-11-17T05:19:26+09:00",
   "path": "street.json"
  },
  "calendar": {

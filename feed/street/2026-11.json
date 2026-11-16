@@ -1,8 +1,109 @@
 {
  "schema": 1,
  "month": "2026-11",
- "updated_kst": "2026-11-17T02:22:04+09:00",
+ "updated_kst": "2026-11-17T05:19:26+09:00",
  "items": [
+  {
+   "id": "blackrock-midterms-and-ai-in-focus-at-2027-forum-market-ta",
+   "group": "자산운용",
+   "org": "BlackRock",
+   "person": null,
+   "kind": "publication",
+   "title": "중간선거와 AI가 초점이 된 2027 포럼 | 시장 진단",
+   "title_orig": "Midterms and AI in focus at 2027 Forum | Market take",
+   "url": "https://www.youtube.com/watch?v=MCS_RorrWvU",
+   "outlet": "BlackRock (유튜브)",
+   "published_kst": "2026-11-17T04:53:24+09:00",
+   "stance": {
+    "ai_tech": 0,
+    "market": 0
+   },
+   "args": [
+    "수요·채택",
+    "자금 조달·신용",
+    "금리·거시",
+    "정책·지정학"
+   ],
+   "summary": "블랙록은 미 중간선거 이후 민주당이 의회를 장악한 결과가 AI 설비투자에 어떤 의미인지 시장이 가늠하는 중이라고 본다. AI 투자는 계속되겠지만 규모와 속도, 그리고 채택이 이를 따라갈지가 불확실하다고 한다. 이 불확실성 때문에 지난달 미국 주식을 중립으로, 미 국채를 상향 조정했고, 자본 경쟁과 구조적 고금리가 핵심 변수라고 말한다.",
+   "points": [
+    "AI 설비투자는 이어지겠지만 같은 규모와 속도일지가 쟁점이다.",
+    "설비투자의 속도와 규모에 대한 불확실성이 미국 주식 중립, 미 국채 상향의 이유였다.",
+    "하이퍼스케일러는 자금 조달 비용이 오르는데도 대규모 지출을 이어가고 있다.",
+    "금리가 구조적으로 높게 유지될 것으로 오래전부터 예상해 왔다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "유튜브 영상의 음성을 음성 인식(Whisper)으로 받아 적은 전사 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
+  },
+  {
+   "id": "altimeter-altimeter-s-gerstner-we-re-putting-in-for-5-bill",
+   "group": "벤처캐피털",
+   "org": "Altimeter Capital",
+   "person": "Brad Gerstner",
+   "kind": "publication",
+   "title": "Altimeter의 Gerstner: Anthropic IPO에 50억 달러를 주문할 것",
+   "title_orig": "Altimeter's Gerstner: We're putting in for $5 billion on Anthropic's IPO",
+   "url": "https://www.youtube.com/watch?v=gsKzb-KXaMc",
+   "outlet": "CNBC Television (유튜브)",
+   "published_kst": "2026-11-17T04:37:23+09:00",
+   "stance": {
+    "ai_tech": 2,
+    "market": null
+   },
+   "args": [
+    "수요·채택",
+    "경쟁·해자",
+    "밸류에이션"
+   ],
+   "summary": "Altimeter의 Gerstner는 중간선거 결과, 반도체 지수 급락, 엔비디아 CEO 교체라는 나쁜 배경에도 Anthropic IPO에 50억 달러를 주문한다고 밝힌다. 지금은 AI의 초기 국면이고 Anthropic과 OpenAI가 경쟁자와 격차를 벌리는 '구글 2005년' 시점이라며 장기 핵심 보유 종목으로 본다. 공모가는 기업가치 1.4~1.5조 달러 선이 유력하다고 예상한다.",
+   "points": [
+    "불리한 시장 배경에도 Altimeter는 Anthropic IPO에 50억 달러를 주문하며 이는 과거 IPO 최대 주문의 5배를 넘는다.",
+    "Anthropic을 오래 복리로 불어날 핵심 종목으로 보며 배정을 받으면 최대 보유 종목이 된다고 말한다.",
+    "공모가는 기업가치 1.4~1.5조 달러가 가장 유력하고, 상단을 최대한 짜내면 1.75~1.8조 달러도 가능하나 위험하다고 본다.",
+    "지금은 검색 시장에서 구글이 승자로 갈린 2005년 같은 시점이며 Anthropic과 OpenAI가 경쟁자와 격차를 벌리고 있다고 주장한다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "유튜브 자막(제작자 제공)(en) 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
+  },
+  {
+   "id": "bofa-bofa-s-moynihan-says-some-deals-are-getting-push",
+   "group": "투자은행",
+   "org": "Bank of America",
+   "person": "Brian Moynihan",
+   "kind": "publication",
+   "title": "BofA 모이니핸, 일부 거래가 2027년으로 밀리고 있다고 밝혀",
+   "title_orig": "BofA’s Moynihan Says Some Deals Are Getting Pushed Into 2027",
+   "url": "https://www.youtube.com/watch?v=8LN26EUMims",
+   "outlet": "Bloomberg Podcasts (유튜브)",
+   "published_kst": "2026-11-17T02:55:05+09:00",
+   "stance": {
+    "ai_tech": 0,
+    "market": 1
+   },
+   "args": [
+    "자금 조달·신용",
+    "수요·채택",
+    "금리·거시",
+    "투자 회수"
+   ],
+   "summary": "모이니핸 CEO는 IPO·자본시장 파이프라인이 가득 차 있고 일부 거래는 취소가 아니라 내년으로 미뤄질 뿐이라고 본다. 대출 건전성과 소비 지출도 견조하다고 말한다. AI는 데이터센터 대출을 신용도 높은 기업에만 내주며, 최종 수요가 얼마나 커지느냐가 사업성을 가를 것이라며 판단을 유보한다.",
+   "points": [
+    "일부 거래가 내년으로 밀리지만 파이프라인은 가득 차 있어 지연일 뿐 무산은 아니라고 본다.",
+    "AI 인프라의 사업성은 최종 수요가 시간이 지나며 얼마나 커지느냐에 달려 있다고 본다.",
+    "대출 건전성이 역대 최상 수준이라 신용 위험은 낮다고 본다.",
+    "자사 데이터상 소비자 지출이 전년 대비 4~5% 늘며 견조하다고 말한다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "유튜브 자막(제작자 제공)(en) 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
+  },
   {
    "id": "bofa-bofa-ceo-brian-moynihan-talks-deals-pushed-into",
    "group": "투자은행",
@@ -103,6 +204,71 @@
     "tier": "standard"
    },
    "note": "유튜브 자동 생성 자막(en) 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
+  },
+  {
+   "id": "bofa-bank-of-america-ceo-moynihan-on-ipo-pipeline-ai",
+   "group": "투자은행",
+   "org": "Bank of America",
+   "person": "Brian Moynihan",
+   "kind": "publication",
+   "title": "Bank of America CEO Moynihan, IPO 파이프라인·AI·소비 강세를 말하다",
+   "title_orig": "Bank of America CEO Moynihan on IPO Pipeline, AI, Consumer Strength",
+   "url": "https://www.youtube.com/watch?v=PwHoookOZiE",
+   "outlet": "Bloomberg Television (유튜브)",
+   "published_kst": "2026-11-16T23:37:32+09:00",
+   "stance": {
+    "ai_tech": 0,
+    "market": 1
+   },
+   "args": [
+    "수요·채택",
+    "자금 조달·신용",
+    "금리·거시"
+   ],
+   "summary": "Moynihan은 AI 투자의 성패가 최종 수요가 얼마나 커지느냐에 달렸다고 보고, 데이터센터·칩 관련 대출은 신용도가 높은 기업에만 내준다고 말한다. 대출 건전성과 소비 지출이 모두 견조하고 IPO 파이프라인도 차 있다고 보지만, 추가 금리 인상은 중소기업과 주택 시장에 부담이라고 한다.",
+   "points": [
+    "AI 투자의 타당성은 최종 수요가 얼마나 커지고 시간이 지나며 어떻게 구체화되느냐에 달려 있다.",
+    "데이터센터 등 AI 인프라 대출은 신용도가 높은 기업을 상대로, 인허가가 끝나 착공할 준비가 된 건에만 실행한다.",
+    "IPO 일정이 내년으로 밀리는 것은 시장이 안정될 시간을 주려는 것일 뿐이며, 파이프라인은 가득 차 있다.",
+    "자사 대출 건전성은 역대 최고 수준이며, 고객 소비도 전년보다 4~5% 늘어 견조하다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "유튜브 자막(제작자 제공)(en) 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
+  },
+  {
+   "id": "menlo-2026-the-state-of-ai-in-healthcare",
+   "group": "벤처캐피털",
+   "org": "Menlo Ventures",
+   "person": null,
+   "kind": "publication",
+   "title": "2026: 헬스케어 AI의 현황",
+   "title_orig": "2026: The State of AI in Healthcare",
+   "url": "https://menlovc.com/perspective/2026-the-state-of-ai-in-healthcare",
+   "outlet": "Menlo Ventures",
+   "published_kst": "2026-11-16T23:30:00+09:00",
+   "stance": {
+    "ai_tech": 1,
+    "market": null
+   },
+   "args": [
+    "수요·채택",
+    "경쟁·해자",
+    "투자 회수"
+   ],
+   "summary": "Menlo Ventures는 헬스케어가 AI의 최대 수직 시장으로 지출이 2.5배 늘어 37억 달러에 이르렀고, 제약의 신약 개발 AI 지출이 23배 급증했다고 본다. 필기(scribe) 시장은 기존 EHR 업체가 되찾아가며 상품화되는 반면 임상 코파일럿·환자 접점 영역이 빠르게 성장하고 있다고 한다. 구매 주기가 길어지고 보험사(payer)는 뒤처지지만 도입은 계속 가속된다는 입장이다.",
+   "points": [
+    "헬스케어는 AI 최대 수직 시장으로, 지출이 2.5배 늘어 37억 달러에 달해 법률·금융 합계보다 크다.",
+    "제약사가 AI를 실험 단계에서 대규모 도입으로 전환해 지출이 3천만 달러에서 7억 달러로 늘었다.",
+    "필기 시장은 MS·Epic 등 기존 업체가 신규 매출의 대부분을 가져가며 상품화되고 있다.",
+    "도입 주기는 길어졌지만 도입 자체는 늦춰지지 않아 헬스케어 조직의 AI 도입률이 22%에서 42%로 올랐다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   }
   },
   {
    "id": "gundlach-i-just-want-out-billionaire-investor-jeffrey-gun-2",
