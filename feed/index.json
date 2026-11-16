@@ -1,7 +1,25 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-16T13:26:32+09:00",
+ "generated_kst": "2026-11-16T14:24:03+09:00",
  "reports": [
+  {
+   "slug": "goldman-how-will-higher-than-expected-inflation-data-imp",
+   "type": "interview",
+   "title": "무하마드 쿠바이 인터뷰 : 뜨거운 CPI가 연 50bp 인상 가능성, 금리와 AI CAPEX의 자기균형",
+   "companies": [
+    {
+     "name": "Goldman Sachs",
+     "ticker": null
+    }
+   ],
+   "event": "Goldman Sachs The Markets",
+   "event_date": "2026-11-12",
+   "published_kst": "2026-11-16T14:24:03+09:00",
+   "revised_kst": "2026-11-16T14:24:03+09:00",
+   "revision": 1,
+   "summary": "쿠바이의 진단은 두 가지다. 세 번 연속 0.3을 기록한 CPI와 월러의 50bp 언급으로 연준 인상은 방향이 굳었고, 남은 문제는 폭과 시점이다. 10년물이 고점 5.3%를 다시 넘으려면 수급이 아니라 성장과 실적이 받쳐 줘야 한다. 워시가 금리를 AI CAPEX 자금 조달에 연결했다는 점은, AI 인프라를 부채로 짓는 쪽에서 금리가 곧 투자 속도를 정하는 변수가 됐다는 뜻으로 읽힌다(해석).",
+   "path": "reports/goldman-how-will-higher-than-expected-inflation-data-imp.json"
+  },
   {
    "slug": "sixsigma-yafypycpzpw",
    "type": "article",
@@ -1185,7 +1203,7 @@
   }
  ],
  "street": {
-  "updated_kst": "2026-11-16T13:26:32+09:00",
+  "updated_kst": "2026-11-16T14:19:17+09:00",
   "path": "street.json"
  },
  "calendar": {

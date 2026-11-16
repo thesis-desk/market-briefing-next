@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "month": "2026-11",
- "updated_kst": "2026-11-16T13:26:32+09:00",
+ "updated_kst": "2026-11-16T14:19:17+09:00",
  "items": [
   {
    "id": "mckinsey-mckinsey-report-says-banking-ai-investments-yiel",
@@ -3094,6 +3094,41 @@
    "note": "유튜브 자동 생성 자막(en) 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
   },
   {
+   "id": "goldman-the-us-midterms-reshaping-the-stock-market",
+   "group": "투자은행",
+   "org": "Goldman Sachs",
+   "person": "Lou Miller",
+   "kind": "publication",
+   "title": "미국 중간선거가 주식시장을 어떻게 재편할 수 있나",
+   "title_orig": "The US Midterms: Reshaping the Stock Market",
+   "url": "https://www.goldmansachs.com/insights/the-markets",
+   "outlet": "Goldman Sachs The Markets",
+   "published_kst": "2026-11-07T03:34:00+09:00",
+   "stance": {
+    "ai_tech": 0,
+    "market": 0
+   },
+   "args": [
+    "밸류에이션",
+    "투자 회수",
+    "자금 조달·신용",
+    "경쟁·해자",
+    "금리·거시"
+   ],
+   "summary": "Lou Miller는 ROI 우려, 오픈소스 경쟁, 자본시장 제약으로 데이터센터 관련주가 고점 대비 크게 빠졌고 멀티플이 6월의 절반 수준이라 밸류에이션은 더 이상 부담이 아니라고 본다. 성장 둔화 국면에서 비싼 전통 방어주(필수소비재)는 방어적이지 않다고 보고, AI를 제외한 S&P 500을 향후 6개월의 안전한 선택으로 제시한다. 연말에는 완만한 산타 랠리를 예상한다.",
+   "points": [
+    "ROI 우려, 오픈소스 경쟁, 자본시장 제약으로 AI 데이터센터 트레이드의 상방 꼬리가 제거되고 멀티플이 크게 낮아졌다.",
+    "데이터센터 멀티플이 6월의 절반 수준이라 밸류에이션은 더 이상 역풍이 아니며 긍정적 촉매도 남아 있다.",
+    "필수소비재 같은 비싼 방어주는 수익률 면에서 매력이 없으므로 퀄리티·FCF 수익률 등 다른 기준으로 방어주를 찾아야 한다.",
+    "AI를 제외한 S&P 500이 둔화되는 성장 환경에서 향후 6개월간 안전한 트레이드다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "기관이 회차 페이지에 낸 공식 대본(PDF) 기준. 화자 이름이 대본에 적혀 있음"
+  },
+  {
    "id": "a16z-charts-of-the-week-apple-skips-capex-and-the-cro",
    "group": "벤처캐피털",
    "org": "Andreessen Horowitz (a16z)",
@@ -3125,6 +3160,40 @@
     "tier": "standard"
    },
    "note": "웹 페이지 본문 기준. 그림 16개 속 글자는 확인하지 못함"
+  },
+  {
+   "id": "ubs-house-view-daily-chip-rout-tests-ai-investment-c",
+   "group": "투자은행",
+   "org": "UBS",
+   "person": "Aaron (UBS Chief Investment Office)",
+   "kind": "publication",
+   "title": "House View Daily | 반도체 급락이 AI 투자 논리를 시험하다",
+   "title_orig": "House View Daily | Chip rout tests AI investment case",
+   "url": "https://www.ubs.com/content/dam/podcasts/wma/on-air/in-the-now/20261106_HV_Daily.mp3",
+   "outlet": "UBS House View Daily",
+   "published_kst": "2026-11-06T22:40:42+09:00",
+   "stance": {
+    "ai_tech": 1,
+    "market": 1
+   },
+   "args": [
+    "투자 회수",
+    "정책·지정학",
+    "수요·채택",
+    "전력·공급 제약"
+   ],
+   "summary": "UBS는 데이터센터 비용·속도에 대한 불확실성으로 촉발된 반도체·AI 급락이 펀더멘털 악화가 아니라 위험 축소이며 과도했다고 본다. AI 투자 사이클은 유지되고 기업 이익이 견조해 6~12개월 내 주요 지수 상승 여력이 있다고 보면서, 변동성 확대에 대비해 분산과 단일 종목 쏠림 축소를 권고한다.",
+   "points": [
+    "급락은 데이터센터 구축 비용과 속도에 대한 불확실성 때문이며 전망이 갑자기 나빠진 것이 아니라고 본다.",
+    "미국의 제안된 용량이 UBS 가정치를 크게 웃돌아, 규제는 투자 사이클을 꺾기보다 재배치·연장할 것이라고 본다.",
+    "AI 설비투자가 2026년 1조 달러에서 2028년 1.5조 달러로 늘 것으로 전망한다.",
+    "투자자는 지출 약속보다 수익화·가동률·자금 조달 능력의 증거를 요구하는 쪽으로 옮겨가고 있어 기술주 변동성이 이어질 수 있다고 본다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "팟캐스트 음성을 음성 인식(Whisper)으로 받아 적은 전사 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
   },
   {
    "id": "brookfield-brookfield-s-teskey-says-ai-infrastructure-needs",
@@ -3172,6 +3241,38 @@
     "basis": "headline_only",
     "tier": "light"
    }
+  },
+  {
+   "id": "ubs-ubs-on-air-paul-donovan-daily-audio-reassessing",
+   "group": "투자은행",
+   "org": "UBS",
+   "person": "Paul Donovan",
+   "kind": "publication",
+   "title": "UBS 온에어: 폴 도노번 데일리 오디오 '경제가 아니라 시장을 재평가'",
+   "title_orig": "UBS On-Air: Paul Donovan Daily Audio 'Reassessing markets, not economics'",
+   "url": "https://www.ubs.com/content/dam/podcasts/wma/261106-reassessing-markets-not-economics.mp3",
+   "outlet": "UBS Paul Donovan Daily",
+   "published_kst": "2026-11-06T17:24:21+09:00",
+   "stance": {
+    "ai_tech": 0,
+    "market": null
+   },
+   "args": [
+    "투자 회수",
+    "정책·지정학",
+    "금리·거시"
+   ],
+   "summary": "AI 주식시장 조정은 지금 단계에서 미국 가계의 소비 행태에 영향을 주지 않을 가능성이 크므로 경제적 중요성은 걸프 지역 사안보다 낮다고 본다. 지역사회 사업 지출이 데이터센터 건설보다 단기적으로 경제에 더 이로울 수 있다고 지적한다. 유가 상승은 소득 재분배를 일으키는 실질적 변수로 본다.",
+   "points": [
+    "AI 주식시장 조정은 현 단계에서 미국 가계의 지출 행태에 영향을 주지 않을 가능성이 크다.",
+    "학교 건립 같은 지역사회 지출이 막연한 미래 수익을 기대하는 데이터센터 건설보다 단기적으로 경제에 더 이로울 수 있다.",
+    "걸프 지역 사태는 유가를 통해 소비국과 산유국 사이의 소득 재분배를 일으키므로 경제적 영향이 있다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "팟캐스트 음성을 음성 인식(Whisper)으로 받아 적은 전사 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
   },
   {
    "id": "blackrock-blackrock-s-rieder-sees-an-epic-rebalancing-of-e",
@@ -3533,6 +3634,41 @@
    }
   },
   {
+   "id": "ubs-house-view-daily-gridlock-and-diplomatic-hopes-l",
+   "group": "투자은행",
+   "org": "UBS",
+   "person": "Aaron Kreischer",
+   "kind": "publication",
+   "title": "House View Daily | 의회 견제 구도와 외교 기대가 미국 증시를 끌어올리다",
+   "title_orig": "House View Daily | Gridlock and diplomatic hopes lift US stocks",
+   "url": "https://www.ubs.com/content/dam/podcasts/wma/on-air/in-the-now/20261105_HV_Daily.mp3",
+   "outlet": "UBS House View Daily",
+   "published_kst": "2026-11-05T20:42:39+09:00",
+   "stance": {
+    "ai_tech": 1,
+    "market": 1
+   },
+   "args": [
+    "투자 회수",
+    "수요·채택",
+    "자금 조달·신용",
+    "쏠림",
+    "정책·지정학"
+   ],
+   "summary": "UBS는 실적과 AI 인프라 수요가 견조해 글로벌 주식에 대해 건설적인 입장을 유지한다. 다만 데이터센터 규제 부담, 과잉투자·자금 조달·수익화 우려로 종목 간 차별화가 커질 수 있다고 보고, 개별 종목 쏠림을 줄이고 재무가 강한 플랫폼과 우량 인프라 기업 위주로 분산할 것을 권한다.",
+   "points": [
+    "글로벌 주식에 대한 건설적 시각을 유지하되, 고르지 않은 랠리와 미-이란 협상 불확실성 때문에 분산이 중요하다고 본다.",
+    "중국의 대규모 AI 칩 주문은 AI 컴퓨팅·인프라 수요가 견조하다는 판단과 부합한다고 본다.",
+    "AI 설비투자가 2026년 1조 달러, 2027년 1.4조 달러, 2028년 1.5조 달러로 늘 것으로 전망한다.",
+    "투자자들은 과잉투자·자금 조달·수익화 위험을 더 무겁게 보고 있어 개별 종목 쏠림을 줄이고 우량 기업으로 기울일 것을 권고한다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "팟캐스트 음성을 음성 인식(Whisper)으로 받아 적은 전사 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
+  },
+  {
    "id": "boe-ai-is-barely-boosting-productivity-says-bank-of",
    "group": "중앙은행·국제기구",
    "org": "영란은행",
@@ -3892,6 +4028,40 @@
     "tier": "standard"
    },
    "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
+  },
+  {
+   "id": "jpmorgan-now-you-can-see-everything",
+   "group": "투자은행",
+   "org": "JPMorgan",
+   "person": "Michael Cembalest",
+   "kind": "publication",
+   "title": "Now You Can See Everything (이제 모든 것이 보인다)",
+   "title_orig": "Now You Can See Everything",
+   "url": "https://eyeonthemarket.podbean.com/e/now-you-can-see-everything",
+   "outlet": "J.P. Morgan Eye on the Market",
+   "published_kst": "2026-11-04T23:59:36+09:00",
+   "stance": {
+    "ai_tech": -1,
+    "market": 0
+   },
+   "args": [
+    "자금 조달·신용",
+    "전력·공급 제약",
+    "밸류에이션",
+    "정책·지정학"
+   ],
+   "summary": "AI 기업들의 약 4조 달러 규모 대차대조표 외 의무와 신용 스프레드 확대를 핵심 위험으로 짚는다. 한편 대형 기술주는 최근 하락 뒤 이익 성장 대비 가격(PEG)이 시장 평균 수준이라 AI 이익 호황에 대한 불신이 이미 반영돼 있다고 본다. 중간선거는 시장 변수가 아니지만 주지사 선거 결과가 2028년 데이터센터 건설에 변수라고 본다.",
+   "points": [
+    "AI 대기업 의무의 약 80%인 약 4조 달러가 아직 대차대조표 밖에 있고, 이에 시장이 주목하면서 관련 기업들의 신용 스프레드가 움직이기 시작했다.",
+    "SpaceX, Broadcom, Meta 등의 스프레드가 벌어지고 있으며, 기업들이 높은 스프레드에도 발행하겠지만 한계는 있을 것이라고 본다.",
+    "주요 AI 대형주의 PEG 비율이 시장 평균이나 금융·필수소비재보다 낮아, AI 이익 호황에 대한 불신이 가격에 반영돼 있다고 본다.",
+    "중간선거 결과 중 시장에 영향을 줄 변수는 주지사 선거이며, 2028년 가동 예정 데이터센터 약 37GW가 전면 중단 위험에 놓일 수 있다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "팟캐스트 음성을 음성 인식(Whisper)으로 받아 적은 전사 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
   },
   {
    "id": "chamath-the-first-victim-chamath-palihapitiya-warns-ai-s",
@@ -4520,6 +4690,40 @@
     "tier": "standard"
    },
    "note": "유튜브 영상의 음성을 음성 인식(Whisper)으로 받아 적은 전사 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
+  },
+  {
+   "id": "ubs-house-view-daily-tech-sell-off-highlights-rising",
+   "group": "투자은행",
+   "org": "UBS",
+   "person": "Aaron Kreischer",
+   "kind": "publication",
+   "title": "House View Daily | 기술주 급락, AI 지출에 대한 점검 강화",
+   "title_orig": "House View Daily | Tech sell-off highlights rising scrutiny of AI spending",
+   "url": "https://www.ubs.com/content/dam/podcasts/wma/on-air/in-the-now/20261102_HV_Daily.mp3",
+   "outlet": "UBS House View Daily",
+   "published_kst": "2026-11-02T20:25:58+09:00",
+   "stance": {
+    "ai_tech": 1,
+    "market": 0
+   },
+   "args": [
+    "투자 회수",
+    "자금 조달·신용",
+    "쏠림",
+    "수요·채택"
+   ],
+   "summary": "UBS는 3분기 실적에서 AI 인프라 수요가 매우 강하다고 보고 AI 설비투자 전망을 2026년 1조 달러, 2027년 1.4조 달러, 2028년 1.5조 달러로 상향했다. 다만 과잉투자·자금 조달·기존 사업 잠식 우려로 성과 기준이 높아져 변동성이 커질 것이라며, 쏠림을 줄이고 자산·섹터를 분산하며 변동성을 활용하라고 권고한다.",
+   "points": [
+    "실적 시즌을 거치며 AI 부문 수요와 향후 투자에 대한 확신이 강해져 AI 설비투자 전망을 대폭 상향했다.",
+    "네오클라우드의 신용 악화는 설비투자의 약 8%에 그쳐 AI 지출 전반의 붕괴보다 선별적 지연·재조정이 더 가능성이 높다.",
+    "시장이 지출 약속 보상에서 수익화·재무 건전성·수익률 평가로 옮겨가며 AI 거래의 변동성이 새로운 상수가 될 것이다.",
+    "단기 변동성 때문에 AI 테마를 버리지 말되, 쏠림을 줄이고 AI 밸류체인과 섹터·자산군 전반으로 분산해야 한다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "팟캐스트 음성을 음성 인식(Whisper)으로 받아 적은 전사 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
   },
   {
    "id": "howard-marks-howard-marks-flags-a-credit-trap-inside-the-ai-b",
