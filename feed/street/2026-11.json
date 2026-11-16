@@ -1,8 +1,109 @@
 {
  "schema": 1,
  "month": "2026-11",
- "updated_kst": "2026-11-16T23:16:28+09:00",
+ "updated_kst": "2026-11-17T02:22:04+09:00",
  "items": [
+  {
+   "id": "bofa-bofa-ceo-brian-moynihan-talks-deals-pushed-into",
+   "group": "투자은행",
+   "org": "Bank of America",
+   "person": "Brian Moynihan",
+   "kind": "publication",
+   "title": "BofA CEO 브라이언 모이니핸, 내년으로 밀린 딜·실적·연준을 말하다 | Bloomberg Talks",
+   "title_orig": "BofA CEO Brian Moynihan Talks Deals Pushed into Next Year, Earnings, Fed | Bloomberg Talks",
+   "url": "https://www.youtube.com/watch?v=h2Vne6KvEG0",
+   "outlet": "Bloomberg Podcasts (유튜브)",
+   "published_kst": "2026-11-17T01:59:53+09:00",
+   "stance": {
+    "ai_tech": 1,
+    "market": 1
+   },
+   "args": [
+    "수요·채택",
+    "자금 조달·신용",
+    "투자 회수",
+    "금리·거시"
+   ],
+   "summary": "모이니핸 CEO는 AI 데이터센터·칩 대출은 신용도 높은 보증 기업만 대상으로 하며 대출 건전성이 사상 최고 수준이라고 말한다. AI의 장기 타당성은 최종 수요 규모에 달렸다고 보면서도, 자사는 AI에 약 3억 달러를 써서 약 7억 달러의 가치를 얻었다고 한다. 기업공개는 지연될 뿐 무산되지 않으며 소비와 신용도 견조하다고 본다. 다만 금리 인상으로 중소기업의 부담은 커진다고 지적한다.",
+   "points": [
+    "IPO 일부는 내년 초로 밀리지만 무산이 아니라 지연이며 파이프라인은 가득 차 있다.",
+    "AI 인프라 대출은 신용도 높은 기업에만, 인허가와 준비가 끝난 뒤에 집행한다.",
+    "AI 투자의 타당성은 최종 수요가 얼마나 커지는지에 달려 있으며 자사 내부에서는 AI 성과가 강하다.",
+    "대출 건전성이 역대 최고 수준이며 소비자 지출은 전 계층에서 견조하다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "유튜브 영상의 음성을 음성 인식(Whisper)으로 받아 적은 전사 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
+  },
+  {
+   "id": "bofa-anthropic-ipo-is-delaying-some-deals-says-bank-o",
+   "group": "투자은행",
+   "org": "Bank of America",
+   "person": null,
+   "kind": "publication",
+   "title": "Anthropic IPO가 일부 딜을 지연시키고 있다고 Bank of America CEO 모이니핸이 밝혀",
+   "title_orig": "Anthropic IPO Is Delaying Some Deals, Says Bank of America CEO Moynihan",
+   "url": "https://www.youtube.com/watch?v=WyxO5kfuMHw",
+   "outlet": "Bloomberg Television (유튜브)",
+   "published_kst": "2026-11-16T23:49:38+09:00",
+   "stance": {
+    "ai_tech": 0,
+    "market": 1
+   },
+   "args": [
+    "수요·채택",
+    "자금 조달·신용",
+    "투자 회수"
+   ],
+   "summary": "모이니핸은 대형 IPO 이후 시장이 안정될 때까지 일부 딜이 내년 초로 밀리고 있지만 무산이 아니라 지연이며 파이프라인은 가득 차 있다고 말한다. AI 데이터센터 대출은 신용도가 높은 기업이 보증하고 인허가가 끝난 건에만 내준다고 밝힌다. AI의 최종 수요 규모가 사업 타당성을 결정할 것이라고 보면서, BofA 내부에서는 AI가 효과를 내고 있다고 말한다.",
+   "points": [
+    "불확실성 때문에 일반 기업과 바이오 기업의 딜이 내년 초로 밀리고 있다.",
+    "딜은 지연일 뿐 무산이 아니며 파이프라인은 가득 차 있어 은행은 낙관적이다.",
+    "AI 인프라 대출은 신용도가 높은 기업이 뒷받침하고 인허가가 끝난 건에만 집행한다.",
+    "AI의 최종 수요 규모와 실현 속도가 전체 AI 투자의 타당성을 결정한다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "유튜브 자막(제작자 제공)(en) 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
+  },
+  {
+   "id": "blackrock-ai-looking-beyond-the-buildout",
+   "group": "자산운용",
+   "org": "BlackRock",
+   "person": "Vive Paul",
+   "kind": "publication",
+   "title": "AI: 설비 구축 그 너머를 보며",
+   "title_orig": "AI: looking beyond the buildout",
+   "url": "https://www.youtube.com/watch?v=-xwPO7uiLmA",
+   "outlet": "BlackRock (유튜브)",
+   "published_kst": "2026-11-16T23:41:04+09:00",
+   "stance": {
+    "ai_tech": 0,
+    "market": 0
+   },
+   "args": [
+    "밸류에이션",
+    "투자 회수",
+    "금리·거시",
+    "수요·채택"
+   ],
+   "summary": "BlackRock Investment Institute는 AI에 대한 장기 확신(전략적 비중 확대)을 유지하면서도 6~12개월 전술 시각은 중립으로 둔다. 밸류에이션 부담, 컴퓨팅 비용 하락에 따른 공급사 이익 압박, 도입 병목을 단기 위험으로 꼽는다. AI 투자 자금 수요로 금리 전망이 오르자 채권, 특히 물가연동채에 약 5년 만에 더 긍정적으로 본다.",
+   "points": [
+    "AI에 대한 장기 확신은 전략적 비중 확대이지만 6~12개월 전술 시각은 중립이다.",
+    "미국 주식 밸류에이션은 측정 방식에 따라 닷컴 버블에 근접하며, 강한 이익 성장 기대가 전제돼 있다.",
+    "컴퓨팅 비용 하락과 도입 병목이 단기적으로 AI 테마에 부담이지만 장기 기회를 훼손하지는 않는다.",
+    "AI 투자 자금 수요가 금리에 압력을 주어 장기 금리 전망을 올렸고, 채권 특히 물가연동채를 더 긍정적으로 본다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "유튜브 자동 생성 자막(en) 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
+  },
   {
    "id": "gundlach-i-just-want-out-billionaire-investor-jeffrey-gun-2",
    "group": "투자 거장",

@@ -1,7 +1,43 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-16T23:16:28+09:00",
+ "generated_kst": "2026-11-17T02:28:15+09:00",
  "reports": [
+  {
+   "slug": "bofa-bofa-ceo-brian-moynihan-talks-deals-pushed-into",
+   "type": "article",
+   "title": "Bank of America(브라이언 모이니한) : IPO는 미뤄졌을 뿐 무산되지 않았고, 신용과 소비는 견조하다",
+   "companies": [
+    {
+     "name": "Bank of America",
+     "ticker": null
+    }
+   ],
+   "event": "Bloomberg Talks 인터뷰",
+   "event_date": "2026-11-16",
+   "published_kst": "2026-11-17T02:28:15+09:00",
+   "revised_kst": "2026-11-17T02:28:15+09:00",
+   "revision": 1,
+   "summary": "모이니한은 앤트로픽 상장을 앞두고 중소형 IPO가 내년 초로 밀리는 것을 시점 문제로 보았다. 2027년 순이자이익 8% 이상 성장 전망과 역대 최상이라는 신용 품질을 근거로 BofA가 중기 목표를 앞당겨 달성하고 있다고 강조했다. 작성자가 보기에 추가 금리 인상보다 카드 금리 상한 논의가 BofA 주가에 더 직접적인 변수다.",
+   "path": "reports/bofa-bofa-ceo-brian-moynihan-talks-deals-pushed-into.json"
+  },
+  {
+   "slug": "sixsigma-kg-100",
+   "type": "article",
+   "title": "식스시그마 : 스타십을 잡은 것보다 중요한 숫자는 다시 쏘기까지 걸리는 시간",
+   "companies": [
+    {
+     "name": "스페이스X",
+     "ticker": "SPCX"
+    }
+   ],
+   "event": "스타십 15차 비행",
+   "event_date": "2026-11-14",
+   "published_kst": "2026-11-17T02:15:57+09:00",
+   "revised_kst": "2026-11-17T02:15:57+09:00",
+   "revision": 1,
+   "summary": "영상의 핵심은 스타십 캐치 성공이 아니라 재발사 간격이 스페이스X의 kg당 100달러, 주 1~2회 발사, 스타링크 대역폭 100배 목표를 정한다는 점이다. 그 간격은 아직 한 번도 측정되지 않았고, 부스터를 놓친 날 주가는 2.1% 내려 시장도 확신하지 못했다. 스페이스X는 지금 중립으로 본다(확신 낮음).",
+   "path": "reports/sixsigma-kg-100.json"
+  },
   {
    "slug": "goldman-how-will-higher-than-expected-inflation-data-imp",
    "type": "interview",
@@ -1203,11 +1239,11 @@
   }
  ],
  "street": {
-  "updated_kst": "2026-11-16T23:16:28+09:00",
+  "updated_kst": "2026-11-17T02:22:04+09:00",
   "path": "street.json"
  },
  "calendar": {
-  "updated_kst": "2026-11-16T02:15:00+09:00",
+  "updated_kst": "2026-11-17T02:16:01+09:00",
   "path": "calendar.json"
  }
 }
