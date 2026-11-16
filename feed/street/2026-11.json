@@ -1,8 +1,79 @@
 {
  "schema": 1,
  "month": "2026-11",
- "updated_kst": "2026-11-16T05:17:48+09:00",
+ "updated_kst": "2026-11-16T13:26:32+09:00",
  "items": [
+  {
+   "id": "mckinsey-mckinsey-report-says-banking-ai-investments-yiel",
+   "group": "컨설팅",
+   "org": "McKinsey",
+   "person": null,
+   "kind": "report",
+   "title": "McKinsey 보고서, 은행의 AI 투자가 곧 3배 수익을 낼 것이라고 밝혀",
+   "title_orig": "McKinsey Report Says Banking AI Investments Yield Triple Returns Soon",
+   "url": "https://newsable.asianetnews.com/business/mckinsey-report-says-banking-ai-investments-yield-triple-returns-soon-articleshow-ps12zgm",
+   "outlet": "Asianet Newsable",
+   "published_kst": "2026-11-16T05:24:00+09:00",
+   "stance": {
+    "ai_tech": 1,
+    "market": null
+   },
+   "args": [
+    "투자 회수",
+    "수요·채택",
+    "경쟁·해자"
+   ],
+   "summary": "McKinsey는 은행의 에이전틱 AI 활용 사례 52건에서 평균 투자 회수 기간이 약 10개월, 3년 투자수익률이 약 2.9배라고 보고했다. 다만 생산성 향상이 곧바로 이익 증가로 이어지지는 않으며, 업무 프로세스 전체를 재설계하고 데이터·통제 체계를 갖춘 은행이 이점을 얻을 것이라고 봤다. 비용 상승과 보안 위험도 함께 지적했다.",
+   "points": [
+    "은행이 AI 에이전트를 도입하면 약 10개월 안에 투자금을 회수하고 3년간 최초 투자액의 약 3배에 가까운 수익을 낼 수 있으며, 이 기술이 은행업의 경제성과 경쟁 구도를 재편할 수 있다.",
+    "은행업의 에이전틱 AI 활용 사례 52건을 살펴본 결과 평균 투자 회수 기간은 약 10개월, 3년 투자수익률 추정치는 약 2.9배였다. 은행의 우위는 시범 사업을 넘어 AI를 운영·상품·고객 서비스에 얼마나 빨리 통합하느냐에 점점 더 좌우될 것이다.",
+    "AI가 업무에 드는 비용, 은행과 고객이 상호작용하는 방식, 고객이 선택하는 방식을 바꾸면서 은행업의 경제성이 수년이 아니라 몇 분기 안에 바뀔 수 있다.",
+    "생산성 향상이 자동으로 더 높은 이익으로 이어지지는 않는다. 2026 State of AI 조사에서 응답자의 80%가 AI로 개인 생산성이 향상됐다고 답했지만, 이익(EBIT)의 상당 부분이 AI 덕분이라고 본 응답자는 6%에 그쳤다.",
+    "고객 행동도 바뀌고 있다. 13개국 소비자 약 4만 6천 명을 조사한 결과 23%가 이미 은행 관련 업무에 생성형 AI를 쓰고 있었고, 이런 용도로 AI를 쓰는 소비자의 74%는 ChatGPT, Claude, Gemini 같은 플랫폼에 의존했다.",
+    "AI 토큰, 컴퓨팅, 운영에 드는 지출이 인건비의 최대 20%까지 늘 수 있고, 2025년 FBI가 집계한 AI 기반 범죄 피해액은 약 9억 달러였다며 비용 상승과 보안 위험을 지적했다.",
+    "은행은 신뢰할 수 있는 데이터, 고객 정보, 내부 정책, 고참 직원의 경험을 결합해 조직의 지능을 구축해야 한다. 조사 대상 은행 임원의 48%가 데이터 준비 상태를 AI 도입의 가장 큰 장애물로 꼽았다. 또한 AI 에이전트가 안전하게 작동하려면 명확한 권한, 지속적인 모니터링, 사람의 감독이 필요하다.",
+    "개별 업무를 단순히 자동화하는 데 그치지 않고 업무 프로세스 전체를 재설계하는 기관이 AI의 이점을 더 잘 얻을 위치에 있을 것이다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
+  },
+  {
+   "id": "morgan-stanley-we-embrace-risk-morgan-stanley-turns-aggressivel",
+   "group": "투자은행",
+   "org": "Morgan Stanley",
+   "person": null,
+   "kind": "report",
+   "title": "'우리는 위험을 끌어안는다': Morgan Stanley, AI 우려에도 글로벌 주식에 공격적 강세로 전환",
+   "title_orig": "'We embrace risk': Morgan Stanley turns aggressively bullish on global stocks despite AI concerns",
+   "url": "https://www.moneycontrol.com/news/business/we-embrace-risk-morgan-stanley-turns-aggressively-bullish-on-global-stocks-despite-ai-concerns-14080740.html",
+   "outlet": "Moneycontrol",
+   "published_kst": "2026-11-16T03:27:00+09:00",
+   "stance": {
+    "ai_tech": 1,
+    "market": 2
+   },
+   "args": [
+    "투자 회수",
+    "밸류에이션",
+    "수요·채택",
+    "금리·거시"
+   ],
+   "summary": "Morgan Stanley는 AI 설비투자 사이클이 온전해 내년까지 경제와 이익 성장이 이어질 것이라며 글로벌 주식에 '최대 비중확대'를 권고했다. 위험자산이 싸졌으므로 위험을 끌어안는다고 했고, 내년 MSCI ACWI 이익이 13% 늘고 밸류에이션 부담은 완화되거나 반전될 수 있다고 봤다. 2027년에는 하이퍼스케일러를 넘어 AI 도입 기업의 수익이 더 중요해질 것이라고 했다.",
+   "points": [
+    "Morgan Stanley는 AI 설비투자 사이클이 온전하며 이것이 내년까지 탄력적인 경제·이익 성장을 이어갈 것이라며 글로벌 주식에 '최대 비중확대'를 권고한다.",
+    "위험자산 가격이 싸졌기 때문에 우리는 위험을 끌어안는다. 글로벌 주식 안에서는 이야기가 하이퍼스케일러를 넘어 확산되고 있으며, 2027년에는 점차 AI 도입 기업의 수익이 중심이 될 것이다.",
+    "전략가들은 내년 MSCI ACWI의 이익 성장률이 13%에 이를 수 있고, 밸류에이션 부담은 줄어들거나 반전될 가능성이 있다고 말했다. 이 지수의 컨센서스 선행 PER은 15배로 2023년 이후 최저 수준이다.",
+    "Morgan Stanley는 미국 주식에서 '경기순응적 우량주(pro-cyclical quality)'를 권고하고, 일본 주식에는 리플레이션이 순풍이라고 본다. 디플레이션은 중국 주식에 부담이며, 밸류에이션 면에서 대만보다 한국 주식을 선호한다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
+  },
   {
    "id": "vanguard-vanguard-economists-say-inflation-might-be-bette",
    "group": "자산운용",
@@ -262,6 +333,46 @@
    }
   },
   {
+   "id": "goldman-how-will-higher-than-expected-inflation-data-imp",
+   "group": "투자은행",
+   "org": "Goldman Sachs",
+   "person": "Muhammad Qubbaj",
+   "kind": "publication",
+   "title": "예상보다 높은 물가 지표는 연준의 다음 금리 결정에 어떤 영향을 줄까?",
+   "title_orig": "How Will Higher-than-Expected Inflation Data Impact the Fed's Next Rate Decisions?",
+   "url": "https://www.goldmansachs.com/insights/the-markets",
+   "outlet": "Goldman Sachs The Markets",
+   "published_kst": "2026-11-14T06:04:00+09:00",
+   "stance": {
+    "ai_tech": 0,
+    "market": 0
+   },
+   "args": [
+    "금리·거시",
+    "자금 조달·신용",
+    "쏠림",
+    "투자 회수"
+   ],
+   "summary": "Goldman Sachs의 금리 트레이딩 공동 대표는 3개월 연속 0.3%를 기록한 CPI와 50bp 인상 가능성 언급으로 연준의 인상 기조가 뚜렷해졌다고 본다. 10월 수준의 금리 급등이 재현될 가능성은 낮다고 보며, 금리가 AI 설비투자 자금 조달과 연결되어 자체 균형 장치가 생겼다고 설명한다. 시장은 메가캡 기술주 단일 요인에 좌우되므로 주식을 보유하되 풋 등으로 보험을 드는 구성을 권한다.",
+   "points": [
+    "CPI가 3개월 연속 0.3%로 전 부문에서 강해 연준이 이를 무시할 수 없고 시장이 그만큼 가격에 반영했다.",
+    "금리 상승이 AI 설비투자를 둔화시키는 자체 균형 장치가 생겨 10월 같은 고점 재현 가능성은 낮다고 본다.",
+    "금리 상승이 주식·신용에 미치는 영향은 원인(성장 대 기간프리미엄·공급 우려)과 기업 레버리지에 따라 달라진다.",
+    "시장은 메가캡 기술주라는 단일 요인 시장이므로 요인은 보유하되 풋 옵션 등으로 보험을 빌리는 전략을 제시한다."
+   ],
+   "evidence": [
+    {
+     "ko": "시장은 메가캡 기술주라는 단일 요인 시장이므로 요인은 보유하되 풋 옵션 등으로 보험을 빌리는 전략을 제시한다.",
+     "orig": "Now, you wanna own the factor, and you wanna rent the insurance."
+    }
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "기관이 회차 페이지에 낸 공식 대본(PDF) 기준. 화자 이름이 대본에 적혀 있음"
+  },
+  {
    "id": "jpmorgan-jpmorgan-calls-another-record-year-for-u-s-high",
    "group": "투자은행",
    "org": "JPMorgan",
@@ -336,6 +447,38 @@
    "note": "웹 페이지 본문 기준. 그림 16개 속 글자는 확인하지 못함"
   },
   {
+   "id": "ubs-ubs-on-air-paul-donovan-daily-audio-up-and-down",
+   "group": "투자은행",
+   "org": "UBS",
+   "person": "Paul Donovan",
+   "kind": "publication",
+   "title": "UBS 온에어: 폴 도노반 데일리 오디오 '오르내림'",
+   "title_orig": "UBS On-Air: Paul Donovan Daily Audio 'Up and down'",
+   "url": "https://www.ubs.com/content/dam/podcasts/wma/261113-up-and-down.mp3",
+   "outlet": "UBS Paul Donovan Daily",
+   "published_kst": "2026-11-13T18:37:13+09:00",
+   "stance": {
+    "ai_tech": null,
+    "market": 0
+   },
+   "args": [
+    "금리·거시",
+    "정책·지정학"
+   ],
+   "summary": "미국 생산자물가는 경유 가격 급등의 영향을 받을 것으로 본다. 연준 인사들의 매파적 발언이 안심시키려는 수사인지, 유가 외 부문의 경기침체를 감수하려는 것인지가 투자자의 관건이라고 보며, 전자이기를 바란다고 말한다. 가격 차별 규제는 물가 불만의 희생양 논란을 이어가게 한다고 본다.",
+   "points": [
+    "미국 경유 가격이 전쟁 이전 저점보다 크게 올라 생산자물가에 직접 영향을 줄 것이다.",
+    "뉴욕 연은 윌리엄스 총재가 물가가 너무 높고 할 일이 더 남았다며 상대적으로 매파적으로 말했다.",
+    "연준의 강경 발언이 공급 충격발 물가를 잡으려고 비석유 부문 침체를 유발하려는 것인지가 투자자의 질문이며, 화자는 그렇지 않기를 바란다.",
+    "가격 차별 규제 움직임은 중간선거 분노 속에서 가격 부풀리기와 이윤 주도 물가에 대한 의심을 계속 살려 둔다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "팟캐스트 음성을 음성 인식(Whisper)으로 받아 적은 전사 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
+  },
+  {
    "id": "gundlach-billionaire-jeffrey-gundlach-calls-the-stock-mar",
    "group": "투자 거장",
    "org": "DoubleLine Capital",
@@ -384,39 +527,6 @@
     "급락과 급반등이 가까이 붙어 나타나므로 최악의 시점에 시장을 떠나면 반등을 놓친다.",
     "AI 안에서도 재무구조와 이익이 탄탄한 기업은 보상받고 투기적 영역은 최근 벌을 받았다.",
     "AI 자금 수요로 금리가 오르고 포트폴리오 쏠림이 커져, AI 지출 밖에서 분산할 필요가 커졌다."
-   ],
-   "judged": {
-    "basis": "full_text",
-    "tier": "standard"
-   },
-   "note": "유튜브 자동 생성 자막(en) 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
-  },
-  {
-   "id": "blackrock-how-to-build-a-balanced-portfolio-and-navigate-m",
-   "group": "자산운용",
-   "org": "BlackRock",
-   "person": "Christie Aulian",
-   "kind": "publication",
-   "title": "균형 잡힌 포트폴리오 구성과 시장 변동성 대응 AMA | The Bid 투자 팟캐스트",
-   "title_orig": "How to Build a Balanced Portfolio and Navigate Market Volatility AMA | The Bid investing podcast",
-   "url": "https://www.youtube.com/watch?v=CSYb_WaIBZQ",
-   "outlet": "BlackRock (유튜브)",
-   "published_kst": "2026-11-13T14:00:20+09:00",
-   "stance": {
-    "ai_tech": 0,
-    "market": 0
-   },
-   "args": [
-    "쏠림",
-    "자금 조달·신용",
-    "금리·거시"
-   ],
-   "summary": "블랙록의 크리스티 아울리안은 2026년 시장이 변동성이 크고 쏠림이 심하다고 보면서도, 시점 선택을 피하고 변동성을 감수하며 투자를 유지하라고 조언한다. AI 분야에서는 자금 조달 부담과 금리 상승 속에 우량 기업은 보상받고 투기적 기업은 벌을 받는 차별화가 나타난다고 본다. AI 투자가 다른 투자를 전부 밀어낸 것은 아니지만 요구 수익률의 문턱이 높아졌고 분산이 더 필요하다고 말한다.",
-   "points": [
-    "현재 시장은 변동성이 더 크고 쏠림이 심한 국면이어서 시장 흐름에 과잉 반응하려는 유혹이 커졌다.",
-    "AI 시장에서는 재무구조와 실적이 탄탄한 우량 기업이 보상받고 투기적 영역은 최근 큰 타격을 입었다.",
-    "AI 구축 자금 조달 경쟁이 금리를 밀어 올려 다른 산업의 자본 비용도 높이고 있다.",
-    "시장은 일직선으로 오르지 않으므로 변동성을 감수해야 보상을 얻을 수 있다."
    ],
    "judged": {
     "basis": "full_text",
@@ -998,6 +1108,38 @@
    "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
   },
   {
+   "id": "ubs-house-view-daily-hotter-us-inflation-keeps-the-f",
+   "group": "투자은행",
+   "org": "UBS",
+   "person": "Aaron Kreischer",
+   "kind": "publication",
+   "title": "House View Daily | 미국 물가 상승 확대로 연준 인상 기조 지속",
+   "title_orig": "House View Daily | Hotter US inflation keeps the Fed on course to hike",
+   "url": "https://www.ubs.com/content/dam/podcasts/wma/on-air/in-the-now/20261111_HV_Daily.mp3",
+   "outlet": "UBS House View Daily",
+   "published_kst": "2026-11-11T20:04:38+09:00",
+   "stance": {
+    "ai_tech": null,
+    "market": -1
+   },
+   "args": [
+    "금리·거시",
+    "쏠림"
+   ],
+   "summary": "UBS는 10월 미국 물가가 예상보다 강해 연준이 12월과 3월에 25bp씩 인상하고 추가 인상 위험도 커졌다고 본다. 단기 주식 변동성을 예상하며 단일 종목·기술주 쏠림을 관리하라고 권고한다. 채권은 우량 중단기, 원자재는 분산 노출을 선호한다.",
+   "points": [
+    "물가 보고서가 금리 인상 근거를 강화하고 예상보다 빠르거나 큰 긴축 위험을 키웠다.",
+    "단기적으로 주식시장 변동성이 이어질 것으로 본다.",
+    "투자자는 업종·지역 분산을 유지하고 단일 종목과 기술주 쏠림을 관리해야 한다.",
+    "채권 재평가로 우량 채권의 수익 여력이 회복돼 중단기를 선호하고 장기물은 경계한다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "팟캐스트 음성을 음성 인식(Whisper)으로 받아 적은 전사 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
+  },
+  {
    "id": "howard-marks-howard-marks-calls-ai-exposure-a-fault-line-runn",
    "group": "투자 거장",
    "org": "Oaktree Capital",
@@ -1133,6 +1275,40 @@
     "tier": "standard"
    },
    "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
+  },
+  {
+   "id": "goldman-playing-for-scale-the-future-of-sports-investing",
+   "group": "투자은행",
+   "org": "Goldman Sachs",
+   "person": "Nicole Pullen Ross",
+   "kind": "publication",
+   "title": "규모를 위한 경기: 스포츠 투자의 미래",
+   "title_orig": "Playing for Scale: The Future of Sports Investing",
+   "url": "https://www.goldmansachs.com/insights/goldman-sachs-exchanges",
+   "outlet": "Goldman Sachs Exchanges",
+   "published_kst": "2026-11-11T14:00:00+09:00",
+   "stance": {
+    "ai_tech": null,
+    "market": 1
+   },
+   "args": [
+    "수요·채택",
+    "밸류에이션",
+    "자금 조달·신용",
+    "투자 회수"
+   ],
+   "summary": "스포츠 투자가 미디어 중계권 수익 증가와 기관 자본 유입으로 빠르게 커지고 있다고 본다. 팀 가치 상승, 여성 스포츠·해외·신생 리그 등 성장 기회와 일반 투자자의 접근성 확대를 긍정적으로 설명한다. 건설비 상승과 고금리 같은 부담은 언급하지만 투자 확대 흐름을 우호적으로 평가한다.",
+   "points": [
+    "글로벌 미디어 중계권 시장이 빠르게 성장해 팀 가치 상승의 핵심 동력이 되고 있다.",
+    "스포츠 분야 사모펀드 거래가 2018년 대비 크게 늘어 기관 자본 유입이 뚜렷하다.",
+    "투자자들은 미국 밖, 여성 스포츠, 신생 리그에서 성장주 투자형 수익을 찾고 있다.",
+    "일반 투자자도 펀드나 상장 구단을 통해 스포츠에 투자할 접근 경로가 넓어지고 있다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "기관이 회차 페이지에 낸 공식 대본(PDF) 기준. 화자 이름이 대본에 적혀 있음"
   },
   {
    "id": "chanos-crwv-stock-surges-15-pre-market-as-coreweave-tou",
@@ -1538,6 +1714,40 @@
    }
   },
   {
+   "id": "ubs-house-view-daily-dip-buying-lifts-us-stocks-afte",
+   "group": "투자은행",
+   "org": "UBS",
+   "person": "Aaron Kreischer",
+   "kind": "publication",
+   "title": "House View Daily | 기술주 급락 뒤 저가 매수로 미국 증시 상승",
+   "title_orig": "House View Daily | Dip buying lifts US stocks after tech sell-off",
+   "url": "https://www.ubs.com/content/dam/podcasts/wma/on-air/in-the-now/20261110_HV_Daily.mp3",
+   "outlet": "UBS House View Daily",
+   "published_kst": "2026-11-10T21:54:37+09:00",
+   "stance": {
+    "ai_tech": 1,
+    "market": 1
+   },
+   "args": [
+    "투자 회수",
+    "수요·채택",
+    "쏠림",
+    "정책·지정학"
+   ],
+   "summary": "UBS CIO는 지난주 반도체·AI 인프라 급락이 AI 투자 사이클의 종료가 아니라 포지션 재조정이었다고 본다. AI 수요는 견조하고 설비투자도 2028년까지 늘어날 것으로 예상하며, 향후 6~12개월 주식 지수 상승 여력을 본다. 다만 투자 성과 입증 요구와 쏠림 때문에 변동성이 이어질 수 있어 분산과 집중도 관리를 권고한다.",
+   "points": [
+    "지난주 반도체·AI 인프라주 급락은 AI 투자 사이클의 하락 전환이 아니라 포지션 재조정이었다고 본다.",
+    "AI 수요가 견조하며 AI 설비투자는 2026년 1조 달러에서 2028년 1.5조 달러로 늘 것으로 전망한다.",
+    "투자자들이 AI 지출이 지속 가능한 매출과 수익으로 이어진다는 증거를 점점 더 요구해 기술주 변동성이 더 나타날 수 있다.",
+    "향후 6~12개월 광범위한 주가지수의 상승 여력을 보며, AI 테마는 유지하되 개별 기술주 쏠림은 줄이라고 권고한다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "팟캐스트 음성을 음성 인식(Whisper)으로 받아 적은 전사 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
+  },
+  {
    "id": "damodaran-ai-stocks-are-the-days-of-easy-money-over-aswath",
    "group": "투자 거장",
    "org": "NYU Stern",
@@ -1919,6 +2129,40 @@
     "basis": "full_text",
     "tier": "standard"
    }
+  },
+  {
+   "id": "ubs-house-view-daily-using-structures-to-stay-invest",
+   "group": "투자은행",
+   "org": "UBS",
+   "person": "Aaron Kreischer",
+   "kind": "publication",
+   "title": "House View Daily | 구조화 상품으로 주식 투자를 유지하면서 손실 위험 제한하기",
+   "title_orig": "House View Daily | Using structures to stay invested in stocks while limiting risk of loss",
+   "url": "https://www.ubs.com/content/dam/podcasts/wma/on-air/in-the-now/20261109_HV_Daily.mp3",
+   "outlet": "UBS House View Daily",
+   "published_kst": "2026-11-10T01:03:44+09:00",
+   "stance": {
+    "ai_tech": 1,
+    "market": 1
+   },
+   "args": [
+    "쏠림",
+    "투자 회수",
+    "자금 조달·신용",
+    "금리·거시"
+   ],
+   "summary": "UBS CIO는 최근 기술주 급락을 AI 투자 사이클의 구조적 하락이 아니라 포지션 재조정으로 본다. 다만 쏠림과 높은 기대가 남아 있어 기술주 비중 축소와 분산을 권한다. 경제와 이익 성장이 견조해 향후 6~12개월 주식시장 전반의 추가 상승을 예상하며, 금리 인상은 점진적일 것으로 본다.",
+   "points": [
+    "최근 기술주 매도는 AI 투자 사이클의 구조적 하락이 아니라 포지션 재조정이라고 본다.",
+    "반등이 쏠림과 높은 기대에서 오는 위험을 없애지는 못하므로 기술주 비중이 큰 투자자는 리밸런싱을 고려해야 한다.",
+    "경제 활동과 기업 이익이 견조해 향후 6~12개월 동안 주가지수 전반의 추가 상승을 예상한다.",
+    "10월 고용 호조가 연준의 점진적 긴축 지속을 뒷받침하며, 공격적 인상 가능성은 제한적이라고 본다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "팟캐스트 음성을 음성 인식(Whisper)으로 받아 적은 전사 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
   },
   {
    "id": "jpmorgan-us-midterms-fiscal-market-and-geopolitical-impli",
@@ -3000,40 +3244,6 @@
     "최근 3년의 미국 증시 수익은 밸류에이션 재평가보다 실제 이익 성장이 이끌었다.",
     "AI 투자가 자본 수요를 키워 금리를 올리고, 주식도 더 높은 수익을 내야 하는 부담이 생겼다.",
     "미국 시장의 상승이 일부 종목에 쏠려 있고 투자자들은 변동성을 걱정한다."
-   ],
-   "judged": {
-    "basis": "full_text",
-    "tier": "standard"
-   },
-   "note": "유튜브 자동 생성 자막(en) 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
-  },
-  {
-   "id": "blackrock-global-equity-markets-can-the-stock-market-rally",
-   "group": "자산운용",
-   "org": "BlackRock",
-   "person": "Carrie King, Alex Brazier",
-   "kind": "publication",
-   "title": "글로벌 주식시장: AI를 넘어 랠리가 이어질까? | The Bid Investing 팟캐스트",
-   "title_orig": "Global Equity Markets Can the Stock Market Rally Continue Beyond AI? | The Bid Investing podcast",
-   "url": "https://www.youtube.com/watch?v=8CsaTPR-YdQ",
-   "outlet": "BlackRock (유튜브)",
-   "published_kst": "2026-11-06T14:00:05+09:00",
-   "stance": {
-    "ai_tech": 1,
-    "market": 0
-   },
-   "args": [
-    "투자 회수",
-    "수요·채택",
-    "금리·거시",
-    "쏠림"
-   ],
-   "summary": "캐리 킹은 S&P 500 상승분의 대부분이 이익 증가에서 나왔고 하이퍼스케일러의 클라우드 매출 가속이 AI 투자 회수를 보여 준다고 주장한다. 알렉스 브레이저는 AI 설비투자가 자본 수요를 키워 실질금리를 높이고 비AI 종목을 압박한다고 보며, 변동성과 쏠림 관리를 강조한다. 시장 전반에는 확신이 부족하다며 중립적이다.",
-   "points": [
-    "ChatGPT 등장 이후 S&P 500 상승은 밸류에이션 재평가보다 실제 이익 증가가 이끌었다.",
-    "상위 3개 하이퍼스케일러의 클라우드 매출 성장이 가속되어 AI 투자의 회수가 나타나고 있다.",
-    "AI 설비투자가 자본 수요를 키워 물가 반영 미국 국채 금리를 끌어올리고 있다.",
-    "AI 장기 수익을 믿더라도 AI 트레이드에는 큰 변동성이 따른다고 본다."
    ],
    "judged": {
     "basis": "full_text",
