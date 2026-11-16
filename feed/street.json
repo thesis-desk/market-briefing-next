@@ -1,19 +1,19 @@
 {
  "schema": 1,
- "updated_kst": "2026-11-16T17:18:50+09:00",
+ "updated_kst": "2026-11-16T20:17:33+09:00",
  "window_days": 14,
  "items_days": 30,
  "index": {
   "ai_tech": {
-   "value": -2,
+   "value": -3,
    "label": "엇갈림",
    "orgs": 40,
    "items": 125
   },
   "market": {
-   "value": -12,
+   "value": -14,
    "label": "엇갈림",
-   "orgs": 28,
+   "orgs": 27,
    "items": 74
   },
   "by_group": [
@@ -54,16 +54,16 @@
    },
    {
     "group": "투자 거장",
-    "ai_tech": -24,
+    "ai_tech": -25,
     "ai_tech_orgs": 8,
-    "market": -42,
-    "market_orgs": 9
+    "market": -53,
+    "market_orgs": 8
    },
    {
     "group": "중앙은행·국제기구",
-    "ai_tech": -12,
+    "ai_tech": -15,
     "ai_tech_orgs": 2,
-    "market": -12,
+    "market": -17,
     "market_orgs": 2
    }
   ],
@@ -77,7 +77,7 @@
    },
    {
     "week": "2026-10-26",
-    "ai_tech": 6,
+    "ai_tech": 7,
     "ai_tech_orgs": 24,
     "market": -11,
     "market_orgs": 12
@@ -98,21 +98,25 @@
    },
    {
     "week": "2026-11-16",
-    "ai_tech": 33,
-    "ai_tech_orgs": 3,
-    "market": 100,
-    "market_orgs": 1
+    "ai_tech": 13,
+    "ai_tech_orgs": 4,
+    "market": 25,
+    "market_orgs": 2
    }
   ],
   "args": {
    "caution": [
     {
      "tag": "투자 회수",
-     "n": 18
+     "n": 19
     },
     {
      "tag": "자금 조달·신용",
-     "n": 16
+     "n": 17
+    },
+    {
+     "tag": "밸류에이션",
+     "n": 12
     },
     {
      "tag": "쏠림",
@@ -124,10 +128,6 @@
     },
     {
      "tag": "금리·거시",
-     "n": 11
-    },
-    {
-     "tag": "밸류에이션",
      "n": 11
     },
     {
@@ -185,6 +185,49 @@
   "method": "기관·인물마다 기간 안 입장 값의 평균을 내고 그 평균들을 다시 평균해 ×50"
  },
  "items": [
+  {
+   "id": "imf-imf-warns-ai-financing-risks-could-unsettle-glob",
+   "group": "중앙은행·국제기구",
+   "org": "IMF",
+   "person": null,
+   "kind": "report",
+   "title": "IMF, AI 자금 조달 위험이 세계 경제를 흔들 수 있다고 경고",
+   "title_orig": "IMF warns AI financing risks could unsettle global economy",
+   "url": "https://tradersunion.com/news/economic-data/show/4264768-imf-ai-financing-risks-economy",
+   "outlet": "tradersunion",
+   "published_kst": "2026-11-16T11:10:00+09:00",
+   "stance": {
+    "ai_tech": -1,
+    "market": -1
+   },
+   "args": [
+    "자금 조달·신용",
+    "밸류에이션",
+    "투자 회수"
+   ],
+   "summary": "Georgieva는 세계 경제가 AI 투자에 점점 더 의존하고 있고, 부채 비중이 큰 AI 순환 금융이 1조 달러를 넘어서 신뢰가 흔들리면 금융 안정 문제가 생길 수 있다고 경고했다. 기대가 기술이 입증한 수준을 앞서가 시장 조정이 불가피해 보인다고 했다. 다만 최근 시장 변동은 질서 있는 수준이라고 평가했다.",
+   "points": [
+    "IMF 총재 Kristalina Georgieva는 세계 경제가 AI 투자에 점점 더 의존하고 있으며, 이 분야에 대한 신뢰가 갑자기 무너지면 금융 안정 문제가 생길 수 있다고 경고했다.",
+    "Georgieva는 세계 경제가 '한 다리로 서 있는' 상태이며, AI 관련 투자가 약해지면 성장에 부담이 될 수 있다고 말했다.",
+    "그는 투자자들의 기대가 이 기술이 지금까지 입증한 성과보다 앞서가고 있어, 밸류에이션이 오르는 가운데 어느 정도의 시장 조정은 불가피해 보인다고 말했다.",
+    "IMF는 투자된 돈이 결국 구매 주문을 통해 투자자에게 되돌아오는 AI 기업 간 순환 금융이 1조 달러를 조금 넘는 규모로 커졌다고 추정한다.",
+    "Georgieva는 이 시장의 규모가 아직 아주 크지는 않지만, 빠른 확대와 높은 부채 의존도 때문에 경계가 필요하다고 말했다.",
+    "IMF는 10월에 이란 전쟁과 연결된 에너지 부족의 압박을 상쇄하기 위해 주요 경제국이 AI 지출에 기대고 있다는 점을 반영해 2026년 세계 성장률 전망을 3.1%로 올렸다.",
+    "IMF는 10월에, AI가 높아진 시장 기대에 못 미치면 2026년 미국 주가가 20% 떨어질 수 있고 2028년 세계 생산이 기준 추정치보다 1.1% 낮아질 수 있다고 경고했다.",
+    "Georgieva는 월요일 기준 최근 시장 변동이 질서 있는 수준이라고 평가했지만, 정책 당국과 투자자는 여전히 경계를 늦추지 말아야 한다고 말했다."
+   ],
+   "evidence": [
+    {
+     "ko": "Georgieva는 세계 경제가 '한 다리로 서 있는' 상태이며, AI 관련 투자가 약해지면 성장에 부담이 될 수 있다고 말했다.",
+     "orig": "Georgieva says the global economy is \"standing on one leg\" and that weakness in AI-related investment could weigh on growth."
+    }
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
+  },
   {
    "id": "jpmorgan-nvidia-faces-a-new-challenge-from-the-very-compa",
    "group": "투자은행",
@@ -6398,6 +6441,39 @@
     "basis": "full_text",
     "tier": "standard"
    }
+  },
+  {
+   "id": "ubs-house-view-daily-diversify-beyond-the-ai-rally",
+   "group": "투자은행",
+   "org": "UBS",
+   "person": "Christopher Swan",
+   "kind": "publication",
+   "title": "House View Daily | AI 랠리를 넘어 분산하라",
+   "title_orig": "House View Daily | Diversify beyond the AI rally",
+   "url": "https://www.ubs.com/content/dam/podcasts/wma/on-air/in-the-now/20261027_HV_Daily.mp3",
+   "outlet": "UBS House View Daily",
+   "published_kst": "2026-10-27T21:10:31+09:00",
+   "stance": {
+    "ai_tech": 1,
+    "market": 1
+   },
+   "args": [
+    "쏠림",
+    "수요·채택",
+    "전력·공급 제약"
+   ],
+   "summary": "UBS CIO는 AI 수요가 핵심 성장 동력으로 남을 것이라며 AI의 구조적 성장에 건설적이지만, 높은 기대와 기업별 성과 격차 때문에 개별 종목 집중은 위험하다고 본다. 주식 포트폴리오는 폭넓게 분산하고, 전력·자원과 장수(longevity) 테마, 미국 외 지역(유로존·아시아·일본)으로 배분을 넓히라고 권고한다.",
+   "points": [
+    "AI 수요는 핵심 성장 엔진으로 남겠지만 높은 기대와 기업별 격차 때문에 개별 종목 집중은 위험하다.",
+    "AI와 전기화 투자가 데이터센터·발전·전력망 수요를 키우므로 전력·자원 테마의 구조적 수요가 견고하다.",
+    "미국 밖 이익 성장이 강해 유로존·아시아·일본 주식으로 선택지가 넓어지고 있다.",
+    "핵심 주식 노출은 분산하되 AI 보유분에 전력·자원, 장수 테마를 보완하고 섹터·지역을 넓히라고 권고한다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "팟캐스트 음성을 음성 인식(Whisper)으로 받아 적은 전사 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
   },
   {
    "id": "blackrock-ai-corporate-bonds-beat-treasurys-blackrock-s-bo",

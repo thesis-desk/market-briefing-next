@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "month": "2026-10",
- "updated_kst": "2026-11-16T17:18:44+09:00",
+ "updated_kst": "2026-11-16T20:16:43+09:00",
  "items": [
   {
    "id": "boldstart-what-s-in-ai-infra-vc-522",
@@ -1210,6 +1210,39 @@
     "basis": "full_text",
     "tier": "standard"
    }
+  },
+  {
+   "id": "ubs-house-view-daily-diversify-beyond-the-ai-rally",
+   "group": "투자은행",
+   "org": "UBS",
+   "person": "Christopher Swan",
+   "kind": "publication",
+   "title": "House View Daily | AI 랠리를 넘어 분산하라",
+   "title_orig": "House View Daily | Diversify beyond the AI rally",
+   "url": "https://www.ubs.com/content/dam/podcasts/wma/on-air/in-the-now/20261027_HV_Daily.mp3",
+   "outlet": "UBS House View Daily",
+   "published_kst": "2026-10-27T21:10:31+09:00",
+   "stance": {
+    "ai_tech": 1,
+    "market": 1
+   },
+   "args": [
+    "쏠림",
+    "수요·채택",
+    "전력·공급 제약"
+   ],
+   "summary": "UBS CIO는 AI 수요가 핵심 성장 동력으로 남을 것이라며 AI의 구조적 성장에 건설적이지만, 높은 기대와 기업별 성과 격차 때문에 개별 종목 집중은 위험하다고 본다. 주식 포트폴리오는 폭넓게 분산하고, 전력·자원과 장수(longevity) 테마, 미국 외 지역(유로존·아시아·일본)으로 배분을 넓히라고 권고한다.",
+   "points": [
+    "AI 수요는 핵심 성장 엔진으로 남겠지만 높은 기대와 기업별 격차 때문에 개별 종목 집중은 위험하다.",
+    "AI와 전기화 투자가 데이터센터·발전·전력망 수요를 키우므로 전력·자원 테마의 구조적 수요가 견고하다.",
+    "미국 밖 이익 성장이 강해 유로존·아시아·일본 주식으로 선택지가 넓어지고 있다.",
+    "핵심 주식 노출은 분산하되 AI 보유분에 전력·자원, 장수 테마를 보완하고 섹터·지역을 넓히라고 권고한다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "팟캐스트 음성을 음성 인식(Whisper)으로 받아 적은 전사 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
   },
   {
    "id": "blackrock-ai-corporate-bonds-beat-treasurys-blackrock-s-bo",
