@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-16T14:24:03+09:00",
+ "generated_kst": "2026-11-16T17:18:50+09:00",
  "reports": [
   {
    "slug": "goldman-how-will-higher-than-expected-inflation-data-imp",
@@ -1203,7 +1203,7 @@
   }
  ],
  "street": {
-  "updated_kst": "2026-11-16T14:19:17+09:00",
+  "updated_kst": "2026-11-16T17:18:50+09:00",
   "path": "street.json"
  },
  "calendar": {

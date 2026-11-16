@@ -1,8 +1,31 @@
 {
  "schema": 1,
  "month": "2026-11",
- "updated_kst": "2026-11-16T14:19:17+09:00",
+ "updated_kst": "2026-11-16T17:18:50+09:00",
  "items": [
+  {
+   "id": "jpmorgan-nvidia-faces-a-new-challenge-from-the-very-compa",
+   "group": "투자은행",
+   "org": "JPMorgan",
+   "person": null,
+   "kind": "report",
+   "title": "JPMorgan, 엔비디아가 AI 붐을 주도하는 기업들로부터 새로운 도전에 직면했다고 진단",
+   "title_orig": "Nvidia Faces A New Challenge From The Very Companies Driving The AI Boom, JPMorgan Says",
+   "url": "https://www.ndtvprofit.com/markets/nvidia-faces-a-new-challenge-from-the-very-companies-driving-the-ai-boom-jpmorgan-says-earnings-nvidia-stock-valuations-wall-street-ai-12332210",
+   "outlet": "NDTV Profit",
+   "published_kst": "2026-11-16T07:05:00+09:00",
+   "stance": {
+    "ai_tech": 0,
+    "market": null
+   },
+   "args": [
+    "경쟁·해자"
+   ],
+   "judged": {
+    "basis": "headline_only",
+    "tier": "light"
+   }
+  },
   {
    "id": "mckinsey-mckinsey-report-says-banking-ai-investments-yiel",
    "group": "컨설팅",
@@ -4799,6 +4822,38 @@
     "tier": "standard"
    },
    "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
+  },
+  {
+   "id": "ubs-ubs-on-air-paul-donovan-daily-audio-defiant-cons",
+   "group": "투자은행",
+   "org": "UBS",
+   "person": "Paul Donovan",
+   "kind": "publication",
+   "title": "UBS 온에어: 폴 도노반 데일리 오디오 '반항하는 소비자?'",
+   "title_orig": "UBS On-Air: Paul Donovan Daily Audio 'Defiant consumers?'",
+   "url": "https://www.ubs.com/content/dam/podcasts/wma/261102-defiant-consumers.mp3",
+   "outlet": "UBS Paul Donovan Daily",
+   "published_kst": "2026-11-02T16:40:28+09:00",
+   "stance": {
+    "ai_tech": 0,
+    "market": 0
+   },
+   "args": [
+    "금리·거시",
+    "쏠림",
+    "정책·지정학"
+   ],
+   "summary": "금요일의 시장 변동은 눈길을 끌지만 거시경제에 미치는 의미는 제한적이라고 본다. 기술주 하락은 경제 전반이 아니라 좁은 하위 부문의 문제여서 경기 침체의 신호로 읽지 말라고 한다. AI로 생긴 부의 효과는 미국에 더 쏠릴 수 있지만 미국 소비자의 행태는 다른 선진국과 크게 다르지 않았다고 짚고, 미국 중간선거와 걸프전 확전을 시장이 지켜볼 변수로 든다.",
+   "points": [
+    "기술주 하락은 경제 전반의 건강을 반영하지 않으며 경기 침체의 신호로 볼 수 없다고 본다.",
+    "AI 관련 부의 효과가 있다면 미국에 더 크게 쏠리겠지만, 미국 소비자가 다른 선진국 소비자와 다른 이상치가 아니라는 점이 의미 있다고 본다.",
+    "시장은 미국 중간선거 이후 의회 교착을 이미 가격에 반영했고 이를 대체로 개의치 않는다고 본다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "팟캐스트 음성을 음성 인식(Whisper)으로 받아 적은 전사 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
   },
   {
    "id": "gundlach-i-just-want-out-billionaire-investor-jeffrey-gun",
