@@ -5,16 +5,16 @@
  "items_days": 30,
  "index": {
   "ai_tech": {
-   "value": -2,
+   "value": -1,
    "label": "엇갈림",
    "orgs": 42,
-   "items": 138
+   "items": 137
   },
   "market": {
-   "value": -12,
+   "value": -11,
    "label": "엇갈림",
    "orgs": 28,
-   "items": 87
+   "items": 86
   },
   "by_group": [
    {
@@ -26,7 +26,7 @@
    },
    {
     "group": "PE·대체투자",
-    "ai_tech": 2,
+    "ai_tech": 4,
     "ai_tech_orgs": 8,
     "market": 0,
     "market_orgs": 3
@@ -56,7 +56,7 @@
     "group": "투자 거장",
     "ai_tech": -33,
     "ai_tech_orgs": 9,
-    "market": -50,
+    "market": -47,
     "market_orgs": 8
    },
    {
@@ -112,7 +112,7 @@
     },
     {
      "tag": "자금 조달·신용",
-     "n": 18
+     "n": 17
     },
     {
      "tag": "밸류에이션",
