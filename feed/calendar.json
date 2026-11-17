@@ -143,20 +143,6 @@
    "note": "회사 IR 달력: 2026/11/12 3분기 실적 설명회"
   },
   {
-   "company": "Micron",
-   "ticker": "MU",
-   "type": "investor_day",
-   "period": null,
-   "date": "2026-11-12",
-   "confirmed": true,
-   "official": false,
-   "source_url": "http://investors.micron.com/news/press-release/2026/Micron-Announces-Participation-in-Investor-Events/default.aspx",
-   "consensus_snapshot": true,
-   "report_slug": "micron-investor-day-2026",
-   "status": "waiting_transcript",
-   "note": "원문이 올라온 것을 보고 넣은 일정"
-  },
-  {
    "company": "NAVER",
    "ticker": "035420.KS",
    "type": "earnings",

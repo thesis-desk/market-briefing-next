@@ -408,24 +408,6 @@
    "path": "reports/boldstart-what-s-in-ai-infra-vc-524.json"
   },
   {
-   "slug": "micron-investor-day-2026",
-   "type": "investor_day",
-   "title": "Micron 투자자의 날 2026 : 중기 목표 발표 없음, 외부 행사 참가 공지뿐",
-   "companies": [
-    {
-     "name": "Micron",
-     "ticker": "MU"
-    }
-   ],
-   "event": "투자자의 날 2026",
-   "event_date": "2026-11-12",
-   "published_kst": "2026-11-15T02:37:01+09:00",
-   "revised_kst": "2026-11-15T02:37:01+09:00",
-   "revision": 1,
-   "summary": "이 리포트의 원문은 투자자의 날 자료가 아니다. 경영진이 외부 컨퍼런스 두 곳에서 노변 대담을 한다는 참가 공지이고, 중기 목표·자본 계획·문답은 담겨 있지 않다. 공지 전후 컨센서스도 바뀌지 않았으므로 판단을 바꿀 새 정보는 없다.",
-   "path": "reports/micron-investor-day-2026.json"
-  },
-  {
    "slug": "20vc-the-7b-startup-building-ai-chips-to-challenge-nvidia",
    "type": "interview",
    "title": "Walter Goodwin(Fractile) 인터뷰 : 3D 적층 메모리로 노리는 장시간 에이전트 추론, 병목이 된 전력",

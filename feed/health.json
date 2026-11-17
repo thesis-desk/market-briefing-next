@@ -4,7 +4,7 @@
  "collectors": [
   {
    "name": "reports",
-   "items": 62,
+   "items": 61,
    "last_kst": "2026-11-17T20:17:51+09:00"
   },
   {
@@ -14,7 +14,7 @@
   },
   {
    "name": "calendar",
-   "items": 52,
+   "items": 51,
    "last_kst": "2026-11-17T02:16:01+09:00"
   }
  ],
