@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated_kst": "2026-11-18T05:23:09+09:00",
+ "updated_kst": "2026-11-18T08:29:45+09:00",
  "window_days": 14,
  "items_days": 30,
  "index": {
@@ -8,13 +8,13 @@
    "value": -4,
    "label": "엇갈림",
    "orgs": 43,
-   "items": 138
+   "items": 137
   },
   "market": {
-   "value": -12,
+   "value": -13,
    "label": "엇갈림",
    "orgs": 29,
-   "items": 87
+   "items": 88
   },
   "by_group": [
    {
@@ -42,7 +42,7 @@
     "group": "투자은행",
     "ai_tech": 12,
     "ai_tech_orgs": 6,
-    "market": 24,
+    "market": 25,
     "market_orgs": 6
    },
    {
@@ -54,9 +54,9 @@
    },
    {
     "group": "투자 거장",
-    "ai_tech": -31,
+    "ai_tech": -32,
     "ai_tech_orgs": 10,
-    "market": -47,
+    "market": -50,
     "market_orgs": 9
    },
    {
@@ -98,9 +98,9 @@
    },
    {
     "week": "2026-11-16",
-    "ai_tech": 3,
+    "ai_tech": 4,
     "ai_tech_orgs": 16,
-    "market": -2,
+    "market": -1,
     "market_orgs": 12
    }
   ],
@@ -146,35 +146,35 @@
    "optimism": [
     {
      "tag": "수요·채택",
-     "n": 45
+     "n": 44
     },
     {
      "tag": "투자 회수",
-     "n": 36
+     "n": 37
     },
     {
      "tag": "정책·지정학",
-     "n": 22
+     "n": 23
     },
     {
      "tag": "금리·거시",
-     "n": 21
+     "n": 22
     },
     {
      "tag": "자금 조달·신용",
-     "n": 20
+     "n": 21
     },
     {
      "tag": "밸류에이션",
      "n": 15
     },
     {
-     "tag": "전력·공급 제약",
-     "n": 13
+     "tag": "쏠림",
+     "n": 12
     },
     {
-     "tag": "쏠림",
-     "n": 11
+     "tag": "전력·공급 제약",
+     "n": 12
     },
     {
      "tag": "경쟁·해자",
@@ -185,6 +185,40 @@
   "method": "기관·인물마다 기간 안 입장 값의 평균을 내고 그 평균들을 다시 평균해 ×50"
  },
  "items": [
+  {
+   "id": "morgan-stanley-2027-global-outlook-the-case-for-a-stronger-doll",
+   "group": "투자은행",
+   "org": "Morgan Stanley",
+   "person": "Serena Tang",
+   "kind": "publication",
+   "title": "2027 글로벌 전망: 더 강한 달러, 더 긴 AI 사이클의 근거",
+   "title_orig": "2027 Global Outlook: The Case for a Stronger Dollar, Longer AI Cycle",
+   "url": "https://www.morganstanley.com/insights/podcasts/thoughts-on-the-market",
+   "outlet": "Morgan Stanley Thoughts on the Market",
+   "published_kst": "2026-11-18T06:30:00+09:00",
+   "stance": {
+    "ai_tech": 2,
+    "market": 2
+   },
+   "args": [
+    "투자 회수",
+    "자금 조달·신용",
+    "쏠림",
+    "금리·거시",
+    "정책·지정학"
+   ],
+   "summary": "Morgan Stanley의 Serena Tang은 2027년 주제를 '위험 수용'으로 규정하고, AI 설비투자 사이클이 유지되며 글로벌 주식을 최대 비중 확대로 권고한다. 중간선거 결과는 데이터센터 건설의 지연일 뿐 중단이 아니라고 보며 사이클이 길어질 것으로 본다. AI 사이클의 갑작스러운 종료, 유가, 인플레이션 재가속을 주요 위험으로 짚는다.",
+   "points": [
+    "2027년 주제는 위험 수용이며 AI 설비투자 사이클은 훼손되지 않았다고 본다.",
+    "글로벌 주식 밸류에이션이 낮아져 미국·일본·유럽 주식을 최대 비중 확대로 권고한다.",
+    "중간선거 이후 데이터센터 제한은 주 단위 사안이라 건설은 지연될 뿐 중단되지 않으며, 사이클이 연장된다고 본다.",
+    "AI 투자 사이클이 갑자기 끝나면 지수와 포지션의 기술주 쏠림 때문에 주식이 타격을 입고 신용도 동반 매도될 수 있다고 경고한다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   }
+  },
   {
    "id": "pimco-cbs-news-jill-schlesinger-on-advice-ai-can-t-rep",
    "group": "자산운용",
@@ -250,6 +284,35 @@
     "tier": "standard"
    },
    "note": "유튜브 자막(제작자 제공)(en) 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
+  },
+  {
+   "id": "druckenmiller-billionaire-stanley-druckenmiller-says-he-s-stay",
+   "group": "투자 거장",
+   "org": "Duquesne Family Office",
+   "person": "Stanley Druckenmiller",
+   "kind": "report",
+   "title": "억만장자 Stanley Druckenmiller, 주식을 '멀리하고 있다'… 지난 분기 매수·매도 내역",
+   "title_orig": "Billionaire Stanley Druckenmiller Says He's 'Staying Away' From Stocks. Here's What He Bought and Sold Last Quarter",
+   "url": "https://www.fool.com/investing/2026/11/17/billionaire-stanley-druckenmiller-says-he-s-staying-away-from-stocks-here-s-what-he-bought-and-sold-last-quarter",
+   "outlet": "The Motley Fool",
+   "published_kst": "2026-11-18T00:14:00+09:00",
+   "stance": {
+    "ai_tech": null,
+    "market": -1
+   },
+   "args": [
+    "금리·거시"
+   ],
+   "summary": "Druckenmiller는 화요일 TomorrowX Summit에서 자신의 회사가 현재 주식시장을 사실상 멀리하고 있으며, 돈을 버는 것보다 잃지 않는 데 집중하고 있다고 밝혔다. AI 투자 사이클에 대해서는 직접 발언하지 않았다.",
+   "points": [
+    "Druckenmiller는 자신의 회사가 기본적으로 주식시장을 멀리하고 있다고 말했다.",
+    "그는 돈을 버는 것이 아니라 잃지 않으려 하고 있다고 말했다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
   },
   {
    "id": "chamath-billionaire-chamath-issues-blunt-warning-to-bitc",

@@ -1,7 +1,37 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-18T05:23:09+09:00",
+ "generated_kst": "2026-11-18T08:29:45+09:00",
  "reports": [
+  {
+   "slug": "semafor-jeff-bezos-on-jensen-huang-getting-into-the-ai-race",
+   "type": "interview",
+   "title": "제프 베이조스 인터뷰 : Prometheus의 물리 AI와 엔비디아 승계 조언",
+   "companies": [
+    {
+     "name": "Prometheus",
+     "ticker": null
+    },
+    {
+     "name": "Nvidia",
+     "ticker": null
+    },
+    {
+     "name": "Amazon",
+     "ticker": null
+    },
+    {
+     "name": "Blue Origin",
+     "ticker": null
+    }
+   ],
+   "event": "Semafor Silicon Valley & The World",
+   "event_date": "2026-11-17",
+   "published_kst": "2026-11-18T08:27:06+09:00",
+   "revised_kst": "2026-11-18T08:27:06+09:00",
+   "revision": 1,
+   "summary": "베이조스는 Prometheus의 규모(250명, 약 145억 달러 조달, 상당 부분 컴퓨트 약정)와 Blue Origin 내부의 시범 사용을 밝혔지만 공개 출시 시점과 매출 근거는 내놓지 않았다. 상장 종목에 대한 시사점은 엔비디아 이사회에 외부 CEO를 들이지 말라는 조언이 가장 직접적이며, 이 대담만으로 내릴 판정은 엔비디아·아마존 모두 중립이고 확신은 낮다.",
+   "path": "reports/semafor-jeff-bezos-on-jensen-huang-getting-into-the-ai-race.json"
+  },
   {
    "slug": "a16z-how-close-is-self-improving-ai-openai-thinking-machines",
    "type": "interview",
@@ -1473,11 +1503,11 @@
   }
  ],
  "street": {
-  "updated_kst": "2026-11-18T05:23:09+09:00",
+  "updated_kst": "2026-11-18T08:29:45+09:00",
   "path": "street.json"
  },
  "calendar": {
-  "updated_kst": "2026-11-18T02:14:02+09:00",
+  "updated_kst": "2026-11-18T08:27:10+09:00",
   "path": "calendar.json"
  }
 }
