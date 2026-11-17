@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "month": "2026-11",
- "updated_kst": "2026-11-17T11:20:05+09:00",
+ "updated_kst": "2026-11-17T14:16:57+09:00",
  "items": [
   {
    "id": "pimco-the-credit-market-lens-in-a-slower-ai-buildout-w",
@@ -269,6 +269,103 @@
     "tier": "standard"
    },
    "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
+  },
+  {
+   "id": "burry-amd-s-nvidia-rally-fades-michael-burry-calls-amd",
+   "group": "투자 거장",
+   "org": "Michael Burry",
+   "person": null,
+   "kind": "report",
+   "title": "AMD의 Nvidia 반사이익 랠리 식다: Michael Burry, AMD를 '영원한 대안으로서는 너무 비싸다'고 평가",
+   "title_orig": "AMD’s Nvidia Rally Fades: Michael Burry Calls AMD ‘Too Expensive As Eternal Alternative’",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/amd-nvidia-rally-fades-michael-022002772.html",
+   "outlet": "Yahoo Finance",
+   "published_kst": "2026-11-17T01:00:00+09:00",
+   "stance": {
+    "ai_tech": -1,
+    "market": -1
+   },
+   "args": [
+    "밸류에이션",
+    "경쟁·해자"
+   ],
+   "summary": "Burry는 AMD가 Intel, 이어 Nvidia에 대한 '영원한 대안'으로 늘 비싸게 거래돼 왔다는 데 동의하며 상승 여력에 신중한 입장을 보였다. 또한 VanEck Semiconductor ETF에 대형 풋 포지션을 유지하고 있으며 Nasdaq 100, Nvidia, MetLife, Palantir 풋도 보유 중이라고 밝혔다.",
+   "points": [
+    "AMD에 이미 수년간의 성장이 주가에 반영된 듯하다는 Substack 채팅 질문자의 지적에 동의하며, 자신은 AMD가 Intel에 이어 Nvidia에 대한 '영원한 대안'이라는 위치 때문에 늘 너무 비싸다고 그냥 받아들여 왔다고 답했다.",
+    "월요일 거래 업데이트에서, 자신은 VanEck Semiconductor ETF에 대형 풋 포지션을 계속 보유하고 있으며 Nasdaq 100, Nvidia, MetLife, Palantir에 대한 풋도 갖고 있다고 밝혔다."
+   ],
+   "evidence": [
+    {
+     "ko": "AMD에 이미 수년간의 성장이 주가에 반영된 듯하다는 Substack 채팅 질문자의 지적에 동의하며, 자신은 AMD가 Intel에 이어 Nvidia에 대한 '영원한 대안'이라는 위치 때문에 늘 너무 비싸다고 그냥 받아들여 왔다고 답했다.",
+     "orig": "I agree. I have generally just accepted it is always too expensive as the eternal alternative, first to Intel and then to Nvidia."
+    }
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
+  },
+  {
+   "id": "imf-imf-raises-south-korea-s-growth-forecast-to-3-9",
+   "group": "중앙은행·국제기구",
+   "org": "IMF",
+   "person": null,
+   "kind": "report",
+   "title": "IMF, 한국 성장률 전망 3.9%로 상향…AI 주도 쏠림 위험 경고",
+   "title_orig": "IMF raises South Korea's growth forecast to 3.9%, warns of AI-driven concentration risks",
+   "url": "https://biz.heraldcorp.com/article/10939810",
+   "outlet": "Herald Business",
+   "published_kst": "2026-11-17T01:00:00+09:00",
+   "stance": {
+    "ai_tech": 1,
+    "market": 0
+   },
+   "args": [
+    "수요·채택",
+    "투자 회수",
+    "쏠림",
+    "금리·거시"
+   ],
+   "summary": "IMF는 글로벌 AI 붐에 따른 반도체 수출 급증과 투자 회복으로 한국의 올해 성장률 전망을 3.9%로 올렸고, AI 투자가 중기 잠재성장률을 높일 것으로 봤다. 다만 성장 과실이 첨단 기술 부문에 집중되고 있고 경제 전반으로의 확산은 점진적일 것이라며 쏠림 위험을 경고했다. 성장 전망의 하방 위험이 우세하다고 보고 통화 긴축과 완만한 긴축 재정을 권고했다.",
+   "points": [
+    "IMF는 올해 한국 성장률 전망을 3.9%로 상향했다. 지난달 세계경제전망의 3.3%보다 한 달 만에 0.6%포인트 높인 것이며, 내년 전망도 2.8%에서 3.3%로 0.5%포인트 올렸다. 근거로 글로벌 AI 붐에 따른 반도체 수출 급증, 투자 반등, 견조한 소비를 들었다.",
+    "IMF는 AI 주도 확장의 이익이 지금까지 대체로 첨단 기술 부문에 집중되어 왔으며, 경제 전반으로의 확산은 점진적일 것으로 예상된다고 경고했다.",
+    "IMF는 글로벌 AI 붐이 사상 최고 수준의 반도체 수출을 이끌며 한국 경제에 예외적인 성장 동력을 제공하고 있고, 강한 수출이 기업 실적 개선과 재정수입 증가로도 이어지고 있다고 밝혔다.",
+    "IMF는 첨단 기술 부문에서 생긴 소득 증가가 소비로 번지고 한국의 AI 전환을 가속하려는 투자가 본격화하면서 강한 모멘텀이 내년까지 이어질 것으로 예상했다. AI 관련 투자는 중기적으로 잠재성장률을 높이는 데에도 기여할 것으로 내다봤다.",
+    "IMF는 성장 혜택이 특정 산업에 집중될 위험을 지적했다. 확장의 과실이 지금까지 주로 첨단 기술 부문에 모였고, 경제 전체로의 파급은 점진적으로만 나타날 것이라고 했다.",
+    "IMF는 올해 물가상승률을 2.7%, 내년을 2.3%로 전망했다. 내수가 강해지면서 물가가 목표치 2%를 웃돌 것으로 보며, 불확실성이 높은 가운데 성장 전망의 하방 위험이 우세하다고 평가했다.",
+    "IMF는 경제가 잠재 수준을 웃돌고 물가가 목표를 넘는 만큼 인플레이션 압력이 굳어지지 않도록 당국이 추가 통화 긴축에 나서야 한다고 권고했다.",
+    "IMF는 단기 거시정책이 수요 압력을 억제하면서 특정 부문으로의 과도한 경제 집중 위험도 완화하도록 신중히 조율되어야 한다고 밝혔다. 재정은 취약 계층 지원은 유지하되 전반적으로 완만한 긴축 기조를 권고했다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
+  },
+  {
+   "id": "pimco-pimco-says-ai-bond-spreads-may-tighten-as-data-c",
+   "group": "자산운용",
+   "org": "PIMCO",
+   "person": null,
+   "kind": "report",
+   "title": "핌코: 데이터센터 붐이 둔화하면 AI 채권 스프레드가 좁혀질 수 있다",
+   "title_orig": "Pimco Says AI Bond Spreads May Tighten as Data Center Boom Slows",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-17/pimco-says-ai-bond-spreads-may-tighten-as-data-center-boom-slows",
+   "outlet": "Bloomberg",
+   "published_kst": "2026-11-17T01:00:00+09:00",
+   "stance": {
+    "ai_tech": -1,
+    "market": 1
+   },
+   "args": [
+    "자금 조달·신용"
+   ],
+   "judged": {
+    "basis": "headline_only",
+    "tier": "light"
+   }
   },
   {
    "id": "bofa-anthropic-ipo-is-delaying-some-deals-says-bank-o",
