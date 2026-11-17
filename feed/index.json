@@ -1,7 +1,32 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-17T20:20:32+09:00",
+ "generated_kst": "2026-11-17T23:20:29+09:00",
  "reports": [
+  {
+   "slug": "semafor-silicon-valley-the-world-in-conversation-with-bill",
+   "type": "interview",
+   "title": "빌 애크먼·마이클 크라치오스 대담 : 젠슨 황 복귀 시나리오와 칩 수출 정책, 과학용 초지능",
+   "companies": [
+    {
+     "name": "Nvidia",
+     "ticker": null
+    },
+    {
+     "name": "Anthropic",
+     "ticker": null
+    },
+    {
+     "name": "OpenAI",
+     "ticker": null
+    }
+   ],
+   "event": "Semafor 행사 대담 'Silicon Valley & The World'",
+   "published_kst": "2026-11-17T23:20:29+09:00",
+   "revised_kst": "2026-11-17T23:20:29+09:00",
+   "revision": 1,
+   "summary": "엔비디아 판단의 분기점은 칩 전용 의혹이 젠슨 황 개인의 잘못인지 회사 차원의 공모인지다. 애크먼은 개인 잘못이면 특별주총으로 빠르게 복귀시킬 수 있다고 봤다. 행정부는 수출 확대와 집행 강화(BIS 원격 접근·라이선스 규칙)를 함께 내세웠지만 엔비디아의 책임에는 답하지 않았다. 사실관계가 나오기 전까지 엔비디아는 약한~중간 강도의 악재로 본다.",
+   "path": "reports/semafor-silicon-valley-the-world-in-conversation-with-bill.json"
+  },
   {
    "slug": "semafor-bloom-energy-founder-ceo-kr-sridhar-at-silicon",
    "type": "interview",
