@@ -1,20 +1,20 @@
 {
  "schema": 1,
- "updated_kst": "2026-11-18T02:18:55+09:00",
+ "updated_kst": "2026-11-18T05:23:09+09:00",
  "window_days": 14,
  "items_days": 30,
  "index": {
   "ai_tech": {
-   "value": -3,
+   "value": -4,
    "label": "엇갈림",
-   "orgs": 42,
-   "items": 135
+   "orgs": 43,
+   "items": 138
   },
   "market": {
-   "value": -11,
+   "value": -12,
    "label": "엇갈림",
-   "orgs": 28,
-   "items": 84
+   "orgs": 29,
+   "items": 87
   },
   "by_group": [
    {
@@ -35,14 +35,14 @@
     "group": "자산운용",
     "ai_tech": 3,
     "ai_tech_orgs": 7,
-    "market": 2,
+    "market": 0,
     "market_orgs": 7
    },
    {
     "group": "투자은행",
-    "ai_tech": 14,
+    "ai_tech": 12,
     "ai_tech_orgs": 6,
-    "market": 23,
+    "market": 24,
     "market_orgs": 6
    },
    {
@@ -54,10 +54,10 @@
    },
    {
     "group": "투자 거장",
-    "ai_tech": -33,
-    "ai_tech_orgs": 9,
+    "ai_tech": -31,
+    "ai_tech_orgs": 10,
     "market": -47,
-    "market_orgs": 8
+    "market_orgs": 9
    },
    {
     "group": "중앙은행·국제기구",
@@ -98,10 +98,10 @@
    },
    {
     "week": "2026-11-16",
-    "ai_tech": 9,
-    "ai_tech_orgs": 14,
-    "market": 7,
-    "market_orgs": 11
+    "ai_tech": 3,
+    "ai_tech_orgs": 16,
+    "market": -2,
+    "market_orgs": 12
    }
   ],
   "args": {
@@ -116,7 +116,7 @@
     },
     {
      "tag": "밸류에이션",
-     "n": 14
+     "n": 15
     },
     {
      "tag": "쏠림",
@@ -132,11 +132,11 @@
     },
     {
      "tag": "경쟁·해자",
-     "n": 5
+     "n": 6
     },
     {
      "tag": "수요·채택",
-     "n": 3
+     "n": 4
     },
     {
      "tag": "전력·공급 제약",
@@ -146,7 +146,7 @@
    "optimism": [
     {
      "tag": "수요·채택",
-     "n": 46
+     "n": 45
     },
     {
      "tag": "투자 회수",
@@ -162,11 +162,11 @@
     },
     {
      "tag": "자금 조달·신용",
-     "n": 21
+     "n": 20
     },
     {
      "tag": "밸류에이션",
-     "n": 16
+     "n": 15
     },
     {
      "tag": "전력·공급 제약",
@@ -178,13 +178,173 @@
     },
     {
      "tag": "경쟁·해자",
-     "n": 10
+     "n": 9
     }
    ]
   },
   "method": "기관·인물마다 기간 안 입장 값의 평균을 내고 그 평균들을 다시 평균해 ×50"
  },
  "items": [
+  {
+   "id": "pimco-cbs-news-jill-schlesinger-on-advice-ai-can-t-rep",
+   "group": "자산운용",
+   "org": "PIMCO",
+   "person": "Jill Schlesinger",
+   "kind": "publication",
+   "title": "CBS News의 Jill Schlesinger가 말하는 AI가 대체할 수 없는 조언",
+   "title_orig": "CBS News’ Jill Schlesinger on Advice AI Can't Replace",
+   "url": "https://www.youtube.com/watch?v=K3bvv84J_TE",
+   "outlet": "PIMCO (유튜브)",
+   "published_kst": "2026-11-18T04:45:41+09:00",
+   "stance": {
+    "ai_tech": 0,
+    "market": -1
+   },
+   "args": [
+    "밸류에이션",
+    "금리·거시"
+   ],
+   "summary": "슐레싱어는 지금 시장이 과열로 느껴져 편하지 않다고 말하고, 앱과 정보 접근성이 탐욕과 공포에 따른 즉흥 매매를 부추긴다고 본다. 진행자 Greg Hall은 현재 시작 수익률이 매력적이므로 채권 비중을 늘리는 쪽으로 리밸런싱해야 한다고 말한다. 두 사람은 엔비디아·AI에 대한 흥분도 포트폴리오 배분 계획의 한도 안에서만 허용해야 한다고 본다.",
+   "points": [
+    "슐레싱어는 현재와 같은 시장에서는 결코 편안하지 않고 과열처럼 느껴진다고 말한다.",
+    "슐레싱어는 지금 분위기가 닷컴 시기와 같은 과열처럼 느껴진다고 답한다.",
+    "Hall은 현재 시작 수익률에 큰 가치가 있고, 이를 배분 모델에 넣으면 주식 대비 채권을 더 가져야 한다는 결론이 나온다고 본다.",
+    "주가가 높을 때 팔고 두려워도 채권을 사도록 연 1회 리밸런싱을 규율로 삼아야 한다고 한다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "유튜브 영상의 음성을 음성 인식(Whisper)으로 받아 적은 전사 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
+  },
+  {
+   "id": "goldman-steady-global-economic-growth-in-2027-outlook-bu",
+   "group": "투자은행",
+   "org": "Goldman Sachs",
+   "person": "Jan Hatzius, Dominic Wilson",
+   "kind": "publication",
+   "title": "2027년 전망: 세계 경제는 안정적 성장, 위험은 하방으로 기울어",
+   "title_orig": "Steady Global Economic Growth in 2027 Outlook But Risks Tilted to Downside",
+   "url": "https://www.youtube.com/watch?v=khtGcYe4foc",
+   "outlet": "Goldman Sachs (유튜브)",
+   "published_kst": "2026-11-18T03:52:10+09:00",
+   "stance": {
+    "ai_tech": 0,
+    "market": 1
+   },
+   "args": [
+    "투자 회수",
+    "밸류에이션",
+    "금리·거시",
+    "전력·공급 제약"
+   ],
+   "summary": "골드만삭스는 2027년 기준 시나리오로 세계 성장률 2.8%와 주식·채권의 플러스 수익률을 제시하며 시장 전반에 낙관적이다. 다만 AI 투자 증가세가 2027년 초에 정점을 찍고 둔화할 수 있고, 유가·금융여건·재정 위험에 시장이 취약해 헤지와 분산이 중요하다고 본다. AI 밸류에이션은 몇 달간 조정되어 부담이 줄었지만 이익 지속성이 관건이라는 입장이다.",
+   "points": [
+    "AI 투자는 2026년 세계 GDP의 약 0.5%p를 더했고 2027년에도 비슷한 증가폭이 예상되나 연초에 집중될 것이다.",
+    "AI 설비 구축 후 수요가 둔화하는 시점은 기준 시나리오상 2028~2029년이지만 시점 예측이 어려워 위험 요인이다.",
+    "AI 인프라 종목은 몇 달간 디레이팅되어 밸류에이션 부담이 줄었고, 초점은 이익의 지속 가능성으로 옮겨간다.",
+    "기준 시나리오는 주식 플러스 수익률이지만 하방 위험에 대비해 분산과 옵션 헤지가 이전보다 중요하다고 본다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "유튜브 자막(제작자 제공)(en) 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
+  },
+  {
+   "id": "chamath-billionaire-chamath-issues-blunt-warning-to-bitc",
+   "group": "벤처캐피털",
+   "org": "Social Capital",
+   "person": "Chamath Palihapitiya",
+   "kind": "report",
+   "title": "억만장자 차마스 팔리하피티야, AI를 두고 비트코인 투자자에게 직설적 경고",
+   "title_orig": "Billionaire Chamath issues blunt warning to Bitcoin investors over AI",
+   "url": "https://www.thestreet.com/crypto/markets/billionaire-chamath-issues-blunt-warning-to-bitcoin-investors-over-ai",
+   "outlet": "TheStreet",
+   "published_kst": "2026-11-17T19:37:00+09:00",
+   "stance": {
+    "ai_tech": null,
+    "market": -1
+   },
+   "args": [
+    "경쟁·해자"
+   ],
+   "judged": {
+    "basis": "headline_only",
+    "tier": "light"
+   }
+  },
+  {
+   "id": "druckenmiller-druckenmiller-says-he-is-short-copper-warns-of-e",
+   "group": "투자 거장",
+   "org": "Duquesne Family Office",
+   "person": "Stanley Druckenmiller",
+   "kind": "report",
+   "title": "Druckenmiller, 구리 숏 보유 밝히며 2027년 경기 약세 경고",
+   "title_orig": "Druckenmiller says he is short copper, warns of economic weakness in 2027",
+   "url": "https://www.coindesk.com/business/2026/11/17/druckenmiller-says-he-is-short-copper-warns-of-economic-weakness-in-2027",
+   "outlet": "CoinDesk",
+   "published_kst": "2026-11-17T18:42:00+09:00",
+   "stance": {
+    "ai_tech": 0,
+    "market": -1
+   },
+   "args": [
+    "금리·거시",
+    "투자 회수",
+    "수요·채택"
+   ],
+   "summary": "Druckenmiller는 미국 경제는 강하지만 연준 금리 인하 중단, 원자재 약세, 신용 스프레드 확대로 투자 환경이 나빠졌다고 보고 2027년 하반기 경기 실망 가능성을 경계했다. 구리 매도(숏) 포지션을 두고 주식 순노출은 거의 없이 자본 보전을 우선하며 당분간 쉬겠다고 했다. AI는 인프라보다 활용 사례 기업을 찾고 있으며 토큰 과금 방식이 유지될지도 의문을 제기했다.",
+   "points": [
+    "연준이 더는 금리를 인하하지 않고, 원자재가 약해지고, 신용 스프레드가 벌어지는 등 투자 환경이 악화했다고 보았다. 미국 경제 자체는 여전히 강하다고 했다.",
+    "2027년 하반기가 경제적으로 실망스러울 수 있다는 점을 매우 경계하고 있다고 말했다.",
+    "구리를 매도(숏)하고 있으며 주식 순노출은 거의 없다. 롱과 숏 포지션을 작게 유지하면서 자본 보전을 우선한다. 올해 1월보다 방어적인 자세이며, 시야가 불투명해 큰 포지션을 잡지 못한다고 했다.",
+    "주식에서는 인프라가 아니라 AI 활용 사례(유스케이스)를 찾고 있다고 말했다.",
+    "AI 개발사들이 앞으로도 토큰 기준으로 고객에게 요금을 매길지 의문을 제기했으며, 결국 완료된 작업 단위로 판매할 수도 있다고 시사했다.",
+    "전망이 분명해질 때까지는 관망하겠다며, 그 휴식이 이틀이 될 수도 여섯 달이 될 수도 있다고 했다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
+  },
+  {
+   "id": "ubs-ubs-warns-ai-agents-could-upend-internet-busines",
+   "group": "투자은행",
+   "org": "UBS",
+   "person": null,
+   "kind": "report",
+   "title": "UBS, AI 에이전트가 사람을 위해 만들어진 인터넷 비즈니스 모델을 뒤흔들 수 있다고 경고",
+   "title_orig": "UBS warns AI agents could upend internet business models built for humans",
+   "url": "https://cryptobriefing.com/ubs-ai-agents-disrupt-internet-business-models",
+   "outlet": "Crypto Briefing",
+   "published_kst": "2026-11-17T18:12:00+09:00",
+   "stance": {
+    "ai_tech": -1,
+    "market": null
+   },
+   "args": [
+    "수요·채택",
+    "경쟁·해자",
+    "밸류에이션"
+   ],
+   "summary": "UBS 웰스 매니지먼트 아메리카스 CIO 울리케 호프만-부르카르디는 AI 에이전트가 디지털 광고와 SaaS라는 두 수익 엔진을 훼손한다고 주장했다. 인터넷이 사람의 시선을 전제로 설계됐는데 에이전트가 이를 깨뜨린다는 것이다. UBS는 금융시장이 이 전환을 아직 충분히 가격에 반영하지 못했다고 본다.",
+   "points": [
+    "AI 에이전트가 사람을 대신해 움직이면서 디지털 광고와 서비스형 기업용 소프트웨어(SaaS)라는 기술 업계의 가장 수익성 높은 두 수익 엔진이 훼손된다.",
+    "인터넷은 출범 이래 사람의 눈을 위해 만들어졌다.",
+    "웹사이트, 결제 흐름, 소프트웨어 대시보드는 모두 사람이 탭을 클릭해 넘기는 것을 전제로 설계됐는데, 사용자 대신 쇼핑하고 비교하고 클릭하는 AI 에이전트가 이 설계 전제를 깨뜨린다. 에이전트가 탐색을 하면 사람은 페이지도 배너도 공들여 시험한 버튼 색도 보지 못한다.",
+    "많은 SaaS 기업이 인력 수와 사용량에 매출을 연동하는데, 에이전트가 예전에는 여러 사람이 대시보드에 접속해 하던 일을 처리할 수 있다면 좌석당 과금 모델의 셈법이 흔들린다. UBS 리서치는 이 모델이 위험에 노출돼 있다고 짚는다.",
+    "UBS는 이 변화를 기업-소비자(B2C)에서 기업-에이전트(B2A)로의 이동으로 규정한다. 기업이 고객 본인이 아니라 고객을 대리하는 소프트웨어에 판매하게 될 수 있다는 뜻이다.",
+    "UBS 애널리스트들은 금융시장이 이 전환을 아직 충분히 가격에 반영하지 못했다고 본다. 특히 사용자 지표와 라이선스에 기반한 비즈니스 모델에서 이 변화가 과소평가돼 있다고 본다.",
+    "UBS는 기존 기업이 지금 확보하는 매출이 에이전트 중심으로 만들어진 새 플랫폼으로 옮겨 갈 수 있다고 시사한다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
+  },
   {
    "id": "ubs-ubs-on-air-paul-donovan-daily-audio-are-consumer",
    "group": "투자은행",

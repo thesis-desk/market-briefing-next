@@ -1,7 +1,28 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-18T02:22:56+09:00",
+ "generated_kst": "2026-11-18T05:23:09+09:00",
  "reports": [
+  {
+   "slug": "a16z-how-close-is-self-improving-ai-openai-thinking-machines",
+   "type": "interview",
+   "title": "Mark Chen·John Schulman 인터뷰 : 재귀적 자기개선(RSI)은 어디까지 왔고 무엇이 막고 있나",
+   "companies": [
+    {
+     "name": "OpenAI",
+     "ticker": null
+    },
+    {
+     "name": "Thinking Machines Lab",
+     "ticker": null
+    }
+   ],
+   "event": "a16z Working Theory 1화",
+   "published_kst": "2026-11-18T05:18:53+09:00",
+   "revised_kst": "2026-11-18T05:18:53+09:00",
+   "revision": 1,
+   "summary": "OpenAI와 Thinking Machines의 두 연구 책임자는 지금의 RSI를 사람이 범위를 정해 주는 '연구 가속' 단계로 본다. 남은 장벽으로는 연구 취향, 결과를 검증할 지표, 연산을 꼽았다. 투자 함의는 2027년의 자율적 도약보다 연산 수요가 계속된다는 쪽에 더 가깝고, 상장 종목을 직접 판정할 근거는 얇다.",
+   "path": "reports/a16z-how-close-is-self-improving-ai-openai-thinking-machines.json"
+  },
   {
    "slug": "pimco-the-credit-market-lens-in-a-slower-ai-buildout-w",
    "type": "article",
@@ -1452,7 +1473,7 @@
   }
  ],
  "street": {
-  "updated_kst": "2026-11-18T02:18:55+09:00",
+  "updated_kst": "2026-11-18T05:23:09+09:00",
   "path": "street.json"
  },
  "calendar": {
