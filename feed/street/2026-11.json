@@ -1,8 +1,42 @@
 {
  "schema": 1,
  "month": "2026-11",
- "updated_kst": "2026-11-17T08:19:05+09:00",
+ "updated_kst": "2026-11-17T11:20:05+09:00",
  "items": [
+  {
+   "id": "pimco-the-credit-market-lens-in-a-slower-ai-buildout-w",
+   "group": "자산운용",
+   "org": "PIMCO",
+   "person": "Lafi Kurui",
+   "kind": "publication",
+   "title": "크레딧 시장의 관점: 더딘 AI 구축 속에서 누가 희소성 프리미엄을 얻는가?",
+   "title_orig": "The Credit Market Lens: In a Slower AI Buildout, Who Captures the Scarcity Premium?",
+   "url": "https://www.youtube.com/watch?v=LItZxpPeJDI",
+   "outlet": "PIMCO (유튜브)",
+   "published_kst": "2026-11-17T08:32:16+09:00",
+   "stance": {
+    "ai_tech": 0,
+    "market": null
+   },
+   "args": [
+    "자금 조달·신용",
+    "전력·공급 제약",
+    "투자 회수",
+    "정책·지정학"
+   ],
+   "summary": "PIMCO는 중간선거 결과로 AI 구축이 작아지기보다 더 길고 비선형적으로 늘어질 것으로 본다. 이 경우 기존 컴퓨트의 희소성이 이어져 재무가 탄탄한 다변화 하이퍼스케일러와 기존 데이터센터 채권에 유리하다. 반면 레버리지가 높은 인프라 업체는 재계약 위험, GPU 잔존가치, 불확실한 수익화 시점 때문에 희소성 프리미엄이 상쇄될 수 있다고 본다.",
+   "points": [
+    "중간선거 결과는 AI 구축의 최종 규모를 바꾸기보다 속도를 늦추고 기간을 늘릴 가능성이 크다.",
+    "재무구조가 튼튼한 다변화 하이퍼스케일러는 지연을 감내하며 희소한 기존 컴퓨트의 혜택을 볼 수 있다.",
+    "신용시장에서는 발행 일정이 완만해져 기술적 수급 부담이 줄고, 기존 하이퍼스케일러 임차 데이터센터 채권의 스프레드가 압축될 수 있다.",
+    "레버리지가 높은 인프라 업체는 재계약 위험과 불확실한 수익화 시점 탓에 희소성 프리미엄이 상쇄될 위험이 있다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "유튜브 자동 생성 자막(en) 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
+  },
   {
    "id": "morgan-stanley-2027-global-outlook-powered-by-ai-tested-by-oil",
    "group": "투자은행",
@@ -203,6 +237,40 @@
    "note": "유튜브 영상의 음성을 음성 인식(Whisper)으로 받아 적은 전사 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
   },
   {
+   "id": "altimeter-brad-gerstner-says-ai-is-at-its-google-2005-mome",
+   "group": "벤처캐피털",
+   "org": "Altimeter Capital",
+   "person": null,
+   "kind": "report",
+   "title": "Brad Gerstner, AI는 '구글 2005년' 시점이라고 말하다… 그가 보는 승자는",
+   "title_orig": "Brad Gerstner Says AI Is at Its ‘Google 2005’ Moment. Here’s Who He Thinks Wins",
+   "url": "https://finance.yahoo.com/technology/ai/articles/brad-gerstner-says-ai-google-000704866.html",
+   "outlet": "Yahoo Finance",
+   "published_kst": "2026-11-17T01:00:00+09:00",
+   "stance": {
+    "ai_tech": 2,
+    "market": null
+   },
+   "args": [
+    "경쟁·해자",
+    "밸류에이션"
+   ],
+   "summary": "Gerstner는 현재 AI를 '구글 2005년' 시점에 비유하며, 검색에서 한 업체가 상승 여력 대부분을 차지했듯 Anthropic과 OpenAI가 경제적 가치의 대부분을 가져갈 것이라 주장했다. Altimeter가 Anthropic IPO에 50억 달러를 주문하며 이를 장기 핵심 복리 종목으로 보고, 두 회사의 주요 주주임을 밝혔다. 반면 NVIDIA 지분은 올해 크게 줄였다.",
+   "points": [
+    "지금은 구글 2005년과 같은 시점이다. 20개였던 검색 엔진이 2004년까지 사라지고 하나만 남아 검색에서 만들어진 모든 상승 여력의 99%를 차지했다. Anthropic과 OpenAI가 나머지 업체들과 극적으로 격차를 벌리고 있다고 본다.",
+    "Anthropic과 OpenAI가 경제적 가치의 가장 큰 몫을 차지할 것이라고 생각한다.",
+    "Altimeter는 두 회사의 주요 주주라는 이해관계가 있음을 인정했다.",
+    "Altimeter는 Anthropic IPO에 50억 달러를 주문한다. 이는 지금까지 IPO에서 낸 최대 주문의 5배가 넘는 규모이며, 장기간 핵심 복리 성장 종목이 될 것으로 본다.",
+    "주요 선거, 반도체 급락, NVIDIA CEO의 퇴출을 꼽으며, 이런 상황이면 Anthropic IPO에는 매우 나쁜 배경이라고 했을 것이라고 인정했다.",
+    "올해 NVIDIA 지분을 큰 규모에서 작은 규모로 줄였다. 기사에 따르면 주가수익비율이 약 33배인 상황에서도 칩 공급사보다 AI 연구소를 보유하는 쪽을 선호한다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
+  },
+  {
    "id": "bofa-anthropic-ipo-is-delaying-some-deals-says-bank-o",
    "group": "투자은행",
    "org": "Bank of America",
@@ -301,6 +369,43 @@
     "tier": "standard"
    },
    "note": "유튜브 자막(제작자 제공)(en) 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
+  },
+  {
+   "id": "chamath-chamath-palihapitiya-betting-on-bitcoin-is-betti",
+   "group": "벤처캐피털",
+   "org": "Social Capital",
+   "person": "Chamath Palihapitiya",
+   "kind": "report",
+   "title": "Chamath Palihapitiya: 비트코인에 베팅하는 것은 'AI 개선에 반대로 베팅하는 것'",
+   "title_orig": "Chamath Palihapitiya: Betting on bitcoin is 'betting against AI improvement'",
+   "url": "https://www.msn.com/en-us/money/general/chamath-palihapitiya-betting-on-bitcoin-is-betting-against-ai-improvement/ar-AA2hzAKl",
+   "outlet": "Benzinga on MSN",
+   "published_kst": "2026-11-16T23:30:06+09:00",
+   "stance": {
+    "ai_tech": null,
+    "market": -1
+   },
+   "args": [
+    "쏠림",
+    "밸류에이션",
+    "전력·공급 제약"
+   ],
+   "summary": "Palihapitiya는 트래serve 가능성, 취약한 보관, AI 발전에 따른 양자 위험 때문에 비트코인의 상승 여력이 제한된다고 주장했다. 비트코인에 거는 것은 AI 개선에 반대로 거는 것에 가깝다고 봤다. 그는 S&P 500이 더는 분산 효과가 없다고 보며 전력·에너지 인프라와 잉여현금흐름 수익률 상위 기업을 선호하고, 최근 15년 중 투자 비중이 가장 낮다고 밝혔다.",
+   "points": [
+    "추적 가능성: 달러에는 이력이 남지 않지만 모든 비트코인은 거래 내역 전체가 보이므로, 중앙은행은 그 정도로 추적 가능한 디지털 통화를 절대 보유하지 않을 것이며, 이는 세계 최대 잠재 매수 집단 중 하나를 배제한다.",
+    "양자 위험: 발전하는 AI가 결국 누군가로 하여금 비트코인의 암호를 깨고 사토시 나카모토의 최초 지갑에 침입해 그 코인을 수십억 달러어치 팔게 하고, 시장에 공매도를 걸어 가격이 폭락할 때 다시 이익을 얻게 할 수 있다.",
+    "비트코인에 베팅하는 것은 사실상 AI의 개선에 반대로 베팅하는 것에 가깝다.",
+    "10월 Moonshots 팟캐스트에서 그는 비트코인의 제한된 매수자 풀과 SHA-256 취약성 때문에 앞으로 붕괴할 가능성이 크다고 말했다.",
+    "그는 전력·에너지 인프라를 향후 10년의 핵심 투자 주제로 꼽았고, 자신이 직접 확보한 용량이 약 6기가와트라고 밝혔다.",
+    "S&P 500은 상승분이 소수의 초대형주에 집중되어 있어 더는 실질적인 분산 효과를 제공하지 못한다고 주장했다.",
+    "그가 선호하는 대안은 기업을 잉여현금흐름 수익률로 줄 세워 지수 대신 상위 기업을 사는 것이다.",
+    "그는 자신이 최근 15년 가운데 투자 비중이 가장 낮은 상태라고 말했으며, 그 이유로 범용 인공지능(AGI)이 시장을 어떻게 바꿀지에 대한 불확실성을 들었다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
   },
   {
    "id": "menlo-2026-the-state-of-ai-in-healthcare",
