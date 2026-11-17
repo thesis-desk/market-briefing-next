@@ -1,7 +1,24 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-17T17:23:09+09:00",
+ "generated_kst": "2026-11-17T20:20:32+09:00",
  "reports": [
+  {
+   "slug": "semafor-bloom-energy-founder-ceo-kr-sridhar-at-silicon",
+   "type": "interview",
+   "title": "블룸 에너지 KR 스리다르 인터뷰 : 분산 전원은 임시책이 아니라는 주장과 90일 데이터센터 전력 공급",
+   "companies": [
+    {
+     "name": "Bloom Energy",
+     "ticker": null
+    }
+   ],
+   "event": "Semafor Silicon Valley & The World",
+   "published_kst": "2026-11-17T20:17:51+09:00",
+   "revised_kst": "2026-11-17T20:17:51+09:00",
+   "revision": 1,
+   "summary": "스리다르는 분산 전원을 망 부족을 메우는 임시책이 아니라 망에 더해지는 영구적 구조 전환으로 규정했다. 하지만 새로 나온 검증 가능한 근거는 뉴저지 약 300MW 프로젝트에서 90일 만에 첫 블록 전력을 공급했다는 사례 정도다. 고객 신용, 중국 조달, 연료비 부담 질문은 비켜 갔다. 블룸 에너지에는 약한 호재로 본다.",
+   "path": "reports/semafor-bloom-energy-founder-ceo-kr-sridhar-at-silicon.json"
+  },
   {
    "slug": "semafor-openai-cfo-sarah-friar-at-silicon-valley-the-world",
    "type": "interview",
@@ -1367,7 +1384,7 @@
   }
  ],
  "street": {
-  "updated_kst": "2026-11-17T17:23:09+09:00",
+  "updated_kst": "2026-11-17T20:20:32+09:00",
   "path": "street.json"
  },
  "calendar": {

@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated_kst": "2026-11-17T17:23:09+09:00",
+ "updated_kst": "2026-11-17T20:20:32+09:00",
  "window_days": 14,
  "items_days": 30,
  "index": {
@@ -8,13 +8,13 @@
    "value": -2,
    "label": "엇갈림",
    "orgs": 42,
-   "items": 139
+   "items": 138
   },
   "market": {
    "value": -12,
    "label": "엇갈림",
    "orgs": 28,
-   "items": 86
+   "items": 87
   },
   "by_group": [
    {
@@ -40,9 +40,9 @@
    },
    {
     "group": "투자은행",
-    "ai_tech": 13,
+    "ai_tech": 14,
     "ai_tech_orgs": 6,
-    "market": 24,
+    "market": 23,
     "market_orgs": 6
    },
    {
@@ -100,8 +100,8 @@
     "week": "2026-11-16",
     "ai_tech": 13,
     "ai_tech_orgs": 13,
-    "market": 8,
-    "market_orgs": 10
+    "market": 7,
+    "market_orgs": 11
    }
   ],
   "args": {
@@ -185,6 +185,39 @@
   "method": "기관·인물마다 기간 안 입장 값의 평균을 내고 그 평균들을 다시 평균해 ×50"
  },
  "items": [
+  {
+   "id": "ubs-ubs-on-air-paul-donovan-daily-audio-are-consumer",
+   "group": "투자은행",
+   "org": "UBS",
+   "person": "Paul Donovan",
+   "kind": "publication",
+   "title": "UBS 온에어: 폴 도노번 데일리 오디오 '소비자는 계속 지출하고 있는가?'",
+   "title_orig": "UBS On-Air: Paul Donovan Daily Audio 'Are consumers continuing to spend?'",
+   "url": "https://www.ubs.com/content/dam/podcasts/wma/261117-are-consumers-continuing-to-spend.mp3",
+   "outlet": "UBS Paul Donovan Daily",
+   "published_kst": "2026-11-17T17:31:05+09:00",
+   "stance": {
+    "ai_tech": null,
+    "market": 0
+   },
+   "args": [
+    "금리·거시",
+    "밸류에이션",
+    "수요·채택"
+   ],
+   "summary": "미국 소비자는 임금 증가가 물가에 못 미쳐도 저축률을 조정해 지출을 이어갈 수 있고, 아직 소비를 꺼리는 뚜렷한 신호는 없다고 본다. 주식 시장의 하락 보도는 과장이고 대부분 시장이 연초 대비 플러스라 조정의 경제적 파급이 제한된다고 말한다. 또 고평가가 공정 가치로 돌아가는 하락은 오히려 좋다고 한다.",
+   "points": [
+    "임금이 물가보다 느리게 올라도 저축률 조정으로 소비 증가가 가능하다고 본다.",
+    "지금까지 미국 소비자가 지출을 꺼리는 신호는 거의 없었다고 평가한다.",
+    "대부분의 시장이 연초 대비 상승 상태여서 주식 조정의 경제적 파급이 제한된다고 본다.",
+    "주가 하락이 반드시 나쁜 것은 아니며, 잘못 매겨진 가격이 공정 가격으로 가는 것은 좋은 일이라고 주장한다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "팟캐스트 음성을 음성 인식(Whisper)으로 받아 적은 전사 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
+  },
   {
    "id": "goldman-goldman-sachs-predicts-resurgence-of-us-big-tech",
    "group": "투자은행",
