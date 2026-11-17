@@ -1,8 +1,46 @@
 {
  "schema": 1,
  "month": "2026-11",
- "updated_kst": "2026-11-17T14:16:57+09:00",
+ "updated_kst": "2026-11-17T17:23:09+09:00",
  "items": [
+  {
+   "id": "goldman-goldman-sachs-predicts-resurgence-of-us-big-tech",
+   "group": "투자은행",
+   "org": "Goldman Sachs",
+   "person": null,
+   "kind": "report",
+   "title": "Goldman Sachs, 미국 빅테크 부활 전망… 일본 주식 총수익률 24% 예상",
+   "title_orig": "Goldman Sachs Predicts Resurgence of US Big Tech; Japanese Stocks Expected to See 24% Total Return",
+   "url": "https://note.com/asset_alive/n/n93d1839f1f0d?hl=en",
+   "outlet": "note",
+   "published_kst": "2026-11-17T09:21:00+09:00",
+   "stance": {
+    "ai_tech": 1,
+    "market": 1
+   },
+   "args": [
+    "밸류에이션",
+    "투자 회수",
+    "금리·거시",
+    "쏠림"
+   ],
+   "summary": "Goldman Sachs는 글로벌 주식 랠리가 2027년까지 이어질 것으로 보며 S&P 500 12개월 목표를 8,700(배당 포함 총수익률 16%), TOPIX 총수익률을 24%로 제시했다. 글로벌 기술주 PER이 과거 20년 분포 하위 20%에 있어 빅테크가 저평가돼 있고 재무 건전성도 양호하다고 판단한다. 이익 증가율 둔화에도 금리·유가 하락과 성장 가능 기업의 재평가가 주가를 받친다고 보며 미국·일본 비중확대, 유럽 비중축소를 권고한다.",
+   "points": [
+    "Goldman Sachs는 향후 12개월간 S&P 500이 8,700까지 오르며 배당을 포함한 총수익률이 16%에 이를 것으로 전망했다. 11월 12일 기준 비교 지점 7,592.40 대비 약 14.6% 상승에 해당한다.",
+    "Peter Oppenheimer 팀은 글로벌 주식시장 랠리가 2027년까지 이어질 것으로 예상한다고 밝혔다.",
+    "글로벌 기술주의 PER은 과거 20년 분포의 하위 20%에 있고, 대형 클라우드 사업자인 하이퍼스케일러는 전통적 방어 업종보다 싸졌다. 여기서 '저평가'는 과거 밸류에이션 수준 및 다른 업종 대비 위치를 뜻하며, 모든 빅테크가 같은 정도로 싸다는 뜻은 아니다.",
+    "Goldman Sachs는 빅테크 기업의 재무 건전성이 대체로 양호하며, 현재 주가에는 과도한 비관이 반영돼 있다고 판단한다.",
+    "Goldman Sachs는 미국 기업의 이익 증가율이 2026년 36%에서 2027년 11%로 둔화할 것으로 예상한다. 이는 AI 수요가 사라진다는 예측이 아니며, 투자 증가율이 낮아져도 투자 절대액은 높은 수준을 유지할 수 있다.",
+    "Goldman Sachs는 미국과 일본에 비중확대, 유럽에 비중축소 의견을 부여했다. 11월 12일 전망 기준 TOPIX의 향후 12개월 배당 포함 총수익률은 24%로 미국을 웃돈다.",
+    "일본 기업의 이익 증가율도 2026년 24%에서 2027년 9%로 둔화할 전망이지만, AI 관련 투자 외에 방위·사회 인프라 투자, 자본효율 개선, 주주환원 등 여러 요인이 주가를 받치기 때문에 일본 주식이 선호된다.",
+    "Goldman Sachs의 전망은 이익이 좋은 기업의 이익이 더 늘어난다는 단순 강세론이 아니다. 전체 이익 증가세가 둔화할수록 지속 성장이 가능한 기업의 밸류에이션이 더 높아진다는 시각이며, 금리와 유가 하락도 주가를 떠받치는 요인으로 꼽았다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
+  },
   {
    "id": "pimco-the-credit-market-lens-in-a-slower-ai-buildout-w",
    "group": "자산운용",
@@ -263,6 +301,38 @@
     "Altimeter는 Anthropic IPO에 50억 달러를 주문한다. 이는 지금까지 IPO에서 낸 최대 주문의 5배가 넘는 규모이며, 장기간 핵심 복리 성장 종목이 될 것으로 본다.",
     "주요 선거, 반도체 급락, NVIDIA CEO의 퇴출을 꼽으며, 이런 상황이면 Anthropic IPO에는 매우 나쁜 배경이라고 했을 것이라고 인정했다.",
     "올해 NVIDIA 지분을 큰 규모에서 작은 규모로 줄였다. 기사에 따르면 주가수익비율이 약 33배인 상황에서도 칩 공급사보다 AI 연구소를 보유하는 쪽을 선호한다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
+  },
+  {
+   "id": "ark-anthropic-ipo-puts-spacex-in-spotlight-why-cathi",
+   "group": "자산운용",
+   "org": "ARK Invest",
+   "person": null,
+   "kind": "report",
+   "title": "Anthropic IPO로 SpaceX 주목 — Cathie Wood의 ARK가 AI 연구소가 컴퓨팅에 Musk에게 '터무니없는' 가격을 낼 수 있다고 보는 이유",
+   "title_orig": "Anthropic IPO Puts SpaceX In Spotlight — Why Cathie Wood’s ARK Thinks The AI Lab Could Pay Musk ‘Obscene’ Prices For Compute",
+   "url": "https://finance.yahoo.com/technology/ai/articles/anthropic-ipo-puts-spacex-spotlight-071427039.html",
+   "outlet": "Yahoo Finance",
+   "published_kst": "2026-11-17T01:00:00+09:00",
+   "stance": {
+    "ai_tech": 1,
+    "market": null
+   },
+   "args": [
+    "경쟁·해자",
+    "수요·채택",
+    "투자 회수"
+   ],
+   "summary": "ARK의 Brett Winton은 3~4개 기업이 약 40조 달러 규모의 AI 지식노동 시장을 놓고 경쟁하며, SpaceX가 한계 공급을 쥐고 있어 컴퓨팅 한계 가격이 터무니없는 수준까지 오를 수 있다고 본다. Anthropic과 OpenAI가 지금 웃돈을 내더라도 고객을 선점해 장기 수익성을 높일 수 있다고 설명했다.",
+   "points": [
+    "Winton은 Anthropic과 OpenAI가 고객을 여러 해 붙잡아 둘 수 있다면, 컴퓨팅 파워에 SpaceX에 웃돈을 내는 것을 정당화할 수 있다고 X에서 밝혔다.",
+    "Winton은 Anthropic과 OpenAI가 다른 곳에 컴퓨팅을 이미 확보해 두었지만 그 물량을 기다리는 동안 경쟁사가 갈아타기를 꺼리는 고객을 선점할 시간을 얻을 수 있다고 했다. 지금 SpaceX에 더 내면 각 연구소가 그 고객을 확보하고, 예약해 둔 용량이 가동된 뒤 더 높은 수익성으로 서비스할 수 있다는 것이다.",
+    "Winton은 SpaceX의 컴퓨팅 우위 때문에 두 연구소가 시장 과반을 차지하지 못할 것임을 알면서도, 확보해 둔 컴퓨팅으로 의미 있는 소수 시장을 서비스하며 장기 수익성을 극대화하려고 단기적으로 비싸게 지불한다고 설명했다."
    ],
    "judged": {
     "basis": "full_text",
