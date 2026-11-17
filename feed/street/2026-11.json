@@ -1,8 +1,72 @@
 {
  "schema": 1,
  "month": "2026-11",
- "updated_kst": "2026-11-17T05:19:26+09:00",
+ "updated_kst": "2026-11-17T08:19:05+09:00",
  "items": [
+  {
+   "id": "morgan-stanley-2027-global-outlook-powered-by-ai-tested-by-oil",
+   "group": "투자은행",
+   "org": "Morgan Stanley",
+   "person": "Seth Carpenter",
+   "kind": "publication",
+   "title": "2027 글로벌 전망: AI가 이끌고 유가가 시험한다",
+   "title_orig": "2027 Global Outlook: Powered by AI, Tested by Oil",
+   "url": "https://www.morganstanley.com/insights/podcasts/thoughts-on-the-market",
+   "outlet": "Morgan Stanley Thoughts on the Market",
+   "published_kst": "2026-11-17T06:30:00+09:00",
+   "stance": {
+    "ai_tech": 1,
+    "market": 0
+   },
+   "args": [
+    "투자 회수",
+    "수요·채택",
+    "금리·거시"
+   ],
+   "summary": "AI 설비투자가 미국과 아시아 수출국을 중심으로 유가 충격과 금리 인상 속에서도 세계 성장을 떠받치고 있다고 본다. 2027년 세계 성장률은 3.3%로 소폭 둔화하겠지만 상방 위험이 더 크고, AI 투자가 기대에 못 미치면 성장 둔화가 올 수 있다고 짚는다. 위험자산의 결과 범위는 유난히 넓다고 평가한다.",
+   "points": [
+    "AI 설비투자가 글로벌 성장의 기저 동력이며, 에너지 충격과 중앙은행 금리 인상에도 성장이 버티고 있다.",
+    "한국·대만 등 아시아 수출국이 AI 설비투자 수혜를 받으며, 성장률은 속도 한계로 둔화할 수 있으나 수출은 강하게 유지될 전망이다.",
+    "AI 투자가 기대에 못 미치면 직접 지출과 자산가격을 통한 부의 효과가 함께 약해져 침체까지는 아니어도 성장 둔화가 온다고 본다.",
+    "AI 도입에 따른 생산성 증가율 상승을 반영해 미국 성장 전망을 컨센서스보다 높게 잡았다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   }
+  },
+  {
+   "id": "vanguard-anthropic-fervor-vanguard-s-hot-sauce-etifs-emer",
+   "group": "자산운용",
+   "org": "Vanguard",
+   "person": "Katie Radke",
+   "kind": "publication",
+   "title": "Anthropic 열기, Vanguard의 '핫소스', 'ETIF' 등장",
+   "title_orig": "Anthropic Fervor, Vanguard's 'Hot Sauce,' \"ETIFs\" Emerge",
+   "url": "https://www.youtube.com/watch?v=r5uhv8AM5MM",
+   "outlet": "Bloomberg Television (유튜브)",
+   "published_kst": "2026-11-17T06:05:39+09:00",
+   "stance": {
+    "ai_tech": null,
+    "market": 1
+   },
+   "args": [
+    "금리·거시",
+    "자금 조달·신용"
+   ],
+   "summary": "Vanguard 채권 담당자는 투자자 대부분이 신흥국 채권을 적게 담고 있고, 수익률이 미 국채보다 높아 코어 채권을 보완할 만하다고 본다. 다만 단기 금리 상승 가능성 때문에 저신용 종목은 피하고 고신용 신흥국 채권에 집중한다고 밝힌다.",
+   "points": [
+    "대부분의 투자자는 신흥국 채권 비중이 낮아, 코어 채권 보완용으로 담을 여지가 있다고 본다.",
+    "신흥국 채권 수익률이 미국 채권보다 높아 매력적이라고 주장한다.",
+    "금리 상승 가능성 때문에 저신용 신흥국 채권은 피하고 고신용 종목에 집중한다.",
+    "단기적으로 금리 인상에 따라 수익률이 오를 수 있어 저신용 종목이 더 큰 타격을 받는다고 경고한다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "유튜브 자막(제작자 제공)(en) 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
+  },
   {
    "id": "blackrock-midterms-and-ai-in-focus-at-2027-forum-market-ta",
    "group": "자산운용",
@@ -269,6 +333,44 @@
     "basis": "full_text",
     "tier": "standard"
    }
+  },
+  {
+   "id": "altimeter-altimeter-plans-5-billion-anthropic-ipo-investme",
+   "group": "벤처캐피털",
+   "org": "Altimeter Capital",
+   "person": null,
+   "kind": "report",
+   "title": "Altimeter, Anthropic IPO에 50억 달러 투자 계획… Gerstner는 '핵심 복리 성장주'라고 평가",
+   "title_orig": "Altimeter Plans $5 Billion Anthropic IPO Investment. Gerstner Calls It A ‘Cornerstone Compounder.’",
+   "url": "https://www.ibtimes.com/altimeter-capital-5-billion-anthropic-ipo-investment-3809828",
+   "outlet": "International Business Times",
+   "published_kst": "2026-11-16T20:49:00+09:00",
+   "stance": {
+    "ai_tech": 1,
+    "market": null
+   },
+   "args": [
+    "투자 회수"
+   ],
+   "summary": "Brad Gerstner는 Altimeter가 Anthropic IPO에 50억 달러를 투자할 계획이며, 이는 자신이 과거 IPO에 넣은 금액의 5배라고 밝혔다. Anthropic을 오랫동안 핵심으로 복리 성장할 종목이라 보고, 기업 소개와 재무 상태가 매우 훌륭하다고 평가했다. 기술주 변동성이 큰 어려운 환경임을 인정하면서도 장기 전망은 긍정적으로 유지했다.",
+   "points": [
+    "Altimeter Capital 창업자 Brad Gerstner는 월요일, 자신의 투자사가 Anthropic 기업공개(IPO)에 50억 달러를 투자하는 것을 목표로 한다고 밝혔다. 이는 그가 과거 IPO에 넣은 어떤 금액보다 5배 큰 규모다.",
+    "Gerstner는 CNBC 'Halftime Report'에서 Anthropic을 장기 투자 기회로 설명하며, 이 회사가 오랫동안 포트폴리오의 중심에서 복리로 성장할 종목(cornerstone compounder)이라고 말했다. 또한 트레이드가 향하는 곳이 바로 여기라고 했다.",
+    "Gerstner는 Anthropic이 회사를 매우 훌륭하게 소개했고 재무적으로도 매우 좋은 위치에 있다고 평가했으며, 이것이 투자 결정의 배경이라고 했다.",
+    "Gerstner는 자신을 비롯한 투자자들이 상당한 규모의 주문을 넣고 있다고 덧붙였다.",
+    "Gerstner는 기술주, 특히 AI 관련 기업의 변동성이 큰 어려운 환경임을 인정하면서도 Anthropic의 장기 전망에 대해서는 긍정적인 견해를 유지했다."
+   ],
+   "evidence": [
+    {
+     "ko": "Gerstner는 CNBC 'Halftime Report'에서 Anthropic을 장기 투자 기회로 설명하며, 이 회사가 오랫동안 포트폴리오의 중심에서 복리로 성장할 종목(cornerstone compounder)이라고 말했다. 또한 트레이드가 향하는 곳이 바로 여기라고 했다.",
+     "orig": "\"I think this is a cornerstone compounder for a long time,\" Gerstner said. \"It's where the trade is going.\""
+    }
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
   },
   {
    "id": "gundlach-i-just-want-out-billionaire-investor-jeffrey-gun-2",

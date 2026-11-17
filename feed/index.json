@@ -1,7 +1,69 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-17T05:19:26+09:00",
+ "generated_kst": "2026-11-17T08:27:07+09:00",
  "reports": [
+  {
+   "slug": "vanguard-anthropic-fervor-vanguard-s-hot-sauce-etifs-emer",
+   "type": "article",
+   "title": "Bloomberg Television : ETF가 Anthropic 상장과 사모시장의 통로로 번지지만, 구조 한계와 신주 공급 부담이 남는다",
+   "companies": [
+    {
+     "name": "Anthropic",
+     "ticker": null
+    },
+    {
+     "name": "Nvidia",
+     "ticker": null
+    },
+    {
+     "name": "BlackRock",
+     "ticker": null
+    },
+    {
+     "name": "Vanguard",
+     "ticker": null
+    },
+    {
+     "name": "ARK Invest",
+     "ticker": null
+    },
+    {
+     "name": "BNY",
+     "ticker": null
+    }
+   ],
+   "published_kst": "2026-11-17T08:27:07+09:00",
+   "revised_kst": "2026-11-17T08:27:07+09:00",
+   "revision": 1,
+   "summary": "Anthropic 상장 직전 ETF 자금 흐름은 장기 투자보다 헤지펀드의 차익 거래에 가깝다. 상장 직후의 수급은 우호적이지만 오래 가지 않을 가능성이 크다. 이 방송에서 더 오래 남을 논점은 2027년 말까지 약 1.7조 달러로 추정되는 신주 공급과, 블랙록 ETIF처럼 유동성이 낮은 자산을 ETF에 담는 구조가 스트레스 국면에서 버티는지다.",
+   "path": "reports/vanguard-anthropic-fervor-vanguard-s-hot-sauce-etifs-emer.json"
+  },
+  {
+   "slug": "sixsigma-d",
+   "type": "article",
+   "title": "식스시그마 : 메모리 3사의 증설 자제와 장기계약이 미국 법정에서 담합 정황으로 다뤄지기 시작했다",
+   "companies": [
+    {
+     "name": "삼성전자",
+     "ticker": null
+    },
+    {
+     "name": "SK하이닉스",
+     "ticker": null
+    },
+    {
+     "name": "Micron",
+     "ticker": null
+    }
+   ],
+   "event": "미국 D램 담합 소송 기각 신청 불허(Garciaguirre v. Samsung Electronics)",
+   "event_date": "2026-11-14",
+   "published_kst": "2026-11-17T08:16:08+09:00",
+   "revised_kst": "2026-11-17T08:16:08+09:00",
+   "revision": 1,
+   "summary": "11월 14일 결정은 담합 인정이 아니라 소송 계속 결정이지만, 투자자가 호재로 보던 증설 자제·장기계약·고객 심사가 증거 개시 단계로 넘어가는 쟁점이 됐다. 판단을 바꿀 날짜는 12월 7일 답변서, 2027년 1월 12일 첫 사건관리회의, 그리고 그 뒤 증거 개시다.",
+   "path": "reports/sixsigma-d.json"
+  },
   {
    "slug": "sixsigma-40-96",
    "type": "article",
@@ -1267,7 +1329,7 @@
   }
  ],
  "street": {
-  "updated_kst": "2026-11-17T05:19:26+09:00",
+  "updated_kst": "2026-11-17T08:19:05+09:00",
   "path": "street.json"
  },
  "calendar": {
