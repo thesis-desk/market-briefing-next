@@ -1,21 +1,21 @@
 {
  "schema": 1,
- "updated_kst": "2026-11-17T23:20:29+09:00",
+ "updated_kst": "2026-11-18T02:22:56+09:00",
  "collectors": [
   {
    "name": "reports",
-   "items": 62,
-   "last_kst": "2026-11-17T23:20:29+09:00"
+   "items": 64,
+   "last_kst": "2026-11-18T02:22:56+09:00"
   },
   {
    "name": "street",
-   "items": 225,
-   "last_kst": "2026-11-17T20:20:32+09:00"
+   "items": 226,
+   "last_kst": "2026-11-18T02:18:55+09:00"
   },
   {
    "name": "calendar",
    "items": 51,
-   "last_kst": "2026-11-17T02:16:01+09:00"
+   "last_kst": "2026-11-18T02:14:02+09:00"
   }
  ],
  "missed": []

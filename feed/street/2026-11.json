@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "month": "2026-11",
- "updated_kst": "2026-11-17T20:20:32+09:00",
+ "updated_kst": "2026-11-18T02:18:55+09:00",
  "items": [
   {
    "id": "ubs-ubs-on-air-paul-donovan-daily-audio-are-consumer",
@@ -35,6 +35,29 @@
     "tier": "standard"
    },
    "note": "팟캐스트 음성을 음성 인식(Whisper)으로 받아 적은 전사 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
+  },
+  {
+   "id": "apollo-apollo-ceo-says-neocloud-funding-could-tighten-w",
+   "group": "PE·대체투자",
+   "org": "Apollo",
+   "person": null,
+   "kind": "report",
+   "title": "아폴로 CEO: 엔비디아의 금융 지원 없이는 네오클라우드 자금 조달이 조여질 수 있다",
+   "title_orig": "Apollo CEO Says Neocloud Funding Could Tighten Without Nvidia’s Financial Backing",
+   "url": "https://en.bloomingbit.io/feed/news/124652",
+   "outlet": "en.bloomingbit",
+   "published_kst": "2026-11-17T12:53:00+09:00",
+   "stance": {
+    "ai_tech": -1,
+    "market": null
+   },
+   "args": [
+    "자금 조달·신용"
+   ],
+   "judged": {
+    "basis": "headline_only",
+    "tier": "light"
+   }
   },
   {
    "id": "goldman-goldman-sachs-predicts-resurgence-of-us-big-tech",

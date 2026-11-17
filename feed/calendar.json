@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated_kst": "2026-11-17T02:16:01+09:00",
+ "updated_kst": "2026-11-18T02:14:02+09:00",
  "events": [
   {
    "company": "Oracle",
@@ -207,7 +207,7 @@
    "confirmed": true,
    "official": false,
    "source_url": "https://finance.yahoo.com/quote/HPE/",
-   "consensus_snapshot": false,
+   "consensus_snapshot": true,
    "report_slug": null,
    "status": "scheduled"
   },
