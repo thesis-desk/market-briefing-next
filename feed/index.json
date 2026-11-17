@@ -1,7 +1,28 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-17T14:16:57+09:00",
+ "generated_kst": "2026-11-17T15:09:49+09:00",
  "reports": [
+  {
+   "slug": "youtube-sam-altman-it-s-hard-to-imagine-the-ai-revolution",
+   "type": "interview",
+   "title": "샘 올트먼 인터뷰 : 젠슨 없는 엔비디아, 칩 수요 '이중 계산'과 메모리 부족",
+   "companies": [
+    {
+     "name": "OpenAI",
+     "ticker": null
+    },
+    {
+     "name": "Nvidia",
+     "ticker": null
+    }
+   ],
+   "event": "Semafor Silicon Valley & The World",
+   "published_kst": "2026-11-17T15:09:49+09:00",
+   "revised_kst": "2026-11-17T15:09:49+09:00",
+   "revision": 1,
+   "summary": "올트먼은 AI 수요는 의심하지 않으면서도 칩 업체들이 같은 고객 수요를 저마다 자기 몫으로 공급망에 전달하는 '이중 계산'이 있다고 인정했다. 엔비디아 외 칩 업체와 그 물량을 전제로 증설하는 공급망에는 경고이고, 메모리는 부족의 정점 신호와 증설 가속 신호가 함께 나왔다.",
+   "path": "reports/youtube-sam-altman-it-s-hard-to-imagine-the-ai-revolution.json"
+  },
   {
    "slug": "vanguard-anthropic-fervor-vanguard-s-hot-sauce-etifs-emer",
    "type": "article",
