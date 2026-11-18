@@ -2,14 +2,16 @@
  "schema": 1,
  "bundle": "B",
  "title": "프런티어 랩의 해외 용량 건별 조사",
- "updated_kst": "2026-11-18T18:13:36+09:00",
+ "updated_kst": "2026-11-18T18:20:28+09:00",
  "measure": "value",
  "notes": [
   "단위는 계약·프로젝트 1건이다. 대표 값(value)은 발표된 용량(MW)이며 건마다 뜻이 다르다(클러스터 계획, 부지 전체, 랩이 빌린 단계, 수전). basis 를 보지 않고 더하면 안 된다. 합계는 규모를 가늠하는 용도다.",
   "랩의 몫이 공개되지 않은 건(영국·호주 NEXTDC·말레이시아·독일·호주 Zerra·Meta-Firmus)은 값을 비웠다. 값 기준 집계에서 빠진다.",
   "package 는 파트너가 내놓은 것의 근거 문장이다. 따옴표 안은 원문 그대로, 그 밖은 원문을 옮겨 적은 것이다. package_src 에 번호가 없는 칸은 검색 요약에만 근거한다.",
-  "판정(verdict)은 AI 의 해석이며 다음 기준으로 냈다. ① 묶음: package 가 두 칸 이상 차 있고, 그 가운데 하나 이상이 임대 사업자라면 누구나 대는 것(부지·전력, 사업자 자신의 건설 자금)을 넘는다 — 국부·정부·전략 투자자의 자본, 정부·기업의 도입·구매 약속, 부품 공급. ② 입지: 랩 자신이 그 장소 고유의 조건(전력·기후·비용, 이용자와의 거리·지연시간, 그 나라 안에서 처리해야 하는 수요)을 이유로 들었거나, 이후의 보류·철회 사유가 입지 조건이었다. ①만이면 '묶음을 따라감', ②만이면 '입지를 따라감', 둘 다면 '둘 다', 둘 다 아니면 '판단 불가'. package 가 모두 비어 있는데도 간 건은 '입지를 따라감'으로 두고 반례로 모은다.",
-  "'그 나라 안에서 처리해야 하는 수요'(데이터 상주·주권 요건)는 입지 조건(배후 수요)으로, 파트너의 도입·구매 약속은 묶음의 수요 칸으로 갈랐다. 둘은 겹칠 수 있다(인도·독일).",
+  "판정은 AI 의 해석이며 두 기준으로 나란히 낸다. 두 기준 모두 ① 묶음과 ② 입지를 따로 보고, ①만이면 '묶음을 따라감', ②만이면 '입지를 따라감', 둘 다면 '둘 다', 둘 다 아니면 '판단 불가'다. package 가 모두 비어 있는데도 간 건은 '입지를 따라감'으로 두고 반례로 모은다. 이용 랩이 확인되지 않았거나 원문을 열지 못한 건, 본국의 자기 시설은 어느 기준으로도 판정하지 않았다.",
+  "좁은 기준(verdict): ① 묶음은 package 가 두 칸 이상 차 있고 그 가운데 하나 이상이 임대 사업자라면 누구나 대는 것(부지·전력, 사업자 자신의 건설 자금)을 넘을 때 — 국부·정부·전략 투자자의 자본, 정부·기업의 도입·구매 약속, 부품 공급. ② 입지는 랩 자신이 그 장소 고유의 조건(전력·기후·비용, 이용자와의 거리·지연시간, 그 나라 안에서 처리해야 하는 수요)을 이유로 들었거나 이후의 보류·철회 사유가 입지 조건일 때.",
+  "넓은 기준(verdict_wide): 요청의 묶음 정의를 그대로 따른다. ① 묶음은 package 네 칸 가운데 두 칸 이상에 근거가 있으면 된다(사업자의 통상 임대도 센다). 그 나라 안에서 처리해야 하는 수요(데이터 상주·주권)는 묶음의 수요로 본다. ② 입지는 랩 자신이 든 전력·기후·비용, 이용자와의 거리·지연시간과 보류·철회 사유만 센다.",
+  "두 기준이 갈리는 곳은 둘이다: 그 나라 안에서 처리해야 하는 수요(데이터 상주·주권)를 입지 조건(배후 수요)으로 보는가 묶음의 수요로 보는가, 그리고 부지·전력과 사업자 자금만 있는 통상 임대를 묶음으로 세는가.",
   "serves 는 그 용량이 누구에게 쓰이는가에 대한 랩·파트너의 설명이다: '국내'(그 나라의 주권·상주 수요), '권역·세계'(나라 밖 이용자 포함), '불명'.",
   "Mistral 의 프랑스 시설 3건은 본국 시설(home_country)이다. '랩이 왜 그 나라로 갔는가'의 사례가 아니므로 summary 는 전체(all)와 본국 제외(abroad)를 함께 낸다.",
   "Google DeepMind 는 구글 본체 리전과 구분되는 해외 용량 건을 찾지 못해 기록이 없다(excluded 참고).",
@@ -47,6 +49,40 @@
     "묶음을 따라감": 1190,
     "입지를 따라감": 1118,
     "둘 다": 1498,
+    "판단 불가": 121
+   },
+   "mw_total": 3927,
+   "no_mw": 6
+  },
+  "all_wide": {
+   "records": 22,
+   "by_verdict": {
+    "묶음을 따라감": 11,
+    "입지를 따라감": 1,
+    "둘 다": 7,
+    "판단 불가": 3
+   },
+   "mw_by_verdict": {
+    "묶음을 따라감": 2613,
+    "입지를 따라감": 1000,
+    "둘 다": 1637,
+    "판단 불가": 131
+   },
+   "mw_total": 5381,
+   "no_mw": 6
+  },
+  "abroad_wide": {
+   "records": 19,
+   "by_verdict": {
+    "묶음을 따라감": 10,
+    "입지를 따라감": 1,
+    "둘 다": 6,
+    "판단 불가": 2
+   },
+   "mw_by_verdict": {
+    "묶음을 따라감": 1213,
+    "입지를 따라감": 1000,
+    "둘 다": 1593,
     "판단 불가": 121
    },
    "mw_total": 3927,
@@ -149,6 +185,79 @@
     "stalled": []
    }
   },
+  "progress_by_verdict_wide_abroad": {
+   "묶음을 따라감": {
+    "records": [
+     "openai-kr-sk-southwest",
+     "openai-kr-samsung-pohang",
+     "openai-ar-stargate-argentina",
+     "openai-au-nextdc-s7",
+     "openai-my-firmus",
+     "openai-de-openai-for-germany",
+     "openai-jp-softbank-sakai",
+     "anthropic-au-zerra-western-downs",
+     "xai-sa-humain",
+     "mistral-se-borlange-ecodatacenter"
+    ],
+    "contract_or_beyond": [
+     "openai-my-firmus",
+     "anthropic-au-zerra-western-downs",
+     "mistral-se-borlange-ecodatacenter"
+    ],
+    "construction_or_beyond": [],
+    "stalled": [
+     "openai-kr-sk-southwest",
+     "openai-kr-samsung-pohang"
+    ]
+   },
+   "입지를 따라감": {
+    "records": [
+     "meta-ca-sturgeon-county"
+    ],
+    "contract_or_beyond": [
+     "meta-ca-sturgeon-county"
+    ],
+    "construction_or_beyond": [
+     "meta-ca-sturgeon-county"
+    ],
+    "stalled": []
+   },
+   "둘 다": {
+    "records": [
+     "openai-ae-stargate-uae",
+     "openai-no-stargate-norway",
+     "openai-gb-stargate-uk",
+     "openai-in-tata-hypervault",
+     "anthropic-ca-everwind-point-tupper",
+     "meta-in-reliance-jamnagar"
+    ],
+    "contract_or_beyond": [
+     "openai-ae-stargate-uae",
+     "openai-in-tata-hypervault",
+     "anthropic-ca-everwind-point-tupper",
+     "meta-in-reliance-jamnagar"
+    ],
+    "construction_or_beyond": [
+     "openai-ae-stargate-uae"
+    ],
+    "stalled": [
+     "openai-no-stargate-norway",
+     "openai-gb-stargate-uk"
+    ]
+   },
+   "판단 불가": {
+    "records": [
+     "anthropic-no-volta-tydal",
+     "meta-id-firmus-sea"
+    ],
+    "contract_or_beyond": [
+     "anthropic-no-volta-tydal",
+     "meta-id-firmus-sea"
+    ],
+    "construction_or_beyond": [],
+    "stalled": []
+   }
+  },
   "package_cells_abroad": {
    "capital": 15,
    "power_site": 18,
@@ -186,7 +295,7 @@
     "anthropic-ca-everwind-point-tupper",
     "mistral-se-borlange-ecodatacenter"
    ],
-   "note": "파트너가 내놓은 것이 데이터센터 사업자의 통상 역할(부지·전력·자기 건설 자금)뿐이다."
+   "note": "파트너가 내놓은 것이 데이터센터 사업자의 통상 역할(부지·전력·자기 건설 자금)뿐이다. 좁은 기준에서만 반례다 — 넓은 기준에서는 호주 NEXTDC 와 스웨덴이 '묶음', 캐나다가 '둘 다'가 된다."
   },
   {
    "kind": "묶음이 있었는데 입지 조건 때문에 멈추거나 늦어진 건",
@@ -288,6 +397,8 @@
    ],
    "verdict": "둘 다",
    "verdict_basis": "국부 자본의 맞교환 투자, 전국 단위 ChatGPT 도입, 현지 사업자의 부지·건설이 함께 왔다(묶음). 동시에 OpenAI 는 반경 2,000마일 안의 인구를 닿는 범위로 들었다(입지). 칩은 현지 파트너가 아니라 엔비디아가 공급한다.",
+   "verdict_wide": "둘 다",
+   "verdict_wide_basis": "묶음 세 칸이 차 있고, OpenAI 가 반경 2,000마일의 도달 범위를 들었다.",
    "serves": "권역·세계",
    "serves_basis": "OpenAI 가 반경 2,000마일·세계 인구 절반을 닿는 범위로 밝혔다.",
    "sources": [
@@ -398,6 +509,8 @@
    ],
    "verdict": "둘 다",
    "verdict_basis": "노르웨이 산업 그룹과 사업자의 합작 자본·부지가 있었고(묶음), OpenAI 스스로 수력·전기요금·기후를 이유로 들었다(입지). 다만 OpenAI 의 계약은 끝내 맺어지지 않았고 같은 부지가 Microsoft 용으로 진행 중이다 — 입지는 남고 랩과의 묶음만 풀린 사례다.",
+   "verdict_wide": "둘 다",
+   "verdict_wide_basis": "합작 자본·부지가 있었고 OpenAI 가 수력·전기요금·기후를 들었다.",
    "serves": "권역·세계",
    "serves_basis": "\"Surplus capacity will be made available to public and private sector users across the UK, Nordics and Northern Europe\"",
    "sources": [
@@ -510,6 +623,8 @@
    ],
    "verdict": "둘 다",
    "verdict_basis": "정부 양해각서·성장 구역·현지 사업자가 함께 온 발표였다(묶음, 다만 자본·구매 약속은 없다). 그런데 보류 사유는 전기요금과 규제, 곧 입지 조건이었다. 묶음이 있어도 입지 조건 때문에 멈춘 사례다.",
+   "verdict_wide": "둘 다",
+   "verdict_wide_basis": "전력·부지와 정부 양해각서(주권 수요)가 있었고, 보류 사유가 전기요금·규제였다.",
    "serves": "국내",
    "serves_basis": "\"영국에서, 영국을 위해\" 운영하고 사법권이 중요한 용도에 쓴다고 밝혔다.",
    "sources": [
@@ -608,6 +723,8 @@
    ],
    "verdict": "묶음을 따라감",
    "verdict_basis": "메모리 공급 의향, 계열사의 ChatGPT 도입, 정부 양해각서가 한 날 함께 발표됐고, 대통령실은 데이터센터를 '협력의 혜택을 돌려주는 것'으로 설명했다. OpenAI 가 이 장소를 고른 입지 이유는 일반적인 칭찬뿐이다. 1년이 지나도록 부지·전력·자금이 정해지지 않았다.",
+   "verdict_wide": "묶음을 따라감",
+   "verdict_wide_basis": "부품·도입·정부 양해각서가 함께 왔고 장소 고유의 이유가 없다.",
    "serves": "불명",
    "serves_basis": "발표문에 누구에게 쓸 용량인지 적혀 있지 않다.",
    "sources": [
@@ -715,6 +832,8 @@
    ],
    "verdict": "묶음을 따라감",
    "verdict_basis": "메모리 공급 의향, 계열사의 ChatGPT 도입, 정부 양해각서가 한 날 함께 발표됐고, 대통령실은 데이터센터를 '협력의 혜택을 돌려주는 것'으로 설명했다. OpenAI 가 이 장소를 고른 입지 이유는 일반적인 칭찬뿐이다. 1년이 지나도록 부지·전력·자금이 정해지지 않았다.",
+   "verdict_wide": "묶음을 따라감",
+   "verdict_wide_basis": "부품·도입·정부 양해각서가 함께 왔고 장소 고유의 이유가 없다.",
    "serves": "불명",
    "serves_basis": "발표문에 누구에게 쓸 용량인지 적혀 있지 않다.",
    "sources": [
@@ -816,6 +935,8 @@
    ],
    "verdict": "묶음을 따라감",
    "verdict_basis": "사업을 이끄는 쪽은 현지 개발사이고 자본·전력·부지와 정부 유인책이 그쪽에서 나온다. OpenAI 는 '잠재적 구매자'로만 적혔고 장소 고유의 이유를 스스로 들지 않았다(재생에너지를 든 것은 파트너다).",
+   "verdict_wide": "묶음을 따라감",
+   "verdict_wide_basis": "자본·전력·부지를 현지 개발사가 대고 랩은 장소 고유의 이유를 들지 않았다.",
    "serves": "불명",
    "serves_basis": "누구에게 쓸 용량인지 밝히지 않았다.",
    "sources": [
@@ -913,6 +1034,8 @@
    ],
    "verdict": "입지를 따라감",
    "verdict_basis": "파트너가 내놓은 것은 데이터센터 사업자의 통상 역할(부지·개발)뿐이고 자본 투자·구매 약속·부품은 없다. OpenAI 가 든 이유는 호주 안에서 처리해야 하는 정부·기업 수요다.",
+   "verdict_wide": "묶음을 따라감",
+   "verdict_wide_basis": "자본·부지 두 칸이 차 있고, 랩이 든 호주 안의 주권 수요를 이 기준에서는 묶음의 수요로 본다.",
    "serves": "국내",
    "serves_basis": "호주의 주권 컴퓨트, 정부·기업·연구의 민감한 작업용이라고 밝혔다.",
    "sources": [
@@ -1015,6 +1138,8 @@
    ],
    "verdict": "둘 다",
    "verdict_basis": "용량을 대는 타타가 동시에 수십만 명 규모의 도입 고객이다(묶음). OpenAI 스스로는 인도 안의 이용자 1억 명, 지연시간, 데이터 상주 요건을 이유로 들었다(입지 — 배후 수요).",
+   "verdict_wide": "둘 다",
+   "verdict_wide_basis": "묶음 세 칸이 차 있고, OpenAI 가 이용자 1억 명과 지연시간을 들었다.",
    "serves": "국내",
    "serves_basis": "인도 안에서 모델을 돌려 데이터 상주·정부 업무 요건을 맞춘다고 밝혔다.",
    "sources": [
@@ -1095,6 +1220,8 @@
    ],
    "verdict": "판단 불가",
    "verdict_basis": "사업자의 통상 임대이고 OpenAI 가 말레이시아를 고른 이유를 밝힌 글을 찾지 못했다. 위치와 용량도 공개되지 않았다.",
+   "verdict_wide": "묶음을 따라감",
+   "verdict_wide_basis": "사업자의 자본·부지 두 칸이 차 있고 랩이 든 입지 이유가 없다.",
    "serves": "불명",
    "serves_basis": "누구에게 쓸 용량인지 밝히지 않았다.",
    "sources": [
@@ -1176,6 +1303,8 @@
    ],
    "verdict": "둘 다",
    "verdict_basis": "투자와 운영, 공공 부문 판로를 SAP 가 내놓았고(묶음), 독일 안에서 처리해야 하는 공공 부문 수요가 이유다(입지 — 배후 수요). 랩의 전용 캠퍼스가 아니라 파트너 클라우드 안의 용량이다.",
+   "verdict_wide": "묶음을 따라감",
+   "verdict_wide_basis": "SAP 의 투자·운영·공공 판로가 있고, 독일 안의 주권 수요를 이 기준에서는 묶음의 수요로 본다.",
    "serves": "국내",
    "serves_basis": "독일 공공 부문의 데이터 주권·법 요건을 맞추는 용도라고 밝혔다.",
    "sources": [
@@ -1255,6 +1384,8 @@
    "siting_reason": [],
    "verdict": "묶음을 따라감",
    "verdict_basis": "부지·전력·자본을 소프트뱅크가 대고 합작사가 판로를 맡는다. OpenAI 가 이 장소를 고른 이유를 밝힌 적이 없다. 이 부지가 OpenAI 의 용량이라는 연결 자체가 보도에 기댄 것이라 신뢰도가 낮다.",
+   "verdict_wide": "묶음을 따라감",
+   "verdict_wide_basis": "부지·자본·판로를 소프트뱅크가 대고 랩이 든 입지 이유가 없다.",
    "serves": "국내",
    "serves_basis": "일본 기업 고객용 에이전트 사업을 위한 것이라고 보도됐다.",
    "sources": [
@@ -1336,6 +1467,8 @@
    ],
    "verdict": "판단 불가",
    "verdict_basis": "파트너가 내놓은 것은 개발 컨소시엄의 통상 역할(부지·건설 자금·계통 연결)이고 정부·기업의 구매 약속이나 부품은 없다. Anthropic 은 이 부지를 고른 이유를 밝히지 않았다(논평 거절). 공개된 것은 미국 집중을 줄인다는 일반적 이유뿐이다.",
+   "verdict_wide": "묶음을 따라감",
+   "verdict_wide_basis": "컨소시엄의 자본·부지·계통 연결 두 칸이 차 있고 랩이 든 입지 이유가 없다.",
    "serves": "불명",
    "serves_basis": "기사들은 추론용이라 이용자 가까이 두는 것이라고 풀이하지만 랩의 말이 아니다.",
    "sources": [
@@ -1447,6 +1580,8 @@
    ],
    "verdict": "입지를 따라감",
    "verdict_basis": "파트너가 내놓은 것은 사업자의 통상 임대(부지·풍력·자기 자금)이고, Anthropic 이 든 이유는 이용자와의 거리다.",
+   "verdict_wide": "둘 다",
+   "verdict_wide_basis": "사업자의 자본·부지·풍력 두 칸이 차 있고, Anthropic 이 이용자와의 거리를 들었다.",
    "serves": "권역·세계",
    "serves_basis": "캐나다와 세계 고객의 수요를 받친다고 밝혔다.",
    "sources": [
@@ -1542,6 +1677,8 @@
    ],
    "verdict": "판단 불가",
    "verdict_basis": "이용 랩이 Anthropic 인지부터 확인되지 않았고 랩의 설명이 없다. 구조만 보면 중간 사업자가 신용 보강으로 자금을 대는 묶음이고, 입지 이유는 부지 소유자의 말뿐이다.",
+   "verdict_wide": "판단 불가",
+   "verdict_wide_basis": "이용 랩이 확인되지 않아 어느 기준으로도 판정하지 않는다.",
    "serves": "불명",
    "serves_basis": "누구에게 쓸 용량인지 밝힌 글이 없다.",
    "sources": [
@@ -1622,6 +1759,8 @@
    "siting_reason": [],
    "verdict": "묶음을 따라감",
    "verdict_basis": "국영 계열 파트너와의 공동 건설과 전국 배포가 함께 발표됐고 xAI 가 든 입지 이유는 찾지 못했다. 미국의 칩 수출 승인이 전제였다. 진척은 확인되지 않는다.",
+   "verdict_wide": "묶음을 따라감",
+   "verdict_wide_basis": "국영 계열 파트너와의 공동 건설이 발표됐고 랩이 든 입지 이유가 없다.",
    "serves": "불명",
    "serves_basis": "누구에게 쓸 용량인지 원문으로 확인하지 못했다.",
    "sources": [
@@ -1688,6 +1827,8 @@
    "siting_reason": [],
    "verdict": "입지를 따라감",
    "verdict_basis": "묶음 네 칸이 모두 비어 있다. 부지·자본·발전 설비 비용을 랩이 스스로 대고 발전소는 돈을 내고 쓰는 계약이다. Meta 는 앨버타를 고른 이유를 글로 밝히지 않았지만, 로이터는 주정부가 전력 한도를 피하도록 자가 발전을 허용한다고 전했다.",
+   "verdict_wide": "입지를 따라감",
+   "verdict_wide_basis": "묶음 네 칸이 모두 비어 있다.",
    "serves": "권역·세계",
    "serves_basis": "자사 AI 작업과 세계 이용자용 제품을 받친다고 밝혔다.",
    "sources": [
@@ -1774,6 +1915,8 @@
    ],
    "verdict": "둘 다",
    "verdict_basis": "Meta 스스로 이용자 기반·시장(입지)과 릴라이언스와의 협력(묶음)을 함께 이유로 들었다. 릴라이언스는 2020년 Meta 가 57억 달러를 투자한 지오의 모회사이고 합작사도 있다 — 자본은 파트너에서 랩으로가 아니라 랩에서 파트너로 흘렀다.",
+   "verdict_wide": "둘 다",
+   "verdict_wide_basis": "릴라이언스의 건설·부지 두 칸이 차 있고, Meta 가 이용자 기반·시장과의 거리·에너지 자원을 들었다.",
    "serves": "국내",
    "serves_basis": "인도의 이용자에게 속도와 품질로 서비스한다고 밝혔다.",
    "sources": [
@@ -1829,6 +1972,8 @@
    "siting_reason": [],
    "verdict": "판단 불가",
    "verdict_basis": "원문을 열지 못했고 위치·용량·이유가 모두 공개되지 않았다.",
+   "verdict_wide": "판단 불가",
+   "verdict_wide_basis": "원문을 열지 못해 어느 기준으로도 판정하지 않는다.",
    "serves": "불명",
    "serves_basis": "밝힌 글을 찾지 못했다.",
    "sources": [
@@ -1907,6 +2052,8 @@
    ],
    "verdict": "둘 다",
    "verdict_basis": "프랑스 은행단의 대출과 프랑스 대기업 출범 파트너가 있고(묶음), 유럽 안에서 처리해야 하는 수요와 탈탄소 전력을 이유로 들었다(입지). 본국 시설이라 '해외로 간 이유'의 사례는 아니다.",
+   "verdict_wide": "둘 다",
+   "verdict_wide_basis": "대출·출범 파트너 두 칸이 차 있고, Mistral 이 탈탄소 전력을 들었다.",
    "serves": "국내",
    "serves_basis": "유럽 규제·데이터 주권 요건을 맞추는 용도라고 밝혔다.",
    "sources": [
@@ -2005,6 +2152,8 @@
    ],
    "verdict": "묶음을 따라감",
    "verdict_basis": "국부펀드 계열과 공공 은행의 자본, 칩 회사의 출자, 송전사의 가속 접속이 묶여 랩에 용량을 대는 구조다. 본국 시설이라 '해외로 간 이유'의 사례는 아니다.",
+   "verdict_wide": "묶음을 따라감",
+   "verdict_wide_basis": "국부·공공 자본, 부지·전력, 칩 회사 출자가 묶였다.",
    "serves": "권역·세계",
    "serves_basis": "유럽 전역의 AI 팩토리 망의 출발점이라고 밝혔다.",
    "sources": [
@@ -2099,6 +2248,8 @@
    ],
    "verdict": "입지를 따라감",
    "verdict_basis": "파트너는 데이터센터 사업자의 통상 역할이고 정부·기업의 구매 약속이나 부품은 없다. Mistral 이 든 이유는 유럽 안에 데이터를 두고 처리한다는 것이며, 스웨덴 부지의 장점(재생에너지·확장성)은 사업자가 들었다.",
+   "verdict_wide": "묶음을 따라감",
+   "verdict_wide_basis": "공동 투자·부지 두 칸이 차 있고, 랩이 든 유럽 안의 처리 요건을 이 기준에서는 묶음의 수요로 본다. 스웨덴 부지의 장점은 사업자가 들었다.",
    "serves": "권역·세계",
    "serves_basis": "유럽 안에서 데이터를 처리·저장하는 용량이라고 밝혔다.",
    "sources": [
@@ -2163,6 +2314,8 @@
    ],
    "verdict": "판단 불가",
    "verdict_basis": "본국의 자기 시설이고 밝힌 이유는 장소가 아니라 용량에 대한 통제권이다. 파트너가 공개되지 않아 묶음 칸이 비어 있지만 '입지만 보고 해외로 간 건'으로 셀 수 없다.",
+   "verdict_wide": "판단 불가",
+   "verdict_wide_basis": "본국의 자기 시설이고 밝힌 이유가 장소가 아니다.",
    "serves": "불명",
    "serves_basis": "누구에게 쓸 용량인지 밝히지 않았다.",
    "sources": [

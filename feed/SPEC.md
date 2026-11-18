@@ -245,6 +245,7 @@
 - `status`: `collecting`(모으는 중) | `draft`(다 모았고 확인 전) | `verified`(큰 값을 원문으로 확인함). 시작하지 않은 묶음도 `collecting` 이고 `records` 가 0, `updated_kst` 가 `null` 이다.
 - `verified_share`: 합계 가운데 원문을 열어 확인한 값의 비중(0~1). 묶음 파일의 `measure` 가 `"value"` 면 기록의 `value` 합으로, `null` 이면 건수로 낸다. 값이 없는(`null`) 기록은 값 기준 합계에서 빠진다.
 - `hypotheses[].verdict`: `지지` | `반박` | `엇갈림` | `판단 보류`. 판정과 근거는 AI 의 해석이다.
+- `hypotheses[].by_criterion`: 판정이 기준에 따라 갈릴 때만 있다. `[{"criterion": "…", "verdict": "…"}]`.
 
 묶음 파일은 `{"schema", "bundle", "title", "updated_kst", "measure", "notes", "records", …}` 이다. 묶음마다 기록에서 계산한 집계(`summary`, `by_country` 등)가 더 붙을 수 있다.
 
@@ -265,7 +266,7 @@
 - `revised_kst` 는 값을 고친 적이 있을 때만 있다. 고친 내용은 `STATUS.md` 에 있다.
 - 용량의 기준은 `it`(IT 용량) | `utility`(IT 용량 없이 수전 용량만 공개됨) | `unknown`(기준 불명)이다. 수전 값을 IT 로 환산한 값은 넣지 않는다.
 
-`lab_overseas.json`(묶음 B)의 기록은 공통 필드에 더해 `lab`, `site`, `announced`, `mw`(`value`·`basis`·`certainty`·`phases`), `stage`(`MoU` | `계약` | `착공` | `가동` — 지금까지 닿은 단계), `status_now`·`status_flag`(`진행` | `지연` | `보류` | `취소` | `불명`)·`status_asof`, `partners[]`, `package`(`capital`·`power_site`·`demand`·`components` — 파트너가 내놓은 것의 근거 문장 또는 `null`)와 `package_src`, `lab_spend`, `siting_reason[]`(`orig`·`ko`·`speaker`·`src`), `verdict`(`묶음을 따라감` | `입지를 따라감` | `둘 다` | `판단 불가`)·`verdict_basis`, `serves`(`국내` | `권역·세계` | `불명`)·`serves_basis`, `home_country`(랩의 본국 시설이면 `true`)를 갖는다. 파일에는 판정별 집계(`summary`), H2 에 어긋나는 건의 묶음(`counter`), 협의 단계라 기록으로 세우지 않은 것(`pending`), 넣지 않은 것과 이유(`excluded`)가 함께 있고, 판정 기준은 `notes` 에 있다. 판정과 `serves` 는 AI 의 해석이다.
+`lab_overseas.json`(묶음 B)의 기록은 공통 필드에 더해 `lab`, `site`, `announced`, `mw`(`value`·`basis`·`certainty`·`phases`), `stage`(`MoU` | `계약` | `착공` | `가동` — 지금까지 닿은 단계), `status_now`·`status_flag`(`진행` | `지연` | `보류` | `취소` | `불명`)·`status_asof`, `partners[]`, `package`(`capital`·`power_site`·`demand`·`components` — 파트너가 내놓은 것의 근거 문장 또는 `null`)와 `package_src`, `lab_spend`, `siting_reason[]`(`orig`·`ko`·`speaker`·`src`), `verdict`(`묶음을 따라감` | `입지를 따라감` | `둘 다` | `판단 불가` — 좁은 기준)·`verdict_basis`, `verdict_wide`·`verdict_wide_basis`(넓은 기준 — 요청의 묶음 정의 그대로), `serves`(`국내` | `권역·세계` | `불명`)·`serves_basis`, `home_country`(랩의 본국 시설이면 `true`)를 갖는다. 파일에는 판정별 집계(`summary` — `_wide` 가 붙은 것은 넓은 기준), H2 에 어긋나는 건의 묶음(`counter`), 협의 단계라 기록으로 세우지 않은 것(`pending`), 넣지 않은 것과 이유(`excluded`)가 함께 있고, 판정 기준은 `notes` 에 있다. 판정과 `serves` 는 AI 의 해석이다.
 
 ## 처음 요청과 다르게 정한 것
 
