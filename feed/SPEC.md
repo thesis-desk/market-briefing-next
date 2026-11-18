@@ -139,7 +139,7 @@
 ### 그 밖의 필드
 
 - `sources[].access`: `public` | `paid` | `private`(공개 링크가 없는 출처. `url` 이 없다).
-- `sources[].kind`: `press_release` | `transcript_official` | `transcript_third_party` | `presentation` | `market_data` | `prior_report` | `article` | `video` | `news`(언론 보도) | `telegram`(텔레그램 글). 종류가 적혀 있지 않은 인터뷰·글 분석의 출처는 주소가 유튜브면 `video`, 아니면 `article` 로 낸다.
+- `sources[].kind`: `press_release` | `transcript_official` | `transcript_third_party` | `presentation` | `market_data` | `prior_report` | `article` | `video` | `news`(언론 보도) | `telegram`(텔레그램 글) | `desk`(데스크 기록). 종류가 적혀 있지 않은 인터뷰·글 분석의 출처는 주소가 유튜브면 `video`, 아니면 `article` 로 낸다.
 - `sources[].read`: 실제로 읽은 범위. `전문` | `일부` | `요약만`.
 - `period` 는 회사가 쓰는 분기 이름이다(회계연도가 달력과 다른 회사 포함). `period_end` 는 그 분기의 말일이라 회사끼리 견줄 때 쓴다. 둘 다 있을 때만 들어간다.
 - `prev_slug`: 이 사이트에 직전 분기 리포트가 있으면 그 슬러그, 없으면 `null`.
@@ -269,3 +269,4 @@
 
 - 리포트 종류에 행사 정리(`event`)를 더했다. 기술 행사·전시회·금융기관 컨퍼런스를 행사 단위로 정리한 리포트이고 절은 `s1`, `s2` … 로 나간다.
 - 출처 `kind` 에 `news`(언론 보도)와 `telegram`(텔레그램 글)을 더했다. 행사 정리에서 기업 자료와 2차 자료를 가르는 데 쓴다.
+- 출처 `kind` 에 `desk`(데스크 기록)를 더했다. 행사 정리가 데스크의 투자 가설을 견줄 기준으로 붙일 때 쓰고, 사실의 근거가 아니다.
