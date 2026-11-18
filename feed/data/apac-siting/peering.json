@@ -2,13 +2,13 @@
  "schema": 1,
  "bundle": "C4-5",
  "title": "도시별 접속 여건과 도시 간 지연시간",
- "updated_kst": "2026-11-18T18:54:06+09:00",
+ "updated_kst": "2026-11-18T18:57:48+09:00",
  "measure": null,
  "notes": [
   "C4: 도시 1곳이 기록 하나다(kind 가 peering). PeeringDB 공개 API 의 값을 그대로 센 것이다(`desk datasets peering`). 대표 값은 참여 네트워크가 1곳 이상인 인터넷 교환점의 수다.",
   "도시는 PeeringDB 에 적힌 도시 이름으로 가른다. 수도권의 다른 시(예: 서울 밖 경기·인천, 도쿄 밖 지바)에 등록된 교환점·시설은 잡히지 않는다.",
   "presence 는 Google·Meta·Microsoft·Amazon 과 CDN 네 곳(Cloudflare·Akamai·Netflix·Fastly)이 그 도시의 교환점 몇 곳에 접속했는가(ix), 그 도시의 시설 몇 곳에 입주했다고 등록했는가(fac)다. 등록하지 않은 접속은 보이지 않는다.",
-  "C5(도시 간 왕복 지연시간)는 아직 모으지 않았다. 모으면 kind 가 latency 인 기록으로 넣는다.",
+  "C5: 도시 쌍 1개가 기록 하나다(kind 가 latency). WonderNetwork 가 공개하는 서버 사이 ping 왕복 시간의 평균을 받은 날의 값 그대로 적었다(보간·평균 없음). 한 사업자의 서버 한 쌍 값이라 통신사 경로에 따라 실제 값은 달라진다. 조호르는 원천에 서버가 없어 쿠알라룸푸르를 대신 넣었다. 미국 서해안은 로스앤젤레스·새너제이·시애틀이다.",
   "국제 회선 임차료와 IP 트랜짓 단가: 공개 수치를 아직 찾지 않았다."
  ],
  "records": [
@@ -1041,6 +1041,2776 @@
    "alt": [],
    "conf": "med",
    "note": "사업자가 스스로 등록하는 자료다. networks_sum 은 교환점마다의 참여 수를 더한 것이라 한 네트워크가 여러 번 잡힌다. presence 의 ix 는 그 도시의 교환점 가운데 그 네트워크가 접속한 곳의 수, fac 은 그 도시에서 입주했다고 등록한 시설의 수다."
+  },
+  {
+   "id": "latency-chennai-hyderabad",
+   "kind": "latency",
+   "country": "IN",
+   "city": "첸나이",
+   "to_country": "IN",
+   "to_city": "하이데라바드",
+   "value": 25.74,
+   "unit": "ms",
+   "asof": "2026-11-18",
+   "basis": "WonderNetwork 서버 사이의 ping 왕복 시간 평균(받은 시점의 측정값). 한 사업자의 서버 한 쌍 값이라 경로에 따라 달라진다",
+   "distance_km": 514,
+   "sources": [
+    {
+     "n": 1,
+     "title": "WonderNetwork — Ping time between Chennai and other cities",
+     "url": "https://wondernetwork.com/pings/Chennai",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [
+    {
+     "value": 27.85,
+     "basis": "반대 방향(Hyderabad → Chennai) 페이지의 값",
+     "url": "https://wondernetwork.com/pings/Hyderabad"
+    }
+   ],
+   "conf": "med",
+   "note": "첸나이 페이지에서 본 하이데라바드까지의 값이다. 반대 방향 페이지의 값이 다르면 alt 에 적었다."
+  },
+  {
+   "id": "latency-chennai-kualalumpur",
+   "kind": "latency",
+   "country": "IN",
+   "city": "첸나이",
+   "to_country": "MY",
+   "to_city": "쿠알라룸푸르",
+   "value": 52.4,
+   "unit": "ms",
+   "asof": "2026-11-18",
+   "basis": "WonderNetwork 서버 사이의 ping 왕복 시간 평균(받은 시점의 측정값). 한 사업자의 서버 한 쌍 값이라 경로에 따라 달라진다",
+   "distance_km": 2601,
+   "sources": [
+    {
+     "n": 1,
+     "title": "WonderNetwork — Ping time between Chennai and other cities",
+     "url": "https://wondernetwork.com/pings/Chennai",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "첸나이 페이지에서 본 쿠알라룸푸르까지의 값이다. 반대 방향 페이지의 값이 다르면 alt 에 적었다."
+  },
+  {
+   "id": "latency-chennai-losangeles",
+   "kind": "latency",
+   "country": "IN",
+   "city": "첸나이",
+   "to_country": "US",
+   "to_city": "로스앤젤레스",
+   "value": 227.04,
+   "unit": "ms",
+   "asof": "2026-11-18",
+   "basis": "WonderNetwork 서버 사이의 ping 왕복 시간 평균(받은 시점의 측정값). 한 사업자의 서버 한 쌍 값이라 경로에 따라 달라진다",
+   "distance_km": 14423,
+   "sources": [
+    {
+     "n": 1,
+     "title": "WonderNetwork — Ping time between Chennai and other cities",
+     "url": "https://wondernetwork.com/pings/Chennai",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "첸나이 페이지에서 본 로스앤젤레스까지의 값이다. 반대 방향 페이지의 값이 다르면 alt 에 적었다."
+  },
+  {
+   "id": "latency-chennai-melbourne",
+   "kind": "latency",
+   "country": "IN",
+   "city": "첸나이",
+   "to_country": "AU",
+   "to_city": "멜버른",
+   "value": 132.37,
+   "unit": "ms",
+   "asof": "2026-11-18",
+   "basis": "WonderNetwork 서버 사이의 ping 왕복 시간 평균(받은 시점의 측정값). 한 사업자의 서버 한 쌍 값이라 경로에 따라 달라진다",
+   "distance_km": 8789,
+   "sources": [
+    {
+     "n": 1,
+     "title": "WonderNetwork — Ping time between Chennai and other cities",
+     "url": "https://wondernetwork.com/pings/Chennai",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "첸나이 페이지에서 본 멜버른까지의 값이다. 반대 방향 페이지의 값이 다르면 alt 에 적었다."
+  },
+  {
+   "id": "latency-chennai-mumbai",
+   "kind": "latency",
+   "country": "IN",
+   "city": "첸나이",
+   "to_country": "IN",
+   "to_city": "뭄바이",
+   "value": 20.79,
+   "unit": "ms",
+   "asof": "2026-11-18",
+   "basis": "WonderNetwork 서버 사이의 ping 왕복 시간 평균(받은 시점의 측정값). 한 사업자의 서버 한 쌍 값이라 경로에 따라 달라진다",
+   "distance_km": 1033,
+   "sources": [
+    {
+     "n": 1,
+     "title": "WonderNetwork — Ping time between Chennai and other cities",
+     "url": "https://wondernetwork.com/pings/Chennai",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "첸나이 페이지에서 본 뭄바이까지의 값이다. 반대 방향 페이지의 값이 다르면 alt 에 적었다."
+  },
+  {
+   "id": "latency-chennai-osaka",
+   "kind": "latency",
+   "country": "IN",
+   "city": "첸나이",
+   "to_country": "JP",
+   "to_city": "오사카",
+   "value": 105.25,
+   "unit": "ms",
+   "asof": "2026-11-18",
+   "basis": "WonderNetwork 서버 사이의 ping 왕복 시간 평균(받은 시점의 측정값). 한 사업자의 서버 한 쌍 값이라 경로에 따라 달라진다",
+   "distance_km": 6023,
+   "sources": [
+    {
+     "n": 1,
+     "title": "WonderNetwork — Ping time between Chennai and other cities",
+     "url": "https://wondernetwork.com/pings/Chennai",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [
+    {
+     "value": 106.32,
+     "basis": "반대 방향(Osaka → Chennai) 페이지의 값",
+     "url": "https://wondernetwork.com/pings/Osaka"
+    }
+   ],
+   "conf": "med",
+   "note": "첸나이 페이지에서 본 오사카까지의 값이다. 반대 방향 페이지의 값이 다르면 alt 에 적었다."
+  },
+  {
+   "id": "latency-chennai-sanjose",
+   "kind": "latency",
+   "country": "IN",
+   "city": "첸나이",
+   "to_country": "US",
+   "to_city": "새너제이",
+   "value": 225.29,
+   "unit": "ms",
+   "asof": "2026-11-18",
+   "basis": "WonderNetwork 서버 사이의 ping 왕복 시간 평균(받은 시점의 측정값). 한 사업자의 서버 한 쌍 값이라 경로에 따라 달라진다",
+   "distance_km": 13948,
+   "sources": [
+    {
+     "n": 1,
+     "title": "WonderNetwork — Ping time between Chennai and other cities",
+     "url": "https://wondernetwork.com/pings/Chennai",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [
+    {
+     "value": 226.45,
+     "basis": "반대 방향(San Jose → Chennai) 페이지의 값",
+     "url": "https://wondernetwork.com/pings/San%20Jose"
+    }
+   ],
+   "conf": "med",
+   "note": "첸나이 페이지에서 본 새너제이까지의 값이다. 반대 방향 페이지의 값이 다르면 alt 에 적었다."
+  },
+  {
+   "id": "latency-chennai-seattle",
+   "kind": "latency",
+   "country": "IN",
+   "city": "첸나이",
+   "to_country": "US",
+   "to_city": "시애틀",
+   "value": 230.96,
+   "unit": "ms",
+   "asof": "2026-11-18",
+   "basis": "WonderNetwork 서버 사이의 ping 왕복 시간 평균(받은 시점의 측정값). 한 사업자의 서버 한 쌍 값이라 경로에 따라 달라진다",
+   "distance_km": 12907,
+   "sources": [
+    {
+     "n": 1,
+     "title": "WonderNetwork — Ping time between Chennai and other cities",
+     "url": "https://wondernetwork.com/pings/Chennai",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "첸나이 페이지에서 본 시애틀까지의 값이다. 반대 방향 페이지의 값이 다르면 alt 에 적었다."
+  },
+  {
+   "id": "latency-chennai-seoul",
+   "kind": "latency",
+   "country": "IN",
+   "city": "첸나이",
+   "to_country": "KR",
+   "to_city": "서울",
+   "value": 121.91,
+   "unit": "ms",
+   "asof": "2026-11-18",
+   "basis": "WonderNetwork 서버 사이의 ping 왕복 시간 평균(받은 시점의 측정값). 한 사업자의 서버 한 쌍 값이라 경로에 따라 달라진다",
+   "distance_km": 5353,
+   "sources": [
+    {
+     "n": 1,
+     "title": "WonderNetwork — Ping time between Chennai and other cities",
+     "url": "https://wondernetwork.com/pings/Chennai",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [
+    {
+     "value": 110.79,
+     "basis": "반대 방향(Seoul → Chennai) 페이지의 값",
+     "url": "https://wondernetwork.com/pings/Seoul"
+    }
+   ],
+   "conf": "med",
+   "note": "첸나이 페이지에서 본 서울까지의 값이다. 반대 방향 페이지의 값이 다르면 alt 에 적었다."
+  },
+  {
+   "id": "latency-chennai-singapore",
+   "kind": "latency",
+   "country": "IN",
+   "city": "첸나이",
+   "to_country": "SG",
+   "to_city": "싱가포르",
+   "value": 31.79,
+   "unit": "ms",
+   "asof": "2026-11-18",
+   "basis": "WonderNetwork 서버 사이의 ping 왕복 시간 평균(받은 시점의 측정값). 한 사업자의 서버 한 쌍 값이라 경로에 따라 달라진다",
+   "distance_km": 2895,
+   "sources": [
+    {
+     "n": 1,
+     "title": "WonderNetwork — Ping time between Chennai and other cities",
+     "url": "https://wondernetwork.com/pings/Chennai",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "첸나이 페이지에서 본 싱가포르까지의 값이다. 반대 방향 페이지의 값이 다르면 alt 에 적었다."
+  },
+  {
+   "id": "latency-chennai-sydney",
+   "kind": "latency",
+   "country": "IN",
+   "city": "첸나이",
+   "to_country": "AU",
+   "to_city": "시드니",
+   "value": 136.65,
+   "unit": "ms",
+   "asof": "2026-11-18",
+   "basis": "WonderNetwork 서버 사이의 ping 왕복 시간 평균(받은 시점의 측정값). 한 사업자의 서버 한 쌍 값이라 경로에 따라 달라진다",
+   "distance_km": 9127,
+   "sources": [
+    {
+     "n": 1,
+     "title": "WonderNetwork — Ping time between Chennai and other cities",
+     "url": "https://wondernetwork.com/pings/Chennai",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "첸나이 페이지에서 본 시드니까지의 값이다. 반대 방향 페이지의 값이 다르면 alt 에 적었다."
+  },
+  {
+   "id": "latency-chennai-taipei",
+   "kind": "latency",
+   "country": "IN",
+   "city": "첸나이",
+   "to_country": "TW",
+   "to_city": "타이베이",
+   "value": 103.01,
+   "unit": "ms",
+   "asof": "2026-11-18",
+   "basis": "WonderNetwork 서버 사이의 ping 왕복 시간 평균(받은 시점의 측정값). 한 사업자의 서버 한 쌍 값이라 경로에 따라 달라진다",
+   "distance_km": 4516,
+   "sources": [
+    {
+     "n": 1,
+     "title": "WonderNetwork — Ping time between Chennai and other cities",
+     "url": "https://wondernetwork.com/pings/Chennai",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "첸나이 페이지에서 본 타이베이까지의 값이다. 반대 방향 페이지의 값이 다르면 alt 에 적었다."
+  },
+  {
+   "id": "latency-chennai-tokyo",
+   "kind": "latency",
+   "country": "IN",
+   "city": "첸나이",
+   "to_country": "JP",
+   "to_city": "도쿄",
+   "value": 112.89,
+   "unit": "ms",
+   "asof": "2026-11-18",
+   "basis": "WonderNetwork 서버 사이의 ping 왕복 시간 평균(받은 시점의 측정값). 한 사업자의 서버 한 쌍 값이라 경로에 따라 달라진다",
+   "distance_km": 6422,
+   "sources": [
+    {
+     "n": 1,
+     "title": "WonderNetwork — Ping time between Chennai and other cities",
+     "url": "https://wondernetwork.com/pings/Chennai",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [
+    {
+     "value": 112.09,
+     "basis": "반대 방향(Tokyo → Chennai) 페이지의 값",
+     "url": "https://wondernetwork.com/pings/Tokyo"
+    }
+   ],
+   "conf": "med",
+   "note": "첸나이 페이지에서 본 도쿄까지의 값이다. 반대 방향 페이지의 값이 다르면 alt 에 적었다."
+  },
+  {
+   "id": "latency-hyderabad-kualalumpur",
+   "kind": "latency",
+   "country": "IN",
+   "city": "하이데라바드",
+   "to_country": "MY",
+   "to_city": "쿠알라룸푸르",
+   "value": 182.26,
+   "unit": "ms",
+   "asof": "2026-11-18",
+   "basis": "WonderNetwork 서버 사이의 ping 왕복 시간 평균(받은 시점의 측정값). 한 사업자의 서버 한 쌍 값이라 경로에 따라 달라진다",
+   "distance_km": 2987,
+   "sources": [
+    {
+     "n": 1,
+     "title": "WonderNetwork — Ping time between Hyderabad and other cities",
+     "url": "https://wondernetwork.com/pings/Hyderabad",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [
+    {
+     "value": 181.03,
+     "basis": "반대 방향(Kuala Lumpur → Hyderabad) 페이지의 값",
+     "url": "https://wondernetwork.com/pings/Kuala%20Lumpur"
+    }
+   ],
+   "conf": "med",
+   "note": "하이데라바드 페이지에서 본 쿠알라룸푸르까지의 값이다. 반대 방향 페이지의 값이 다르면 alt 에 적었다."
+  },
+  {
+   "id": "latency-hyderabad-losangeles",
+   "kind": "latency",
+   "country": "IN",
+   "city": "하이데라바드",
+   "to_country": "US",
+   "to_city": "로스앤젤레스",
+   "value": 244.53,
+   "unit": "ms",
+   "asof": "2026-11-18",
+   "basis": "WonderNetwork 서버 사이의 ping 왕복 시간 평균(받은 시점의 측정값). 한 사업자의 서버 한 쌍 값이라 경로에 따라 달라진다",
+   "distance_km": 14033,
+   "sources": [
+    {
+     "n": 1,
+     "title": "WonderNetwork — Ping time between Hyderabad and other cities",
+     "url": "https://wondernetwork.com/pings/Hyderabad",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [
+    {
+     "value": 242.52,
+     "basis": "반대 방향(Los Angeles → Hyderabad) 페이지의 값",
+     "url": "https://wondernetwork.com/pings/Los%20Angeles"
+    }
+   ],
+   "conf": "med",
+   "note": "하이데라바드 페이지에서 본 로스앤젤레스까지의 값이다. 반대 방향 페이지의 값이 다르면 alt 에 적었다."
+  },
+  {
+   "id": "latency-hyderabad-melbourne",
+   "kind": "latency",
+   "country": "IN",
+   "city": "하이데라바드",
+   "to_country": "AU",
+   "to_city": "멜버른",
+   "value": 173.62,
+   "unit": "ms",
+   "asof": "2026-11-18",
+   "basis": "WonderNetwork 서버 사이의 ping 왕복 시간 평균(받은 시점의 측정값). 한 사업자의 서버 한 쌍 값이라 경로에 따라 달라진다",
+   "distance_km": 9257,
+   "sources": [
+    {
+     "n": 1,
+     "title": "WonderNetwork — Ping time between Hyderabad and other cities",
+     "url": "https://wondernetwork.com/pings/Hyderabad",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [
+    {
+     "value": 160.99,
+     "basis": "반대 방향(Melbourne → Hyderabad) 페이지의 값",
+     "url": "https://wondernetwork.com/pings/Melbourne"
+    }
+   ],
+   "conf": "med",
+   "note": "하이데라바드 페이지에서 본 멜버른까지의 값이다. 반대 방향 페이지의 값이 다르면 alt 에 적었다."
+  },
+  {
+   "id": "latency-hyderabad-mumbai",
+   "kind": "latency",
+   "country": "IN",
+   "city": "하이데라바드",
+   "to_country": "IN",
+   "to_city": "뭄바이",
+   "value": 16.91,
+   "unit": "ms",
+   "asof": "2026-11-18",
+   "basis": "WonderNetwork 서버 사이의 ping 왕복 시간 평균(받은 시점의 측정값). 한 사업자의 서버 한 쌍 값이라 경로에 따라 달라진다",
+   "distance_km": 620,
+   "sources": [
+    {
+     "n": 1,
+     "title": "WonderNetwork — Ping time between Hyderabad and other cities",
+     "url": "https://wondernetwork.com/pings/Hyderabad",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [
+    {
+     "value": 15.89,
+     "basis": "반대 방향(Mumbai → Hyderabad) 페이지의 값",
+     "url": "https://wondernetwork.com/pings/Mumbai"
+    }
+   ],
+   "conf": "med",
+   "note": "하이데라바드 페이지에서 본 뭄바이까지의 값이다. 반대 방향 페이지의 값이 다르면 alt 에 적었다."
+  },
+  {
+   "id": "latency-hyderabad-osaka",
+   "kind": "latency",
+   "country": "IN",
+   "city": "하이데라바드",
+   "to_country": "JP",
+   "to_city": "오사카",
+   "value": 113.36,
+   "unit": "ms",
+   "asof": "2026-11-18",
+   "basis": "WonderNetwork 서버 사이의 ping 왕복 시간 평균(받은 시점의 측정값). 한 사업자의 서버 한 쌍 값이라 경로에 따라 달라진다",
+   "distance_km": 5934,
+   "sources": [
+    {
+     "n": 1,
+     "title": "WonderNetwork — Ping time between Hyderabad and other cities",
+     "url": "https://wondernetwork.com/pings/Hyderabad",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "하이데라바드 페이지에서 본 오사카까지의 값이다. 반대 방향 페이지의 값이 다르면 alt 에 적었다."
+  },
+  {
+   "id": "latency-hyderabad-sanjose",
+   "kind": "latency",
+   "country": "IN",
+   "city": "하이데라바드",
+   "to_country": "US",
+   "to_city": "새너제이",
+   "value": 249.63,
+   "unit": "ms",
+   "asof": "2026-11-18",
+   "basis": "WonderNetwork 서버 사이의 ping 왕복 시간 평균(받은 시점의 측정값). 한 사업자의 서버 한 쌍 값이라 경로에 따라 달라진다",
+   "distance_km": 13569,
+   "sources": [
+    {
+     "n": 1,
+     "title": "WonderNetwork — Ping time between Hyderabad and other cities",
+     "url": "https://wondernetwork.com/pings/Hyderabad",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [
+    {
+     "value": 250.64,
+     "basis": "반대 방향(San Jose → Hyderabad) 페이지의 값",
+     "url": "https://wondernetwork.com/pings/San%20Jose"
+    }
+   ],
+   "conf": "med",
+   "note": "하이데라바드 페이지에서 본 새너제이까지의 값이다. 반대 방향 페이지의 값이 다르면 alt 에 적었다."
+  },
+  {
+   "id": "latency-hyderabad-seattle",
+   "kind": "latency",
+   "country": "IN",
+   "city": "하이데라바드",
+   "to_country": "US",
+   "to_city": "시애틀",
+   "value": 226.72,
+   "unit": "ms",
+   "asof": "2026-11-18",
+   "basis": "WonderNetwork 서버 사이의 ping 왕복 시간 평균(받은 시점의 측정값). 한 사업자의 서버 한 쌍 값이라 경로에 따라 달라진다",
+   "distance_km": 12501,
+   "sources": [
+    {
+     "n": 1,
+     "title": "WonderNetwork — Ping time between Hyderabad and other cities",
+     "url": "https://wondernetwork.com/pings/Hyderabad",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [
+    {
+     "value": 231.79,
+     "basis": "반대 방향(Seattle → Hyderabad) 페이지의 값",
+     "url": "https://wondernetwork.com/pings/Seattle"
+    }
+   ],
+   "conf": "med",
+   "note": "하이데라바드 페이지에서 본 시애틀까지의 값이다. 반대 방향 페이지의 값이 다르면 alt 에 적었다."
+  },
+  {
+   "id": "latency-hyderabad-seoul",
+   "kind": "latency",
+   "country": "IN",
+   "city": "하이데라바드",
+   "to_country": "KR",
+   "to_city": "서울",
+   "value": 139.37,
+   "unit": "ms",
+   "asof": "2026-11-18",
+   "basis": "WonderNetwork 서버 사이의 ping 왕복 시간 평균(받은 시점의 측정값). 한 사업자의 서버 한 쌍 값이라 경로에 따라 달라진다",
+   "distance_km": 5217,
+   "sources": [
+    {
+     "n": 1,
+     "title": "WonderNetwork — Ping time between Hyderabad and other cities",
+     "url": "https://wondernetwork.com/pings/Hyderabad",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [
+    {
+     "value": 152.6,
+     "basis": "반대 방향(Seoul → Hyderabad) 페이지의 값",
+     "url": "https://wondernetwork.com/pings/Seoul"
+    }
+   ],
+   "conf": "med",
+   "note": "하이데라바드 페이지에서 본 서울까지의 값이다. 반대 방향 페이지의 값이 다르면 alt 에 적었다."
+  },
+  {
+   "id": "latency-hyderabad-singapore",
+   "kind": "latency",
+   "country": "IN",
+   "city": "하이데라바드",
+   "to_country": "SG",
+   "to_city": "싱가포르",
+   "value": 44.51,
+   "unit": "ms",
+   "asof": "2026-11-18",
+   "basis": "WonderNetwork 서버 사이의 ping 왕복 시간 평균(받은 시점의 측정값). 한 사업자의 서버 한 쌍 값이라 경로에 따라 달라진다",
+   "distance_km": 3287,
+   "sources": [
+    {
+     "n": 1,
+     "title": "WonderNetwork — Ping time between Hyderabad and other cities",
+     "url": "https://wondernetwork.com/pings/Hyderabad",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "하이데라바드 페이지에서 본 싱가포르까지의 값이다. 반대 방향 페이지의 값이 다르면 alt 에 적었다."
+  },
+  {
+   "id": "latency-hyderabad-sydney",
+   "kind": "latency",
+   "country": "IN",
+   "city": "하이데라바드",
+   "to_country": "AU",
+   "to_city": "시드니",
+   "value": 148.62,
+   "unit": "ms",
+   "asof": "2026-11-18",
+   "basis": "WonderNetwork 서버 사이의 ping 왕복 시간 평균(받은 시점의 측정값). 한 사업자의 서버 한 쌍 값이라 경로에 따라 달라진다",
+   "distance_km": 9571,
+   "sources": [
+    {
+     "n": 1,
+     "title": "WonderNetwork — Ping time between Hyderabad and other cities",
+     "url": "https://wondernetwork.com/pings/Hyderabad",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [
+    {
+     "value": 149.94,
+     "basis": "반대 방향(Sydney → Hyderabad) 페이지의 값",
+     "url": "https://wondernetwork.com/pings/Sydney"
+    }
+   ],
+   "conf": "med",
+   "note": "하이데라바드 페이지에서 본 시드니까지의 값이다. 반대 방향 페이지의 값이 다르면 alt 에 적었다."
+  },
+  {
+   "id": "latency-hyderabad-taipei",
+   "kind": "latency",
+   "country": "IN",
+   "city": "하이데라바드",
+   "to_country": "TW",
+   "to_city": "타이베이",
+   "value": 120.21,
+   "unit": "ms",
+   "asof": "2026-11-18",
+   "basis": "WonderNetwork 서버 사이의 ping 왕복 시간 평균(받은 시점의 측정값). 한 사업자의 서버 한 쌍 값이라 경로에 따라 달라진다",
+   "distance_km": 4527,
+   "sources": [
+    {
+     "n": 1,
+     "title": "WonderNetwork — Ping time between Hyderabad and other cities",
+     "url": "https://wondernetwork.com/pings/Hyderabad",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [
+    {
+     "value": 144.45,
+     "basis": "반대 방향(Taipei → Hyderabad) 페이지의 값",
+     "url": "https://wondernetwork.com/pings/Taipei"
+    }
+   ],
+   "conf": "med",
+   "note": "하이데라바드 페이지에서 본 타이베이까지의 값이다. 반대 방향 페이지의 값이 다르면 alt 에 적었다."
+  },
+  {
+   "id": "latency-hyderabad-tokyo",
+   "kind": "latency",
+   "country": "IN",
+   "city": "하이데라바드",
+   "to_country": "JP",
+   "to_city": "도쿄",
+   "value": 119.81,
+   "unit": "ms",
+   "asof": "2026-11-18",
+   "basis": "WonderNetwork 서버 사이의 ping 왕복 시간 평균(받은 시점의 측정값). 한 사업자의 서버 한 쌍 값이라 경로에 따라 달라진다",
+   "distance_km": 6326,
+   "sources": [
+    {
+     "n": 1,
+     "title": "WonderNetwork — Ping time between Hyderabad and other cities",
+     "url": "https://wondernetwork.com/pings/Hyderabad",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [
+    {
+     "value": 120.61,
+     "basis": "반대 방향(Tokyo → Hyderabad) 페이지의 값",
+     "url": "https://wondernetwork.com/pings/Tokyo"
+    }
+   ],
+   "conf": "med",
+   "note": "하이데라바드 페이지에서 본 도쿄까지의 값이다. 반대 방향 페이지의 값이 다르면 alt 에 적었다."
+  },
+  {
+   "id": "latency-kualalumpur-losangeles",
+   "kind": "latency",
+   "country": "MY",
+   "city": "쿠알라룸푸르",
+   "to_country": "US",
+   "to_city": "로스앤젤레스",
+   "value": 240.48,
+   "unit": "ms",
+   "asof": "2026-11-18",
+   "basis": "WonderNetwork 서버 사이의 ping 왕복 시간 평균(받은 시점의 측정값). 한 사업자의 서버 한 쌍 값이라 경로에 따라 달라진다",
+   "distance_km": 14141,
+   "sources": [
+    {
+     "n": 1,
+     "title": "WonderNetwork — Ping time between Kuala Lumpur and other cities",
+     "url": "https://wondernetwork.com/pings/Kuala%20Lumpur",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [
+    {
+     "value": 239.82,
+     "basis": "반대 방향(Los Angeles → Kuala Lumpur) 페이지의 값",
+     "url": "https://wondernetwork.com/pings/Los%20Angeles"
+    }
+   ],
+   "conf": "med",
+   "note": "쿠알라룸푸르 페이지에서 본 로스앤젤레스까지의 값이다. 반대 방향 페이지의 값이 다르면 alt 에 적었다."
+  },
+  {
+   "id": "latency-kualalumpur-melbourne",
+   "kind": "latency",
+   "country": "MY",
+   "city": "쿠알라룸푸르",
+   "to_country": "AU",
+   "to_city": "멜버른",
+   "value": 91.55,
+   "unit": "ms",
+   "asof": "2026-11-18",
+   "basis": "WonderNetwork 서버 사이의 ping 왕복 시간 평균(받은 시점의 측정값). 한 사업자의 서버 한 쌍 값이라 경로에 따라 달라진다",
+   "distance_km": 6367,
+   "sources": [
+    {
+     "n": 1,
+     "title": "WonderNetwork — Ping time between Kuala Lumpur and other cities",
+     "url": "https://wondernetwork.com/pings/Kuala%20Lumpur",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [
+    {
+     "value": 89.63,
+     "basis": "반대 방향(Melbourne → Kuala Lumpur) 페이지의 값",
+     "url": "https://wondernetwork.com/pings/Melbourne"
+    }
+   ],
+   "conf": "med",
+   "note": "쿠알라룸푸르 페이지에서 본 멜버른까지의 값이다. 반대 방향 페이지의 값이 다르면 alt 에 적었다."
+  },
+  {
+   "id": "latency-kualalumpur-mumbai",
+   "kind": "latency",
+   "country": "MY",
+   "city": "쿠알라룸푸르",
+   "to_country": "IN",
+   "to_city": "뭄바이",
+   "value": 178.12,
+   "unit": "ms",
+   "asof": "2026-11-18",
+   "basis": "WonderNetwork 서버 사이의 ping 왕복 시간 평균(받은 시점의 측정값). 한 사업자의 서버 한 쌍 값이라 경로에 따라 달라진다",
+   "distance_km": 3598,
+   "sources": [
+    {
+     "n": 1,
+     "title": "WonderNetwork — Ping time between Kuala Lumpur and other cities",
+     "url": "https://wondernetwork.com/pings/Kuala%20Lumpur",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [
+    {
+     "value": 179.64,
+     "basis": "반대 방향(Mumbai → Kuala Lumpur) 페이지의 값",
+     "url": "https://wondernetwork.com/pings/Mumbai"
+    }
+   ],
+   "conf": "med",
+   "note": "쿠알라룸푸르 페이지에서 본 뭄바이까지의 값이다. 반대 방향 페이지의 값이 다르면 alt 에 적었다."
+  },
+  {
+   "id": "latency-kualalumpur-osaka",
+   "kind": "latency",
+   "country": "MY",
+   "city": "쿠알라룸푸르",
+   "to_country": "JP",
+   "to_city": "오사카",
+   "value": 84.7,
+   "unit": "ms",
+   "asof": "2026-11-18",
+   "basis": "WonderNetwork 서버 사이의 ping 왕복 시간 평균(받은 시점의 측정값). 한 사업자의 서버 한 쌍 값이라 경로에 따라 달라진다",
+   "distance_km": 4950,
+   "sources": [
+    {
+     "n": 1,
+     "title": "WonderNetwork — Ping time between Kuala Lumpur and other cities",
+     "url": "https://wondernetwork.com/pings/Kuala%20Lumpur",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [
+    {
+     "value": 69.2,
+     "basis": "반대 방향(Osaka → Kuala Lumpur) 페이지의 값",
+     "url": "https://wondernetwork.com/pings/Osaka"
+    }
+   ],
+   "conf": "med",
+   "note": "쿠알라룸푸르 페이지에서 본 오사카까지의 값이다. 반대 방향 페이지의 값이 다르면 alt 에 적었다."
+  },
+  {
+   "id": "latency-kualalumpur-sanjose",
+   "kind": "latency",
+   "country": "MY",
+   "city": "쿠알라룸푸르",
+   "to_country": "US",
+   "to_city": "새너제이",
+   "value": 185.39,
+   "unit": "ms",
+   "asof": "2026-11-18",
+   "basis": "WonderNetwork 서버 사이의 ping 왕복 시간 평균(받은 시점의 측정값). 한 사업자의 서버 한 쌍 값이라 경로에 따라 달라진다",
+   "distance_km": 13655,
+   "sources": [
+    {
+     "n": 1,
+     "title": "WonderNetwork — Ping time between Kuala Lumpur and other cities",
+     "url": "https://wondernetwork.com/pings/Kuala%20Lumpur",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [
+    {
+     "value": 198.15,
+     "basis": "반대 방향(San Jose → Kuala Lumpur) 페이지의 값",
+     "url": "https://wondernetwork.com/pings/San%20Jose"
+    }
+   ],
+   "conf": "med",
+   "note": "쿠알라룸푸르 페이지에서 본 새너제이까지의 값이다. 반대 방향 페이지의 값이 다르면 alt 에 적었다."
+  },
+  {
+   "id": "latency-kualalumpur-seattle",
+   "kind": "latency",
+   "country": "MY",
+   "city": "쿠알라룸푸르",
+   "to_country": "US",
+   "to_city": "시애틀",
+   "value": 173.14,
+   "unit": "ms",
+   "asof": "2026-11-18",
+   "basis": "WonderNetwork 서버 사이의 ping 왕복 시간 평균(받은 시점의 측정값). 한 사업자의 서버 한 쌍 값이라 경로에 따라 달라진다",
+   "distance_km": 12940,
+   "sources": [
+    {
+     "n": 1,
+     "title": "WonderNetwork — Ping time between Kuala Lumpur and other cities",
+     "url": "https://wondernetwork.com/pings/Kuala%20Lumpur",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "쿠알라룸푸르 페이지에서 본 시애틀까지의 값이다. 반대 방향 페이지의 값이 다르면 alt 에 적었다."
+  },
+  {
+   "id": "latency-kualalumpur-seoul",
+   "kind": "latency",
+   "country": "MY",
+   "city": "쿠알라룸푸르",
+   "to_country": "KR",
+   "to_city": "서울",
+   "value": 111.36,
+   "unit": "ms",
+   "asof": "2026-11-18",
+   "basis": "WonderNetwork 서버 사이의 ping 왕복 시간 평균(받은 시점의 측정값). 한 사업자의 서버 한 쌍 값이라 경로에 따라 달라진다",
+   "distance_km": 4616,
+   "sources": [
+    {
+     "n": 1,
+     "title": "WonderNetwork — Ping time between Kuala Lumpur and other cities",
+     "url": "https://wondernetwork.com/pings/Kuala%20Lumpur",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [
+    {
+     "value": 122.4,
+     "basis": "반대 방향(Seoul → Kuala Lumpur) 페이지의 값",
+     "url": "https://wondernetwork.com/pings/Seoul"
+    }
+   ],
+   "conf": "med",
+   "note": "쿠알라룸푸르 페이지에서 본 서울까지의 값이다. 반대 방향 페이지의 값이 다르면 alt 에 적었다."
+  },
+  {
+   "id": "latency-kualalumpur-singapore",
+   "kind": "latency",
+   "country": "MY",
+   "city": "쿠알라룸푸르",
+   "to_country": "SG",
+   "to_city": "싱가포르",
+   "value": 8.4,
+   "unit": "ms",
+   "asof": "2026-11-18",
+   "basis": "WonderNetwork 서버 사이의 ping 왕복 시간 평균(받은 시점의 측정값). 한 사업자의 서버 한 쌍 값이라 경로에 따라 달라진다",
+   "distance_km": 302,
+   "sources": [
+    {
+     "n": 1,
+     "title": "WonderNetwork — Ping time between Kuala Lumpur and other cities",
+     "url": "https://wondernetwork.com/pings/Kuala%20Lumpur",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [
+    {
+     "value": 7.16,
+     "basis": "반대 방향(Singapore → Kuala Lumpur) 페이지의 값",
+     "url": "https://wondernetwork.com/pings/Singapore"
+    }
+   ],
+   "conf": "med",
+   "note": "쿠알라룸푸르 페이지에서 본 싱가포르까지의 값이다. 반대 방향 페이지의 값이 다르면 alt 에 적었다."
+  },
+  {
+   "id": "latency-kualalumpur-sydney",
+   "kind": "latency",
+   "country": "MY",
+   "city": "쿠알라룸푸르",
+   "to_country": "AU",
+   "to_city": "시드니",
+   "value": 98.28,
+   "unit": "ms",
+   "asof": "2026-11-18",
+   "basis": "WonderNetwork 서버 사이의 ping 왕복 시간 평균(받은 시점의 측정값). 한 사업자의 서버 한 쌍 값이라 경로에 따라 달라진다",
+   "distance_km": 6616,
+   "sources": [
+    {
+     "n": 1,
+     "title": "WonderNetwork — Ping time between Kuala Lumpur and other cities",
+     "url": "https://wondernetwork.com/pings/Kuala%20Lumpur",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "쿠알라룸푸르 페이지에서 본 시드니까지의 값이다. 반대 방향 페이지의 값이 다르면 alt 에 적었다."
+  },
+  {
+   "id": "latency-kualalumpur-taipei",
+   "kind": "latency",
+   "country": "MY",
+   "city": "쿠알라룸푸르",
+   "to_country": "TW",
+   "to_city": "타이베이",
+   "value": 56.21,
+   "unit": "ms",
+   "asof": "2026-11-18",
+   "basis": "WonderNetwork 서버 사이의 ping 왕복 시간 평균(받은 시점의 측정값). 한 사업자의 서버 한 쌍 값이라 경로에 따라 달라진다",
+   "distance_km": 3232,
+   "sources": [
+    {
+     "n": 1,
+     "title": "WonderNetwork — Ping time between Kuala Lumpur and other cities",
+     "url": "https://wondernetwork.com/pings/Kuala%20Lumpur",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "쿠알라룸푸르 페이지에서 본 타이베이까지의 값이다. 반대 방향 페이지의 값이 다르면 alt 에 적었다."
+  },
+  {
+   "id": "latency-kualalumpur-tokyo",
+   "kind": "latency",
+   "country": "MY",
+   "city": "쿠알라룸푸르",
+   "to_country": "JP",
+   "to_city": "도쿄",
+   "value": 80.52,
+   "unit": "ms",
+   "asof": "2026-11-18",
+   "basis": "WonderNetwork 서버 사이의 ping 왕복 시간 평균(받은 시점의 측정값). 한 사업자의 서버 한 쌍 값이라 경로에 따라 달라진다",
+   "distance_km": 5329,
+   "sources": [
+    {
+     "n": 1,
+     "title": "WonderNetwork — Ping time between Kuala Lumpur and other cities",
+     "url": "https://wondernetwork.com/pings/Kuala%20Lumpur",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [
+    {
+     "value": 79.21,
+     "basis": "반대 방향(Tokyo → Kuala Lumpur) 페이지의 값",
+     "url": "https://wondernetwork.com/pings/Tokyo"
+    }
+   ],
+   "conf": "med",
+   "note": "쿠알라룸푸르 페이지에서 본 도쿄까지의 값이다. 반대 방향 페이지의 값이 다르면 alt 에 적었다."
+  },
+  {
+   "id": "latency-losangeles-melbourne",
+   "kind": "latency",
+   "country": "US",
+   "city": "로스앤젤레스",
+   "to_country": "AU",
+   "to_city": "멜버른",
+   "value": 169.06,
+   "unit": "ms",
+   "asof": "2026-11-18",
+   "basis": "WonderNetwork 서버 사이의 ping 왕복 시간 평균(받은 시점의 측정값). 한 사업자의 서버 한 쌍 값이라 경로에 따라 달라진다",
+   "distance_km": 12776,
+   "sources": [
+    {
+     "n": 1,
+     "title": "WonderNetwork — Ping time between Los Angeles and other cities",
+     "url": "https://wondernetwork.com/pings/Los%20Angeles",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "로스앤젤레스 페이지에서 본 멜버른까지의 값이다. 반대 방향 페이지의 값이 다르면 alt 에 적었다."
+  },
+  {
+   "id": "latency-losangeles-mumbai",
+   "kind": "latency",
+   "country": "US",
+   "city": "로스앤젤레스",
+   "to_country": "IN",
+   "to_city": "뭄바이",
+   "value": 234.02,
+   "unit": "ms",
+   "asof": "2026-11-18",
+   "basis": "WonderNetwork 서버 사이의 ping 왕복 시간 평균(받은 시점의 측정값). 한 사업자의 서버 한 쌍 값이라 경로에 따라 달라진다",
+   "distance_km": 13995,
+   "sources": [
+    {
+     "n": 1,
+     "title": "WonderNetwork — Ping time between Los Angeles and other cities",
+     "url": "https://wondernetwork.com/pings/Los%20Angeles",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "로스앤젤레스 페이지에서 본 뭄바이까지의 값이다. 반대 방향 페이지의 값이 다르면 alt 에 적었다."
+  },
+  {
+   "id": "latency-losangeles-osaka",
+   "kind": "latency",
+   "country": "US",
+   "city": "로스앤젤레스",
+   "to_country": "JP",
+   "to_city": "오사카",
+   "value": 111.51,
+   "unit": "ms",
+   "asof": "2026-11-18",
+   "basis": "WonderNetwork 서버 사이의 ping 왕복 시간 평균(받은 시점의 측정값). 한 사업자의 서버 한 쌍 값이라 경로에 따라 달라진다",
+   "distance_km": 9192,
+   "sources": [
+    {
+     "n": 1,
+     "title": "WonderNetwork — Ping time between Los Angeles and other cities",
+     "url": "https://wondernetwork.com/pings/Los%20Angeles",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [
+    {
+     "value": 115.9,
+     "basis": "반대 방향(Osaka → Los Angeles) 페이지의 값",
+     "url": "https://wondernetwork.com/pings/Osaka"
+    }
+   ],
+   "conf": "med",
+   "note": "로스앤젤레스 페이지에서 본 오사카까지의 값이다. 반대 방향 페이지의 값이 다르면 alt 에 적었다."
+  },
+  {
+   "id": "latency-losangeles-sanjose",
+   "kind": "latency",
+   "country": "US",
+   "city": "로스앤젤레스",
+   "to_country": "US",
+   "to_city": "새너제이",
+   "value": 8.88,
+   "unit": "ms",
+   "asof": "2026-11-18",
+   "basis": "WonderNetwork 서버 사이의 ping 왕복 시간 평균(받은 시점의 측정값). 한 사업자의 서버 한 쌍 값이라 경로에 따라 달라진다",
+   "distance_km": 497,
+   "sources": [
+    {
+     "n": 1,
+     "title": "WonderNetwork — Ping time between Los Angeles and other cities",
+     "url": "https://wondernetwork.com/pings/Los%20Angeles",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "로스앤젤레스 페이지에서 본 새너제이까지의 값이다. 반대 방향 페이지의 값이 다르면 alt 에 적었다."
+  },
+  {
+   "id": "latency-losangeles-seattle",
+   "kind": "latency",
+   "country": "US",
+   "city": "로스앤젤레스",
+   "to_country": "US",
+   "to_city": "시애틀",
+   "value": 26.18,
+   "unit": "ms",
+   "asof": "2026-11-18",
+   "basis": "WonderNetwork 서버 사이의 ping 왕복 시간 평균(받은 시점의 측정값). 한 사업자의 서버 한 쌍 값이라 경로에 따라 달라진다",
+   "distance_km": 1546,
+   "sources": [
+    {
+     "n": 1,
+     "title": "WonderNetwork — Ping time between Los Angeles and other cities",
+     "url": "https://wondernetwork.com/pings/Los%20Angeles",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "로스앤젤레스 페이지에서 본 시애틀까지의 값이다. 반대 방향 페이지의 값이 다르면 alt 에 적었다."
+  },
+  {
+   "id": "latency-losangeles-seoul",
+   "kind": "latency",
+   "country": "US",
+   "city": "로스앤젤레스",
+   "to_country": "KR",
+   "to_city": "서울",
+   "value": 135.64,
+   "unit": "ms",
+   "asof": "2026-11-18",
+   "basis": "WonderNetwork 서버 사이의 ping 왕복 시간 평균(받은 시점의 측정값). 한 사업자의 서버 한 쌍 값이라 경로에 따라 달라진다",
+   "distance_km": 9588,
+   "sources": [
+    {
+     "n": 1,
+     "title": "WonderNetwork — Ping time between Los Angeles and other cities",
+     "url": "https://wondernetwork.com/pings/Los%20Angeles",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "로스앤젤레스 페이지에서 본 서울까지의 값이다. 반대 방향 페이지의 값이 다르면 alt 에 적었다."
+  },
+  {
+   "id": "latency-losangeles-singapore",
+   "kind": "latency",
+   "country": "US",
+   "city": "로스앤젤레스",
+   "to_country": "SG",
+   "to_city": "싱가포르",
+   "value": 171.83,
+   "unit": "ms",
+   "asof": "2026-11-18",
+   "basis": "WonderNetwork 서버 사이의 ping 왕복 시간 평균(받은 시점의 측정값). 한 사업자의 서버 한 쌍 값이라 경로에 따라 달라진다",
+   "distance_km": 14129,
+   "sources": [
+    {
+     "n": 1,
+     "title": "WonderNetwork — Ping time between Los Angeles and other cities",
+     "url": "https://wondernetwork.com/pings/Los%20Angeles",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [
+    {
+     "value": 169.38,
+     "basis": "반대 방향(Singapore → Los Angeles) 페이지의 값",
+     "url": "https://wondernetwork.com/pings/Singapore"
+    }
+   ],
+   "conf": "med",
+   "note": "로스앤젤레스 페이지에서 본 싱가포르까지의 값이다. 반대 방향 페이지의 값이 다르면 alt 에 적었다."
+  },
+  {
+   "id": "latency-losangeles-sydney",
+   "kind": "latency",
+   "country": "US",
+   "city": "로스앤젤레스",
+   "to_country": "AU",
+   "to_city": "시드니",
+   "value": 159.53,
+   "unit": "ms",
+   "asof": "2026-11-18",
+   "basis": "WonderNetwork 서버 사이의 ping 왕복 시간 평균(받은 시점의 측정값). 한 사업자의 서버 한 쌍 값이라 경로에 따라 달라진다",
+   "distance_km": 12077,
+   "sources": [
+    {
+     "n": 1,
+     "title": "WonderNetwork — Ping time between Los Angeles and other cities",
+     "url": "https://wondernetwork.com/pings/Los%20Angeles",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "로스앤젤레스 페이지에서 본 시드니까지의 값이다. 반대 방향 페이지의 값이 다르면 alt 에 적었다."
+  },
+  {
+   "id": "latency-losangeles-taipei",
+   "kind": "latency",
+   "country": "US",
+   "city": "로스앤젤레스",
+   "to_country": "TW",
+   "to_city": "타이베이",
+   "value": 134.69,
+   "unit": "ms",
+   "asof": "2026-11-18",
+   "basis": "WonderNetwork 서버 사이의 ping 왕복 시간 평균(받은 시점의 측정값). 한 사업자의 서버 한 쌍 값이라 경로에 따라 달라진다",
+   "distance_km": 10911,
+   "sources": [
+    {
+     "n": 1,
+     "title": "WonderNetwork — Ping time between Los Angeles and other cities",
+     "url": "https://wondernetwork.com/pings/Los%20Angeles",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [
+    {
+     "value": 133.76,
+     "basis": "반대 방향(Taipei → Los Angeles) 페이지의 값",
+     "url": "https://wondernetwork.com/pings/Taipei"
+    }
+   ],
+   "conf": "med",
+   "note": "로스앤젤레스 페이지에서 본 타이베이까지의 값이다. 반대 방향 페이지의 값이 다르면 alt 에 적었다."
+  },
+  {
+   "id": "latency-losangeles-tokyo",
+   "kind": "latency",
+   "country": "US",
+   "city": "로스앤젤레스",
+   "to_country": "JP",
+   "to_city": "도쿄",
+   "value": 105.37,
+   "unit": "ms",
+   "asof": "2026-11-18",
+   "basis": "WonderNetwork 서버 사이의 ping 왕복 시간 평균(받은 시점의 측정값). 한 사업자의 서버 한 쌍 값이라 경로에 따라 달라진다",
+   "distance_km": 8812,
+   "sources": [
+    {
+     "n": 1,
+     "title": "WonderNetwork — Ping time between Los Angeles and other cities",
+     "url": "https://wondernetwork.com/pings/Los%20Angeles",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "로스앤젤레스 페이지에서 본 도쿄까지의 값이다. 반대 방향 페이지의 값이 다르면 alt 에 적었다."
+  },
+  {
+   "id": "latency-melbourne-mumbai",
+   "kind": "latency",
+   "country": "AU",
+   "city": "멜버른",
+   "to_country": "IN",
+   "to_city": "뭄바이",
+   "value": 156.26,
+   "unit": "ms",
+   "asof": "2026-11-18",
+   "basis": "WonderNetwork 서버 사이의 ping 왕복 시간 평균(받은 시점의 측정값). 한 사업자의 서버 한 쌍 값이라 경로에 따라 달라진다",
+   "distance_km": 9822,
+   "sources": [
+    {
+     "n": 1,
+     "title": "WonderNetwork — Ping time between Melbourne and other cities",
+     "url": "https://wondernetwork.com/pings/Melbourne",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "멜버른 페이지에서 본 뭄바이까지의 값이다. 반대 방향 페이지의 값이 다르면 alt 에 적었다."
+  },
+  {
+   "id": "latency-melbourne-osaka",
+   "kind": "latency",
+   "country": "AU",
+   "city": "멜버른",
+   "to_country": "JP",
+   "to_city": "오사카",
+   "value": 130.05,
+   "unit": "ms",
+   "asof": "2026-11-18",
+   "basis": "WonderNetwork 서버 사이의 ping 왕복 시간 평균(받은 시점의 측정값). 한 사업자의 서버 한 쌍 값이라 경로에 따라 달라진다",
+   "distance_km": 8120,
+   "sources": [
+    {
+     "n": 1,
+     "title": "WonderNetwork — Ping time between Melbourne and other cities",
+     "url": "https://wondernetwork.com/pings/Melbourne",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "멜버른 페이지에서 본 오사카까지의 값이다. 반대 방향 페이지의 값이 다르면 alt 에 적었다."
+  },
+  {
+   "id": "latency-melbourne-sanjose",
+   "kind": "latency",
+   "country": "AU",
+   "city": "멜버른",
+   "to_country": "US",
+   "to_city": "새너제이",
+   "value": 216.4,
+   "unit": "ms",
+   "asof": "2026-11-18",
+   "basis": "WonderNetwork 서버 사이의 ping 왕복 시간 평균(받은 시점의 측정값). 한 사업자의 서버 한 쌍 값이라 경로에 따라 달라진다",
+   "distance_km": 12671,
+   "sources": [
+    {
+     "n": 1,
+     "title": "WonderNetwork — Ping time between Melbourne and other cities",
+     "url": "https://wondernetwork.com/pings/Melbourne",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "멜버른 페이지에서 본 새너제이까지의 값이다. 반대 방향 페이지의 값이 다르면 alt 에 적었다."
+  },
+  {
+   "id": "latency-melbourne-seattle",
+   "kind": "latency",
+   "country": "AU",
+   "city": "멜버른",
+   "to_country": "US",
+   "to_city": "시애틀",
+   "value": 167.36,
+   "unit": "ms",
+   "asof": "2026-11-18",
+   "basis": "WonderNetwork 서버 사이의 ping 왕복 시간 평균(받은 시점의 측정값). 한 사업자의 서버 한 쌍 값이라 경로에 따라 달라진다",
+   "distance_km": 13183,
+   "sources": [
+    {
+     "n": 1,
+     "title": "WonderNetwork — Ping time between Melbourne and other cities",
+     "url": "https://wondernetwork.com/pings/Melbourne",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "멜버른 페이지에서 본 시애틀까지의 값이다. 반대 방향 페이지의 값이 다르면 alt 에 적었다."
+  },
+  {
+   "id": "latency-melbourne-seoul",
+   "kind": "latency",
+   "country": "AU",
+   "city": "멜버른",
+   "to_country": "KR",
+   "to_city": "서울",
+   "value": 174.57,
+   "unit": "ms",
+   "asof": "2026-11-18",
+   "basis": "WonderNetwork 서버 사이의 ping 왕복 시간 평균(받은 시점의 측정값). 한 사업자의 서버 한 쌍 값이라 경로에 따라 달라진다",
+   "distance_km": 8581,
+   "sources": [
+    {
+     "n": 1,
+     "title": "WonderNetwork — Ping time between Melbourne and other cities",
+     "url": "https://wondernetwork.com/pings/Melbourne",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [
+    {
+     "value": 166.11,
+     "basis": "반대 방향(Seoul → Melbourne) 페이지의 값",
+     "url": "https://wondernetwork.com/pings/Seoul"
+    }
+   ],
+   "conf": "med",
+   "note": "멜버른 페이지에서 본 서울까지의 값이다. 반대 방향 페이지의 값이 다르면 alt 에 적었다."
+  },
+  {
+   "id": "latency-melbourne-singapore",
+   "kind": "latency",
+   "country": "AU",
+   "city": "멜버른",
+   "to_country": "SG",
+   "to_city": "싱가포르",
+   "value": 82.97,
+   "unit": "ms",
+   "asof": "2026-11-18",
+   "basis": "WonderNetwork 서버 사이의 ping 왕복 시간 평균(받은 시점의 측정값). 한 사업자의 서버 한 쌍 값이라 경로에 따라 달라진다",
+   "distance_km": 6069,
+   "sources": [
+    {
+     "n": 1,
+     "title": "WonderNetwork — Ping time between Melbourne and other cities",
+     "url": "https://wondernetwork.com/pings/Melbourne",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "멜버른 페이지에서 본 싱가포르까지의 값이다. 반대 방향 페이지의 값이 다르면 alt 에 적었다."
+  },
+  {
+   "id": "latency-melbourne-sydney",
+   "kind": "latency",
+   "country": "AU",
+   "city": "멜버른",
+   "to_country": "AU",
+   "to_city": "시드니",
+   "value": 9.76,
+   "unit": "ms",
+   "asof": "2026-11-18",
+   "basis": "WonderNetwork 서버 사이의 ping 왕복 시간 평균(받은 시점의 측정값). 한 사업자의 서버 한 쌍 값이라 경로에 따라 달라진다",
+   "distance_km": 711,
+   "sources": [
+    {
+     "n": 1,
+     "title": "WonderNetwork — Ping time between Melbourne and other cities",
+     "url": "https://wondernetwork.com/pings/Melbourne",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "멜버른 페이지에서 본 시드니까지의 값이다. 반대 방향 페이지의 값이 다르면 alt 에 적었다."
+  },
+  {
+   "id": "latency-melbourne-taipei",
+   "kind": "latency",
+   "country": "AU",
+   "city": "멜버른",
+   "to_country": "TW",
+   "to_city": "타이베이",
+   "value": 128.05,
+   "unit": "ms",
+   "asof": "2026-11-18",
+   "basis": "WonderNetwork 서버 사이의 ping 왕복 시간 평균(받은 시점의 측정값). 한 사업자의 서버 한 쌍 값이라 경로에 따라 달라진다",
+   "distance_km": 7403,
+   "sources": [
+    {
+     "n": 1,
+     "title": "WonderNetwork — Ping time between Melbourne and other cities",
+     "url": "https://wondernetwork.com/pings/Melbourne",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "멜버른 페이지에서 본 타이베이까지의 값이다. 반대 방향 페이지의 값이 다르면 alt 에 적었다."
+  },
+  {
+   "id": "latency-melbourne-tokyo",
+   "kind": "latency",
+   "country": "AU",
+   "city": "멜버른",
+   "to_country": "JP",
+   "to_city": "도쿄",
+   "value": 108.2,
+   "unit": "ms",
+   "asof": "2026-11-18",
+   "basis": "WonderNetwork 서버 사이의 ping 왕복 시간 평균(받은 시점의 측정값). 한 사업자의 서버 한 쌍 값이라 경로에 따라 달라진다",
+   "distance_km": 8188,
+   "sources": [
+    {
+     "n": 1,
+     "title": "WonderNetwork — Ping time between Melbourne and other cities",
+     "url": "https://wondernetwork.com/pings/Melbourne",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "멜버른 페이지에서 본 도쿄까지의 값이다. 반대 방향 페이지의 값이 다르면 alt 에 적었다."
+  },
+  {
+   "id": "latency-mumbai-osaka",
+   "kind": "latency",
+   "country": "IN",
+   "city": "뭄바이",
+   "to_country": "JP",
+   "to_city": "오사카",
+   "value": 141.8,
+   "unit": "ms",
+   "asof": "2026-11-18",
+   "basis": "WonderNetwork 서버 사이의 ping 왕복 시간 평균(받은 시점의 측정값). 한 사업자의 서버 한 쌍 값이라 경로에 따라 달라진다",
+   "distance_km": 6349,
+   "sources": [
+    {
+     "n": 1,
+     "title": "WonderNetwork — Ping time between Mumbai and other cities",
+     "url": "https://wondernetwork.com/pings/Mumbai",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [
+    {
+     "value": 140.99,
+     "basis": "반대 방향(Osaka → Mumbai) 페이지의 값",
+     "url": "https://wondernetwork.com/pings/Osaka"
+    }
+   ],
+   "conf": "med",
+   "note": "뭄바이 페이지에서 본 오사카까지의 값이다. 반대 방향 페이지의 값이 다르면 alt 에 적었다."
+  },
+  {
+   "id": "latency-mumbai-sanjose",
+   "kind": "latency",
+   "country": "IN",
+   "city": "뭄바이",
+   "to_country": "US",
+   "to_city": "새너제이",
+   "value": 249.79,
+   "unit": "ms",
+   "asof": "2026-11-18",
+   "basis": "WonderNetwork 서버 사이의 ping 왕복 시간 평균(받은 시점의 측정값). 한 사업자의 서버 한 쌍 값이라 경로에 따라 달라진다",
+   "distance_km": 13554,
+   "sources": [
+    {
+     "n": 1,
+     "title": "WonderNetwork — Ping time between Mumbai and other cities",
+     "url": "https://wondernetwork.com/pings/Mumbai",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [
+    {
+     "value": 252.38,
+     "basis": "반대 방향(San Jose → Mumbai) 페이지의 값",
+     "url": "https://wondernetwork.com/pings/San%20Jose"
+    }
+   ],
+   "conf": "med",
+   "note": "뭄바이 페이지에서 본 새너제이까지의 값이다. 반대 방향 페이지의 값이 다르면 alt 에 적었다."
+  },
+  {
+   "id": "latency-mumbai-seattle",
+   "kind": "latency",
+   "country": "IN",
+   "city": "뭄바이",
+   "to_country": "US",
+   "to_city": "시애틀",
+   "value": 251.43,
+   "unit": "ms",
+   "asof": "2026-11-18",
+   "basis": "WonderNetwork 서버 사이의 ping 왕복 시간 평균(받은 시점의 측정값). 한 사업자의 서버 한 쌍 값이라 경로에 따라 달라진다",
+   "distance_km": 12449,
+   "sources": [
+    {
+     "n": 1,
+     "title": "WonderNetwork — Ping time between Mumbai and other cities",
+     "url": "https://wondernetwork.com/pings/Mumbai",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "뭄바이 페이지에서 본 시애틀까지의 값이다. 반대 방향 페이지의 값이 다르면 alt 에 적었다."
+  },
+  {
+   "id": "latency-mumbai-seoul",
+   "kind": "latency",
+   "country": "IN",
+   "city": "뭄바이",
+   "to_country": "KR",
+   "to_city": "서울",
+   "value": 144.47,
+   "unit": "ms",
+   "asof": "2026-11-18",
+   "basis": "WonderNetwork 서버 사이의 ping 왕복 시간 평균(받은 시점의 측정값). 한 사업자의 서버 한 쌍 값이라 경로에 따라 달라진다",
+   "distance_km": 5596,
+   "sources": [
+    {
+     "n": 1,
+     "title": "WonderNetwork — Ping time between Mumbai and other cities",
+     "url": "https://wondernetwork.com/pings/Mumbai",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [
+    {
+     "value": 133.34,
+     "basis": "반대 방향(Seoul → Mumbai) 페이지의 값",
+     "url": "https://wondernetwork.com/pings/Seoul"
+    }
+   ],
+   "conf": "med",
+   "note": "뭄바이 페이지에서 본 서울까지의 값이다. 반대 방향 페이지의 값이 다르면 alt 에 적었다."
+  },
+  {
+   "id": "latency-mumbai-singapore",
+   "kind": "latency",
+   "country": "IN",
+   "city": "뭄바이",
+   "to_country": "SG",
+   "to_city": "싱가포르",
+   "value": 54.32,
+   "unit": "ms",
+   "asof": "2026-11-18",
+   "basis": "WonderNetwork 서버 사이의 ping 왕복 시간 평균(받은 시점의 측정값). 한 사업자의 서버 한 쌍 값이라 경로에 따라 달라진다",
+   "distance_km": 3897,
+   "sources": [
+    {
+     "n": 1,
+     "title": "WonderNetwork — Ping time between Mumbai and other cities",
+     "url": "https://wondernetwork.com/pings/Mumbai",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [
+    {
+     "value": 53.1,
+     "basis": "반대 방향(Singapore → Mumbai) 페이지의 값",
+     "url": "https://wondernetwork.com/pings/Singapore"
+    }
+   ],
+   "conf": "med",
+   "note": "뭄바이 페이지에서 본 싱가포르까지의 값이다. 반대 방향 페이지의 값이 다르면 alt 에 적었다."
+  },
+  {
+   "id": "latency-mumbai-sydney",
+   "kind": "latency",
+   "country": "IN",
+   "city": "뭄바이",
+   "to_country": "AU",
+   "to_city": "시드니",
+   "value": 147.37,
+   "unit": "ms",
+   "asof": "2026-11-18",
+   "basis": "WonderNetwork 서버 사이의 ping 왕복 시간 평균(받은 시점의 측정값). 한 사업자의 서버 한 쌍 값이라 경로에 따라 달라진다",
+   "distance_km": 10159,
+   "sources": [
+    {
+     "n": 1,
+     "title": "WonderNetwork — Ping time between Mumbai and other cities",
+     "url": "https://wondernetwork.com/pings/Mumbai",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "뭄바이 페이지에서 본 시드니까지의 값이다. 반대 방향 페이지의 값이 다르면 alt 에 적었다."
+  },
+  {
+   "id": "latency-mumbai-taipei",
+   "kind": "latency",
+   "country": "IN",
+   "city": "뭄바이",
+   "to_country": "TW",
+   "to_city": "타이베이",
+   "value": 97.35,
+   "unit": "ms",
+   "asof": "2026-11-18",
+   "basis": "WonderNetwork 서버 사이의 ping 왕복 시간 평균(받은 시점의 측정값). 한 사업자의 서버 한 쌍 값이라 경로에 따라 달라진다",
+   "distance_km": 5033,
+   "sources": [
+    {
+     "n": 1,
+     "title": "WonderNetwork — Ping time between Mumbai and other cities",
+     "url": "https://wondernetwork.com/pings/Mumbai",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "뭄바이 페이지에서 본 타이베이까지의 값이다. 반대 방향 페이지의 값이 다르면 alt 에 적었다."
+  },
+  {
+   "id": "latency-mumbai-tokyo",
+   "kind": "latency",
+   "country": "IN",
+   "city": "뭄바이",
+   "to_country": "JP",
+   "to_city": "도쿄",
+   "value": 135.9,
+   "unit": "ms",
+   "asof": "2026-11-18",
+   "basis": "WonderNetwork 서버 사이의 ping 왕복 시간 평균(받은 시점의 측정값). 한 사업자의 서버 한 쌍 값이라 경로에 따라 달라진다",
+   "distance_km": 6732,
+   "sources": [
+    {
+     "n": 1,
+     "title": "WonderNetwork — Ping time between Mumbai and other cities",
+     "url": "https://wondernetwork.com/pings/Mumbai",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "뭄바이 페이지에서 본 도쿄까지의 값이다. 반대 방향 페이지의 값이 다르면 alt 에 적었다."
+  },
+  {
+   "id": "latency-osaka-sanjose",
+   "kind": "latency",
+   "country": "JP",
+   "city": "오사카",
+   "to_country": "US",
+   "to_city": "새너제이",
+   "value": 110.27,
+   "unit": "ms",
+   "asof": "2026-11-18",
+   "basis": "WonderNetwork 서버 사이의 ping 왕복 시간 평균(받은 시점의 측정값). 한 사업자의 서버 한 쌍 값이라 경로에 따라 달라진다",
+   "distance_km": 8704,
+   "sources": [
+    {
+     "n": 1,
+     "title": "WonderNetwork — Ping time between Osaka and other cities",
+     "url": "https://wondernetwork.com/pings/Osaka",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [
+    {
+     "value": 111.08,
+     "basis": "반대 방향(San Jose → Osaka) 페이지의 값",
+     "url": "https://wondernetwork.com/pings/San%20Jose"
+    }
+   ],
+   "conf": "med",
+   "note": "오사카 페이지에서 본 새너제이까지의 값이다. 반대 방향 페이지의 값이 다르면 alt 에 적었다."
+  },
+  {
+   "id": "latency-osaka-seattle",
+   "kind": "latency",
+   "country": "JP",
+   "city": "오사카",
+   "to_country": "US",
+   "to_city": "시애틀",
+   "value": 115.68,
+   "unit": "ms",
+   "asof": "2026-11-18",
+   "basis": "WonderNetwork 서버 사이의 ping 왕복 시간 평균(받은 시점의 측정값). 한 사업자의 서버 한 쌍 값이라 경로에 따라 달라진다",
+   "distance_km": 8044,
+   "sources": [
+    {
+     "n": 1,
+     "title": "WonderNetwork — Ping time between Osaka and other cities",
+     "url": "https://wondernetwork.com/pings/Osaka",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [
+    {
+     "value": 110.1,
+     "basis": "반대 방향(Seattle → Osaka) 페이지의 값",
+     "url": "https://wondernetwork.com/pings/Seattle"
+    }
+   ],
+   "conf": "med",
+   "note": "오사카 페이지에서 본 시애틀까지의 값이다. 반대 방향 페이지의 값이 다르면 alt 에 적었다."
+  },
+  {
+   "id": "latency-osaka-seoul",
+   "kind": "latency",
+   "country": "JP",
+   "city": "오사카",
+   "to_country": "KR",
+   "to_city": "서울",
+   "value": 40.42,
+   "unit": "ms",
+   "asof": "2026-11-18",
+   "basis": "WonderNetwork 서버 사이의 ping 왕복 시간 평균(받은 시점의 측정값). 한 사업자의 서버 한 쌍 값이라 경로에 따라 달라진다",
+   "distance_km": 829,
+   "sources": [
+    {
+     "n": 1,
+     "title": "WonderNetwork — Ping time between Osaka and other cities",
+     "url": "https://wondernetwork.com/pings/Osaka",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "오사카 페이지에서 본 서울까지의 값이다. 반대 방향 페이지의 값이 다르면 alt 에 적었다."
+  },
+  {
+   "id": "latency-osaka-singapore",
+   "kind": "latency",
+   "country": "JP",
+   "city": "오사카",
+   "to_country": "SG",
+   "to_city": "싱가포르",
+   "value": 73.26,
+   "unit": "ms",
+   "asof": "2026-11-18",
+   "basis": "WonderNetwork 서버 사이의 ping 왕복 시간 평균(받은 시점의 측정값). 한 사업자의 서버 한 쌍 값이라 경로에 따라 달라진다",
+   "distance_km": 4956,
+   "sources": [
+    {
+     "n": 1,
+     "title": "WonderNetwork — Ping time between Osaka and other cities",
+     "url": "https://wondernetwork.com/pings/Osaka",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "오사카 페이지에서 본 싱가포르까지의 값이다. 반대 방향 페이지의 값이 다르면 alt 에 적었다."
+  },
+  {
+   "id": "latency-osaka-sydney",
+   "kind": "latency",
+   "country": "JP",
+   "city": "오사카",
+   "to_country": "AU",
+   "to_city": "시드니",
+   "value": 129.61,
+   "unit": "ms",
+   "asof": "2026-11-18",
+   "basis": "WonderNetwork 서버 사이의 ping 왕복 시간 평균(받은 시점의 측정값). 한 사업자의 서버 한 쌍 값이라 경로에 따라 달라진다",
+   "distance_km": 7799,
+   "sources": [
+    {
+     "n": 1,
+     "title": "WonderNetwork — Ping time between Osaka and other cities",
+     "url": "https://wondernetwork.com/pings/Osaka",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "오사카 페이지에서 본 시드니까지의 값이다. 반대 방향 페이지의 값이 다르면 alt 에 적었다."
+  },
+  {
+   "id": "latency-osaka-taipei",
+   "kind": "latency",
+   "country": "JP",
+   "city": "오사카",
+   "to_country": "TW",
+   "to_city": "타이베이",
+   "value": 49.22,
+   "unit": "ms",
+   "asof": "2026-11-18",
+   "basis": "WonderNetwork 서버 사이의 ping 왕복 시간 평균(받은 시점의 측정값). 한 사업자의 서버 한 쌍 값이라 경로에 따라 달라진다",
+   "distance_km": 1720,
+   "sources": [
+    {
+     "n": 1,
+     "title": "WonderNetwork — Ping time between Osaka and other cities",
+     "url": "https://wondernetwork.com/pings/Osaka",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "오사카 페이지에서 본 타이베이까지의 값이다. 반대 방향 페이지의 값이 다르면 alt 에 적었다."
+  },
+  {
+   "id": "latency-osaka-tokyo",
+   "kind": "latency",
+   "country": "JP",
+   "city": "오사카",
+   "to_country": "JP",
+   "to_city": "도쿄",
+   "value": 7.86,
+   "unit": "ms",
+   "asof": "2026-11-18",
+   "basis": "WonderNetwork 서버 사이의 ping 왕복 시간 평균(받은 시점의 측정값). 한 사업자의 서버 한 쌍 값이라 경로에 따라 달라진다",
+   "distance_km": 402,
+   "sources": [
+    {
+     "n": 1,
+     "title": "WonderNetwork — Ping time between Osaka and other cities",
+     "url": "https://wondernetwork.com/pings/Osaka",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "오사카 페이지에서 본 도쿄까지의 값이다. 반대 방향 페이지의 값이 다르면 alt 에 적었다."
+  },
+  {
+   "id": "latency-sanjose-seattle",
+   "kind": "latency",
+   "country": "US",
+   "city": "새너제이",
+   "to_country": "US",
+   "to_city": "시애틀",
+   "value": 21.87,
+   "unit": "ms",
+   "asof": "2026-11-18",
+   "basis": "WonderNetwork 서버 사이의 ping 왕복 시간 평균(받은 시점의 측정값). 한 사업자의 서버 한 쌍 값이라 경로에 따라 달라진다",
+   "distance_km": 1141,
+   "sources": [
+    {
+     "n": 1,
+     "title": "WonderNetwork — Ping time between San Jose and other cities",
+     "url": "https://wondernetwork.com/pings/San%20Jose",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "새너제이 페이지에서 본 시애틀까지의 값이다. 반대 방향 페이지의 값이 다르면 alt 에 적었다."
+  },
+  {
+   "id": "latency-sanjose-seoul",
+   "kind": "latency",
+   "country": "US",
+   "city": "새너제이",
+   "to_country": "KR",
+   "to_city": "서울",
+   "value": 133.41,
+   "unit": "ms",
+   "asof": "2026-11-18",
+   "basis": "WonderNetwork 서버 사이의 ping 왕복 시간 평균(받은 시점의 측정값). 한 사업자의 서버 한 쌍 값이라 경로에 따라 달라진다",
+   "distance_km": 9093,
+   "sources": [
+    {
+     "n": 1,
+     "title": "WonderNetwork — Ping time between San Jose and other cities",
+     "url": "https://wondernetwork.com/pings/San%20Jose",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [
+    {
+     "value": 138.45,
+     "basis": "반대 방향(Seoul → San Jose) 페이지의 값",
+     "url": "https://wondernetwork.com/pings/Seoul"
+    }
+   ],
+   "conf": "med",
+   "note": "새너제이 페이지에서 본 서울까지의 값이다. 반대 방향 페이지의 값이 다르면 alt 에 적었다."
+  },
+  {
+   "id": "latency-sanjose-singapore",
+   "kind": "latency",
+   "country": "US",
+   "city": "새너제이",
+   "to_country": "SG",
+   "to_city": "싱가포르",
+   "value": 167.41,
+   "unit": "ms",
+   "asof": "2026-11-18",
+   "basis": "WonderNetwork 서버 사이의 ping 왕복 시간 평균(받은 시점의 측정값). 한 사업자의 서버 한 쌍 값이라 경로에 따라 달라진다",
+   "distance_km": 13649,
+   "sources": [
+    {
+     "n": 1,
+     "title": "WonderNetwork — Ping time between San Jose and other cities",
+     "url": "https://wondernetwork.com/pings/San%20Jose",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "새너제이 페이지에서 본 싱가포르까지의 값이다. 반대 방향 페이지의 값이 다르면 alt 에 적었다."
+  },
+  {
+   "id": "latency-sanjose-sydney",
+   "kind": "latency",
+   "country": "US",
+   "city": "새너제이",
+   "to_country": "AU",
+   "to_city": "시드니",
+   "value": 206.81,
+   "unit": "ms",
+   "asof": "2026-11-18",
+   "basis": "WonderNetwork 서버 사이의 ping 왕복 시간 평균(받은 시점의 측정값). 한 사업자의 서버 한 쌍 값이라 경로에 따라 달라진다",
+   "distance_km": 11963,
+   "sources": [
+    {
+     "n": 1,
+     "title": "WonderNetwork — Ping time between San Jose and other cities",
+     "url": "https://wondernetwork.com/pings/San%20Jose",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "새너제이 페이지에서 본 시드니까지의 값이다. 반대 방향 페이지의 값이 다르면 alt 에 적었다."
+  },
+  {
+   "id": "latency-sanjose-taipei",
+   "kind": "latency",
+   "country": "US",
+   "city": "새너제이",
+   "to_country": "TW",
+   "to_city": "타이베이",
+   "value": 134.24,
+   "unit": "ms",
+   "asof": "2026-11-18",
+   "basis": "WonderNetwork 서버 사이의 ping 왕복 시간 평균(받은 시점의 측정값). 한 사업자의 서버 한 쌍 값이라 경로에 따라 달라진다",
+   "distance_km": 10423,
+   "sources": [
+    {
+     "n": 1,
+     "title": "WonderNetwork — Ping time between San Jose and other cities",
+     "url": "https://wondernetwork.com/pings/San%20Jose",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "새너제이 페이지에서 본 타이베이까지의 값이다. 반대 방향 페이지의 값이 다르면 alt 에 적었다."
+  },
+  {
+   "id": "latency-sanjose-tokyo",
+   "kind": "latency",
+   "country": "US",
+   "city": "새너제이",
+   "to_country": "JP",
+   "to_city": "도쿄",
+   "value": 108.17,
+   "unit": "ms",
+   "asof": "2026-11-18",
+   "basis": "WonderNetwork 서버 사이의 ping 왕복 시간 평균(받은 시점의 측정값). 한 사업자의 서버 한 쌍 값이라 경로에 따라 달라진다",
+   "distance_km": 8327,
+   "sources": [
+    {
+     "n": 1,
+     "title": "WonderNetwork — Ping time between San Jose and other cities",
+     "url": "https://wondernetwork.com/pings/San%20Jose",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "새너제이 페이지에서 본 도쿄까지의 값이다. 반대 방향 페이지의 값이 다르면 alt 에 적었다."
+  },
+  {
+   "id": "latency-seattle-seoul",
+   "kind": "latency",
+   "country": "US",
+   "city": "시애틀",
+   "to_country": "KR",
+   "to_city": "서울",
+   "value": 135.1,
+   "unit": "ms",
+   "asof": "2026-11-18",
+   "basis": "WonderNetwork 서버 사이의 ping 왕복 시간 평균(받은 시점의 측정값). 한 사업자의 서버 한 쌍 값이라 경로에 따라 달라진다",
+   "distance_km": 8324,
+   "sources": [
+    {
+     "n": 1,
+     "title": "WonderNetwork — Ping time between Seattle and other cities",
+     "url": "https://wondernetwork.com/pings/Seattle",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "시애틀 페이지에서 본 서울까지의 값이다. 반대 방향 페이지의 값이 다르면 alt 에 적었다."
+  },
+  {
+   "id": "latency-seattle-singapore",
+   "kind": "latency",
+   "country": "US",
+   "city": "시애틀",
+   "to_country": "SG",
+   "to_city": "싱가포르",
+   "value": 153.58,
+   "unit": "ms",
+   "asof": "2026-11-18",
+   "basis": "WonderNetwork 서버 사이의 ping 왕복 시간 평균(받은 시점의 측정값). 한 사업자의 서버 한 쌍 값이라 경로에 따라 달라진다",
+   "distance_km": 12984,
+   "sources": [
+    {
+     "n": 1,
+     "title": "WonderNetwork — Ping time between Seattle and other cities",
+     "url": "https://wondernetwork.com/pings/Seattle",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "시애틀 페이지에서 본 싱가포르까지의 값이다. 반대 방향 페이지의 값이 다르면 alt 에 적었다."
+  },
+  {
+   "id": "latency-seattle-sydney",
+   "kind": "latency",
+   "country": "US",
+   "city": "시애틀",
+   "to_country": "AU",
+   "to_city": "시드니",
+   "value": 158.13,
+   "unit": "ms",
+   "asof": "2026-11-18",
+   "basis": "WonderNetwork 서버 사이의 ping 왕복 시간 평균(받은 시점의 측정값). 한 사업자의 서버 한 쌍 값이라 경로에 따라 달라진다",
+   "distance_km": 12473,
+   "sources": [
+    {
+     "n": 1,
+     "title": "WonderNetwork — Ping time between Seattle and other cities",
+     "url": "https://wondernetwork.com/pings/Seattle",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "시애틀 페이지에서 본 시드니까지의 값이다. 반대 방향 페이지의 값이 다르면 alt 에 적었다."
+  },
+  {
+   "id": "latency-seattle-taipei",
+   "kind": "latency",
+   "country": "US",
+   "city": "시애틀",
+   "to_country": "TW",
+   "to_city": "타이베이",
+   "value": 112.41,
+   "unit": "ms",
+   "asof": "2026-11-18",
+   "basis": "WonderNetwork 서버 사이의 ping 왕복 시간 평균(받은 시점의 측정값). 한 사업자의 서버 한 쌍 값이라 경로에 따라 달라진다",
+   "distance_km": 9733,
+   "sources": [
+    {
+     "n": 1,
+     "title": "WonderNetwork — Ping time between Seattle and other cities",
+     "url": "https://wondernetwork.com/pings/Seattle",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [
+    {
+     "value": 113.06,
+     "basis": "반대 방향(Taipei → Seattle) 페이지의 값",
+     "url": "https://wondernetwork.com/pings/Taipei"
+    }
+   ],
+   "conf": "med",
+   "note": "시애틀 페이지에서 본 타이베이까지의 값이다. 반대 방향 페이지의 값이 다르면 alt 에 적었다."
+  },
+  {
+   "id": "latency-seattle-tokyo",
+   "kind": "latency",
+   "country": "US",
+   "city": "시애틀",
+   "to_country": "JP",
+   "to_city": "도쿄",
+   "value": 104.34,
+   "unit": "ms",
+   "asof": "2026-11-18",
+   "basis": "WonderNetwork 서버 사이의 ping 왕복 시간 평균(받은 시점의 측정값). 한 사업자의 서버 한 쌍 값이라 경로에 따라 달라진다",
+   "distance_km": 7693,
+   "sources": [
+    {
+     "n": 1,
+     "title": "WonderNetwork — Ping time between Seattle and other cities",
+     "url": "https://wondernetwork.com/pings/Seattle",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "시애틀 페이지에서 본 도쿄까지의 값이다. 반대 방향 페이지의 값이 다르면 alt 에 적었다."
+  },
+  {
+   "id": "latency-seoul-singapore",
+   "kind": "latency",
+   "country": "KR",
+   "city": "서울",
+   "to_country": "SG",
+   "to_city": "싱가포르",
+   "value": 75.66,
+   "unit": "ms",
+   "asof": "2026-11-18",
+   "basis": "WonderNetwork 서버 사이의 ping 왕복 시간 평균(받은 시점의 측정값). 한 사업자의 서버 한 쌍 값이라 경로에 따라 달라진다",
+   "distance_km": 4675,
+   "sources": [
+    {
+     "n": 1,
+     "title": "WonderNetwork — Ping time between Seoul and other cities",
+     "url": "https://wondernetwork.com/pings/Seoul",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "서울 페이지에서 본 싱가포르까지의 값이다. 반대 방향 페이지의 값이 다르면 alt 에 적었다."
+  },
+  {
+   "id": "latency-seoul-sydney",
+   "kind": "latency",
+   "country": "KR",
+   "city": "서울",
+   "to_country": "AU",
+   "to_city": "시드니",
+   "value": 163.12,
+   "unit": "ms",
+   "asof": "2026-11-18",
+   "basis": "WonderNetwork 서버 사이의 ping 왕복 시간 평균(받은 시점의 측정값). 한 사업자의 서버 한 쌍 값이라 경로에 따라 달라진다",
+   "distance_km": 8331,
+   "sources": [
+    {
+     "n": 1,
+     "title": "WonderNetwork — Ping time between Seoul and other cities",
+     "url": "https://wondernetwork.com/pings/Seoul",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "서울 페이지에서 본 시드니까지의 값이다. 반대 방향 페이지의 값이 다르면 alt 에 적었다."
+  },
+  {
+   "id": "latency-seoul-taipei",
+   "kind": "latency",
+   "country": "KR",
+   "city": "서울",
+   "to_country": "TW",
+   "to_city": "타이베이",
+   "value": 58.88,
+   "unit": "ms",
+   "asof": "2026-11-18",
+   "basis": "WonderNetwork 서버 사이의 ping 왕복 시간 평균(받은 시점의 측정값). 한 사업자의 서버 한 쌍 값이라 경로에 따라 달라진다",
+   "distance_km": 1486,
+   "sources": [
+    {
+     "n": 1,
+     "title": "WonderNetwork — Ping time between Seoul and other cities",
+     "url": "https://wondernetwork.com/pings/Seoul",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [
+    {
+     "value": 57.98,
+     "basis": "반대 방향(Taipei → Seoul) 페이지의 값",
+     "url": "https://wondernetwork.com/pings/Taipei"
+    }
+   ],
+   "conf": "med",
+   "note": "서울 페이지에서 본 타이베이까지의 값이다. 반대 방향 페이지의 값이 다르면 alt 에 적었다."
+  },
+  {
+   "id": "latency-seoul-tokyo",
+   "kind": "latency",
+   "country": "KR",
+   "city": "서울",
+   "to_country": "JP",
+   "to_city": "도쿄",
+   "value": 35,
+   "unit": "ms",
+   "asof": "2026-11-18",
+   "basis": "WonderNetwork 서버 사이의 ping 왕복 시간 평균(받은 시점의 측정값). 한 사업자의 서버 한 쌍 값이라 경로에 따라 달라진다",
+   "distance_km": 1159,
+   "sources": [
+    {
+     "n": 1,
+     "title": "WonderNetwork — Ping time between Seoul and other cities",
+     "url": "https://wondernetwork.com/pings/Seoul",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "서울 페이지에서 본 도쿄까지의 값이다. 반대 방향 페이지의 값이 다르면 alt 에 적었다."
+  },
+  {
+   "id": "latency-singapore-sydney",
+   "kind": "latency",
+   "country": "SG",
+   "city": "싱가포르",
+   "to_country": "AU",
+   "to_city": "시드니",
+   "value": 92.04,
+   "unit": "ms",
+   "asof": "2026-11-18",
+   "basis": "WonderNetwork 서버 사이의 ping 왕복 시간 평균(받은 시점의 측정값). 한 사업자의 서버 한 쌍 값이라 경로에 따라 달라진다",
+   "distance_km": 6314,
+   "sources": [
+    {
+     "n": 1,
+     "title": "WonderNetwork — Ping time between Singapore and other cities",
+     "url": "https://wondernetwork.com/pings/Singapore",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "싱가포르 페이지에서 본 시드니까지의 값이다. 반대 방향 페이지의 값이 다르면 alt 에 적었다."
+  },
+  {
+   "id": "latency-singapore-taipei",
+   "kind": "latency",
+   "country": "SG",
+   "city": "싱가포르",
+   "to_country": "TW",
+   "to_city": "타이베이",
+   "value": 43.65,
+   "unit": "ms",
+   "asof": "2026-11-18",
+   "basis": "WonderNetwork 서버 사이의 ping 왕복 시간 평균(받은 시점의 측정값). 한 사업자의 서버 한 쌍 값이라 경로에 따라 달라진다",
+   "distance_km": 3251,
+   "sources": [
+    {
+     "n": 1,
+     "title": "WonderNetwork — Ping time between Singapore and other cities",
+     "url": "https://wondernetwork.com/pings/Singapore",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "싱가포르 페이지에서 본 타이베이까지의 값이다. 반대 방향 페이지의 값이 다르면 alt 에 적었다."
+  },
+  {
+   "id": "latency-singapore-tokyo",
+   "kind": "latency",
+   "country": "SG",
+   "city": "싱가포르",
+   "to_country": "JP",
+   "to_city": "도쿄",
+   "value": 77.87,
+   "unit": "ms",
+   "asof": "2026-11-18",
+   "basis": "WonderNetwork 서버 사이의 ping 왕복 시간 평균(받은 시점의 측정값). 한 사업자의 서버 한 쌍 값이라 경로에 따라 달라진다",
+   "distance_km": 5325,
+   "sources": [
+    {
+     "n": 1,
+     "title": "WonderNetwork — Ping time between Singapore and other cities",
+     "url": "https://wondernetwork.com/pings/Singapore",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "싱가포르 페이지에서 본 도쿄까지의 값이다. 반대 방향 페이지의 값이 다르면 alt 에 적었다."
+  },
+  {
+   "id": "latency-sydney-taipei",
+   "kind": "latency",
+   "country": "AU",
+   "city": "시드니",
+   "to_country": "TW",
+   "to_city": "타이베이",
+   "value": 139.38,
+   "unit": "ms",
+   "asof": "2026-11-18",
+   "basis": "WonderNetwork 서버 사이의 ping 왕복 시간 평균(받은 시점의 측정값). 한 사업자의 서버 한 쌍 값이라 경로에 따라 달라진다",
+   "distance_km": 7263,
+   "sources": [
+    {
+     "n": 1,
+     "title": "WonderNetwork — Ping time between Sydney and other cities",
+     "url": "https://wondernetwork.com/pings/Sydney",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "시드니 페이지에서 본 타이베이까지의 값이다. 반대 방향 페이지의 값이 다르면 alt 에 적었다."
+  },
+  {
+   "id": "latency-sydney-tokyo",
+   "kind": "latency",
+   "country": "AU",
+   "city": "시드니",
+   "to_country": "JP",
+   "to_city": "도쿄",
+   "value": 98.58,
+   "unit": "ms",
+   "asof": "2026-11-18",
+   "basis": "WonderNetwork 서버 사이의 ping 왕복 시간 평균(받은 시점의 측정값). 한 사업자의 서버 한 쌍 값이라 경로에 따라 달라진다",
+   "distance_km": 7826,
+   "sources": [
+    {
+     "n": 1,
+     "title": "WonderNetwork — Ping time between Sydney and other cities",
+     "url": "https://wondernetwork.com/pings/Sydney",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "시드니 페이지에서 본 도쿄까지의 값이다. 반대 방향 페이지의 값이 다르면 alt 에 적었다."
+  },
+  {
+   "id": "latency-taipei-tokyo",
+   "kind": "latency",
+   "country": "TW",
+   "city": "타이베이",
+   "to_country": "JP",
+   "to_city": "도쿄",
+   "value": 30.98,
+   "unit": "ms",
+   "asof": "2026-11-18",
+   "basis": "WonderNetwork 서버 사이의 ping 왕복 시간 평균(받은 시점의 측정값). 한 사업자의 서버 한 쌍 값이라 경로에 따라 달라진다",
+   "distance_km": 2107,
+   "sources": [
+    {
+     "n": 1,
+     "title": "WonderNetwork — Ping time between Taipei and other cities",
+     "url": "https://wondernetwork.com/pings/Taipei",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [
+    {
+     "value": 32.02,
+     "basis": "반대 방향(Tokyo → Taipei) 페이지의 값",
+     "url": "https://wondernetwork.com/pings/Tokyo"
+    }
+   ],
+   "conf": "med",
+   "note": "타이베이 페이지에서 본 도쿄까지의 값이다. 반대 방향 페이지의 값이 다르면 alt 에 적었다."
   }
  ]
 }

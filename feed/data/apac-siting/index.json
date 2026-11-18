@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated_kst": "2026-11-18T18:54:06+09:00",
+ "updated_kst": "2026-11-18T18:57:48+09:00",
  "question": "한국은 아시아·태평양 AI 컴퓨트의 권역 거점이 될 수 있는가",
  "bundles": [
   {
@@ -34,10 +34,10 @@
    "id": "C4-5",
    "file": "peering.json",
    "title": "도시별 접속 여건과 도시 간 지연시간",
-   "status": "collecting",
-   "records": 11,
+   "status": "draft",
+   "records": 102,
    "verified_share": 1,
-   "updated_kst": "2026-11-18T18:54:06+09:00"
+   "updated_kst": "2026-11-18T18:57:48+09:00"
   },
   {
    "id": "D",
