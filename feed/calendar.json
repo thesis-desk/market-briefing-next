@@ -194,8 +194,8 @@
    "official": true,
    "source_url": "https://investor.nvidia.com/rss/event.aspx",
    "consensus_snapshot": true,
-   "report_slug": null,
-   "status": "scheduled",
+   "report_slug": "nvidia-3q27-earnings",
+   "status": "published",
    "note": "회사 IR 행사 피드: 미국 현지 11월 17일 회계 3분기 실적"
   },
   {

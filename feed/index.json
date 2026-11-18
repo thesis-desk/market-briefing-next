@@ -1,7 +1,25 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-18T08:29:45+09:00",
+ "generated_kst": "2026-11-18T09:47:40+09:00",
  "reports": [
+  {
+   "slug": "nvidia-3q27-earnings",
+   "type": "earnings",
+   "title": "Nvidia 3Q27 실적발표 : FY28 성장 75%로 상향, CEO 사임 후 첫 콜",
+   "companies": [
+    {
+     "name": "Nvidia",
+     "ticker": "NVDA"
+    }
+   ],
+   "event": "3Q27 실적 발표",
+   "event_date": "2026-11-17",
+   "published_kst": "2026-11-18T09:47:40+09:00",
+   "revised_kst": "2026-11-18T09:47:40+09:00",
+   "revision": 1,
+   "summary": "Rubin 첫 분기 매출 약 200억 달러와 FY28 성장 전망 상향(약 70% → 약 75%)으로 수요와 공급 쪽 숫자는 더 좋아졌다. 그러나 매출총이익률은 75%대에서 71~73%로 한 단계 내려가고, CEO 사임·보증·운전자본 부담이 함께 커졌다. 숫자는 강해졌지만 확인할 위험도 늘어난 분기다.",
+   "path": "reports/nvidia-3q27-earnings.json"
+  },
   {
    "slug": "semafor-jeff-bezos-on-jensen-huang-getting-into-the-ai-race",
    "type": "interview",
