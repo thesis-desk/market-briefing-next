@@ -1,7 +1,25 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-18T20:08:10+09:00",
+ "generated_kst": "2026-11-18T20:26:01+09:00",
  "reports": [
+  {
+   "slug": "sixsigma-3",
+   "type": "article",
+   "title": "식스시그마 : 중국 출하를 멈추고도 FY28 성장 전망을 75%로 올린 엔비디아, 변수는 칩 공급에서 고객의 부지·전력·자금으로 넘어갔다",
+   "companies": [
+    {
+     "name": "엔비디아",
+     "ticker": "NVDA"
+    }
+   ],
+   "event": "FY27 3분기 실적 컨퍼런스콜",
+   "event_date": "2026-11-17",
+   "published_kst": "2026-11-18T20:23:05+09:00",
+   "revised_kst": "2026-11-18T20:23:05+09:00",
+   "revision": 1,
+   "summary": "3분기 콜의 숫자는 수요 우위를 다시 확인했지만, 75% 전망의 전제가 웨이퍼 공급에서 고객의 데이터센터 준비와 자금 조달로 옮겨 왔다. 판단은 엔비디아가 칩을 얼마나 만드느냐보다 네오클라우드와 AI 연구소가 건물을 제때 짓고 돈을 구하느냐에 달렸다(확신 중간).",
+   "path": "reports/sixsigma-3.json"
+  },
   {
    "slug": "semafor-we-have-to-do-it-amazon-ceo-andy-jassy-on-racing",
    "type": "interview",
@@ -1599,7 +1617,7 @@
   }
  ],
  "street": {
-  "updated_kst": "2026-11-18T17:27:24+09:00",
+  "updated_kst": "2026-11-18T20:26:01+09:00",
   "path": "street.json"
  },
  "calendar": {
@@ -1610,7 +1628,7 @@
   {
    "id": "apac-siting",
    "path": "data/apac-siting/index.json",
-   "updated_kst": "2026-11-18T20:08:10+09:00"
+   "updated_kst": "2026-11-18T20:15:32+09:00"
   }
  ]
 }

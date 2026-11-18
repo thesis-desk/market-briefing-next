@@ -2,10 +2,10 @@
  "schema": 1,
  "bundle": "E",
  "title": "배후 수요",
- "updated_kst": "2026-11-18T20:08:10+09:00",
+ "updated_kst": "2026-11-18T20:14:09+09:00",
  "measure": null,
  "notes": [
-  "주제는 E1 인구·GDP, E2 도시별 데이터센터 시장, E3 클라우드 시장, E4 AI 사용 지표, E5 지연시간권이다. 기록의 topic 으로 나뉜다. 지금은 E1 과 E5 만 있다.",
+  "주제는 E1 인구·GDP, E2 도시별 데이터센터 시장, E3 클라우드 시장, E4 AI 사용 지표, E5 지연시간권이다. 기록의 topic 으로 나뉜다. E2~E4 는 시장조사 회사와 사업자가 공개한 값만 실었고 유료 보고서의 표는 싣지 않았다.",
   "E1 은 IMF 세계경제전망의 값을 그대로 옮긴 것이고 `desk datasets demand` 가 다시 만든다. 지난해 값도 IMF 의 추정치다.",
   "E5 는 계산값이다. 서울·도쿄·싱가포르에서 각 나라의 대표 도시까지의 왕복 지연시간(WonderNetwork 의 서버 사이 ping, 받은 날의 값)이 50ms·100ms 안이면 그 나라 전체의 인구와 GDP 를 더했다. 입력은 기록의 countries 에 있다.",
   "E5 의 한계: 나라를 대표 도시 하나로 판정하므로 인도·호주·미국처럼 큰 나라는 과대·과소가 크다(어느 도시든 닿으면 넣은 합은 any_city). 한 측정 사업자의 값이라 실제 사업자 경로와 다를 수 있고 받을 때마다 조금씩 달라진다. 대표 값은 제한 시장(중국·홍콩·러시아)을 뺀 것이고, 넣은 값은 incl_restricted 에 있다. 제한 시장의 범위는 묶음 F4(수출통제 지위)를 모으기 전의 임시 기준이다.",
@@ -14,6 +14,9 @@
  "summary": {
   "by_topic": {
    "E1": 7,
+   "E2": 5,
+   "E3": 1,
+   "E4": 14,
    "E5": 6
   },
   "macro": {
@@ -886,6 +889,741 @@
    "alt": [],
    "conf": "high",
    "note": "2025년 인구 23.3백만 명, 1인당 GDP 39,512달러. 그 뒤 해의 값은 IMF 전망이다."
+  },
+  {
+   "id": "market-seoul",
+   "topic": "E2",
+   "kind": "market",
+   "country": "KR",
+   "city": "서울(수도권)",
+   "value": 869,
+   "unit": "MW",
+   "asof": "2026-03",
+   "basis": "CBRE 가 집계한 수도권 데이터센터 총 용량(2026년 1분기 말)",
+   "market": {
+    "firm": "CBRE",
+    "total_mw": 869,
+    "upcoming_mw": 1412,
+    "vacancy": "5% 미만",
+    "rent": "2025년 하반기 이후 10~20% 상승",
+    "cap_rate": "5.25~6.00%"
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "Real Estate Asia — Greater Seoul data centre vacancy remains below 5% (CBRE 인용)",
+     "url": "https://realestateasia.com/industrial/news/greater-seoul-data-centre-vacancy-remains-below-5",
+     "date": "2026-10",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "예정 용량은 1,412MW 다. 코로케이션 공실률은 5% 아래이고 임대료는 2025년 하반기 이후 10~20% 더 올랐다. CBRE 는 사업자들이 한전의 평가 절차를 피하려고 수도권에서 10MW 미만 시설에 집중한다고 적었다. 시장조사 회사가 정의한 시장 범위와 용량 기준(IT 인지 수전인지)은 보도에 없다."
+  },
+  {
+   "id": "market-tokyo",
+   "topic": "E2",
+   "kind": "market",
+   "country": "JP",
+   "city": "도쿄(수도권)",
+   "value": 1086,
+   "unit": "MW",
+   "asof": "2026-03",
+   "basis": "CBRE 가 집계한 수도권 데이터센터 총 용량(2026년 1분기 말)",
+   "market": {
+    "firm": "CBRE",
+    "total_mw": 1086,
+    "upcoming_mw": 2544,
+    "vacancy": null,
+    "rent": "2026년 상승 전망",
+    "cap_rate": "3.35~4.35%"
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "Real Estate Asia — Greater Tokyo data centre pipeline reaches 2,544 MW (CBRE 인용)",
+     "url": "https://realestateasia.com/industrial/news/greater-tokyo-data-centre-pipeline-reaches-2544-mw",
+     "date": "2026-10",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "예정 용량은 2,544MW 다. CBRE 는 2026년에 공실률과 코로케이션 가격이 모두 오를 것으로 보았고, 200~300MW 를 찾는 문의가 있다고 적었다. 시장조사 회사가 정의한 시장 범위와 용량 기준(IT 인지 수전인지)은 보도에 없다."
+  },
+  {
+   "id": "market-johor",
+   "topic": "E2",
+   "kind": "market",
+   "country": "MY",
+   "city": "조호르",
+   "value": 1110,
+   "unit": "MW",
+   "asof": "2026-06",
+   "basis": "Cushman & Wakefield 가 집계한 가동 용량(2026년 상반기 말)",
+   "market": {
+    "firm": "Cushman & Wakefield",
+    "operational_mw": 1110,
+    "under_construction_mw": 602,
+    "pipeline_mw": 3088
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "Cushman & Wakefield — Asia Pacific's Data Centre Development Pipeline Reaches Record 26.5GW in H1 2026",
+     "url": "https://www.cushmanwakefield.com/en/singapore/news/2026/08/apac-dc-h1-2026",
+     "date": "2026-08-05",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "W.Media — APAC data center pipeline reaches 26.5 GW (Cushman & Wakefield 보고서 요약)",
+     "url": "https://w.media/apac-data-center-pipeline-reaches-26-5-gw-as-ai-demand-drives-expansion-cushman-wakefield-report/",
+     "date": "2026-08",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "개발 예정 물량은 3,088MW(건설 중 602MW 포함)로 반년 사이 28% 늘었다. 가동과 예정을 더하면 4GW 를 넘어 권역 1위라고 적혀 있다. 말레이시아 전체의 건설 중 용량은 약 1.0GW 다."
+  },
+  {
+   "id": "market-sydney",
+   "topic": "E2",
+   "kind": "market",
+   "country": "AU",
+   "city": "시드니",
+   "value": 917,
+   "unit": "MW",
+   "asof": "2026-06",
+   "basis": "Cushman & Wakefield 가 집계한 가동 용량(2026년 상반기 말)",
+   "market": {
+    "firm": "Cushman & Wakefield",
+    "operational_mw": 917,
+    "planned_mw": 2018,
+    "pipeline_mw": 2134
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "Cushman & Wakefield — Asia Pacific's Data Centre Development Pipeline Reaches Record 26.5GW in H1 2026",
+     "url": "https://www.cushmanwakefield.com/en/singapore/news/2026/08/apac-dc-h1-2026",
+     "date": "2026-08-05",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "개발 예정 물량은 2,134MW(계획 단계 2,018MW)로 반년 사이 65% 늘었다."
+  },
+  {
+   "id": "market-mumbai",
+   "topic": "E2",
+   "kind": "market",
+   "country": "IN",
+   "city": "뭄바이",
+   "value": 890,
+   "unit": "MW",
+   "asof": "2026-06",
+   "basis": "Cushman & Wakefield 가 집계한 가동 용량(2026년 상반기 말)",
+   "market": {
+    "firm": "Cushman & Wakefield",
+    "operational_mw": 890,
+    "pipeline_mw": 1726
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "Cushman & Wakefield — Asia Pacific's Data Centre Development Pipeline Reaches Record 26.5GW in H1 2026",
+     "url": "https://www.cushmanwakefield.com/en/singapore/news/2026/08/apac-dc-h1-2026",
+     "date": "2026-08-05",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "개발 예정 물량은 1,726MW 로 반년 사이 31% 늘었다."
+  },
+  {
+   "id": "cloud-apej",
+   "topic": "E3",
+   "kind": "cloud",
+   "country": "ZZ",
+   "city": null,
+   "value": 53,
+   "unit": "십억 달러",
+   "asof": "2024",
+   "basis": "일본과 중국을 뺀 아시아·태평양의 퍼블릭 클라우드 서비스 시장(IaaS·PaaS·SaaS 합계)",
+   "cloud": {
+    "firm": "IDC",
+    "scope": "아시아·태평양(일본·중국 제외)",
+    "forecast_usd_bn": 131,
+    "forecast_year": "2029",
+    "cagr_pct": 19.8
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "IDC — AI and Digital Transformation Drive Asia/Pacific* Public Cloud Market to $131 Billion by 2029",
+     "url": "https://www.idc.com/resource-center/press-releases/idc-ai-and-digital-transformation-drive-asia-pacific-public-cloud-market-to-131-billion-by-2029/",
+     "date": "2025-08-11",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "2029년 1,310억 달러로 2025~2029년 연평균 19.8% 늘 것으로 전망했다. 나라별 값은 공개 보도자료에 없고 유료 자료에 있어 싣지 않았다. SaaS 가 들어 있어 IaaS·PaaS 만의 값이 아니다."
+  },
+  {
+   "id": "ai-aui-kr",
+   "topic": "E4",
+   "kind": "ai_use",
+   "country": "KR",
+   "city": null,
+   "value": 3.78,
+   "unit": "지수",
+   "asof": "2026-05",
+   "basis": "Anthropic 사용 지수: Claude.ai 사용 비중 ÷ 생산가능인구(15~64세) 비중. 1 이면 인구에 비례",
+   "ai_use": {
+    "source": "Anthropic Economic Index",
+    "metric": "usage_per_capita_index",
+    "rank": 14,
+    "rank_of": 121,
+    "usage_pct": 3.24,
+    "usage_rank": 7,
+    "prev": {
+     "period": "2026-04",
+     "value": 3.92,
+     "rank": 10
+    }
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "Anthropic Economic Index — release_2026_06_26 (aei_claude_ai_2026-06-26.csv, CC BY)",
+     "url": "https://huggingface.co/datasets/Anthropic/EconomicIndex/tree/main/release_2026_06_26",
+     "date": "2026-06-26",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "121개국 가운데 14위다(순위는 계산). 세계 Claude.ai 사용의 3.24%를 차지해 사용량으로는 7위다. 4월 지수는 3.92(10위)였다. 한 회사의 소비자 서비스 사용만 본 값이다."
+  },
+  {
+   "id": "ai-ms-kr",
+   "topic": "E4",
+   "kind": "ai_use",
+   "country": "KR",
+   "city": null,
+   "value": 40.6,
+   "unit": "%",
+   "asof": "2026-06",
+   "basis": "생산가능인구 가운데 AI 를 쓰는 사람의 비중(마이크로소프트 추정, 2026년 2분기)",
+   "ai_use": {
+    "source": "Microsoft AI Diffusion",
+    "metric": "AI user share",
+    "prev": {
+     "period": "2026-03",
+     "value": 37.1
+    },
+    "world": 18.8
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "Microsoft — Global AI Diffusion Q2 2026: Trends and Insights",
+     "url": "https://www.microsoft.com/en-us/research/wp-content/uploads/2026/09/Microsoft-AI-Diffusion-Report-2026-Q2.pdf",
+     "date": "2026-09",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "1분기는 37.1% 였다. 세계 평균은 18.8% 다. 마이크로소프트 제품의 사용 기록에서 추정해 운영체제·기기 점유율, 인터넷 보급률, 인구로 보정한 값이라 한 회사의 관측에 기댄다."
+  },
+  {
+   "id": "ai-aui-jp",
+   "topic": "E4",
+   "kind": "ai_use",
+   "country": "JP",
+   "city": null,
+   "value": 1.91,
+   "unit": "지수",
+   "asof": "2026-05",
+   "basis": "Anthropic 사용 지수: Claude.ai 사용 비중 ÷ 생산가능인구(15~64세) 비중. 1 이면 인구에 비례",
+   "ai_use": {
+    "source": "Anthropic Economic Index",
+    "metric": "usage_per_capita_index",
+    "rank": 32,
+    "rank_of": 121,
+    "usage_pct": 3.28,
+    "usage_rank": 6,
+    "prev": {
+     "period": "2026-04",
+     "value": 1.97,
+     "rank": 31
+    }
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "Anthropic Economic Index — release_2026_06_26 (aei_claude_ai_2026-06-26.csv, CC BY)",
+     "url": "https://huggingface.co/datasets/Anthropic/EconomicIndex/tree/main/release_2026_06_26",
+     "date": "2026-06-26",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "121개국 가운데 32위다(순위는 계산). 세계 Claude.ai 사용의 3.28%를 차지해 사용량으로는 6위다. 4월 지수는 1.97(31위)였다. 한 회사의 소비자 서비스 사용만 본 값이다."
+  },
+  {
+   "id": "ai-ms-jp",
+   "topic": "E4",
+   "kind": "ai_use",
+   "country": "JP",
+   "city": null,
+   "value": 24.7,
+   "unit": "%",
+   "asof": "2026-06",
+   "basis": "생산가능인구 가운데 AI 를 쓰는 사람의 비중(마이크로소프트 추정, 2026년 2분기)",
+   "ai_use": {
+    "source": "Microsoft AI Diffusion",
+    "metric": "AI user share",
+    "prev": {
+     "period": "2026-03",
+     "value": 22.5
+    },
+    "world": 18.8
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "Microsoft — Global AI Diffusion Q2 2026: Trends and Insights",
+     "url": "https://www.microsoft.com/en-us/research/wp-content/uploads/2026/09/Microsoft-AI-Diffusion-Report-2026-Q2.pdf",
+     "date": "2026-09",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "1분기는 22.5% 였다. 세계 평균은 18.8% 다. 마이크로소프트 제품의 사용 기록에서 추정해 운영체제·기기 점유율, 인터넷 보급률, 인구로 보정한 값이라 한 회사의 관측에 기댄다."
+  },
+  {
+   "id": "ai-aui-sg",
+   "topic": "E4",
+   "kind": "ai_use",
+   "country": "SG",
+   "city": null,
+   "value": 5.81,
+   "unit": "지수",
+   "asof": "2026-05",
+   "basis": "Anthropic 사용 지수: Claude.ai 사용 비중 ÷ 생산가능인구(15~64세) 비중. 1 이면 인구에 비례",
+   "ai_use": {
+    "source": "Anthropic Economic Index",
+    "metric": "usage_per_capita_index",
+    "rank": 2,
+    "rank_of": 121,
+    "usage_pct": 0.62,
+    "usage_rank": 29,
+    "prev": {
+     "period": "2026-04",
+     "value": 6.44,
+     "rank": 1
+    }
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "Anthropic Economic Index — release_2026_06_26 (aei_claude_ai_2026-06-26.csv, CC BY)",
+     "url": "https://huggingface.co/datasets/Anthropic/EconomicIndex/tree/main/release_2026_06_26",
+     "date": "2026-06-26",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "121개국 가운데 2위다(순위는 계산). 세계 Claude.ai 사용의 0.62%를 차지해 사용량으로는 29위다. 4월 지수는 6.44(1위)였다. 한 회사의 소비자 서비스 사용만 본 값이다."
+  },
+  {
+   "id": "ai-ms-sg",
+   "topic": "E4",
+   "kind": "ai_use",
+   "country": "SG",
+   "city": null,
+   "value": 64.3,
+   "unit": "%",
+   "asof": "2026-06",
+   "basis": "생산가능인구 가운데 AI 를 쓰는 사람의 비중(마이크로소프트 추정, 2026년 2분기)",
+   "ai_use": {
+    "source": "Microsoft AI Diffusion",
+    "metric": "AI user share",
+    "prev": {
+     "period": "2026-03",
+     "value": 63.4
+    },
+    "world": 18.8
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "Microsoft — Global AI Diffusion Q2 2026: Trends and Insights",
+     "url": "https://www.microsoft.com/en-us/research/wp-content/uploads/2026/09/Microsoft-AI-Diffusion-Report-2026-Q2.pdf",
+     "date": "2026-09",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "1분기는 63.4% 였다. 세계 평균은 18.8% 다. 마이크로소프트 제품의 사용 기록에서 추정해 운영체제·기기 점유율, 인터넷 보급률, 인구로 보정한 값이라 한 회사의 관측에 기댄다."
+  },
+  {
+   "id": "ai-aui-my",
+   "topic": "E4",
+   "kind": "ai_use",
+   "country": "MY",
+   "city": null,
+   "value": 0.87,
+   "unit": "지수",
+   "asof": "2026-05",
+   "basis": "Anthropic 사용 지수: Claude.ai 사용 비중 ÷ 생산가능인구(15~64세) 비중. 1 이면 인구에 비례",
+   "ai_use": {
+    "source": "Anthropic Economic Index",
+    "metric": "usage_per_capita_index",
+    "rank": 67,
+    "rank_of": 121,
+    "usage_pct": 0.51,
+    "usage_rank": 36,
+    "prev": {
+     "period": "2026-04",
+     "value": 0.8,
+     "rank": 65
+    }
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "Anthropic Economic Index — release_2026_06_26 (aei_claude_ai_2026-06-26.csv, CC BY)",
+     "url": "https://huggingface.co/datasets/Anthropic/EconomicIndex/tree/main/release_2026_06_26",
+     "date": "2026-06-26",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "121개국 가운데 67위다(순위는 계산). 세계 Claude.ai 사용의 0.51%를 차지해 사용량으로는 36위다. 4월 지수는 0.8(65위)였다. 한 회사의 소비자 서비스 사용만 본 값이다."
+  },
+  {
+   "id": "ai-ms-my",
+   "topic": "E4",
+   "kind": "ai_use",
+   "country": "MY",
+   "city": null,
+   "value": 22.6,
+   "unit": "%",
+   "asof": "2026-06",
+   "basis": "생산가능인구 가운데 AI 를 쓰는 사람의 비중(마이크로소프트 추정, 2026년 2분기)",
+   "ai_use": {
+    "source": "Microsoft AI Diffusion",
+    "metric": "AI user share",
+    "prev": {
+     "period": "2026-03",
+     "value": 21.8
+    },
+    "world": 18.8
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "Microsoft — Global AI Diffusion Q2 2026: Trends and Insights",
+     "url": "https://www.microsoft.com/en-us/research/wp-content/uploads/2026/09/Microsoft-AI-Diffusion-Report-2026-Q2.pdf",
+     "date": "2026-09",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "1분기는 21.8% 였다. 세계 평균은 18.8% 다. 마이크로소프트 제품의 사용 기록에서 추정해 운영체제·기기 점유율, 인터넷 보급률, 인구로 보정한 값이라 한 회사의 관측에 기댄다."
+  },
+  {
+   "id": "ai-aui-au",
+   "topic": "E4",
+   "kind": "ai_use",
+   "country": "AU",
+   "city": null,
+   "value": 6.4,
+   "unit": "지수",
+   "asof": "2026-05",
+   "basis": "Anthropic 사용 지수: Claude.ai 사용 비중 ÷ 생산가능인구(15~64세) 비중. 1 이면 인구에 비례",
+   "ai_use": {
+    "source": "Anthropic Economic Index",
+    "metric": "usage_per_capita_index",
+    "rank": 1,
+    "rank_of": 121,
+    "usage_pct": 2.65,
+    "usage_rank": 9,
+    "prev": {
+     "period": "2026-04",
+     "value": 5.83,
+     "rank": 2
+    }
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "Anthropic Economic Index — release_2026_06_26 (aei_claude_ai_2026-06-26.csv, CC BY)",
+     "url": "https://huggingface.co/datasets/Anthropic/EconomicIndex/tree/main/release_2026_06_26",
+     "date": "2026-06-26",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "Anthropic — How Australia uses Claude",
+     "url": "https://www.anthropic.com/research/how-australia-uses-claude",
+     "date": "2026",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "121개국 가운데 1위다(순위는 계산). 세계 Claude.ai 사용의 2.65%를 차지해 사용량으로는 9위다. 4월 지수는 5.83(2위)였다. Anthropic 은 2026년 2월 표본에서 호주의 지수를 4.1(7위)로 적었다. 한 회사의 소비자 서비스 사용만 본 값이다."
+  },
+  {
+   "id": "ai-ms-au",
+   "topic": "E4",
+   "kind": "ai_use",
+   "country": "AU",
+   "city": null,
+   "value": 40.7,
+   "unit": "%",
+   "asof": "2026-06",
+   "basis": "생산가능인구 가운데 AI 를 쓰는 사람의 비중(마이크로소프트 추정, 2026년 2분기)",
+   "ai_use": {
+    "source": "Microsoft AI Diffusion",
+    "metric": "AI user share",
+    "prev": {
+     "period": "2026-03",
+     "value": 39.5
+    },
+    "world": 18.8
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "Microsoft — Global AI Diffusion Q2 2026: Trends and Insights",
+     "url": "https://www.microsoft.com/en-us/research/wp-content/uploads/2026/09/Microsoft-AI-Diffusion-Report-2026-Q2.pdf",
+     "date": "2026-09",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "1분기는 39.5% 였다. 세계 평균은 18.8% 다. 마이크로소프트 제품의 사용 기록에서 추정해 운영체제·기기 점유율, 인터넷 보급률, 인구로 보정한 값이라 한 회사의 관측에 기댄다."
+  },
+  {
+   "id": "ai-aui-in",
+   "topic": "E4",
+   "kind": "ai_use",
+   "country": "IN",
+   "city": null,
+   "value": 0.3,
+   "unit": "지수",
+   "asof": "2026-05",
+   "basis": "Anthropic 사용 지수: Claude.ai 사용 비중 ÷ 생산가능인구(15~64세) 비중. 1 이면 인구에 비례",
+   "ai_use": {
+    "source": "Anthropic Economic Index",
+    "metric": "usage_per_capita_index",
+    "rank": 104,
+    "rank_of": 121,
+    "usage_pct": 7.12,
+    "usage_rank": 2,
+    "prev": {
+     "period": "2026-04",
+     "value": 0.31,
+     "rank": 97
+    }
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "Anthropic Economic Index — release_2026_06_26 (aei_claude_ai_2026-06-26.csv, CC BY)",
+     "url": "https://huggingface.co/datasets/Anthropic/EconomicIndex/tree/main/release_2026_06_26",
+     "date": "2026-06-26",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "Anthropic — India Country Brief: Anthropic Economic Index",
+     "url": "https://www.anthropic.com/research/india-brief-economic-index",
+     "date": "2026",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "121개국 가운데 104위다(순위는 계산). 세계 Claude.ai 사용의 7.12%를 차지해 사용량으로는 2위다. 4월 지수는 0.31(97위)였다. Anthropic 은 2025년 11월 표본에서 인도가 사용량 2위, 1인당 116개국 가운데 101위라고 적었다. 한 회사의 소비자 서비스 사용만 본 값이다."
+  },
+  {
+   "id": "ai-ms-in",
+   "topic": "E4",
+   "kind": "ai_use",
+   "country": "IN",
+   "city": null,
+   "value": 18.5,
+   "unit": "%",
+   "asof": "2026-06",
+   "basis": "생산가능인구 가운데 AI 를 쓰는 사람의 비중(마이크로소프트 추정, 2026년 2분기)",
+   "ai_use": {
+    "source": "Microsoft AI Diffusion",
+    "metric": "AI user share",
+    "prev": {
+     "period": "2026-03",
+     "value": 17.6
+    },
+    "world": 18.8
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "Microsoft — Global AI Diffusion Q2 2026: Trends and Insights",
+     "url": "https://www.microsoft.com/en-us/research/wp-content/uploads/2026/09/Microsoft-AI-Diffusion-Report-2026-Q2.pdf",
+     "date": "2026-09",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "1분기는 17.6% 였다. 세계 평균은 18.8% 다. 마이크로소프트 제품의 사용 기록에서 추정해 운영체제·기기 점유율, 인터넷 보급률, 인구로 보정한 값이라 한 회사의 관측에 기댄다."
+  },
+  {
+   "id": "ai-aui-tw",
+   "topic": "E4",
+   "kind": "ai_use",
+   "country": "TW",
+   "city": null,
+   "value": 2.08,
+   "unit": "지수",
+   "asof": "2026-05",
+   "basis": "Anthropic 사용 지수: Claude.ai 사용 비중 ÷ 생산가능인구(15~64세) 비중. 1 이면 인구에 비례",
+   "ai_use": {
+    "source": "Anthropic Economic Index",
+    "metric": "usage_per_capita_index",
+    "rank": 31,
+    "rank_of": 121,
+    "usage_pct": 0.79,
+    "usage_rank": 23,
+    "prev": {
+     "period": "2026-04",
+     "value": 2.12,
+     "rank": 30
+    }
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "Anthropic Economic Index — release_2026_06_26 (aei_claude_ai_2026-06-26.csv, CC BY)",
+     "url": "https://huggingface.co/datasets/Anthropic/EconomicIndex/tree/main/release_2026_06_26",
+     "date": "2026-06-26",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "121개국 가운데 31위다(순위는 계산). 세계 Claude.ai 사용의 0.79%를 차지해 사용량으로는 23위다. 4월 지수는 2.12(30위)였다. 한 회사의 소비자 서비스 사용만 본 값이다."
+  },
+  {
+   "id": "ai-ms-tw",
+   "topic": "E4",
+   "kind": "ai_use",
+   "country": "TW",
+   "city": null,
+   "value": 33.8,
+   "unit": "%",
+   "asof": "2026-06",
+   "basis": "생산가능인구 가운데 AI 를 쓰는 사람의 비중(마이크로소프트 추정, 2026년 2분기)",
+   "ai_use": {
+    "source": "Microsoft AI Diffusion",
+    "metric": "AI user share",
+    "prev": {
+     "period": "2026-03",
+     "value": 31.8
+    },
+    "world": 18.8
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "Microsoft — Global AI Diffusion Q2 2026: Trends and Insights",
+     "url": "https://www.microsoft.com/en-us/research/wp-content/uploads/2026/09/Microsoft-AI-Diffusion-Report-2026-Q2.pdf",
+     "date": "2026-09",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "1분기는 31.8% 였다. 세계 평균은 18.8% 다. 마이크로소프트 제품의 사용 기록에서 추정해 운영체제·기기 점유율, 인터넷 보급률, 인구로 보정한 값이라 한 회사의 관측에 기댄다."
   },
   {
    "id": "zone-seoul-100",

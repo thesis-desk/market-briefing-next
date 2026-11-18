@@ -1,8 +1,74 @@
 {
  "schema": 1,
  "month": "2026-11",
- "updated_kst": "2026-11-18T17:27:24+09:00",
+ "updated_kst": "2026-11-18T20:26:01+09:00",
  "items": [
+  {
+   "id": "goldman-goldman-sachs-says-bet-on-these-24-physical-asse",
+   "group": "투자은행",
+   "org": "Goldman Sachs",
+   "person": null,
+   "kind": "report",
+   "title": "Goldman Sachs, AI 도입의 덕을 볼 '실물 자산' 종목 24개에 베팅하라고 조언",
+   "title_orig": "Goldman Sachs says bet on these 24 ‘physical asset’ stocks getting a boost from AI adoption",
+   "url": "https://www.businessinsider.com/stocks-to-buy-now-ai-adopters-investing-recommendations-goldman-sachs-2026-11",
+   "outlet": "Insider",
+   "published_kst": "2026-11-18T11:10:00+09:00",
+   "stance": {
+    "ai_tech": 1,
+    "market": null
+   },
+   "args": [
+    "투자 회수",
+    "수요·채택",
+    "경쟁·해자"
+   ],
+   "summary": "Goldman Sachs는 2027년 전망 보고서에서 AI 설비투자 증가율이 AI 구축 시작 이후 처음으로 둔화되기 시작할 것으로 내다봤다. 이에 따라 AI 인프라 수혜주에서 AI를 도입해 마진을 키우는 기업으로 비중을 옮길 시점이라고 보았다. 특히 AI로 대체되기 어려운 물리적 자산 중심 기업이 교란 위험이 낮다고 평가했다.",
+   "points": [
+    "Goldman Sachs는 화요일 고객에게 낸 2027년 전망 보고서에서, AI 구축이 시작된 이래 처음으로 설비투자 증가세가 2027년부터 둔화되기 시작할 것으로 예상한다고 밝혔다.",
+    "은행은 AI 구축 수혜 종목에서 벗어나, 기술을 활용해 마진을 키우는 기업인 도입 기업에 집중하기 시작할 좋은 시점이라고 말했다.",
+    "수석 미국 주식 전략가 Ben Snider는 보고서에서, AI 설비투자 증가세 둔화는 'AI 트레이드'가 AI 인프라 종목에서 하이퍼스케일러를 포함한 수익화·도입의 수혜 기업으로 계속 옮겨 가리라는 점을 시사한다고 썼다.",
+    "Goldman은 주유소, 자동차, 스낵 식품처럼 유형 자산으로 고객과 접점을 갖는 '물리적 집약형 사업 모델'을 가진 기업을 선호한다.",
+    "Goldman은 이런 기업에 집중하면 교란 위험이 줄어든다고 보았다. 예컨대 소프트웨어나 보험 언더라이터보다 초코바나 스키 리조트를 AI가 대체하기가 더 어렵다는 것이다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
+  },
+  {
+   "id": "apollo-apollo-global-management-apo-sees-ai-needing-8-t",
+   "group": "PE·대체투자",
+   "org": "Apollo",
+   "person": null,
+   "kind": "report",
+   "title": "Apollo Global Management(APO), AI에 8조 달러 자본이 필요하다고 봐",
+   "title_orig": "Apollo Global Management (APO) Sees AI Needing $8 Trillion Of Capital",
+   "url": "https://finance.yahoo.com/technology/ai/articles/apollo-global-management-apo-sees-091142238.html",
+   "outlet": "Yahoo Finance",
+   "published_kst": "2026-11-18T10:11:00+09:00",
+   "stance": {
+    "ai_tech": 0,
+    "market": null
+   },
+   "args": [
+    "자금 조달·신용",
+    "투자 회수",
+    "금리·거시"
+   ],
+   "summary": "Apollo CEO Marc Rowan은 AI 구축에 약 8조 달러의 자본이 필요할 수 있다고 경고했다. 이 자금 수요가 전통적인 미국 채권시장에서 사모신용으로 차입을 옮길 수 있다고 보았다. 대규모 AI 인프라 금융이 기술 업종 밖 기업의 차입 비용과 자금 접근성에도 영향을 줄 수 있다고 짚었다.",
+   "points": [
+    "Apollo CEO Marc Rowan은 AI 구축에 약 8조 달러의 자본이 필요할 수 있다고 경고했다.",
+    "Rowan은 이 AI 자금 수요가 차입의 더 많은 부분을 전통적인 미국 채권시장에서 사모신용으로 옮겨 가게 할 수 있다고 주장했다.",
+    "Rowan은 대규모 AI 인프라에 자금을 대는 일이 기술 업종 밖 기업들의 차입 비용과 자금 접근성에 영향을 줄 수 있다고 지적했다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
+  },
   {
    "id": "morgan-stanley-2027-global-outlook-the-case-for-a-stronger-doll",
    "group": "투자은행",
