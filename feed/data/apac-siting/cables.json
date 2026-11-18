@@ -2,12 +2,12 @@
  "schema": 1,
  "bundle": "C1-3",
  "title": "해저케이블 목록·용량·빅테크 참여",
- "updated_kst": "2026-11-18T18:50:56+09:00",
+ "updated_kst": "2026-11-18T20:02:43+09:00",
  "measure": "value",
  "notes": [
   "단위는 케이블 1건이다. 대상 나라(한국·일본·싱가포르·말레이시아·호주·인도·대만) 가운데 한 곳 이상에 닿고 두 나라 이상에 닿는 케이블만 넣었다(국내 구간만 잇는 케이블은 없다).",
   "목록·개통 연도·계획 여부·육양지·소유자·제조사는 TeleGeography Submarine Cable Map 의 공개 자료를 그대로 옮긴 것이다(`desk datasets cables`). 개통 연도가 미래인 것과 원천이 계획으로 표시한 것은 is_planned 가 true 다.",
-  "대표 값(value)은 시스템 설계 용량(Tbps)인데 아직 모으지 않아 모두 비어 있다. 광섬유 쌍 수(fiber_pairs), 개통 당시·업그레이드 뒤 용량(capacity), 빅테크의 쌍 구매(bigtech_pairs)도 같다. 그래서 by_country 의 용량 합계는 0 이고 capacity_known 이 0 이다 — 용량이 0 이라는 뜻이 아니다.",
+  "대표 값(value)은 시스템 설계 용량(Tbps)이다. 2010년 이후 개통분과 계획분 80건을 먼저 보아 51건에 값을, 53건에 광섬유 쌍 수(fiber_pairs)를 넣었다. 값은 정리 사이트(Submarine Cable Networks)의 시스템 페이지에서 읽었고, 개통 당시 설계·개통 때 발표·'최대'·쌍 수 × 쌍당 용량 계산이 섞여 있어 기록의 basis 에 기준을 적었다. 증설 뒤 값은 alt 에 있다. 값이 없는 케이블은 by_country 의 용량 합계에 들어가지 않으므로 capacity_known 이 적은 나라의 합은 실제보다 작다. 빅테크의 쌍 구매(bigtech_pairs)와 개통·증설 이력(capacity)은 아직 비어 있다.",
   "bigtech 는 소유자 목록에 Google·Meta·Microsoft·Amazon 이 있는가이고, bigtech_mode 는 소유자가 빅테크뿐이면 '단독 소유', 다른 소유자와 함께면 '컨소시엄 구성원'이다. 소유자가 아니라 광섬유 쌍만 산 경우는 원천의 소유자 목록에 나오지 않아 여기서는 '없음'으로 잡힌다.",
   "by_country 는 기록에서 센 값이다. 여러 나라에 닿는 케이블은 나라마다 전체가 잡힌다 — 나라의 몫이 아니고, 나라 값을 더하면 같은 케이블이 여러 번 들어간다. landing_sites 는 그 나라 안의 육양지 이름 수다.",
   "원천과 케이블 페이지(submarinenetworks.com 등)가 육양지·개통 상태를 다르게 적는 경우의 대조는 아직 하지 않았다."
@@ -2040,10 +2040,10 @@
    "countries": [
     "IN"
    ],
-   "value": null,
+   "value": 3.84,
    "unit": "Tbps",
    "asof": "2010",
-   "basis": "시스템 설계 용량. 아직 모으지 않았다",
+   "basis": "개통 당시(초기) 설계 용량(10Gbps 기술)",
    "rfs": "2010 December",
    "rfs_year": 2010,
    "is_planned": false,
@@ -2081,7 +2081,7 @@
     "Saudi Arabia",
     "United Arab Emirates"
    ],
-   "fiber_pairs": null,
+   "fiber_pairs": 3,
    "capacity": null,
    "bigtech_pairs": null,
    "sources": [
@@ -2091,12 +2091,29 @@
      "url": "https://www.submarinecablemap.com/submarine-cable/imewe",
      "date": "2026-11-18",
      "read": "full"
+    },
+    {
+     "title": "Submarine Cable Networks — IMEWE",
+     "url": "https://www.submarinenetworks.com/en/systems/asia-europe-africa/imewe",
+     "date": "2026-11-18",
+     "read": "partial",
+     "n": 2
     }
    ],
-   "value_src": [],
+   "value_src": [
+    2
+   ],
    "alt": [],
    "conf": "med",
-   "note": "목록·개통 연도·육양지·소유자는 TeleGeography 공개 자료 그대로다. 설계 용량과 광섬유 쌍 수는 아직 모으지 않았다."
+   "note": "설계 용량과 쌍 수는 정리 사이트(Submarine Cable Networks)의 시스템 페이지에서 읽었다. 시스템 전체 값이며 나라 몫이 아니다. 2012년에 40Gbps 로 증설했다.",
+   "extra_sources": [
+    {
+     "title": "Submarine Cable Networks — IMEWE",
+     "url": "https://www.submarinenetworks.com/en/systems/asia-europe-africa/imewe",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ]
   },
   {
    "id": "pgascom",
@@ -2155,10 +2172,10 @@
    "countries": [
     "JP"
    ],
-   "value": null,
+   "value": 7.68,
    "unit": "Tbps",
    "asof": "2010",
-   "basis": "시스템 설계 용량. 아직 모으지 않았다",
+   "basis": "개통 당시(초기) 설계 용량(8쌍, 96 × 10G)",
    "rfs": "2010 March",
    "rfs_year": 2010,
    "is_planned": false,
@@ -2189,7 +2206,7 @@
     "Japan",
     "United States"
    ],
-   "fiber_pairs": null,
+   "fiber_pairs": 8,
    "capacity": null,
    "bigtech_pairs": null,
    "sources": [
@@ -2199,12 +2216,35 @@
      "url": "https://www.submarinecablemap.com/submarine-cable/unity",
      "date": "2026-11-18",
      "read": "full"
+    },
+    {
+     "title": "Submarine Cable Networks — Unity",
+     "url": "https://www.submarinenetworks.com/en/systems/trans-pacific/unity",
+     "date": "2026-11-18",
+     "read": "partial",
+     "n": 2
     }
    ],
-   "value_src": [],
-   "alt": [],
+   "value_src": [
+    2
+   ],
+   "alt": [
+    {
+     "value": 59.2,
+     "basis": "2023년 증설 뒤 쌍당 7.4Tbps × 8쌍으로 계산한 값",
+     "url": "https://www.submarinenetworks.com/en/systems/trans-pacific/unity"
+    }
+   ],
    "conf": "med",
-   "note": "목록·개통 연도·육양지·소유자는 TeleGeography 공개 자료 그대로다. 설계 용량과 광섬유 쌍 수는 아직 모으지 않았다."
+   "note": "설계 용량과 쌍 수는 정리 사이트(Submarine Cable Networks)의 시스템 페이지에서 읽었다. 시스템 전체 값이며 나라 몫이 아니다.",
+   "extra_sources": [
+    {
+     "title": "Submarine Cable Networks — Unity",
+     "url": "https://www.submarinenetworks.com/en/systems/trans-pacific/unity",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ]
   },
   {
    "id": "europe-india-gateway-eig",
@@ -2214,10 +2254,10 @@
    "countries": [
     "IN"
    ],
-   "value": null,
+   "value": 3.84,
    "unit": "Tbps",
    "asof": "2011",
-   "basis": "시스템 설계 용량. 아직 모으지 않았다",
+   "basis": "개통 당시(초기) 설계 용량(10Gbps 기술)",
    "rfs": "2011 February",
    "rfs_year": 2011,
    "is_planned": false,
@@ -2266,7 +2306,7 @@
     "United Arab Emirates",
     "United Kingdom"
    ],
-   "fiber_pairs": null,
+   "fiber_pairs": 3,
    "capacity": null,
    "bigtech_pairs": null,
    "sources": [
@@ -2276,12 +2316,29 @@
      "url": "https://www.submarinecablemap.com/submarine-cable/europe-india-gateway-eig",
      "date": "2026-11-18",
      "read": "full"
+    },
+    {
+     "title": "Submarine Cable Networks — Europe India Gateway (EIG)",
+     "url": "https://www.submarinenetworks.com/en/systems/asia-europe-africa/eig",
+     "date": "2026-11-18",
+     "read": "partial",
+     "n": 2
     }
    ],
-   "value_src": [],
+   "value_src": [
+    2
+   ],
    "alt": [],
    "conf": "med",
-   "note": "목록·개통 연도·육양지·소유자는 TeleGeography 공개 자료 그대로다. 설계 용량과 광섬유 쌍 수는 아직 모으지 않았다."
+   "note": "설계 용량과 쌍 수는 정리 사이트(Submarine Cable Networks)의 시스템 페이지에서 읽었다. 시스템 전체 값이며 나라 몫이 아니다. 대부분의 해저 구간이 3쌍이다. 2015·2020년에 100Gbps 로 증설했으나 증설 뒤 용량은 페이지에 없다.",
+   "extra_sources": [
+    {
+     "title": "Submarine Cable Networks — Europe India Gateway (EIG)",
+     "url": "https://www.submarinenetworks.com/en/systems/asia-europe-africa/eig",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ]
   },
   {
    "id": "asia-submarine-cable-express-asecahaya-malaysia",
@@ -2293,10 +2350,10 @@
     "MY",
     "SG"
    ],
-   "value": null,
+   "value": 15,
    "unit": "Tbps",
    "asof": "2012",
-   "basis": "시스템 설계 용량. 아직 모으지 않았다",
+   "basis": "개통 당시(초기) 설계 용량(40Gbps 기술)",
    "rfs": "2012 August",
    "rfs_year": 2012,
    "is_planned": false,
@@ -2337,7 +2394,7 @@
     "Philippines",
     "Singapore"
    ],
-   "fiber_pairs": null,
+   "fiber_pairs": 6,
    "capacity": null,
    "bigtech_pairs": null,
    "sources": [
@@ -2347,12 +2404,29 @@
      "url": "https://www.submarinecablemap.com/submarine-cable/asia-submarine-cable-express-asecahaya-malaysia",
      "date": "2026-11-18",
      "read": "full"
+    },
+    {
+     "title": "Submarine Cable Networks — Asia Submarine-cable Express (ASE)/Cahaya Malaysia",
+     "url": "https://www.submarinenetworks.com/en/systems/intra-asia/ase",
+     "date": "2026-11-18",
+     "read": "partial",
+     "n": 2
     }
    ],
-   "value_src": [],
+   "value_src": [
+    2
+   ],
    "alt": [],
    "conf": "med",
-   "note": "목록·개통 연도·육양지·소유자는 TeleGeography 공개 자료 그대로다. 설계 용량과 광섬유 쌍 수는 아직 모으지 않았다."
+   "note": "설계 용량과 쌍 수는 정리 사이트(Submarine Cable Networks)의 시스템 페이지에서 읽었다. 시스템 전체 값이며 나라 몫이 아니다.",
+   "extra_sources": [
+    {
+     "title": "Submarine Cable Networks — Asia Submarine-cable Express (ASE)/Cahaya Malaysia",
+     "url": "https://www.submarinenetworks.com/en/systems/intra-asia/ase",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ]
   },
   {
    "id": "cross-straits-cable-network-cscn",
@@ -2476,10 +2550,10 @@
    "countries": [
     "SG"
    ],
-   "value": null,
+   "value": 3.84,
    "unit": "Tbps",
    "asof": "2012",
-   "basis": "시스템 설계 용량. 아직 모으지 않았다",
+   "basis": "개통 당시(초기) 설계 용량",
    "rfs": "2012 November",
    "rfs_year": 2012,
    "is_planned": false,
@@ -2500,7 +2574,7 @@
     "Indonesia",
     "Singapore"
    ],
-   "fiber_pairs": null,
+   "fiber_pairs": 4,
    "capacity": null,
    "bigtech_pairs": null,
    "sources": [
@@ -2510,12 +2584,29 @@
      "url": "https://www.submarinecablemap.com/submarine-cable/jakarta-bangka-bintan-batam-singapore-b3js",
      "date": "2026-11-18",
      "read": "full"
+    },
+    {
+     "title": "Submarine Cable Networks — Jakarta-Bangka-Bintan-Batam-Singapore (B3JS)",
+     "url": "https://www.submarinenetworks.com/en/systems/intra-asia/b3js",
+     "date": "2026-11-18",
+     "read": "partial",
+     "n": 2
     }
    ],
-   "value_src": [],
+   "value_src": [
+    2
+   ],
    "alt": [],
    "conf": "med",
-   "note": "목록·개통 연도·육양지·소유자는 TeleGeography 공개 자료 그대로다. 설계 용량과 광섬유 쌍 수는 아직 모으지 않았다."
+   "note": "설계 용량과 쌍 수는 정리 사이트(Submarine Cable Networks)의 시스템 페이지에서 읽었다. 시스템 전체 값이며 나라 몫이 아니다.",
+   "extra_sources": [
+    {
+     "title": "Submarine Cable Networks — Jakarta-Bangka-Bintan-Batam-Singapore (B3JS)",
+     "url": "https://www.submarinenetworks.com/en/systems/intra-asia/b3js",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ]
   },
   {
    "id": "guam-okinawa-kyushu-incheon-goki",
@@ -2630,10 +2721,10 @@
     "JP",
     "SG"
    ],
-   "value": null,
+   "value": 28,
    "unit": "Tbps",
    "asof": "2013",
-   "basis": "시스템 설계 용량. 아직 모으지 않았다",
+   "basis": "개통 당시(초기) 설계 용량",
    "rfs": "2013 June",
    "rfs_year": 2013,
    "is_planned": false,
@@ -2675,7 +2766,7 @@
     "Philippines",
     "Singapore"
    ],
-   "fiber_pairs": null,
+   "fiber_pairs": 6,
    "capacity": null,
    "bigtech_pairs": null,
    "sources": [
@@ -2685,12 +2776,29 @@
      "url": "https://www.submarinecablemap.com/submarine-cable/southeast-asia-japan-cable-sjc",
      "date": "2026-11-18",
      "read": "full"
+    },
+    {
+     "title": "Submarine Cable Networks — Southeast Asia-Japan Cable (SJC)",
+     "url": "https://www.submarinenetworks.com/en/systems/intra-asia/sjc",
+     "date": "2026-11-18",
+     "read": "partial",
+     "n": 2
     }
    ],
-   "value_src": [],
+   "value_src": [
+    2
+   ],
    "alt": [],
    "conf": "med",
-   "note": "목록·개통 연도·육양지·소유자는 TeleGeography 공개 자료 그대로다. 설계 용량과 광섬유 쌍 수는 아직 모으지 않았다."
+   "note": "설계 용량과 쌍 수는 정리 사이트(Submarine Cable Networks)의 시스템 페이지에서 읽었다. 시스템 전체 값이며 나라 몫이 아니다.",
+   "extra_sources": [
+    {
+     "title": "Submarine Cable Networks — Southeast Asia-Japan Cable (SJC)",
+     "url": "https://www.submarinenetworks.com/en/systems/intra-asia/sjc",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ]
   },
   {
    "id": "taiwan-strait-express-1-tse-1",
@@ -2700,10 +2808,10 @@
    "countries": [
     "TW"
    ],
-   "value": null,
+   "value": 6.4,
    "unit": "Tbps",
    "asof": "2013",
-   "basis": "시스템 설계 용량. 아직 모으지 않았다",
+   "basis": "설계 용량",
    "rfs": "2013 January",
    "rfs_year": 2013,
    "is_planned": false,
@@ -2731,7 +2839,7 @@
     "China",
     "Taiwan"
    ],
-   "fiber_pairs": null,
+   "fiber_pairs": 8,
    "capacity": null,
    "bigtech_pairs": null,
    "sources": [
@@ -2741,12 +2849,29 @@
      "url": "https://www.submarinecablemap.com/submarine-cable/taiwan-strait-express-1-tse-1",
      "date": "2026-11-18",
      "read": "full"
+    },
+    {
+     "title": "Submarine Cable Networks — Taiwan Strait Express-1 (TSE-1)",
+     "url": "https://www.submarinenetworks.com/en/systems/intra-asia/tse-1",
+     "date": "2026-11-18",
+     "read": "partial",
+     "n": 2
     }
    ],
-   "value_src": [],
+   "value_src": [
+    2
+   ],
    "alt": [],
    "conf": "med",
-   "note": "목록·개통 연도·육양지·소유자는 TeleGeography 공개 자료 그대로다. 설계 용량과 광섬유 쌍 수는 아직 모으지 않았다."
+   "note": "설계 용량과 쌍 수는 정리 사이트(Submarine Cable Networks)의 시스템 페이지에서 읽었다. 시스템 전체 값이며 나라 몫이 아니다.",
+   "extra_sources": [
+    {
+     "title": "Submarine Cable Networks — Taiwan Strait Express-1 (TSE-1)",
+     "url": "https://www.submarinenetworks.com/en/systems/intra-asia/tse-1",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ]
   },
   {
    "id": "asia-pacific-gateway-apg",
@@ -2760,10 +2885,10 @@
     "SG",
     "TW"
    ],
-   "value": null,
+   "value": 54.8,
    "unit": "Tbps",
    "asof": "2016",
-   "basis": "시스템 설계 용량. 아직 모으지 않았다",
+   "basis": "컨소시엄이 발표한 시스템 용량",
    "rfs": "2016 November",
    "rfs_year": 2016,
    "is_planned": false,
@@ -2826,7 +2951,7 @@
     "Thailand",
     "Vietnam"
    ],
-   "fiber_pairs": null,
+   "fiber_pairs": 6,
    "capacity": null,
    "bigtech_pairs": null,
    "sources": [
@@ -2836,12 +2961,35 @@
      "url": "https://www.submarinecablemap.com/submarine-cable/asia-pacific-gateway-apg",
      "date": "2026-11-18",
      "read": "full"
+    },
+    {
+     "title": "Submarine Cable Networks — Asia Pacific Gateway (APG)",
+     "url": "https://www.submarinenetworks.com/en/systems/intra-asia/apg",
+     "date": "2026-11-18",
+     "read": "partial",
+     "n": 2
     }
    ],
-   "value_src": [],
-   "alt": [],
+   "value_src": [
+    2
+   ],
+   "alt": [
+    {
+     "value": 30.72,
+     "basis": "초기 설계(128 × 40Gbps, 6쌍)로 계산한 값",
+     "url": "https://www.submarinenetworks.com/en/systems/intra-asia/apg"
+    }
+   ],
    "conf": "med",
-   "note": "목록·개통 연도·육양지·소유자는 TeleGeography 공개 자료 그대로다. 설계 용량과 광섬유 쌍 수는 아직 모으지 않았다."
+   "note": "설계 용량과 쌍 수는 정리 사이트(Submarine Cable Networks)의 시스템 페이지에서 읽었다. 시스템 전체 값이며 나라 몫이 아니다. 컨소시엄 발표 값을 골랐다. 정리 사이트는 계산 방식이 달라 30.72Tbps 와 차이가 난다고 적었다.",
+   "extra_sources": [
+    {
+     "title": "Submarine Cable Networks — Asia Pacific Gateway (APG)",
+     "url": "https://www.submarinenetworks.com/en/systems/intra-asia/apg",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ]
   },
   {
    "id": "bay-of-bengal-gateway-bbg",
@@ -2852,10 +3000,10 @@
     "IN",
     "MY"
    ],
-   "value": null,
+   "value": 30,
    "unit": "Tbps",
    "asof": "2016",
-   "basis": "시스템 설계 용량. 아직 모으지 않았다",
+   "basis": "계산: 쌍 수 × 쌍당 설계 용량(3쌍 × 10Tbps)",
    "rfs": "2016 Q1",
    "rfs_year": 2016,
    "is_planned": false,
@@ -2897,7 +3045,7 @@
     "Sri Lanka",
     "United Arab Emirates"
    ],
-   "fiber_pairs": null,
+   "fiber_pairs": 3,
    "capacity": null,
    "bigtech_pairs": null,
    "sources": [
@@ -2907,12 +3055,29 @@
      "url": "https://www.submarinecablemap.com/submarine-cable/bay-of-bengal-gateway-bbg",
      "date": "2026-11-18",
      "read": "full"
+    },
+    {
+     "title": "Submarine Cable Networks — Bay of Bengal Gateway (BBG)",
+     "url": "https://www.submarinenetworks.com/en/systems/intra-asia/bbg",
+     "date": "2026-11-18",
+     "read": "partial",
+     "n": 2
     }
    ],
-   "value_src": [],
+   "value_src": [
+    2
+   ],
    "alt": [],
    "conf": "med",
-   "note": "목록·개통 연도·육양지·소유자는 TeleGeography 공개 자료 그대로다. 설계 용량과 광섬유 쌍 수는 아직 모으지 않았다."
+   "note": "설계 용량과 쌍 수는 정리 사이트(Submarine Cable Networks)의 시스템 페이지에서 읽었다. 시스템 전체 값이며 나라 몫이 아니다. 입력: 쌍당 10Tbps, 3쌍.",
+   "extra_sources": [
+    {
+     "title": "Submarine Cable Networks — Bay of Bengal Gateway (BBG)",
+     "url": "https://www.submarinenetworks.com/en/systems/intra-asia/bbg",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ]
   },
   {
    "id": "faster",
@@ -2923,10 +3088,10 @@
     "JP",
     "TW"
    ],
-   "value": null,
+   "value": 60,
    "unit": "Tbps",
    "asof": "2016",
-   "basis": "시스템 설계 용량. 아직 모으지 않았다",
+   "basis": "개통 당시(초기) 설계 용량(6쌍, 100Gbps × 100)",
    "rfs": "2016 June",
    "rfs_year": 2016,
    "is_planned": false,
@@ -2965,7 +3130,7 @@
     "Taiwan",
     "United States"
    ],
-   "fiber_pairs": null,
+   "fiber_pairs": 6,
    "capacity": null,
    "bigtech_pairs": null,
    "sources": [
@@ -2975,12 +3140,29 @@
      "url": "https://www.submarinecablemap.com/submarine-cable/faster",
      "date": "2026-11-18",
      "read": "full"
+    },
+    {
+     "title": "Submarine Cable Networks — FASTER",
+     "url": "https://www.submarinenetworks.com/en/systems/trans-pacific/faster",
+     "date": "2026-11-18",
+     "read": "partial",
+     "n": 2
     }
    ],
-   "value_src": [],
+   "value_src": [
+    2
+   ],
    "alt": [],
    "conf": "med",
-   "note": "목록·개통 연도·육양지·소유자는 TeleGeography 공개 자료 그대로다. 설계 용량과 광섬유 쌍 수는 아직 모으지 않았다."
+   "note": "설계 용량과 쌍 수는 정리 사이트(Submarine Cable Networks)의 시스템 페이지에서 읽었다. 시스템 전체 값이며 나라 몫이 아니다.",
+   "extra_sources": [
+    {
+     "title": "Submarine Cable Networks — FASTER",
+     "url": "https://www.submarinenetworks.com/en/systems/trans-pacific/faster",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ]
   },
   {
    "id": "seamewe-5",
@@ -2991,10 +3173,10 @@
     "MY",
     "SG"
    ],
-   "value": null,
+   "value": 24,
    "unit": "Tbps",
    "asof": "2016",
-   "basis": "시스템 설계 용량. 아직 모으지 않았다",
+   "basis": "개통 당시(초기) 설계 용량(3쌍)",
    "rfs": "2016 December",
    "rfs_year": 2016,
    "is_planned": false,
@@ -3053,7 +3235,7 @@
     "United Arab Emirates",
     "Yemen"
    ],
-   "fiber_pairs": null,
+   "fiber_pairs": 3,
    "capacity": null,
    "bigtech_pairs": null,
    "sources": [
@@ -3063,12 +3245,35 @@
      "url": "https://www.submarinecablemap.com/submarine-cable/seamewe-5",
      "date": "2026-11-18",
      "read": "full"
+    },
+    {
+     "title": "Submarine Cable Networks — SeaMeWe-5",
+     "url": "https://www.submarinenetworks.com/en/systems/asia-europe-africa/smw5",
+     "date": "2026-11-18",
+     "read": "partial",
+     "n": 2
     }
    ],
-   "value_src": [],
-   "alt": [],
+   "value_src": [
+    2
+   ],
+   "alt": [
+    {
+     "value": 38,
+     "basis": "200G 장비 증설 뒤 설계 용량",
+     "url": "https://www.submarinenetworks.com/en/systems/asia-europe-africa/smw5"
+    }
+   ],
    "conf": "med",
-   "note": "목록·개통 연도·육양지·소유자는 TeleGeography 공개 자료 그대로다. 설계 용량과 광섬유 쌍 수는 아직 모으지 않았다."
+   "note": "설계 용량과 쌍 수는 정리 사이트(Submarine Cable Networks)의 시스템 페이지에서 읽었다. 시스템 전체 값이며 나라 몫이 아니다.",
+   "extra_sources": [
+    {
+     "title": "Submarine Cable Networks — SeaMeWe-5",
+     "url": "https://www.submarinenetworks.com/en/systems/asia-europe-africa/smw5",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ]
   },
   {
    "id": "asia-africa-europe-1-aae-1",
@@ -3079,10 +3284,10 @@
     "IN",
     "MY"
    ],
-   "value": null,
+   "value": 40,
    "unit": "Tbps",
    "asof": "2017",
-   "basis": "시스템 설계 용량. 아직 모으지 않았다",
+   "basis": "개통 당시(초기) 설계 용량(100Gbps 기술, 5쌍, '40Tbps 넘게')",
    "rfs": "2017 June",
    "rfs_year": 2017,
    "is_planned": false,
@@ -3144,7 +3349,7 @@
     "Vietnam",
     "Yemen"
    ],
-   "fiber_pairs": null,
+   "fiber_pairs": 5,
    "capacity": null,
    "bigtech_pairs": null,
    "sources": [
@@ -3154,12 +3359,35 @@
      "url": "https://www.submarinecablemap.com/submarine-cable/asia-africa-europe-1-aae-1",
      "date": "2026-11-18",
      "read": "full"
+    },
+    {
+     "title": "Submarine Cable Networks — Asia Africa Europe-1 (AAE-1)",
+     "url": "https://www.submarinenetworks.com/en/systems/asia-europe-africa/aae-1",
+     "date": "2026-11-18",
+     "read": "partial",
+     "n": 2
     }
    ],
-   "value_src": [],
-   "alt": [],
+   "value_src": [
+    2
+   ],
+   "alt": [
+    {
+     "value": 100,
+     "basis": "800G 장비 증설 뒤 '100Tbps 넘게'",
+     "url": "https://www.submarinenetworks.com/en/systems/asia-europe-africa/aae-1"
+    }
+   ],
    "conf": "med",
-   "note": "목록·개통 연도·육양지·소유자는 TeleGeography 공개 자료 그대로다. 설계 용량과 광섬유 쌍 수는 아직 모으지 않았다."
+   "note": "설계 용량과 쌍 수는 정리 사이트(Submarine Cable Networks)의 시스템 페이지에서 읽었다. 시스템 전체 값이며 나라 몫이 아니다.",
+   "extra_sources": [
+    {
+     "title": "Submarine Cable Networks — Asia Africa Europe-1 (AAE-1)",
+     "url": "https://www.submarinenetworks.com/en/systems/asia-europe-africa/aae-1",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ]
   },
   {
    "id": "labuan-brunei-submarine-cable",
@@ -3218,10 +3446,10 @@
    "countries": [
     "MY"
    ],
-   "value": null,
+   "value": 30,
    "unit": "Tbps",
    "asof": "2017",
-   "basis": "시스템 설계 용량. 아직 모으지 않았다",
+   "basis": "시스템 용량('30Tbps 이상')",
    "rfs": "2017 March",
    "rfs_year": 2017,
    "is_planned": false,
@@ -3257,12 +3485,35 @@
      "url": "https://www.submarinecablemap.com/submarine-cable/malaysia-cambodia-thailand-mct-cable",
      "date": "2026-11-18",
      "read": "full"
+    },
+    {
+     "title": "Submarine Cable Networks — Malaysia-Cambodia-Thailand (MCT) Cable",
+     "url": "https://www.submarinenetworks.com/en/systems/intra-asia/mct",
+     "date": "2026-11-18",
+     "read": "partial",
+     "n": 2
     }
    ],
-   "value_src": [],
-   "alt": [],
+   "value_src": [
+    2
+   ],
+   "alt": [
+    {
+     "value": 1.5,
+     "basis": "2017년 개통 때 켠 용량",
+     "url": "https://www.submarinenetworks.com/en/systems/intra-asia/mct"
+    }
+   ],
    "conf": "med",
-   "note": "목록·개통 연도·육양지·소유자는 TeleGeography 공개 자료 그대로다. 설계 용량과 광섬유 쌍 수는 아직 모으지 않았다."
+   "note": "설계 용량과 쌍 수는 정리 사이트(Submarine Cable Networks)의 시스템 페이지에서 읽었다. 시스템 전체 값이며 나라 몫이 아니다.",
+   "extra_sources": [
+    {
+     "title": "Submarine Cable Networks — Malaysia-Cambodia-Thailand (MCT) Cable",
+     "url": "https://www.submarinenetworks.com/en/systems/intra-asia/mct",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ]
   },
   {
    "id": "tasman-global-access-tga-cable",
@@ -3272,10 +3523,10 @@
    "countries": [
     "AU"
    ],
-   "value": null,
+   "value": 20,
    "unit": "Tbps",
    "asof": "2017",
-   "basis": "시스템 설계 용량. 아직 모으지 않았다",
+   "basis": "설계 용량(2쌍, 100G)",
    "rfs": "2017 March",
    "rfs_year": 2017,
    "is_planned": false,
@@ -3300,7 +3551,7 @@
     "Australia",
     "New Zealand"
    ],
-   "fiber_pairs": null,
+   "fiber_pairs": 2,
    "capacity": null,
    "bigtech_pairs": null,
    "sources": [
@@ -3310,12 +3561,29 @@
      "url": "https://www.submarinecablemap.com/submarine-cable/tasman-global-access-tga-cable",
      "date": "2026-11-18",
      "read": "full"
+    },
+    {
+     "title": "Submarine Cable Networks — Tasman Global Access (TGA) Cable",
+     "url": "https://www.submarinenetworks.com/en/systems/australia-usa/tga",
+     "date": "2026-11-18",
+     "read": "partial",
+     "n": 2
     }
    ],
-   "value_src": [],
+   "value_src": [
+    2
+   ],
    "alt": [],
    "conf": "med",
-   "note": "목록·개통 연도·육양지·소유자는 TeleGeography 공개 자료 그대로다. 설계 용량과 광섬유 쌍 수는 아직 모으지 않았다."
+   "note": "설계 용량과 쌍 수는 정리 사이트(Submarine Cable Networks)의 시스템 페이지에서 읽었다. 시스템 전체 값이며 나라 몫이 아니다.",
+   "extra_sources": [
+    {
+     "title": "Submarine Cable Networks — Tasman Global Access (TGA) Cable",
+     "url": "https://www.submarinenetworks.com/en/systems/australia-usa/tga",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ]
   },
   {
    "id": "australia-singapore-cable-asc",
@@ -3326,10 +3594,10 @@
     "AU",
     "SG"
    ],
-   "value": null,
+   "value": 40,
    "unit": "Tbps",
    "asof": "2018",
-   "basis": "시스템 설계 용량. 아직 모으지 않았다",
+   "basis": "개통 당시(초기) 설계 용량(4쌍, 100 × 100Gbps)",
    "rfs": "2018 September",
    "rfs_year": 2018,
    "is_planned": false,
@@ -3358,7 +3626,7 @@
     "Indonesia",
     "Singapore"
    ],
-   "fiber_pairs": null,
+   "fiber_pairs": 4,
    "capacity": null,
    "bigtech_pairs": null,
    "sources": [
@@ -3368,12 +3636,35 @@
      "url": "https://www.submarinecablemap.com/submarine-cable/australia-singapore-cable-asc",
      "date": "2026-11-18",
      "read": "full"
+    },
+    {
+     "title": "Submarine Cable Networks — Australia-Singapore Cable (ASC)",
+     "url": "https://www.submarinenetworks.com/en/systems/asia-australia/asc",
+     "date": "2026-11-18",
+     "read": "partial",
+     "n": 2
     }
    ],
-   "value_src": [],
-   "alt": [],
+   "value_src": [
+    2
+   ],
+   "alt": [
+    {
+     "value": 60,
+     "basis": "2019년 증설 뒤",
+     "url": "https://www.submarinenetworks.com/en/systems/asia-australia/asc"
+    }
+   ],
    "conf": "med",
-   "note": "목록·개통 연도·육양지·소유자는 TeleGeography 공개 자료 그대로다. 설계 용량과 광섬유 쌍 수는 아직 모으지 않았다."
+   "note": "설계 용량과 쌍 수는 정리 사이트(Submarine Cable Networks)의 시스템 페이지에서 읽었다. 시스템 전체 값이며 나라 몫이 아니다.",
+   "extra_sources": [
+    {
+     "title": "Submarine Cable Networks — Australia-Singapore Cable (ASC)",
+     "url": "https://www.submarinenetworks.com/en/systems/asia-australia/asc",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ]
   },
   {
    "id": "hawaiki",
@@ -3383,10 +3674,10 @@
    "countries": [
     "AU"
    ],
-   "value": null,
+   "value": 30,
    "unit": "Tbps",
    "asof": "2018",
-   "basis": "시스템 설계 용량. 아직 모으지 않았다",
+   "basis": "개통 당시(초기) 설계 용량(태평양 횡단 구간)",
    "rfs": "2018 July",
    "rfs_year": 2018,
    "is_planned": false,
@@ -3422,12 +3713,29 @@
      "url": "https://www.submarinecablemap.com/submarine-cable/hawaiki",
      "date": "2026-11-18",
      "read": "full"
+    },
+    {
+     "title": "Submarine Cable Networks — Hawaiki",
+     "url": "https://www.submarinenetworks.com/en/systems/australia-usa/hawaiki-cable",
+     "date": "2026-11-18",
+     "read": "partial",
+     "n": 2
     }
    ],
-   "value_src": [],
+   "value_src": [
+    2
+   ],
    "alt": [],
    "conf": "med",
-   "note": "목록·개통 연도·육양지·소유자는 TeleGeography 공개 자료 그대로다. 설계 용량과 광섬유 쌍 수는 아직 모으지 않았다."
+   "note": "설계 용량과 쌍 수는 정리 사이트(Submarine Cable Networks)의 시스템 페이지에서 읽었다. 시스템 전체 값이며 나라 몫이 아니다. 쌍 수는 구간마다 다르다(호주~하와이 2쌍 20Tbps, 뉴질랜드~하와이 1쌍 10Tbps).",
+   "extra_sources": [
+    {
+     "title": "Submarine Cable Networks — Hawaiki",
+     "url": "https://www.submarinenetworks.com/en/systems/australia-usa/hawaiki-cable",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ]
   },
   {
    "id": "indonesia-global-gateway-igg-system",
@@ -3437,10 +3745,10 @@
    "countries": [
     "SG"
    ],
-   "value": null,
+   "value": 32,
    "unit": "Tbps",
    "asof": "2018",
-   "basis": "시스템 설계 용량. 아직 모으지 않았다",
+   "basis": "발표된 시스템 용량(4쌍, 100Gbps × 80)",
    "rfs": "2018 May",
    "rfs_year": 2018,
    "is_planned": false,
@@ -3464,7 +3772,7 @@
     "Indonesia",
     "Singapore"
    ],
-   "fiber_pairs": null,
+   "fiber_pairs": 4,
    "capacity": null,
    "bigtech_pairs": null,
    "sources": [
@@ -3474,12 +3782,29 @@
      "url": "https://www.submarinecablemap.com/submarine-cable/indonesia-global-gateway-igg-system",
      "date": "2026-11-18",
      "read": "full"
+    },
+    {
+     "title": "Submarine Cable Networks — Indonesia Global Gateway (IGG) System",
+     "url": "https://www.submarinenetworks.com/en/systems/intra-asia/igg",
+     "date": "2026-11-18",
+     "read": "partial",
+     "n": 2
     }
    ],
-   "value_src": [],
+   "value_src": [
+    2
+   ],
    "alt": [],
    "conf": "med",
-   "note": "목록·개통 연도·육양지·소유자는 TeleGeography 공개 자료 그대로다. 설계 용량과 광섬유 쌍 수는 아직 모으지 않았다."
+   "note": "설계 용량과 쌍 수는 정리 사이트(Submarine Cable Networks)의 시스템 페이지에서 읽었다. 시스템 전체 값이며 나라 몫이 아니다.",
+   "extra_sources": [
+    {
+     "title": "Submarine Cable Networks — Indonesia Global Gateway (IGG) System",
+     "url": "https://www.submarinenetworks.com/en/systems/intra-asia/igg",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ]
   },
   {
    "id": "new-cross-pacific-ncp-cable-system",
@@ -3491,10 +3816,10 @@
     "KR",
     "TW"
    ],
-   "value": null,
+   "value": 70,
    "unit": "Tbps",
    "asof": "2018",
-   "basis": "시스템 설계 용량. 아직 모으지 않았다",
+   "basis": "개통 당시(초기) 설계 용량(7쌍, 100Gbps)",
    "rfs": "2018 May",
    "rfs_year": 2018,
    "is_planned": false,
@@ -3536,7 +3861,7 @@
     "Taiwan",
     "United States"
    ],
-   "fiber_pairs": null,
+   "fiber_pairs": 7,
    "capacity": null,
    "bigtech_pairs": null,
    "sources": [
@@ -3546,12 +3871,29 @@
      "url": "https://www.submarinecablemap.com/submarine-cable/new-cross-pacific-ncp-cable-system",
      "date": "2026-11-18",
      "read": "full"
+    },
+    {
+     "title": "Submarine Cable Networks — New Cross Pacific (NCP) Cable System",
+     "url": "https://www.submarinenetworks.com/en/systems/trans-pacific/ncp",
+     "date": "2026-11-18",
+     "read": "partial",
+     "n": 2
     }
    ],
-   "value_src": [],
+   "value_src": [
+    2
+   ],
    "alt": [],
    "conf": "med",
-   "note": "목록·개통 연도·육양지·소유자는 TeleGeography 공개 자료 그대로다. 설계 용량과 광섬유 쌍 수는 아직 모으지 않았다."
+   "note": "설계 용량과 쌍 수는 정리 사이트(Submarine Cable Networks)의 시스템 페이지에서 읽었다. 시스템 전체 값이며 나라 몫이 아니다.",
+   "extra_sources": [
+    {
+     "title": "Submarine Cable Networks — New Cross Pacific (NCP) Cable System",
+     "url": "https://www.submarinenetworks.com/en/systems/trans-pacific/ncp",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ]
   },
   {
    "id": "seax-1",
@@ -3593,7 +3935,7 @@
     "Malaysia",
     "Singapore"
    ],
-   "fiber_pairs": null,
+   "fiber_pairs": 24,
    "capacity": null,
    "bigtech_pairs": null,
    "sources": [
@@ -3603,12 +3945,27 @@
      "url": "https://www.submarinecablemap.com/submarine-cable/seax-1",
      "date": "2026-11-18",
      "read": "full"
+    },
+    {
+     "title": "Submarine Cable Networks — SEAX-1",
+     "url": "https://www.submarinenetworks.com/en/systems/intra-asia/seax-1",
+     "date": "2026-11-18",
+     "read": "partial",
+     "n": 2
     }
    ],
    "value_src": [],
    "alt": [],
    "conf": "med",
-   "note": "목록·개통 연도·육양지·소유자는 TeleGeography 공개 자료 그대로다. 설계 용량과 광섬유 쌍 수는 아직 모으지 않았다."
+   "note": "설계 용량과 쌍 수는 정리 사이트(Submarine Cable Networks)의 시스템 페이지에서 읽었다. 시스템 전체 값이며 나라 몫이 아니다. 용량은 페이지에 없다.",
+   "extra_sources": [
+    {
+     "title": "Submarine Cable Networks — SEAX-1",
+     "url": "https://www.submarinenetworks.com/en/systems/intra-asia/seax-1",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ]
   },
   {
    "id": "indigo-west",
@@ -3619,10 +3976,10 @@
     "AU",
     "SG"
    ],
-   "value": null,
+   "value": 36,
    "unit": "Tbps",
    "asof": "2019",
-   "basis": "시스템 설계 용량. 아직 모으지 않았다",
+   "basis": "설계 용량(INDIGO 시스템, '약 36Tbps')",
    "rfs": "2019 May",
    "rfs_year": 2019,
    "is_planned": false,
@@ -3657,7 +4014,7 @@
     "Indonesia",
     "Singapore"
    ],
-   "fiber_pairs": null,
+   "fiber_pairs": 2,
    "capacity": null,
    "bigtech_pairs": null,
    "sources": [
@@ -3667,12 +4024,35 @@
      "url": "https://www.submarinecablemap.com/submarine-cable/indigo-west",
      "date": "2026-11-18",
      "read": "full"
+    },
+    {
+     "title": "Submarine Cable Networks — INDIGO-West",
+     "url": "https://www.submarinenetworks.com/en/systems/asia-australia/indigo",
+     "date": "2026-11-18",
+     "read": "partial",
+     "n": 2
     }
    ],
-   "value_src": [],
-   "alt": [],
+   "value_src": [
+    2
+   ],
+   "alt": [
+    {
+     "value": 40,
+     "basis": "INDIGO West 구간의 시스템 용량으로 적힌 값",
+     "url": "https://www.submarinenetworks.com/en/systems/asia-australia/indigo"
+    }
+   ],
    "conf": "med",
-   "note": "목록·개통 연도·육양지·소유자는 TeleGeography 공개 자료 그대로다. 설계 용량과 광섬유 쌍 수는 아직 모으지 않았다."
+   "note": "설계 용량과 쌍 수는 정리 사이트(Submarine Cable Networks)의 시스템 페이지에서 읽었다. 시스템 전체 값이며 나라 몫이 아니다. 같은 페이지에 36Tbps 와 40Tbps 가 함께 있다.",
+   "extra_sources": [
+    {
+     "title": "Submarine Cable Networks — INDIGO-West",
+     "url": "https://www.submarinenetworks.com/en/systems/asia-australia/indigo",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ]
   },
   {
    "id": "coral-sea-cable-system-cs",
@@ -3845,10 +4225,10 @@
    "countries": [
     "JP"
    ],
-   "value": null,
+   "value": 60,
    "unit": "Tbps",
    "asof": "2020",
-   "basis": "시스템 설계 용량. 아직 모으지 않았다",
+   "basis": "설계 용량('60Tbps 넘게')",
    "rfs": "2020",
    "rfs_year": 2020,
    "is_planned": false,
@@ -3884,7 +4264,7 @@
     "Philippines",
     "United States"
    ],
-   "fiber_pairs": null,
+   "fiber_pairs": 5,
    "capacity": null,
    "bigtech_pairs": null,
    "sources": [
@@ -3894,12 +4274,29 @@
      "url": "https://www.submarinecablemap.com/submarine-cable/jupiter",
      "date": "2026-11-18",
      "read": "full"
+    },
+    {
+     "title": "Submarine Cable Networks — JUPITER",
+     "url": "https://www.submarinenetworks.com/en/systems/trans-pacific/jupiter",
+     "date": "2026-11-18",
+     "read": "partial",
+     "n": 2
     }
    ],
-   "value_src": [],
+   "value_src": [
+    2
+   ],
    "alt": [],
    "conf": "med",
-   "note": "목록·개통 연도·육양지·소유자는 TeleGeography 공개 자료 그대로다. 설계 용량과 광섬유 쌍 수는 아직 모으지 않았다."
+   "note": "설계 용량과 쌍 수는 정리 사이트(Submarine Cable Networks)의 시스템 페이지에서 읽었다. 시스템 전체 값이며 나라 몫이 아니다.",
+   "extra_sources": [
+    {
+     "title": "Submarine Cable Networks — JUPITER",
+     "url": "https://www.submarinenetworks.com/en/systems/trans-pacific/jupiter",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ]
   },
   {
    "id": "batam-sarawak-internet-cable-system-basics",
@@ -3909,10 +4306,10 @@
    "countries": [
     "MY"
    ],
-   "value": null,
+   "value": 48,
    "unit": "Tbps",
    "asof": "2021",
-   "basis": "시스템 설계 용량. 아직 모으지 않았다",
+   "basis": "발표된 시스템 용량(6쌍 × 8Tbps)",
    "rfs": "2021 Q1",
    "rfs_year": 2021,
    "is_planned": false,
@@ -3933,7 +4330,7 @@
     "Indonesia",
     "Malaysia"
    ],
-   "fiber_pairs": null,
+   "fiber_pairs": 6,
    "capacity": null,
    "bigtech_pairs": null,
    "sources": [
@@ -3943,12 +4340,29 @@
      "url": "https://www.submarinecablemap.com/submarine-cable/batam-sarawak-internet-cable-system-basics",
      "date": "2026-11-18",
      "read": "full"
+    },
+    {
+     "title": "Submarine Cable Networks — Batam Sarawak Internet Cable System (BaSICS)",
+     "url": "https://www.submarinenetworks.com/en/systems/intra-asia/basics",
+     "date": "2026-11-18",
+     "read": "partial",
+     "n": 2
     }
    ],
-   "value_src": [],
+   "value_src": [
+    2
+   ],
    "alt": [],
    "conf": "med",
-   "note": "목록·개통 연도·육양지·소유자는 TeleGeography 공개 자료 그대로다. 설계 용량과 광섬유 쌍 수는 아직 모으지 않았다."
+   "note": "설계 용량과 쌍 수는 정리 사이트(Submarine Cable Networks)의 시스템 페이지에서 읽었다. 시스템 전체 값이며 나라 몫이 아니다.",
+   "extra_sources": [
+    {
+     "title": "Submarine Cable Networks — Batam Sarawak Internet Cable System (BaSICS)",
+     "url": "https://www.submarinenetworks.com/en/systems/intra-asia/basics",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ]
   },
   {
    "id": "oman-australia-cable-oac",
@@ -4011,10 +4425,10 @@
    "countries": [
     "TW"
    ],
-   "value": null,
+   "value": 144,
    "unit": "Tbps",
    "asof": "2022",
-   "basis": "시스템 설계 용량. 아직 모으지 않았다",
+   "basis": "발표된 시스템 용량(6쌍 × 24Tbps)",
    "rfs": "2022 January",
    "rfs_year": 2022,
    "is_planned": false,
@@ -4042,7 +4456,7 @@
     "Taiwan",
     "United States"
    ],
-   "fiber_pairs": null,
+   "fiber_pairs": 6,
    "capacity": null,
    "bigtech_pairs": null,
    "sources": [
@@ -4052,12 +4466,29 @@
      "url": "https://www.submarinecablemap.com/submarine-cable/pacific-light-cable-network-plcn",
      "date": "2026-11-18",
      "read": "full"
+    },
+    {
+     "title": "Submarine Cable Networks — Pacific Light Cable Network (PLCN)",
+     "url": "https://www.submarinenetworks.com/en/systems/trans-pacific/plcn",
+     "date": "2026-11-18",
+     "read": "partial",
+     "n": 2
     }
    ],
-   "value_src": [],
+   "value_src": [
+    2
+   ],
    "alt": [],
    "conf": "med",
-   "note": "목록·개통 연도·육양지·소유자는 TeleGeography 공개 자료 그대로다. 설계 용량과 광섬유 쌍 수는 아직 모으지 않았다."
+   "note": "설계 용량과 쌍 수는 정리 사이트(Submarine Cable Networks)의 시스템 페이지에서 읽었다. 시스템 전체 값이며 나라 몫이 아니다. 미국 정부 결정으로 홍콩 구간은 켜지 않았고 대만·필리핀 구간만 쓴다는 점은 이 값에 반영돼 있지 않다.",
+   "extra_sources": [
+    {
+     "title": "Submarine Cable Networks — Pacific Light Cable Network (PLCN)",
+     "url": "https://www.submarinenetworks.com/en/systems/trans-pacific/plcn",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ]
   },
   {
    "id": "peace-cable",
@@ -4116,12 +4547,27 @@
      "url": "https://www.submarinecablemap.com/submarine-cable/peace-cable",
      "date": "2026-11-18",
      "read": "full"
+    },
+    {
+     "title": "Submarine Cable Networks — PEACE Cable",
+     "url": "https://www.submarinenetworks.com/en/systems/asia-europe-africa/peace",
+     "date": "2026-11-18",
+     "read": "partial",
+     "n": 2
     }
    ],
    "value_src": [],
    "alt": [],
    "conf": "med",
-   "note": "목록·개통 연도·육양지·소유자는 TeleGeography 공개 자료 그대로다. 설계 용량과 광섬유 쌍 수는 아직 모으지 않았다."
+   "note": "설계 용량과 쌍 수는 정리 사이트(Submarine Cable Networks)의 시스템 페이지에서 읽었다. 시스템 전체 값이며 나라 몫이 아니다. 쌍당 16Tbps 넘게 보낼 수 있다고만 적혀 있고 쌍 수와 전체 용량은 읽지 못했다.",
+   "extra_sources": [
+    {
+     "title": "Submarine Cable Networks — PEACE Cable",
+     "url": "https://www.submarinenetworks.com/en/systems/asia-europe-africa/peace",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ]
   },
   {
    "id": "southern-cross-next",
@@ -4131,10 +4577,10 @@
    "countries": [
     "AU"
    ],
-   "value": null,
+   "value": 72,
    "unit": "Tbps",
    "asof": "2022",
-   "basis": "시스템 설계 용량. 아직 모으지 않았다",
+   "basis": "설계 용량(시드니~로스앤젤레스 간선 4쌍)",
    "rfs": "2022 July",
    "rfs_year": 2022,
    "is_planned": false,
@@ -4161,7 +4607,7 @@
     "Tokelau",
     "United States"
    ],
-   "fiber_pairs": null,
+   "fiber_pairs": 4,
    "capacity": null,
    "bigtech_pairs": null,
    "sources": [
@@ -4171,12 +4617,29 @@
      "url": "https://www.submarinecablemap.com/submarine-cable/southern-cross-next",
      "date": "2026-11-18",
      "read": "full"
+    },
+    {
+     "title": "Submarine Cable Networks — Southern Cross NEXT",
+     "url": "https://www.submarinenetworks.com/en/systems/trans-pacific/southern-cross-next",
+     "date": "2026-11-18",
+     "read": "partial",
+     "n": 2
     }
    ],
-   "value_src": [],
+   "value_src": [
+    2
+   ],
    "alt": [],
    "conf": "med",
-   "note": "목록·개통 연도·육양지·소유자는 TeleGeography 공개 자료 그대로다. 설계 용량과 광섬유 쌍 수는 아직 모으지 않았다."
+   "note": "설계 용량과 쌍 수는 정리 사이트(Submarine Cable Networks)의 시스템 페이지에서 읽었다. 시스템 전체 값이며 나라 몫이 아니다.",
+   "extra_sources": [
+    {
+     "title": "Submarine Cable Networks — Southern Cross NEXT",
+     "url": "https://www.submarinenetworks.com/en/systems/trans-pacific/southern-cross-next",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ]
   },
   {
    "id": "topaz",
@@ -4187,10 +4650,10 @@
     "JP",
     "TW"
    ],
-   "value": null,
+   "value": 240,
    "unit": "Tbps",
    "asof": "2023",
-   "basis": "시스템 설계 용량. 아직 모으지 않았다",
+   "basis": "발표된 시스템 용량",
    "rfs": "2023",
    "rfs_year": 2023,
    "is_planned": false,
@@ -4224,7 +4687,7 @@
     "Japan",
     "Taiwan"
    ],
-   "fiber_pairs": null,
+   "fiber_pairs": 16,
    "capacity": null,
    "bigtech_pairs": null,
    "sources": [
@@ -4234,12 +4697,29 @@
      "url": "https://www.submarinecablemap.com/submarine-cable/topaz",
      "date": "2026-11-18",
      "read": "full"
+    },
+    {
+     "title": "Submarine Cable Networks — Topaz",
+     "url": "https://www.submarinenetworks.com/en/systems/trans-pacific/topaz",
+     "date": "2026-11-18",
+     "read": "partial",
+     "n": 2
     }
    ],
-   "value_src": [],
+   "value_src": [
+    2
+   ],
    "alt": [],
    "conf": "med",
-   "note": "목록·개통 연도·육양지·소유자는 TeleGeography 공개 자료 그대로다. 설계 용량과 광섬유 쌍 수는 아직 모으지 않았다."
+   "note": "설계 용량과 쌍 수는 정리 사이트(Submarine Cable Networks)의 시스템 페이지에서 읽었다. 시스템 전체 값이며 나라 몫이 아니다.",
+   "extra_sources": [
+    {
+     "title": "Submarine Cable Networks — Topaz",
+     "url": "https://www.submarinenetworks.com/en/systems/trans-pacific/topaz",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ]
   },
   {
    "id": "umo",
@@ -4300,10 +4780,10 @@
    "countries": [
     "IN"
    ],
-   "value": null,
+   "value": 180,
    "unit": "Tbps",
    "asof": "2024",
-   "basis": "시스템 설계 용량. 아직 모으지 않았다",
+   "basis": "설계 용량(최대). 주요 구간 16쌍 기준",
    "rfs": "2024",
    "rfs_year": 2024,
    "is_planned": false,
@@ -4367,7 +4847,7 @@
     "United Arab Emirates",
     "United Kingdom"
    ],
-   "fiber_pairs": null,
+   "fiber_pairs": 16,
    "capacity": null,
    "bigtech_pairs": null,
    "sources": [
@@ -4377,12 +4857,29 @@
      "url": "https://www.submarinecablemap.com/submarine-cable/2africa",
      "date": "2026-11-18",
      "read": "full"
+    },
+    {
+     "title": "Submarine Cable Networks — 2Africa",
+     "url": "https://www.submarinenetworks.com/en/systems/asia-europe-africa/2africa",
+     "date": "2026-11-18",
+     "read": "partial",
+     "n": 2
     }
    ],
-   "value_src": [],
+   "value_src": [
+    2
+   ],
    "alt": [],
    "conf": "med",
-   "note": "목록·개통 연도·육양지·소유자는 TeleGeography 공개 자료 그대로다. 설계 용량과 광섬유 쌍 수는 아직 모으지 않았다."
+   "note": "설계 용량과 쌍 수는 정리 사이트(Submarine Cable Networks)의 시스템 페이지에서 읽었다. 시스템 전체 값이며 나라 몫이 아니다. 구간마다 쌍 수와 용량이 다르다. 서쪽 구간은 쌍당 21Tbps × 8쌍 = 168Tbps 로 적혀 있다.",
+   "extra_sources": [
+    {
+     "title": "Submarine Cable Networks — 2Africa",
+     "url": "https://www.submarinenetworks.com/en/systems/asia-europe-africa/2africa",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ]
   },
   {
    "id": "asia-direct-cable-adc",
@@ -4393,10 +4890,10 @@
     "JP",
     "SG"
    ],
-   "value": null,
+   "value": 160,
    "unit": "Tbps",
    "asof": "2024",
-   "basis": "시스템 설계 용량. 아직 모으지 않았다",
+   "basis": "설계 용량('160Tbps 넘게')",
    "rfs": "2024 December",
    "rfs_year": 2024,
    "is_planned": false,
@@ -4434,7 +4931,7 @@
     "Thailand",
     "Vietnam"
    ],
-   "fiber_pairs": null,
+   "fiber_pairs": 8,
    "capacity": null,
    "bigtech_pairs": null,
    "sources": [
@@ -4444,12 +4941,29 @@
      "url": "https://www.submarinecablemap.com/submarine-cable/asia-direct-cable-adc",
      "date": "2026-11-18",
      "read": "full"
+    },
+    {
+     "title": "Submarine Cable Networks — Asia Direct Cable (ADC)",
+     "url": "https://www.submarinenetworks.com/en/systems/intra-asia/adc",
+     "date": "2026-11-18",
+     "read": "partial",
+     "n": 2
     }
    ],
-   "value_src": [],
+   "value_src": [
+    2
+   ],
    "alt": [],
    "conf": "med",
-   "note": "목록·개통 연도·육양지·소유자는 TeleGeography 공개 자료 그대로다. 설계 용량과 광섬유 쌍 수는 아직 모으지 않았다."
+   "note": "설계 용량과 쌍 수는 정리 사이트(Submarine Cable Networks)의 시스템 페이지에서 읽었다. 시스템 전체 값이며 나라 몫이 아니다.",
+   "extra_sources": [
+    {
+     "title": "Submarine Cable Networks — Asia Direct Cable (ADC)",
+     "url": "https://www.submarinenetworks.com/en/systems/intra-asia/adc",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ]
   },
   {
    "id": "india-asia-xpress-iax",
@@ -4539,10 +5053,10 @@
     "MY",
     "SG"
    ],
-   "value": null,
+   "value": 216,
    "unit": "Tbps",
    "asof": "2024",
-   "basis": "시스템 설계 용량. 아직 모으지 않았다",
+   "basis": "발표된 시스템 용량('216Tbps 넘게')",
    "rfs": "2024 December",
    "rfs_year": 2024,
    "is_planned": false,
@@ -4579,7 +5093,7 @@
     "Singapore",
     "Thailand"
    ],
-   "fiber_pairs": null,
+   "fiber_pairs": 12,
    "capacity": null,
    "bigtech_pairs": null,
    "sources": [
@@ -4589,12 +5103,29 @@
      "url": "https://www.submarinecablemap.com/submarine-cable/mist",
      "date": "2026-11-18",
      "read": "full"
+    },
+    {
+     "title": "Submarine Cable Networks — MIST",
+     "url": "https://www.submarinenetworks.com/en/systems/intra-asia/mist",
+     "date": "2026-11-18",
+     "read": "partial",
+     "n": 2
     }
    ],
-   "value_src": [],
+   "value_src": [
+    2
+   ],
    "alt": [],
    "conf": "med",
-   "note": "목록·개통 연도·육양지·소유자는 TeleGeography 공개 자료 그대로다. 설계 용량과 광섬유 쌍 수는 아직 모으지 않았다."
+   "note": "설계 용량과 쌍 수는 정리 사이트(Submarine Cable Networks)의 시스템 페이지에서 읽었다. 시스템 전체 값이며 나라 몫이 아니다.",
+   "extra_sources": [
+    {
+     "title": "Submarine Cable Networks — MIST",
+     "url": "https://www.submarinenetworks.com/en/systems/intra-asia/mist",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ]
   },
   {
    "id": "apricot",
@@ -4606,10 +5137,10 @@
     "SG",
     "TW"
    ],
-   "value": null,
+   "value": 211,
    "unit": "Tbps",
    "asof": "2025",
-   "basis": "시스템 설계 용량. 아직 모으지 않았다",
+   "basis": "개통 당시(초기) 설계 용량(12쌍 × 약 17.6Tbps)",
    "rfs": "2025 Q4",
    "rfs_year": 2025,
    "is_planned": false,
@@ -4651,7 +5182,7 @@
     "Singapore",
     "Taiwan"
    ],
-   "fiber_pairs": null,
+   "fiber_pairs": 12,
    "capacity": null,
    "bigtech_pairs": null,
    "sources": [
@@ -4661,12 +5192,35 @@
      "url": "https://www.submarinecablemap.com/submarine-cable/apricot",
      "date": "2026-11-18",
      "read": "full"
+    },
+    {
+     "title": "Submarine Cable Networks — Apricot",
+     "url": "https://www.submarinenetworks.com/en/systems/intra-asia/apricot",
+     "date": "2026-11-18",
+     "read": "partial",
+     "n": 2
     }
    ],
-   "value_src": [],
-   "alt": [],
+   "value_src": [
+    2
+   ],
+   "alt": [
+    {
+     "value": 290,
+     "basis": "증설 뒤 시스템 용량이라는 보도 인용",
+     "url": "https://www.submarinenetworks.com/en/systems/intra-asia/apricot"
+    }
+   ],
    "conf": "med",
-   "note": "목록·개통 연도·육양지·소유자는 TeleGeography 공개 자료 그대로다. 설계 용량과 광섬유 쌍 수는 아직 모으지 않았다."
+   "note": "설계 용량과 쌍 수는 정리 사이트(Submarine Cable Networks)의 시스템 페이지에서 읽었다. 시스템 전체 값이며 나라 몫이 아니다. 주 간선 기준이다.",
+   "extra_sources": [
+    {
+     "title": "Submarine Cable Networks — Apricot",
+     "url": "https://www.submarinenetworks.com/en/systems/intra-asia/apricot",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ]
   },
   {
    "id": "bifrost",
@@ -4676,10 +5230,10 @@
    "countries": [
     "SG"
    ],
-   "value": null,
+   "value": 260,
    "unit": "Tbps",
    "asof": "2025",
-   "basis": "시스템 설계 용량. 아직 모으지 않았다",
+   "basis": "개통 때(2025년 10월) 컨소시엄 구성원이 발표한 시스템 용량",
    "rfs": "2025 December",
    "rfs_year": 2025,
    "is_planned": false,
@@ -4710,7 +5264,7 @@
     "Singapore",
     "United States"
    ],
-   "fiber_pairs": null,
+   "fiber_pairs": 12,
    "capacity": null,
    "bigtech_pairs": null,
    "sources": [
@@ -4720,12 +5274,35 @@
      "url": "https://www.submarinecablemap.com/submarine-cable/bifrost",
      "date": "2026-11-18",
      "read": "full"
+    },
+    {
+     "title": "Submarine Cable Networks — Bifrost",
+     "url": "https://www.submarinenetworks.com/en/systems/trans-pacific/bifrost",
+     "date": "2026-11-18",
+     "read": "partial",
+     "n": 2
     }
    ],
-   "value_src": [],
-   "alt": [],
+   "value_src": [
+    2
+   ],
+   "alt": [
+    {
+     "value": 124.8,
+     "basis": "초기 설계 12쌍 × 10.4Tbps 로 계산한 값",
+     "url": "https://www.submarinenetworks.com/en/systems/trans-pacific/bifrost"
+    }
+   ],
    "conf": "med",
-   "note": "목록·개통 연도·육양지·소유자는 TeleGeography 공개 자료 그대로다. 설계 용량과 광섬유 쌍 수는 아직 모으지 않았다."
+   "note": "설계 용량과 쌍 수는 정리 사이트(Submarine Cable Networks)의 시스템 페이지에서 읽었다. 시스템 전체 값이며 나라 몫이 아니다. 설계 때보다 개통 때 용량이 커졌다.",
+   "extra_sources": [
+    {
+     "title": "Submarine Cable Networks — Bifrost",
+     "url": "https://www.submarinenetworks.com/en/systems/trans-pacific/bifrost",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ]
   },
   {
    "id": "echo",
@@ -4735,10 +5312,10 @@
    "countries": [
     "SG"
    ],
-   "value": null,
+   "value": 144,
    "unit": "Tbps",
    "asof": "2025",
-   "basis": "시스템 설계 용량. 아직 모으지 않았다",
+   "basis": "개통 당시(초기) 설계 용량(12쌍 × 12Tbps)",
    "rfs": "2025",
    "rfs_year": 2025,
    "is_planned": false,
@@ -4768,7 +5345,7 @@
     "Singapore",
     "United States"
    ],
-   "fiber_pairs": null,
+   "fiber_pairs": 12,
    "capacity": null,
    "bigtech_pairs": null,
    "sources": [
@@ -4778,12 +5355,35 @@
      "url": "https://www.submarinecablemap.com/submarine-cable/echo",
      "date": "2026-11-18",
      "read": "full"
+    },
+    {
+     "title": "Submarine Cable Networks — Echo",
+     "url": "https://www.submarinenetworks.com/en/systems/trans-pacific/echo",
+     "date": "2026-11-18",
+     "read": "partial",
+     "n": 2
     }
    ],
-   "value_src": [],
-   "alt": [],
+   "value_src": [
+    2
+   ],
+   "alt": [
+    {
+     "value": 260,
+     "basis": "괌~캘리포니아 구간의 증설 뒤 용량",
+     "url": "https://www.submarinenetworks.com/en/systems/trans-pacific/echo"
+    }
+   ],
    "conf": "med",
-   "note": "목록·개통 연도·육양지·소유자는 TeleGeography 공개 자료 그대로다. 설계 용량과 광섬유 쌍 수는 아직 모으지 않았다."
+   "note": "설계 용량과 쌍 수는 정리 사이트(Submarine Cable Networks)의 시스템 페이지에서 읽었다. 시스템 전체 값이며 나라 몫이 아니다.",
+   "extra_sources": [
+    {
+     "title": "Submarine Cable Networks — Echo",
+     "url": "https://www.submarinenetworks.com/en/systems/trans-pacific/echo",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ]
   },
   {
    "id": "juno",
@@ -4793,10 +5393,10 @@
    "countries": [
     "JP"
    ],
-   "value": null,
+   "value": 360,
    "unit": "Tbps",
    "asof": "2025",
-   "basis": "시스템 설계 용량. 아직 모으지 않았다",
+   "basis": "계산: 쌍 수 × 쌍당 설계 용량(간선 20쌍 × 18Tbps)",
    "rfs": "2025 May",
    "rfs_year": 2025,
    "is_planned": false,
@@ -4823,7 +5423,7 @@
     "Japan",
     "United States"
    ],
-   "fiber_pairs": null,
+   "fiber_pairs": 20,
    "capacity": null,
    "bigtech_pairs": null,
    "sources": [
@@ -4833,12 +5433,29 @@
      "url": "https://www.submarinecablemap.com/submarine-cable/juno",
      "date": "2026-11-18",
      "read": "full"
+    },
+    {
+     "title": "Submarine Cable Networks — JUNO",
+     "url": "https://www.submarinenetworks.com/en/systems/trans-pacific/juno",
+     "date": "2026-11-18",
+     "read": "partial",
+     "n": 2
     }
    ],
-   "value_src": [],
+   "value_src": [
+    2
+   ],
    "alt": [],
    "conf": "med",
-   "note": "목록·개통 연도·육양지·소유자는 TeleGeography 공개 자료 그대로다. 설계 용량과 광섬유 쌍 수는 아직 모으지 않았다."
+   "note": "설계 용량과 쌍 수는 정리 사이트(Submarine Cable Networks)의 시스템 페이지에서 읽었다. 시스템 전체 값이며 나라 몫이 아니다. 입력: 일본~미국 간선의 쌍당 18Tbps, 20쌍.",
+   "extra_sources": [
+    {
+     "title": "Submarine Cable Networks — JUNO",
+     "url": "https://www.submarinenetworks.com/en/systems/trans-pacific/juno",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ]
   },
   {
    "id": "southeast-asia-japan-cable-2-sjc2",
@@ -4851,10 +5468,10 @@
     "SG",
     "TW"
    ],
-   "value": null,
+   "value": 144,
    "unit": "Tbps",
    "asof": "2025",
-   "basis": "시스템 설계 용량. 아직 모으지 않았다",
+   "basis": "개통 당시(초기) 설계 용량(8쌍 × 18Tbps)",
    "rfs": "2025 July",
    "rfs_year": 2025,
    "is_planned": false,
@@ -4913,7 +5530,7 @@
     "Thailand",
     "Vietnam"
    ],
-   "fiber_pairs": null,
+   "fiber_pairs": 8,
    "capacity": null,
    "bigtech_pairs": null,
    "sources": [
@@ -4923,12 +5540,29 @@
      "url": "https://www.submarinecablemap.com/submarine-cable/southeast-asia-japan-cable-2-sjc2",
      "date": "2026-11-18",
      "read": "full"
+    },
+    {
+     "title": "Submarine Cable Networks — Southeast Asia-Japan Cable 2 (SJC2)",
+     "url": "https://www.submarinenetworks.com/en/systems/intra-asia/sjc2",
+     "date": "2026-11-18",
+     "read": "partial",
+     "n": 2
     }
    ],
-   "value_src": [],
+   "value_src": [
+    2
+   ],
    "alt": [],
    "conf": "med",
-   "note": "목록·개통 연도·육양지·소유자는 TeleGeography 공개 자료 그대로다. 설계 용량과 광섬유 쌍 수는 아직 모으지 않았다."
+   "note": "설계 용량과 쌍 수는 정리 사이트(Submarine Cable Networks)의 시스템 페이지에서 읽었다. 시스템 전체 값이며 나라 몫이 아니다.",
+   "extra_sources": [
+    {
+     "title": "Submarine Cable Networks — Southeast Asia-Japan Cable 2 (SJC2)",
+     "url": "https://www.submarinenetworks.com/en/systems/intra-asia/sjc2",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ]
   },
   {
    "id": "rising-8",
@@ -4938,10 +5572,10 @@
    "countries": [
     "SG"
    ],
-   "value": null,
+   "value": 400,
    "unit": "Tbps",
    "asof": "2026",
-   "basis": "시스템 설계 용량. 아직 모으지 않았다",
+   "basis": "최소 시스템 용량(최대 16쌍 × 25Tbps)",
    "rfs": "2026 May",
    "rfs_year": 2026,
    "is_planned": false,
@@ -4966,7 +5600,7 @@
     "Indonesia",
     "Singapore"
    ],
-   "fiber_pairs": null,
+   "fiber_pairs": 16,
    "capacity": null,
    "bigtech_pairs": null,
    "sources": [
@@ -4976,12 +5610,29 @@
      "url": "https://www.submarinecablemap.com/submarine-cable/rising-8",
      "date": "2026-11-18",
      "read": "full"
+    },
+    {
+     "title": "Submarine Cable Networks — RISING 8",
+     "url": "https://www.submarinenetworks.com/en/systems/intra-asia/rising-8",
+     "date": "2026-11-18",
+     "read": "partial",
+     "n": 2
     }
    ],
-   "value_src": [],
+   "value_src": [
+    2
+   ],
    "alt": [],
    "conf": "med",
-   "note": "목록·개통 연도·육양지·소유자는 TeleGeography 공개 자료 그대로다. 설계 용량과 광섬유 쌍 수는 아직 모으지 않았다."
+   "note": "설계 용량과 쌍 수는 정리 사이트(Submarine Cable Networks)의 시스템 페이지에서 읽었다. 시스템 전체 값이며 나라 몫이 아니다.",
+   "extra_sources": [
+    {
+     "title": "Submarine Cable Networks — RISING 8",
+     "url": "https://www.submarinenetworks.com/en/systems/intra-asia/rising-8",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ]
   },
   {
    "id": "sea-h2x",
@@ -4991,10 +5642,10 @@
    "countries": [
     "SG"
    ],
-   "value": null,
+   "value": 200,
    "unit": "Tbps",
    "asof": "2026",
-   "basis": "시스템 설계 용량. 아직 모으지 않았다",
+   "basis": "설계 용량(홍콩~싱가포르 8쌍)",
    "rfs": "2026 July",
    "rfs_year": 2026,
    "is_planned": false,
@@ -5021,7 +5672,7 @@
     "Singapore",
     "Thailand"
    ],
-   "fiber_pairs": null,
+   "fiber_pairs": 8,
    "capacity": null,
    "bigtech_pairs": null,
    "sources": [
@@ -5031,12 +5682,29 @@
      "url": "https://www.submarinecablemap.com/submarine-cable/sea-h2x",
      "date": "2026-11-18",
      "read": "full"
+    },
+    {
+     "title": "Submarine Cable Networks — SEA-H2X",
+     "url": "https://www.submarinenetworks.com/en/systems/intra-asia/sea-h2x",
+     "date": "2026-11-18",
+     "read": "partial",
+     "n": 2
     }
    ],
-   "value_src": [],
+   "value_src": [
+    2
+   ],
    "alt": [],
    "conf": "med",
-   "note": "목록·개통 연도·육양지·소유자는 TeleGeography 공개 자료 그대로다. 설계 용량과 광섬유 쌍 수는 아직 모으지 않았다."
+   "note": "설계 용량과 쌍 수는 정리 사이트(Submarine Cable Networks)의 시스템 페이지에서 읽었다. 시스템 전체 값이며 나라 몫이 아니다.",
+   "extra_sources": [
+    {
+     "title": "Submarine Cable Networks — SEA-H2X",
+     "url": "https://www.submarinenetworks.com/en/systems/intra-asia/sea-h2x",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ]
   },
   {
    "id": "tpu",
@@ -5046,10 +5714,10 @@
    "countries": [
     "TW"
    ],
-   "value": null,
+   "value": 260,
    "unit": "Tbps",
    "asof": "2026",
-   "basis": "시스템 설계 용량. 아직 모으지 않았다",
+   "basis": "시스템 용량(최대). 쌍당 초기 설계 약 13Tbps",
    "rfs": "2026 May",
    "rfs_year": 2026,
    "is_planned": false,
@@ -5077,7 +5745,7 @@
     "Taiwan",
     "United States"
    ],
-   "fiber_pairs": null,
+   "fiber_pairs": 16,
    "capacity": null,
    "bigtech_pairs": null,
    "sources": [
@@ -5087,12 +5755,29 @@
      "url": "https://www.submarinecablemap.com/submarine-cable/tpu",
      "date": "2026-11-18",
      "read": "full"
+    },
+    {
+     "title": "Submarine Cable Networks — TPU",
+     "url": "https://www.submarinenetworks.com/en/systems/trans-pacific/tpu",
+     "date": "2026-11-18",
+     "read": "partial",
+     "n": 2
     }
    ],
-   "value_src": [],
+   "value_src": [
+    2
+   ],
    "alt": [],
    "conf": "med",
-   "note": "목록·개통 연도·육양지·소유자는 TeleGeography 공개 자료 그대로다. 설계 용량과 광섬유 쌍 수는 아직 모으지 않았다."
+   "note": "설계 용량과 쌍 수는 정리 사이트(Submarine Cable Networks)의 시스템 페이지에서 읽었다. 시스템 전체 값이며 나라 몫이 아니다. 태평양 횡단 간선 16쌍, 대만·필리핀 분기 20쌍이다.",
+   "extra_sources": [
+    {
+     "title": "Submarine Cable Networks — TPU",
+     "url": "https://www.submarinenetworks.com/en/systems/trans-pacific/tpu",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ]
   },
   {
    "id": "nongsa-changi",
@@ -5128,7 +5813,7 @@
     "Indonesia",
     "Singapore"
    ],
-   "fiber_pairs": null,
+   "fiber_pairs": 24,
    "capacity": null,
    "bigtech_pairs": null,
    "sources": [
@@ -5138,12 +5823,27 @@
      "url": "https://www.submarinecablemap.com/submarine-cable/nongsa-changi",
      "date": "2026-11-18",
      "read": "full"
+    },
+    {
+     "title": "Submarine Cable Networks — Nongsa-Changi",
+     "url": "https://www.submarinenetworks.com/en/systems/intra-asia/nongsa-changi",
+     "date": "2026-11-18",
+     "read": "partial",
+     "n": 2
     }
    ],
    "value_src": [],
    "alt": [],
    "conf": "med",
-   "note": "목록·개통 연도·육양지·소유자는 TeleGeography 공개 자료 그대로다. 설계 용량과 광섬유 쌍 수는 아직 모으지 않았다."
+   "note": "설계 용량과 쌍 수는 정리 사이트(Submarine Cable Networks)의 시스템 페이지에서 읽었다. 시스템 전체 값이며 나라 몫이 아니다. 최소 24쌍으로 적혀 있다. 용량은 페이지에 없다.",
+   "extra_sources": [
+    {
+     "title": "Submarine Cable Networks — Nongsa-Changi",
+     "url": "https://www.submarinenetworks.com/en/systems/intra-asia/nongsa-changi",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ]
   },
   {
    "id": "asia-link-cable-alc",
@@ -5154,10 +5854,10 @@
     "MY",
     "SG"
    ],
-   "value": null,
+   "value": 338,
    "unit": "Tbps",
    "asof": "2027",
-   "basis": "시스템 설계 용량. 아직 모으지 않았다",
+   "basis": "발표된 시스템 용량(홍콩~싱가포르 간선 13쌍 × 26Tbps)",
    "rfs": "2027 Q1",
    "rfs_year": 2027,
    "is_planned": true,
@@ -5198,7 +5898,7 @@
     "Singapore",
     "Vietnam"
    ],
-   "fiber_pairs": null,
+   "fiber_pairs": 13,
    "capacity": null,
    "bigtech_pairs": null,
    "sources": [
@@ -5208,12 +5908,29 @@
      "url": "https://www.submarinecablemap.com/submarine-cable/asia-link-cable-alc",
      "date": "2026-11-18",
      "read": "full"
+    },
+    {
+     "title": "Submarine Cable Networks — Asia Link Cable (ALC)",
+     "url": "https://www.submarinenetworks.com/en/systems/intra-asia/alc",
+     "date": "2026-11-18",
+     "read": "partial",
+     "n": 2
     }
    ],
-   "value_src": [],
+   "value_src": [
+    2
+   ],
    "alt": [],
    "conf": "med",
-   "note": "목록·개통 연도·육양지·소유자는 TeleGeography 공개 자료 그대로다. 설계 용량과 광섬유 쌍 수는 아직 모으지 않았다."
+   "note": "설계 용량과 쌍 수는 정리 사이트(Submarine Cable Networks)의 시스템 페이지에서 읽었다. 시스템 전체 값이며 나라 몫이 아니다. 계획 케이블이다.",
+   "extra_sources": [
+    {
+     "title": "Submarine Cable Networks — Asia Link Cable (ALC)",
+     "url": "https://www.submarinenetworks.com/en/systems/intra-asia/alc",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ]
   },
   {
    "id": "honomoana",
@@ -5223,10 +5940,10 @@
    "countries": [
     "AU"
    ],
-   "value": null,
+   "value": 259.2,
    "unit": "Tbps",
    "asof": "2027",
-   "basis": "시스템 설계 용량. 아직 모으지 않았다",
+   "basis": "계산: 쌍 수 × 쌍당 설계 용량(16쌍 × 최소 약 16.2Tbps)",
    "rfs": "2027",
    "rfs_year": 2027,
    "is_planned": true,
@@ -5257,7 +5974,7 @@
     "New Zealand",
     "United States"
    ],
-   "fiber_pairs": null,
+   "fiber_pairs": 16,
    "capacity": null,
    "bigtech_pairs": null,
    "sources": [
@@ -5267,12 +5984,29 @@
      "url": "https://www.submarinecablemap.com/submarine-cable/honomoana",
      "date": "2026-11-18",
      "read": "full"
+    },
+    {
+     "title": "Submarine Cable Networks — Honomoana",
+     "url": "https://www.submarinenetworks.com/en/systems/trans-pacific/honomoana",
+     "date": "2026-11-18",
+     "read": "partial",
+     "n": 2
     }
    ],
-   "value_src": [],
+   "value_src": [
+    2
+   ],
    "alt": [],
    "conf": "med",
-   "note": "목록·개통 연도·육양지·소유자는 TeleGeography 공개 자료 그대로다. 설계 용량과 광섬유 쌍 수는 아직 모으지 않았다."
+   "note": "설계 용량과 쌍 수는 정리 사이트(Submarine Cable Networks)의 시스템 페이지에서 읽었다. 시스템 전체 값이며 나라 몫이 아니다. 입력: 쌍당 최소 설계 용량 약 16.2Tbps, 16쌍. 계획 케이블이다.",
+   "extra_sources": [
+    {
+     "title": "Submarine Cable Networks — Honomoana",
+     "url": "https://www.submarinenetworks.com/en/systems/trans-pacific/honomoana",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ]
   },
   {
    "id": "india-europe-xpress-iex",
@@ -5340,10 +6074,10 @@
    "countries": [
     "SG"
    ],
-   "value": null,
+   "value": 480,
    "unit": "Tbps",
    "asof": "2027",
-   "basis": "시스템 설계 용량. 아직 모으지 않았다",
+   "basis": "계산: 쌍 수 × 쌍당 설계 용량(24쌍 × 쌍당 최대 20Tbps)",
    "rfs": "2027 Q4",
    "rfs_year": 2027,
    "is_planned": true,
@@ -5365,7 +6099,7 @@
     "Indonesia",
     "Singapore"
    ],
-   "fiber_pairs": null,
+   "fiber_pairs": 24,
    "capacity": null,
    "bigtech_pairs": null,
    "sources": [
@@ -5375,12 +6109,29 @@
      "url": "https://www.submarinecablemap.com/submarine-cable/insica",
      "date": "2026-11-18",
      "read": "full"
+    },
+    {
+     "title": "Submarine Cable Networks — INSICA",
+     "url": "https://www.submarinenetworks.com/en/systems/intra-asia/insica",
+     "date": "2026-11-18",
+     "read": "partial",
+     "n": 2
     }
    ],
-   "value_src": [],
+   "value_src": [
+    2
+   ],
    "alt": [],
-   "conf": "med",
-   "note": "목록·개통 연도·육양지·소유자는 TeleGeography 공개 자료 그대로다. 설계 용량과 광섬유 쌍 수는 아직 모으지 않았다."
+   "conf": "low",
+   "note": "설계 용량과 쌍 수는 정리 사이트(Submarine Cable Networks)의 시스템 페이지에서 읽었다. 시스템 전체 값이며 나라 몫이 아니다. 입력: 쌍당 최대 20Tbps, 24쌍. 최대 값으로 계산한 계획 케이블이다.",
+   "extra_sources": [
+    {
+     "title": "Submarine Cable Networks — INSICA",
+     "url": "https://www.submarinenetworks.com/en/systems/intra-asia/insica",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ]
   },
   {
    "id": "jako",
@@ -5452,10 +6203,10 @@
    "countries": [
     "TW"
    ],
-   "value": null,
+   "value": 76.8,
    "unit": "Tbps",
    "asof": "2027",
-   "basis": "시스템 설계 용량. 아직 모으지 않았다",
+   "basis": "발표된 시스템 용량(6쌍 × 12.8Tbps)",
    "rfs": "2027 Q1",
    "rfs_year": 2027,
    "is_planned": true,
@@ -5480,7 +6231,7 @@
     "Taiwan",
     "United States"
    ],
-   "fiber_pairs": null,
+   "fiber_pairs": 6,
    "capacity": null,
    "bigtech_pairs": null,
    "sources": [
@@ -5490,12 +6241,29 @@
      "url": "https://www.submarinecablemap.com/submarine-cable/orca",
      "date": "2026-11-18",
      "read": "full"
+    },
+    {
+     "title": "Submarine Cable Networks — ORCA",
+     "url": "https://www.submarinenetworks.com/en/systems/trans-pacific/orca",
+     "date": "2026-11-18",
+     "read": "partial",
+     "n": 2
     }
    ],
-   "value_src": [],
+   "value_src": [
+    2
+   ],
    "alt": [],
    "conf": "med",
-   "note": "목록·개통 연도·육양지·소유자는 TeleGeography 공개 자료 그대로다. 설계 용량과 광섬유 쌍 수는 아직 모으지 않았다."
+   "note": "설계 용량과 쌍 수는 정리 사이트(Submarine Cable Networks)의 시스템 페이지에서 읽었다. 시스템 전체 값이며 나라 몫이 아니다. 계획 케이블이다.",
+   "extra_sources": [
+    {
+     "title": "Submarine Cable Networks — ORCA",
+     "url": "https://www.submarinenetworks.com/en/systems/trans-pacific/orca",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ]
   },
   {
    "id": "proa",
@@ -5505,10 +6273,10 @@
    "countries": [
     "JP"
    ],
-   "value": null,
+   "value": 400,
    "unit": "Tbps",
    "asof": "2027",
-   "basis": "시스템 설계 용량. 아직 모으지 않았다",
+   "basis": "계산: 쌍 수 × 쌍당 설계 용량(16쌍 × 최소 약 25Tbps)",
    "rfs": "2027",
    "rfs_year": 2027,
    "is_planned": true,
@@ -5534,7 +6302,7 @@
     "Japan",
     "Northern Mariana Islands"
    ],
-   "fiber_pairs": null,
+   "fiber_pairs": 16,
    "capacity": null,
    "bigtech_pairs": null,
    "sources": [
@@ -5544,12 +6312,29 @@
      "url": "https://www.submarinecablemap.com/submarine-cable/proa",
      "date": "2026-11-18",
      "read": "full"
+    },
+    {
+     "title": "Submarine Cable Networks — Proa",
+     "url": "https://www.submarinenetworks.com/en/systems/trans-pacific/proa",
+     "date": "2026-11-18",
+     "read": "partial",
+     "n": 2
     }
    ],
-   "value_src": [],
+   "value_src": [
+    2
+   ],
    "alt": [],
    "conf": "med",
-   "note": "목록·개통 연도·육양지·소유자는 TeleGeography 공개 자료 그대로다. 설계 용량과 광섬유 쌍 수는 아직 모으지 않았다."
+   "note": "설계 용량과 쌍 수는 정리 사이트(Submarine Cable Networks)의 시스템 페이지에서 읽었다. 시스템 전체 값이며 나라 몫이 아니다. 입력: 쌍당 최소 설계 용량 약 25Tbps, 16쌍. 계획 케이블이다.",
+   "extra_sources": [
+    {
+     "title": "Submarine Cable Networks — Proa",
+     "url": "https://www.submarinenetworks.com/en/systems/trans-pacific/proa",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ]
   },
   {
    "id": "raman",
@@ -5559,10 +6344,10 @@
    "countries": [
     "IN"
    ],
-   "value": null,
+   "value": 218,
    "unit": "Tbps",
    "asof": "2027",
-   "basis": "시스템 설계 용량. 아직 모으지 않았다",
+   "basis": "Blue 와 Raman 두 시스템을 합친 시스템 용량",
    "rfs": "2027",
    "rfs_year": 2027,
    "is_planned": true,
@@ -5592,7 +6377,7 @@
     "Oman",
     "Saudi Arabia"
    ],
-   "fiber_pairs": null,
+   "fiber_pairs": 16,
    "capacity": null,
    "bigtech_pairs": null,
    "sources": [
@@ -5602,12 +6387,29 @@
      "url": "https://www.submarinecablemap.com/submarine-cable/raman",
      "date": "2026-11-18",
      "read": "full"
+    },
+    {
+     "title": "Submarine Cable Networks — Raman",
+     "url": "https://www.submarinenetworks.com/en/systems/asia-europe-africa/blue-raman",
+     "date": "2026-11-18",
+     "read": "partial",
+     "n": 2
     }
    ],
-   "value_src": [],
+   "value_src": [
+    2
+   ],
    "alt": [],
    "conf": "med",
-   "note": "목록·개통 연도·육양지·소유자는 TeleGeography 공개 자료 그대로다. 설계 용량과 광섬유 쌍 수는 아직 모으지 않았다."
+   "note": "설계 용량과 쌍 수는 정리 사이트(Submarine Cable Networks)의 시스템 페이지에서 읽었다. 시스템 전체 값이며 나라 몫이 아니다. Raman 만의 값이 아니다.",
+   "extra_sources": [
+    {
+     "title": "Submarine Cable Networks — Raman",
+     "url": "https://www.submarinenetworks.com/en/systems/asia-europe-africa/blue-raman",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ]
   },
   {
    "id": "seamewe-6",
@@ -5619,10 +6421,10 @@
     "MY",
     "SG"
    ],
-   "value": null,
+   "value": 126,
    "unit": "Tbps",
    "asof": "2027",
-   "basis": "시스템 설계 용량. 아직 모으지 않았다",
+   "basis": "개통 당시(초기) 설계 용량(10쌍 × 12.6Tbps)",
    "rfs": "2027",
    "rfs_year": 2027,
    "is_planned": true,
@@ -5687,7 +6489,7 @@
     "Sri Lanka",
     "United Arab Emirates"
    ],
-   "fiber_pairs": null,
+   "fiber_pairs": 10,
    "capacity": null,
    "bigtech_pairs": null,
    "sources": [
@@ -5697,12 +6499,35 @@
      "url": "https://www.submarinecablemap.com/submarine-cable/seamewe-6",
      "date": "2026-11-18",
      "read": "full"
+    },
+    {
+     "title": "Submarine Cable Networks — SeaMeWe-6",
+     "url": "https://www.submarinenetworks.com/en/systems/asia-europe-africa/smw6",
+     "date": "2026-11-18",
+     "read": "partial",
+     "n": 2
     }
    ],
-   "value_src": [],
-   "alt": [],
+   "value_src": [
+    2
+   ],
+   "alt": [
+    {
+     "value": 132,
+     "basis": "같은 페이지에 함께 적힌 다른 발표 값",
+     "url": "https://www.submarinenetworks.com/en/systems/asia-europe-africa/smw6"
+    }
+   ],
    "conf": "med",
-   "note": "목록·개통 연도·육양지·소유자는 TeleGeography 공개 자료 그대로다. 설계 용량과 광섬유 쌍 수는 아직 모으지 않았다."
+   "note": "설계 용량과 쌍 수는 정리 사이트(Submarine Cable Networks)의 시스템 페이지에서 읽었다. 시스템 전체 값이며 나라 몫이 아니다. 계획 케이블이다.",
+   "extra_sources": [
+    {
+     "title": "Submarine Cable Networks — SeaMeWe-6",
+     "url": "https://www.submarinenetworks.com/en/systems/asia-europe-africa/smw6",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ]
   },
   {
    "id": "tabua",
@@ -5712,10 +6537,10 @@
    "countries": [
     "AU"
    ],
-   "value": null,
+   "value": 272,
    "unit": "Tbps",
    "asof": "2027",
-   "basis": "시스템 설계 용량. 아직 모으지 않았다",
+   "basis": "발표된 시스템 용량(16쌍 × 최소 약 17Tbps)",
    "rfs": "2027",
    "rfs_year": 2027,
    "is_planned": true,
@@ -5745,7 +6570,7 @@
     "Fiji",
     "United States"
    ],
-   "fiber_pairs": null,
+   "fiber_pairs": 16,
    "capacity": null,
    "bigtech_pairs": null,
    "sources": [
@@ -5755,12 +6580,29 @@
      "url": "https://www.submarinecablemap.com/submarine-cable/tabua",
      "date": "2026-11-18",
      "read": "full"
+    },
+    {
+     "title": "Submarine Cable Networks — Tabua",
+     "url": "https://www.submarinenetworks.com/en/systems/trans-pacific/tabua",
+     "date": "2026-11-18",
+     "read": "partial",
+     "n": 2
     }
    ],
-   "value_src": [],
+   "value_src": [
+    2
+   ],
    "alt": [],
    "conf": "med",
-   "note": "목록·개통 연도·육양지·소유자는 TeleGeography 공개 자료 그대로다. 설계 용량과 광섬유 쌍 수는 아직 모으지 않았다."
+   "note": "설계 용량과 쌍 수는 정리 사이트(Submarine Cable Networks)의 시스템 페이지에서 읽었다. 시스템 전체 값이며 나라 몫이 아니다. 계획 케이블이다.",
+   "extra_sources": [
+    {
+     "title": "Submarine Cable Networks — Tabua",
+     "url": "https://www.submarinenetworks.com/en/systems/trans-pacific/tabua",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ]
   },
   {
    "id": "talaylink",
@@ -5853,7 +6695,7 @@
     "Fiji",
     "United States"
    ],
-   "fiber_pairs": null,
+   "fiber_pairs": 16,
    "capacity": null,
    "bigtech_pairs": null,
    "sources": [
@@ -5863,12 +6705,27 @@
      "url": "https://www.submarinecablemap.com/submarine-cable/apx-east",
      "date": "2026-11-18",
      "read": "full"
+    },
+    {
+     "title": "Submarine Cable Networks — APX East",
+     "url": "https://www.submarinenetworks.com/en/systems/trans-pacific/apx-east",
+     "date": "2026-11-18",
+     "read": "partial",
+     "n": 2
     }
    ],
    "value_src": [],
    "alt": [],
    "conf": "med",
-   "note": "목록·개통 연도·육양지·소유자는 TeleGeography 공개 자료 그대로다. 설계 용량과 광섬유 쌍 수는 아직 모으지 않았다."
+   "note": "설계 용량과 쌍 수는 정리 사이트(Submarine Cable Networks)의 시스템 페이지에서 읽었다. 시스템 전체 값이며 나라 몫이 아니다. 용량은 페이지에 없다.",
+   "extra_sources": [
+    {
+     "title": "Submarine Cable Networks — APX East",
+     "url": "https://www.submarinenetworks.com/en/systems/trans-pacific/apx-east",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ]
   },
   {
    "id": "bosun",
@@ -5934,10 +6791,10 @@
     "SG",
     "TW"
    ],
-   "value": null,
+   "value": 570,
    "unit": "Tbps",
    "asof": "2028",
-   "basis": "시스템 설계 용량. 아직 모으지 않았다",
+   "basis": "발표된 시스템 용량",
    "rfs": "2028",
    "rfs_year": 2028,
    "is_planned": true,
@@ -5984,7 +6841,7 @@
     "Singapore",
     "Taiwan"
    ],
-   "fiber_pairs": null,
+   "fiber_pairs": 24,
    "capacity": null,
    "bigtech_pairs": null,
    "sources": [
@@ -5994,12 +6851,29 @@
      "url": "https://www.submarinecablemap.com/submarine-cable/candle",
      "date": "2026-11-18",
      "read": "full"
+    },
+    {
+     "title": "Submarine Cable Networks — Candle",
+     "url": "https://www.submarinenetworks.com/en/systems/intra-asia/candle",
+     "date": "2026-11-18",
+     "read": "partial",
+     "n": 2
     }
    ],
-   "value_src": [],
+   "value_src": [
+    2
+   ],
    "alt": [],
    "conf": "med",
-   "note": "목록·개통 연도·육양지·소유자는 TeleGeography 공개 자료 그대로다. 설계 용량과 광섬유 쌍 수는 아직 모으지 않았다."
+   "note": "설계 용량과 쌍 수는 정리 사이트(Submarine Cable Networks)의 시스템 페이지에서 읽었다. 시스템 전체 값이며 나라 몫이 아니다. 계획 케이블이다.",
+   "extra_sources": [
+    {
+     "title": "Submarine Cable Networks — Candle",
+     "url": "https://www.submarinenetworks.com/en/systems/intra-asia/candle",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ]
   },
   {
    "id": "sx-tasman-express-sx-tx",
@@ -6009,10 +6883,10 @@
    "countries": [
     "AU"
    ],
-   "value": null,
+   "value": 400,
    "unit": "Tbps",
    "asof": "2028",
-   "basis": "시스템 설계 용량. 아직 모으지 않았다",
+   "basis": "시스템 용량(최대, 16쌍 × 25Tbps)",
    "rfs": "2028",
    "rfs_year": 2028,
    "is_planned": true,
@@ -6035,7 +6909,7 @@
     "Australia",
     "New Zealand"
    ],
-   "fiber_pairs": null,
+   "fiber_pairs": 16,
    "capacity": null,
    "bigtech_pairs": null,
    "sources": [
@@ -6045,12 +6919,29 @@
      "url": "https://www.submarinecablemap.com/submarine-cable/sx-tasman-express-sx-tx",
      "date": "2026-11-18",
      "read": "full"
+    },
+    {
+     "title": "Submarine Cable Networks — SX Tasman Express (SX-TX)",
+     "url": "https://www.submarinenetworks.com/en/systems/australia-usa/sx-tx",
+     "date": "2026-11-18",
+     "read": "partial",
+     "n": 2
     }
    ],
-   "value_src": [],
+   "value_src": [
+    2
+   ],
    "alt": [],
-   "conf": "med",
-   "note": "목록·개통 연도·육양지·소유자는 TeleGeography 공개 자료 그대로다. 설계 용량과 광섬유 쌍 수는 아직 모으지 않았다."
+   "conf": "low",
+   "note": "설계 용량과 쌍 수는 정리 사이트(Submarine Cable Networks)의 시스템 페이지에서 읽었다. 시스템 전체 값이며 나라 몫이 아니다. '최대' 값인 계획 케이블이다.",
+   "extra_sources": [
+    {
+     "title": "Submarine Cable Networks — SX Tasman Express (SX-TX)",
+     "url": "https://www.submarinenetworks.com/en/systems/australia-usa/sx-tx",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ]
   },
   {
    "id": "taihei",
@@ -6060,10 +6951,10 @@
    "countries": [
     "JP"
    ],
-   "value": null,
+   "value": 304,
    "unit": "Tbps",
    "asof": "2028",
-   "basis": "시스템 설계 용량. 아직 모으지 않았다",
+   "basis": "계산: 쌍 수 × 쌍당 설계 용량(16쌍 × 최소 약 19Tbps)",
    "rfs": "2028",
    "rfs_year": 2028,
    "is_planned": true,
@@ -6088,7 +6979,7 @@
     "Japan",
     "United States"
    ],
-   "fiber_pairs": null,
+   "fiber_pairs": 16,
    "capacity": null,
    "bigtech_pairs": null,
    "sources": [
@@ -6098,12 +6989,29 @@
      "url": "https://www.submarinecablemap.com/submarine-cable/taihei",
      "date": "2026-11-18",
      "read": "full"
+    },
+    {
+     "title": "Submarine Cable Networks — Taihei",
+     "url": "https://www.submarinenetworks.com/en/systems/trans-pacific/taihei",
+     "date": "2026-11-18",
+     "read": "partial",
+     "n": 2
     }
    ],
-   "value_src": [],
+   "value_src": [
+    2
+   ],
    "alt": [],
    "conf": "med",
-   "note": "목록·개통 연도·육양지·소유자는 TeleGeography 공개 자료 그대로다. 설계 용량과 광섬유 쌍 수는 아직 모으지 않았다."
+   "note": "설계 용량과 쌍 수는 정리 사이트(Submarine Cable Networks)의 시스템 페이지에서 읽었다. 시스템 전체 값이며 나라 몫이 아니다. 입력: 쌍당 최소 설계 용량 약 19Tbps, 16쌍. 계획 케이블이다.",
+   "extra_sources": [
+    {
+     "title": "Submarine Cable Networks — Taihei",
+     "url": "https://www.submarinenetworks.com/en/systems/trans-pacific/taihei",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ]
   },
   {
    "id": "umoja",
@@ -6372,10 +7280,10 @@
     "KR",
     "TW"
    ],
-   "value": null,
+   "value": 192,
    "unit": "Tbps",
    "asof": "2029",
-   "basis": "시스템 설계 용량. 아직 모으지 않았다",
+   "basis": "발표된 시스템 용량('192Tbps 넘게', 12쌍 × 16Tbps)",
    "rfs": "2029",
    "rfs_year": 2029,
    "is_planned": true,
@@ -6419,7 +7327,7 @@
     "Taiwan",
     "United States"
    ],
-   "fiber_pairs": null,
+   "fiber_pairs": 12,
    "capacity": null,
    "bigtech_pairs": null,
    "sources": [
@@ -6429,12 +7337,29 @@
      "url": "https://www.submarinecablemap.com/submarine-cable/e2a",
      "date": "2026-11-18",
      "read": "full"
+    },
+    {
+     "title": "Submarine Cable Networks — E2A",
+     "url": "https://www.submarinenetworks.com/en/systems/trans-pacific/e2a",
+     "date": "2026-11-18",
+     "read": "partial",
+     "n": 2
     }
    ],
-   "value_src": [],
+   "value_src": [
+    2
+   ],
    "alt": [],
    "conf": "med",
-   "note": "목록·개통 연도·육양지·소유자는 TeleGeography 공개 자료 그대로다. 설계 용량과 광섬유 쌍 수는 아직 모으지 않았다."
+   "note": "설계 용량과 쌍 수는 정리 사이트(Submarine Cable Networks)의 시스템 페이지에서 읽었다. 시스템 전체 값이며 나라 몫이 아니다. 계획 케이블이다.",
+   "extra_sources": [
+    {
+     "title": "Submarine Cable Networks — E2A",
+     "url": "https://www.submarinenetworks.com/en/systems/trans-pacific/e2a",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ]
   },
   {
    "id": "hawaiki-nui-1",
@@ -6445,10 +7370,10 @@
     "AU",
     "SG"
    ],
-   "value": null,
+   "value": 240,
    "unit": "Tbps",
    "asof": "2029",
-   "basis": "시스템 설계 용량. 아직 모으지 않았다",
+   "basis": "설계 용량",
    "rfs": "2029",
    "rfs_year": 2029,
    "is_planned": true,
@@ -6497,12 +7422,29 @@
      "url": "https://www.submarinecablemap.com/submarine-cable/hawaiki-nui-1",
      "date": "2026-11-18",
      "read": "full"
+    },
+    {
+     "title": "Submarine Cable Networks — Hawaiki Nui 1",
+     "url": "https://www.submarinenetworks.com/en/systems/trans-pacific/hawaiki-nui",
+     "date": "2026-11-18",
+     "read": "partial",
+     "n": 2
     }
    ],
-   "value_src": [],
+   "value_src": [
+    2
+   ],
    "alt": [],
    "conf": "med",
-   "note": "목록·개통 연도·육양지·소유자는 TeleGeography 공개 자료 그대로다. 설계 용량과 광섬유 쌍 수는 아직 모으지 않았다."
+   "note": "설계 용량과 쌍 수는 정리 사이트(Submarine Cable Networks)의 시스템 페이지에서 읽었다. 시스템 전체 값이며 나라 몫이 아니다. 계획 케이블이다.",
+   "extra_sources": [
+    {
+     "title": "Submarine Cable Networks — Hawaiki Nui 1",
+     "url": "https://www.submarinenetworks.com/en/systems/trans-pacific/hawaiki-nui",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ]
   },
   {
    "id": "i-2sea",
@@ -6586,10 +7528,10 @@
     "MY",
     "SG"
    ],
-   "value": null,
+   "value": 320,
    "unit": "Tbps",
    "asof": "2029",
-   "basis": "시스템 설계 용량. 아직 모으지 않았다",
+   "basis": "설계 용량(약 320Tbps, 16쌍 × 20Tbps)",
    "rfs": "2029",
    "rfs_year": 2029,
    "is_planned": true,
@@ -6638,7 +7580,7 @@
     "Singapore",
     "South Korea"
    ],
-   "fiber_pairs": null,
+   "fiber_pairs": 16,
    "capacity": null,
    "bigtech_pairs": null,
    "sources": [
@@ -6648,12 +7590,29 @@
      "url": "https://www.submarinecablemap.com/submarine-cable/i-am-cable",
      "date": "2026-11-18",
      "read": "full"
+    },
+    {
+     "title": "Submarine Cable Networks — I-AM Cable",
+     "url": "https://www.submarinenetworks.com/en/systems/intra-asia/i-am-cable",
+     "date": "2026-11-18",
+     "read": "partial",
+     "n": 2
     }
    ],
-   "value_src": [],
+   "value_src": [
+    2
+   ],
    "alt": [],
    "conf": "med",
-   "note": "목록·개통 연도·육양지·소유자는 TeleGeography 공개 자료 그대로다. 설계 용량과 광섬유 쌍 수는 아직 모으지 않았다."
+   "note": "설계 용량과 쌍 수는 정리 사이트(Submarine Cable Networks)의 시스템 페이지에서 읽었다. 시스템 전체 값이며 나라 몫이 아니다. 계획 케이블이다.",
+   "extra_sources": [
+    {
+     "title": "Submarine Cable Networks — I-AM Cable",
+     "url": "https://www.submarinenetworks.com/en/systems/intra-asia/i-am-cable",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ]
   },
   {
    "id": "mvista",
@@ -6694,7 +7653,7 @@
     "Thailand",
     "Vietnam"
    ],
-   "fiber_pairs": null,
+   "fiber_pairs": 16,
    "capacity": null,
    "bigtech_pairs": null,
    "sources": [
@@ -6704,12 +7663,27 @@
      "url": "https://www.submarinecablemap.com/submarine-cable/mvista",
      "date": "2026-11-18",
      "read": "full"
+    },
+    {
+     "title": "Submarine Cable Networks — MViSTA",
+     "url": "https://www.submarinenetworks.com/en/systems/intra-asia/mvista",
+     "date": "2026-11-18",
+     "read": "partial",
+     "n": 2
     }
    ],
    "value_src": [],
    "alt": [],
    "conf": "med",
-   "note": "목록·개통 연도·육양지·소유자는 TeleGeography 공개 자료 그대로다. 설계 용량과 광섬유 쌍 수는 아직 모으지 않았다."
+   "note": "설계 용량과 쌍 수는 정리 사이트(Submarine Cable Networks)의 시스템 페이지에서 읽었다. 시스템 전체 값이며 나라 몫이 아니다. 용량은 페이지에 없다. 계획 케이블이다.",
+   "extra_sources": [
+    {
+     "title": "Submarine Cable Networks — MViSTA",
+     "url": "https://www.submarinenetworks.com/en/systems/intra-asia/mvista",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ]
   },
   {
    "id": "staonuk",
@@ -6719,10 +7693,10 @@
    "countries": [
     "JP"
    ],
-   "value": null,
+   "value": 420,
    "unit": "Tbps",
    "asof": "2029",
-   "basis": "시스템 설계 용량. 아직 모으지 않았다",
+   "basis": "설계 용량('420Tbps 넘게')",
    "rfs": "2029",
    "rfs_year": 2029,
    "is_planned": true,
@@ -6746,7 +7720,7 @@
     "Japan",
     "United States"
    ],
-   "fiber_pairs": null,
+   "fiber_pairs": 20,
    "capacity": null,
    "bigtech_pairs": null,
    "sources": [
@@ -6756,12 +7730,29 @@
      "url": "https://www.submarinecablemap.com/submarine-cable/staonuk",
      "date": "2026-11-18",
      "read": "full"
+    },
+    {
+     "title": "Submarine Cable Networks — Sta’O’Nuk",
+     "url": "https://www.submarinenetworks.com/en/systems/trans-pacific/staonuk",
+     "date": "2026-11-18",
+     "read": "partial",
+     "n": 2
     }
    ],
-   "value_src": [],
+   "value_src": [
+    2
+   ],
    "alt": [],
    "conf": "med",
-   "note": "목록·개통 연도·육양지·소유자는 TeleGeography 공개 자료 그대로다. 설계 용량과 광섬유 쌍 수는 아직 모으지 않았다."
+   "note": "설계 용량과 쌍 수는 정리 사이트(Submarine Cable Networks)의 시스템 페이지에서 읽었다. 시스템 전체 값이며 나라 몫이 아니다. 계획 케이블이다.",
+   "extra_sources": [
+    {
+     "title": "Submarine Cable Networks — Sta’O’Nuk",
+     "url": "https://www.submarinenetworks.com/en/systems/trans-pacific/staonuk",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ]
   },
   {
    "id": "tasman-ring-network-phase-1",
@@ -6771,10 +7762,10 @@
    "countries": [
     "AU"
    ],
-   "value": null,
+   "value": 540,
    "unit": "Tbps",
    "asof": "2029",
-   "basis": "시스템 설계 용량. 아직 모으지 않았다",
+   "basis": "예상 용량('최대 540Tbps')",
    "rfs": "2029",
    "rfs_year": 2029,
    "is_planned": true,
@@ -6808,12 +7799,29 @@
      "url": "https://www.submarinecablemap.com/submarine-cable/tasman-ring-network-phase-1",
      "date": "2026-11-18",
      "read": "full"
+    },
+    {
+     "title": "Submarine Cable Networks — Tasman Ring Network-Phase 1",
+     "url": "https://www.submarinenetworks.com/en/systems/australia-usa/tasman-ring-network",
+     "date": "2026-11-18",
+     "read": "partial",
+     "n": 2
     }
    ],
-   "value_src": [],
+   "value_src": [
+    2
+   ],
    "alt": [],
-   "conf": "med",
-   "note": "목록·개통 연도·육양지·소유자는 TeleGeography 공개 자료 그대로다. 설계 용량과 광섬유 쌍 수는 아직 모으지 않았다."
+   "conf": "low",
+   "note": "설계 용량과 쌍 수는 정리 사이트(Submarine Cable Networks)의 시스템 페이지에서 읽었다. 시스템 전체 값이며 나라 몫이 아니다. '예상·최대' 값인 계획 케이블이다.",
+   "extra_sources": [
+    {
+     "title": "Submarine Cable Networks — Tasman Ring Network-Phase 1",
+     "url": "https://www.submarinenetworks.com/en/systems/australia-usa/tasman-ring-network",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ]
   },
   {
    "id": "vietnam-singapore-cable-system-vts",
@@ -6857,7 +7865,7 @@
     "Thailand",
     "Vietnam"
    ],
-   "fiber_pairs": null,
+   "fiber_pairs": 8,
    "capacity": null,
    "bigtech_pairs": null,
    "sources": [
@@ -6867,12 +7875,27 @@
      "url": "https://www.submarinecablemap.com/submarine-cable/vietnam-singapore-cable-system-vts",
      "date": "2026-11-18",
      "read": "full"
+    },
+    {
+     "title": "Submarine Cable Networks — Vietnam-Singapore Cable System (VTS)",
+     "url": "https://www.submarinenetworks.com/en/systems/intra-asia/vts",
+     "date": "2026-11-18",
+     "read": "partial",
+     "n": 2
     }
    ],
    "value_src": [],
    "alt": [],
    "conf": "med",
-   "note": "목록·개통 연도·육양지·소유자는 TeleGeography 공개 자료 그대로다. 설계 용량과 광섬유 쌍 수는 아직 모으지 않았다."
+   "note": "설계 용량과 쌍 수는 정리 사이트(Submarine Cable Networks)의 시스템 페이지에서 읽었다. 시스템 전체 값이며 나라 몫이 아니다. 주 간선 8쌍. 용량은 페이지에 없다. 계획 케이블이다.",
+   "extra_sources": [
+    {
+     "title": "Submarine Cable Networks — Vietnam-Singapore Cable System (VTS)",
+     "url": "https://www.submarinenetworks.com/en/systems/intra-asia/vts",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ]
   },
   {
    "id": "asia-connect-cable-1-acc-1",
@@ -6989,7 +8012,7 @@
     "South Africa",
     "United States"
    ],
-   "fiber_pairs": null,
+   "fiber_pairs": 24,
    "capacity": null,
    "bigtech_pairs": null,
    "sources": [
@@ -6999,12 +8022,27 @@
      "url": "https://www.submarinecablemap.com/submarine-cable/project-waterworth",
      "date": "2026-11-18",
      "read": "full"
+    },
+    {
+     "title": "Submarine Cable Networks — Project Waterworth",
+     "url": "https://www.submarinenetworks.com/en/systems/trans-atlantic/waterworth",
+     "date": "2026-11-18",
+     "read": "partial",
+     "n": 2
     }
    ],
    "value_src": [],
    "alt": [],
    "conf": "med",
-   "note": "목록·개통 연도·육양지·소유자는 TeleGeography 공개 자료 그대로다. 설계 용량과 광섬유 쌍 수는 아직 모으지 않았다."
+   "note": "설계 용량과 쌍 수는 정리 사이트(Submarine Cable Networks)의 시스템 페이지에서 읽었다. 시스템 전체 값이며 나라 몫이 아니다. 24쌍 케이블로 적혀 있다. 용량은 페이지에 없다.",
+   "extra_sources": [
+    {
+     "title": "Submarine Cable Networks — Project Waterworth",
+     "url": "https://www.submarinenetworks.com/en/systems/trans-atlantic/waterworth",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ]
   }
  ],
  "by_country": {
@@ -7021,12 +8059,12 @@
    "bigtech_sole": 0,
    "planned_with_bigtech": 2,
    "landing_sites": 3,
-   "capacity_known": 0,
-   "design_tbps": 0,
-   "design_tbps_bigtech": 0,
+   "capacity_known": 3,
+   "design_tbps": 268.8,
+   "design_tbps_bigtech": 268.8,
    "design_tbps_bigtech_sole": 0,
-   "design_tbps_since_2021": 0,
-   "design_tbps_planned": 0
+   "design_tbps_since_2021": 144,
+   "design_tbps_planned": 512
   },
   "JP": {
    "cables": 24,
@@ -7042,12 +8080,12 @@
    "bigtech_sole": 1,
    "planned_with_bigtech": 6,
    "landing_sites": 16,
-   "capacity_known": 0,
-   "design_tbps": 0,
-   "design_tbps_bigtech": 0,
-   "design_tbps_bigtech_sole": 0,
-   "design_tbps_since_2021": 0,
-   "design_tbps_planned": 0
+   "capacity_known": 12,
+   "design_tbps": 1410.48,
+   "design_tbps_bigtech": 875.48,
+   "design_tbps_bigtech_sole": 240,
+   "design_tbps_since_2021": 1115,
+   "design_tbps_planned": 2206
   },
   "SG": {
    "cables": 34,
@@ -7062,12 +8100,12 @@
    "bigtech_sole": 1,
    "planned_with_bigtech": 4,
    "landing_sites": 6,
-   "capacity_known": 0,
-   "design_tbps": 0,
-   "design_tbps_bigtech": 0,
-   "design_tbps_bigtech_sole": 0,
-   "design_tbps_since_2021": 0,
-   "design_tbps_planned": 0
+   "capacity_known": 16,
+   "design_tbps": 1968.64,
+   "design_tbps_bigtech": 877.8,
+   "design_tbps_bigtech_sole": 144,
+   "design_tbps_since_2021": 1735,
+   "design_tbps_planned": 2074
   },
   "MY": {
    "cables": 20,
@@ -7083,12 +8121,12 @@
    "bigtech_sole": 0,
    "planned_with_bigtech": 5,
    "landing_sites": 8,
-   "capacity_known": 0,
-   "design_tbps": 0,
-   "design_tbps_bigtech": 0,
+   "capacity_known": 8,
+   "design_tbps": 457.8,
+   "design_tbps_bigtech": 54.8,
    "design_tbps_bigtech_sole": 0,
-   "design_tbps_since_2021": 0,
-   "design_tbps_planned": 0
+   "design_tbps_since_2021": 264,
+   "design_tbps_planned": 1354
   },
   "AU": {
    "cables": 13,
@@ -7103,12 +8141,12 @@
    "bigtech_sole": 0,
    "planned_with_bigtech": 6,
    "landing_sites": 7,
-   "capacity_known": 0,
-   "design_tbps": 0,
-   "design_tbps_bigtech": 0,
+   "capacity_known": 5,
+   "design_tbps": 198,
+   "design_tbps_bigtech": 36,
    "design_tbps_bigtech_sole": 0,
-   "design_tbps_since_2021": 0,
-   "design_tbps_planned": 0
+   "design_tbps_since_2021": 72,
+   "design_tbps_planned": 1711.2
   },
   "IN": {
    "cables": 16,
@@ -7124,12 +8162,12 @@
    "bigtech_sole": 0,
    "planned_with_bigtech": 4,
    "landing_sites": 7,
-   "capacity_known": 0,
-   "design_tbps": 0,
-   "design_tbps_bigtech": 0,
+   "capacity_known": 6,
+   "design_tbps": 473.68,
+   "design_tbps_bigtech": 180,
    "design_tbps_bigtech_sole": 0,
-   "design_tbps_since_2021": 0,
-   "design_tbps_planned": 0
+   "design_tbps_since_2021": 396,
+   "design_tbps_planned": 344
   },
   "TW": {
    "cables": 14,
@@ -7144,12 +8182,12 @@
    "bigtech_sole": 3,
    "planned_with_bigtech": 3,
    "landing_sites": 7,
-   "capacity_known": 0,
-   "design_tbps": 0,
-   "design_tbps_bigtech": 0,
-   "design_tbps_bigtech_sole": 0,
-   "design_tbps_since_2021": 0,
-   "design_tbps_planned": 0
+   "capacity_known": 9,
+   "design_tbps": 1190.2,
+   "design_tbps_bigtech": 1183.8,
+   "design_tbps_bigtech_sole": 644,
+   "design_tbps_since_2021": 999,
+   "design_tbps_planned": 838.8
   }
  }
 }
