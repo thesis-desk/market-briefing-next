@@ -1,0 +1,3206 @@
+{
+ "schema": 1,
+ "slug": "apac-ai-siting-korea-ref",
+ "type": "research",
+ "title": "아시아·태평양 AI 컴퓨트 입지 비교 : 참고 자료",
+ "summary": "본문 「아시아·태평양 AI 컴퓨트 입지 비교 : 한국은 권역 거점이 될 수 있나」의 판단을 받치는 표와 계산이다. 비용의 크기, 미국 밖의 300MW 이상 계획 14건, 전력 심사와 접속, 한국의 건별 현황과 500MW 의 사업비, 랩 용량의 쓰임별 집계, 그 밖의 조건 열두 요인, 두 가설의 판정, 자료의 범위를 싣는다.",
+ "companies": [
+  {
+   "name": "AWS",
+   "ticker": null
+  },
+  {
+   "name": "Microsoft",
+   "ticker": null
+  },
+  {
+   "name": "Google",
+   "ticker": null
+  },
+  {
+   "name": "Oracle",
+   "ticker": null
+  },
+  {
+   "name": "Meta",
+   "ticker": null
+  },
+  {
+   "name": "OpenAI",
+   "ticker": null
+  },
+  {
+   "name": "Anthropic",
+   "ticker": null
+  },
+  {
+   "name": "xAI",
+   "ticker": null
+  }
+ ],
+ "prev_slug": null,
+ "published_kst": "2026-11-19T08:52:53+09:00",
+ "revised_kst": "2026-11-19T08:52:53+09:00",
+ "revision": 1,
+ "sources": [
+  {
+   "n": 1,
+   "title": "조사 자료 묶음 A — 투자 발표 장부 — 실제로 어디에 지었나 (investments.json)",
+   "url": "https://thesis-desk.github.io/market-briefing-next/feed/data/apac-siting/investments.json",
+   "date": "2026-11-18",
+   "access": "public",
+   "kind": "dataset",
+   "read": "전문",
+   "note": "기록마다 원 출처와 읽은 범위가 적혀 있다"
+  },
+  {
+   "n": 2,
+   "title": "조사 자료 묶음 B — 프런티어 랩의 해외 용량 건별 조사 (lab_overseas.json)",
+   "url": "https://thesis-desk.github.io/market-briefing-next/feed/data/apac-siting/lab_overseas.json",
+   "date": "2026-11-18",
+   "access": "public",
+   "kind": "dataset",
+   "read": "전문",
+   "note": "기록마다 원 출처와 읽은 범위가 적혀 있다"
+  },
+  {
+   "n": 3,
+   "title": "조사 자료 묶음 C1-3 — 해저케이블 목록·용량·빅테크 참여 (cables.json)",
+   "url": "https://thesis-desk.github.io/market-briefing-next/feed/data/apac-siting/cables.json",
+   "date": "2026-11-18",
+   "access": "public",
+   "kind": "dataset",
+   "read": "전문",
+   "note": "기록마다 원 출처와 읽은 범위가 적혀 있다"
+  },
+  {
+   "n": 4,
+   "title": "조사 자료 묶음 C4-5 — 도시별 접속 여건과 도시 간 지연시간 (peering.json)",
+   "url": "https://thesis-desk.github.io/market-briefing-next/feed/data/apac-siting/peering.json",
+   "date": "2026-11-18",
+   "access": "public",
+   "kind": "dataset",
+   "read": "전문",
+   "note": "기록마다 원 출처와 읽은 범위가 적혀 있다"
+  },
+  {
+   "n": 5,
+   "title": "조사 자료 묶음 D — 전력: 품질·가격·확보 (power.json)",
+   "url": "https://thesis-desk.github.io/market-briefing-next/feed/data/apac-siting/power.json",
+   "date": "2026-11-18",
+   "access": "public",
+   "kind": "dataset",
+   "read": "전문",
+   "note": "기록마다 원 출처와 읽은 범위가 적혀 있다"
+  },
+  {
+   "n": 6,
+   "title": "조사 자료 묶음 E — 배후 수요 (demand.json)",
+   "url": "https://thesis-desk.github.io/market-briefing-next/feed/data/apac-siting/demand.json",
+   "date": "2026-11-18",
+   "access": "public",
+   "kind": "dataset",
+   "read": "전문",
+   "note": "기록마다 원 출처와 읽은 범위가 적혀 있다"
+  },
+  {
+   "n": 7,
+   "title": "조사 자료 묶음 F — 나머지 조건(채점표 재료) (conditions.json)",
+   "url": "https://thesis-desk.github.io/market-briefing-next/feed/data/apac-siting/conditions.json",
+   "date": "2026-11-18",
+   "access": "public",
+   "kind": "dataset",
+   "read": "전문",
+   "note": "기록마다 원 출처와 읽은 범위가 적혀 있다"
+  },
+  {
+   "n": 8,
+   "title": "조사 자료 묶음 G — 한국 쪽이 내놓을 수 있는 것 (korea_package.json)",
+   "url": "https://thesis-desk.github.io/market-briefing-next/feed/data/apac-siting/korea_package.json",
+   "date": "2026-11-18",
+   "access": "public",
+   "kind": "dataset",
+   "read": "전문",
+   "note": "기록마다 원 출처와 읽은 범위가 적혀 있다"
+  },
+  {
+   "n": 9,
+   "title": "조사 자료 묶음 H — 반례와 경쟁 입지의 제약 (counter.json)",
+   "url": "https://thesis-desk.github.io/market-briefing-next/feed/data/apac-siting/counter.json",
+   "date": "2026-11-18",
+   "access": "public",
+   "kind": "dataset",
+   "read": "전문",
+   "note": "기록마다 원 출처와 읽은 범위가 적혀 있다"
+  },
+  {
+   "n": 10,
+   "title": "조사 자료 묶음 I — 관문 조건 — 대용량 전력 블록, 돈과 임차 약정, 수요의 종류 (gates.json)",
+   "url": "https://thesis-desk.github.io/market-briefing-next/feed/data/apac-siting/gates.json",
+   "date": "2026-11-18",
+   "access": "public",
+   "kind": "dataset",
+   "read": "전문",
+   "note": "기록마다 원 출처와 읽은 범위가 적혀 있다"
+  },
+  {
+   "n": 11,
+   "title": "TeleGeography — Submarine Cable Map(공개 자료)",
+   "url": "https://www.submarinecablemap.com/",
+   "date": "2026-11-18",
+   "access": "public",
+   "kind": "article",
+   "read": "전문"
+  },
+  {
+   "n": 12,
+   "title": "한국전력 ESG 데이터센터 — 기업 전체(전력서비스: 호당 정전시간)",
+   "url": "https://www.kepco.co.kr/home/esg/esgdata/entire/conts.do",
+   "date": "2026-11-18",
+   "access": "public",
+   "kind": "article",
+   "read": "일부"
+  },
+  {
+   "n": 13,
+   "title": "KEPCO ESG Data Center — Company-wide (Power Services: SAIDI)",
+   "url": "https://www.kepco.co.kr/eng/sustainability/esg-data-center/company-wide/conts.do",
+   "date": "2026-11-18",
+   "access": "public",
+   "kind": "article",
+   "read": "일부"
+  },
+  {
+   "n": 14,
+   "title": "Taiwan Power Company — Operational Metrics for International Power Utilities (2024년 실적 비교표와 주석)",
+   "url": "https://www.taipower.com.tw/2764/2826/2835/2841/25122",
+   "date": "2026-11-18",
+   "access": "public",
+   "kind": "article",
+   "read": "일부"
+  },
+  {
+   "n": 15,
+   "title": "OCCTO — Report on the Quality of the Electricity Supply, Data for Fiscal Year 2024",
+   "url": "https://www.occto.or.jp/en/assets/en/information_disclosure/report_on_the_quality/of_electricity_supply_data_for_fy2024/2024_qualityofelectricity_260113.pdf",
+   "access": "public",
+   "kind": "article",
+   "read": "일부"
+  },
+  {
+   "n": 16,
+   "title": "SP Group — Sustainability Report FY2025/2026",
+   "url": "https://www.spgroup.com.sg/dam/spgroup/pdf/about-us/our-sustainability-commitment/sp-group-sustainability-report-fy2025-26",
+   "access": "public",
+   "kind": "article",
+   "read": "일부"
+  },
+  {
+   "n": 17,
+   "title": "SP Group — Annual Report 2024 (Chairman's Message)",
+   "url": "https://www.spgroup.com.sg/about-us/media-resources/energy-hub/annual-report-2024",
+   "access": "public",
+   "kind": "article",
+   "read": "일부"
+  },
+  {
+   "n": 18,
+   "title": "Suruhanjaya Tenaga(말레이시아 에너지위원회) — Performance Booklet",
+   "url": "https://st.gov.my/sites/default/files/2026-03/ST_Performance-Booklet_v2i-%28ZM%29.pdf",
+   "access": "public",
+   "kind": "article",
+   "read": "일부"
+  },
+  {
+   "n": 19,
+   "title": "TNB — Supply Reliability (SAIDI & SAIFI Performance for TNB)",
+   "url": "https://www.tnb.com.my/smart-grid/supply-reliability/",
+   "date": "2026-11-18",
+   "access": "public",
+   "kind": "article",
+   "read": "일부"
+  },
+  {
+   "n": 20,
+   "title": "AER — Electricity infographic, Network performance report 2026 (3쪽 Network service outputs)",
+   "url": "https://www.aer.gov.au/system/files/2026-07/Electricity%20infographic%20-%20Network%20performance%20report%202026.pdf",
+   "access": "public",
+   "kind": "article",
+   "read": "일부"
+  },
+  {
+   "n": 21,
+   "title": "AER — State of the energy market 2025, Chapter 3 Electricity networks",
+   "url": "https://www.aer.gov.au/system/files/2025-08/State%20of%20the%20energy%20market%202025%20-%20Chapter%203%20-%20Electricity%20networks.pdf",
+   "access": "public",
+   "kind": "article",
+   "read": "요약만"
+  },
+  {
+   "n": 22,
+   "title": "The Leap Blog — A review of outage reporting by Indian DISCOMs",
+   "url": "https://blog.theleapjournal.org/2025/09/a-review-of-outage-reporting-by-indian.html",
+   "date": "2025-09-25",
+   "access": "public",
+   "kind": "article",
+   "read": "요약만"
+  },
+  {
+   "n": 23,
+   "title": "PIB(인도 정부 공보국) — India's Power Sector: Progress, Reform, and the Road Ahead",
+   "url": "https://static.pib.gov.in/WriteReadData/specificdocs/documents/2026/mar/doc2026318829301.pdf",
+   "date": "2026-03-18",
+   "access": "public",
+   "kind": "press_release",
+   "read": "일부"
+  },
+  {
+   "n": 24,
+   "title": "台灣電力公司 2024 永續報告書 — 提升供電穩定性",
+   "url": "https://service.taipower.com.tw/csr/report/20O/2024_%E6%8F%90%E5%8D%87%E4%BE%9B%E9%9B%BB%E7%A9%A9%E5%AE%9A%E6%80%A7.pdf",
+   "access": "public",
+   "kind": "article",
+   "read": "일부"
+  },
+  {
+   "n": 25,
+   "title": "전력통계정보시스템(EPSIS) — 판매 > 판매단가(계약종별, 연도별)",
+   "url": "https://epsis.kpx.or.kr/epsisnew/selectEksaScfChart.do?menuId=060600",
+   "date": "2026-11-18",
+   "access": "public",
+   "kind": "article",
+   "read": "전문"
+  },
+  {
+   "n": 26,
+   "title": "한국전력 — 전기요금표(산업용 갑·을)",
+   "url": "https://cyber.kepco.co.kr/ckepco/front/jsp/CY/E/E/CYEEHP00103.jsp",
+   "date": "2026-11-18",
+   "access": "public",
+   "kind": "article",
+   "read": "일부"
+  },
+  {
+   "n": 27,
+   "title": "自然エネルギー財団 — コーポレートPPA 日本の最新動向 2026年版(電気料金の比較)",
+   "url": "https://www.renewable-ei.org/pdfdownload/activities/REI_JPCorporatePPA_2026.pdf",
+   "access": "public",
+   "kind": "article",
+   "read": "일부"
+  },
+  {
+   "n": 28,
+   "title": "電力・ガス取引監視等委員会 — 電力取引の状況(電力取引報結果) 令和8年7月分 集計結果",
+   "url": "https://www.egc.meti.go.jp/info/public/excel/20261029001b.xlsx",
+   "date": "2026-10-29",
+   "access": "public",
+   "kind": "article",
+   "read": "일부"
+  },
+  {
+   "n": 29,
+   "title": "新電力ネット — 電気料金の平均単価の推移(特高・高圧・低圧別)",
+   "url": "https://pps-net.org/unit",
+   "date": "2026-11-18",
+   "access": "public",
+   "kind": "article",
+   "read": "일부"
+  },
+  {
+   "n": 30,
+   "title": "電力・ガス取引監視等委員会 — 電力取引の状況(電力取引報結果) 목록",
+   "url": "https://www.egc.meti.go.jp/info/business/report/results.html",
+   "date": "2026-11-18",
+   "access": "public",
+   "kind": "article",
+   "read": "일부"
+  },
+  {
+   "n": 31,
+   "title": "Taipower Sustainability Report 2024 — Taipower and Sustainability(2022~2024 평균 단가)",
+   "url": "https://service.taipower.com.tw/csr/en/download/sustainables/sections/wz/01_Taipower%20and%20Sustainability.pdf",
+   "access": "public",
+   "kind": "article",
+   "read": "일부"
+  },
+  {
+   "n": 32,
+   "title": "Taipower Sustainability Report 2022 — Taipower and Sustainability(2020~2022 평균 단가)",
+   "url": "https://service.taipower.com.tw/csr/en/download/sustainables/sections/LJ/01_Taipower%20and%20Sustainability.pdf",
+   "access": "public",
+   "kind": "article",
+   "read": "일부"
+  },
+  {
+   "n": 33,
+   "title": "Taipower Sustainability Report 2021 — (2019~2021 평균 단가)",
+   "url": "https://service.taipower.com.tw/csr/en/download/sustainables/sections/vj/sustainability.pdf",
+   "access": "public",
+   "kind": "article",
+   "read": "일부"
+  },
+  {
+   "n": 34,
+   "title": "天下雜誌·數位時代 등 — 2025년 대만 전기요금 조정 보도",
+   "url": "https://www.bnext.com.tw/article/78656/electricity-price-2024",
+   "access": "public",
+   "kind": "news",
+   "read": "요약만"
+  },
+  {
+   "n": 35,
+   "title": "머니투데이 — 갈팡질팡 평가에 반쪽짜리 특별법…데이터센터 운명도 안갯속",
+   "url": "https://www.mt.co.kr/tech/2026/05/20/2026051922044934385",
+   "date": "2026-05-20",
+   "access": "public",
+   "kind": "news",
+   "read": "전문"
+  },
+  {
+   "n": 36,
+   "title": "머니투데이 — '수도권 데이터센터' 몰리지만…전력망 '감당불가'",
+   "url": "https://www.mt.co.kr/tech/2026/05/23/2026052210211399740",
+   "date": "2026-05-23",
+   "access": "public",
+   "kind": "news",
+   "read": "요약만"
+  },
+  {
+   "n": 37,
+   "title": "뉴시스 — AI 수요 폭증·전력난…수도권 데이터센터 '귀한 몸'",
+   "url": "https://mobile.newsis.com/view/NISX20260713_0003707405",
+   "date": "2026-07-14",
+   "access": "public",
+   "kind": "news",
+   "read": "일부"
+  },
+  {
+   "n": 38,
+   "title": "블록미디어 비트플래닛 — \"데이터센터 성공의 조건은?\" 한국 AI 데이터센터 지도(국내 프로젝트 4건의 가동 준비 현황)",
+   "url": "https://www.blockmedia.co.kr/archives/1141412",
+   "date": "2026-09-18",
+   "access": "public",
+   "kind": "news",
+   "read": "일부"
+  },
+  {
+   "n": 39,
+   "title": "ITmedia ビジネスオンライン — データセンター増設ラッシュで「東京1つ分の電力」が必要に",
+   "url": "https://www.itmedia.co.jp/business/spv/2609/17/news052.html",
+   "date": "2026-09-17",
+   "access": "public",
+   "kind": "news",
+   "read": "일부"
+  },
+  {
+   "n": 40,
+   "title": "ビジネスジャーナル — データセンター送電網増強の裏の論点",
+   "url": "https://biz-journal.jp/2026/07/post_395361.html",
+   "access": "public",
+   "kind": "news",
+   "read": "요약만"
+  },
+  {
+   "n": 41,
+   "title": "EDB·IMDA — Fact Sheet: Four data centre proposals selected as part of Second Data Centre – Call for Application",
+   "url": "https://www.edb.gov.sg/content/dam/edb-en/about-edb/media-releases/news/four-data-centre-proposals-selected-as-part-of-second-data-centre/Fact%20Sheet%20-Four%20data%20centre%20proposals%20selected%20as%20part%20of%20second%20data%20centre.pdf",
+   "date": "2026-08-21",
+   "access": "public",
+   "kind": "press_release",
+   "read": "일부"
+  },
+  {
+   "n": 42,
+   "title": "Withers — Singapore's second data centre call for application: from pilot to power play",
+   "url": "https://www.withersworldwide.com/en-gb/insight/read/singapore-s-second-data-centre-call-for-application-from-pilot-to-power-play",
+   "access": "public",
+   "kind": "article",
+   "read": "요약만"
+  },
+  {
+   "n": 43,
+   "title": "Bernama — Govt Reviews Power Supply Before Deciding On 24 Data Centre Applications",
+   "url": "https://bernama.com/en/news.php?id=2626853",
+   "date": "2026-10-28",
+   "access": "public",
+   "kind": "news",
+   "read": "일부"
+  },
+  {
+   "n": 44,
+   "title": "BusinessToday — TNB Locks In Growth Securing 59 Data Centre Projects With 8.3GW Capacity",
+   "url": "https://www.businesstoday.com.my/2026/07/11/tnb-locks-in-growth-securing-59-data-centre-projects-with-8-3gw-capacity/",
+   "date": "2026-07-11",
+   "access": "public",
+   "kind": "news",
+   "read": "요약만"
+  },
+  {
+   "n": 45,
+   "title": "W.Media — AEMO: Australia's data centres to use 34TWh by 2035-36",
+   "url": "https://w.media/aemo-australias-data-centres-to-use-34twh-by-2035-36/",
+   "access": "public",
+   "kind": "news",
+   "read": "일부"
+  },
+  {
+   "n": 46,
+   "title": "RenewEconomy — Data centres are already helping flatten solar duck curve, and there are 9 gigawatts more seeking grid connection",
+   "url": "https://reneweconomy.com.au/data-centres-are-already-helping-flatten-solar-duck-curve-and-there-are-9-gigawatts-more-seeking-grid-connection/",
+   "access": "public",
+   "kind": "news",
+   "read": "일부"
+  },
+  {
+   "n": 47,
+   "title": "數位時代 — 台電下令桃園以北拒供資料中心用電",
+   "url": "https://www.bnext.com.tw/article/80273/taipower-denied-power-provide-to-data-centre-north-of-taoyuan",
+   "date": "2024-08-26",
+   "access": "public",
+   "kind": "news",
+   "read": "일부"
+  },
+  {
+   "n": 48,
+   "title": "工商時報 등 — 2026년 7월 대만전력의 조건부 완화 보도",
+   "url": "https://wantrich.chinatimes.com/news/20260716900015-420101",
+   "date": "2026-07-16",
+   "access": "public",
+   "kind": "news",
+   "read": "요약만"
+  },
+  {
+   "n": 49,
+   "title": "SK텔레콤 뉴스룸 — 'SK AI 데이터센터 울산' 기공식 개최",
+   "url": "https://news.sktelecom.com/214708",
+   "date": "2025-08-29",
+   "access": "public",
+   "kind": "press_release",
+   "read": "일부"
+  },
+  {
+   "n": 50,
+   "title": "뉴데일리 — SK AI 데이터센터 울산 기공식 보도(SK멀티유틸리티 300MW급 LNG 열병합)",
+   "url": "https://biz.newdaily.co.kr/site/data/html/2025/08/29/2025082900220.html",
+   "date": "2025-08-29",
+   "access": "public",
+   "kind": "news",
+   "read": "일부"
+  },
+  {
+   "n": 51,
+   "title": "JTC — Jurong Island to host largest green data centre park in Singapore",
+   "url": "https://www.jtc.gov.sg/jurongisland/story-articles/jurong-island-to-host-largest-green-data-centre-park-in-singapore",
+   "access": "public",
+   "kind": "press_release",
+   "read": "일부"
+  },
+  {
+   "n": 52,
+   "title": "RenewEconomy — Australian developer proposes gas turbines rather than renewables to power data centres",
+   "url": "https://reneweconomy.com.au/australian-developer-proposes-gas-turbines-rather-than-renewables-to-power-data-centres/",
+   "date": "2025-10-07",
+   "access": "public",
+   "kind": "news",
+   "read": "일부"
+  },
+  {
+   "n": 53,
+   "title": "pv magazine — CtrlS Datacenters builds 125 MWp of solar to power site in Mumbai",
+   "url": "https://www.pv-magazine.com/2025/02/06/ctrls-datacenters-builds-125-mwp-of-solar-to-power-site-in-mumbai",
+   "date": "2025-02-06",
+   "access": "public",
+   "kind": "news",
+   "read": "일부"
+  },
+  {
+   "n": 54,
+   "title": "IMF — World Economic Outlook (October 2026) (DataMapper: GDP, 인구, 1인당 GDP)",
+   "url": "https://www.imf.org/external/datamapper/NGDPD@WEO",
+   "date": "2026-11-18",
+   "access": "public",
+   "kind": "article",
+   "read": "전문"
+  },
+  {
+   "n": 55,
+   "title": "Real Estate Asia — Greater Seoul data centre vacancy remains below 5% (CBRE 인용)",
+   "url": "https://realestateasia.com/industrial/news/greater-seoul-data-centre-vacancy-remains-below-5",
+   "access": "public",
+   "kind": "news",
+   "read": "일부"
+  },
+  {
+   "n": 56,
+   "title": "Real Estate Asia — Greater Tokyo data centre pipeline reaches 2,544 MW (CBRE 인용)",
+   "url": "https://realestateasia.com/industrial/news/greater-tokyo-data-centre-pipeline-reaches-2544-mw",
+   "access": "public",
+   "kind": "news",
+   "read": "일부"
+  },
+  {
+   "n": 57,
+   "title": "Cushman & Wakefield — Asia Pacific's Data Centre Development Pipeline Reaches Record 26.5GW in H1 2026",
+   "url": "https://www.cushmanwakefield.com/en/singapore/news/2026/08/apac-dc-h1-2026",
+   "date": "2026-08-05",
+   "access": "public",
+   "kind": "article",
+   "read": "일부"
+  },
+  {
+   "n": 58,
+   "title": "W.Media — APAC data center pipeline reaches 26.5 GW (Cushman & Wakefield 보고서 요약)",
+   "url": "https://w.media/apac-data-center-pipeline-reaches-26-5-gw-as-ai-demand-drives-expansion-cushman-wakefield-report/",
+   "access": "public",
+   "kind": "news",
+   "read": "일부"
+  },
+  {
+   "n": 59,
+   "title": "WonderNetwork — Ping time between Seoul and other cities",
+   "url": "https://wondernetwork.com/pings/Seoul",
+   "date": "2026-11-18",
+   "access": "public",
+   "kind": "article",
+   "read": "전문"
+  },
+  {
+   "n": 60,
+   "title": "WonderNetwork — Ping time between Tokyo and other cities",
+   "url": "https://wondernetwork.com/pings/Tokyo",
+   "date": "2026-11-18",
+   "access": "public",
+   "kind": "article",
+   "read": "전문"
+  },
+  {
+   "n": 61,
+   "title": "WonderNetwork — Ping time between Singapore and other cities",
+   "url": "https://wondernetwork.com/pings/Singapore",
+   "date": "2026-11-18",
+   "access": "public",
+   "kind": "article",
+   "read": "전문"
+  },
+  {
+   "n": 62,
+   "title": "INFORM Risk Index 2025 2nd edition (v0.7.0) — results and data (European Commission JRC, HDX 사본)",
+   "url": "https://data.humdata.org/dataset/inform-risk-index",
+   "date": "2026-11-18",
+   "access": "public",
+   "kind": "article",
+   "read": "전문"
+  },
+  {
+   "n": 63,
+   "title": "WorldRiskIndex 2026 — trend data (Bündnis Entwicklung Hilft / IFHV, HDX)",
+   "url": "https://data.humdata.org/dataset/worldriskindex",
+   "date": "2026-11-18",
+   "access": "public",
+   "kind": "article",
+   "read": "전문"
+  },
+  {
+   "n": 64,
+   "title": "GitHub Innovation Graph — developers by economy (CC0)",
+   "url": "https://github.com/github/innovationgraph",
+   "date": "2026-11-18",
+   "access": "public",
+   "kind": "article",
+   "read": "전문"
+  },
+  {
+   "n": 65,
+   "title": "World Bank — Worldwide Governance Indicators, 2026 edition (dataset)",
+   "url": "https://www.worldbank.org/en/publication/worldwide-governance-indicators",
+   "date": "2026-11-18",
+   "access": "public",
+   "kind": "article",
+   "read": "전문"
+  },
+  {
+   "n": 66,
+   "title": "국가법령정보센터 — 개인정보 보호법 제28조의8(개인정보의 국외 이전), 시행 2026-09-11",
+   "url": "https://www.law.go.kr/법령/개인정보보호법/제28조의8",
+   "date": "2026-09-11",
+   "access": "public",
+   "kind": "article",
+   "read": "일부"
+  },
+  {
+   "n": 67,
+   "title": "DLA Piper — Data Protection Laws of the World: Transfer of personal data in South Korea",
+   "url": "https://www.dlapiperdataprotection.com/index.html?t=transfer&c=KR",
+   "date": "2026-03-20",
+   "access": "public",
+   "kind": "article",
+   "read": "전문"
+  },
+  {
+   "n": 68,
+   "title": "Personal Information Protection Commission, Japan — Amended Act on the Protection of Personal Information (Tentative Translation, June 2020)",
+   "url": "https://www.ppc.go.jp/files/pdf/APPI_english.pdf",
+   "access": "public",
+   "kind": "article",
+   "read": "일부"
+  },
+  {
+   "n": 69,
+   "title": "DLA Piper — Data Protection Laws of the World: Transfer of personal data in Japan",
+   "url": "https://www.dlapiperdataprotection.com/index.html?t=transfer&c=JP",
+   "date": "2026-02-12",
+   "access": "public",
+   "kind": "article",
+   "read": "전문"
+  },
+  {
+   "n": 70,
+   "title": "Personal Data Protection Commission Singapore — Data Protection Obligations",
+   "url": "https://www.pdpc.gov.sg/overview-of-pdpa/the-legislation/personal-data-protection-act/data-protection-obligations",
+   "date": "2026-11-18",
+   "access": "public",
+   "kind": "article",
+   "read": "일부"
+  },
+  {
+   "n": 71,
+   "title": "DLA Piper — Data Protection Laws of the World: Transfer of personal data in Singapore",
+   "url": "https://www.dlapiperdataprotection.com/index.html?t=transfer&c=SG",
+   "date": "2026-02-27",
+   "access": "public",
+   "kind": "article",
+   "read": "전문"
+  },
+  {
+   "n": 72,
+   "title": "DLA Piper — Data Protection Laws of the World: Transfer of personal data in Malaysia",
+   "url": "https://www.dlapiperdataprotection.com/index.html?t=transfer&c=MY",
+   "date": "2026-02-12",
+   "access": "public",
+   "kind": "article",
+   "read": "전문"
+  },
+  {
+   "n": 73,
+   "title": "Office of the Australian Information Commissioner — APP Guidelines, Chapter 8: APP 8 Cross-border disclosure of personal information",
+   "url": "https://www.oaic.gov.au/privacy/australian-privacy-principles/australian-privacy-principles-guidelines/chapter-8-app-8-cross-border-disclosure-of-personal-information",
+   "date": "2026-11-18",
+   "access": "public",
+   "kind": "article",
+   "read": "일부"
+  },
+  {
+   "n": 74,
+   "title": "DLA Piper — Data Protection Laws of the World: Transfer of personal data in Australia",
+   "url": "https://www.dlapiperdataprotection.com/index.html?t=transfer&c=AU",
+   "date": "2026-03-11",
+   "access": "public",
+   "kind": "article",
+   "read": "전문"
+  },
+  {
+   "n": 75,
+   "title": "DLA Piper — Data Protection Laws of the World: Transfer of personal data in India",
+   "url": "https://www.dlapiperdataprotection.com/index.html?t=transfer&c=IN",
+   "date": "2026-02-13",
+   "access": "public",
+   "kind": "article",
+   "read": "전문"
+  },
+  {
+   "n": 76,
+   "title": "Laws & Regulations Database of The Republic of China (Taiwan) — Personal Data Protection Act, Article 21 (amended 2025-11-11)",
+   "url": "https://law.moj.gov.tw/ENG/LawClass/LawAll.aspx?pcode=I0050021",
+   "date": "2025-11-11",
+   "access": "public",
+   "kind": "article",
+   "read": "일부"
+  },
+  {
+   "n": 77,
+   "title": "DLA Piper — Data Protection Laws of the World: Transfer of personal data in Taiwan",
+   "url": "https://www.dlapiperdataprotection.com/index.html?t=transfer&c=TW",
+   "date": "2026-03-19",
+   "access": "public",
+   "kind": "article",
+   "read": "전문"
+  },
+  {
+   "n": 78,
+   "title": "King & Wood Mallesons — Data Centres: APAC Regulatory Guide 2026, Chapter 11 South Korea",
+   "url": "https://www.mallesons.com/content/dam/mallesons/insights/download-publication/australia/2026/11/00122_Data%20Centre%20Regulatory%20Guide%202026%20Chapter%2011%20South%20Korea.pdf",
+   "access": "public",
+   "kind": "article",
+   "read": "일부"
+  },
+  {
+   "n": 79,
+   "title": "ZDNet Korea — \"AWS·MS·구글 쏟아진다\"…韓 공공 진출한 빅3 클라우드, 주도권 경쟁 시작",
+   "url": "https://zdnet.co.kr/view/?no=20250402144624",
+   "date": "2025-04-02",
+   "access": "public",
+   "kind": "news",
+   "read": "전문"
+  },
+  {
+   "n": 80,
+   "title": "King & Wood Mallesons — Data Centres: APAC Regulatory Guide 2026, Chapter 6 Japan",
+   "url": "https://www.mallesons.com/content/dam/mallesons/insights/download-publication/australia/2026/11/00122_Data%20Centre%20Regulatory%20Guide%202026%20Chapter%206%20Japan.pdf",
+   "access": "public",
+   "kind": "article",
+   "read": "일부"
+  },
+  {
+   "n": 81,
+   "title": "King & Wood Mallesons — Data Centres: APAC Regulatory Guide 2026, Chapter 10 Singapore",
+   "url": "https://www.mallesons.com/content/dam/mallesons/insights/download-publication/australia/2026/11/00122_Data%20Centre%20Regulatory%20Guide%202026%20Chapter%2010%20Singapore.pdf",
+   "access": "public",
+   "kind": "article",
+   "read": "일부"
+  },
+  {
+   "n": 82,
+   "title": "King & Wood Mallesons — Data Centres: APAC Regulatory Guide 2026, Chapter 7 Malaysia",
+   "url": "https://www.mallesons.com/content/dam/mallesons/insights/download-publication/australia/2026/11/00122_Data%20Centre%20Regulatory%20Guide%202026%20Chapter%207%20Malaysia.pdf",
+   "access": "public",
+   "kind": "article",
+   "read": "일부"
+  },
+  {
+   "n": 83,
+   "title": "King & Wood Mallesons — Data Centres: APAC Regulatory Guide 2026, Chapter 1 Australia",
+   "url": "https://www.mallesons.com/content/dam/mallesons/insights/download-publication/australia/2026/11/00122_Data%20Centre%20Regulatory%20Guide%202026%20Chapter%201%20Australia.pdf",
+   "access": "public",
+   "kind": "article",
+   "read": "일부"
+  },
+  {
+   "n": 84,
+   "title": "Digital Transformation Agency — Hosting Certification Framework",
+   "url": "https://www.dta.gov.au/our-projects/hosting-strategy/hosting-certification-framework",
+   "access": "public",
+   "kind": "article",
+   "read": "요약만"
+  },
+  {
+   "n": 85,
+   "title": "King & Wood Mallesons — Data Centres: APAC Regulatory Guide 2026, Chapter 4 India",
+   "url": "https://www.mallesons.com/content/dam/mallesons/insights/download-publication/australia/2026/11/00122_Data%20Centre%20Regulatory%20Guide%202026%20Chapter%204%20India.pdf",
+   "access": "public",
+   "kind": "article",
+   "read": "일부"
+  },
+  {
+   "n": 86,
+   "title": "King & Wood Mallesons — Data Centres: APAC Regulatory Guide 2026, Chapter 12 Taiwan",
+   "url": "https://www.mallesons.com/content/dam/mallesons/insights/download-publication/australia/2026/11/00122_Data%20Centre%20Regulatory%20Guide%202026%20Chapter%2012%20Taiwan.pdf",
+   "access": "public",
+   "kind": "article",
+   "read": "일부"
+  },
+  {
+   "n": 87,
+   "title": "Fenwick — BIS Announces New Export Controls on Remote Access, AI Chips",
+   "url": "https://www.fenwick.com/insights/publications/bis-announces-new-export-controls-remote-access-ai-chips",
+   "access": "public",
+   "kind": "article",
+   "read": "요약만"
+  },
+  {
+   "n": 88,
+   "title": "Bureau of Industry and Security — Addressing Remote Access to Advanced Semiconductors (interim final rule, 관보 사전 공개본)",
+   "url": "https://www.federalregister.gov/public-inspection/2026-23529/addressing-remote-access-to-advanced-semiconductors",
+   "date": "2026-11-16",
+   "access": "public",
+   "kind": "article",
+   "read": "일부"
+  },
+  {
+   "n": 89,
+   "title": "eCFR — 15 CFR Part 740, Supplement No. 1 (Country Groups)",
+   "url": "https://www.ecfr.gov/current/title-15/subtitle-B/chapter-VII/subchapter-C/part-740/appendix-Supplement%20No.%201%20to%20Part%20740",
+   "date": "2026-11-09",
+   "access": "public",
+   "kind": "article",
+   "read": "전문"
+  },
+  {
+   "n": 90,
+   "title": "Institute for Economics & Peace — Global Peace Index 2026 (사이트의 나라별 자료)",
+   "url": "https://gpi.economicsandpeace.org/",
+   "access": "public",
+   "kind": "article",
+   "read": "전문"
+  },
+  {
+   "n": 91,
+   "title": "Turner & Townsend — Data centre construction cost index 2026-27: Cost trends (Figure 3 의 도표 자료)",
+   "url": "https://reports.turnerandtownsend.com/data-centre-construction-cost-index-2026/cost-trends",
+   "date": "2026-10-20",
+   "access": "public",
+   "kind": "article",
+   "read": "전문"
+  },
+  {
+   "n": 92,
+   "title": "Open-Meteo Historical Weather API (ERA5 재분석, CC BY 4.0)",
+   "url": "https://open-meteo.com/en/docs/historical-weather-api",
+   "date": "2026-11-18",
+   "access": "public",
+   "kind": "article",
+   "read": "전문"
+  },
+  {
+   "n": 93,
+   "title": "OpenAI — Introducing Stargate UAE",
+   "url": "https://openai.com/index/introducing-stargate-uae/",
+   "date": "2025-05-22",
+   "access": "public",
+   "kind": "press_release",
+   "read": "전문"
+  },
+  {
+   "n": 94,
+   "title": "G42 — Update on Construction of Stargate UAE (보도자료)",
+   "url": "https://www.prnewswire.com/news-releases/g42-provides-update-on-construction-of-stargate-uae-ai-infrastructure-cluster-302586430.html",
+   "date": "2025-10-16",
+   "access": "public",
+   "kind": "press_release",
+   "read": "일부"
+  },
+  {
+   "n": 95,
+   "title": "stargate.how — Stargate infrastructure tracker(정리 사이트, 2026-10-18 기준)",
+   "url": "https://stargate.how/location",
+   "date": "2026-10-18",
+   "access": "public",
+   "kind": "article",
+   "read": "일부"
+  },
+  {
+   "n": 96,
+   "title": "OpenAI — Introducing Stargate Norway",
+   "url": "https://openai.com/index/introducing-stargate-norway/",
+   "date": "2025-07-31",
+   "access": "public",
+   "kind": "press_release",
+   "read": "전문"
+  },
+  {
+   "n": 97,
+   "title": "CNBC — OpenAI spearheads one of Europe's biggest data centers",
+   "url": "https://www.nbcdfw.com/news/business/money-report/openai-spearheads-one-of-europes-biggest-data-centers-with-100000-nvidia-chips/3897728/",
+   "date": "2025-07-31",
+   "access": "public",
+   "kind": "news",
+   "read": "요약만"
+  },
+  {
+   "n": 98,
+   "title": "ITPro — Has another OpenAI Stargate project hit the rocks?",
+   "url": "https://www.itpro.com/infrastructure/has-another-openai-stargate-project-hit-the-rocks",
+   "date": "2026-04-15",
+   "access": "public",
+   "kind": "news",
+   "read": "일부"
+  },
+  {
+   "n": 99,
+   "title": "Bloomberg — Microsoft Takes Over Stargate Norway Data Center From OpenAI",
+   "url": "https://www.bloomberg.com/news/articles/2026-04-14/microsoft-takes-over-norway-openai-data-center-capacity",
+   "date": "2026-04-14",
+   "access": "public",
+   "kind": "news",
+   "read": "요약만"
+  },
+  {
+   "n": 100,
+   "title": "OpenAI — Introducing Stargate UK",
+   "url": "https://openai.com/index/introducing-stargate-uk/",
+   "date": "2025-09-16",
+   "access": "public",
+   "kind": "press_release",
+   "read": "전문"
+  },
+  {
+   "n": 101,
+   "title": "The Register — OpenAI puts Stargate UK on ice, blames energy costs and red tape",
+   "url": "https://www.theregister.com/2026/04/09/openai_puts_stargate_uk_on/",
+   "date": "2026-04-09",
+   "access": "public",
+   "kind": "news",
+   "read": "일부"
+  },
+  {
+   "n": 102,
+   "title": "OpenAI — Samsung and SK join OpenAI's Stargate initiative",
+   "url": "https://openai.com/index/samsung-and-sk-join-stargate/",
+   "date": "2025-10-01",
+   "access": "public",
+   "kind": "press_release",
+   "read": "전문"
+  },
+  {
+   "n": 103,
+   "title": "아시아경제 — OpenAI Accelerates Collaboration with Samsung and SK... Korea Data Center Groundbreaking in March",
+   "url": "https://www.asiae.co.kr/en/article/2026021115561476013",
+   "date": "2026-02-11",
+   "access": "public",
+   "kind": "news",
+   "read": "일부"
+  },
+  {
+   "n": 104,
+   "title": "Korea JoongAng Daily — OpenAI's Stargate Korea data center plans stall amid power and funding hurdles",
+   "url": "https://www.koreajoongangdaily.com/business/openais-stargate-project-in-korea-stuck-at-starting-gate-as-samsung-sk-report-little-progress/12856484",
+   "date": "2026-09-07",
+   "access": "public",
+   "kind": "news",
+   "read": "일부"
+  },
+  {
+   "n": 105,
+   "title": "Korea JoongAng Daily — Stargate Korea progress update coming within the year, OpenAI says",
+   "url": "https://www.koreajoongangdaily.com/business/stargate-korea-progress-update-coming-within-the-year-openai-says/12867728",
+   "date": "2026-09-09",
+   "access": "public",
+   "kind": "news",
+   "read": "일부"
+  },
+  {
+   "n": 106,
+   "title": "OpenAI — Argentina's AI opportunity",
+   "url": "https://openai.com/global-affairs/argentinas-ai-opportunity/",
+   "date": "2025-10-14",
+   "access": "public",
+   "kind": "press_release",
+   "read": "일부"
+  },
+  {
+   "n": 107,
+   "title": "Buenos Aires Herald — Argentine government and OpenAI announce project to build data center in Patagonia",
+   "url": "https://buenosairesherald.com/business/argentine-government-and-openai-announce-project-to-build-data-center-in-patagonia",
+   "date": "2025-10-10",
+   "access": "public",
+   "kind": "news",
+   "read": "일부"
+  },
+  {
+   "n": 108,
+   "title": "Buenos Aires Times — OpenAI, Sur Energy to build massive AI data centre in Patagonia",
+   "url": "https://www.batimes.com.ar/news/economy/openai-sur-energy-to-build-massive-ai-data-centre-in-patagonia.phtml",
+   "date": "2025-10-10",
+   "access": "public",
+   "kind": "news",
+   "read": "일부"
+  },
+  {
+   "n": 109,
+   "title": "presenc.ai — Stargate Project Status Report 2026(정리 사이트)",
+   "url": "https://presenc.ai/research/stargate-project-status-2026",
+   "access": "public",
+   "kind": "article",
+   "read": "요약만"
+  },
+  {
+   "n": 110,
+   "title": "OpenAI — Introducing OpenAI for Australia",
+   "url": "https://openai.com/global-affairs/openai-for-australia/",
+   "date": "2025-12-04",
+   "access": "public",
+   "kind": "press_release",
+   "read": "일부"
+  },
+  {
+   "n": 111,
+   "title": "NEXTDC — NEXTDC to Join OpenAI in Australia as an Infrastructure Partner",
+   "url": "https://www.nextdc.com/news/nextdc-and-openai-partner-to-expand-ai-infrastructure-in-australia",
+   "date": "2025-12-05",
+   "access": "public",
+   "kind": "press_release",
+   "read": "일부"
+  },
+  {
+   "n": 112,
+   "title": "OpenAI — Introducing OpenAI for India",
+   "url": "https://openai.com/index/openai-for-india/",
+   "date": "2026-02-18",
+   "access": "public",
+   "kind": "press_release",
+   "read": "일부"
+  },
+  {
+   "n": 113,
+   "title": "TechCrunch — OpenAI taps Tata for 100MW AI data center capacity in India, eyes 1GW",
+   "url": "https://techcrunch.com/2026/02/18/openai-taps-tata-for-100mw-ai-data-center-capacity-in-india-eyes-1gw/",
+   "date": "2026-02-18",
+   "access": "public",
+   "kind": "news",
+   "read": "요약만"
+  },
+  {
+   "n": 114,
+   "title": "Firmus — Firmus surpasses 900 MW contracted capacity, adds OpenAI as anchor customer and expands into Malaysia",
+   "url": "https://firmus.co/newsroom/firmus-surpasses-900-mw-contracted-capacity-adds-openai-as-anchor-customer-and-expands-into-malaysia",
+   "date": "2026-09-08",
+   "access": "public",
+   "kind": "press_release",
+   "read": "일부"
+  },
+  {
+   "n": 115,
+   "title": "OpenAI·SAP — SAP and OpenAI partner to launch sovereign 'OpenAI for Germany'",
+   "url": "https://openai.com/global-affairs/openai-for-germany/",
+   "date": "2025-09-24",
+   "access": "public",
+   "kind": "press_release",
+   "read": "일부"
+  },
+  {
+   "n": 116,
+   "title": "TechCrunch — SoftBank buys $676M old Sharp plant for its OpenAI collab in Japan",
+   "url": "https://techcrunch.com/2025/03/14/softbank-buys-676m-old-sharp-plant-for-its-openai-collab-in-japan/",
+   "date": "2025-03-14",
+   "access": "public",
+   "kind": "news",
+   "read": "일부"
+  },
+  {
+   "n": 117,
+   "title": "Anthropic, PBC — Form S-1(SEC, 2026-10-26 제출)",
+   "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm",
+   "date": "2026-10-26",
+   "access": "public",
+   "kind": "article",
+   "read": "일부"
+  },
+  {
+   "n": 118,
+   "title": "IPE Real Assets — Macquarie partners with Zerra and ADC to build Australia's largest data centre campus for Anthropic",
+   "url": "https://realassets.ipe.com/news/macquarie-partners-with-zerra-and-adc-to-build-australias-largest-data-centre-campus-for-anthropic/10138513.article",
+   "date": "2026-09-17",
+   "access": "public",
+   "kind": "news",
+   "read": "일부"
+  },
+  {
+   "n": 119,
+   "title": "Converge Digest — Anthropic Signs First Australian Data Center Deal in Queensland",
+   "url": "https://convergedigest.com/anthropic-zerra-dc-australia-2-16gw-data-center/",
+   "date": "2026-09-16",
+   "access": "public",
+   "kind": "news",
+   "read": "일부"
+  },
+  {
+   "n": 120,
+   "title": "techAU — Zerra DC announces 2.16 GW datacenter for Anthropic in Australia",
+   "url": "https://techau.com.au/zerra-dc-announces-2-16-gw-datacenter-for-anthropic-in-australia/",
+   "date": "2026-09-17",
+   "access": "public",
+   "kind": "news",
+   "read": "일부"
+  },
+  {
+   "n": 121,
+   "title": "BetaKit — Anthropic signs lease for $10-billion Nova Scotia data centre",
+   "url": "https://betakit.com/anthropic-signs-lease-for-10-billion-nova-scotia-data-centre/",
+   "date": "2026-10-19",
+   "access": "public",
+   "kind": "news",
+   "read": "일부"
+  },
+  {
+   "n": 122,
+   "title": "Reuters(The Star 게재) — Anthropic signs lease for first Canadian data center",
+   "url": "https://www.thestar.com.my/tech/tech-news/2026/10/17/anthropic-signs-lease-for-first-canadian-data-center",
+   "date": "2026-10-17",
+   "access": "public",
+   "kind": "news",
+   "read": "요약만"
+  },
+  {
+   "n": 123,
+   "title": "w.media — Bitdeer signs US$ 4.7 billion lease agreement for AI data center in Norway",
+   "url": "https://w.media/bitdeer-signs-us-4-7-billion-lease-agreement-for-ai-data-center-in-norway/",
+   "date": "2026-08-06",
+   "access": "public",
+   "kind": "news",
+   "read": "일부"
+  },
+  {
+   "n": 124,
+   "title": "Forkast — Anthropic Locks In $10B European Compute Bet With a Seven-Month-Old Startup",
+   "url": "https://forkast.news/anthropic-locks-in-10b-european-compute-bet-with-a-seven-month-old-startup/",
+   "date": "2026-08-10",
+   "access": "public",
+   "kind": "news",
+   "read": "일부"
+  },
+  {
+   "n": 125,
+   "title": "w.media — xAI and HUMAIN to build 500 MW data center in Saudi Arabia",
+   "url": "https://w.media/elon-musks-xai-to-build-500-mw-data-center-in-saudi-arabia/",
+   "date": "2025-11-20",
+   "access": "public",
+   "kind": "news",
+   "read": "일부"
+  },
+  {
+   "n": 126,
+   "title": "Space Exploration Technologies — Form S-1(SEC, 2026)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026036936/spaceexplorationtechnologi.htm",
+   "access": "public",
+   "kind": "article",
+   "read": "일부"
+  },
+  {
+   "n": 127,
+   "title": "Meta — Breaking Ground on Meta's First Data Center in Canada",
+   "url": "https://about.fb.com/news/2026/07/breaking-ground-on-metas-first-data-center-in-canada/",
+   "date": "2026-07-08",
+   "access": "public",
+   "kind": "press_release",
+   "read": "일부"
+  },
+  {
+   "n": 128,
+   "title": "Reuters(BNN Bloomberg 게재) — Meta to build its first $13 billion data centre in Canada",
+   "url": "https://www.bnnbloomberg.ca/business/company-news/2026/07/09/meta-to-build-its-first-13-billion-data-centre-in-canada/",
+   "date": "2026-07-08",
+   "access": "public",
+   "kind": "news",
+   "read": "일부"
+  },
+  {
+   "n": 129,
+   "title": "Meta — Meta Partners With Reliance on AI-Enabled Data Center in India",
+   "url": "https://about.fb.com/news/2026/06/meta-partners-with-reliance-on-ai-enabled-data-center-in-india/",
+   "date": "2026-06-09",
+   "access": "public",
+   "kind": "press_release",
+   "read": "전문"
+  },
+  {
+   "n": 130,
+   "title": "Reuters(The Star 게재) — Meta taps Australia's Firmus for AI computing capacity in Southeast Asia",
+   "url": "https://www.thestar.com.my/tech/tech-news/2026/09/29/meta-taps-australia039s-firmus-for-ai-computing-capacity-in-southeast-asia",
+   "date": "2026-09-29",
+   "access": "public",
+   "kind": "news",
+   "read": "요약만"
+  },
+  {
+   "n": 131,
+   "title": "heise online — European AI Autonomy: Mistral Invests $830 Million in Data Center",
+   "url": "https://www.heise.de/en/news/European-AI-Autonomy-Mistral-Invests-830-Million-in-Data-Center-11242019.html",
+   "date": "2026-03-31",
+   "access": "public",
+   "kind": "news",
+   "read": "일부"
+  },
+  {
+   "n": 132,
+   "title": "Mistral AI — Mistral Compute",
+   "url": "https://mistral.ai/news/mistral-compute/",
+   "date": "2025-06-11",
+   "access": "public",
+   "kind": "press_release",
+   "read": "일부"
+  },
+  {
+   "n": 133,
+   "title": "Le Monde Informatique — Choose France : Un campus IA en Ile-de-France avec Bpi, MGX, Mistral et Nvidia",
+   "url": "https://www.lemondeinformatique.fr/actualites/lire-choose-france-un-campus-ia-en-ile-de-france-avec-bpi-mgx-mistral-et-nvidia-96873.html",
+   "date": "2025-05-19",
+   "access": "public",
+   "kind": "news",
+   "read": "일부"
+  },
+  {
+   "n": 134,
+   "title": "Abu Dhabi Media Office — MGX, along with strategic partners, to expand Campus AI in France with second site",
+   "url": "https://www.mediaoffice.abudhabi/en/technology/mgx-along-with-strategic-partners-to-expand-campus-ai-in-france-with-second-site/",
+   "date": "2026-06-01",
+   "access": "public",
+   "kind": "press_release",
+   "read": "일부"
+  },
+  {
+   "n": 135,
+   "title": "RTE — Campus IA 가속 계통 접속 협약 보도자료(PDF)",
+   "url": "https://assets.rte-france.com/prod/public/2026-01/20260122_CP_RACCORDEMENT_FASTTRACK_CAMPUSIA_VDEF_0.pdf",
+   "date": "2026-01-22",
+   "access": "public",
+   "kind": "article",
+   "read": "요약만"
+  },
+  {
+   "n": 136,
+   "title": "EcoDataCenter — Mistral AI and EcoDataCenter Partner to Build AI-focused Data Center in Sweden",
+   "url": "https://ecodatacenter.tech/press/mistral-ai-and-ecodatacenter-partner-to-build-ai-focused-data-center-in-sweden-3431886",
+   "date": "2026-02-11",
+   "access": "public",
+   "kind": "press_release",
+   "read": "일부"
+  },
+  {
+   "n": 137,
+   "title": "Mistral AI — AI Now Summit 2026",
+   "url": "https://mistral.ai/news/ai-now-summit-2026/",
+   "date": "2026-05-28",
+   "access": "public",
+   "kind": "press_release",
+   "read": "일부"
+  },
+  {
+   "n": 138,
+   "title": "TFTC — Jensen Huang $50B AI Factory: The Math That Doesn't Hold(CNBC 인터뷰 인용)",
+   "url": "https://www.tftc.io/jensen-huang-1gw-ai-factory-50-billion-rent-payback",
+   "date": "2026-09-24",
+   "access": "public",
+   "kind": "news",
+   "read": "일부"
+  },
+  {
+   "n": 139,
+   "title": "Investing.com — How much does a GW of data center capacity actually cost",
+   "url": "https://www.investing.com/news/stock-market-news/how-much-does-a-gw-of-data-center-capacity-actually-cost-4314046",
+   "access": "public",
+   "kind": "article",
+   "read": "요약만"
+  },
+  {
+   "n": 140,
+   "title": "TelecomTV(SK텔레콤 보도자료 게재) — SK Telecom pursues 15GW AI datacentre buildout",
+   "url": "https://www.telecomtv.com/content/ai/sk-telecom-pursues-15gw-ai-datacentre-buildout-aiming-to-become-asia-s-ai-infrastructure-hub-55822/",
+   "date": "2026-07-07",
+   "access": "public",
+   "kind": "news",
+   "read": "일부"
+  },
+  {
+   "n": 141,
+   "title": "SK텔레콤 뉴스룸 — SKT, 15GW 규모 AI 데이터센터 구축 추진… '아시아 AI 인프라 허브' 목표",
+   "url": "https://news.sktelecom.com/227469",
+   "date": "2026-07-04",
+   "access": "public",
+   "kind": "press_release",
+   "read": "전문"
+  },
+  {
+   "n": 142,
+   "title": "OpenAI — OpenAI, Oracle, and SoftBank expand Stargate with five new AI data center sites",
+   "url": "https://openai.com/index/five-new-stargate-sites/",
+   "date": "2025-09-23",
+   "access": "public",
+   "kind": "press_release",
+   "read": "전문"
+  },
+  {
+   "n": 143,
+   "title": "Google Cloud Press Corner — Google Breaks Ground on India AI Hub",
+   "url": "https://www.googlecloudpresscorner.com/2026-04-28-Google-Breaks-Ground-on-India-AI-Hub,-Launching-a-National-Industrial-Ecosystem-Alongside-Indias-Digital-Infrastructure-Milestone",
+   "date": "2026-04-28",
+   "access": "public",
+   "kind": "press_release",
+   "read": "일부"
+  },
+  {
+   "n": 144,
+   "title": "The Core — Reliance Commits Rs 10 Lakh Crore To Build AI Data Centres In India",
+   "url": "https://www.thecore.in/business/reliance-commits-rs-10-lakh-crore-to-build-ai-data-centres-in-india-858773",
+   "date": "2026-02-19",
+   "access": "public",
+   "kind": "news",
+   "read": "일부"
+  },
+  {
+   "n": 145,
+   "title": "Built In — Reliance Industries to Invest $110B in Data Centers Across India",
+   "url": "https://builtin.com/articles/reliance-industries-to-invest-110b-in-data-centers-across-india-20260219",
+   "date": "2026-02-19",
+   "access": "public",
+   "kind": "news",
+   "read": "일부"
+  },
+  {
+   "n": 146,
+   "title": "파이낸셜뉴스 — 최태원 \"울산 AI데이터센터 900MW 확대 상당히 진척…곧 발표 가능\"",
+   "url": "https://www.fnnews.com/news/202609130755399799",
+   "date": "2026-09-13",
+   "access": "public",
+   "kind": "news",
+   "read": "전문"
+  },
+  {
+   "n": 147,
+   "title": "iTnews — NEXTDC to build AI campus and GPU \"supercluster\" in Sydney",
+   "url": "https://www.itnews.com.au/news/nextdc-to-build-ai-campus-and-gpu-supercluster-in-sydney-622380",
+   "date": "2025-12-05",
+   "access": "public",
+   "kind": "news",
+   "read": "전문"
+  },
+  {
+   "n": 148,
+   "title": "The Next Web — Japan eyes $140bn AI data centre push with Dell and JERA, FT reports",
+   "url": "https://thenextweb.com/news/japan-140bn-ai-data-centre-dell-jera",
+   "date": "2026-10-01",
+   "access": "public",
+   "kind": "news",
+   "read": "전문"
+  },
+  {
+   "n": 149,
+   "title": "Mingtiandi — YTL Developing 500MW Data Centre Campus in Iskandar",
+   "url": "https://www.mingtiandi.com/real-estate/data-centres/ytl-developing-500mw-data-centre-campus-in-iskandar/",
+   "date": "2022-04-26",
+   "access": "public",
+   "kind": "news",
+   "read": "일부"
+  },
+  {
+   "n": 150,
+   "title": "삼성전자 반도체 뉴스룸 — 삼성, 미래 성장 위해 호남에 425조원 투자",
+   "url": "https://news.samsungsemiconductor.com/kr/%ec%82%bc%ec%84%b1-%eb%af%b8%eb%9e%98-%ec%84%b1%ec%9e%a5-%ec%9c%84%ed%95%b4-%ed%98%b8%eb%82%a8%ec%97%90-425%ec%a1%b0%ec%9b%90-%ed%88%ac%ec%9e%90/",
+   "date": "2026-06-30",
+   "access": "public",
+   "kind": "press_release",
+   "read": "일부"
+  },
+  {
+   "n": 151,
+   "title": "머니투데이 — 청년 떠나던 곳, 햇빛·바람 채우자…\"삼성 17조 약속\" 뭉칫돈 몰린다",
+   "url": "https://www.mt.co.kr/industry/2026/07/19/2026071822480520000",
+   "date": "2026-07-19",
+   "access": "public",
+   "kind": "news",
+   "read": "일부"
+  },
+  {
+   "n": 152,
+   "title": "머니투데이 — 수도권엔 전기가, 지방엔 고객이 없다…데이터센터의 삼중고",
+   "url": "https://www.mt.co.kr/tech/2026/05/20/2026051922000848265",
+   "date": "2026-05-20",
+   "access": "public",
+   "kind": "news",
+   "read": "전문"
+  },
+  {
+   "n": 153,
+   "title": "머니투데이 — \"송전망 하나 건설에 20년\"…님비에 막힌 에너지고속도로(한국전력 계통정책기획실장 인터뷰)",
+   "url": "https://www.mt.co.kr/economy/2026/01/09/2025122119462361254",
+   "date": "2026-01-09",
+   "access": "public",
+   "kind": "news",
+   "read": "전문"
+  },
+  {
+   "n": 154,
+   "title": "뉴시스 — 한전, 5년간 송배전망 55조원 투자(2026~2030년 중장기 재무관리계획)",
+   "url": "https://newsis.com/view/NISX20260908_0003781245",
+   "date": "2026-09-09",
+   "access": "public",
+   "kind": "news",
+   "read": "일부"
+  },
+  {
+   "n": 155,
+   "title": "다음뉴스 게재 기사 — 데이터센터 전력수요 2040년까지 6배 느는데…LNG 제외땐 구매단가 6.2% 올라",
+   "url": "https://v.daum.net/v/20260429180347527",
+   "date": "2026-04-29",
+   "access": "public",
+   "kind": "news",
+   "read": "전문"
+  },
+  {
+   "n": 156,
+   "title": "Shulman Advisory — Japan's Data Center Build-Out: Bottlenecks and Strategic Direction",
+   "url": "https://shulman-advisory.com/japans-data-center-build-out-bottlenecks-and-strategic-direction/",
+   "date": "2026-03-03",
+   "access": "public",
+   "kind": "article",
+   "read": "일부"
+  },
+  {
+   "n": 157,
+   "title": "The Korea Times — SK chairman says Ulsan AI data center expansion nearing 900 megawatts",
+   "url": "https://www.koreatimes.co.kr/business/tech-science/20260913/sk-chairman-says-ulsan-ai-data-center-expansion-nearing-900-megawatts",
+   "date": "2026-09-13",
+   "access": "public",
+   "kind": "news",
+   "read": "일부"
+  },
+  {
+   "n": 158,
+   "title": "이데일리 — MS, 부산에 125MW급 데이터센터 추진...올해 10월 착공 예정",
+   "url": "https://tv.edaily.co.kr/News/NewsRead?NewsId=04785526645477456&Kind=257",
+   "date": "2026-06-01",
+   "access": "public",
+   "kind": "news",
+   "read": "일부"
+  },
+  {
+   "n": 159,
+   "title": "뉴시스 — 7兆 韓 투자 약속한 AWS… AI 데이터센터 더 짓는다(종합)",
+   "url": "https://www.newsis.com/view/NISX20251029_0003381896",
+   "date": "2025-10-29",
+   "access": "public",
+   "kind": "news",
+   "read": "일부"
+  },
+  {
+   "n": 160,
+   "title": "DCD — SK Group and AWS to build AI data center in Ulsan, South Korea",
+   "url": "https://www.datacenterdynamics.com/en/news/sk-group-and-aws-to-build-ai-data-center-in-ulsan-south-korea/",
+   "access": "public",
+   "kind": "news",
+   "read": "요약만"
+  },
+  {
+   "n": 161,
+   "title": "디지털데일리 — 엇갈린 통신3사 작년 실적…6G 앞두고 CAPEX는 '안갯속'",
+   "url": "https://www.ddaily.co.kr/page/view/2026021110263481705",
+   "date": "2026-02-11",
+   "access": "public",
+   "kind": "news",
+   "read": "전문"
+  },
+  {
+   "n": 162,
+   "title": "딜사이트 — 국민성장펀드, 퓨리오사AI에 8000억 투자 승인",
+   "url": "https://dealsite.co.kr/articles/162787",
+   "date": "2026-06-01",
+   "access": "public",
+   "kind": "news",
+   "read": "일부"
+  },
+  {
+   "n": 163,
+   "title": "한국은행 경제통계시스템(ECOS) — 수출물가지수(품목별, 402Y016) D램",
+   "url": "https://ecos.bok.or.kr/",
+   "date": "2026-11-13",
+   "access": "public",
+   "kind": "article",
+   "read": "전문"
+  },
+  {
+   "n": 164,
+   "title": "The Korea Times — Samsung extends lead in global DRAM market with 39% share: report",
+   "url": "https://www.koreatimes.co.kr/business/20260907/samsung-extends-lead-in-global-dram-market-with-39-share-report",
+   "date": "2026-09-07",
+   "access": "public",
+   "kind": "news",
+   "read": "전문"
+  },
+  {
+   "n": 165,
+   "title": "Counterpoint Research — Global HBM Market Share: Q2 2026",
+   "url": "https://korea.counterpointresearch.com/global-hbm-market-share-q2-2026/",
+   "access": "public",
+   "kind": "article",
+   "read": "요약만"
+  },
+  {
+   "n": 166,
+   "title": "TrendForce News — From Annual Deals to 3–5 Year LTAs: Samsung and SK hynix Reportedly Reset Big Tech Memory Contracts",
+   "url": "https://www.trendforce.com/news/2026-04-09/news-from-annual-deals-to-3-5-year-ltas-samsung-and-sk-hynix-reportedly-reset-big-tech-memory-contracts/",
+   "date": "2026-04-09",
+   "access": "public",
+   "kind": "news",
+   "read": "일부"
+  },
+  {
+   "n": 167,
+   "title": "TelecomLead — Global Foundry Revenue Hits Record $53.49 Billion as TSMC Takes 72.5% Share and SMIC Surges 20%",
+   "url": "https://telecomlead.com/semiconductor/global-foundry-revenue-hits-record-53-49-billion-as-tsmc-takes-72-5-share-and-smic-surges-20-127667",
+   "date": "2026-09-09",
+   "access": "public",
+   "kind": "news",
+   "read": "전문"
+  },
+  {
+   "n": 168,
+   "title": "OpenAI — OpenAI and Foxconn collaborate to strengthen U.S. manufacturing across the AI supply chain",
+   "url": "https://openai.com/index/openai-and-foxconn-collaborate/",
+   "date": "2025-11-20",
+   "access": "public",
+   "kind": "press_release",
+   "read": "전문"
+  },
+  {
+   "n": 169,
+   "title": "Guru3D — DRAM and NAND Contract Prices Forecast to Rise as Much as 20% in Q4 2026",
+   "url": "https://www.guru3d.com/story/dram-and-nand-contract-prices-forecast-to-rise-as-much-as-in-q4-2026/",
+   "date": "2026-10-01",
+   "access": "public",
+   "kind": "news",
+   "read": "일부"
+  },
+  {
+   "n": 170,
+   "title": "Mobile World Live — OpenAI taps Foxconn to build US AI data centre hardware",
+   "url": "https://www.mobileworldlive.com/foxconn/openai-taps-foxconn-to-build-us-ai-data-centre-hardware/",
+   "access": "public",
+   "kind": "news",
+   "read": "요약만"
+  }
+ ],
+ "sections": [
+  {
+   "id": "s1",
+   "h": "이 자료의 쓰임",
+   "layer": "common",
+   "blocks": [
+    {
+     "kind": "view",
+     "text": "본문 「아시아·태평양 AI 컴퓨트 입지 비교 : 한국은 권역 거점이 될 수 있나」(apac-ai-siting-korea)의 판단을 받치는 표와 계산을 모았다. 본문은 답과 줄기만 싣고, 값과 근거는 여기에 둔다. 절마다 첫 문단에 그 절의 자료가 말하는 것을 적었다.",
+     "items": [
+      "2절 — 비용: 전기료와 건설 단가가 총투자에서 차지하는 크기, 건설 단가와 발표 금액의 순서.",
+      "3절 — 미국 밖의 300MW 이상 단일 부지 계획 14건(본문 2절의 전체 목록).",
+      "4절 — 전력: 한국의 심사 결과, 나라별 접속 물량과 제한, 발전소 직결 사례.",
+      "5절 — 돈과 약정: 한국의 건별 표, 500MW 의 사업비를 국내 주체의 규모와 견준 계산.",
+      "6절 — 쓰임: 랩의 미국 밖 22건의 쓰임별 집계, 도시별 시장, 지연시간권, 해저케이블.",
+      "7절 — 그 밖의 조건: 재난·인력·제도·지정학·건설 단가·기후 열두 요인의 세 단계 표.",
+      "8절 — 두 가설(H1, H2)의 판정과 근거.",
+      "9절 — 틀릴 수 있는 이유, 지켜볼 신호, 자료의 범위와 원문 확인 비중."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s2",
+   "h": "전기료와 건설비는 왜 입지를 가르지 못하나",
+   "layer": "common",
+   "blocks": [
+    {
+     "kind": "view",
+     "text": "**총투자의 대부분이 서버와 GPU 이고, 입지에 따라 달라지는 비용은 그 일부다.** 1GW 의 총투자는 500억~600억 달러로 이야기되고, SK텔레콤이 밝힌 추정(1GW 약 70조 원)도 같은 수준이다. 서울의 건설 단가는 W당 10.42달러로, 서버가 빠진 값이라고 보면 총투자의 5분의 1 안팎이고, 한국 산업용 평균 단가로 한 해 쓰는 전기료는 W당 1.12달러로 총투자의 2% 안팎이다. 전기료가 20% 싸거나 비싼 것은 한 해에 총투자의 0.4% 차이다. 반면 가동이 한 해 늦어지면 놓치는 임대 매출은, 같은 발언의 숫자로는 W당 약 50달러다.\n\n실제 발표도 싼 곳으로 가지 않았다. 건설 단가가 가장 높은 도쿄(W당 18.28달러)의 일본에 361억 달러, 다음인 싱가포르(15.39달러)에 145억 달러가 발표됐다. 시드니(10.74달러)는 서울(10.42달러)과 단가가 비슷한데 호주의 발표 금액은 341억 달러로 한국(63억 달러)의 약 5.4배다. 한국의 합은 AWS 의 2023년 계획이 빠지고 금액 없는 발표가 넷이라 작게 잡히지만, 그것을 감안해도 단가의 순서로는 발표 금액의 순서를 설명할 수 없다."
+    },
+    {
+     "kind": "calc_table",
+     "title": "1W 기준 비용의 크기(달러)",
+     "head": [
+      "항목",
+      "달러/W",
+      "총투자에 대한 비중",
+      "근거와 기준"
+     ],
+     "rows": [
+      [
+       "총투자(서버·GPU 포함)",
+       "50~60",
+       "—",
+       "NVIDIA 대표의 발언(1GW 에 500억~600억 달러). SK텔레콤의 추정 70조 원/GW 는 약 48.5달러/W"
+      ],
+      [
+       "건설 단가 — 서울",
+       "10.42",
+       "17%~21%",
+       "전형적인 60MW 설계의 건설 단가. 포함 범위는 확인하지 못했다 — 서버·GPU 가 빠진 값이라고 보고 비중을 냈다"
+      ],
+      [
+       "건설 단가 차이 — 도쿄와 서울",
+       "7.86",
+       "13%~16%",
+       "한 번 드는 차이. 도쿄 18.28, 서울 10.42"
+      ],
+      [
+       "전기료 — 한국 산업용 평균, 한 해",
+       "1.12",
+       "1.9~2.2%",
+       "0.128달러/kWh 로 1W 를 한 해 내내 쓴 값. 냉각 등 부대 전력은 넣지 않았다"
+      ],
+      [
+       "전기료가 20% 다를 때의 차이, 한 해",
+       "0.22",
+       "약 0.4%",
+       "위 값의 20%"
+      ],
+      [
+       "임대 매출, 한 해(같은 발언)",
+       "약 50",
+       "—",
+       "가동이 한 해 늦으면 놓치는 크기. 가동률 가정이 빠졌다는 비판이 있는 값"
+      ]
+     ],
+     "note": "총투자는 한 회사 대표의 발언이고 더 낮은 추정(GW 당 약 350억 달러, 검색 요약)도 있다. 총투자를 낮게 잡으면 건설 단가와 전기료의 비중이 그만큼 커진다. 건설 단가는 Turner & Townsend 의 2026-27년 지수, 전기료는 한국전력의 2025년 산업용 평균 판매단가 181.9원을 그 해 평균 환율로 나눈 값이다. 원화 환산은 2026년 평균 환율(1달러 1,444.1원)을 썼다. 나라마다 전기료의 정의가 달라 나라끼리의 차이는 계산하지 않았다."
+    },
+    {
+     "kind": "calc_table",
+     "title": "건설 단가와 발표 금액 — 단가의 순서와 발표 금액의 순서가 맞지 않는다",
+     "head": [
+      "나라",
+      "대표 도시 건설 단가(달러/W)",
+      "2023년 이후 발표 금액 합(십억 달러)",
+      "그 가운데 착공·진행"
+     ],
+     "rows": [
+      [
+       "일본",
+       "18.28",
+       "36.14",
+       "26.14"
+      ],
+      [
+       "싱가포르",
+       "15.39",
+       "14.50",
+       "9.00"
+      ],
+      [
+       "호주",
+       "10.74",
+       "34.10",
+       "16.10"
+      ],
+      [
+       "한국",
+       "10.42",
+       "6.33",
+       "4.00"
+      ],
+      [
+       "말레이시아",
+       "10.06",
+       "19.00",
+       "2.20"
+      ],
+      [
+       "대만",
+       "9.44",
+       "5.00",
+       "5.00"
+      ],
+      [
+       "인도",
+       "6.83",
+       "48.20",
+       "30.70"
+      ]
+     ],
+     "note": "건설 단가는 묶음 F, 발표 금액은 묶음 A 의 기록에서 센 값이다(대체된 발표 제외). 대표 도시는 도쿄·싱가포르·시드니·서울·조호르·타이베이·뭄바이다. 발표 금액은 계획 기간이 2~15년으로 다르고 운영비가 섞인 것이 많다. 한국은 AWS 의 2023년 계획(58.8억 달러)이 2025년 계획에 대체돼 빠졌고 8건 가운데 4건은 금액이 없어 작게 잡힌다. 인도는 단가가 가장 낮은데 발표 금액은 가장 많다."
+    },
+    {
+     "kind": "fact",
+     "text": "SK텔레콤은 전형적인 1GW 급 AI 데이터센터에 약 70조 원이 들 수 있다고 밝혔다. 고성능 연산 설비와 메모리 가격 상승을 이유로 들었고, 자체 투자와 함께 전략적 파트너의 투자, 장기 고객 계약, 프로젝트 금융으로 조달한다고 적었다.",
+     "src": 140
+    },
+    {
+     "kind": "fact",
+     "text": "OpenAI 의 Stargate 약정은 10GW 에 5,000억 달러다. GW 당 500억 달러로 위 발언의 아래 끝과 같다.",
+     "src": 142
+    }
+   ]
+  },
+  {
+   "id": "s3",
+   "h": "300MW 이상은 실제로 어디에 갔나",
+   "layer": "common",
+   "blocks": [
+    {
+     "kind": "view",
+     "text": "**미국 밖에서 300MW 이상 부지의 착공이 원문으로 확인된 것은 네 건이고, 아시아·태평양 일곱 나라에서는 인도의 두 건뿐이다.** 300MW 이상의 단일 부지 계획은 미국 밖에서 14건을 찾았다. 착공한 것은 아부다비(1GW, 첫 200MW), 앨버타(1GW), 비사카파트남(기가와트급), 잠나가르(수 GW, 숫자 미공개)다. 한국의 울산은 100MW 를 착공했고 900MW 확장은 계약이 발표되지 않은 협의 단계다. 호주에서는 Anthropic 이 IT 1,440MW 로 계획된 캠퍼스의 첫 단계 임대차를 맺었고(외국인투자 승인이 조건), OpenAI 는 시드니의 550MW 부지를 두고 양해각서 단계다. 일본의 두 건은 구속력 없는 합의와 협의 보도이고, 조호르의 500MW 캠퍼스는 2022년 발표 뒤의 규모와 진척을 원문으로 확인하지 못해 착공 확인 건에 넣지 않았다. 싱가포르와 대만에서는 300MW 이상의 단일 부지 계획을 찾지 못했다. 500MW 급의 착공이 확인되지 않은 곳은 한국만이 아니다.\n\n착공한 네 건에는 공통점이 있다. 쓰는 쪽이 정해져 있었고(OpenAI, Meta, Google, 릴라이언스 자신과 Meta), 돈을 대는 쪽이 쓰는 회사 자신이거나 현지 그룹의 개발사(아부다비의 G42 계열)였다. 앨버타는 가스발전소를 돈 내고 쓰는 계약으로, 잠나가르는 자체 전원으로 전력을 받친다고 밝혔다."
+    },
+    {
+     "kind": "fact_table",
+     "title": "미국 밖의 300MW 이상 단일 부지 계획(14건)",
+     "head": [
+      "나라",
+      "사업",
+      "용량(MW)과 기준",
+      "단계",
+      "쓰는 쪽",
+      "전력을 받는 길",
+      "돈을 대는 쪽",
+      "쓰임",
+      "확인"
+     ],
+     "rows": [
+      [
+       "인도",
+       "릴라이언스 잠나가르",
+       "수 GW(숫자 미공개)",
+       "착공(첫 120MW 이상 2026 하반기 목표)",
+       "릴라이언스 자체 서비스, Meta(168MW 임차)",
+       "자체 청정 전원(10GW, 회사 설명)",
+       "릴라이언스(7년간 10조 루피, 약 1,100억 달러 — AI·데이터센터 전체)",
+       "국내",
+       "원문"
+      ],
+      [
+       "아랍에미리트",
+       "Stargate UAE(아부다비)",
+       "1,000(기준 불명)",
+       "착공(첫 200MW)",
+       "OpenAI",
+       "전원은 기록에 없음(UAE–미국 AI 캠퍼스 5GW 안의 클러스터)",
+       "G42 계열 Khazna 가 개발. UAE 의 미국 Stargate 투자와 맞교환",
+       "권역·세계",
+       "원문"
+      ],
+      [
+       "캐나다",
+       "Meta 앨버타 Sturgeon County",
+       "1,000(기준 불명)",
+       "착공",
+       "Meta",
+       "가스발전소를 돈 내고 쓰는 계약(2030년 말 가동 예정), 계통 설비도 Meta 부담",
+       "Meta(130억 캐나다달러 이상)",
+       "권역·세계",
+       "원문"
+      ],
+      [
+       "인도",
+       "Google 인도 AI 허브(비사카파트남)",
+       "기가와트급(숫자 미공개)",
+       "착공(2026-04)",
+       "Google",
+       "계통 + 새 청정 전원 조달(장기 전략)",
+       "150억 달러(Google, 2026~2030)",
+       "국내",
+       "원문"
+      ],
+      [
+       "한국",
+       "SK AI 데이터센터 울산",
+       "100 착공 + 900 협의(기준 불명)",
+       "착공 100MW, 협의 900MW(계약 미발표)",
+       "AWS(100MW). 확장분 미공개",
+       "인접 LNG 열병합 발전소 직접 공급 + 계통",
+       "100MW 에 약 7조 원(AWS 와 SK). 확장분은 미공개",
+       "불명",
+       "원문"
+      ],
+      [
+       "호주",
+       "Western Downs Digital Park(퀸즐랜드 Dalby)",
+       "1,440(IT, 캠퍼스 전체 계획으로 보도. Anthropic 몫 미공개)",
+       "계약(첫 단계 임대차, 외국인투자 승인 조건)",
+       "Anthropic",
+       "기존 변전소로 고압 계통에 직접 접속",
+       "컨소시엄(완공 시 약 300억 호주달러로 보도)",
+       "불명",
+       "원문"
+      ],
+      [
+       "프랑스",
+       "Campus IA(Fouju)",
+       "1,400(수전)",
+       "계약",
+       "Mistral 등",
+       "송전사와 가속 접속 협약(검색 요약)",
+       "Bpifrance·Mistral·MGX·NVIDIA 합작",
+       "권역·세계",
+       "원문"
+      ],
+      [
+       "캐나다",
+       "EverWind Point Tupper(노바스코샤)",
+       "420(캠퍼스 전체 계획, 기준 불명. Anthropic 은 1단계 95MW 임차, 325MW 확장은 조건부)",
+       "계약(1단계, 2027년 말 가동 목표)",
+       "Anthropic",
+       "사업자의 육상 풍력과 계통(보강 비용은 사업자 부담)",
+       "EverWind(100억 캐나다달러 이상, 사업자 자기 자금)",
+       "권역·세계",
+       "원문"
+      ],
+      [
+       "호주",
+       "NEXTDC S7(시드니)",
+       "550(기준 불명)",
+       "MoU",
+       "OpenAI(양해각서)",
+       "계통(부지 안 변전소)",
+       "NEXTDC 가 개발(보도 기준 70억 호주달러)",
+       "국내",
+       "원문"
+      ],
+      [
+       "아르헨티나",
+       "Stargate Argentina(파타고니아)",
+       "500(정부 발표 기준 최대, 기준 불명)",
+       "MoU(의향서)",
+       "OpenAI(의향서)",
+       "미정",
+       "Sur Energy 가 이끄는 컨소시엄(정부 발표 기준 최대 250억 달러)",
+       "불명",
+       "원문"
+      ],
+      [
+       "사우디아라비아",
+       "xAI–HUMAIN",
+       "500(기준 불명)",
+       "MoU",
+       "xAI",
+       "미정",
+       "사우디 국영 계열 HUMAIN. 금액 미공개",
+       "불명",
+       "원문"
+      ],
+      [
+       "일본",
+       "JERA 지바 화력 옆 데이터센터",
+       "약 400(기준 불명)",
+       "MoU(구속력 없음)",
+       "미공개",
+       "발전소 직결(가스 화력)",
+       "150억 달러 이상(전 단계). Apollo 가 개발사의 금융 파트너",
+       "불명",
+       "원문"
+      ],
+      [
+       "일본",
+       "NTT DATA 오사카(Anthropic 용, 협의 보도)",
+       "500(수전 최대)",
+       "협의",
+       "Anthropic(보도)",
+       "미공개",
+       "약 63억 달러로 보도",
+       "불명",
+       "검색 요약"
+      ],
+      [
+       "말레이시아",
+       "YTL 그린 데이터센터 파크(조호르)",
+       "500(2022년 계획, 기준 불명)",
+       "발표(2022년. 그 뒤 진척을 원문으로 확인하지 못함)",
+       "미공개",
+       "계통 + 부지 안 태양광 300MW(계획)",
+       "YTL 그룹",
+       "불명",
+       "원문"
+      ]
+     ],
+     "note": "용량은 대부분 계획·목표 값이고 기준(IT·수전)이 밝혀지지 않은 것이 많아 더하지 않는다. 비사카파트남은 '기가와트급', 잠나가르는 '수 기가와트'라고만 발표됐다. 랩이 일부를 빌리거나 협의하는 캠퍼스(Western Downs, Point Tupper, NEXTDC S7)는 캠퍼스 전체의 계획 값으로 적었고 랩의 몫은 칸에 따로 밝혔다. 하이퍼스케일러는 나라별 발표에서 MW 를 밝히지 않으므로 일본·호주·싱가포르·말레이시아의 자체 리전 가운데 300MW 를 넘는 부지가 있어도 이 목록에 없다. '쓰임'은 발표문이 밝힌 대상이다(국내, 권역·세계, 불명). 조호르의 YTL 캠퍼스는 2022년 발표만 읽었고 그 뒤 진척을 확인하지 못했다. 노르웨이의 Stargate(230MW)처럼 300MW 에 못 미치는 건은 묶음 B 에 있다.",
+     "src": 10,
+     "loc": "묶음 I 의 block-… 기록과 묶음 B 의 기록(openai-ae-…, meta-ca-…, mistral-fr-campus-…, anthropic-au-…, anthropic-ca-…, openai-ar-…, xai-sa-…), 오사카는 묶음 B 의 pending 목록"
+    },
+    {
+     "kind": "fact",
+     "text": "견줄 기준으로, OpenAI 는 2025-09 에 미국 안 Stargate 의 계획 용량이 거의 7GW(3년간 4,000억 달러 이상)라고 밝혔다. 애빌린은 그때 이미 가동 중이었고 초기 학습과 추론 작업을 시작했다고 적었다. 묶음 B 에서 OpenAI 가 낀 미국 밖 건의 용량을 출처를 가리지 않고 더하면 약 2GW 다. OpenAI 발표문에 용량이 있는 것은 아부다비 1,000MW, 노르웨이 230MW(OpenAI 의 직접 임차는 성사되지 않았다), 인도 100MW 이고, 아르헨티나 최대 500MW 는 정부 발표, 사카이 150MW(수전)는 소프트뱅크의 값을 보도가 연결한 것, 한국 20+20MW 는 보도 값이다.",
+     "src": 142
+    },
+    {
+     "kind": "fact",
+     "text": "SK텔레콤은 2026-07 에 최대 15GW 의 구축 구상을 밝혔다. 2029년부터 5GW 를 단계적으로 열고 2035년 15GW 를 목표로 하되, 수요와 투자 요건을 보아 가며 추진한다고 적었다. 확정 계획이 아니라 위 표에 넣지 않았다.",
+     "src": 141
+    }
+   ]
+  },
+  {
+   "id": "s4",
+   "h": "관문 1 — 한 부지에서 대용량 전력을 받는 길",
+   "layer": "common",
+   "blocks": [
+    {
+     "kind": "view",
+     "text": "**수도권에서는 신청의 1.9%만 통과했고, 비수도권은 심사를 대부분 통과한다. 막힌 것은 수도권의 계통이고, 계통을 거치지 않는 길은 좁다.** 전력계통영향평가에서 수도권은 1차 기술검토 522건 가운데 279건이 공급 불가였고 본심사를 통과한 것은 10건(1,010MW)이다. 비수도권은 214건 가운데 187건이 공급 가능, 본심사 52건 가운데 49건이 통과했다. 새 송전선에 기대야 하는 물량은 더 오래 걸린다 — 345kV 송전선은 표준 9년, 실제 평균 13년이다.\n\n다른 나라에서 이 대기를 건너뛰려고 쓰는 길은 발전소 직결이다. 앨버타의 Meta 는 가스발전소를 돈 내고 쓰는 계약을 맺었고(발전소는 2030년 말 가동 예정), 일본에서는 JERA 가 화력발전소 옆 약 400MW 를 두고 구속력 없는 합의에 서명했다. 한국에서 발전소 직결은 울산 한 건이고, 2026년 5월 통과된 특별법은 데이터센터의 직접 구매 대상을 재생에너지로 한정하고 LNG 발전을 뺐다. 견줄 입지의 계통도 열려 있지 않다 — 일본은 접속에 최장 10년이 걸린다는 정리가 있고, 대만 북부는 5MW 이상 승인을 멈췄으며, 싱가포르는 공모로 200MW 를 나눠 준다."
+    },
+    {
+     "kind": "fact_table",
+     "title": "한국 전력계통영향평가의 심사 결과(데이터센터, 2024-08~2026-03)",
+     "head": [
+      "지역",
+      "1차 기술검토 신청(건)",
+      "공급 불가(건)",
+      "공급 불가 비중",
+      "본심사(건)",
+      "본심사 통과(건)",
+      "신청 대비 통과"
+     ],
+     "rows": [
+      [
+       "수도권",
+       "522",
+       "279",
+       "53.4%",
+       "24",
+       "10",
+       "1.9%"
+      ],
+      [
+       "비수도권",
+       "214",
+       "27",
+       "12.6%",
+       "52",
+       "49",
+       "22.9%"
+      ]
+     ],
+     "note": "국회의원실이 정부에서 받은 자료를 기사가 옮긴 값이다. 건수 기준이고 건마다의 용량은 공개되지 않았다 — 비수도권에서 통과한 49건이 몇 MW 인지 알 수 없다. 수도권의 신청 용량은 약 33.6GW, 최종 승인 용량은 1,010MW 다. 평가의 심사 기준 고시는 2026-05 까지 제정되지 않아 시범 운영 중이었다. '신청 대비 통과'는 계산값이다.",
+     "src": 152
+    },
+    {
+     "kind": "fact",
+     "text": "한국전력은 345kV 송전선의 표준 사업기간이 9년이고 착수부터 준공까지 실제로는 평균 13년이 걸린다고 설명했다. 북당진–신탕정 선로는 2003년에 시작해 21년 만에 준공됐다.",
+     "src": 153
+    },
+    {
+     "kind": "fact",
+     "text": "한국전력은 2026~2030년에 송변전과 배전에 55조 3,237억 원을 투자할 계획이다(송변전 32조 9,576억 원). 보도는 반도체와 AI 데이터센터의 수요를 배경으로 들었다.",
+     "src": 154
+    },
+    {
+     "kind": "fact",
+     "text": "국회 상임위는 데이터센터의 직접 구매 대상을 재생에너지와 LNG 발전으로 넓히는 안을 논의했지만 최종 법안에서 LNG 발전사업자가 빠졌다. 기후에너지환경부는 계통 운영 부담과 지역 내 생산·소비 원칙을 들어 반대했고, 한전 계통으로 공급할 수 있다는 입장이다. 2025년 한전이 LNG 발전사에서 산 전기의 평균 단가는 kWh 당 158.4원, 일반용 평균 전력량 요금은 168.9원이었다.",
+     "src": 35
+    },
+    {
+     "kind": "fact_table",
+     "title": "발전소 직결·전용 전원 사례",
+     "head": [
+      "나라",
+      "사례",
+      "용량(MW)",
+      "전원",
+      "단계",
+      "확인"
+     ],
+     "rows": [
+      [
+       "한국",
+       "SK AI 데이터센터 울산",
+       "300(발전 용량)",
+       "LNG 열병합",
+       "착공",
+       "원문"
+      ],
+      [
+       "일본",
+       "JERA 지바 화력 옆 데이터센터",
+       "400(기준 불명)",
+       "가스 화력 직결",
+       "MoU(구속력 없음)",
+       "원문"
+      ],
+      [
+       "싱가포르",
+       "Jurong Island low-carbon data centre park",
+       "700(기준 불명)",
+       "저탄소 전원(구성 미정)",
+       "발표",
+       "원문"
+      ],
+      [
+       "호주",
+       "Southern Highlands data centre campus",
+       "30(발전 용량)",
+       "가스(배터리 80MW 병설)",
+       "발표",
+       "원문"
+      ],
+      [
+       "인도",
+       "GreenVolt 1",
+       "125(발전 용량)",
+       "태양광",
+       "가동",
+       "원문"
+      ],
+      [
+       "캐나다",
+       "Meta 앨버타 Sturgeon County",
+       "1,000(기준 불명)",
+       "가스발전소(돈 내고 쓰는 계약, 2030년 말 가동 예정)",
+       "착공",
+       "원문"
+      ]
+     ],
+     "note": "울산의 300MW 는 공급 발전소의 용량이고 데이터센터 용량이 아니다. 싱가포르의 700MW 는 단지가 댈 수 있는 전력의 상한이다. 인도 사례는 옆이 아니라 송전망을 거치는 자가용 조달이다. 말레이시아·대만에서는 사례를 원문으로 확인하지 못했다(없다는 확인이 아니다).",
+     "src": 5,
+     "loc": "묶음 D 의 onsite-… 기록, 묶음 I 의 block-jp-jera-chiba, 묶음 B 의 meta-ca-sturgeon-county"
+    },
+    {
+     "kind": "fact_table",
+     "title": "전력 확보 — 접속 물량과 제한 제도",
+     "head": [
+      "나라",
+      "무엇",
+      "값",
+      "기준",
+      "메모",
+      "확인"
+     ],
+     "rows": [
+      [
+       "한국",
+       "수도권 전력계통영향평가 신청 누적",
+       "33,592MW(522건)",
+       "2026-03",
+       "최종 승인 10건·1,010MW. 제도는 2024-06 도입, 고시 없이 시범 운영 중으로 보도",
+       "원문"
+      ],
+      [
+       "한국",
+       "전국 전력계통영향평가 신청 누적",
+       "63,846MW",
+       "2026-03",
+       "이 가운데 9,583MW 는 공급 가능 여부가 정해지지 않은 대기 물량(공개 보고서의 인용)",
+       "원문"
+      ],
+      [
+       "일본",
+       "도쿄전력 관내 데이터센터가 확보한 접속 용량",
+       "15,000MW",
+       "2026-09",
+       "확보한 물량이라 한국의 신청 물량과 단계가 다르다",
+       "원문"
+      ],
+      [
+       "싱가포르",
+       "정부 2차 공모 배정 용량",
+       "200MW",
+       "2026-08",
+       "네 사업자에 50MW 씩. 새 용량은 공모로만 배정",
+       "원문"
+      ],
+      [
+       "말레이시아",
+       "결정이 보류된 새 데이터센터 신청",
+       "24건",
+       "2026-10",
+       "이미 승인한 117건의 전력을 댈 수 있는지 살피는 중(장관의 국회 답변)",
+       "원문"
+      ],
+      [
+       "말레이시아",
+       "전력회사와 데이터센터의 공급 계약 용량",
+       "8,300MW(59건)",
+       "2026-07",
+       "원문을 열지 못한 값",
+       "검색 요약"
+      ],
+      [
+       "호주",
+       "접속 절차에 있는 데이터센터 제안 용량",
+       "67,000MW(225건)",
+       "2026",
+       "송전 접속 절차 중인 것은 17곳 9GW. 2025년 목록의 약 36%가 그 뒤 취소",
+       "원문"
+      ],
+      [
+       "대만",
+       "북부 5MW 이상 데이터센터 공급 승인 중단",
+       "제도",
+       "2024-08",
+       "타오위안 이북. 2026-07 조건부 완화 검토 보도(검색 요약)",
+       "원문"
+      ],
+      [
+       "인도",
+       "—",
+       "—",
+       "—",
+       "접속 제도와 대기 물량을 모으지 못함",
+       "—"
+      ]
+     ],
+     "note": "물량의 단계가 나라마다 다르다. 한국은 평가 신청, 일본은 확보한 접속 용량, 말레이시아는 공급 계약, 호주는 문의부터 이행까지 더한 제안 용량, 싱가포르는 정부 배정이다. 큰 순서로 늘어놓을 수 없다. 한국의 신청·승인 건수는 통신사 기사가 인용한 집계이고 같은 사업의 중복 신청이 섞였을 수 있다.",
+     "src": 5,
+     "loc": "기록 access-…"
+    },
+    {
+     "kind": "fact",
+     "text": "일본은 접속 일정이 길어져 일부는 최장 10년에 이른다는 자문사의 정리가 있다. 같은 글은 인자이에서 처음 신청된 용량의 약 30%가 쓰이지 않을 것으로 확인됐다고 적었다. 공식 통계가 아니다.",
+     "src": 156
+    }
+   ]
+  },
+  {
+   "id": "s5",
+   "h": "관문 2 — 누가 돈을 대고 누가 쓰기로 약정하나",
+   "layer": "common",
+   "blocks": [
+    {
+     "kind": "view",
+     "text": "**한국에서 착공하거나 가동한 네 건은 40~200MW 급(세종은 증설을 마치면 수전 270MW)이고, 셋은 쓰는 쪽이 공개됐으며 파주는 1동 임대 계약을 마쳤다(임차인 미공개). 500MW 는 약 35조 원인데, 그만큼을 지겠다고 밝힌 쪽은 아직 없다.** 발표 단계에서 가장 큰 건은 삼성SDS 의 해남 210MW(기준 불명)로 자체·정부 사업용이다(솔라시도 전체 투자는 국가 AI 컴퓨팅센터를 포함해 17조 원으로 보도됐다). OpenAI 와 발표한 두 건은 20MW 씩인데 1년 넘게 멈춰 있다 — SK텔레콤은 OpenAI 의 수요가 확정되지 않았다고 했고, 삼성SDS 는 결정이 OpenAI 몫이라고 했으며, OpenAI 코리아는 설계가 달라졌다고 했다.\n\n규모의 차이가 크다. SK텔레콤의 추정으로 500MW 는 35조 원이고, 이는 이 회사 2025년 영업이익의 33배, 통신 3사 합의 7.9배다. 금액이 공개된 한국 발표의 합(63.3억 달러, AWS 의 2023년 계획 제외)의 네 배 안팎이기도 하다. SK텔레콤은 15GW 구상에서 핵심 입주사 확보를 함께 검토한다고 밝혔고, 조달도 파트너 투자와 장기 고객 계약에 기댄다고 적었다. 미국 밖에서 착공한 GW 급 네 건은 쓰는 회사 자신(Meta, Google, 릴라이언스)이나 현지 그룹의 개발사(아부다비의 G42 계열)가 돈을 댔다."
+    },
+    {
+     "kind": "fact_table",
+     "title": "한국의 건별 — 쓰는 쪽과 단계",
+     "head": [
+      "사업",
+      "용량(MW)",
+      "쓰는 쪽",
+      "쓰는 쪽이 정해졌나",
+      "단계"
+     ],
+     "rows": [
+      [
+       "AWS–SK 울산",
+       "100(기준 불명)",
+       "AWS",
+       "정해짐",
+       "착공"
+      ],
+      [
+       "LG유플러스 파주 AIDC",
+       "200(수전)",
+       "미공개(1동 임대 계약 체결)",
+       "일부 정해짐",
+       "착공"
+      ],
+      [
+       "GS 동해 AI 데이터센터(1단계)",
+       "100(수전)",
+       "확인하지 못함",
+       "—",
+       "발표(전력 공급 심의 통과, 2026-11 착공 예정)"
+      ],
+      [
+       "삼성SDS 구미",
+       "60(기준 불명)",
+       "삼성SDS 자체 수요",
+       "정해짐",
+       "발표(착공 미확인)"
+      ],
+      [
+       "국가 AI 컴퓨팅센터 해남",
+       "40(수전)",
+       "정부·대형 ICT 기업",
+       "정해짐",
+       "착공"
+      ],
+      [
+       "네이버 각 세종(증설 완료 시)",
+       "270(수전)",
+       "네이버(자체 시설)",
+       "정해짐",
+       "가동(약 6분의 1)"
+      ],
+      [
+       "Microsoft 부산",
+       "125(수전)",
+       "Microsoft(업계를 인용한 보도)",
+       "보도로만 확인",
+       "부지확보"
+      ],
+      [
+       "OpenAI–SK텔레콤 서남권",
+       "20(기준 불명)",
+       "OpenAI — 수요 미확정",
+       "미정",
+       "MoU(지연)"
+      ],
+      [
+       "OpenAI–삼성 포항",
+       "20(기준 불명)",
+       "OpenAI — 수요 미확정",
+       "미정",
+       "MoU(지연)"
+      ],
+      [
+       "삼성SDS 해남 솔라시도",
+       "210(기준 불명)",
+       "삼성SDS 자체·정부 사업",
+       "정해짐",
+       "발표"
+      ],
+      [
+       "SK 울산 확장",
+       "900(기준 불명)",
+       "미공개(협의 중)",
+       "미정",
+       "협의"
+      ]
+     ],
+     "note": "용량은 기준이 섞여 있어 더하지 않는다. '쓰는 쪽'은 발표문이나 보도가 밝힌 임차인·수요 주체다. 파주는 1동의 임대 계약을 마쳤다고 알려졌지만 임차인이 공개되지 않았고, 동해는 쓰는 쪽을 공개 자료에서 확인하지 못했다(없다는 뜻이 아니다). 세종의 270MW 는 증설을 마쳤을 때의 수전 최대이고 지금은 약 6분의 1이 가동 중이다. SK텔레콤·KT·카카오의 그 밖의 계획은 넣지 못했다.",
+     "src": 8,
+     "loc": "묶음 G 의 capacity-kr, 묶음 I 의 anchor-kr-regional·block-kr-ulsan·block-kr-haenam-samsung, 묶음 A·B 의 한국 기록"
+    },
+    {
+     "kind": "calc_table",
+     "title": "500MW 한 덩어리의 크기",
+     "head": [
+      "견줄 값",
+      "금액",
+      "500MW 사업비와의 관계"
+     ],
+     "rows": [
+      [
+       "500MW 의 사업비 — SK텔레콤 추정 기준",
+       "35조 원",
+       "1GW 약 70조 원의 절반(약 242억 달러)"
+      ],
+      [
+       "500MW 의 사업비 — NVIDIA 대표 발언 기준",
+       "250~300억 달러",
+       "1GW 500억~600억 달러의 절반"
+      ],
+      [
+       "2023년 이후 한국 투자 발표 가운데 금액이 공개된 것의 합",
+       "63.3억 달러",
+       "500MW 사업비(250~300억 달러)는 이 값의 3.9~4.7배"
+      ],
+      [
+       "SK텔레콤의 2025년 영업이익",
+       "1.07조 원",
+       "35조 원은 이 값의 33배"
+      ],
+      [
+       "통신 3사의 2025년 영업이익 합",
+       "4.43조 원",
+       "35조 원은 이 값의 7.9배"
+      ],
+      [
+       "국민성장펀드의 고양 AI 데이터센터 금융 지원",
+       "2.42조 원",
+       "35조 원의 7%"
+      ]
+     ],
+     "note": "사업비는 서버·GPU 가 든 값이다. 원화의 달러 환산은 2026년 평균 환율(1달러 1,444.1원). 영업이익은 2025년 연결 실적이고 설비투자 여력을 직접 재는 값이 아니라 크기를 가늠하는 기준이다. 한국 발표의 합은 묶음 A 의 계산값으로, AWS 의 2023년 계획(58.8억 달러)은 2025년 계획에 대체돼 빠졌고 Microsoft 부산(13.3억 달러)은 업계를 인용한 보도 값이며 8건 가운데 4건은 금액이 없다. AWS 는 2031년까지의 누적을 90억 달러 이상이라고 밝혔다. 고양 건의 금융 지원은 첨단전략산업기금 투자 2,500억 원, 후순위 대출 2,500억 원, 선순위 대출 1조 9,200억 원을 더한 값이다."
+    },
+    {
+     "kind": "fact",
+     "text": "비수도권에서 진행된 사례를 두고 보도는 전력 여건이 아니라 대형 수요 주체가 먼저 붙은 경우라고 분석했다. 삼성SDS 구미(60MW)는 자사 GPU 서비스 수요로 채우고, 해남의 국가 AI 컴퓨팅센터는 정부와 대형 ICT 기업이 수요를 보증한다. 업계 관계자들은 임차인이 정해지지 않으면 프로젝트 금융을 짜기 어렵다고 말했다.",
+     "src": 152
+    },
+    {
+     "kind": "fact",
+     "text": "OpenAI 와 발표한 한국의 두 건은 착공하지 않았다. 2026-09 보도에서 SK텔레콤은 양해각서 뒤 진전이 없고 OpenAI 의 수요가 확정되지 않았다고 했고, 삼성SDS 는 확정된 것이 없고 결정은 OpenAI 몫이라고 했다. 익명의 업계 관계자는 전력·용수를 감당할 부지 확보가 어렵다고 했다. OpenAI 코리아는 지난해 10월에 그린 설계가 지금 필요한 것과 달라졌다며 연내에 진척을 알리겠다고 했다.",
+     "src": 103,
+     "loc": "묶음 B 의 openai-kr-sk-southwest·openai-kr-samsung-pohang 의 status_now"
+    },
+    {
+     "kind": "fact",
+     "text": "최태원 SK 회장은 2026-09-11 울산 확장에 대해 '거의 900메가까지 다 왔다'며 끝나면 곧 발표할 수 있을 것 같다고 말했다. 상대 회사와 계약 조건은 공개되지 않았다.",
+     "src": 146
+    },
+    {
+     "kind": "fact",
+     "text": "SK텔레콤은 15GW 구상에서 부지 선정, 전력 수급, 핵심 입주사(앵커 테넌트) 확보를 함께 검토한다고 밝혔고, 초기 투자 부담과 사업 위험을 줄이려고 수요와 투자 요건을 보아 가며 추진한다고 적었다.",
+     "src": 141
+    },
+    {
+     "kind": "fact",
+     "text": "2025년 설비투자는 SK텔레콤 24.1%, KT 5.8%, LG유플러스 8.9% 줄었다. SK텔레콤의 데이터센터 매출은 5,199억 원이고 회사는 울산 구축 뒤 연 1조 원 매출을 기대한다고 했다.",
+     "src": 161
+    }
+   ]
+  },
+  {
+   "id": "s6",
+   "h": "관문 3 — 그 용량은 누구에게 쓰이나",
+   "layer": "common",
+   "blocks": [
+    {
+     "kind": "view",
+     "text": "**아시아·태평양에서 쓰임이 밝혀진 랩의 용량은 모두 그 나라 안 수요용이고, 권역·세계용으로 밝혀진 여섯 건은 전부 아시아·태평양 밖에 있다.** 랩의 미국 밖 22건 가운데 국내용이 7건, 권역·세계용이 6건, 밝혀지지 않은 것이 9건이다. 권역·세계용은 아부다비, 노르웨이, 캐나다 두 곳, 프랑스, 스웨덴이다. 아시아·태평양의 일본 사카이(수전 150MW, OpenAI 의 용량이라는 연결은 보도), 인도의 두 건(100·168MW), 호주 시드니는 모두 국내용으로 분류된다.\n\n국내용이라면 크기는 그 나라의 수요가 정한다. 500MW 는 수도권 데이터센터 총 용량(869MW)의 58%다. 게다가 한국의 수요는 전력이 막힌 수도권에 몰려 있다 — 데이터센터 전력 신청 건수의 71%가 수도권이고, 보도는 수요는 수도권에, 전력은 비수도권에 있다고 정리했다. 비수도권에서 진행된 건은 쓰는 쪽이 정해진 경우였다. 권역용이라면 서울에서 닿는 범위가 좁다. 왕복 100ms 안의 인구가 2.0억 명으로 도쿄(7.4억 명)·싱가포르(27.7억 명)에 못 미치고, 닿는 해저케이블도 8개로 일본 24·싱가포르 34개보다 적다. 지연시간과 무관한 학습용이라면 견줄 상대는 미국의 부지다 — OpenAI 는 미국 안에 거의 7GW 를 계획하고 애빌린에서 학습을 시작했다고 밝혔다."
+    },
+    {
+     "kind": "calc_table",
+     "title": "랩의 미국 밖 용량 22건 — 누구에게 쓰이나",
+     "head": [
+      "쓰임",
+      "건수",
+      "용량 합(MW)",
+      "용량 미공개(건)",
+      "나라"
+     ],
+     "rows": [
+      [
+       "국내",
+       "7",
+       "462",
+       "3",
+       "독일, 영국, 인도, 일본, 프랑스, 호주"
+      ],
+      [
+       "권역·세계",
+       "6",
+       "3,748",
+       "0",
+       "노르웨이, 스웨덴, 아랍에미리트, 캐나다, 프랑스"
+      ],
+      [
+       "불명",
+       "9",
+       "1,171",
+       "3",
+       "노르웨이, 말레이시아, 사우디아라비아, 아르헨티나, 인도네시아, 프랑스, 한국, 호주"
+      ]
+     ],
+     "note": "묶음 B 의 건별 기록에서 센 계산값이다. 쓰임은 발표문이 밝힌 대상으로 가른 것이고, 밝히지 않았으면 '불명'이다. 용량 합은 뜻이 다른 값(클러스터 계획, 부지 전체, 랩이 빌린 단계, 수전)을 더한 것이라 규모를 가늠하는 데만 쓴다. 아시아·태평양의 '불명'은 한국 두 건, 말레이시아, 인도네시아, 호주(Anthropic) 다섯 건이다."
+    },
+    {
+     "kind": "fact_table",
+     "title": "도시별 데이터센터 시장",
+     "head": [
+      "도시",
+      "용량(MW)",
+      "무엇의 값인가",
+      "예정·개발 물량(MW)",
+      "공실률"
+     ],
+     "rows": [
+      [
+       "서울(수도권)",
+       "869",
+       "총 용량(CBRE, 2026년 1분기)",
+       "예정 1,412",
+       "5% 미만"
+      ],
+      [
+       "도쿄(수도권)",
+       "1,086",
+       "총 용량(CBRE, 2026년 1분기)",
+       "예정 2,544",
+       "—"
+      ],
+      [
+       "조호르",
+       "1,110",
+       "가동 용량(Cushman & Wakefield, 2026년 상반기)",
+       "개발 3,088",
+       "—"
+      ],
+      [
+       "시드니",
+       "917",
+       "가동 용량(Cushman & Wakefield, 2026년 상반기)",
+       "개발 2,134",
+       "—"
+      ],
+      [
+       "뭄바이",
+       "890",
+       "가동 용량(Cushman & Wakefield, 2026년 상반기)",
+       "개발 1,726",
+       "—"
+      ]
+     ],
+     "note": "두 회사의 집계라 범위와 기준이 다르다(CBRE 의 총 용량, Cushman & Wakefield 의 가동 용량). IT 기준인지 수전 기준인지는 공개 자료에 없다. 같은 줄에 놓았을 뿐 바로 견줄 수 없다. 싱가포르·오사카·멜버른·첸나이·하이데라바드·타이베이의 값은 공개 자료에서 찾지 못했다.",
+     "src": 6,
+     "loc": "기록 market-…"
+    },
+    {
+     "kind": "fact",
+     "text": "전력계통영향평가 1차 기술검토 신청 736건 가운데 수도권이 522건(71%)이다. 업계 관계자들은 AI 추론 센터가 지연시간을 줄이려면 수요처와 인력이 모인 수도권 가까이에 있어야 한다고 말했고, 보도는 수요는 수도권에, 전력은 비수도권에 있다고 정리했다.",
+     "src": 152
+    },
+    {
+     "kind": "calc_table",
+     "title": "지연시간권 — 왕복 지연시간 안에 닿는 나라의 인구·GDP 합",
+     "head": [
+      "거점",
+      "한도",
+      "나라 수",
+      "인구(백만 명)",
+      "GDP(십억 달러)",
+      "자기 나라를 뺀 인구",
+      "제한 시장을 넣은 인구"
+     ],
+     "rows": [
+      [
+       "서울",
+       "50ms",
+       "2",
+       "175.0",
+       "6,334.8",
+       "123.3",
+       "175.0"
+      ],
+      [
+       "서울",
+       "100ms",
+       "4",
+       "204.4",
+       "7,859.3",
+       "152.7",
+       "211.9"
+      ],
+      [
+       "도쿄",
+       "50ms",
+       "3",
+       "198.3",
+       "7,255.4",
+       "75.0",
+       "198.3"
+      ],
+      [
+       "도쿄",
+       "100ms",
+       "10",
+       "742.4",
+       "12,740.1",
+       "619.1",
+       "804.7"
+      ],
+      [
+       "싱가포르",
+       "50ms",
+       "9",
+       "817.2",
+       "5,475.7",
+       "811.1",
+       "879.6"
+      ],
+      [
+       "싱가포르",
+       "100ms",
+       "18",
+       "2,770.0",
+       "18,893.0",
+       "2,763.9",
+       "2,832.4"
+      ]
+     ],
+     "note": "식: 거점에서 각 나라의 대표 도시까지 왕복 지연시간이 한도 안이면 그 나라 전체의 2025년 인구·GDP 를 더한다. 대표 값은 제한 시장(중국·홍콩·러시아·미얀마)을 빼고 자기 나라를 넣은 것이다. 입력은 WonderNetwork 의 ping 값과 IMF 의 인구·GDP 이고 나라별 입력은 묶음 E 의 기록에 있다. 나라를 대표 도시 하나로 판정하므로 큰 나라는 과대·과소가 크다."
+    },
+    {
+     "kind": "fact_table",
+     "title": "나라별 국제 해저케이블 수",
+     "head": [
+      "나라",
+      "개통",
+      "계획",
+      "2021년 이후 개통",
+      "빅테크가 소유자인 것(개통)",
+      "그 가운데 빅테크 단독",
+      "빅테크가 소유자인 계획",
+      "육양지 수"
+     ],
+     "rows": [
+      [
+       "한국",
+       "8",
+       "4",
+       "1",
+       "3",
+       "0",
+       "2",
+       "3"
+      ],
+      [
+       "일본",
+       "24",
+       "9",
+       "5",
+       "9",
+       "1",
+       "6",
+       "16"
+      ],
+      [
+       "싱가포르",
+       "34",
+       "13",
+       "11",
+       "7",
+       "1",
+       "4",
+       "6"
+      ],
+      [
+       "말레이시아",
+       "20",
+       "9",
+       "3",
+       "1",
+       "0",
+       "5",
+       "8"
+      ],
+      [
+       "호주",
+       "13",
+       "13",
+       "2",
+       "2",
+       "0",
+       "6",
+       "7"
+      ],
+      [
+       "인도",
+       "16",
+       "5",
+       "3",
+       "1",
+       "0",
+       "4",
+       "7"
+      ],
+      [
+       "대만",
+       "14",
+       "4",
+       "5",
+       "8",
+       "3",
+       "3",
+       "7"
+      ]
+     ],
+     "note": "대상 나라에 닿고 두 나라 이상에 닿는 케이블 113건(개통 82, 계획 31)을 목록에서 센 값이다. 여러 나라에 닿는 케이블은 나라마다 한 번씩 잡힌다. 빅테크는 소유자 목록에 Google·Meta·Microsoft·Amazon 이 있는가로 판정했고, 광섬유 쌍만 산 경우는 목록에 나오지 않는다.",
+     "src": 11
+    }
+   ]
+  },
+  {
+   "id": "s7",
+   "h": "덜 가르는 조건 — 한국은 대부분 가운데다",
+   "layer": "common",
+   "blocks": [
+    {
+     "kind": "view",
+     "text": "**재난, 인력, 제도, 지정학, 건설 단가, 기후 열두 요인에서 한국은 대부분 가운데 단계이고, 이 조건들로는 위 세 관문의 차이를 설명하지 못한다.** 위 단계는 기후(연평균 습구온도가 가장 낮다)와 미국 수출통제 지위(첨단 반도체 목적지 허가 대상이 아니다. 싱가포르·말레이시아는 대상이다), 아래 단계는 세계평화지수 순위와 개인정보 국외 이전의 기본 원칙이다. 전력 품질은 강점이다 — 호당 정전시간 9.32분은 값이 있는 여섯 나라 가운데 싱가포르 다음으로 짧다. 산업용 평균 단가는 2021~2025년에 72% 올랐지만 2절에서 본 대로 총투자에 견준 크기는 작다. 아래 단계가 가장 많은 인도(일곱 요인)와 말레이시아(여섯 요인)의 발표 금액 합이 482억·190억 달러로 한국(63억 달러, AWS 의 2023년 계획 제외)보다 많다는 점도, 이 조건들이 결정을 가르지 않는다는 쪽의 사실이다."
+    },
+    {
+     "kind": "view_table",
+     "title": "나머지 조건 — 요인별 세 단계",
+     "head": [
+      "요인",
+      "방향",
+      "한국",
+      "일본",
+      "싱가포르",
+      "말레이시아",
+      "호주",
+      "인도",
+      "대만"
+     ],
+     "rows": [
+      [
+       "재난 — INFORM 자연재해 노출(0~10)",
+       "낮을수록 상",
+       "중 6.0",
+       "하 8.3",
+       "상 1.1",
+       "상 4.6",
+       "중 4.7",
+       "하 7.8",
+       "—"
+      ],
+      [
+       "재난 — WorldRiskIndex 노출(0~100)",
+       "낮을수록 상",
+       "중 9.83",
+       "하 43.35",
+       "상 0.17",
+       "상 8.86",
+       "중 32.11",
+       "하 40.83",
+       "—"
+      ],
+      [
+       "인력 — GitHub 개발자 계정(인구 1,000명당)",
+       "높을수록 상",
+       "중 67.7",
+       "중 50.6",
+       "상 415.7",
+       "하 37.1",
+       "상 92.7",
+       "하 19.8",
+       "중 89.4"
+      ],
+      [
+       "제도 — 법치 추정치(-2.5~2.5)",
+       "높을수록 상",
+       "중 1.195",
+       "상 1.542",
+       "상 1.489",
+       "하 0.408",
+       "중 1.459",
+       "하 -0.129",
+       "중 1.201"
+      ],
+      [
+       "제도 — 규제 품질 추정치(-2.5~2.5)",
+       "높을수록 상",
+       "중 1.003",
+       "중 1.221",
+       "상 2.113",
+       "하 0.684",
+       "상 1.669",
+       "하 -0.17",
+       "중 1.195"
+      ],
+      [
+       "제도 — 개인정보 국외 이전의 기본 원칙",
+       "허용 원칙이 상",
+       "하 원칙 금지, 예외 허용",
+       "하 사전 동의 원칙",
+       "중 보호 수준 확보 조건",
+       "중 보호 수준 조건",
+       "중 합리적 조치 조건",
+       "상 금지 목록 방식",
+       "상 원칙 자유"
+      ],
+      [
+       "제도 — 공공·금융 등의 국내 처리 요구",
+       "확인된 요구 없음이 상",
+       "중 공공(CSAP)",
+       "상 확인된 요구 없음",
+       "상 요구 없음",
+       "중 금융·의료, 세무·고용 기록",
+       "중 건강 기록",
+       "중 결제 데이터",
+       "상 국내 저장 제도 없음"
+      ],
+      [
+       "지정학 — 미국의 첨단 반도체 목적지 허가",
+       "대상 아님이 상",
+       "상 대상 아님",
+       "상 대상 아님",
+       "하 허가 대상",
+       "하 허가 대상",
+       "상 대상 아님",
+       "상 대상 아님",
+       "상 대상 아님"
+      ],
+      [
+       "지정학 — 세계평화지수 순위(163개국)",
+       "낮을수록 상",
+       "하 57",
+       "상 10",
+       "상 8",
+       "중 12",
+       "중 20",
+       "하 127",
+       "중 42"
+      ],
+      [
+       "지정학 — 정치 안정 추정치(-2.5~2.5)",
+       "높을수록 상",
+       "중 0.917",
+       "상 1.259",
+       "상 1.334",
+       "하 0.34",
+       "중 0.781",
+       "하 -0.608",
+       "중 0.999"
+      ],
+      [
+       "비용 — 건설 단가(대표 도시, 달러/W)",
+       "낮을수록 상",
+       "중 10.42",
+       "하 18.28",
+       "하 15.39",
+       "중 10.06",
+       "중 10.74",
+       "상 6.83",
+       "상 9.44"
+      ],
+      [
+       "기후 — 연평균 습구온도(대표 도시, °C)",
+       "낮을수록 상",
+       "상 9.4",
+       "상 13.0",
+       "하 24.6",
+       "하 24.6",
+       "중 14.3",
+       "중 22.8",
+       "중 20.4"
+      ]
+     ],
+     "note": "칸은 단계와 값이다. 숫자 요인은 값이 있는 나라를 좋은 쪽부터 줄 세워 위 둘을 상, 아래 둘을 하, 나머지를 중으로 두었다(같은 값은 같은 단계, 값이 없는 나라는 '—'). 순서로만 나누므로 값이 붙어 있어도 단계가 갈린다 — 법치의 싱가포르 1.489(상)·호주 1.459(중), 재난 노출의 말레이시아 4.6(상)·호주 4.7(중)이 그렇다. 범주 요인의 기준: 국외 이전은 기본 원칙이 허용이면 상, 조건을 갖추면 허용이면 중, 금지나 사전 동의가 원칙이고 예외로 허용이면 하(기본 원칙만 본 것이고 처리위탁 예외나 표준 계약으로 실제 이전이 얼마나 쉬운지는 재지 않았다). 국내 처리 요구는 특정 부문·데이터를 나라 안에 두라는 요구가 자료에서 확인되면 중, 확인되지 않으면 상(일본은 조달 기준이 위치를 실질적으로 제한할 수 있다는 서술만 있고, 대만의 업종별 제한은 중국 본토로의 이전 금지다). 수출통제는 2026년 11월 규칙의 목적지 허가 대상이 아니면 상, 대상이면 하. 건설 단가와 습구온도는 대표 도시(서울·도쿄·싱가포르·조호르·시드니·뭄바이·타이베이)의 값이다. 단계를 더한 합산 점수는 내지 않았다. 지수마다 재는 것이 달라 요인 사이의 무게를 정할 근거가 없기 때문이다."
+    }
+   ]
+  },
+  {
+   "id": "s8",
+   "h": "두 가설에 비추면",
+   "layer": "common",
+   "blocks": [
+    {
+     "kind": "view",
+     "text": "**두 가설의 판정은 '엇갈림' 그대로이고, 세 관문은 H2 가 말한 묶음의 세 칸과 겹친다.** 전력을 받는 길은 묶음의 '전력과 부지', 돈을 대는 쪽은 '자본', 쓰임은 '고객 수요'다. 한국의 묶음에서 두꺼운 것은 네 번째 칸인 부품이다 — 한국 두 회사가 D램 매출의 64.3%를 차지하고 OpenAI 와 월 90만 장 투입을 목표로 한 공급 의향을 발표했다. 그러나 물량·가격·기간이 정해진 계약은 공개되지 않았고, 같은 날 발표된 용량 두 건은 멈춰 있다. TSMC 가 파운드리 매출의 72.5%를 가진 대만에도 랩이 둔다고 발표한 용량이 없다. 부품 점유율이 용량의 입지를 끌어온 사례는 이번 자료에서 확인되지 않는다.\n\nH1 이 꼽은 세 약점 가운데 국제 네트워크는 가설 그대로이지만, 6절에서 본 대로 아시아·태평양에서 쓰임이 밝혀진 랩 용량은 모두 국내용이다(다섯 건은 불명). 네트워크의 약점은 권역 거점이 되려 할 때의 제약이고, 지금 500MW 가 들어오지 않는 이유로는 직접 확인되지 않는다. H2 는 발표를 세면 맞고 진척을 세면 갈린다 — 묶음만으로 발표된 다섯 건 가운데 랩의 계약이나 착공이 확인된 것은 없다."
+    },
+    {
+     "kind": "view_table",
+     "title": "두 가설의 판정",
+     "head": [
+      "가설·항목",
+      "판정",
+      "가설에 맞는 사실",
+      "가설에 어긋나는 사실"
+     ],
+     "rows": [
+      [
+       "H1 · 국제 네트워크",
+       "지지",
+       "닿는 개통 해저케이블 8개(일본 24, 싱가포르 34, 대만 14). 빅테크 단독 소유 케이블 없음(대만 3, 일본 1, 싱가포르 1). 가장 큰 인터넷 교환점의 참여 네트워크 91곳(싱가포르 472, 도쿄 355)",
+       "계획 케이블 4건 가운데 2건에 Microsoft·Amazon 이 소유자로 참여. 서울~도쿄 왕복 35ms"
+      ],
+      [
+       "H1 · 대용량 전력의 확보 속도",
+       "엇갈림",
+       "수도권 전력계통영향평가 신청 522건(33,592MW) 가운데 최종 승인 10건(1,010MW)",
+       "대만 북부의 5MW 이상 승인 중단, 싱가포르의 공모 배정(2차 200MW), 말레이시아의 신청 24건 보류처럼 견줄 입지도 물량을 조인다. 한국의 호당 정전시간은 9.32분으로 값이 있는 여섯 나라 가운데 싱가포르 다음으로 짧다"
+      ],
+      [
+       "H1 · 배후 수요",
+       "엇갈림",
+       "서울에서 왕복 100ms 안에 닿는 나라 4곳·2.0억 명(도쿄 10곳·7.4억 명, 싱가포르 18곳·27.7억 명)",
+       "수도권 데이터센터 용량 869MW·공실률 5% 미만. AI 사용자 비중 40.6%(일곱 나라 가운데 세 번째)"
+      ],
+      [
+       "H1 · 나머지 조건",
+       "엇갈림",
+       "세계평화지수 57위(싱가포르 8, 일본 10), 규제 품질 추정치 일곱 나라 가운데 다섯 번째",
+       "미국의 2026년 11월 규칙에서 첨단 반도체 목적지 허가 대상이 아님(싱가포르·말레이시아는 대상). 서울 건설 단가 W당 10.42달러(도쿄 18.28, 싱가포르 15.39). 연평균 습구온도 열한 도시 가운데 가장 낮음"
+      ],
+      [
+       "H2 · 좁은 기준",
+       "엇갈림",
+       "미국 밖 19건 가운데 묶음 5, 둘 다 6. 수요·부품까지 묶인 발표 8건",
+       "입지 4건. 묶음만으로 발표된 5건 가운데 계약·착공 없음. 착공 2건 가운데 1건(Meta 앨버타)은 묶음이 없음. 영국·한국·노르웨이는 보류·지연·무산"
+      ],
+      [
+       "H2 · 넓은 기준",
+       "지지",
+       "묶음 10, 둘 다 6, 입지 1. 요청의 묶음 정의(네 칸 가운데 두 칸 이상)를 그대로 적용",
+       "이 기준에서는 사업자가 짓고 랩이 빌리는 임대가 모두 묶음이 되어 가설이 틀리기 어렵다. 착공·보류 건의 구성은 좁은 기준과 같다"
+      ]
+     ],
+     "note": "H1: 입지 조건만 보면 한국은 권역 거점이 되기 어렵다. H2: 랩이 미국 밖에 둔 용량은 입지 조건보다 현지 파트너가 내놓은 묶음(자본, 전력과 부지, 고객 수요, 부품)을 따라갔다. 판정은 해석이고 값의 정의와 한계는 각 절의 표 아래에 있다. 항목을 하나로 합치는 가중치는 두지 않았다."
+    },
+    {
+     "kind": "calc_table",
+     "title": "판정별 집계 — 미국 밖 19건(본국 제외)",
+     "head": [
+      "판정",
+      "좁은 기준 건수",
+      "용량 합(MW)",
+      "계약 이상",
+      "착공 이상",
+      "보류·지연·무산",
+      "넓은 기준 건수",
+      "용량 합(MW)",
+      "계약 이상",
+      "착공 이상",
+      "보류·지연·무산"
+     ],
+     "rows": [
+      [
+       "묶음을 따라감",
+       "5",
+       "1,190",
+       "0",
+       "0",
+       "2",
+       "10",
+       "1,213",
+       "3",
+       "0",
+       "2"
+      ],
+      [
+       "입지를 따라감",
+       "4",
+       "1,118",
+       "3",
+       "1",
+       "0",
+       "1",
+       "1,000",
+       "1",
+       "1",
+       "0"
+      ],
+      [
+       "둘 다",
+       "6",
+       "1,498",
+       "3",
+       "1",
+       "2",
+       "6",
+       "1,593",
+       "4",
+       "1",
+       "2"
+      ],
+      [
+       "판단 불가",
+       "4",
+       "121",
+       "4",
+       "0",
+       "0",
+       "2",
+       "121",
+       "2",
+       "0",
+       "0"
+      ]
+     ],
+     "note": "건별 판정을 센 계산값이다. 용량 합은 뜻이 다른 값(클러스터 계획, 부지 전체, 랩이 빌린 단계, 수전)을 더한 것이라 규모를 가늠하는 데만 쓴다. 6건은 랩의 몫이 공개되지 않아 합에 없다."
+    }
+   ]
+  },
+  {
+   "id": "s9",
+   "h": "이 판단이 틀릴 수 있는 이유와 지켜볼 신호",
+   "layer": "common",
+   "blocks": [
+    {
+     "kind": "view",
+     "text": "**세 관문은 성사된 건과 멈춘 건을 견줘 읽은 해석이고, 당사자가 밝힌 이유가 아니다.** 틀릴 수 있는 곳은 일곱 가지다.",
+     "items": [
+      "이유를 직접 밝힌 자료가 거의 없다. 한국에 대해 찾은 것은 SK텔레콤·삼성SDS·OpenAI 코리아의 짧은 발언뿐이고, 랩이나 빅테크가 한국에 큰 블록을 두지 않는 이유를 직접 밝힌 자료는 찾지 못했다.",
+      "용량을 밝히지 않는 자체 건설이 목록에 없다. 하이퍼스케일러가 일본·호주·싱가포르에 발표한 수백억 달러 가운데 300MW 를 넘는 부지가 있을 수 있고, 그렇다면 '한국만의 일이 아니다'라는 진술이 약해진다.",
+      "비용 계산이 발언과 추정에 기댄다. 총투자를 GW 당 350억 달러로 낮게 잡으면 건설 단가와 전기료의 비중이 1.4~1.7배로 커진다. 그래도 전기료는 한 해에 총투자의 3% 남짓이다.",
+      "전력 심사 통계는 건수다. 비수도권에서 통과한 49건의 용량을 모르므로, 비수도권에서 500MW 를 한 부지에 받을 수 있는지는 이 자료로 확인되지 않는다.",
+      "쓰임의 구분은 발표문의 문구다. 22건 가운데 9건이 '불명'이고, 한국의 두 건도 누구에게 쓸 용량인지 밝히지 않았다.",
+      "새 묶음은 한 차례 훑은 초안이다. 말레이시아·대만·싱가포르의 300MW 이상 계획, 인도의 접속 기간, 나라별 자가 발전 규정은 모으지 못했다.",
+      "바뀔 수 있는 규칙에 기대고 있다. 미국의 수출 규칙은 임시 최종 규칙이고 관보 게재 전의 사전 공개본을 읽었다."
+     ]
+    },
+    {
+     "kind": "view",
+     "text": "판정이 달라질 수 있는 신호를 관문별로 적는다.",
+     "items": [
+      "돈과 약정: 울산 900MW 확장의 계약 발표와 쓰는 쪽, OpenAI 가 연내에 알리겠다고 한 한국 두 건의 진척, SK텔레콤이 2029년부터 연다고 한 5GW 의 핵심 입주사 발표, 국민성장펀드의 데이터센터 대형 승인.",
+      "전력: 수도권 전력계통영향평가의 심사 기준 고시와 통과 건수(지금 522건 가운데 10건), 비수도권 평가 면제의 시행(2027년), LNG 직접 구매를 허용하는 법 개정 여부, 발전소 직결 두 번째 사례.",
+      "쓰임: 한국에 두는 용량을 권역·세계용이라고 밝히는 발표, 빅테크가 단독으로 가진 케이블의 한국 육양(지금은 없다), JAKO(2027년)와 AUG East(2029년)의 개통.",
+      "견줄 입지: JERA 지바 400MW 와 NTT DATA 오사카의 본계약, NEXTDC S7 과 OpenAI 의 본계약, Western Downs 의 외국인투자 승인과 첫 동 가동(2027년 목표), Google 비사카파트남과 릴라이언스 잠나가르의 가동, 싱가포르의 다음 공모, 대만 북부 승인 중단의 완화.",
+      "묶음: 메모리 장기 공급 계약의 회사 발표와 월 90만 장 의향의 계약 전환. 부품 공급이 용량 약정과 함께 묶여 발표되면 H2 쪽으로 기운다.",
+      "수출통제: 2026년 11월 규칙의 관보 게재본과 대상 나라의 변경."
+     ]
+    },
+    {
+     "kind": "calc_table",
+     "title": "자료의 범위와 원문 확인 비중",
+     "head": [
+      "묶음",
+      "기록 수",
+      "원문을 열어 확인한 비중",
+      "상태"
+     ],
+     "rows": [
+      [
+       "A 투자 발표 장부 — 실제로 어디에 지었나",
+       "37",
+       "99%",
+       "한 차례 훑음(확인 전)"
+      ],
+      [
+       "B 프런티어 랩의 해외 용량 건별 조사",
+       "22",
+       "100%",
+       "한 차례 훑음(확인 전)"
+      ],
+      [
+       "C1-3 해저케이블 목록·용량·빅테크 참여",
+       "113",
+       "100%",
+       "모으는 중"
+      ],
+      [
+       "C4-5 도시별 접속 여건과 도시 간 지연시간",
+       "102",
+       "100%",
+       "한 차례 훑음(확인 전)"
+      ],
+      [
+       "D 전력: 품질·가격·확보",
+       "49",
+       "92%",
+       "한 차례 훑음(확인 전)"
+      ],
+      [
+       "E 배후 수요",
+       "34",
+       "100%",
+       "한 차례 훑음(확인 전)"
+      ],
+      [
+       "F 나머지 조건(채점표 재료)",
+       "132",
+       "98%",
+       "한 차례 훑음(확인 전)"
+      ],
+      [
+       "G 한국 쪽이 내놓을 수 있는 것",
+       "30",
+       "97%",
+       "한 차례 훑음(확인 전)"
+      ],
+      [
+       "H 반례와 경쟁 입지의 제약",
+       "35",
+       "100%",
+       "한 차례 훑음(확인 전)"
+      ],
+      [
+       "I 관문 조건 — 대용량 전력 블록, 돈과 임차 약정, 수요의 종류",
+       "23",
+       "100%",
+       "한 차례 훑음(확인 전)"
+      ]
+     ],
+     "note": "확인 비중은 값이 하나로 더해지는 묶음(A·B·C1-3)은 값의 합으로, 그 밖의 묶음은 건수로 센다. 검색 요약으로만 받친 값은 표에서 '검색 요약'으로 표시했다. 자료 기준일은 2026-11-19 다. 묶음 파일과 요청 사본·진행 기록은 feed 의 data/apac-siting/ 에 있다."
+    }
+   ]
+  }
+ ],
+ "capacity": [
+  {
+   "label": "OpenAI — Stargate UAE (5GW UAE–U.S. AI Campus 안의 1GW 클러스터)(아랍에미리트)",
+   "value": 1000,
+   "unit": "MW",
+   "basis": "unknown",
+   "asof": "2025-05-22",
+   "src": 93,
+   "note": "단계 착공, 지금 상태 진행"
+  },
+  {
+   "label": "OpenAI — Stargate Norway (Kvandal)(노르웨이)",
+   "value": 230,
+   "unit": "MW",
+   "basis": "unknown",
+   "asof": "2025-07-31",
+   "src": 96,
+   "note": "단계 MoU, 지금 상태 취소"
+  },
+  {
+   "label": "OpenAI — SK텔레콤과의 AI 데이터센터(서남권)(한국)",
+   "value": 20,
+   "unit": "MW",
+   "basis": "unknown",
+   "asof": "2025-10-01",
+   "src": 103,
+   "note": "단계 MoU, 지금 상태 지연"
+  },
+  {
+   "label": "OpenAI — 삼성(삼성SDS·삼성물산·삼성중공업)과의 데이터센터(포항)(한국)",
+   "value": 20,
+   "unit": "MW",
+   "basis": "unknown",
+   "asof": "2025-10-01",
+   "src": 103,
+   "note": "단계 MoU, 지금 상태 지연"
+  },
+  {
+   "label": "OpenAI — Stargate Argentina(아르헨티나)",
+   "value": 500,
+   "unit": "MW",
+   "basis": "unknown",
+   "asof": "2025-10-10",
+   "src": 107,
+   "note": "단계 MoU, 지금 상태 불명"
+  },
+  {
+   "label": "OpenAI — TCS HyperVault(인도)",
+   "value": 100,
+   "unit": "MW",
+   "basis": "unknown",
+   "asof": "2026-02-18",
+   "src": 112,
+   "note": "단계 계약, 지금 상태 불명"
+  },
+  {
+   "label": "OpenAI — 소프트뱅크 사카이 데이터센터(옛 샤프 공장)(일본)",
+   "value": 150,
+   "unit": "MW",
+   "basis": "utility",
+   "asof": "2025-03-14",
+   "src": 116,
+   "note": "단계 MoU, 지금 상태 불명"
+  },
+  {
+   "label": "Anthropic — EverWind Point Tupper 캠퍼스 1단계(캐나다)",
+   "value": 95,
+   "unit": "MW",
+   "basis": "unknown",
+   "asof": "2026-10-16",
+   "src": 121,
+   "note": "단계 계약, 지금 상태 진행"
+  },
+  {
+   "label": "Anthropic — Bitdeer Tydal 데이터센터 (Volta 경유)(노르웨이)",
+   "value": 121,
+   "unit": "MW",
+   "basis": "it",
+   "asof": "2026-08-04",
+   "src": 123,
+   "note": "단계 계약, 지금 상태 진행"
+  },
+  {
+   "label": "xAI — HUMAIN 과의 500MW 데이터센터(위치 미공개)(사우디아라비아)",
+   "value": 500,
+   "unit": "MW",
+   "basis": "unknown",
+   "asof": "2025-11-19",
+   "src": 125,
+   "note": "단계 MoU, 지금 상태 불명"
+  },
+  {
+   "label": "Meta — Meta Sturgeon County 데이터센터(캐나다)",
+   "value": 1000,
+   "unit": "MW",
+   "basis": "unknown",
+   "asof": "2026-07-08",
+   "src": 127,
+   "note": "단계 착공, 지금 상태 진행"
+  },
+  {
+   "label": "Meta — 릴라이언스 잠나가르 데이터센터(인도)",
+   "value": 168,
+   "unit": "MW",
+   "basis": "unknown",
+   "asof": "2026-06-09",
+   "src": 129,
+   "note": "단계 계약, 지금 상태 진행"
+  },
+  {
+   "label": "Mistral — Mistral 첫 데이터센터(프랑스)",
+   "value": 44,
+   "unit": "MW",
+   "basis": "unknown",
+   "asof": "2025-06-11",
+   "src": 131,
+   "note": "단계 계약, 지금 상태 불명"
+  },
+  {
+   "label": "Mistral — Campus IA (MGX·Bpifrance·Mistral·NVIDIA 합작)(프랑스)",
+   "value": 1400,
+   "unit": "MW",
+   "basis": "utility",
+   "asof": "2025-05-19",
+   "src": 133,
+   "note": "단계 계약, 지금 상태 불명"
+  },
+  {
+   "label": "Mistral — EcoDataCenter Borlänge(스웨덴)",
+   "value": 23,
+   "unit": "MW",
+   "basis": "unknown",
+   "asof": "2026-02-11",
+   "src": 131,
+   "note": "단계 계약, 지금 상태 불명"
+  },
+  {
+   "label": "Mistral — Les Ulis 추론 데이터센터(프랑스)",
+   "value": 10,
+   "unit": "MW",
+   "basis": "unknown",
+   "asof": "2026-05-28",
+   "src": 137,
+   "note": "단계 MoU, 지금 상태 불명"
+  },
+  {
+   "label": "AWS–SK 울산(한국)",
+   "value": 100,
+   "unit": "MW",
+   "basis": "unknown",
+   "src": 159,
+   "note": "단계 착공, 가동 시점 2027-11(1단계 41MW), 2029-02(전체 103MW)"
+  },
+  {
+   "label": "LG유플러스 파주 AIDC(한국)",
+   "value": 200,
+   "unit": "MW",
+   "basis": "utility",
+   "src": 38,
+   "note": "단계 착공, 가동 시점 2027-06(1동), 2028(4개 동)"
+  },
+  {
+   "label": "GS 동해 AI 데이터센터(1단계)(한국)",
+   "value": 100,
+   "unit": "MW",
+   "basis": "utility",
+   "src": 38,
+   "note": "단계 발표(전력 공급 심의 통과, 2026-11 착공 예정)"
+  },
+  {
+   "label": "삼성SDS 구미(한국)",
+   "value": 60,
+   "unit": "MW",
+   "basis": "unknown",
+   "src": 38,
+   "note": "단계 발표(착공 미확인), 가동 시점 2029-03(당초 목표)"
+  },
+  {
+   "label": "국가 AI 컴퓨팅센터 해남(한국)",
+   "value": 40,
+   "unit": "MW",
+   "basis": "utility",
+   "src": 38,
+   "note": "단계 착공, 가동 시점 2028(준공 목표)"
+  },
+  {
+   "label": "네이버 각 세종(증설 완료 시)(한국)",
+   "value": 270,
+   "unit": "MW",
+   "basis": "utility",
+   "src": 38,
+   "note": "단계 가동(약 6분의 1), 가동 시점 2023-11(개관)"
+  },
+  {
+   "label": "Microsoft 부산(한국)",
+   "value": 125,
+   "unit": "MW",
+   "basis": "utility",
+   "src": 158,
+   "note": "단계 부지확보"
+  },
+  {
+   "label": "소프트뱅크 도마코마이(일본)",
+   "value": 50,
+   "unit": "MW",
+   "basis": "unknown",
+   "src": 80,
+   "note": "단계 보조금 지급(시점 불명)"
+  },
+  {
+   "label": "Foxconn–NVIDIA 클러스터(대만)",
+   "value": 27,
+   "unit": "MW",
+   "basis": "unknown",
+   "src": 170,
+   "note": "단계 발표(가동 미확인)"
+  },
+  {
+   "label": "Google 인도 AI 허브(비사카파트남)(인도)",
+   "value": 1000,
+   "unit": "MW",
+   "basis": "unknown",
+   "src": 143,
+   "note": "단계 착공"
+  },
+  {
+   "label": "JERA 지바 화력발전소 옆 AI 데이터센터(일본)",
+   "value": 400,
+   "unit": "MW",
+   "basis": "unknown",
+   "src": 148,
+   "note": "단계 MoU"
+  },
+  {
+   "label": "삼성SDS 해남 솔라시도 AI 데이터센터(한국)",
+   "value": 210,
+   "unit": "MW",
+   "basis": "unknown",
+   "src": 150,
+   "note": "단계 발표(국가 AI 컴퓨팅센터는 착공)"
+  },
+  {
+   "label": "YTL 그린 데이터센터 파크(조호르)(말레이시아)",
+   "value": 500,
+   "unit": "MW",
+   "basis": "unknown",
+   "src": 149,
+   "note": "단계 발표(2022년. 그 뒤 진척 미확인)"
+  }
+ ],
+ "review": {
+  "draft": {
+   "model": "대화형 세션",
+   "at_kst": "2026-11-19T07:53:55+09:00"
+  },
+  "review": {
+   "model": "claude-opus-5-5",
+   "at_kst": "2026-11-19T08:11:14+09:00",
+   "result": "통과"
+  },
+  "summary": "2판의 2~9절을 옮긴 것이다. 2판에서 다른 호출이 세 차례 검토했고(반드시 고칠 것 12건, 3건, 좁은 확인) 그 뒤 바뀐 것은 안내 절을 더한 것, 한국 건별 표의 Microsoft 부산을 '업계를 인용한 보도'로 적은 것, 아부다비 행의 전원 표기다.",
+  "history": []
+ }
+}

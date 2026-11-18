@@ -2,7 +2,7 @@
  "schema": 1,
  "bundle": "I",
  "title": "관문 조건 — 대용량 전력 블록, 돈과 임차 약정, 수요의 종류",
- "updated_kst": "2026-11-19T08:10:00+09:00",
+ "updated_kst": "2026-11-19T08:41:57+09:00",
  "measure": null,
  "notes": [
   "수백 MW 를 한 부지에 두는 결정을 가르는 조건을 세 주제로 모았다: I1 한 부지에서 대용량 전력을 받는 길과 기간, I2 투자와 장기 임차를 누가 지는가, I3 그 용량이 어느 수요에 쓰이는가.",
@@ -863,6 +863,117 @@
    "alt": [],
    "conf": "med",
    "note": "업계 관계자들은 AI 추론 센터가 지연시간을 줄이려면 수요처와 인력이 모인 수도권 가까이에 있어야 한다고 말했다. 10MW 이하 소규모 분산 센터의 수요도 수도권에 몰린다. 수요는 수도권에, 전력은 비수도권에 있다는 것이 기사의 정리다."
+  },
+  {
+   "id": "workload-kr-gpu-plan",
+   "topic": "I3",
+   "kind": "workload",
+   "country": "KR",
+   "city": null,
+   "item": "엔비디아 GPU 26만 장 도입 계획의 전력 환산",
+   "value": 432,
+   "unit": "MW(IT, 추정의 아래 끝)",
+   "asof": "2025-11",
+   "basis": "주간지의 추정: GB200 NVL72 랙(GPU 72개, 랙당 약 120~140kW) 3,600랙 이상 → 432MW 이상. 냉각 등을 넣으면(PUE 1.2) 500~600MW",
+   "detail": {
+    "gpus": 260000,
+    "racks": 3600,
+    "with_pue_mw": [
+     500,
+     600
+    ],
+    "by_party": {
+     "정부": 50000,
+     "삼성": 50000,
+     "SK": 50000,
+     "현대차": 50000,
+     "네이버클라우드": 60000
+    }
+   },
+   "refs": [
+    {
+     "bundle": "G",
+     "id": "program-kr-nvidia-gpu"
+    },
+    {
+     "bundle": "G",
+     "id": "program-kr-national-ai-computing"
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "주간경향 — 'GPU 26만장'이 불러온 에너지 논쟁···\"전력량보다 망이 문제\"",
+     "url": "https://weekly.khan.co.kr/article/202511170600011",
+     "date": "2025-11-17",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "26만 장은 '최대' 공급 계획이고 정부·삼성·SK·현대차에 각 5만 장, 네이버클라우드에 6만 장으로 나뉜다. 기사 속 전문가들은 각사에 차례로 도입돼 수요가 점진적으로 늘고, 총량보다 전력망과 입지가 문제라고 말했다. 한 전문가는 ChatGPT 와 Gemini 가 미국의 데이터센터에서 운영돼 국내 이용자가 써도 국내 전력을 쓰는 것이 아니라고 말했다. 환산은 기사의 추정이고 회사 발표가 아니다."
+  },
+  {
+   "id": "workload-ms-fleet",
+   "topic": "I3",
+   "kind": "workload",
+   "country": "US",
+   "city": null,
+   "item": "Microsoft 가 밝힌 용량 배치 방식",
+   "value": 2000,
+   "unit": "MW(Fairwater 위스콘신 단일 부지, 목표)",
+   "asof": "2025-10",
+   "basis": "2026 회계연도 1분기 실적 발표: Fairwater(위스콘신)는 다음 해 가동해 단일 부지로 2GW 까지 늘린다",
+   "detail": {
+    "sovereign_countries": 33
+   },
+   "refs": [],
+   "sources": [
+    {
+     "n": 1,
+     "title": "Microsoft — FY26 First Quarter Earnings Conference Call(녹취록)",
+     "url": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/TranscriptFY26Q1",
+     "date": "2025-10-29",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "대표는 한 지역에 초대형 데이터센터 하나를 짓는 것이 아니라 세계 곳곳에 추론·사전 학습·후속 학습을 오갈 수 있는 설비를 짓는다고 말했다(\"a fleet that is fungible across the planet\"). 고객과 나라의 주권 요구를 받친다고 했고, 33개 나라의 고객이 자국 안에서 클라우드와 AI 를 쓴다고 밝혔다. 나라별 용량은 밝히지 않았다."
+  },
+  {
+   "id": "workload-anthropic-us",
+   "topic": "I3",
+   "kind": "workload",
+   "country": "US",
+   "city": null,
+   "item": "Anthropic 의 미국 안 자체 데이터센터 투자",
+   "value": 50,
+   "unit": "십억 달러",
+   "asof": "2025-11",
+   "basis": "회사 발표: 미국의 연산 인프라에 500억 달러. Fluidstack 과 텍사스·뉴욕에 짓고 부지를 더한다",
+   "refs": [],
+   "sources": [
+    {
+     "n": 1,
+     "title": "Anthropic — Anthropic invests $50 billion in American AI infrastructure",
+     "url": "https://www.anthropic.com/news/anthropic-invests-50-billion-in-american-ai-infrastructure",
+     "date": "2025-11-12",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "회사는 이 시설을 자사 작업에 맞춰 짓고 프런티어 연구·개발을 이어 가는 데 쓴다고 적었다. 용량(MW)은 발표문에서 확인하지 못했다. 미국 밖 임차(호주·캐나다)는 묶음 B 에 있다."
   }
  ]
 }

@@ -1,7 +1,51 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-19T08:31:49+09:00",
+ "generated_kst": "2026-11-19T08:52:53+09:00",
  "reports": [
+  {
+   "slug": "apac-ai-siting-korea-ref",
+   "type": "research",
+   "title": "아시아·태평양 AI 컴퓨트 입지 비교 : 참고 자료",
+   "companies": [
+    {
+     "name": "AWS",
+     "ticker": null
+    },
+    {
+     "name": "Microsoft",
+     "ticker": null
+    },
+    {
+     "name": "Google",
+     "ticker": null
+    },
+    {
+     "name": "Oracle",
+     "ticker": null
+    },
+    {
+     "name": "Meta",
+     "ticker": null
+    },
+    {
+     "name": "OpenAI",
+     "ticker": null
+    },
+    {
+     "name": "Anthropic",
+     "ticker": null
+    },
+    {
+     "name": "xAI",
+     "ticker": null
+    }
+   ],
+   "published_kst": "2026-11-19T08:52:53+09:00",
+   "revised_kst": "2026-11-19T08:52:53+09:00",
+   "revision": 1,
+   "summary": "본문 「아시아·태평양 AI 컴퓨트 입지 비교 : 한국은 권역 거점이 될 수 있나」의 판단을 받치는 표와 계산이다. 비용의 크기, 미국 밖의 300MW 이상 계획 14건, 전력 심사와 접속, 한국의 건별 현황과 500MW 의 사업비, 랩 용량의 쓰임별 집계, 그 밖의 조건 열두 요인, 두 가설의 판정, 자료의 범위를 싣는다.",
+   "path": "reports/apac-ai-siting-korea-ref.json"
+  },
   {
    "slug": "citi-citi-ceo-jane-fraser-on-ai-tech-outages-newsmake",
    "type": "article",
@@ -157,9 +201,9 @@
     }
    ],
    "published_kst": "2026-11-19T00:32:22+09:00",
-   "revised_kst": "2026-11-19T08:11:36+09:00",
-   "revision": 2,
-   "summary": "한국에 500MW 급 AI 컴퓨트가 들어오지 않는 것은 전기료나 건설비보다, 그만한 용량을 쓰기로 약정하고 수십조 원을 대는 쪽이 정해지지 않은 데서 더 잘 설명된다(당사자가 밝힌 이유가 아니라 해석이다). 수도권은 전력이 막혀 있고, 비수도권에서 착공한 건은 쓰는 쪽이 정해진 40~100MW 급이다. 아시아·태평양에서 쓰임이 밝혀진 랩의 용량은 모두 국내용이고, 일곱 나라에서 300MW 이상 부지의 착공이 원문으로 확인된 것은 인도의 두 건뿐이다(울산은 100MW 착공, 900MW 협의). 두 가설의 판정은 '엇갈림' 그대로다.",
+   "revised_kst": "2026-11-19T08:52:53+09:00",
+   "revision": 3,
+   "summary": "미국 밖에서 500MW 급 단일 부지가 착공에 이른 길은 둘이다 — 전원과 자본이 준비된 곳의 권역·세계용 부지(아부다비, 앨버타)와, 국내 수요를 한 주체가 모아 짓는 부지(인도의 릴라이언스, Google). 한국은 어느 쪽에도 들지 못했다. 국내 수요는 GPU 26만 장(최대) 공급 계획으로 가늠되고 언론은 500~600MW 로 추정하지만, 여러 주체로 나뉘어 한 곳에 40~270MW 로 계획돼 있다. 성사된 건에서 읽은 권역·세계용의 조건(계통 대기를 피하는 전원, 스스로 돈을 대는 주체)과 권역 거점의 조건(도달 범위, 국제 네트워크)도 갖추지 못했다. 판단을 가장 크게 바꿀 수 있는 계기는 울산 900MW 확장의 계약이다.",
    "path": "reports/apac-ai-siting-korea.json"
   },
   {
@@ -1788,7 +1832,7 @@
   {
    "id": "apac-siting",
    "path": "data/apac-siting/index.json",
-   "updated_kst": "2026-11-19T08:10:00+09:00"
+   "updated_kst": "2026-11-19T08:41:57+09:00"
   }
  ]
 }
