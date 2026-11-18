@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated_kst": "2026-11-19T00:27:16+09:00",
+ "updated_kst": "2026-11-19T08:10:00+09:00",
  "question": "한국은 아시아·태평양 AI 컴퓨트의 권역 거점이 될 수 있는가",
  "bundles": [
   {
@@ -10,7 +10,7 @@
    "status": "draft",
    "records": 37,
    "verified_share": 0.988,
-   "updated_kst": "2026-11-18T21:28:38+09:00"
+   "updated_kst": "2026-11-19T07:58:48+09:00"
   },
   {
    "id": "B",
@@ -83,6 +83,15 @@
    "records": 35,
    "verified_share": 1,
    "updated_kst": "2026-11-19T00:26:08+09:00"
+  },
+  {
+   "id": "I",
+   "file": "gates.json",
+   "title": "관문 조건 — 대용량 전력 블록, 돈과 임차 약정, 수요의 종류",
+   "status": "draft",
+   "records": 20,
+   "verified_share": 1,
+   "updated_kst": "2026-11-19T08:10:00+09:00"
   }
  ],
  "hypotheses": [

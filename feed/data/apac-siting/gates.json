@@ -1,0 +1,868 @@
+{
+ "schema": 1,
+ "bundle": "I",
+ "title": "관문 조건 — 대용량 전력 블록, 돈과 임차 약정, 수요의 종류",
+ "updated_kst": "2026-11-19T08:10:00+09:00",
+ "measure": null,
+ "notes": [
+  "수백 MW 를 한 부지에 두는 결정을 가르는 조건을 세 주제로 모았다: I1 한 부지에서 대용량 전력을 받는 길과 기간, I2 투자와 장기 임차를 누가 지는가, I3 그 용량이 어느 수요에 쓰이는가.",
+  "블록 기록(kind 가 block)은 단일 부지·사업의 계획 용량이고 대부분 발표·구상 단계의 숫자다. 기준(IT·수전)이 밝혀지지 않아 서로 더하거나 다른 묶음의 용량과 견주지 않는다.",
+  "랩이 낀 미국 밖 건은 묶음 B 에, 빅테크의 나라별 발표는 묶음 A 에 있어 여기에 다시 적지 않고 refs 로 가리킨다. 미국의 값(block-us-stargate, cost-gw-nvidia)은 규모를 견줄 기준으로만 넣었다.",
+  "한국의 심사 결과와 송전선 건설 기간은 국회의원실이 받은 자료와 한국전력의 설명을 언론이 옮긴 값이다. 기관의 공시 원문은 열지 못했다.",
+  "한 차례 훑은 값이다. 말레이시아·대만·싱가포르의 300MW 이상 블록, 인도의 계통 접속 기간, 나라별 자가 발전 규정은 모으지 못했다(없다는 확인이 아니다)."
+ ],
+ "records": [
+  {
+   "id": "grid-kr-review",
+   "topic": "I1",
+   "kind": "grid",
+   "country": "KR",
+   "city": null,
+   "item": "전력계통영향평가의 심사 결과 — 수도권과 비수도권",
+   "value": 1.9,
+   "unit": "%(수도권 신청 건수 가운데 본심사 통과)",
+   "asof": "2026-03",
+   "basis": "계산: 본심사 통과 10건 ÷ 1차 기술검토 신청 522건. 기사는 '성공률 1.9%'라고 적었다. 2024-08-01~2026-03-27 의 데이터센터 신청 기준",
+   "detail": {
+    "metro": {
+     "applied": 522,
+     "applied_mw": 33591,
+     "tech_fail": 279,
+     "main_review": 24,
+     "passed": 10
+    },
+    "non_metro": {
+     "applied": 214,
+     "tech_ok": 187,
+     "tech_fail": 27,
+     "main_review": 52,
+     "passed": 49
+    }
+   },
+   "refs": [
+    {
+     "bundle": "D",
+     "id": "access-kr-queue"
+    },
+    {
+     "bundle": "D",
+     "id": "access-kr-impact"
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "머니투데이 — 수도권엔 전기가, 지방엔 고객이 없다…데이터센터의 삼중고",
+     "url": "https://www.mt.co.kr/tech/2026/05/20/2026051922000848265",
+     "date": "2026-05-20",
+     "read": "full"
+    },
+    {
+     "n": 2,
+     "title": "머니투데이 — 갈팡질팡 평가에 반쪽짜리 특별법…데이터센터 운명도 안갯속",
+     "url": "https://www.mt.co.kr/tech/2026/05/20/2026051922044934385",
+     "date": "2026-05-20",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "수도권은 1차 기술검토 522건(33,591MW) 가운데 279건이 공급 불가였고 본심사 24건 가운데 10건이 통과했다. 비수도권은 214건 가운데 187건이 공급 가능, 본심사 52건 가운데 49건이 통과했다. 서울은 1건만 통과했다. 평가의 심사 기준 고시는 2026-05 까지 제정되지 않아 시범 운영 중이다. 국회의원실이 정부에서 받은 자료를 기사가 옮긴 값이다. 수도권 신청 용량은 묶음 D 의 다른 기사 값(33,592MW)과 1MW 다르다."
+  },
+  {
+   "id": "grid-kr-leadtime",
+   "topic": "I1",
+   "kind": "grid",
+   "country": "KR",
+   "city": null,
+   "item": "345kV 송전선로 건설에 걸리는 기간",
+   "value": 13,
+   "unit": "년(평균)",
+   "asof": "2026-01",
+   "basis": "한국전력 설명: 표준 사업기간 9년, 착수부터 준공까지 실제 평균 13년",
+   "sources": [
+    {
+     "n": 1,
+     "title": "머니투데이 — \"송전망 하나 건설에 20년\"…님비에 막힌 에너지고속도로(한국전력 계통정책기획실장 인터뷰)",
+     "url": "https://www.mt.co.kr/economy/2026/01/09/2025122119462361254",
+     "date": "2026-01-09",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "북당진–신탕정 선로는 2003년에 시작해 21년 만에 준공됐고 지연이 12년 6개월이었다. 당진TP–신송산 90개월, 신장성–신정읍 변전소 77개월 지연. 새 송전선이 있어야 받을 수 있는 대용량 블록의 대기 기간을 가늠하는 값이고, 개별 데이터센터의 수전 기간은 아니다."
+  },
+  {
+   "id": "grid-kr-kepco-plan",
+   "topic": "I1",
+   "kind": "grid",
+   "country": "KR",
+   "city": null,
+   "item": "한국전력의 2026~2030년 송변전·배전 투자 계획",
+   "value": 55.3237,
+   "unit": "조 원",
+   "asof": "2026-09",
+   "basis": "한전의 2026~2030년 중장기 재무관리계획(국회의원실 입수 자료를 통신사가 보도). 송변전 32조 9,576억 원 + 배전 22조 3,661억 원",
+   "sources": [
+    {
+     "n": 1,
+     "title": "뉴시스 — 한전, 5년간 송배전망 55조원 투자(2026~2030년 중장기 재무관리계획)",
+     "url": "https://newsis.com/view/NISX20260908_0003781245",
+     "date": "2026-09-09",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "기사는 반도체와 AI 데이터센터의 수요를 배경으로 들었다. 2027~2029년 계획분이 한 해 전 계획보다 9.6% 늘었다."
+  },
+  {
+   "id": "selfgen-kr-lng",
+   "topic": "I1",
+   "kind": "selfgen",
+   "country": "KR",
+   "city": null,
+   "item": "데이터센터의 발전사업자 직접 구매 범위 — LNG 제외",
+   "value": null,
+   "unit": "제도",
+   "asof": "2026-05",
+   "basis": "인공지능 데이터센터 산업 진흥에 관한 특별법(2026-05 국회 통과)의 직접 구매 조항에 대한 보도",
+   "refs": [
+    {
+     "bundle": "G",
+     "id": "law-kr-aidc-act"
+    },
+    {
+     "bundle": "D",
+     "id": "onsite-kr-ulsan"
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "머니투데이 — 갈팡질팡 평가에 반쪽짜리 특별법…데이터센터 운명도 안갯속",
+     "url": "https://www.mt.co.kr/tech/2026/05/20/2026051922044934385",
+     "date": "2026-05-20",
+     "read": "full"
+    },
+    {
+     "n": 2,
+     "title": "다음뉴스 게재 기사 — 데이터센터 전력수요 2040년까지 6배 느는데…LNG 제외땐 구매단가 6.2% 올라",
+     "url": "https://v.daum.net/v/20260429180347527",
+     "date": "2026-04-29",
+     "read": "full"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "med",
+   "note": "국회 상임위는 직접 구매 대상을 재생에너지와 LNG 발전으로 넓히는 안을 논의했지만 최종 법안에서 LNG 발전사업자가 빠졌다. 기후에너지환경부는 계통 운영 부담과 지역 내 생산·소비 원칙을 들어 반대했다. 2025년 한전이 LNG 발전사에서 산 전기의 평균 단가는 kWh 당 158.4원, 일반용 평균 전력량 요금은 168.9원이었다. 정부 쪽은 한전 계통으로 공급할 수 있다는 입장이다."
+  },
+  {
+   "id": "grid-jp-wait",
+   "topic": "I1",
+   "kind": "grid",
+   "country": "JP",
+   "city": null,
+   "item": "계통 접속까지 걸리는 기간(긴 사례)",
+   "value": 10,
+   "unit": "년(최장)",
+   "asof": "2026-03",
+   "basis": "에너지 자문사의 정리: 접속 일정이 길어지고 일부는 최장 10년에 이른다",
+   "refs": [
+    {
+     "bundle": "D",
+     "id": "access-jp-tepco"
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "Shulman Advisory — Japan's Data Center Build-Out: Bottlenecks and Strategic Direction",
+     "url": "https://shulman-advisory.com/japans-data-center-build-out-bottlenecks-and-strategic-direction/",
+     "date": "2026-03-03",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "low",
+   "note": "공식 통계가 아니라 자문사 글이다. 같은 글은 인자이에서 처음 신청된 용량의 약 30%가 쓰이지 않을 것으로 확인됐다고 적었다(용량 선점 신청). 도쿄·오사카에 데이터센터의 약 90%가 있다."
+  },
+  {
+   "id": "block-jp-jera-chiba",
+   "topic": "I1",
+   "kind": "block",
+   "country": "JP",
+   "city": "Chiba",
+   "item": "JERA 지바 화력발전소 옆 AI 데이터센터",
+   "value": 400,
+   "unit": "MW",
+   "asof": "2026-10",
+   "basis": "'약 400MW 를 끌어 쓴다'는 보도. 구속력 없는 합의 단계이고 기준(IT·수전)은 밝혀지지 않았다",
+   "gate": {
+    "site": "JERA 지바 화력발전소 인접 부지",
+    "operator": "JERA·Dell·RHAELM",
+    "tenant": null,
+    "mw": {
+     "value": 400,
+     "basis": "unknown"
+    },
+    "stage": "MoU",
+    "first_power": "2028 무렵(목표)",
+    "power": "발전소 직결(가스 화력)",
+    "capital": "150억 달러 이상(전 단계). Apollo 가 개발사의 금융 파트너",
+    "serves": "불명"
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "The Next Web — Japan eyes $140bn AI data centre push with Dell and JERA, FT reports",
+     "url": "https://thenextweb.com/news/japan-140bn-ai-data-centre-dell-jera",
+     "date": "2026-10-01",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "JERA·Dell·RHAELM 이 2026-10-01 구속력 없는 합의에 서명했다. 계통 접속을 기다리지 않고 발전소에서 바로 전기를 받는 구조이고, 전 단계 합계 150억 달러(2.3조 엔) 이상, 가동 목표는 2028년 무렵이다. Apollo 가 RHAELM 의 금융 파트너다. 영국 경제지 보도를 옮긴 기사를 읽었다."
+  },
+  {
+   "id": "block-kr-ulsan",
+   "topic": "I1",
+   "kind": "block",
+   "country": "KR",
+   "city": "Ulsan",
+   "item": "SK AI 데이터센터 울산 — 100MW 건설과 900MW 확장 협의",
+   "value": 1000,
+   "unit": "MW(목표)",
+   "asof": "2026-09",
+   "basis": "건설 중 100MW + 협의 중 900MW. 확장분은 계약이 발표되지 않았다",
+   "gate": {
+    "site": "울산 미포 국가산업단지",
+    "operator": "SK텔레콤·SK에코플랜트 등",
+    "tenant": "AWS(100MW)",
+    "mw": {
+     "value": 1000,
+     "basis": "unknown"
+    },
+    "stage": "착공(100MW) · 협의(900MW)",
+    "first_power": "2027 하반기(100MW)",
+    "power": "인접 LNG 열병합 발전소 직접 공급 + 계통",
+    "capital": "100MW 에 약 7조 원(AWS 와 SK). 확장분은 미공개",
+    "serves": "불명"
+   },
+   "refs": [
+    {
+     "bundle": "A",
+     "id": "aws-kr-ulsan-sk"
+    },
+    {
+     "bundle": "D",
+     "id": "onsite-kr-ulsan"
+    },
+    {
+     "bundle": "G",
+     "id": "capacity-kr"
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "파이낸셜뉴스 — 최태원 \"울산 AI데이터센터 900MW 확대 상당히 진척…곧 발표 가능\"",
+     "url": "https://www.fnnews.com/news/202609130755399799",
+     "date": "2026-09-13",
+     "read": "full"
+    },
+    {
+     "n": 2,
+     "title": "SK텔레콤 뉴스룸 — SKT, 15GW 규모 AI 데이터센터 구축 추진… '아시아 AI 인프라 허브' 목표",
+     "url": "https://news.sktelecom.com/227469",
+     "date": "2026-07-04",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "SK 는 AWS 와 약 7조 원을 들여 100MW 를 짓고 있고 2027년 하반기 가동이 목표다. 최태원 회장은 2026-09-11 확장에 대해 '거의 900메가까지 다 왔다', 끝나면 곧 발표할 수 있을 것 같다고 말했다. 상대 회사는 밝히지 않았다."
+  },
+  {
+   "id": "block-kr-haenam-samsung",
+   "topic": "I1",
+   "kind": "block",
+   "country": "KR",
+   "city": "Haenam",
+   "item": "삼성SDS 해남 솔라시도 AI 데이터센터",
+   "value": 210,
+   "unit": "MW",
+   "asof": "2026-06",
+   "basis": "삼성의 발표문에 적힌 '210MW급'. 기준은 밝혀지지 않았다",
+   "gate": {
+    "site": "해남 솔라시도 기업도시",
+    "operator": "삼성SDS",
+    "tenant": "삼성SDS 자체·정부 사업",
+    "mw": {
+     "value": 210,
+     "basis": "unknown"
+    },
+    "stage": "발표(국가 AI 컴퓨팅센터는 착공)",
+    "first_power": "2028(국가 AI 컴퓨팅센터 준공 목표)",
+    "power": "계통 + 인근 태양광(98MW 가동, 5.4GW 집적화단지 계획)",
+    "capital": "17조 원(국가 AI 컴퓨팅센터 2.5조 원 포함, 보도)",
+    "serves": "국내"
+   },
+   "refs": [
+    {
+     "bundle": "G",
+     "id": "program-kr-national-ai-computing"
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "삼성전자 반도체 뉴스룸 — 삼성, 미래 성장 위해 호남에 425조원 투자",
+     "url": "https://news.samsungsemiconductor.com/kr/%ec%82%bc%ec%84%b1-%eb%af%b8%eb%9e%98-%ec%84%b1%ec%9e%a5-%ec%9c%84%ed%95%b4-%ed%98%b8%eb%82%a8%ec%97%90-425%ec%a1%b0%ec%9b%90-%ed%88%ac%ec%9e%90/",
+     "date": "2026-06-30",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "머니투데이 — 청년 떠나던 곳, 햇빛·바람 채우자…\"삼성 17조 약속\" 뭉칫돈 몰린다",
+     "url": "https://www.mt.co.kr/industry/2026/07/19/2026071822480520000",
+     "date": "2026-07-19",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "삼성은 2026-06-30 호남 투자 계획에서 삼성SDS 가 솔라시도에 210MW 급 AI 데이터센터를 짓는다고 밝혔다. 보도는 국가 AI 컴퓨팅센터(총사업비 2.5조 원)를 포함해 솔라시도 데이터센터에 17조 원을 투자한다고 전했고, 삼성 외에 적어도 여섯 사업자가 투자를 검토 중이라고 적었다. 용도는 정부·공공의 AI 전환 지원, 연구개발, 로봇 AI 모델의 학습·추론으로 적혀 있다."
+  },
+  {
+   "id": "block-kr-skt-plan",
+   "topic": "I1",
+   "kind": "block",
+   "country": "KR",
+   "city": null,
+   "item": "SK텔레콤의 AI 데이터센터 구축 구상",
+   "value": 15000,
+   "unit": "MW(2035년 구상)",
+   "asof": "2026-07",
+   "basis": "회사가 밝힌 '최대 15GW' 구상. 수요와 투자 요건을 보아 가며 차례로 추진한다고 적었다 — 확정 계획이 아니다",
+   "gate": {
+    "site": "울산·영남권·서남권(부지 미정 포함)",
+    "operator": "SK텔레콤",
+    "tenant": null,
+    "mw": {
+     "value": 15000,
+     "basis": "unknown"
+    },
+    "stage": "구상",
+    "first_power": "2029부터(5GW, 목표)",
+    "power": "미정",
+    "capital": "1GW 에 약 70조 원으로 추정. 자체 투자·파트너 투자·장기 고객 계약·프로젝트 금융",
+    "serves": "권역·세계"
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "SK텔레콤 뉴스룸 — SKT, 15GW 규모 AI 데이터센터 구축 추진… '아시아 AI 인프라 허브' 목표",
+     "url": "https://news.sktelecom.com/227469",
+     "date": "2026-07-04",
+     "read": "full"
+    },
+    {
+     "n": 2,
+     "title": "TelecomTV(SK텔레콤 보도자료 게재) — SK Telecom pursues 15GW AI datacentre buildout",
+     "url": "https://www.telecomtv.com/content/ai/sk-telecom-pursues-15gw-ai-datacentre-buildout-aiming-to-become-asia-s-ai-infrastructure-hub-55822/",
+     "date": "2026-07-07",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "울산을 시작으로 영남권 2GW 이상, 서남권 1GW 를 포함해 2029년부터 5GW 를 단계적으로 열고 2035년 15GW 를 목표로 한다. 회사는 부지 선정, 전력 수급, 핵심 입주사(앵커 테넌트) 확보를 함께 검토한다고 밝혔다."
+  },
+  {
+   "id": "block-in-google-vizag",
+   "topic": "I1",
+   "kind": "block",
+   "country": "IN",
+   "city": "Visakhapatnam",
+   "item": "Google 인도 AI 허브(비사카파트남)",
+   "value": 1000,
+   "unit": "MW(기가와트급)",
+   "asof": "2026-04",
+   "basis": "발표문의 '기가와트급'을 1,000MW 로 적었다. 정확한 용량과 기준은 밝혀지지 않았다",
+   "gate": {
+    "site": "비사카파트남 타를루바다 등 캠퍼스 3곳",
+    "operator": "AdaniConneX·Nxtra by Airtel",
+    "tenant": "Google",
+    "mw": {
+     "value": 1000,
+     "basis": "unknown"
+    },
+    "stage": "착공",
+    "first_power": null,
+    "power": "계통 + 새 청정 전원 조달(장기 전략)",
+    "capital": "150억 달러(Google, 2026~2030)",
+    "serves": "국내"
+   },
+   "refs": [
+    {
+     "bundle": "A",
+     "id": "google-in-vizag"
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "Google Cloud Press Corner — Google Breaks Ground on India AI Hub",
+     "url": "https://www.googlecloudpresscorner.com/2026-04-28-Google-Breaks-Ground-on-India-AI-Hub,-Launching-a-National-Industrial-Ecosystem-Alongside-Indias-Digital-Infrastructure-Milestone",
+     "date": "2026-04-28",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "Google 은 2026~2030년 5년간 150억 달러를 투자하고 데이터센터 캠퍼스 세 곳으로 이뤄진 허브를 짓는다. 2026-04-28 착공식을 열었고 AdaniConneX 와 Nxtra(Airtel)가 건물과 연결 설비를 짓는다. 발표문은 새 청정 전원을 계통에 더하는 장기 전략과 해저케이블 육양을 함께 적었다."
+  },
+  {
+   "id": "block-in-reliance-jamnagar",
+   "topic": "I1",
+   "kind": "block",
+   "country": "IN",
+   "city": "Jamnagar",
+   "item": "릴라이언스 잠나가르 AI 데이터센터",
+   "value": null,
+   "unit": "MW",
+   "asof": "2026-02",
+   "basis": "회사는 '수 기가와트'라고만 밝혀 숫자를 비웠다. 첫 물량은 120MW 이상(2026년 하반기 가동 목표)",
+   "gate": {
+    "site": "구자라트 잠나가르",
+    "operator": "Reliance Industries(Jio Intelligence)",
+    "tenant": "릴라이언스 자체 서비스, Meta(168MW 임차)",
+    "mw": {
+     "value": null,
+     "basis": "unknown"
+    },
+    "stage": "착공",
+    "first_power": "2026 하반기(120MW 이상, 목표)",
+    "power": "자체 청정 전원(10GW, 회사 설명)",
+    "capital": "릴라이언스(7년간 10조 루피, 약 1,100억 달러 — AI·데이터센터 전체)",
+    "serves": "국내"
+   },
+   "refs": [
+    {
+     "bundle": "B",
+     "id": "meta-in-reliance-jamnagar"
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "The Core — Reliance Commits Rs 10 Lakh Crore To Build AI Data Centres In India",
+     "url": "https://www.thecore.in/business/reliance-commits-rs-10-lakh-crore-to-build-ai-data-centres-in-india-858773",
+     "date": "2026-02-19",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "Built In — Reliance Industries to Invest $110B in Data Centers Across India",
+     "url": "https://builtin.com/articles/reliance-industries-to-invest-110b-in-data-centers-across-india-20260219",
+     "date": "2026-02-19",
+     "read": "partial"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "med",
+   "note": "릴라이언스 회장은 2026-02-19 잠나가르에서 수 기가와트의 AI 데이터센터 건설을 이미 시작했고 120MW 이상이 2026년 하반기에 가동된다고 밝혔다. 7년간 10조 루피를 AI 와 데이터센터에 투자하고 자체 청정 전원 10GW 로 받친다고 했다. 회사 발표문이 아니라 발표를 옮긴 기사 두 건을 읽었다. Meta 가 빌리는 168MW 는 묶음 B 에 있다."
+  },
+  {
+   "id": "block-au-nextdc-s7",
+   "topic": "I1",
+   "kind": "block",
+   "country": "AU",
+   "city": "Sydney",
+   "item": "NEXTDC S7(이스턴 크리크) AI 캠퍼스",
+   "value": 550,
+   "unit": "MW",
+   "asof": "2025-12",
+   "basis": "NEXTDC 가 밝힌 예상 용량. 기준은 밝혀지지 않았다",
+   "gate": {
+    "site": "시드니 이스턴 크리크",
+    "operator": "NEXTDC",
+    "tenant": "OpenAI(양해각서)",
+    "mw": {
+     "value": 550,
+     "basis": "unknown"
+    },
+    "stage": "MoU",
+    "first_power": "2027 하반기(첫 단계, 목표)",
+    "power": "계통(부지 안 변전소)",
+    "capital": "NEXTDC 가 개발(보도 기준 70억 호주달러)",
+    "serves": "국내"
+   },
+   "refs": [
+    {
+     "bundle": "B",
+     "id": "openai-au-nextdc-s7"
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "iTnews — NEXTDC to build AI campus and GPU \"supercluster\" in Sydney",
+     "url": "https://www.itnews.com.au/news/nextdc-to-build-ai-campus-and-gpu-supercluster-in-sydney-622380",
+     "date": "2025-12-05",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "NEXTDC 는 S7 이 550MW 를 낼 것으로 보고 첫 단계를 2027년 하반기에 내놓는다고 했다. OpenAI 와는 양해각서 단계이고, 호주 안의 OpenAI 서비스와 국내 고객의 데이터 주권 보장에 쓴다고 적혔다."
+  },
+  {
+   "id": "block-my-ytl-johor",
+   "topic": "I1",
+   "kind": "block",
+   "country": "MY",
+   "city": "Johor",
+   "item": "YTL 그린 데이터센터 파크(조호르)",
+   "value": 500,
+   "unit": "MW",
+   "asof": "2022-04",
+   "basis": "2022년 발표 당시의 캠퍼스 계획 용량. 지금 가동 용량은 확인하지 못했다",
+   "gate": {
+    "site": "조호르 이스칸다르(쿨라이)",
+    "operator": "YTL Power",
+    "tenant": null,
+    "mw": {
+     "value": 500,
+     "basis": "unknown"
+    },
+    "stage": "발표(2022년. 그 뒤 진척 미확인)",
+    "first_power": null,
+    "power": "계통 + 부지 안 태양광 300MW(계획)",
+    "capital": "YTL 그룹",
+    "serves": "불명"
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "Mingtiandi — YTL Developing 500MW Data Centre Campus in Iskandar",
+     "url": "https://www.mingtiandi.com/real-estate/data-centres/ytl-developing-500mw-data-centre-campus-in-iskandar/",
+     "date": "2022-04-26",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "low",
+   "note": "YTL Power 가 2022년에 조호르 이스칸다르의 산업 부지에 500MW 캠퍼스를 발표했고 부지 안에 300MW 태양광 발전을 짓는다고 했다. 2022년 기사만 읽었고 그 뒤 진척과 입주사는 원문으로 확인하지 못했다."
+  },
+  {
+   "id": "block-us-stargate",
+   "topic": "I1",
+   "kind": "block",
+   "country": "US",
+   "city": null,
+   "item": "Stargate 의 미국 안 계획 용량(견줄 기준)",
+   "value": 7000,
+   "unit": "MW(계획, '거의 7GW')",
+   "asof": "2025-09",
+   "basis": "OpenAI 발표문의 '거의 7기가와트의 계획 용량, 3년간 4,000억 달러 이상'. 약정 전체는 10GW·5,000억 달러",
+   "gate": {
+    "site": "텍사스 애빌린 등 미국 6곳",
+    "operator": "Oracle·SoftBank·Crusoe 등",
+    "tenant": "OpenAI",
+    "mw": {
+     "value": 7000,
+     "basis": "unknown"
+    },
+    "stage": "가동(애빌린) · 착공·발표(나머지)",
+    "first_power": "2025(애빌린)",
+    "power": "부지마다 다름",
+    "capital": "3년간 4,000억 달러 이상(약정 전체 5,000억 달러·10GW)",
+    "serves": "권역·세계"
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "OpenAI — OpenAI, Oracle, and SoftBank expand Stargate with five new AI data center sites",
+     "url": "https://openai.com/index/five-new-stargate-sites/",
+     "date": "2025-09-23",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "미국 다섯 새 부지와 애빌린, CoreWeave 물량을 더한 값이다. 애빌린은 2025-09 에 이미 가동 중이었고 OpenAI 는 여기서 초기 학습과 추론 작업을 시작했다고 적었다. 미국 밖 건들과 규모를 견주려고 넣은 기록이다."
+  },
+  {
+   "id": "anchor-kr-regional",
+   "topic": "I2",
+   "kind": "anchor",
+   "country": "KR",
+   "city": null,
+   "item": "비수도권에서 진행된 데이터센터의 임차·수요 주체",
+   "value": null,
+   "unit": "사례",
+   "asof": "2026-05",
+   "basis": "기사의 분석: 비수도권에서 진행된 사례는 전력 여건이 아니라 대형 앵커가 먼저 붙은 경우다",
+   "cases": [
+    {
+     "site": "삼성SDS 구미",
+     "mw": 60,
+     "anchor": "삼성SDS 자체 수요"
+    },
+    {
+     "site": "국가 AI 컴퓨팅센터(해남)",
+     "mw": 40,
+     "anchor": "정부·대형 ICT 기업"
+    }
+   ],
+   "refs": [
+    {
+     "bundle": "G",
+     "id": "capacity-kr"
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "머니투데이 — 수도권엔 전기가, 지방엔 고객이 없다…데이터센터의 삼중고",
+     "url": "https://www.mt.co.kr/tech/2026/05/20/2026051922000848265",
+     "date": "2026-05-20",
+     "read": "full"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "med",
+   "note": "삼성SDS 구미(60MW, 4,273억 원, 2029년 운영 목표)는 자사 GPU 서비스 수요로 채우고, 국가 AI 컴퓨팅센터(해남, 2.5조 원)는 정부와 대형 ICT 기업이 수요를 보증한다. 업계 관계자들은 임차인이 정해지지 않으면 프로젝트 금융을 짜기 어렵고, 지연시간에 민감한 추론·플랫폼 수요가 수도권에 몰려 있다고 말했다."
+  },
+  {
+   "id": "carrier-kr-skt-gw-cost",
+   "topic": "I2",
+   "kind": "cost",
+   "country": "KR",
+   "city": null,
+   "item": "1GW 급 AI 데이터센터의 사업비 추정(SK텔레콤)",
+   "value": 70,
+   "unit": "조 원/GW",
+   "asof": "2026-07",
+   "basis": "SK텔레콤 보도자료: 전형적인 1GW 급 AI 데이터센터 건설에 약 70조 원이 들 수 있다(고성능 연산 설비와 메모리 가격 상승 반영)",
+   "sources": [
+    {
+     "n": 1,
+     "title": "TelecomTV(SK텔레콤 보도자료 게재) — SK Telecom pursues 15GW AI datacentre buildout",
+     "url": "https://www.telecomtv.com/content/ai/sk-telecom-pursues-15gw-ai-datacentre-buildout-aiming-to-become-asia-s-ai-infrastructure-hub-55822/",
+     "date": "2026-07-07",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "SK텔레콤 뉴스룸 — SKT, 15GW 규모 AI 데이터센터 구축 추진… '아시아 AI 인프라 허브' 목표",
+     "url": "https://news.sktelecom.com/227469",
+     "date": "2026-07-04",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "회사는 이 비용을 자체 투자만이 아니라 전략적 파트너의 투자, 장기 고객 계약, 프로젝트 금융으로 조달한다고 밝혔다. 서버·GPU 가 든 값이다."
+  },
+  {
+   "id": "carrier-kr-telco-2025",
+   "topic": "I2",
+   "kind": "carrier",
+   "country": "KR",
+   "city": null,
+   "item": "SK텔레콤의 2025년 영업이익(국내 사업자의 규모)",
+   "value": 1.0732,
+   "unit": "조 원",
+   "asof": "2025",
+   "basis": "2025년 연간 실적(연결). 매출 17조 992억 원",
+   "detail": {
+    "operating_profit_trn_krw": {
+     "SKT": 1.0732,
+     "KT": 2.4691,
+     "LGU+": 0.8921,
+     "three": 4.4251
+    },
+    "skt_dc_revenue_trn_krw": 0.5199
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "디지털데일리 — 엇갈린 통신3사 작년 실적…6G 앞두고 CAPEX는 '안갯속'",
+     "url": "https://www.ddaily.co.kr/page/view/2026021110263481705",
+     "date": "2026-02-11",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "통신 3사 합산 영업이익은 4조 4,251억 원이다(KT 2조 4,691억 원, LG유플러스 8,921억 원). 2025년 설비투자는 SK텔레콤 24.1%, KT 5.8%, LG유플러스 8.9% 줄었다. SK텔레콤의 데이터센터 매출은 5,199억 원이고 회사는 울산 구축 뒤 연 1조 원 매출을 기대한다고 했다."
+  },
+  {
+   "id": "carrier-kr-growth-fund",
+   "topic": "I2",
+   "kind": "carrier",
+   "country": "KR",
+   "city": "Goyang",
+   "item": "국민성장펀드의 AI 데이터센터 금융 지원 사례(고양)",
+   "value": 2.42,
+   "unit": "조 원",
+   "asof": "2026-06",
+   "basis": "계산: 첨단전략산업기금 투자 2,500억 원 + 후순위 대출 2,500억 원 + 산업은행 등의 선순위 대출 1조 9,200억 원",
+   "sources": [
+    {
+     "n": 1,
+     "title": "딜사이트 — 국민성장펀드, 퓨리오사AI에 8000억 투자 승인",
+     "url": "https://dealsite.co.kr/articles/162787",
+     "date": "2026-06-01",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "스마일게이트그룹이 고양에 짓는 AI 데이터센터에 대한 지원으로 2026-05 말 승인됐다고 보도됐다. 정책 금융이 데이터센터 한 건에 댄 금액의 크기를 보여 주는 사례다. 사업의 용량은 이 기사에 없다."
+  },
+  {
+   "id": "cost-gw-nvidia",
+   "topic": "I2",
+   "kind": "cost",
+   "country": "US",
+   "city": null,
+   "item": "1GW AI 데이터센터의 건설비(NVIDIA 대표의 발언)",
+   "value": 50,
+   "unit": "십억 달러/GW(범위의 아래 끝)",
+   "asof": "2026-09",
+   "basis": "'500억~600억 달러'라는 발언의 아래 끝. 2026-09-15 방송 인터뷰를 옮긴 글에서 읽었다",
+   "detail": {
+    "range_usd_bn_per_gw": [
+     50,
+     60
+    ],
+    "rental_revenue_usd_bn_per_year": 50
+   },
+   "refs": [
+    {
+     "bundle": "I",
+     "id": "block-us-stargate"
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "TFTC — Jensen Huang $50B AI Factory: The Math That Doesn't Hold(CNBC 인터뷰 인용)",
+     "url": "https://www.tftc.io/jensen-huang-1gw-ai-factory-50-billion-rent-payback",
+     "date": "2026-09-24",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "Investing.com — How much does a GW of data center capacity actually cost",
+     "url": "https://www.investing.com/news/stock-market-news/how-much-does-a-gw-of-data-center-capacity-actually-cost-4314046",
+     "date": null,
+     "read": "search_summary"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [
+    {
+     "value": 35,
+     "basis": "증권사 Bernstein 의 추정(GW 당 약 350억 달러) — 검색 요약으로만 확인",
+     "url": "https://www.investing.com/news/stock-market-news/how-much-does-a-gw-of-data-center-capacity-actually-cost-4314046"
+    }
+   ],
+   "conf": "med",
+   "note": "같은 발언은 그 시설이 한 해 약 500억 달러의 임대 매출을 낸다고 했다. 글쓴이는 가동률 가정이 빠졌다고 비판했다. 발언 원문(방송)은 직접 확인하지 못했다. OpenAI 의 Stargate 약정(5,000억 달러·10GW)도 GW 당 500억 달러다. 더 낮은 추정(GW 당 약 350억 달러)도 있어 alt 에 남겼다."
+  },
+  {
+   "id": "workload-kr-metro",
+   "topic": "I3",
+   "kind": "workload",
+   "country": "KR",
+   "city": null,
+   "item": "데이터센터 전력 신청의 수도권 비중",
+   "value": 71,
+   "unit": "%",
+   "asof": "2026-03",
+   "basis": "전력계통영향평가 1차 기술검토 신청 736건 가운데 수도권 522건(2024-08-01~2026-03-27)",
+   "refs": [
+    {
+     "bundle": "I",
+     "id": "grid-kr-review"
+    },
+    {
+     "bundle": "E",
+     "id": "market-seoul"
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "머니투데이 — 수도권엔 전기가, 지방엔 고객이 없다…데이터센터의 삼중고",
+     "url": "https://www.mt.co.kr/tech/2026/05/20/2026051922000848265",
+     "date": "2026-05-20",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "업계 관계자들은 AI 추론 센터가 지연시간을 줄이려면 수요처와 인력이 모인 수도권 가까이에 있어야 한다고 말했다. 10MW 이하 소규모 분산 센터의 수요도 수도권에 몰린다. 수요는 수도권에, 전력은 비수도권에 있다는 것이 기사의 정리다."
+  }
+ ]
+}
