@@ -2,8 +2,7647 @@
  "schema": 1,
  "bundle": "F",
  "title": "나머지 조건(채점표 재료)",
- "updated_kst": null,
+ "updated_kst": "2026-11-18T21:01:36+09:00",
  "measure": null,
- "notes": [],
- "records": []
+ "notes": [
+  "주제는 F1 재난, F2 인력, F3 제도, F4 지정학, F5 인센티브와 비용, F6 기후와 용수다. 기록의 topic 과 kind 로 나뉜다. 채점은 하지 않았고 값은 원자료다.",
+  "auto 가 true 인 기록은 `desk datasets conditions` 가 공개 자료에서 다시 만든다: INFORM Risk Index 와 WorldRiskIndex(재난), 세계은행 거버넌스 지수(법치·규제 품질·정치 안정), GitHub Innovation Graph(개발자 계정 수), Open-Meteo 의 ERA5 재분석(도시별 기온·습구온도). 나머지는 손으로 넣었다.",
+  "지수는 재는 것이 서로 다르다. 재난 지수 둘은 나라 전체의 인구 노출이고 대만을 다루지 않는다. 거버넌스 지수와 평화지수는 인식·복합 지표다. 기록의 definition 에 한계를 적었다.",
+  "제도 기록(국외 이전, 국내 처리 요구, 소요 기간, 인센티브, 용수 기준)은 법령 원문이 아니라 로펌의 나라별 비교 자료(DLA Piper Data Protection Laws of the World, King & Wood Mallesons Data Centres APAC Regulatory Guide 2026)를 읽은 것이다. 값이 없는 제도 기록은 note 에 내용을 적었다.",
+  "미국 수출통제 지위는 2026-11-16 의 임시 최종 규칙 'Addressing Remote Access to Advanced Semiconductors'(관보 2026-11-19 게재·시행 예정)의 사전 공개본과 수출관리규정의 나라 그룹표를 읽은 것이다. 의견 수렴 뒤 바뀔 수 있다.",
+  "기후 요약은 2021~2025년 시간별 재분석 값에서 낸 계산값이고 관측소 값이 아니다. 싱가포르와 조호르는 같은 격자에 든다.",
+  "원문 확인 비중은 건수로 센다(measure 가 null). 나라 코드 ZZ 는 세계 전체를 다룬 기록이다."
+ ],
+ "by_country": {
+  "countries": {
+   "KR": {
+    "records": 19,
+    "by_topic": {
+     "F1": 4,
+     "F2": 3,
+     "F3": 5,
+     "F4": 3,
+     "F5": 2,
+     "F6": 2
+    },
+    "keys": {
+     "inform_natural": {
+      "id": "inform-kr",
+      "value": 6,
+      "unit": "점(0~10, 클수록 위험)",
+      "asof": "2025"
+     },
+     "wri_exposure": {
+      "id": "wri-kr",
+      "value": 9.83,
+      "unit": "점(0~100, 클수록 위험)",
+      "asof": "2026"
+     },
+     "developers": {
+      "id": "developers-kr",
+      "value": 3500099,
+      "unit": "계정",
+      "asof": "2026-06"
+     },
+     "ai_talent_concentration": {
+      "id": "ai-talent-kr",
+      "value": 1.05,
+      "unit": "%(LinkedIn 회원 가운데 AI 인재)",
+      "asof": "2025"
+     },
+     "wage_monthly_usd": {
+      "id": "wage-kr",
+      "value": 3168,
+      "unit": "달러/월",
+      "asof": "2022"
+     },
+     "regulatory_quality": {
+      "id": "wgi-rq-kr",
+      "value": 1.003,
+      "unit": "추정치(-2.5~2.5, 클수록 좋음)",
+      "asof": "2025"
+     },
+     "rule_of_law": {
+      "id": "wgi-rl-kr",
+      "value": 1.195,
+      "unit": "추정치(-2.5~2.5, 클수록 좋음)",
+      "asof": "2025"
+     },
+     "data_transfer": {
+      "id": "data-transfer-kr",
+      "value": null,
+      "unit": "제도",
+      "asof": "2026"
+     },
+     "localisation": {
+      "id": "localisation-kr",
+      "value": null,
+      "unit": "제도",
+      "asof": "2026-11"
+     },
+     "export_control": {
+      "id": "export-kr",
+      "value": null,
+      "unit": "제도",
+      "asof": "2026-11-16"
+     },
+     "political_stability": {
+      "id": "wgi-pv-kr",
+      "value": 0.917,
+      "unit": "추정치(-2.5~2.5, 클수록 좋음)",
+      "asof": "2025"
+     },
+     "gpi_rank": {
+      "id": "gpi-kr",
+      "value": 57,
+      "unit": "위(163개국, 낮을수록 평화)",
+      "asof": "2026"
+     },
+     "incentive": {
+      "id": "incentive-kr",
+      "value": null,
+      "unit": "제도",
+      "asof": "2026-11"
+     },
+     "build_cost": {
+      "id": "build-cost-seoul",
+      "value": 10.42,
+      "unit": "달러/W",
+      "asof": "2026-10"
+     },
+     "water": {
+      "id": "water-kr",
+      "value": null,
+      "unit": "사례",
+      "asof": "2026-11"
+     }
+    }
+   },
+   "JP": {
+    "records": 19,
+    "by_topic": {
+     "F1": 2,
+     "F2": 3,
+     "F3": 5,
+     "F4": 3,
+     "F5": 3,
+     "F6": 3
+    },
+    "keys": {
+     "inform_natural": {
+      "id": "inform-jp",
+      "value": 8.3,
+      "unit": "점(0~10, 클수록 위험)",
+      "asof": "2025"
+     },
+     "wri_exposure": {
+      "id": "wri-jp",
+      "value": 43.35,
+      "unit": "점(0~100, 클수록 위험)",
+      "asof": "2026"
+     },
+     "developers": {
+      "id": "developers-jp",
+      "value": 6235551,
+      "unit": "계정",
+      "asof": "2026-06"
+     },
+     "ai_talent_concentration": {
+      "id": "ai-talent-jp",
+      "value": null,
+      "unit": "%(LinkedIn 회원 가운데 AI 인재)",
+      "asof": "2025"
+     },
+     "wage_monthly_usd": {
+      "id": "wage-jp",
+      "value": 2801,
+      "unit": "달러/월",
+      "asof": "2021"
+     },
+     "regulatory_quality": {
+      "id": "wgi-rq-jp",
+      "value": 1.221,
+      "unit": "추정치(-2.5~2.5, 클수록 좋음)",
+      "asof": "2025"
+     },
+     "rule_of_law": {
+      "id": "wgi-rl-jp",
+      "value": 1.542,
+      "unit": "추정치(-2.5~2.5, 클수록 좋음)",
+      "asof": "2025"
+     },
+     "data_transfer": {
+      "id": "data-transfer-jp",
+      "value": null,
+      "unit": "제도",
+      "asof": "2026"
+     },
+     "localisation": {
+      "id": "localisation-jp",
+      "value": null,
+      "unit": "제도",
+      "asof": "2026-11"
+     },
+     "export_control": {
+      "id": "export-jp",
+      "value": null,
+      "unit": "제도",
+      "asof": "2026-11-16"
+     },
+     "political_stability": {
+      "id": "wgi-pv-jp",
+      "value": 1.259,
+      "unit": "추정치(-2.5~2.5, 클수록 좋음)",
+      "asof": "2025"
+     },
+     "gpi_rank": {
+      "id": "gpi-jp",
+      "value": 10,
+      "unit": "위(163개국, 낮을수록 평화)",
+      "asof": "2026"
+     },
+     "incentive": {
+      "id": "incentive-jp",
+      "value": 300,
+      "unit": "억 엔(보조금 사례 1건)",
+      "asof": "2026-11"
+     },
+     "build_cost": {
+      "id": "build-cost-tokyo",
+      "value": 18.28,
+      "unit": "달러/W",
+      "asof": "2026-10"
+     },
+     "water": {
+      "id": "water-jp",
+      "value": null,
+      "unit": "사례",
+      "asof": "2026-11"
+     }
+    }
+   },
+   "SG": {
+    "records": 18,
+    "by_topic": {
+     "F1": 3,
+     "F2": 3,
+     "F3": 5,
+     "F4": 3,
+     "F5": 2,
+     "F6": 2
+    },
+    "keys": {
+     "inform_natural": {
+      "id": "inform-sg",
+      "value": 1.1,
+      "unit": "점(0~10, 클수록 위험)",
+      "asof": "2025"
+     },
+     "wri_exposure": {
+      "id": "wri-sg",
+      "value": 0.17,
+      "unit": "점(0~100, 클수록 위험)",
+      "asof": "2026"
+     },
+     "developers": {
+      "id": "developers-sg",
+      "value": 2527680,
+      "unit": "계정",
+      "asof": "2026-06"
+     },
+     "ai_talent_concentration": {
+      "id": "ai-talent-sg",
+      "value": 1.82,
+      "unit": "%(LinkedIn 회원 가운데 AI 인재)",
+      "asof": "2025"
+     },
+     "wage_monthly_usd": {
+      "id": "wage-sg",
+      "value": 3483,
+      "unit": "달러/월",
+      "asof": "2021"
+     },
+     "regulatory_quality": {
+      "id": "wgi-rq-sg",
+      "value": 2.113,
+      "unit": "추정치(-2.5~2.5, 클수록 좋음)",
+      "asof": "2025"
+     },
+     "rule_of_law": {
+      "id": "wgi-rl-sg",
+      "value": 1.489,
+      "unit": "추정치(-2.5~2.5, 클수록 좋음)",
+      "asof": "2025"
+     },
+     "data_transfer": {
+      "id": "data-transfer-sg",
+      "value": null,
+      "unit": "제도",
+      "asof": "2026"
+     },
+     "localisation": {
+      "id": "localisation-sg",
+      "value": null,
+      "unit": "제도",
+      "asof": "2026-11"
+     },
+     "export_control": {
+      "id": "export-sg",
+      "value": null,
+      "unit": "제도",
+      "asof": "2026-11-16"
+     },
+     "political_stability": {
+      "id": "wgi-pv-sg",
+      "value": 1.334,
+      "unit": "추정치(-2.5~2.5, 클수록 좋음)",
+      "asof": "2025"
+     },
+     "gpi_rank": {
+      "id": "gpi-sg",
+      "value": 8,
+      "unit": "위(163개국, 낮을수록 평화)",
+      "asof": "2026"
+     },
+     "incentive": {
+      "id": "incentive-sg",
+      "value": null,
+      "unit": "제도",
+      "asof": "2026-11"
+     },
+     "build_cost": {
+      "id": "build-cost-singapore",
+      "value": 15.39,
+      "unit": "달러/W",
+      "asof": "2026-10"
+     },
+     "water": {
+      "id": "water-sg",
+      "value": 2,
+      "unit": "m³/MWh(물 사용 효율 목표)",
+      "asof": "2026-11"
+     }
+    }
+   },
+   "MY": {
+    "records": 18,
+    "by_topic": {
+     "F1": 2,
+     "F2": 3,
+     "F3": 5,
+     "F4": 4,
+     "F5": 2,
+     "F6": 2
+    },
+    "keys": {
+     "inform_natural": {
+      "id": "inform-my",
+      "value": 4.6,
+      "unit": "점(0~10, 클수록 위험)",
+      "asof": "2025"
+     },
+     "wri_exposure": {
+      "id": "wri-my",
+      "value": 8.86,
+      "unit": "점(0~100, 클수록 위험)",
+      "asof": "2026"
+     },
+     "developers": {
+      "id": "developers-my",
+      "value": 1257073,
+      "unit": "계정",
+      "asof": "2026-06"
+     },
+     "ai_talent_concentration": {
+      "id": "ai-talent-my",
+      "value": null,
+      "unit": "%(LinkedIn 회원 가운데 AI 인재)",
+      "asof": "2025"
+     },
+     "wage_monthly_usd": {
+      "id": "wage-my",
+      "value": 698,
+      "unit": "달러/월",
+      "asof": "2020"
+     },
+     "regulatory_quality": {
+      "id": "wgi-rq-my",
+      "value": 0.684,
+      "unit": "추정치(-2.5~2.5, 클수록 좋음)",
+      "asof": "2025"
+     },
+     "rule_of_law": {
+      "id": "wgi-rl-my",
+      "value": 0.408,
+      "unit": "추정치(-2.5~2.5, 클수록 좋음)",
+      "asof": "2025"
+     },
+     "data_transfer": {
+      "id": "data-transfer-my",
+      "value": null,
+      "unit": "제도",
+      "asof": "2026"
+     },
+     "localisation": {
+      "id": "localisation-my",
+      "value": null,
+      "unit": "제도",
+      "asof": "2026-11"
+     },
+     "export_control": {
+      "id": "export-my",
+      "value": null,
+      "unit": "제도",
+      "asof": "2026-11-16"
+     },
+     "political_stability": {
+      "id": "wgi-pv-my",
+      "value": 0.34,
+      "unit": "추정치(-2.5~2.5, 클수록 좋음)",
+      "asof": "2025"
+     },
+     "gpi_rank": {
+      "id": "gpi-my",
+      "value": 12,
+      "unit": "위(163개국, 낮을수록 평화)",
+      "asof": "2026"
+     },
+     "incentive": {
+      "id": "incentive-my",
+      "value": null,
+      "unit": "제도",
+      "asof": "2026-11"
+     },
+     "build_cost": {
+      "id": "build-cost-johor",
+      "value": 10.06,
+      "unit": "달러/W",
+      "asof": "2026-10"
+     },
+     "water": {
+      "id": "water-my",
+      "value": 0.8,
+      "unit": "물 부족 지수(입지 한도)",
+      "asof": "2026-11"
+     }
+    }
+   },
+   "AU": {
+    "records": 19,
+    "by_topic": {
+     "F1": 3,
+     "F2": 3,
+     "F3": 4,
+     "F4": 3,
+     "F5": 3,
+     "F6": 3
+    },
+    "keys": {
+     "inform_natural": {
+      "id": "inform-au",
+      "value": 4.7,
+      "unit": "점(0~10, 클수록 위험)",
+      "asof": "2025"
+     },
+     "wri_exposure": {
+      "id": "wri-au",
+      "value": 32.11,
+      "unit": "점(0~100, 클수록 위험)",
+      "asof": "2026"
+     },
+     "developers": {
+      "id": "developers-au",
+      "value": 2570949,
+      "unit": "계정",
+      "asof": "2026-06"
+     },
+     "ai_talent_concentration": {
+      "id": "ai-talent-au",
+      "value": null,
+      "unit": "%(LinkedIn 회원 가운데 AI 인재)",
+      "asof": "2025"
+     },
+     "wage_monthly_usd": {
+      "id": "wage-au",
+      "value": 4436,
+      "unit": "달러/월",
+      "asof": "2021"
+     },
+     "regulatory_quality": {
+      "id": "wgi-rq-au",
+      "value": 1.669,
+      "unit": "추정치(-2.5~2.5, 클수록 좋음)",
+      "asof": "2025"
+     },
+     "rule_of_law": {
+      "id": "wgi-rl-au",
+      "value": 1.459,
+      "unit": "추정치(-2.5~2.5, 클수록 좋음)",
+      "asof": "2025"
+     },
+     "data_transfer": {
+      "id": "data-transfer-au",
+      "value": null,
+      "unit": "제도",
+      "asof": "2026"
+     },
+     "localisation": {
+      "id": "localisation-au",
+      "value": null,
+      "unit": "제도",
+      "asof": "2026-11"
+     },
+     "export_control": {
+      "id": "export-au",
+      "value": null,
+      "unit": "제도",
+      "asof": "2026-11-16"
+     },
+     "political_stability": {
+      "id": "wgi-pv-au",
+      "value": 0.781,
+      "unit": "추정치(-2.5~2.5, 클수록 좋음)",
+      "asof": "2025"
+     },
+     "gpi_rank": {
+      "id": "gpi-au",
+      "value": 20,
+      "unit": "위(163개국, 낮을수록 평화)",
+      "asof": "2026"
+     },
+     "incentive": {
+      "id": "incentive-au",
+      "value": 10,
+      "unit": "%(원천징수 세율)",
+      "asof": "2026-11"
+     },
+     "build_cost": {
+      "id": "build-cost-sydney",
+      "value": 10.74,
+      "unit": "달러/W",
+      "asof": "2026-10"
+     },
+     "water": {
+      "id": "water-au",
+      "value": 250,
+      "unit": "백만 L/일(2035년 수요 전망, 최대)",
+      "asof": "2025"
+     }
+    }
+   },
+   "IN": {
+    "records": 22,
+    "by_topic": {
+     "F1": 3,
+     "F2": 3,
+     "F3": 5,
+     "F4": 3,
+     "F5": 4,
+     "F6": 4
+    },
+    "keys": {
+     "inform_natural": {
+      "id": "inform-in",
+      "value": 7.8,
+      "unit": "점(0~10, 클수록 위험)",
+      "asof": "2025"
+     },
+     "wri_exposure": {
+      "id": "wri-in",
+      "value": 40.83,
+      "unit": "점(0~100, 클수록 위험)",
+      "asof": "2026"
+     },
+     "developers": {
+      "id": "developers-in",
+      "value": 29013416,
+      "unit": "계정",
+      "asof": "2026-06"
+     },
+     "ai_talent_concentration": {
+      "id": "ai-talent-in",
+      "value": 1.01,
+      "unit": "%(LinkedIn 회원 가운데 AI 인재)",
+      "asof": "2025"
+     },
+     "wage_monthly_usd": {
+      "id": "wage-in",
+      "value": 255,
+      "unit": "달러/월",
+      "asof": "2025"
+     },
+     "regulatory_quality": {
+      "id": "wgi-rq-in",
+      "value": -0.17,
+      "unit": "추정치(-2.5~2.5, 클수록 좋음)",
+      "asof": "2025"
+     },
+     "rule_of_law": {
+      "id": "wgi-rl-in",
+      "value": -0.129,
+      "unit": "추정치(-2.5~2.5, 클수록 좋음)",
+      "asof": "2025"
+     },
+     "data_transfer": {
+      "id": "data-transfer-in",
+      "value": null,
+      "unit": "제도",
+      "asof": "2026"
+     },
+     "localisation": {
+      "id": "localisation-in",
+      "value": null,
+      "unit": "제도",
+      "asof": "2026-11"
+     },
+     "export_control": {
+      "id": "export-in",
+      "value": null,
+      "unit": "제도",
+      "asof": "2026-11-16"
+     },
+     "political_stability": {
+      "id": "wgi-pv-in",
+      "value": -0.608,
+      "unit": "추정치(-2.5~2.5, 클수록 좋음)",
+      "asof": "2025"
+     },
+     "gpi_rank": {
+      "id": "gpi-in",
+      "value": 127,
+      "unit": "위(163개국, 낮을수록 평화)",
+      "asof": "2026"
+     },
+     "incentive": {
+      "id": "incentive-in",
+      "value": 21,
+      "unit": "년(면세 기간, 계산)",
+      "asof": "2026-11"
+     },
+     "build_cost": {
+      "id": "build-cost-mumbai",
+      "value": 6.83,
+      "unit": "달러/W",
+      "asof": "2026-10"
+     },
+     "water": {
+      "id": "water-in",
+      "value": null,
+      "unit": "사례",
+      "asof": "2026-11"
+     }
+    }
+   },
+   "TW": {
+    "records": 16,
+    "by_topic": {
+     "F1": 2,
+     "F2": 3,
+     "F3": 4,
+     "F4": 3,
+     "F5": 2,
+     "F6": 2
+    },
+    "keys": {
+     "inform_natural": {
+      "id": "inform-tw",
+      "value": null,
+      "unit": "점(0~10, 클수록 위험)",
+      "asof": "2025"
+     },
+     "wri_exposure": {
+      "id": "wri-tw",
+      "value": null,
+      "unit": "점(0~100, 클수록 위험)",
+      "asof": "2026"
+     },
+     "developers": {
+      "id": "developers-tw",
+      "value": 2083789,
+      "unit": "계정",
+      "asof": "2026-06"
+     },
+     "ai_talent_concentration": {
+      "id": "ai-talent-tw",
+      "value": null,
+      "unit": "%(LinkedIn 회원 가운데 AI 인재)",
+      "asof": "2025"
+     },
+     "wage_monthly_usd": {
+      "id": "wage-tw",
+      "value": null,
+      "unit": "달러/월",
+      "asof": "2025"
+     },
+     "regulatory_quality": {
+      "id": "wgi-rq-tw",
+      "value": 1.195,
+      "unit": "추정치(-2.5~2.5, 클수록 좋음)",
+      "asof": "2025"
+     },
+     "rule_of_law": {
+      "id": "wgi-rl-tw",
+      "value": 1.201,
+      "unit": "추정치(-2.5~2.5, 클수록 좋음)",
+      "asof": "2025"
+     },
+     "data_transfer": {
+      "id": "data-transfer-tw",
+      "value": null,
+      "unit": "제도",
+      "asof": "2026"
+     },
+     "localisation": {
+      "id": "localisation-tw",
+      "value": null,
+      "unit": "제도",
+      "asof": "2026-11"
+     },
+     "export_control": {
+      "id": "export-tw",
+      "value": null,
+      "unit": "제도",
+      "asof": "2026-11-16"
+     },
+     "political_stability": {
+      "id": "wgi-pv-tw",
+      "value": 0.999,
+      "unit": "추정치(-2.5~2.5, 클수록 좋음)",
+      "asof": "2025"
+     },
+     "gpi_rank": {
+      "id": "gpi-tw",
+      "value": 42,
+      "unit": "위(163개국, 낮을수록 평화)",
+      "asof": "2026"
+     },
+     "incentive": {
+      "id": "incentive-tw",
+      "value": 5,
+      "unit": "년(소득세 면제, 계획)",
+      "asof": "2026-11"
+     },
+     "build_cost": {
+      "id": "build-cost-taipei",
+      "value": 9.44,
+      "unit": "달러/W",
+      "asof": "2026-10"
+     },
+     "water": {
+      "id": "water-tw",
+      "value": 13,
+      "unit": "%(산업용 대량 사용자의 절수 요구)",
+      "asof": "2021"
+     }
+    }
+   },
+   "ZZ": {
+    "records": 1,
+    "by_topic": {
+     "F2": 1
+    },
+    "keys": {}
+   }
+  },
+  "cities": {
+   "climate-seoul": {
+    "country": "KR",
+    "city": "서울",
+    "mean_dry_bulb_c": 12.2,
+    "mean_wet_bulb_c": 9.4,
+    "mean_rh_pct": 71.5,
+    "dry_bulb_p996_c": 33.3,
+    "wet_bulb_p996_c": 26.5,
+    "hot_hours_pct": 7.3
+   },
+   "climate-osaka": {
+    "country": "JP",
+    "city": "오사카",
+    "mean_dry_bulb_c": 16.7,
+    "mean_wet_bulb_c": 13.6,
+    "mean_rh_pct": 74.5,
+    "dry_bulb_p996_c": 35.7,
+    "wet_bulb_p996_c": 26.9,
+    "hot_hours_pct": 15.7
+   },
+   "climate-tokyo": {
+    "country": "JP",
+    "city": "도쿄",
+    "mean_dry_bulb_c": 16.3,
+    "mean_wet_bulb_c": 13,
+    "mean_rh_pct": 71.8,
+    "dry_bulb_p996_c": 35.8,
+    "wet_bulb_p996_c": 27.1,
+    "hot_hours_pct": 12.8
+   },
+   "climate-singapore": {
+    "country": "SG",
+    "city": "싱가포르",
+    "mean_dry_bulb_c": 26.7,
+    "mean_wet_bulb_c": 24.6,
+    "mean_rh_pct": 85.8,
+    "dry_bulb_p996_c": 32.6,
+    "wet_bulb_p996_c": 27.2,
+    "hot_hours_pct": 39.8
+   },
+   "climate-johor": {
+    "country": "MY",
+    "city": "조호르",
+    "mean_dry_bulb_c": 26.5,
+    "mean_wet_bulb_c": 24.6,
+    "mean_rh_pct": 86.3,
+    "dry_bulb_p996_c": 32.6,
+    "wet_bulb_p996_c": 27.3,
+    "hot_hours_pct": 36
+   },
+   "climate-melbourne": {
+    "country": "AU",
+    "city": "멜버른",
+    "mean_dry_bulb_c": 14.8,
+    "mean_wet_bulb_c": 11.4,
+    "mean_rh_pct": 72.5,
+    "dry_bulb_p996_c": 34.3,
+    "wet_bulb_p996_c": 21.7,
+    "hot_hours_pct": 3.6
+   },
+   "climate-sydney": {
+    "country": "AU",
+    "city": "시드니",
+    "mean_dry_bulb_c": 17.5,
+    "mean_wet_bulb_c": 14.3,
+    "mean_rh_pct": 73.9,
+    "dry_bulb_p996_c": 32.3,
+    "wet_bulb_p996_c": 24,
+    "hot_hours_pct": 2.9
+   },
+   "climate-chennai": {
+    "country": "IN",
+    "city": "첸나이",
+    "mean_dry_bulb_c": 28.1,
+    "mean_wet_bulb_c": 24.4,
+    "mean_rh_pct": 75.2,
+    "dry_bulb_p996_c": 37.4,
+    "wet_bulb_p996_c": 28.6,
+    "hot_hours_pct": 61
+   },
+   "climate-hyderabad": {
+    "country": "IN",
+    "city": "하이데라바드",
+    "mean_dry_bulb_c": 25.8,
+    "mean_wet_bulb_c": 20.2,
+    "mean_rh_pct": 63.2,
+    "dry_bulb_p996_c": 38.3,
+    "wet_bulb_p996_c": 25.1,
+    "hot_hours_pct": 36.8
+   },
+   "climate-mumbai": {
+    "country": "IN",
+    "city": "뭄바이",
+    "mean_dry_bulb_c": 26.9,
+    "mean_wet_bulb_c": 22.8,
+    "mean_rh_pct": 72,
+    "dry_bulb_p996_c": 36,
+    "wet_bulb_p996_c": 27.6,
+    "hot_hours_pct": 45.3
+   },
+   "climate-taipei": {
+    "country": "TW",
+    "city": "타이베이",
+    "mean_dry_bulb_c": 23.1,
+    "mean_wet_bulb_c": 20.4,
+    "mean_rh_pct": 79.7,
+    "dry_bulb_p996_c": 35.7,
+    "wet_bulb_p996_c": 27.7,
+    "hot_hours_pct": 26.5
+   }
+  }
+ },
+ "records": [
+  {
+   "id": "inform-kr",
+   "topic": "F1",
+   "kind": "hazard_index",
+   "auto": true,
+   "country": "KR",
+   "city": null,
+   "metric": "INFORM 위험 지수 — 자연재해 노출(Natural)",
+   "scope": "전국",
+   "definition": "지진·하천 홍수·쓰나미·열대 저기압·해안 홍수·가뭄·전염병에 노출된 인구를 0~10 으로 바꾼 값이다(클수록 위험). 나라 전체의 인구 노출이라 데이터센터가 있는 도시의 위험과는 다르다",
+   "key": "inform_natural",
+   "value": 6,
+   "unit": "점(0~10, 클수록 위험)",
+   "asof": "2025",
+   "basis": "INFORM Risk Index 2025 2nd edition (v0.7.0) 의 Natural 점수 그대로",
+   "index": {
+    "name": "INFORM Risk Index",
+    "edition": "2025 2nd edition (v0.7.0)",
+    "overall": 2.1,
+    "rank": 166,
+    "of": 191
+   },
+   "components": {
+    "earthquake": 6.9,
+    "river_flood": 7.1,
+    "tsunami": 5.7,
+    "cyclone": 8.3,
+    "coastal_flood": 7.1,
+    "drought": 0.3
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "INFORM Risk Index 2025 2nd edition (v0.7.0) — results and data (European Commission JRC, HDX 사본)",
+     "url": "https://data.humdata.org/dataset/inform-risk-index",
+     "date": "2026-11-18",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "종합 지수(overall)는 취약성과 대응 역량까지 합친 값이라 따로 두었다."
+  },
+  {
+   "id": "inform-jp",
+   "topic": "F1",
+   "kind": "hazard_index",
+   "auto": true,
+   "country": "JP",
+   "city": null,
+   "metric": "INFORM 위험 지수 — 자연재해 노출(Natural)",
+   "scope": "전국",
+   "definition": "지진·하천 홍수·쓰나미·열대 저기압·해안 홍수·가뭄·전염병에 노출된 인구를 0~10 으로 바꾼 값이다(클수록 위험). 나라 전체의 인구 노출이라 데이터센터가 있는 도시의 위험과는 다르다",
+   "key": "inform_natural",
+   "value": 8.3,
+   "unit": "점(0~10, 클수록 위험)",
+   "asof": "2025",
+   "basis": "INFORM Risk Index 2025 2nd edition (v0.7.0) 의 Natural 점수 그대로",
+   "index": {
+    "name": "INFORM Risk Index",
+    "edition": "2025 2nd edition (v0.7.0)",
+    "overall": 2.1,
+    "rank": 166,
+    "of": 191
+   },
+   "components": {
+    "earthquake": 9.7,
+    "river_flood": 7.8,
+    "tsunami": 10,
+    "cyclone": 9.2,
+    "coastal_flood": 9.4,
+    "drought": 0.5
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "INFORM Risk Index 2025 2nd edition (v0.7.0) — results and data (European Commission JRC, HDX 사본)",
+     "url": "https://data.humdata.org/dataset/inform-risk-index",
+     "date": "2026-11-18",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "종합 지수(overall)는 취약성과 대응 역량까지 합친 값이라 따로 두었다."
+  },
+  {
+   "id": "inform-sg",
+   "topic": "F1",
+   "kind": "hazard_index",
+   "auto": true,
+   "country": "SG",
+   "city": null,
+   "metric": "INFORM 위험 지수 — 자연재해 노출(Natural)",
+   "scope": "전국",
+   "definition": "지진·하천 홍수·쓰나미·열대 저기압·해안 홍수·가뭄·전염병에 노출된 인구를 0~10 으로 바꾼 값이다(클수록 위험). 나라 전체의 인구 노출이라 데이터센터가 있는 도시의 위험과는 다르다",
+   "key": "inform_natural",
+   "value": 1.1,
+   "unit": "점(0~10, 클수록 위험)",
+   "asof": "2025",
+   "basis": "INFORM Risk Index 2025 2nd edition (v0.7.0) 의 Natural 점수 그대로",
+   "index": {
+    "name": "INFORM Risk Index",
+    "edition": "2025 2nd edition (v0.7.0)",
+    "overall": 0.6,
+    "rank": 191,
+    "of": 191
+   },
+   "components": {
+    "earthquake": 0.1,
+    "river_flood": 0,
+    "tsunami": 0,
+    "cyclone": 0,
+    "coastal_flood": 2,
+    "drought": 0
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "INFORM Risk Index 2025 2nd edition (v0.7.0) — results and data (European Commission JRC, HDX 사본)",
+     "url": "https://data.humdata.org/dataset/inform-risk-index",
+     "date": "2026-11-18",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "종합 지수(overall)는 취약성과 대응 역량까지 합친 값이라 따로 두었다."
+  },
+  {
+   "id": "inform-my",
+   "topic": "F1",
+   "kind": "hazard_index",
+   "auto": true,
+   "country": "MY",
+   "city": null,
+   "metric": "INFORM 위험 지수 — 자연재해 노출(Natural)",
+   "scope": "전국",
+   "definition": "지진·하천 홍수·쓰나미·열대 저기압·해안 홍수·가뭄·전염병에 노출된 인구를 0~10 으로 바꾼 값이다(클수록 위험). 나라 전체의 인구 노출이라 데이터센터가 있는 도시의 위험과는 다르다",
+   "key": "inform_natural",
+   "value": 4.6,
+   "unit": "점(0~10, 클수록 위험)",
+   "asof": "2025",
+   "basis": "INFORM Risk Index 2025 2nd edition (v0.7.0) 의 Natural 점수 그대로",
+   "index": {
+    "name": "INFORM Risk Index",
+    "edition": "2025 2nd edition (v0.7.0)",
+    "overall": 3.3,
+    "rank": 103,
+    "of": 191
+   },
+   "components": {
+    "earthquake": 1.9,
+    "river_flood": 6.8,
+    "tsunami": 5.4,
+    "cyclone": 0,
+    "coastal_flood": 6.4,
+    "drought": 3.1
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "INFORM Risk Index 2025 2nd edition (v0.7.0) — results and data (European Commission JRC, HDX 사본)",
+     "url": "https://data.humdata.org/dataset/inform-risk-index",
+     "date": "2026-11-18",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "종합 지수(overall)는 취약성과 대응 역량까지 합친 값이라 따로 두었다."
+  },
+  {
+   "id": "inform-au",
+   "topic": "F1",
+   "kind": "hazard_index",
+   "auto": true,
+   "country": "AU",
+   "city": null,
+   "metric": "INFORM 위험 지수 — 자연재해 노출(Natural)",
+   "scope": "전국",
+   "definition": "지진·하천 홍수·쓰나미·열대 저기압·해안 홍수·가뭄·전염병에 노출된 인구를 0~10 으로 바꾼 값이다(클수록 위험). 나라 전체의 인구 노출이라 데이터센터가 있는 도시의 위험과는 다르다",
+   "key": "inform_natural",
+   "value": 4.7,
+   "unit": "점(0~10, 클수록 위험)",
+   "asof": "2025",
+   "basis": "INFORM Risk Index 2025 2nd edition (v0.7.0) 의 Natural 점수 그대로",
+   "index": {
+    "name": "INFORM Risk Index",
+    "edition": "2025 2nd edition (v0.7.0)",
+    "overall": 2.5,
+    "rank": 149,
+    "of": 191
+   },
+   "components": {
+    "earthquake": 0.1,
+    "river_flood": 5.4,
+    "tsunami": 5.7,
+    "cyclone": 4.1,
+    "coastal_flood": 6.2,
+    "drought": 6.2
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "INFORM Risk Index 2025 2nd edition (v0.7.0) — results and data (European Commission JRC, HDX 사본)",
+     "url": "https://data.humdata.org/dataset/inform-risk-index",
+     "date": "2026-11-18",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "종합 지수(overall)는 취약성과 대응 역량까지 합친 값이라 따로 두었다."
+  },
+  {
+   "id": "inform-in",
+   "topic": "F1",
+   "kind": "hazard_index",
+   "auto": true,
+   "country": "IN",
+   "city": null,
+   "metric": "INFORM 위험 지수 — 자연재해 노출(Natural)",
+   "scope": "전국",
+   "definition": "지진·하천 홍수·쓰나미·열대 저기압·해안 홍수·가뭄·전염병에 노출된 인구를 0~10 으로 바꾼 값이다(클수록 위험). 나라 전체의 인구 노출이라 데이터센터가 있는 도시의 위험과는 다르다",
+   "key": "inform_natural",
+   "value": 7.8,
+   "unit": "점(0~10, 클수록 위험)",
+   "asof": "2025",
+   "basis": "INFORM Risk Index 2025 2nd edition (v0.7.0) 의 Natural 점수 그대로",
+   "index": {
+    "name": "INFORM Risk Index",
+    "edition": "2025 2nd edition (v0.7.0)",
+    "overall": 5.5,
+    "rank": 32,
+    "of": 191
+   },
+   "components": {
+    "earthquake": 8.3,
+    "river_flood": 9.2,
+    "tsunami": 7.8,
+    "cyclone": 7.7,
+    "coastal_flood": 7.8,
+    "drought": 6.4
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "INFORM Risk Index 2025 2nd edition (v0.7.0) — results and data (European Commission JRC, HDX 사본)",
+     "url": "https://data.humdata.org/dataset/inform-risk-index",
+     "date": "2026-11-18",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "종합 지수(overall)는 취약성과 대응 역량까지 합친 값이라 따로 두었다."
+  },
+  {
+   "id": "inform-tw",
+   "topic": "F1",
+   "kind": "hazard_index",
+   "auto": true,
+   "country": "TW",
+   "city": null,
+   "metric": "INFORM 위험 지수 — 자연재해 노출(Natural)",
+   "scope": "전국",
+   "definition": "지진·하천 홍수·쓰나미·열대 저기압·해안 홍수·가뭄·전염병에 노출된 인구를 0~10 으로 바꾼 값이다(클수록 위험). 나라 전체의 인구 노출이라 데이터센터가 있는 도시의 위험과는 다르다",
+   "key": "inform_natural",
+   "value": null,
+   "unit": "점(0~10, 클수록 위험)",
+   "asof": "2025",
+   "basis": "INFORM Risk Index 2025 2nd edition (v0.7.0) 의 Natural 점수 그대로",
+   "index": {
+    "name": "INFORM Risk Index",
+    "edition": "2025 2nd edition (v0.7.0)",
+    "overall": null,
+    "rank": null,
+    "of": 191
+   },
+   "components": null,
+   "sources": [
+    {
+     "n": 1,
+     "title": "INFORM Risk Index 2025 2nd edition (v0.7.0) — results and data (European Commission JRC, HDX 사본)",
+     "url": "https://data.humdata.org/dataset/inform-risk-index",
+     "date": "2026-11-18",
+     "read": "full"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "low",
+   "note": "INFORM 은 유엔 회원국 191개국만 다뤄 이 나라의 값이 없다."
+  },
+  {
+   "id": "wri-kr",
+   "topic": "F1",
+   "kind": "hazard_index",
+   "auto": true,
+   "country": "KR",
+   "city": null,
+   "metric": "WorldRiskIndex — 노출(Exposure)",
+   "scope": "전국",
+   "definition": "지진·쓰나미·해안 홍수·하천 홍수·열대 저기압·가뭄·해수면 상승에 노출된 인구의 규모와 비중을 0~100 으로 바꾼 값이다(클수록 위험). 인구가 많은 나라가 높게 나온다",
+   "key": "wri_exposure",
+   "value": 9.83,
+   "unit": "점(0~100, 클수록 위험)",
+   "asof": "2026",
+   "basis": "WorldRiskIndex 2026 의 Exposure 값 그대로. 순위는 종합 지수(W)가 큰 순서로 센 계산값",
+   "index": {
+    "name": "WorldRiskIndex",
+    "edition": "2026",
+    "overall": 10.2,
+    "vulnerability": 10.58,
+    "rank": 55,
+    "of": 193
+   },
+   "components": null,
+   "sources": [
+    {
+     "n": 1,
+     "title": "WorldRiskIndex 2026 — trend data (Bündnis Entwicklung Hilft / IFHV, HDX)",
+     "url": "https://data.humdata.org/dataset/worldriskindex",
+     "date": "2026-11-18",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "종합 지수(overall)는 노출과 취약성의 기하평균이다."
+  },
+  {
+   "id": "wri-jp",
+   "topic": "F1",
+   "kind": "hazard_index",
+   "auto": true,
+   "country": "JP",
+   "city": null,
+   "metric": "WorldRiskIndex — 노출(Exposure)",
+   "scope": "전국",
+   "definition": "지진·쓰나미·해안 홍수·하천 홍수·열대 저기압·가뭄·해수면 상승에 노출된 인구의 규모와 비중을 0~100 으로 바꾼 값이다(클수록 위험). 인구가 많은 나라가 높게 나온다",
+   "key": "wri_exposure",
+   "value": 43.35,
+   "unit": "점(0~100, 클수록 위험)",
+   "asof": "2026",
+   "basis": "WorldRiskIndex 2026 의 Exposure 값 그대로. 순위는 종합 지수(W)가 큰 순서로 센 계산값",
+   "index": {
+    "name": "WorldRiskIndex",
+    "edition": "2026",
+    "overall": 22.69,
+    "vulnerability": 11.88,
+    "rank": 19,
+    "of": 193
+   },
+   "components": null,
+   "sources": [
+    {
+     "n": 1,
+     "title": "WorldRiskIndex 2026 — trend data (Bündnis Entwicklung Hilft / IFHV, HDX)",
+     "url": "https://data.humdata.org/dataset/worldriskindex",
+     "date": "2026-11-18",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "종합 지수(overall)는 노출과 취약성의 기하평균이다."
+  },
+  {
+   "id": "wri-sg",
+   "topic": "F1",
+   "kind": "hazard_index",
+   "auto": true,
+   "country": "SG",
+   "city": null,
+   "metric": "WorldRiskIndex — 노출(Exposure)",
+   "scope": "전국",
+   "definition": "지진·쓰나미·해안 홍수·하천 홍수·열대 저기압·가뭄·해수면 상승에 노출된 인구의 규모와 비중을 0~100 으로 바꾼 값이다(클수록 위험). 인구가 많은 나라가 높게 나온다",
+   "key": "wri_exposure",
+   "value": 0.17,
+   "unit": "점(0~100, 클수록 위험)",
+   "asof": "2026",
+   "basis": "WorldRiskIndex 2026 의 Exposure 값 그대로. 순위는 종합 지수(W)가 큰 순서로 센 계산값",
+   "index": {
+    "name": "WorldRiskIndex",
+    "edition": "2026",
+    "overall": 0.72,
+    "vulnerability": 3.01,
+    "rank": 188,
+    "of": 193
+   },
+   "components": null,
+   "sources": [
+    {
+     "n": 1,
+     "title": "WorldRiskIndex 2026 — trend data (Bündnis Entwicklung Hilft / IFHV, HDX)",
+     "url": "https://data.humdata.org/dataset/worldriskindex",
+     "date": "2026-11-18",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "종합 지수(overall)는 노출과 취약성의 기하평균이다."
+  },
+  {
+   "id": "wri-my",
+   "topic": "F1",
+   "kind": "hazard_index",
+   "auto": true,
+   "country": "MY",
+   "city": null,
+   "metric": "WorldRiskIndex — 노출(Exposure)",
+   "scope": "전국",
+   "definition": "지진·쓰나미·해안 홍수·하천 홍수·열대 저기압·가뭄·해수면 상승에 노출된 인구의 규모와 비중을 0~100 으로 바꾼 값이다(클수록 위험). 인구가 많은 나라가 높게 나온다",
+   "key": "wri_exposure",
+   "value": 8.86,
+   "unit": "점(0~100, 클수록 위험)",
+   "asof": "2026",
+   "basis": "WorldRiskIndex 2026 의 Exposure 값 그대로. 순위는 종합 지수(W)가 큰 순서로 센 계산값",
+   "index": {
+    "name": "WorldRiskIndex",
+    "edition": "2026",
+    "overall": 12.9,
+    "vulnerability": 18.77,
+    "rank": 43,
+    "of": 193
+   },
+   "components": null,
+   "sources": [
+    {
+     "n": 1,
+     "title": "WorldRiskIndex 2026 — trend data (Bündnis Entwicklung Hilft / IFHV, HDX)",
+     "url": "https://data.humdata.org/dataset/worldriskindex",
+     "date": "2026-11-18",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "종합 지수(overall)는 노출과 취약성의 기하평균이다."
+  },
+  {
+   "id": "wri-au",
+   "topic": "F1",
+   "kind": "hazard_index",
+   "auto": true,
+   "country": "AU",
+   "city": null,
+   "metric": "WorldRiskIndex — 노출(Exposure)",
+   "scope": "전국",
+   "definition": "지진·쓰나미·해안 홍수·하천 홍수·열대 저기압·가뭄·해수면 상승에 노출된 인구의 규모와 비중을 0~100 으로 바꾼 값이다(클수록 위험). 인구가 많은 나라가 높게 나온다",
+   "key": "wri_exposure",
+   "value": 32.11,
+   "unit": "점(0~100, 클수록 위험)",
+   "asof": "2026",
+   "basis": "WorldRiskIndex 2026 의 Exposure 값 그대로. 순위는 종합 지수(W)가 큰 순서로 센 계산값",
+   "index": {
+    "name": "WorldRiskIndex",
+    "edition": "2026",
+    "overall": 19.92,
+    "vulnerability": 12.36,
+    "rank": 25,
+    "of": 193
+   },
+   "components": null,
+   "sources": [
+    {
+     "n": 1,
+     "title": "WorldRiskIndex 2026 — trend data (Bündnis Entwicklung Hilft / IFHV, HDX)",
+     "url": "https://data.humdata.org/dataset/worldriskindex",
+     "date": "2026-11-18",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "종합 지수(overall)는 노출과 취약성의 기하평균이다."
+  },
+  {
+   "id": "wri-in",
+   "topic": "F1",
+   "kind": "hazard_index",
+   "auto": true,
+   "country": "IN",
+   "city": null,
+   "metric": "WorldRiskIndex — 노출(Exposure)",
+   "scope": "전국",
+   "definition": "지진·쓰나미·해안 홍수·하천 홍수·열대 저기압·가뭄·해수면 상승에 노출된 인구의 규모와 비중을 0~100 으로 바꾼 값이다(클수록 위험). 인구가 많은 나라가 높게 나온다",
+   "key": "wri_exposure",
+   "value": 40.83,
+   "unit": "점(0~100, 클수록 위험)",
+   "asof": "2026",
+   "basis": "WorldRiskIndex 2026 의 Exposure 값 그대로. 순위는 종합 지수(W)가 큰 순서로 센 계산값",
+   "index": {
+    "name": "WorldRiskIndex",
+    "edition": "2026",
+    "overall": 44.97,
+    "vulnerability": 49.54,
+    "rank": 2,
+    "of": 193
+   },
+   "components": null,
+   "sources": [
+    {
+     "n": 1,
+     "title": "WorldRiskIndex 2026 — trend data (Bündnis Entwicklung Hilft / IFHV, HDX)",
+     "url": "https://data.humdata.org/dataset/worldriskindex",
+     "date": "2026-11-18",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "종합 지수(overall)는 노출과 취약성의 기하평균이다."
+  },
+  {
+   "id": "wri-tw",
+   "topic": "F1",
+   "kind": "hazard_index",
+   "auto": true,
+   "country": "TW",
+   "city": null,
+   "metric": "WorldRiskIndex — 노출(Exposure)",
+   "scope": "전국",
+   "definition": "지진·쓰나미·해안 홍수·하천 홍수·열대 저기압·가뭄·해수면 상승에 노출된 인구의 규모와 비중을 0~100 으로 바꾼 값이다(클수록 위험). 인구가 많은 나라가 높게 나온다",
+   "key": "wri_exposure",
+   "value": null,
+   "unit": "점(0~100, 클수록 위험)",
+   "asof": "2026",
+   "basis": "WorldRiskIndex 2026 의 Exposure 값 그대로. 순위는 종합 지수(W)가 큰 순서로 센 계산값",
+   "index": {
+    "name": "WorldRiskIndex",
+    "edition": "2026",
+    "overall": null,
+    "vulnerability": null,
+    "rank": null,
+    "of": 193
+   },
+   "components": null,
+   "sources": [
+    {
+     "n": 1,
+     "title": "WorldRiskIndex 2026 — trend data (Bündnis Entwicklung Hilft / IFHV, HDX)",
+     "url": "https://data.humdata.org/dataset/worldriskindex",
+     "date": "2026-11-18",
+     "read": "full"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "low",
+   "note": "WorldRiskIndex 는 유엔 회원국 193개국만 다뤄 이 나라의 값이 없다."
+  },
+  {
+   "id": "incident-kr-nirs-2025",
+   "topic": "F1",
+   "kind": "incident",
+   "country": "KR",
+   "city": "대전",
+   "metric": "데이터센터 피해 사례",
+   "scope": "정부 전산센터 한 곳",
+   "definition": null,
+   "value": 709,
+   "unit": "중단된 행정정보시스템 수",
+   "asof": "2025-09-26",
+   "basis": "행정안전부 발표를 전한 보도의 값",
+   "incident": {
+    "site": "국가정보자원관리원 대전센터(본원)",
+    "operator": "국가정보자원관리원(행정안전부)",
+    "date": "2025-09-26",
+    "natural": false,
+    "cause": "5층 전산실에서 무정전전원장치(UPS)용 리튬이온 배터리를 옮기던 중 화재",
+    "impact": "센터의 행정정보시스템 709개가 모두 중단됐고 2025-12-30 에 전부 복구됐다(95일)"
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "경향신문 — 국정자원 전산망, 95일 만에 완전 정상화···재난 위기경보 해제",
+     "url": "https://www.khan.co.kr/article/202512301118001",
+     "date": "2025-12-30",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "자연재해가 아니라 설비 작업 중 난 화재다. 복구에 95일이 걸렸고 16개 시스템은 대구센터로 옮겨 복구했다."
+  },
+  {
+   "id": "incident-kr-pangyo-2022",
+   "topic": "F1",
+   "kind": "incident",
+   "country": "KR",
+   "city": "성남(판교)",
+   "metric": "데이터센터 피해 사례",
+   "scope": "민간 데이터센터 한 곳",
+   "definition": null,
+   "value": 127,
+   "unit": "시간(서비스 장애, 최대)",
+   "asof": "2022-10-15",
+   "basis": "과학기술정보통신부 조사 결과(2022-12-06)를 전한 보도의 값 — 검색 요약으로만 확인",
+   "incident": {
+    "site": "SK C&C 판교 데이터센터",
+    "operator": "SK C&C",
+    "date": "2022-10-15",
+    "natural": false,
+    "cause": "리튬이온 배터리 화재",
+    "impact": "입주사 카카오의 서비스가 최대 127시간 장애를 겪었다(이중화 미흡이 함께 지적됨)"
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "데일리안 — 과기정통부, 카카오에 '먹통 방지책' 요구…화재원인은 오리무중(종합)",
+     "url": "https://www.dailian.co.kr/news/view/1180889/",
+     "date": "2022-12-06",
+     "read": "search_summary"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "자연재해가 아니라 배터리 화재다. 원문을 열어 읽지 못했다."
+  },
+  {
+   "id": "incident-sg-sin11-2024",
+   "topic": "F1",
+   "kind": "incident",
+   "country": "SG",
+   "city": "싱가포르",
+   "metric": "데이터센터 피해 사례",
+   "scope": "민간 데이터센터 한 곳",
+   "definition": null,
+   "value": null,
+   "unit": "시간(서비스 장애)",
+   "asof": "2024-09-10",
+   "basis": "운영사·입주사 설명을 전한 보도. 장애가 이어진 시간은 한 값으로 공개되지 않았다",
+   "incident": {
+    "site": "Digital Realty SIN11(로양)",
+    "operator": "Digital Realty",
+    "date": "2024-09-10",
+    "natural": false,
+    "cause": "배터리실의 리튬이온 배터리 폭발·화재(입주사 Alibaba Cloud 의 설명)",
+    "impact": "07:45 화재 경보, Alibaba Cloud 싱가포르 리전의 가용 영역 C 에서 장애가 났고 일부 서비스는 온도가 내려갈 때까지 내려갔다"
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "The Register — Alibaba Cloud struggles after blaze at Digital Realty Singapore datacenter",
+     "url": "https://www.theregister.com/2024/09/10/digtal_realty_singapore_datacenter_fire/",
+     "date": "2024-09-11",
+     "read": "full"
+    },
+    {
+     "n": 2,
+     "title": "The Star — Firefighting operations at Singapore's Loyang data centre spill into second day",
+     "url": "https://www.thestar.com.my/aseanplus/aseanplus-news/2024/09/12/firefighting-operations-at-singapore039s-loyang-data-centre-spill-into-second-day-blaze-linked-to-lithium-ion-batteries",
+     "date": "2024-09-12",
+     "read": "search_summary"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "high",
+   "note": "자연재해가 아니라 배터리 화재다. 진화가 36시간 넘게 이어졌다는 것은 검색 요약으로만 확인했다."
+  },
+  {
+   "id": "incident-au-sydney-2023",
+   "topic": "F1",
+   "kind": "incident",
+   "country": "AU",
+   "city": "시드니",
+   "metric": "데이터센터 피해 사례",
+   "scope": "클라우드 리전의 가용 영역 한 곳",
+   "definition": null,
+   "value": 46,
+   "unit": "시간(서비스 영향, 최대)",
+   "asof": "2023-08-30",
+   "basis": "Microsoft 의 사고 검토 보고를 전한 보도. 46시간은 검색 요약으로만 확인",
+   "incident": {
+    "site": "Microsoft Azure Australia East(시드니)의 데이터센터",
+    "operator": "Microsoft",
+    "date": "2023-08-30",
+    "natural": true,
+    "cause": "뇌우 뒤 전력망의 전압 순간 저하로 냉동기 일부가 꺼졌고 다시 켜지지 않았다",
+    "impact": "데이터 홀 두 곳의 냉각이 모자라 서버를 내렸고 Azure·Microsoft 365 서비스가 영향을 받았다"
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "The Register — Microsoft admits slim staff and broken automation contributed to Azure outage",
+     "url": "https://www.theregister.com/2023/09/04/microsoft_australia_outage_incident_report/",
+     "date": "2023-09-04",
+     "read": "full"
+    },
+    {
+     "n": 2,
+     "title": "DCD — Microsoft's slow outage recovery in Sydney due to insufficient staff on site",
+     "url": "https://datacenterdynamics.com/en/news/microsofts-slow-outage-recovery-in-sydney-due-to-insufficient-staff-on-site",
+     "date": "2023-09",
+     "read": "search_summary"
+    }
+   ],
+   "value_src": [
+    2
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "뇌우 뒤 전력 순간 저하가 원인이라 날씨와 닿아 있다. 현장 인력이 3명뿐이었던 점을 회사가 원인으로 들었다."
+  },
+  {
+   "id": "incident-in-delhi-2026",
+   "topic": "F1",
+   "kind": "incident",
+   "country": "IN",
+   "city": "델리",
+   "metric": "데이터센터 피해 사례",
+   "scope": "민간 데이터센터 한 곳",
+   "definition": null,
+   "value": null,
+   "unit": "시간(서비스 장애)",
+   "asof": "2026-06",
+   "basis": "검색 요약으로만 확인한 보도",
+   "incident": {
+    "site": "STT GDC 델리 시설",
+    "operator": "STT Global Data Centres India",
+    "date": "2026-06",
+    "natural": false,
+    "cause": "화재(원인 미확인)",
+    "impact": "시설 일부가 크게 손상됐고 인도의 Google Cloud 서비스가 영향을 받았다고 보도됐다"
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "ARY News — STT, Tata Delhi data centre fire leaves clients fearing decades of data lost; Google hit",
+     "url": "https://arynews.tv/google-faces-data-challenges-after-recent-fire",
+     "date": "2026-06",
+     "read": "search_summary"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "low",
+   "note": "사이트가 조회를 막아 원문을 열지 못했다. 날짜와 피해 범위는 다시 확인해야 한다."
+  },
+  {
+   "id": "developers-kr",
+   "topic": "F2",
+   "kind": "talent",
+   "auto": true,
+   "country": "KR",
+   "city": null,
+   "metric": "GitHub 개발자 계정 수",
+   "scope": "전국",
+   "definition": "GitHub 이 접속 위치로 나라를 정해 센 계정 수다(봇·스팸 제외). 직업 개발자의 수가 아니고, 한 사람이 여러 계정을 가질 수 있다",
+   "key": "developers",
+   "value": 3500099,
+   "unit": "계정",
+   "asof": "2026-06",
+   "basis": "GitHub Innovation Graph 의 2026년 2분기 값 그대로",
+   "per_1000": 67.7,
+   "population_m": 51.69,
+   "series": [
+    {
+     "period": "2020Q4",
+     "value": 985950,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2021Q4",
+     "value": 1310102,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2022Q4",
+     "value": 1629354,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2023Q4",
+     "value": 1983247,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2024Q4",
+     "value": 2330502,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2025Q4",
+     "value": 2900539,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2026Q2",
+     "value": 3500099,
+     "src": [
+      1
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "GitHub Innovation Graph — developers by economy (CC0)",
+     "url": "https://github.com/github/innovationgraph",
+     "date": "2026-11-18",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "per_1000 은 계정 수를 인구(묶음 E 의 IMF 값, 백만 명)로 나눈 계산값이다."
+  },
+  {
+   "id": "developers-jp",
+   "topic": "F2",
+   "kind": "talent",
+   "auto": true,
+   "country": "JP",
+   "city": null,
+   "metric": "GitHub 개발자 계정 수",
+   "scope": "전국",
+   "definition": "GitHub 이 접속 위치로 나라를 정해 센 계정 수다(봇·스팸 제외). 직업 개발자의 수가 아니고, 한 사람이 여러 계정을 가질 수 있다",
+   "key": "developers",
+   "value": 6235551,
+   "unit": "계정",
+   "asof": "2026-06",
+   "basis": "GitHub Innovation Graph 의 2026년 2분기 값 그대로",
+   "per_1000": 50.6,
+   "population_m": 123.29,
+   "series": [
+    {
+     "period": "2020Q4",
+     "value": 1429144,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2021Q4",
+     "value": 1841051,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2022Q4",
+     "value": 2324953,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2023Q4",
+     "value": 3053019,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2024Q4",
+     "value": 3759833,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2025Q4",
+     "value": 4973908,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2026Q2",
+     "value": 6235551,
+     "src": [
+      1
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "GitHub Innovation Graph — developers by economy (CC0)",
+     "url": "https://github.com/github/innovationgraph",
+     "date": "2026-11-18",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "per_1000 은 계정 수를 인구(묶음 E 의 IMF 값, 백만 명)로 나눈 계산값이다."
+  },
+  {
+   "id": "developers-sg",
+   "topic": "F2",
+   "kind": "talent",
+   "auto": true,
+   "country": "SG",
+   "city": null,
+   "metric": "GitHub 개발자 계정 수",
+   "scope": "전국",
+   "definition": "GitHub 이 접속 위치로 나라를 정해 센 계정 수다(봇·스팸 제외). 직업 개발자의 수가 아니고, 한 사람이 여러 계정을 가질 수 있다",
+   "key": "developers",
+   "value": 2527680,
+   "unit": "계정",
+   "asof": "2026-06",
+   "basis": "GitHub Innovation Graph 의 2026년 2분기 값 그대로",
+   "per_1000": 415.7,
+   "population_m": 6.08,
+   "series": [
+    {
+     "period": "2020Q4",
+     "value": 402074,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2021Q4",
+     "value": 562951,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2022Q4",
+     "value": 774024,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2023Q4",
+     "value": 1091989,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2024Q4",
+     "value": 1398636,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2025Q4",
+     "value": 1944204,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2026Q2",
+     "value": 2527680,
+     "src": [
+      1
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "GitHub Innovation Graph — developers by economy (CC0)",
+     "url": "https://github.com/github/innovationgraph",
+     "date": "2026-11-18",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "per_1000 은 계정 수를 인구(묶음 E 의 IMF 값, 백만 명)로 나눈 계산값이다."
+  },
+  {
+   "id": "developers-my",
+   "topic": "F2",
+   "kind": "talent",
+   "auto": true,
+   "country": "MY",
+   "city": null,
+   "metric": "GitHub 개발자 계정 수",
+   "scope": "전국",
+   "definition": "GitHub 이 접속 위치로 나라를 정해 센 계정 수다(봇·스팸 제외). 직업 개발자의 수가 아니고, 한 사람이 여러 계정을 가질 수 있다",
+   "key": "developers",
+   "value": 1257073,
+   "unit": "계정",
+   "asof": "2026-06",
+   "basis": "GitHub Innovation Graph 의 2026년 2분기 값 그대로",
+   "per_1000": 37.1,
+   "population_m": 33.85,
+   "series": [
+    {
+     "period": "2020Q4",
+     "value": 306282,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2021Q4",
+     "value": 421744,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2022Q4",
+     "value": 531869,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2023Q4",
+     "value": 679803,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2024Q4",
+     "value": 815620,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2025Q4",
+     "value": 1058378,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2026Q2",
+     "value": 1257073,
+     "src": [
+      1
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "GitHub Innovation Graph — developers by economy (CC0)",
+     "url": "https://github.com/github/innovationgraph",
+     "date": "2026-11-18",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "per_1000 은 계정 수를 인구(묶음 E 의 IMF 값, 백만 명)로 나눈 계산값이다."
+  },
+  {
+   "id": "developers-au",
+   "topic": "F2",
+   "kind": "talent",
+   "auto": true,
+   "country": "AU",
+   "city": null,
+   "metric": "GitHub 개발자 계정 수",
+   "scope": "전국",
+   "definition": "GitHub 이 접속 위치로 나라를 정해 센 계정 수다(봇·스팸 제외). 직업 개발자의 수가 아니고, 한 사람이 여러 계정을 가질 수 있다",
+   "key": "developers",
+   "value": 2570949,
+   "unit": "계정",
+   "asof": "2026-06",
+   "basis": "GitHub Innovation Graph 의 2026년 2분기 값 그대로",
+   "per_1000": 92.7,
+   "population_m": 27.73,
+   "series": [
+    {
+     "period": "2020Q4",
+     "value": 823279,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2021Q4",
+     "value": 1006710,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2022Q4",
+     "value": 1231761,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2023Q4",
+     "value": 1498591,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2024Q4",
+     "value": 1785160,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2025Q4",
+     "value": 2217966,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2026Q2",
+     "value": 2570949,
+     "src": [
+      1
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "GitHub Innovation Graph — developers by economy (CC0)",
+     "url": "https://github.com/github/innovationgraph",
+     "date": "2026-11-18",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "per_1000 은 계정 수를 인구(묶음 E 의 IMF 값, 백만 명)로 나눈 계산값이다."
+  },
+  {
+   "id": "developers-in",
+   "topic": "F2",
+   "kind": "talent",
+   "auto": true,
+   "country": "IN",
+   "city": null,
+   "metric": "GitHub 개발자 계정 수",
+   "scope": "전국",
+   "definition": "GitHub 이 접속 위치로 나라를 정해 센 계정 수다(봇·스팸 제외). 직업 개발자의 수가 아니고, 한 사람이 여러 계정을 가질 수 있다",
+   "key": "developers",
+   "value": 29013416,
+   "unit": "계정",
+   "asof": "2026-06",
+   "basis": "GitHub Innovation Graph 의 2026년 2분기 값 그대로",
+   "per_1000": 19.8,
+   "population_m": 1463.87,
+   "series": [
+    {
+     "period": "2020Q4",
+     "value": 5653924,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2021Q4",
+     "value": 7790683,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2022Q4",
+     "value": 10567593,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2023Q4",
+     "value": 14211676,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2024Q4",
+     "value": 18062761,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2025Q4",
+     "value": 24576236,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2026Q2",
+     "value": 29013416,
+     "src": [
+      1
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "GitHub Innovation Graph — developers by economy (CC0)",
+     "url": "https://github.com/github/innovationgraph",
+     "date": "2026-11-18",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "per_1000 은 계정 수를 인구(묶음 E 의 IMF 값, 백만 명)로 나눈 계산값이다."
+  },
+  {
+   "id": "developers-tw",
+   "topic": "F2",
+   "kind": "talent",
+   "auto": true,
+   "country": "TW",
+   "city": null,
+   "metric": "GitHub 개발자 계정 수",
+   "scope": "전국",
+   "definition": "GitHub 이 접속 위치로 나라를 정해 센 계정 수다(봇·스팸 제외). 직업 개발자의 수가 아니고, 한 사람이 여러 계정을 가질 수 있다",
+   "key": "developers",
+   "value": 2083789,
+   "unit": "계정",
+   "asof": "2026-06",
+   "basis": "GitHub Innovation Graph 의 2026년 2분기 값 그대로",
+   "per_1000": 89.4,
+   "population_m": 23.3,
+   "series": [
+    {
+     "period": "2020Q4",
+     "value": 512233,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2021Q4",
+     "value": 659942,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2022Q4",
+     "value": 836840,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2023Q4",
+     "value": 1106311,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2024Q4",
+     "value": 1334820,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2025Q4",
+     "value": 1735979,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2026Q2",
+     "value": 2083789,
+     "src": [
+      1
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "GitHub Innovation Graph — developers by economy (CC0)",
+     "url": "https://github.com/github/innovationgraph",
+     "date": "2026-11-18",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "per_1000 은 계정 수를 인구(묶음 E 의 IMF 값, 백만 명)로 나눈 계산값이다."
+  },
+  {
+   "id": "ai-talent-kr",
+   "topic": "F2",
+   "kind": "talent",
+   "country": "KR",
+   "city": null,
+   "metric": "AI 인재 집중도",
+   "scope": "전국",
+   "definition": "LinkedIn 회원 가운데 AI 기술을 적었거나 AI 직무에 있는 사람의 비중이다. LinkedIn 을 덜 쓰는 나라(일본·대만·한국)는 실제보다 낮거나 표본에서 빠진다",
+   "key": "ai_talent_concentration",
+   "value": 1.05,
+   "unit": "%(LinkedIn 회원 가운데 AI 인재)",
+   "asof": "2025",
+   "basis": "AI Index 2026 의 도표 4.4.21(출처 LinkedIn) 값 그대로. 상위 15개국만 공개됐다",
+   "net_migration_per_10k": null,
+   "net_migration_note": "순이동 상위 15개국에 없어 값이 공개되지 않았다",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Stanford HAI — AI Index Report 2026, Chapter 4: Economy",
+     "url": "https://hai.stanford.edu/assets/files/ai_index_report_2026_chapter_4_economy.pdf",
+     "date": "2026-04",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "도표의 막대 값과 나라 이름을 차례로 맞춰 읽었다(본문의 이스라엘 2.1%·싱가포르 1.8%로 순서를 확인)."
+  },
+  {
+   "id": "ai-talent-jp",
+   "topic": "F2",
+   "kind": "talent",
+   "country": "JP",
+   "city": null,
+   "metric": "AI 인재 집중도",
+   "scope": "전국",
+   "definition": "LinkedIn 회원 가운데 AI 기술을 적었거나 AI 직무에 있는 사람의 비중이다. LinkedIn 을 덜 쓰는 나라(일본·대만·한국)는 실제보다 낮거나 표본에서 빠진다",
+   "key": "ai_talent_concentration",
+   "value": null,
+   "unit": "%(LinkedIn 회원 가운데 AI 인재)",
+   "asof": "2025",
+   "basis": "AI Index 2026 의 도표 4.4.21(출처 LinkedIn) 값 그대로. 상위 15개국만 공개됐다",
+   "net_migration_per_10k": null,
+   "net_migration_note": "순이동 상위 15개국에 없어 값이 공개되지 않았다",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Stanford HAI — AI Index Report 2026, Chapter 4: Economy",
+     "url": "https://hai.stanford.edu/assets/files/ai_index_report_2026_chapter_4_economy.pdf",
+     "date": "2026-04",
+     "read": "partial"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "low",
+   "note": "LinkedIn 표본 나라에 없다."
+  },
+  {
+   "id": "ai-talent-sg",
+   "topic": "F2",
+   "kind": "talent",
+   "country": "SG",
+   "city": null,
+   "metric": "AI 인재 집중도",
+   "scope": "전국",
+   "definition": "LinkedIn 회원 가운데 AI 기술을 적었거나 AI 직무에 있는 사람의 비중이다. LinkedIn 을 덜 쓰는 나라(일본·대만·한국)는 실제보다 낮거나 표본에서 빠진다",
+   "key": "ai_talent_concentration",
+   "value": 1.82,
+   "unit": "%(LinkedIn 회원 가운데 AI 인재)",
+   "asof": "2025",
+   "basis": "AI Index 2026 의 도표 4.4.21(출처 LinkedIn) 값 그대로. 상위 15개국만 공개됐다",
+   "net_migration_per_10k": 1.36,
+   "net_migration_note": "AI 인재 순이동(LinkedIn 회원 1만 명당, 2025년, 도표 4.4.23). 상위 15개국만 공개됐다",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Stanford HAI — AI Index Report 2026, Chapter 4: Economy",
+     "url": "https://hai.stanford.edu/assets/files/ai_index_report_2026_chapter_4_economy.pdf",
+     "date": "2026-04",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "도표의 막대 값과 나라 이름을 차례로 맞춰 읽었다(본문의 이스라엘 2.1%·싱가포르 1.8%로 순서를 확인)."
+  },
+  {
+   "id": "ai-talent-my",
+   "topic": "F2",
+   "kind": "talent",
+   "country": "MY",
+   "city": null,
+   "metric": "AI 인재 집중도",
+   "scope": "전국",
+   "definition": "LinkedIn 회원 가운데 AI 기술을 적었거나 AI 직무에 있는 사람의 비중이다. LinkedIn 을 덜 쓰는 나라(일본·대만·한국)는 실제보다 낮거나 표본에서 빠진다",
+   "key": "ai_talent_concentration",
+   "value": null,
+   "unit": "%(LinkedIn 회원 가운데 AI 인재)",
+   "asof": "2025",
+   "basis": "AI Index 2026 의 도표 4.4.21(출처 LinkedIn) 값 그대로. 상위 15개국만 공개됐다",
+   "net_migration_per_10k": null,
+   "net_migration_note": "순이동 상위 15개국에 없어 값이 공개되지 않았다",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Stanford HAI — AI Index Report 2026, Chapter 4: Economy",
+     "url": "https://hai.stanford.edu/assets/files/ai_index_report_2026_chapter_4_economy.pdf",
+     "date": "2026-04",
+     "read": "partial"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "low",
+   "note": "LinkedIn 표본 나라에 없다."
+  },
+  {
+   "id": "ai-talent-au",
+   "topic": "F2",
+   "kind": "talent",
+   "country": "AU",
+   "city": null,
+   "metric": "AI 인재 집중도",
+   "scope": "전국",
+   "definition": "LinkedIn 회원 가운데 AI 기술을 적었거나 AI 직무에 있는 사람의 비중이다. LinkedIn 을 덜 쓰는 나라(일본·대만·한국)는 실제보다 낮거나 표본에서 빠진다",
+   "key": "ai_talent_concentration",
+   "value": null,
+   "unit": "%(LinkedIn 회원 가운데 AI 인재)",
+   "asof": "2025",
+   "basis": "AI Index 2026 의 도표 4.4.21(출처 LinkedIn) 값 그대로. 상위 15개국만 공개됐다",
+   "net_migration_per_10k": 1.79,
+   "net_migration_note": "AI 인재 순이동(LinkedIn 회원 1만 명당, 2025년, 도표 4.4.23). 상위 15개국만 공개됐다",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Stanford HAI — AI Index Report 2026, Chapter 4: Economy",
+     "url": "https://hai.stanford.edu/assets/files/ai_index_report_2026_chapter_4_economy.pdf",
+     "date": "2026-04",
+     "read": "partial"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "low",
+   "note": "표본에는 있으나 상위 15개국(0.95% 이상)에 들지 않아 값이 공개되지 않았다."
+  },
+  {
+   "id": "ai-talent-in",
+   "topic": "F2",
+   "kind": "talent",
+   "country": "IN",
+   "city": null,
+   "metric": "AI 인재 집중도",
+   "scope": "전국",
+   "definition": "LinkedIn 회원 가운데 AI 기술을 적었거나 AI 직무에 있는 사람의 비중이다. LinkedIn 을 덜 쓰는 나라(일본·대만·한국)는 실제보다 낮거나 표본에서 빠진다",
+   "key": "ai_talent_concentration",
+   "value": 1.01,
+   "unit": "%(LinkedIn 회원 가운데 AI 인재)",
+   "asof": "2025",
+   "basis": "AI Index 2026 의 도표 4.4.21(출처 LinkedIn) 값 그대로. 상위 15개국만 공개됐다",
+   "net_migration_per_10k": null,
+   "net_migration_note": "순이동 상위 15개국에 없어 값이 공개되지 않았다",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Stanford HAI — AI Index Report 2026, Chapter 4: Economy",
+     "url": "https://hai.stanford.edu/assets/files/ai_index_report_2026_chapter_4_economy.pdf",
+     "date": "2026-04",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "도표의 막대 값과 나라 이름을 차례로 맞춰 읽었다(본문의 이스라엘 2.1%·싱가포르 1.8%로 순서를 확인)."
+  },
+  {
+   "id": "ai-talent-tw",
+   "topic": "F2",
+   "kind": "talent",
+   "country": "TW",
+   "city": null,
+   "metric": "AI 인재 집중도",
+   "scope": "전국",
+   "definition": "LinkedIn 회원 가운데 AI 기술을 적었거나 AI 직무에 있는 사람의 비중이다. LinkedIn 을 덜 쓰는 나라(일본·대만·한국)는 실제보다 낮거나 표본에서 빠진다",
+   "key": "ai_talent_concentration",
+   "value": null,
+   "unit": "%(LinkedIn 회원 가운데 AI 인재)",
+   "asof": "2025",
+   "basis": "AI Index 2026 의 도표 4.4.21(출처 LinkedIn) 값 그대로. 상위 15개국만 공개됐다",
+   "net_migration_per_10k": null,
+   "net_migration_note": "순이동 상위 15개국에 없어 값이 공개되지 않았다",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Stanford HAI — AI Index Report 2026, Chapter 4: Economy",
+     "url": "https://hai.stanford.edu/assets/files/ai_index_report_2026_chapter_4_economy.pdf",
+     "date": "2026-04",
+     "read": "partial"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "low",
+   "note": "LinkedIn 표본 나라에 없다."
+  },
+  {
+   "id": "labour-uptime-2026",
+   "topic": "F2",
+   "kind": "labour",
+   "country": "ZZ",
+   "city": null,
+   "metric": "자격 있는 인력을 구하기 어렵다고 답한 운영사 비중",
+   "scope": "세계(운영사 800여 곳 설문)",
+   "definition": "세계 전체의 값이라 나라 사이의 차이를 보여 주지 않는다",
+   "value": 53,
+   "unit": "%",
+   "asof": "2026",
+   "basis": "Uptime Institute Global Data Center Survey 2026(2026년 4~5월 설문)의 값 그대로",
+   "series": [
+    {
+     "period": "2025",
+     "value": 46,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2026",
+     "value": 53,
+     "src": [
+      1
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "Uptime Institute — Global Data Center Survey 2026",
+     "url": "https://datacenter.uptimeinstitute.com/rs/711-RIA-145/images/UptimeInstitute.GlobalDataCenterSurvey.2026.pdf?version=0",
+     "date": "2026",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "지역별 값은 보고서에 없다(응답자의 14%가 중국을 뺀 아시아·태평양). 대상 나라별 인력 부족을 다룬 공개 조사는 찾지 못했다."
+  },
+  {
+   "id": "wage-kr",
+   "topic": "F2",
+   "kind": "wage",
+   "country": "KR",
+   "city": null,
+   "metric": "임금 근로자의 월평균 임금",
+   "scope": "전국·전 산업",
+   "definition": "나라마다 조사와 포함 범위가 다르고 기준 해가 달라 환율 영향도 섞인다",
+   "key": "wage_monthly_usd",
+   "value": 3168,
+   "unit": "달러/월",
+   "asof": "2022",
+   "basis": "ILOSTAT 의 달러 환산 값 그대로(소수점 아래 반올림)",
+   "series": [
+    {
+     "period": "2019",
+     "value": 3192,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2020",
+     "value": 3183,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2021",
+     "value": 3373,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2022",
+     "value": 3168,
+     "src": [
+      1
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "ILOSTAT — Average monthly earnings of employees by sex and currency (EAR_EMTA_SEX_CUR_NB_A)",
+     "url": "https://rplumber.ilo.org/data/indicator/?id=EAR_EMTA_SEX_CUR_NB_A&ref_area=KOR+JPN+SGP+MYS+AUS+IND+TWN&timefrom=2019&format=.csv",
+     "date": "2026-11-18",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "나라마다 가장 최근 해가 다르다(2020~2025). 데이터센터 건설·운영 직종의 임금이 아니라 전 산업 평균이다."
+  },
+  {
+   "id": "wage-jp",
+   "topic": "F2",
+   "kind": "wage",
+   "country": "JP",
+   "city": null,
+   "metric": "임금 근로자의 월평균 임금",
+   "scope": "전국·전 산업",
+   "definition": "나라마다 조사와 포함 범위가 다르고 기준 해가 달라 환율 영향도 섞인다",
+   "key": "wage_monthly_usd",
+   "value": 2801,
+   "unit": "달러/월",
+   "asof": "2021",
+   "basis": "ILOSTAT 의 달러 환산 값 그대로(소수점 아래 반올림)",
+   "series": [
+    {
+     "period": "2019",
+     "value": 2807,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2020",
+     "value": 2882,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2021",
+     "value": 2801,
+     "src": [
+      1
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "ILOSTAT — Average monthly earnings of employees by sex and currency (EAR_EMTA_SEX_CUR_NB_A)",
+     "url": "https://rplumber.ilo.org/data/indicator/?id=EAR_EMTA_SEX_CUR_NB_A&ref_area=KOR+JPN+SGP+MYS+AUS+IND+TWN&timefrom=2019&format=.csv",
+     "date": "2026-11-18",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "나라마다 가장 최근 해가 다르다(2020~2025). 데이터센터 건설·운영 직종의 임금이 아니라 전 산업 평균이다."
+  },
+  {
+   "id": "wage-sg",
+   "topic": "F2",
+   "kind": "wage",
+   "country": "SG",
+   "city": null,
+   "metric": "임금 근로자의 월평균 임금",
+   "scope": "전국·전 산업",
+   "definition": "나라마다 조사와 포함 범위가 다르고 기준 해가 달라 환율 영향도 섞인다",
+   "key": "wage_monthly_usd",
+   "value": 3483,
+   "unit": "달러/월",
+   "asof": "2021",
+   "basis": "ILOSTAT 의 달러 환산 값 그대로(소수점 아래 반올림)",
+   "series": [
+    {
+     "period": "2019",
+     "value": 3345,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2020",
+     "value": 3286,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2021",
+     "value": 3483,
+     "src": [
+      1
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "ILOSTAT — Average monthly earnings of employees by sex and currency (EAR_EMTA_SEX_CUR_NB_A)",
+     "url": "https://rplumber.ilo.org/data/indicator/?id=EAR_EMTA_SEX_CUR_NB_A&ref_area=KOR+JPN+SGP+MYS+AUS+IND+TWN&timefrom=2019&format=.csv",
+     "date": "2026-11-18",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "나라마다 가장 최근 해가 다르다(2020~2025). 데이터센터 건설·운영 직종의 임금이 아니라 전 산업 평균이다."
+  },
+  {
+   "id": "wage-my",
+   "topic": "F2",
+   "kind": "wage",
+   "country": "MY",
+   "city": null,
+   "metric": "임금 근로자의 월평균 임금",
+   "scope": "전국·전 산업",
+   "definition": "나라마다 조사와 포함 범위가 다르고 기준 해가 달라 환율 영향도 섞인다",
+   "key": "wage_monthly_usd",
+   "value": 698,
+   "unit": "달러/월",
+   "asof": "2020",
+   "basis": "ILOSTAT 의 달러 환산 값 그대로(소수점 아래 반올림)",
+   "series": [
+    {
+     "period": "2019",
+     "value": 778,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2020",
+     "value": 698,
+     "src": [
+      1
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "ILOSTAT — Average monthly earnings of employees by sex and currency (EAR_EMTA_SEX_CUR_NB_A)",
+     "url": "https://rplumber.ilo.org/data/indicator/?id=EAR_EMTA_SEX_CUR_NB_A&ref_area=KOR+JPN+SGP+MYS+AUS+IND+TWN&timefrom=2019&format=.csv",
+     "date": "2026-11-18",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "나라마다 가장 최근 해가 다르다(2020~2025). 데이터센터 건설·운영 직종의 임금이 아니라 전 산업 평균이다."
+  },
+  {
+   "id": "wage-au",
+   "topic": "F2",
+   "kind": "wage",
+   "country": "AU",
+   "city": null,
+   "metric": "임금 근로자의 월평균 임금",
+   "scope": "전국·전 산업",
+   "definition": "나라마다 조사와 포함 범위가 다르고 기준 해가 달라 환율 영향도 섞인다",
+   "key": "wage_monthly_usd",
+   "value": 4436,
+   "unit": "달러/월",
+   "asof": "2021",
+   "basis": "ILOSTAT 의 달러 환산 값 그대로(소수점 아래 반올림)",
+   "series": [
+    {
+     "period": "2019",
+     "value": 3836,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2020",
+     "value": 3874,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2021",
+     "value": 4436,
+     "src": [
+      1
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "ILOSTAT — Average monthly earnings of employees by sex and currency (EAR_EMTA_SEX_CUR_NB_A)",
+     "url": "https://rplumber.ilo.org/data/indicator/?id=EAR_EMTA_SEX_CUR_NB_A&ref_area=KOR+JPN+SGP+MYS+AUS+IND+TWN&timefrom=2019&format=.csv",
+     "date": "2026-11-18",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "나라마다 가장 최근 해가 다르다(2020~2025). 데이터센터 건설·운영 직종의 임금이 아니라 전 산업 평균이다."
+  },
+  {
+   "id": "wage-in",
+   "topic": "F2",
+   "kind": "wage",
+   "country": "IN",
+   "city": null,
+   "metric": "임금 근로자의 월평균 임금",
+   "scope": "전국·전 산업",
+   "definition": "나라마다 조사와 포함 범위가 다르고 기준 해가 달라 환율 영향도 섞인다",
+   "key": "wage_monthly_usd",
+   "value": 255,
+   "unit": "달러/월",
+   "asof": "2025",
+   "basis": "ILOSTAT 의 달러 환산 값 그대로(소수점 아래 반올림)",
+   "series": [
+    {
+     "period": "2019",
+     "value": 224,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2020",
+     "value": 230,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2021",
+     "value": 238,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2022",
+     "value": 239,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2023",
+     "value": 240,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2024",
+     "value": 249,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2025",
+     "value": 255,
+     "src": [
+      1
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "ILOSTAT — Average monthly earnings of employees by sex and currency (EAR_EMTA_SEX_CUR_NB_A)",
+     "url": "https://rplumber.ilo.org/data/indicator/?id=EAR_EMTA_SEX_CUR_NB_A&ref_area=KOR+JPN+SGP+MYS+AUS+IND+TWN&timefrom=2019&format=.csv",
+     "date": "2026-11-18",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "나라마다 가장 최근 해가 다르다(2020~2025). 데이터센터 건설·운영 직종의 임금이 아니라 전 산업 평균이다."
+  },
+  {
+   "id": "wage-tw",
+   "topic": "F2",
+   "kind": "wage",
+   "country": "TW",
+   "city": null,
+   "metric": "임금 근로자의 월평균 임금",
+   "scope": "전국·전 산업",
+   "definition": "나라마다 조사와 포함 범위가 다르고 기준 해가 달라 환율 영향도 섞인다",
+   "key": "wage_monthly_usd",
+   "value": null,
+   "unit": "달러/월",
+   "asof": "2025",
+   "basis": "ILOSTAT 의 달러 환산 값 그대로(소수점 아래 반올림)",
+   "series": [],
+   "sources": [
+    {
+     "n": 1,
+     "title": "ILOSTAT — Average monthly earnings of employees by sex and currency (EAR_EMTA_SEX_CUR_NB_A)",
+     "url": "https://rplumber.ilo.org/data/indicator/?id=EAR_EMTA_SEX_CUR_NB_A&ref_area=KOR+JPN+SGP+MYS+AUS+IND+TWN&timefrom=2019&format=.csv",
+     "date": "2026-11-18",
+     "read": "full"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "low",
+   "note": "ILOSTAT 에 이 나라의 값이 없다."
+  },
+  {
+   "id": "wgi-rq-kr",
+   "topic": "F3",
+   "kind": "governance",
+   "auto": true,
+   "country": "KR",
+   "city": null,
+   "metric": "세계은행 거버넌스 지수 — 규제 품질(Regulatory Quality)",
+   "scope": "전국",
+   "definition": "여러 조사·평가를 합친 인식 지표다. 추정치마다 표준오차가 있어 값이 가까운 나라의 순서는 뜻이 없다",
+   "key": "regulatory_quality",
+   "value": 1.003,
+   "unit": "추정치(-2.5~2.5, 클수록 좋음)",
+   "asof": "2025",
+   "basis": "세계은행 WGI 2026년판의 추정치 그대로. 0~100 점수와 표준오차는 series 에 있다",
+   "score": 72.8,
+   "series": [
+    {
+     "period": "2019",
+     "value": 0.942,
+     "score": 71.7,
+     "stderr": 0.197,
+     "sources_used": 8,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2020",
+     "value": 0.941,
+     "score": 71.7,
+     "stderr": 0.197,
+     "sources_used": 8,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2021",
+     "value": 1.021,
+     "score": 73.1,
+     "stderr": 0.197,
+     "sources_used": 8,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2022",
+     "value": 1.05,
+     "score": 73.6,
+     "stderr": 0.197,
+     "sources_used": 8,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2023",
+     "value": 0.953,
+     "score": 71.9,
+     "stderr": 0.197,
+     "sources_used": 8,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2024",
+     "value": 0.961,
+     "score": 72,
+     "stderr": 0.197,
+     "sources_used": 9,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2025",
+     "value": 1.003,
+     "score": 72.8,
+     "stderr": 0.197,
+     "sources_used": 9,
+     "src": [
+      1
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "World Bank — Worldwide Governance Indicators, 2026 edition (dataset)",
+     "url": "https://www.worldbank.org/en/publication/worldwide-governance-indicators",
+     "date": "2026-11-18",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "파일을 통째로 받아 읽은 값이다."
+  },
+  {
+   "id": "wgi-rq-jp",
+   "topic": "F3",
+   "kind": "governance",
+   "auto": true,
+   "country": "JP",
+   "city": null,
+   "metric": "세계은행 거버넌스 지수 — 규제 품질(Regulatory Quality)",
+   "scope": "전국",
+   "definition": "여러 조사·평가를 합친 인식 지표다. 추정치마다 표준오차가 있어 값이 가까운 나라의 순서는 뜻이 없다",
+   "key": "regulatory_quality",
+   "value": 1.221,
+   "unit": "추정치(-2.5~2.5, 클수록 좋음)",
+   "asof": "2025",
+   "basis": "세계은행 WGI 2026년판의 추정치 그대로. 0~100 점수와 표준오차는 series 에 있다",
+   "score": 76.5,
+   "series": [
+    {
+     "period": "2019",
+     "value": 1.395,
+     "score": 79.5,
+     "stderr": 0.218,
+     "sources_used": 7,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2020",
+     "value": 1.376,
+     "score": 79.2,
+     "stderr": 0.218,
+     "sources_used": 7,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2021",
+     "value": 1.4,
+     "score": 79.6,
+     "stderr": 0.218,
+     "sources_used": 7,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2022",
+     "value": 1.412,
+     "score": 79.8,
+     "stderr": 0.218,
+     "sources_used": 7,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2023",
+     "value": 1.349,
+     "score": 78.7,
+     "stderr": 0.218,
+     "sources_used": 7,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2024",
+     "value": 1.245,
+     "score": 76.9,
+     "stderr": 0.218,
+     "sources_used": 7,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2025",
+     "value": 1.221,
+     "score": 76.5,
+     "stderr": 0.218,
+     "sources_used": 8,
+     "src": [
+      1
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "World Bank — Worldwide Governance Indicators, 2026 edition (dataset)",
+     "url": "https://www.worldbank.org/en/publication/worldwide-governance-indicators",
+     "date": "2026-11-18",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "파일을 통째로 받아 읽은 값이다."
+  },
+  {
+   "id": "wgi-rq-sg",
+   "topic": "F3",
+   "kind": "governance",
+   "auto": true,
+   "country": "SG",
+   "city": null,
+   "metric": "세계은행 거버넌스 지수 — 규제 품질(Regulatory Quality)",
+   "scope": "전국",
+   "definition": "여러 조사·평가를 합친 인식 지표다. 추정치마다 표준오차가 있어 값이 가까운 나라의 순서는 뜻이 없다",
+   "key": "regulatory_quality",
+   "value": 2.113,
+   "unit": "추정치(-2.5~2.5, 클수록 좋음)",
+   "asof": "2025",
+   "basis": "세계은행 WGI 2026년판의 추정치 그대로. 0~100 점수와 표준오차는 series 에 있다",
+   "score": 91.9,
+   "series": [
+    {
+     "period": "2019",
+     "value": 2.155,
+     "score": 92.6,
+     "stderr": 0.197,
+     "sources_used": 8,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2020",
+     "value": 2.1,
+     "score": 91.6,
+     "stderr": 0.197,
+     "sources_used": 8,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2021",
+     "value": 2.111,
+     "score": 91.8,
+     "stderr": 0.197,
+     "sources_used": 8,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2022",
+     "value": 2.039,
+     "score": 90.6,
+     "stderr": 0.197,
+     "sources_used": 8,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2023",
+     "value": 2.135,
+     "score": 92.2,
+     "stderr": 0.197,
+     "sources_used": 9,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2024",
+     "value": 2.088,
+     "score": 91.4,
+     "stderr": 0.197,
+     "sources_used": 9,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2025",
+     "value": 2.113,
+     "score": 91.9,
+     "stderr": 0.197,
+     "sources_used": 9,
+     "src": [
+      1
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "World Bank — Worldwide Governance Indicators, 2026 edition (dataset)",
+     "url": "https://www.worldbank.org/en/publication/worldwide-governance-indicators",
+     "date": "2026-11-18",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "파일을 통째로 받아 읽은 값이다."
+  },
+  {
+   "id": "wgi-rq-my",
+   "topic": "F3",
+   "kind": "governance",
+   "auto": true,
+   "country": "MY",
+   "city": null,
+   "metric": "세계은행 거버넌스 지수 — 규제 품질(Regulatory Quality)",
+   "scope": "전국",
+   "definition": "여러 조사·평가를 합친 인식 지표다. 추정치마다 표준오차가 있어 값이 가까운 나라의 순서는 뜻이 없다",
+   "key": "regulatory_quality",
+   "value": 0.684,
+   "unit": "추정치(-2.5~2.5, 클수록 좋음)",
+   "asof": "2025",
+   "basis": "세계은행 WGI 2026년판의 추정치 그대로. 0~100 점수와 표준오차는 series 에 있다",
+   "score": 67.3,
+   "series": [
+    {
+     "period": "2019",
+     "value": 0.765,
+     "score": 68.7,
+     "stderr": 0.191,
+     "sources_used": 9,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2020",
+     "value": 0.659,
+     "score": 66.8,
+     "stderr": 0.197,
+     "sources_used": 8,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2021",
+     "value": 0.762,
+     "score": 68.6,
+     "stderr": 0.197,
+     "sources_used": 8,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2022",
+     "value": 0.679,
+     "score": 67.2,
+     "stderr": 0.197,
+     "sources_used": 8,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2023",
+     "value": 0.601,
+     "score": 65.8,
+     "stderr": 0.197,
+     "sources_used": 8,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2024",
+     "value": 0.635,
+     "score": 66.4,
+     "stderr": 0.197,
+     "sources_used": 9,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2025",
+     "value": 0.684,
+     "score": 67.3,
+     "stderr": 0.197,
+     "sources_used": 9,
+     "src": [
+      1
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "World Bank — Worldwide Governance Indicators, 2026 edition (dataset)",
+     "url": "https://www.worldbank.org/en/publication/worldwide-governance-indicators",
+     "date": "2026-11-18",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "파일을 통째로 받아 읽은 값이다."
+  },
+  {
+   "id": "wgi-rq-au",
+   "topic": "F3",
+   "kind": "governance",
+   "auto": true,
+   "country": "AU",
+   "city": null,
+   "metric": "세계은행 거버넌스 지수 — 규제 품질(Regulatory Quality)",
+   "scope": "전국",
+   "definition": "여러 조사·평가를 합친 인식 지표다. 추정치마다 표준오차가 있어 값이 가까운 나라의 순서는 뜻이 없다",
+   "key": "regulatory_quality",
+   "value": 1.669,
+   "unit": "추정치(-2.5~2.5, 클수록 좋음)",
+   "asof": "2025",
+   "basis": "세계은행 WGI 2026년판의 추정치 그대로. 0~100 점수와 표준오차는 series 에 있다",
+   "score": 84.2,
+   "series": [
+    {
+     "period": "2019",
+     "value": 1.865,
+     "score": 87.6,
+     "stderr": 0.218,
+     "sources_used": 7,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2020",
+     "value": 1.793,
+     "score": 86.4,
+     "stderr": 0.218,
+     "sources_used": 7,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2021",
+     "value": 1.807,
+     "score": 86.6,
+     "stderr": 0.218,
+     "sources_used": 7,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2022",
+     "value": 1.835,
+     "score": 87.1,
+     "stderr": 0.218,
+     "sources_used": 7,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2023",
+     "value": 1.836,
+     "score": 87.1,
+     "stderr": 0.218,
+     "sources_used": 7,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2024",
+     "value": 1.694,
+     "score": 84.7,
+     "stderr": 0.218,
+     "sources_used": 7,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2025",
+     "value": 1.669,
+     "score": 84.2,
+     "stderr": 0.218,
+     "sources_used": 8,
+     "src": [
+      1
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "World Bank — Worldwide Governance Indicators, 2026 edition (dataset)",
+     "url": "https://www.worldbank.org/en/publication/worldwide-governance-indicators",
+     "date": "2026-11-18",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "파일을 통째로 받아 읽은 값이다."
+  },
+  {
+   "id": "wgi-rq-in",
+   "topic": "F3",
+   "kind": "governance",
+   "auto": true,
+   "country": "IN",
+   "city": null,
+   "metric": "세계은행 거버넌스 지수 — 규제 품질(Regulatory Quality)",
+   "scope": "전국",
+   "definition": "여러 조사·평가를 합친 인식 지표다. 추정치마다 표준오차가 있어 값이 가까운 나라의 순서는 뜻이 없다",
+   "key": "regulatory_quality",
+   "value": -0.17,
+   "unit": "추정치(-2.5~2.5, 클수록 좋음)",
+   "asof": "2025",
+   "basis": "세계은행 WGI 2026년판의 추정치 그대로. 0~100 점수와 표준오차는 series 에 있다",
+   "score": 52.6,
+   "series": [
+    {
+     "period": "2019",
+     "value": -0.132,
+     "score": 53.2,
+     "stderr": 0.191,
+     "sources_used": 9,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2020",
+     "value": -0.165,
+     "score": 52.7,
+     "stderr": 0.191,
+     "sources_used": 9,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2021",
+     "value": -0.188,
+     "score": 52.3,
+     "stderr": 0.191,
+     "sources_used": 9,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2022",
+     "value": -0.092,
+     "score": 53.9,
+     "stderr": 0.191,
+     "sources_used": 10,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2023",
+     "value": -0.13,
+     "score": 53.3,
+     "stderr": 0.191,
+     "sources_used": 10,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2024",
+     "value": -0.09,
+     "score": 54,
+     "stderr": 0.191,
+     "sources_used": 10,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2025",
+     "value": -0.17,
+     "score": 52.6,
+     "stderr": 0.191,
+     "sources_used": 10,
+     "src": [
+      1
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "World Bank — Worldwide Governance Indicators, 2026 edition (dataset)",
+     "url": "https://www.worldbank.org/en/publication/worldwide-governance-indicators",
+     "date": "2026-11-18",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "파일을 통째로 받아 읽은 값이다."
+  },
+  {
+   "id": "wgi-rq-tw",
+   "topic": "F3",
+   "kind": "governance",
+   "auto": true,
+   "country": "TW",
+   "city": null,
+   "metric": "세계은행 거버넌스 지수 — 규제 품질(Regulatory Quality)",
+   "scope": "전국",
+   "definition": "여러 조사·평가를 합친 인식 지표다. 추정치마다 표준오차가 있어 값이 가까운 나라의 순서는 뜻이 없다",
+   "key": "regulatory_quality",
+   "value": 1.195,
+   "unit": "추정치(-2.5~2.5, 클수록 좋음)",
+   "asof": "2025",
+   "basis": "세계은행 WGI 2026년판의 추정치 그대로. 0~100 점수와 표준오차는 series 에 있다",
+   "score": 76.1,
+   "series": [
+    {
+     "period": "2019",
+     "value": 1.296,
+     "score": 77.8,
+     "stderr": 0.211,
+     "sources_used": 7,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2020",
+     "value": 1.237,
+     "score": 76.8,
+     "stderr": 0.211,
+     "sources_used": 7,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2021",
+     "value": 1.299,
+     "score": 77.9,
+     "stderr": 0.211,
+     "sources_used": 7,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2022",
+     "value": 1.258,
+     "score": 77.2,
+     "stderr": 0.211,
+     "sources_used": 7,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2023",
+     "value": 1.256,
+     "score": 77.1,
+     "stderr": 0.211,
+     "sources_used": 7,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2024",
+     "value": 1.254,
+     "score": 77.1,
+     "stderr": 0.211,
+     "sources_used": 8,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2025",
+     "value": 1.195,
+     "score": 76.1,
+     "stderr": 0.211,
+     "sources_used": 8,
+     "src": [
+      1
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "World Bank — Worldwide Governance Indicators, 2026 edition (dataset)",
+     "url": "https://www.worldbank.org/en/publication/worldwide-governance-indicators",
+     "date": "2026-11-18",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "파일을 통째로 받아 읽은 값이다."
+  },
+  {
+   "id": "wgi-rl-kr",
+   "topic": "F3",
+   "kind": "governance",
+   "auto": true,
+   "country": "KR",
+   "city": null,
+   "metric": "세계은행 거버넌스 지수 — 법치(Rule of Law)",
+   "scope": "전국",
+   "definition": "여러 조사·평가를 합친 인식 지표다. 추정치마다 표준오차가 있어 값이 가까운 나라의 순서는 뜻이 없다",
+   "key": "rule_of_law",
+   "value": 1.195,
+   "unit": "추정치(-2.5~2.5, 클수록 좋음)",
+   "asof": "2025",
+   "basis": "세계은행 WGI 2026년판의 추정치 그대로. 0~100 점수와 표준오차는 series 에 있다",
+   "score": 78.3,
+   "series": [
+    {
+     "period": "2019",
+     "value": 1.113,
+     "score": 77,
+     "stderr": 0.151,
+     "sources_used": 13,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2020",
+     "value": 1.161,
+     "score": 77.8,
+     "stderr": 0.157,
+     "sources_used": 12,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2021",
+     "value": 1.183,
+     "score": 78.1,
+     "stderr": 0.157,
+     "sources_used": 12,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2022",
+     "value": 1.189,
+     "score": 78.2,
+     "stderr": 0.154,
+     "sources_used": 13,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2023",
+     "value": 1.176,
+     "score": 78,
+     "stderr": 0.154,
+     "sources_used": 13,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2024",
+     "value": 1.119,
+     "score": 77.1,
+     "stderr": 0.153,
+     "sources_used": 14,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2025",
+     "value": 1.195,
+     "score": 78.3,
+     "stderr": 0.153,
+     "sources_used": 14,
+     "src": [
+      1
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "World Bank — Worldwide Governance Indicators, 2026 edition (dataset)",
+     "url": "https://www.worldbank.org/en/publication/worldwide-governance-indicators",
+     "date": "2026-11-18",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "파일을 통째로 받아 읽은 값이다."
+  },
+  {
+   "id": "wgi-rl-jp",
+   "topic": "F3",
+   "kind": "governance",
+   "auto": true,
+   "country": "JP",
+   "city": null,
+   "metric": "세계은행 거버넌스 지수 — 법치(Rule of Law)",
+   "scope": "전국",
+   "definition": "여러 조사·평가를 합친 인식 지표다. 추정치마다 표준오차가 있어 값이 가까운 나라의 순서는 뜻이 없다",
+   "key": "rule_of_law",
+   "value": 1.542,
+   "unit": "추정치(-2.5~2.5, 클수록 좋음)",
+   "asof": "2025",
+   "basis": "세계은행 WGI 2026년판의 추정치 그대로. 0~100 점수와 표준오차는 series 에 있다",
+   "score": 84,
+   "series": [
+    {
+     "period": "2019",
+     "value": 1.507,
+     "score": 83.5,
+     "stderr": 0.157,
+     "sources_used": 11,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2020",
+     "value": 1.503,
+     "score": 83.4,
+     "stderr": 0.164,
+     "sources_used": 10,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2021",
+     "value": 1.531,
+     "score": 83.9,
+     "stderr": 0.164,
+     "sources_used": 10,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2022",
+     "value": 1.511,
+     "score": 83.5,
+     "stderr": 0.16,
+     "sources_used": 11,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2023",
+     "value": 1.512,
+     "score": 83.5,
+     "stderr": 0.16,
+     "sources_used": 11,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2024",
+     "value": 1.518,
+     "score": 83.7,
+     "stderr": 0.16,
+     "sources_used": 11,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2025",
+     "value": 1.542,
+     "score": 84,
+     "stderr": 0.16,
+     "sources_used": 12,
+     "src": [
+      1
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "World Bank — Worldwide Governance Indicators, 2026 edition (dataset)",
+     "url": "https://www.worldbank.org/en/publication/worldwide-governance-indicators",
+     "date": "2026-11-18",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "파일을 통째로 받아 읽은 값이다."
+  },
+  {
+   "id": "wgi-rl-sg",
+   "topic": "F3",
+   "kind": "governance",
+   "auto": true,
+   "country": "SG",
+   "city": null,
+   "metric": "세계은행 거버넌스 지수 — 법치(Rule of Law)",
+   "scope": "전국",
+   "definition": "여러 조사·평가를 합친 인식 지표다. 추정치마다 표준오차가 있어 값이 가까운 나라의 순서는 뜻이 없다",
+   "key": "rule_of_law",
+   "value": 1.489,
+   "unit": "추정치(-2.5~2.5, 클수록 좋음)",
+   "asof": "2025",
+   "basis": "세계은행 WGI 2026년판의 추정치 그대로. 0~100 점수와 표준오차는 series 에 있다",
+   "score": 83.2,
+   "series": [
+    {
+     "period": "2019",
+     "value": 1.528,
+     "score": 83.8,
+     "stderr": 0.153,
+     "sources_used": 11,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2020",
+     "value": 1.489,
+     "score": 83.2,
+     "stderr": 0.159,
+     "sources_used": 11,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2021",
+     "value": 1.459,
+     "score": 82.7,
+     "stderr": 0.159,
+     "sources_used": 11,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2022",
+     "value": 1.465,
+     "score": 82.8,
+     "stderr": 0.154,
+     "sources_used": 13,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2023",
+     "value": 1.452,
+     "score": 82.6,
+     "stderr": 0.153,
+     "sources_used": 14,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2024",
+     "value": 1.474,
+     "score": 82.9,
+     "stderr": 0.153,
+     "sources_used": 14,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2025",
+     "value": 1.489,
+     "score": 83.2,
+     "stderr": 0.153,
+     "sources_used": 14,
+     "src": [
+      1
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "World Bank — Worldwide Governance Indicators, 2026 edition (dataset)",
+     "url": "https://www.worldbank.org/en/publication/worldwide-governance-indicators",
+     "date": "2026-11-18",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "파일을 통째로 받아 읽은 값이다."
+  },
+  {
+   "id": "wgi-rl-my",
+   "topic": "F3",
+   "kind": "governance",
+   "auto": true,
+   "country": "MY",
+   "city": null,
+   "metric": "세계은행 거버넌스 지수 — 법치(Rule of Law)",
+   "scope": "전국",
+   "definition": "여러 조사·평가를 합친 인식 지표다. 추정치마다 표준오차가 있어 값이 가까운 나라의 순서는 뜻이 없다",
+   "key": "rule_of_law",
+   "value": 0.408,
+   "unit": "추정치(-2.5~2.5, 클수록 좋음)",
+   "asof": "2025",
+   "basis": "세계은행 WGI 2026년판의 추정치 그대로. 0~100 점수와 표준오차는 series 에 있다",
+   "score": 65.4,
+   "series": [
+    {
+     "period": "2019",
+     "value": 0.35,
+     "score": 64.4,
+     "stderr": 0.15,
+     "sources_used": 14,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2020",
+     "value": 0.379,
+     "score": 64.9,
+     "stderr": 0.157,
+     "sources_used": 11,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2021",
+     "value": 0.337,
+     "score": 64.2,
+     "stderr": 0.157,
+     "sources_used": 12,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2022",
+     "value": 0.328,
+     "score": 64,
+     "stderr": 0.154,
+     "sources_used": 13,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2023",
+     "value": 0.349,
+     "score": 64.4,
+     "stderr": 0.154,
+     "sources_used": 13,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2024",
+     "value": 0.371,
+     "score": 64.7,
+     "stderr": 0.153,
+     "sources_used": 14,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2025",
+     "value": 0.408,
+     "score": 65.4,
+     "stderr": 0.153,
+     "sources_used": 14,
+     "src": [
+      1
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "World Bank — Worldwide Governance Indicators, 2026 edition (dataset)",
+     "url": "https://www.worldbank.org/en/publication/worldwide-governance-indicators",
+     "date": "2026-11-18",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "파일을 통째로 받아 읽은 값이다."
+  },
+  {
+   "id": "wgi-rl-au",
+   "topic": "F3",
+   "kind": "governance",
+   "auto": true,
+   "country": "AU",
+   "city": null,
+   "metric": "세계은행 거버넌스 지수 — 법치(Rule of Law)",
+   "scope": "전국",
+   "definition": "여러 조사·평가를 합친 인식 지표다. 추정치마다 표준오차가 있어 값이 가까운 나라의 순서는 뜻이 없다",
+   "key": "rule_of_law",
+   "value": 1.459,
+   "unit": "추정치(-2.5~2.5, 클수록 좋음)",
+   "asof": "2025",
+   "basis": "세계은행 WGI 2026년판의 추정치 그대로. 0~100 점수와 표준오차는 series 에 있다",
+   "score": 82.7,
+   "series": [
+    {
+     "period": "2019",
+     "value": 1.628,
+     "score": 85.5,
+     "stderr": 0.155,
+     "sources_used": 12,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2020",
+     "value": 1.552,
+     "score": 84.2,
+     "stderr": 0.161,
+     "sources_used": 11,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2021",
+     "value": 1.578,
+     "score": 84.6,
+     "stderr": 0.161,
+     "sources_used": 11,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2022",
+     "value": 1.486,
+     "score": 83.1,
+     "stderr": 0.158,
+     "sources_used": 12,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2023",
+     "value": 1.499,
+     "score": 83.3,
+     "stderr": 0.158,
+     "sources_used": 12,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2024",
+     "value": 1.484,
+     "score": 83.1,
+     "stderr": 0.158,
+     "sources_used": 12,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2025",
+     "value": 1.459,
+     "score": 82.7,
+     "stderr": 0.157,
+     "sources_used": 13,
+     "src": [
+      1
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "World Bank — Worldwide Governance Indicators, 2026 edition (dataset)",
+     "url": "https://www.worldbank.org/en/publication/worldwide-governance-indicators",
+     "date": "2026-11-18",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "파일을 통째로 받아 읽은 값이다."
+  },
+  {
+   "id": "wgi-rl-in",
+   "topic": "F3",
+   "kind": "governance",
+   "auto": true,
+   "country": "IN",
+   "city": null,
+   "metric": "세계은행 거버넌스 지수 — 법치(Rule of Law)",
+   "scope": "전국",
+   "definition": "여러 조사·평가를 합친 인식 지표다. 추정치마다 표준오차가 있어 값이 가까운 나라의 순서는 뜻이 없다",
+   "key": "rule_of_law",
+   "value": -0.129,
+   "unit": "추정치(-2.5~2.5, 클수록 좋음)",
+   "asof": "2025",
+   "basis": "세계은행 WGI 2026년판의 추정치 그대로. 0~100 점수와 표준오차는 series 에 있다",
+   "score": 56.5,
+   "series": [
+    {
+     "period": "2019",
+     "value": -0.016,
+     "score": 58.4,
+     "stderr": 0.152,
+     "sources_used": 13,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2020",
+     "value": -0.078,
+     "score": 57.4,
+     "stderr": 0.156,
+     "sources_used": 13,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2021",
+     "value": -0.161,
+     "score": 56,
+     "stderr": 0.156,
+     "sources_used": 13,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2022",
+     "value": -0.062,
+     "score": 57.6,
+     "stderr": 0.152,
+     "sources_used": 15,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2023",
+     "value": -0.067,
+     "score": 57.5,
+     "stderr": 0.152,
+     "sources_used": 15,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2024",
+     "value": -0.013,
+     "score": 58.4,
+     "stderr": 0.152,
+     "sources_used": 14,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2025",
+     "value": -0.129,
+     "score": 56.5,
+     "stderr": 0.152,
+     "sources_used": 14,
+     "src": [
+      1
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "World Bank — Worldwide Governance Indicators, 2026 edition (dataset)",
+     "url": "https://www.worldbank.org/en/publication/worldwide-governance-indicators",
+     "date": "2026-11-18",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "파일을 통째로 받아 읽은 값이다."
+  },
+  {
+   "id": "wgi-rl-tw",
+   "topic": "F3",
+   "kind": "governance",
+   "auto": true,
+   "country": "TW",
+   "city": null,
+   "metric": "세계은행 거버넌스 지수 — 법치(Rule of Law)",
+   "scope": "전국",
+   "definition": "여러 조사·평가를 합친 인식 지표다. 추정치마다 표준오차가 있어 값이 가까운 나라의 순서는 뜻이 없다",
+   "key": "rule_of_law",
+   "value": 1.201,
+   "unit": "추정치(-2.5~2.5, 클수록 좋음)",
+   "asof": "2025",
+   "basis": "세계은행 WGI 2026년판의 추정치 그대로. 0~100 점수와 표준오차는 series 에 있다",
+   "score": 78.4,
+   "series": [
+    {
+     "period": "2019",
+     "value": 1.194,
+     "score": 78.3,
+     "stderr": 0.177,
+     "sources_used": 12,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2020",
+     "value": 1.272,
+     "score": 79.6,
+     "stderr": 0.187,
+     "sources_used": 11,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2021",
+     "value": 1.282,
+     "score": 79.8,
+     "stderr": 0.187,
+     "sources_used": 11,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2022",
+     "value": 1.243,
+     "score": 79.1,
+     "stderr": 0.181,
+     "sources_used": 12,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2023",
+     "value": 1.221,
+     "score": 78.8,
+     "stderr": 0.181,
+     "sources_used": 12,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2024",
+     "value": 1.244,
+     "score": 79.1,
+     "stderr": 0.18,
+     "sources_used": 13,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2025",
+     "value": 1.201,
+     "score": 78.4,
+     "stderr": 0.18,
+     "sources_used": 13,
+     "src": [
+      1
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "World Bank — Worldwide Governance Indicators, 2026 edition (dataset)",
+     "url": "https://www.worldbank.org/en/publication/worldwide-governance-indicators",
+     "date": "2026-11-18",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "파일을 통째로 받아 읽은 값이다."
+  },
+  {
+   "id": "data-transfer-kr",
+   "topic": "F3",
+   "kind": "data_rule",
+   "country": "KR",
+   "city": null,
+   "metric": "개인정보 국외 이전 규정",
+   "scope": "전국",
+   "definition": null,
+   "key": "data_transfer",
+   "value": null,
+   "unit": "제도",
+   "asof": "2026",
+   "basis": "법률사무소의 나라별 비교 자료(2026년 2~3월 갱신)에 적힌 내용. 법령 원문을 직접 읽은 것이 아니다",
+   "rule": {
+    "name": "개인정보 보호법(국외 이전 조항)",
+    "authority": "개인정보보호위원회",
+    "effective": null,
+    "threshold": "개인정보를 나라 밖으로 옮기는 모든 처리자"
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "DLA Piper — Data Protection Laws of the World: Transfer of personal data in South Korea",
+     "url": "https://www.dlapiperdataprotection.com/index.html?t=transfer&c=KR",
+     "date": "2026-03-20",
+     "read": "full"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "med",
+   "note": "국외 이전에는 원칙적으로 정보주체의 동의가 필요하다. 조약·법률의 특례, 계약 이행에 필요한 처리 위탁·보관(처리방침에 공개), 위원회가 정한 인증(ISMS-P 등)을 받은 수령자, 보호 수준이 같다고 인정된 나라는 예외다. 2025-09-03 EU 를 같은 수준으로 인정했다."
+  },
+  {
+   "id": "data-transfer-jp",
+   "topic": "F3",
+   "kind": "data_rule",
+   "country": "JP",
+   "city": null,
+   "metric": "개인정보 국외 이전 규정",
+   "scope": "전국",
+   "definition": null,
+   "key": "data_transfer",
+   "value": null,
+   "unit": "제도",
+   "asof": "2026",
+   "basis": "법률사무소의 나라별 비교 자료(2026년 2~3월 갱신)에 적힌 내용. 법령 원문을 직접 읽은 것이 아니다",
+   "rule": {
+    "name": "個人情報保護法(APPI) 제28조 — 외국에 있는 제3자 제공",
+    "authority": "個人情報保護委員会(PPC)",
+    "effective": null,
+    "threshold": "개인정보를 나라 밖으로 옮기는 모든 처리자"
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "DLA Piper — Data Protection Laws of the World: Transfer of personal data in Japan",
+     "url": "https://www.dlapiperdataprotection.com/index.html?t=transfer&c=JP",
+     "date": "2026-02-12",
+     "read": "full"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "med",
+   "note": "외국의 제3자에게 줄 때는 받는 나라를 밝힌 사전 동의가 필요하다. 시행규칙이 정한 나라(영국·EU, 2019-01-23 상호 인정)이거나 수령자가 APPI 와 같은 수준의 체계를 갖추면 예외다."
+  },
+  {
+   "id": "data-transfer-sg",
+   "topic": "F3",
+   "kind": "data_rule",
+   "country": "SG",
+   "city": null,
+   "metric": "개인정보 국외 이전 규정",
+   "scope": "전국",
+   "definition": null,
+   "key": "data_transfer",
+   "value": null,
+   "unit": "제도",
+   "asof": "2026",
+   "basis": "법률사무소의 나라별 비교 자료(2026년 2~3월 갱신)에 적힌 내용. 법령 원문을 직접 읽은 것이 아니다",
+   "rule": {
+    "name": "Personal Data Protection Act 2012 — Transfer Limitation Obligation",
+    "authority": "Personal Data Protection Commission",
+    "effective": null,
+    "threshold": "개인정보를 나라 밖으로 옮기는 모든 처리자"
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "DLA Piper — Data Protection Laws of the World: Transfer of personal data in Singapore",
+     "url": "https://www.dlapiperdataprotection.com/index.html?t=transfer&c=SG",
+     "date": "2026-02-27",
+     "read": "full"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "med",
+   "note": "싱가포르 밖으로 옮길 때 수령자가 법과 견줄 만한 보호를 하도록 해야 한다. 이전 계약(위원회의 표본 조항), 동의, 계약 이행에 필요한 경우 등이 수단이다."
+  },
+  {
+   "id": "data-transfer-my",
+   "topic": "F3",
+   "kind": "data_rule",
+   "country": "MY",
+   "city": null,
+   "metric": "개인정보 국외 이전 규정",
+   "scope": "전국",
+   "definition": null,
+   "key": "data_transfer",
+   "value": null,
+   "unit": "제도",
+   "asof": "2026",
+   "basis": "법률사무소의 나라별 비교 자료(2026년 2~3월 갱신)에 적힌 내용. 법령 원문을 직접 읽은 것이 아니다",
+   "rule": {
+    "name": "Personal Data Protection Act 2010(2024년 개정) 제129조와 국외 이전 지침",
+    "authority": "Personal Data Protection Department",
+    "effective": "2025-04-01",
+    "threshold": "개인정보를 나라 밖으로 옮기는 모든 처리자"
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "DLA Piper — Data Protection Laws of the World: Transfer of personal data in Malaysia",
+     "url": "https://www.dlapiperdataprotection.com/index.html?t=transfer&c=MY",
+     "date": "2026-02-12",
+     "read": "full"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "med",
+   "note": "법이 실질적으로 비슷하거나 같은 수준의 보호를 보장하는 나라로는 옮길 수 있다(이전 영향 평가 필요). 동의, 계약 이행, 관리자의 상당한 주의 등이 예외다. 지침(2025-04-29)은 구속력 있는 기업 규칙·표준 계약 조항을 인정한다."
+  },
+  {
+   "id": "data-transfer-au",
+   "topic": "F3",
+   "kind": "data_rule",
+   "country": "AU",
+   "city": null,
+   "metric": "개인정보 국외 이전 규정",
+   "scope": "전국",
+   "definition": null,
+   "key": "data_transfer",
+   "value": null,
+   "unit": "제도",
+   "asof": "2026",
+   "basis": "법률사무소의 나라별 비교 자료(2026년 2~3월 갱신)에 적힌 내용. 법령 원문을 직접 읽은 것이 아니다",
+   "rule": {
+    "name": "Privacy Act 1988 — Australian Privacy Principle 8",
+    "authority": "Office of the Australian Information Commissioner",
+    "effective": null,
+    "threshold": "개인정보를 나라 밖으로 옮기는 모든 처리자"
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "DLA Piper — Data Protection Laws of the World: Transfer of personal data in Australia",
+     "url": "https://www.dlapiperdataprotection.com/index.html?t=transfer&c=AU",
+     "date": "2026-03-11",
+     "read": "full"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "med",
+   "note": "국외 수령자가 원칙을 어기지 않도록 합리적 조치를 해야 하고, 수령자의 위반에 넘긴 쪽이 책임을 진다. 실질적으로 비슷한 법의 적용을 받는 수령자, 고지 뒤 동의 등이 예외다. 나라 단위의 동등성 선언은 아직 없다."
+  },
+  {
+   "id": "data-transfer-in",
+   "topic": "F3",
+   "kind": "data_rule",
+   "country": "IN",
+   "city": null,
+   "metric": "개인정보 국외 이전 규정",
+   "scope": "전국",
+   "definition": null,
+   "key": "data_transfer",
+   "value": null,
+   "unit": "제도",
+   "asof": "2026",
+   "basis": "법률사무소의 나라별 비교 자료(2026년 2~3월 갱신)에 적힌 내용. 법령 원문을 직접 읽은 것이 아니다",
+   "rule": {
+    "name": "Digital Personal Data Protection Act 2023 제16조와 시행규칙",
+    "authority": "Ministry of Electronics and Information Technology",
+    "effective": null,
+    "threshold": "개인정보를 나라 밖으로 옮기는 모든 처리자"
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "DLA Piper — Data Protection Laws of the World: Transfer of personal data in India",
+     "url": "https://www.dlapiperdataprotection.com/index.html?t=transfer&c=IN",
+     "date": "2026-02-13",
+     "read": "full"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "med",
+   "note": "정부가 금지 목록에 올린 나라가 아니면 국외 이전이 허용된다(금지 목록은 아직 고시되지 않았다). 시행규칙은 '중요 데이터 수탁자'에게 정부가 정한 개인정보를 인도 밖으로 내보내지 않게 할 수 있도록 했는데 대상 정보는 정해지지 않았다."
+  },
+  {
+   "id": "data-transfer-tw",
+   "topic": "F3",
+   "kind": "data_rule",
+   "country": "TW",
+   "city": null,
+   "metric": "개인정보 국외 이전 규정",
+   "scope": "전국",
+   "definition": null,
+   "key": "data_transfer",
+   "value": null,
+   "unit": "제도",
+   "asof": "2026",
+   "basis": "법률사무소의 나라별 비교 자료(2026년 2~3월 갱신)에 적힌 내용. 법령 원문을 직접 읽은 것이 아니다",
+   "rule": {
+    "name": "個人資料保護法 제21조",
+    "authority": "각 주무 부처",
+    "effective": null,
+    "threshold": "개인정보를 나라 밖으로 옮기는 모든 처리자"
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "DLA Piper — Data Protection Laws of the World: Transfer of personal data in Taiwan",
+     "url": "https://www.dlapiperdataprotection.com/index.html?t=transfer&c=TW",
+     "date": "2026-03-19",
+     "read": "full"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "med",
+   "note": "국외 이전은 원칙적으로 자유롭고, 중대한 국가 이익, 조약, 수령국의 보호 미비, 법 회피 목적일 때 주무 부처가 제한할 수 있다. 통신사 가입자 정보(2012년) 등 일부 업종에 중국 본토 이전 금지 명령이 있다."
+  },
+  {
+   "id": "localisation-kr",
+   "topic": "F3",
+   "kind": "localisation",
+   "country": "KR",
+   "city": null,
+   "metric": "공공·금융 부문의 국내 처리 요구와 클라우드 인증",
+   "scope": "전국",
+   "definition": null,
+   "key": "localisation",
+   "value": null,
+   "unit": "제도",
+   "asof": "2026-11",
+   "basis": "로펌의 2026년 11월 규제 안내서와 보도에 적힌 내용. 법령 원문을 직접 읽은 것이 아니다",
+   "rule": {
+    "name": "클라우드 보안인증(CSAP)",
+    "authority": "과학기술정보통신부·한국인터넷진흥원",
+    "effective": null,
+    "threshold": "공공기관에 클라우드를 공급하는 사업자"
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "King & Wood Mallesons — Data Centres: APAC Regulatory Guide 2026, Chapter 11 South Korea",
+     "url": "https://www.mallesons.com/content/dam/mallesons/insights/download-publication/australia/2026/11/00122_Data%20Centre%20Regulatory%20Guide%202026%20Chapter%2011%20South%20Korea.pdf",
+     "date": "2026-11",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "ZDNet Korea — \"AWS·MS·구글 쏟아진다\"…韓 공공 진출한 빅3 클라우드, 주도권 경쟁 시작",
+     "url": "https://zdnet.co.kr/view/?no=20250402144624",
+     "date": "2025-04-02",
+     "read": "full"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "high",
+   "note": "일반적인 국내 저장 의무는 없다. 공공 부문에 공급하려면 CSAP 인증이 필요하고, 인증은 시스템과 데이터가 국내에 물리적으로 있을 것을 요구한다. Microsoft·Google·AWS 가 2024-12~2025-04 에 '하' 등급을 받았다."
+  },
+  {
+   "id": "localisation-jp",
+   "topic": "F3",
+   "kind": "localisation",
+   "country": "JP",
+   "city": null,
+   "metric": "공공·금융 부문의 국내 처리 요구와 클라우드 인증",
+   "scope": "전국",
+   "definition": null,
+   "key": "localisation",
+   "value": null,
+   "unit": "제도",
+   "asof": "2026-11",
+   "basis": "로펌의 2026년 11월 규제 안내서와 보도에 적힌 내용. 법령 원문을 직접 읽은 것이 아니다",
+   "rule": {
+    "name": "政府情報システムのためのセキュリティ評価制度(ISMAP)",
+    "authority": "ISMAP 운영위원회(디지털청 등)",
+    "effective": null,
+    "threshold": "중앙 부처의 클라우드 조달"
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "King & Wood Mallesons — Data Centres: APAC Regulatory Guide 2026, Chapter 6 Japan",
+     "url": "https://www.mallesons.com/content/dam/mallesons/insights/download-publication/australia/2026/11/00122_Data%20Centre%20Regulatory%20Guide%202026%20Chapter%206%20Japan.pdf",
+     "date": "2026-11",
+     "read": "partial"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "med",
+   "note": "일반적인 국내 저장 규정은 없고 정부는 '신뢰 있는 자유로운 데이터 유통(DFFT)'을 내세운다. 다만 업종별 규제와 공공 조달 기준이 데이터 위치를 실질적으로 제한할 수 있다. 중앙 부처가 ISMAP 등록 서비스에서 조달한다는 것과 ISMAP 이 국내 저장을 요구하는지는 검색 요약에서 서로 다르게 나와 확인하지 못했다."
+  },
+  {
+   "id": "localisation-sg",
+   "topic": "F3",
+   "kind": "localisation",
+   "country": "SG",
+   "city": null,
+   "metric": "공공·금융 부문의 국내 처리 요구와 클라우드 인증",
+   "scope": "전국",
+   "definition": null,
+   "key": "localisation",
+   "value": null,
+   "unit": "제도",
+   "asof": "2026-11",
+   "basis": "로펌의 2026년 11월 규제 안내서와 보도에 적힌 내용. 법령 원문을 직접 읽은 것이 아니다",
+   "rule": {
+    "name": "(일반 요구 없음) PDPA 와 디지털 무역 협정",
+    "authority": "Infocomm Media Development Authority·Monetary Authority of Singapore",
+    "effective": null,
+    "threshold": "—"
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "King & Wood Mallesons — Data Centres: APAC Regulatory Guide 2026, Chapter 10 Singapore",
+     "url": "https://www.mallesons.com/content/dam/mallesons/insights/download-publication/australia/2026/11/00122_Data%20Centre%20Regulatory%20Guide%202026%20Chapter%2010%20Singapore.pdf",
+     "date": "2026-11",
+     "read": "partial"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "med",
+   "note": "일반적인 국내 저장 요구가 없다. PDPA 를 지키면 나라 밖에 저장할 수 있고, 2026-02-01 발효된 EU–싱가포르 디지털 무역 협정은 국내 설비 사용·국내 저장을 요구하지 못하게 했다. 금융기관의 클라우드 위탁에 통화청의 사전 승인이 필요 없다는 것은 검색 요약으로만 확인했다."
+  },
+  {
+   "id": "localisation-my",
+   "topic": "F3",
+   "kind": "localisation",
+   "country": "MY",
+   "city": null,
+   "metric": "공공·금융 부문의 국내 처리 요구와 클라우드 인증",
+   "scope": "전국",
+   "definition": null,
+   "key": "localisation",
+   "value": null,
+   "unit": "제도",
+   "asof": "2026-11",
+   "basis": "로펌의 2026년 11월 규제 안내서와 보도에 적힌 내용. 법령 원문을 직접 읽은 것이 아니다",
+   "rule": {
+    "name": "업종별 지침·인가 조건",
+    "authority": "Bank Negara Malaysia 등 업종 규제기관",
+    "effective": null,
+    "threshold": "금융·의료 등 규제 업종"
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "King & Wood Mallesons — Data Centres: APAC Regulatory Guide 2026, Chapter 7 Malaysia",
+     "url": "https://www.mallesons.com/content/dam/mallesons/insights/download-publication/australia/2026/11/00122_Data%20Centre%20Regulatory%20Guide%202026%20Chapter%207%20Malaysia.pdf",
+     "date": "2026-11",
+     "read": "partial"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "med",
+   "note": "일반 의무는 없으나 금융·의료처럼 규제가 강한 업종은 지침이나 인가 조건으로 국내 저장을 요구할 수 있다. 세무·고용 기록의 사본은 말레이시아에 두어야 한다. 금융기관의 중요한 위탁에 중앙은행 승인이 필요하다는 것은 검색 요약으로만 확인했다."
+  },
+  {
+   "id": "localisation-au",
+   "topic": "F3",
+   "kind": "localisation",
+   "country": "AU",
+   "city": null,
+   "metric": "공공·금융 부문의 국내 처리 요구와 클라우드 인증",
+   "scope": "전국",
+   "definition": null,
+   "key": "localisation",
+   "value": null,
+   "unit": "제도",
+   "asof": "2026-11",
+   "basis": "로펌의 2026년 11월 규제 안내서와 보도에 적힌 내용. 법령 원문을 직접 읽은 것이 아니다",
+   "rule": {
+    "name": "My Health Records Act 2012, Hosting Certification Framework",
+    "authority": "Digital Transformation Agency 등",
+    "effective": null,
+    "threshold": "건강 기록, 연방 정부의 보호 등급 데이터"
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "King & Wood Mallesons — Data Centres: APAC Regulatory Guide 2026, Chapter 1 Australia",
+     "url": "https://www.mallesons.com/content/dam/mallesons/insights/download-publication/australia/2026/11/00122_Data%20Centre%20Regulatory%20Guide%202026%20Chapter%201%20Australia.pdf",
+     "date": "2026-11",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "Digital Transformation Agency — Hosting Certification Framework",
+     "url": "https://www.dta.gov.au/our-projects/hosting-strategy/hosting-certification-framework",
+     "date": null,
+     "read": "search_summary"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "med",
+   "note": "건강 기록(My Health Record)은 호주 밖에서 보관·처리할 수 없다. 연방 정부의 보호 등급 데이터와 범정부 시스템은 인증(Certified Strategic·Assured)을 받은 호스팅 사업자에 두어야 한다는 것은 검색 요약으로만 확인했다(정부 페이지를 열지 못했다)."
+  },
+  {
+   "id": "localisation-in",
+   "topic": "F3",
+   "kind": "localisation",
+   "country": "IN",
+   "city": null,
+   "metric": "공공·금융 부문의 국내 처리 요구와 클라우드 인증",
+   "scope": "전국",
+   "definition": null,
+   "key": "localisation",
+   "value": null,
+   "unit": "제도",
+   "asof": "2026-11",
+   "basis": "로펌의 2026년 11월 규제 안내서와 보도에 적힌 내용. 법령 원문을 직접 읽은 것이 아니다",
+   "rule": {
+    "name": "RBI 결제 데이터 저장 지침(2018), 업종별 규정",
+    "authority": "Reserve Bank of India·Securities and Exchange Board of India",
+    "effective": "2018-10-15",
+    "threshold": "결제 시스템 사업자와 그 수탁자"
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "DLA Piper — Data Protection Laws of the World: Transfer of personal data in India",
+     "url": "https://www.dlapiperdataprotection.com/index.html?t=transfer&c=IN",
+     "date": "2026-02-13",
+     "read": "full"
+    },
+    {
+     "n": 2,
+     "title": "King & Wood Mallesons — Data Centres: APAC Regulatory Guide 2026, Chapter 4 India",
+     "url": "https://www.mallesons.com/content/dam/mallesons/insights/download-publication/australia/2026/11/00122_Data%20Centre%20Regulatory%20Guide%202026%20Chapter%204%20India.pdf",
+     "date": "2026-11",
+     "read": "partial"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "high",
+   "note": "일반적인 국내 저장 의무는 없다. 중앙은행은 2018-10-15 부터 결제 시스템 데이터 전체를 인도 안의 시스템에만 저장하게 했다(해외 구간이 있는 거래는 사본을 밖에 둘 수 있다). 증권 규제기관도 업종 지침을 두고 있다."
+  },
+  {
+   "id": "localisation-tw",
+   "topic": "F3",
+   "kind": "localisation",
+   "country": "TW",
+   "city": null,
+   "metric": "공공·금융 부문의 국내 처리 요구와 클라우드 인증",
+   "scope": "전국",
+   "definition": null,
+   "key": "localisation",
+   "value": null,
+   "unit": "제도",
+   "asof": "2026-11",
+   "basis": "로펌의 2026년 11월 규제 안내서와 보도에 적힌 내용. 법령 원문을 직접 읽은 것이 아니다",
+   "rule": {
+    "name": "업종별 이전 금지 명령",
+    "authority": "國家通訊傳播委員會 등 각 부처",
+    "effective": null,
+    "threshold": "통신사·직업소개 기관 등"
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "King & Wood Mallesons — Data Centres: APAC Regulatory Guide 2026, Chapter 12 Taiwan",
+     "url": "https://www.mallesons.com/content/dam/mallesons/insights/download-publication/australia/2026/11/00122_Data%20Centre%20Regulatory%20Guide%202026%20Chapter%2012%20Taiwan.pdf",
+     "date": "2026-11",
+     "read": "partial"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "med",
+   "note": "섬 전체에 적용되는 국내 저장 제도는 없다. 업종별로 중국 본토 이전 금지 같은 제한이 있다. 금융기관의 해외 클라우드 위탁 규정은 찾지 못했다."
+  },
+  {
+   "id": "permit-kr-power",
+   "topic": "F3",
+   "kind": "permit",
+   "country": "KR",
+   "city": null,
+   "metric": "전력 공급까지 걸리는 기간",
+   "scope": "전국(안내서의 일반적인 범위)",
+   "definition": "나라마다 재는 대상이 다르다(전력·개발 허가·용수·토지). 같은 절차의 기간을 견준 값이 아니다",
+   "value": 48,
+   "unit": "개월(범위의 위쪽 끝)",
+   "asof": "2026-11",
+   "basis": "로펌의 2026년 11월 규제 안내서에 적힌 범위",
+   "range": {
+    "low": 12,
+    "high": 48,
+    "what": "수전(전력 공급) 대기"
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "King & Wood Mallesons — Data Centres: APAC Regulatory Guide 2026, Chapter 11 South Korea",
+     "url": "https://www.mallesons.com/content/dam/mallesons/insights/download-publication/australia/2026/11/00122_Data%20Centre%20Regulatory%20Guide%202026%20Chapter%2011%20South%20Korea.pdf",
+     "date": "2026-11",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "5MW 넘게 쓰는 데이터센터는 한전에 미리 알려야 하고, 지금 걸리는 기간은 1~4년이다."
+  },
+  {
+   "id": "permit-jp-development",
+   "topic": "F3",
+   "kind": "permit",
+   "country": "JP",
+   "city": null,
+   "metric": "개발 허가에 걸리는 기간",
+   "scope": "전국(안내서의 일반적인 범위)",
+   "definition": "나라마다 재는 대상이 다르다(전력·개발 허가·용수·토지). 같은 절차의 기간을 견준 값이 아니다",
+   "value": 12,
+   "unit": "개월(범위의 위쪽 끝)",
+   "asof": "2026-11",
+   "basis": "로펌의 2026년 11월 규제 안내서에 적힌 범위",
+   "range": {
+    "low": 6,
+    "high": 12,
+    "what": "도시계획법 개발 허가"
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "King & Wood Mallesons — Data Centres: APAC Regulatory Guide 2026, Chapter 6 Japan",
+     "url": "https://www.mallesons.com/content/dam/mallesons/insights/download-publication/australia/2026/11/00122_Data%20Centre%20Regulatory%20Guide%202026%20Chapter%206%20Japan.pdf",
+     "date": "2026-11",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "일정 규모를 넘으면 도시계획법의 개발 허가가 필요하고 주민 협의를 포함해 6~12개월이 걸릴 수 있다. 전력 접속은 제약 지역에서 여러 해가 걸릴 수 있다고만 적혀 있다."
+  },
+  {
+   "id": "permit-sg-water",
+   "topic": "F3",
+   "kind": "permit",
+   "country": "SG",
+   "city": null,
+   "metric": "용수 승인에 걸리는 기간",
+   "scope": "전국(안내서의 일반적인 범위)",
+   "definition": "나라마다 재는 대상이 다르다(전력·개발 허가·용수·토지). 같은 절차의 기간을 견준 값이 아니다",
+   "value": 6,
+   "unit": "개월(범위의 위쪽 끝)",
+   "asof": "2026-11",
+   "basis": "로펌의 2026년 11월 규제 안내서에 적힌 범위",
+   "range": {
+    "low": 3,
+    "high": 6,
+    "what": "용수 공급 승인"
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "King & Wood Mallesons — Data Centres: APAC Regulatory Guide 2026, Chapter 10 Singapore",
+     "url": "https://www.mallesons.com/content/dam/mallesons/insights/download-publication/australia/2026/11/00122_Data%20Centre%20Regulatory%20Guide%202026%20Chapter%2010%20Singapore.pdf",
+     "date": "2026-11",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "수도청(PUB) 승인은 다른 공급 설비 승인과 함께 진행되고 규모에 따라 3~6개월이 걸린다. 신규 용량 자체는 공모(DC-CFA)로만 받을 수 있고 다음 공모의 필요성은 18~24개월 뒤 검토한다."
+  },
+  {
+   "id": "permit-my-power",
+   "topic": "F3",
+   "kind": "permit",
+   "country": "MY",
+   "city": null,
+   "metric": "전력 공급 공사 기간",
+   "scope": "전국(안내서의 일반적인 범위)",
+   "definition": "나라마다 재는 대상이 다르다(전력·개발 허가·용수·토지). 같은 절차의 기간을 견준 값이 아니다",
+   "value": 12,
+   "unit": "개월(범위의 위쪽 끝)",
+   "asof": "2026-11",
+   "basis": "로펌의 2026년 11월 규제 안내서에 적힌 범위",
+   "range": {
+    "low": 12,
+    "high": 12,
+    "what": "전력 공급 공사(신속 절차)",
+    "before": "36~48개월"
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "King & Wood Mallesons — Data Centres: APAC Regulatory Guide 2026, Chapter 7 Malaysia",
+     "url": "https://www.mallesons.com/content/dam/mallesons/insights/download-publication/australia/2026/11/00122_Data%20Centre%20Regulatory%20Guide%202026%20Chapter%207%20Malaysia.pdf",
+     "date": "2026-11",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "전력회사 TNB 의 데이터센터 신속 절차(Green Lane Pathway)로 공사 기간이 36~48개월에서 12개월로 줄었다."
+  },
+  {
+   "id": "permit-in-land",
+   "topic": "F3",
+   "kind": "permit",
+   "country": "IN",
+   "city": null,
+   "metric": "토지 용도 전환에 걸리는 기간",
+   "scope": "전국(안내서의 일반적인 범위)",
+   "definition": "나라마다 재는 대상이 다르다(전력·개발 허가·용수·토지). 같은 절차의 기간을 견준 값이 아니다",
+   "value": 6,
+   "unit": "개월(범위의 위쪽 끝)",
+   "asof": "2026-11",
+   "basis": "로펌의 2026년 11월 규제 안내서에 적힌 범위",
+   "range": {
+    "low": 3,
+    "high": 6,
+    "what": "토지 용도 전환"
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "King & Wood Mallesons — Data Centres: APAC Regulatory Guide 2026, Chapter 4 India",
+     "url": "https://www.mallesons.com/content/dam/mallesons/insights/download-publication/australia/2026/11/00122_Data%20Centre%20Regulatory%20Guide%202026%20Chapter%204%20India.pdf",
+     "date": "2026-11",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "토지 용도 전환 명령에 보통 3~6개월이 걸리고 주마다 다르다. 배전회사가 아닌 곳에서 전력을 사려면 추가 승인에 4~8개월이 걸린다."
+  },
+  {
+   "id": "export-my-permit",
+   "topic": "F4",
+   "kind": "export_control",
+   "country": "MY",
+   "city": null,
+   "metric": "말레이시아 자체의 AI 칩 반출 허가",
+   "scope": "전국",
+   "definition": null,
+   "value": null,
+   "unit": "제도",
+   "asof": "2025-07",
+   "basis": "검색 요약으로만 확인",
+   "rule": {
+    "name": "Strategic Trade Permit(미국산 고성능 AI 칩)",
+    "authority": "Ministry of Investment, Trade and Industry (Malaysia)",
+    "effective": "2025-07",
+    "threshold": "미국산 고성능 AI 칩의 수출·환적·통과"
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "Fenwick — BIS Announces New Export Controls on Remote Access, AI Chips",
+     "url": "https://www.fenwick.com/insights/publications/bis-announces-new-export-controls-remote-access-ai-chips",
+     "date": "2026-11",
+     "read": "search_summary"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "low",
+   "note": "말레이시아는 2025년 7월부터 미국산 고성능 AI 칩의 수출·환적·통과에 전략물자 허가를 요구한다고 한다. 원문을 열어 확인하지 못했다."
+  },
+  {
+   "id": "export-kr",
+   "topic": "F4",
+   "kind": "export_control",
+   "country": "KR",
+   "city": null,
+   "metric": "미국 수출통제에서의 지위(첨단 AI 반도체)",
+   "scope": "전국",
+   "definition": null,
+   "key": "export_control",
+   "value": null,
+   "unit": "제도",
+   "asof": "2026-11-16",
+   "basis": "미국 상무부 산업안보국의 임시 최종 규칙(2026-11-19 관보 게재·시행 예정) 원문과 수출관리규정의 나라 그룹표",
+   "status": "목적지 허가 대상 아님",
+   "license_required": false,
+   "country_groups": [
+    "A:1",
+    "A:2",
+    "A:3",
+    "A:4",
+    "A:5"
+   ],
+   "rule": {
+    "name": "Addressing Remote Access to Advanced Semiconductors (15 CFR § 742.6(a)(6)(iii), § 744.24)",
+    "authority": "U.S. Department of Commerce, Bureau of Industry and Security",
+    "effective": "2026-11-19",
+    "threshold": "ECCN 3A090·4A090 과 관련 품목"
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "Bureau of Industry and Security — Addressing Remote Access to Advanced Semiconductors (interim final rule, 관보 사전 공개본)",
+     "url": "https://www.federalregister.gov/public-inspection/2026-23529/addressing-remote-access-to-advanced-semiconductors",
+     "date": "2026-11-16",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "eCFR — 15 CFR Part 740, Supplement No. 1 (Country Groups)",
+     "url": "https://www.ecfr.gov/current/title-15/subtitle-B/chapter-VII/subchapter-C/part-740/appendix-Supplement%20No.%201%20to%20Part%20740",
+     "date": "2026-11-09",
+     "read": "full"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "high",
+   "note": "이 규칙의 목적지 기준 허가 대상이 아니다. 목적지 기준 허가는 나라 그룹 D:1·D:4·D:5 가운데 A:5·A:6 에 들지 않는 곳과 위의 다섯 나라에 적용된다. 모든 나라에 공통으로, 우려국(D:5)·마카오에 본사를 둔 회사에 합계 1,200만 TPP 넘는 연산을 내주는 데이터센터로 가는 반도체는 허가가 필요하다(§ 744.24). 2025년 1월의 AI 확산 규칙은 이 규칙으로 정식 폐지됐다."
+  },
+  {
+   "id": "export-jp",
+   "topic": "F4",
+   "kind": "export_control",
+   "country": "JP",
+   "city": null,
+   "metric": "미국 수출통제에서의 지위(첨단 AI 반도체)",
+   "scope": "전국",
+   "definition": null,
+   "key": "export_control",
+   "value": null,
+   "unit": "제도",
+   "asof": "2026-11-16",
+   "basis": "미국 상무부 산업안보국의 임시 최종 규칙(2026-11-19 관보 게재·시행 예정) 원문과 수출관리규정의 나라 그룹표",
+   "status": "목적지 허가 대상 아님",
+   "license_required": false,
+   "country_groups": [
+    "A:1",
+    "A:2",
+    "A:3",
+    "A:4",
+    "A:5"
+   ],
+   "rule": {
+    "name": "Addressing Remote Access to Advanced Semiconductors (15 CFR § 742.6(a)(6)(iii), § 744.24)",
+    "authority": "U.S. Department of Commerce, Bureau of Industry and Security",
+    "effective": "2026-11-19",
+    "threshold": "ECCN 3A090·4A090 과 관련 품목"
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "Bureau of Industry and Security — Addressing Remote Access to Advanced Semiconductors (interim final rule, 관보 사전 공개본)",
+     "url": "https://www.federalregister.gov/public-inspection/2026-23529/addressing-remote-access-to-advanced-semiconductors",
+     "date": "2026-11-16",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "eCFR — 15 CFR Part 740, Supplement No. 1 (Country Groups)",
+     "url": "https://www.ecfr.gov/current/title-15/subtitle-B/chapter-VII/subchapter-C/part-740/appendix-Supplement%20No.%201%20to%20Part%20740",
+     "date": "2026-11-09",
+     "read": "full"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "high",
+   "note": "이 규칙의 목적지 기준 허가 대상이 아니다. 목적지 기준 허가는 나라 그룹 D:1·D:4·D:5 가운데 A:5·A:6 에 들지 않는 곳과 위의 다섯 나라에 적용된다. 모든 나라에 공통으로, 우려국(D:5)·마카오에 본사를 둔 회사에 합계 1,200만 TPP 넘는 연산을 내주는 데이터센터로 가는 반도체는 허가가 필요하다(§ 744.24). 2025년 1월의 AI 확산 규칙은 이 규칙으로 정식 폐지됐다."
+  },
+  {
+   "id": "export-sg",
+   "topic": "F4",
+   "kind": "export_control",
+   "country": "SG",
+   "city": null,
+   "metric": "미국 수출통제에서의 지위(첨단 AI 반도체)",
+   "scope": "전국",
+   "definition": null,
+   "key": "export_control",
+   "value": null,
+   "unit": "제도",
+   "asof": "2026-11-16",
+   "basis": "미국 상무부 산업안보국의 임시 최종 규칙(2026-11-19 관보 게재·시행 예정) 원문과 수출관리규정의 나라 그룹표",
+   "status": "목적지 허가 대상",
+   "license_required": true,
+   "country_groups": [
+    "A:6"
+   ],
+   "rule": {
+    "name": "Addressing Remote Access to Advanced Semiconductors (15 CFR § 742.6(a)(6)(iii), § 744.24)",
+    "authority": "U.S. Department of Commerce, Bureau of Industry and Security",
+    "effective": "2026-11-19",
+    "threshold": "ECCN 3A090·4A090 과 관련 품목"
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "Bureau of Industry and Security — Addressing Remote Access to Advanced Semiconductors (interim final rule, 관보 사전 공개본)",
+     "url": "https://www.federalregister.gov/public-inspection/2026-23529/addressing-remote-access-to-advanced-semiconductors",
+     "date": "2026-11-16",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "eCFR — 15 CFR Part 740, Supplement No. 1 (Country Groups)",
+     "url": "https://www.ecfr.gov/current/title-15/subtitle-B/chapter-VII/subchapter-C/part-740/appendix-Supplement%20No.%201%20to%20Part%20740",
+     "date": "2026-11-09",
+     "read": "full"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "high",
+   "note": "이 규칙이 첨단 반도체의 수출·재수출·국내 이전에 허가를 요구하는 다섯 나라(인도네시아·말레이시아·싱가포르·태국·브라질)에 든다. 규칙은 이 나라들을 전용 위험이 보통보다 높은 곳으로 적었다. 받는 쪽이 미국에 본사를 둔 회사(또는 최종 모회사가 미국)이고 수출자가 보고 의무를 지키면 허가가 필요 없다. 신청은 건별로 심사한다. 모든 나라에 공통으로, 우려국(D:5)·마카오에 본사를 둔 회사에 합계 1,200만 TPP 넘는 연산을 내주는 데이터센터로 가는 반도체는 허가가 필요하다(§ 744.24). 2025년 1월의 AI 확산 규칙은 이 규칙으로 정식 폐지됐다."
+  },
+  {
+   "id": "export-my",
+   "topic": "F4",
+   "kind": "export_control",
+   "country": "MY",
+   "city": null,
+   "metric": "미국 수출통제에서의 지위(첨단 AI 반도체)",
+   "scope": "전국",
+   "definition": null,
+   "key": "export_control",
+   "value": null,
+   "unit": "제도",
+   "asof": "2026-11-16",
+   "basis": "미국 상무부 산업안보국의 임시 최종 규칙(2026-11-19 관보 게재·시행 예정) 원문과 수출관리규정의 나라 그룹표",
+   "status": "목적지 허가 대상",
+   "license_required": true,
+   "country_groups": [],
+   "rule": {
+    "name": "Addressing Remote Access to Advanced Semiconductors (15 CFR § 742.6(a)(6)(iii), § 744.24)",
+    "authority": "U.S. Department of Commerce, Bureau of Industry and Security",
+    "effective": "2026-11-19",
+    "threshold": "ECCN 3A090·4A090 과 관련 품목"
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "Bureau of Industry and Security — Addressing Remote Access to Advanced Semiconductors (interim final rule, 관보 사전 공개본)",
+     "url": "https://www.federalregister.gov/public-inspection/2026-23529/addressing-remote-access-to-advanced-semiconductors",
+     "date": "2026-11-16",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "eCFR — 15 CFR Part 740, Supplement No. 1 (Country Groups)",
+     "url": "https://www.ecfr.gov/current/title-15/subtitle-B/chapter-VII/subchapter-C/part-740/appendix-Supplement%20No.%201%20to%20Part%20740",
+     "date": "2026-11-09",
+     "read": "full"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "high",
+   "note": "이 규칙이 첨단 반도체의 수출·재수출·국내 이전에 허가를 요구하는 다섯 나라(인도네시아·말레이시아·싱가포르·태국·브라질)에 든다. 규칙은 이 나라들을 전용 위험이 보통보다 높은 곳으로 적었다. 받는 쪽이 미국에 본사를 둔 회사(또는 최종 모회사가 미국)이고 수출자가 보고 의무를 지키면 허가가 필요 없다. 신청은 건별로 심사한다. 모든 나라에 공통으로, 우려국(D:5)·마카오에 본사를 둔 회사에 합계 1,200만 TPP 넘는 연산을 내주는 데이터센터로 가는 반도체는 허가가 필요하다(§ 744.24). 2025년 1월의 AI 확산 규칙은 이 규칙으로 정식 폐지됐다."
+  },
+  {
+   "id": "export-au",
+   "topic": "F4",
+   "kind": "export_control",
+   "country": "AU",
+   "city": null,
+   "metric": "미국 수출통제에서의 지위(첨단 AI 반도체)",
+   "scope": "전국",
+   "definition": null,
+   "key": "export_control",
+   "value": null,
+   "unit": "제도",
+   "asof": "2026-11-16",
+   "basis": "미국 상무부 산업안보국의 임시 최종 규칙(2026-11-19 관보 게재·시행 예정) 원문과 수출관리규정의 나라 그룹표",
+   "status": "목적지 허가 대상 아님",
+   "license_required": false,
+   "country_groups": [
+    "A:1",
+    "A:2",
+    "A:3",
+    "A:4",
+    "A:5"
+   ],
+   "rule": {
+    "name": "Addressing Remote Access to Advanced Semiconductors (15 CFR § 742.6(a)(6)(iii), § 744.24)",
+    "authority": "U.S. Department of Commerce, Bureau of Industry and Security",
+    "effective": "2026-11-19",
+    "threshold": "ECCN 3A090·4A090 과 관련 품목"
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "Bureau of Industry and Security — Addressing Remote Access to Advanced Semiconductors (interim final rule, 관보 사전 공개본)",
+     "url": "https://www.federalregister.gov/public-inspection/2026-23529/addressing-remote-access-to-advanced-semiconductors",
+     "date": "2026-11-16",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "eCFR — 15 CFR Part 740, Supplement No. 1 (Country Groups)",
+     "url": "https://www.ecfr.gov/current/title-15/subtitle-B/chapter-VII/subchapter-C/part-740/appendix-Supplement%20No.%201%20to%20Part%20740",
+     "date": "2026-11-09",
+     "read": "full"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "high",
+   "note": "이 규칙의 목적지 기준 허가 대상이 아니다. 목적지 기준 허가는 나라 그룹 D:1·D:4·D:5 가운데 A:5·A:6 에 들지 않는 곳과 위의 다섯 나라에 적용된다. 모든 나라에 공통으로, 우려국(D:5)·마카오에 본사를 둔 회사에 합계 1,200만 TPP 넘는 연산을 내주는 데이터센터로 가는 반도체는 허가가 필요하다(§ 744.24). 2025년 1월의 AI 확산 규칙은 이 규칙으로 정식 폐지됐다."
+  },
+  {
+   "id": "export-in",
+   "topic": "F4",
+   "kind": "export_control",
+   "country": "IN",
+   "city": null,
+   "metric": "미국 수출통제에서의 지위(첨단 AI 반도체)",
+   "scope": "전국",
+   "definition": null,
+   "key": "export_control",
+   "value": null,
+   "unit": "제도",
+   "asof": "2026-11-16",
+   "basis": "미국 상무부 산업안보국의 임시 최종 규칙(2026-11-19 관보 게재·시행 예정) 원문과 수출관리규정의 나라 그룹표",
+   "status": "목적지 허가 대상 아님",
+   "license_required": false,
+   "country_groups": [
+    "A:1",
+    "A:2",
+    "A:3",
+    "A:5"
+   ],
+   "rule": {
+    "name": "Addressing Remote Access to Advanced Semiconductors (15 CFR § 742.6(a)(6)(iii), § 744.24)",
+    "authority": "U.S. Department of Commerce, Bureau of Industry and Security",
+    "effective": "2026-11-19",
+    "threshold": "ECCN 3A090·4A090 과 관련 품목"
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "Bureau of Industry and Security — Addressing Remote Access to Advanced Semiconductors (interim final rule, 관보 사전 공개본)",
+     "url": "https://www.federalregister.gov/public-inspection/2026-23529/addressing-remote-access-to-advanced-semiconductors",
+     "date": "2026-11-16",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "eCFR — 15 CFR Part 740, Supplement No. 1 (Country Groups)",
+     "url": "https://www.ecfr.gov/current/title-15/subtitle-B/chapter-VII/subchapter-C/part-740/appendix-Supplement%20No.%201%20to%20Part%20740",
+     "date": "2026-11-09",
+     "read": "full"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "high",
+   "note": "이 규칙의 목적지 기준 허가 대상이 아니다. 목적지 기준 허가는 나라 그룹 D:1·D:4·D:5 가운데 A:5·A:6 에 들지 않는 곳과 위의 다섯 나라에 적용된다. 모든 나라에 공통으로, 우려국(D:5)·마카오에 본사를 둔 회사에 합계 1,200만 TPP 넘는 연산을 내주는 데이터센터로 가는 반도체는 허가가 필요하다(§ 744.24). 2025년 1월의 AI 확산 규칙은 이 규칙으로 정식 폐지됐다."
+  },
+  {
+   "id": "export-tw",
+   "topic": "F4",
+   "kind": "export_control",
+   "country": "TW",
+   "city": null,
+   "metric": "미국 수출통제에서의 지위(첨단 AI 반도체)",
+   "scope": "전국",
+   "definition": null,
+   "key": "export_control",
+   "value": null,
+   "unit": "제도",
+   "asof": "2026-11-16",
+   "basis": "미국 상무부 산업안보국의 임시 최종 규칙(2026-11-19 관보 게재·시행 예정) 원문과 수출관리규정의 나라 그룹표",
+   "status": "목적지 허가 대상 아님",
+   "license_required": false,
+   "country_groups": [
+    "A:6",
+    "D:3"
+   ],
+   "rule": {
+    "name": "Addressing Remote Access to Advanced Semiconductors (15 CFR § 742.6(a)(6)(iii), § 744.24)",
+    "authority": "U.S. Department of Commerce, Bureau of Industry and Security",
+    "effective": "2026-11-19",
+    "threshold": "ECCN 3A090·4A090 과 관련 품목"
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "Bureau of Industry and Security — Addressing Remote Access to Advanced Semiconductors (interim final rule, 관보 사전 공개본)",
+     "url": "https://www.federalregister.gov/public-inspection/2026-23529/addressing-remote-access-to-advanced-semiconductors",
+     "date": "2026-11-16",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "eCFR — 15 CFR Part 740, Supplement No. 1 (Country Groups)",
+     "url": "https://www.ecfr.gov/current/title-15/subtitle-B/chapter-VII/subchapter-C/part-740/appendix-Supplement%20No.%201%20to%20Part%20740",
+     "date": "2026-11-09",
+     "read": "full"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "high",
+   "note": "이 규칙의 목적지 기준 허가 대상이 아니다. 목적지 기준 허가는 나라 그룹 D:1·D:4·D:5 가운데 A:5·A:6 에 들지 않는 곳과 위의 다섯 나라에 적용된다. 모든 나라에 공통으로, 우려국(D:5)·마카오에 본사를 둔 회사에 합계 1,200만 TPP 넘는 연산을 내주는 데이터센터로 가는 반도체는 허가가 필요하다(§ 744.24). 2025년 1월의 AI 확산 규칙은 이 규칙으로 정식 폐지됐다."
+  },
+  {
+   "id": "wgi-pv-kr",
+   "topic": "F4",
+   "kind": "conflict",
+   "auto": true,
+   "country": "KR",
+   "city": null,
+   "metric": "세계은행 거버넌스 지수 — 정치 안정과 폭력 부재(Political Stability and Absence of Violence/Terrorism)",
+   "scope": "전국",
+   "definition": "여러 조사·평가를 합친 인식 지표다. 추정치마다 표준오차가 있어 값이 가까운 나라의 순서는 뜻이 없다",
+   "key": "political_stability",
+   "value": 0.917,
+   "unit": "추정치(-2.5~2.5, 클수록 좋음)",
+   "asof": "2025",
+   "basis": "세계은행 WGI 2026년판의 추정치 그대로. 0~100 점수와 표준오차는 series 에 있다",
+   "score": 81.7,
+   "series": [
+    {
+     "period": "2019",
+     "value": 0.828,
+     "score": 80.1,
+     "stderr": 0.226,
+     "sources_used": 11,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2020",
+     "value": 0.841,
+     "score": 80.3,
+     "stderr": 0.226,
+     "sources_used": 11,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2021",
+     "value": 0.878,
+     "score": 81,
+     "stderr": 0.226,
+     "sources_used": 11,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2022",
+     "value": 0.836,
+     "score": 80.3,
+     "stderr": 0.226,
+     "sources_used": 11,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2023",
+     "value": 0.924,
+     "score": 81.8,
+     "stderr": 0.231,
+     "sources_used": 10,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2024",
+     "value": 0.736,
+     "score": 78.5,
+     "stderr": 0.23,
+     "sources_used": 11,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2025",
+     "value": 0.917,
+     "score": 81.7,
+     "stderr": 0.23,
+     "sources_used": 11,
+     "src": [
+      1
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "World Bank — Worldwide Governance Indicators, 2026 edition (dataset)",
+     "url": "https://www.worldbank.org/en/publication/worldwide-governance-indicators",
+     "date": "2026-11-18",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "파일을 통째로 받아 읽은 값이다."
+  },
+  {
+   "id": "wgi-pv-jp",
+   "topic": "F4",
+   "kind": "conflict",
+   "auto": true,
+   "country": "JP",
+   "city": null,
+   "metric": "세계은행 거버넌스 지수 — 정치 안정과 폭력 부재(Political Stability and Absence of Violence/Terrorism)",
+   "scope": "전국",
+   "definition": "여러 조사·평가를 합친 인식 지표다. 추정치마다 표준오차가 있어 값이 가까운 나라의 순서는 뜻이 없다",
+   "key": "political_stability",
+   "value": 1.259,
+   "unit": "추정치(-2.5~2.5, 클수록 좋음)",
+   "asof": "2025",
+   "basis": "세계은행 WGI 2026년판의 추정치 그대로. 0~100 점수와 표준오차는 series 에 있다",
+   "score": 87.7,
+   "series": [
+    {
+     "period": "2019",
+     "value": 1.099,
+     "score": 84.9,
+     "stderr": 0.243,
+     "sources_used": 9,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2020",
+     "value": 1.119,
+     "score": 85.2,
+     "stderr": 0.243,
+     "sources_used": 9,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2021",
+     "value": 1.144,
+     "score": 85.7,
+     "stderr": 0.243,
+     "sources_used": 9,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2022",
+     "value": 1.265,
+     "score": 87.8,
+     "stderr": 0.243,
+     "sources_used": 9,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2023",
+     "value": 1.284,
+     "score": 88.1,
+     "stderr": 0.25,
+     "sources_used": 8,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2024",
+     "value": 1.251,
+     "score": 87.5,
+     "stderr": 0.25,
+     "sources_used": 8,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2025",
+     "value": 1.259,
+     "score": 87.7,
+     "stderr": 0.248,
+     "sources_used": 9,
+     "src": [
+      1
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "World Bank — Worldwide Governance Indicators, 2026 edition (dataset)",
+     "url": "https://www.worldbank.org/en/publication/worldwide-governance-indicators",
+     "date": "2026-11-18",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "파일을 통째로 받아 읽은 값이다."
+  },
+  {
+   "id": "wgi-pv-sg",
+   "topic": "F4",
+   "kind": "conflict",
+   "auto": true,
+   "country": "SG",
+   "city": null,
+   "metric": "세계은행 거버넌스 지수 — 정치 안정과 폭력 부재(Political Stability and Absence of Violence/Terrorism)",
+   "scope": "전국",
+   "definition": "여러 조사·평가를 합친 인식 지표다. 추정치마다 표준오차가 있어 값이 가까운 나라의 순서는 뜻이 없다",
+   "key": "political_stability",
+   "value": 1.334,
+   "unit": "추정치(-2.5~2.5, 클수록 좋음)",
+   "asof": "2025",
+   "basis": "세계은행 WGI 2026년판의 추정치 그대로. 0~100 점수와 표준오차는 series 에 있다",
+   "score": 89,
+   "series": [
+    {
+     "period": "2019",
+     "value": 1.248,
+     "score": 87.5,
+     "stderr": 0.238,
+     "sources_used": 10,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2020",
+     "value": 1.275,
+     "score": 87.9,
+     "stderr": 0.238,
+     "sources_used": 10,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2021",
+     "value": 1.27,
+     "score": 87.9,
+     "stderr": 0.238,
+     "sources_used": 10,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2022",
+     "value": 1.16,
+     "score": 85.9,
+     "stderr": 0.226,
+     "sources_used": 11,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2023",
+     "value": 1.212,
+     "score": 86.9,
+     "stderr": 0.23,
+     "sources_used": 11,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2024",
+     "value": 1.256,
+     "score": 87.6,
+     "stderr": 0.23,
+     "sources_used": 11,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2025",
+     "value": 1.334,
+     "score": 89,
+     "stderr": 0.23,
+     "sources_used": 11,
+     "src": [
+      1
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "World Bank — Worldwide Governance Indicators, 2026 edition (dataset)",
+     "url": "https://www.worldbank.org/en/publication/worldwide-governance-indicators",
+     "date": "2026-11-18",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "파일을 통째로 받아 읽은 값이다."
+  },
+  {
+   "id": "wgi-pv-my",
+   "topic": "F4",
+   "kind": "conflict",
+   "auto": true,
+   "country": "MY",
+   "city": null,
+   "metric": "세계은행 거버넌스 지수 — 정치 안정과 폭력 부재(Political Stability and Absence of Violence/Terrorism)",
+   "scope": "전국",
+   "definition": "여러 조사·평가를 합친 인식 지표다. 추정치마다 표준오차가 있어 값이 가까운 나라의 순서는 뜻이 없다",
+   "key": "political_stability",
+   "value": 0.34,
+   "unit": "추정치(-2.5~2.5, 클수록 좋음)",
+   "asof": "2025",
+   "basis": "세계은행 WGI 2026년판의 추정치 그대로. 0~100 점수와 표준오차는 series 에 있다",
+   "score": 71.6,
+   "series": [
+    {
+     "period": "2019",
+     "value": 0.135,
+     "score": 68,
+     "stderr": 0.226,
+     "sources_used": 11,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2020",
+     "value": 0.113,
+     "score": 67.6,
+     "stderr": 0.226,
+     "sources_used": 11,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2021",
+     "value": 0.161,
+     "score": 68.4,
+     "stderr": 0.226,
+     "sources_used": 11,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2022",
+     "value": 0.22,
+     "score": 69.5,
+     "stderr": 0.226,
+     "sources_used": 11,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2023",
+     "value": 0.259,
+     "score": 70.1,
+     "stderr": 0.231,
+     "sources_used": 10,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2024",
+     "value": 0.365,
+     "score": 72,
+     "stderr": 0.23,
+     "sources_used": 11,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2025",
+     "value": 0.34,
+     "score": 71.6,
+     "stderr": 0.23,
+     "sources_used": 11,
+     "src": [
+      1
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "World Bank — Worldwide Governance Indicators, 2026 edition (dataset)",
+     "url": "https://www.worldbank.org/en/publication/worldwide-governance-indicators",
+     "date": "2026-11-18",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "파일을 통째로 받아 읽은 값이다."
+  },
+  {
+   "id": "wgi-pv-au",
+   "topic": "F4",
+   "kind": "conflict",
+   "auto": true,
+   "country": "AU",
+   "city": null,
+   "metric": "세계은행 거버넌스 지수 — 정치 안정과 폭력 부재(Political Stability and Absence of Violence/Terrorism)",
+   "scope": "전국",
+   "definition": "여러 조사·평가를 합친 인식 지표다. 추정치마다 표준오차가 있어 값이 가까운 나라의 순서는 뜻이 없다",
+   "key": "political_stability",
+   "value": 0.781,
+   "unit": "추정치(-2.5~2.5, 클수록 좋음)",
+   "asof": "2025",
+   "basis": "세계은행 WGI 2026년판의 추정치 그대로. 0~100 점수와 표준오차는 series 에 있다",
+   "score": 79.3,
+   "series": [
+    {
+     "period": "2019",
+     "value": 0.844,
+     "score": 80.4,
+     "stderr": 0.23,
+     "sources_used": 10,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2020",
+     "value": 0.878,
+     "score": 81,
+     "stderr": 0.23,
+     "sources_used": 10,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2021",
+     "value": 0.85,
+     "score": 80.5,
+     "stderr": 0.23,
+     "sources_used": 10,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2022",
+     "value": 0.902,
+     "score": 81.4,
+     "stderr": 0.23,
+     "sources_used": 10,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2023",
+     "value": 0.896,
+     "score": 81.3,
+     "stderr": 0.235,
+     "sources_used": 9,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2024",
+     "value": 0.883,
+     "score": 81.1,
+     "stderr": 0.235,
+     "sources_used": 9,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2025",
+     "value": 0.781,
+     "score": 79.3,
+     "stderr": 0.234,
+     "sources_used": 10,
+     "src": [
+      1
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "World Bank — Worldwide Governance Indicators, 2026 edition (dataset)",
+     "url": "https://www.worldbank.org/en/publication/worldwide-governance-indicators",
+     "date": "2026-11-18",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "파일을 통째로 받아 읽은 값이다."
+  },
+  {
+   "id": "wgi-pv-in",
+   "topic": "F4",
+   "kind": "conflict",
+   "auto": true,
+   "country": "IN",
+   "city": null,
+   "metric": "세계은행 거버넌스 지수 — 정치 안정과 폭력 부재(Political Stability and Absence of Violence/Terrorism)",
+   "scope": "전국",
+   "definition": "여러 조사·평가를 합친 인식 지표다. 추정치마다 표준오차가 있어 값이 가까운 나라의 순서는 뜻이 없다",
+   "key": "political_stability",
+   "value": -0.608,
+   "unit": "추정치(-2.5~2.5, 클수록 좋음)",
+   "asof": "2025",
+   "basis": "세계은행 WGI 2026년판의 추정치 그대로. 0~100 점수와 표준오차는 series 에 있다",
+   "score": 55,
+   "series": [
+    {
+     "period": "2019",
+     "value": -0.588,
+     "score": 55.3,
+     "stderr": 0.238,
+     "sources_used": 10,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2020",
+     "value": -0.724,
+     "score": 52.9,
+     "stderr": 0.226,
+     "sources_used": 11,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2021",
+     "value": -0.616,
+     "score": 54.8,
+     "stderr": 0.226,
+     "sources_used": 11,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2022",
+     "value": -0.766,
+     "score": 52.2,
+     "stderr": 0.225,
+     "sources_used": 12,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2023",
+     "value": -0.821,
+     "score": 51.2,
+     "stderr": 0.23,
+     "sources_used": 11,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2024",
+     "value": -0.706,
+     "score": 53.2,
+     "stderr": 0.23,
+     "sources_used": 11,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2025",
+     "value": -0.608,
+     "score": 55,
+     "stderr": 0.23,
+     "sources_used": 11,
+     "src": [
+      1
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "World Bank — Worldwide Governance Indicators, 2026 edition (dataset)",
+     "url": "https://www.worldbank.org/en/publication/worldwide-governance-indicators",
+     "date": "2026-11-18",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "파일을 통째로 받아 읽은 값이다."
+  },
+  {
+   "id": "wgi-pv-tw",
+   "topic": "F4",
+   "kind": "conflict",
+   "auto": true,
+   "country": "TW",
+   "city": null,
+   "metric": "세계은행 거버넌스 지수 — 정치 안정과 폭력 부재(Political Stability and Absence of Violence/Terrorism)",
+   "scope": "전국",
+   "definition": "여러 조사·평가를 합친 인식 지표다. 추정치마다 표준오차가 있어 값이 가까운 나라의 순서는 뜻이 없다",
+   "key": "political_stability",
+   "value": 0.999,
+   "unit": "추정치(-2.5~2.5, 클수록 좋음)",
+   "asof": "2025",
+   "basis": "세계은행 WGI 2026년판의 추정치 그대로. 0~100 점수와 표준오차는 series 에 있다",
+   "score": 83.1,
+   "series": [
+    {
+     "period": "2019",
+     "value": 0.998,
+     "score": 83.1,
+     "stderr": 0.229,
+     "sources_used": 10,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2020",
+     "value": 1.054,
+     "score": 84.1,
+     "stderr": 0.229,
+     "sources_used": 10,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2021",
+     "value": 1.039,
+     "score": 83.8,
+     "stderr": 0.229,
+     "sources_used": 10,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2022",
+     "value": 1.014,
+     "score": 83.4,
+     "stderr": 0.229,
+     "sources_used": 10,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2023",
+     "value": 1.058,
+     "score": 84.2,
+     "stderr": 0.235,
+     "sources_used": 9,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2024",
+     "value": 0.974,
+     "score": 82.7,
+     "stderr": 0.234,
+     "sources_used": 10,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2025",
+     "value": 0.999,
+     "score": 83.1,
+     "stderr": 0.234,
+     "sources_used": 10,
+     "src": [
+      1
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "World Bank — Worldwide Governance Indicators, 2026 edition (dataset)",
+     "url": "https://www.worldbank.org/en/publication/worldwide-governance-indicators",
+     "date": "2026-11-18",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "파일을 통째로 받아 읽은 값이다."
+  },
+  {
+   "id": "gpi-kr",
+   "topic": "F4",
+   "kind": "conflict",
+   "country": "KR",
+   "city": null,
+   "metric": "세계평화지수 순위",
+   "scope": "전국",
+   "definition": "사회 안전, 진행 중인 분쟁, 군사화 세 영역 23개 지표를 합친 지수다. 대만해협·한반도 같은 특정 분쟁의 발생 확률을 잰 값이 아니다",
+   "key": "gpi_rank",
+   "value": 57,
+   "unit": "위(163개국, 낮을수록 평화)",
+   "asof": "2026",
+   "basis": "Global Peace Index 2026 의 순위 그대로",
+   "score": 1.839,
+   "militarisation": 2.233,
+   "ongoing_conflict": 1.906,
+   "neighbours": 4,
+   "sources": [
+    {
+     "n": 1,
+     "title": "Institute for Economics & Peace — Global Peace Index 2026 (사이트의 나라별 자료)",
+     "url": "https://gpi.economicsandpeace.org/",
+     "date": "2026-06",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "score 는 종합 점수(1~5, 낮을수록 평화), 나머지는 영역·지표 점수다. 이웃 나라와의 관계(neighbours)는 1~5 의 정성 평가다."
+  },
+  {
+   "id": "gpi-jp",
+   "topic": "F4",
+   "kind": "conflict",
+   "country": "JP",
+   "city": null,
+   "metric": "세계평화지수 순위",
+   "scope": "전국",
+   "definition": "사회 안전, 진행 중인 분쟁, 군사화 세 영역 23개 지표를 합친 지수다. 대만해협·한반도 같은 특정 분쟁의 발생 확률을 잰 값이 아니다",
+   "key": "gpi_rank",
+   "value": 10,
+   "unit": "위(163개국, 낮을수록 평화)",
+   "asof": "2026",
+   "basis": "Global Peace Index 2026 의 순위 그대로",
+   "score": 1.489,
+   "militarisation": 1.794,
+   "ongoing_conflict": 1.503,
+   "neighbours": 3,
+   "sources": [
+    {
+     "n": 1,
+     "title": "Institute for Economics & Peace — Global Peace Index 2026 (사이트의 나라별 자료)",
+     "url": "https://gpi.economicsandpeace.org/",
+     "date": "2026-06",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "score 는 종합 점수(1~5, 낮을수록 평화), 나머지는 영역·지표 점수다. 이웃 나라와의 관계(neighbours)는 1~5 의 정성 평가다."
+  },
+  {
+   "id": "gpi-sg",
+   "topic": "F4",
+   "kind": "conflict",
+   "country": "SG",
+   "city": null,
+   "metric": "세계평화지수 순위",
+   "scope": "전국",
+   "definition": "사회 안전, 진행 중인 분쟁, 군사화 세 영역 23개 지표를 합친 지수다. 대만해협·한반도 같은 특정 분쟁의 발생 확률을 잰 값이 아니다",
+   "key": "gpi_rank",
+   "value": 8,
+   "unit": "위(163개국, 낮을수록 평화)",
+   "asof": "2026",
+   "basis": "Global Peace Index 2026 의 순위 그대로",
+   "score": 1.435,
+   "militarisation": 2.095,
+   "ongoing_conflict": 1.119,
+   "neighbours": 1,
+   "sources": [
+    {
+     "n": 1,
+     "title": "Institute for Economics & Peace — Global Peace Index 2026 (사이트의 나라별 자료)",
+     "url": "https://gpi.economicsandpeace.org/",
+     "date": "2026-06",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "score 는 종합 점수(1~5, 낮을수록 평화), 나머지는 영역·지표 점수다. 이웃 나라와의 관계(neighbours)는 1~5 의 정성 평가다."
+  },
+  {
+   "id": "gpi-my",
+   "topic": "F4",
+   "kind": "conflict",
+   "country": "MY",
+   "city": null,
+   "metric": "세계평화지수 순위",
+   "scope": "전국",
+   "definition": "사회 안전, 진행 중인 분쟁, 군사화 세 영역 23개 지표를 합친 지수다. 대만해협·한반도 같은 특정 분쟁의 발생 확률을 잰 값이 아니다",
+   "key": "gpi_rank",
+   "value": 12,
+   "unit": "위(163개국, 낮을수록 평화)",
+   "asof": "2026",
+   "basis": "Global Peace Index 2026 의 순위 그대로",
+   "score": 1.513,
+   "militarisation": 1.204,
+   "ongoing_conflict": 1.225,
+   "neighbours": 1,
+   "sources": [
+    {
+     "n": 1,
+     "title": "Institute for Economics & Peace — Global Peace Index 2026 (사이트의 나라별 자료)",
+     "url": "https://gpi.economicsandpeace.org/",
+     "date": "2026-06",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "score 는 종합 점수(1~5, 낮을수록 평화), 나머지는 영역·지표 점수다. 이웃 나라와의 관계(neighbours)는 1~5 의 정성 평가다."
+  },
+  {
+   "id": "gpi-au",
+   "topic": "F4",
+   "kind": "conflict",
+   "country": "AU",
+   "city": null,
+   "metric": "세계평화지수 순위",
+   "scope": "전국",
+   "definition": "사회 안전, 진행 중인 분쟁, 군사화 세 영역 23개 지표를 합친 지수다. 대만해협·한반도 같은 특정 분쟁의 발생 확률을 잰 값이 아니다",
+   "key": "gpi_rank",
+   "value": 20,
+   "unit": "위(163개국, 낮을수록 평화)",
+   "asof": "2026",
+   "basis": "Global Peace Index 2026 의 순위 그대로",
+   "score": 1.602,
+   "militarisation": 1.704,
+   "ongoing_conflict": 1.465,
+   "neighbours": 2,
+   "sources": [
+    {
+     "n": 1,
+     "title": "Institute for Economics & Peace — Global Peace Index 2026 (사이트의 나라별 자료)",
+     "url": "https://gpi.economicsandpeace.org/",
+     "date": "2026-06",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "score 는 종합 점수(1~5, 낮을수록 평화), 나머지는 영역·지표 점수다. 이웃 나라와의 관계(neighbours)는 1~5 의 정성 평가다."
+  },
+  {
+   "id": "gpi-in",
+   "topic": "F4",
+   "kind": "conflict",
+   "country": "IN",
+   "city": null,
+   "metric": "세계평화지수 순위",
+   "scope": "전국",
+   "definition": "사회 안전, 진행 중인 분쟁, 군사화 세 영역 23개 지표를 합친 지수다. 대만해협·한반도 같은 특정 분쟁의 발생 확률을 잰 값이 아니다",
+   "key": "gpi_rank",
+   "value": 127,
+   "unit": "위(163개국, 낮을수록 평화)",
+   "asof": "2026",
+   "basis": "Global Peace Index 2026 의 순위 그대로",
+   "score": 2.409,
+   "militarisation": 2.419,
+   "ongoing_conflict": 2.622,
+   "neighbours": 4,
+   "sources": [
+    {
+     "n": 1,
+     "title": "Institute for Economics & Peace — Global Peace Index 2026 (사이트의 나라별 자료)",
+     "url": "https://gpi.economicsandpeace.org/",
+     "date": "2026-06",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "score 는 종합 점수(1~5, 낮을수록 평화), 나머지는 영역·지표 점수다. 이웃 나라와의 관계(neighbours)는 1~5 의 정성 평가다."
+  },
+  {
+   "id": "gpi-tw",
+   "topic": "F4",
+   "kind": "conflict",
+   "country": "TW",
+   "city": null,
+   "metric": "세계평화지수 순위",
+   "scope": "전국",
+   "definition": "사회 안전, 진행 중인 분쟁, 군사화 세 영역 23개 지표를 합친 지수다. 대만해협·한반도 같은 특정 분쟁의 발생 확률을 잰 값이 아니다",
+   "key": "gpi_rank",
+   "value": 42,
+   "unit": "위(163개국, 낮을수록 평화)",
+   "asof": "2026",
+   "basis": "Global Peace Index 2026 의 순위 그대로",
+   "score": 1.751,
+   "militarisation": 1.808,
+   "ongoing_conflict": 1.805,
+   "neighbours": 4,
+   "sources": [
+    {
+     "n": 1,
+     "title": "Institute for Economics & Peace — Global Peace Index 2026 (사이트의 나라별 자료)",
+     "url": "https://gpi.economicsandpeace.org/",
+     "date": "2026-06",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "score 는 종합 점수(1~5, 낮을수록 평화), 나머지는 영역·지표 점수다. 이웃 나라와의 관계(neighbours)는 1~5 의 정성 평가다."
+  },
+  {
+   "id": "incentive-kr",
+   "topic": "F5",
+   "kind": "incentive",
+   "country": "KR",
+   "city": null,
+   "metric": "데이터센터·AI 인프라에 대한 세제·보조",
+   "scope": "전국",
+   "definition": "나라마다 제도의 종류가 달라 값으로 견줄 수 없다. 대표 값은 서로 다른 것을 잰 숫자다",
+   "key": "incentive",
+   "value": null,
+   "unit": "제도",
+   "asof": "2026-11",
+   "basis": "로펌의 2026년 11월 규제 안내서에 적힌 내용",
+   "rule": {
+    "name": "국가전략기술 사업화 시설 세액공제(AI 서비스 데이터센터), 기회발전특구",
+    "authority": "정부·지방자치단체",
+    "effective": null,
+    "threshold": "요건을 채운 데이터센터 투자"
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "King & Wood Mallesons — Data Centres: APAC Regulatory Guide 2026, Chapter 11 South Korea",
+     "url": "https://www.mallesons.com/content/dam/mallesons/insights/download-publication/australia/2026/11/00122_Data%20Centre%20Regulatory%20Guide%202026%20Chapter%2011%20South%20Korea.pdf",
+     "date": "2026-11",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "ZDNet Korea — 45조원 국가전략기술 투자에도…AIDC 세액공제 심의통과 0건",
+     "url": "https://zdnet.co.kr/view?no=20260911093324",
+     "date": "2026-09-11",
+     "read": "search_summary"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "med",
+   "note": "2025년 세제 개편으로 AI 서비스 데이터센터가 '국가전략기술 사업화 시설'로 지정돼 건설·설비 투자에 국가전략기술 세액공제를 받을 수 있다(공제율은 기업 규모에 따라 다름). 수도권 밖의 기회발전특구·투자선도지구는 법인세·취득세를 일정 기간 줄여 주고, 전남·경북·전북 등 지자체가 투자 보조금·임대료 할인을 준다. 2026년 9월 기준 AI 데이터센터로 세액공제 심의를 통과한 건이 없고 임대형 시설이 대상인지가 쟁점이라는 보도는 검색 요약으로만 확인했다."
+  },
+  {
+   "id": "incentive-jp",
+   "topic": "F5",
+   "kind": "incentive",
+   "country": "JP",
+   "city": null,
+   "metric": "데이터센터·AI 인프라에 대한 세제·보조",
+   "scope": "전국",
+   "definition": "나라마다 제도의 종류가 달라 값으로 견줄 수 없다. 대표 값은 서로 다른 것을 잰 숫자다",
+   "key": "incentive",
+   "value": 300,
+   "unit": "억 엔(보조금 사례 1건)",
+   "asof": "2026-11",
+   "basis": "로펌의 2026년 11월 규제 안내서에 적힌 내용. 대표 값은 안내서에 숫자로 나온 한 가지를 적은 것이다",
+   "rule": {
+    "name": "지방 데이터센터 거점 정비 보조(METI), 환경성 보조",
+    "authority": "経済産業省·環境省·지방자치단체",
+    "effective": null,
+    "threshold": "요건을 채운 데이터센터 투자"
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "King & Wood Mallesons — Data Centres: APAC Regulatory Guide 2026, Chapter 6 Japan",
+     "url": "https://www.mallesons.com/content/dam/mallesons/insights/download-publication/australia/2026/11/00122_Data%20Centre%20Regulatory%20Guide%202026%20Chapter%206%20Japan.pdf",
+     "date": "2026-11",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "일괄 감세가 아니라 표적 지원이다. 경제산업성이 도쿄·오사카 밖의 거점에 토지 조성·전력·통신·건물·설비 비용을 보조하고(홋카이도·규슈 중심), 환경성이 재생에너지·고효율 냉각 설비를 보조한다. 사례: 소프트뱅크가 홋카이도 도마코마이 50MW(300MW 까지 확장 계획) 데이터센터에 300억 엔(약 1.9억 달러)을 받았다."
+  },
+  {
+   "id": "incentive-sg",
+   "topic": "F5",
+   "kind": "incentive",
+   "country": "SG",
+   "city": null,
+   "metric": "데이터센터·AI 인프라에 대한 세제·보조",
+   "scope": "전국",
+   "definition": "나라마다 제도의 종류가 달라 값으로 견줄 수 없다. 대표 값은 서로 다른 것을 잰 숫자다",
+   "key": "incentive",
+   "value": null,
+   "unit": "제도",
+   "asof": "2026-11",
+   "basis": "로펌의 2026년 11월 규제 안내서에 적힌 내용",
+   "rule": {
+    "name": "Pioneer Certificate Incentive, Development and Expansion Incentive",
+    "authority": "싱가포르 정부",
+    "effective": null,
+    "threshold": "요건을 채운 데이터센터 투자"
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "King & Wood Mallesons — Data Centres: APAC Regulatory Guide 2026, Chapter 10 Singapore",
+     "url": "https://www.mallesons.com/content/dam/mallesons/insights/download-publication/australia/2026/11/00122_Data%20Centre%20Regulatory%20Guide%202026%20Chapter%2010%20Singapore.pdf",
+     "date": "2026-11",
+     "read": "partial"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "med",
+   "note": "특구는 없다. 선도 기술을 들여오는 사업에 5~15년 법인세 면제·감면(Pioneer Certificate), 확장·고도화 사업에 5% 또는 10% 의 낮은 세율(Development and Expansion Incentive)을 준다. 데이터센터 전용 제도가 아니라 요건을 채우면 받을 수 있는 일반 제도다."
+  },
+  {
+   "id": "incentive-my",
+   "topic": "F5",
+   "kind": "incentive",
+   "country": "MY",
+   "city": null,
+   "metric": "데이터센터·AI 인프라에 대한 세제·보조",
+   "scope": "전국",
+   "definition": "나라마다 제도의 종류가 달라 값으로 견줄 수 없다. 대표 값은 서로 다른 것을 잰 숫자다",
+   "key": "incentive",
+   "value": null,
+   "unit": "제도",
+   "asof": "2026-11",
+   "basis": "로펌의 2026년 11월 규제 안내서에 적힌 내용",
+   "rule": {
+    "name": "Malaysia Digital Status(MDS), Digital Ecosystem Acceleration Scheme(DESAC), 조호르–싱가포르 경제특구",
+    "authority": "Malaysia Digital Economy Corporation·Malaysian Investment Development Authority",
+    "effective": null,
+    "threshold": "요건을 채운 데이터센터 투자"
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "King & Wood Mallesons — Data Centres: APAC Regulatory Guide 2026, Chapter 7 Malaysia",
+     "url": "https://www.mallesons.com/content/dam/mallesons/insights/download-publication/australia/2026/11/00122_Data%20Centre%20Regulatory%20Guide%202026%20Chapter%207%20Malaysia.pdf",
+     "date": "2026-11",
+     "read": "partial"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "med",
+   "note": "MDS 를 받으면 소득세 면제·투자세액공제·수입관세와 판매세 면제를 받을 수 있고, DESAC 은 디지털 기반시설 사업자(데이터센터 포함)를 지원한다. 조호르–싱가포르 경제특구(2025-01-11 공식화)는 9개 구역에 세제 묶음을 준다. DESAC 의 공제 한도(자본 지출의 최대 100%)와 신청 기한(2027년 말)은 검색 요약으로만 확인했다."
+  },
+  {
+   "id": "incentive-au",
+   "topic": "F5",
+   "kind": "incentive",
+   "country": "AU",
+   "city": null,
+   "metric": "데이터센터·AI 인프라에 대한 세제·보조",
+   "scope": "전국",
+   "definition": "나라마다 제도의 종류가 달라 값으로 견줄 수 없다. 대표 값은 서로 다른 것을 잰 숫자다",
+   "key": "incentive",
+   "value": 10,
+   "unit": "%(원천징수 세율)",
+   "asof": "2026-11",
+   "basis": "로펌의 2026년 11월 규제 안내서에 적힌 내용. 대표 값은 안내서에 숫자로 나온 한 가지를 적은 것이다",
+   "rule": {
+    "name": "관리투자신탁(MIT)의 친환경 건물 원천징수 우대",
+    "authority": "연방 정부(세법)",
+    "effective": "2025-07-01",
+    "threshold": "요건을 채운 데이터센터 투자"
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "King & Wood Mallesons — Data Centres: APAC Regulatory Guide 2026, Chapter 1 Australia",
+     "url": "https://www.mallesons.com/content/dam/mallesons/insights/download-publication/australia/2026/11/00122_Data%20Centre%20Regulatory%20Guide%202026%20Chapter%201%20Australia.pdf",
+     "date": "2026-11",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "특구도, 그 밖의 인센티브도 없다고 안내서는 적었다. 친환경 등급(Green Star 6성 또는 NABERS 6성)을 받은 데이터센터에 투자한 관리투자신탁은 외국 투자자 분배금에 10% 원천징수 세율을 적용받는다(2025-07-01 도입, 2023-05-09 뒤 착공분)."
+  },
+  {
+   "id": "incentive-in",
+   "topic": "F5",
+   "kind": "incentive",
+   "country": "IN",
+   "city": null,
+   "metric": "데이터센터·AI 인프라에 대한 세제·보조",
+   "scope": "전국",
+   "definition": "나라마다 제도의 종류가 달라 값으로 견줄 수 없다. 대표 값은 서로 다른 것을 잰 숫자다",
+   "key": "incentive",
+   "value": 21,
+   "unit": "년(면세 기간, 계산)",
+   "asof": "2026-11",
+   "basis": "로펌의 2026년 11월 규제 안내서에 적힌 내용. 대표 값은 안내서에 숫자로 나온 한 가지를 적은 것이다",
+   "rule": {
+    "name": "외국 회사의 데이터센터 서비스 조달 소득 면세(2026 예산), 경제특구",
+    "authority": "인도 정부(2026 예산)",
+    "effective": "2026-04-01",
+    "threshold": "요건을 채운 데이터센터 투자"
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "King & Wood Mallesons — Data Centres: APAC Regulatory Guide 2026, Chapter 4 India",
+     "url": "https://www.mallesons.com/content/dam/mallesons/insights/download-publication/australia/2026/11/00122_Data%20Centre%20Regulatory%20Guide%202026%20Chapter%204%20India.pdf",
+     "date": "2026-11",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "2026-04-01 부터 2047-03-31 까지, 인도 회사가 운영하는 지정 데이터센터에서 서비스를 조달하는 외국 회사의 인도 발생 소득에 면세를 준다(외국 회사가 그 데이터센터의 물리적 설비를 소유·운영하지 않을 것 등의 조건). 마하라슈트라·카르나타카·타밀나두·우타르프라데시의 경제특구는 무관세 조달 등을 준다. 면세 기간 21년은 두 날짜의 차이다."
+  },
+  {
+   "id": "incentive-tw",
+   "topic": "F5",
+   "kind": "incentive",
+   "country": "TW",
+   "city": null,
+   "metric": "데이터센터·AI 인프라에 대한 세제·보조",
+   "scope": "전국",
+   "definition": "나라마다 제도의 종류가 달라 값으로 견줄 수 없다. 대표 값은 서로 다른 것을 잰 숫자다",
+   "key": "incentive",
+   "value": 5,
+   "unit": "년(소득세 면제, 계획)",
+   "asof": "2026-11",
+   "basis": "로펌의 2026년 11월 규제 안내서에 적힌 내용. 대표 값은 안내서에 숫자로 나온 한 가지를 적은 것이다",
+   "rule": {
+    "name": "산업혁신 조례의 투자 세액공제, 민간참여 인프라 사업의 소득세 면제(계획)",
+    "authority": "대만 정부",
+    "effective": null,
+    "threshold": "요건을 채운 데이터센터 투자"
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "King & Wood Mallesons — Data Centres: APAC Regulatory Guide 2026, Chapter 12 Taiwan",
+     "url": "https://www.mallesons.com/content/dam/mallesons/insights/download-publication/australia/2026/11/00122_Data%20Centre%20Regulatory%20Guide%202026%20Chapter%2012%20Taiwan.pdf",
+     "date": "2026-11",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "AI 제품·서비스, 에너지 절감, 정보보안, 5G, 스마트 기계 등에 대한 투자에 법인세 세액공제를 주고 요건을 채운 데이터센터 사업이 받을 수 있다(한도 있음). 2026년 말부터 일정 규모를 넘는 데이터센터 투자에 민간참여 인프라 사업 방식으로 5년 소득세 면제를 줄 계획이다. 중국 본토 투자자의 데이터센터 투자는 금지돼 있다."
+  },
+  {
+   "id": "build-cost-osaka",
+   "topic": "F5",
+   "kind": "build_cost",
+   "country": "JP",
+   "city": "오사카",
+   "metric": "데이터센터 건설 단가",
+   "scope": "오사카(전형적인 60MW 설계)",
+   "definition": "컨설팅 회사가 500건 넘는 진행·최근 사업의 비용 자료와 설문으로 낸 참고 단가다(달러 환산). 단가에 무엇이 들어가는지(토지·IT 장비 등)는 확인하지 못했다",
+   "value": 17.15,
+   "unit": "달러/W",
+   "asof": "2026-10",
+   "basis": "Turner & Townsend 의 2026-27년 지수 값(소수 둘째 자리로 반올림)",
+   "rank": 2,
+   "of": 62,
+   "index": 1.32,
+   "sources": [
+    {
+     "n": 1,
+     "title": "Turner & Townsend — Data centre construction cost index 2026-27: Cost trends (Figure 3 의 도표 자료)",
+     "url": "https://reports.turnerandtownsend.com/data-centre-construction-cost-index-2026/cost-trends",
+     "date": "2026-10-20",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "62개 시장 가운데 2번째로 비싸다(지수 1.32, 런던 = 1)."
+  },
+  {
+   "id": "build-cost-melbourne",
+   "topic": "F5",
+   "kind": "build_cost",
+   "country": "AU",
+   "city": "멜버른",
+   "metric": "데이터센터 건설 단가",
+   "scope": "멜버른(전형적인 60MW 설계)",
+   "definition": "컨설팅 회사가 500건 넘는 진행·최근 사업의 비용 자료와 설문으로 낸 참고 단가다(달러 환산). 단가에 무엇이 들어가는지(토지·IT 장비 등)는 확인하지 못했다",
+   "value": 10.58,
+   "unit": "달러/W",
+   "asof": "2026-10",
+   "basis": "Turner & Townsend 의 2026-27년 지수 값(소수 둘째 자리로 반올림)",
+   "rank": 45,
+   "of": 62,
+   "index": 0.82,
+   "sources": [
+    {
+     "n": 1,
+     "title": "Turner & Townsend — Data centre construction cost index 2026-27: Cost trends (Figure 3 의 도표 자료)",
+     "url": "https://reports.turnerandtownsend.com/data-centre-construction-cost-index-2026/cost-trends",
+     "date": "2026-10-20",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "62개 시장 가운데 45번째로 비싸다(지수 0.82, 런던 = 1)."
+  },
+  {
+   "id": "build-cost-chennai",
+   "topic": "F5",
+   "kind": "build_cost",
+   "country": "IN",
+   "city": "첸나이",
+   "metric": "데이터센터 건설 단가",
+   "scope": "첸나이",
+   "definition": null,
+   "value": null,
+   "unit": "달러/W",
+   "asof": "2026-10",
+   "basis": "이 지수가 다루는 62개 시장에 없다",
+   "rank": null,
+   "of": 62,
+   "index": null,
+   "sources": [
+    {
+     "n": 1,
+     "title": "Turner & Townsend — Data centre construction cost index 2026-27: Cost trends (Figure 3 의 도표 자료)",
+     "url": "https://reports.turnerandtownsend.com/data-centre-construction-cost-index-2026/cost-trends",
+     "date": "2026-10-20",
+     "read": "full"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "low",
+   "note": "인도는 뭄바이만 지수에 있다."
+  },
+  {
+   "id": "build-cost-hyderabad",
+   "topic": "F5",
+   "kind": "build_cost",
+   "country": "IN",
+   "city": "하이데라바드",
+   "metric": "데이터센터 건설 단가",
+   "scope": "하이데라바드",
+   "definition": null,
+   "value": null,
+   "unit": "달러/W",
+   "asof": "2026-10",
+   "basis": "이 지수가 다루는 62개 시장에 없다",
+   "rank": null,
+   "of": 62,
+   "index": null,
+   "sources": [
+    {
+     "n": 1,
+     "title": "Turner & Townsend — Data centre construction cost index 2026-27: Cost trends (Figure 3 의 도표 자료)",
+     "url": "https://reports.turnerandtownsend.com/data-centre-construction-cost-index-2026/cost-trends",
+     "date": "2026-10-20",
+     "read": "full"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "low",
+   "note": "인도는 뭄바이만 지수에 있다."
+  },
+  {
+   "id": "build-cost-seoul",
+   "topic": "F5",
+   "kind": "build_cost",
+   "country": "KR",
+   "city": "서울",
+   "metric": "데이터센터 건설 단가",
+   "scope": "서울(전형적인 60MW 설계)",
+   "definition": "컨설팅 회사가 500건 넘는 진행·최근 사업의 비용 자료와 설문으로 낸 참고 단가다(달러 환산). 단가에 무엇이 들어가는지(토지·IT 장비 등)는 확인하지 못했다",
+   "key": "build_cost",
+   "value": 10.42,
+   "unit": "달러/W",
+   "asof": "2026-10",
+   "basis": "Turner & Townsend 의 2026-27년 지수 값(소수 둘째 자리로 반올림)",
+   "rank": 48,
+   "of": 62,
+   "index": 0.8,
+   "sources": [
+    {
+     "n": 1,
+     "title": "Turner & Townsend — Data centre construction cost index 2026-27: Cost trends (Figure 3 의 도표 자료)",
+     "url": "https://reports.turnerandtownsend.com/data-centre-construction-cost-index-2026/cost-trends",
+     "date": "2026-10-20",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "62개 시장 가운데 48번째로 비싸다(지수 0.8, 런던 = 1)."
+  },
+  {
+   "id": "build-cost-tokyo",
+   "topic": "F5",
+   "kind": "build_cost",
+   "country": "JP",
+   "city": "도쿄",
+   "metric": "데이터센터 건설 단가",
+   "scope": "도쿄(전형적인 60MW 설계)",
+   "definition": "컨설팅 회사가 500건 넘는 진행·최근 사업의 비용 자료와 설문으로 낸 참고 단가다(달러 환산). 단가에 무엇이 들어가는지(토지·IT 장비 등)는 확인하지 못했다",
+   "key": "build_cost",
+   "value": 18.28,
+   "unit": "달러/W",
+   "asof": "2026-10",
+   "basis": "Turner & Townsend 의 2026-27년 지수 값(소수 둘째 자리로 반올림)",
+   "rank": 1,
+   "of": 62,
+   "index": 1.41,
+   "sources": [
+    {
+     "n": 1,
+     "title": "Turner & Townsend — Data centre construction cost index 2026-27: Cost trends (Figure 3 의 도표 자료)",
+     "url": "https://reports.turnerandtownsend.com/data-centre-construction-cost-index-2026/cost-trends",
+     "date": "2026-10-20",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "62개 시장 가운데 1번째로 비싸다(지수 1.41, 런던 = 1)."
+  },
+  {
+   "id": "build-cost-singapore",
+   "topic": "F5",
+   "kind": "build_cost",
+   "country": "SG",
+   "city": "싱가포르",
+   "metric": "데이터센터 건설 단가",
+   "scope": "싱가포르(전형적인 60MW 설계)",
+   "definition": "컨설팅 회사가 500건 넘는 진행·최근 사업의 비용 자료와 설문으로 낸 참고 단가다(달러 환산). 단가에 무엇이 들어가는지(토지·IT 장비 등)는 확인하지 못했다",
+   "key": "build_cost",
+   "value": 15.39,
+   "unit": "달러/W",
+   "asof": "2026-10",
+   "basis": "Turner & Townsend 의 2026-27년 지수 값(소수 둘째 자리로 반올림)",
+   "rank": 4,
+   "of": 62,
+   "index": 1.19,
+   "sources": [
+    {
+     "n": 1,
+     "title": "Turner & Townsend — Data centre construction cost index 2026-27: Cost trends (Figure 3 의 도표 자료)",
+     "url": "https://reports.turnerandtownsend.com/data-centre-construction-cost-index-2026/cost-trends",
+     "date": "2026-10-20",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "62개 시장 가운데 4번째로 비싸다(지수 1.19, 런던 = 1)."
+  },
+  {
+   "id": "build-cost-johor",
+   "topic": "F5",
+   "kind": "build_cost",
+   "country": "MY",
+   "city": "조호르",
+   "metric": "데이터센터 건설 단가",
+   "scope": "조호르(전형적인 60MW 설계)",
+   "definition": "컨설팅 회사가 500건 넘는 진행·최근 사업의 비용 자료와 설문으로 낸 참고 단가다(달러 환산). 단가에 무엇이 들어가는지(토지·IT 장비 등)는 확인하지 못했다",
+   "key": "build_cost",
+   "value": 10.06,
+   "unit": "달러/W",
+   "asof": "2026-10",
+   "basis": "Turner & Townsend 의 2026-27년 지수 값(소수 둘째 자리로 반올림)",
+   "rank": 49,
+   "of": 62,
+   "index": 0.78,
+   "sources": [
+    {
+     "n": 1,
+     "title": "Turner & Townsend — Data centre construction cost index 2026-27: Cost trends (Figure 3 의 도표 자료)",
+     "url": "https://reports.turnerandtownsend.com/data-centre-construction-cost-index-2026/cost-trends",
+     "date": "2026-10-20",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "62개 시장 가운데 49번째로 비싸다(지수 0.78, 런던 = 1). 쿠알라룸푸르도 같은 값이다."
+  },
+  {
+   "id": "build-cost-sydney",
+   "topic": "F5",
+   "kind": "build_cost",
+   "country": "AU",
+   "city": "시드니",
+   "metric": "데이터센터 건설 단가",
+   "scope": "시드니(전형적인 60MW 설계)",
+   "definition": "컨설팅 회사가 500건 넘는 진행·최근 사업의 비용 자료와 설문으로 낸 참고 단가다(달러 환산). 단가에 무엇이 들어가는지(토지·IT 장비 등)는 확인하지 못했다",
+   "key": "build_cost",
+   "value": 10.74,
+   "unit": "달러/W",
+   "asof": "2026-10",
+   "basis": "Turner & Townsend 의 2026-27년 지수 값(소수 둘째 자리로 반올림)",
+   "rank": 41,
+   "of": 62,
+   "index": 0.83,
+   "sources": [
+    {
+     "n": 1,
+     "title": "Turner & Townsend — Data centre construction cost index 2026-27: Cost trends (Figure 3 의 도표 자료)",
+     "url": "https://reports.turnerandtownsend.com/data-centre-construction-cost-index-2026/cost-trends",
+     "date": "2026-10-20",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "62개 시장 가운데 41번째로 비싸다(지수 0.83, 런던 = 1)."
+  },
+  {
+   "id": "build-cost-mumbai",
+   "topic": "F5",
+   "kind": "build_cost",
+   "country": "IN",
+   "city": "뭄바이",
+   "metric": "데이터센터 건설 단가",
+   "scope": "뭄바이(전형적인 60MW 설계)",
+   "definition": "컨설팅 회사가 500건 넘는 진행·최근 사업의 비용 자료와 설문으로 낸 참고 단가다(달러 환산). 단가에 무엇이 들어가는지(토지·IT 장비 등)는 확인하지 못했다",
+   "key": "build_cost",
+   "value": 6.83,
+   "unit": "달러/W",
+   "asof": "2026-10",
+   "basis": "Turner & Townsend 의 2026-27년 지수 값(소수 둘째 자리로 반올림)",
+   "rank": 61,
+   "of": 62,
+   "index": 0.53,
+   "sources": [
+    {
+     "n": 1,
+     "title": "Turner & Townsend — Data centre construction cost index 2026-27: Cost trends (Figure 3 의 도표 자료)",
+     "url": "https://reports.turnerandtownsend.com/data-centre-construction-cost-index-2026/cost-trends",
+     "date": "2026-10-20",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "62개 시장 가운데 61번째로 비싸다(지수 0.53, 런던 = 1)."
+  },
+  {
+   "id": "build-cost-taipei",
+   "topic": "F5",
+   "kind": "build_cost",
+   "country": "TW",
+   "city": "타이베이",
+   "metric": "데이터센터 건설 단가",
+   "scope": "타이베이(전형적인 60MW 설계)",
+   "definition": "컨설팅 회사가 500건 넘는 진행·최근 사업의 비용 자료와 설문으로 낸 참고 단가다(달러 환산). 단가에 무엇이 들어가는지(토지·IT 장비 등)는 확인하지 못했다",
+   "key": "build_cost",
+   "value": 9.44,
+   "unit": "달러/W",
+   "asof": "2026-10",
+   "basis": "Turner & Townsend 의 2026-27년 지수 값(소수 둘째 자리로 반올림)",
+   "rank": 57,
+   "of": 62,
+   "index": 0.73,
+   "sources": [
+    {
+     "n": 1,
+     "title": "Turner & Townsend — Data centre construction cost index 2026-27: Cost trends (Figure 3 의 도표 자료)",
+     "url": "https://reports.turnerandtownsend.com/data-centre-construction-cost-index-2026/cost-trends",
+     "date": "2026-10-20",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "62개 시장 가운데 57번째로 비싸다(지수 0.73, 런던 = 1)."
+  },
+  {
+   "id": "climate-seoul",
+   "topic": "F6",
+   "kind": "climate",
+   "auto": true,
+   "country": "KR",
+   "city": "서울",
+   "metric": "연평균 습구온도",
+   "scope": "서울 도심 좌표의 격자",
+   "definition": "관측소 값이 아니라 재분석(ERA5) 격자의 값이라 도심 관측값보다 낮게 나올 수 있다. 설계에 쓰는 ASHRAE 기상 자료와는 다른 자료다",
+   "value": 9.4,
+   "unit": "°C",
+   "asof": "2025",
+   "basis": "계산: 2021~2025년 시간별 값 43,824개의 평균",
+   "climate": {
+    "lat": 37.57469,
+    "lon": 126.96,
+    "elevation_m": 34,
+    "years": "2021-2025",
+    "hot_threshold_c": 27,
+    "hours": 43824,
+    "mean_dry_bulb_c": 12.2,
+    "mean_wet_bulb_c": 9.4,
+    "mean_rh_pct": 71.5,
+    "dry_bulb_p996_c": 33.3,
+    "wet_bulb_p996_c": 26.5,
+    "hot_hours_pct": 7.3
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "Open-Meteo Historical Weather API (ERA5 재분석, CC BY 4.0)",
+     "url": "https://open-meteo.com/en/docs/historical-weather-api",
+     "date": "2026-11-18",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "climate 에 연평균 건구온도·상대습도, 한 해 시간의 0.4%만 넘는 건구·습구온도(p996), 건구온도가 27°C 를 넘는 시간의 비중이 있다. 모두 시간별 값에서 낸 계산값이다."
+  },
+  {
+   "id": "climate-osaka",
+   "topic": "F6",
+   "kind": "climate",
+   "auto": true,
+   "country": "JP",
+   "city": "오사카",
+   "metric": "연평균 습구온도",
+   "scope": "오사카 도심 좌표의 격자",
+   "definition": "관측소 값이 아니라 재분석(ERA5) 격자의 값이라 도심 관측값보다 낮게 나올 수 있다. 설계에 쓰는 ASHRAE 기상 자료와는 다른 자료다",
+   "value": 13.6,
+   "unit": "°C",
+   "asof": "2025",
+   "basis": "계산: 2021~2025년 시간별 값 43,824개의 평균",
+   "climate": {
+    "lat": 34.69244,
+    "lon": 135.51201,
+    "elevation_m": 3,
+    "years": "2021-2025",
+    "hot_threshold_c": 27,
+    "hours": 43824,
+    "mean_dry_bulb_c": 16.7,
+    "mean_wet_bulb_c": 13.6,
+    "mean_rh_pct": 74.5,
+    "dry_bulb_p996_c": 35.7,
+    "wet_bulb_p996_c": 26.9,
+    "hot_hours_pct": 15.7
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "Open-Meteo Historical Weather API (ERA5 재분석, CC BY 4.0)",
+     "url": "https://open-meteo.com/en/docs/historical-weather-api",
+     "date": "2026-11-18",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "climate 에 연평균 건구온도·상대습도, 한 해 시간의 0.4%만 넘는 건구·습구온도(p996), 건구온도가 27°C 를 넘는 시간의 비중이 있다. 모두 시간별 값에서 낸 계산값이다."
+  },
+  {
+   "id": "climate-tokyo",
+   "topic": "F6",
+   "kind": "climate",
+   "auto": true,
+   "country": "JP",
+   "city": "도쿄",
+   "metric": "연평균 습구온도",
+   "scope": "도쿄 도심 좌표의 격자",
+   "definition": "관측소 값이 아니라 재분석(ERA5) 격자의 값이라 도심 관측값보다 낮게 나올 수 있다. 설계에 쓰는 ASHRAE 기상 자료와는 다른 자료다",
+   "value": 13,
+   "unit": "°C",
+   "asof": "2025",
+   "basis": "계산: 2021~2025년 시간별 값 43,824개의 평균",
+   "climate": {
+    "lat": 35.676624,
+    "lon": 139.69112,
+    "elevation_m": 37,
+    "years": "2021-2025",
+    "hot_threshold_c": 27,
+    "hours": 43824,
+    "mean_dry_bulb_c": 16.3,
+    "mean_wet_bulb_c": 13,
+    "mean_rh_pct": 71.8,
+    "dry_bulb_p996_c": 35.8,
+    "wet_bulb_p996_c": 27.1,
+    "hot_hours_pct": 12.8
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "Open-Meteo Historical Weather API (ERA5 재분석, CC BY 4.0)",
+     "url": "https://open-meteo.com/en/docs/historical-weather-api",
+     "date": "2026-11-18",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "climate 에 연평균 건구온도·상대습도, 한 해 시간의 0.4%만 넘는 건구·습구온도(p996), 건구온도가 27°C 를 넘는 시간의 비중이 있다. 모두 시간별 값에서 낸 계산값이다."
+  },
+  {
+   "id": "climate-singapore",
+   "topic": "F6",
+   "kind": "climate",
+   "auto": true,
+   "country": "SG",
+   "city": "싱가포르",
+   "metric": "연평균 습구온도",
+   "scope": "싱가포르 도심 좌표의 격자",
+   "definition": "관측소 값이 아니라 재분석(ERA5) 격자의 값이라 도심 관측값보다 낮게 나올 수 있다. 설계에 쓰는 ASHRAE 기상 자료와는 다른 자료다",
+   "value": 24.6,
+   "unit": "°C",
+   "asof": "2025",
+   "basis": "계산: 2021~2025년 시간별 값 43,824개의 평균",
+   "climate": {
+    "lat": 1.3708259,
+    "lon": 103.80237,
+    "elevation_m": 46,
+    "years": "2021-2025",
+    "hot_threshold_c": 27,
+    "hours": 43824,
+    "mean_dry_bulb_c": 26.7,
+    "mean_wet_bulb_c": 24.6,
+    "mean_rh_pct": 85.8,
+    "dry_bulb_p996_c": 32.6,
+    "wet_bulb_p996_c": 27.2,
+    "hot_hours_pct": 39.8
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "Open-Meteo Historical Weather API (ERA5 재분석, CC BY 4.0)",
+     "url": "https://open-meteo.com/en/docs/historical-weather-api",
+     "date": "2026-11-18",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "climate 에 연평균 건구온도·상대습도, 한 해 시간의 0.4%만 넘는 건구·습구온도(p996), 건구온도가 27°C 를 넘는 시간의 비중이 있다. 모두 시간별 값에서 낸 계산값이다."
+  },
+  {
+   "id": "climate-johor",
+   "topic": "F6",
+   "kind": "climate",
+   "auto": true,
+   "country": "MY",
+   "city": "조호르",
+   "metric": "연평균 습구온도",
+   "scope": "조호르 도심 좌표의 격자",
+   "definition": "관측소 값이 아니라 재분석(ERA5) 격자의 값이라 도심 관측값보다 낮게 나올 수 있다. 설계에 쓰는 ASHRAE 기상 자료와는 다른 자료다",
+   "value": 24.6,
+   "unit": "°C",
+   "asof": "2025",
+   "basis": "계산: 2021~2025년 시간별 값 43,824개의 평균",
+   "climate": {
+    "lat": 1.5114235,
+    "lon": 103.752975,
+    "elevation_m": 46,
+    "years": "2021-2025",
+    "hot_threshold_c": 27,
+    "hours": 43824,
+    "mean_dry_bulb_c": 26.5,
+    "mean_wet_bulb_c": 24.6,
+    "mean_rh_pct": 86.3,
+    "dry_bulb_p996_c": 32.6,
+    "wet_bulb_p996_c": 27.3,
+    "hot_hours_pct": 36
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "Open-Meteo Historical Weather API (ERA5 재분석, CC BY 4.0)",
+     "url": "https://open-meteo.com/en/docs/historical-weather-api",
+     "date": "2026-11-18",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "climate 에 연평균 건구온도·상대습도, 한 해 시간의 0.4%만 넘는 건구·습구온도(p996), 건구온도가 27°C 를 넘는 시간의 비중이 있다. 모두 시간별 값에서 낸 계산값이다."
+  },
+  {
+   "id": "climate-melbourne",
+   "topic": "F6",
+   "kind": "climate",
+   "auto": true,
+   "country": "AU",
+   "city": "멜버른",
+   "metric": "연평균 습구온도",
+   "scope": "멜버른 도심 좌표의 격자",
+   "definition": "관측소 값이 아니라 재분석(ERA5) 격자의 값이라 도심 관측값보다 낮게 나올 수 있다. 설계에 쓰는 ASHRAE 기상 자료와는 다른 자료다",
+   "value": 11.4,
+   "unit": "°C",
+   "asof": "2025",
+   "basis": "계산: 2021~2025년 시간별 값 43,824개의 평균",
+   "climate": {
+    "lat": -37.785587,
+    "lon": 144.93976,
+    "elevation_m": 19,
+    "years": "2021-2025",
+    "hot_threshold_c": 27,
+    "hours": 43824,
+    "mean_dry_bulb_c": 14.8,
+    "mean_wet_bulb_c": 11.4,
+    "mean_rh_pct": 72.5,
+    "dry_bulb_p996_c": 34.3,
+    "wet_bulb_p996_c": 21.7,
+    "hot_hours_pct": 3.6
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "Open-Meteo Historical Weather API (ERA5 재분석, CC BY 4.0)",
+     "url": "https://open-meteo.com/en/docs/historical-weather-api",
+     "date": "2026-11-18",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "climate 에 연평균 건구온도·상대습도, 한 해 시간의 0.4%만 넘는 건구·습구온도(p996), 건구온도가 27°C 를 넘는 시간의 비중이 있다. 모두 시간별 값에서 낸 계산값이다."
+  },
+  {
+   "id": "climate-sydney",
+   "topic": "F6",
+   "kind": "climate",
+   "auto": true,
+   "country": "AU",
+   "city": "시드니",
+   "metric": "연평균 습구온도",
+   "scope": "시드니 도심 좌표의 격자",
+   "definition": "관측소 값이 아니라 재분석(ERA5) 격자의 값이라 도심 관측값보다 낮게 나올 수 있다. 설계에 쓰는 ASHRAE 기상 자료와는 다른 자료다",
+   "value": 14.3,
+   "unit": "°C",
+   "asof": "2025",
+   "basis": "계산: 2021~2025년 시간별 값 43,824개의 평균",
+   "climate": {
+    "lat": -33.848858,
+    "lon": 151.19551,
+    "elevation_m": 86,
+    "years": "2021-2025",
+    "hot_threshold_c": 27,
+    "hours": 43824,
+    "mean_dry_bulb_c": 17.5,
+    "mean_wet_bulb_c": 14.3,
+    "mean_rh_pct": 73.9,
+    "dry_bulb_p996_c": 32.3,
+    "wet_bulb_p996_c": 24,
+    "hot_hours_pct": 2.9
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "Open-Meteo Historical Weather API (ERA5 재분석, CC BY 4.0)",
+     "url": "https://open-meteo.com/en/docs/historical-weather-api",
+     "date": "2026-11-18",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "climate 에 연평균 건구온도·상대습도, 한 해 시간의 0.4%만 넘는 건구·습구온도(p996), 건구온도가 27°C 를 넘는 시간의 비중이 있다. 모두 시간별 값에서 낸 계산값이다."
+  },
+  {
+   "id": "climate-chennai",
+   "topic": "F6",
+   "kind": "climate",
+   "auto": true,
+   "country": "IN",
+   "city": "첸나이",
+   "metric": "연평균 습구온도",
+   "scope": "첸나이 도심 좌표의 격자",
+   "definition": "관측소 값이 아니라 재분석(ERA5) 격자의 값이라 도심 관측값보다 낮게 나올 수 있다. 설계에 쓰는 ASHRAE 기상 자료와는 다른 자료다",
+   "value": 24.4,
+   "unit": "°C",
+   "asof": "2025",
+   "basis": "계산: 2021~2025년 시간별 값 43,824개의 평균",
+   "climate": {
+    "lat": 13.110721,
+    "lon": 80.2459,
+    "elevation_m": 12,
+    "years": "2021-2025",
+    "hot_threshold_c": 27,
+    "hours": 43824,
+    "mean_dry_bulb_c": 28.1,
+    "mean_wet_bulb_c": 24.4,
+    "mean_rh_pct": 75.2,
+    "dry_bulb_p996_c": 37.4,
+    "wet_bulb_p996_c": 28.6,
+    "hot_hours_pct": 61
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "Open-Meteo Historical Weather API (ERA5 재분석, CC BY 4.0)",
+     "url": "https://open-meteo.com/en/docs/historical-weather-api",
+     "date": "2026-11-18",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "climate 에 연평균 건구온도·상대습도, 한 해 시간의 0.4%만 넘는 건구·습구온도(p996), 건구온도가 27°C 를 넘는 시간의 비중이 있다. 모두 시간별 값에서 낸 계산값이다."
+  },
+  {
+   "id": "climate-hyderabad",
+   "topic": "F6",
+   "kind": "climate",
+   "auto": true,
+   "country": "IN",
+   "city": "하이데라바드",
+   "metric": "연평균 습구온도",
+   "scope": "하이데라바드 도심 좌표의 격자",
+   "definition": "관측소 값이 아니라 재분석(ERA5) 격자의 값이라 도심 관측값보다 낮게 나올 수 있다. 설계에 쓰는 ASHRAE 기상 자료와는 다른 자료다",
+   "value": 20.2,
+   "unit": "°C",
+   "asof": "2025",
+   "basis": "계산: 2021~2025년 시간별 값 43,824개의 평균",
+   "climate": {
+    "lat": 17.398945,
+    "lon": 78.457085,
+    "elevation_m": 505,
+    "years": "2021-2025",
+    "hot_threshold_c": 27,
+    "hours": 43824,
+    "mean_dry_bulb_c": 25.8,
+    "mean_wet_bulb_c": 20.2,
+    "mean_rh_pct": 63.2,
+    "dry_bulb_p996_c": 38.3,
+    "wet_bulb_p996_c": 25.1,
+    "hot_hours_pct": 36.8
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "Open-Meteo Historical Weather API (ERA5 재분석, CC BY 4.0)",
+     "url": "https://open-meteo.com/en/docs/historical-weather-api",
+     "date": "2026-11-18",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "climate 에 연평균 건구온도·상대습도, 한 해 시간의 0.4%만 넘는 건구·습구온도(p996), 건구온도가 27°C 를 넘는 시간의 비중이 있다. 모두 시간별 값에서 낸 계산값이다."
+  },
+  {
+   "id": "climate-mumbai",
+   "topic": "F6",
+   "kind": "climate",
+   "auto": true,
+   "country": "IN",
+   "city": "뭄바이",
+   "metric": "연평균 습구온도",
+   "scope": "뭄바이 도심 좌표의 격자",
+   "definition": "관측소 값이 아니라 재분석(ERA5) 격자의 값이라 도심 관측값보다 낮게 나올 수 있다. 설계에 쓰는 ASHRAE 기상 자료와는 다른 자료다",
+   "value": 22.8,
+   "unit": "°C",
+   "asof": "2025",
+   "basis": "계산: 2021~2025년 시간별 값 43,824개의 평균",
+   "climate": {
+    "lat": 19.086115,
+    "lon": 72.85291,
+    "elevation_m": 6,
+    "years": "2021-2025",
+    "hot_threshold_c": 27,
+    "hours": 43824,
+    "mean_dry_bulb_c": 26.9,
+    "mean_wet_bulb_c": 22.8,
+    "mean_rh_pct": 72,
+    "dry_bulb_p996_c": 36,
+    "wet_bulb_p996_c": 27.6,
+    "hot_hours_pct": 45.3
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "Open-Meteo Historical Weather API (ERA5 재분석, CC BY 4.0)",
+     "url": "https://open-meteo.com/en/docs/historical-weather-api",
+     "date": "2026-11-18",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "climate 에 연평균 건구온도·상대습도, 한 해 시간의 0.4%만 넘는 건구·습구온도(p996), 건구온도가 27°C 를 넘는 시간의 비중이 있다. 모두 시간별 값에서 낸 계산값이다."
+  },
+  {
+   "id": "climate-taipei",
+   "topic": "F6",
+   "kind": "climate",
+   "auto": true,
+   "country": "TW",
+   "city": "타이베이",
+   "metric": "연평균 습구온도",
+   "scope": "타이베이 도심 좌표의 격자",
+   "definition": "관측소 값이 아니라 재분석(ERA5) 격자의 값이라 도심 관측값보다 낮게 나올 수 있다. 설계에 쓰는 ASHRAE 기상 자료와는 다른 자료다",
+   "value": 20.4,
+   "unit": "°C",
+   "asof": "2025",
+   "basis": "계산: 2021~2025년 시간별 값 43,824개의 평균",
+   "climate": {
+    "lat": 25.06151,
+    "lon": 121.5194,
+    "elevation_m": 12,
+    "years": "2021-2025",
+    "hot_threshold_c": 27,
+    "hours": 43824,
+    "mean_dry_bulb_c": 23.1,
+    "mean_wet_bulb_c": 20.4,
+    "mean_rh_pct": 79.7,
+    "dry_bulb_p996_c": 35.7,
+    "wet_bulb_p996_c": 27.7,
+    "hot_hours_pct": 26.5
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "Open-Meteo Historical Weather API (ERA5 재분석, CC BY 4.0)",
+     "url": "https://open-meteo.com/en/docs/historical-weather-api",
+     "date": "2026-11-18",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "climate 에 연평균 건구온도·상대습도, 한 해 시간의 0.4%만 넘는 건구·습구온도(p996), 건구온도가 27°C 를 넘는 시간의 비중이 있다. 모두 시간별 값에서 낸 계산값이다."
+  },
+  {
+   "id": "water-kr",
+   "topic": "F6",
+   "kind": "water",
+   "country": "KR",
+   "city": null,
+   "metric": "용수 제한·기준",
+   "scope": "전국",
+   "definition": "나라마다 공개된 것이 다르다(효율 목표, 입지 한도, 수요 전망, 가뭄 때의 절수 요구). 값으로 견줄 수 없다",
+   "key": "water",
+   "value": null,
+   "unit": "사례",
+   "asof": "2026-11",
+   "basis": "안내서와 보도에 적힌 내용",
+   "sources": [
+    {
+     "n": 1,
+     "title": "King & Wood Mallesons — Data Centres: APAC Regulatory Guide 2026, Chapter 11 South Korea",
+     "url": "https://www.mallesons.com/content/dam/mallesons/insights/download-publication/australia/2026/11/00122_Data%20Centre%20Regulatory%20Guide%202026%20Chapter%2011%20South%20Korea.pdf",
+     "date": "2026-11",
+     "read": "partial"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "med",
+   "note": "안내서는 일부 지역의 물 공급 제약을 과제로 들었다 — 전라 지역에서 2023년에 주요 저수지 두 곳이 말라 급수차에 기댄 일, 장마·홍수에 따른 오염. 데이터센터에 대한 용수 제한 사례는 찾지 못했다."
+  },
+  {
+   "id": "water-jp",
+   "topic": "F6",
+   "kind": "water",
+   "country": "JP",
+   "city": null,
+   "metric": "용수 제한·기준",
+   "scope": "전국",
+   "definition": "나라마다 공개된 것이 다르다(효율 목표, 입지 한도, 수요 전망, 가뭄 때의 절수 요구). 값으로 견줄 수 없다",
+   "key": "water",
+   "value": null,
+   "unit": "사례",
+   "asof": "2026-11",
+   "basis": "안내서와 보도에 적힌 내용",
+   "sources": [
+    {
+     "n": 1,
+     "title": "King & Wood Mallesons — Data Centres: APAC Regulatory Guide 2026, Chapter 6 Japan",
+     "url": "https://www.mallesons.com/content/dam/mallesons/insights/download-publication/australia/2026/11/00122_Data%20Centre%20Regulatory%20Guide%202026%20Chapter%206%20Japan.pdf",
+     "date": "2026-11",
+     "read": "partial"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "med",
+   "note": "데이터센터의 물 사용에 대한 별도 지침이 없다. 자율 기준(데이터센터 시설 기준)이 보충수 저장을 권장하는 정도다. 용수 제한 사례는 찾지 못했다."
+  },
+  {
+   "id": "water-sg",
+   "topic": "F6",
+   "kind": "water",
+   "country": "SG",
+   "city": "싱가포르",
+   "metric": "용수 제한·기준",
+   "scope": "싱가포르",
+   "definition": "나라마다 공개된 것이 다르다(효율 목표, 입지 한도, 수요 전망, 가뭄 때의 절수 요구). 값으로 견줄 수 없다",
+   "key": "water",
+   "value": 2,
+   "unit": "m³/MWh(물 사용 효율 목표)",
+   "asof": "2026-11",
+   "basis": "안내서와 보도에 적힌 내용. 대표 값은 서로 다른 것을 잰 숫자다",
+   "sources": [
+    {
+     "n": 1,
+     "title": "King & Wood Mallesons — Data Centres: APAC Regulatory Guide 2026, Chapter 10 Singapore",
+     "url": "https://www.mallesons.com/content/dam/mallesons/insights/download-publication/australia/2026/11/00122_Data%20Centre%20Regulatory%20Guide%202026%20Chapter%2010%20Singapore.pdf",
+     "date": "2026-11",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "정보통신미디어개발청과 수도청이 10년 안에 데이터센터의 물 사용 효율(WUE)을 2.0 m³/MWh 이하로 맞추려 한다. 한 해 6만 m³ 넘게 쓰는 데이터센터는 물 효율 관리 의무(관리 계획 제출 등)를 진다. 2024년 12월 중앙값이 2.2 였다는 것은 검색 요약으로만 확인했다."
+  },
+  {
+   "id": "water-my",
+   "topic": "F6",
+   "kind": "water",
+   "country": "MY",
+   "city": null,
+   "metric": "용수 제한·기준",
+   "scope": "전국",
+   "definition": "나라마다 공개된 것이 다르다(효율 목표, 입지 한도, 수요 전망, 가뭄 때의 절수 요구). 값으로 견줄 수 없다",
+   "key": "water",
+   "value": 0.8,
+   "unit": "물 부족 지수(입지 한도)",
+   "asof": "2026-11",
+   "basis": "안내서와 보도에 적힌 내용. 대표 값은 서로 다른 것을 잰 숫자다",
+   "sources": [
+    {
+     "n": 1,
+     "title": "King & Wood Mallesons — Data Centres: APAC Regulatory Guide 2026, Chapter 7 Malaysia",
+     "url": "https://www.mallesons.com/content/dam/mallesons/insights/download-publication/australia/2026/11/00122_Data%20Centre%20Regulatory%20Guide%202026%20Chapter%207%20Malaysia.pdf",
+     "date": "2026-11",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "Bernama — Johor: no approval for data centres with high water demand (2026-03 보도)",
+     "url": "https://web11.bernama.com/en/news.php?id=2524981",
+     "date": "2026-03",
+     "read": "search_summary"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "투자통상산업부의 지속가능한 데이터센터 지침은 새 데이터센터를 말레이 반도 안에서 물 부족 지수가 0.8 아래인 곳에 두게 하고 유형별 물 사용 효율 목표를 둔다(지침 준수는 의무가 아니지만 2027-12-31 까지 인센티브 자격의 조건이다). 조호르 주가 2025년에 물을 많이 쓰는 1·2등급 데이터센터의 신규 승인을 멈췄고 물 사용 효율 기준을 1.8 로 두었다는 것은 검색 요약으로만 확인했다."
+  },
+  {
+   "id": "water-au",
+   "topic": "F6",
+   "kind": "water",
+   "country": "AU",
+   "city": "시드니",
+   "metric": "용수 제한·기준",
+   "scope": "시드니",
+   "definition": "나라마다 공개된 것이 다르다(효율 목표, 입지 한도, 수요 전망, 가뭄 때의 절수 요구). 값으로 견줄 수 없다",
+   "key": "water",
+   "value": 250,
+   "unit": "백만 L/일(2035년 수요 전망, 최대)",
+   "asof": "2025",
+   "basis": "안내서와 보도에 적힌 내용. 대표 값은 서로 다른 것을 잰 숫자다",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Reuters 를 실은 RNZ — An Australian data centre boom is built on vague water plans",
+     "url": "https://www.rnz.co.nz/news/world/573107/an-australian-data-centre-boom-is-built-on-vague-water-plans",
+     "date": "2025-09-15",
+     "read": "search_summary"
+    },
+    {
+     "n": 2,
+     "title": "King & Wood Mallesons — Data Centres: APAC Regulatory Guide 2026, Chapter 1 Australia",
+     "url": "https://www.mallesons.com/content/dam/mallesons/insights/download-publication/australia/2026/11/00122_Data%20Centre%20Regulatory%20Guide%202026%20Chapter%201%20Australia.pdf",
+     "date": "2026-11",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "low",
+   "note": "시드니 수도공사가 주 의회 조사에서 데이터센터의 물 수요가 2035년에 하루 최대 2.5억 L(공급의 15~20%)에 이를 수 있다고 밝혔다고 한다. 지금은 한 해 약 35억 L 로 수요의 1%에 못 미친다. 업계 추정(2030년 1.9%)은 훨씬 낮다. 모두 검색 요약으로만 확인했다. 안내서는 뉴사우스웨일스에서 환경영향평가에 통합 물 관리 계획이 필요하다고 적었다."
+  },
+  {
+   "id": "water-in",
+   "topic": "F6",
+   "kind": "water",
+   "country": "IN",
+   "city": null,
+   "metric": "용수 제한·기준",
+   "scope": "전국",
+   "definition": "나라마다 공개된 것이 다르다(효율 목표, 입지 한도, 수요 전망, 가뭄 때의 절수 요구). 값으로 견줄 수 없다",
+   "key": "water",
+   "value": null,
+   "unit": "사례",
+   "asof": "2026-11",
+   "basis": "안내서와 보도에 적힌 내용",
+   "sources": [
+    {
+     "n": 1,
+     "title": "King & Wood Mallesons — Data Centres: APAC Regulatory Guide 2026, Chapter 4 India",
+     "url": "https://www.mallesons.com/content/dam/mallesons/insights/download-publication/australia/2026/11/00122_Data%20Centre%20Regulatory%20Guide%202026%20Chapter%204%20India.pdf",
+     "date": "2026-11",
+     "read": "partial"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "med",
+   "note": "지하수 사용은 환경보호법으로 규제되고 데이터센터 운영사는 당국의 이의 없음 확인서를 받아야 한다. 데이터센터 단지는 냉각용 상시 급수와 수처리 시설을 내세운다. 도시별 용수 제한 사례(벵갈루루·첸나이 등)는 원문으로 확인하지 못했다."
+  },
+  {
+   "id": "water-tw",
+   "topic": "F6",
+   "kind": "water",
+   "country": "TW",
+   "city": null,
+   "metric": "용수 제한·기준",
+   "scope": "전국",
+   "definition": "나라마다 공개된 것이 다르다(효율 목표, 입지 한도, 수요 전망, 가뭄 때의 절수 요구). 값으로 견줄 수 없다",
+   "key": "water",
+   "value": 13,
+   "unit": "%(산업용 대량 사용자의 절수 요구)",
+   "asof": "2021",
+   "basis": "안내서와 보도에 적힌 내용. 대표 값은 서로 다른 것을 잰 숫자다",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Bangkok Post — Taiwan drought threatens to make chip shortage worse",
+     "url": "https://www.bangkokpost.com/business/2101575/taiwan-drought-threatens-to-make-chip-shortage-worse",
+     "date": "2021",
+     "read": "search_summary"
+    },
+    {
+     "n": 2,
+     "title": "King & Wood Mallesons — Data Centres: APAC Regulatory Guide 2026, Chapter 12 Taiwan",
+     "url": "https://www.mallesons.com/content/dam/mallesons/insights/download-publication/australia/2026/11/00122_Data%20Centre%20Regulatory%20Guide%202026%20Chapter%2012%20Taiwan.pdf",
+     "date": "2026-11",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "low",
+   "note": "2021년 가뭄 때 물이 특히 모자란 지역의 반도체 공장 등 산업용 대량 사용자에게 13% 절수를 요구했다고 한다(검색 요약으로만 확인. 2015·2023년에도 제한이 있었다). 데이터센터에 대한 용수 제한 사례는 찾지 못했다. 안내서는 위반 때 당국이 전기·수도 공급을 끊을 수 있다고만 적었다."
+  }
+ ]
 }

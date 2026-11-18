@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated_kst": "2026-11-18T20:15:32+09:00",
+ "updated_kst": "2026-11-18T21:01:36+09:00",
  "question": "한국은 아시아·태평양 AI 컴퓨트의 권역 거점이 될 수 있는가",
  "bundles": [
   {
@@ -61,10 +61,10 @@
    "id": "F",
    "file": "conditions.json",
    "title": "나머지 조건(채점표 재료)",
-   "status": "collecting",
-   "records": 0,
-   "verified_share": 0,
-   "updated_kst": null
+   "status": "draft",
+   "records": 132,
+   "verified_share": 0.977,
+   "updated_kst": "2026-11-18T21:01:36+09:00"
   },
   {
    "id": "G",

@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-18T20:26:01+09:00",
+ "generated_kst": "2026-11-18T21:01:36+09:00",
  "reports": [
   {
    "slug": "sixsigma-3",
@@ -1628,7 +1628,7 @@
   {
    "id": "apac-siting",
    "path": "data/apac-siting/index.json",
-   "updated_kst": "2026-11-18T20:15:32+09:00"
+   "updated_kst": "2026-11-18T21:01:36+09:00"
   }
  ]
 }
