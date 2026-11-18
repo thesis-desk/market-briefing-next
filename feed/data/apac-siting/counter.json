@@ -2,8 +2,1726 @@
  "schema": 1,
  "bundle": "H",
  "title": "반례와 경쟁 입지의 제약",
- "updated_kst": null,
+ "updated_kst": "2026-11-18T21:14:55+09:00",
  "measure": null,
- "notes": [],
- "records": []
+ "notes": [
+  "따로 모은 것이 아니라 묶음 A~G 의 기록에서 추렸다. 기록마다 refs 가 근거 기록을 가리키고, 값이 있으면 value_from 이 가리키는 기록의 값과 같다(검사가 본다). 출처는 가리키는 기록의 것을 옮겼고 sources 의 from 에 어느 기록에서 왔는지 적었다.",
+  "kind 는 against_h1(H1 에 어긋나는 사실 — 한국의 입지 조건이 약하지 않다는 쪽), against_h2(H2 에 어긋나는 사실 — 묶음보다 입지가 움직였다는 쪽), rival_constraint(경쟁 입지의 제약)다. 경쟁 입지의 제약 가운데 전력 확보가 한국만의 제약이 아님을 보여 주는 것에는 hypothesis 에 H1 을 적었다.",
+  "가설에 맞는 사실은 여기 없다. 맞는 쪽과 어긋나는 쪽을 나란히 둔 표는 STATUS.md 의 가설 판정 절에 있다.",
+  "statement 는 가리키는 기록의 값을 옮긴 문장이고 해석을 더하지 않았다. 정의와 한계는 가리키는 기록에 있다.",
+  "원문 확인 비중은 건수로 센다(measure 가 null). 나라 코드 ZZ 는 여러 나라에 걸친 기록이다."
+ ],
+ "summary": {
+  "by_kind": {
+   "against_h1": 11,
+   "against_h2": 6,
+   "rival_constraint": 18
+  },
+  "by_hypothesis": {
+   "H1": 16,
+   "H2": 6
+  },
+  "by_country": {
+   "KR": {
+    "against_h1": 11,
+    "against_h2": 1
+   },
+   "CA": {
+    "against_h2": 1
+   },
+   "ZZ": {
+    "against_h2": 1
+   },
+   "GB": {
+    "against_h2": 1
+   },
+   "NO": {
+    "against_h2": 1
+   },
+   "TW": {
+    "against_h2": 1,
+    "rival_constraint": 2
+   },
+   "JP": {
+    "rival_constraint": 3
+   },
+   "SG": {
+    "rival_constraint": 4
+   },
+   "MY": {
+    "rival_constraint": 4
+   },
+   "AU": {
+    "rival_constraint": 3
+   },
+   "IN": {
+    "rival_constraint": 2
+   }
+  },
+  "by_criterion": {
+   "국제 네트워크": 2,
+   "전력": 2,
+   "배후 수요": 2,
+   "나머지 조건": 4,
+   "실제 행동": 1,
+   "묶음 없이 간 건": 1,
+   "통상 임대": 1,
+   "묶음이 있어도 멈춘 건": 2,
+   "입지만 남은 건": 1,
+   "부품 묶음과 용량": 1,
+   "건설비": 2,
+   "전력 한도": 5,
+   "재난": 2,
+   "규제 변화": 2,
+   "기후와 용수": 1,
+   "용수": 2,
+   "전력 품질": 2,
+   "지정학": 1,
+   "제도와 지정학": 1
+  }
+ },
+ "records": [
+  {
+   "id": "h1-network-planned-cables",
+   "kind": "against_h1",
+   "hypothesis": "H1",
+   "country": "KR",
+   "city": null,
+   "criterion": "국제 네트워크",
+   "statement": "한국에 닿는 계획 케이블 가운데 두 건(JAKO 2027년, AUG East 2029년)에 Microsoft 와 Amazon 이 소유자로 들어 있다.",
+   "value": null,
+   "unit": "사실",
+   "asof": "2029",
+   "basis": "묶음 C1-3 의 기록에서 추린 것. 값과 출처는 그 기록의 것이다",
+   "refs": [
+    {
+     "bundle": "C1-3",
+     "id": "jako"
+    },
+    {
+     "bundle": "C1-3",
+     "id": "asia-united-gateway-east-aug-east"
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "TeleGeography Submarine Cable Map",
+     "url": "https://www.submarinecablemap.com/submarine-cable/jako",
+     "date": "2026-11-18",
+     "read": "full",
+     "from": "C1-3:jako"
+    },
+    {
+     "n": 2,
+     "title": "TeleGeography Submarine Cable Map",
+     "url": "https://www.submarinecablemap.com/submarine-cable/asia-united-gateway-east-aug-east",
+     "date": "2026-11-18",
+     "read": "full",
+     "from": "C1-3:asia-united-gateway-east-aug-east"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "med",
+   "note": "둘 다 계획 단계이고 설계 용량은 공개되지 않았다. 지금 닿아 있는 케이블은 8개다."
+  },
+  {
+   "id": "h1-network-sjc2",
+   "kind": "against_h1",
+   "hypothesis": "H1",
+   "country": "KR",
+   "city": null,
+   "criterion": "국제 네트워크",
+   "statement": "2025년에 개통한 SJC2 가 한국에 닿았고 설계 용량이 144Tbps 다. 한국에 닿는 케이블 가운데 용량이 확인된 세 건의 합(268.8Tbps)의 절반을 넘는다.",
+   "value": 144,
+   "unit": "Tbps",
+   "asof": "2025",
+   "basis": "묶음 C1-3 의 기록에서 추린 것. 값과 출처는 그 기록의 것이다",
+   "value_from": {
+    "bundle": "C1-3",
+    "id": "southeast-asia-japan-cable-2-sjc2"
+   },
+   "refs": [
+    {
+     "bundle": "C1-3",
+     "id": "southeast-asia-japan-cable-2-sjc2"
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "TeleGeography Submarine Cable Map",
+     "url": "https://www.submarinecablemap.com/submarine-cable/southeast-asia-japan-cable-2-sjc2",
+     "date": "2026-11-18",
+     "read": "full",
+     "from": "C1-3:southeast-asia-japan-cable-2-sjc2"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "가리키는 기록에 정의와 한계가 적혀 있다."
+  },
+  {
+   "id": "h1-power-quality",
+   "kind": "against_h1",
+   "hypothesis": "H1",
+   "country": "KR",
+   "city": null,
+   "criterion": "전력",
+   "statement": "수용가 1곳당 연간 정전시간이 9.32분으로 일곱 나라 가운데 싱가포르 다음으로 짧다(일본 24분, 대만 15.8분, 말레이시아 46.9분, 호주 129분).",
+   "value": 9.32,
+   "unit": "분/호·년",
+   "asof": "2025",
+   "basis": "묶음 D 의 기록에서 추린 것. 값과 출처는 그 기록의 것이다",
+   "value_from": {
+    "bundle": "D",
+    "id": "saidi-kr"
+   },
+   "refs": [
+    {
+     "bundle": "D",
+     "id": "saidi-kr"
+    },
+    {
+     "bundle": "D",
+     "id": "saidi-jp"
+    },
+    {
+     "bundle": "D",
+     "id": "saidi-tw"
+    },
+    {
+     "bundle": "D",
+     "id": "saidi-my"
+    },
+    {
+     "bundle": "D",
+     "id": "saidi-au"
+    },
+    {
+     "bundle": "D",
+     "id": "saidi-sg"
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "한국전력 ESG 데이터센터 — 기업 전체(전력서비스: 호당 정전시간)",
+     "url": "https://www.kepco.co.kr/home/esg/esgdata/entire/conts.do",
+     "date": "2026-11-18",
+     "read": "partial",
+     "from": "D:saidi-kr"
+    },
+    {
+     "n": 2,
+     "title": "OCCTO — Report on the Quality of the Electricity Supply, Data for Fiscal Year 2024",
+     "url": "https://www.occto.or.jp/en/assets/en/information_disclosure/report_on_the_quality/of_electricity_supply_data_for_fy2024/2024_qualityofelectricity_260113.pdf",
+     "date": "2026-01",
+     "read": "partial",
+     "from": "D:saidi-jp"
+    },
+    {
+     "n": 3,
+     "title": "台灣電力公司 2024 永續報告書 — 提升供電穩定性",
+     "url": "https://service.taipower.com.tw/csr/report/20O/2024_%E6%8F%90%E5%8D%87%E4%BE%9B%E9%9B%BB%E7%A9%A9%E5%AE%9A%E6%80%A7.pdf",
+     "date": "2025-07",
+     "read": "partial",
+     "from": "D:saidi-tw"
+    },
+    {
+     "n": 4,
+     "title": "Suruhanjaya Tenaga(말레이시아 에너지위원회) — Performance Booklet",
+     "url": "https://st.gov.my/sites/default/files/2026-03/ST_Performance-Booklet_v2i-%28ZM%29.pdf",
+     "date": "2026-03",
+     "read": "partial",
+     "from": "D:saidi-my"
+    },
+    {
+     "n": 5,
+     "title": "AER — Electricity infographic, Network performance report 2026 (3쪽 Network service outputs)",
+     "url": "https://www.aer.gov.au/system/files/2026-07/Electricity%20infographic%20-%20Network%20performance%20report%202026.pdf",
+     "date": "2026-07",
+     "read": "partial",
+     "from": "D:saidi-au"
+    },
+    {
+     "n": 6,
+     "title": "SP Group — Sustainability Report FY2025/2026",
+     "url": "https://www.spgroup.com.sg/dam/spgroup/pdf/about-us/our-sustainability-commitment/sp-group-sustainability-report-fy2025-26",
+     "date": "2026",
+     "read": "partial",
+     "from": "D:saidi-sg"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "나라마다 재해·계획 정전을 넣고 빼는 정의가 달라 순위로 쓰기 어렵다. H1 이 든 것은 품질이 아니라 확보 속도다."
+  },
+  {
+   "id": "h1-power-onsite-ulsan",
+   "kind": "against_h1",
+   "hypothesis": "H1",
+   "country": "KR",
+   "city": null,
+   "criterion": "전력",
+   "statement": "수도권 밖 울산에서는 발전소 옆에서 전력을 직접 받는 방식으로 100MW 데이터센터가 2025년 8월 착공했다.",
+   "value": 100,
+   "unit": "MW(기준 불명)",
+   "asof": "2025-06",
+   "basis": "묶음 D·A 의 기록에서 추린 것. 값과 출처는 그 기록의 것이다",
+   "value_from": {
+    "bundle": "A",
+    "id": "aws-kr-ulsan-sk",
+    "field": "mw.value"
+   },
+   "refs": [
+    {
+     "bundle": "D",
+     "id": "onsite-kr-ulsan"
+    },
+    {
+     "bundle": "A",
+     "id": "aws-kr-ulsan-sk"
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "SK텔레콤 뉴스룸 — 'SK AI 데이터센터 울산' 기공식 개최",
+     "url": "https://news.sktelecom.com/214708",
+     "date": "2025-08-29",
+     "read": "partial",
+     "from": "D:onsite-kr-ulsan"
+    },
+    {
+     "n": 2,
+     "title": "The Korea Times — SK chairman says Ulsan AI data center expansion nearing 900 megawatts",
+     "url": "https://www.koreatimes.co.kr/business/tech-science/20260913/sk-chairman-says-ulsan-ai-data-center-expansion-nearing-900-megawatts",
+     "date": "2026-09-13",
+     "read": "partial",
+     "from": "A:aws-kr-ulsan-sk"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "low",
+   "note": "발전소 용량 300MW 는 검색 요약으로만 확인했다. 수도권의 제약(신청 522건 가운데 승인 10건)과 함께 봐야 한다."
+  },
+  {
+   "id": "h1-demand-seoul-market",
+   "kind": "against_h1",
+   "hypothesis": "H1",
+   "country": "KR",
+   "city": null,
+   "criterion": "배후 수요",
+   "statement": "수도권의 운영 중 용량이 869MW 이고 공실률이 5% 아래다. 시드니(917MW)·뭄바이(890MW)와 비슷한 크기다.",
+   "value": 869,
+   "unit": "MW",
+   "asof": "2026-03",
+   "basis": "묶음 E 의 기록에서 추린 것. 값과 출처는 그 기록의 것이다",
+   "value_from": {
+    "bundle": "E",
+    "id": "market-seoul"
+   },
+   "refs": [
+    {
+     "bundle": "E",
+     "id": "market-seoul"
+    },
+    {
+     "bundle": "E",
+     "id": "market-sydney"
+    },
+    {
+     "bundle": "E",
+     "id": "market-mumbai"
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "Real Estate Asia — Greater Seoul data centre vacancy remains below 5% (CBRE 인용)",
+     "url": "https://realestateasia.com/industrial/news/greater-seoul-data-centre-vacancy-remains-below-5",
+     "date": "2026-10",
+     "read": "partial",
+     "from": "E:market-seoul"
+    },
+    {
+     "n": 2,
+     "title": "Cushman & Wakefield — Asia Pacific's Data Centre Development Pipeline Reaches Record 26.5GW in H1 2026",
+     "url": "https://www.cushmanwakefield.com/en/singapore/news/2026/08/apac-dc-h1-2026",
+     "date": "2026-08-05",
+     "read": "partial",
+     "from": "E:market-sydney"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "국내 수요의 크기를 보여 줄 뿐 권역 수요를 끌어온다는 뜻은 아니다. 서울에서 왕복 100ms 안의 나라는 4개국이다."
+  },
+  {
+   "id": "h1-demand-ai-use",
+   "kind": "against_h1",
+   "hypothesis": "H1",
+   "country": "KR",
+   "city": null,
+   "criterion": "배후 수요",
+   "statement": "생산가능인구 가운데 AI 사용자 비중이 40.6%로 일곱 나라 가운데 싱가포르·호주 다음이다.",
+   "value": 40.6,
+   "unit": "%",
+   "asof": "2026-06",
+   "basis": "묶음 E 의 기록에서 추린 것. 값과 출처는 그 기록의 것이다",
+   "value_from": {
+    "bundle": "E",
+    "id": "ai-ms-kr"
+   },
+   "refs": [
+    {
+     "bundle": "E",
+     "id": "ai-ms-kr"
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "Microsoft — Global AI Diffusion Q2 2026: Trends and Insights",
+     "url": "https://www.microsoft.com/en-us/research/wp-content/uploads/2026/09/Microsoft-AI-Diffusion-Report-2026-Q2.pdf",
+     "date": "2026-09",
+     "read": "partial",
+     "from": "E:ai-ms-kr"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "가리키는 기록에 정의와 한계가 적혀 있다."
+  },
+  {
+   "id": "h1-export-control",
+   "kind": "against_h1",
+   "hypothesis": "H1",
+   "country": "KR",
+   "city": null,
+   "criterion": "나머지 조건",
+   "statement": "미국의 2026년 11월 규칙에서 한국은 첨단 반도체의 목적지 허가 대상이 아니고, 싱가포르와 말레이시아는 허가 대상 다섯 나라에 들었다.",
+   "value": null,
+   "unit": "사실",
+   "asof": "2026-11-16",
+   "basis": "묶음 F 의 기록에서 추린 것. 값과 출처는 그 기록의 것이다",
+   "refs": [
+    {
+     "bundle": "F",
+     "id": "export-kr"
+    },
+    {
+     "bundle": "F",
+     "id": "export-sg"
+    },
+    {
+     "bundle": "F",
+     "id": "export-my"
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "Bureau of Industry and Security — Addressing Remote Access to Advanced Semiconductors (interim final rule, 관보 사전 공개본)",
+     "url": "https://www.federalregister.gov/public-inspection/2026-23529/addressing-remote-access-to-advanced-semiconductors",
+     "date": "2026-11-16",
+     "read": "partial",
+     "from": "F:export-kr"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "high",
+   "note": "임시 최종 규칙의 사전 공개본을 읽은 것이다. 일본·호주·인도·대만도 허가 대상이 아니어서 한국만의 이점은 아니다."
+  },
+  {
+   "id": "h1-build-cost",
+   "kind": "against_h1",
+   "hypothesis": "H1",
+   "country": "KR",
+   "city": null,
+   "criterion": "나머지 조건",
+   "statement": "서울의 건설 단가는 W당 10.42달러로 도쿄(18.28)·오사카(17.15)·싱가포르(15.39)보다 낮다.",
+   "value": 10.42,
+   "unit": "달러/W",
+   "asof": "2026-10",
+   "basis": "묶음 F 의 기록에서 추린 것. 값과 출처는 그 기록의 것이다",
+   "value_from": {
+    "bundle": "F",
+    "id": "build-cost-seoul"
+   },
+   "refs": [
+    {
+     "bundle": "F",
+     "id": "build-cost-seoul"
+    },
+    {
+     "bundle": "F",
+     "id": "build-cost-tokyo"
+    },
+    {
+     "bundle": "F",
+     "id": "build-cost-osaka"
+    },
+    {
+     "bundle": "F",
+     "id": "build-cost-singapore"
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "Turner & Townsend — Data centre construction cost index 2026-27: Cost trends (Figure 3 의 도표 자료)",
+     "url": "https://reports.turnerandtownsend.com/data-centre-construction-cost-index-2026/cost-trends",
+     "date": "2026-10-20",
+     "read": "full",
+     "from": "F:build-cost-seoul"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "시드니·멜버른·조호르와는 비슷하고 타이베이·뭄바이보다는 높다."
+  },
+  {
+   "id": "h1-climate",
+   "kind": "against_h1",
+   "hypothesis": "H1",
+   "country": "KR",
+   "city": null,
+   "criterion": "나머지 조건",
+   "statement": "서울의 연평균 습구온도는 9.4°C 로 열한 도시 가운데 가장 낮다(도쿄 13.0, 싱가포르 24.6).",
+   "value": 9.4,
+   "unit": "°C",
+   "asof": "2025",
+   "basis": "묶음 F 의 기록에서 추린 것. 값과 출처는 그 기록의 것이다",
+   "value_from": {
+    "bundle": "F",
+    "id": "climate-seoul"
+   },
+   "refs": [
+    {
+     "bundle": "F",
+     "id": "climate-seoul"
+    },
+    {
+     "bundle": "F",
+     "id": "climate-tokyo"
+    },
+    {
+     "bundle": "F",
+     "id": "climate-singapore"
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "Open-Meteo Historical Weather API (ERA5 재분석, CC BY 4.0)",
+     "url": "https://open-meteo.com/en/docs/historical-weather-api",
+     "date": "2026-11-18",
+     "read": "full",
+     "from": "F:climate-seoul"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "재분석 격자 값에서 낸 계산값이다. 여름의 0.4% 초과 습구온도(26.5°C)는 도쿄·싱가포르와 비슷하다."
+  },
+  {
+   "id": "h1-hazard",
+   "kind": "against_h1",
+   "hypothesis": "H1",
+   "country": "KR",
+   "city": null,
+   "criterion": "나머지 조건",
+   "statement": "WorldRiskIndex 의 재해 노출이 9.83 으로 일본(43.35)·인도(40.83)·호주(32.11)보다 낮다.",
+   "value": 9.83,
+   "unit": "점(0~100, 클수록 위험)",
+   "asof": "2026",
+   "basis": "묶음 F 의 기록에서 추린 것. 값과 출처는 그 기록의 것이다",
+   "value_from": {
+    "bundle": "F",
+    "id": "wri-kr"
+   },
+   "refs": [
+    {
+     "bundle": "F",
+     "id": "wri-kr"
+    },
+    {
+     "bundle": "F",
+     "id": "wri-jp"
+    },
+    {
+     "bundle": "F",
+     "id": "wri-in"
+    },
+    {
+     "bundle": "F",
+     "id": "wri-au"
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "WorldRiskIndex 2026 — trend data (Bündnis Entwicklung Hilft / IFHV, HDX)",
+     "url": "https://data.humdata.org/dataset/worldriskindex",
+     "date": "2026-11-18",
+     "read": "full",
+     "from": "F:wri-kr"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "INFORM 의 자연재해 점수는 6.0 으로 말레이시아·호주보다 높다. 지수마다 순서가 다르다."
+  },
+  {
+   "id": "h1-investment-2025",
+   "kind": "against_h1",
+   "hypothesis": "H1",
+   "country": "KR",
+   "city": null,
+   "criterion": "실제 행동",
+   "statement": "2025~2026년에 AWS(50억 달러 추가)와 Microsoft(부산, 수전 125MW)가 한국에 새 투자를 발표했다.",
+   "value": 5,
+   "unit": "십억 달러",
+   "asof": "2025-10-29",
+   "basis": "묶음 A 의 기록에서 추린 것. 값과 출처는 그 기록의 것이다",
+   "value_from": {
+    "bundle": "A",
+    "id": "aws-kr-2025-plan"
+   },
+   "refs": [
+    {
+     "bundle": "A",
+     "id": "aws-kr-2025-plan"
+    },
+    {
+     "bundle": "A",
+     "id": "microsoft-kr-busan-3"
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "전자신문 — AWS, \"한국을 AI 허브로\"…2031년까지 7조 추가 투자",
+     "url": "https://m.etnews.com/20251029000381",
+     "date": "2025-10-29",
+     "read": "partial",
+     "from": "A:aws-kr-2025-plan"
+    },
+    {
+     "n": 2,
+     "title": "이데일리 — MS, 부산에 125MW급 데이터센터 추진...올해 10월 착공 예정",
+     "url": "https://tv.edaily.co.kr/News/NewsRead?NewsId=04785526645477456&Kind=257",
+     "date": "2026-06-01",
+     "read": "partial",
+     "from": "A:microsoft-kr-busan-3"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "low",
+   "note": "발표 금액이고 권역용인지 국내용인지는 공개되지 않았다. 일곱 나라의 합계는 묶음 A 의 나라별 집계에 있다."
+  },
+  {
+   "id": "h2-no-package-alberta",
+   "kind": "against_h2",
+   "hypothesis": "H2",
+   "country": "CA",
+   "city": null,
+   "criterion": "묶음 없이 간 건",
+   "statement": "Meta 의 앨버타 시설(1,000MW)은 파트너가 내놓은 묶음이 없는데 착공했다. 랩이 부지·자본·전력을 스스로 댔다.",
+   "value": 1000,
+   "unit": "MW",
+   "asof": "2026-07-08",
+   "basis": "묶음 B 의 기록에서 추린 것. 값과 출처는 그 기록의 것이다",
+   "value_from": {
+    "bundle": "B",
+    "id": "meta-ca-sturgeon-county"
+   },
+   "refs": [
+    {
+     "bundle": "B",
+     "id": "meta-ca-sturgeon-county"
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "Meta — Breaking Ground on Meta's First Data Center in Canada",
+     "url": "https://about.fb.com/news/2026/07/breaking-ground-on-metas-first-data-center-in-canada/",
+     "date": "2026-07-08",
+     "read": "partial",
+     "from": "B:meta-ca-sturgeon-county"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "가리키는 기록에 정의와 한계가 적혀 있다."
+  },
+  {
+   "id": "h2-ordinary-lease",
+   "kind": "against_h2",
+   "hypothesis": "H2",
+   "country": "ZZ",
+   "city": null,
+   "criterion": "통상 임대",
+   "statement": "호주(NEXTDC)·캐나다(EverWind)·스웨덴(EcoDataCenter)의 세 건은 파트너가 데이터센터 사업자의 통상 역할만 했고 랩이 입지·수요를 이유로 들었다.",
+   "value": null,
+   "unit": "사실",
+   "asof": "2026-10-16",
+   "basis": "묶음 B 의 기록에서 추린 것. 값과 출처는 그 기록의 것이다",
+   "refs": [
+    {
+     "bundle": "B",
+     "id": "openai-au-nextdc-s7"
+    },
+    {
+     "bundle": "B",
+     "id": "anthropic-ca-everwind-point-tupper"
+    },
+    {
+     "bundle": "B",
+     "id": "mistral-se-borlange-ecodatacenter"
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "OpenAI — Introducing OpenAI for Australia",
+     "url": "https://openai.com/global-affairs/openai-for-australia/",
+     "date": "2025-12-04",
+     "read": "partial",
+     "from": "B:openai-au-nextdc-s7"
+    },
+    {
+     "n": 2,
+     "title": "BetaKit — Anthropic signs lease for $10-billion Nova Scotia data centre",
+     "url": "https://betakit.com/anthropic-signs-lease-for-10-billion-nova-scotia-data-centre/",
+     "date": "2026-10-19",
+     "read": "partial",
+     "from": "B:anthropic-ca-everwind-point-tupper"
+    },
+    {
+     "n": 3,
+     "title": "EcoDataCenter — Mistral AI and EcoDataCenter Partner to Build AI-focused Data Center in Sweden",
+     "url": "https://ecodatacenter.tech/press/mistral-ai-and-ecodatacenter-partner-to-build-ai-focused-data-center-in-sweden-3431886",
+     "date": "2026-02-11",
+     "read": "partial",
+     "from": "B:mistral-se-borlange-ecodatacenter"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "med",
+   "note": "좁은 기준에서만 반례다. 넓은 기준에서는 호주와 스웨덴이 '묶음', 캐나다가 '둘 다'로 바뀐다."
+  },
+  {
+   "id": "h2-package-stalled-uk",
+   "kind": "against_h2",
+   "hypothesis": "H2",
+   "country": "GB",
+   "city": null,
+   "criterion": "묶음이 있어도 멈춘 건",
+   "statement": "영국의 Stargate UK 는 파트너의 묶음이 있었는데 전기요금과 규제를 들어 보류됐다.",
+   "value": null,
+   "unit": "사실",
+   "asof": "2025-09-16",
+   "basis": "묶음 B 의 기록에서 추린 것. 값과 출처는 그 기록의 것이다",
+   "refs": [
+    {
+     "bundle": "B",
+     "id": "openai-gb-stargate-uk"
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "OpenAI — Introducing Stargate UK",
+     "url": "https://openai.com/index/introducing-stargate-uk/",
+     "date": "2025-09-16",
+     "read": "full",
+     "from": "B:openai-gb-stargate-uk"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "med",
+   "note": "가리키는 기록에 정의와 한계가 적혀 있다."
+  },
+  {
+   "id": "h2-package-stalled-korea",
+   "kind": "against_h2",
+   "hypothesis": "H2",
+   "country": "KR",
+   "city": null,
+   "criterion": "묶음이 있어도 멈춘 건",
+   "statement": "한국의 두 건(각 20MW)은 메모리 공급 의향과 도입 검토라는 묶음이 있었는데 발표 뒤 1년 동안 부지·전력·자금이 정해지지 않았다.",
+   "value": 20,
+   "unit": "MW",
+   "asof": "2025-10-01",
+   "basis": "묶음 B·G 의 기록에서 추린 것. 값과 출처는 그 기록의 것이다",
+   "value_from": {
+    "bundle": "B",
+    "id": "openai-kr-sk-southwest"
+   },
+   "refs": [
+    {
+     "bundle": "B",
+     "id": "openai-kr-sk-southwest"
+    },
+    {
+     "bundle": "B",
+     "id": "openai-kr-samsung-pohang"
+    },
+    {
+     "bundle": "G",
+     "id": "supply-openai-memory-loi"
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "OpenAI — Samsung and SK join OpenAI's Stargate initiative",
+     "url": "https://openai.com/index/samsung-and-sk-join-stargate/",
+     "date": "2025-10-01",
+     "read": "full",
+     "from": "B:openai-kr-sk-southwest"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "low",
+   "note": "지연 사유는 익명 관계자와 회사 답변에 기댄 보도다. 메모리 의향은 월 90만 장 웨이퍼 목표로 용량 발표(합 40MW)와 견주기 어려운 단위다."
+  },
+  {
+   "id": "h2-site-outlives-package",
+   "kind": "against_h2",
+   "hypothesis": "H2",
+   "country": "NO",
+   "city": null,
+   "criterion": "입지만 남은 건",
+   "statement": "노르웨이에서는 랩과의 묶음이 풀린 뒤에도 같은 부지가 다른 고객용으로 계속 지어진다.",
+   "value": 230,
+   "unit": "MW",
+   "asof": "2025-07-31",
+   "basis": "묶음 B 의 기록에서 추린 것. 값과 출처는 그 기록의 것이다",
+   "value_from": {
+    "bundle": "B",
+    "id": "openai-no-stargate-norway"
+   },
+   "refs": [
+    {
+     "bundle": "B",
+     "id": "openai-no-stargate-norway"
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "OpenAI — Introducing Stargate Norway",
+     "url": "https://openai.com/index/introducing-stargate-norway/",
+     "date": "2025-07-31",
+     "read": "full",
+     "from": "B:openai-no-stargate-norway"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "가리키는 기록에 정의와 한계가 적혀 있다."
+  },
+  {
+   "id": "h2-components-without-capacity",
+   "kind": "against_h2",
+   "hypothesis": "H2",
+   "country": "TW",
+   "city": null,
+   "criterion": "부품 묶음과 용량",
+   "statement": "OpenAI 는 Foxconn 과 하드웨어 협력을 맺었지만 생산지는 미국이고 구매 약정이 없으며, 프런티어 랩이 대만에 둔다고 발표한 용량은 없다.",
+   "value": null,
+   "unit": "사실",
+   "asof": "2026-11",
+   "basis": "묶음 G 의 기록에서 추린 것. 값과 출처는 그 기록의 것이다",
+   "refs": [
+    {
+     "bundle": "G",
+     "id": "supply-openai-foxconn"
+    },
+    {
+     "bundle": "G",
+     "id": "capacity-tw"
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "OpenAI — OpenAI and Foxconn collaborate to strengthen U.S. manufacturing across the AI supply chain",
+     "url": "https://openai.com/index/openai-and-foxconn-collaborate/",
+     "date": "2025-11-20",
+     "read": "full",
+     "from": "G:supply-openai-foxconn"
+    },
+    {
+     "n": 2,
+     "title": "Amazon — Amazon Launches Infrastructure Region in Taiwan",
+     "url": "https://press.aboutamazon.com/2025/6/amazon-launches-infrastructure-region-in-taiwan",
+     "date": "2025-06-05",
+     "read": "partial",
+     "from": "G:capacity-tw"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "low",
+   "note": "부품 공급자가 있는 나라로 용량이 따라가지 않은 사례다. 대만 북부는 5MW 넘는 신규 승인이 멈춰 있다(묶음 D)."
+  },
+  {
+   "id": "rc-jp-build-cost",
+   "kind": "rival_constraint",
+   "hypothesis": null,
+   "country": "JP",
+   "city": null,
+   "criterion": "건설비",
+   "statement": "도쿄의 건설 단가는 W당 18.28달러로 62개 시장 가운데 가장 높고 오사카가 그다음이다.",
+   "value": 18.28,
+   "unit": "달러/W",
+   "asof": "2026-10",
+   "basis": "묶음 F 의 기록에서 추린 것. 값과 출처는 그 기록의 것이다",
+   "value_from": {
+    "bundle": "F",
+    "id": "build-cost-tokyo"
+   },
+   "refs": [
+    {
+     "bundle": "F",
+     "id": "build-cost-tokyo"
+    },
+    {
+     "bundle": "F",
+     "id": "build-cost-osaka"
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "Turner & Townsend — Data centre construction cost index 2026-27: Cost trends (Figure 3 의 도표 자료)",
+     "url": "https://reports.turnerandtownsend.com/data-centre-construction-cost-index-2026/cost-trends",
+     "date": "2026-10-20",
+     "read": "full",
+     "from": "F:build-cost-tokyo"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "가리키는 기록에 정의와 한계가 적혀 있다."
+  },
+  {
+   "id": "rc-jp-power",
+   "kind": "rival_constraint",
+   "hypothesis": "H1",
+   "country": "JP",
+   "city": null,
+   "criterion": "전력 한도",
+   "statement": "도쿄전력 관내에서 데이터센터가 확보한 접속 용량이 15,000MW 에 이르고, 제약 지역에서는 접속에 여러 해가 걸릴 수 있다.",
+   "value": 15000,
+   "unit": "MW",
+   "asof": "2026-09",
+   "basis": "묶음 D·F 의 기록에서 추린 것. 값과 출처는 그 기록의 것이다",
+   "value_from": {
+    "bundle": "D",
+    "id": "access-jp-tepco"
+   },
+   "refs": [
+    {
+     "bundle": "D",
+     "id": "access-jp-tepco"
+    },
+    {
+     "bundle": "F",
+     "id": "permit-jp-development"
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "ITmedia ビジネスオンライン — データセンター増設ラッシュで「東京1つ分の電力」が必要に",
+     "url": "https://www.itmedia.co.jp/business/spv/2609/17/news052.html",
+     "date": "2026-09-17",
+     "read": "partial",
+     "from": "D:access-jp-tepco"
+    },
+    {
+     "n": 2,
+     "title": "King & Wood Mallesons — Data Centres: APAC Regulatory Guide 2026, Chapter 6 Japan",
+     "url": "https://www.mallesons.com/content/dam/mallesons/insights/download-publication/australia/2026/11/00122_Data%20Centre%20Regulatory%20Guide%202026%20Chapter%206%20Japan.pdf",
+     "date": "2026-11",
+     "read": "partial",
+     "from": "F:permit-jp-development"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "접속까지 길게 10년이 걸렸다는 것은 검색 요약으로만 봤다. 전력 확보가 한국만의 제약이 아님을 보여 준다."
+  },
+  {
+   "id": "rc-jp-hazard",
+   "kind": "rival_constraint",
+   "hypothesis": null,
+   "country": "JP",
+   "city": null,
+   "criterion": "재난",
+   "statement": "INFORM 의 자연재해 노출이 8.3 으로 일곱 나라 가운데 가장 높다(지진 9.7, 쓰나미 10).",
+   "value": 8.3,
+   "unit": "점(0~10, 클수록 위험)",
+   "asof": "2025",
+   "basis": "묶음 F 의 기록에서 추린 것. 값과 출처는 그 기록의 것이다",
+   "value_from": {
+    "bundle": "F",
+    "id": "inform-jp"
+   },
+   "refs": [
+    {
+     "bundle": "F",
+     "id": "inform-jp"
+    },
+    {
+     "bundle": "F",
+     "id": "wri-jp"
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "INFORM Risk Index 2025 2nd edition (v0.7.0) — results and data (European Commission JRC, HDX 사본)",
+     "url": "https://data.humdata.org/dataset/inform-risk-index",
+     "date": "2026-11-18",
+     "read": "full",
+     "from": "F:inform-jp"
+    },
+    {
+     "n": 2,
+     "title": "WorldRiskIndex 2026 — trend data (Bündnis Entwicklung Hilft / IFHV, HDX)",
+     "url": "https://data.humdata.org/dataset/worldriskindex",
+     "date": "2026-11-18",
+     "read": "full",
+     "from": "F:wri-jp"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "가리키는 기록에 정의와 한계가 적혀 있다."
+  },
+  {
+   "id": "rc-sg-power-allocation",
+   "kind": "rival_constraint",
+   "hypothesis": "H1",
+   "country": "SG",
+   "city": null,
+   "criterion": "전력 한도",
+   "statement": "싱가포르는 새 데이터센터 용량을 정부 공모로만 배정하고 2차 공모의 배정량은 200MW 였다.",
+   "value": 200,
+   "unit": "MW",
+   "asof": "2026-08-21",
+   "basis": "묶음 D·F 의 기록에서 추린 것. 값과 출처는 그 기록의 것이다",
+   "value_from": {
+    "bundle": "D",
+    "id": "access-sg-cfa2"
+   },
+   "refs": [
+    {
+     "bundle": "D",
+     "id": "access-sg-cfa2"
+    },
+    {
+     "bundle": "F",
+     "id": "permit-sg-water"
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "EDB·IMDA — Fact Sheet: Four data centre proposals selected as part of Second Data Centre – Call for Application",
+     "url": "https://www.edb.gov.sg/content/dam/edb-en/about-edb/media-releases/news/four-data-centre-proposals-selected-as-part-of-second-data-centre/Fact%20Sheet%20-Four%20data%20centre%20proposals%20selected%20as%20part%20of%20second%20data%20centre.pdf",
+     "date": "2026-08-21",
+     "read": "partial",
+     "from": "D:access-sg-cfa2"
+    },
+    {
+     "n": 2,
+     "title": "King & Wood Mallesons — Data Centres: APAC Regulatory Guide 2026, Chapter 10 Singapore",
+     "url": "https://www.mallesons.com/content/dam/mallesons/insights/download-publication/australia/2026/11/00122_Data%20Centre%20Regulatory%20Guide%202026%20Chapter%2010%20Singapore.pdf",
+     "date": "2026-11",
+     "read": "partial",
+     "from": "F:permit-sg-water"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "다음 공모의 필요성은 18~24개월 뒤 검토한다. 전력 확보가 한국만의 제약이 아님을 보여 준다."
+  },
+  {
+   "id": "rc-sg-export-control",
+   "kind": "rival_constraint",
+   "hypothesis": null,
+   "country": "SG",
+   "city": null,
+   "criterion": "규제 변화",
+   "statement": "2026-11-19 부터 싱가포르로 가는 첨단 반도체에 미국의 허가가 필요하다(받는 쪽이 미국 본사 회사이면 보고 조건으로 예외).",
+   "value": null,
+   "unit": "사실",
+   "asof": "2026-11-16",
+   "basis": "묶음 F 의 기록에서 추린 것. 값과 출처는 그 기록의 것이다",
+   "refs": [
+    {
+     "bundle": "F",
+     "id": "export-sg"
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "Bureau of Industry and Security — Addressing Remote Access to Advanced Semiconductors (interim final rule, 관보 사전 공개본)",
+     "url": "https://www.federalregister.gov/public-inspection/2026-23529/addressing-remote-access-to-advanced-semiconductors",
+     "date": "2026-11-16",
+     "read": "partial",
+     "from": "F:export-sg"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "high",
+   "note": "임시 최종 규칙이라 의견 수렴 뒤 바뀔 수 있다."
+  },
+  {
+   "id": "rc-sg-build-cost",
+   "kind": "rival_constraint",
+   "hypothesis": null,
+   "country": "SG",
+   "city": null,
+   "criterion": "건설비",
+   "statement": "싱가포르의 건설 단가는 W당 15.39달러로 62개 시장 가운데 네 번째로 높다.",
+   "value": 15.39,
+   "unit": "달러/W",
+   "asof": "2026-10",
+   "basis": "묶음 F 의 기록에서 추린 것. 값과 출처는 그 기록의 것이다",
+   "value_from": {
+    "bundle": "F",
+    "id": "build-cost-singapore"
+   },
+   "refs": [
+    {
+     "bundle": "F",
+     "id": "build-cost-singapore"
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "Turner & Townsend — Data centre construction cost index 2026-27: Cost trends (Figure 3 의 도표 자료)",
+     "url": "https://reports.turnerandtownsend.com/data-centre-construction-cost-index-2026/cost-trends",
+     "date": "2026-10-20",
+     "read": "full",
+     "from": "F:build-cost-singapore"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "가리키는 기록에 정의와 한계가 적혀 있다."
+  },
+  {
+   "id": "rc-sg-climate-water",
+   "kind": "rival_constraint",
+   "hypothesis": null,
+   "country": "SG",
+   "city": null,
+   "criterion": "기후와 용수",
+   "statement": "싱가포르의 연평균 습구온도는 24.6°C 로 열한 도시 가운데 가장 높고, 물 사용 효율 목표(2.0 m³/MWh)와 대량 사용자 관리 의무가 있다.",
+   "value": 24.6,
+   "unit": "°C",
+   "asof": "2025",
+   "basis": "묶음 F 의 기록에서 추린 것. 값과 출처는 그 기록의 것이다",
+   "value_from": {
+    "bundle": "F",
+    "id": "climate-singapore"
+   },
+   "refs": [
+    {
+     "bundle": "F",
+     "id": "climate-singapore"
+    },
+    {
+     "bundle": "F",
+     "id": "water-sg"
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "Open-Meteo Historical Weather API (ERA5 재분석, CC BY 4.0)",
+     "url": "https://open-meteo.com/en/docs/historical-weather-api",
+     "date": "2026-11-18",
+     "read": "full",
+     "from": "F:climate-singapore"
+    },
+    {
+     "n": 2,
+     "title": "King & Wood Mallesons — Data Centres: APAC Regulatory Guide 2026, Chapter 10 Singapore",
+     "url": "https://www.mallesons.com/content/dam/mallesons/insights/download-publication/australia/2026/11/00122_Data%20Centre%20Regulatory%20Guide%202026%20Chapter%2010%20Singapore.pdf",
+     "date": "2026-11",
+     "read": "partial",
+     "from": "F:water-sg"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "가리키는 기록에 정의와 한계가 적혀 있다."
+  },
+  {
+   "id": "rc-my-approvals",
+   "kind": "rival_constraint",
+   "hypothesis": "H1",
+   "country": "MY",
+   "city": null,
+   "criterion": "전력 한도",
+   "statement": "말레이시아는 새 데이터센터 신청 24건의 결정을 보류하고 이미 승인한 117건의 전력을 댈 수 있는지 살피고 있다.",
+   "value": 24,
+   "unit": "건",
+   "asof": "2026-10-28",
+   "basis": "묶음 D·F 의 기록에서 추린 것. 값과 출처는 그 기록의 것이다",
+   "value_from": {
+    "bundle": "D",
+    "id": "access-my-approvals"
+   },
+   "refs": [
+    {
+     "bundle": "D",
+     "id": "access-my-approvals"
+    },
+    {
+     "bundle": "F",
+     "id": "permit-my-power"
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "Bernama — Govt Reviews Power Supply Before Deciding On 24 Data Centre Applications",
+     "url": "https://bernama.com/en/news.php?id=2626853",
+     "date": "2026-10-28",
+     "read": "partial",
+     "from": "D:access-my-approvals"
+    },
+    {
+     "n": 2,
+     "title": "King & Wood Mallesons — Data Centres: APAC Regulatory Guide 2026, Chapter 7 Malaysia",
+     "url": "https://www.mallesons.com/content/dam/mallesons/insights/download-publication/australia/2026/11/00122_Data%20Centre%20Regulatory%20Guide%202026%20Chapter%207%20Malaysia.pdf",
+     "date": "2026-11",
+     "read": "partial",
+     "from": "F:permit-my-power"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "전력 확보가 한국만의 제약이 아님을 보여 준다."
+  },
+  {
+   "id": "rc-my-export-control",
+   "kind": "rival_constraint",
+   "hypothesis": null,
+   "country": "MY",
+   "city": null,
+   "criterion": "규제 변화",
+   "statement": "2026-11-19 부터 말레이시아로 가는 첨단 반도체에 미국의 허가가 필요하고, 말레이시아도 미국산 AI 칩의 반출에 자체 허가를 요구한다.",
+   "value": null,
+   "unit": "사실",
+   "asof": "2026-11-16",
+   "basis": "묶음 F 의 기록에서 추린 것. 값과 출처는 그 기록의 것이다",
+   "refs": [
+    {
+     "bundle": "F",
+     "id": "export-my"
+    },
+    {
+     "bundle": "F",
+     "id": "export-my-permit"
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "Bureau of Industry and Security — Addressing Remote Access to Advanced Semiconductors (interim final rule, 관보 사전 공개본)",
+     "url": "https://www.federalregister.gov/public-inspection/2026-23529/addressing-remote-access-to-advanced-semiconductors",
+     "date": "2026-11-16",
+     "read": "partial",
+     "from": "F:export-my"
+    },
+    {
+     "n": 2,
+     "title": "Fenwick — BIS Announces New Export Controls on Remote Access, AI Chips",
+     "url": "https://www.fenwick.com/insights/publications/bis-announces-new-export-controls-remote-access-ai-chips",
+     "date": "2026-11",
+     "read": "search_summary",
+     "from": "F:export-my-permit"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "low",
+   "note": "말레이시아 자체 허가는 검색 요약으로만 확인했다."
+  },
+  {
+   "id": "rc-my-water",
+   "kind": "rival_constraint",
+   "hypothesis": null,
+   "country": "MY",
+   "city": null,
+   "criterion": "용수",
+   "statement": "말레이시아의 지침은 새 데이터센터를 물 부족 지수 0.8 아래인 곳에만 두게 하고, 조호르는 물을 많이 쓰는 시설의 승인을 멈췄다고 보도됐다.",
+   "value": 0.8,
+   "unit": "물 부족 지수(입지 한도)",
+   "asof": "2026-11",
+   "basis": "묶음 F 의 기록에서 추린 것. 값과 출처는 그 기록의 것이다",
+   "value_from": {
+    "bundle": "F",
+    "id": "water-my"
+   },
+   "refs": [
+    {
+     "bundle": "F",
+     "id": "water-my"
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "King & Wood Mallesons — Data Centres: APAC Regulatory Guide 2026, Chapter 7 Malaysia",
+     "url": "https://www.mallesons.com/content/dam/mallesons/insights/download-publication/australia/2026/11/00122_Data%20Centre%20Regulatory%20Guide%202026%20Chapter%207%20Malaysia.pdf",
+     "date": "2026-11",
+     "read": "partial",
+     "from": "F:water-my"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "조호르의 승인 중단은 검색 요약으로만 확인했다."
+  },
+  {
+   "id": "rc-my-reliability",
+   "kind": "rival_constraint",
+   "hypothesis": null,
+   "country": "MY",
+   "city": null,
+   "criterion": "전력 품질",
+   "statement": "말레이 반도의 수용가 1곳당 연간 정전시간은 46.93분이다(한국 9.32분, 싱가포르 0.33분).",
+   "value": 46.93,
+   "unit": "분/호·년",
+   "asof": "2025",
+   "basis": "묶음 D 의 기록에서 추린 것. 값과 출처는 그 기록의 것이다",
+   "value_from": {
+    "bundle": "D",
+    "id": "saidi-my"
+   },
+   "refs": [
+    {
+     "bundle": "D",
+     "id": "saidi-my"
+    },
+    {
+     "bundle": "D",
+     "id": "saidi-kr"
+    },
+    {
+     "bundle": "D",
+     "id": "saidi-sg"
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "Suruhanjaya Tenaga(말레이시아 에너지위원회) — Performance Booklet",
+     "url": "https://st.gov.my/sites/default/files/2026-03/ST_Performance-Booklet_v2i-%28ZM%29.pdf",
+     "date": "2026-03",
+     "read": "partial",
+     "from": "D:saidi-my"
+    },
+    {
+     "n": 2,
+     "title": "한국전력 ESG 데이터센터 — 기업 전체(전력서비스: 호당 정전시간)",
+     "url": "https://www.kepco.co.kr/home/esg/esgdata/entire/conts.do",
+     "date": "2026-11-18",
+     "read": "partial",
+     "from": "D:saidi-kr"
+    },
+    {
+     "n": 3,
+     "title": "SP Group — Sustainability Report FY2025/2026",
+     "url": "https://www.spgroup.com.sg/dam/spgroup/pdf/about-us/our-sustainability-commitment/sp-group-sustainability-report-fy2025-26",
+     "date": "2026",
+     "read": "partial",
+     "from": "D:saidi-sg"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "가리키는 기록에 정의와 한계가 적혀 있다."
+  },
+  {
+   "id": "rc-tw-north-limit",
+   "kind": "rival_constraint",
+   "hypothesis": "H1",
+   "country": "TW",
+   "city": null,
+   "criterion": "전력 한도",
+   "statement": "대만전력은 2024년 8월부터 타오위안 이북에서 5MW 넘는 데이터센터의 새 승인을 멈췄다.",
+   "value": null,
+   "unit": "사실",
+   "asof": "2024-08",
+   "basis": "묶음 D 의 기록에서 추린 것. 값과 출처는 그 기록의 것이다",
+   "refs": [
+    {
+     "bundle": "D",
+     "id": "access-tw-north"
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "數位時代 — 台電下令桃園以北拒供資料中心用電",
+     "url": "https://www.bnext.com.tw/article/80273/taipower-denied-power-provide-to-data-centre-north-of-taoyuan",
+     "date": "2024-08-26",
+     "read": "partial",
+     "from": "D:access-tw-north"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "med",
+   "note": "전력 확보가 한국만의 제약이 아님을 보여 준다."
+  },
+  {
+   "id": "rc-tw-conflict",
+   "kind": "rival_constraint",
+   "hypothesis": null,
+   "country": "TW",
+   "city": null,
+   "criterion": "지정학",
+   "statement": "대만의 세계평화지수 순위는 163개국 가운데 42위이고 이웃 나라와의 관계 점수는 4.0(1~5)이다.",
+   "value": 42,
+   "unit": "위(163개국, 낮을수록 평화)",
+   "asof": "2026",
+   "basis": "묶음 F 의 기록에서 추린 것. 값과 출처는 그 기록의 것이다",
+   "value_from": {
+    "bundle": "F",
+    "id": "gpi-tw"
+   },
+   "refs": [
+    {
+     "bundle": "F",
+     "id": "gpi-tw"
+    },
+    {
+     "bundle": "F",
+     "id": "gpi-kr"
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "Institute for Economics & Peace — Global Peace Index 2026 (사이트의 나라별 자료)",
+     "url": "https://gpi.economicsandpeace.org/",
+     "date": "2026-06",
+     "read": "full",
+     "from": "F:gpi-tw"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "한국도 57위, 이웃 관계 4.0 으로 같은 약점이 있다. 일본 10위, 싱가포르 8위, 말레이시아 12위와 차이가 크다."
+  },
+  {
+   "id": "rc-au-queue",
+   "kind": "rival_constraint",
+   "hypothesis": "H1",
+   "country": "AU",
+   "city": null,
+   "criterion": "전력 한도",
+   "statement": "호주는 접속 절차에 있는 데이터센터의 제안 용량이 67,000MW 이고 지난해 목록의 약 36%가 그 뒤 취소됐다.",
+   "value": 67000,
+   "unit": "MW",
+   "asof": "2026",
+   "basis": "묶음 D 의 기록에서 추린 것. 값과 출처는 그 기록의 것이다",
+   "value_from": {
+    "bundle": "D",
+    "id": "access-au-pipeline"
+   },
+   "refs": [
+    {
+     "bundle": "D",
+     "id": "access-au-pipeline"
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "W.Media — AEMO: Australia's data centres to use 34TWh by 2035-36",
+     "url": "https://w.media/aemo-australias-data-centres-to-use-34twh-by-2035-36/",
+     "date": "2026",
+     "read": "partial",
+     "from": "D:access-au-pipeline"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "가리키는 기록에 정의와 한계가 적혀 있다."
+  },
+  {
+   "id": "rc-au-reliability",
+   "kind": "rival_constraint",
+   "hypothesis": null,
+   "country": "AU",
+   "city": null,
+   "criterion": "전력 품질",
+   "statement": "호주의 수용가 1곳당 연간 정전시간은 129분으로 일곱 나라 가운데 가장 길고, 2023년 시드니에서 뇌우 뒤 전압 저하로 클라우드 리전 장애가 났다.",
+   "value": 129,
+   "unit": "분/호·년",
+   "asof": "2025",
+   "basis": "묶음 D·F 의 기록에서 추린 것. 값과 출처는 그 기록의 것이다",
+   "value_from": {
+    "bundle": "D",
+    "id": "saidi-au"
+   },
+   "refs": [
+    {
+     "bundle": "D",
+     "id": "saidi-au"
+    },
+    {
+     "bundle": "F",
+     "id": "incident-au-sydney-2023"
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "AER — Electricity infographic, Network performance report 2026 (3쪽 Network service outputs)",
+     "url": "https://www.aer.gov.au/system/files/2026-07/Electricity%20infographic%20-%20Network%20performance%20report%202026.pdf",
+     "date": "2026-07",
+     "read": "partial",
+     "from": "D:saidi-au"
+    },
+    {
+     "n": 2,
+     "title": "The Register — Microsoft admits slim staff and broken automation contributed to Azure outage",
+     "url": "https://www.theregister.com/2023/09/04/microsoft_australia_outage_incident_report/",
+     "date": "2023-09-04",
+     "read": "full",
+     "from": "F:incident-au-sydney-2023"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "가리키는 기록에 정의와 한계가 적혀 있다."
+  },
+  {
+   "id": "rc-au-water",
+   "kind": "rival_constraint",
+   "hypothesis": null,
+   "country": "AU",
+   "city": null,
+   "criterion": "용수",
+   "statement": "시드니 수도공사는 데이터센터의 물 수요가 2035년에 하루 최대 2.5억 L 에 이를 수 있다고 봤다.",
+   "value": 250,
+   "unit": "백만 L/일(2035년 수요 전망, 최대)",
+   "asof": "2025",
+   "basis": "묶음 F 의 기록에서 추린 것. 값과 출처는 그 기록의 것이다",
+   "value_from": {
+    "bundle": "F",
+    "id": "water-au"
+   },
+   "refs": [
+    {
+     "bundle": "F",
+     "id": "water-au"
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "King & Wood Mallesons — Data Centres: APAC Regulatory Guide 2026, Chapter 1 Australia",
+     "url": "https://www.mallesons.com/content/dam/mallesons/insights/download-publication/australia/2026/11/00122_Data%20Centre%20Regulatory%20Guide%202026%20Chapter%201%20Australia.pdf",
+     "date": "2026-11",
+     "read": "partial",
+     "from": "F:water-au"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "low",
+   "note": "검색 요약으로만 확인한 값이고 업계 추정은 훨씬 낮다."
+  },
+  {
+   "id": "rc-in-governance",
+   "kind": "rival_constraint",
+   "hypothesis": null,
+   "country": "IN",
+   "city": null,
+   "criterion": "제도와 지정학",
+   "statement": "인도의 법치 추정치는 -0.129 로 일곱 나라 가운데 가장 낮고 세계평화지수 순위는 127위다.",
+   "value": -0.129,
+   "unit": "추정치(-2.5~2.5, 클수록 좋음)",
+   "asof": "2025",
+   "basis": "묶음 F 의 기록에서 추린 것. 값과 출처는 그 기록의 것이다",
+   "value_from": {
+    "bundle": "F",
+    "id": "wgi-rl-in"
+   },
+   "refs": [
+    {
+     "bundle": "F",
+     "id": "wgi-rl-in"
+    },
+    {
+     "bundle": "F",
+     "id": "gpi-in"
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "World Bank — Worldwide Governance Indicators, 2026 edition (dataset)",
+     "url": "https://www.worldbank.org/en/publication/worldwide-governance-indicators",
+     "date": "2026-11-18",
+     "read": "full",
+     "from": "F:wgi-rl-in"
+    },
+    {
+     "n": 2,
+     "title": "Institute for Economics & Peace — Global Peace Index 2026 (사이트의 나라별 자료)",
+     "url": "https://gpi.economicsandpeace.org/",
+     "date": "2026-06",
+     "read": "full",
+     "from": "F:gpi-in"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "가리키는 기록에 정의와 한계가 적혀 있다."
+  },
+  {
+   "id": "rc-in-hazard",
+   "kind": "rival_constraint",
+   "hypothesis": null,
+   "country": "IN",
+   "city": null,
+   "criterion": "재난",
+   "statement": "인도는 WorldRiskIndex 종합 순위가 193개국 가운데 두 번째로 높다(노출 40.83).",
+   "value": 40.83,
+   "unit": "점(0~100, 클수록 위험)",
+   "asof": "2026",
+   "basis": "묶음 F 의 기록에서 추린 것. 값과 출처는 그 기록의 것이다",
+   "value_from": {
+    "bundle": "F",
+    "id": "wri-in"
+   },
+   "refs": [
+    {
+     "bundle": "F",
+     "id": "wri-in"
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "WorldRiskIndex 2026 — trend data (Bündnis Entwicklung Hilft / IFHV, HDX)",
+     "url": "https://data.humdata.org/dataset/worldriskindex",
+     "date": "2026-11-18",
+     "read": "full",
+     "from": "F:wri-in"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "가리키는 기록에 정의와 한계가 적혀 있다."
+  }
+ ]
 }

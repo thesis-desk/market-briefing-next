@@ -2,8 +2,1561 @@
  "schema": 1,
  "bundle": "G",
  "title": "한국 쪽이 내놓을 수 있는 것",
- "updated_kst": null,
+ "updated_kst": "2026-11-18T21:12:34+09:00",
  "measure": null,
- "notes": [],
- "records": []
+ "notes": [
+  "주제는 G1 메모리·부품(share 점유율, supply 공급 계약·의향, price 가격), G2 랩과의 공개된 관계(partner 유통·협력, adoption 도입, investment 투자·합작), G3 국내 준비 상태(capacity 사업자별 계획, program 정부·공급 사업, law 법·제도)다.",
+  "요청은 한국의 항목을 일본·대만·인도에도 적용하라고 했다. 나라마다 내놓는 것이 다르다 — 한국은 메모리, 대만은 파운드리와 서버 제조, 일본·인도는 현지 대기업의 유통·자본. 같은 지표로 값을 견준 것이 아니라 같은 물음에 공개된 사실을 나란히 둔 것이다.",
+  "다른 묶음에 이미 있는 건(투자 발표 장부 A, 랩의 해외 용량 B, 전력 D, 나머지 조건 F)은 다시 적지 않고 refs 로 가리킨다. capacity 기록의 items 는 그 기록들의 MW 를 기준(it·utility·unknown)과 함께 옮긴 것이고, 기준이 섞여 있어 합을 대표 값으로 두지 않았다.",
+  "의향서·양해각서 단계(stage 가 MoU)와 계약을 구분했다. 메모리 장기 공급 계약은 회사 발표가 아니라 보도이고 상대 회사가 공개되지 않아 신뢰도를 낮게 적었다.",
+  "공개 사실만 적었다. 회사가 무엇을 해야 하는지, 어느 쪽에 유리한지는 적지 않는다.",
+  "원문 확인 비중은 건수로 센다(measure 가 null). 나라 코드 ZZ 는 세계 전체를 다룬 기록이다."
+ ],
+ "by_country": {
+  "countries": {
+   "KR": {
+    "records": 15,
+    "by_topic": {
+     "G1": 6,
+     "G2": 5,
+     "G3": 4
+    },
+    "by_kind": {
+     "price": 1,
+     "share": 2,
+     "supply": 3,
+     "partner": 3,
+     "investment": 1,
+     "adoption": 1,
+     "capacity": 1,
+     "law": 1,
+     "program": 2
+    },
+    "labs": [
+     "Anthropic",
+     "OpenAI"
+    ],
+    "stages": {
+     "계약": 5,
+     "MoU": 2,
+     "가동": 1,
+     "착공": 1,
+     "발표": 1
+    },
+    "capacity_mw": {
+     "unknown": 140,
+     "utility": 125
+    }
+   },
+   "TW": {
+    "records": 4,
+    "by_topic": {
+     "G1": 2,
+     "G3": 2
+    },
+    "by_kind": {
+     "share": 1,
+     "supply": 1,
+     "capacity": 1,
+     "program": 1
+    },
+    "labs": [
+     "OpenAI"
+    ],
+    "stages": {
+     "MoU": 1,
+     "발표": 1
+    },
+    "capacity_mw": {
+     "unknown": 27
+    }
+   },
+   "ZZ": {
+    "records": 1,
+    "by_topic": {
+     "G1": 1
+    },
+    "by_kind": {
+     "price": 1
+    },
+    "labs": [],
+    "stages": {},
+    "capacity_mw": {}
+   },
+   "JP": {
+    "records": 4,
+    "by_topic": {
+     "G2": 2,
+     "G3": 2
+    },
+    "by_kind": {
+     "partner": 1,
+     "investment": 1,
+     "capacity": 1,
+     "program": 1
+    },
+    "labs": [
+     "Anthropic",
+     "OpenAI"
+    ],
+    "stages": {
+     "가동": 3
+    },
+    "capacity_mw": {
+     "utility": 150,
+     "unknown": 50
+    }
+   },
+   "IN": {
+    "records": 5,
+    "by_topic": {
+     "G2": 3,
+     "G3": 2
+    },
+    "by_kind": {
+     "partner": 1,
+     "investment": 1,
+     "adoption": 1,
+     "capacity": 1,
+     "program": 1
+    },
+    "labs": [
+     "Anthropic",
+     "Meta",
+     "OpenAI"
+    ],
+    "stages": {
+     "계약": 3,
+     "가동": 1
+    },
+    "capacity_mw": {
+     "unknown": 268
+    }
+   }
+  }
+ },
+ "records": [
+  {
+   "id": "dram-price-index",
+   "topic": "G1",
+   "kind": "price",
+   "country": "KR",
+   "city": null,
+   "item": "D램 수출물가지수(달러 기준, 2020=100)",
+   "lab": null,
+   "value": 309.97,
+   "unit": "지수(2020=100)",
+   "asof": "2026-10",
+   "basis": "한국은행 수출물가지수(품목별)의 D램 지수 그대로. 이 저장소의 가격 기록(content/market/prices.json)에서 옮겼다",
+   "key": "dram_price_index",
+   "series": [
+    {
+     "period": "2019-12",
+     "value": 99.74,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2020-12",
+     "value": 94.65,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2021-12",
+     "value": 116.01,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2022-12",
+     "value": 70.92,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2023-12",
+     "value": 55.27,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2024-12",
+     "value": 73.99,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2025-12",
+     "value": 111.22,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2026-10",
+     "value": 309.97,
+     "src": [
+      1
+     ]
+    }
+   ],
+   "refs": [],
+   "sources": [
+    {
+     "n": 1,
+     "title": "한국은행 경제통계시스템(ECOS) — 수출물가지수(품목별, 402Y016) D램",
+     "url": "https://ecos.bok.or.kr/",
+     "date": "2026-11-13",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "한 해 전보다 218.57% 올랐다. 최근 10년의 최저는 2023-08의 49.51였다. 계약 단가가 아니라 수출 가격 지수다."
+  },
+  {
+   "id": "dram-share-kr",
+   "topic": "G1",
+   "kind": "share",
+   "country": "KR",
+   "city": null,
+   "item": "D램 매출 점유율 — 한국 두 회사 합",
+   "lab": null,
+   "value": 64.3,
+   "unit": "%",
+   "asof": "2026-06",
+   "basis": "계산: 삼성전자 39.4% + SK하이닉스 24.9%(TrendForce 의 2026년 2분기 매출 기준 집계를 전한 보도)",
+   "key": "dram_share",
+   "shares": {
+    "Samsung Electronics": 39.4,
+    "SK hynix": 24.9,
+    "Micron": 23.3
+   },
+   "market_usd_bn": 154.73,
+   "series": [
+    {
+     "period": "2026Q1",
+     "value": 67.3,
+     "src": [
+      1
+     ],
+     "note": "삼성 38.5 + SK하이닉스 28.8(계산)"
+    },
+    {
+     "period": "2026Q2",
+     "value": 64.3,
+     "src": [
+      1
+     ]
+    }
+   ],
+   "refs": [],
+   "sources": [
+    {
+     "n": 1,
+     "title": "The Korea Times — Samsung extends lead in global DRAM market with 39% share: report",
+     "url": "https://www.koreatimes.co.kr/business/20260907/samsung-extends-lead-in-global-dram-market-with-39-share-report",
+     "date": "2026-09-07",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "Micron 은 23.3%, 시장 전체는 1,547.3억 달러(전 분기보다 59.5% 늘었다). 3분기 값은 다른 조사 회사(Counterpoint)의 것만 검색 요약으로 봤다 — 삼성 38%, SK하이닉스 29%, Micron 21%."
+  },
+  {
+   "id": "hbm-share-kr",
+   "topic": "G1",
+   "kind": "share",
+   "country": "KR",
+   "city": null,
+   "item": "HBM 매출 점유율 — 한국 두 회사 합",
+   "lab": null,
+   "value": 83,
+   "unit": "%",
+   "asof": "2026-06",
+   "basis": "계산: SK하이닉스 50% + 삼성전자 33%(Counterpoint 의 2026년 2분기 집계) — 검색 요약으로만 확인",
+   "key": "hbm_share",
+   "shares": {
+    "SK hynix": 50,
+    "Samsung Electronics": 33,
+    "Micron": 18
+   },
+   "refs": [],
+   "sources": [
+    {
+     "n": 1,
+     "title": "Counterpoint Research — Global HBM Market Share: Q2 2026",
+     "url": "https://korea.counterpointresearch.com/global-hbm-market-share-q2-2026/",
+     "date": "2026",
+     "read": "search_summary"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "Micron 은 18%(반올림으로 합이 101%). 한 해 전에는 SK하이닉스 64%, 삼성 15%였다고 한다. 사이트가 조회를 막아 원문을 열지 못했다."
+  },
+  {
+   "id": "supply-lta-samsung",
+   "topic": "G1",
+   "kind": "supply",
+   "country": "KR",
+   "city": null,
+   "item": "삼성전자의 장기 공급 계약",
+   "lab": null,
+   "value": 5,
+   "unit": "고객사 수",
+   "asof": "2026",
+   "basis": "한국 언론 보도를 전한 TrendForce 뉴스 — 검색 요약으로만 확인",
+   "stage": "계약",
+   "date": null,
+   "parties": [
+    {
+     "name": "Samsung Electronics",
+     "role": "메모리 공급"
+    },
+    {
+     "name": "데이터센터 대형 고객 5곳(이름 미공개)",
+     "role": "구매"
+    }
+   ],
+   "refs": [],
+   "sources": [
+    {
+     "n": 1,
+     "title": "TrendForce News — From Annual Deals to 3–5 Year LTAs: Samsung and SK hynix Reportedly Reset Big Tech Memory Contracts",
+     "url": "https://www.trendforce.com/news/2026-04-09/news-from-annual-deals-to-3-5-year-ltas-samsung-and-sk-hynix-reportedly-reset-big-tech-memory-contracts/",
+     "date": "2026-04-09",
+     "read": "search_summary"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "low",
+   "note": "새 계약에 3년 이상의 장기 계약을 적용하기로 했고 데이터센터 대형 고객 5곳과 계약을 마쳤다고 보도됐다(시점 불명). 상대 회사 이름은 공개되지 않았다."
+  },
+  {
+   "id": "supply-lta-skhynix",
+   "topic": "G1",
+   "kind": "supply",
+   "country": "KR",
+   "city": null,
+   "item": "SK하이닉스의 장기 공급 계약",
+   "lab": null,
+   "value": 14,
+   "unit": "고객사 수",
+   "asof": "2026-09",
+   "basis": "한국 언론 보도를 전한 TrendForce 뉴스 — 검색 요약으로만 확인",
+   "stage": "계약",
+   "date": "2026-09",
+   "parties": [
+    {
+     "name": "SK hynix",
+     "role": "메모리 공급"
+    },
+    {
+     "name": "주요 고객 14곳(이름 미공개)",
+     "role": "구매"
+    }
+   ],
+   "refs": [],
+   "sources": [
+    {
+     "n": 1,
+     "title": "TrendForce News — From Annual Deals to 3–5 Year LTAs: Samsung and SK hynix Reportedly Reset Big Tech Memory Contracts",
+     "url": "https://www.trendforce.com/news/2026-04-09/news-from-annual-deals-to-3-5-year-ltas-samsung-and-sk-hynix-reportedly-reset-big-tech-memory-contracts/",
+     "date": "2026-04-09",
+     "read": "search_summary"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "low",
+   "note": "3분기에 빅테크를 포함한 주요 고객 14곳과 장기 계약을 맺어 2027~2028년 생산 능력의 절반 넘게를 채웠다고 보도됐다. Microsoft(3년), Google(최대 5년)과의 협상이 보도됐으나 회사 발표가 아니다. OpenAI·Meta·Anthropic 을 상대로 한 계약은 확인되지 않았다."
+  },
+  {
+   "id": "supply-openai-memory-loi",
+   "topic": "G1",
+   "kind": "supply",
+   "country": "KR",
+   "city": null,
+   "item": "OpenAI 와 삼성전자·SK하이닉스의 메모리 공급 의향",
+   "lab": "OpenAI",
+   "value": 900000,
+   "unit": "웨이퍼/월(D램 투입량 목표)",
+   "asof": "2025-10-01",
+   "basis": "OpenAI 발표문의 목표 값. 확정 계약이 아니라 의향 단계다",
+   "stage": "MoU",
+   "date": "2025-10-01",
+   "parties": [
+    {
+     "name": "Samsung Electronics",
+     "role": "메모리 공급"
+    },
+    {
+     "name": "SK hynix",
+     "role": "메모리 공급"
+    }
+   ],
+   "refs": [
+    {
+     "bundle": "B",
+     "id": "openai-kr-sk-southwest"
+    },
+    {
+     "bundle": "B",
+     "id": "openai-kr-samsung-pohang"
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "OpenAI — Samsung and SK join OpenAI's Stargate initiative",
+     "url": "https://openai.com/index/samsung-and-sk-join-stargate/",
+     "date": "2025-10-01",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "발표문은 두 회사가 첨단 메모리 생산을 늘려 월 90만 장의 D램 웨이퍼 투입을 목표로 한다고 적었다. 물량·가격·기간이 정해진 계약은 공개되지 않았다."
+  },
+  {
+   "id": "foundry-share-tw",
+   "topic": "G1",
+   "kind": "share",
+   "country": "TW",
+   "city": null,
+   "item": "파운드리 매출 점유율 — TSMC",
+   "lab": null,
+   "value": 72.5,
+   "unit": "%",
+   "asof": "2026-06",
+   "basis": "TrendForce 의 2026년 2분기 상위 10개사 집계를 전한 보도의 값 그대로",
+   "key": "foundry_share",
+   "shares": {
+    "TSMC": 72.5
+   },
+   "market_usd_bn": 53.49,
+   "refs": [],
+   "sources": [
+    {
+     "n": 1,
+     "title": "TelecomLead — Global Foundry Revenue Hits Record $53.49 Billion as TSMC Takes 72.5% Share and SMIC Surges 20%",
+     "url": "https://telecomlead.com/semiconductor/global-foundry-revenue-hits-record-53-49-billion-as-tsmc-takes-72-5-share-and-smic-surges-20-127667",
+     "date": "2026-09-09",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "TSMC 의 분기 매출은 약 402억 달러, 상위 10개사 합은 534.9억 달러다. 삼성 파운드리 5.9%는 검색 요약으로만 봤다. 대만 서버 제조사의 AI 서버 점유율은 공개 수치를 찾지 못했다."
+  },
+  {
+   "id": "supply-openai-foxconn",
+   "topic": "G1",
+   "kind": "supply",
+   "country": "TW",
+   "city": null,
+   "item": "OpenAI 와 Foxconn 의 AI 데이터센터 하드웨어 협력",
+   "lab": "OpenAI",
+   "value": null,
+   "unit": "건",
+   "asof": "2025-11-20",
+   "basis": "OpenAI 발표문. 구매 약정이 없는 초기 합의다",
+   "stage": "MoU",
+   "date": "2025-11-20",
+   "parties": [
+    {
+     "name": "Hon Hai Technology Group (Foxconn)",
+     "role": "설계·제조"
+    }
+   ],
+   "refs": [],
+   "sources": [
+    {
+     "n": 1,
+     "title": "OpenAI — OpenAI and Foxconn collaborate to strengthen U.S. manufacturing across the AI supply chain",
+     "url": "https://openai.com/index/openai-and-foxconn-collaborate/",
+     "date": "2025-11-20",
+     "read": "full"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "high",
+   "note": "여러 세대의 데이터센터 랙을 함께 설계하고 Foxconn 의 미국 공장에서 만든다. 발표문은 구매 약정이나 금전 의무가 없고 OpenAI 가 먼저 평가하고 살 선택권을 갖는다고 적었다. 생산지는 대만이 아니라 미국이다."
+  },
+  {
+   "id": "dram-contract-4q26",
+   "topic": "G1",
+   "kind": "price",
+   "country": "ZZ",
+   "city": null,
+   "item": "D램 계약 가격 전망(2026년 4분기, 전 분기 대비)",
+   "lab": null,
+   "value": 15,
+   "unit": "%(범위의 위쪽 끝)",
+   "asof": "2026-09-30",
+   "basis": "TrendForce 의 전망 — 검색 요약으로만 확인",
+   "range": {
+    "low": 10,
+    "high": 15
+   },
+   "refs": [],
+   "sources": [
+    {
+     "n": 1,
+     "title": "TrendForce Press Center — 4Q26 memory contract price forecast",
+     "url": "https://www.trendforce.com/presscenter/news/20260930-13258.html",
+     "date": "2026-09-30",
+     "read": "search_summary"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "일반 D램 계약 가격이 10~15% 오르고 HBM 을 넣으면 15~20% 오른다는 전망이다. 10월 20일에는 약 20%라는 보도가 있었다. 사이트가 열리지 않아 원문을 읽지 못했다."
+  },
+  {
+   "id": "rel-kr-anthropic-seoul",
+   "topic": "G2",
+   "kind": "partner",
+   "country": "KR",
+   "city": null,
+   "item": "Anthropic 서울 사무소와 국내 도입 기업",
+   "lab": "Anthropic",
+   "value": null,
+   "unit": "건",
+   "asof": "2026-06-17",
+   "basis": "개소 기자간담회를 전한 보도",
+   "stage": "가동",
+   "date": "2026-06-17",
+   "parties": [
+    {
+     "name": "LG CNS",
+     "role": "시스템통합 협력(비독점)"
+    },
+    {
+     "name": "네이버",
+     "role": "도입"
+    },
+    {
+     "name": "넥슨",
+     "role": "도입"
+    },
+    {
+     "name": "삼성SDS",
+     "role": "도입"
+    }
+   ],
+   "refs": [],
+   "sources": [
+    {
+     "n": 1,
+     "title": "뉴시스 — \"한국인, AI 제일 잘 쓴다\"…'64조 AI 거물' 앤트로픽, 서울 사무소 오픈",
+     "url": "https://www.newsis.com/view/NISX20260617_0003673378",
+     "date": "2026-06-17",
+     "read": "full"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "high",
+   "note": "2026-06-17 서울 사무소를 열었다. 네이버가 엔지니어링 조직 전체에 Claude Code 를 들였고 넥슨·LG CNS·삼성SDS·한화솔루션 등이 Claude 를 쓴다고 소개됐다. 시스템통합 협력은 LG CNS 를 사례로 들되 독점 계약이 아니라고 밝혔다. 국가AI연구거점 연구자 최대 60명에게 계정을 무료로 준다."
+  },
+  {
+   "id": "rel-kr-anthropic-skt",
+   "topic": "G2",
+   "kind": "investment",
+   "country": "KR",
+   "city": null,
+   "item": "SK텔레콤 — Anthropic 투자",
+   "lab": "Anthropic",
+   "value": 100,
+   "unit": "백만 달러",
+   "asof": "2023-08-13",
+   "basis": "SK텔레콤 보도자료의 값",
+   "stage": "계약",
+   "date": "2023-08-13",
+   "parties": [
+    {
+     "name": "SK텔레콤",
+     "role": "투자·공동 개발"
+    }
+   ],
+   "refs": [],
+   "sources": [
+    {
+     "n": 1,
+     "title": "SK텔레콤 뉴스룸 — SKT, 美 앤트로픽에 1억 달러 투자 글로벌 AI 사업에 힘 실린다",
+     "url": "https://news.sktelecom.com/197426",
+     "date": "2023-08-13",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "전략적 지분 투자이고 다국어 대형 언어 모델을 함께 만들기로 했다. 2026년 6월에 추가 투자를 했다고 밝혔으나 금액을 공개하지 않았다는 것과 지분율(보도마다 약 0.3%~2%)은 검색 요약으로만 봤다."
+  },
+  {
+   "id": "rel-kr-openai-kakao",
+   "topic": "G2",
+   "kind": "partner",
+   "country": "KR",
+   "city": null,
+   "item": "카카오 — OpenAI 전략적 제휴",
+   "lab": "OpenAI",
+   "value": null,
+   "unit": "건",
+   "asof": "2025-02-04",
+   "basis": "공동 기자간담회를 전한 보도",
+   "stage": "계약",
+   "date": "2025-02-04",
+   "parties": [
+    {
+     "name": "카카오",
+     "role": "서비스 적용·공동 개발·도입"
+    }
+   ],
+   "refs": [],
+   "sources": [
+    {
+     "n": 1,
+     "title": "바이라인네트워크 — 카카오 승부수…오픈AI와 공동 프로덕트 만든다",
+     "url": "https://byline.network/2025/02/4-260/",
+     "date": "2025-02-04",
+     "read": "full"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "high",
+   "note": "카카오톡·카나나 등 카카오 서비스에 OpenAI 의 API 를 쓰고 제품을 함께 만들기로 했으며 ChatGPT 엔터프라이즈를 들이기로 했다. 2025년 10월 카카오톡 안에서 ChatGPT 를 쓰는 서비스가 나왔다는 것은 검색 요약으로만 봤다."
+  },
+  {
+   "id": "rel-kr-openai-samsung-sds",
+   "topic": "G2",
+   "kind": "partner",
+   "country": "KR",
+   "city": null,
+   "item": "삼성SDS — OpenAI 리셀러 파트너",
+   "lab": "OpenAI",
+   "value": null,
+   "unit": "건",
+   "asof": "2025-12-23",
+   "basis": "삼성SDS 보도자료",
+   "stage": "계약",
+   "date": "2025-12-23",
+   "parties": [
+    {
+     "name": "삼성SDS",
+     "role": "재판매·기술 지원"
+    }
+   ],
+   "refs": [],
+   "sources": [
+    {
+     "n": 1,
+     "title": "삼성SDS — 삼성SDS-OpenAI, 국내 기업 최초 '리셀러 파트너 계약 체결'",
+     "url": "https://www.samsungsds.com/kr/news/openai-251223.html",
+     "date": "2025-12-23",
+     "read": "full"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "high",
+   "note": "국내 기업 고객에게 ChatGPT 엔터프라이즈를 공급하고 기술 지원한다. 2026년 3월까지 10여 곳에 공급 계약을 맺었고 4월에 교육기관용 판매 권한을 더 받았다는 것은 검색 요약으로만 확인했다."
+  },
+  {
+   "id": "rel-kr-openai-samsung-sk-adoption",
+   "topic": "G2",
+   "kind": "adoption",
+   "country": "KR",
+   "city": null,
+   "item": "삼성·SK — ChatGPT 엔터프라이즈와 API 도입 검토",
+   "lab": "OpenAI",
+   "value": null,
+   "unit": "건",
+   "asof": "2025-10-01",
+   "basis": "OpenAI 발표문. '검토한다'는 표현이다",
+   "stage": "MoU",
+   "date": "2025-10-01",
+   "parties": [
+    {
+     "name": "Samsung",
+     "role": "도입 검토"
+    },
+    {
+     "name": "SK",
+     "role": "도입 검토"
+    }
+   ],
+   "refs": [
+    {
+     "bundle": "B",
+     "id": "openai-kr-sk-southwest"
+    },
+    {
+     "bundle": "B",
+     "id": "openai-kr-samsung-pohang"
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "OpenAI — Samsung and SK join OpenAI's Stargate initiative",
+     "url": "https://openai.com/index/samsung-and-sk-join-stargate/",
+     "date": "2025-10-01",
+     "read": "full"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "high",
+   "note": "발표문은 삼성과 SK 가 ChatGPT 엔터프라이즈와 API 를 사업에 들이는 것을 살펴본다고 적었다. 도입 규모는 공개되지 않았다."
+  },
+  {
+   "id": "rel-jp-anthropic-tokyo",
+   "topic": "G2",
+   "kind": "partner",
+   "country": "JP",
+   "city": null,
+   "item": "Anthropic 도쿄 사무소",
+   "lab": "Anthropic",
+   "value": null,
+   "unit": "건",
+   "asof": "2025-10-29",
+   "basis": "Anthropic 발표문",
+   "stage": "가동",
+   "date": "2025-10-29",
+   "parties": [
+    {
+     "name": "Japan AI Safety Institute",
+     "role": "평가 방법 협력 각서"
+    }
+   ],
+   "refs": [],
+   "sources": [
+    {
+     "n": 1,
+     "title": "Anthropic — Anthropic opens Tokyo office",
+     "url": "https://www.anthropic.com/news/opening-our-tokyo-office",
+     "date": "2025-10-29",
+     "read": "full"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "high",
+   "note": "아시아·태평양의 첫 사무소다. 일본 AI 안전 연구소와 협력 각서를 맺었다. 발표문에서 일본 기업 파트너의 이름은 확인하지 못했다."
+  },
+  {
+   "id": "rel-jp-openai-softbank-jv",
+   "topic": "G2",
+   "kind": "investment",
+   "country": "JP",
+   "city": null,
+   "item": "소프트뱅크 — OpenAI 합작사 SB OAI Japan",
+   "lab": "OpenAI",
+   "value": 50,
+   "unit": "%(소프트뱅크 쪽 지분)",
+   "asof": "2025-11-05",
+   "basis": "소프트뱅크 보도자료(합작사 출범). 지분 50 대 50 은 검색 요약으로만 확인",
+   "stage": "가동",
+   "date": "2025-11-05",
+   "parties": [
+    {
+     "name": "SoftBank Corp.·SoftBank Group Corp.",
+     "role": "합작 출자·첫 고객"
+    }
+   ],
+   "refs": [
+    {
+     "bundle": "B",
+     "id": "openai-jp-softbank-sakai"
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "SoftBank Group — The SoftBank Group and OpenAI Launch \"SB OAI Japan\" Joint Venture",
+     "url": "https://group.softbank/en/news/press/20251105",
+     "date": "2025-11-05",
+     "read": "full"
+    },
+    {
+     "n": 2,
+     "title": "eWEEK — SoftBank and OpenAI Form Joint Venture in Japan",
+     "url": "https://www.eweek.com/news/softbank-openai-japan/",
+     "date": "2025-11",
+     "read": "search_summary"
+    }
+   ],
+   "value_src": [
+    2
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "합작사는 OpenAI 의 기업용 제품에 구축·통합 서비스를 묶은 'Crystal intelligence'를 일본에서 독점 판매하고 2026년 출시를 계획했다. 소프트뱅크가 첫 고객이라는 것과 2026-02-06 의 후속 발표는 검색 요약으로만 봤다."
+  },
+  {
+   "id": "rel-in-anthropic-infosys",
+   "topic": "G2",
+   "kind": "partner",
+   "country": "IN",
+   "city": null,
+   "item": "Infosys — Anthropic 협력",
+   "lab": "Anthropic",
+   "value": null,
+   "unit": "건",
+   "asof": "2026-02-17",
+   "basis": "Anthropic 발표문",
+   "stage": "계약",
+   "date": "2026-02-17",
+   "parties": [
+    {
+     "name": "Infosys",
+     "role": "구축·통합 파트너"
+    }
+   ],
+   "refs": [],
+   "sources": [
+    {
+     "n": 1,
+     "title": "Anthropic — Anthropic and Infosys build AI agents",
+     "url": "https://www.anthropic.com/news/anthropic-infosys",
+     "date": "2026-02-17",
+     "read": "full"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "high",
+   "note": "Claude 모델과 Claude Code 를 Infosys 의 Topaz 에 묶어 통신·금융·제조 등 규제 산업용 에이전트를 만든다. 발표문은 인도가 Claude.ai 의 두 번째로 큰 시장이라고 적었다. 벵갈루루 사무소 개소(2026-02-16)는 검색 요약으로만 봤다."
+  },
+  {
+   "id": "rel-in-meta-reliance",
+   "topic": "G2",
+   "kind": "investment",
+   "country": "IN",
+   "city": null,
+   "item": "릴라이언스 — Meta 의 데이터센터 임차",
+   "lab": "Meta",
+   "value": null,
+   "unit": "건",
+   "asof": "2026-06-09",
+   "basis": "Meta 발표문(묶음 B 의 기록과 같은 출처)",
+   "stage": "계약",
+   "date": "2026-06-09",
+   "parties": [
+    {
+     "name": "Reliance Industries",
+     "role": "데이터센터 건설·임대"
+    }
+   ],
+   "refs": [
+    {
+     "bundle": "B",
+     "id": "meta-in-reliance-jamnagar"
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "Meta — Meta Partners With Reliance on AI-Enabled Data Center in India",
+     "url": "https://about.fb.com/news/2026/06/meta-partners-with-reliance-on-ai-enabled-data-center-in-india/",
+     "date": "2026-06-09",
+     "read": "full"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "high",
+   "note": "릴라이언스가 잠나가르에 168MW 데이터센터를 짓고 Meta 가 쓴다. 용량과 판정은 묶음 B 의 기록에 있다."
+  },
+  {
+   "id": "rel-in-openai-tata",
+   "topic": "G2",
+   "kind": "adoption",
+   "country": "IN",
+   "city": null,
+   "item": "타타 그룹 — ChatGPT 엔터프라이즈 도입과 데이터센터 첫 고객",
+   "lab": "OpenAI",
+   "value": null,
+   "unit": "건",
+   "asof": "2026-02-18",
+   "basis": "OpenAI 발표문(묶음 B 의 기록과 같은 출처)",
+   "stage": "계약",
+   "date": "2026-02-18",
+   "parties": [
+    {
+     "name": "Tata Group / Tata Consultancy Services",
+     "role": "도입·데이터센터 공급"
+    }
+   ],
+   "refs": [
+    {
+     "bundle": "B",
+     "id": "openai-in-tata-hypervault"
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "OpenAI — Introducing OpenAI for India",
+     "url": "https://openai.com/index/openai-for-india/",
+     "date": "2026-02-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "high",
+   "note": "타타 그룹이 수십만 명의 TCS 직원부터 ChatGPT 엔터프라이즈를 들이고, OpenAI 는 TCS 의 데이터센터 사업 HyperVault 의 첫 고객이 된다."
+  },
+  {
+   "id": "capacity-kr",
+   "topic": "G3",
+   "kind": "capacity",
+   "country": "KR",
+   "city": null,
+   "item": "사업자별 데이터센터 계획(다른 묶음의 기록을 모은 것)",
+   "lab": null,
+   "value": null,
+   "unit": "MW",
+   "asof": "2026-11",
+   "basis": "묶음 A·B·D 의 기록을 가리킨다. 기준이 섞여 있어 합을 대표 값으로 두지 않았다",
+   "items": [
+    {
+     "name": "AWS–SK 울산",
+     "mw": 100,
+     "basis": "unknown",
+     "stage": "착공",
+     "ref": {
+      "bundle": "A",
+      "id": "aws-kr-ulsan-sk"
+     }
+    },
+    {
+     "name": "Microsoft 부산",
+     "mw": 125,
+     "basis": "utility",
+     "stage": "부지확보",
+     "ref": {
+      "bundle": "A",
+      "id": "microsoft-kr-busan-3"
+     }
+    },
+    {
+     "name": "OpenAI–SK텔레콤 서남권",
+     "mw": 20,
+     "basis": "unknown",
+     "stage": "MoU(지연)",
+     "ref": {
+      "bundle": "B",
+      "id": "openai-kr-sk-southwest"
+     }
+    },
+    {
+     "name": "OpenAI–삼성 포항",
+     "mw": 20,
+     "basis": "unknown",
+     "stage": "MoU(지연)",
+     "ref": {
+      "bundle": "B",
+      "id": "openai-kr-samsung-pohang"
+     }
+    }
+   ],
+   "refs": [
+    {
+     "bundle": "A",
+     "id": "aws-kr-ulsan-sk"
+    },
+    {
+     "bundle": "A",
+     "id": "microsoft-kr-busan-3"
+    },
+    {
+     "bundle": "B",
+     "id": "openai-kr-sk-southwest"
+    },
+    {
+     "bundle": "B",
+     "id": "openai-kr-samsung-pohang"
+    },
+    {
+     "bundle": "D",
+     "id": "onsite-kr-ulsan"
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "The Korea Times — SK chairman says Ulsan AI data center expansion nearing 900 megawatts",
+     "url": "https://www.koreatimes.co.kr/business/tech-science/20260913/sk-chairman-says-ulsan-ai-data-center-expansion-nearing-900-megawatts",
+     "date": "2026-09-13",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "이데일리 — MS, 부산에 125MW급 데이터센터 추진...올해 10월 착공 예정",
+     "url": "https://tv.edaily.co.kr/News/NewsRead?NewsId=04785526645477456&Kind=257",
+     "date": "2026-06-01",
+     "read": "partial"
+    },
+    {
+     "n": 3,
+     "title": "OpenAI — Samsung and SK join OpenAI's Stargate initiative",
+     "url": "https://openai.com/index/samsung-and-sk-join-stargate/",
+     "date": "2025-10-01",
+     "read": "full"
+    },
+    {
+     "n": 4,
+     "title": "SK텔레콤 뉴스룸 — 'SK AI 데이터센터 울산' 기공식 개최",
+     "url": "https://news.sktelecom.com/214708",
+     "date": "2025-08-29",
+     "read": "partial"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "med",
+   "note": "랩이 낀 두 건(합 40MW)은 발표 뒤 부지·전력·자금이 정해지지 않았다. 그 밖의 국내 사업자 계획(SK텔레콤의 GW급 계획, LG유플러스 파주, GS 동해 100MW, 민관 연합의 18.4GW 등)은 검색 요약에서 이름만 봤고 사업자별 MW·가동 시점을 원문으로 확인하지 못해 넣지 않았다."
+  },
+  {
+   "id": "law-kr-aidc-act",
+   "topic": "G3",
+   "kind": "law",
+   "country": "KR",
+   "city": null,
+   "item": "인공지능 데이터센터 산업 진흥에 관한 특별법",
+   "lab": null,
+   "value": null,
+   "unit": "제도",
+   "asof": "2026-05-07",
+   "basis": "국회 통과를 전한 보도",
+   "rule": {
+    "name": "인공지능 데이터센터 산업 진흥에 관한 특별법",
+    "authority": "과학기술정보통신부",
+    "effective": "2027-02",
+    "threshold": "AI 데이터센터 사업자"
+   },
+   "refs": [
+    {
+     "bundle": "F",
+     "id": "incentive-kr"
+    },
+    {
+     "bundle": "D",
+     "id": "access-kr-impact"
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "CEO스코어데일리 — AI데이터센터 특별법, 비수도권 규제 넘었지만…통신 3사, 전력 확보 '비상'",
+     "url": "https://ceoscoredaily.com/page/view/2026050815004540960",
+     "date": "2026-05-09",
+     "read": "full"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "high",
+   "note": "2026-05-07 본회의를 통과했고 9개월 뒤인 2027년 2월 시행된다. 인허가 단축과 비수도권 규제 완화가 들어갔다. 전력 직접 구매(PPA) 특례는 재생에너지로 한정되고 LNG 는 빠졌다. 통합 창구와 처리 기한 간주 제도는 검색 요약으로만 봤다."
+  },
+  {
+   "id": "program-kr-national-ai-computing",
+   "topic": "G3",
+   "kind": "program",
+   "country": "KR",
+   "city": "해남",
+   "item": "국가 AI 컴퓨팅센터(해남 솔라시도)",
+   "lab": null,
+   "value": 2.5,
+   "unit": "조 원",
+   "asof": "2026-08-03",
+   "basis": "착공식을 전한 보도의 총 사업비(2028년까지)",
+   "stage": "착공",
+   "date": "2026-08-03",
+   "amount": {
+    "value": 2.5,
+    "unit": "조 원",
+    "currency": "KRW",
+    "usd_bn": 1.73,
+    "fx": 1444.1456,
+    "fx_basis": "연준 2026년 평균(묶음 D)"
+   },
+   "parties": [
+    {
+     "name": "과학기술정보통신부",
+     "role": "주관"
+    },
+    {
+     "name": "삼성SDS 컨소시엄(네이버클라우드 등)",
+     "role": "구축·운영(합작 법인 주도)"
+    }
+   ],
+   "alt": [
+    {
+     "value": 2.4065,
+     "basis": "2026년 5월 보도의 투입액(조 원)",
+     "url": "https://news.mtn.co.kr/news-detail/2026051322522099817"
+    }
+   ],
+   "refs": [],
+   "sources": [
+    {
+     "n": 1,
+     "title": "데일리안 — 삼성SDS, '국가 AI 컴퓨팅센터' 착공…2.5조원 규모 인프라 구축",
+     "url": "https://www.dailian.co.kr/news/view/1673936",
+     "date": "2026-08-03",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "conf": "high",
+   "note": "2026-08-03 착공, 2028년 준공 목표, AI 반도체 1만5,000장 규모다. 민관 합작 법인(한국에이아이컴퓨팅센터)이 짓고 운영한다. 달러 값 1.73은 1달러 = 1444.1456원(연준 2026년 평균, 묶음 D 의 환율표)으로 낸 계산값이다. 1만5,000장이 확정 구매 수량이 아니라 목표라는 것, 수전 40MW, 2027년 조기 서비스 계획은 검색 요약으로만 봤다."
+  },
+  {
+   "id": "program-kr-nvidia-gpu",
+   "topic": "G3",
+   "kind": "program",
+   "country": "KR",
+   "city": null,
+   "item": "엔비디아의 한국 GPU 공급 계획",
+   "lab": null,
+   "value": 260000,
+   "unit": "GPU(최대)",
+   "asof": "2025-10-31",
+   "basis": "엔비디아 발표를 전한 보도의 값. 공급 계획이고 '최대' 수량이다",
+   "stage": "발표",
+   "date": "2025-10-31",
+   "parties": [
+    {
+     "name": "NVIDIA",
+     "role": "공급"
+    },
+    {
+     "name": "정부·삼성·SK·현대차·네이버클라우드",
+     "role": "도입"
+    }
+   ],
+   "split": {
+    "정부": 50000,
+    "삼성": 50000,
+    "SK": 50000,
+    "현대차": 50000,
+    "네이버클라우드": 60000
+   },
+   "refs": [],
+   "sources": [
+    {
+     "n": 1,
+     "title": "헤럴드경제 — 엔비디아, 한국에 GPU 26만장 공급…삼성·SK·현대차·네이버와 AI 동맹",
+     "url": "https://www.heraldk.com/article/2025103022433635047",
+     "date": "2025-10-30",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "정부 최대 5만, 삼성·SK·현대차 각 최대 5만, 네이버클라우드 6만 장이다. 엔비디아는 한국의 AI GPU 가 6만5,000개에서 30만 개 넘게로 늘 것이라고 했다. 정부 몫 가운데 약 1만3,000장이 2025년 12월까지 반입됐다는 것은 검색 요약으로만 봤고, 기업 몫의 반입 현황은 찾지 못했다."
+  },
+  {
+   "id": "capacity-jp",
+   "topic": "G3",
+   "kind": "capacity",
+   "country": "JP",
+   "city": null,
+   "item": "사업자별 데이터센터 계획(다른 묶음의 기록을 모은 것)",
+   "lab": null,
+   "value": null,
+   "unit": "MW",
+   "asof": "2026-11",
+   "basis": "묶음 A·B·F 의 기록을 가리킨다",
+   "items": [
+    {
+     "name": "소프트뱅크 사카이(OpenAI 협력)",
+     "mw": 150,
+     "basis": "utility",
+     "stage": "MoU",
+     "ref": {
+      "bundle": "B",
+      "id": "openai-jp-softbank-sakai"
+     }
+    },
+    {
+     "name": "소프트뱅크 도마코마이",
+     "mw": 50,
+     "basis": "unknown",
+     "stage": "보조금 지급(시점 불명)",
+     "ref": {
+      "bundle": "F",
+      "id": "incentive-jp"
+     }
+    }
+   ],
+   "refs": [
+    {
+     "bundle": "B",
+     "id": "openai-jp-softbank-sakai"
+    },
+    {
+     "bundle": "A",
+     "id": "microsoft-jp-2026"
+    },
+    {
+     "bundle": "F",
+     "id": "incentive-jp"
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "TechCrunch — SoftBank buys $676M old Sharp plant for its OpenAI collab in Japan",
+     "url": "https://techcrunch.com/2025/03/14/softbank-buys-676m-old-sharp-plant-for-its-openai-collab-in-japan/",
+     "date": "2025-03-14",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "AFP(Asharq Al-Awsat 게재) — Microsoft to Invest $10 bn for Japan AI Data Centers",
+     "url": "https://english.aawsat.com/technology/5258296-microsoft-invest-10-bn-japan-ai-data-centers",
+     "date": "2026-04-03",
+     "read": "partial"
+    },
+    {
+     "n": 3,
+     "title": "King & Wood Mallesons — Data Centres: APAC Regulatory Guide 2026, Chapter 6 Japan",
+     "url": "https://www.mallesons.com/content/dam/mallesons/insights/download-publication/australia/2026/11/00122_Data%20Centre%20Regulatory%20Guide%202026%20Chapter%206%20Japan.pdf",
+     "date": "2026-11",
+     "read": "partial"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "med",
+   "note": "용량이 공개된 것은 소프트뱅크 사카이(수전 150MW)뿐이다. Microsoft 의 2026년 계획(100억 달러)은 소프트뱅크·사쿠라 인터넷과 함께하나 MW 가 없다. 도마코마이(50MW, 300MW 까지)는 묶음 F 의 보조금 기록에 있다."
+  },
+  {
+   "id": "program-jp-regional-dc",
+   "topic": "G3",
+   "kind": "program",
+   "country": "JP",
+   "city": null,
+   "item": "지방 데이터센터 거점 보조(경제산업성)",
+   "lab": null,
+   "value": 300,
+   "unit": "억 엔(사례 1건)",
+   "asof": "2026-11",
+   "basis": "묶음 F 의 인센티브 기록과 같은 출처",
+   "stage": "가동",
+   "date": null,
+   "parties": [
+    {
+     "name": "経済産業省",
+     "role": "보조"
+    },
+    {
+     "name": "SoftBank",
+     "role": "수혜 사례"
+    }
+   ],
+   "refs": [
+    {
+     "bundle": "F",
+     "id": "incentive-jp"
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "King & Wood Mallesons — Data Centres: APAC Regulatory Guide 2026, Chapter 6 Japan",
+     "url": "https://www.mallesons.com/content/dam/mallesons/insights/download-publication/australia/2026/11/00122_Data%20Centre%20Regulatory%20Guide%202026%20Chapter%206%20Japan.pdf",
+     "date": "2026-11",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "도쿄·오사카 밖의 거점에 조성·전력·통신·건물 비용을 보조한다. 소프트뱅크가 도마코마이 데이터센터에 300억 엔을 받았다. 정부의 GPU 확보 사업이나 AI 관련 법은 이 안내서에서 확인하지 못했다."
+  },
+  {
+   "id": "capacity-tw",
+   "topic": "G3",
+   "kind": "capacity",
+   "country": "TW",
+   "city": null,
+   "item": "사업자별 데이터센터 계획",
+   "lab": null,
+   "value": null,
+   "unit": "MW",
+   "asof": "2026-11",
+   "basis": "검색 요약으로만 확인한 한 건과 묶음 A·D 의 기록",
+   "items": [
+    {
+     "name": "Foxconn–NVIDIA 클러스터",
+     "mw": 27,
+     "basis": "unknown",
+     "stage": "발표(가동 미확인)"
+    }
+   ],
+   "refs": [
+    {
+     "bundle": "A",
+     "id": "aws-tw-region"
+    },
+    {
+     "bundle": "D",
+     "id": "access-tw-north"
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "Mobile World Live — OpenAI taps Foxconn to build US AI data centre hardware",
+     "url": "https://www.mobileworldlive.com/foxconn/openai-taps-foxconn-to-build-us-ai-data-centre-hardware/",
+     "date": "2025-11",
+     "read": "search_summary"
+    },
+    {
+     "n": 2,
+     "title": "Amazon — Amazon Launches Infrastructure Region in Taiwan",
+     "url": "https://press.aboutamazon.com/2025/6/amazon-launches-infrastructure-region-in-taiwan",
+     "date": "2025-06-05",
+     "read": "partial"
+    },
+    {
+     "n": 3,
+     "title": "數位時代 — 台電下令桃園以北拒供資料中心用電",
+     "url": "https://www.bnext.com.tw/article/80273/taipower-denied-power-provide-to-data-centre-north-of-taoyuan",
+     "date": "2024-08-26",
+     "read": "partial"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "low",
+   "note": "Foxconn 이 엔비디아 GB300 기반 27MW 클러스터를 2026년 상반기에 가동할 예정이라는 보도가 있었다(가동 여부 미확인). 프런티어 랩의 대만 용량 발표는 묶음 B 에 없다. 북부(타오위안 이북)에서는 5MW 넘는 신규 승인이 멈춰 있다."
+  },
+  {
+   "id": "program-tw-tax-holiday",
+   "topic": "G3",
+   "kind": "program",
+   "country": "TW",
+   "city": null,
+   "item": "대형 데이터센터 소득세 면제 계획",
+   "lab": null,
+   "value": 5,
+   "unit": "년(계획)",
+   "asof": "2026-11",
+   "basis": "묶음 F 의 인센티브 기록과 같은 출처",
+   "stage": "발표",
+   "date": null,
+   "parties": [
+    {
+     "name": "대만 정부",
+     "role": "제도 계획"
+    }
+   ],
+   "refs": [
+    {
+     "bundle": "F",
+     "id": "incentive-tw"
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "King & Wood Mallesons — Data Centres: APAC Regulatory Guide 2026, Chapter 12 Taiwan",
+     "url": "https://www.mallesons.com/content/dam/mallesons/insights/download-publication/australia/2026/11/00122_Data%20Centre%20Regulatory%20Guide%202026%20Chapter%2012%20Taiwan.pdf",
+     "date": "2026-11",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "2026년 말부터 일정 규모를 넘는 데이터센터 투자에 민간참여 인프라 사업 방식으로 5년 소득세 면제를 줄 계획이다. 정부의 AI 컴퓨팅 사업과 AI 관련 법은 이 안내서에서 확인하지 못했다."
+  },
+  {
+   "id": "capacity-in",
+   "topic": "G3",
+   "kind": "capacity",
+   "country": "IN",
+   "city": null,
+   "item": "사업자별 데이터센터 계획(다른 묶음의 기록을 모은 것)",
+   "lab": null,
+   "value": null,
+   "unit": "MW",
+   "asof": "2026-11",
+   "basis": "묶음 A·B 의 기록을 가리킨다",
+   "items": [
+    {
+     "name": "TCS HyperVault(OpenAI 첫 고객)",
+     "mw": 100,
+     "basis": "unknown",
+     "stage": "계약",
+     "ref": {
+      "bundle": "B",
+      "id": "openai-in-tata-hypervault"
+     }
+    },
+    {
+     "name": "릴라이언스 잠나가르(Meta 사용)",
+     "mw": 168,
+     "basis": "unknown",
+     "stage": "계약",
+     "ref": {
+      "bundle": "B",
+      "id": "meta-in-reliance-jamnagar"
+     }
+    }
+   ],
+   "refs": [
+    {
+     "bundle": "B",
+     "id": "openai-in-tata-hypervault"
+    },
+    {
+     "bundle": "B",
+     "id": "meta-in-reliance-jamnagar"
+    },
+    {
+     "bundle": "A",
+     "id": "google-in-vizag"
+    },
+    {
+     "bundle": "A",
+     "id": "microsoft-in-2025-12"
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "OpenAI — Introducing OpenAI for India",
+     "url": "https://openai.com/index/openai-for-india/",
+     "date": "2026-02-18",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "Meta — Meta Partners With Reliance on AI-Enabled Data Center in India",
+     "url": "https://about.fb.com/news/2026/06/meta-partners-with-reliance-on-ai-enabled-data-center-in-india/",
+     "date": "2026-06-09",
+     "read": "full"
+    },
+    {
+     "n": 3,
+     "title": "Google — Google Announces First AI Hub in India",
+     "url": "https://www.googlecloudpresscorner.com/2025-10-14-Google-Announces-First-AI-Hub-in-India,-Bringing-Companys-Full-AI-Stack-and-Consumer-Services-to-Country",
+     "date": "2025-10-14",
+     "read": "partial"
+    },
+    {
+     "n": 4,
+     "title": "Microsoft — Microsoft invests US$17.5 billion in India to drive AI diffusion at population scale",
+     "url": "https://news.microsoft.com/source/asia/2025/12/09/microsoft-invests-us17-5-billion-in-india-to-drive-ai-diffusion-at-population-scale/",
+     "date": "2025-12-09",
+     "read": "partial"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "med",
+   "note": "랩이 낀 두 건 모두 현지 대기업이 짓고 랩이 쓴다. TCS 는 100MW 에서 1GW 까지 늘릴 계획을 밝혔다. Google·Microsoft·AWS 의 발표는 금액만 있고 MW 가 없다."
+  },
+  {
+   "id": "program-in-indiaai",
+   "topic": "G3",
+   "kind": "program",
+   "country": "IN",
+   "city": null,
+   "item": "IndiaAI Mission 의 공용 GPU",
+   "lab": null,
+   "value": 38000,
+   "unit": "GPU(등록 수, 하한)",
+   "asof": "2026-02",
+   "basis": "인도 정부 공보국 자료의 값('38,000 넘게')",
+   "stage": "가동",
+   "date": "2026-02",
+   "parties": [
+    {
+     "name": "Ministry of Electronics and Information Technology (IndiaAI)",
+     "role": "주관"
+    },
+    {
+     "name": "AI 서비스 사업자 14곳",
+     "role": "GPU 제공"
+    }
+   ],
+   "refs": [
+    {
+     "bundle": "F",
+     "id": "incentive-in"
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "Press Information Bureau (India) — AI Impact Summit 2026 explainer",
+     "url": "https://static.pib.gov.in/WriteReadData/specificdocs/documents/2026/feb/doc2026210784401.pdf",
+     "date": "2026-02",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "시간당 65루피에 쓸 수 있고 세계 평균의 3분의 1 수준이라고 자료는 적었다. 실제 설치는 2만4,000~2만5,000장이고 2026년 말 약 10만 장이 목표라는 것은 검색 요약으로만 봤다. 2047년까지의 면세는 묶음 F 에 있다."
+  }
+ ]
 }
