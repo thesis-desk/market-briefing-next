@@ -1,7 +1,33 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-18T14:20:11+09:00",
+ "generated_kst": "2026-11-18T15:00:30+09:00",
  "reports": [
+  {
+   "slug": "sc26",
+   "type": "event",
+   "title": "SC26 : 엔비디아 Rubin HPC(2028)·Vera CPU 랙 예고, AMD Lux 개방, TOP500 신규 진입 역대 최저",
+   "companies": [
+    {
+     "name": "엔비디아",
+     "ticker": null
+    },
+    {
+     "name": "AMD",
+     "ticker": null
+    },
+    {
+     "name": "델",
+     "ticker": null
+    }
+   ],
+   "event": "SC26",
+   "event_date": "2026-11-15",
+   "published_kst": "2026-11-18T15:00:30+09:00",
+   "revised_kst": "2026-11-18T15:00:30+09:00",
+   "revision": 1,
+   "summary": "HPC 시스템 교체는 사실상 멈췄고, 늘어난 하드웨어는 AI 팩토리로 갔다. 2028년 Rubin HPC가 나오기 전까지 네이티브 FP64 시장은 AMD 쪽으로 기울어 있다. 그 사이 엔비디아는 칩보다 CPU 랙·Slurm·CUDA-X 같은 워크플로 장악으로 HPC에 다시 들어오고 있다.",
+   "path": "reports/sc26.json"
+  },
   {
    "slug": "sixsigma-ai",
    "type": "article",

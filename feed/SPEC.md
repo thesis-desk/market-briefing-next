@@ -51,7 +51,7 @@
 ```
 
 - `generated_kst` 는 빌드 시각이 아니라 **가장 최근에 바뀐 기록의 시각**이다. 내용이 그대로면 이 값도 그대로다.
-- `type`: `earnings` | `investor_day` | `interview` | `article` | `synthesis`.
+- `type`: `earnings` | `investor_day` | `interview` | `article` | `synthesis` | `event`(행사 정리).
 - `companies[].ticker` 는 없으면 `null`. `event`·`event_date` 는 있을 때만.
 - `revision` 은 처음 게시할 때 1이다. `revised_kst` 는 고친 적이 없으면 `published_kst` 와 같다.
 - `path` 는 `feed/` 기준 상대 경로다.
@@ -139,7 +139,7 @@
 ### 그 밖의 필드
 
 - `sources[].access`: `public` | `paid` | `private`(공개 링크가 없는 출처. `url` 이 없다).
-- `sources[].kind`: `press_release` | `transcript_official` | `transcript_third_party` | `presentation` | `market_data` | `prior_report` | `article` | `video`. 종류가 적혀 있지 않은 인터뷰·글 분석의 출처는 주소가 유튜브면 `video`, 아니면 `article` 로 낸다.
+- `sources[].kind`: `press_release` | `transcript_official` | `transcript_third_party` | `presentation` | `market_data` | `prior_report` | `article` | `video` | `news`(언론 보도) | `telegram`(텔레그램 글). 종류가 적혀 있지 않은 인터뷰·글 분석의 출처는 주소가 유튜브면 `video`, 아니면 `article` 로 낸다.
 - `sources[].read`: 실제로 읽은 범위. `전문` | `일부` | `요약만`.
 - `period` 는 회사가 쓰는 분기 이름이다(회계연도가 달력과 다른 회사 포함). `period_end` 는 그 분기의 말일이라 회사끼리 견줄 때 쓴다. 둘 다 있을 때만 들어간다.
 - `prev_slug`: 이 사이트에 직전 분기 리포트가 있으면 그 슬러그, 없으면 `null`.
@@ -262,3 +262,10 @@
 - 최근 60일 안에 대상 기업이 연 투자자의 날의 전체 목록. Oracle(10월 28일)은 찾아 리포트로 만들었지만, 피드와 전사본 목록이 없는 기업은 확인하지 못했다(`QUESTIONS.md`).
 - 이미 낸 실적 리포트 2건의 공식 전사본 대조. 회사가 공식 전사본을 냈는지 확인하지 못했다(`QUESTIONS.md`).
 - 야후 파이낸스에 다음 실적 발표일이 없는 기업(효성중공업, Wistron, Capgemini)의 일정.
+
+### 2026-11-18 — schema 1
+
+바뀐 것
+
+- 리포트 종류에 행사 정리(`event`)를 더했다. 기술 행사·전시회·금융기관 컨퍼런스를 행사 단위로 정리한 리포트이고 절은 `s1`, `s2` … 로 나간다.
+- 출처 `kind` 에 `news`(언론 보도)와 `telegram`(텔레그램 글)을 더했다. 행사 정리에서 기업 자료와 2차 자료를 가르는 데 쓴다.
