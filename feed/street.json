@@ -1,20 +1,20 @@
 {
  "schema": 1,
- "updated_kst": "2026-11-19T05:27:09+09:00",
+ "updated_kst": "2026-11-19T08:25:53+09:00",
  "window_days": 14,
  "items_days": 30,
  "index": {
   "ai_tech": {
-   "value": -1,
+   "value": 0,
    "label": "엇갈림",
    "orgs": 42,
-   "items": 137
+   "items": 142
   },
   "market": {
-   "value": -13,
+   "value": -12,
    "label": "엇갈림",
-   "orgs": 29,
-   "items": 87
+   "orgs": 30,
+   "items": 92
   },
   "by_group": [
    {
@@ -29,7 +29,7 @@
     "ai_tech": 2,
     "ai_tech_orgs": 8,
     "market": 0,
-    "market_orgs": 3
+    "market_orgs": 4
    },
    {
     "group": "자산운용",
@@ -40,9 +40,9 @@
    },
    {
     "group": "투자은행",
-    "ai_tech": 16,
+    "ai_tech": 27,
     "ai_tech_orgs": 6,
-    "market": 27,
+    "market": 28,
     "market_orgs": 6
    },
    {
@@ -98,33 +98,33 @@
    },
    {
     "week": "2026-11-16",
-    "ai_tech": 7,
-    "ai_tech_orgs": 19,
-    "market": -4,
-    "market_orgs": 12
+    "ai_tech": 6,
+    "ai_tech_orgs": 21,
+    "market": -3,
+    "market_orgs": 14
    }
   ],
   "args": {
    "caution": [
     {
      "tag": "투자 회수",
-     "n": 21
+     "n": 23
+    },
+    {
+     "tag": "자금 조달·신용",
+     "n": 17
     },
     {
      "tag": "밸류에이션",
      "n": 16
     },
     {
-     "tag": "자금 조달·신용",
-     "n": 15
-    },
-    {
      "tag": "쏠림",
-     "n": 12
+     "n": 14
     },
     {
      "tag": "정책·지정학",
-     "n": 10
+     "n": 12
     },
     {
      "tag": "금리·거시",
@@ -146,35 +146,35 @@
    "optimism": [
     {
      "tag": "수요·채택",
-     "n": 45
+     "n": 48
     },
     {
      "tag": "투자 회수",
      "n": 36
     },
     {
-     "tag": "정책·지정학",
-     "n": 21
+     "tag": "금리·거시",
+     "n": 23
     },
     {
      "tag": "자금 조달·신용",
-     "n": 20
+     "n": 22
     },
     {
-     "tag": "금리·거시",
-     "n": 20
+     "tag": "정책·지정학",
+     "n": 22
     },
     {
      "tag": "밸류에이션",
-     "n": 18
+     "n": 19
+    },
+    {
+     "tag": "쏠림",
+     "n": 14
     },
     {
      "tag": "전력·공급 제약",
      "n": 14
-    },
-    {
-     "tag": "쏠림",
-     "n": 12
     },
     {
      "tag": "경쟁·해자",
@@ -185,6 +185,153 @@
   "method": "기관·인물마다 기간 안 입장 값의 평균을 내고 그 평균들을 다시 평균해 ×50"
  },
  "items": [
+  {
+   "id": "citi-citi-ceo-jane-fraser-on-ai-tech-outages-newsmake",
+   "group": "투자은행",
+   "org": "Citi",
+   "person": "Jane Fraser",
+   "kind": "publication",
+   "title": "Citi CEO Jane Fraser, AI와 기술 장애를 말하다 (뉴스메이커 행사)",
+   "title_orig": "Citi CEO Jane Fraser on AI, Tech Outages (Newsmaker Event)",
+   "url": "https://www.youtube.com/watch?v=rDvWeQvTmAo",
+   "outlet": "Bloomberg Podcasts (유튜브)",
+   "published_kst": "2026-11-19T07:16:30+09:00",
+   "stance": {
+    "ai_tech": 1,
+    "market": 0
+   },
+   "args": [
+    "수요·채택",
+    "자금 조달·신용",
+    "쏠림",
+    "금리·거시"
+   ],
+   "summary": "Citi CEO Jane Fraser는 AI 수요가 전 세계로 퍼지고 있어 되돌릴 수 없으며 종말론적 전망을 크게 걱정하지 않는다고 본다. 다만 대규모 인프라 구축 단계여서 모두가 승자가 될 수는 없고, AI 자금 조달 위험과 AI 쏠림을 경계한다. 경제는 양호하지만 꼬리 위험이 커졌고, 위험들이 동시에 겹치는 상황을 가장 큰 위험으로 꼽는다.",
+   "points": [
+    "AI는 이미 되돌릴 수 없는 흐름이며, 컴퓨팅 수요는 미국뿐 아니라 세계 각국에서 나타난다.",
+    "AI는 거대한 인프라 구축 단계라 기회가 크지만 모두가 승자가 되지는 못하며, 은행은 관련 금융 위험을 주시한다.",
+    "시장이 완벽을 전제로 가격이 매겨져 있었고 AI 쏠림 위험이 있었기에, 조정은 오히려 반갑다고 본다.",
+    "경기 둔화가 임박했다고 보지는 않지만 꼬리 위험은 이전보다 커졌다고 진단한다."
+   ],
+   "evidence": [
+    {
+     "ko": "시장이 완벽을 전제로 가격이 매겨져 있었고 AI 쏠림 위험이 있었기에, 조정은 오히려 반갑다고 본다.",
+     "orig": "What I am happy is to see some of the air come out of the tires. We had a market that was priced to perfection. We have some AI concentration risk in there."
+    }
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "유튜브 영상의 음성을 음성 인식(Whisper)으로 받아 적은 전사 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
+  },
+  {
+   "id": "pimco-charting-the-year-ahead-investment-ideas-for-202",
+   "group": "자산운용",
+   "org": "PIMCO",
+   "person": "Mark Seidner",
+   "kind": "publication",
+   "title": "내년을 그리다: 2027 투자 아이디어",
+   "title_orig": "Charting the Year Ahead: Investment Ideas for 2027",
+   "url": "https://www.youtube.com/watch?v=9fdxW3vINKA",
+   "outlet": "PIMCO (유튜브)",
+   "published_kst": "2026-11-19T06:33:48+09:00",
+   "stance": {
+    "ai_tech": -1,
+    "market": 0
+   },
+   "args": [
+    "쏠림",
+    "자금 조달·신용",
+    "정책·지정학",
+    "투자 회수"
+   ],
+   "summary": "PIMCO는 AI 쏠림으로 주식·신용·인프라에 걸친 숨은 집중 위험이 커졌다고 보고, 하이퍼스케일러의 차입 의존 확대와 데이터센터 규제 가능성을 경계한다. AI 인프라에는 담보 구조 위주로 선별 참여하고, 분산 전략과 신용 선별, 상품, 상대가치 전략으로 포트폴리오 균형을 회복하라고 권한다.",
+   "points": [
+    "하이퍼스케일러의 설비투자가 현금흐름을 앞서면서 차입 의존이 커져 회사채 지수 구성과 신용 스프레드에 영향을 준다.",
+    "미국 중간선거 결과로 데이터센터 개발을 제한하는 정책이 2027년 초 현실화할 가능성이 크다고 본다.",
+    "AI 빌드아웃에는 선별적으로 참여하며, 애플리케이션 승자보다 인프라 계층과 담보 금융 구조를 선호한다.",
+    "신용 부도 사이클이 이미 시작되어 발행자 단위의 신용 선별이 수익의 핵심 요인이 될 것이다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "유튜브 자동 생성 자막(en) 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
+  },
+  {
+   "id": "morgan-stanley-2027-equities-outlook-why-the-correction-isn-t-t",
+   "group": "투자은행",
+   "org": "Morgan Stanley",
+   "person": "Mike Wilson",
+   "kind": "publication",
+   "title": "2027 주식시장 전망: 조정은 강세장의 끝이 아닌 이유",
+   "title_orig": "2027 Equities Outlook: Why the Correction Isn't the End of the Bull Market",
+   "url": "https://www.morganstanley.com/insights/podcasts/thoughts-on-the-market",
+   "outlet": "Morgan Stanley Thoughts on the Market",
+   "published_kst": "2026-11-19T06:30:00+09:00",
+   "stance": {
+    "ai_tech": 1,
+    "market": 2
+   },
+   "args": [
+    "밸류에이션",
+    "금리·거시",
+    "수요·채택",
+    "정책·지정학"
+   ],
+   "summary": "Mike Wilson은 현재의 조정이 강세장을 끝내는 것이 아니라 다음 상승 국면을 위한 재설정이라며, 12개월 S&P 500 목표치를 8700으로 올렸다. 연말 전 한 차례 더 하락할 수 있으나 이는 매수 기회라고 본다. AI는 인프라 구축에서 실제 도입 효과로 무게가 옮겨가며, 가장 큰 위험은 연준의 긴축적 정책이라고 말한다.",
+   "points": [
+    "현재 조정은 강세장을 깨는 것이 아니라 다음 상승을 위한 발판을 재설정하는 과정이다.",
+    "조정 이후 시장은 적정가치 아래에서 거래되고 있어 12개월 S&P 500 목표치를 8700으로 올렸다.",
+    "AI의 중심축이 인프라 구축에서 기업의 실제 도입 효과로 옮겨가고 있으며, 효과를 말하는 기업일수록 이익 전망 상향이 강하다.",
+    "주된 위험은 정책이며, 연준이 예상보다 매파적이면 금융 여건이 다시 조여 멀티플이 압박받을 수 있다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   }
+  },
+  {
+   "id": "citi-citi-ceo-jane-fraser-bloomberg-newsmakers-interv-2",
+   "group": "투자은행",
+   "org": "Citi",
+   "person": null,
+   "kind": "publication",
+   "title": "CITI CEO Jane Fraser | Bloomberg Newsmakers 인터뷰",
+   "title_orig": "CITI CEO Jane Fraser | Bloomberg Newsmakers Interview",
+   "url": "https://www.youtube.com/watch?v=OwNVnCZRmvs",
+   "outlet": "Bloomberg Television (유튜브)",
+   "published_kst": "2026-11-19T05:17:31+09:00",
+   "stance": {
+    "ai_tech": 1,
+    "market": 0
+   },
+   "args": [
+    "수요·채택",
+    "자금 조달·신용",
+    "쏠림",
+    "금리·거시"
+   ],
+   "summary": "Citi CEO Jane Fraser는 Anthropic IPO와 엔비디아 실적을 AI 생태계 건전성의 지표로 보고, AI는 되돌릴 수 없으며 종말론적 전망을 우려하지 않는다고 말한다. 다만 AI 금융 리스크, 집중 위험, 인플레이션 원인과 금리 인상의 효과 불확실성, 꼬리 위험의 동시 발생 가능성은 경계한다.",
+   "points": [
+    "AI는 되돌릴 수 없는 흐름이며 종말론적 전망에 크게 우려하지 않는다.",
+    "Anthropic IPO와 엔비디아 실적은 자본시장과 AI 생태계 건전성의 지표다.",
+    "AI 금융은 한도·심사·분산 매각·담보 관리로 통제하며 시스템 위험이 되지 않게 한다고 밝힌다.",
+    "시장이 완벽을 가정한 가격이었고 AI 집중 위험이 있어 일부 거품이 빠지는 것은 반갑지만, 꼬리 위험이 동시에 겹치면 가장 큰 위험이 된다."
+   ],
+   "evidence": [
+    {
+     "ko": "AI는 되돌릴 수 없는 흐름이며 종말론적 전망에 크게 우려하지 않는다.",
+     "orig": "Oh, look, the genie is out of the bottle on AI and no one's putting that genie back in the bottle."
+    }
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "유튜브 영상의 음성을 음성 인식(Whisper)으로 받아 적은 전사 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
+  },
   {
    "id": "blackrock-ai-investing-what-s-driving-optimism-amid-market",
    "group": "자산운용",
@@ -251,6 +398,44 @@
     "tier": "standard"
    },
    "note": "유튜브 자막(제작자 제공)(en) 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
+  },
+  {
+   "id": "carlyle-carlyle-s-jenkins-warns-on-rush-to-fund-ai-data",
+   "group": "PE·대체투자",
+   "org": "Carlyle",
+   "person": null,
+   "kind": "report",
+   "title": "Carlyle의 젠킨스, AI 데이터센터 자금 지원 쇄도에 경고",
+   "title_orig": "Carlyle's Jenkins Warns on Rush to Fund AI Data Centers",
+   "url": "https://finance.yahoo.com/video/carlyles-jenkins-warns-rush-fund-173012936.html",
+   "outlet": "Yahoo Finance",
+   "published_kst": "2026-11-18T18:30:00+09:00",
+   "stance": {
+    "ai_tech": -1,
+    "market": 0
+   },
+   "args": [
+    "쏠림",
+    "투자 회수",
+    "자금 조달·신용",
+    "정책·지정학"
+   ],
+   "summary": "Jenkins는 AI 데이터센터 금융에 서두를 이유가 없다고 본다. 소수 하이퍼스케일러에 쏠린 집중 위험과 아직 불분명한 AI 사업 모델 때문에 기술 위험을 인수하기 어렵다는 것이다. 다만 AI 활용 자체는 지지하며, 미국 성장과 포트폴리오 실적은 견조해 광범위한 신용 스트레스는 보지 않고 2021년 거래와 소프트웨어에 스트레스가 몰려 있다고 말했다.",
+   "points": [
+    "미국 GDP 모멘텀은 비교적 강해 직전 분기 성장률이 전년 대비 3.4%였고, 글로벌 PE·신용 포트폴리오도 매출은 높은 한 자릿수, EBITDA는 중간~높은 한 자릿수로 성장하고 있어 전반적으로 심각한 스트레스를 시사하지 않는다고 말했다.",
+    "스트레스가 큰 영역은 제로금리·최고 밸류에이션 시기인 2021년 말에 체결된 약 1.6조 달러 규모의 거래이며, 금리가 더 오래 높게 유지되는 환경에서 이들 자본구조가 시험대에 오를 것이라고 했다. 두 번째 문제 영역은 소프트웨어로, 2021~23년 사모신용 거래의 약 40%가 소프트웨어였다고 했다.",
+    "Carlyle은 소프트웨어 비중을 낮게 유지해 왔다. 가장 집중된 포트폴리오에서도 약 12% 이하이고 전체 플랫폼 기준으로는 약 4%라고 했다.",
+    "데이터센터는 하이퍼스케일러 7곳과 칩 제조사에 위험이 쏠려 있고, 상대방 위험·문서화 위험·기술 위험을 함께 따져야 한다고 했다. 신용 투자자로서 AI의 사업 모델을 아직 모르기 때문에 기술 위험을 인수하기 어렵다고 했다. 반면 상대방은 현금흐름 모델이 있어 이해한다고 했다.",
+    "AI에 투자하지 말라는 것이 아니라 일부는 투자하고 활용해야 한다고 했다. 다만 신용에서는 상위 10% 수익으로 하위 10% 손실을 만회할 수 없어 수학적으로 맞지 않으므로 분산을 택한다고 했다.",
+    "최근 3~6개월 사이 위험이 더 넓게 가격에 반영되었고, AI 데이터센터에 투자하려는 투자자는 서두를 이유가 없다고 했다. 공급 물량과 대기 수요가 막대해 골라 담을 수 있고, 신규 기술 발행에서는 보통 초기 투자자가 프리미엄을 받지만 이번에는 나중 투자자가 프리미엄을 받을 것이 분명하다고 했다.",
+    "집중 위험에 대한 우려가 커지고 있고, 미국 중간선거 이후 지역사회가 데이터센터에 요구하는 것이 늘었다고 했다. 자본이 탄탄한 하이퍼스케일러는 이를 감당할 수 있지만 투기적 데이터센터 개발업자는 계약 확보와 건설이 1년 전보다 훨씬 어려워질 것이라고 했다.",
+    "칩 담보 대출은 칩의 감가 가치를 아직 알아낼 만큼 똑똑하지 않으며, 모델이 정착하지 않아 기술 위험을 인수하기 어렵다고 했다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
   },
   {
    "id": "ubs-ubs-on-air-paul-donovan-daily-audio-tit-for-tat",

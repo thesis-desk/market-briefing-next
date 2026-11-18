@@ -1,7 +1,52 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-19T08:11:36+09:00",
+ "generated_kst": "2026-11-19T08:31:49+09:00",
  "reports": [
+  {
+   "slug": "citi-citi-ceo-jane-fraser-on-ai-tech-outages-newsmake",
+   "type": "article",
+   "title": "Citi(제인 프레이저) : AI 투자와 기술 장애·인플레이션의 위험은 실재하지만 관리할 수 있고, 은행은 통제가 갖춰질 때만 빠르게 간다",
+   "companies": [
+    {
+     "name": "Citigroup",
+     "ticker": null
+    },
+    {
+     "name": "Anthropic",
+     "ticker": null
+    },
+    {
+     "name": "NVIDIA",
+     "ticker": null
+    }
+   ],
+   "event": "Bloomberg Newsmaker Event",
+   "published_kst": "2026-11-19T08:31:49+09:00",
+   "revised_kst": "2026-11-19T08:31:49+09:00",
+   "revision": 1,
+   "summary": "Citi CEO 는 AI 구축과 자본시장에 신중한 낙관을 유지했다. 다만 AI 금융 위험을 처음 공시했고, 기술 장애가 당분간 늘어난다고 예고했다. 금리 인상이 공급발 인플레이션을 못 고칠 수 있다고도 봤다. Citi 자신에게는 호재와 부담이 섞여 중립으로 보고, AI 수요에 대한 낙관은 화자가 IPO 주관 경쟁과 AI 대출의 당사자라는 점을 감안해 할인해서 읽어야 한다.",
+   "path": "reports/citi-citi-ceo-jane-fraser-on-ai-tech-outages-newsmake.json"
+  },
+  {
+   "slug": "big-technology-will-jensen-huang-s-affair-be-the-end-of",
+   "type": "interview",
+   "title": "Alex Kantrowitz 단독 해설 : 젠슨 황 스캔들이 엔비디아의 수출통제 로비와 CEO 거취에 미칠 영향",
+   "companies": [
+    {
+     "name": "Nvidia",
+     "ticker": null
+    },
+    {
+     "name": "Google",
+     "ticker": null
+    }
+   ],
+   "published_kst": "2026-11-19T08:19:32+09:00",
+   "revised_kst": "2026-11-19T08:19:32+09:00",
+   "revision": 1,
+   "summary": "진행자는 이번 스캔들을 불륜이 아니라 기업·국가 안보 사안으로 본다. 그럼에도 젠슨 황이 CEO 자리를 지킬 것이라고 예상한다. 엔비디아에 실질적인 위험은 거취보다 대중국 수출 정책에서 젠슨의 발언권이 약해지는 것과 민주당 의회 청문회다. 다만 이 판단은 추가 보도와 이사회 조사 결과를 보기 전의 해설이어서 확신이 낮다.",
+   "path": "reports/big-technology-will-jensen-huang-s-affair-be-the-end-of.json"
+  },
   {
    "slug": "big-technology-special-report-the-fall-of-jensen-huang-what",
    "type": "interview",
@@ -1732,7 +1777,7 @@
   }
  ],
  "street": {
-  "updated_kst": "2026-11-19T05:27:09+09:00",
+  "updated_kst": "2026-11-19T08:25:53+09:00",
   "path": "street.json"
  },
  "calendar": {
