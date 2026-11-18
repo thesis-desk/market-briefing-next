@@ -2,7 +2,7 @@
  "schema": 1,
  "bundle": "H",
  "title": "반례와 경쟁 입지의 제약",
- "updated_kst": "2026-11-18T21:19:08+09:00",
+ "updated_kst": "2026-11-18T21:29:14+09:00",
  "measure": null,
  "notes": [
   "따로 모은 것이 아니라 묶음 A~G 의 기록에서 추렸다. 기록마다 refs 가 근거 기록을 가리키고, 값이 있으면 value_from 이 가리키는 기록의 값과 같다(검사가 본다). 출처는 가리키는 기록의 것을 옮겼고 sources 의 from 에 어느 기록에서 왔는지 적었다.",
@@ -313,7 +313,7 @@
     1
    ],
    "alt": [],
-   "conf": "low",
+   "conf": "med",
    "note": "발전소 용량 300MW 는 검색 요약으로만 확인했다. 수도권의 제약(신청 522건 가운데 승인 10건)과 함께 봐야 한다."
   },
   {
@@ -1601,9 +1601,9 @@
    "country": "AU",
    "city": null,
    "criterion": "용수",
-   "statement": "시드니 수도공사는 데이터센터의 물 수요가 2035년에 하루 최대 2.5억 L 에 이를 수 있다고 봤다.",
-   "value": 250,
-   "unit": "백만 L/일(2035년 수요 전망, 최대)",
+   "statement": "시드니 수도공사의 전망으로는 데이터센터가 2035년에 시드니 가용 수량의 최대 4분의 1(135기가리터)을 쓸 수 있다.",
+   "value": 135,
+   "unit": "기가리터/년(2035년 수요 전망, 최대)",
    "asof": "2025",
    "basis": "묶음 F 의 기록에서 추린 것. 값과 출처는 그 기록의 것이다",
    "value_from": {
@@ -1619,9 +1619,9 @@
    "sources": [
     {
      "n": 1,
-     "title": "King & Wood Mallesons — Data Centres: APAC Regulatory Guide 2026, Chapter 1 Australia",
-     "url": "https://www.mallesons.com/content/dam/mallesons/insights/download-publication/australia/2026/11/00122_Data%20Centre%20Regulatory%20Guide%202026%20Chapter%201%20Australia.pdf",
-     "date": "2026-11",
+     "title": "Reuters 를 실은 RNZ — An Australian data centre boom is built on vague water plans",
+     "url": "https://www.rnz.co.nz/news/world/573107/an-australian-data-centre-boom-is-built-on-vague-water-plans",
+     "date": "2025-09-15",
      "read": "partial",
      "from": "F:water-au"
     }
@@ -1630,8 +1630,8 @@
     1
    ],
    "alt": [],
-   "conf": "low",
-   "note": "검색 요약으로만 확인한 값이고 업계 추정은 훨씬 낮다."
+   "conf": "med",
+   "note": "하루 최대 2.5억 L 라는 다른 진술은 검색 요약으로만 봤고 묶음 F 의 기록에 남겼다."
   },
   {
    "id": "rc-in-governance",

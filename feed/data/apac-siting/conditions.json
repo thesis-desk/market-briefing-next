@@ -2,13 +2,13 @@
  "schema": 1,
  "bundle": "F",
  "title": "나머지 조건(채점표 재료)",
- "updated_kst": "2026-11-18T21:01:36+09:00",
+ "updated_kst": "2026-11-18T21:33:55+09:00",
  "measure": null,
  "notes": [
   "주제는 F1 재난, F2 인력, F3 제도, F4 지정학, F5 인센티브와 비용, F6 기후와 용수다. 기록의 topic 과 kind 로 나뉜다. 채점은 하지 않았고 값은 원자료다.",
   "auto 가 true 인 기록은 `desk datasets conditions` 가 공개 자료에서 다시 만든다: INFORM Risk Index 와 WorldRiskIndex(재난), 세계은행 거버넌스 지수(법치·규제 품질·정치 안정), GitHub Innovation Graph(개발자 계정 수), Open-Meteo 의 ERA5 재분석(도시별 기온·습구온도). 나머지는 손으로 넣었다.",
   "지수는 재는 것이 서로 다르다. 재난 지수 둘은 나라 전체의 인구 노출이고 대만을 다루지 않는다. 거버넌스 지수와 평화지수는 인식·복합 지표다. 기록의 definition 에 한계를 적었다.",
-  "제도 기록(국외 이전, 국내 처리 요구, 소요 기간, 인센티브, 용수 기준)은 법령 원문이 아니라 로펌의 나라별 비교 자료(DLA Piper Data Protection Laws of the World, King & Wood Mallesons Data Centres APAC Regulatory Guide 2026)를 읽은 것이다. 값이 없는 제도 기록은 note 에 내용을 적었다.",
+  "국외 이전 규정은 한국·일본·싱가포르·호주·대만을 법령이나 감독기관 원문으로 확인했다. 그 밖의 제도 기록(말레이시아·인도의 국외 이전, 국내 처리 요구, 소요 기간, 인센티브, 용수 기준)은 로펌의 나라별 비교 자료(DLA Piper Data Protection Laws of the World, King & Wood Mallesons Data Centres APAC Regulatory Guide 2026)를 읽은 것이다. 값이 없는 제도 기록은 note 에 내용을 적었다.",
   "미국 수출통제 지위는 2026-11-16 의 임시 최종 규칙 'Addressing Remote Access to Advanced Semiconductors'(관보 2026-11-19 게재·시행 예정)의 사전 공개본과 수출관리규정의 나라 그룹표를 읽은 것이다. 의견 수렴 뒤 바뀔 수 있다.",
   "기후 요약은 2021~2025년 시간별 재분석 값에서 낸 계산값이고 관측소 값이 아니다. 싱가포르와 조호르는 같은 격자에 든다.",
   "원문 확인 비중은 건수로 센다(measure 가 null). 나라 코드 ZZ 는 세계 전체를 다룬 기록이다."
@@ -524,8 +524,8 @@
      },
      "water": {
       "id": "water-au",
-      "value": 250,
-      "unit": "백만 L/일(2035년 수요 전망, 최대)",
+      "value": 135,
+      "unit": "기가리터/년(2035년 수요 전망, 최대)",
       "asof": "2025"
      }
     }
@@ -1498,7 +1498,7 @@
    "value": 127,
    "unit": "시간(서비스 장애, 최대)",
    "asof": "2022-10-15",
-   "basis": "과학기술정보통신부 조사 결과(2022-12-06)를 전한 보도의 값 — 검색 요약으로만 확인",
+   "basis": "과학기술정보통신부 조사 결과 발표(2022-12-06)를 전한 보도의 값",
    "incident": {
     "site": "SK C&C 판교 데이터센터",
     "operator": "SK C&C",
@@ -1510,18 +1510,18 @@
    "sources": [
     {
      "n": 1,
-     "title": "데일리안 — 과기정통부, 카카오에 '먹통 방지책' 요구…화재원인은 오리무중(종합)",
-     "url": "https://www.dailian.co.kr/news/view/1180889/",
+     "title": "아이뉴스24 — [일문일답] 이종호 장관 \"SK C&C·카카오, 한달 내 개선조치 보고\"…내년 1Q 종합정책 수립",
+     "url": "https://www.inews24.com/view/1546123",
      "date": "2022-12-06",
-     "read": "search_summary"
+     "read": "partial"
     }
    ],
    "value_src": [
     1
    ],
    "alt": [],
-   "conf": "med",
-   "note": "자연재해가 아니라 배터리 화재다. 원문을 열어 읽지 못했다."
+   "conf": "high",
+   "note": "자연재해가 아니라 배터리 화재다. 기사는 카카오의 핵심 기능이 판교 데이터센터에 몰려 있었고 이중화가 작동하지 않아 최대 127시간가량 장애가 났다고 전했다."
   },
   {
    "id": "incident-sg-sin11-2024",
@@ -1574,10 +1574,10 @@
    "metric": "데이터센터 피해 사례",
    "scope": "클라우드 리전의 가용 영역 한 곳",
    "definition": null,
-   "value": 46,
-   "unit": "시간(서비스 영향, 최대)",
+   "value": 24,
+   "unit": "시간(서비스 영향, 넘게)",
    "asof": "2023-08-30",
-   "basis": "Microsoft 의 사고 검토 보고를 전한 보도. 46시간은 검색 요약으로만 확인",
+   "basis": "Microsoft 의 사고 검토 보고를 전한 보도. 열어 본 기사는 24시간 넘게라고 적었다",
    "incident": {
     "site": "Microsoft Azure Australia East(시드니)의 데이터센터",
     "operator": "Microsoft",
@@ -1596,6 +1596,13 @@
     },
     {
      "n": 2,
+     "title": "Network World — Microsoft blames Aussie data center outage on staff strength, failed automation",
+     "url": "https://www.networkworld.com/article/957256/microsoft-blames-aussie-data-center-outage-on-staff-strength-failed-automation.html",
+     "date": "2023-09",
+     "read": "partial"
+    },
+    {
+     "n": 3,
      "title": "DCD — Microsoft's slow outage recovery in Sydney due to insufficient staff on site",
      "url": "https://datacenterdynamics.com/en/news/microsofts-slow-outage-recovery-in-sydney-due-to-insufficient-staff-on-site",
      "date": "2023-09",
@@ -1605,9 +1612,16 @@
    "value_src": [
     2
    ],
-   "alt": [],
+   "alt": [
+    {
+     "value": 46,
+     "basis": "최대 46시간 — 검색 요약으로만 확인",
+     "url": "https://datacenterdynamics.com/en/news/microsofts-slow-outage-recovery-in-sydney-due-to-insufficient-staff-on-site"
+    }
+   ],
    "conf": "med",
-   "note": "뇌우 뒤 전력 순간 저하가 원인이라 날씨와 닿아 있다. 현장 인력이 3명뿐이었던 점을 회사가 원인으로 들었다."
+   "note": "뇌우 뒤 전력 순간 저하가 원인이라 날씨와 닿아 있다. 현장 인력이 3명뿐이었던 점을 회사가 원인으로 들었다. 영향이 이어진 시간은 기사마다 달라(24시간 넘게, 최대 46시간) 열어 본 쪽을 골랐다.",
+   "revised_kst": "2026-11-18T21:28:38+09:00"
   },
   {
    "id": "incident-in-delhi-2026",
@@ -4337,7 +4351,7 @@
    "value": null,
    "unit": "제도",
    "asof": "2026",
-   "basis": "법률사무소의 나라별 비교 자료(2026년 2~3월 갱신)에 적힌 내용. 법령 원문을 직접 읽은 것이 아니다",
+   "basis": "법령·감독기관 원문과 법률사무소의 나라별 비교 자료(2026년 2~3월 갱신)",
    "rule": {
     "name": "개인정보 보호법(국외 이전 조항)",
     "authority": "개인정보보호위원회",
@@ -4347,6 +4361,13 @@
    "sources": [
     {
      "n": 1,
+     "title": "국가법령정보센터 — 개인정보 보호법 제28조의8(개인정보의 국외 이전), 시행 2026-09-11",
+     "url": "https://www.law.go.kr/법령/개인정보보호법/제28조의8",
+     "date": "2026-09-11",
+     "read": "partial"
+    },
+    {
+     "n": 2,
      "title": "DLA Piper — Data Protection Laws of the World: Transfer of personal data in South Korea",
      "url": "https://www.dlapiperdataprotection.com/index.html?t=transfer&c=KR",
      "date": "2026-03-20",
@@ -4355,8 +4376,8 @@
    ],
    "value_src": [],
    "alt": [],
-   "conf": "med",
-   "note": "국외 이전에는 원칙적으로 정보주체의 동의가 필요하다. 조약·법률의 특례, 계약 이행에 필요한 처리 위탁·보관(처리방침에 공개), 위원회가 정한 인증(ISMS-P 등)을 받은 수령자, 보호 수준이 같다고 인정된 나라는 예외다. 2025-09-03 EU 를 같은 수준으로 인정했다."
+   "conf": "high",
+   "note": "법 조문을 읽었다: 국외로 제공·처리위탁·보관하는 것을 원칙적으로 금지하고 다섯 경우에만 허용한다 — 정보주체의 별도 동의, 법률·조약의 특별한 규정, 계약 체결·이행에 필요한 처리위탁·보관(처리방침 공개나 통지), 보호위원회가 고시한 인증을 받은 수령자, 보호 수준이 실질적으로 동등하다고 보호위원회가 인정한 나라. 위반하면 보호위원회가 이전 중지를 명할 수 있다(제28조의9). 조문은 2023-03-14 에 신설됐다. 2025-09-03 EU 를 동등하다고 인정했다는 것은 비교 자료에서만 봤다."
   },
   {
    "id": "data-transfer-jp",
@@ -4371,7 +4392,7 @@
    "value": null,
    "unit": "제도",
    "asof": "2026",
-   "basis": "법률사무소의 나라별 비교 자료(2026년 2~3월 갱신)에 적힌 내용. 법령 원문을 직접 읽은 것이 아니다",
+   "basis": "법령·감독기관 원문과 법률사무소의 나라별 비교 자료(2026년 2~3월 갱신)",
    "rule": {
     "name": "個人情報保護法(APPI) 제28조 — 외국에 있는 제3자 제공",
     "authority": "個人情報保護委員会(PPC)",
@@ -4381,6 +4402,13 @@
    "sources": [
     {
      "n": 1,
+     "title": "Personal Information Protection Commission, Japan — Amended Act on the Protection of Personal Information (Tentative Translation, June 2020)",
+     "url": "https://www.ppc.go.jp/files/pdf/APPI_english.pdf",
+     "date": "2020-06",
+     "read": "partial"
+    },
+    {
+     "n": 2,
      "title": "DLA Piper — Data Protection Laws of the World: Transfer of personal data in Japan",
      "url": "https://www.dlapiperdataprotection.com/index.html?t=transfer&c=JP",
      "date": "2026-02-12",
@@ -4389,8 +4417,8 @@
    ],
    "value_src": [],
    "alt": [],
-   "conf": "med",
-   "note": "외국의 제3자에게 줄 때는 받는 나라를 밝힌 사전 동의가 필요하다. 시행규칙이 정한 나라(영국·EU, 2019-01-23 상호 인정)이거나 수령자가 APPI 와 같은 수준의 체계를 갖추면 예외다."
+   "conf": "high",
+   "note": "감독기관의 영문 번역본에서 조문을 읽었다(2020년 개정법 기준이라 조 번호가 제24조로 적혀 있고 지금은 제28조다): 외국의 제3자에게 줄 때는 사전 동의가 필요하고, 위원회 규칙이 정한 동등한 나라와 동등한 체계를 갖춘 수령자는 예외다. 지정국이 영국·EU 라는 것은 비교 자료에서만 봤다."
   },
   {
    "id": "data-transfer-sg",
@@ -4405,7 +4433,7 @@
    "value": null,
    "unit": "제도",
    "asof": "2026",
-   "basis": "법률사무소의 나라별 비교 자료(2026년 2~3월 갱신)에 적힌 내용. 법령 원문을 직접 읽은 것이 아니다",
+   "basis": "법령·감독기관 원문과 법률사무소의 나라별 비교 자료(2026년 2~3월 갱신)",
    "rule": {
     "name": "Personal Data Protection Act 2012 — Transfer Limitation Obligation",
     "authority": "Personal Data Protection Commission",
@@ -4415,6 +4443,13 @@
    "sources": [
     {
      "n": 1,
+     "title": "Personal Data Protection Commission Singapore — Data Protection Obligations",
+     "url": "https://www.pdpc.gov.sg/overview-of-pdpa/the-legislation/personal-data-protection-act/data-protection-obligations",
+     "date": "2026-11-18",
+     "read": "partial"
+    },
+    {
+     "n": 2,
      "title": "DLA Piper — Data Protection Laws of the World: Transfer of personal data in Singapore",
      "url": "https://www.dlapiperdataprotection.com/index.html?t=transfer&c=SG",
      "date": "2026-02-27",
@@ -4423,8 +4458,8 @@
    ],
    "value_src": [],
    "alt": [],
-   "conf": "med",
-   "note": "싱가포르 밖으로 옮길 때 수령자가 법과 견줄 만한 보호를 하도록 해야 한다. 이전 계약(위원회의 표본 조항), 동의, 계약 이행에 필요한 경우 등이 수단이다."
+   "conf": "high",
+   "note": "감독기관의 설명을 읽었다: 다른 나라로 옮길 때는 규정이 정한 요건을 따라 법과 견줄 만한 보호 수준을 확보해야 하고 위원회가 면제할 수 있다. 수단(이전 계약, 동의 등)은 비교 자료에서 봤다."
   },
   {
    "id": "data-transfer-my",
@@ -4473,7 +4508,7 @@
    "value": null,
    "unit": "제도",
    "asof": "2026",
-   "basis": "법률사무소의 나라별 비교 자료(2026년 2~3월 갱신)에 적힌 내용. 법령 원문을 직접 읽은 것이 아니다",
+   "basis": "법령·감독기관 원문과 법률사무소의 나라별 비교 자료(2026년 2~3월 갱신)",
    "rule": {
     "name": "Privacy Act 1988 — Australian Privacy Principle 8",
     "authority": "Office of the Australian Information Commissioner",
@@ -4483,6 +4518,13 @@
    "sources": [
     {
      "n": 1,
+     "title": "Office of the Australian Information Commissioner — APP Guidelines, Chapter 8: APP 8 Cross-border disclosure of personal information",
+     "url": "https://www.oaic.gov.au/privacy/australian-privacy-principles/australian-privacy-principles-guidelines/chapter-8-app-8-cross-border-disclosure-of-personal-information",
+     "date": "2026-11-18",
+     "read": "partial"
+    },
+    {
+     "n": 2,
      "title": "DLA Piper — Data Protection Laws of the World: Transfer of personal data in Australia",
      "url": "https://www.dlapiperdataprotection.com/index.html?t=transfer&c=AU",
      "date": "2026-03-11",
@@ -4491,8 +4533,8 @@
    ],
    "value_src": [],
    "alt": [],
-   "conf": "med",
-   "note": "국외 수령자가 원칙을 어기지 않도록 합리적 조치를 해야 하고, 수령자의 위반에 넘긴 쪽이 책임을 진다. 실질적으로 비슷한 법의 적용을 받는 수령자, 고지 뒤 동의 등이 예외다. 나라 단위의 동등성 선언은 아직 없다."
+   "conf": "high",
+   "note": "감독기관의 지침에서 구성을 확인했다: 국외 수령자가 원칙을 어기지 않도록 합리적 조치를 해야 하고, 예외로 실질적으로 비슷한 법의 적용을 받는 수령자, 규정으로 정한 나라·제도, 고지 뒤 동의, 법이 요구하는 경우 등이 있다. 넘긴 쪽이 책임을 진다는 것과 나라 단위 지정이 아직 없다는 것은 비교 자료에서 봤다."
   },
   {
    "id": "data-transfer-in",
@@ -4541,7 +4583,7 @@
    "value": null,
    "unit": "제도",
    "asof": "2026",
-   "basis": "법률사무소의 나라별 비교 자료(2026년 2~3월 갱신)에 적힌 내용. 법령 원문을 직접 읽은 것이 아니다",
+   "basis": "법령·감독기관 원문과 법률사무소의 나라별 비교 자료(2026년 2~3월 갱신)",
    "rule": {
     "name": "個人資料保護法 제21조",
     "authority": "각 주무 부처",
@@ -4551,6 +4593,13 @@
    "sources": [
     {
      "n": 1,
+     "title": "Laws & Regulations Database of The Republic of China (Taiwan) — Personal Data Protection Act, Article 21 (amended 2025-11-11)",
+     "url": "https://law.moj.gov.tw/ENG/LawClass/LawAll.aspx?pcode=I0050021",
+     "date": "2025-11-11",
+     "read": "partial"
+    },
+    {
+     "n": 2,
      "title": "DLA Piper — Data Protection Laws of the World: Transfer of personal data in Taiwan",
      "url": "https://www.dlapiperdataprotection.com/index.html?t=transfer&c=TW",
      "date": "2026-03-19",
@@ -4559,8 +4608,8 @@
    ],
    "value_src": [],
    "alt": [],
-   "conf": "med",
-   "note": "국외 이전은 원칙적으로 자유롭고, 중대한 국가 이익, 조약, 수령국의 보호 미비, 법 회피 목적일 때 주무 부처가 제한할 수 있다. 통신사 가입자 정보(2012년) 등 일부 업종에 중국 본토 이전 금지 명령이 있다."
+   "conf": "high",
+   "note": "법령 데이터베이스의 영문 조문을 읽었다: 비공무기관의 국외 이전에 대해 주무기관이 네 경우에 제한할 수 있다 — 중대한 국가 이익, 조약·협정, 수령국의 보호 규정 미비로 정보주체의 권익이 침해될 우려, 법 회피 목적의 제3국 이전. 업종별 중국 본토 이전 금지 명령은 비교 자료에서만 봤다."
   },
   {
    "id": "localisation-kr",
@@ -7552,8 +7601,8 @@
    "scope": "시드니",
    "definition": "나라마다 공개된 것이 다르다(효율 목표, 입지 한도, 수요 전망, 가뭄 때의 절수 요구). 값으로 견줄 수 없다",
    "key": "water",
-   "value": 250,
-   "unit": "백만 L/일(2035년 수요 전망, 최대)",
+   "value": 135,
+   "unit": "기가리터/년(2035년 수요 전망, 최대)",
    "asof": "2025",
    "basis": "안내서와 보도에 적힌 내용. 대표 값은 서로 다른 것을 잰 숫자다",
    "sources": [
@@ -7562,7 +7611,7 @@
      "title": "Reuters 를 실은 RNZ — An Australian data centre boom is built on vague water plans",
      "url": "https://www.rnz.co.nz/news/world/573107/an-australian-data-centre-boom-is-built-on-vague-water-plans",
      "date": "2025-09-15",
-     "read": "search_summary"
+     "read": "partial"
     },
     {
      "n": 2,
@@ -7575,9 +7624,16 @@
    "value_src": [
     1
    ],
-   "alt": [],
-   "conf": "low",
-   "note": "시드니 수도공사가 주 의회 조사에서 데이터센터의 물 수요가 2035년에 하루 최대 2.5억 L(공급의 15~20%)에 이를 수 있다고 밝혔다고 한다. 지금은 한 해 약 35억 L 로 수요의 1%에 못 미친다. 업계 추정(2030년 1.9%)은 훨씬 낮다. 모두 검색 요약으로만 확인했다. 안내서는 뉴사우스웨일스에서 환경영향평가에 통합 물 관리 계획이 필요하다고 적었다."
+   "alt": [
+    {
+     "value": 250,
+     "basis": "하루 최대 2.5억 L(공급의 15~20%) — 주 의회 조사에서의 진술이라고 하나 검색 요약으로만 확인",
+     "url": "https://australian.museum/aap/like-a-sneeze-ai-data-centre-boom-spreads-concern/"
+    }
+   ],
+   "conf": "med",
+   "note": "시드니 수도공사의 전망으로는 데이터센터가 2035년에 시드니 가용 수량의 최대 4분의 1(135기가리터)을 쓸 수 있다(기사 원문). 승인된 데이터센터가 수요를 2% 늘린다고도 적었다. 업계 추정은 훨씬 낮다는 것은 검색 요약으로만 봤다. 안내서는 뉴사우스웨일스에서 환경영향평가에 통합 물 관리 계획이 필요하다고 적었다.",
+   "revised_kst": "2026-11-18T21:28:38+09:00"
   },
   {
    "id": "water-in",

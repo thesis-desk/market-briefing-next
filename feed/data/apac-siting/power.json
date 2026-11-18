@@ -2,7 +2,7 @@
  "schema": 1,
  "bundle": "D",
  "title": "전력: 품질·가격·확보",
- "updated_kst": "2026-11-18T19:55:12+09:00",
+ "updated_kst": "2026-11-18T21:32:06+09:00",
  "measure": null,
  "notes": [
   "주제는 D1 품질(정전 시간·횟수), D2 가격, D3 확보(접속 기간과 제한 제도), D4 발전소 옆 직접 공급 사례, D5 전원 구성과 전력구매계약이다. 기록의 topic 으로 나뉜다.",
@@ -92,11 +92,11 @@
  "by_country": {
   "countries": {
    "KR": {
-    "records": 8,
+    "records": 9,
     "by_topic": {
      "D1": 2,
      "D2": 1,
-     "D3": 2,
+     "D3": 3,
      "D4": 1,
      "D5": 2
     },
@@ -1988,6 +1988,13 @@
      "url": "https://www.mt.co.kr/tech/2026/05/23/2026052210211399740",
      "date": "2026-05-23",
      "read": "search_summary"
+    },
+    {
+     "n": 3,
+     "title": "블록미디어 비트플래닛 — \"데이터센터 성공의 조건은?\" 한국 AI 데이터센터 지도(국내 프로젝트 4건의 가동 준비 현황)",
+     "url": "https://www.blockmedia.co.kr/archives/1141412",
+     "date": "2026-09-18",
+     "read": "partial"
     }
    ],
    "value_src": [
@@ -1995,7 +2002,38 @@
    ],
    "alt": [],
    "conf": "med",
-   "note": "이 가운데 최종 공급 가능 승인을 받은 것은 10건으로 건수 기준 1.9%다. 승인 용량 1,010MW 는 검색 요약에서만 보았다. 통신사 기사가 인용한 집계이고 정부 원문은 열지 못했다. 신청 용량은 같은 사업의 중복 신청을 가려내지 않은 값일 수 있다."
+   "note": "이 가운데 최종 공급 가능 승인을 받은 것은 10건으로 건수 기준 1.9%다. 승인 용량은 1,010MW 다(공개 보고서의 인용). 통신사 기사가 인용한 집계이고 정부 원문은 열지 못했다. 신청 용량은 같은 사업의 중복 신청을 가려내지 않은 값일 수 있다.",
+   "approved_mw": 1010
+  },
+  {
+   "id": "access-kr-queue-national",
+   "topic": "D3",
+   "kind": "access",
+   "country": "KR",
+   "city": null,
+   "metric": "전력계통영향평가 누적 신청 용량(전국)",
+   "scope": "전국",
+   "definition": "평가 신청 용량이다. 같은 사업의 중복 신청이 섞여 있을 수 있고 실제 지어질 용량과 같지 않다.",
+   "value": 63846,
+   "unit": "MW",
+   "asof": "2026-03",
+   "basis": "2026년 3월 말까지의 전국 누적 신청 용량. 각사·정부 발표를 모은 공개 보고서가 인용한 값이다",
+   "pending_mw": 9583,
+   "sources": [
+    {
+     "n": 1,
+     "title": "블록미디어 비트플래닛 — \"데이터센터 성공의 조건은?\" 한국 AI 데이터센터 지도(국내 프로젝트 4건의 가동 준비 현황)",
+     "url": "https://www.blockmedia.co.kr/archives/1141412",
+     "date": "2026-09-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "이 가운데 9,583MW 는 공급 가능 여부가 정해지지 않은 대기 물량이다. 수도권 값(33,592MW, 승인 10건·1,010MW)은 access-kr-queue 에 있다. 보고서가 인용한 원 자료는 열지 못했다."
   },
   {
    "id": "access-jp-tepco",
@@ -2250,15 +2288,15 @@
      "title": "뉴데일리 — SK AI 데이터센터 울산 기공식 보도(SK멀티유틸리티 300MW급 LNG 열병합)",
      "url": "https://biz.newdaily.co.kr/site/data/html/2025/08/29/2025082900220.html",
      "date": "2025-08-29",
-     "read": "search_summary"
+     "read": "partial"
     }
    ],
    "value_src": [
     2
    ],
    "alt": [],
-   "conf": "low",
-   "note": "SK텔레콤은 SK가스에서 LNG 를 받는 SK멀티유틸리티 발전소에서 한전보다 낮은 값으로 전력을 받을 수 있다고 밝혔다. 발전소 용량 300MW 와 분산에너지 특화지역 지정 여부는 회사 자료에서 확인하지 못했다. 데이터센터는 2025년 8월 착공했고 용량은 투자 장부(aws-kr-ulsan-sk)에 있다."
+   "conf": "med",
+   "note": "SK텔레콤은 SK가스에서 LNG 를 받는 SK멀티유틸리티 발전소에서 한전보다 낮은 값으로 전력을 받을 수 있다고 밝혔다. 그 발전소가 300MW급 LNG 열병합발전소라는 것은 기사 원문에서 확인했다(회사 자료는 아니다). 분산에너지 특화지역 지정 여부는 확인하지 못했다. 데이터센터는 2025년 8월 착공했고 용량은 투자 장부(aws-kr-ulsan-sk)에 있다."
   },
   {
    "id": "onsite-sg-jurong",
@@ -2377,15 +2415,15 @@
      "title": "pv magazine — CtrlS Datacenters builds 125 MWp of solar to power site in Mumbai",
      "url": "https://www.pv-magazine.com/2025/02/06/ctrls-datacenters-builds-125-mwp-of-solar-to-power-site-in-mumbai",
      "date": "2025-02-06",
-     "read": "search_summary"
+     "read": "partial"
     }
    ],
    "value_src": [
     1
    ],
    "alt": [],
-   "conf": "low",
-   "note": "발전소가 데이터센터 옆에 있는 것이 아니라 송전망을 거쳐 자기 시설에 보내는 인도식 자가용 조달이다. NTPC Green 과 CtrlS 의 2GW 양해각서, 안드라프라데시주가 300MW 이상 데이터센터에 자체 배전과 직접 조달을 허용하려 한다는 보도도 검색 요약에 나온다."
+   "conf": "med",
+   "note": "기사 원문에서 확인했다 — 나그푸르의 자가용 태양광 125MWp 가운데 62.5MWp 가 2024년 6월부터 가동 중이고 나머지는 개발 중이다. 발전소가 데이터센터 옆에 있는 것이 아니라 송전망을 거쳐 자기 시설에 보내는 인도식 자가용 조달이다. NTPC Green 과의 2GW 양해각서 등은 검색 요약으로만 봤다."
   },
   {
    "id": "mix-kr",

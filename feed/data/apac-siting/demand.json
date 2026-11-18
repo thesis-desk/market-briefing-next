@@ -2,19 +2,19 @@
  "schema": 1,
  "bundle": "E",
  "title": "배후 수요",
- "updated_kst": "2026-11-18T20:14:09+09:00",
+ "updated_kst": "2026-11-18T21:32:06+09:00",
  "measure": null,
  "notes": [
   "주제는 E1 인구·GDP, E2 도시별 데이터센터 시장, E3 클라우드 시장, E4 AI 사용 지표, E5 지연시간권이다. 기록의 topic 으로 나뉜다. E2~E4 는 시장조사 회사와 사업자가 공개한 값만 실었고 유료 보고서의 표는 싣지 않았다.",
   "E1 은 IMF 세계경제전망의 값을 그대로 옮긴 것이고 `desk datasets demand` 가 다시 만든다. 지난해 값도 IMF 의 추정치다.",
   "E5 는 계산값이다. 서울·도쿄·싱가포르에서 각 나라의 대표 도시까지의 왕복 지연시간(WonderNetwork 의 서버 사이 ping, 받은 날의 값)이 50ms·100ms 안이면 그 나라 전체의 인구와 GDP 를 더했다. 입력은 기록의 countries 에 있다.",
-  "E5 의 한계: 나라를 대표 도시 하나로 판정하므로 인도·호주·미국처럼 큰 나라는 과대·과소가 크다(어느 도시든 닿으면 넣은 합은 any_city). 한 측정 사업자의 값이라 실제 사업자 경로와 다를 수 있고 받을 때마다 조금씩 달라진다. 대표 값은 제한 시장(중국·홍콩·러시아)을 뺀 것이고, 넣은 값은 incl_restricted 에 있다. 제한 시장의 범위는 묶음 F4(수출통제 지위)를 모으기 전의 임시 기준이다.",
+  "E5 의 한계: 나라를 대표 도시 하나로 판정하므로 인도·호주·미국처럼 큰 나라는 과대·과소가 크다(어느 도시든 닿으면 넣은 합은 any_city). 한 측정 사업자의 값이라 실제 사업자 경로와 다를 수 있고 받을 때마다 조금씩 달라진다. 대표 값은 제한 시장(중국·홍콩·러시아·미얀마)을 뺀 것이고, 넣은 값은 incl_restricted 에 있다. 제한 시장은 미국 수출관리규정의 우려국 그룹(D:5)에 들거나 그 나라로 다뤄지고 랩의 지원 지역 목록에도 없는 곳이다(묶음 F4 를 모은 뒤 미얀마를 더했다).",
   "원문 확인 비중은 건수로 센다(measure 가 null)."
  ],
  "summary": {
   "by_topic": {
    "E1": 7,
-   "E2": 5,
+   "E2": 6,
    "E3": 1,
    "E4": 14,
    "E5": 6
@@ -101,13 +101,13 @@
    "zone-tokyo-100": {
     "hub": "도쿄",
     "threshold_ms": 100,
-    "population_m": 797.2,
-    "gdp_usd_bn": 12822.4,
-    "countries": 11,
+    "population_m": 742.4,
+    "gdp_usd_bn": 12740.1,
+    "countries": 10,
     "excl_home": {
-     "countries": 10,
-     "population_m": 673.9,
-     "gdp_usd_bn": 8369.3
+     "countries": 9,
+     "population_m": 619.1,
+     "gdp_usd_bn": 8287
     },
     "incl_restricted": {
      "countries": 12,
@@ -135,13 +135,13 @@
    "zone-singapore-100": {
     "hub": "싱가포르",
     "threshold_ms": 100,
-    "population_m": 2824.9,
-    "gdp_usd_bn": 18975.3,
-    "countries": 19,
+    "population_m": 2770,
+    "gdp_usd_bn": 18893,
+    "countries": 18,
     "excl_home": {
-     "countries": 18,
-     "population_m": 2818.8,
-     "gdp_usd_bn": 18371.4
+     "countries": 17,
+     "population_m": 2763.9,
+     "gdp_usd_bn": 18289.1
     },
     "incl_restricted": {
      "countries": 20,
@@ -152,13 +152,13 @@
    "zone-singapore-50": {
     "hub": "싱가포르",
     "threshold_ms": 50,
-    "population_m": 872.1,
-    "gdp_usd_bn": 5558,
-    "countries": 10,
+    "population_m": 817.2,
+    "gdp_usd_bn": 5475.7,
+    "countries": 9,
     "excl_home": {
-     "countries": 9,
-     "population_m": 866,
-     "gdp_usd_bn": 4954.1
+     "countries": 8,
+     "population_m": 811.1,
+     "gdp_usd_bn": 4871.8
     },
     "incl_restricted": {
      "countries": 11,
@@ -925,6 +925,57 @@
    "note": "예정 용량은 1,412MW 다. 코로케이션 공실률은 5% 아래이고 임대료는 2025년 하반기 이후 10~20% 더 올랐다. CBRE 는 사업자들이 한전의 평가 절차를 피하려고 수도권에서 10MW 미만 시설에 집중한다고 적었다. 시장조사 회사가 정의한 시장 범위와 용량 기준(IT 인지 수전인지)은 보도에 없다."
   },
   {
+   "id": "rent-seoul",
+   "topic": "E2",
+   "kind": "market",
+   "country": "KR",
+   "city": "서울(수도권)",
+   "value": 250000,
+   "unit": "원/kW·월(상면 임대료)",
+   "asof": "2025",
+   "basis": "수도권 데이터센터 상면 임대료 수준. 각사·시장 자료를 모은 공개 보고서가 인용한 값이다",
+   "market": {
+    "firm": "보고서 인용(원 자료 미확인)",
+    "rent_2019": 140000,
+    "rent_2025": 250000,
+    "preleased_2024": "99.7%",
+    "preleased_2025": "99.4%",
+    "preleased_2027": "16%",
+    "preleased_2028": "23.5%"
+   },
+   "series": [
+    {
+     "period": "2019",
+     "value": 140000,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2025",
+     "value": 250000,
+     "src": [
+      1
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "블록미디어 비트플래닛 — \"데이터센터 성공의 조건은?\" 한국 AI 데이터센터 지도(국내 프로젝트 4건의 가동 준비 현황)",
+     "url": "https://www.blockmedia.co.kr/archives/1141412",
+     "date": "2026-09-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "kW 당 월 14만 원(2019년)에서 25만 원(2025년) 수준으로 올랐다. 수도권 새 공급 가운데 입주·선임차가 정해진 비중은 2024년 99.7%, 2025년 99.4%이고 2027·2028년 준공 예정분은 16%, 23.5%다. 다른 도시의 임대료를 같은 기준으로 견준 공개 자료는 찾지 못했다."
+  },
+  {
    "id": "market-tokyo",
    "topic": "E2",
    "kind": "market",
@@ -1635,7 +1686,7 @@
    "value": 204.4,
    "unit": "백만 명",
    "asof": "2025",
-   "basis": "계산: 서울에서 대표 도시까지 왕복 100ms 안에 닿는 나라의 2025년 인구 합. 제한 시장(중국·홍콩·러시아)을 뺀 값이고 자기 나라를 넣었다",
+   "basis": "계산: 서울에서 대표 도시까지 왕복 100ms 안에 닿는 나라의 2025년 인구 합. 제한 시장(중국·홍콩·러시아·미얀마)을 뺀 값이고 자기 나라를 넣었다",
    "gdp_usd_bn": 7859.3,
    "reached_countries": 4,
    "excl_home": {
@@ -1749,7 +1800,7 @@
    "value": 175,
    "unit": "백만 명",
    "asof": "2025",
-   "basis": "계산: 서울에서 대표 도시까지 왕복 50ms 안에 닿는 나라의 2025년 인구 합. 제한 시장(중국·홍콩·러시아)을 뺀 값이고 자기 나라를 넣었다",
+   "basis": "계산: 서울에서 대표 도시까지 왕복 50ms 안에 닿는 나라의 2025년 인구 합. 제한 시장(중국·홍콩·러시아·미얀마)을 뺀 값이고 자기 나라를 넣었다",
    "gdp_usd_bn": 6334.8,
    "reached_countries": 2,
    "excl_home": {
@@ -1824,16 +1875,16 @@
    "country": "JP",
    "city": "도쿄",
    "threshold_ms": 100,
-   "value": 797.2,
+   "value": 742.4,
    "unit": "백만 명",
    "asof": "2025",
-   "basis": "계산: 도쿄에서 대표 도시까지 왕복 100ms 안에 닿는 나라의 2025년 인구 합. 제한 시장(중국·홍콩·러시아)을 뺀 값이고 자기 나라를 넣었다",
-   "gdp_usd_bn": 12822.4,
-   "reached_countries": 11,
+   "basis": "계산: 도쿄에서 대표 도시까지 왕복 100ms 안에 닿는 나라의 2025년 인구 합. 제한 시장(중국·홍콩·러시아·미얀마)을 뺀 값이고 자기 나라를 넣었다",
+   "gdp_usd_bn": 12740.1,
+   "reached_countries": 10,
    "excl_home": {
-    "countries": 10,
-    "population_m": 673.9,
-    "gdp_usd_bn": 8369.3
+    "countries": 9,
+    "population_m": 619.1,
+    "gdp_usd_bn": 8287
    },
    "incl_restricted": {
     "countries": 12,
@@ -1841,9 +1892,9 @@
     "gdp_usd_bn": 13249.5
    },
    "any_city": {
-    "countries": 12,
-    "population_m": 1139.1,
-    "gdp_usd_bn": 43683.7
+    "countries": 11,
+    "population_m": 1084.3,
+    "gdp_usd_bn": 43601.4
    },
    "countries": [
     {
@@ -1985,7 +2036,7 @@
      "rtt_ms": 99.7,
      "min_rtt_ms": 99.7,
      "reached": true,
-     "restricted": false,
+     "restricted": true,
      "home": false,
      "population_m": 54.85,
      "gdp_usd_bn": 82.3
@@ -2037,7 +2088,8 @@
    ],
    "alt": [],
    "conf": "med",
-   "note": "입력은 countries 에 있다. 나라를 대표 도시 하나로 판정해 그 나라 전체의 인구·GDP 를 더했으므로 큰 나라는 과대·과소가 크다 — 어느 도시든 한도 안에 닿으면 넣은 합은 any_city 에 있다. 한 측정 사업자의 서버 사이 ping 값이라 실제 경로와 다를 수 있다."
+   "note": "입력은 countries 에 있다. 나라를 대표 도시 하나로 판정해 그 나라 전체의 인구·GDP 를 더했으므로 큰 나라는 과대·과소가 크다 — 어느 도시든 한도 안에 닿으면 넣은 합은 any_city 에 있다. 한 측정 사업자의 서버 사이 ping 값이라 실제 경로와 다를 수 있다.",
+   "revised_kst": "2026-11-18T21:24:07+09:00"
   },
   {
    "id": "zone-tokyo-50",
@@ -2049,7 +2101,7 @@
    "value": 198.3,
    "unit": "백만 명",
    "asof": "2025",
-   "basis": "계산: 도쿄에서 대표 도시까지 왕복 50ms 안에 닿는 나라의 2025년 인구 합. 제한 시장(중국·홍콩·러시아)을 뺀 값이고 자기 나라를 넣었다",
+   "basis": "계산: 도쿄에서 대표 도시까지 왕복 50ms 안에 닿는 나라의 2025년 인구 합. 제한 시장(중국·홍콩·러시아·미얀마)을 뺀 값이고 자기 나라를 넣었다",
    "gdp_usd_bn": 7255.4,
    "reached_countries": 3,
    "excl_home": {
@@ -2148,16 +2200,16 @@
    "country": "SG",
    "city": "싱가포르",
    "threshold_ms": 100,
-   "value": 2824.9,
+   "value": 2770,
    "unit": "백만 명",
    "asof": "2025",
-   "basis": "계산: 싱가포르에서 대표 도시까지 왕복 100ms 안에 닿는 나라의 2025년 인구 합. 제한 시장(중국·홍콩·러시아)을 뺀 값이고 자기 나라를 넣었다",
-   "gdp_usd_bn": 18975.3,
-   "reached_countries": 19,
+   "basis": "계산: 싱가포르에서 대표 도시까지 왕복 100ms 안에 닿는 나라의 2025년 인구 합. 제한 시장(중국·홍콩·러시아·미얀마)을 뺀 값이고 자기 나라를 넣었다",
+   "gdp_usd_bn": 18893,
+   "reached_countries": 18,
    "excl_home": {
-    "countries": 18,
-    "population_m": 2818.8,
-    "gdp_usd_bn": 18371.4
+    "countries": 17,
+    "population_m": 2763.9,
+    "gdp_usd_bn": 18289.1
    },
    "incl_restricted": {
     "countries": 20,
@@ -2165,9 +2217,9 @@
     "gdp_usd_bn": 19402.4
    },
    "any_city": {
-    "countries": 19,
-    "population_m": 2824.9,
-    "gdp_usd_bn": 18975.3
+    "countries": 18,
+    "population_m": 2770,
+    "gdp_usd_bn": 18893
    },
    "countries": [
     {
@@ -2273,7 +2325,7 @@
      "rtt_ms": 40.7,
      "min_rtt_ms": 40.7,
      "reached": true,
-     "restricted": false,
+     "restricted": true,
      "home": false,
      "population_m": 54.85,
      "gdp_usd_bn": 82.3
@@ -2433,7 +2485,8 @@
    ],
    "alt": [],
    "conf": "med",
-   "note": "입력은 countries 에 있다. 나라를 대표 도시 하나로 판정해 그 나라 전체의 인구·GDP 를 더했으므로 큰 나라는 과대·과소가 크다 — 어느 도시든 한도 안에 닿으면 넣은 합은 any_city 에 있다. 한 측정 사업자의 서버 사이 ping 값이라 실제 경로와 다를 수 있다."
+   "note": "입력은 countries 에 있다. 나라를 대표 도시 하나로 판정해 그 나라 전체의 인구·GDP 를 더했으므로 큰 나라는 과대·과소가 크다 — 어느 도시든 한도 안에 닿으면 넣은 합은 any_city 에 있다. 한 측정 사업자의 서버 사이 ping 값이라 실제 경로와 다를 수 있다.",
+   "revised_kst": "2026-11-18T21:24:07+09:00"
   },
   {
    "id": "zone-singapore-50",
@@ -2442,16 +2495,16 @@
    "country": "SG",
    "city": "싱가포르",
    "threshold_ms": 50,
-   "value": 872.1,
+   "value": 817.2,
    "unit": "백만 명",
    "asof": "2025",
-   "basis": "계산: 싱가포르에서 대표 도시까지 왕복 50ms 안에 닿는 나라의 2025년 인구 합. 제한 시장(중국·홍콩·러시아)을 뺀 값이고 자기 나라를 넣었다",
-   "gdp_usd_bn": 5558,
-   "reached_countries": 10,
+   "basis": "계산: 싱가포르에서 대표 도시까지 왕복 50ms 안에 닿는 나라의 2025년 인구 합. 제한 시장(중국·홍콩·러시아·미얀마)을 뺀 값이고 자기 나라를 넣었다",
+   "gdp_usd_bn": 5475.7,
+   "reached_countries": 9,
    "excl_home": {
-    "countries": 9,
-    "population_m": 866,
-    "gdp_usd_bn": 4954.1
+    "countries": 8,
+    "population_m": 811.1,
+    "gdp_usd_bn": 4871.8
    },
    "incl_restricted": {
     "countries": 11,
@@ -2459,9 +2512,9 @@
     "gdp_usd_bn": 5985.1
    },
    "any_city": {
-    "countries": 12,
-    "population_m": 2363.7,
-    "gdp_usd_bn": 11307.8
+    "countries": 11,
+    "population_m": 2308.8,
+    "gdp_usd_bn": 11225.5
    },
    "countries": [
     {
@@ -2567,7 +2620,7 @@
      "rtt_ms": 40.7,
      "min_rtt_ms": 40.7,
      "reached": true,
-     "restricted": false,
+     "restricted": true,
      "home": false,
      "population_m": 54.85,
      "gdp_usd_bn": 82.3
@@ -2643,7 +2696,8 @@
    ],
    "alt": [],
    "conf": "med",
-   "note": "입력은 countries 에 있다. 나라를 대표 도시 하나로 판정해 그 나라 전체의 인구·GDP 를 더했으므로 큰 나라는 과대·과소가 크다 — 어느 도시든 한도 안에 닿으면 넣은 합은 any_city 에 있다. 한 측정 사업자의 서버 사이 ping 값이라 실제 경로와 다를 수 있다."
+   "note": "입력은 countries 에 있다. 나라를 대표 도시 하나로 판정해 그 나라 전체의 인구·GDP 를 더했으므로 큰 나라는 과대·과소가 크다 — 어느 도시든 한도 안에 닿으면 넣은 합은 any_city 에 있다. 한 측정 사업자의 서버 사이 ping 값이라 실제 경로와 다를 수 있다.",
+   "revised_kst": "2026-11-18T21:24:07+09:00"
   }
  ]
 }

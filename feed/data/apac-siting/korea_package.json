@@ -2,24 +2,24 @@
  "schema": 1,
  "bundle": "G",
  "title": "한국 쪽이 내놓을 수 있는 것",
- "updated_kst": "2026-11-18T21:12:34+09:00",
+ "updated_kst": "2026-11-18T21:31:46+09:00",
  "measure": null,
  "notes": [
   "주제는 G1 메모리·부품(share 점유율, supply 공급 계약·의향, price 가격), G2 랩과의 공개된 관계(partner 유통·협력, adoption 도입, investment 투자·합작), G3 국내 준비 상태(capacity 사업자별 계획, program 정부·공급 사업, law 법·제도)다.",
   "요청은 한국의 항목을 일본·대만·인도에도 적용하라고 했다. 나라마다 내놓는 것이 다르다 — 한국은 메모리, 대만은 파운드리와 서버 제조, 일본·인도는 현지 대기업의 유통·자본. 같은 지표로 값을 견준 것이 아니라 같은 물음에 공개된 사실을 나란히 둔 것이다.",
   "다른 묶음에 이미 있는 건(투자 발표 장부 A, 랩의 해외 용량 B, 전력 D, 나머지 조건 F)은 다시 적지 않고 refs 로 가리킨다. capacity 기록의 items 는 그 기록들의 MW 를 기준(it·utility·unknown)과 함께 옮긴 것이고, 기준이 섞여 있어 합을 대표 값으로 두지 않았다.",
-  "의향서·양해각서 단계(stage 가 MoU)와 계약을 구분했다. 메모리 장기 공급 계약은 회사 발표가 아니라 보도이고 상대 회사가 공개되지 않아 신뢰도를 낮게 적었다.",
+  "의향서·양해각서 단계(stage 가 MoU)와 계약을 구분했다. 회사 발표 없이 협상이 보도된 것은 stage 를 협의로 적었다(메모리 장기 공급 계약 두 건).",
   "공개 사실만 적었다. 회사가 무엇을 해야 하는지, 어느 쪽에 유리한지는 적지 않는다.",
   "원문 확인 비중은 건수로 센다(measure 가 null). 나라 코드 ZZ 는 세계 전체를 다룬 기록이다."
  ],
  "by_country": {
   "countries": {
    "KR": {
-    "records": 15,
+    "records": 16,
     "by_topic": {
      "G1": 6,
      "G2": 5,
-     "G3": 4
+     "G3": 5
     },
     "by_kind": {
      "price": 1,
@@ -30,22 +30,23 @@
      "adoption": 1,
      "capacity": 1,
      "law": 1,
-     "program": 2
+     "program": 3
     },
     "labs": [
      "Anthropic",
      "OpenAI"
     ],
     "stages": {
-     "계약": 5,
+     "협의": 2,
      "MoU": 2,
      "가동": 1,
-     "착공": 1,
-     "발표": 1
+     "계약": 3,
+     "발표": 2,
+     "착공": 1
     },
     "capacity_mw": {
-     "unknown": 140,
-     "utility": 125
+     "unknown": 200,
+     "utility": 735
     }
    },
    "TW": {
@@ -318,24 +319,25 @@
    "kind": "supply",
    "country": "KR",
    "city": null,
-   "item": "삼성전자의 장기 공급 계약",
+   "item": "삼성전자의 장기 공급 계약 협상",
    "lab": null,
-   "value": 5,
-   "unit": "고객사 수",
-   "asof": "2026",
-   "basis": "한국 언론 보도를 전한 TrendForce 뉴스 — 검색 요약으로만 확인",
-   "stage": "계약",
-   "date": null,
+   "value": null,
+   "unit": "건",
+   "asof": "2026-04-09",
+   "basis": "한국 언론 보도를 모은 TrendForce 뉴스. 회사 발표가 아니고 협상 단계의 보도다",
+   "stage": "협의",
+   "date": "2026-04-09",
    "parties": [
     {
      "name": "Samsung Electronics",
      "role": "메모리 공급"
     },
     {
-     "name": "데이터센터 대형 고객 5곳(이름 미공개)",
-     "role": "구매"
+     "name": "AMD·Microsoft·Google",
+     "role": "구매(협상 보도)"
     }
    ],
+   "revised_kst": "2026-11-18T21:29:14+09:00",
    "refs": [],
    "sources": [
     {
@@ -343,15 +345,13 @@
      "title": "TrendForce News — From Annual Deals to 3–5 Year LTAs: Samsung and SK hynix Reportedly Reset Big Tech Memory Contracts",
      "url": "https://www.trendforce.com/news/2026-04-09/news-from-annual-deals-to-3-5-year-ltas-samsung-and-sk-hynix-reportedly-reset-big-tech-memory-contracts/",
      "date": "2026-04-09",
-     "read": "search_summary"
+     "read": "partial"
     }
    ],
-   "value_src": [
-    1
-   ],
+   "value_src": [],
    "alt": [],
-   "conf": "low",
-   "note": "새 계약에 3년 이상의 장기 계약을 적용하기로 했고 데이터센터 대형 고객 5곳과 계약을 마쳤다고 보도됐다(시점 불명). 상대 회사 이름은 공개되지 않았다."
+   "conf": "med",
+   "note": "2026년부터 새 계약에 3년 이상의 장기 계약을 적용하기로 했고 AMD·Microsoft·Google 과 3년 공급 약정을 막바지 협상 중이라고 보도됐다. 데이터센터 대형 고객 5곳과 계약을 마쳤다는 보도는 검색 요약으로만 봤고 출처 기사를 확인하지 못해 값으로 적지 않았다."
   },
   {
    "id": "supply-lta-skhynix",
@@ -359,24 +359,29 @@
    "kind": "supply",
    "country": "KR",
    "city": null,
-   "item": "SK하이닉스의 장기 공급 계약",
+   "item": "SK하이닉스의 장기 공급 계약 협상",
    "lab": null,
-   "value": 14,
-   "unit": "고객사 수",
-   "asof": "2026-09",
-   "basis": "한국 언론 보도를 전한 TrendForce 뉴스 — 검색 요약으로만 확인",
-   "stage": "계약",
-   "date": "2026-09",
+   "value": null,
+   "unit": "건",
+   "asof": "2026-04-09",
+   "basis": "한국 언론 보도를 모은 TrendForce 뉴스. 회사 발표가 아니고 협상 단계의 보도다",
+   "stage": "협의",
+   "date": "2026-04-09",
    "parties": [
     {
      "name": "SK hynix",
      "role": "메모리 공급"
     },
     {
-     "name": "주요 고객 14곳(이름 미공개)",
-     "role": "구매"
+     "name": "Google",
+     "role": "구매(협상 보도)"
+    },
+    {
+     "name": "Microsoft",
+     "role": "구매(협상 보도)"
     }
    ],
+   "revised_kst": "2026-11-18T21:29:14+09:00",
    "refs": [],
    "sources": [
     {
@@ -384,15 +389,13 @@
      "title": "TrendForce News — From Annual Deals to 3–5 Year LTAs: Samsung and SK hynix Reportedly Reset Big Tech Memory Contracts",
      "url": "https://www.trendforce.com/news/2026-04-09/news-from-annual-deals-to-3-5-year-ltas-samsung-and-sk-hynix-reportedly-reset-big-tech-memory-contracts/",
      "date": "2026-04-09",
-     "read": "search_summary"
+     "read": "partial"
     }
    ],
-   "value_src": [
-    1
-   ],
+   "value_src": [],
    "alt": [],
-   "conf": "low",
-   "note": "3분기에 빅테크를 포함한 주요 고객 14곳과 장기 계약을 맺어 2027~2028년 생산 능력의 절반 넘게를 채웠다고 보도됐다. Microsoft(3년), Google(최대 5년)과의 협상이 보도됐으나 회사 발표가 아니다. OpenAI·Meta·Anthropic 을 상대로 한 계약은 확인되지 않았다."
+   "conf": "med",
+   "note": "Google 과 범용 D램 5년 장기 공급 계약을 추진하고(차세대 HBM 공급을 조건으로 2년 연장 논의), Microsoft 와 3년짜리 DDR5 장기 계약(수십조 원 규모)을 막바지 조율 중이라고 보도됐다. 3분기에 주요 고객 14곳과 장기 계약을 맺었다는 보도는 검색 요약으로만 봤고 출처 기사를 확인하지 못해 값으로 적지 않았다. OpenAI·Meta·Anthropic 을 상대로 한 계약은 확인되지 않았다."
   },
   {
    "id": "supply-openai-memory-loi",
@@ -523,8 +526,8 @@
    "lab": null,
    "value": 15,
    "unit": "%(범위의 위쪽 끝)",
-   "asof": "2026-09-30",
-   "basis": "TrendForce 의 전망 — 검색 요약으로만 확인",
+   "asof": "2026-10-01",
+   "basis": "TrendForce 의 전망을 전한 기사의 값",
    "range": {
     "low": 10,
     "high": 15
@@ -533,10 +536,10 @@
    "sources": [
     {
      "n": 1,
-     "title": "TrendForce Press Center — 4Q26 memory contract price forecast",
-     "url": "https://www.trendforce.com/presscenter/news/20260930-13258.html",
-     "date": "2026-09-30",
-     "read": "search_summary"
+     "title": "Guru3D — DRAM and NAND Contract Prices Forecast to Rise as Much as 20% in Q4 2026",
+     "url": "https://www.guru3d.com/story/dram-and-nand-contract-prices-forecast-to-rise-as-much-as-in-q4-2026/",
+     "date": "2026-10-01",
+     "read": "partial"
     }
    ],
    "value_src": [
@@ -544,7 +547,7 @@
    ],
    "alt": [],
    "conf": "med",
-   "note": "일반 D램 계약 가격이 10~15% 오르고 HBM 을 넣으면 15~20% 오른다는 전망이다. 10월 20일에는 약 20%라는 보도가 있었다. 사이트가 열리지 않아 원문을 읽지 못했다."
+   "note": "일반 D램 계약 가격이 10~15% 오르고 HBM 을 넣으면 15~20% 오른다는 전망이다. TrendForce 의 원문은 사이트가 열리지 않아 읽지 못했고 전한 기사를 읽었다. 10월 20일에 약 20%라는 보도가 있었다는 것은 검색 요약으로만 봤다."
   },
   {
    "id": "rel-kr-anthropic-seoul",
@@ -794,13 +797,13 @@
    "value": 50,
    "unit": "%(소프트뱅크 쪽 지분)",
    "asof": "2025-11-05",
-   "basis": "소프트뱅크 보도자료(합작사 출범). 지분 50 대 50 은 검색 요약으로만 확인",
+   "basis": "소프트뱅크 보도자료의 지분 구성",
    "stage": "가동",
    "date": "2025-11-05",
    "parties": [
     {
      "name": "SoftBank Corp.·SoftBank Group Corp.",
-     "role": "합작 출자·첫 고객"
+     "role": "합작 출자(C Holdings 를 거쳐 50%)"
     }
    ],
    "refs": [
@@ -816,21 +819,14 @@
      "url": "https://group.softbank/en/news/press/20251105",
      "date": "2025-11-05",
      "read": "full"
-    },
-    {
-     "n": 2,
-     "title": "eWEEK — SoftBank and OpenAI Form Joint Venture in Japan",
-     "url": "https://www.eweek.com/news/softbank-openai-japan/",
-     "date": "2025-11",
-     "read": "search_summary"
     }
    ],
    "value_src": [
-    2
+    1
    ],
    "alt": [],
-   "conf": "med",
-   "note": "합작사는 OpenAI 의 기업용 제품에 구축·통합 서비스를 묶은 'Crystal intelligence'를 일본에서 독점 판매하고 2026년 출시를 계획했다. 소프트뱅크가 첫 고객이라는 것과 2026-02-06 의 후속 발표는 검색 요약으로만 봤다."
+   "conf": "high",
+   "note": "지분은 소프트뱅크 쪽 지주회사(C Holdings: 소프트뱅크 51%, 소프트뱅크그룹 49%) 50%, OpenAI 50%다. 합작사는 OpenAI 의 기업용 제품에 구축·통합 서비스를 묶은 'Crystal intelligence'를 일본에서 독점 판매하고 2026년 출시를 계획했다. 소프트뱅크가 첫 고객이라는 것과 2026-02-06 의 후속 발표는 검색 요약으로만 봤다."
   },
   {
    "id": "rel-in-anthropic-infosys",
@@ -953,28 +949,65 @@
    "kind": "capacity",
    "country": "KR",
    "city": null,
-   "item": "사업자별 데이터센터 계획(다른 묶음의 기록을 모은 것)",
+   "item": "사업자별 데이터센터 계획",
    "lab": null,
    "value": null,
    "unit": "MW",
    "asof": "2026-11",
-   "basis": "묶음 A·B·D 의 기록을 가리킨다. 기준이 섞여 있어 합을 대표 값으로 두지 않았다",
+   "basis": "묶음 A·B·D 의 기록과, 각사·정부 발표를 모은 공개 보고서(2026-09-18)에서 옮긴 것. 기준이 섞여 있어 합을 대표 값으로 두지 않았다",
    "items": [
     {
      "name": "AWS–SK 울산",
      "mw": 100,
      "basis": "unknown",
      "stage": "착공",
+     "online": "2027-11(1단계 41MW), 2029-02(전체 103MW)",
      "ref": {
       "bundle": "A",
       "id": "aws-kr-ulsan-sk"
      }
     },
     {
+     "name": "LG유플러스 파주 AIDC",
+     "mw": 200,
+     "basis": "utility",
+     "stage": "착공",
+     "online": "2027-06(1동), 2028(4개 동)"
+    },
+    {
+     "name": "GS 동해 AI 데이터센터(1단계)",
+     "mw": 100,
+     "basis": "utility",
+     "stage": "발표(전력 공급 심의 통과, 2026-11 착공 예정)",
+     "online": null
+    },
+    {
+     "name": "삼성SDS 구미",
+     "mw": 60,
+     "basis": "unknown",
+     "stage": "발표(착공 미확인)",
+     "online": "2029-03(당초 목표)"
+    },
+    {
+     "name": "국가 AI 컴퓨팅센터 해남",
+     "mw": 40,
+     "basis": "utility",
+     "stage": "착공",
+     "online": "2028(준공 목표)"
+    },
+    {
+     "name": "네이버 각 세종(증설 완료 시)",
+     "mw": 270,
+     "basis": "utility",
+     "stage": "가동(약 6분의 1)",
+     "online": "2023-11(개관)"
+    },
+    {
      "name": "Microsoft 부산",
      "mw": 125,
      "basis": "utility",
      "stage": "부지확보",
+     "online": null,
      "ref": {
       "bundle": "A",
       "id": "microsoft-kr-busan-3"
@@ -985,6 +1018,7 @@
      "mw": 20,
      "basis": "unknown",
      "stage": "MoU(지연)",
+     "online": null,
      "ref": {
       "bundle": "B",
       "id": "openai-kr-sk-southwest"
@@ -995,6 +1029,7 @@
      "mw": 20,
      "basis": "unknown",
      "stage": "MoU(지연)",
+     "online": null,
      "ref": {
       "bundle": "B",
       "id": "openai-kr-samsung-pohang"
@@ -1021,32 +1056,43 @@
     {
      "bundle": "D",
      "id": "onsite-kr-ulsan"
+    },
+    {
+     "bundle": "G",
+     "id": "program-kr-national-ai-computing"
     }
    ],
    "sources": [
     {
      "n": 1,
+     "title": "블록미디어 비트플래닛 — \"데이터센터 성공의 조건은?\" 한국 AI 데이터센터 지도(국내 프로젝트 4건의 가동 준비 현황)",
+     "url": "https://www.blockmedia.co.kr/archives/1141412",
+     "date": "2026-09-18",
+     "read": "partial"
+    },
+    {
+     "n": 2,
      "title": "The Korea Times — SK chairman says Ulsan AI data center expansion nearing 900 megawatts",
      "url": "https://www.koreatimes.co.kr/business/tech-science/20260913/sk-chairman-says-ulsan-ai-data-center-expansion-nearing-900-megawatts",
      "date": "2026-09-13",
      "read": "partial"
     },
     {
-     "n": 2,
+     "n": 3,
      "title": "이데일리 — MS, 부산에 125MW급 데이터센터 추진...올해 10월 착공 예정",
      "url": "https://tv.edaily.co.kr/News/NewsRead?NewsId=04785526645477456&Kind=257",
      "date": "2026-06-01",
      "read": "partial"
     },
     {
-     "n": 3,
+     "n": 4,
      "title": "OpenAI — Samsung and SK join OpenAI's Stargate initiative",
      "url": "https://openai.com/index/samsung-and-sk-join-stargate/",
      "date": "2025-10-01",
      "read": "full"
     },
     {
-     "n": 4,
+     "n": 5,
      "title": "SK텔레콤 뉴스룸 — 'SK AI 데이터센터 울산' 기공식 개최",
      "url": "https://news.sktelecom.com/214708",
      "date": "2025-08-29",
@@ -1056,7 +1102,7 @@
    "value_src": [],
    "alt": [],
    "conf": "med",
-   "note": "랩이 낀 두 건(합 40MW)은 발표 뒤 부지·전력·자금이 정해지지 않았다. 그 밖의 국내 사업자 계획(SK텔레콤의 GW급 계획, LG유플러스 파주, GS 동해 100MW, 민관 연합의 18.4GW 등)은 검색 요약에서 이름만 봤고 사업자별 MW·가동 시점을 원문으로 확인하지 못해 넣지 않았다."
+   "note": "보고서는 용량이 각사·정부 발표 기준이고 서버용 IT 부하와 다르다고 적었다. 울산은 2027년 11월 1단계 41MW, 2029년 2월 전체 103MW 가동이 목표이고(묶음 A 에는 100MW 로 적혀 있다) 약 900MW 추가 확장은 협의 단계로 한전에 공식 절차가 접수되지 않았다. 파주는 200MW 전력 공급이 확정됐고 1동(2027년 6월 준공 목표)의 임대 계약을 마쳤다. 구미는 2029년 3월 가동이 목표였으나 2026년 9월 기준 착공이 확인되지 않았다. 세종은 6단계 증설을 마치면 수전 최대 270MW 이고 2025년 10월 기준 약 6분의 1이 가동 중이다. 랩이 낀 두 건(합 40MW)은 발표 뒤 부지·전력·자금이 정해지지 않았다. SK텔레콤·KT·카카오의 그 밖의 계획은 원문으로 확인하지 못했다."
   },
   {
    "id": "law-kr-aidc-act",
@@ -1101,6 +1147,47 @@
    "note": "2026-05-07 본회의를 통과했고 9개월 뒤인 2027년 2월 시행된다. 인허가 단축과 비수도권 규제 완화가 들어갔다. 전력 직접 구매(PPA) 특례는 재생에너지로 한정되고 LNG 는 빠졌다. 통합 창구와 처리 기한 간주 제도는 검색 요약으로만 봤다."
   },
   {
+   "id": "program-kr-aidc-strategy",
+   "topic": "G3",
+   "kind": "program",
+   "country": "KR",
+   "city": null,
+   "item": "정부의 AI 데이터센터 구축 계획과 민관 연합",
+   "lab": null,
+   "value": 18.4,
+   "unit": "GW(구축 계획)",
+   "asof": "2026-07-29",
+   "basis": "연합 출범식을 전한 보도의 값. 정부 계획의 목표이고 사업별 확정 용량이 아니다",
+   "stage": "발표",
+   "date": "2026-07-29",
+   "parties": [
+    {
+     "name": "과학기술정보통신부",
+     "role": "주관(공동의장)"
+    },
+    {
+     "name": "SK텔레콤 등 의장단 기업",
+     "role": "민간 공동의장·참여"
+    }
+   ],
+   "refs": [],
+   "sources": [
+    {
+     "n": 1,
+     "title": "MTN 머니투데이방송 — 민관 'AIDC 얼라이언스' 출범…18.4GW 구축 추진",
+     "url": "https://news.mtn.co.kr/news-detail/2026072916114275338",
+     "date": "2026-07-29",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "정부가 2026년 6월에 낸 'AI 데이터센터 국가 전략 산업화' 전략의 목표다. 2026-07-29 과기정통부와 민간이 함께 의장을 맡는 연합이 출범했고 네이버클라우드·삼성SDS·SK텔레콤·NHN클라우드·LG유플러스·GS·카카오 등이 의장단에 들었다. 자금은 국민성장펀드 등 정책금융으로 댄다고 했다. 목표 연도는 기사에서 확인하지 못했다."
+  },
+  {
    "id": "program-kr-national-ai-computing",
    "topic": "G3",
    "kind": "program",
@@ -1137,6 +1224,11 @@
      "value": 2.4065,
      "basis": "2026년 5월 보도의 투입액(조 원)",
      "url": "https://news.mtn.co.kr/news-detail/2026051322522099817"
+    },
+    {
+     "value": 2.9,
+     "basis": "해남군이 2026년 6월에 밝힌 사업비(조 원). 포함 항목의 차이는 확인되지 않았다",
+     "url": "https://www.blockmedia.co.kr/archives/1141412"
     }
    ],
    "refs": [],
@@ -1147,13 +1239,20 @@
      "url": "https://www.dailian.co.kr/news/view/1673936",
      "date": "2026-08-03",
      "read": "full"
+    },
+    {
+     "n": 2,
+     "title": "블록미디어 비트플래닛 — \"데이터센터 성공의 조건은?\" 한국 AI 데이터센터 지도(국내 프로젝트 4건의 가동 준비 현황)",
+     "url": "https://www.blockmedia.co.kr/archives/1141412",
+     "date": "2026-09-18",
+     "read": "partial"
     }
    ],
    "value_src": [
     1
    ],
    "conf": "high",
-   "note": "2026-08-03 착공, 2028년 준공 목표, AI 반도체 1만5,000장 규모다. 민관 합작 법인(한국에이아이컴퓨팅센터)이 짓고 운영한다. 달러 값 1.73은 1달러 = 1444.1456원(연준 2026년 평균, 묶음 D 의 환율표)으로 낸 계산값이다. 1만5,000장이 확정 구매 수량이 아니라 목표라는 것, 수전 40MW, 2027년 조기 서비스 계획은 검색 요약으로만 봤다."
+   "note": "2026-08-03 착공, 2028년 준공 목표, AI 반도체 1만5,000장 규모, 수전 40MW 다. 민관 합작 법인(한국에이아이컴퓨팅센터)이 짓고 운영하며 한전에 전기사용 신청서를 냈다(승인 확정은 아니다). 2027년부터 삼성SDS 의 기존 데이터센터로 일부를 먼저 공급한다. 달러 값 1.73은 1달러 = 1444.1456원(연준 2026년 평균, 묶음 D 의 환율표)으로 낸 계산값이다. 1만5,000장이 확정 구매 수량이 아니라 목표라는 것은 검색 요약으로만 봤다."
   },
   {
    "id": "program-kr-nvidia-gpu",

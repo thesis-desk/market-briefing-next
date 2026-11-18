@@ -2,7 +2,7 @@
  "schema": 1,
  "bundle": "A",
  "title": "투자 발표 장부 — 실제로 어디에 지었나",
- "updated_kst": "2026-11-18T18:37:02+09:00",
+ "updated_kst": "2026-11-18T21:28:38+09:00",
  "measure": "value",
  "notes": [
   "단위는 발표 1건이다. 대표 값(value)은 발표 금액의 달러 값(십억 달러)이다. 회사가 달러 값을 함께 밝혔으면 그 값을 쓰고, 그렇지 않으면 환율과 날짜를 amount.fx 에 적는다. 환율 출처를 확인하지 못한 금액은 달러 값을 비워 둔다.",
@@ -977,7 +977,7 @@
    "country": "SG",
    "city": "싱가포르",
    "region": "싱가포르의 클라우드·AI 인프라",
-   "announced": "2026",
+   "announced": "2026-04-01",
    "value": 5.5,
    "unit": "십억 달러",
    "asof": "2026",
@@ -1014,14 +1014,21 @@
      "url": "https://www.hrnetone.com/data-center-trend-report-singapore/",
      "date": "2026",
      "read": "search_summary"
+    },
+    {
+     "n": 3,
+     "title": "w.media — Microsoft to spend US$ 5.5 billion from 2025 to 2029 to power Singapore's AI",
+     "url": "https://w.media/microsoft-to-spend-us-5-5-billion-from-2025-to-2029-to-power-singapores-ai/",
+     "date": "2026-04-02",
+     "read": "partial"
     }
    ],
    "value_src": [
-    1
+    3
    ],
    "alt": [],
-   "conf": "low",
-   "note": "검색 요약 기준이다: 2029년까지 55억 달러, AI 기술 교육과 컴퓨트 용량, 운영이 함께 들어 있다. 발표일을 원문으로 확인하지 못했다(정리 글은 2026-04 로 적는다). 원문을 열지 못했다(접속 거부)."
+   "conf": "med",
+   "note": "2026-04-02 기사를 열어 확인했다 — 2025년부터 2029년 말까지 55억 달러를 쓰는 길에 있다고 Brad Smith 가 전날 밝혔다. 이미 쓴 돈이 들어 있는 누적 값이고 교육·운영비가 함께 들어 있다. 회사 발표문 원문은 열지 못했다."
   },
   {
    "id": "aws-my-region",
@@ -1032,8 +1039,8 @@
    "announced": "2023",
    "value": 6.2,
    "unit": "십억 달러",
-   "asof": "2023",
-   "basis": "2038년까지의 장기 계획 금액(검색 요약). 약 15년에 걸친 금액이다",
+   "asof": "2024-08-22",
+   "basis": "2038년까지의 장기 계획 금액(리전 개설 때의 회사 발표문). 약 15년에 걸친 금액이다",
    "amount": {
     "currency": "USD",
     "value": 6.2,
@@ -1066,14 +1073,21 @@
      "url": "https://www.mida.gov.my/mida-news/data-centre-players-pour-in-investments/",
      "date": "2024-11-11",
      "read": "partial"
+    },
+    {
+     "n": 3,
+     "title": "Amazon — AWS Launches Infrastructure Region in Malaysia",
+     "url": "https://press.aboutamazon.com/2024/8/aws-launches-infrastructure-region-in-malaysia",
+     "date": "2024-08-22",
+     "read": "full"
     }
    ],
    "value_src": [
-    1
+    3
    ],
    "alt": [],
-   "conf": "med",
-   "note": "62억 달러(2038년까지)는 검색 요약의 값이다. MIDA 글은 AWS·Microsoft·Google·Oracle 네 회사 합계 169억 달러만 적으며, 62 + 22 + 20 + 65 = 169 로 맞는다. 처음 발표(2023)의 금액과 기간은 원문으로 확인하지 못했다."
+   "conf": "high",
+   "note": "62억 달러(약 292억 링깃, 2038년까지)는 2024-08-22 리전 개설 발표문의 값이다. 2023년 첫 발표의 금액(60억 달러, 2037년까지)은 검색 요약으로만 봤다. MIDA 글의 네 회사 합계 169억 달러(62 + 22 + 20 + 65)와도 맞는다."
   },
   {
    "id": "bytedance-my-johor",
@@ -1143,7 +1157,7 @@
    "country": "MY",
    "city": "셀랑고르(Elmina)",
    "region": "구글의 말레이시아 첫 데이터센터와 클라우드 리전",
-   "announced": "2024",
+   "announced": "2024-05",
    "value": 2,
    "unit": "십억 달러",
    "asof": "2024",
@@ -1179,14 +1193,21 @@
      "url": "https://www.mida.gov.my/mida-news/data-centre-players-pour-in-investments/",
      "date": "2024-11-11",
      "read": "partial"
+    },
+    {
+     "n": 3,
+     "title": "iTnews Asia — Google commits US$2 billion for data centre and cloud region in Malaysia",
+     "url": "https://www.itnews.asia/news/google-commits-us2-billion-for-data-centre-and-cloud-region-in-malaysia-608438",
+     "date": "2024-05-31",
+     "read": "partial"
     }
    ],
    "value_src": [
-    1
+    3
    ],
    "alt": [],
    "conf": "med",
-   "note": "20억 달러는 검색 요약의 값이고, MIDA 글의 네 회사 합계(169억 달러)와 맞는다. 발표일이 출처마다 2024-05 와 2024-10 으로 갈려 연도만 적었다."
+   "note": "20억 달러는 2024-05-31 기사를 열어 확인했다(첫 데이터센터와 클라우드 리전, 쿠알라룸푸르 인근 엘미나 비즈니스 파크). 회사 발표문 원문은 열지 못했다. MIDA 글의 네 회사 합계(169억 달러)와도 맞는다."
   },
   {
    "id": "microsoft-my-2024",
@@ -1610,15 +1631,15 @@
      "title": "TechCrunch — Amazon to invest additional $35B in India by 2030, taking total planned spending to $75B",
      "url": "https://techcrunch.com/2025/12/10/amazon-to-invest-additional-35b-in-india-by-2030-taking-total-planned-spending-to-75b/",
      "date": "2025-12-10",
-     "read": "search_summary"
+     "read": "partial"
     }
    ],
    "value_src": [
     1
    ],
    "alt": [],
-   "conf": "low",
-   "note": "127억 달러(2030년까지)는 2025-12 기사의 회고 문장을 검색 요약으로 본 값이다. 2023년 발표문 원문을 열지 못했다. 기간을 2023~2030(8년)으로 봤다."
+   "conf": "med",
+   "note": "2025-12-10 기사의 회고 문장을 열어 확인했다 — 2023년에 2030년까지 150억 달러 투자를 밝혔고 그 가운데 127억 달러가 AWS 몫이다. 2023년 발표문 원문은 열지 못했다. 기간을 2023~2030(8년)으로 봤다."
   },
   {
    "id": "microsoft-in-2025-01",

@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated_kst": "2026-11-18T21:19:08+09:00",
+ "updated_kst": "2026-11-18T21:33:55+09:00",
  "question": "한국은 아시아·태평양 AI 컴퓨트의 권역 거점이 될 수 있는가",
  "bundles": [
   {
@@ -9,8 +9,8 @@
    "title": "투자 발표 장부 — 실제로 어디에 지었나",
    "status": "draft",
    "records": 37,
-   "verified_share": 0.835,
-   "updated_kst": "2026-11-18T18:37:02+09:00"
+   "verified_share": 0.988,
+   "updated_kst": "2026-11-18T21:28:38+09:00"
   },
   {
    "id": "B",
@@ -44,18 +44,18 @@
    "file": "power.json",
    "title": "전력: 품질·가격·확보",
    "status": "draft",
-   "records": 48,
-   "verified_share": 0.896,
-   "updated_kst": "2026-11-18T19:55:12+09:00"
+   "records": 49,
+   "verified_share": 0.918,
+   "updated_kst": "2026-11-18T21:32:06+09:00"
   },
   {
    "id": "E",
    "file": "demand.json",
    "title": "배후 수요",
    "status": "draft",
-   "records": 33,
+   "records": 34,
    "verified_share": 1,
-   "updated_kst": "2026-11-18T20:14:09+09:00"
+   "updated_kst": "2026-11-18T21:32:06+09:00"
   },
   {
    "id": "F",
@@ -63,17 +63,17 @@
    "title": "나머지 조건(채점표 재료)",
    "status": "draft",
    "records": 132,
-   "verified_share": 0.977,
-   "updated_kst": "2026-11-18T21:01:36+09:00"
+   "verified_share": 0.985,
+   "updated_kst": "2026-11-18T21:33:55+09:00"
   },
   {
    "id": "G",
    "file": "korea_package.json",
    "title": "한국 쪽이 내놓을 수 있는 것",
    "status": "draft",
-   "records": 29,
-   "verified_share": 0.862,
-   "updated_kst": "2026-11-18T21:12:34+09:00"
+   "records": 30,
+   "verified_share": 0.967,
+   "updated_kst": "2026-11-18T21:31:46+09:00"
   },
   {
    "id": "H",
@@ -82,7 +82,7 @@
    "status": "draft",
    "records": 35,
    "verified_share": 1,
-   "updated_kst": "2026-11-18T21:19:08+09:00"
+   "updated_kst": "2026-11-18T21:29:14+09:00"
   }
  ],
  "hypotheses": [
