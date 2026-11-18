@@ -272,6 +272,8 @@
 
 `peering.json`(묶음 C4·C5)의 기록은 `kind` 로 가른다. `peering` 은 도시 1곳이고 대표 값은 참여 네트워크가 있는 인터넷 교환점 수, `ixps[]`·`largest_ix_networks`·`networks_sum`·`presence.<네트워크>`(`ix`·`fac`)·`bigtech_ix_points`·`bigtech_fac_points` 를 갖는다(PeeringDB 에 사업자가 스스로 등록한 값). `latency` 는 도시 쌍 1개의 왕복 지연시간(ms, 공개 측정값을 받은 날의 값)이고 `to_country`·`to_city`·`distance_km` 를 갖는다.
 
+`power.json`(묶음 D)의 기록은 `topic`(`D1` 품질 · `D2` 가격 · `D3` 확보 · `D4` 발전소 옆 직접 공급 · `D5` 전원 구성과 전력구매계약)과 `kind`(`reliability` | `tariff` | `access` | `onsite` | `mix` | `ppa`)로 가른다. 공통 필드에 더해 `metric`·`scope`·`definition`(정의에서 다른 나라와 달라지는 점), `key`(나라별 대표 지표의 이름), `series[]`(`period`·`value`·`src`, 해마다의 값), `currency`·`usd`(통화가 있는 값의 달러 환산 — 파일의 `fx.rates` 로 나눈 계산값), `tariff`(`price_kind`: `평균 판매단가` | `요금표` | `요금표 계산` | `도매가` | `계약가`, `includes`: 기본요금·연료비 조정·세금이 들어 있는가), `rule`(제도의 이름·기관·시행일), `onsite`(`site`·`operator`·`customer`·`fuel`·`stage`·`mw`)를 갖는다. 정전 지수와 요금은 나라마다 정의가 달라 같은 기준으로 맞추지 못했다 — `definition` 을 함께 읽어야 한다. `by_country.countries.<나라>.keys.<key>` 에 대표 지표가 모여 있다.
+
 `lab_overseas.json`(묶음 B)의 기록은 공통 필드에 더해 `lab`, `site`, `announced`, `mw`(`value`·`basis`·`certainty`·`phases`), `stage`(`MoU` | `계약` | `착공` | `가동` — 지금까지 닿은 단계), `status_now`·`status_flag`(`진행` | `지연` | `보류` | `취소` | `불명`)·`status_asof`, `partners[]`, `package`(`capital`·`power_site`·`demand`·`components` — 파트너가 내놓은 것의 근거 문장 또는 `null`)와 `package_src`, `lab_spend`, `siting_reason[]`(`orig`·`ko`·`speaker`·`src`), `verdict`(`묶음을 따라감` | `입지를 따라감` | `둘 다` | `판단 불가` — 좁은 기준)·`verdict_basis`, `verdict_wide`·`verdict_wide_basis`(넓은 기준 — 요청의 묶음 정의 그대로), `serves`(`국내` | `권역·세계` | `불명`)·`serves_basis`, `home_country`(랩의 본국 시설이면 `true`)를 갖는다. 파일에는 판정별 집계(`summary` — `_wide` 가 붙은 것은 넓은 기준), H2 에 어긋나는 건의 묶음(`counter`), 협의 단계라 기록으로 세우지 않은 것(`pending`), 넣지 않은 것과 이유(`excluded`)가 함께 있고, 판정 기준은 `notes` 에 있다. 판정과 `serves` 는 AI 의 해석이다.
 
 ## 처음 요청과 다르게 정한 것
@@ -326,4 +328,4 @@
 - 리포트 종류에 행사 정리(`event`)를 더했다. 기술 행사·전시회·금융기관 컨퍼런스를 행사 단위로 정리한 리포트이고 절은 `s1`, `s2` … 로 나간다.
 - 출처 `kind` 에 `news`(언론 보도)와 `telegram`(텔레그램 글)을 더했다. 행사 정리에서 기업 자료와 2차 자료를 가르는 데 쓴다.
 - 출처 `kind` 에 `desk`(데스크 기록)를 더했다. 행사 정리가 데스크의 투자 가설을 견줄 기준으로 붙일 때 쓰고, 사실의 근거가 아니다.
-- 조사 자료 묶음 `data/<id>/` 를 더했다. 첫 조사는 `apac-siting` 이다. `index.json` 에 `datasets` 를 더했다(기존 키는 그대로).
+- 조사 자료 묶음 `data/<id>/` 를 더했다. 첫 조사는 `apac-siting` 이다. `index.json` 에 `datasets` 를 더했다(기존 키는 그대로). 묶음마다의 기록 형식(A, B, C1~C3, C4·C5, D)은 위 `data/<id>/` 절에 있다.

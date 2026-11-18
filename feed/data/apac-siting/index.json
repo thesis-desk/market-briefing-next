@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated_kst": "2026-11-18T19:40:26+09:00",
+ "updated_kst": "2026-11-18T19:48:51+09:00",
  "question": "한국은 아시아·태평양 AI 컴퓨트의 권역 거점이 될 수 있는가",
  "bundles": [
   {
@@ -44,9 +44,9 @@
    "file": "power.json",
    "title": "전력: 품질·가격·확보",
    "status": "collecting",
-   "records": 25,
-   "verified_share": 0.96,
-   "updated_kst": "2026-11-18T19:40:26+09:00"
+   "records": 32,
+   "verified_share": 0.906,
+   "updated_kst": "2026-11-18T19:48:51+09:00"
   },
   {
    "id": "E",

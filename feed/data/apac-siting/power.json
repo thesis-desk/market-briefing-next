@@ -2,7 +2,7 @@
  "schema": 1,
  "bundle": "D",
  "title": "전력: 품질·가격·확보",
- "updated_kst": "2026-11-18T19:40:26+09:00",
+ "updated_kst": "2026-11-18T19:48:51+09:00",
  "measure": null,
  "notes": [
   "주제는 D1 품질(정전 시간·횟수), D2 가격, D3 확보(접속 기간과 제한 제도), D4 발전소 옆 직접 공급 사례, D5 전원 구성과 전력구매계약이다. 기록의 topic 으로 나뉜다.",
@@ -92,9 +92,10 @@
  "by_country": {
   "countries": {
    "KR": {
-    "records": 3,
+    "records": 4,
     "by_topic": {
      "D1": 2,
+     "D2": 1,
      "D5": 1
     },
     "keys": {
@@ -109,6 +110,13 @@
       "value": null,
       "unit": "회/호·년",
       "asof": "2025"
+     },
+     "price_avg": {
+      "id": "price-avg-kr",
+      "value": 181.9,
+      "unit": "KRW/kWh",
+      "asof": "2025",
+      "usd": 0.128
      },
      "renewables_share": {
       "id": "mix-kr",
@@ -125,9 +133,10 @@
     }
    },
    "JP": {
-    "records": 5,
+    "records": 6,
     "by_topic": {
      "D1": 4,
+     "D2": 1,
      "D5": 1
     },
     "keys": {
@@ -142,6 +151,13 @@
       "value": 0.13,
       "unit": "회/호·년",
       "asof": "2024"
+     },
+     "price_avg": {
+      "id": "price-ehv-jp",
+      "value": 18.43,
+      "unit": "JPY/kWh",
+      "asof": "2026-07",
+      "usd": 0.1163
      },
      "renewables_share": {
       "id": "mix-jp",
@@ -158,9 +174,10 @@
     }
    },
    "SG": {
-    "records": 3,
+    "records": 4,
     "by_topic": {
      "D1": 2,
+     "D2": 1,
      "D5": 1
     },
     "keys": {
@@ -175,6 +192,13 @@
       "value": 0.023,
       "unit": "회/호·년",
       "asof": "2026-03"
+     },
+     "price_tariff": {
+      "id": "tariff-sg-eht",
+      "value": 0.2284,
+      "unit": "SGD/kWh",
+      "asof": "2025",
+      "usd": 0.1748
      },
      "renewables_share": {
       "id": "mix-sg",
@@ -191,9 +215,10 @@
     }
    },
    "MY": {
-    "records": 4,
+    "records": 5,
     "by_topic": {
      "D1": 3,
+     "D2": 1,
      "D5": 1
     },
     "keys": {
@@ -208,6 +233,13 @@
       "value": 0.96,
       "unit": "회/호·년",
       "asof": "2024"
+     },
+     "price_base_all": {
+      "id": "tariff-my-base",
+      "value": 0.454,
+      "unit": "MYR/kWh",
+      "asof": "2025-07",
+      "usd": 0.1061
      },
      "renewables_share": {
       "id": "mix-my",
@@ -224,9 +256,10 @@
     }
    },
    "AU": {
-    "records": 3,
+    "records": 4,
     "by_topic": {
      "D1": 2,
+     "D2": 1,
      "D5": 1
     },
     "keys": {
@@ -257,9 +290,10 @@
     }
    },
    "IN": {
-    "records": 4,
+    "records": 5,
     "by_topic": {
      "D1": 3,
+     "D2": 1,
      "D5": 1
     },
     "keys": {
@@ -290,9 +324,10 @@
     }
    },
    "TW": {
-    "records": 3,
+    "records": 4,
     "by_topic": {
      "D1": 2,
+     "D2": 1,
      "D5": 1
     },
     "keys": {
@@ -307,6 +342,13 @@
       "value": 0.209,
       "unit": "회/호·년",
       "asof": "2024"
+     },
+     "price_avg": {
+      "id": "price-avg-tw",
+      "value": 3.6243,
+      "unit": "TWD/kWh",
+      "asof": "2024",
+      "usd": 0.1129
      },
      "renewables_share": {
       "id": "mix-tw",
@@ -1152,6 +1194,626 @@
    "alt": [],
    "conf": "high",
    "note": "배전 사고로 인한 정전 횟수가 2022년보다 25% 가까이 줄었다고 적혀 있다."
+  },
+  {
+   "id": "price-avg-kr",
+   "topic": "D2",
+   "kind": "tariff",
+   "country": "KR",
+   "city": null,
+   "metric": "산업용 평균 판매단가",
+   "scope": "한국전력 산업용 전체(갑·을)",
+   "definition": "산업용 고객 전체의 평균이다(특고압만이 아니다). 판매단가라 기본요금과 연료비조정요금이 들어간 값으로 보았고, 부가가치세·전력산업기반기금 포함 여부는 화면에 없다.",
+   "value": 181.9,
+   "unit": "KRW/kWh",
+   "asof": "2025",
+   "basis": "판매단가(계약종별 연도 값)",
+   "key": "price_avg",
+   "series": [
+    {
+     "period": "2019",
+     "value": 106.56,
+     "src": [
+      1
+     ],
+     "usd": 0.0914
+    },
+    {
+     "period": "2020",
+     "value": 107.35,
+     "src": [
+      1
+     ],
+     "usd": 0.0909
+    },
+    {
+     "period": "2021",
+     "value": 105.48,
+     "src": [
+      1
+     ],
+     "usd": 0.0921
+    },
+    {
+     "period": "2022",
+     "value": 118.66,
+     "src": [
+      1
+     ],
+     "usd": 0.0919
+    },
+    {
+     "period": "2023",
+     "value": 153.71,
+     "src": [
+      1
+     ],
+     "usd": 0.1176
+    },
+    {
+     "period": "2024",
+     "value": 168.17,
+     "src": [
+      1
+     ],
+     "usd": 0.1233
+    },
+    {
+     "period": "2025",
+     "value": 181.9,
+     "src": [
+      1
+     ],
+     "usd": 0.128
+    }
+   ],
+   "currency": "KRW",
+   "tariff": {
+    "price_kind": "평균 판매단가",
+    "includes": {
+     "demand_charge": true,
+     "fuel_adjustment": true,
+     "tax_levy": null
+    },
+    "name": "산업용(갑·을) 평균",
+    "voltage": "전체"
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "전력통계정보시스템(EPSIS) — 판매 > 판매단가(계약종별, 연도별)",
+     "url": "https://epsis.kpx.or.kr/epsisnew/selectEksaScfChart.do?menuId=060600",
+     "date": "2026-11-18",
+     "read": "full"
+    },
+    {
+     "n": 2,
+     "title": "한국전력 — 전기요금표(산업용 갑·을)",
+     "url": "https://cyber.kepco.co.kr/ckepco/front/jsp/CY/E/E/CYEEHP00103.jsp",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "2021년 105.48원에서 2025년 181.90원으로 72% 올랐다(계산). 2025년 전체 평균은 170.37원, 주택용 158.97원, 일반용 172.69원으로 산업용이 가장 높다. 특고압만 따로 낸 평균은 없다. 한전의 옛 요금표 화면은 2023년 11월 9일 적용분까지만 보여 주어 현행 산업용(을) 고압B·C 단가는 여기서 확인하지 못했다.",
+   "usd": 0.128
+  },
+  {
+   "id": "price-ehv-jp",
+   "topic": "D2",
+   "kind": "tariff",
+   "country": "JP",
+   "city": null,
+   "metric": "특별고압 평균 판매단가",
+   "scope": "전국(모든 소매사업자 합계)",
+   "definition": "특별고압(계약전력 2,000kW 이상)의 판매액을 판매전력량으로 나눈 값이다. 新電力ネット은 이 단가에 소비세와 재생에너지 부과금이 들어 있지 않다고 적었다. 월 값이라 계절에 따라 움직인다.",
+   "value": 18.43,
+   "unit": "JPY/kWh",
+   "asof": "2026-07",
+   "basis": "계산: 2026년 7월분 특별고압 판매액 379,802,751천 엔 ÷ 판매전력량 20,612,689MWh",
+   "key": "price_avg",
+   "series": [
+    {
+     "period": "2026-07",
+     "value": 18.43,
+     "src": [
+      1
+     ],
+     "usd": 0.1163
+    }
+   ],
+   "currency": "JPY",
+   "tariff": {
+    "price_kind": "평균 판매단가",
+    "includes": {
+     "demand_charge": true,
+     "fuel_adjustment": true,
+     "tax_levy": false
+    },
+    "name": "特別高圧",
+    "voltage": "특별고압(2,000kW 이상)"
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "電力・ガス取引監視等委員会 — 電力取引の状況(電力取引報結果) 令和8年7月分 集計結果",
+     "url": "https://www.egc.meti.go.jp/info/public/excel/20261029001b.xlsx",
+     "date": "2026-10-29",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "新電力ネット — 電気料金の平均単価の推移(特高・高圧・低圧別)",
+     "url": "https://pps-net.org/unit",
+     "date": "2026-11-18",
+     "read": "partial"
+    },
+    {
+     "n": 3,
+     "title": "電力・ガス取引監視等委員会 — 電力取引の状況(電力取引報結果) 목록",
+     "url": "https://www.egc.meti.go.jp/info/business/report/results.html",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "같은 달 도쿄 구역은 21.36엔(138,117,892천 엔 ÷ 6,466,234MWh), 간사이 구역은 16.72엔(61,793,895천 엔 ÷ 3,696,713MWh)이다(계산). 新電力ネット도 같은 달 18.43엔으로 싣고 1년 전보다 7.28% 올랐다고 적었다. 2019년부터의 연도별 값은 달마다 파일을 하나씩 받아야 하는데 사이트가 연속 조회를 막아 한 달분만 읽었다.",
+   "usd": 0.1163
+  },
+  {
+   "id": "tariff-sg-eht",
+   "topic": "D2",
+   "kind": "tariff",
+   "country": "SG",
+   "city": null,
+   "metric": "초고압(Extra High Tension) 규제 요금 — 24시간 일정 부하의 kWh당 값",
+   "scope": "SP Group 규제 요금(비경쟁 수용가)",
+   "definition": "부가가치세(GST)를 뺀 값이다. 피크는 07~23시, 비피크는 23~07시다. 부하율 100%를 가정했고 무효전력 요금과 미계약 용량 요금은 넣지 않았다.",
+   "value": 0.2284,
+   "unit": "SGD/kWh",
+   "asof": "2025",
+   "basis": "계산: (피크 16시간 × 피크 단가 + 비피크 8시간 × 비피크 단가) ÷ 24 + 계약용량요금 ÷ 730시간. 연간 요금표 값 기준",
+   "key": "price_tariff",
+   "series": [
+    {
+     "period": "2019",
+     "value": 0.1858,
+     "src": [
+      1
+     ],
+     "peak_cents": 19.9,
+     "offpeak_cents": 12.72,
+     "contracted_capacity_sgd_per_kw_month": 7.82,
+     "usd": 0.1362
+    },
+    {
+     "period": "2020",
+     "value": 0.1722,
+     "src": [
+      1
+     ],
+     "peak_cents": 18.26,
+     "offpeak_cents": 11.9,
+     "contracted_capacity_sgd_per_kw_month": 7.87,
+     "usd": 0.1248
+    },
+    {
+     "period": "2021",
+     "value": 0.1768,
+     "src": [
+      1
+     ],
+     "peak_cents": 18.66,
+     "offpeak_cents": 12.04,
+     "contracted_capacity_sgd_per_kw_month": 8.97,
+     "usd": 0.1316
+    },
+    {
+     "period": "2022",
+     "value": 0.2285,
+     "src": [
+      1
+     ],
+     "peak_cents": 24.66,
+     "offpeak_cents": 15.24,
+     "contracted_capacity_sgd_per_kw_month": 9.71,
+     "usd": 0.1657
+    },
+    {
+     "period": "2023",
+     "value": 0.2285,
+     "src": [
+      1
+     ],
+     "peak_cents": 24.61,
+     "offpeak_cents": 14.88,
+     "contracted_capacity_sgd_per_kw_month": 10.82,
+     "usd": 0.1702
+    },
+    {
+     "period": "2024",
+     "value": 0.2454,
+     "src": [
+      1
+     ],
+     "peak_cents": 25.88,
+     "offpeak_cents": 16.63,
+     "contracted_capacity_sgd_per_kw_month": 12.71,
+     "usd": 0.1836
+    },
+    {
+     "period": "2025",
+     "value": 0.2284,
+     "src": [
+      1
+     ],
+     "peak_cents": 23.78,
+     "offpeak_cents": 15.88,
+     "contracted_capacity_sgd_per_kw_month": 12.34,
+     "usd": 0.1748
+    }
+   ],
+   "currency": "SGD",
+   "tariff": {
+    "price_kind": "요금표 계산",
+    "includes": {
+     "demand_charge": true,
+     "fuel_adjustment": null,
+     "tax_levy": false
+    },
+    "name": "Extra High Tension Supplies",
+    "voltage": "초고압"
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "data.gov.sg — Electricity Tariff, Annual (출처 SP Group, 싱가포르 통계청 관리)",
+     "url": "https://data.gov.sg/datasets/d_d610f8ed1864daa6c7e790318bbc3323/view",
+     "date": "2025-10-10",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "2025년 입력은 피크 23.78센트, 비피크 15.88센트, 계약용량요금 kW당 월 12.34싱가포르달러다. 계약용량요금은 2019년 7.82달러에서 2025년 12.34달러로 58% 올랐다(계산). 대용량 수용가는 대부분 소매사업자와 따로 계약하므로 실제 지불 가격은 이 규제 요금과 다를 수 있다.",
+   "usd": 0.1748
+  },
+  {
+   "id": "tariff-my-base",
+   "topic": "D2",
+   "kind": "tariff",
+   "country": "MY",
+   "city": null,
+   "metric": "평균 기준 요금(모든 수용가)",
+   "scope": "말레이반도(TNB), 제4차 규제기간",
+   "definition": "모든 수용가의 평균 기준 요금이며 산업용·초고압만의 값이 아니다. 자동 연료비 조정분은 따로 붙는다.",
+   "value": 0.454,
+   "unit": "MYR/kWh",
+   "asof": "2025-07",
+   "basis": "2025년 7월 1일부터의 평균 기준 요금 45.40센/kWh",
+   "key": "price_base_all",
+   "series": [
+    {
+     "period": "2025-07",
+     "value": 0.454,
+     "src": [
+      1
+     ],
+     "usd": 0.1061
+    }
+   ],
+   "currency": "MYR",
+   "tariff": {
+    "price_kind": "요금표",
+    "includes": {
+     "demand_charge": true,
+     "fuel_adjustment": false,
+     "tax_levy": null
+    },
+    "name": "Average base tariff (RP4)",
+    "voltage": "전체"
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "TNB 보도 스크랩 — 새 요금 체계(RP4) 보도(2025-06-21)",
+     "url": "https://www.tnb.com.my/assets/newsclip/21062025b.pdf",
+     "date": "2025-06-21",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "The Star — New electricity tariff earnings-neutral for TNB",
+     "url": "https://www.thestar.com.my/business/business-news/2025/06/24/new-electricity-tariff-earnings-neutral-for-tnb",
+     "date": "2025-06-24",
+     "read": "search_summary"
+    },
+    {
+     "n": 3,
+     "title": "W.Media — Data centers in Malaysia brace for higher electricity bills",
+     "url": "https://w.media/data-centers-in-malaysia-brace-for-higher-electricity-bills/",
+     "date": "2025",
+     "read": "search_summary"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [
+    {
+     "value": 0.6,
+     "basis": "새 초고압 요금이 kWh당 약 60센이라는 분석가 인용 보도(검색 요약)",
+     "url": "https://www.thestar.com.my/business/business-news/2025/06/24/new-electricity-tariff-earnings-neutral-for-tnb"
+    },
+    {
+     "value": 0.3995,
+     "basis": "이전 기준 요금 39.95~39.96센/kWh(검색 요약)",
+     "url": "https://w.media/data-centers-in-malaysia-brace-for-higher-electricity-bills/"
+    }
+   ],
+   "conf": "med",
+   "note": "2024년 12월에 승인된 45.62센보다 낮게 정해졌다. 새 요금표는 전압별로 나뉘고 에너지·용량·망 요금과 자동 연료비 조정으로 구성된다. 보도는 초고압 구분이 새로 생겼고 데이터센터가 여기에 들어가 요금이 10~15% 오를 것으로 전했으나(검색 요약), 초고압 단가를 적은 공식 요금표는 열지 못했다.",
+   "usd": 0.1061
+  },
+  {
+   "id": "wholesale-au-nsw",
+   "topic": "D2",
+   "kind": "tariff",
+   "country": "AU",
+   "city": null,
+   "metric": "도매 전력 현물가격 연평균(뉴사우스웨일스)",
+   "scope": "전국전력시장(NEM) 뉴사우스웨일스 권역",
+   "definition": "도매 현물가격이다. 망 요금, 소매 마진, 환경 부담금이 들어 있지 않아 다른 나라의 판매단가와 견줄 수 없다. 호주의 대용량 고객은 요금표가 아니라 개별 계약으로 산다.",
+   "value": 0.157,
+   "unit": "AUD/kWh",
+   "asof": "2023",
+   "basis": "2022-23회계연도 평균 157호주달러/MWh(검색 요약)",
+   "series": [
+    {
+     "period": "FY2019",
+     "value": 0.079,
+     "src": [
+      1
+     ],
+     "usd": 0.0549
+    },
+    {
+     "period": "FY2020",
+     "value": 0.072,
+     "src": [
+      1
+     ],
+     "usd": 0.0497
+    },
+    {
+     "period": "FY2022",
+     "value": 0.157,
+     "src": [
+      1
+     ],
+     "usd": 0.1091
+    }
+   ],
+   "currency": "AUD",
+   "fx_year": "2022",
+   "tariff": {
+    "price_kind": "도매가",
+    "includes": {
+     "demand_charge": false,
+     "fuel_adjustment": false,
+     "tax_levy": false
+    },
+    "name": "NEM spot (NSW)",
+    "voltage": "해당 없음"
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "AER — State of the energy market 2023, Chapter 3 National Electricity Market",
+     "url": "https://www.aer.gov.au/system/files/2025-07/SOTEM%202023%20-%203%20-%20National%20Electricity%20Market.pdf",
+     "date": "2023",
+     "read": "search_summary"
+    },
+    {
+     "n": 2,
+     "title": "AER — State of the energy market 2025, Chapter 2 National Electricity Market",
+     "url": "https://www.aer.gov.au/system/files/2025-08/State%20of%20the%20energy%20market%202025%20-%20Chapter%202%20-%20National%20Electricity%20Market.pdf",
+     "date": "2025-08",
+     "read": "search_summary"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "low",
+   "note": "2019-20은 79, 2020-21은 72호주달러/MWh로 요약에 나온다(같은 해 빅토리아는 84, 51). 규제기관 사이트가 자동 수집을 막아 보고서 본문을 열지 못했다. 2023-24 이후 값과 대용량 고객의 소매 계약가는 찾지 못했다.",
+   "usd": 0.1091
+  },
+  {
+   "id": "price-in-mh",
+   "topic": "D2",
+   "kind": "tariff",
+   "country": "IN",
+   "city": null,
+   "metric": "고압 산업용 요금(마하라슈트라 MSEDCL)",
+   "scope": "마하라슈트라주",
+   "definition": "주별 요금이다. 에너지 요금(kVAh당)·수요 요금(kVA당)·송전 이용 요금이 따로 붙는다.",
+   "value": null,
+   "unit": "INR/kWh",
+   "asof": "2025",
+   "basis": "확정 요금을 원문으로 확인하지 못했다",
+   "currency": "INR",
+   "tariff": {
+    "price_kind": "요금표",
+    "includes": {
+     "demand_charge": null,
+     "fuel_adjustment": null,
+     "tax_levy": null
+    },
+    "name": "HT-I Industry",
+    "voltage": "고압"
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "MERC — MSEDCL 요금 청원 요약(Case 241 of 2024)",
+     "url": "https://merc.gov.in/wp-content/uploads/2025/01/Executive-Summary-English-BIA-241-of-2024.pdf",
+     "date": "2025-01",
+     "read": "search_summary"
+    },
+    {
+     "n": 2,
+     "title": "The Hitavada — Power tariff set to rise by 5 per cent as MERC admits errors in MYT order",
+     "url": "https://www.thehitavada.com/Encyc/2025/6/26/Power-tariff-set-to-rise-by-5-per-cent-as-MERC-admits-errors-in-MYT-order.html",
+     "date": "2025-06-26",
+     "read": "search_summary"
+    }
+   ],
+   "value_src": [],
+   "alt": [
+    {
+     "value": 7.36,
+     "basis": "MSEDCL 이 청원한 2025-26 HT-I 산업용 에너지 요금(Rs/kVAh). 수요 요금 449Rs/kVA·월, 송전 이용 2.16Rs/kVAh. 청원 값이며 확정 값이 아니다(검색 요약)",
+     "url": "https://merc.gov.in/wp-content/uploads/2025/01/Executive-Summary-English-BIA-241-of-2024.pdf"
+    }
+   ],
+   "conf": "low",
+   "note": "주 규제위원회(MERC)가 2025년 3월 28일 2025-26~2029-30 다년 요금 명령을 냈다가 오류를 인정하고 재검토 명령을 냈다(검색 요약). 확정 단가는 열지 못했다. 인도는 주마다 요금이 달라 전국 값이 없고, 중앙전력청의 주별 평균 요금 책자는 이번에 사이트가 열리지 않았다.",
+   "usd": null
+  },
+  {
+   "id": "price-avg-tw",
+   "topic": "D2",
+   "kind": "tariff",
+   "country": "TW",
+   "city": null,
+   "metric": "산업용 평균 단가",
+   "scope": "대만전력 산업용 전체",
+   "definition": "산업용 전체의 평균이다(특고압만이 아니다). 세금 포함 여부는 이 표에 없다.",
+   "value": 3.6243,
+   "unit": "TWD/kWh",
+   "asof": "2024",
+   "basis": "대만전력 지속가능보고서의 용도별 평균 단가",
+   "key": "price_avg",
+   "series": [
+    {
+     "period": "2019",
+     "value": 2.4738,
+     "src": [
+      3
+     ],
+     "usd": 0.08
+    },
+    {
+     "period": "2020",
+     "value": 2.4461,
+     "src": [
+      2,
+      3
+     ],
+     "usd": 0.083
+    },
+    {
+     "period": "2021",
+     "value": 2.4592,
+     "src": [
+      2,
+      3
+     ],
+     "usd": 0.088
+    },
+    {
+     "period": "2022",
+     "value": 2.6309,
+     "src": [
+      1,
+      2
+     ],
+     "usd": 0.0883
+    },
+    {
+     "period": "2023",
+     "value": 3.1076,
+     "src": [
+      1
+     ],
+     "usd": 0.0998
+    },
+    {
+     "period": "2024",
+     "value": 3.6243,
+     "src": [
+      1
+     ],
+     "usd": 0.1129
+    }
+   ],
+   "currency": "TWD",
+   "tariff": {
+    "price_kind": "평균 판매단가",
+    "includes": {
+     "demand_charge": true,
+     "fuel_adjustment": null,
+     "tax_levy": null
+    },
+    "name": "Industrial (average)",
+    "voltage": "전체"
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "Taipower Sustainability Report 2024 — Taipower and Sustainability(2022~2024 평균 단가)",
+     "url": "https://service.taipower.com.tw/csr/en/download/sustainables/sections/wz/01_Taipower%20and%20Sustainability.pdf",
+     "date": "2025",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "Taipower Sustainability Report 2022 — Taipower and Sustainability(2020~2022 평균 단가)",
+     "url": "https://service.taipower.com.tw/csr/en/download/sustainables/sections/LJ/01_Taipower%20and%20Sustainability.pdf",
+     "date": "2023",
+     "read": "partial"
+    },
+    {
+     "n": 3,
+     "title": "Taipower Sustainability Report 2021 — (2019~2021 평균 단가)",
+     "url": "https://service.taipower.com.tw/csr/en/download/sustainables/sections/vj/sustainability.pdf",
+     "date": "2022",
+     "read": "partial"
+    },
+    {
+     "n": 4,
+     "title": "天下雜誌·數位時代 등 — 2025년 대만 전기요금 조정 보도",
+     "url": "https://www.bnext.com.tw/article/78656/electricity-price-2024",
+     "date": "2025",
+     "read": "search_summary"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [
+    {
+     "value": 4.27,
+     "basis": "2025년 9월 조정 뒤 산업용 평균(세금 포함)이라는 보도(검색 요약)",
+     "url": "https://www.bnext.com.tw/article/78656/electricity-price-2024"
+    }
+   ],
+   "conf": "high",
+   "note": "2021년 2.4592에서 2024년 3.6243대만달러로 47% 올랐다(계산). 2024년 주택용은 2.7431, 상업용은 3.9185다. 2022년 7월 조정에서 대용량 수용가만 15% 올렸고 주택·소상공인은 동결했다고 2022년 보고서에 적혀 있다. 2025년 값은 열지 못했다(보도 요약은 산업용 4.27대만달러, 세금 포함).",
+   "usd": 0.1129
   },
   {
    "id": "mix-kr",
