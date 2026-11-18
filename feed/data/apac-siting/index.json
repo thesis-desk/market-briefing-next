@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated_kst": "2026-11-18T21:33:55+09:00",
+ "updated_kst": "2026-11-19T00:27:16+09:00",
  "question": "한국은 아시아·태평양 AI 컴퓨트의 권역 거점이 될 수 있는가",
  "bundles": [
   {
@@ -19,7 +19,7 @@
    "status": "draft",
    "records": 22,
    "verified_share": 1,
-   "updated_kst": "2026-11-18T18:20:28+09:00"
+   "updated_kst": "2026-11-19T00:27:16+09:00"
   },
   {
    "id": "C1-3",
@@ -82,7 +82,7 @@
    "status": "draft",
    "records": 35,
    "verified_share": 1,
-   "updated_kst": "2026-11-18T21:29:14+09:00"
+   "updated_kst": "2026-11-19T00:26:08+09:00"
   }
  ],
  "hypotheses": [

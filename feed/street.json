@@ -5,16 +5,16 @@
  "items_days": 30,
  "index": {
   "ai_tech": {
-   "value": -3,
+   "value": -2,
    "label": "엇갈림",
    "orgs": 42,
-   "items": 138
+   "items": 136
   },
   "market": {
-   "value": -13,
+   "value": -12,
    "label": "엇갈림",
    "orgs": 29,
-   "items": 90
+   "items": 89
   },
   "by_group": [
    {
@@ -40,9 +40,9 @@
    },
    {
     "group": "투자은행",
-    "ai_tech": 12,
+    "ai_tech": 14,
     "ai_tech_orgs": 6,
-    "market": 25,
+    "market": 28,
     "market_orgs": 6
    },
    {
@@ -112,11 +112,11 @@
     },
     {
      "tag": "자금 조달·신용",
-     "n": 17
+     "n": 16
     },
     {
      "tag": "밸류에이션",
-     "n": 16
+     "n": 15
     },
     {
      "tag": "쏠림",
@@ -124,7 +124,7 @@
     },
     {
      "tag": "정책·지정학",
-     "n": 11
+     "n": 10
     },
     {
      "tag": "금리·거시",
@@ -140,7 +140,7 @@
     },
     {
      "tag": "전력·공급 제약",
-     "n": 3
+     "n": 2
     }
    ],
    "optimism": [

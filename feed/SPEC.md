@@ -11,7 +11,7 @@
 | 경로 | 내용 |
 | --- | --- |
 | `index.json` | 목록. 가장 먼저 읽는 파일 |
-| `reports/<슬러그>.json` | 리포트 1건(실적 발표·투자자의 날·인터뷰·글 분석) |
+| `reports/<슬러그>.json` | 리포트 1건(실적 발표·투자자의 날·인터뷰·글 분석·종합·행사 정리·조사 리포트) |
 | `street.json` | 금융권 시각 최근 30일 항목과 지수 |
 | `street/YYYY-MM.json` | 금융권 시각 월별 보관(한국시간 공개 월) |
 | `calendar.json` | 실적·투자자의 날 일정과 대기 목록 |
@@ -53,7 +53,7 @@
 
 - `generated_kst` 는 빌드 시각이 아니라 **가장 최근에 바뀐 기록의 시각**이다. 내용이 그대로면 이 값도 그대로다.
 - `datasets` 는 조사 자료 묶음의 목록이다: `[{"id": "apac-siting", "path": "data/apac-siting/index.json", "updated_kst": "…"}]`. 묶음이 하나도 없으면 키가 없다. `updated_kst` 는 기록이 아직 없으면 `null`.
-- `type`: `earnings` | `investor_day` | `interview` | `article` | `synthesis` | `event`(행사 정리).
+- `type`: `earnings` | `investor_day` | `interview` | `article` | `synthesis` | `event`(행사 정리) | `research`(조사 리포트).
 - `companies[].ticker` 는 없으면 `null`. `event`·`event_date` 는 있을 때만.
 - `revision` 은 처음 게시할 때 1이다. `revised_kst` 는 고친 적이 없으면 `published_kst` 와 같다.
 - `path` 는 `feed/` 기준 상대 경로다.
@@ -116,7 +116,8 @@
 | `investor_view` | 투자자 관점 | 투자자 관점 | investor |
 
 - 전사본이 없어 콜 정리를 싣지 못한 리포트도 `prepared`·`qa` 절은 있다. 그 사실을 `view` 블록 하나로 적는다.
-- 인터뷰·글 분석·종합은 화면의 절을 그대로 내보낸다. `id` 는 순번(`s1`, `s2` …)이고 `layer` 는 모두 `common` 이다.
+- 인터뷰·글 분석·종합·행사 정리·조사 리포트는 화면의 절을 그대로 내보낸다. `id` 는 순번(`s1`, `s2` …)이고 `layer` 는 모두 `common` 이다.
+- 조사 리포트(`research`)는 조사 자료 묶음(`data/<id>/`)에서 쓴 중립 리포트다. 표의 값은 묶음 파일의 값 그대로이고, 여러 기록에서 온 표는 `src` 가 묶음 파일(출처 `kind` 가 `dataset`)을 가리키며 `loc` 에 기록 id 가 있다. `companies` 는 조사 대상 회사다.
 - 출처 목록(`sources`)과 작성·검토 기록(`review`)은 절이 아니라 최상위 필드다.
 
 ### 블록 `kind`
@@ -141,7 +142,7 @@
 ### 그 밖의 필드
 
 - `sources[].access`: `public` | `paid` | `private`(공개 링크가 없는 출처. `url` 이 없다).
-- `sources[].kind`: `press_release` | `transcript_official` | `transcript_third_party` | `presentation` | `market_data` | `prior_report` | `article` | `video` | `news`(언론 보도) | `telegram`(텔레그램 글) | `desk`(데스크 기록). 종류가 적혀 있지 않은 인터뷰·글 분석의 출처는 주소가 유튜브면 `video`, 아니면 `article` 로 낸다.
+- `sources[].kind`: `press_release` | `transcript_official` | `transcript_third_party` | `presentation` | `market_data` | `prior_report` | `article` | `video` | `news`(언론 보도) | `telegram`(텔레그램 글) | `desk`(데스크 기록) | `dataset`(조사 자료 묶음 파일. `url` 은 `data/<id>/` 의 파일이고 값마다의 원 출처는 그 파일의 기록에 있다). 종류가 적혀 있지 않은 인터뷰·글 분석의 출처는 주소가 유튜브면 `video`, 아니면 `article` 로 낸다.
 - `sources[].read`: 실제로 읽은 범위. `전문` | `일부` | `요약만`.
 - `period` 는 회사가 쓰는 분기 이름이다(회계연도가 달력과 다른 회사 포함). `period_end` 는 그 분기의 말일이라 회사끼리 견줄 때 쓴다. 둘 다 있을 때만 들어간다.
 - `prev_slug`: 이 사이트에 직전 분기 리포트가 있으면 그 슬러그, 없으면 `null`.
@@ -337,3 +338,11 @@
 - 출처 `kind` 에 `news`(언론 보도)와 `telegram`(텔레그램 글)을 더했다. 행사 정리에서 기업 자료와 2차 자료를 가르는 데 쓴다.
 - 출처 `kind` 에 `desk`(데스크 기록)를 더했다. 행사 정리가 데스크의 투자 가설을 견줄 기준으로 붙일 때 쓰고, 사실의 근거가 아니다.
 - 조사 자료 묶음 `data/<id>/` 를 더했다. 첫 조사는 `apac-siting` 이다. `index.json` 에 `datasets` 를 더했다(기존 키는 그대로). 묶음마다의 기록 형식(A~H)은 위 `data/<id>/` 절에 있다.
+
+### 2026-11-19 — schema 1
+
+바뀐 것
+
+- 리포트 종류에 조사 리포트(`research`)를 더했다. 조사 자료 묶음에서 쓴 중립 리포트이고 절은 `s1`, `s2` … 로 나가며 `layer` 는 모두 `common` 이다. 첫 리포트는 `apac-ai-siting-korea`(묶음 `apac-siting`)이다.
+- 출처 `kind` 에 `dataset`(조사 자료 묶음 파일)을 더했다. 조사 리포트의 표가 근거로 가리킨다.
+- `QUESTIONS.md` 에서 실적·일정과 feed 일반에 관한 항목 1~16 을 지웠다(더 묻지 않기로 정해졌다). 남은 항목은 번호를 그대로 두었고(17~32), 리포트의 조건 표에 관한 33 을 더했다.

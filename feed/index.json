@@ -1,7 +1,51 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-18T21:33:55+09:00",
+ "generated_kst": "2026-11-19T00:32:22+09:00",
  "reports": [
+  {
+   "slug": "apac-ai-siting-korea",
+   "type": "research",
+   "title": "아시아·태평양 AI 컴퓨트 입지 비교 : 한국은 권역 거점이 될 수 있나",
+   "companies": [
+    {
+     "name": "AWS",
+     "ticker": null
+    },
+    {
+     "name": "Microsoft",
+     "ticker": null
+    },
+    {
+     "name": "Google",
+     "ticker": null
+    },
+    {
+     "name": "Oracle",
+     "ticker": null
+    },
+    {
+     "name": "Meta",
+     "ticker": null
+    },
+    {
+     "name": "OpenAI",
+     "ticker": null
+    },
+    {
+     "name": "Anthropic",
+     "ticker": null
+    },
+    {
+     "name": "xAI",
+     "ticker": null
+    }
+   ],
+   "published_kst": "2026-11-19T00:32:22+09:00",
+   "revised_kst": "2026-11-19T00:32:22+09:00",
+   "revision": 1,
+   "summary": "입지 조건만으로는 한국이 권역 거점이 되기 어렵다는 가설도, 랩의 해외 용량이 파트너의 묶음을 따라갔다는 가설도 공개 자료에서는 '엇갈림'이다. 한국은 국제 네트워크와 권역 도달 범위에서 도쿄·싱가포르에 뒤진다. 건설 단가·기후·미국 수출통제 지위에서는 두 곳보다 불리하지 않고, 전력 품질과 국내 수요 지표는 일본·호주와 비슷하거나 낫다. 랩과 함께 발표된 한국의 두 건은 1년째 부지·전력·자금이 정해지지 않았다.",
+   "path": "reports/apac-ai-siting-korea.json"
+  },
   {
    "slug": "sixsigma-3",
    "type": "article",
@@ -1628,7 +1672,7 @@
   {
    "id": "apac-siting",
    "path": "data/apac-siting/index.json",
-   "updated_kst": "2026-11-18T21:33:55+09:00"
+   "updated_kst": "2026-11-19T00:27:16+09:00"
   }
  ]
 }
