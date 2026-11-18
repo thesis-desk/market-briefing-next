@@ -2,8 +2,1045 @@
  "schema": 1,
  "bundle": "C4-5",
  "title": "도시별 접속 여건과 도시 간 지연시간",
- "updated_kst": null,
+ "updated_kst": "2026-11-18T18:54:06+09:00",
  "measure": null,
- "notes": [],
- "records": []
+ "notes": [
+  "C4: 도시 1곳이 기록 하나다(kind 가 peering). PeeringDB 공개 API 의 값을 그대로 센 것이다(`desk datasets peering`). 대표 값은 참여 네트워크가 1곳 이상인 인터넷 교환점의 수다.",
+  "도시는 PeeringDB 에 적힌 도시 이름으로 가른다. 수도권의 다른 시(예: 서울 밖 경기·인천, 도쿄 밖 지바)에 등록된 교환점·시설은 잡히지 않는다.",
+  "presence 는 Google·Meta·Microsoft·Amazon 과 CDN 네 곳(Cloudflare·Akamai·Netflix·Fastly)이 그 도시의 교환점 몇 곳에 접속했는가(ix), 그 도시의 시설 몇 곳에 입주했다고 등록했는가(fac)다. 등록하지 않은 접속은 보이지 않는다.",
+  "C5(도시 간 왕복 지연시간)는 아직 모으지 않았다. 모으면 kind 가 latency 인 기록으로 넣는다.",
+  "국제 회선 임차료와 IP 트랜짓 단가: 공개 수치를 아직 찾지 않았다."
+ ],
+ "records": [
+  {
+   "id": "peering-seoul",
+   "kind": "peering",
+   "country": "KR",
+   "city": "서울",
+   "value": 8,
+   "unit": "곳",
+   "asof": "2026-11-18",
+   "basis": "PeeringDB 에 등록된 인터넷 교환점 가운데 참여 네트워크가 1곳 이상인 것의 수",
+   "ixps": [
+    {
+     "name": "KINX",
+     "networks": 91
+    },
+    {
+     "name": "KRIX(SEJONG)",
+     "networks": 10
+    },
+    {
+     "name": "Equinix Seoul",
+     "networks": 9
+    },
+    {
+     "name": "KOIX",
+     "networks": 9
+    },
+    {
+     "name": "ixFabric - Seoul",
+     "networks": 8
+    },
+    {
+     "name": "packet:ix",
+     "networks": 8
+    },
+    {
+     "name": "KCIXP",
+     "networks": 5
+    },
+    {
+     "name": "6NGIX",
+     "networks": 1
+    }
+   ],
+   "ixps_listed": 8,
+   "largest_ix_networks": 91,
+   "networks_sum": 141,
+   "presence": {
+    "Google": {
+     "ix": 2,
+     "fac": 0
+    },
+    "Meta": {
+     "ix": 1,
+     "fac": 0
+    },
+    "Microsoft": {
+     "ix": 3,
+     "fac": 1
+    },
+    "Amazon": {
+     "ix": 1,
+     "fac": 2
+    },
+    "Cloudflare": {
+     "ix": 3,
+     "fac": 2
+    },
+    "Akamai": {
+     "ix": 1,
+     "fac": 1
+    },
+    "Netflix": {
+     "ix": 0,
+     "fac": 0
+    },
+    "Fastly": {
+     "ix": 1,
+     "fac": 0
+    }
+   },
+   "bigtech_ix_points": 7,
+   "bigtech_fac_points": 3,
+   "sources": [
+    {
+     "n": 1,
+     "title": "PeeringDB 공개 API(ix, netixlan, netfac)",
+     "url": "https://www.peeringdb.com/api/ix?country=KR",
+     "date": "2026-11-18",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "사업자가 스스로 등록하는 자료다. networks_sum 은 교환점마다의 참여 수를 더한 것이라 한 네트워크가 여러 번 잡힌다. presence 의 ix 는 그 도시의 교환점 가운데 그 네트워크가 접속한 곳의 수, fac 은 그 도시에서 입주했다고 등록한 시설의 수다."
+  },
+  {
+   "id": "peering-tokyo",
+   "kind": "peering",
+   "country": "JP",
+   "city": "도쿄",
+   "value": 10,
+   "unit": "곳",
+   "asof": "2026-11-18",
+   "basis": "PeeringDB 에 등록된 인터넷 교환점 가운데 참여 네트워크가 1곳 이상인 것의 수",
+   "ixps": [
+    {
+     "name": "BBIX Tokyo",
+     "networks": 355
+    },
+    {
+     "name": "JPIX TOKYO",
+     "networks": 275
+    },
+    {
+     "name": "JPNAP Tokyo",
+     "networks": 250
+    },
+    {
+     "name": "Equinix Tokyo",
+     "networks": 127
+    },
+    {
+     "name": "ixFabric - Tokyo",
+     "networks": 54
+    },
+    {
+     "name": "TYIX",
+     "networks": 51
+    },
+    {
+     "name": "ENTERNET IX",
+     "networks": 28
+    },
+    {
+     "name": "DIX-IE",
+     "networks": 22
+    },
+    {
+     "name": "Protocol 7 IX - Lycheen Japan",
+     "networks": 21
+    },
+    {
+     "name": "JEIX",
+     "networks": 6
+    },
+    {
+     "name": "Protocol 7 IX - Tokyo",
+     "networks": 0
+    }
+   ],
+   "ixps_listed": 11,
+   "largest_ix_networks": 355,
+   "networks_sum": 1189,
+   "presence": {
+    "Google": {
+     "ix": 4,
+     "fac": 6
+    },
+    "Meta": {
+     "ix": 4,
+     "fac": 4
+    },
+    "Microsoft": {
+     "ix": 4,
+     "fac": 2
+    },
+    "Amazon": {
+     "ix": 4,
+     "fac": 3
+    },
+    "Cloudflare": {
+     "ix": 4,
+     "fac": 2
+    },
+    "Akamai": {
+     "ix": 4,
+     "fac": 6
+    },
+    "Netflix": {
+     "ix": 4,
+     "fac": 4
+    },
+    "Fastly": {
+     "ix": 4,
+     "fac": 2
+    }
+   },
+   "bigtech_ix_points": 16,
+   "bigtech_fac_points": 15,
+   "sources": [
+    {
+     "n": 1,
+     "title": "PeeringDB 공개 API(ix, netixlan, netfac)",
+     "url": "https://www.peeringdb.com/api/ix?country=JP",
+     "date": "2026-11-18",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "사업자가 스스로 등록하는 자료다. networks_sum 은 교환점마다의 참여 수를 더한 것이라 한 네트워크가 여러 번 잡힌다. presence 의 ix 는 그 도시의 교환점 가운데 그 네트워크가 접속한 곳의 수, fac 은 그 도시에서 입주했다고 등록한 시설의 수다."
+  },
+  {
+   "id": "peering-osaka",
+   "kind": "peering",
+   "country": "JP",
+   "city": "오사카",
+   "value": 6,
+   "unit": "곳",
+   "asof": "2026-11-18",
+   "basis": "PeeringDB 에 등록된 인터넷 교환점 가운데 참여 네트워크가 1곳 이상인 것의 수",
+   "ixps": [
+    {
+     "name": "BBIX Osaka",
+     "networks": 130
+    },
+    {
+     "name": "JPIX OSAKA",
+     "networks": 111
+    },
+    {
+     "name": "JPNAP Osaka",
+     "networks": 99
+    },
+    {
+     "name": "Equinix Osaka",
+     "networks": 26
+    },
+    {
+     "name": "MegaIX Osaka",
+     "networks": 5
+    },
+    {
+     "name": "NSPIXP3",
+     "networks": 3
+    }
+   ],
+   "ixps_listed": 6,
+   "largest_ix_networks": 130,
+   "networks_sum": 374,
+   "presence": {
+    "Google": {
+     "ix": 4,
+     "fac": 2
+    },
+    "Meta": {
+     "ix": 3,
+     "fac": 1
+    },
+    "Microsoft": {
+     "ix": 4,
+     "fac": 2
+    },
+    "Amazon": {
+     "ix": 3,
+     "fac": 3
+    },
+    "Cloudflare": {
+     "ix": 4,
+     "fac": 1
+    },
+    "Akamai": {
+     "ix": 5,
+     "fac": 3
+    },
+    "Netflix": {
+     "ix": 3,
+     "fac": 3
+    },
+    "Fastly": {
+     "ix": 3,
+     "fac": 1
+    }
+   },
+   "bigtech_ix_points": 14,
+   "bigtech_fac_points": 8,
+   "sources": [
+    {
+     "n": 1,
+     "title": "PeeringDB 공개 API(ix, netixlan, netfac)",
+     "url": "https://www.peeringdb.com/api/ix?country=JP",
+     "date": "2026-11-18",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "사업자가 스스로 등록하는 자료다. networks_sum 은 교환점마다의 참여 수를 더한 것이라 한 네트워크가 여러 번 잡힌다. presence 의 ix 는 그 도시의 교환점 가운데 그 네트워크가 접속한 곳의 수, fac 은 그 도시에서 입주했다고 등록한 시설의 수다."
+  },
+  {
+   "id": "peering-singapore",
+   "kind": "peering",
+   "country": "SG",
+   "city": "싱가포르",
+   "value": 11,
+   "unit": "곳",
+   "asof": "2026-11-18",
+   "basis": "PeeringDB 에 등록된 인터넷 교환점 가운데 참여 네트워크가 1곳 이상인 것의 수",
+   "ixps": [
+    {
+     "name": "Equinix Singapore",
+     "networks": 472
+    },
+    {
+     "name": "SGIX",
+     "networks": 254
+    },
+    {
+     "name": "BBIX Singapore",
+     "networks": 169
+    },
+    {
+     "name": "DE-CIX ASEAN",
+     "networks": 140
+    },
+    {
+     "name": "ixFabric - Singapore",
+     "networks": 61
+    },
+    {
+     "name": "MegaIX Singapore",
+     "networks": 43
+    },
+    {
+     "name": "GNM-IX SG",
+     "networks": 15
+    },
+    {
+     "name": "AMS-IX Singapore",
+     "networks": 13
+    },
+    {
+     "name": "SOX",
+     "networks": 12
+    },
+    {
+     "name": "Impart IX",
+     "networks": 10
+    },
+    {
+     "name": "IX42 SG",
+     "networks": 2
+    }
+   ],
+   "ixps_listed": 11,
+   "largest_ix_networks": 472,
+   "networks_sum": 1191,
+   "presence": {
+    "Google": {
+     "ix": 3,
+     "fac": 2
+    },
+    "Meta": {
+     "ix": 5,
+     "fac": 4
+    },
+    "Microsoft": {
+     "ix": 5,
+     "fac": 2
+    },
+    "Amazon": {
+     "ix": 5,
+     "fac": 2
+    },
+    "Cloudflare": {
+     "ix": 7,
+     "fac": 3
+    },
+    "Akamai": {
+     "ix": 7,
+     "fac": 5
+    },
+    "Netflix": {
+     "ix": 3,
+     "fac": 1
+    },
+    "Fastly": {
+     "ix": 3,
+     "fac": 2
+    }
+   },
+   "bigtech_ix_points": 18,
+   "bigtech_fac_points": 10,
+   "sources": [
+    {
+     "n": 1,
+     "title": "PeeringDB 공개 API(ix, netixlan, netfac)",
+     "url": "https://www.peeringdb.com/api/ix?country=SG",
+     "date": "2026-11-18",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "사업자가 스스로 등록하는 자료다. networks_sum 은 교환점마다의 참여 수를 더한 것이라 한 네트워크가 여러 번 잡힌다. presence 의 ix 는 그 도시의 교환점 가운데 그 네트워크가 접속한 곳의 수, fac 은 그 도시에서 입주했다고 등록한 시설의 수다."
+  },
+  {
+   "id": "peering-johor",
+   "kind": "peering",
+   "country": "MY",
+   "city": "조호르",
+   "value": 1,
+   "unit": "곳",
+   "asof": "2026-11-18",
+   "basis": "PeeringDB 에 등록된 인터넷 교환점 가운데 참여 네트워크가 1곳 이상인 것의 수",
+   "ixps": [
+    {
+     "name": "DE-CIX Malaysia",
+     "networks": 13
+    }
+   ],
+   "ixps_listed": 1,
+   "largest_ix_networks": 13,
+   "networks_sum": 13,
+   "presence": {
+    "Google": {
+     "ix": 0,
+     "fac": 0
+    },
+    "Meta": {
+     "ix": 0,
+     "fac": 0
+    },
+    "Microsoft": {
+     "ix": 0,
+     "fac": 0
+    },
+    "Amazon": {
+     "ix": 0,
+     "fac": 0
+    },
+    "Cloudflare": {
+     "ix": 0,
+     "fac": 0
+    },
+    "Akamai": {
+     "ix": 0,
+     "fac": 0
+    },
+    "Netflix": {
+     "ix": 0,
+     "fac": 0
+    },
+    "Fastly": {
+     "ix": 0,
+     "fac": 0
+    }
+   },
+   "bigtech_ix_points": 0,
+   "bigtech_fac_points": 0,
+   "sources": [
+    {
+     "n": 1,
+     "title": "PeeringDB 공개 API(ix, netixlan, netfac)",
+     "url": "https://www.peeringdb.com/api/ix?country=MY",
+     "date": "2026-11-18",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "사업자가 스스로 등록하는 자료다. networks_sum 은 교환점마다의 참여 수를 더한 것이라 한 네트워크가 여러 번 잡힌다. presence 의 ix 는 그 도시의 교환점 가운데 그 네트워크가 접속한 곳의 수, fac 은 그 도시에서 입주했다고 등록한 시설의 수다."
+  },
+  {
+   "id": "peering-sydney",
+   "kind": "peering",
+   "country": "AU",
+   "city": "시드니",
+   "value": 6,
+   "unit": "곳",
+   "asof": "2026-11-18",
+   "basis": "PeeringDB 에 등록된 인터넷 교환점 가운데 참여 네트워크가 1곳 이상인 것의 수",
+   "ixps": [
+    {
+     "name": "MegaIX Sydney",
+     "networks": 232
+    },
+    {
+     "name": "Equinix Sydney",
+     "networks": 219
+    },
+    {
+     "name": "IX Australia Sydney (NSW-IX)",
+     "networks": 184
+    },
+    {
+     "name": "EdgeIX - Sydney",
+     "networks": 130
+    },
+    {
+     "name": "ixFabric - Sydney",
+     "networks": 19
+    },
+    {
+     "name": "HSIX-NSW",
+     "networks": 1
+    },
+    {
+     "name": "HSIX-APAC",
+     "networks": 0
+    }
+   ],
+   "ixps_listed": 7,
+   "largest_ix_networks": 232,
+   "networks_sum": 785,
+   "presence": {
+    "Google": {
+     "ix": 4,
+     "fac": 3
+    },
+    "Meta": {
+     "ix": 4,
+     "fac": 1
+    },
+    "Microsoft": {
+     "ix": 4,
+     "fac": 2
+    },
+    "Amazon": {
+     "ix": 4,
+     "fac": 1
+    },
+    "Cloudflare": {
+     "ix": 4,
+     "fac": 1
+    },
+    "Akamai": {
+     "ix": 4,
+     "fac": 3
+    },
+    "Netflix": {
+     "ix": 4,
+     "fac": 1
+    },
+    "Fastly": {
+     "ix": 4,
+     "fac": 2
+    }
+   },
+   "bigtech_ix_points": 16,
+   "bigtech_fac_points": 7,
+   "sources": [
+    {
+     "n": 1,
+     "title": "PeeringDB 공개 API(ix, netixlan, netfac)",
+     "url": "https://www.peeringdb.com/api/ix?country=AU",
+     "date": "2026-11-18",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "사업자가 스스로 등록하는 자료다. networks_sum 은 교환점마다의 참여 수를 더한 것이라 한 네트워크가 여러 번 잡힌다. presence 의 ix 는 그 도시의 교환점 가운데 그 네트워크가 접속한 곳의 수, fac 은 그 도시에서 입주했다고 등록한 시설의 수다."
+  },
+  {
+   "id": "peering-melbourne",
+   "kind": "peering",
+   "country": "AU",
+   "city": "멜버른",
+   "value": 6,
+   "unit": "곳",
+   "asof": "2026-11-18",
+   "basis": "PeeringDB 에 등록된 인터넷 교환점 가운데 참여 네트워크가 1곳 이상인 것의 수",
+   "ixps": [
+    {
+     "name": "MegaIX Melbourne",
+     "networks": 137
+    },
+    {
+     "name": "IX Australia Melbourne (VIC-IX)",
+     "networks": 103
+    },
+    {
+     "name": "EdgeIX - Melbourne",
+     "networks": 73
+    },
+    {
+     "name": "Equinix Melbourne",
+     "networks": 55
+    },
+    {
+     "name": "ixFabric - Melbourne",
+     "networks": 12
+    },
+    {
+     "name": "HSIX-VIC",
+     "networks": 1
+    }
+   ],
+   "ixps_listed": 6,
+   "largest_ix_networks": 137,
+   "networks_sum": 381,
+   "presence": {
+    "Google": {
+     "ix": 4,
+     "fac": 1
+    },
+    "Meta": {
+     "ix": 3,
+     "fac": 1
+    },
+    "Microsoft": {
+     "ix": 4,
+     "fac": 2
+    },
+    "Amazon": {
+     "ix": 4,
+     "fac": 2
+    },
+    "Cloudflare": {
+     "ix": 4,
+     "fac": 2
+    },
+    "Akamai": {
+     "ix": 4,
+     "fac": 2
+    },
+    "Netflix": {
+     "ix": 1,
+     "fac": 0
+    },
+    "Fastly": {
+     "ix": 4,
+     "fac": 1
+    }
+   },
+   "bigtech_ix_points": 15,
+   "bigtech_fac_points": 6,
+   "sources": [
+    {
+     "n": 1,
+     "title": "PeeringDB 공개 API(ix, netixlan, netfac)",
+     "url": "https://www.peeringdb.com/api/ix?country=AU",
+     "date": "2026-11-18",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "사업자가 스스로 등록하는 자료다. networks_sum 은 교환점마다의 참여 수를 더한 것이라 한 네트워크가 여러 번 잡힌다. presence 의 ix 는 그 도시의 교환점 가운데 그 네트워크가 접속한 곳의 수, fac 은 그 도시에서 입주했다고 등록한 시설의 수다."
+  },
+  {
+   "id": "peering-mumbai",
+   "kind": "peering",
+   "country": "IN",
+   "city": "뭄바이",
+   "value": 10,
+   "unit": "곳",
+   "asof": "2026-11-18",
+   "basis": "PeeringDB 에 등록된 인터넷 교환점 가운데 참여 네트워크가 1곳 이상인 것의 수",
+   "ixps": [
+    {
+     "name": "DE-CIX Mumbai",
+     "networks": 454
+    },
+    {
+     "name": "Extreme IX Mumbai",
+     "networks": 245
+    },
+    {
+     "name": "NIXI Mumbai",
+     "networks": 177
+    },
+    {
+     "name": "AMS-IX Mumbai",
+     "networks": 69
+    },
+    {
+     "name": "Equinix Mumbai",
+     "networks": 24
+    },
+    {
+     "name": "WSNL-IX",
+     "networks": 7
+    },
+    {
+     "name": "X3M-IX",
+     "networks": 6
+    },
+    {
+     "name": "MX-IX Mumbai",
+     "networks": 5
+    },
+    {
+     "name": "Bharat IX - Mumbai",
+     "networks": 2
+    },
+    {
+     "name": "SP-iXP Mumbai",
+     "networks": 2
+    }
+   ],
+   "ixps_listed": 10,
+   "largest_ix_networks": 454,
+   "networks_sum": 991,
+   "presence": {
+    "Google": {
+     "ix": 4,
+     "fac": 2
+    },
+    "Meta": {
+     "ix": 6,
+     "fac": 3
+    },
+    "Microsoft": {
+     "ix": 4,
+     "fac": 2
+    },
+    "Amazon": {
+     "ix": 3,
+     "fac": 3
+    },
+    "Cloudflare": {
+     "ix": 8,
+     "fac": 2
+    },
+    "Akamai": {
+     "ix": 5,
+     "fac": 4
+    },
+    "Netflix": {
+     "ix": 4,
+     "fac": 1
+    },
+    "Fastly": {
+     "ix": 4,
+     "fac": 1
+    }
+   },
+   "bigtech_ix_points": 17,
+   "bigtech_fac_points": 10,
+   "sources": [
+    {
+     "n": 1,
+     "title": "PeeringDB 공개 API(ix, netixlan, netfac)",
+     "url": "https://www.peeringdb.com/api/ix?country=IN",
+     "date": "2026-11-18",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "사업자가 스스로 등록하는 자료다. networks_sum 은 교환점마다의 참여 수를 더한 것이라 한 네트워크가 여러 번 잡힌다. presence 의 ix 는 그 도시의 교환점 가운데 그 네트워크가 접속한 곳의 수, fac 은 그 도시에서 입주했다고 등록한 시설의 수다."
+  },
+  {
+   "id": "peering-chennai",
+   "kind": "peering",
+   "country": "IN",
+   "city": "첸나이",
+   "value": 5,
+   "unit": "곳",
+   "asof": "2026-11-18",
+   "basis": "PeeringDB 에 등록된 인터넷 교환점 가운데 참여 네트워크가 1곳 이상인 것의 수",
+   "ixps": [
+    {
+     "name": "Extreme IX Chennai",
+     "networks": 91
+    },
+    {
+     "name": "DE-CIX Chennai",
+     "networks": 79
+    },
+    {
+     "name": "NIXI Chennai",
+     "networks": 56
+    },
+    {
+     "name": "REDIX Chennai",
+     "networks": 2
+    },
+    {
+     "name": "MX-IX Chennai",
+     "networks": 2
+    }
+   ],
+   "ixps_listed": 5,
+   "largest_ix_networks": 91,
+   "networks_sum": 230,
+   "presence": {
+    "Google": {
+     "ix": 3,
+     "fac": 3
+    },
+    "Meta": {
+     "ix": 3,
+     "fac": 3
+    },
+    "Microsoft": {
+     "ix": 3,
+     "fac": 2
+    },
+    "Amazon": {
+     "ix": 2,
+     "fac": 2
+    },
+    "Cloudflare": {
+     "ix": 1,
+     "fac": 1
+    },
+    "Akamai": {
+     "ix": 3,
+     "fac": 4
+    },
+    "Netflix": {
+     "ix": 1,
+     "fac": 1
+    },
+    "Fastly": {
+     "ix": 3,
+     "fac": 1
+    }
+   },
+   "bigtech_ix_points": 11,
+   "bigtech_fac_points": 10,
+   "sources": [
+    {
+     "n": 1,
+     "title": "PeeringDB 공개 API(ix, netixlan, netfac)",
+     "url": "https://www.peeringdb.com/api/ix?country=IN",
+     "date": "2026-11-18",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "사업자가 스스로 등록하는 자료다. networks_sum 은 교환점마다의 참여 수를 더한 것이라 한 네트워크가 여러 번 잡힌다. presence 의 ix 는 그 도시의 교환점 가운데 그 네트워크가 접속한 곳의 수, fac 은 그 도시에서 입주했다고 등록한 시설의 수다."
+  },
+  {
+   "id": "peering-hyderabad",
+   "kind": "peering",
+   "country": "IN",
+   "city": "하이데라바드",
+   "value": 4,
+   "unit": "곳",
+   "asof": "2026-11-18",
+   "basis": "PeeringDB 에 등록된 인터넷 교환점 가운데 참여 네트워크가 1곳 이상인 것의 수",
+   "ixps": [
+    {
+     "name": "Extreme IX Hyderabad",
+     "networks": 24
+    },
+    {
+     "name": "NIXI Hyderabad",
+     "networks": 23
+    },
+    {
+     "name": "DE-CIX Hyderabad",
+     "networks": 14
+    },
+    {
+     "name": "AMS-IX Hyderabad",
+     "networks": 8
+    }
+   ],
+   "ixps_listed": 4,
+   "largest_ix_networks": 24,
+   "networks_sum": 69,
+   "presence": {
+    "Google": {
+     "ix": 0,
+     "fac": 0
+    },
+    "Meta": {
+     "ix": 4,
+     "fac": 2
+    },
+    "Microsoft": {
+     "ix": 2,
+     "fac": 1
+    },
+    "Amazon": {
+     "ix": 1,
+     "fac": 3
+    },
+    "Cloudflare": {
+     "ix": 0,
+     "fac": 1
+    },
+    "Akamai": {
+     "ix": 3,
+     "fac": 2
+    },
+    "Netflix": {
+     "ix": 0,
+     "fac": 0
+    },
+    "Fastly": {
+     "ix": 4,
+     "fac": 1
+    }
+   },
+   "bigtech_ix_points": 7,
+   "bigtech_fac_points": 6,
+   "sources": [
+    {
+     "n": 1,
+     "title": "PeeringDB 공개 API(ix, netixlan, netfac)",
+     "url": "https://www.peeringdb.com/api/ix?country=IN",
+     "date": "2026-11-18",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "사업자가 스스로 등록하는 자료다. networks_sum 은 교환점마다의 참여 수를 더한 것이라 한 네트워크가 여러 번 잡힌다. presence 의 ix 는 그 도시의 교환점 가운데 그 네트워크가 접속한 곳의 수, fac 은 그 도시에서 입주했다고 등록한 시설의 수다."
+  },
+  {
+   "id": "peering-taipei",
+   "kind": "peering",
+   "country": "TW",
+   "city": "타이베이",
+   "value": 6,
+   "unit": "곳",
+   "asof": "2026-11-18",
+   "basis": "PeeringDB 에 등록된 인터넷 교환점 가운데 참여 네트워크가 1곳 이상인 것의 수",
+   "ixps": [
+    {
+     "name": "TPIX-TW",
+     "networks": 168
+    },
+    {
+     "name": "STUIX",
+     "networks": 126
+    },
+    {
+     "name": "Poema IX",
+     "networks": 59
+    },
+    {
+     "name": "NRIX",
+     "networks": 39
+    },
+    {
+     "name": "TWIX",
+     "networks": 24
+    },
+    {
+     "name": "ixFabric - Taipei",
+     "networks": 13
+    },
+    {
+     "name": "TaipeiGigaPoP",
+     "networks": 0
+    }
+   ],
+   "ixps_listed": 7,
+   "largest_ix_networks": 168,
+   "networks_sum": 429,
+   "presence": {
+    "Google": {
+     "ix": 3,
+     "fac": 4
+    },
+    "Meta": {
+     "ix": 2,
+     "fac": 2
+    },
+    "Microsoft": {
+     "ix": 2,
+     "fac": 2
+    },
+    "Amazon": {
+     "ix": 3,
+     "fac": 2
+    },
+    "Cloudflare": {
+     "ix": 3,
+     "fac": 1
+    },
+    "Akamai": {
+     "ix": 3,
+     "fac": 2
+    },
+    "Netflix": {
+     "ix": 0,
+     "fac": 1
+    },
+    "Fastly": {
+     "ix": 0,
+     "fac": 0
+    }
+   },
+   "bigtech_ix_points": 10,
+   "bigtech_fac_points": 10,
+   "sources": [
+    {
+     "n": 1,
+     "title": "PeeringDB 공개 API(ix, netixlan, netfac)",
+     "url": "https://www.peeringdb.com/api/ix?country=TW",
+     "date": "2026-11-18",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "사업자가 스스로 등록하는 자료다. networks_sum 은 교환점마다의 참여 수를 더한 것이라 한 네트워크가 여러 번 잡힌다. presence 의 ix 는 그 도시의 교환점 가운데 그 네트워크가 접속한 곳의 수, fac 은 그 도시에서 입주했다고 등록한 시설의 수다."
+  }
+ ]
 }

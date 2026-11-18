@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated_kst": "2026-11-18T18:37:02+09:00",
+ "updated_kst": "2026-11-18T18:54:06+09:00",
  "question": "한국은 아시아·태평양 AI 컴퓨트의 권역 거점이 될 수 있는가",
  "bundles": [
   {
@@ -26,18 +26,18 @@
    "file": "cables.json",
    "title": "해저케이블 목록·용량·빅테크 참여",
    "status": "collecting",
-   "records": 0,
+   "records": 113,
    "verified_share": 0,
-   "updated_kst": null
+   "updated_kst": "2026-11-18T18:50:56+09:00"
   },
   {
    "id": "C4-5",
    "file": "peering.json",
    "title": "도시별 접속 여건과 도시 간 지연시간",
    "status": "collecting",
-   "records": 0,
-   "verified_share": 0,
-   "updated_kst": null
+   "records": 11,
+   "verified_share": 1,
+   "updated_kst": "2026-11-18T18:54:06+09:00"
   },
   {
    "id": "D",
