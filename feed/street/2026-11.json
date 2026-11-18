@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "month": "2026-11",
- "updated_kst": "2026-11-18T08:29:45+09:00",
+ "updated_kst": "2026-11-18T11:29:20+09:00",
  "items": [
   {
    "id": "morgan-stanley-2027-global-outlook-the-case-for-a-stronger-doll",
@@ -104,6 +104,46 @@
    "note": "유튜브 자막(제작자 제공)(en) 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
   },
   {
+   "id": "burry-michael-burry-warns-the-stock-market-is-obviousl",
+   "group": "투자 거장",
+   "org": "Michael Burry",
+   "person": null,
+   "kind": "report",
+   "title": "Michael Burry, 주식시장이 '명백히' 2008년식 붕괴의 1단계에 있으며 2단계까지 6~9개월 남았다고 경고",
+   "title_orig": "Michael Burry warns the stock market is 'obviously' in the first stage of a 2008-style crash — with just 6 to 9 months to go until stage 2",
+   "url": "https://www.msn.com/en-us/news/other/michael-burry-warns-the-stock-market-is-obviously-in-the-first-stage-of-a-2008-style-crash-with-just-6-to-9-months-to-go-until-stage-2/ar-AA2hEsNJ",
+   "outlet": "Moneywise on MSN",
+   "published_kst": "2026-11-18T01:30:00+09:00",
+   "stance": {
+    "ai_tech": -2,
+    "market": -2
+   },
+   "args": [
+    "투자 회수",
+    "자금 조달·신용",
+    "밸류에이션"
+   ],
+   "summary": "Burry는 주식시장이 2000년·2008년처럼 '애도의 5단계' 중 부정 단계에 있으며 이 단계가 6~9개월 지속된다고 경고했다. 그는 칩 개발 속도와 데이터센터 수명의 불일치, 하이퍼스케일러의 대차대조표 밖 3조 달러 약정을 AI 붐의 약점으로 짚었고, 엔비디아·팔란티어·마이크론 풋옵션으로 공매도 포지션을 늘렸다.",
+   "points": [
+    "주식시장은 명백히 슬픔의 첫 단계인 '부정'에 있으며, 2000년과 2008년 사례에 따르면 이 단계는 6~9개월 지속된다.",
+    "근본적으로 나는 예상 시점을 앞당기고 있다. 그래서 공매도 포지션에 레버리지를 더 싣고 싶다. 시점이 나아지면 레버리지를 감수하기가 더 수월해진다.",
+    "엔비디아, 팔란티어, 마이크론 포지션의 주식 공매도를 내년 중 서로 다른 시점에 만기가 되는 풋옵션으로 교체했다고 밝혔다.",
+    "AI 붐이 힘을 잃을 것이라고 보며, 빠른 칩 개발 속도와 데이터센터의 긴 수명 사이에 불일치가 있다고 주장한다.",
+    "AI 구축을 이끄는 하이퍼스케일러들은 아직 대차대조표에 반영되지 않은 3조 달러의 재무적 약정을 안고 있다."
+   ],
+   "evidence": [
+    {
+     "ko": "주식시장은 명백히 슬픔의 첫 단계인 '부정'에 있으며, 2000년과 2008년 사례에 따르면 이 단계는 6~9개월 지속된다.",
+     "orig": "“The stock market is quite obviously in its first stage of grief, denial,” Burry recently wrote on X. “Per 2000 and 2008, this stage lasts 6-9 months.”"
+    }
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
+  },
+  {
    "id": "druckenmiller-billionaire-stanley-druckenmiller-says-he-s-stay",
    "group": "투자 거장",
    "org": "Duquesne Family Office",
@@ -125,6 +165,41 @@
    "points": [
     "Druckenmiller는 자신의 회사가 기본적으로 주식시장을 멀리하고 있다고 말했다.",
     "그는 돈을 버는 것이 아니라 잃지 않으려 하고 있다고 말했다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
+  },
+  {
+   "id": "morgan-stanley-morgan-stanley-s-2027-outlook-max-overweight-equ",
+   "group": "투자은행",
+   "org": "Morgan Stanley",
+   "person": null,
+   "kind": "report",
+   "title": "Morgan Stanley의 2027년 전망: 주식 최대 비중 확대, 달러 강세",
+   "title_orig": "Morgan Stanley's 2027 Outlook: Max Overweight Equities, Stronger Dollar",
+   "url": "https://247wallst.com/cards/serena-tang-is-telling-clients-to-lean-in-global-equities-a-podcast-episode-01m7nrfj8b1n6yj44f4kvn7cpw",
+   "outlet": "24/7 Wall St.",
+   "published_kst": "2026-11-17T22:30:00+09:00",
+   "stance": {
+    "ai_tech": 1,
+    "market": 2
+   },
+   "args": [
+    "밸류에이션",
+    "전력·공급 제약",
+    "금리·거시",
+    "투자 회수"
+   ],
+   "summary": "Morgan Stanley의 Serena Tang은 글로벌 주식이 향후 이익 기준 약 15배로 2023년 이후 최저 수준이라며 2027년 주식 비중을 최대 확대로 올렸다고 밝혔다. 데이터센터 규제는 연방 차원의 중단이 아닌 주 단위 지연으로 보고 하이퍼스케일러 설비투자 전망(약 1.7조 달러)을 유지했다. 다만 AI 투자 사이클의 급작스러운 종료, 유가 급등, 인플레이션 재가속을 이 전망이 무너지는 경로로 꼽았다.",
+   "points": [
+    "글로벌 주식이 향후 이익 대비 약 15배로 거래되고 있으며 이는 2023년 이후 최저 수준이다. 이것이 Morgan Stanley가 2027년 주식 비중을 최대 확대(maximum overweight)로 올리는 핵심 근거이며, 현금과 원자재에서 자금을 조달해 미국·일본·유럽을 비중 확대한다.",
+    "일본은 리플레이션, 민간 설비투자 사이클, 주주 친화적인 기업지배구조 개혁에 힘입어 위험 대비 수익률 면에서 가장 좋은 주식 투자 선택이다.",
+    "내년 투자등급(IG) 회사채 발행이 사상 최대가 될 것으로 예상해, 미국 투자등급 회사채의 비중 축소를 해소하고 중립으로 올렸다.",
+    "컨센서스와 다른 두 가지 전망으로, 미국 성장이 나머지 세계를 앞서면서 달러가 강세를 보일 것이라 보고, 시장이 영란은행의 금리 인상을 지나치게 많이 반영했다고 보아 영국 국채(gilt)를 선호한다.",
+    "2027년 미국 하이퍼스케일러 설비투자 전망치는 현금과 리스 기준 약 1.7조 달러다. 중간선거 이후의 데이터센터 규제는 연방 차원의 중단이 아니라 주 단위의 지연이며, 이미 건설 중이거나 허가받은 프로젝트는 영향을 덜 받을 것이고 약 5기가와트의 미국 프로젝트가 2028년에서 2029년으로 옮겨질 뿐이다."
    ],
    "judged": {
     "basis": "full_text",
@@ -710,6 +785,29 @@
    },
    "args": [
     "자금 조달·신용"
+   ],
+   "judged": {
+    "basis": "headline_only",
+    "tier": "light"
+   }
+  },
+  {
+   "id": "vanguard-from-trumpflation-to-growth-revival-vanguard-pai",
+   "group": "자산운용",
+   "org": "Vanguard",
+   "person": null,
+   "kind": "report",
+   "title": "'트럼프플레이션'에서 성장 회복으로: 뱅가드의 2027년 미국 경제 낙관 전망",
+   "title_orig": "From “Trumpflation” to Growth Revival: Vanguard Paints an Optimistic 2027 Outlook for the U.S. Economy",
+   "url": "https://nai500.com/blog/2026/11/from-trumpflation-to-growth-revival-vanguard-paints-an-optimistic-2027-outlook-for-the-u-s-economy",
+   "outlet": "NAI500",
+   "published_kst": "2026-11-17T01:00:00+09:00",
+   "stance": {
+    "ai_tech": null,
+    "market": 1
+   },
+   "args": [
+    "금리·거시"
    ],
    "judged": {
     "basis": "headline_only",

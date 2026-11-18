@@ -1,7 +1,23 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-18T09:47:40+09:00",
+ "generated_kst": "2026-11-18T11:29:20+09:00",
  "reports": [
+  {
+   "slug": "all-in-databricks-ceo-agi-is-already-here-why-companies-are",
+   "type": "interview",
+   "title": "알리 고드시(Databricks CEO) 인터뷰 : 기업 AI가 뒤처진 네 가지 이유, 비상장 유지와 RSI 회의론",
+   "companies": [
+    {
+     "name": "Databricks",
+     "ticker": null
+    }
+   ],
+   "published_kst": "2026-11-18T11:25:24+09:00",
+   "revised_kst": "2026-11-18T11:25:24+09:00",
+   "revision": 1,
+   "summary": "고드시는 ‘지능은 이미 충분하고 병목은 기업 안의 맥락·보안·비용·종속’이라는 진단을 Databricks의 사용량 과금 구조와 직접 연결했다. 매출 수치는 감사받지 않은 진행자 소개와 CEO 발언이고, 상장은 ‘나중’이라는 답만 나왔다. 기업 확산에 10~15년이 걸린다는 그의 시각은 랩들의 단기 전망과 정면으로 갈린다.",
+   "path": "reports/all-in-databricks-ceo-agi-is-already-here-why-companies-are.json"
+  },
   {
    "slug": "nvidia-3q27-earnings",
    "type": "earnings",
@@ -1521,7 +1537,7 @@
   }
  ],
  "street": {
-  "updated_kst": "2026-11-18T08:29:45+09:00",
+  "updated_kst": "2026-11-18T11:29:20+09:00",
   "path": "street.json"
  },
  "calendar": {
