@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated_kst": "2026-11-18T18:29:19+09:00",
+ "updated_kst": "2026-11-18T18:33:07+09:00",
  "question": "한국은 아시아·태평양 AI 컴퓨트의 권역 거점이 될 수 있는가",
  "bundles": [
   {
@@ -8,9 +8,9 @@
    "file": "investments.json",
    "title": "투자 발표 장부 — 실제로 어디에 지었나",
    "status": "collecting",
-   "records": 15,
-   "verified_share": 1,
-   "updated_kst": "2026-11-18T18:29:19+09:00"
+   "records": 24,
+   "verified_share": 0.813,
+   "updated_kst": "2026-11-18T18:33:07+09:00"
   },
   {
    "id": "B",
