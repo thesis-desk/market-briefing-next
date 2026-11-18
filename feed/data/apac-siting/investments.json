@@ -2,24 +2,41 @@
  "schema": 1,
  "bundle": "A",
  "title": "투자 발표 장부 — 실제로 어디에 지었나",
- "updated_kst": "2026-11-18T18:25:26+09:00",
+ "updated_kst": "2026-11-18T18:29:19+09:00",
  "measure": "value",
  "notes": [
   "단위는 발표 1건이다. 대표 값(value)은 발표 금액의 달러 값(십억 달러)이다. 회사가 달러 값을 함께 밝혔으면 그 값을 쓰고, 그렇지 않으면 환율과 날짜를 amount.fx 에 적는다. 환율 출처를 확인하지 못한 금액은 달러 값을 비워 둔다.",
   "amount.scope 는 금액의 범위다: capex(설비투자만) · capex+opex(운영비·인건비 등이 섞임) · unknown(밝히지 않음). amount.period 는 금액이 걸친 기간이다.",
   "같은 돈을 두 번 세지 않는다. 뒤의 발표가 앞의 것을 통째로 대체하면 supersedes 에 앞 기록의 id 를 적고, 앞 기록은 나라별 합계에서 뺀다. 금액이 더 큰 계획의 일부이면 included_in 에 그 계획의 id 를 적는다 — 발표 합에는 큰 계획만 들어가고, 착공 이상 합에는 큰 계획이 발표 단계일 때 이 기록의 금액이 들어간다.",
-  "stage 는 발표 · 부지확보 · 착공 · 가동 이다. 여러 해에 걸친 투자 계획은 그 가운데 특정 시설이 착공했더라도 계획 전체는 '발표'로 두고, 착공한 시설을 따로 기록해 included_in 으로 잇는다.",
-  "by_country 는 기록에서 센 값이다: announced_usd_bn(발표 포함), firm_usd_bn(착공 이상), mw_announced·mw_firm(용량이 공개된 기록만), no_amount(금액이 없는 기록 수). 용량은 IT·수전·기준 불명이 섞여 있어 가늠하는 데만 쓴다.",
+  "stage 는 발표 · 부지확보 · 착공 · 가동 이다. 여러 해에 걸친 투자 계획은 이렇게 적었다: 이미 가동 중인 리전에 대한 투자이고 계획 기간이 진행 중이면 '가동', 새 시설을 짓는 계획이고 착공이 확인되지 않으면 '발표'. 계획 가운데 특정 시설이 착공했으면 그 시설을 따로 기록해 included_in 으로 잇는다. 그래서 '착공 이상' 합에는 진행 중인 여러 해 계획의 아직 쓰지 않은 금액도 들어 있다.",
+  "by_country 는 기록에서 센 값이다: announced_usd_bn(발표 포함), firm_usd_bn(착공 이상), announced_usd_bn_per_year(발표 금액을 계획 햇수 amount.years 로 나눠 더한 연평균 — 계산값), no_period(기간을 몰라 연평균에 못 넣은 기록 수), mw_announced·mw_firm(용량이 공개된 기록만), no_amount(금액이 없는 기록 수). 계획 기간이 2년에서 10년까지 달라 발표 합을 나라끼리 그대로 견줄 수 없으므로 연평균을 함께 본다. 용량은 IT·수전·기준 불명이 섞여 있어 가늠하는 데만 쓴다.",
   "회사 발표가 아니라 업계 보도로만 알려진 건은 그 사실을 note 에 적고 신뢰도를 낮게 둔다. 검토·협의 단계로만 보도된 것은 pending 에 따로 둔다.",
   "OpenAI·Anthropic·Meta 의 건 가운데 묶음 B 에 건별 기록이 있는 것은 ref_bundle_b 에 그 id 를 적었다. 판정과 묶음 내역은 B 에 있다.",
   "countries_done 은 지금까지 모은 나라다. 여기에 없는 나라는 아직 모으지 않은 것이지 건이 없는 것이 아니다."
  ],
  "by_country": {
   "countries": {
+   "JP": {
+    "records": 7,
+    "announced_usd_bn": 36.14,
+    "firm_usd_bn": 26.14,
+    "announced_usd_bn_per_year": 7.798,
+    "no_period": 0,
+    "no_amount": 3,
+    "mw_announced": 150,
+    "mw_firm": 0,
+    "by_company": {
+     "AWS": 15.24,
+     "Microsoft": 12.9,
+     "Oracle": 8
+    }
+   },
    "KR": {
     "records": 7,
     "announced_usd_bn": 5,
     "firm_usd_bn": 4,
+    "announced_usd_bn_per_year": 0.714,
+    "no_period": 0,
     "no_amount": 5,
     "mw_announced": 265,
     "mw_firm": 100,
@@ -59,7 +76,8 @@
      "source": "회사가 함께 밝힌 달러 값에서 역산"
     },
     "scope": "capex+opex",
-    "period": "2023~2027"
+    "period": "2023~2027",
+    "years": 5
    },
    "mw": {
     "value": null,
@@ -333,7 +351,8 @@
      "source": "회사가 함께 밝힌 달러 값에서 역산"
     },
     "scope": "unknown",
-    "period": "2025~2031"
+    "period": "2025~2031",
+    "years": 7
    },
    "mw": {
     "value": null,
@@ -392,7 +411,8 @@
     "unit": "십억 원",
     "usd_bn": null,
     "scope": "unknown",
-    "period": "2026~2031"
+    "period": "2026~2031",
+    "years": 5
    },
    "mw": {
     "value": 125,
@@ -452,6 +472,324 @@
    "alt": [],
    "conf": "med",
    "note": "금액·용량과 자가·임차 여부를 밝히지 않았다. 회사는 \"향후 12개월의 수요까지 반영한 선제적 투자\"라고 했고, 그룹의 3년 530억 달러 계획의 연장선이라고 설명했다(한국 몫은 없다)."
+  },
+  {
+   "id": "aws-jp-2024-plan",
+   "company": "AWS",
+   "country": "JP",
+   "city": "도쿄·오사카",
+   "region": "AWS 아시아 태평양(도쿄)·(오사카) 리전",
+   "announced": "2024-01-19",
+   "value": 15.24,
+   "unit": "십억 달러",
+   "asof": "2024-01-19",
+   "basis": "발표 금액 2조 2,600억 엔의 로이터 환산. 5년 계획이고 운영비가 섞인 것으로 본다",
+   "amount": {
+    "currency": "JPY",
+    "value": 2260,
+    "unit": "십억 엔",
+    "usd_bn": 15.24,
+    "fx": {
+     "rate": 148.3,
+     "date": "2024-01-19",
+     "source": "로이터 환산(152억 4,000만 달러)에서 역산"
+    },
+    "scope": "capex+opex",
+    "period": "2023~2027",
+    "years": 5
+   },
+   "mw": {
+    "value": null,
+    "basis": "unknown"
+   },
+   "what": "리전 확장",
+   "stage": "가동",
+   "status_now": "기간(2023~2027)이 진행 중인 계획이다. 이후의 증액·재발표는 찾지 못했다.",
+   "status_asof": "2026-11-18",
+   "partners": [],
+   "sources": [
+    {
+     "n": 1,
+     "title": "AWS — AWS plans to invest 2.26 trillion yen into its Japanese cloud infrastructure by 2027",
+     "url": "https://press.aboutamazon.com/aws/2024/1/aws-plans-to-invest-2-26-trillion-yen-into-its-japanese-cloud-infrastructure-by-2027",
+     "date": "2024-01-19",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "CNBC(Reuters) — Amazon's AWS to invest $15 bln to expand cloud computing in Japan",
+     "url": "https://www.cnbc.com/2024/01/19/amazons-aws-to-invest-15-bln-to-expand-cloud-computing-in-japan.html",
+     "date": "2024-01-19",
+     "read": "search_summary"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "발표문은 엔화만 적는다. 달러 값은 로이터의 환산(152억 4,000만 달러, 검색 요약)이다. 회사는 2011~2022년에 쓴 1조 5,100억 엔을 \"construct, connect, operate, and maintain\" 비용이라고 적어, 같은 방식으로 낸 이 계획에도 운영비가 섞였다고 봤다. 2027년까지 누적은 약 3조 7,700억 엔이다."
+  },
+  {
+   "id": "microsoft-jp-2024",
+   "company": "Microsoft",
+   "country": "JP",
+   "city": "동일본·서일본",
+   "region": "Azure 일본 리전의 클라우드·AI 인프라",
+   "announced": "2024-04-09",
+   "value": 2.9,
+   "unit": "십억 달러",
+   "asof": "2024-04-09",
+   "basis": "발표 금액의 달러 값",
+   "amount": {
+    "currency": "USD",
+    "value": 2.9,
+    "unit": "십억 달러",
+    "usd_bn": 2.9,
+    "scope": "unknown",
+    "period": "2024~2025(2년)",
+    "years": 2
+   },
+   "mw": {
+    "value": null,
+    "basis": "unknown"
+   },
+   "what": "리전 확장",
+   "stage": "가동",
+   "status_now": "2년(2024~2025) 계획이고 기간이 끝났다. 2026-04 에 4년 100억 달러의 다음 계획이 나왔다.",
+   "status_asof": "2026-11-18",
+   "partners": [],
+   "sources": [
+    {
+     "n": 1,
+     "title": "Microsoft — Microsoft to invest US$2.9 billion in AI and cloud infrastructure in Japan",
+     "url": "https://news.microsoft.com/apac/2024/04/10/microsoft-to-invest-us2-9-billion-in-ai-and-cloud-infrastructure-in-japan-while-boosting-the-nations-skills-research-and-cybersecurity/",
+     "date": "2024-04-09",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "\"invest US$2.9 billion over the next two years to increase its hyperscale cloud computing and AI infrastructure in Japan\". 인재 양성·연구소·사이버보안 협력은 같은 발표의 별도 항목이라 금액 범위를 밝히지 않은 것으로 뒀다."
+  },
+  {
+   "id": "oracle-jp-2024",
+   "company": "Oracle",
+   "country": "JP",
+   "city": "도쿄·오사카",
+   "region": "OCI 일본 리전(도쿄·오사카)과 주권 클라우드 운영",
+   "announced": "2024-04-18",
+   "value": 8,
+   "unit": "십억 달러",
+   "asof": "2024-04-18",
+   "basis": "발표 금액 '80억 달러 이상'. 10년 계획이고 운영 인력 확대가 섞여 있다",
+   "amount": {
+    "currency": "USD",
+    "value": 8,
+    "unit": "십억 달러",
+    "usd_bn": 8,
+    "scope": "capex+opex",
+    "period": "2024~2033(10년)",
+    "years": 10
+   },
+   "mw": {
+    "value": null,
+    "basis": "unknown"
+   },
+   "what": "리전 확장",
+   "stage": "가동",
+   "status_now": "10년 계획이 진행 중이다. 이후의 증액·시설 발표는 찾지 못했다.",
+   "status_asof": "2026-11-18",
+   "partners": [
+    {
+     "name": "Fujitsu",
+     "role": "주권 클라우드 협력(같은 날 발표)"
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "Oracle 보도자료(AAP 게재) — Oracle to Invest More Than $8 Billion in Cloud Computing and AI in Japan",
+     "url": "https://aap.com.au/aapreleases/cision20240417ae90449/",
+     "date": "2024-04-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "\"plans to invest more than $8 billion over the next 10 years\". 일본 내 운영·지원 엔지니어 조직의 확대가 함께 들어 있어 운영비가 섞인 것으로 본다. 10년에 걸친 금액이라 다른 회사의 2~5년 계획과 그대로 견줄 수 없다."
+  },
+  {
+   "id": "openai-jp-softbank-sakai",
+   "company": "OpenAI",
+   "country": "JP",
+   "city": "오사카(사카이)",
+   "region": "소프트뱅크 사카이 데이터센터(옛 샤프 공장)",
+   "announced": "2025-03-14",
+   "value": null,
+   "unit": "십억 달러",
+   "asof": "2025-03-14",
+   "basis": "금액이 공개되지 않았다",
+   "amount": null,
+   "mw": {
+    "value": 150,
+    "basis": "utility",
+    "note": "처음 약 150MW, 이후 240MW 이상"
+   },
+   "what": "전용 캠퍼스",
+   "stage": "발표",
+   "status_now": "소프트뱅크가 부지를 샀고 2026년 가동을 목표로 한다고 했다. OpenAI 의 용량 계약은 공개된 적이 없다.",
+   "status_asof": "2026-11-18",
+   "partners": [
+    {
+     "name": "SoftBank",
+     "role": "부지 매입·운영"
+    }
+   ],
+   "ref_bundle_b": "openai-jp-softbank-sakai",
+   "sources": [
+    {
+     "n": 1,
+     "title": "TechCrunch — SoftBank buys $676M old Sharp plant for its OpenAI collab in Japan",
+     "url": "https://techcrunch.com/2025/03/14/softbank-buys-676m-old-sharp-plant-for-its-openai-collab-in-japan/",
+     "date": "2025-03-14",
+     "read": "partial"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "low",
+   "note": "OpenAI 가 내는 금액은 공개되지 않았다. 소프트뱅크가 부지·건물에 낸 1,000억 엔(6억 7,600만 달러)은 OpenAI 의 투자가 아니라 넣지 않았다. 용량은 수전 기준이다."
+  },
+  {
+   "id": "alibaba-jp-dc4",
+   "company": "Alibaba",
+   "country": "JP",
+   "city": null,
+   "region": "알리바바 클라우드 일본 네 번째 데이터센터",
+   "announced": "2026-03",
+   "value": null,
+   "unit": "십억 달러",
+   "asof": "2026-03",
+   "basis": "금액이 공개되지 않았다",
+   "amount": null,
+   "mw": {
+    "value": null,
+    "basis": "unknown"
+   },
+   "what": "리전 확장",
+   "stage": "가동",
+   "status_now": "2026-03 에 공개했다고 회사가 2026-06 발표문에 적었다.",
+   "status_asof": "2026-11-18",
+   "partners": [],
+   "sources": [
+    {
+     "n": 1,
+     "title": "Alibaba Cloud — Alibaba Cloud Expands AI Infrastructure in Japan with Launch of Fifth Data Center",
+     "url": "https://www.alibabacloud.com/press-room/alibaba-cloud-expands-ai-infrastructure-in-japan",
+     "date": "2026-06-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "med",
+   "note": "금액·용량·위치를 밝히지 않았다."
+  },
+  {
+   "id": "microsoft-jp-2026",
+   "company": "Microsoft",
+   "country": "JP",
+   "city": null,
+   "region": "일본의 AI 데이터센터와 관련 인프라",
+   "announced": "2026-04-03",
+   "value": 10,
+   "unit": "십억 달러",
+   "asof": "2026-04-03",
+   "basis": "발표 금액의 달러 값",
+   "amount": {
+    "currency": "USD",
+    "value": 10,
+    "unit": "십억 달러",
+    "usd_bn": 10,
+    "scope": "unknown",
+    "period": "2026~2029(4년)",
+    "years": 4
+   },
+   "mw": {
+    "value": null,
+    "basis": "unknown"
+   },
+   "what": "리전 확장",
+   "stage": "발표",
+   "status_now": "2026-04 발표. 시설별 위치·용량과 착공 여부는 확인하지 못했다.",
+   "status_asof": "2026-11-18",
+   "partners": [
+    {
+     "name": "SoftBank",
+     "role": "국내 인프라 확장 협력"
+    },
+    {
+     "name": "Sakura Internet",
+     "role": "국내 인프라 확장 협력"
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "AFP(Asharq Al-Awsat 게재) — Microsoft to Invest $10 bn for Japan AI Data Centers",
+     "url": "https://english.aawsat.com/technology/5258296-microsoft-invest-10-bn-japan-ai-data-centers",
+     "date": "2026-04-03",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "통신사 기사 기준이다: \"it will invest $10 billion in Japan over the next four years to build artificial intelligence data centers and related infrastructure\". 2024 계획(2024~2025)과 기간이 겹치지 않아 대체로 보지 않았다. 회사 발표문 원문은 열지 못했다."
+  },
+  {
+   "id": "alibaba-jp-dc5",
+   "company": "Alibaba",
+   "country": "JP",
+   "city": "도쿄",
+   "region": "알리바바 클라우드 일본 다섯 번째 데이터센터",
+   "announced": "2026-06-18",
+   "value": null,
+   "unit": "십억 달러",
+   "asof": "2026-06-18",
+   "basis": "금액이 공개되지 않았다",
+   "amount": null,
+   "mw": {
+    "value": null,
+    "basis": "unknown"
+   },
+   "what": "리전 확장",
+   "stage": "가동",
+   "status_now": "가동을 시작했다고 발표했다.",
+   "status_asof": "2026-11-18",
+   "partners": [],
+   "sources": [
+    {
+     "n": 1,
+     "title": "Alibaba Cloud — Alibaba Cloud Expands AI Infrastructure in Japan with Launch of Fifth Data Center",
+     "url": "https://www.alibabacloud.com/press-room/alibaba-cloud-expands-ai-infrastructure-in-japan",
+     "date": "2026-06-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "med",
+   "note": "금액·용량을 밝히지 않았다."
   }
  ],
  "pending": [
@@ -470,6 +808,14 @@
    "state": "SK 쪽 발언. 고객과 계약은 발표되지 않았다",
    "url": "https://www.koreatimes.co.kr/business/tech-science/20260913/sk-chairman-says-ulsan-ai-data-center-expansion-nearing-900-megawatts",
    "read": "partial"
+  },
+  {
+   "company": "Anthropic",
+   "country": "JP",
+   "what": "NTT DATA 가 오사카부에 Anthropic 용 데이터센터를 짓는 협의(수전 최대 500MW, 약 63억 달러로 보도)",
+   "state": "닛케이 보도 인용. 2026 회계연도 안 계약, 2028년 일부 가동이 목표라고 전해졌고 두 회사는 논평하지 않았다",
+   "url": "https://datacentremagazine.com/news/anthropic-and-ntt-data-near-us-6-3bn-data-centre-deal",
+   "read": "search_summary"
   }
  ],
  "excluded": [
@@ -496,9 +842,34 @@
    "why": "검색에서 발표를 찾지 못했다(없다는 확인은 아니다)",
    "url": "https://www.cio.com/article/4210880/알리바바-클라우드-1년-만에-韓-데이터센터-추가-ai-수.html",
    "read": "partial"
+  },
+  {
+   "company": "Google",
+   "country": "JP",
+   "what": "2024-04 의 10억 달러 발표(해저케이블 2개와 Pacific Connect)",
+   "why": "데이터센터가 아니라 해저케이블 투자다. 묶음 C 에서 다룬다. 인자이 데이터센터를 포함한 1,000억 엔 계획은 2022년 발표라 기간 밖이다",
+   "url": "https://technologymagazine.com/articles/microsoft-aws-oracle-why-big-tech-is-investing-in-japan",
+   "read": "search_summary"
+  },
+  {
+   "company": "Tencent",
+   "country": "JP",
+   "what": "일본 세 번째 데이터센터 검토",
+   "why": "2022-06 보도라 기간 밖이다. 2023년 이후의 발표를 찾지 못했다",
+   "url": "https://www.itpro.com/server-storage/data-centres/368337/tencent-to-open-third-data-centre-in-japan",
+   "read": "partial"
+  },
+  {
+   "company": "Meta",
+   "country": "JP",
+   "what": "Meta·xAI·ByteDance 의 일본 내 용량",
+   "why": "검색에서 발표를 찾지 못했다(없다는 확인은 아니다)",
+   "url": "https://www.alibabacloud.com/press-room/alibaba-cloud-expands-ai-infrastructure-in-japan",
+   "read": "partial"
   }
  ],
  "countries_done": [
-  "KR"
+  "KR",
+  "JP"
  ]
 }

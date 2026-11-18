@@ -2368,6 +2368,14 @@
    "state": "검토(2026-08-24 발표), 용량 없음",
    "url": "https://mistral.ai/news/mistral-x-humain/",
    "read": "partial"
+  },
+  {
+   "lab": "Anthropic",
+   "country": "JP",
+   "what": "NTT DATA 가 오사카부에 Anthropic 용 데이터센터를 짓는 협의(수전 최대 500MW, 약 63억 달러로 보도)",
+   "state": "닛케이 보도 인용, 계약 아님. 두 회사는 논평하지 않았다",
+   "url": "https://datacentremagazine.com/news/anthropic-and-ntt-data-near-us-6-3bn-data-centre-deal",
+   "read": "search_summary"
   }
  ],
  "excluded": [
