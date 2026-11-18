@@ -1,0 +1,2278 @@
+{
+ "schema": 1,
+ "bundle": "B",
+ "title": "프런티어 랩의 해외 용량 건별 조사",
+ "updated_kst": "2026-11-18T18:13:36+09:00",
+ "measure": "value",
+ "notes": [
+  "단위는 계약·프로젝트 1건이다. 대표 값(value)은 발표된 용량(MW)이며 건마다 뜻이 다르다(클러스터 계획, 부지 전체, 랩이 빌린 단계, 수전). basis 를 보지 않고 더하면 안 된다. 합계는 규모를 가늠하는 용도다.",
+  "랩의 몫이 공개되지 않은 건(영국·호주 NEXTDC·말레이시아·독일·호주 Zerra·Meta-Firmus)은 값을 비웠다. 값 기준 집계에서 빠진다.",
+  "package 는 파트너가 내놓은 것의 근거 문장이다. 따옴표 안은 원문 그대로, 그 밖은 원문을 옮겨 적은 것이다. package_src 에 번호가 없는 칸은 검색 요약에만 근거한다.",
+  "판정(verdict)은 AI 의 해석이며 다음 기준으로 냈다. ① 묶음: package 가 두 칸 이상 차 있고, 그 가운데 하나 이상이 임대 사업자라면 누구나 대는 것(부지·전력, 사업자 자신의 건설 자금)을 넘는다 — 국부·정부·전략 투자자의 자본, 정부·기업의 도입·구매 약속, 부품 공급. ② 입지: 랩 자신이 그 장소 고유의 조건(전력·기후·비용, 이용자와의 거리·지연시간, 그 나라 안에서 처리해야 하는 수요)을 이유로 들었거나, 이후의 보류·철회 사유가 입지 조건이었다. ①만이면 '묶음을 따라감', ②만이면 '입지를 따라감', 둘 다면 '둘 다', 둘 다 아니면 '판단 불가'. package 가 모두 비어 있는데도 간 건은 '입지를 따라감'으로 두고 반례로 모은다.",
+  "'그 나라 안에서 처리해야 하는 수요'(데이터 상주·주권 요건)는 입지 조건(배후 수요)으로, 파트너의 도입·구매 약속은 묶음의 수요 칸으로 갈랐다. 둘은 겹칠 수 있다(인도·독일).",
+  "serves 는 그 용량이 누구에게 쓰이는가에 대한 랩·파트너의 설명이다: '국내'(그 나라의 주권·상주 수요), '권역·세계'(나라 밖 이용자 포함), '불명'.",
+  "Mistral 의 프랑스 시설 3건은 본국 시설(home_country)이다. '랩이 왜 그 나라로 갔는가'의 사례가 아니므로 summary 는 전체(all)와 본국 제외(abroad)를 함께 낸다.",
+  "Google DeepMind 는 구글 본체 리전과 구분되는 해외 용량 건을 찾지 못해 기록이 없다(excluded 참고).",
+  "summary 의 demand_or_components_abroad 는 수요·부품 칸에 근거가 있는 건의 목록이다(기계적으로 센 것). 자본·전력부지 칸만 찬 건은 통상 임대와 묶음을 가르기 어렵다는 점을 보려고 따로 냈다.",
+  "stage 는 랩의 용량을 기준으로 지금까지 닿은 단계다. 파트너만 움직인 것(부지 매입 등)은 랩의 계약으로 세지 않았다.",
+  "status_now 는 2026-11-18 에 확인한 것이다. '불명'은 진척이 없다는 뜻이 아니라 확인하지 못했다는 뜻이다."
+ ],
+ "summary": {
+  "all": {
+   "records": 22,
+   "by_verdict": {
+    "묶음을 따라감": 6,
+    "입지를 따라감": 4,
+    "둘 다": 7,
+    "판단 불가": 5
+   },
+   "mw_by_verdict": {
+    "묶음을 따라감": 2590,
+    "입지를 따라감": 1118,
+    "둘 다": 1542,
+    "판단 불가": 131
+   },
+   "mw_total": 5381,
+   "no_mw": 6
+  },
+  "abroad": {
+   "records": 19,
+   "by_verdict": {
+    "묶음을 따라감": 5,
+    "입지를 따라감": 4,
+    "둘 다": 6,
+    "판단 불가": 4
+   },
+   "mw_by_verdict": {
+    "묶음을 따라감": 1190,
+    "입지를 따라감": 1118,
+    "둘 다": 1498,
+    "판단 불가": 121
+   },
+   "mw_total": 3927,
+   "no_mw": 6
+  },
+  "home_country": [
+   "mistral-fr-bruyeres-le-chatel",
+   "mistral-fr-campus-ia-fouju",
+   "mistral-fr-les-ulis"
+  ],
+  "by_lab": {
+   "OpenAI": 11,
+   "Anthropic": 3,
+   "xAI": 1,
+   "Google DeepMind": 0,
+   "Meta": 3,
+   "Mistral": 4
+  },
+  "by_stage_abroad": {
+   "착공": 2,
+   "MoU": 9,
+   "계약": 8
+  },
+  "by_flag_abroad": {
+   "진행": 6,
+   "취소": 1,
+   "보류": 1,
+   "지연": 2,
+   "불명": 9
+  },
+  "progress_by_verdict_abroad": {
+   "묶음을 따라감": {
+    "records": [
+     "openai-kr-sk-southwest",
+     "openai-kr-samsung-pohang",
+     "openai-ar-stargate-argentina",
+     "openai-jp-softbank-sakai",
+     "xai-sa-humain"
+    ],
+    "contract_or_beyond": [],
+    "construction_or_beyond": [],
+    "stalled": [
+     "openai-kr-sk-southwest",
+     "openai-kr-samsung-pohang"
+    ]
+   },
+   "입지를 따라감": {
+    "records": [
+     "openai-au-nextdc-s7",
+     "anthropic-ca-everwind-point-tupper",
+     "meta-ca-sturgeon-county",
+     "mistral-se-borlange-ecodatacenter"
+    ],
+    "contract_or_beyond": [
+     "anthropic-ca-everwind-point-tupper",
+     "meta-ca-sturgeon-county",
+     "mistral-se-borlange-ecodatacenter"
+    ],
+    "construction_or_beyond": [
+     "meta-ca-sturgeon-county"
+    ],
+    "stalled": []
+   },
+   "둘 다": {
+    "records": [
+     "openai-ae-stargate-uae",
+     "openai-no-stargate-norway",
+     "openai-gb-stargate-uk",
+     "openai-in-tata-hypervault",
+     "openai-de-openai-for-germany",
+     "meta-in-reliance-jamnagar"
+    ],
+    "contract_or_beyond": [
+     "openai-ae-stargate-uae",
+     "openai-in-tata-hypervault",
+     "meta-in-reliance-jamnagar"
+    ],
+    "construction_or_beyond": [
+     "openai-ae-stargate-uae"
+    ],
+    "stalled": [
+     "openai-no-stargate-norway",
+     "openai-gb-stargate-uk"
+    ]
+   },
+   "판단 불가": {
+    "records": [
+     "openai-my-firmus",
+     "anthropic-au-zerra-western-downs",
+     "anthropic-no-volta-tydal",
+     "meta-id-firmus-sea"
+    ],
+    "contract_or_beyond": [
+     "openai-my-firmus",
+     "anthropic-au-zerra-western-downs",
+     "anthropic-no-volta-tydal",
+     "meta-id-firmus-sea"
+    ],
+    "construction_or_beyond": [],
+    "stalled": []
+   }
+  },
+  "package_cells_abroad": {
+   "capital": 15,
+   "power_site": 18,
+   "demand": 8,
+   "components": 2
+  },
+  "demand_or_components_abroad": [
+   "openai-ae-stargate-uae",
+   "openai-gb-stargate-uk",
+   "openai-kr-sk-southwest",
+   "openai-kr-samsung-pohang",
+   "openai-in-tata-hypervault",
+   "openai-de-openai-for-germany",
+   "openai-jp-softbank-sakai",
+   "xai-sa-humain"
+  ],
+  "serves_abroad": {
+   "권역·세계": 5,
+   "국내": 6,
+   "불명": 8
+  }
+ },
+ "counter": [
+  {
+   "kind": "묶음이 모두 비어 있는데도 간 건",
+   "ids": [
+    "meta-ca-sturgeon-county"
+   ],
+   "note": "랩이 부지·자본·전력 비용을 스스로 댔다. 요청이 정의한 H2 의 반례다."
+  },
+  {
+   "kind": "통상 임대이고 랩이 입지·수요를 이유로 든 건",
+   "ids": [
+    "openai-au-nextdc-s7",
+    "anthropic-ca-everwind-point-tupper",
+    "mistral-se-borlange-ecodatacenter"
+   ],
+   "note": "파트너가 내놓은 것이 데이터센터 사업자의 통상 역할(부지·전력·자기 건설 자금)뿐이다."
+  },
+  {
+   "kind": "묶음이 있었는데 입지 조건 때문에 멈추거나 늦어진 건",
+   "ids": [
+    "openai-gb-stargate-uk",
+    "openai-kr-sk-southwest",
+    "openai-kr-samsung-pohang"
+   ],
+   "note": "영국은 전기요금·규제를 들어 보류했고, 한국은 부지·전력·용수와 자금 구조가 1년째 정해지지 않았다(한국 건의 사유는 익명 관계자와 회사 답변에 기댄 보도다)."
+  },
+  {
+   "kind": "입지는 남고 랩과의 묶음만 풀린 건",
+   "ids": [
+    "openai-no-stargate-norway"
+   ],
+   "note": "같은 부지가 다른 고객(Microsoft)용으로 계속 지어진다."
+  }
+ ],
+ "records": [
+  {
+   "id": "openai-ae-stargate-uae",
+   "lab": "OpenAI",
+   "country": "AE",
+   "city": "Abu Dhabi",
+   "site": "Stargate UAE (5GW UAE–U.S. AI Campus 안의 1GW 클러스터)",
+   "announced": "2025-05-22",
+   "value": 1000,
+   "unit": "MW",
+   "asof": "2025-05-22",
+   "basis": "발표된 클러스터 계획 용량. IT·수전 기준을 밝히지 않았다. 첫 200MW 는 2026년 가동 목표",
+   "mw": {
+    "value": 1000,
+    "basis": "unknown",
+    "certainty": "발표(계획)",
+    "phases": [
+     {
+      "value": 200,
+      "when": "2026",
+      "note": "첫 단계, 가동 목표"
+     }
+    ]
+   },
+   "stage": "착공",
+   "status_flag": "진행",
+   "status_now": "G42 는 2025-10 에 첫 200MW 의 토목·구조 공사가 진행 중이라고 밝혔다. 정리 사이트(2026-10-18 기준)는 첫 200MW 의 가동이 확인되지 않았고, Khazna 가 2026년 4분기 가동을 말했으며, 2026-09 에 5GW 캠퍼스를 여러 부지로 나누는 재설계 보도(로이터 인용)가 있었다고 적는다. 재설계 보도는 원문을 열지 못했다.",
+   "status_asof": "2026-11-18",
+   "partners": [
+    {
+     "name": "G42 / Khazna Data Centers",
+     "role": "개발·건설(현지)"
+    },
+    {
+     "name": "Oracle",
+     "role": "운영 파트너"
+    },
+    {
+     "name": "NVIDIA",
+     "role": "칩"
+    },
+    {
+     "name": "Cisco",
+     "role": "네트워크"
+    },
+    {
+     "name": "SoftBank",
+     "role": "파트너"
+    },
+    {
+     "name": "미국 정부",
+     "role": "조율"
+    }
+   ],
+   "package": {
+    "capital": "\"UAE investment into U.S. Stargate infrastructure\" — UAE 가 미국 Stargate 에 투자하는 맞교환 구조이고, 클러스터는 G42 계열 Khazna 가 개발한다.",
+    "power_site": "\"a 1GW large-scale AI infrastructure cluster being developed by Khazna Data Centers, a G42 company, within the 5GW UAE–U.S. AI Campus in Abu Dhabi\"",
+    "demand": "\"the UAE will become the first country in the world to enable ChatGPT nationwide\"",
+    "components": null
+   },
+   "package_src": {
+    "capital": [
+     1,
+     2
+    ],
+    "power_site": [
+     2
+    ],
+    "demand": [
+     1
+    ]
+   },
+   "lab_spend": "OpenAI 가 내는 금액은 공개되지 않았다.",
+   "siting_reason": [
+    {
+     "orig": "Stargate UAE has the potential to provide AI infrastructure and compute capacity within a 2,000-mile radius, reaching up to half the world's population.",
+     "ko": "Stargate UAE 는 반경 2,000마일 안, 세계 인구의 절반까지 AI 인프라와 컴퓨트를 댈 수 있다.",
+     "speaker": "OpenAI",
+     "src": 1
+    }
+   ],
+   "verdict": "둘 다",
+   "verdict_basis": "국부 자본의 맞교환 투자, 전국 단위 ChatGPT 도입, 현지 사업자의 부지·건설이 함께 왔다(묶음). 동시에 OpenAI 는 반경 2,000마일 안의 인구를 닿는 범위로 들었다(입지). 칩은 현지 파트너가 아니라 엔비디아가 공급한다.",
+   "serves": "권역·세계",
+   "serves_basis": "OpenAI 가 반경 2,000마일·세계 인구 절반을 닿는 범위로 밝혔다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "OpenAI — Introducing Stargate UAE",
+     "url": "https://openai.com/index/introducing-stargate-uae/",
+     "date": "2025-05-22",
+     "read": "full"
+    },
+    {
+     "n": 2,
+     "title": "G42 — Update on Construction of Stargate UAE (보도자료)",
+     "url": "https://www.prnewswire.com/news-releases/g42-provides-update-on-construction-of-stargate-uae-ai-infrastructure-cluster-302586430.html",
+     "date": "2025-10-16",
+     "read": "partial"
+    },
+    {
+     "n": 3,
+     "title": "stargate.how — Stargate infrastructure tracker(정리 사이트, 2026-10-18 기준)",
+     "url": "https://stargate.how/location",
+     "date": "2026-10-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "1GW 와 200MW 는 OpenAI 발표문 전문에서 확인했다. 5GW 는 캠퍼스 전체이고 이 건의 용량이 아니다."
+  },
+  {
+   "id": "openai-no-stargate-norway",
+   "lab": "OpenAI",
+   "country": "NO",
+   "city": "Narvik",
+   "site": "Stargate Norway (Kvandal)",
+   "announced": "2025-07-31",
+   "value": 230,
+   "unit": "MW",
+   "asof": "2025-07-31",
+   "basis": "발표된 부지 계획 용량. 290MW 추가는 '포부'로만 적혔다. OpenAI 몫은 공개된 적이 없다",
+   "mw": {
+    "value": 230,
+    "basis": "unknown",
+    "certainty": "발표(계획)",
+    "phases": [
+     {
+      "value": 230,
+      "when": "2026 말",
+      "note": "엔비디아 GPU 10만 장 목표(발표 당시)"
+     },
+     {
+      "value": 290,
+      "when": "미정",
+      "note": "추가 확장 '포부'"
+     }
+    ]
+   },
+   "stage": "MoU",
+   "status_flag": "취소",
+   "status_now": "OpenAI 의 직접 임차는 성사되지 않았다. 2026-04 에 Nscale 이 Narvik 캠퍼스에 엔비디아 Rubin GPU 3만 장 이상을 더해 Microsoft 에 빌려 준다고 발표했고, OpenAI 는 \"Microsoft 를 통해 노르웨이의 컴퓨트를 쓴다\"고 답했다. 부지 공사는 다른 고객을 두고 계속된다. 합작사는 2026-03 에 Nscale 로 합쳐졌다.",
+   "status_asof": "2026-11-18",
+   "partners": [
+    {
+     "name": "Nscale",
+     "role": "설계·건설·운영"
+    },
+    {
+     "name": "Aker",
+     "role": "합작 투자자(노르웨이 산업 그룹)"
+    },
+    {
+     "name": "Nordkraft",
+     "role": "전력(한국어 발표문에 표기)"
+    }
+   ],
+   "package": {
+    "capital": "\"expected to be owned by a 50/50 joint venture between Nscale and Aker\" — 보도(검색 요약)는 두 회사가 첫 20MW 단계에 약 10억 달러씩 댄다고 전했다.",
+    "power_site": "\"Narvik's abundant hydropower, low-cost energy, cool climate, and mature industrial base\" 의 부지를 Nscale 이 설계·건설한다.",
+    "demand": null,
+    "components": null
+   },
+   "package_src": {
+    "capital": [
+     1,
+     2
+    ],
+    "power_site": [
+     1
+    ]
+   },
+   "lab_spend": "없음. OpenAI 는 \"initial offtaker with the option to scale\" 로만 적혔다.",
+   "siting_reason": [
+    {
+     "orig": "Narvik's abundant hydropower, low-cost energy, cool climate, and mature industrial base make it an ideal location to deliver large-scale, sustainable AI capacity.",
+     "ko": "나르비크의 풍부한 수력, 싼 전기, 서늘한 기후, 성숙한 산업 기반이 대규모 AI 용량을 대기에 알맞다.",
+     "speaker": "OpenAI",
+     "src": 1
+    },
+    {
+     "orig": "I've always said we'd love to bring Stargate to Europe if the conditions are right, and we think we've found that in Narvik with clean, affordable energy, ideal climate, and great partners in Nscale and Aker.",
+     "ko": "조건이 맞으면 Stargate 를 유럽에 두고 싶다고 말해 왔고, 나르비크에서 깨끗하고 싼 에너지, 알맞은 기후, 좋은 파트너를 찾았다.",
+     "speaker": "Sam Altman",
+     "src": 3
+    }
+   ],
+   "verdict": "둘 다",
+   "verdict_basis": "노르웨이 산업 그룹과 사업자의 합작 자본·부지가 있었고(묶음), OpenAI 스스로 수력·전기요금·기후를 이유로 들었다(입지). 다만 OpenAI 의 계약은 끝내 맺어지지 않았고 같은 부지가 Microsoft 용으로 진행 중이다 — 입지는 남고 랩과의 묶음만 풀린 사례다.",
+   "serves": "권역·세계",
+   "serves_basis": "\"Surplus capacity will be made available to public and private sector users across the UK, Nordics and Northern Europe\"",
+   "sources": [
+    {
+     "n": 1,
+     "title": "OpenAI — Introducing Stargate Norway",
+     "url": "https://openai.com/index/introducing-stargate-norway/",
+     "date": "2025-07-31",
+     "read": "full"
+    },
+    {
+     "n": 2,
+     "title": "CNBC — OpenAI spearheads one of Europe's biggest data centers",
+     "url": "https://www.nbcdfw.com/news/business/money-report/openai-spearheads-one-of-europes-biggest-data-centers-with-100000-nvidia-chips/3897728/",
+     "date": "2025-07-31",
+     "read": "search_summary"
+    },
+    {
+     "n": 3,
+     "title": "ITPro — Has another OpenAI Stargate project hit the rocks?",
+     "url": "https://www.itpro.com/infrastructure/has-another-openai-stargate-project-hit-the-rocks",
+     "date": "2026-04-15",
+     "read": "partial"
+    },
+    {
+     "n": 4,
+     "title": "Bloomberg — Microsoft Takes Over Stargate Norway Data Center From OpenAI",
+     "url": "https://www.bloomberg.com/news/articles/2026-04-14/microsoft-takes-over-norway-openai-data-center-capacity",
+     "date": "2026-04-14",
+     "read": "search_summary"
+    },
+    {
+     "n": 5,
+     "title": "stargate.how — Stargate infrastructure tracker(정리 사이트, 2026-10-18 기준)",
+     "url": "https://stargate.how/location",
+     "date": "2026-10-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "230MW 는 OpenAI 발표문 전문에서 확인했다. 한국어 현지화 페이지는 같은 글을 '500MW 규모'로 옮겨 적어 영어 원문과 다르다(영어 원문을 따랐다). 10억 달러씩이라는 자본 규모는 검색 요약으로만 봤다."
+  },
+  {
+   "id": "openai-gb-stargate-uk",
+   "lab": "OpenAI",
+   "country": "GB",
+   "city": null,
+   "site": "Stargate UK (Cobalt Park 등 여러 부지)",
+   "announced": "2025-09-16",
+   "value": null,
+   "unit": "MW",
+   "asof": "2025-09-16",
+   "basis": "전력 용량은 발표되지 않았다. GPU 수만 공개: 2026년 1분기 최대 8,000장, 이후 31,000장까지",
+   "mw": {
+    "value": null,
+    "basis": "unknown",
+    "certainty": "발표(계획)"
+   },
+   "stage": "MoU",
+   "status_flag": "보류",
+   "status_now": "2026-04-09 OpenAI 가 보류를 확인했다. \"규제와 에너지 비용 같은 조건이 장기 인프라 투자를 가능하게 할 때 진행하겠다\"고 밝혔고 취소는 아니라고 했다. 보류 뒤 재개 소식은 찾지 못했다.",
+   "status_asof": "2026-11-18",
+   "partners": [
+    {
+     "name": "Nscale",
+     "role": "부지·운영"
+    },
+    {
+     "name": "NVIDIA",
+     "role": "GPU"
+    },
+    {
+     "name": "영국 정부",
+     "role": "2025-07 양해각서, AI 성장 구역 지정"
+    }
+   ],
+   "package": {
+    "capital": null,
+    "power_site": "Nscale 이 영국 내 계획을 늘리고 북동부 AI 성장 구역의 Cobalt Park 등 여러 부지를 쓴다고 발표했다.",
+    "demand": "2025-07 영국 정부와 맺은 양해각서(공공 서비스에 프런티어 AI 도입)와 '사법권이 중요한 영역'의 공공·금융·연구·안보용 수요를 겨냥했다. 구매 약속 금액은 없다.",
+    "components": null
+   },
+   "package_src": {
+    "power_site": [
+     1
+    ],
+    "demand": [
+     1,
+     2
+    ]
+   },
+   "lab_spend": "공개되지 않았다. OpenAI 가 GPU 를 Nscale 에서 빌리는 구조였다.",
+   "siting_reason": [
+    {
+     "orig": "The UK has been a longstanding pioneer of AI, and is now home to world-class researchers, millions of ChatGPT users, and a government that quickly recognized the potential of this technology.",
+     "ko": "영국은 오랜 AI 선구자이고 세계적 연구자와 수백만 ChatGPT 이용자가 있으며 정부가 이 기술의 잠재력을 일찍 알아봤다.",
+     "speaker": "Sam Altman",
+     "src": 1
+    },
+    {
+     "orig": "we continue to explore Stargate UK and will move forward when the right conditions such as regulation and the cost of energy enable long-term infrastructure investment.",
+     "ko": "Stargate UK 는 계속 검토하며, 규제와 에너지 비용 같은 조건이 장기 인프라 투자를 가능하게 할 때 진행하겠다.",
+     "speaker": "OpenAI 대변인",
+     "src": 2
+    }
+   ],
+   "verdict": "둘 다",
+   "verdict_basis": "정부 양해각서·성장 구역·현지 사업자가 함께 온 발표였다(묶음, 다만 자본·구매 약속은 없다). 그런데 보류 사유는 전기요금과 규제, 곧 입지 조건이었다. 묶음이 있어도 입지 조건 때문에 멈춘 사례다.",
+   "serves": "국내",
+   "serves_basis": "\"영국에서, 영국을 위해\" 운영하고 사법권이 중요한 용도에 쓴다고 밝혔다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "OpenAI — Introducing Stargate UK",
+     "url": "https://openai.com/index/introducing-stargate-uk/",
+     "date": "2025-09-16",
+     "read": "full"
+    },
+    {
+     "n": 2,
+     "title": "The Register — OpenAI puts Stargate UK on ice, blames energy costs and red tape",
+     "url": "https://www.theregister.com/2026/04/09/openai_puts_stargate_uk_on/",
+     "date": "2026-04-09",
+     "read": "partial"
+    },
+    {
+     "n": 3,
+     "title": "stargate.how — Stargate infrastructure tracker(정리 사이트, 2026-10-18 기준)",
+     "url": "https://stargate.how/location",
+     "date": "2026-10-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "med",
+   "note": "발표문은 한국어 현지화 페이지 전문으로 읽었고 Altman 발언의 영어 문구는 영어판 발표문의 것이다. 전력 용량이 없어 값은 비워 둔다."
+  },
+  {
+   "id": "openai-kr-sk-southwest",
+   "lab": "OpenAI",
+   "country": "KR",
+   "city": "전남(서남권)",
+   "site": "SK텔레콤과의 AI 데이터센터(서남권)",
+   "announced": "2025-10-01",
+   "value": 20,
+   "unit": "MW",
+   "asof": "2025-10-01",
+   "basis": "보도된 초기 용량(곳당 20MW). 회사 발표문에는 용량이 없고 확정되지 않았다",
+   "mw": {
+    "value": 20,
+    "basis": "unknown",
+    "certainty": "보도"
+   },
+   "stage": "MoU",
+   "status_flag": "지연",
+   "status_now": "착공하지 않았다. 과기정통부 장관이 2026-02 국회에서 3월 착공을 말했으나, 2026-09 보도에서 삼성SDS 는 \"확정된 것이 없고 결정은 OpenAI 몫\", SK텔레콤은 \"양해각서 뒤 진전이 없고 OpenAI 의 수요가 확정되지 않았다\"고 했다. 익명의 업계 관계자는 전력·용수를 감당할 부지 확보가 어렵다고 했다. OpenAI 코리아는 2026-09-09 \"지난해 10월에 그린 설계가 지금 필요한 것과 달라졌다\"며 연내에 진척을 알리겠다고 했다.",
+   "status_asof": "2026-11-18",
+   "partners": [
+    {
+     "name": "SK텔레콤",
+     "role": "구축·운영(검토)"
+    },
+    {
+     "name": "과학기술정보통신부",
+     "role": "양해각서(수도권 밖 데이터센터 검토)"
+    },
+    {
+     "name": "삼성전자·SK하이닉스",
+     "role": "메모리 공급 의향"
+    }
+   ],
+   "package": {
+    "capital": null,
+    "power_site": "\"a separate partnership with SK Telecom to explore building an AI data center in Korea, as well as an agreement with Samsung C&T, Samsung Heavy Industries, and Samsung SDS to assess opportunities for additional data center capacity\" — 부지·전력은 정해지지 않았다.",
+    "demand": "\"Samsung and SK will also look to deploy ChatGPT Enterprise and API capabilities into their operations\"",
+    "components": "\"Samsung Electronics and SK hynix plan to scale up production of advanced memory chips, targeting 900,000 DRAM wafer starts per month\""
+   },
+   "package_src": {
+    "power_site": [
+     1
+    ],
+    "demand": [
+     1
+    ],
+    "components": [
+     1
+    ]
+   },
+   "lab_spend": "공개되지 않았다. 합작 형태라는 보도가 있으나 삼성SDS·SK텔레콤 모두 확정된 것이 없다고 했다.",
+   "siting_reason": [
+    {
+     "orig": "Korea has all the ingredients to be a global leader in AI—incredible tech talent, world-class infrastructure, strong government support, and a thriving AI ecosystem.",
+     "ko": "한국은 AI 선도국이 될 재료를 다 갖췄다 — 기술 인재, 세계적 인프라, 정부 지원, 활발한 생태계.",
+     "speaker": "Sam Altman",
+     "src": 1
+    },
+    {
+     "orig": "Altman said he wants to return the benefits of this important partnership to Korea, which is why the companies are investing in AI data centers — one each in South Jeolla and in Pohang",
+     "ko": "올트먼은 이 중요한 협력의 혜택을 한국에 돌려주고 싶다고 했고, 그래서 전남과 포항에 하나씩 AI 데이터센터에 투자하는 것이다.",
+     "speaker": "Kim Yong-beom(기사 표기 'then-presidential chief of staff', 보도 인용)",
+     "src": 3
+    }
+   ],
+   "verdict": "묶음을 따라감",
+   "verdict_basis": "메모리 공급 의향, 계열사의 ChatGPT 도입, 정부 양해각서가 한 날 함께 발표됐고, 대통령실은 데이터센터를 '협력의 혜택을 돌려주는 것'으로 설명했다. OpenAI 가 이 장소를 고른 입지 이유는 일반적인 칭찬뿐이다. 1년이 지나도록 부지·전력·자금이 정해지지 않았다.",
+   "serves": "불명",
+   "serves_basis": "발표문에 누구에게 쓸 용량인지 적혀 있지 않다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "OpenAI — Samsung and SK join OpenAI's Stargate initiative",
+     "url": "https://openai.com/index/samsung-and-sk-join-stargate/",
+     "date": "2025-10-01",
+     "read": "full"
+    },
+    {
+     "n": 2,
+     "title": "아시아경제 — OpenAI Accelerates Collaboration with Samsung and SK... Korea Data Center Groundbreaking in March",
+     "url": "https://www.asiae.co.kr/en/article/2026021115561476013",
+     "date": "2026-02-11",
+     "read": "partial"
+    },
+    {
+     "n": 3,
+     "title": "Korea JoongAng Daily — OpenAI's Stargate Korea data center plans stall amid power and funding hurdles",
+     "url": "https://www.koreajoongangdaily.com/business/openais-stargate-project-in-korea-stuck-at-starting-gate-as-samsung-sk-report-little-progress/12856484",
+     "date": "2026-09-07",
+     "read": "partial"
+    },
+    {
+     "n": 4,
+     "title": "Korea JoongAng Daily — Stargate Korea progress update coming within the year, OpenAI says",
+     "url": "https://www.koreajoongangdaily.com/business/stargate-korea-progress-update-coming-within-the-year-openai-says/12867728",
+     "date": "2026-09-09",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    2
+   ],
+   "alt": [],
+   "conf": "low",
+   "note": "20MW 는 '알려졌다'는 보도 값이라 신뢰도를 낮게 둔다. 삼성과 SK 건은 같은 날 같은 발표문으로 나와 묶음 칸의 근거 문장이 같다."
+  },
+  {
+   "id": "openai-kr-samsung-pohang",
+   "lab": "OpenAI",
+   "country": "KR",
+   "city": "포항",
+   "site": "삼성(삼성SDS·삼성물산·삼성중공업)과의 데이터센터(포항)",
+   "announced": "2025-10-01",
+   "value": 20,
+   "unit": "MW",
+   "asof": "2025-10-01",
+   "basis": "보도된 초기 용량(곳당 20MW). 회사 발표문에는 용량이 없고 확정되지 않았다",
+   "mw": {
+    "value": 20,
+    "basis": "unknown",
+    "certainty": "보도"
+   },
+   "stage": "MoU",
+   "status_flag": "지연",
+   "status_now": "착공하지 않았다. 과기정통부 장관이 2026-02 국회에서 3월 착공을 말했으나, 2026-09 보도에서 삼성SDS 는 \"확정된 것이 없고 결정은 OpenAI 몫\", SK텔레콤은 \"양해각서 뒤 진전이 없고 OpenAI 의 수요가 확정되지 않았다\"고 했다. 익명의 업계 관계자는 전력·용수를 감당할 부지 확보가 어렵다고 했다. OpenAI 코리아는 2026-09-09 \"지난해 10월에 그린 설계가 지금 필요한 것과 달라졌다\"며 연내에 진척을 알리겠다고 했다.",
+   "status_asof": "2026-11-18",
+   "partners": [
+    {
+     "name": "삼성SDS·삼성물산·삼성중공업",
+     "role": "구축·운영(검토)"
+    },
+    {
+     "name": "과학기술정보통신부",
+     "role": "양해각서(수도권 밖 데이터센터 검토)"
+    },
+    {
+     "name": "삼성전자·SK하이닉스",
+     "role": "메모리 공급 의향"
+    }
+   ],
+   "package": {
+    "capital": null,
+    "power_site": "\"a separate partnership with SK Telecom to explore building an AI data center in Korea, as well as an agreement with Samsung C&T, Samsung Heavy Industries, and Samsung SDS to assess opportunities for additional data center capacity\" — 부지·전력은 정해지지 않았다.",
+    "demand": "\"Samsung and SK will also look to deploy ChatGPT Enterprise and API capabilities into their operations\"",
+    "components": "\"Samsung Electronics and SK hynix plan to scale up production of advanced memory chips, targeting 900,000 DRAM wafer starts per month\""
+   },
+   "package_src": {
+    "power_site": [
+     1
+    ],
+    "demand": [
+     1
+    ],
+    "components": [
+     1
+    ]
+   },
+   "lab_spend": "공개되지 않았다. 합작 형태라는 보도가 있으나 삼성SDS·SK텔레콤 모두 확정된 것이 없다고 했다.",
+   "siting_reason": [
+    {
+     "orig": "Korea has all the ingredients to be a global leader in AI—incredible tech talent, world-class infrastructure, strong government support, and a thriving AI ecosystem.",
+     "ko": "한국은 AI 선도국이 될 재료를 다 갖췄다 — 기술 인재, 세계적 인프라, 정부 지원, 활발한 생태계.",
+     "speaker": "Sam Altman",
+     "src": 1
+    },
+    {
+     "orig": "Altman said he wants to return the benefits of this important partnership to Korea, which is why the companies are investing in AI data centers — one each in South Jeolla and in Pohang",
+     "ko": "올트먼은 이 중요한 협력의 혜택을 한국에 돌려주고 싶다고 했고, 그래서 전남과 포항에 하나씩 AI 데이터센터에 투자하는 것이다.",
+     "speaker": "Kim Yong-beom(기사 표기 'then-presidential chief of staff', 보도 인용)",
+     "src": 3
+    }
+   ],
+   "verdict": "묶음을 따라감",
+   "verdict_basis": "메모리 공급 의향, 계열사의 ChatGPT 도입, 정부 양해각서가 한 날 함께 발표됐고, 대통령실은 데이터센터를 '협력의 혜택을 돌려주는 것'으로 설명했다. OpenAI 가 이 장소를 고른 입지 이유는 일반적인 칭찬뿐이다. 1년이 지나도록 부지·전력·자금이 정해지지 않았다.",
+   "serves": "불명",
+   "serves_basis": "발표문에 누구에게 쓸 용량인지 적혀 있지 않다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "OpenAI — Samsung and SK join OpenAI's Stargate initiative",
+     "url": "https://openai.com/index/samsung-and-sk-join-stargate/",
+     "date": "2025-10-01",
+     "read": "full"
+    },
+    {
+     "n": 2,
+     "title": "아시아경제 — OpenAI Accelerates Collaboration with Samsung and SK... Korea Data Center Groundbreaking in March",
+     "url": "https://www.asiae.co.kr/en/article/2026021115561476013",
+     "date": "2026-02-11",
+     "read": "partial"
+    },
+    {
+     "n": 3,
+     "title": "Korea JoongAng Daily — OpenAI's Stargate Korea data center plans stall amid power and funding hurdles",
+     "url": "https://www.koreajoongangdaily.com/business/openais-stargate-project-in-korea-stuck-at-starting-gate-as-samsung-sk-report-little-progress/12856484",
+     "date": "2026-09-07",
+     "read": "partial"
+    },
+    {
+     "n": 4,
+     "title": "Korea JoongAng Daily — Stargate Korea progress update coming within the year, OpenAI says",
+     "url": "https://www.koreajoongangdaily.com/business/stargate-korea-progress-update-coming-within-the-year-openai-says/12867728",
+     "date": "2026-09-09",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    2
+   ],
+   "alt": [],
+   "conf": "low",
+   "note": "20MW 는 '알려졌다'는 보도 값이라 신뢰도를 낮게 둔다. 삼성과 SK 건은 같은 날 같은 발표문으로 나와 묶음 칸의 근거 문장이 같다."
+  },
+  {
+   "id": "openai-ar-stargate-argentina",
+   "lab": "OpenAI",
+   "country": "AR",
+   "city": "Patagonia",
+   "site": "Stargate Argentina",
+   "announced": "2025-10-10",
+   "value": 500,
+   "unit": "MW",
+   "asof": "2025-10-10",
+   "basis": "아르헨티나 정부가 밝힌 '최대 500MW'. 의향서 단계이고 OpenAI 발표문에는 용량이 없다",
+   "mw": {
+    "value": 500,
+    "basis": "unknown",
+    "certainty": "최대(의향서)"
+   },
+   "stage": "MoU",
+   "status_flag": "불명",
+   "status_now": "의향서 뒤의 진척을 원문으로 확인하지 못했다. 정리 사이트 요약(검색 결과)은 2026-05 아르헨티나 경제부가 정식 신청을 받지 못했다고 밝혔다고 전한다. 부지와 착공 시점은 발표된 적이 없다.",
+   "status_asof": "2026-11-18",
+   "partners": [
+    {
+     "name": "Sur Energy",
+     "role": "에너지·인프라 개발, 컨소시엄 구성"
+    },
+    {
+     "name": "아르헨티나 정부",
+     "role": "대형 투자 유인 제도(RIGI) 적용"
+    }
+   ],
+   "package": {
+    "capital": "정부 발표 기준 최대 250억 달러 투자를 Sur Energy 가 이끄는 컨소시엄이 맡고, 30년 세제·관세 혜택(RIGI) 틀로 짠다.",
+    "power_site": "\"Sur Energy would be the energy and infrastructure developer and lead the formation of a consortium, including partnering with a cloud infrastructure developer.\"",
+    "demand": null,
+    "components": null
+   },
+   "package_src": {
+    "capital": [
+     2,
+     3
+    ],
+    "power_site": [
+     1
+    ]
+   },
+   "lab_spend": "없음. \"OpenAI welcomes the potential opportunity to become an offtaker.\"",
+   "siting_reason": [
+    {
+     "orig": "Argentina has great potential to host the first Stargate project in Latin America. Powered by clean energy, this landmark infrastructure initiative would help position the country as a regional and global leader in artificial intelligence",
+     "ko": "아르헨티나는 중남미 첫 Stargate 를 둘 잠재력이 크다. 청정 에너지로 돌아가는 이 사업은 아르헨티나를 권역·세계의 AI 선도국으로 세우는 데 도움이 될 것이다.",
+     "speaker": "OpenAI",
+     "src": 1
+    },
+    {
+     "orig": "It combines our unique renewable energy potential with the development of critical infrastructure for artificial intelligence on a global scale.",
+     "ko": "우리의 독보적인 재생에너지 잠재력과 세계 규모의 AI 핵심 인프라 개발을 묶는다.",
+     "speaker": "Emiliano Kargieman(Sur Energy)",
+     "src": 1
+    }
+   ],
+   "verdict": "묶음을 따라감",
+   "verdict_basis": "사업을 이끄는 쪽은 현지 개발사이고 자본·전력·부지와 정부 유인책이 그쪽에서 나온다. OpenAI 는 '잠재적 구매자'로만 적혔고 장소 고유의 이유를 스스로 들지 않았다(재생에너지를 든 것은 파트너다).",
+   "serves": "불명",
+   "serves_basis": "누구에게 쓸 용량인지 밝히지 않았다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "OpenAI — Argentina's AI opportunity",
+     "url": "https://openai.com/global-affairs/argentinas-ai-opportunity/",
+     "date": "2025-10-14",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "Buenos Aires Herald — Argentine government and OpenAI announce project to build data center in Patagonia",
+     "url": "https://buenosairesherald.com/business/argentine-government-and-openai-announce-project-to-build-data-center-in-patagonia",
+     "date": "2025-10-10",
+     "read": "partial"
+    },
+    {
+     "n": 3,
+     "title": "Buenos Aires Times — OpenAI, Sur Energy to build massive AI data centre in Patagonia",
+     "url": "https://www.batimes.com.ar/news/economy/openai-sur-energy-to-build-massive-ai-data-centre-in-patagonia.phtml",
+     "date": "2025-10-10",
+     "read": "partial"
+    },
+    {
+     "n": 4,
+     "title": "presenc.ai — Stargate Project Status Report 2026(정리 사이트)",
+     "url": "https://presenc.ai/research/stargate-project-status-2026",
+     "date": "2026",
+     "read": "search_summary"
+    }
+   ],
+   "value_src": [
+    2,
+    3
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "500MW 와 250억 달러는 정부 발표를 옮긴 기사 두 편을 열어 확인했다. OpenAI 글의 날짜(10-14)와 정부 발표일(10-10)이 다르며 발표일은 정부 쪽을 따랐다."
+  },
+  {
+   "id": "openai-au-nextdc-s7",
+   "lab": "OpenAI",
+   "country": "AU",
+   "city": "Sydney",
+   "site": "NEXTDC S7 (Eastern Creek)",
+   "announced": "2025-12-04",
+   "value": null,
+   "unit": "MW",
+   "asof": "2025-12-04",
+   "basis": "양해각서에 용량이 없다. 보도에 550MW·650MW 가 있으나 원문으로 확인하지 못했다",
+   "mw": {
+    "value": null,
+    "basis": "unknown",
+    "certainty": "양해각서"
+   },
+   "stage": "MoU",
+   "status_flag": "불명",
+   "status_now": "구속력 없는 양해각서 단계 그대로다. NEXTDC 는 승인을 얻는 것을 조건으로 S7 첫 단계를 2027년 하반기에 낸다고 했다. 정리 사이트(2026-10-18)는 최종 계약 소식이 없다고 적는다.",
+   "status_asof": "2026-11-18",
+   "partners": [
+    {
+     "name": "NEXTDC",
+     "role": "부지·개발·운영(호주 상장 데이터센터 사업자)"
+    }
+   ],
+   "package": {
+    "capital": "NEXTDC 가 S7 캠퍼스를 개발한다(보도 기준 70억 호주달러 이상). 발표문에는 금액이 없다.",
+    "power_site": "\"a next-generation hyperscale AI campus and large-scale GPU supercluster at NEXTDC's S7 site in Eastern Creek, Sydney\"",
+    "demand": null,
+    "components": null
+   },
+   "package_src": {
+    "capital": [
+     2
+    ],
+    "power_site": [
+     1
+    ]
+   },
+   "lab_spend": "없음. \"OpenAI intends to be an initial offtaker with the option to scale over time.\"",
+   "siting_reason": [
+    {
+     "orig": "This would provide Australia with the sovereign compute capacity needed to support sensitive and mission-critical workloads across government, enterprise, research and national infrastructure.",
+     "ko": "정부·기업·연구·국가 기반시설의 민감하고 중요한 작업에 필요한 주권 컴퓨트를 호주에 준다.",
+     "speaker": "OpenAI",
+     "src": 1
+    },
+    {
+     "orig": "It recognises Australia's strengths in data centre infrastructure, and status as a Five Eyes nation.",
+     "ko": "호주의 데이터센터 인프라 강점과 파이브 아이즈 국가라는 지위를 인정한 것이다.",
+     "speaker": "NEXTDC",
+     "src": 2
+    }
+   ],
+   "verdict": "입지를 따라감",
+   "verdict_basis": "파트너가 내놓은 것은 데이터센터 사업자의 통상 역할(부지·개발)뿐이고 자본 투자·구매 약속·부품은 없다. OpenAI 가 든 이유는 호주 안에서 처리해야 하는 정부·기업 수요다.",
+   "serves": "국내",
+   "serves_basis": "호주의 주권 컴퓨트, 정부·기업·연구의 민감한 작업용이라고 밝혔다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "OpenAI — Introducing OpenAI for Australia",
+     "url": "https://openai.com/global-affairs/openai-for-australia/",
+     "date": "2025-12-04",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "NEXTDC — NEXTDC to Join OpenAI in Australia as an Infrastructure Partner",
+     "url": "https://www.nextdc.com/news/nextdc-and-openai-partner-to-expand-ai-infrastructure-in-australia",
+     "date": "2025-12-05",
+     "read": "partial"
+    },
+    {
+     "n": 3,
+     "title": "stargate.how — Stargate infrastructure tracker(정리 사이트, 2026-10-18 기준)",
+     "url": "https://stargate.how/location",
+     "date": "2026-10-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "med",
+   "note": "용량이 양해각서에 없어 값을 비웠다. 발표일은 OpenAI 글의 날짜(미국 시각)이고 NEXTDC 공시는 12-05 다."
+  },
+  {
+   "id": "openai-in-tata-hypervault",
+   "lab": "OpenAI",
+   "country": "IN",
+   "city": null,
+   "site": "TCS HyperVault",
+   "announced": "2026-02-18",
+   "value": 100,
+   "unit": "MW",
+   "asof": "2026-02-18",
+   "basis": "\"beginning with 100 megawatts of capacity and with potential to scale to 1 gigawatt over time\". 1GW 는 가능성으로만 적혔다",
+   "mw": {
+    "value": 100,
+    "basis": "unknown",
+    "certainty": "발표(시작 용량)",
+    "phases": [
+     {
+      "value": 100,
+      "when": "미정",
+      "note": "시작 용량"
+     },
+     {
+      "value": 1000,
+      "when": "미정",
+      "note": "가능성으로 적힌 확장"
+     }
+    ]
+   },
+   "stage": "계약",
+   "status_flag": "불명",
+   "status_now": "발표 뒤 착공·가동 소식을 찾지 못했다. 검색 요약으로는 HyperVault 가 하이데라바드에 264에이커 부지를 확보했다고 하나 원문으로 확인하지 못했다.",
+   "status_asof": "2026-11-18",
+   "partners": [
+    {
+     "name": "Tata Group / Tata Consultancy Services",
+     "role": "데이터센터 사업(HyperVault)과 대규모 도입 고객"
+    }
+   ],
+   "package": {
+    "capital": "TCS 의 데이터센터 사업 HyperVault 가 용량을 짓고 OpenAI 는 첫 고객이다.",
+    "power_site": "\"OpenAI will become the first customer of Tata Consultancy Services' HyperVault data center business\"",
+    "demand": "\"Tata Group plans to deploy ChatGPT Enterprise across its employees over the next several years, starting with hundreds of thousands of TCS employees\"",
+    "components": null
+   },
+   "package_src": {
+    "capital": [
+     1
+    ],
+    "power_site": [
+     1
+    ],
+    "demand": [
+     1
+    ]
+   },
+   "lab_spend": "공개되지 않았다. OpenAI 는 용량의 고객이다.",
+   "siting_reason": [
+    {
+     "orig": "This infrastructure will enable OpenAI's most advanced models to run securely in India, delivering lower latency while meeting data residency, security, and compliance requirements for mission-critical and government workloads.",
+     "ko": "이 인프라로 OpenAI 의 최신 모델을 인도 안에서 돌려 지연시간을 줄이고, 중요 업무·정부 업무의 데이터 상주·보안·규정 요건을 맞춘다.",
+     "speaker": "OpenAI",
+     "src": 1
+    },
+    {
+     "orig": "As of this month, India is home to more than 100 million weekly ChatGPT users",
+     "ko": "이달 기준 인도의 ChatGPT 주간 이용자는 1억 명을 넘는다.",
+     "speaker": "OpenAI",
+     "src": 1
+    }
+   ],
+   "verdict": "둘 다",
+   "verdict_basis": "용량을 대는 타타가 동시에 수십만 명 규모의 도입 고객이다(묶음). OpenAI 스스로는 인도 안의 이용자 1억 명, 지연시간, 데이터 상주 요건을 이유로 들었다(입지 — 배후 수요).",
+   "serves": "국내",
+   "serves_basis": "인도 안에서 모델을 돌려 데이터 상주·정부 업무 요건을 맞춘다고 밝혔다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "OpenAI — Introducing OpenAI for India",
+     "url": "https://openai.com/index/openai-for-india/",
+     "date": "2026-02-18",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "TechCrunch — OpenAI taps Tata for 100MW AI data center capacity in India, eyes 1GW",
+     "url": "https://techcrunch.com/2026/02/18/openai-taps-tata-for-100mw-ai-data-center-capacity-in-india-eyes-1gw/",
+     "date": "2026-02-18",
+     "read": "search_summary"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "100MW 와 1GW 가능성은 OpenAI 발표문에서 확인했다."
+  },
+  {
+   "id": "openai-my-firmus",
+   "lab": "OpenAI",
+   "country": "MY",
+   "city": null,
+   "site": "Firmus AI Factory 두 곳(위치 미공개)",
+   "announced": "2026-09-08",
+   "value": null,
+   "unit": "MW",
+   "asof": "2026-09-08",
+   "basis": "OpenAI 몫의 용량·금액·위치가 공개되지 않았다. 900MW 는 Firmus 의 전체 고객 계약 합계다",
+   "mw": {
+    "value": null,
+    "basis": "unknown",
+    "certainty": "계약(용량 미공개)"
+   },
+   "stage": "계약",
+   "status_flag": "불명",
+   "status_now": "Firmus 는 개발 중인 다섯 곳의 가동 목표를 24개월 안이라고만 했다. 정리 사이트(2026-10-18)는 Firmus 가 10-09 에 호주 상장을 철회하고 사모 조달로 돌렸으며 계약은 유지된다고 적는다.",
+   "status_asof": "2026-11-18",
+   "partners": [
+    {
+     "name": "Firmus",
+     "role": "AI 팩토리 개발·운영(호주, 엔비디아 투자)"
+    },
+    {
+     "name": "NVIDIA",
+     "role": "Vera Rubin NVL72 시스템"
+    }
+   ],
+   "package": {
+    "capital": "Firmus 가 자기 자금으로 짓는다(사업자의 통상 역할).",
+    "power_site": "\"OpenAI will contract dedicated AI compute capacity from two Firmus AI Factory sites in Malaysia\"",
+    "demand": null,
+    "components": null
+   },
+   "package_src": {
+    "capital": [
+     1
+    ],
+    "power_site": [
+     1
+    ]
+   },
+   "lab_spend": "공개되지 않았다(다년 용량 계약).",
+   "siting_reason": [
+    {
+     "orig": "This multi-year partnership marks the moment Asia-Pacific becomes a producer of intelligence, not just a consumer of it",
+     "ko": "이 다년 협력은 아시아·태평양이 지능의 소비자에서 생산자가 되는 순간이다.",
+     "speaker": "Tim Rosenfield(Firmus)",
+     "src": 1
+    }
+   ],
+   "verdict": "판단 불가",
+   "verdict_basis": "사업자의 통상 임대이고 OpenAI 가 말레이시아를 고른 이유를 밝힌 글을 찾지 못했다. 위치와 용량도 공개되지 않았다.",
+   "serves": "불명",
+   "serves_basis": "누구에게 쓸 용량인지 밝히지 않았다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Firmus — Firmus surpasses 900 MW contracted capacity, adds OpenAI as anchor customer and expands into Malaysia",
+     "url": "https://firmus.co/newsroom/firmus-surpasses-900-mw-contracted-capacity-adds-openai-as-anchor-customer-and-expands-into-malaysia",
+     "date": "2026-09-08",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "stargate.how — Stargate infrastructure tracker(정리 사이트, 2026-10-18 기준)",
+     "url": "https://stargate.how/location",
+     "date": "2026-10-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "med",
+   "note": "OpenAI 쪽 발표문은 찾지 못했고 Firmus 발표문만 읽었다."
+  },
+  {
+   "id": "openai-de-openai-for-germany",
+   "lab": "OpenAI",
+   "country": "DE",
+   "city": null,
+   "site": "OpenAI for Germany (SAP Delos Cloud)",
+   "announced": "2025-09-24",
+   "value": null,
+   "unit": "MW",
+   "asof": "2025-09-24",
+   "basis": "전력 용량은 발표되지 않았다. SAP 가 Delos Cloud 를 AI 용 GPU 4,000장으로 늘린다고만 밝혔다",
+   "mw": {
+    "value": null,
+    "basis": "unknown",
+    "certainty": "발표(GPU 수)"
+   },
+   "stage": "MoU",
+   "status_flag": "불명",
+   "status_now": "2026년 출시 계획이라고 발표됐다. 출시 여부는 이번에 확인하지 못했다. 협력 발표이고 용량 계약은 공개되지 않아 단계를 발표(MoU)로 적었다.",
+   "status_asof": "2026-11-18",
+   "partners": [
+    {
+     "name": "SAP / Delos Cloud",
+     "role": "주권 클라우드 운영·투자"
+    },
+    {
+     "name": "Microsoft",
+     "role": "Azure 기술"
+    }
+   ],
+   "package": {
+    "capital": "\"SAP plans to expand the existing infrastructure of Delos Cloud in Germany to 4000 GPUs for AI workloads.\"",
+    "power_site": "SAP 자회사 Delos Cloud 의 독일 내 기존 인프라(Microsoft Azure 기술)를 쓴다.",
+    "demand": "독일 공공 부문이 대상이다 — \"enable millions of public sector employees to use AI safely and responsibly\". 구매 약속 금액은 없다.",
+    "components": null
+   },
+   "package_src": {
+    "capital": [
+     1
+    ],
+    "power_site": [
+     1
+    ],
+    "demand": [
+     1
+    ]
+   },
+   "lab_spend": "공개되지 않았다. 인프라 투자는 SAP 가 한다.",
+   "siting_reason": [
+    {
+     "orig": "To ensure sovereignty, OpenAI for Germany will be supported by SAP's subsidiary Delos Cloud, running on Microsoft Azure technology.",
+     "ko": "주권을 지키려고 SAP 자회사 Delos Cloud 가 Microsoft Azure 기술로 받친다.",
+     "speaker": "SAP·OpenAI",
+     "src": 1
+    }
+   ],
+   "verdict": "둘 다",
+   "verdict_basis": "투자와 운영, 공공 부문 판로를 SAP 가 내놓았고(묶음), 독일 안에서 처리해야 하는 공공 부문 수요가 이유다(입지 — 배후 수요). 랩의 전용 캠퍼스가 아니라 파트너 클라우드 안의 용량이다.",
+   "serves": "국내",
+   "serves_basis": "독일 공공 부문의 데이터 주권·법 요건을 맞추는 용도라고 밝혔다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "OpenAI·SAP — SAP and OpenAI partner to launch sovereign 'OpenAI for Germany'",
+     "url": "https://openai.com/global-affairs/openai-for-germany/",
+     "date": "2025-09-24",
+     "read": "partial"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "med",
+   "note": "랩이 직접 빌리는 용량이 아니라 파트너가 랩의 모델을 돌리려고 늘리는 용량이라 다른 건과 성격이 다르다."
+  },
+  {
+   "id": "openai-jp-softbank-sakai",
+   "lab": "OpenAI",
+   "country": "JP",
+   "city": "Osaka(Sakai)",
+   "site": "소프트뱅크 사카이 데이터센터(옛 샤프 공장)",
+   "announced": "2025-03-14",
+   "value": 150,
+   "unit": "MW",
+   "asof": "2025-03-14",
+   "basis": "소프트뱅크가 밝힌 전력 용량: 처음 약 150MW, 이후 240MW 이상. OpenAI 몫은 공개된 적이 없다",
+   "mw": {
+    "value": 150,
+    "basis": "utility",
+    "certainty": "계획(수전)",
+    "phases": [
+     {
+      "value": 150,
+      "when": "2026",
+      "note": "처음"
+     },
+     {
+      "value": 240,
+      "when": "미정",
+      "note": "이후 '240MW 이상'"
+     }
+    ]
+   },
+   "stage": "MoU",
+   "status_flag": "불명",
+   "status_now": "부지는 소프트뱅크가 샀지만 OpenAI 의 용량 계약은 공개된 적이 없어 단계를 발표(MoU)로 적었다. 소프트뱅크는 2026년 가동을 목표로 한다고 했다. 가동 여부와 OpenAI 가 실제로 쓰는지는 확인하지 못했다. 소프트뱅크는 이 부지가 OpenAI 모델 사업용이냐는 질문에 합작 발표를 가리켰고 OpenAI 는 답하지 않았다.",
+   "status_asof": "2026-11-18",
+   "partners": [
+    {
+     "name": "SoftBank",
+     "role": "부지 매입·데이터센터 운영, OpenAI 투자자"
+    },
+    {
+     "name": "SB OpenAI Japan",
+     "role": "소프트뱅크·OpenAI 합작사"
+    }
+   ],
+   "package": {
+    "capital": "소프트뱅크가 샤프 사카이 공장의 땅과 건물을 1,000억 엔(6억 7,600만 달러)에 샀고, OpenAI 에 투자하는 주주이기도 하다.",
+    "power_site": "\"SoftBank expects the LCD panel factory to have sufficient power capacity to operate the AI data center, initially at around 150 megawatts and eventually increasing to over 240 megawatts.\"",
+    "demand": "합작사 SB OpenAI Japan 이 고객사 데이터로 모델을 맞춰 AI 에이전트를 판다(닛케이 보도 인용).",
+    "components": null
+   },
+   "package_src": {
+    "capital": [
+     1
+    ],
+    "power_site": [
+     1
+    ],
+    "demand": [
+     1
+    ]
+   },
+   "lab_spend": "공개되지 않았다. 부지와 설비는 소프트뱅크가 댄다.",
+   "siting_reason": [],
+   "verdict": "묶음을 따라감",
+   "verdict_basis": "부지·전력·자본을 소프트뱅크가 대고 합작사가 판로를 맡는다. OpenAI 가 이 장소를 고른 이유를 밝힌 적이 없다. 이 부지가 OpenAI 의 용량이라는 연결 자체가 보도에 기댄 것이라 신뢰도가 낮다.",
+   "serves": "국내",
+   "serves_basis": "일본 기업 고객용 에이전트 사업을 위한 것이라고 보도됐다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "TechCrunch — SoftBank buys $676M old Sharp plant for its OpenAI collab in Japan",
+     "url": "https://techcrunch.com/2025/03/14/softbank-buys-676m-old-sharp-plant-for-its-openai-collab-in-japan/",
+     "date": "2025-03-14",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "low",
+   "note": "금액 환산은 기사의 것(1,000억 엔 = 6억 7,600만 달러, 2025-03-14)이다. OpenAI 의 용량으로 볼 수 있는지가 불확실하다."
+  },
+  {
+   "id": "anthropic-au-zerra-western-downs",
+   "lab": "Anthropic",
+   "country": "AU",
+   "city": "Dalby(Queensland)",
+   "site": "Western Downs Digital Park (Zerra DC)",
+   "announced": "2026-09-16",
+   "value": null,
+   "unit": "MW",
+   "asof": "2026-09-16",
+   "basis": "Anthropic 이 빌린 첫 단계의 용량은 공개되지 않았다. 캠퍼스 계획은 IT 1,440MW(360MW 건물 4동), 계통 최대 수전 2,160MW",
+   "mw": {
+    "value": null,
+    "basis": "unknown",
+    "certainty": "임차(용량 미공개)"
+   },
+   "stage": "계약",
+   "status_flag": "진행",
+   "status_now": "첫 단계 임대차 서류를 맺었고 외국인투자심의위원회(FIRB) 승인이 조건이다. 개발 신청은 2026-08-17 에 지방의회에 냈고 심사 중이다. 첫 동 가동 목표는 2027년. S-1(2026-10-26)은 호주와 캐나다에서 데이터센터 용량 임대차를 맺었다고 적는다.",
+   "status_asof": "2026-11-18",
+   "partners": [
+    {
+     "name": "Zerra DC",
+     "role": "개발(싱가포르 본사)"
+    },
+    {
+     "name": "Macquarie Capital",
+     "role": "컨소시엄·재무 자문"
+    },
+    {
+     "name": "Australian Data Centres(Dexus 85%)",
+     "role": "컨소시엄 25%"
+    },
+    {
+     "name": "퀸즐랜드 주정부",
+     "role": "발표"
+    }
+   ],
+   "package": {
+    "capital": "컨소시엄이 짓는다(완공 시 약 300억 호주달러로 보도). ADC 는 자본 파트너를 더 들이려 증자 중이다.",
+    "power_site": "\"The site will connect directly to the high-voltage grid through the existing Braemar substation, with no major new transmission infrastructure required.\"",
+    "demand": null,
+    "components": null
+   },
+   "package_src": {
+    "capital": [
+     2
+    ],
+    "power_site": [
+     2
+    ]
+   },
+   "lab_spend": "임차료는 공개되지 않았다. 보도(익명)로는 Anthropic 이 새 풍력·태양광·저장 설비와 장기 전력구매계약을 직접 맺을 계획이다.",
+   "siting_reason": [
+    {
+     "orig": "We are expanding our data center capacity internationally as part of our efforts to diversify our infrastructure footprint and reduce concentration risks associated with operating a significant portion of our compute infrastructure in the United States and to support our international growth strategy",
+     "ko": "컴퓨트의 큰 부분이 미국에 몰린 위험을 줄이고 국제 성장 전략을 받치려고 해외 데이터센터 용량을 늘리고 있다.",
+     "speaker": "Anthropic(S-1, 해외 확장 전반에 대한 설명)",
+     "src": 1
+    }
+   ],
+   "verdict": "판단 불가",
+   "verdict_basis": "파트너가 내놓은 것은 개발 컨소시엄의 통상 역할(부지·건설 자금·계통 연결)이고 정부·기업의 구매 약속이나 부품은 없다. Anthropic 은 이 부지를 고른 이유를 밝히지 않았다(논평 거절). 공개된 것은 미국 집중을 줄인다는 일반적 이유뿐이다.",
+   "serves": "불명",
+   "serves_basis": "기사들은 추론용이라 이용자 가까이 두는 것이라고 풀이하지만 랩의 말이 아니다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Anthropic, PBC — Form S-1(SEC, 2026-10-26 제출)",
+     "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm",
+     "date": "2026-10-26",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "IPE Real Assets — Macquarie partners with Zerra and ADC to build Australia's largest data centre campus for Anthropic",
+     "url": "https://realassets.ipe.com/news/macquarie-partners-with-zerra-and-adc-to-build-australias-largest-data-centre-campus-for-anthropic/10138513.article",
+     "date": "2026-09-17",
+     "read": "partial"
+    },
+    {
+     "n": 3,
+     "title": "Converge Digest — Anthropic Signs First Australian Data Center Deal in Queensland",
+     "url": "https://convergedigest.com/anthropic-zerra-dc-australia-2-16gw-data-center/",
+     "date": "2026-09-16",
+     "read": "partial"
+    },
+    {
+     "n": 4,
+     "title": "techAU — Zerra DC announces 2.16 GW datacenter for Anthropic in Australia",
+     "url": "https://techau.com.au/zerra-dc-announces-2-16-gw-datacenter-for-anthropic-in-australia/",
+     "date": "2026-09-17",
+     "read": "partial"
+    }
+   ],
+   "value_src": [],
+   "alt": [
+    {
+     "value": 1440,
+     "basis": "캠퍼스 계획 IT 용량(계획 문서 인용 보도)",
+     "url": "https://techau.com.au/zerra-dc-announces-2-16-gw-datacenter-for-anthropic-in-australia/"
+    },
+    {
+     "value": 2160,
+     "basis": "캠퍼스 계통 최대 수전(수전)",
+     "url": "https://realassets.ipe.com/news/macquarie-partners-with-zerra-and-adc-to-build-australias-largest-data-centre-campus-for-anthropic/10138513.article"
+    }
+   ],
+   "conf": "med",
+   "note": "2.16GW 로 널리 보도됐지만 그것은 계통 최대 수전이고 계획 문서의 IT 용량은 1.44GW 라는 보도가 있다. 둘 다 캠퍼스 전체 값이라 이 건의 값으로 쓰지 않았다."
+  },
+  {
+   "id": "anthropic-ca-everwind-point-tupper",
+   "lab": "Anthropic",
+   "country": "CA",
+   "city": "Point Tupper(Nova Scotia)",
+   "site": "EverWind Point Tupper 캠퍼스 1단계",
+   "announced": "2026-10-16",
+   "value": 95,
+   "unit": "MW",
+   "asof": "2026-10-16",
+   "basis": "Anthropic 이 빌린 1단계 용량. 2028년 325MW 확장은 조건부 계획이고 캠퍼스 전체는 420MW",
+   "mw": {
+    "value": 95,
+    "basis": "unknown",
+    "certainty": "임차(1단계)",
+    "phases": [
+     {
+      "value": 95,
+      "when": "2027 말",
+      "note": "1단계"
+     },
+     {
+      "value": 325,
+      "when": "2028",
+      "note": "조건부 확장 계획"
+     }
+    ]
+   },
+   "stage": "계약",
+   "status_flag": "진행",
+   "status_now": "1단계 95MW 를 2027년 말 가동 목표로 임차했다. S-1(2026-10-26)이 캐나다 임대차를 확인한다. 검색 요약으로는 임대 기간이 20년 이상이고, 확장은 상업·기술·규제 조건이 붙어 있으며 주민 반대 시위가 있었다.",
+   "status_asof": "2026-11-18",
+   "partners": [
+    {
+     "name": "EverWind Fuels",
+     "role": "캠퍼스 개발·풍력 발전(핼리팩스)"
+    }
+   ],
+   "package": {
+    "capital": "EverWind 가 100억 캐나다달러 이상을 들인다(캠퍼스 80억, 육상 풍력 20억). 사업자 자신의 자금이다.",
+    "power_site": "EverWind 의 기존 Point Tupper 부지와 자체 육상 풍력. 계통 보강 비용은 EverWind 가 모두 낸다고 약속했다.",
+    "demand": null,
+    "components": null
+   },
+   "package_src": {
+    "capital": [
+     1
+    ],
+    "power_site": [
+     1
+    ]
+   },
+   "lab_spend": "임차료는 공개되지 않았다.",
+   "siting_reason": [
+    {
+     "orig": "Canadians are using Claude in growing numbers, and we want our infrastructure to be closer to the people who rely on it",
+     "ko": "캐나다에서 Claude 이용이 늘고 있어, 인프라를 쓰는 사람들 가까이에 두려 한다.",
+     "speaker": "Jacob Glick(Anthropic Canada)",
+     "src": 1
+    }
+   ],
+   "verdict": "입지를 따라감",
+   "verdict_basis": "파트너가 내놓은 것은 사업자의 통상 임대(부지·풍력·자기 자금)이고, Anthropic 이 든 이유는 이용자와의 거리다.",
+   "serves": "권역·세계",
+   "serves_basis": "캐나다와 세계 고객의 수요를 받친다고 밝혔다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "BetaKit — Anthropic signs lease for $10-billion Nova Scotia data centre",
+     "url": "https://betakit.com/anthropic-signs-lease-for-10-billion-nova-scotia-data-centre/",
+     "date": "2026-10-19",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "Anthropic, PBC — Form S-1(SEC, 2026-10-26 제출)",
+     "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm",
+     "date": "2026-10-26",
+     "read": "partial"
+    },
+    {
+     "n": 3,
+     "title": "Reuters(The Star 게재) — Anthropic signs lease for first Canadian data center",
+     "url": "https://www.thestar.com.my/tech/tech-news/2026/10/17/anthropic-signs-lease-for-first-canadian-data-center",
+     "date": "2026-10-17",
+     "read": "search_summary"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "용량과 발언은 기사를 열어 확인했고, 임대 기간 등은 검색 요약으로만 봤다. EverWind 발표문 원문은 찾지 못했다."
+  },
+  {
+   "id": "anthropic-no-volta-tydal",
+   "lab": "Anthropic",
+   "country": "NO",
+   "city": "Tydal(Trøndelag)",
+   "site": "Bitdeer Tydal 데이터센터 (Volta 경유)",
+   "announced": "2026-08-04",
+   "value": 121,
+   "unit": "MW",
+   "asof": "2026-08-04",
+   "basis": "Bitdeer 가 Volta 에 내주는 IT 121MW(총 133MW). 최종 이용 랩이 Anthropic 이라는 것은 블룸버그 보도이고 회사는 확인하지 않았다",
+   "mw": {
+    "value": 121,
+    "basis": "it",
+    "certainty": "계약(랩 미확인)"
+   },
+   "stage": "계약",
+   "status_flag": "진행",
+   "status_now": "Bitdeer 자회사와 Volta 자회사가 16년 코로케이션 계약을 맺었다(기본 기간 약 47억 달러). 1단계 2026-12-31, 2단계 2027-03-31 준공 목표로 보도됐다. Anthropic 은 논평하지 않았고 S-1 의 임대차 설명에 노르웨이는 없다(호주·캐나다만 적혔다).",
+   "status_asof": "2026-11-18",
+   "partners": [
+    {
+     "name": "Volta Infra Holdings",
+     "role": "중간 임차·자금 구조(엔비디아 등이 투자한 신생 회사)"
+    },
+    {
+     "name": "Bitdeer",
+     "role": "부지·데이터센터 소유"
+    },
+    {
+     "name": "Dell Technologies",
+     "role": "기술 공급"
+    },
+    {
+     "name": "J.P. Morgan 계열 등",
+     "role": "신용장"
+    }
+   ],
+   "package": {
+    "capital": "Volta 의 의무를 약 13억 달러 규모 보증신용장이 받치는 구조로 보도됐다. 랩과 Volta 사이 계약은 6년 100억 달러로 보도됐다.",
+    "power_site": "\"Tydal Data Center combines one of Norway's strongest energy locations with dual grid connectivity and renewable local hydropower\"",
+    "demand": null,
+    "components": null
+   },
+   "package_src": {
+    "capital": [
+     2
+    ],
+    "power_site": [
+     1
+    ]
+   },
+   "lab_spend": "보도 기준 6년 100억 달러의 컴퓨트 용량 계약(확인되지 않음).",
+   "siting_reason": [
+    {
+     "orig": "Tydal Data Center combines one of Norway's strongest energy locations with dual grid connectivity and renewable local hydropower",
+     "ko": "노르웨이에서 손꼽히는 에너지 입지에 이중 계통 연결과 지역 수력을 갖췄다.",
+     "speaker": "Haakon Bryhni(Tydal Data Center)",
+     "src": 1
+    }
+   ],
+   "verdict": "판단 불가",
+   "verdict_basis": "이용 랩이 Anthropic 인지부터 확인되지 않았고 랩의 설명이 없다. 구조만 보면 중간 사업자가 신용 보강으로 자금을 대는 묶음이고, 입지 이유는 부지 소유자의 말뿐이다.",
+   "serves": "불명",
+   "serves_basis": "누구에게 쓸 용량인지 밝힌 글이 없다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "w.media — Bitdeer signs US$ 4.7 billion lease agreement for AI data center in Norway",
+     "url": "https://w.media/bitdeer-signs-us-4-7-billion-lease-agreement-for-ai-data-center-in-norway/",
+     "date": "2026-08-06",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "Forkast — Anthropic Locks In $10B European Compute Bet With a Seven-Month-Old Startup",
+     "url": "https://forkast.news/anthropic-locks-in-10b-european-compute-bet-with-a-seven-month-old-startup/",
+     "date": "2026-08-10",
+     "read": "partial"
+    },
+    {
+     "n": 3,
+     "title": "Anthropic, PBC — Form S-1(SEC, 2026-10-26 제출)",
+     "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm",
+     "date": "2026-10-26",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "low",
+   "note": "용량(IT 121MW)은 Bitdeer 발표를 옮긴 기사에서 확인했지만 랩의 신원이 확인되지 않아 신뢰도를 낮게 둔다."
+  },
+  {
+   "id": "xai-sa-humain",
+   "lab": "xAI",
+   "country": "SA",
+   "city": null,
+   "site": "HUMAIN 과의 500MW 데이터센터(위치 미공개)",
+   "announced": "2025-11-19",
+   "value": 500,
+   "unit": "MW",
+   "asof": "2025-11-19",
+   "basis": "미·사우디 투자 포럼에서 발표한 계획 용량. 기준과 위치를 밝히지 않았다",
+   "mw": {
+    "value": 500,
+    "basis": "unknown",
+    "certainty": "발표(계획)"
+   },
+   "stage": "MoU",
+   "status_flag": "불명",
+   "status_now": "착공·부지 발표를 찾지 못했다. 2026년에 제출된 SpaceX(xAI 를 합병) S-1 에는 HUMAIN 이 한 번도 나오지 않고, 사우디는 증권 판매 제한 문구에만 나온다.",
+   "status_asof": "2026-11-18",
+   "partners": [
+    {
+     "name": "HUMAIN",
+     "role": "사우디 국부펀드 계열 AI 회사"
+    },
+    {
+     "name": "NVIDIA",
+     "role": "칩"
+    }
+   ],
+   "package": {
+    "capital": "사우디 국영 계열 HUMAIN 과 함께 짓는다고 발표됐다. 투자 금액과 분담은 공개되지 않았다.",
+    "power_site": "사우디 안에 짓는다고만 발표됐다.",
+    "demand": "검색 요약 기준으로 Grok 을 사우디 전역에 배포하는 내용이 함께 발표됐다(HUMAIN 발표문 원문은 열지 못했다).",
+    "components": null
+   },
+   "package_src": {
+    "capital": [
+     1
+    ],
+    "power_site": [
+     1
+    ]
+   },
+   "lab_spend": "공개되지 않았다.",
+   "siting_reason": [],
+   "verdict": "묶음을 따라감",
+   "verdict_basis": "국영 계열 파트너와의 공동 건설과 전국 배포가 함께 발표됐고 xAI 가 든 입지 이유는 찾지 못했다. 미국의 칩 수출 승인이 전제였다. 진척은 확인되지 않는다.",
+   "serves": "불명",
+   "serves_basis": "누구에게 쓸 용량인지 원문으로 확인하지 못했다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "w.media — xAI and HUMAIN to build 500 MW data center in Saudi Arabia",
+     "url": "https://w.media/elon-musks-xai-to-build-500-mw-data-center-in-saudi-arabia/",
+     "date": "2025-11-20",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "Space Exploration Technologies — Form S-1(SEC, 2026)",
+     "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026036936/spaceexplorationtechnologi.htm",
+     "date": "2026",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "500MW 는 기사를 열어 확인했다. HUMAIN·xAI 발표문 원문은 열리지 않았다(접속 거부). Grok 배포는 검색 요약에만 근거해 수요 칸의 출처 번호를 달지 않았다."
+  },
+  {
+   "id": "meta-ca-sturgeon-county",
+   "lab": "Meta",
+   "country": "CA",
+   "city": "Sturgeon County(Alberta)",
+   "site": "Meta Sturgeon County 데이터센터",
+   "announced": "2026-07-08",
+   "value": 1000,
+   "unit": "MW",
+   "asof": "2026-07-08",
+   "basis": "Meta 가 밝힌 계획 용량 1GW. IT·수전 기준을 밝히지 않았다",
+   "mw": {
+    "value": 1000,
+    "basis": "unknown",
+    "certainty": "착공(계획)"
+   },
+   "stage": "착공",
+   "status_flag": "진행",
+   "status_now": "2026-07 착공했다. 전력을 댈 Pembina 의 Greenlight 가스발전소는 2030년 말 가동 예정이다.",
+   "status_asof": "2026-11-18",
+   "partners": [
+    {
+     "name": "Pembina Pipeline(Greenlight Electricity Centre)",
+     "role": "가스 발전(장기 톨링 계약)"
+    },
+    {
+     "name": "AltaLink·Capital Power·AESO",
+     "role": "계통 계획"
+    }
+   ],
+   "package": {
+    "capital": null,
+    "power_site": null,
+    "demand": null,
+    "components": null
+   },
+   "package_src": {},
+   "lab_spend": "Meta 가 전부 낸다. 130억 캐나다달러 이상(로이터 환산 91억 7,000만 달러, 2026-07-08)이고 \"we are fully funding new generation and grid infrastructure\" 라고 밝혔다. 금액에 운영비가 섞였는지는 밝히지 않았다.",
+   "siting_reason": [],
+   "verdict": "입지를 따라감",
+   "verdict_basis": "묶음 네 칸이 모두 비어 있다. 부지·자본·발전 설비 비용을 랩이 스스로 대고 발전소는 돈을 내고 쓰는 계약이다. Meta 는 앨버타를 고른 이유를 글로 밝히지 않았지만, 로이터는 주정부가 전력 한도를 피하도록 자가 발전을 허용한다고 전했다.",
+   "serves": "권역·세계",
+   "serves_basis": "자사 AI 작업과 세계 이용자용 제품을 받친다고 밝혔다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Meta — Breaking Ground on Meta's First Data Center in Canada",
+     "url": "https://about.fb.com/news/2026/07/breaking-ground-on-metas-first-data-center-in-canada/",
+     "date": "2026-07-08",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "Reuters(BNN Bloomberg 게재) — Meta to build its first $13 billion data centre in Canada",
+     "url": "https://www.bnnbloomberg.ca/business/company-news/2026/07/09/meta-to-build-its-first-13-billion-data-centre-in-canada/",
+     "date": "2026-07-08",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "1GW 와 금액은 Meta 발표문에서 확인했다. 가스발전소·톨링 계약은 로이터 기사에서 확인했다. 묶음이 모두 비어 있는데도 간 건이라 H2 의 반례로 따로 모은다."
+  },
+  {
+   "id": "meta-in-reliance-jamnagar",
+   "lab": "Meta",
+   "country": "IN",
+   "city": "Jamnagar(Gujarat)",
+   "site": "릴라이언스 잠나가르 데이터센터",
+   "announced": "2026-06-09",
+   "value": 168,
+   "unit": "MW",
+   "asof": "2026-06-09",
+   "basis": "릴라이언스가 짓고 Meta 가 빌리는 1단계 168MW. 확장 선택권이 있다",
+   "mw": {
+    "value": 168,
+    "basis": "unknown",
+    "certainty": "임차(1단계)"
+   },
+   "stage": "계약",
+   "status_flag": "진행",
+   "status_now": "2026-06 계약을 발표했다. 검색 요약으로는 2년 안에 인도된다고 한다. 착공 여부는 확인하지 못했다.",
+   "status_asof": "2026-11-18",
+   "partners": [
+    {
+     "name": "Reliance Industries",
+     "role": "건설·임대, 재생에너지·해수 담수 냉각"
+    },
+    {
+     "name": "CleanMax·Fourth Partner Energy",
+     "role": "재생에너지 약 1GW 별도 계약"
+    }
+   ],
+   "package": {
+    "capital": "\"Reliance will build a data center with 168 MW capacity, which Meta will lease, with options to scale.\"",
+    "power_site": "\"Jamnagar is a strategic location, and Reliance is developing one of the largest data center campuses in the world there, with access to the significant energy resources needed\"",
+    "demand": null,
+    "components": null
+   },
+   "package_src": {
+    "capital": [
+     1
+    ],
+    "power_site": [
+     1
+    ]
+   },
+   "lab_spend": "임차료는 공개되지 않았다. \"Meta will cover the full cost of the energy and water supporting the facility.\"",
+   "siting_reason": [
+    {
+     "orig": "India's rapidly growing tech-forward digital economy, its massive user base, and the strength of our partnership with Reliance make India an ideal place to invest.",
+     "ko": "빠르게 크는 인도의 디지털 경제, 거대한 이용자 기반, 릴라이언스와의 협력이 인도를 투자하기 알맞은 곳으로 만든다.",
+     "speaker": "Meta",
+     "src": 1
+    },
+    {
+     "orig": "bringing world-class infrastructure to power our products and AI capabilities closer to one of the world's most dynamic digital markets",
+     "ko": "제품과 AI 를 받칠 인프라를 세계에서 가장 역동적인 디지털 시장 가까이에 둔다.",
+     "speaker": "Meta",
+     "src": 1
+    }
+   ],
+   "verdict": "둘 다",
+   "verdict_basis": "Meta 스스로 이용자 기반·시장(입지)과 릴라이언스와의 협력(묶음)을 함께 이유로 들었다. 릴라이언스는 2020년 Meta 가 57억 달러를 투자한 지오의 모회사이고 합작사도 있다 — 자본은 파트너에서 랩으로가 아니라 랩에서 파트너로 흘렀다.",
+   "serves": "국내",
+   "serves_basis": "인도의 이용자에게 속도와 품질로 서비스한다고 밝혔다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Meta — Meta Partners With Reliance on AI-Enabled Data Center in India",
+     "url": "https://about.fb.com/news/2026/06/meta-partners-with-reliance-on-ai-enabled-data-center-in-india/",
+     "date": "2026-06-09",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "168MW 는 Meta 발표문 전문에서 확인했다."
+  },
+  {
+   "id": "meta-id-firmus-sea",
+   "lab": "Meta",
+   "country": "ID",
+   "city": "Batam(보도)",
+   "site": "Firmus 동남아 AI 팩토리(위치 미공개, 바탐으로 보도)",
+   "announced": "2026-09-29",
+   "value": null,
+   "unit": "MW",
+   "asof": "2026-09-29",
+   "basis": "용량·금액·위치가 공개되지 않았다",
+   "mw": {
+    "value": null,
+    "basis": "unknown",
+    "certainty": "계약(용량 미공개)"
+   },
+   "stage": "계약",
+   "status_flag": "불명",
+   "status_now": "검색 요약으로만 확인했다. Firmus 가 동남아 시설의 GPU 용량을 Meta 에 대는 계약과 확장 선택권을 맺었다고 밝혔고, 한 보도는 인도네시아 바탐의 시설 하나를 Meta 가 쓴다고 전했다.",
+   "status_asof": "2026-11-18",
+   "partners": [
+    {
+     "name": "Firmus",
+     "role": "AI 팩토리 개발·운영"
+    }
+   ],
+   "package": {
+    "capital": "Firmus 가 자기 자금으로 짓는다(사업자의 통상 역할).",
+    "power_site": "Firmus 의 동남아 시설.",
+    "demand": null,
+    "components": null
+   },
+   "package_src": {},
+   "lab_spend": "공개되지 않았다.",
+   "siting_reason": [],
+   "verdict": "판단 불가",
+   "verdict_basis": "원문을 열지 못했고 위치·용량·이유가 모두 공개되지 않았다.",
+   "serves": "불명",
+   "serves_basis": "밝힌 글을 찾지 못했다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Reuters(The Star 게재) — Meta taps Australia's Firmus for AI computing capacity in Southeast Asia",
+     "url": "https://www.thestar.com.my/tech/tech-news/2026/09/29/meta-taps-australia039s-firmus-for-ai-computing-capacity-in-southeast-asia",
+     "date": "2026-09-29",
+     "read": "search_summary"
+    },
+    {
+     "n": 2,
+     "title": "stargate.how — Stargate infrastructure tracker(정리 사이트, 2026-10-18 기준)",
+     "url": "https://stargate.how/location",
+     "date": "2026-10-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "low",
+   "note": "검색 요약만 본 건이다. 나라 코드는 보도된 바탐(인도네시아)을 따랐으나 확정이 아니다."
+  },
+  {
+   "id": "mistral-fr-bruyeres-le-chatel",
+   "lab": "Mistral",
+   "country": "FR",
+   "city": "Bruyères-le-Châtel(Essonne)",
+   "site": "Mistral 첫 데이터센터",
+   "announced": "2025-06-11",
+   "value": 44,
+   "unit": "MW",
+   "asof": "2025-06-11",
+   "basis": "엔비디아 GPU 13,800장으로 '설치 용량 44MW'. 회사의 링크드인 발표를 옮긴 기사 기준",
+   "mw": {
+    "value": 44,
+    "basis": "unknown",
+    "certainty": "계획"
+   },
+   "stage": "계약",
+   "status_flag": "불명",
+   "status_now": "2026-03 에 8억 3,000만 달러 대출을 확보했다고 발표했다. 로이터 인용 보도는 2026년 2분기 가동 계획이라고 전했다. 가동 여부는 확인하지 못했다.",
+   "status_asof": "2026-11-18",
+   "partners": [
+    {
+     "name": "BNP Paribas·Crédit Agricole CIB·Natixis 등",
+     "role": "대출 은행단(주로 프랑스 은행)"
+    },
+    {
+     "name": "NVIDIA",
+     "role": "GPU"
+    }
+   ],
+   "package": {
+    "capital": "\"a loan of 830 million US dollars ... supported by a consortium of predominantly French banks, including BNP Paribas, Crédit Agricole CIB, and Natixis\"",
+    "power_site": null,
+    "demand": "Mistral Compute 출범 파트너로 BNP Paribas, Orange, Schneider Electric, SNCF, Thales, Veolia 등을 들었다(구매 약속 금액은 없다).",
+    "components": null
+   },
+   "package_src": {
+    "capital": [
+     1
+    ],
+    "demand": [
+     2
+    ]
+   },
+   "lab_spend": "Mistral 자신의 차입 8억 3,000만 달러.",
+   "siting_reason": [
+    {
+     "orig": "With a strong emphasis on sustainability and data sovereignty, Mistral Compute is built to meet the stringent requirements of European regulations while minimizing environmental impact through the use of decarbonized energy.",
+     "ko": "지속가능성과 데이터 주권을 앞세워, 유럽 규제의 엄격한 요건을 맞추고 탈탄소 에너지로 환경 영향을 줄이도록 지었다.",
+     "speaker": "Mistral AI",
+     "src": 2
+    }
+   ],
+   "verdict": "둘 다",
+   "verdict_basis": "프랑스 은행단의 대출과 프랑스 대기업 출범 파트너가 있고(묶음), 유럽 안에서 처리해야 하는 수요와 탈탄소 전력을 이유로 들었다(입지). 본국 시설이라 '해외로 간 이유'의 사례는 아니다.",
+   "serves": "국내",
+   "serves_basis": "유럽 규제·데이터 주권 요건을 맞추는 용도라고 밝혔다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "heise online — European AI Autonomy: Mistral Invests $830 Million in Data Center",
+     "url": "https://www.heise.de/en/news/European-AI-Autonomy-Mistral-Invests-830-Million-in-Data-Center-11242019.html",
+     "date": "2026-03-31",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "Mistral AI — Mistral Compute",
+     "url": "https://mistral.ai/news/mistral-compute/",
+     "date": "2025-06-11",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "출처에 따라 40MW(2025-06 발표 당시 보도)와 44MW(2026-03)가 있다. 최근 값을 골랐다. 40MW 를 적은 원문은 열지 못해 alt 에 넣지 않았다.",
+   "home_country": true
+  },
+  {
+   "id": "mistral-fr-campus-ia-fouju",
+   "lab": "Mistral",
+   "country": "FR",
+   "city": "Fouju(Seine-et-Marne)",
+   "site": "Campus IA (MGX·Bpifrance·Mistral·NVIDIA 합작)",
+   "announced": "2025-05-19",
+   "value": 1400,
+   "unit": "MW",
+   "asof": "2025-05-19",
+   "basis": "캠퍼스 전체의 전력 용량(puissance électrique) 1.4GW. Mistral 몫이 아니다. Mistral 은 주주이자 주 이용자다",
+   "mw": {
+    "value": 1400,
+    "basis": "utility",
+    "certainty": "발표(수전)"
+   },
+   "stage": "계약",
+   "status_flag": "불명",
+   "status_now": "합작사를 세웠고 2026-06 에 프랑스 전체 3GW 로 늘리며 둘째 부지를 곧 고른다고 발표했다. 발표 당시 계획은 2026년 하반기 착공, 2028년 가동이다. 착공 여부는 확인하지 못했다. 검색 요약으로는 2026-01 에 송전사 RTE 와 가속 접속 협약을 맺었다.",
+   "status_asof": "2026-11-18",
+   "partners": [
+    {
+     "name": "MGX",
+     "role": "아부다비 AI 투자사(최대 주주로 보도)"
+    },
+    {
+     "name": "Bpifrance",
+     "role": "프랑스 공공 투자은행"
+    },
+    {
+     "name": "NVIDIA",
+     "role": "주주·칩"
+    },
+    {
+     "name": "RTE",
+     "role": "계통 가속 접속"
+    }
+   ],
+   "package": {
+    "capital": "\"Campus AI is a joint venture between Bpifrance, the French public investment bank; Mistral ...; MGX, a global AI and advanced technology investment company\" — 국부·공공 자본이 댄다.",
+    "power_site": "일드프랑스 Fouju 부지, 전력 1.4GW. 송전사와 가속 접속 협약(검색 요약).",
+    "demand": null,
+    "components": "NVIDIA 가 합작에 주주로 들어왔다."
+   },
+   "package_src": {
+    "capital": [
+     2
+    ],
+    "power_site": [
+     1
+    ],
+    "components": [
+     1
+    ]
+   },
+   "lab_spend": "Mistral 의 출자액은 공개되지 않았다(지분 약 1% 로 보도, 원문 미확인).",
+   "siting_reason": [
+    {
+     "orig": "Ce Campus renforce notre souveraineté technologique et la position de la France comme acteur de pointe sur l'IA",
+     "ko": "이 캠퍼스는 우리의 기술 주권과 AI 선도국으로서 프랑스의 지위를 강화한다.",
+     "speaker": "Nicolas Dufourcq(Bpifrance)",
+     "src": 1
+    },
+    {
+     "orig": "it will continue to support the growth of Mistral, its shareholder and anchor French AI champion, by providing access to compute capacity at scale across sites",
+     "ko": "주주이자 프랑스의 대표 AI 기업인 Mistral 의 성장을, 여러 부지에 걸친 대규모 컴퓨트로 계속 받칠 것이다.",
+     "speaker": "Campus AI 합작 발표",
+     "src": 2
+    }
+   ],
+   "verdict": "묶음을 따라감",
+   "verdict_basis": "국부펀드 계열과 공공 은행의 자본, 칩 회사의 출자, 송전사의 가속 접속이 묶여 랩에 용량을 대는 구조다. 본국 시설이라 '해외로 간 이유'의 사례는 아니다.",
+   "serves": "권역·세계",
+   "serves_basis": "유럽 전역의 AI 팩토리 망의 출발점이라고 밝혔다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Le Monde Informatique — Choose France : Un campus IA en Ile-de-France avec Bpi, MGX, Mistral et Nvidia",
+     "url": "https://www.lemondeinformatique.fr/actualites/lire-choose-france-un-campus-ia-en-ile-de-france-avec-bpi-mgx-mistral-et-nvidia-96873.html",
+     "date": "2025-05-19",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "Abu Dhabi Media Office — MGX, along with strategic partners, to expand Campus AI in France with second site",
+     "url": "https://www.mediaoffice.abudhabi/en/technology/mgx-along-with-strategic-partners-to-expand-campus-ai-in-france-with-second-site/",
+     "date": "2026-06-01",
+     "read": "partial"
+    },
+    {
+     "n": 3,
+     "title": "RTE — Campus IA 가속 계통 접속 협약 보도자료(PDF)",
+     "url": "https://assets.rte-france.com/prod/public/2026-01/20260122_CP_RACCORDEMENT_FASTTRACK_CAMPUSIA_VDEF_0.pdf",
+     "date": "2026-01-22",
+     "read": "search_summary"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "1.4GW 는 전력 용량(수전)으로 발표됐다. IT 용량은 공개되지 않았다. 캠퍼스 전체 값이어서 Mistral 의 용량으로 읽으면 안 된다.",
+   "home_country": true
+  },
+  {
+   "id": "mistral-se-borlange-ecodatacenter",
+   "lab": "Mistral",
+   "country": "SE",
+   "city": "Borlänge",
+   "site": "EcoDataCenter Borlänge",
+   "announced": "2026-02-11",
+   "value": 23,
+   "unit": "MW",
+   "asof": "2026-02-11",
+   "basis": "'처음 23MW 의 컴퓨팅 전력'으로 보도. 발표문에는 용량이 없다",
+   "mw": {
+    "value": 23,
+    "basis": "unknown",
+    "certainty": "계획"
+   },
+   "stage": "계약",
+   "status_flag": "불명",
+   "status_now": "2027년 개소 예정이라고 발표됐다. 진행 상황은 확인하지 못했다.",
+   "status_asof": "2026-11-18",
+   "partners": [
+    {
+     "name": "EcoDataCenter",
+     "role": "설계·건설·운영(스웨덴)"
+    },
+    {
+     "name": "NVIDIA",
+     "role": "Vera Rubin GPU"
+    }
+   ],
+   "package": {
+    "capital": "\"a strategic, long-term investment of €1.2 billion in Sweden's digital infrastructure\" — 두 회사의 공동 발표이고 분담은 공개되지 않았다.",
+    "power_site": "\"EcoDataCenter will design, build and operate the underlying infrastructure in Sweden, leveraging renewable energy, advanced cooling technologies\"",
+    "demand": null,
+    "components": null
+   },
+   "package_src": {
+    "capital": [
+     1
+    ],
+    "power_site": [
+     1
+    ]
+   },
+   "lab_spend": "12억 유로 투자 가운데 Mistral 몫은 공개되지 않았다. 발표문은 \"the company's first AI infrastructure investment outside France\" 라고 적는다.",
+   "siting_reason": [
+    {
+     "orig": "This investment is a concrete step toward building independent capabilities in Europe, dedicated to AI",
+     "ko": "이 투자는 유럽에 AI 전용의 독립된 역량을 쌓는 구체적인 한 걸음이다.",
+     "speaker": "Arthur Mensch(Mistral AI)",
+     "src": 1
+    },
+    {
+     "orig": "The Borlänge site offers significant scalability and is designed to support the most demanding AI workloads.",
+     "ko": "볼렝에 부지는 확장 여지가 크고 가장 까다로운 AI 작업을 받치도록 설계됐다.",
+     "speaker": "EcoDataCenter 발표문",
+     "src": 1
+    }
+   ],
+   "verdict": "입지를 따라감",
+   "verdict_basis": "파트너는 데이터센터 사업자의 통상 역할이고 정부·기업의 구매 약속이나 부품은 없다. Mistral 이 든 이유는 유럽 안에 데이터를 두고 처리한다는 것이며, 스웨덴 부지의 장점(재생에너지·확장성)은 사업자가 들었다.",
+   "serves": "권역·세계",
+   "serves_basis": "유럽 안에서 데이터를 처리·저장하는 용량이라고 밝혔다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "EcoDataCenter — Mistral AI and EcoDataCenter Partner to Build AI-focused Data Center in Sweden",
+     "url": "https://ecodatacenter.tech/press/mistral-ai-and-ecodatacenter-partner-to-build-ai-focused-data-center-in-sweden-3431886",
+     "date": "2026-02-11",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "heise online — European AI Autonomy: Mistral Invests $830 Million in Data Center",
+     "url": "https://www.heise.de/en/news/European-AI-Autonomy-Mistral-Invests-830-Million-in-Data-Center-11242019.html",
+     "date": "2026-03-31",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    2
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "환율을 적용한 달러 환산은 원문에 없어 넣지 않았다. 23MW 는 기사 값이다."
+  },
+  {
+   "id": "mistral-fr-les-ulis",
+   "lab": "Mistral",
+   "country": "FR",
+   "city": "Les Ulis(Essonne)",
+   "site": "Les Ulis 추론 데이터센터",
+   "announced": "2026-05-28",
+   "value": 10,
+   "unit": "MW",
+   "asof": "2026-05-28",
+   "basis": "\"a new 10 MW facility dedicated to inference operations\"",
+   "mw": {
+    "value": 10,
+    "basis": "unknown",
+    "certainty": "계획"
+   },
+   "stage": "MoU",
+   "status_flag": "불명",
+   "status_now": "2026년 3분기 개소 예정이라고 발표됐다. 개소 여부는 확인하지 못했다.",
+   "status_asof": "2026-11-18",
+   "partners": [],
+   "package": {
+    "capital": null,
+    "power_site": null,
+    "demand": null,
+    "components": null
+   },
+   "package_src": {},
+   "lab_spend": "Mistral 자신의 시설로 발표됐다. 금액은 공개되지 않았다.",
+   "siting_reason": [
+    {
+     "orig": "the site will address compute supply chain risks by providing direct control over capacity, providing greater security and transparency as training and inference hardware converge",
+     "ko": "용량을 직접 쥐어 컴퓨트 공급망 위험에 대응하고, 보안과 투명성을 높인다.",
+     "speaker": "Mistral AI",
+     "src": 1
+    }
+   ],
+   "verdict": "판단 불가",
+   "verdict_basis": "본국의 자기 시설이고 밝힌 이유는 장소가 아니라 용량에 대한 통제권이다. 파트너가 공개되지 않아 묶음 칸이 비어 있지만 '입지만 보고 해외로 간 건'으로 셀 수 없다.",
+   "serves": "불명",
+   "serves_basis": "누구에게 쓸 용량인지 밝히지 않았다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Mistral AI — AI Now Summit 2026",
+     "url": "https://mistral.ai/news/ai-now-summit-2026/",
+     "date": "2026-05-28",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "10MW 는 Mistral 발표문에서 확인했다.",
+   "home_country": true
+  }
+ ],
+ "pending": [
+  {
+   "lab": "Anthropic",
+   "country": "CA",
+   "what": "앨버타 Beacon Data Centers 캠퍼스 임차 협의(920MW 가스발전 조건부 승인 부지)",
+   "state": "협의 중으로 보도, 계약 아님",
+   "url": "https://www.hcamag.com/ca/specialization/transformation/anthropic-plans-to-build-canadian-data-centres-in-alberta/586894",
+   "read": "search_summary"
+  },
+  {
+   "lab": "Anthropic",
+   "country": "GB",
+   "what": "영국·북유럽에서 20~30MW 규모의 작은 데이터센터 계약 타진(OpenAI 도 같다고 보도)",
+   "state": "익명 관계자 4명 인용 보도(2026-09-18), 상대·금액·계약 없음",
+   "url": "https://www.cnbc.com/2026/09/18/anthropic-openai-small-ai-data-center-deals.html",
+   "read": "search_summary"
+  },
+  {
+   "lab": "Anthropic",
+   "country": "JP",
+   "what": "일본·호주·유럽의 데이터센터 전담 인력 채용(일본: 계약 발굴·전기 기술자)",
+   "state": "채용 공고 기반 보도, 용량 발표 없음",
+   "url": "https://www.cnbc.com/2026/06/25/anthropic-global-ai-data-center-push.html",
+   "read": "search_summary"
+  },
+  {
+   "lab": "Mistral",
+   "country": "SA",
+   "what": "HUMAIN 과의 협력 — \"Mistral will explore using HUMAIN's data center infrastructure\"",
+   "state": "검토(2026-08-24 발표), 용량 없음",
+   "url": "https://mistral.ai/news/mistral-x-humain/",
+   "read": "partial"
+  }
+ ],
+ "excluded": [
+  {
+   "lab": "OpenAI",
+   "country": "CL",
+   "what": "OpenAI for Chile(2026-11-17)",
+   "why": "\"The MoU sets no investment or purchasing commitment.\" 용량 건이 아니다",
+   "url": "https://openai.com/index/introducing-openai-for-chile/",
+   "read": "partial"
+  },
+  {
+   "lab": "Anthropic",
+   "country": "US",
+   "what": "Nscale(웨스트버지니아)·Riot(텍사스)·TeraWulf(켄터키)·SpaceX Colossus(멤피스) 등",
+   "why": "미국 안의 용량이다. Nscale 은 영국 회사지만 부지가 미국이다",
+   "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm",
+   "read": "partial"
+  },
+  {
+   "lab": "Anthropic",
+   "country": "ZZ",
+   "what": "Amazon·Google·Microsoft 클라우드를 통한 아시아·유럽 추론 용량",
+   "why": "부지와 용량이 공개되지 않은 클라우드 리전 용량이라 건으로 세울 수 없다",
+   "url": "https://www.anthropic.com/news/higher-limits-spacex",
+   "read": "search_summary"
+  },
+  {
+   "lab": "Google DeepMind",
+   "country": "ZZ",
+   "what": "구글 본체 리전과 구분되는 DeepMind 전용 해외 용량",
+   "why": "찾지 못했다. 영국 Waltham Cross(2025-09) 등은 구글 본체의 시설이라 묶음 A 에서 다룬다",
+   "url": "https://www.googlecloudpresscorner.com/2025-09-16-Google-Opens-Waltham-Cross-Data-Centre-as-Part-of-Two-year-GBP5-Billion-Investment-in-the-UK-to-Help-Power-its-AI-Economy",
+   "read": "search_summary"
+  },
+  {
+   "lab": "Meta",
+   "country": "ES",
+   "what": "Talavera de la Reina 데이터센터",
+   "why": "2022년에 처음 알려진 건이고 2026년에도 인허가 단계로 보인다. 기간(2023-01-01 이후 발표) 밖",
+   "url": "https://datacenterdynamics.com/en/news/meta-plans-1bn-data-center-in-toledo-spain",
+   "read": "search_summary"
+  },
+  {
+   "lab": "Meta",
+   "country": "ZZ",
+   "what": "아일랜드 Clonee·덴마크 Odense·스웨덴 Luleå·싱가포르 등 기존 자가 데이터센터",
+   "why": "2023년 이전에 발표·가동된 시설이다",
+   "url": "https://about.fb.com/news/2026/07/breaking-ground-on-metas-first-data-center-in-canada/",
+   "read": "partial"
+  },
+  {
+   "lab": "Mistral",
+   "country": "ZZ",
+   "what": "Microsoft 와의 유럽 컴퓨트 확대, European Compute Units(2026 여름)",
+   "why": "부지·용량이 공개되지 않았다(Mistral 글에서 언급만 확인)",
+   "url": "https://mistral.ai/news/mistral-x-humain/",
+   "read": "partial"
+  }
+ ]
+}

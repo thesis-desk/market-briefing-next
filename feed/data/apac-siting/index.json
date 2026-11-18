@@ -1,0 +1,108 @@
+{
+ "schema": 1,
+ "updated_kst": "2026-11-18T18:13:36+09:00",
+ "question": "한국은 아시아·태평양 AI 컴퓨트의 권역 거점이 될 수 있는가",
+ "bundles": [
+  {
+   "id": "A",
+   "file": "investments.json",
+   "title": "투자 발표 장부 — 실제로 어디에 지었나",
+   "status": "collecting",
+   "records": 0,
+   "verified_share": 0,
+   "updated_kst": null
+  },
+  {
+   "id": "B",
+   "file": "lab_overseas.json",
+   "title": "프런티어 랩의 해외 용량 건별 조사",
+   "status": "draft",
+   "records": 22,
+   "verified_share": 1,
+   "updated_kst": "2026-11-18T18:13:36+09:00"
+  },
+  {
+   "id": "C1-3",
+   "file": "cables.json",
+   "title": "해저케이블 목록·용량·빅테크 참여",
+   "status": "collecting",
+   "records": 0,
+   "verified_share": 0,
+   "updated_kst": null
+  },
+  {
+   "id": "C4-5",
+   "file": "peering.json",
+   "title": "도시별 접속 여건과 도시 간 지연시간",
+   "status": "collecting",
+   "records": 0,
+   "verified_share": 0,
+   "updated_kst": null
+  },
+  {
+   "id": "D",
+   "file": "power.json",
+   "title": "전력: 품질·가격·확보",
+   "status": "collecting",
+   "records": 0,
+   "verified_share": 0,
+   "updated_kst": null
+  },
+  {
+   "id": "E",
+   "file": "demand.json",
+   "title": "배후 수요",
+   "status": "collecting",
+   "records": 0,
+   "verified_share": 0,
+   "updated_kst": null
+  },
+  {
+   "id": "F",
+   "file": "conditions.json",
+   "title": "나머지 조건(채점표 재료)",
+   "status": "collecting",
+   "records": 0,
+   "verified_share": 0,
+   "updated_kst": null
+  },
+  {
+   "id": "G",
+   "file": "korea_package.json",
+   "title": "한국 쪽이 내놓을 수 있는 것",
+   "status": "collecting",
+   "records": 0,
+   "verified_share": 0,
+   "updated_kst": null
+  },
+  {
+   "id": "H",
+   "file": "counter.json",
+   "title": "반례와 경쟁 입지의 제약",
+   "status": "collecting",
+   "records": 0,
+   "verified_share": 0,
+   "updated_kst": null
+  }
+ ],
+ "hypotheses": [
+  {
+   "id": "H1",
+   "text": "입지 조건만 보면 한국은 권역 거점이 되기 어렵다. 특히 국제 네트워크, 대용량 전력의 확보 속도, 배후 수요가 약하다.",
+   "verdict": "판단 보류",
+   "basis": "묶음 C·D·E 를 아직 모으지 않았다.",
+   "updated_kst": null
+  },
+  {
+   "id": "H2",
+   "text": "프런티어 랩이 미국 밖에 둔 용량은 입지 조건보다, 현지 파트너가 내놓은 묶음(자본, 전력과 부지, 고객 수요, 부품)을 따라갔다.",
+   "verdict": "엇갈림",
+   "basis": "미국 밖(랩의 본국 제외) 19건 가운데 묶음만 따라간 것으로 본 건이 5, 입지만 4, 둘 다 6, 판단 불가 4건이다(판정은 AI 의 해석). 묶음만으로 발표된 5건(한국 2, 아르헨티나, 일본, 사우디)은 랩의 계약이나 착공이 확인되지 않았고, 착공한 2건 가운데 하나(Meta 앨버타)는 묶음이 전혀 없으며, 영국은 묶음이 있어도 전기요금과 규제를 들어 보류했다. 발표를 끌어온 것은 묶음인 경우가 많았지만, 계약·착공까지 간 건에는 입지나 그 나라 안의 수요가 함께 있었다.",
+   "updated_kst": "2026-11-18T18:13:36+09:00"
+  }
+ ],
+ "docs": [
+  "REQUEST.md",
+  "STATUS.md"
+ ]
+}

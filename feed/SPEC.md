@@ -16,6 +16,7 @@
 | `street/YYYY-MM.json` | 금융권 시각 월별 보관(한국시간 공개 월) |
 | `calendar.json` | 실적·투자자의 날 일정과 대기 목록 |
 | `health.json` | 수집 상태와 놓친 것(`missed`) |
+| `data/<id>/` | 조사 자료 묶음. 한 질문을 두고 손으로 모은 기록(화면 없음) |
 | `SPEC.md` | 이 문서 |
 | `QUESTIONS.md` | 판단하기 어려웠던 것 |
 
@@ -51,6 +52,7 @@
 ```
 
 - `generated_kst` 는 빌드 시각이 아니라 **가장 최근에 바뀐 기록의 시각**이다. 내용이 그대로면 이 값도 그대로다.
+- `datasets` 는 조사 자료 묶음의 목록이다: `[{"id": "apac-siting", "path": "data/apac-siting/index.json", "updated_kst": "…"}]`. 묶음이 하나도 없으면 키가 없다. `updated_kst` 는 기록이 아직 없으면 `null`.
 - `type`: `earnings` | `investor_day` | `interview` | `article` | `synthesis` | `event`(행사 정리).
 - `companies[].ticker` 는 없으면 `null`. `event`·`event_date` 는 있을 때만.
 - `revision` 은 처음 게시할 때 1이다. `revised_kst` 는 고친 적이 없으면 `published_kst` 와 같다.
@@ -218,6 +220,53 @@
 - `collectors[].last_kst` 는 그 기록이 마지막으로 바뀐 시각이다. 오래 멈춰 있으면 수집이 돌지 않은 것이다.
 - `missed` 는 `calendar.json` 에서 `status` 가 `missed` 인 일정이다.
 
+## data/<id>/ — 조사 자료 묶음
+
+한 질문을 두고 손으로 모은 기록이다. 화면에는 없고 feed 로만 나간다. 지금은 `apac-siting`(아시아·태평양 AI 컴퓨트 입지 비교) 하나다.
+
+| 경로 | 내용 |
+| --- | --- |
+| `data/<id>/index.json` | 묶음별 상태와 파일 목록, 가설 판정. 가장 먼저 읽는 파일 |
+| `data/<id>/<묶음>.json` | 묶음 하나의 기록 |
+| `data/<id>/REQUEST.md` | 조사 요청 사본과 변경 이력 |
+| `data/<id>/STATUS.md` | 묶음별 진행, 못 찾은 것, 판단하기 어려웠던 것, 값을 고친 기록 |
+
+```json
+{
+ "schema": 1, "updated_kst": "…",
+ "question": "한국은 아시아·태평양 AI 컴퓨트의 권역 거점이 될 수 있는가",
+ "bundles": [{"id": "B", "file": "lab_overseas.json", "title": "…", "status": "collecting",
+              "records": 0, "verified_share": 0.0, "updated_kst": null}],
+ "hypotheses": [{"id": "H2", "text": "…", "verdict": "판단 보류", "basis": "…", "updated_kst": null}],
+ "docs": ["REQUEST.md", "STATUS.md"]
+}
+```
+
+- `status`: `collecting`(모으는 중) | `draft`(다 모았고 확인 전) | `verified`(큰 값을 원문으로 확인함). 시작하지 않은 묶음도 `collecting` 이고 `records` 가 0, `updated_kst` 가 `null` 이다.
+- `verified_share`: 합계 가운데 원문을 열어 확인한 값의 비중(0~1). 묶음 파일의 `measure` 가 `"value"` 면 기록의 `value` 합으로, `null` 이면 건수로 낸다. 값이 없는(`null`) 기록은 값 기준 합계에서 빠진다.
+- `hypotheses[].verdict`: `지지` | `반박` | `엇갈림` | `판단 보류`. 판정과 근거는 AI 의 해석이다.
+
+묶음 파일은 `{"schema", "bundle", "title", "updated_kst", "measure", "notes", "records", …}` 이다. 묶음마다 기록에서 계산한 집계(`summary`, `by_country` 등)가 더 붙을 수 있다.
+
+기록의 공통 필드
+
+```json
+{"id": "…", "country": "KR", "city": "…", "value": 230, "unit": "MW", "asof": "2025-07-22",
+ "basis": "값의 정의·기준", "value_src": [1],
+ "sources": [{"n": 1, "title": "…", "url": "…", "date": "…", "read": "full"}],
+ "alt": [{"value": 520, "basis": "…", "url": "…"}],
+ "conf": "high", "note": "…", "revised_kst": "…"}
+```
+
+- `country` 는 두 글자 나라 코드(ISO 3166-1), `city` 는 없으면 `null`.
+- `value` 는 출처가 없으면 `null` 이다. `value_src` 는 그 값을 적은 출처의 `n` 이다.
+- `sources[].read`: `full`(전문을 읽음) | `partial`(해당 부분을 열어 읽음) | `search_summary`(검색 결과 요약만 봄). 값의 출처를 열어 읽지 않은 기록의 `conf` 는 `high` 가 아니다.
+- `alt` 는 출처끼리 다른 값이다. 고른 이유는 `note` 에 있다.
+- `revised_kst` 는 값을 고친 적이 있을 때만 있다. 고친 내용은 `STATUS.md` 에 있다.
+- 용량의 기준은 `it`(IT 용량) | `utility`(IT 용량 없이 수전 용량만 공개됨) | `unknown`(기준 불명)이다. 수전 값을 IT 로 환산한 값은 넣지 않는다.
+
+`lab_overseas.json`(묶음 B)의 기록은 공통 필드에 더해 `lab`, `site`, `announced`, `mw`(`value`·`basis`·`certainty`·`phases`), `stage`(`MoU` | `계약` | `착공` | `가동` — 지금까지 닿은 단계), `status_now`·`status_flag`(`진행` | `지연` | `보류` | `취소` | `불명`)·`status_asof`, `partners[]`, `package`(`capital`·`power_site`·`demand`·`components` — 파트너가 내놓은 것의 근거 문장 또는 `null`)와 `package_src`, `lab_spend`, `siting_reason[]`(`orig`·`ko`·`speaker`·`src`), `verdict`(`묶음을 따라감` | `입지를 따라감` | `둘 다` | `판단 불가`)·`verdict_basis`, `serves`(`국내` | `권역·세계` | `불명`)·`serves_basis`, `home_country`(랩의 본국 시설이면 `true`)를 갖는다. 파일에는 판정별 집계(`summary`), H2 에 어긋나는 건의 묶음(`counter`), 협의 단계라 기록으로 세우지 않은 것(`pending`), 넣지 않은 것과 이유(`excluded`)가 함께 있고, 판정 기준은 `notes` 에 있다. 판정과 `serves` 는 AI 의 해석이다.
+
 ## 처음 요청과 다르게 정한 것
 
 - **전사본**: 회사 공식본 → 거래소 공시본 → 제3자본 순서는 원칙으로 두되, 공식 전사본을 내지 않는 회사가 많아 제3자본이 기본이 된다. 전사본을 구할 수 없으면 보도자료만으로 쓰고 콜 정리 절에 "전사본 없음"이라고 적는다. 공식본 대조는 공식본이 올라온 것을 확인했을 때만 한다.
@@ -270,3 +319,4 @@
 - 리포트 종류에 행사 정리(`event`)를 더했다. 기술 행사·전시회·금융기관 컨퍼런스를 행사 단위로 정리한 리포트이고 절은 `s1`, `s2` … 로 나간다.
 - 출처 `kind` 에 `news`(언론 보도)와 `telegram`(텔레그램 글)을 더했다. 행사 정리에서 기업 자료와 2차 자료를 가르는 데 쓴다.
 - 출처 `kind` 에 `desk`(데스크 기록)를 더했다. 행사 정리가 데스크의 투자 가설을 견줄 기준으로 붙일 때 쓰고, 사실의 근거가 아니다.
+- 조사 자료 묶음 `data/<id>/` 를 더했다. 첫 조사는 `apac-siting` 이다. `index.json` 에 `datasets` 를 더했다(기존 키는 그대로).

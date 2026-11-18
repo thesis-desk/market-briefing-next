@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-18T17:27:24+09:00",
+ "generated_kst": "2026-11-18T18:13:36+09:00",
  "reports": [
   {
    "slug": "semafor-we-have-to-do-it-amazon-ceo-andy-jassy-on-racing",
@@ -1605,5 +1605,12 @@
  "calendar": {
   "updated_kst": "2026-11-18T08:27:10+09:00",
   "path": "calendar.json"
- }
+ },
+ "datasets": [
+  {
+   "id": "apac-siting",
+   "path": "data/apac-siting/index.json",
+   "updated_kst": "2026-11-18T18:13:36+09:00"
+  }
+ ]
 }
