@@ -2,7 +2,7 @@
  "schema": 1,
  "bundle": "A",
  "title": "투자 발표 장부 — 실제로 어디에 지었나",
- "updated_kst": "2026-11-18T18:33:07+09:00",
+ "updated_kst": "2026-11-18T18:37:02+09:00",
  "measure": "value",
  "notes": [
   "단위는 발표 1건이다. 대표 값(value)은 발표 금액의 달러 값(십억 달러)이다. 회사가 달러 값을 함께 밝혔으면 그 값을 쓰고, 그렇지 않으면 환율과 날짜를 amount.fx 에 적는다. 환율 출처를 확인하지 못한 금액은 달러 값을 비워 둔다.",
@@ -16,6 +16,35 @@
  ],
  "by_country": {
   "countries": {
+   "AU": {
+    "records": 5,
+    "announced_usd_bn": 34.1,
+    "firm_usd_bn": 16.1,
+    "announced_usd_bn_per_year": 7.09,
+    "no_period": 1,
+    "no_amount": 2,
+    "mw_announced": 0,
+    "mw_firm": 0,
+    "by_company": {
+     "Microsoft": 21.15,
+     "AWS": 12.95
+    }
+   },
+   "IN": {
+    "records": 7,
+    "announced_usd_bn": 48.2,
+    "firm_usd_bn": 30.7,
+    "announced_usd_bn_per_year": 8.963,
+    "no_period": 1,
+    "no_amount": 3,
+    "mw_announced": 268,
+    "mw_firm": 0,
+    "by_company": {
+     "AWS": 12.7,
+     "Microsoft": 20.5,
+     "Google": 15
+    }
+   },
    "JP": {
     "records": 7,
     "announced_usd_bn": 36.14,
@@ -33,15 +62,16 @@
    },
    "KR": {
     "records": 7,
-    "announced_usd_bn": 5,
+    "announced_usd_bn": 6.33,
     "firm_usd_bn": 4,
-    "announced_usd_bn_per_year": 0.714,
+    "announced_usd_bn_per_year": 0.98,
     "no_period": 0,
-    "no_amount": 5,
+    "no_amount": 4,
     "mw_announced": 265,
     "mw_firm": 100,
     "by_company": {
-     "AWS": 5
+     "AWS": 5,
+     "Microsoft": 1.33
     }
    },
    "MY": {
@@ -73,6 +103,19 @@
     "by_company": {
      "AWS": 9,
      "Microsoft": 5.5
+    }
+   },
+   "TW": {
+    "records": 1,
+    "announced_usd_bn": 5,
+    "firm_usd_bn": 5,
+    "announced_usd_bn_per_year": 0.333,
+    "no_period": 0,
+    "no_amount": 0,
+    "mw_announced": 0,
+    "mw_firm": 0,
+    "by_company": {
+     "AWS": 5
     }
    }
   },
@@ -432,18 +475,23 @@
    "city": "부산",
    "region": "부산 강서구 미음 국제산업물류도시 3호 데이터센터",
    "announced": "2026-06-01",
-   "value": null,
+   "value": 1.33,
    "unit": "십억 달러",
    "asof": "2026-06-01",
-   "basis": "금액이 공개되지 않았다",
+   "basis": "업계 보도의 '최소 2조 원 이상'을 보도일 기준환율로 환산(계산). 회사 발표 값이 아니다",
    "amount": {
     "currency": "KRW",
     "value": 2000,
     "unit": "십억 원",
-    "usd_bn": null,
+    "usd_bn": 1.33,
     "scope": "unknown",
     "period": "2026~2031",
-    "years": 5
+    "years": 5,
+    "fx": {
+     "rate": 1508.64,
+     "date": "2026-06-01",
+     "source": "유럽중앙은행 기준환율(frankfurter.app) — 1 USD = 1,508.64 KRW"
+    }
    },
    "mw": {
     "value": 125,
@@ -464,10 +512,13 @@
      "read": "partial"
     }
    ],
-   "value_src": [],
+   "value_src": [
+    1
+   ],
    "alt": [],
    "conf": "low",
-   "note": "회사 발표가 아니라 '데이터센터 및 투자 업계'를 인용한 단독 보도다. 사업비는 '최소 2조 원 이상'으로 보도됐고 환율 출처를 확인하지 못해 달러 값을 비웠다. 용량은 154kV 수전 방식 125MW 급이다. 기사는 기존 1·2호기 합산이 85MW 라고 적는다."
+   "note": "회사 발표가 아니라 '데이터센터 및 투자 업계'를 인용한 단독 보도다. 사업비는 '최소 2조 원 이상'으로 보도됐다. 용량은 154kV 수전 방식 125MW 급이다. 기사는 기존 1·2호기 합산이 85MW 라고 적는다.",
+   "revised_kst": "2026-11-18T18:37:02+09:00"
   },
   {
    "id": "alibaba-kr-dc3",
@@ -1273,6 +1324,636 @@
    "alt": [],
    "conf": "med",
    "note": "금액과 용량이 공개되지 않았다. 900MW 는 Firmus 의 전체 고객 계약 합계다."
+  },
+  {
+   "id": "microsoft-au-2023",
+   "company": "Microsoft",
+   "country": "AU",
+   "city": "캔버라·멜버른·시드니",
+   "region": "Azure 호주 리전(데이터센터 29곳으로 확대)",
+   "announced": "2023-10",
+   "value": 3.15,
+   "unit": "십억 달러",
+   "asof": "2023-10",
+   "basis": "50억 호주달러를 2023-10-23 기준환율로 환산(계산)",
+   "amount": {
+    "currency": "AUD",
+    "value": 5,
+    "unit": "십억 호주달러",
+    "usd_bn": 3.15,
+    "fx": {
+     "rate": 0.63059,
+     "date": "2023-10-23",
+     "source": "유럽중앙은행 기준환율(frankfurter.app) — 1 AUD = 0.63059 USD"
+    },
+    "scope": "unknown",
+    "period": "미확인"
+   },
+   "mw": {
+    "value": null,
+    "basis": "unknown"
+   },
+   "what": "리전 확장",
+   "stage": "가동",
+   "status_now": "회사는 2026-04 발표문에서 이 투자로 데이터센터가 Azure 세 리전 29곳으로 늘었다고 적었다.",
+   "status_asof": "2026-11-18",
+   "partners": [],
+   "sources": [
+    {
+     "n": 1,
+     "title": "Microsoft — Microsoft deepens commitment to Australia with A$25 billion investment in AI infrastructure, security, and skills",
+     "url": "https://news.microsoft.com/source/asia/features/investing-in-australias-ai-future/",
+     "date": "2026-04-23",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "2023-10 의 발표문 원문은 열지 못했고 2026-04 발표문의 언급(\"builds on a A$5 billion investment from October 2023\")으로 확인했다. 기간과 범위를 이 글에서는 알 수 없다."
+  },
+  {
+   "id": "aws-au-2025-plan",
+   "company": "AWS",
+   "country": "AU",
+   "city": "시드니·멜버른",
+   "region": "AWS 아시아 태평양(시드니)·(멜버른) 리전",
+   "announced": "2025-06-14",
+   "value": 12.95,
+   "unit": "십억 달러",
+   "asof": "2025-06-14",
+   "basis": "발표 금액 200억 호주달러를 발표 전날 기준환율로 환산(계산). 5년 계획이고 운영비가 섞여 있다",
+   "amount": {
+    "currency": "AUD",
+    "value": 20,
+    "unit": "십억 호주달러",
+    "usd_bn": 12.95,
+    "fx": {
+     "rate": 0.64758,
+     "date": "2025-06-13",
+     "source": "유럽중앙은행 기준환율(frankfurter.app) — 1 AUD = 0.64758 USD"
+    },
+    "scope": "capex+opex",
+    "period": "2025~2029",
+    "years": 5
+   },
+   "mw": {
+    "value": null,
+    "basis": "unknown"
+   },
+   "what": "리전 확장",
+   "stage": "가동",
+   "status_now": "기간(2025~2029)이 진행 중인 계획이다. 빅토리아·퀸즐랜드의 태양광 발전소 세 곳이 함께 발표됐다.",
+   "status_asof": "2026-11-18",
+   "partners": [],
+   "sources": [
+    {
+     "n": 1,
+     "title": "Amazon — Amazon investing AU$20 billion to expand data center infrastructure in Australia",
+     "url": "https://www.aboutamazon.com/news/aws/amazon-data-center-investment-in-australia",
+     "date": "2025-06-14",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "\"invest a new total of AU$20 billion from 2025 to 2029 to expand, operate, and maintain its data center infrastructure in Australia\" — 운영·유지비가 섞여 있다. 'a new total' 이라는 표현이라 앞선 계획을 포함한 재발표일 수 있으나, 앞선 계획의 원문을 이번에 확인하지 못해 장부에 넣지 않았다(두 번 세지 않는다). 2012년 이후 누적은 189억 호주달러다."
+  },
+  {
+   "id": "openai-au-nextdc-s7",
+   "company": "OpenAI",
+   "country": "AU",
+   "city": "시드니",
+   "region": "NEXTDC S7 (Eastern Creek)",
+   "announced": "2025-12-04",
+   "value": null,
+   "unit": "십억 달러",
+   "asof": "2025-12-04",
+   "basis": "금액이 공개되지 않았다",
+   "amount": null,
+   "mw": {
+    "value": null,
+    "basis": "unknown"
+   },
+   "what": "임차",
+   "stage": "발표",
+   "status_now": "구속력 없는 양해각서 단계다. S7 첫 단계는 승인을 조건으로 2027년 하반기 예정이다.",
+   "status_asof": "2026-11-18",
+   "partners": [
+    {
+     "name": "NEXTDC",
+     "role": "부지·개발·운영"
+    }
+   ],
+   "ref_bundle_b": "openai-au-nextdc-s7",
+   "sources": [
+    {
+     "n": 1,
+     "title": "OpenAI — Introducing OpenAI for Australia",
+     "url": "https://openai.com/global-affairs/openai-for-australia/",
+     "date": "2025-12-04",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "NEXTDC — NEXTDC to Join OpenAI in Australia as an Infrastructure Partner",
+     "url": "https://www.nextdc.com/news/nextdc-and-openai-partner-to-expand-ai-infrastructure-in-australia",
+     "date": "2025-12-05",
+     "read": "partial"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "med",
+   "note": "OpenAI 가 내는 금액과 용량은 공개되지 않았다. 캠퍼스 개발비(보도 기준 70억 호주달러 이상)는 NEXTDC 의 것이라 넣지 않았다."
+  },
+  {
+   "id": "microsoft-au-2026",
+   "company": "Microsoft",
+   "country": "AU",
+   "city": null,
+   "region": "호주의 Azure AI 인프라",
+   "announced": "2026-04-23",
+   "value": 18,
+   "unit": "십억 달러",
+   "asof": "2026-04-23",
+   "basis": "회사가 밝힌 달러 값(180억 달러). 운영비가 섞여 있다",
+   "amount": {
+    "currency": "AUD",
+    "value": 25,
+    "unit": "십억 호주달러",
+    "usd_bn": 18,
+    "fx": {
+     "rate": 0.72,
+     "date": "2026-04-23",
+     "source": "회사가 함께 밝힌 달러 값에서 역산"
+    },
+    "scope": "capex+opex",
+    "period": "2026~2029",
+    "years": 4
+   },
+   "mw": {
+    "value": null,
+    "basis": "unknown"
+   },
+   "what": "리전 확장",
+   "stage": "발표",
+   "status_now": "2026-04 발표. 2026-06 에 정부와 데이터센터 개발 기대 사항에 관한 양해각서를 맺었다고 회사 글 목록에 있다. 시설별 용량은 공개되지 않았다.",
+   "status_asof": "2026-11-18",
+   "partners": [
+    {
+     "name": "호주 정부",
+     "role": "데이터센터·AI 인프라 개발 기대 사항 준수 약속"
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "Microsoft — Microsoft deepens commitment to Australia with A$25 billion investment in AI infrastructure, security, and skills",
+     "url": "https://news.microsoft.com/source/asia/features/investing-in-australias-ai-future/",
+     "date": "2026-04-23",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "\"By the end of 2029, the company will invest A$25 billion (USD 18 billion) in new digital infrastructure\", \"A$25 billion in capital and operational expenditure by the end of 2029\" — 운영비가 섞여 있다고 회사가 밝혔다. 2023 투자 위에 더하는 것이라 대체로 보지 않았다."
+  },
+  {
+   "id": "anthropic-au-zerra-western-downs",
+   "company": "Anthropic",
+   "country": "AU",
+   "city": "Dalby(퀸즐랜드)",
+   "region": "Western Downs Digital Park (Zerra DC)",
+   "announced": "2026-09-16",
+   "value": null,
+   "unit": "십억 달러",
+   "asof": "2026-09-16",
+   "basis": "금액이 공개되지 않았다",
+   "amount": null,
+   "mw": {
+    "value": null,
+    "basis": "unknown"
+   },
+   "what": "임차",
+   "stage": "발표",
+   "status_now": "첫 단계 임대차 서류를 맺었고 외국인투자심의위원회 승인이 조건이다. 개발 신청은 심사 중이다. S-1 이 호주 임대차를 확인한다.",
+   "status_asof": "2026-11-18",
+   "partners": [
+    {
+     "name": "Zerra DC·Macquarie Capital·Australian Data Centres",
+     "role": "개발 컨소시엄"
+    }
+   ],
+   "ref_bundle_b": "anthropic-au-zerra-western-downs",
+   "sources": [
+    {
+     "n": 1,
+     "title": "IPE Real Assets — Macquarie partners with Zerra and ADC to build Australia's largest data centre campus for Anthropic",
+     "url": "https://realassets.ipe.com/news/macquarie-partners-with-zerra-and-adc-to-build-australias-largest-data-centre-campus-for-anthropic/10138513.article",
+     "date": "2026-09-17",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "Anthropic, PBC — Form S-1(SEC, 2026-10-26 제출)",
+     "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm",
+     "date": "2026-10-26",
+     "read": "partial"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "med",
+   "note": "Anthropic 이 내는 금액과 빌린 용량은 공개되지 않았다. 캠퍼스 계획(IT 1,440MW, 완공 시 약 300억 호주달러)은 컨소시엄의 것이라 넣지 않았다."
+  },
+  {
+   "id": "aws-in-2023",
+   "company": "AWS",
+   "country": "IN",
+   "city": "뭄바이·하이데라바드",
+   "region": "AWS 인도 리전의 클라우드 인프라",
+   "announced": "2023",
+   "value": 12.7,
+   "unit": "십억 달러",
+   "asof": "2023",
+   "basis": "2030년까지의 클라우드 투자 계획(검색 요약)",
+   "amount": {
+    "currency": "USD",
+    "value": 12.7,
+    "unit": "십억 달러",
+    "usd_bn": 12.7,
+    "scope": "unknown",
+    "period": "2023~2030",
+    "years": 8
+   },
+   "mw": {
+    "value": null,
+    "basis": "unknown"
+   },
+   "what": "리전 확장",
+   "stage": "가동",
+   "status_now": "2030년까지의 계획이 진행 중이다. 2025-12 에 Amazon 이 전 사업 350억 달러 이상을 따로 발표했다.",
+   "status_asof": "2026-11-18",
+   "partners": [],
+   "sources": [
+    {
+     "n": 1,
+     "title": "TechCrunch — Amazon to invest additional $35B in India by 2030, taking total planned spending to $75B",
+     "url": "https://techcrunch.com/2025/12/10/amazon-to-invest-additional-35b-in-india-by-2030-taking-total-planned-spending-to-75b/",
+     "date": "2025-12-10",
+     "read": "search_summary"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "low",
+   "note": "127억 달러(2030년까지)는 2025-12 기사의 회고 문장을 검색 요약으로 본 값이다. 2023년 발표문 원문을 열지 못했다. 기간을 2023~2030(8년)으로 봤다."
+  },
+  {
+   "id": "microsoft-in-2025-01",
+   "company": "Microsoft",
+   "country": "IN",
+   "city": null,
+   "region": "인도의 클라우드·AI 인프라",
+   "announced": "2025-01",
+   "value": 3,
+   "unit": "십억 달러",
+   "asof": "2025-01",
+   "basis": "발표 금액의 달러 값",
+   "amount": {
+    "currency": "USD",
+    "value": 3,
+    "unit": "십억 달러",
+    "usd_bn": 3,
+    "scope": "unknown",
+    "period": "미확인"
+   },
+   "mw": {
+    "value": null,
+    "basis": "unknown"
+   },
+   "what": "리전 확장",
+   "stage": "가동",
+   "status_now": "2025-12 에 그 위에 175억 달러를 더하는 계획이 나왔다.",
+   "status_asof": "2026-11-18",
+   "partners": [],
+   "sources": [
+    {
+     "n": 1,
+     "title": "Microsoft — Microsoft invests US$17.5 billion in India to drive AI diffusion at population scale",
+     "url": "https://news.microsoft.com/source/asia/2025/12/09/microsoft-invests-us17-5-billion-in-india-to-drive-ai-diffusion-at-population-scale/",
+     "date": "2025-12-09",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "2025-01 발표문 원문은 열지 못했고 2025-12 발표문의 언급(\"Building on the US$3 billion investment announced in January 2025\")으로 확인했다. 기간을 이 글에서는 알 수 없다."
+  },
+  {
+   "id": "google-in-vizag",
+   "company": "Google",
+   "country": "IN",
+   "city": "비사카파트남",
+   "region": "Google AI 허브(기가와트급 데이터센터 캠퍼스)",
+   "announced": "2025-10-14",
+   "value": 15,
+   "unit": "십억 달러",
+   "asof": "2025-10-14",
+   "basis": "발표 금액의 달러 값",
+   "amount": {
+    "currency": "USD",
+    "value": 15,
+    "unit": "십억 달러",
+    "usd_bn": 15,
+    "scope": "unknown",
+    "period": "2026~2030",
+    "years": 5
+   },
+   "mw": {
+    "value": null,
+    "basis": "unknown",
+    "note": "'기가와트급'(숫자 미공개)"
+   },
+   "what": "전용 캠퍼스",
+   "stage": "착공",
+   "status_now": "검색 요약으로는 구글이 이후 글에서 건설 단계가 시작됐고 기공식을 열었다고 밝혔다(원문 미확인).",
+   "status_asof": "2026-11-18",
+   "partners": [
+    {
+     "name": "AdaniConneX",
+     "role": "데이터센터 파트너"
+    },
+    {
+     "name": "Airtel",
+     "role": "네트워크·해저케이블 육양 파트너"
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "Google — Google Announces First AI Hub in India",
+     "url": "https://www.googlecloudpresscorner.com/2025-10-14-Google-Announces-First-AI-Hub-in-India,-Bringing-Companys-Full-AI-Stack-and-Consumer-Services-to-Country",
+     "date": "2025-10-14",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "Google — Google AI Hub: Scaling India's AI Infrastructure and Community Impact",
+     "url": "https://blog.google/intl/en-in/google-ai-hub-scaling-indias-ai-infrastructure-and-community-impact/",
+     "date": "2026",
+     "read": "search_summary"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "\"This investment of approximately $15 billion (USD) over five years (2026-2030)\". 데이터센터 캠퍼스, 새 에너지원, 광섬유망, 해저케이블 육양이 한 금액에 들어 있다. 용량은 '기가와트급'으로만 적어 숫자를 비웠다. 착공은 검색 요약에만 근거한다."
+  },
+  {
+   "id": "microsoft-in-2025-12",
+   "company": "Microsoft",
+   "country": "IN",
+   "city": "하이데라바드 등",
+   "region": "인도의 클라우드·AI 인프라(India South Central 등)",
+   "announced": "2025-12-09",
+   "value": 17.5,
+   "unit": "십억 달러",
+   "asof": "2025-12-09",
+   "basis": "발표 금액의 달러 값",
+   "amount": {
+    "currency": "USD",
+    "value": 17.5,
+    "unit": "십억 달러",
+    "usd_bn": 17.5,
+    "scope": "capex+opex",
+    "period": "2026~2029",
+    "years": 4
+   },
+   "mw": {
+    "value": null,
+    "basis": "unknown"
+   },
+   "what": "리전 확장",
+   "stage": "발표",
+   "status_now": "회사는 새 데이터센터가 2026년 중반에 가동한다고 적었다. 가동 여부는 확인하지 못했다.",
+   "status_asof": "2026-11-18",
+   "partners": [],
+   "sources": [
+    {
+     "n": 1,
+     "title": "Microsoft — Microsoft invests US$17.5 billion in India to drive AI diffusion at population scale",
+     "url": "https://news.microsoft.com/source/asia/2025/12/09/microsoft-invests-us17-5-billion-in-india-to-drive-ai-diffusion-at-population-scale/",
+     "date": "2025-12-09",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "\"US$17.5 billion over four years (CY 2026 to 2029) — to advance the country's cloud and artificial intelligence (AI) infrastructure, skilli…\" — 인재 양성 등이 함께 들어 있다. 2025-01 의 30억 달러 위에 더하는 것이라 대체로 보지 않았다."
+  },
+  {
+   "id": "amazon-in-2025",
+   "company": "AWS",
+   "country": "IN",
+   "city": null,
+   "region": "Amazon 의 인도 전 사업 투자(AI·수출·일자리)",
+   "announced": "2025-12-10",
+   "value": null,
+   "unit": "십억 달러",
+   "asof": "2025-12-10",
+   "basis": "금액이 공개되지 않았다",
+   "amount": null,
+   "mw": {
+    "value": null,
+    "basis": "unknown"
+   },
+   "what": "리전 확장",
+   "stage": "발표",
+   "status_now": "2030년까지의 전사 계획이다. 클라우드·데이터센터 몫은 밝히지 않았다.",
+   "status_asof": "2026-11-18",
+   "partners": [],
+   "sources": [
+    {
+     "n": 1,
+     "title": "Amazon — Amazon announces $35 billion investment in India by 2030",
+     "url": "https://www.aboutamazon.com/news/company-news/amazon-35-billion-india-investment",
+     "date": "2025-12-10",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "TechCrunch — Amazon to invest additional $35B in India by 2030, taking total planned spending to $75B",
+     "url": "https://techcrunch.com/2025/12/10/amazon-to-invest-additional-35b-in-india-by-2030-taking-total-planned-spending-to-75b/",
+     "date": "2025-12-10",
+     "read": "search_summary"
+    }
+   ],
+   "value_src": [],
+   "alt": [
+    {
+     "value": 35,
+     "basis": "전 사업 대상 금액(십억 달러, '이상'). 데이터센터 몫 미공개",
+     "url": "https://www.aboutamazon.com/news/company-news/amazon-35-billion-india-investment"
+    }
+   ],
+   "conf": "med",
+   "note": "\"invest more than $35 billion across all its businesses in India through 2030\" — 전자상거래를 포함한 전 사업 금액이라 데이터센터 투자로 셀 수 없어 합계에 넣지 않았다. 누적 약 400억 달러에는 직원 보수가 들어 있다고 회사가 적는다."
+  },
+  {
+   "id": "openai-in-tata-hypervault",
+   "company": "OpenAI",
+   "country": "IN",
+   "city": null,
+   "region": "TCS HyperVault",
+   "announced": "2026-02-18",
+   "value": null,
+   "unit": "십억 달러",
+   "asof": "2026-02-18",
+   "basis": "금액이 공개되지 않았다",
+   "amount": null,
+   "mw": {
+    "value": 100,
+    "basis": "unknown",
+    "note": "시작 용량. 1GW 는 가능성"
+   },
+   "what": "임차",
+   "stage": "발표",
+   "status_now": "발표 뒤 착공·가동 소식을 찾지 못했다.",
+   "status_asof": "2026-11-18",
+   "partners": [
+    {
+     "name": "Tata Consultancy Services",
+     "role": "데이터센터 사업"
+    }
+   ],
+   "ref_bundle_b": "openai-in-tata-hypervault",
+   "sources": [
+    {
+     "n": 1,
+     "title": "OpenAI — Introducing OpenAI for India",
+     "url": "https://openai.com/index/openai-for-india/",
+     "date": "2026-02-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "high",
+   "note": "금액은 공개되지 않았다. 100MW 로 시작하고 1GW 는 가능성으로만 적혔다."
+  },
+  {
+   "id": "meta-in-reliance-jamnagar",
+   "company": "Meta",
+   "country": "IN",
+   "city": "잠나가르(구자라트)",
+   "region": "릴라이언스 잠나가르 데이터센터",
+   "announced": "2026-06-09",
+   "value": null,
+   "unit": "십억 달러",
+   "asof": "2026-06-09",
+   "basis": "금액이 공개되지 않았다",
+   "amount": null,
+   "mw": {
+    "value": 168,
+    "basis": "unknown",
+    "note": "1단계"
+   },
+   "what": "임차",
+   "stage": "발표",
+   "status_now": "릴라이언스가 짓고 Meta 가 빌리는 계약을 발표했다. 착공 여부는 확인하지 못했다.",
+   "status_asof": "2026-11-18",
+   "partners": [
+    {
+     "name": "Reliance Industries",
+     "role": "건설·임대"
+    }
+   ],
+   "ref_bundle_b": "meta-in-reliance-jamnagar",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Meta — Meta Partners With Reliance on AI-Enabled Data Center in India",
+     "url": "https://about.fb.com/news/2026/06/meta-partners-with-reliance-on-ai-enabled-data-center-in-india/",
+     "date": "2026-06-09",
+     "read": "full"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "high",
+   "note": "임차료는 공개되지 않았다. 용량 168MW 는 1단계이고 확장 선택권이 있다."
+  },
+  {
+   "id": "aws-tw-region",
+   "company": "AWS",
+   "country": "TW",
+   "city": "타이베이",
+   "region": "AWS 아시아 태평양(타이베이) 리전",
+   "announced": "2024-06",
+   "value": 5,
+   "unit": "십억 달러",
+   "asof": "2024-06",
+   "basis": "발표 금액 '50억 달러 이상'. 약 15년에 걸친 금액이고 운영비가 섞여 있다",
+   "amount": {
+    "currency": "USD",
+    "value": 5,
+    "unit": "십억 달러",
+    "usd_bn": 5,
+    "scope": "capex+opex",
+    "period": "약 15년(2024 발표 기준)",
+    "years": 15
+   },
+   "mw": {
+    "value": null,
+    "basis": "unknown"
+   },
+   "what": "리전 신설",
+   "stage": "가동",
+   "status_now": "2025-06-05 리전을 가동했다고 발표했다.",
+   "status_asof": "2026-11-18",
+   "partners": [],
+   "sources": [
+    {
+     "n": 1,
+     "title": "Amazon — Amazon Launches Infrastructure Region in Taiwan",
+     "url": "https://press.aboutamazon.com/2025/6/amazon-launches-infrastructure-region-in-taiwan",
+     "date": "2025-06-05",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "Amazon — AWS to Launch an Infrastructure Region in Taiwan",
+     "url": "https://press.aboutamazon.com/2024/6/aws-to-launch-an-infrastructure-region-in-taiwan",
+     "date": "2024-06",
+     "read": "search_summary"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "\"planning to invest more than $5 billion to support the construction, connection, operation, and maintenance of its data centers in Taiwan\" — 운영·유지비가 섞여 있다. 처음 발표(2024-06)는 15년에 걸친 투자라고 했다(검색 요약). 데이터센터 수와 위치는 공개하지 않았다."
   }
  ],
  "pending": [
@@ -1306,6 +1987,22 @@
    "what": "2027~2028년 말레이시아에 150억 달러 투자 계획",
    "state": "한 매체(Capacity)의 보도로 검색 요약에만 나온다. 원문을 열지 못했고 시기·성격이 출처마다 다르다",
    "url": "https://malaysia4u.com/data-centres-guide",
+   "read": "search_summary"
+  },
+  {
+   "company": "Meta",
+   "country": "AU",
+   "what": "Firmus 멜버른 AI 팩토리의 주 고객(GB300 시스템)",
+   "state": "검색 요약에만 나온다. 계약일·용량·금액을 확인하지 못했다",
+   "url": "https://www.thestar.com.my/tech/tech-news/2026/09/29/meta-taps-australia039s-firmus-for-ai-computing-capacity-in-southeast-asia",
+   "read": "search_summary"
+  },
+  {
+   "company": "AWS",
+   "country": "IN",
+   "what": "AWS 의 2026~2030년 인도 클라우드·AI 인프라 추가 투자(130억 달러 또는 210억 달러 이상으로 전해짐)",
+   "state": "Amazon 인도 페이지와 다른 글의 한 줄 언급뿐이라 금액과 범위가 갈린다. 원문을 열지 못했다",
+   "url": "https://www.aboutamazon.in/impact/economy/growth/ways-amazon-shapes-india-digital-growth",
    "read": "search_summary"
   }
  ],
@@ -1373,12 +2070,47 @@
    "why": "검색에서 금액·용량이 있는 발표를 찾지 못했다(없다는 확인은 아니다)",
    "url": "https://www.asiatechreview.com/p/malaysia-gains-more-ground-in-southeast",
    "read": "search_summary"
+  },
+  {
+   "company": "Google",
+   "country": "AU",
+   "what": "Google·Oracle 의 호주 내 2023년 이후 데이터센터 투자 발표",
+   "why": "금액이 있는 발표를 찾지 못했다(검색 요약은 2026년 중반까지 구글의 확정 금액이 없다고 적는다)",
+   "url": "https://www.abc.net.au/news/2026-06-07/data-centre-boom-will-australia-benefit/106764460",
+   "read": "search_summary"
+  },
+  {
+   "company": "AWS",
+   "country": "AU",
+   "what": "AWS 의 2025년 이전 호주 투자 계획",
+   "why": "원문을 이번에 확인하지 못했다. 2025 발표가 'a new total' 이라 적어 포함 관계일 수 있다",
+   "url": "https://www.aboutamazon.com/news/aws/amazon-data-center-investment-in-australia",
+   "read": "partial"
+  },
+  {
+   "company": "Oracle",
+   "country": "IN",
+   "what": "Oracle·Anthropic·xAI·ByteDance·Alibaba·Tencent 의 인도 내 2023년 이후 데이터센터 투자 발표",
+   "why": "검색에서 금액·용량이 있는 발표를 찾지 못했다(없다는 확인은 아니다)",
+   "url": "https://www.investindia.gov.in/team-india-blogs/indias-data-centre-opportunity-building-digital-infrastructure-scale",
+   "read": "search_summary"
+  },
+  {
+   "company": "Google",
+   "country": "TW",
+   "what": "Google·Microsoft·Oracle·Meta 의 대만 내 2023년 이후 데이터센터 투자 발표",
+   "why": "검색에서 금액·용량이 있는 발표를 찾지 못했다(없다는 확인은 아니다). 대만 북부는 2024년부터 대형 데이터센터를 제한한다는 요약이 있어 묶음 D 에서 확인한다",
+   "url": "https://www.mordorintelligence.com/industry-reports/taiwan-hyperscale-data-center-market",
+   "read": "search_summary"
   }
  ],
  "countries_done": [
   "KR",
   "JP",
   "SG",
-  "MY"
+  "MY",
+  "AU",
+  "IN",
+  "TW"
  ]
 }
