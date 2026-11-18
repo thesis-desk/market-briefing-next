@@ -2,8 +2,503 @@
  "schema": 1,
  "bundle": "A",
  "title": "투자 발표 장부 — 실제로 어디에 지었나",
- "updated_kst": null,
+ "updated_kst": "2026-11-18T18:25:26+09:00",
  "measure": "value",
- "notes": [],
- "records": []
+ "notes": [
+  "단위는 발표 1건이다. 대표 값(value)은 발표 금액의 달러 값(십억 달러)이다. 회사가 달러 값을 함께 밝혔으면 그 값을 쓰고, 그렇지 않으면 환율과 날짜를 amount.fx 에 적는다. 환율 출처를 확인하지 못한 금액은 달러 값을 비워 둔다.",
+  "amount.scope 는 금액의 범위다: capex(설비투자만) · capex+opex(운영비·인건비 등이 섞임) · unknown(밝히지 않음). amount.period 는 금액이 걸친 기간이다.",
+  "같은 돈을 두 번 세지 않는다. 뒤의 발표가 앞의 것을 통째로 대체하면 supersedes 에 앞 기록의 id 를 적고, 앞 기록은 나라별 합계에서 뺀다. 금액이 더 큰 계획의 일부이면 included_in 에 그 계획의 id 를 적는다 — 발표 합에는 큰 계획만 들어가고, 착공 이상 합에는 큰 계획이 발표 단계일 때 이 기록의 금액이 들어간다.",
+  "stage 는 발표 · 부지확보 · 착공 · 가동 이다. 여러 해에 걸친 투자 계획은 그 가운데 특정 시설이 착공했더라도 계획 전체는 '발표'로 두고, 착공한 시설을 따로 기록해 included_in 으로 잇는다.",
+  "by_country 는 기록에서 센 값이다: announced_usd_bn(발표 포함), firm_usd_bn(착공 이상), mw_announced·mw_firm(용량이 공개된 기록만), no_amount(금액이 없는 기록 수). 용량은 IT·수전·기준 불명이 섞여 있어 가늠하는 데만 쓴다.",
+  "회사 발표가 아니라 업계 보도로만 알려진 건은 그 사실을 note 에 적고 신뢰도를 낮게 둔다. 검토·협의 단계로만 보도된 것은 pending 에 따로 둔다.",
+  "OpenAI·Anthropic·Meta 의 건 가운데 묶음 B 에 건별 기록이 있는 것은 ref_bundle_b 에 그 id 를 적었다. 판정과 묶음 내역은 B 에 있다.",
+  "countries_done 은 지금까지 모은 나라다. 여기에 없는 나라는 아직 모으지 않은 것이지 건이 없는 것이 아니다."
+ ],
+ "by_country": {
+  "countries": {
+   "KR": {
+    "records": 7,
+    "announced_usd_bn": 5,
+    "firm_usd_bn": 4,
+    "no_amount": 5,
+    "mw_announced": 265,
+    "mw_firm": 100,
+    "by_company": {
+     "AWS": 5
+    }
+   }
+  },
+  "superseded": [
+   "aws-kr-2023-plan"
+  ],
+  "firm_stages": [
+   "착공",
+   "가동"
+  ]
+ },
+ "records": [
+  {
+   "id": "aws-kr-2023-plan",
+   "company": "AWS",
+   "country": "KR",
+   "city": "서울(수도권)",
+   "region": "AWS 아시아 태평양(서울) 리전",
+   "announced": "2023-10-11",
+   "value": 5.88,
+   "unit": "십억 달러",
+   "asof": "2023-10-11",
+   "basis": "회사가 밝힌 달러 값(58억 8,000만 달러). 5년 계획 금액이고 운영비가 섞여 있다",
+   "amount": {
+    "currency": "KRW",
+    "value": 7850,
+    "unit": "십억 원",
+    "usd_bn": 5.88,
+    "fx": {
+     "rate": 1335,
+     "date": "2023-10",
+     "source": "회사가 함께 밝힌 달러 값에서 역산"
+    },
+    "scope": "capex+opex",
+    "period": "2023~2027"
+   },
+   "mw": {
+    "value": null,
+    "basis": "unknown"
+   },
+   "what": "리전 확장",
+   "stage": "가동",
+   "status_now": "2025-10 의 새 계획이 2025년 이후를 다시 발표했다. 뉴시스는 2025-10 기준 AWS 의 국내 누적 투자가 5조 6,000억 원(약 40억 달러) 이상이라고 전했다.",
+   "status_asof": "2026-11-18",
+   "partners": [],
+   "sources": [
+    {
+     "n": 1,
+     "title": "AWS 한국 블로그 — 'AWS 경제적 영향 보고서' 발간: 한국에 대한 클라우드 투자 현황 및 계획",
+     "url": "https://aws.amazon.com/ko/blogs/korea/2023-aws-korea-eis-report/",
+     "date": "2023-10-12",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "뉴시스 — 7兆 韓 투자 약속한 AWS… AI 데이터센터 더 짓는다(종합)",
+     "url": "https://www.newsis.com/view/NISX20251029_0003381896",
+     "date": "2025-10-29",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "금액에 자본 지출과 운영 비용이 함께 들어 있다(\"구축, 연결, 운영, 유지 보수와 관련된 자본 및 운영 비용을 포함\"). 블로그 본문은 달러 값을 '5조 8,800억 달러'로 잘못 적었고 문맥상 58억 8,000만 달러다. 2025-10 계획과 기간이 겹쳐(2025~2027) 합계에서는 뺐다 — 2023~2024년에 실제 쓴 금액은 2025 계획에 들어 있지 않으므로 나라 합계가 그만큼 작게 잡힌다."
+  },
+  {
+   "id": "alibaba-kr-dc2",
+   "company": "Alibaba",
+   "country": "KR",
+   "city": "서울(수도권)",
+   "region": "알리바바 클라우드 한국 리전 두 번째 데이터센터",
+   "announced": "2025-06",
+   "value": null,
+   "unit": "십억 달러",
+   "asof": "2025-06",
+   "basis": "금액이 공개되지 않았다",
+   "amount": null,
+   "mw": {
+    "value": null,
+    "basis": "unknown"
+   },
+   "what": "리전 확장",
+   "stage": "가동",
+   "status_now": "2025-06 가동했다고 회사가 2026-08 간담회에서 밝혔다.",
+   "status_asof": "2026-11-18",
+   "partners": [],
+   "sources": [
+    {
+     "n": 1,
+     "title": "CIO Korea — 알리바바 클라우드, 1년 만에 韓 데이터센터 추가",
+     "url": "https://www.cio.com/article/4210880/알리바바-클라우드-1년-만에-韓-데이터센터-추가-ai-수.html",
+     "date": "2026-08-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "med",
+   "note": "금액·용량·위치와 자가·임차 여부를 밝히지 않았다."
+  },
+  {
+   "id": "aws-kr-ulsan-sk",
+   "company": "AWS",
+   "country": "KR",
+   "city": "울산",
+   "region": "울산 AI 존(SK 와의 AI 데이터센터)",
+   "announced": "2025-06",
+   "value": 4,
+   "unit": "십억 달러",
+   "asof": "2025-06",
+   "basis": "업계 전망으로 보도된 AWS 몫(약 40억 달러). 회사 발표 값이 아니다",
+   "amount": {
+    "currency": "USD",
+    "value": 4,
+    "unit": "십억 달러",
+    "usd_bn": 4,
+    "scope": "unknown",
+    "period": "미공개"
+   },
+   "mw": {
+    "value": 100,
+    "basis": "unknown",
+    "note": "처음 100MW 급. 1GW 확장은 계획"
+   },
+   "what": "전용 캠퍼스",
+   "stage": "착공",
+   "status_now": "공사 중이다. 2026-09 SK 회장이 건설 현장을 점검했고 2027년 하반기 가동 예정이라고 보도됐다. SK텔레콤은 1GW 로 늘릴 계획을 밝혔고 회장은 확장이 \"거의 900MW 까지 왔다\"고 했다(확장분의 고객은 발표되지 않았다).",
+   "status_asof": "2026-11-18",
+   "partners": [
+    {
+     "name": "SK그룹(SK텔레콤 등)",
+     "role": "건설·운영. AWS 는 기술을 댄다"
+    }
+   ],
+   "included_in": "aws-kr-2025-plan",
+   "sources": [
+    {
+     "n": 1,
+     "title": "The Korea Times — SK chairman says Ulsan AI data center expansion nearing 900 megawatts",
+     "url": "https://www.koreatimes.co.kr/business/tech-science/20260913/sk-chairman-says-ulsan-ai-data-center-expansion-nearing-900-megawatts",
+     "date": "2026-09-13",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "뉴시스 — 7兆 韓 투자 약속한 AWS… AI 데이터센터 더 짓는다(종합)",
+     "url": "https://www.newsis.com/view/NISX20251029_0003381896",
+     "date": "2025-10-29",
+     "read": "partial"
+    },
+    {
+     "n": 3,
+     "title": "DCD — SK Group and AWS to build AI data center in Ulsan, South Korea",
+     "url": "https://www.datacenterdynamics.com/en/news/sk-group-and-aws-to-build-ai-data-center-in-ulsan-south-korea/",
+     "date": "2025-06",
+     "read": "search_summary"
+    }
+   ],
+   "value_src": [
+    2
+   ],
+   "alt": [
+    {
+     "value": 5.2,
+     "basis": "SK 가 밝힌 사업 전체 약 7조 원의 기사 환산(십억 달러)",
+     "url": "https://www.koreatimes.co.kr/business/tech-science/20260913/sk-chairman-says-ulsan-ai-data-center-expansion-nearing-900-megawatts"
+    }
+   ],
+   "conf": "med",
+   "note": "AWS 몫 약 40억 달러는 업계 전망치로 보도된 값이고 회사 발표가 아니다. 사업 전체는 SK 가 밝힌 약 7조 원(기사 환산 52억 달러)이다. 금액은 2025-10 계획에 들어 있어 발표 합에는 넣지 않고, 착공 이상 합에만 넣는다. 용량은 '100MW 로 시작'(Korea Times)과 '2027-11 까지 41MW, 2029-02 까지 103MW'(검색 요약)가 있다."
+  },
+  {
+   "id": "openai-kr-samsung-pohang",
+   "company": "OpenAI",
+   "country": "KR",
+   "city": "포항",
+   "region": "삼성(삼성SDS·삼성물산·삼성중공업)과의 데이터센터(포항)",
+   "announced": "2025-10-01",
+   "value": null,
+   "unit": "십억 달러",
+   "asof": "2025-10-01",
+   "basis": "금액이 공개되지 않았다",
+   "amount": null,
+   "mw": {
+    "value": 20,
+    "basis": "unknown",
+    "note": "보도된 초기 용량"
+   },
+   "what": "전용 캠퍼스",
+   "stage": "발표",
+   "status_now": "착공하지 않았다. 2026-09 삼성SDS 는 확정된 것이 없고 결정은 OpenAI 몫이라고 했다.",
+   "status_asof": "2026-11-18",
+   "partners": [
+    {
+     "name": "삼성SDS·삼성물산·삼성중공업",
+     "role": "구축·운영(검토)"
+    }
+   ],
+   "ref_bundle_b": "openai-kr-samsung-pohang",
+   "sources": [
+    {
+     "n": 1,
+     "title": "OpenAI — Samsung and SK join OpenAI's Stargate initiative",
+     "url": "https://openai.com/index/samsung-and-sk-join-stargate/",
+     "date": "2025-10-01",
+     "read": "full"
+    },
+    {
+     "n": 2,
+     "title": "아시아경제 — OpenAI Accelerates Collaboration with Samsung and SK... Korea Data Center Groundbreaking in March",
+     "url": "https://www.asiae.co.kr/en/article/2026021115561476013",
+     "date": "2026-02-11",
+     "read": "partial"
+    },
+    {
+     "n": 3,
+     "title": "Korea JoongAng Daily — OpenAI's Stargate Korea data center plans stall amid power and funding hurdles",
+     "url": "https://www.koreajoongangdaily.com/business/openais-stargate-project-in-korea-stuck-at-starting-gate-as-samsung-sk-report-little-progress/12856484",
+     "date": "2026-09-07",
+     "read": "partial"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "low",
+   "note": "금액은 발표되지 않았다. 초기 20MW 는 보도 값이다."
+  },
+  {
+   "id": "openai-kr-sk-southwest",
+   "company": "OpenAI",
+   "country": "KR",
+   "city": "전남(서남권)",
+   "region": "SK텔레콤과의 AI 데이터센터(서남권)",
+   "announced": "2025-10-01",
+   "value": null,
+   "unit": "십억 달러",
+   "asof": "2025-10-01",
+   "basis": "금액이 공개되지 않았다",
+   "amount": null,
+   "mw": {
+    "value": 20,
+    "basis": "unknown",
+    "note": "보도된 초기 용량"
+   },
+   "what": "전용 캠퍼스",
+   "stage": "발표",
+   "status_now": "착공하지 않았다. 2026-09 SK텔레콤은 양해각서 뒤 진전이 없고 OpenAI 의 수요가 확정되지 않았다고 했다.",
+   "status_asof": "2026-11-18",
+   "partners": [
+    {
+     "name": "SK텔레콤",
+     "role": "구축·운영(검토)"
+    }
+   ],
+   "ref_bundle_b": "openai-kr-sk-southwest",
+   "sources": [
+    {
+     "n": 1,
+     "title": "OpenAI — Samsung and SK join OpenAI's Stargate initiative",
+     "url": "https://openai.com/index/samsung-and-sk-join-stargate/",
+     "date": "2025-10-01",
+     "read": "full"
+    },
+    {
+     "n": 2,
+     "title": "아시아경제 — OpenAI Accelerates Collaboration with Samsung and SK... Korea Data Center Groundbreaking in March",
+     "url": "https://www.asiae.co.kr/en/article/2026021115561476013",
+     "date": "2026-02-11",
+     "read": "partial"
+    },
+    {
+     "n": 3,
+     "title": "Korea JoongAng Daily — OpenAI's Stargate Korea data center plans stall amid power and funding hurdles",
+     "url": "https://www.koreajoongangdaily.com/business/openais-stargate-project-in-korea-stuck-at-starting-gate-as-samsung-sk-report-little-progress/12856484",
+     "date": "2026-09-07",
+     "read": "partial"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "low",
+   "note": "금액은 발표되지 않았다. 초기 20MW 는 보도 값이다."
+  },
+  {
+   "id": "aws-kr-2025-plan",
+   "company": "AWS",
+   "country": "KR",
+   "city": "인천·경기·울산",
+   "region": "인천·경기의 신규 AI 데이터센터와 울산 AI 존",
+   "announced": "2025-10-29",
+   "value": 5,
+   "unit": "십억 달러",
+   "asof": "2025-10-29",
+   "basis": "회사가 밝힌 달러 값(50억 달러 이상). 7년 계획 금액",
+   "amount": {
+    "currency": "KRW",
+    "value": 7000,
+    "unit": "십억 원",
+    "usd_bn": 5,
+    "fx": {
+     "rate": 1400,
+     "date": "2025-10-29",
+     "source": "회사가 함께 밝힌 달러 값에서 역산"
+    },
+    "scope": "unknown",
+    "period": "2025~2031"
+   },
+   "mw": {
+    "value": null,
+    "basis": "unknown"
+   },
+   "what": "리전 확장",
+   "stage": "발표",
+   "status_now": "울산은 공사 중이다(aws-kr-ulsan-sk). 뉴시스는 업계를 인용해 AWS 가 인천 서구 산업단지 일대 땅을 사고 시공사를 정해 구축에 들어갔다고 전했다. 인천·경기 시설의 용량과 일정은 발표되지 않았다.",
+   "status_asof": "2026-11-18",
+   "partners": [
+    {
+     "name": "SK그룹",
+     "role": "울산 AI 존 건설"
+    }
+   ],
+   "supersedes": [
+    "aws-kr-2023-plan"
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "전자신문 — AWS, \"한국을 AI 허브로\"…2031년까지 7조 추가 투자",
+     "url": "https://m.etnews.com/20251029000381",
+     "date": "2025-10-29",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "뉴시스 — 7兆 韓 투자 약속한 AWS… AI 데이터센터 더 짓는다(종합)",
+     "url": "https://www.newsis.com/view/NISX20251029_0003381896",
+     "date": "2025-10-29",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "AWS 발표를 옮긴 기사 기준이다: \"2025년부터 2031년까지 … 7조원을 추가로 투입해, 총 누적 투자 규모를 12조 6000억원(90억 달러) 이상으로 확대\". 이 금액에 울산 AI 존이 들어 있다고 두 기사 모두 적는다. 뉴시스는 인재 양성 등이 함께 들어 있다고 적어 범위를 unknown 으로 뒀다. AWS 발표문 원문은 열지 못했다."
+  },
+  {
+   "id": "microsoft-kr-busan-3",
+   "company": "Microsoft",
+   "country": "KR",
+   "city": "부산",
+   "region": "부산 강서구 미음 국제산업물류도시 3호 데이터센터",
+   "announced": "2026-06-01",
+   "value": null,
+   "unit": "십억 달러",
+   "asof": "2026-06-01",
+   "basis": "금액이 공개되지 않았다",
+   "amount": {
+    "currency": "KRW",
+    "value": 2000,
+    "unit": "십억 원",
+    "usd_bn": null,
+    "scope": "unknown",
+    "period": "2026~2031"
+   },
+   "mw": {
+    "value": 125,
+    "basis": "utility",
+    "note": "154kV 수전 방식 125MW 급(보도)"
+   },
+   "what": "리전 확장",
+   "stage": "부지확보",
+   "status_now": "업계 보도 기준으로 2025년에 부산도시공사에서 부지를 샀고 2026-10 착공, 2031-10 준공이 목표다. 착공 여부는 확인하지 못했다.",
+   "status_asof": "2026-11-18",
+   "partners": [],
+   "sources": [
+    {
+     "n": 1,
+     "title": "이데일리 — MS, 부산에 125MW급 데이터센터 추진...올해 10월 착공 예정",
+     "url": "https://tv.edaily.co.kr/News/NewsRead?NewsId=04785526645477456&Kind=257",
+     "date": "2026-06-01",
+     "read": "partial"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "low",
+   "note": "회사 발표가 아니라 '데이터센터 및 투자 업계'를 인용한 단독 보도다. 사업비는 '최소 2조 원 이상'으로 보도됐고 환율 출처를 확인하지 못해 달러 값을 비웠다. 용량은 154kV 수전 방식 125MW 급이다. 기사는 기존 1·2호기 합산이 85MW 라고 적는다."
+  },
+  {
+   "id": "alibaba-kr-dc3",
+   "company": "Alibaba",
+   "country": "KR",
+   "city": "서울(수도권)",
+   "region": "알리바바 클라우드 한국 리전 세 번째 데이터센터",
+   "announced": "2026-08-18",
+   "value": null,
+   "unit": "십억 달러",
+   "asof": "2026-08-18",
+   "basis": "금액이 공개되지 않았다",
+   "amount": null,
+   "mw": {
+    "value": null,
+    "basis": "unknown"
+   },
+   "what": "리전 확장",
+   "stage": "가동",
+   "status_now": "가동을 시작했다. 정확한 위치는 공개하지 않았고 수도권이다.",
+   "status_asof": "2026-11-18",
+   "partners": [],
+   "sources": [
+    {
+     "n": 1,
+     "title": "CIO Korea — 알리바바 클라우드, 1년 만에 韓 데이터센터 추가",
+     "url": "https://www.cio.com/article/4210880/알리바바-클라우드-1년-만에-韓-데이터센터-추가-ai-수.html",
+     "date": "2026-08-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "med",
+   "note": "금액·용량과 자가·임차 여부를 밝히지 않았다. 회사는 \"향후 12개월의 수요까지 반영한 선제적 투자\"라고 했고, 그룹의 3년 530억 달러 계획의 연장선이라고 설명했다(한국 몫은 없다)."
+  }
+ ],
+ "pending": [
+  {
+   "company": "Google",
+   "country": "KR",
+   "what": "한국 내 데이터센터 확보 검토(LG유플러스와 설계·구축·운영 방식 협의 보도, 2026-03)",
+   "state": "LG유플러스는 구체적 논의가 없다고 답했다. 2025-10 구글은 추가 데이터센터를 고려하지 않는다고 했다",
+   "url": "https://news.mtn.co.kr/news-detail/2026031411080769817",
+   "read": "search_summary"
+  },
+  {
+   "company": "AWS",
+   "country": "KR",
+   "what": "울산 AI 데이터센터의 1GW 확장분(SK 회장 \"거의 900MW 까지 왔다\")",
+   "state": "SK 쪽 발언. 고객과 계약은 발표되지 않았다",
+   "url": "https://www.koreatimes.co.kr/business/tech-science/20260913/sk-chairman-says-ulsan-ai-data-center-expansion-nearing-900-megawatts",
+   "read": "partial"
+  }
+ ],
+ "excluded": [
+  {
+   "company": "Oracle",
+   "country": "KR",
+   "what": "한국 리전(서울 2019, 춘천 2020)",
+   "why": "2023년 이후의 투자·용량 발표를 찾지 못했다",
+   "url": "https://www.hankyung.com/article/202206231190Y",
+   "read": "search_summary"
+  },
+  {
+   "company": "Meta",
+   "country": "KR",
+   "what": "한국 내 데이터센터",
+   "why": "발표를 찾지 못했다",
+   "url": "https://about.fb.com/news/2026/07/breaking-ground-on-metas-first-data-center-in-canada/",
+   "read": "partial"
+  },
+  {
+   "company": "Tencent",
+   "country": "KR",
+   "what": "텐센트 클라우드·바이트댄스의 한국 내 용량",
+   "why": "검색에서 발표를 찾지 못했다(없다는 확인은 아니다)",
+   "url": "https://www.cio.com/article/4210880/알리바바-클라우드-1년-만에-韓-데이터센터-추가-ai-수.html",
+   "read": "partial"
+  }
+ ],
+ "countries_done": [
+  "KR"
+ ]
 }
