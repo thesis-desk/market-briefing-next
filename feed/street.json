@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated_kst": "2026-11-19T02:35:08+09:00",
+ "updated_kst": "2026-11-19T05:27:09+09:00",
  "window_days": 14,
  "items_days": 30,
  "index": {
@@ -8,13 +8,13 @@
    "value": -1,
    "label": "엇갈림",
    "orgs": 42,
-   "items": 136
+   "items": 139
   },
   "market": {
    "value": -13,
    "label": "엇갈림",
    "orgs": 29,
-   "items": 89
+   "items": 88
   },
   "by_group": [
    {
@@ -33,7 +33,7 @@
    },
    {
     "group": "자산운용",
-    "ai_tech": -2,
+    "ai_tech": -1,
     "ai_tech_orgs": 7,
     "market": 1,
     "market_orgs": 7
@@ -98,8 +98,8 @@
    },
    {
     "week": "2026-11-16",
-    "ai_tech": 10,
-    "ai_tech_orgs": 17,
+    "ai_tech": 7,
+    "ai_tech_orgs": 19,
     "market": -4,
     "market_orgs": 12
    }
@@ -108,14 +108,14 @@
    "caution": [
     {
      "tag": "투자 회수",
-     "n": 20
-    },
-    {
-     "tag": "자금 조달·신용",
-     "n": 15
+     "n": 21
     },
     {
      "tag": "밸류에이션",
+     "n": 16
+    },
+    {
+     "tag": "자금 조달·신용",
      "n": 15
     },
     {
@@ -146,11 +146,11 @@
    "optimism": [
     {
      "tag": "수요·채택",
-     "n": 46
+     "n": 47
     },
     {
      "tag": "투자 회수",
-     "n": 37
+     "n": 38
     },
     {
      "tag": "자금 조달·신용",
@@ -174,7 +174,7 @@
     },
     {
      "tag": "쏠림",
-     "n": 12
+     "n": 13
     },
     {
      "tag": "경쟁·해자",
@@ -185,6 +185,39 @@
   "method": "기관·인물마다 기간 안 입장 값의 평균을 내고 그 평균들을 다시 평균해 ×50"
  },
  "items": [
+  {
+   "id": "blackrock-ai-investing-what-s-driving-optimism-amid-market",
+   "group": "자산운용",
+   "org": "BlackRock",
+   "person": null,
+   "kind": "publication",
+   "title": "AI 투자: 시장 변동성 속에서 낙관을 이끄는 요인은 무엇인가?",
+   "title_orig": "AI Investing: What's Driving Optimism Amid Market Volatility?",
+   "url": "https://www.youtube.com/watch?v=TXLhdGAh4C0",
+   "outlet": "BlackRock (유튜브)",
+   "published_kst": "2026-11-19T03:44:09+09:00",
+   "stance": {
+    "ai_tech": 1,
+    "market": null
+   },
+   "args": [
+    "투자 회수",
+    "쏠림",
+    "수요·채택"
+   ],
+   "summary": "BlackRock은 여름 이후 AI 종목의 주가 움직임이 쏠린 포지셔닝과 그 청산에 좌우되어 펀더멘털과 무관하게 흔들린다고 본다. 자체 설비투자 추정치를 향후 2년간 8~12% 낮췄지만 여전히 컨센서스보다 높아, AI 관련 기업의 매출·이익 추정이 너무 낮고 긍정적 서프라이즈가 가능하다고 본다. 프런티어 랩의 연간 반복 매출(ARR)이 신규 모델 출시와 함께 계속 늘 것으로 기대해 이 테마에 대한 확신을 유지한다.",
+   "points": [
+    "여름 이후 AI·기술주 가격 변동은 쏠린 포지션과 그 청산이 주도해 펀더멘털과 직접 관련이 없다.",
+    "자체 설비투자 추정치는 2년간 8~12% 하향했지만 컨센서스보다 높아, AI 관련 기업의 매출·이익 추정이 낮아 긍정적 서프라이즈가 가능하다고 본다.",
+    "컴퓨팅 수요 상당 부분이 프런티어 랩으로 가므로 이들의 ARR 증가가 지속되는지가 핵심이며, 신규 모델 출시 시점에 ARR이 늘어난다.",
+    "향후 모델 출시와 함께 ARR이 계속 늘 것으로 기대하며 이것이 AI 테마에 대한 확신을 유지시킨다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "유튜브 자막(제작자 제공)(en) 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
+  },
   {
    "id": "bofa-nvidia-s-growth-outlook-survives-jensen-huang-su",
    "group": "투자은행",
@@ -276,6 +309,37 @@
    }
   },
   {
+   "id": "damodaran-warning-for-amazon-investors-anthropic-needs-rev",
+   "group": "투자 거장",
+   "org": "NYU Stern",
+   "person": "Aswath Damodaran",
+   "kind": "report",
+   "title": "Amazon 투자자에 대한 경고: Aswath Damodaran에 따르면 Anthropic은 기업가치 2조 달러를 위해 '1조 달러의 매출'이 필요",
+   "title_orig": "Warning for Amazon Investors: Anthropic Needs “Revenues of $1 Trillion” at $2 Trillion Valuation, per Aswath Damodaran",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/warning-amazon-investors-anthropic-needs-162648109.html",
+   "outlet": "Yahoo Finance",
+   "published_kst": "2026-11-18T13:00:00+09:00",
+   "stance": {
+    "ai_tech": -1,
+    "market": null
+   },
+   "args": [
+    "밸류에이션",
+    "투자 회수"
+   ],
+   "summary": "Damodaran은 Anthropic의 IPO 예상 기업가치 1.5조 달러를 정당화할 만한 사업이 없다고 본다. 연환산 매출 런레이트가 800억 달러에 그치는 만큼, 2조 달러라면 매출 1조~1.5조 달러가 필요해 달성하기 어렵다고 말했다.",
+   "points": [
+    "Anthropic의 1.5조 달러 기업가치를 정당화할 만한 것이 없다고 말했다.",
+    "연환산 매출 런레이트를 볼 수는 있지만 그 규모는 800억 달러라고 말했다.",
+    "기업가치를 2조 달러로 두면 이를 정당화하기 위해 매출 1조~1.5조 달러가 필요하며, 이는 달성하기 어려울 것이라고 말했다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
+  },
+  {
    "id": "goldman-goldman-sachs-says-bet-on-these-24-physical-asse",
    "group": "투자은행",
    "org": "Goldman Sachs",
@@ -340,6 +404,38 @@
     "tier": "standard"
    },
    "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
+  },
+  {
+   "id": "theory-squeezing-neoclouds-pushes-nvidia-back-toward-it",
+   "group": "벤처캐피털",
+   "org": "Tomasz Tunguz (Theory Ventures)",
+   "person": "Tomasz Tunguz",
+   "kind": "publication",
+   "title": "네오클라우드를 압박하면 NVIDIA는 경쟁자 쪽으로 다시 밀려난다",
+   "title_orig": "Squeezing Neoclouds Pushes NVIDIA Back Toward Its Rivals",
+   "url": "https://tomtunguz.com/the-non-hyperscaler-half-of-nvidia",
+   "outlet": "Tomasz Tunguz",
+   "published_kst": "2026-11-18T09:00:00+09:00",
+   "stance": {
+    "ai_tech": 0,
+    "market": null
+   },
+   "args": [
+    "자금 조달·신용",
+    "쏠림",
+    "경쟁·해자",
+    "수요·채택"
+   ],
+   "summary": "NVIDIA의 가장 어려운 전략 과제는 수요가 아니라 어떤 고객을 우선 지원할지 고르는 일이라고 주장한다. 네오클라우드 금융 지원을 조이면 자금력이 약한 사업자의 성장이 둔화될 수 있고, 하이퍼스케일러의 자체 칩 대응 지렛대를 오히려 키워 줄 수 있다고 본다.",
+   "points": [
+    "하이퍼스케일러는 NVIDIA 하드웨어를 대량 구매하면서 동시에 자체 맞춤형 칩으로 대체하려 한다.",
+    "NVIDIA가 네오클라우드 금융 지원을 선별적으로 바꾸고 있으며, 이는 자본이 부족한 소규모 사업자의 성장을 늦출 수 있다.",
+    "다변화된 구매자 기반이 하이퍼스케일러 자체 칩에 대한 NVIDIA의 최선의 방어인데, 네오클라우드를 압박하면 그 협상력을 하이퍼스케일러에 되돌려 주게 된다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   }
   },
   {
    "id": "morgan-stanley-2027-global-outlook-the-case-for-a-stronger-doll",
