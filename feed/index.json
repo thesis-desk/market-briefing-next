@@ -1,7 +1,27 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-18T11:29:20+09:00",
+ "generated_kst": "2026-11-18T14:20:11+09:00",
  "reports": [
+  {
+   "slug": "sixsigma-ai",
+   "type": "article",
+   "title": "식스시그마 : 기억 못 하는 AI가 밀레니엄 난제를 풀자 드와케시 파텔이 AI 연구 자동화 시점을 2028년으로 당겼다",
+   "companies": [
+    {
+     "name": "OpenAI",
+     "ticker": null
+    },
+    {
+     "name": "Anthropic",
+     "ticker": null
+    }
+   ],
+   "published_kst": "2026-11-18T14:20:11+09:00",
+   "revised_kst": "2026-11-18T14:20:11+09:00",
+   "revision": 1,
+   "summary": "파텔의 논리는 '장기 기억 없이도 AI가 AI 연구를 자동화할 수 있다'는 한 가지 전제에 기대며, 이 전제가 맞으면 속도의 병목은 소프트웨어에서 칩·데이터센터 투자로 넘어간다. 다만 영상은 해설이고 원문 글은 직접 확인되지 않았으며, 종목 수준의 근거는 원문에 거의 없어 판정은 방향과 조건 수준에 그친다(확신 낮음).",
+   "path": "reports/sixsigma-ai.json"
+  },
   {
    "slug": "all-in-databricks-ceo-agi-is-already-here-why-companies-are",
    "type": "interview",
