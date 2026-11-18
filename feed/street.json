@@ -1,17 +1,17 @@
 {
  "schema": 1,
- "updated_kst": "2026-11-18T20:26:01+09:00",
+ "updated_kst": "2026-11-19T02:35:08+09:00",
  "window_days": 14,
  "items_days": 30,
  "index": {
   "ai_tech": {
-   "value": -2,
+   "value": -1,
    "label": "엇갈림",
    "orgs": 42,
    "items": 136
   },
   "market": {
-   "value": -12,
+   "value": -13,
    "label": "엇갈림",
    "orgs": 29,
    "items": 89
@@ -26,23 +26,23 @@
    },
    {
     "group": "PE·대체투자",
-    "ai_tech": -2,
+    "ai_tech": 2,
     "ai_tech_orgs": 8,
     "market": 0,
     "market_orgs": 3
    },
    {
     "group": "자산운용",
-    "ai_tech": 0,
+    "ai_tech": -2,
     "ai_tech_orgs": 7,
     "market": 1,
     "market_orgs": 7
    },
    {
     "group": "투자은행",
-    "ai_tech": 14,
+    "ai_tech": 16,
     "ai_tech_orgs": 6,
-    "market": 28,
+    "market": 27,
     "market_orgs": 6
    },
    {
@@ -61,9 +61,9 @@
    },
    {
     "group": "중앙은행·국제기구",
-    "ai_tech": -8,
+    "ai_tech": -5,
     "ai_tech_orgs": 2,
-    "market": -12,
+    "market": -17,
     "market_orgs": 2
    }
   ],
@@ -98,8 +98,8 @@
    },
    {
     "week": "2026-11-16",
-    "ai_tech": 3,
-    "ai_tech_orgs": 16,
+    "ai_tech": 10,
+    "ai_tech_orgs": 17,
     "market": -4,
     "market_orgs": 12
    }
@@ -108,11 +108,11 @@
    "caution": [
     {
      "tag": "투자 회수",
-     "n": 21
+     "n": 20
     },
     {
      "tag": "자금 조달·신용",
-     "n": 16
+     "n": 15
     },
     {
      "tag": "밸류에이션",
@@ -120,7 +120,7 @@
     },
     {
      "tag": "쏠림",
-     "n": 13
+     "n": 12
     },
     {
      "tag": "정책·지정학",
@@ -128,7 +128,7 @@
     },
     {
      "tag": "금리·거시",
-     "n": 9
+     "n": 8
     },
     {
      "tag": "경쟁·해자",
@@ -146,18 +146,18 @@
    "optimism": [
     {
      "tag": "수요·채택",
-     "n": 45
+     "n": 46
     },
     {
      "tag": "투자 회수",
      "n": 37
     },
     {
-     "tag": "금리·거시",
-     "n": 22
+     "tag": "자금 조달·신용",
+     "n": 21
     },
     {
-     "tag": "자금 조달·신용",
+     "tag": "금리·거시",
      "n": 21
     },
     {
@@ -166,25 +166,115 @@
     },
     {
      "tag": "밸류에이션",
-     "n": 17
+     "n": 18
+    },
+    {
+     "tag": "전력·공급 제약",
+     "n": 14
     },
     {
      "tag": "쏠림",
      "n": 12
     },
     {
-     "tag": "전력·공급 제약",
-     "n": 12
-    },
-    {
      "tag": "경쟁·해자",
-     "n": 10
+     "n": 11
     }
    ]
   },
   "method": "기관·인물마다 기간 안 입장 값의 평균을 내고 그 평균들을 다시 평균해 ×50"
  },
  "items": [
+  {
+   "id": "bofa-nvidia-s-growth-outlook-survives-jensen-huang-su",
+   "group": "투자은행",
+   "org": "Bank of America",
+   "person": "Vivek Arya",
+   "kind": "publication",
+   "title": "Nvidia의 성장 전망은 젠슨 황 후계 의문에도 건재, BofA의 Vivek Arya",
+   "title_orig": "Nvidia's growth outlook survives Jensen Huang succession questions, says BofA's Vivek Arya",
+   "url": "https://www.youtube.com/watch?v=1sl3CWo9KDM",
+   "outlet": "CNBC Television (유튜브)",
+   "published_kst": "2026-11-18T21:13:30+09:00",
+   "stance": {
+    "ai_tech": 2,
+    "market": null
+   },
+   "args": [
+    "수요·채택",
+    "밸류에이션",
+    "전력·공급 제약",
+    "경쟁·해자"
+   ],
+   "summary": "BofA의 Vivek Arya는 Nvidia가 젠슨 황 퇴진 논란 속에서도 실적 상회와 내년 성장 가이던스 상향(70~75%)을 내놨다고 본다. 수요가 공급을 넘어서고 GPU 임대료가 사상 최고라며 AI 수요 둔화 우려를 반박한다. 선행 PER 10배는 세대적 저점이라며 매수 의견과 목표가 280달러를 유지한다.",
+   "points": [
+    "Nvidia가 내년 성장률 가이던스를 상향하고 마진을 유지해 가격 결정력이 강하다고 본다.",
+    "성장률이 높은데도 주가는 선행 PER 10배의 세대적 저점이며 200억 달러 넘는 자사주 매입이 이를 뒷받침한다고 본다.",
+    "중국 수요가 막혀도 전체 수요가 공급 제약을 넘어서므로 다른 곳으로 돌릴 여력이 있다고 본다.",
+    "주요 클라우드 기업들이 모두 공급 부족을 말하고 GPU 임대료가 사상 최고라며 AI 수요가 광범위하다고 본다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "유튜브 자막(제작자 제공)(en) 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
+  },
+  {
+   "id": "ubs-ubs-on-air-paul-donovan-daily-audio-tit-for-tat",
+   "group": "투자은행",
+   "org": "UBS",
+   "person": "Paul Donovan",
+   "kind": "publication",
+   "title": "UBS On-Air: 폴 도노반 데일리 오디오 '전쟁에서도 무역에서도 맞받아치기'",
+   "title_orig": "UBS On-Air: Paul Donovan Daily Audio 'Tit for tat, in war and trade'",
+   "url": "https://www.ubs.com/content/dam/podcasts/wma/261118-tit-for-tat-in-war-and-trade.mp3",
+   "outlet": "UBS Paul Donovan Daily",
+   "published_kst": "2026-11-18T17:36:48+09:00",
+   "stance": {
+    "ai_tech": null,
+    "market": 0
+   },
+   "args": [
+    "정책·지정학",
+    "금리·거시"
+   ],
+   "summary": "도노반은 걸프 지역의 군사 충돌이 아직 낮은 수준에 머물러 있고 유가 시장의 낙관 편향도 꺾이지 않았다고 본다. 다만 공격이 격화되면 그 낙관이 흔들릴 수 있어 계속 지켜봐야 한다고 말한다. 미중 무역 긴장은 관세 회피 덕에 덜 우려스럽다고 보며, ECB 인선은 통화정책 기조를 바꾸지 않는다고 본다.",
+   "points": [
+    "걸프 지역의 군사 행동은 소폭 늘었지만 낮은 수준의 맞대응에 머물러 있어 비교적 억제된 상태다.",
+    "공격 강도가 격화되면 유가 시장의 낙관 편향이 압박을 받을 수 있다.",
+    "미국 수입업자들이 원산지와 품목을 위장해 관세를 피하고 있어 다른 무역 긴장 분야는 덜 우려스럽다.",
+    "ECB 수뇌부 인선은 정책 기조를 바꾸지 않고 소통 방식만 달라질 수 있다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "팟캐스트 음성을 음성 인식(Whisper)으로 받아 적은 전사 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
+  },
+  {
+   "id": "blackstone-blackstone-s-jon-gray-calls-concerns-about-ai-bu",
+   "group": "PE·대체투자",
+   "org": "Blackstone",
+   "person": null,
+   "kind": "report",
+   "title": "블랙스톤 존 그레이, AI 거품 우려는 과장됐다고 주장",
+   "title_orig": "Blackstone’s Jon Gray Calls Concerns About AI Bubble Overblown",
+   "url": "https://news.bloomberglaw.com/private-equity/blackstones-jon-gray-calls-concerns-about-ai-bubble-overblown",
+   "outlet": "Bloomberg Law News",
+   "published_kst": "2026-11-18T16:55:00+09:00",
+   "stance": {
+    "ai_tech": 2,
+    "market": null
+   },
+   "args": [
+    "수요·채택",
+    "전력·공급 제약"
+   ],
+   "judged": {
+    "basis": "headline_only",
+    "tier": "light"
+   }
+  },
   {
    "id": "goldman-goldman-sachs-says-bet-on-these-24-physical-asse",
    "group": "투자은행",
@@ -284,6 +374,40 @@
     "basis": "full_text",
     "tier": "standard"
    }
+  },
+  {
+   "id": "morgan-stanley-morgan-stanley-predicts-this-event-to-be-the-fin",
+   "group": "투자은행",
+   "org": "Morgan Stanley",
+   "person": null,
+   "kind": "report",
+   "title": "Morgan Stanley, 이 이벤트가 시장 조정의 마지막 단계가 될 것으로 전망",
+   "title_orig": "Morgan Stanley predicts this event to be the final stage of market correction",
+   "url": "https://invezz.com/news/2026/11/18/morgan-stanley-predicts-this-event-to-be-the-final-stage-of-market-correction",
+   "outlet": "Invezz",
+   "published_kst": "2026-11-18T06:11:00+09:00",
+   "stance": {
+    "ai_tech": 1,
+    "market": 1
+   },
+   "args": [
+    "자금 조달·신용",
+    "금리·거시",
+    "밸류에이션",
+    "정책·지정학"
+   ],
+   "summary": "Mike Wilson은 6월에 시작된 조정이 2~3주 안에 최종 저점을 찍을 수 있다고 봤다. 중간선거 불확실성은 이미 반영됐고 연말연초 자금 조달 물량이 자연히 줄어든다고 하면서, 남은 최대 걸림돌은 연준 금리 결정이라고 했다. 투자자들이 불안한 것은 오히려 좋은 신호이며 주식은 더 이상 비싸지 않고 2027년에도 두 자릿수 성장이 예상된다고 했다.",
+   "points": [
+    "Morgan Stanley의 미국 주식 수석 전략가 Mike Wilson은 CNBC에서, 6월에 시작된 이번 조정이 향후 2~3주 안에 최종 저점에 도달할 수 있다고 말했다.",
+    "가장 큰 걸림돌은 여전히 연준이다.",
+    "유동성이 빡빡한 연말에 금리를 올리는 것은 바라지 않기 때문에 시장이 이를 우려한다. 이것이 마지막 장애물이며 2~3주 뒤에 있다고 보고, 이때 이번 조정의 최종 저점이 만들어질 것으로 생각한다.",
+    "사람들이 지금 매우 불편해하는 것은 좋은 신호다. 펀더멘털 분석이 내년에도 꽤 좋은 성장을 가리키는 한 그렇다. 주식은 더 이상 비싸지 않고 2027년에도 다시 두 자릿수 성장으로 보인다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
   },
   {
    "id": "pimco-cbs-news-jill-schlesinger-on-advice-ai-can-t-rep",

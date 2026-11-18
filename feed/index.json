@@ -1,7 +1,50 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-19T00:32:22+09:00",
+ "generated_kst": "2026-11-19T02:39:11+09:00",
  "reports": [
+  {
+   "slug": "morgan-stanley-2027-global-outlook-powered-by-ai-tested-by",
+   "type": "article",
+   "title": "Morgan Stanley : AI 투자가 유가 충격을 버텨 내 2027년 세계 성장은 3.3%로 잠시 숨을 고르는 데 그친다",
+   "companies": [
+    {
+     "name": "Morgan Stanley",
+     "ticker": null
+    }
+   ],
+   "event": "Morgan Stanley 2027 Global Outlook 1부(Thoughts on the Market 팟캐스트)",
+   "event_date": "2026-11-16",
+   "published_kst": "2026-11-19T02:39:11+09:00",
+   "revised_kst": "2026-11-19T02:39:11+09:00",
+   "revision": 1,
+   "summary": "모건스탠리는 AI 설비투자가 이란 전쟁발 유가 충격과 금리 인상을 상쇄해, 2027년 세계 성장률이 3.3%로 소폭 낮아지는 데 그친다고 본다. 다만 이 기본안은 미국 물가가 1분기에 정점을 찍는다는 전제 하나에 달려 있다. 스스로 밝힌 위험도 금리 상방 쪽으로 기울어 있고, 네 대안 시나리오 중 AI 투자 미달을 뺀 세 개가 금리 상방 압력을 뜻한다. 그래서 이번 자료에서 AI 수요의 확인보다 할인율 위험을 읽는 편이 쓸모 있다고 판단한다.",
+   "path": "reports/morgan-stanley-2027-global-outlook-powered-by-ai-tested-by.json"
+  },
+  {
+   "slug": "semafor-sam-altman-on-jensen-huang-anthropic-s-ipo-and",
+   "type": "interview",
+   "title": "샘 올트먼 인터뷰 : 칩 수요의 '이중 계산'과 데이터센터 반발",
+   "companies": [
+    {
+     "name": "OpenAI",
+     "ticker": null
+    },
+    {
+     "name": "Nvidia",
+     "ticker": null
+    },
+    {
+     "name": "Anthropic",
+     "ticker": null
+    }
+   ],
+   "event": "Semafor Silicon Valley in the World 행사 대담(Future Proof)",
+   "published_kst": "2026-11-19T02:27:16+09:00",
+   "revised_kst": "2026-11-19T02:27:16+09:00",
+   "revision": 1,
+   "summary": "올트먼은 AI 수요 자체는 의심하지 않으면서도, 칩 공급망이 같은 소수 고객의 수요를 겹쳐 세고 있다고 공개적으로 인정했다. 엔비디아 외 칩 공급망에는 약한 경고이고, 메모리에는 단기 호재와 중기 증산 위험이 함께 있다. 데이터센터 반발은 해법이 제시되지 않은 정치 리스크로 남았다.",
+   "path": "reports/semafor-sam-altman-on-jensen-huang-anthropic-s-ipo-and.json"
+  },
   {
    "slug": "apac-ai-siting-korea",
    "type": "research",
@@ -1661,11 +1704,11 @@
   }
  ],
  "street": {
-  "updated_kst": "2026-11-18T20:26:01+09:00",
+  "updated_kst": "2026-11-19T02:35:08+09:00",
   "path": "street.json"
  },
  "calendar": {
-  "updated_kst": "2026-11-18T08:27:10+09:00",
+  "updated_kst": "2026-11-19T02:27:20+09:00",
   "path": "calendar.json"
  },
  "datasets": [

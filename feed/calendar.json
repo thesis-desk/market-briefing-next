@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated_kst": "2026-11-18T08:27:10+09:00",
+ "updated_kst": "2026-11-19T02:27:20+09:00",
  "events": [
   {
    "company": "Oracle",
@@ -220,7 +220,7 @@
    "confirmed": true,
    "official": true,
    "source_url": "https://investors.delltechnologies.com/news-events/press-releases/detail/1661/dell-technologies-to-hold-conference-call-nov-24-to-discuss-third-quarter-fiscal-2027-financial-results",
-   "consensus_snapshot": false,
+   "consensus_snapshot": true,
    "report_slug": null,
    "status": "scheduled",
    "note": "회사 보도자료: 미국 현지 11월 24일 회계 3분기 실적 콜"
