@@ -2,7 +2,7 @@
  "schema": 1,
  "bundle": "D",
  "title": "전력: 품질·가격·확보",
- "updated_kst": "2026-11-18T19:48:51+09:00",
+ "updated_kst": "2026-11-18T19:55:12+09:00",
  "measure": null,
  "notes": [
   "주제는 D1 품질(정전 시간·횟수), D2 가격, D3 확보(접속 기간과 제한 제도), D4 발전소 옆 직접 공급 사례, D5 전원 구성과 전력구매계약이다. 기록의 topic 으로 나뉜다.",
@@ -92,11 +92,13 @@
  "by_country": {
   "countries": {
    "KR": {
-    "records": 4,
+    "records": 8,
     "by_topic": {
      "D1": 2,
      "D2": 1,
-     "D5": 1
+     "D3": 2,
+     "D4": 1,
+     "D5": 2
     },
     "keys": {
      "saidi": {
@@ -118,26 +120,42 @@
       "asof": "2025",
       "usd": 0.128
      },
+     "queue_mw": {
+      "id": "access-kr-queue",
+      "value": 33592,
+      "unit": "MW",
+      "asof": "2026-03"
+     },
      "renewables_share": {
       "id": "mix-kr",
       "value": 10.5,
       "unit": "%",
       "asof": "2025"
+     },
+     "rec_price": {
+      "id": "ppa-kr-rec",
+      "value": 71.15,
+      "unit": "KRW/kWh",
+      "asof": "2026-11",
+      "usd": 0.0493
      }
     },
     "onsite": {
-     "cases": 0,
-     "mw": 0,
+     "cases": 1,
+     "mw": 300,
      "mw_unknown": 0,
-     "by_stage": {}
+     "by_stage": {
+      "착공": 1
+     }
     }
    },
    "JP": {
-    "records": 6,
+    "records": 8,
     "by_topic": {
      "D1": 4,
      "D2": 1,
-     "D5": 1
+     "D3": 1,
+     "D5": 2
     },
     "keys": {
      "saidi": {
@@ -154,16 +172,29 @@
      },
      "price_avg": {
       "id": "price-ehv-jp",
-      "value": 18.43,
+      "value": 18.12,
       "unit": "JPY/kWh",
-      "asof": "2026-07",
-      "usd": 0.1163
+      "asof": "2024",
+      "usd": 0.1196
+     },
+     "queue_mw": {
+      "id": "access-jp-tepco",
+      "value": 15000,
+      "unit": "MW",
+      "asof": "2026-09"
      },
      "renewables_share": {
       "id": "mix-jp",
       "value": 23.9,
       "unit": "%",
       "asof": "2025"
+     },
+     "ppa_price": {
+      "id": "ppa-jp-price",
+      "value": 21.5,
+      "unit": "JPY/kWh",
+      "asof": "2026-02",
+      "usd": 0.1357
      }
     },
     "onsite": {
@@ -174,10 +205,12 @@
     }
    },
    "SG": {
-    "records": 4,
+    "records": 6,
     "by_topic": {
      "D1": 2,
      "D2": 1,
+     "D3": 1,
+     "D4": 1,
      "D5": 1
     },
     "keys": {
@@ -200,6 +233,12 @@
       "asof": "2025",
       "usd": 0.1748
      },
+     "allocation_mw": {
+      "id": "access-sg-cfa2",
+      "value": 200,
+      "unit": "MW",
+      "asof": "2026-08-21"
+     },
      "renewables_share": {
       "id": "mix-sg",
       "value": 5.5,
@@ -208,18 +247,21 @@
      }
     },
     "onsite": {
-     "cases": 0,
-     "mw": 0,
+     "cases": 1,
+     "mw": 700,
      "mw_unknown": 0,
-     "by_stage": {}
+     "by_stage": {
+      "발표": 1
+     }
     }
    },
    "MY": {
-    "records": 5,
+    "records": 8,
     "by_topic": {
      "D1": 3,
      "D2": 1,
-     "D5": 1
+     "D3": 2,
+     "D5": 2
     },
     "keys": {
      "saidi": {
@@ -241,11 +283,24 @@
       "asof": "2025-07",
       "usd": 0.1061
      },
+     "queue_mw": {
+      "id": "access-my-esa",
+      "value": 8300,
+      "unit": "MW",
+      "asof": "2026-07"
+     },
      "renewables_share": {
       "id": "mix-my",
       "value": 21,
       "unit": "%",
       "asof": "2025"
+     },
+     "ppa_wheeling": {
+      "id": "ppa-my-cress",
+      "value": 0.14,
+      "unit": "MYR/kWh",
+      "asof": "2026-10-15",
+      "usd": 0.0348
      }
     },
     "onsite": {
@@ -256,10 +311,12 @@
     }
    },
    "AU": {
-    "records": 4,
+    "records": 6,
     "by_topic": {
      "D1": 2,
      "D2": 1,
+     "D3": 1,
+     "D4": 1,
      "D5": 1
     },
     "keys": {
@@ -275,6 +332,12 @@
       "unit": "회/호·년",
       "asof": "2025"
      },
+     "queue_mw": {
+      "id": "access-au-pipeline",
+      "value": 67000,
+      "unit": "MW",
+      "asof": "2026"
+     },
      "renewables_share": {
       "id": "mix-au",
       "value": 39.8,
@@ -283,17 +346,20 @@
      }
     },
     "onsite": {
-     "cases": 0,
-     "mw": 0,
+     "cases": 1,
+     "mw": 30,
      "mw_unknown": 0,
-     "by_stage": {}
+     "by_stage": {
+      "발표": 1
+     }
     }
    },
    "IN": {
-    "records": 5,
+    "records": 6,
     "by_topic": {
      "D1": 3,
      "D2": 1,
+     "D4": 1,
      "D5": 1
     },
     "keys": {
@@ -317,17 +383,20 @@
      }
     },
     "onsite": {
-     "cases": 0,
-     "mw": 0,
+     "cases": 1,
+     "mw": 125,
      "mw_unknown": 0,
-     "by_stage": {}
+     "by_stage": {
+      "가동": 1
+     }
     }
    },
    "TW": {
-    "records": 4,
+    "records": 5,
     "by_topic": {
      "D1": 2,
      "D2": 1,
+     "D3": 1,
      "D5": 1
     },
     "keys": {
@@ -354,6 +423,26 @@
       "id": "mix-tw",
       "value": 12.4,
       "unit": "%",
+      "asof": "2025"
+     }
+    },
+    "onsite": {
+     "cases": 0,
+     "mw": 0,
+     "mw_unknown": 0,
+     "by_stage": {}
+    }
+   },
+   "ZZ": {
+    "records": 1,
+    "by_topic": {
+     "D5": 1
+    },
+    "keys": {
+     "ppa_volume_gw": {
+      "id": "ppa-apac-volume",
+      "value": 6.9,
+      "unit": "GW",
       "asof": "2025"
      }
     },
@@ -1308,21 +1397,30 @@
    "kind": "tariff",
    "country": "JP",
    "city": null,
-   "metric": "특별고압 평균 판매단가",
-   "scope": "전국(모든 소매사업자 합계)",
-   "definition": "특별고압(계약전력 2,000kW 이상)의 판매액을 판매전력량으로 나눈 값이다. 新電力ネット은 이 단가에 소비세와 재생에너지 부과금이 들어 있지 않다고 적었다. 월 값이라 계절에 따라 움직인다.",
-   "value": 18.43,
+   "metric": "특별고압 평균 단가",
+   "scope": "전국 평균(모든 소매사업자)",
+   "definition": "특별고압(계약전력 2,000kW 이상)의 판매액을 판매전력량으로 나눈 값이다. 연료비 조정액을 포함하고 재생에너지 부과금과 소비세는 들어 있지 않다.",
+   "value": 18.12,
    "unit": "JPY/kWh",
-   "asof": "2026-07",
-   "basis": "계산: 2026년 7월분 특별고압 판매액 379,802,751천 엔 ÷ 판매전력량 20,612,689MWh",
+   "asof": "2024",
+   "basis": "2024회계연도 전국 평균. 규제기관의 전력거래 보고를 자연에너지재단이 집계한 값",
    "key": "price_avg",
    "series": [
+    {
+     "period": "FY2024",
+     "value": 18.12,
+     "src": [
+      1
+     ],
+     "usd": 0.1196
+    },
     {
      "period": "2026-07",
      "value": 18.43,
      "src": [
-      1
+      2
      ],
+     "note": "한 달 값(계산)",
      "usd": 0.1163
     }
    ],
@@ -1340,20 +1438,27 @@
    "sources": [
     {
      "n": 1,
+     "title": "自然エネルギー財団 — コーポレートPPA 日本の最新動向 2026年版(電気料金の比較)",
+     "url": "https://www.renewable-ei.org/pdfdownload/activities/REI_JPCorporatePPA_2026.pdf",
+     "date": "2026-03",
+     "read": "partial"
+    },
+    {
+     "n": 2,
      "title": "電力・ガス取引監視等委員会 — 電力取引の状況(電力取引報結果) 令和8年7月分 集計結果",
      "url": "https://www.egc.meti.go.jp/info/public/excel/20261029001b.xlsx",
      "date": "2026-10-29",
      "read": "partial"
     },
     {
-     "n": 2,
+     "n": 3,
      "title": "新電力ネット — 電気料金の平均単価の推移(特高・高圧・低圧別)",
      "url": "https://pps-net.org/unit",
      "date": "2026-11-18",
      "read": "partial"
     },
     {
-     "n": 3,
+     "n": 4,
      "title": "電力・ガス取引監視等委員会 — 電力取引の状況(電力取引報結果) 목록",
      "url": "https://www.egc.meti.go.jp/info/business/report/results.html",
      "date": "2026-11-18",
@@ -1364,9 +1469,9 @@
     1
    ],
    "alt": [],
-   "conf": "med",
-   "note": "같은 달 도쿄 구역은 21.36엔(138,117,892천 엔 ÷ 6,466,234MWh), 간사이 구역은 16.72엔(61,793,895천 엔 ÷ 3,696,713MWh)이다(계산). 新電力ネット도 같은 달 18.43엔으로 싣고 1년 전보다 7.28% 올랐다고 적었다. 2019년부터의 연도별 값은 달마다 파일을 하나씩 받아야 하는데 사이트가 연속 조회를 막아 한 달분만 읽었다.",
-   "usd": 0.1163
+   "conf": "high",
+   "note": "같은 표에서 도쿄 구역 19.20엔, 간사이 16.75엔, 홋카이도 21.85엔, 규슈 14.93엔으로 구역 사이에 7엔 가까운 차이가 있다. 재단은 2025년 전국 평균 수준을 18엔으로 적었다. 2026년 7월 한 달 값은 규제기관 파일에서 직접 계산해 18.43엔이다(특별고압 판매액 379,802,751천 엔 ÷ 판매전력량 20,612,689MWh, 도쿄 구역 21.36엔·간사이 16.72엔). 2019~2023회계연도 값은 재단 자료에 그림으로만 있어 숫자를 읽지 못했고, 규제기관의 월별 파일은 사이트가 연속 조회를 막아 한 달분만 읽었다.",
+   "usd": 0.1196
   },
   {
    "id": "tariff-sg-eht",
@@ -1816,6 +1921,473 @@
    "usd": 0.1129
   },
   {
+   "id": "access-kr-impact",
+   "topic": "D3",
+   "kind": "access",
+   "country": "KR",
+   "city": null,
+   "metric": "전력계통영향평가 — 대용량 전기 사용 전에 받는 평가",
+   "scope": "지정 지역의 일정 규모 이상 수용가",
+   "definition": null,
+   "value": null,
+   "unit": "MW",
+   "asof": "2026-05",
+   "basis": "제도 기록(값 없음)",
+   "rule": {
+    "name": "전력계통영향평가(분산에너지 활성화 특별법)",
+    "authority": "기후에너지환경부",
+    "effective": "2024-06",
+    "threshold": "지정 지역에서 일정 규모 이상 전기를 쓰려는 사업자(10MW 이상으로 보도)"
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "머니투데이 — 갈팡질팡 평가에 반쪽짜리 특별법…데이터센터 운명도 안갯속",
+     "url": "https://www.mt.co.kr/tech/2026/05/20/2026051922044934385",
+     "date": "2026-05-20",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "머니투데이 — '수도권 데이터센터' 몰리지만…전력망 '감당불가'",
+     "url": "https://www.mt.co.kr/tech/2026/05/23/2026052210211399740",
+     "date": "2026-05-23",
+     "read": "search_summary"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "med",
+   "note": "2024년 6월 분산에너지 활성화 특별법 시행과 함께 도입됐다. 심사 기준은 장관 고시로 정하게 돼 있으나 2026년 5월 현재 고시가 없어 2년째 시범 운영 중이라고 보도됐다. 적용 기준이 10MW 이상이라는 것은 검색 요약에서만 보았다. 2026년 5월 국회를 통과한 AI 데이터센터 특별법은 비수도권 AI 데이터센터에 이 평가를 면제한다(시행은 2027년 3월 10일로 보도 — 검색 요약)."
+  },
+  {
+   "id": "access-kr-queue",
+   "topic": "D3",
+   "kind": "access",
+   "country": "KR",
+   "city": null,
+   "metric": "수도권 전력계통영향평가 1차 기술검토 신청 누적 용량",
+   "scope": "수도권",
+   "definition": "평가 신청 용량이다. 접속 대기 물량이나 실제 지어질 용량과 같지 않다.",
+   "value": 33592,
+   "unit": "MW",
+   "asof": "2026-03",
+   "basis": "2024년 8월부터 2026년 3월까지의 누적 신청 522건",
+   "key": "queue_mw",
+   "sources": [
+    {
+     "n": 1,
+     "title": "뉴시스 — AI 수요 폭증·전력난…수도권 데이터센터 '귀한 몸'",
+     "url": "https://mobile.newsis.com/view/NISX20260713_0003707405",
+     "date": "2026-07-14",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "머니투데이 — '수도권 데이터센터' 몰리지만…전력망 '감당불가'",
+     "url": "https://www.mt.co.kr/tech/2026/05/23/2026052210211399740",
+     "date": "2026-05-23",
+     "read": "search_summary"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "이 가운데 최종 공급 가능 승인을 받은 것은 10건으로 건수 기준 1.9%다. 승인 용량 1,010MW 는 검색 요약에서만 보았다. 통신사 기사가 인용한 집계이고 정부 원문은 열지 못했다. 신청 용량은 같은 사업의 중복 신청을 가려내지 않은 값일 수 있다."
+  },
+  {
+   "id": "access-jp-tepco",
+   "topic": "D3",
+   "kind": "access",
+   "country": "JP",
+   "city": null,
+   "metric": "데이터센터가 확보한 계통 접속 용량",
+   "scope": "도쿄전력 관내",
+   "definition": "이미 접속 용량을 확보한 물량이다. 한국의 신청 용량, 호주의 접속 절차 중 용량과 단계가 다르다.",
+   "value": 15000,
+   "unit": "MW",
+   "asof": "2026-09",
+   "basis": "도쿄전력 홀딩스 임원이 공개 행사에서 밝힌 값(15GW)",
+   "key": "queue_mw",
+   "sources": [
+    {
+     "n": 1,
+     "title": "ITmedia ビジネスオンライン — データセンター増設ラッシュで「東京1つ分の電力」が必要に",
+     "url": "https://www.itmedia.co.jp/business/spv/2609/17/news052.html",
+     "date": "2026-09-17",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "ビジネスジャーナル — データセンター送電網増強の裏の論点",
+     "url": "https://biz-journal.jp/2026/07/post_395361.html",
+     "date": "2026-07",
+     "read": "search_summary"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "이용률 60%로 보면 연 790억 kWh 로 도쿄전력 파워그리드 취급량의 약 30%라고 했다. 전력광역적운영추진기관은 데이터센터·반도체 공장 신증설에 따른 최대 수요가 2026회계연도 83만 kW 에서 2035회계연도 762만 kW 로 늘 것으로 본다(기사 인용). 접속까지 길게는 10년이 걸렸다는 것은 검색 요약에서만 보았다. 대규모 수요의 접속 규율(용량 선점 방지)은 경제산업성 작업반에서 검토 중이라는 자료가 있으나 열지 못했다."
+  },
+  {
+   "id": "access-sg-cfa2",
+   "topic": "D3",
+   "kind": "access",
+   "country": "SG",
+   "city": null,
+   "metric": "정부 공모로 배정한 데이터센터 용량(2차 공모)",
+   "scope": "전국",
+   "definition": "정부가 공모로 배정한 용량이다. 신청이나 대기 물량이 아니다. IT 기준인지 수전 기준인지는 자료에 없다.",
+   "value": 200,
+   "unit": "MW",
+   "asof": "2026-08-21",
+   "basis": "네 사업자에 50MW 씩 잠정 배정",
+   "key": "allocation_mw",
+   "rule": {
+    "name": "Data Centre – Call for Application 2 (DC-CFA2)",
+    "authority": "EDB·IMDA",
+    "effective": "2025-12-01",
+    "threshold": "새 데이터센터 용량"
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "EDB·IMDA — Fact Sheet: Four data centre proposals selected as part of Second Data Centre – Call for Application",
+     "url": "https://www.edb.gov.sg/content/dam/edb-en/about-edb/media-releases/news/four-data-centre-proposals-selected-as-part-of-second-data-centre/Fact%20Sheet%20-Four%20data%20centre%20proposals%20selected%20as%20part%20of%20second%20data%20centre.pdf",
+     "date": "2026-08-21",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "Withers — Singapore's second data centre call for application: from pilot to power play",
+     "url": "https://www.withersworldwide.com/en-gb/insight/read/singapore-s-second-data-centre-call-for-application-from-pilot-to-power-play",
+     "date": "2026",
+     "read": "search_summary"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "2025년 12월 1일 공모를 시작해 20건 넘는 제안을 받았고 Digital Realty·Equinix·Keppel Data Centres 등 네 곳에 배정했다. 배정받은 시설은 주롱섬의 저탄소 데이터센터 단지에 들어간다. 전력의 절반 이상을 녹색 에너지 경로로 조달해야 하고 다음 공모는 18~24개월 뒤 검토한다는 것은 검색 요약에서만 보았다. 싱가포르는 새 데이터센터 용량을 정부 공모로 나눠 준다."
+  },
+  {
+   "id": "access-my-approvals",
+   "topic": "D3",
+   "kind": "access",
+   "country": "MY",
+   "city": null,
+   "metric": "결정이 보류된 새 데이터센터 신청",
+   "scope": "전국",
+   "definition": "건수다. 용량은 답변에 없다.",
+   "value": 24,
+   "unit": "건",
+   "asof": "2026-10-28",
+   "basis": "투자통상산업부 장관의 국회 답변",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Bernama — Govt Reviews Power Supply Before Deciding On 24 Data Centre Applications",
+     "url": "https://bernama.com/en/news.php?id=2626853",
+     "date": "2026-10-28",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "이미 승인한 117건의 전력 수요를 댈 수 있는지 살피는 중이며, 추가 승인 전에 TNB 에 공급 여력과 예비율 의견을 받겠다고 했다. 승인된 117건이 모두 가동하면 전력 수요가 23,000~23,500MW 에 이를 수 있다는 발언은 검색 요약에서만 보았다."
+  },
+  {
+   "id": "access-my-esa",
+   "topic": "D3",
+   "kind": "access",
+   "country": "MY",
+   "city": null,
+   "metric": "TNB 가 데이터센터와 맺은 전력 공급 계약 용량",
+   "scope": "말레이반도",
+   "definition": "공급 계약을 맺은 용량이다. 가동 중인 용량이 아니다.",
+   "value": 8300,
+   "unit": "MW",
+   "asof": "2026-07",
+   "basis": "59개 사업, 8.3GW(검색 요약)",
+   "key": "queue_mw",
+   "sources": [
+    {
+     "n": 1,
+     "title": "BusinessToday — TNB Locks In Growth Securing 59 Data Centre Projects With 8.3GW Capacity",
+     "url": "https://www.businesstoday.com.my/2026/07/11/tnb-locks-in-growth-securing-59-data-centre-projects-with-8-3gw-capacity/",
+     "date": "2026-07-11",
+     "read": "search_summary"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "low",
+   "note": "모두 5년 사용량 보장(take-or-pay) 계약이라고 보도됐다. 기사 사이트가 접속을 막아 원문을 열지 못했다."
+  },
+  {
+   "id": "access-au-pipeline",
+   "topic": "D3",
+   "kind": "access",
+   "country": "AU",
+   "city": null,
+   "metric": "접속 절차에 있는 데이터센터의 제안 접속 용량",
+   "scope": "전국전력시장(NEM)",
+   "definition": "문의·신청·이행 단계를 모두 더한 제안 용량이다. 같은 사업자가 여러 곳에 낸 문의가 겹친다.",
+   "value": 67000,
+   "unit": "MW",
+   "asof": "2026",
+   "basis": "AEMO 2026년 전력 기회 보고서(ESOO)의 225개 사업",
+   "key": "queue_mw",
+   "sources": [
+    {
+     "n": 1,
+     "title": "W.Media — AEMO: Australia's data centres to use 34TWh by 2035-36",
+     "url": "https://w.media/aemo-australias-data-centres-to-use-34twh-by-2035-36/",
+     "date": "2026",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "RenewEconomy — Data centres are already helping flatten solar duck curve, and there are 9 gigawatts more seeking grid connection",
+     "url": "https://reneweconomy.com.au/data-centres-are-already-helping-flatten-solar-duck-curve-and-there-are-9-gigawatts-more-seeking-grid-connection/",
+     "date": "2026",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "전년 평가의 38GW 에서 늘었다. AEMO 는 이 값을 수요 전망으로 보지 말라고 했고, 2025년 목록에 있던 사업의 약 36%가 그 뒤 취소됐다. 송전망 접속 절차에 있는 것은 17곳 9GW 로 신청 단계 12곳 7.6GW, 이행 단계 5곳 1.4GW 다(AEMO 분기 보고서 인용 기사). AEMO 원문은 사이트가 막아 열지 못했고 전문지 기사로 읽었다."
+  },
+  {
+   "id": "access-tw-north",
+   "topic": "D3",
+   "kind": "access",
+   "country": "TW",
+   "city": null,
+   "metric": "북부 지역 대형 데이터센터 전력 공급 신청 접수 중단",
+   "scope": "타오위안 이북",
+   "definition": null,
+   "value": null,
+   "unit": "MW",
+   "asof": "2024-08",
+   "basis": "제도 기록(값 없음)",
+   "rule": {
+    "name": "桃園以北 5MW 以上 資料中心 用電 不再核供",
+    "authority": "대만전력",
+    "effective": "2024-08",
+    "threshold": "5MW 이상 데이터센터"
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "數位時代 — 台電下令桃園以北拒供資料中心用電",
+     "url": "https://www.bnext.com.tw/article/80273/taipower-denied-power-provide-to-data-centre-north-of-taoyuan",
+     "date": "2024-08-26",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "工商時報 등 — 2026년 7월 대만전력의 조건부 완화 보도",
+     "url": "https://wantrich.chinatimes.com/news/20260716900015-420101",
+     "date": "2026-07-16",
+     "read": "search_summary"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "med",
+   "note": "대만전력은 2024년 8월 타오위안 이북에서 5MW 이상 데이터센터의 전력 공급을 더 승인하지 않겠다고 밝혔다. 북부의 발전·송전 용량이 모자라 중남부에서 전기를 보내는 구조라는 것이 이유이고, 중남부 입지를 권했다. 2026년 7월 발전소 인근 전용 구역을 조건으로 완화를 검토한다는 보도와, 경제부가 파악한 AI 데이터센터 신청량이 2035년까지 약 1.2GW 라는 보도는 검색 요약에서만 보았다."
+  },
+  {
+   "id": "onsite-kr-ulsan",
+   "topic": "D4",
+   "kind": "onsite",
+   "country": "KR",
+   "city": "울산",
+   "metric": "데이터센터 옆 발전소의 직접 공급",
+   "scope": "울산 미포 국가산업단지",
+   "definition": null,
+   "value": 300,
+   "unit": "MW",
+   "asof": "2025-08-29",
+   "basis": "공급 발전소의 용량(300MW 급, 검색 요약). 데이터센터 용량이 아니다",
+   "onsite": {
+    "site": "SK AI 데이터센터 울산",
+    "operator": "SK멀티유틸리티(연료는 SK가스)",
+    "customer": "SK·AWS",
+    "fuel": "LNG 열병합",
+    "stage": "착공",
+    "mw": {
+     "value": 300,
+     "basis": "generation"
+    }
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "SK텔레콤 뉴스룸 — 'SK AI 데이터센터 울산' 기공식 개최",
+     "url": "https://news.sktelecom.com/214708",
+     "date": "2025-08-29",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "뉴데일리 — SK AI 데이터센터 울산 기공식 보도(SK멀티유틸리티 300MW급 LNG 열병합)",
+     "url": "https://biz.newdaily.co.kr/site/data/html/2025/08/29/2025082900220.html",
+     "date": "2025-08-29",
+     "read": "search_summary"
+    }
+   ],
+   "value_src": [
+    2
+   ],
+   "alt": [],
+   "conf": "low",
+   "note": "SK텔레콤은 SK가스에서 LNG 를 받는 SK멀티유틸리티 발전소에서 한전보다 낮은 값으로 전력을 받을 수 있다고 밝혔다. 발전소 용량 300MW 와 분산에너지 특화지역 지정 여부는 회사 자료에서 확인하지 못했다. 데이터센터는 2025년 8월 착공했고 용량은 투자 장부(aws-kr-ulsan-sk)에 있다."
+  },
+  {
+   "id": "onsite-sg-jurong",
+   "topic": "D4",
+   "kind": "onsite",
+   "country": "SG",
+   "city": "싱가포르",
+   "metric": "저탄소 전원을 쓰는 데이터센터 단지",
+   "scope": "주롱섬",
+   "definition": null,
+   "value": 700,
+   "unit": "MW",
+   "asof": "2025",
+   "basis": "약 20헥타르 부지가 댈 수 있는 전력 용량의 상한('최대')",
+   "onsite": {
+    "site": "Jurong Island low-carbon data centre park",
+    "operator": "JTC",
+    "customer": "2차 공모 배정 사업자 등",
+    "fuel": "저탄소 전원(구성 미정)",
+    "stage": "발표",
+    "mw": {
+     "value": 700,
+     "basis": "unknown"
+    }
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "JTC — Jurong Island to host largest green data centre park in Singapore",
+     "url": "https://www.jtc.gov.sg/jurongisland/story-articles/jurong-island-to-host-largest-green-data-centre-park-in-singapore",
+     "date": "2025",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "EDB·IMDA — Fact Sheet: Four data centre proposals selected as part of Second Data Centre – Call for Application",
+     "url": "https://www.edb.gov.sg/content/dam/edb-en/about-edb/media-releases/news/four-data-centre-proposals-selected-as-part-of-second-data-centre/Fact%20Sheet%20-Four%20data%20centre%20proposals%20selected%20as%20part%20of%20second%20data%20centre.pdf",
+     "date": "2026-08-21",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "JTC 와 EDB 는 섬의 공용 에너지 저장 설비와 새 저탄소 에너지원을 쓸 수 있다고 했다. 2차 공모로 배정된 200MW 가 이 단지에 들어간다. 전원 구성(바이오메탄·암모니아·수소 등)과 가동 시점은 정해져 발표된 것이 없다."
+  },
+  {
+   "id": "onsite-au-southern-highlands",
+   "topic": "D4",
+   "kind": "onsite",
+   "country": "AU",
+   "city": null,
+   "metric": "데이터센터 단지 안 가스 발전",
+   "scope": "뉴사우스웨일스 서던하일랜즈",
+   "definition": null,
+   "value": 30,
+   "unit": "MW",
+   "asof": "2025-10-07",
+   "basis": "가스 발전기 2기의 합계(14MW + 16MW). 계획 서류의 값",
+   "onsite": {
+    "site": "Southern Highlands data centre campus",
+    "operator": "Square Energy",
+    "customer": "Cloud Carrier",
+    "fuel": "가스(배터리 80MW 병설)",
+    "stage": "발표",
+    "mw": {
+     "value": 30,
+     "basis": "generation"
+    }
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "RenewEconomy — Australian developer proposes gas turbines rather than renewables to power data centres",
+     "url": "https://reneweconomy.com.au/australian-developer-proposes-gas-turbines-rather-than-renewables-to-power-data-centres/",
+     "date": "2025-10-07",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "Cloud Carrier 와 관련 회사가 데이터센터 16개 동에 전기를 대려고 가스 발전기 2기와 80MW 배터리를 두는 계획을 냈다. 남는 전기는 계통에 판다고 적혀 있다. 호주에서는 2026년 8월 데이터센터가 전원을 스스로 마련하도록 하는 규칙 변경이 제안됐다는 보도가 있다(검색 요약)."
+  },
+  {
+   "id": "onsite-in-ctrls-nagpur",
+   "topic": "D4",
+   "kind": "onsite",
+   "country": "IN",
+   "city": null,
+   "metric": "데이터센터 사업자의 자가용(captive) 태양광",
+   "scope": "마하라슈트라 나그푸르 → 뭄바이 시설",
+   "definition": null,
+   "value": 125,
+   "unit": "MW",
+   "asof": "2025-02-06",
+   "basis": "태양광 설비 용량 125MWp(검색 요약)",
+   "onsite": {
+    "site": "GreenVolt 1",
+    "operator": "CtrlS Datacenters",
+    "customer": "CtrlS Datacenters",
+    "fuel": "태양광",
+    "stage": "가동",
+    "mw": {
+     "value": 125,
+     "basis": "generation"
+    }
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "pv magazine — CtrlS Datacenters builds 125 MWp of solar to power site in Mumbai",
+     "url": "https://www.pv-magazine.com/2025/02/06/ctrls-datacenters-builds-125-mwp-of-solar-to-power-site-in-mumbai",
+     "date": "2025-02-06",
+     "read": "search_summary"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "low",
+   "note": "발전소가 데이터센터 옆에 있는 것이 아니라 송전망을 거쳐 자기 시설에 보내는 인도식 자가용 조달이다. NTPC Green 과 CtrlS 의 2GW 양해각서, 안드라프라데시주가 300MW 이상 데이터센터에 자체 배전과 직접 조달을 허용하려 한다는 보도도 검색 요약에 나온다."
+  },
+  {
    "id": "mix-kr",
    "topic": "D5",
    "kind": "mix",
@@ -1981,6 +2553,45 @@
    "note": "2025년 발전량 627.8TWh. 전원별 비중은 series 의 shares 에 있다(석탄 31.1%, 가스 28.0%, 원자력 29.4%)."
   },
   {
+   "id": "ppa-kr-rec",
+   "topic": "D5",
+   "kind": "ppa",
+   "country": "KR",
+   "city": null,
+   "metric": "재생에너지 공급인증서(REC) 현물 가격",
+   "scope": "육지 현물시장",
+   "definition": "인증서 1개를 1MWh 로 보고 kWh 로 나눈 값이다(가중치 미반영). 전기 값은 들어 있지 않다.",
+   "value": 71.15,
+   "unit": "KRW/kWh",
+   "asof": "2026-11",
+   "basis": "계산: 2026년 11월 둘째 주 육지 평균 71,150원/REC ÷ 1,000kWh",
+   "key": "rec_price",
+   "currency": "KRW",
+   "sources": [
+    {
+     "n": 1,
+     "title": "해줌 — 2026년 11월 2주차 SMP·REC 가격 동향(출처: 전력거래소, 신재생 원스톱 REC 거래속보)",
+     "url": "https://blog.haezoom.com/smprec_202611week2/",
+     "date": "2026-11-16",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "비건뉴스 — 직접 PPA 누적 계약 건수 보도(기후에너지환경부 자료 인용)",
+     "url": "https://www.vegannews.co.kr/news/tag_list_all.html?tag=RE100",
+     "date": "2026",
+     "read": "search_summary"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "같은 주 육지 계통한계가격(SMP)은 kWh 당 131.92원이다. 정리 글이 전력거래소와 신재생 원스톱의 값을 옮긴 것이고 원자료는 열지 않았다. 직접 전력구매계약은 2026년 5월까지 누적 118건이라는 보도가 있으나(검색 요약) 용량과 단가는 찾지 못했다.",
+   "usd": 0.0493
+  },
+  {
    "id": "mix-jp",
    "topic": "D5",
    "kind": "mix",
@@ -2144,6 +2755,42 @@
    "alt": [],
    "conf": "high",
    "note": "2025년 발전량 1027.4TWh. 전원별 비중은 series 의 shares 에 있다(석탄 31.8%, 가스 32.7%, 원자력 9.2%)."
+  },
+  {
+   "id": "ppa-jp-price",
+   "topic": "D5",
+   "kind": "ppa",
+   "country": "JP",
+   "city": null,
+   "metric": "오프사이트 전력구매계약의 수용가 비용(태양광, 고압)",
+   "scope": "전국 표준 수준",
+   "definition": "자연에너지재단의 2026년 2월 추정이다. 계약 기간 20년, 소비세 제외. 발전 측 송전 과금과 용량 거출금은 넣지 않았다.",
+   "value": 21.5,
+   "unit": "JPY/kWh",
+   "asof": "2026-02",
+   "basis": "계산: 재단이 추정한 범위 20~23엔의 가운데 값",
+   "key": "ppa_price",
+   "currency": "JPY",
+   "range": [
+    20,
+    23
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "自然エネルギー財団 — コーポレートPPA 日本の最新動向 2026年版",
+     "url": "https://www.renewable-ei.org/pdfdownload/activities/REI_JPCorporatePPA_2026.pdf",
+     "date": "2026-03",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "발전 비용 13~16엔 + 소매 비용 3엔 + 송배전 이용료 4엔이다. 일반 전기요금(고압, 2025년 전국 평균 22엔)과 비슷한 수준이고 둘 다 재생에너지 부과금이 따로 붙는다. 옥상형 온사이트 계약은 14~17엔으로 더 낮다. 재단은 오프사이트 계약 단가가 최근 달라지지 않았다고 적었다.",
+   "usd": 0.1357
   },
   {
    "id": "mix-sg",
@@ -2446,6 +3093,45 @@
    "alt": [],
    "conf": "high",
    "note": "2025년 발전량 212.0TWh. 전원별 비중은 series 의 shares 에 있다(석탄 44.5%, 가스 33.2%, 원자력 0%)."
+  },
+  {
+   "id": "ppa-my-cress",
+   "topic": "D5",
+   "kind": "ppa",
+   "country": "MY",
+   "city": null,
+   "metric": "기업 재생에너지 공급 제도(CRESS)의 계통 이용 요금",
+   "scope": "말레이반도",
+   "definition": "발전사업자가 송전망을 빌려 수용가에 전기를 보낼 때 내는 요금이다. 전기 값이 아니다.",
+   "value": 0.14,
+   "unit": "MYR/kWh",
+   "asof": "2026-10-15",
+   "basis": "가속 패키지 대상 개발사에 10년 고정으로 적용하는 14센/kWh",
+   "key": "ppa_wheeling",
+   "currency": "MYR",
+   "sources": [
+    {
+     "n": 1,
+     "title": "The Star — CRESS charges fixed at 14 sen/kwh for developers, 4 sen for green consumers",
+     "url": "https://www.thestar.com.my/business/business-news/2026/10/15/cress-charges-fixed-at-14-senkwh-for-developers-4-sen-for-green-consumers",
+     "date": "2026-10-15",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "The Edge Malaysia — CRESS 시스템 접속 요금 보도",
+     "url": "https://theedgemalaysia.com/node/821755",
+     "date": "2026-10-14",
+     "read": "search_summary"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "녹색 전력을 사는 수용가에는 kWh 당 4센이 따로 붙는다. 일반 요율이 18센이고 CRESS 로 사는 전기의 전체 단가가 48~50센으로 추정된다는 것, 등록된 사업이 약 3.15GW 라는 것은 검색 요약에서만 보았다.",
+   "usd": 0.0348
   },
   {
    "id": "mix-au",
@@ -2934,6 +3620,59 @@
    "alt": [],
    "conf": "high",
    "note": "2025년 발전량 288.9TWh. 전원별 비중은 series 의 shares 에 있다(석탄 36.1%, 가스 48.8%, 원자력 1.1%)."
+  },
+  {
+   "id": "ppa-apac-volume",
+   "topic": "D5",
+   "kind": "ppa",
+   "country": "ZZ",
+   "city": null,
+   "metric": "기업의 청정 전력 구매 계약 발표 물량(아시아·태평양)",
+   "scope": "아시아·태평양 전체",
+   "definition": null,
+   "value": 6.9,
+   "unit": "GW",
+   "asof": "2025",
+   "basis": "BloombergNEF 집계. 한 해 동안 발표된 계약",
+   "key": "ppa_volume_gw",
+   "series": [
+    {
+     "period": "2024",
+     "value": 10.7,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2025",
+     "value": 6.9,
+     "src": [
+      1
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "BloombergNEF — Corporate Clean Energy Buying Fell in 2025 After Nearly a Decade of Growth",
+     "url": "https://about.bnef.com/insights/clean-energy/corporate-clean-energy-buying-fell-in-2025-after-nearly-a-decade-of-growth/",
+     "date": "2026-02",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "pv magazine — Corporate PPA deals down 10% in 2025 as AI demand plugs gaps",
+     "url": "https://www.pv-magazine.com/2026/02/20/corporate-ppa-deals-down-10-in-2025-as-ai-demand-plugs-gaps",
+     "date": "2026-02-20",
+     "read": "search_summary"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "2024년 10.7GW 에서 줄었고 인도와 한국의 둔화가 주된 이유라고 했다. 세계 전체는 55.9GW 로 10% 줄었다. 일본은 기업 계약이 정교해지는 시장, 말레이시아는 제도 지원에 기대는 시장으로 적었다. 일본이 1.1GW 로 최고 기록이라는 것은 검색 요약에서만 보았다. 나라별 표는 유료 보고서에 있어 싣지 않았다."
   }
  ]
 }
