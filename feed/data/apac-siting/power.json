@@ -2,8 +2,2276 @@
  "schema": 1,
  "bundle": "D",
  "title": "전력: 품질·가격·확보",
- "updated_kst": null,
+ "updated_kst": "2026-11-18T19:40:26+09:00",
  "measure": null,
- "notes": [],
- "records": []
+ "notes": [
+  "주제는 D1 품질(정전 시간·횟수), D2 가격, D3 확보(접속 기간과 제한 제도), D4 발전소 옆 직접 공급 사례, D5 전원 구성과 전력구매계약이다. 기록의 topic 으로 나뉜다.",
+  "D1 의 정전 지수는 나라마다 정의가 다르다. 일본은 저압 수용가 기준으로 작업 정전과 재해를 넣고, 호주는 이상치를 뺀 정규화 값이며, 한국은 5분 넘는 정전을 센다는 제3자 주석만 확인했다. 인도는 전국 지수가 없어 하루 평균 공급 시간을 따로 실었다. 같은 기준으로 맞추지 못했으므로 순위를 매기는 데 쓰지 않는다.",
+  "D5 의 전원 구성은 Ember 의 연간 전력 자료(CC BY 4.0)를 그대로 옮긴 것이고 `desk datasets power` 가 다시 만든다. 통화가 적힌 값의 달러 환산(usd)은 fx 의 연평균 환율로 나눈 계산값이다.",
+  "원문 확인 비중은 건수로 센다(measure 가 null)."
+ ],
+ "fx": {
+  "source": "미국 연방준비제도 G.5A(연평균)·H.10(일별) 환율, FRED 로 받음",
+  "url": "https://fred.stlouisfed.org/series/AEXKOUS",
+  "fetched": "2026-11-18",
+  "ytd_through": "2026-11-13",
+  "note": "1달러당 현지 통화다. 호주 달러는 원천이 1호주달러당 달러로 적어 역수를 썼다. 올해 값은 1월부터 ytd_through 까지 일별 값의 평균이다(계산).",
+  "rates": {
+   "KRW": {
+    "2019": 1165.8016,
+    "2020": 1180.5554,
+    "2021": 1144.8911,
+    "2022": 1291.7796,
+    "2023": 1306.7637,
+    "2024": 1363.4381,
+    "2025": 1421.3963,
+    "2026": 1444.1456
+   },
+   "JPY": {
+    "2019": 109.0188,
+    "2020": 106.7754,
+    "2021": 109.8429,
+    "2022": 131.4589,
+    "2023": 140.5001,
+    "2024": 151.4551,
+    "2025": 149.5686,
+    "2026": 158.4728
+   },
+   "SGD": {
+    "2019": 1.3641,
+    "2020": 1.38,
+    "2021": 1.3438,
+    "2022": 1.3787,
+    "2023": 1.3428,
+    "2024": 1.3363,
+    "2025": 1.3065,
+    "2026": 1.2787
+   },
+   "MYR": {
+    "2019": 4.1416,
+    "2020": 4.2029,
+    "2021": 4.1439,
+    "2022": 4.3982,
+    "2023": 4.5577,
+    "2024": 4.5747,
+    "2025": 4.2809,
+    "2026": 4.0194
+   },
+   "AUD": {
+    "2019": 1.4384,
+    "2020": 1.4495,
+    "2021": 1.3307,
+    "2022": 1.4386,
+    "2023": 1.5051,
+    "2024": 1.5158,
+    "2025": 1.5504,
+    "2026": 1.4225
+   },
+   "INR": {
+    "2019": 70.3777,
+    "2020": 74.1429,
+    "2021": 73.9351,
+    "2022": 78.5792,
+    "2023": 82.5708,
+    "2024": 83.6566,
+    "2025": 87.1468,
+    "2026": 94.1249
+   },
+   "TWD": {
+    "2019": 30.9049,
+    "2020": 29.4568,
+    "2021": 27.9366,
+    "2022": 29.7963,
+    "2023": 31.1525,
+    "2024": 32.1064,
+    "2025": 31.1663,
+    "2026": 31.8408
+   }
+  }
+ },
+ "by_country": {
+  "countries": {
+   "KR": {
+    "records": 3,
+    "by_topic": {
+     "D1": 2,
+     "D5": 1
+    },
+    "keys": {
+     "saidi": {
+      "id": "saidi-kr",
+      "value": 9.32,
+      "unit": "분/호·년",
+      "asof": "2025"
+     },
+     "saifi": {
+      "id": "saifi-kr",
+      "value": null,
+      "unit": "회/호·년",
+      "asof": "2025"
+     },
+     "renewables_share": {
+      "id": "mix-kr",
+      "value": 10.5,
+      "unit": "%",
+      "asof": "2025"
+     }
+    },
+    "onsite": {
+     "cases": 0,
+     "mw": 0,
+     "mw_unknown": 0,
+     "by_stage": {}
+    }
+   },
+   "JP": {
+    "records": 5,
+    "by_topic": {
+     "D1": 4,
+     "D5": 1
+    },
+    "keys": {
+     "saidi": {
+      "id": "saidi-jp",
+      "value": 24,
+      "unit": "분/호·년",
+      "asof": "2024"
+     },
+     "saifi": {
+      "id": "saifi-jp",
+      "value": 0.13,
+      "unit": "회/호·년",
+      "asof": "2024"
+     },
+     "renewables_share": {
+      "id": "mix-jp",
+      "value": 23.9,
+      "unit": "%",
+      "asof": "2025"
+     }
+    },
+    "onsite": {
+     "cases": 0,
+     "mw": 0,
+     "mw_unknown": 0,
+     "by_stage": {}
+    }
+   },
+   "SG": {
+    "records": 3,
+    "by_topic": {
+     "D1": 2,
+     "D5": 1
+    },
+    "keys": {
+     "saidi": {
+      "id": "saidi-sg",
+      "value": 0.328,
+      "unit": "분/호·년",
+      "asof": "2026-03"
+     },
+     "saifi": {
+      "id": "saifi-sg",
+      "value": 0.023,
+      "unit": "회/호·년",
+      "asof": "2026-03"
+     },
+     "renewables_share": {
+      "id": "mix-sg",
+      "value": 5.5,
+      "unit": "%",
+      "asof": "2025"
+     }
+    },
+    "onsite": {
+     "cases": 0,
+     "mw": 0,
+     "mw_unknown": 0,
+     "by_stage": {}
+    }
+   },
+   "MY": {
+    "records": 4,
+    "by_topic": {
+     "D1": 3,
+     "D5": 1
+    },
+    "keys": {
+     "saidi": {
+      "id": "saidi-my",
+      "value": 46.93,
+      "unit": "분/호·년",
+      "asof": "2025"
+     },
+     "saifi": {
+      "id": "saifi-my",
+      "value": 0.96,
+      "unit": "회/호·년",
+      "asof": "2024"
+     },
+     "renewables_share": {
+      "id": "mix-my",
+      "value": 21,
+      "unit": "%",
+      "asof": "2025"
+     }
+    },
+    "onsite": {
+     "cases": 0,
+     "mw": 0,
+     "mw_unknown": 0,
+     "by_stage": {}
+    }
+   },
+   "AU": {
+    "records": 3,
+    "by_topic": {
+     "D1": 2,
+     "D5": 1
+    },
+    "keys": {
+     "saidi": {
+      "id": "saidi-au",
+      "value": 129,
+      "unit": "분/호·년",
+      "asof": "2025"
+     },
+     "saifi": {
+      "id": "saifi-au",
+      "value": 1,
+      "unit": "회/호·년",
+      "asof": "2025"
+     },
+     "renewables_share": {
+      "id": "mix-au",
+      "value": 39.8,
+      "unit": "%",
+      "asof": "2025"
+     }
+    },
+    "onsite": {
+     "cases": 0,
+     "mw": 0,
+     "mw_unknown": 0,
+     "by_stage": {}
+    }
+   },
+   "IN": {
+    "records": 4,
+    "by_topic": {
+     "D1": 3,
+     "D5": 1
+    },
+    "keys": {
+     "saidi": {
+      "id": "saidi-in",
+      "value": null,
+      "unit": "분/호·년",
+      "asof": "2025"
+     },
+     "supply_hours_urban": {
+      "id": "supply-hours-in",
+      "value": 23.4,
+      "unit": "시간/일",
+      "asof": "2025"
+     },
+     "renewables_share": {
+      "id": "mix-in",
+      "value": 24.6,
+      "unit": "%",
+      "asof": "2025"
+     }
+    },
+    "onsite": {
+     "cases": 0,
+     "mw": 0,
+     "mw_unknown": 0,
+     "by_stage": {}
+    }
+   },
+   "TW": {
+    "records": 3,
+    "by_topic": {
+     "D1": 2,
+     "D5": 1
+    },
+    "keys": {
+     "saidi": {
+      "id": "saidi-tw",
+      "value": 15.831,
+      "unit": "분/호·년",
+      "asof": "2024"
+     },
+     "saifi": {
+      "id": "saifi-tw",
+      "value": 0.209,
+      "unit": "회/호·년",
+      "asof": "2024"
+     },
+     "renewables_share": {
+      "id": "mix-tw",
+      "value": 12.4,
+      "unit": "%",
+      "asof": "2025"
+     }
+    },
+    "onsite": {
+     "cases": 0,
+     "mw": 0,
+     "mw_unknown": 0,
+     "by_stage": {}
+    }
+   }
+  }
+ },
+ "records": [
+  {
+   "id": "saidi-kr",
+   "topic": "D1",
+   "kind": "reliability",
+   "country": "KR",
+   "city": null,
+   "metric": "호당 연간 정전시간(SAIDI)",
+   "scope": "한국전력(전국)",
+   "definition": "한국전력의 공시에는 계산 기준이 없다. 대만전력의 비교표 주석은 한국이 5분 넘게 이어진 정전을 센다고 적었다. 작업 정전·재해 포함 여부는 확인하지 못했다.",
+   "value": 9.32,
+   "unit": "분/호·년",
+   "asof": "2025",
+   "basis": "한국전력이 공시한 호당 정전시간",
+   "key": "saidi",
+   "series": [
+    {
+     "period": "2022",
+     "value": 9.05,
+     "src": [
+      2
+     ]
+    },
+    {
+     "period": "2023",
+     "value": 9.14,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2024",
+     "value": 9.29,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "2025",
+     "value": 9.32,
+     "src": [
+      1
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "한국전력 ESG 데이터센터 — 기업 전체(전력서비스: 호당 정전시간)",
+     "url": "https://www.kepco.co.kr/home/esg/esgdata/entire/conts.do",
+     "date": "2026-11-18",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "KEPCO ESG Data Center — Company-wide (Power Services: SAIDI)",
+     "url": "https://www.kepco.co.kr/eng/sustainability/esg-data-center/company-wide/conts.do",
+     "date": "2026-11-18",
+     "read": "partial"
+    },
+    {
+     "n": 3,
+     "title": "Taiwan Power Company — Operational Metrics for International Power Utilities (2024년 실적 비교표와 주석)",
+     "url": "https://www.taipower.com.tw/2764/2826/2835/2841/25122",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "2022년 값은 영문 페이지에서 읽었다. 대만전력의 국제 비교표는 한국전력 2023년 값을 9.14분으로 싣고, 한국과 미국은 5분 넘는 정전을 센다고 주석에 적었다."
+  },
+  {
+   "id": "saifi-kr",
+   "topic": "D1",
+   "kind": "reliability",
+   "country": "KR",
+   "city": null,
+   "metric": "호당 연간 정전횟수(SAIFI)",
+   "scope": "한국전력(전국)",
+   "definition": null,
+   "value": null,
+   "unit": "회/호·년",
+   "asof": "2025",
+   "basis": "최근 값이 공시된 곳을 찾지 못했다",
+   "key": "saifi",
+   "sources": [
+    {
+     "n": 1,
+     "title": "한국전력 ESG 데이터센터 — 기업 전체(전력서비스: 호당 정전시간)",
+     "url": "https://www.kepco.co.kr/home/esg/esgdata/entire/conts.do",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "low",
+   "note": "한국전력 ESG 데이터센터의 전력서비스 표에는 호당 정전시간만 있고 정전횟수는 없다. 전력통계정보시스템의 정전통계는 2013년에서 제공이 멈췄다."
+  },
+  {
+   "id": "saidi-jp",
+   "topic": "D1",
+   "kind": "reliability",
+   "country": "JP",
+   "city": null,
+   "metric": "저압 전등 수용가 1호당 연간 정전시간(SAIDI)",
+   "scope": "전국(10개 송배전 구역)",
+   "definition": "저압 전등 수용가 기준이며 사고 정전과 작업(계획) 정전을 더한다. 재해로 인한 정전을 빼지 않는다.",
+   "value": 24,
+   "unit": "분/호·년",
+   "asof": "2024",
+   "basis": "2024회계연도(2024년 4월~2025년 3월). 사고 정전 21분 + 작업 정전 3분",
+   "key": "saidi",
+   "series": [
+    {
+     "period": "FY2020",
+     "value": 27,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "FY2021",
+     "value": 10,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "FY2022",
+     "value": 25,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "FY2023",
+     "value": 37,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "FY2024",
+     "value": 24,
+     "src": [
+      1
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "OCCTO — Report on the Quality of the Electricity Supply, Data for Fiscal Year 2024",
+     "url": "https://www.occto.or.jp/en/assets/en/information_disclosure/report_on_the_quality/of_electricity_supply_data_for_fy2024/2024_qualityofelectricity_260113.pdf",
+     "date": "2026-01",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "Taiwan Power Company — Operational Metrics for International Power Utilities (2024년 실적 비교표와 주석)",
+     "url": "https://www.taipower.com.tw/2764/2826/2835/2841/25122",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "2023회계연도 37분은 호쿠리쿠 구역 510분(노토반도 지진)이 끌어올린 값이다. 5개 연도 평균은 25분이다."
+  },
+  {
+   "id": "saidi-jp-kansai",
+   "topic": "D1",
+   "kind": "reliability",
+   "country": "JP",
+   "city": "오사카",
+   "metric": "저압 전등 수용가 1호당 연간 정전시간(SAIDI)",
+   "scope": "간사이 구역(Kansai Transmission and Distribution)",
+   "definition": "전국 값과 같은 기준이다.",
+   "value": 8,
+   "unit": "분/호·년",
+   "asof": "2024",
+   "basis": "2024회계연도. 사고 7분 + 작업 1분",
+   "series": [
+    {
+     "period": "FY2020",
+     "value": 8,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "FY2021",
+     "value": 7,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "FY2022",
+     "value": 7,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "FY2023",
+     "value": 9,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "FY2024",
+     "value": 8,
+     "src": [
+      1
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "OCCTO — Report on the Quality of the Electricity Supply, Data for Fiscal Year 2024",
+     "url": "https://www.occto.or.jp/en/assets/en/information_disclosure/report_on_the_quality/of_electricity_supply_data_for_fy2024/2024_qualityofelectricity_260113.pdf",
+     "date": "2026-01",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "같은 해 정전횟수는 0.09회다(FY2020부터 0.10·0.10·0.12·0.13·0.09)."
+  },
+  {
+   "id": "saidi-jp-tokyo",
+   "topic": "D1",
+   "kind": "reliability",
+   "country": "JP",
+   "city": "도쿄",
+   "metric": "저압 전등 수용가 1호당 연간 정전시간(SAIDI)",
+   "scope": "도쿄 구역(TEPCO Power Grid)",
+   "definition": "전국 값과 같은 기준이다.",
+   "value": 6,
+   "unit": "분/호·년",
+   "asof": "2024",
+   "basis": "2024회계연도. 사고 6분, 작업 정전은 1분 미만",
+   "series": [
+    {
+     "period": "FY2020",
+     "value": 8,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "FY2021",
+     "value": 7,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "FY2022",
+     "value": 6,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "FY2023",
+     "value": 5,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "FY2024",
+     "value": 6,
+     "src": [
+      1
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "OCCTO — Report on the Quality of the Electricity Supply, Data for Fiscal Year 2024",
+     "url": "https://www.occto.or.jp/en/assets/en/information_disclosure/report_on_the_quality/of_electricity_supply_data_for_fy2024/2024_qualityofelectricity_260113.pdf",
+     "date": "2026-01",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "같은 해 정전횟수는 0.08회다(FY2020부터 0.17·0.11·0.13·0.08·0.08)."
+  },
+  {
+   "id": "saifi-jp",
+   "topic": "D1",
+   "kind": "reliability",
+   "country": "JP",
+   "city": null,
+   "metric": "저압 전등 수용가 1호당 연간 정전횟수(SAIFI)",
+   "scope": "전국(10개 송배전 구역)",
+   "definition": "저압 전등 수용가 기준이며 사고 정전과 작업 정전을 더한다.",
+   "value": 0.13,
+   "unit": "회/호·년",
+   "asof": "2024",
+   "basis": "2024회계연도. 사고 0.11 + 작업 0.02",
+   "key": "saifi",
+   "series": [
+    {
+     "period": "FY2020",
+     "value": 0.17,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "FY2021",
+     "value": 0.13,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "FY2022",
+     "value": 0.16,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "FY2023",
+     "value": 0.15,
+     "src": [
+      1
+     ]
+    },
+    {
+     "period": "FY2024",
+     "value": 0.13,
+     "src": [
+      1
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "OCCTO — Report on the Quality of the Electricity Supply, Data for Fiscal Year 2024",
+     "url": "https://www.occto.or.jp/en/assets/en/information_disclosure/report_on_the_quality/of_electricity_supply_data_for_fy2024/2024_qualityofelectricity_260113.pdf",
+     "date": "2026-01",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "5개 연도 평균은 0.15회다."
+  },
+  {
+   "id": "saidi-sg",
+   "topic": "D1",
+   "kind": "reliability",
+   "country": "SG",
+   "city": null,
+   "metric": "수용가 1곳당 연간 정전시간(SAIDI)",
+   "scope": "SP Group(전국 송배전망)",
+   "definition": "SP Group 이 밝힌 값이며 계산 기준(계획 정전·최소 지속 시간)은 보고서에 없다.",
+   "value": 0.328,
+   "unit": "분/호·년",
+   "asof": "2026-03",
+   "basis": "2025/26회계연도(2025년 4월~2026년 3월)",
+   "key": "saidi",
+   "series": [
+    {
+     "period": "FY2023",
+     "value": 0.15,
+     "src": [
+      2
+     ]
+    },
+    {
+     "period": "FY2025",
+     "value": 0.328,
+     "src": [
+      1
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "SP Group — Sustainability Report FY2025/2026",
+     "url": "https://www.spgroup.com.sg/dam/spgroup/pdf/about-us/our-sustainability-commitment/sp-group-sustainability-report-fy2025-26",
+     "date": "2026",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "SP Group — Annual Report 2024 (Chairman's Message)",
+     "url": "https://www.spgroup.com.sg/about-us/media-resources/energy-hub/annual-report-2024",
+     "date": "2024",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "2023/24회계연도는 0.15분이었다. 2024/25회계연도 값은 이번에 연 자료에 없었다. SP Group 은 2024~2025년 공개 자료로 견주어 베이징·멜버른·뮌헨·도쿄와 함께 가장 안정적인 축이라고 적었다."
+  },
+  {
+   "id": "saifi-sg",
+   "topic": "D1",
+   "kind": "reliability",
+   "country": "SG",
+   "city": null,
+   "metric": "수용가 1곳당 연간 정전횟수(SAIFI)",
+   "scope": "SP Group(전국 송배전망)",
+   "definition": "SP Group 이 밝힌 값이며 계산 기준은 보고서에 없다.",
+   "value": 0.023,
+   "unit": "회/호·년",
+   "asof": "2026-03",
+   "basis": "2025/26회계연도",
+   "key": "saifi",
+   "sources": [
+    {
+     "n": 1,
+     "title": "SP Group — Sustainability Report FY2025/2026",
+     "url": "https://www.spgroup.com.sg/dam/spgroup/pdf/about-us/our-sustainability-commitment/sp-group-sustainability-report-fy2025-26",
+     "date": "2026",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "수용가 한 곳이 평균 43년에 한 번 정전을 겪는 빈도다(계산: 1 ÷ 0.023)."
+  },
+  {
+   "id": "saidi-my",
+   "topic": "D1",
+   "kind": "reliability",
+   "country": "MY",
+   "city": null,
+   "metric": "수용가 1곳당 연간 정전시간(SAIDI)",
+   "scope": "말레이반도(TNB 배전)",
+   "definition": "배전 기준 값이다. 계획 정전 포함 여부는 확인하지 못했다.",
+   "value": 46.93,
+   "unit": "분/호·년",
+   "asof": "2025",
+   "basis": "에너지위원회가 낸 반도 값",
+   "key": "saidi",
+   "series": [
+    {
+     "period": "2024",
+     "value": 47.88,
+     "src": [
+      1,
+      2
+     ]
+    },
+    {
+     "period": "2025",
+     "value": 46.93,
+     "src": [
+      1
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "Suruhanjaya Tenaga(말레이시아 에너지위원회) — Performance Booklet",
+     "url": "https://st.gov.my/sites/default/files/2026-03/ST_Performance-Booklet_v2i-%28ZM%29.pdf",
+     "date": "2026-03",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "TNB — Supply Reliability (SAIDI & SAIFI Performance for TNB)",
+     "url": "https://www.tnb.com.my/smart-grid/supply-reliability/",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "TNB 의 2024년 목표는 48~50분이었다. 같은 책자에서 라부안은 2025년 82.16분, 2024년 95.36분이다. 사바·사라왁은 이 값에 들어 있지 않다."
+  },
+  {
+   "id": "saidi-my-kl",
+   "topic": "D1",
+   "kind": "reliability",
+   "country": "MY",
+   "city": "쿠알라룸푸르",
+   "metric": "수용가 1곳당 연간 정전시간(SAIDI)",
+   "scope": "쿠알라룸푸르(TNB)",
+   "definition": "배전 기준 값이다.",
+   "value": 20.28,
+   "unit": "분/호·년",
+   "asof": "2024",
+   "basis": "TNB 가 밝힌 도시 값",
+   "sources": [
+    {
+     "n": 1,
+     "title": "TNB — Supply Reliability (SAIDI & SAIFI Performance for TNB)",
+     "url": "https://www.tnb.com.my/smart-grid/supply-reliability/",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "TNB 가 따로 보는 15개 도시의 2024년 값은 45.10분으로 목표 35분에 못 미쳤다(판매 전력량으로 가중한 평균). 조호르바루·이스칸다르 푸테리·파시르 구당이 이 15개 도시에 든다."
+  },
+  {
+   "id": "saifi-my",
+   "topic": "D1",
+   "kind": "reliability",
+   "country": "MY",
+   "city": null,
+   "metric": "수용가 1곳당 연간 정전횟수(SAIFI)",
+   "scope": "TNB(말레이반도)",
+   "definition": "배전 기준 값이다.",
+   "value": 0.96,
+   "unit": "회/호·년",
+   "asof": "2024",
+   "basis": "TNB 가 2024회계연도 통합연차보고서 56쪽을 출처로 밝힌 값",
+   "key": "saifi",
+   "sources": [
+    {
+     "n": 1,
+     "title": "TNB — Supply Reliability (SAIDI & SAIFI Performance for TNB)",
+     "url": "https://www.tnb.com.my/smart-grid/supply-reliability/",
+     "date": "2026-11-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "연차보고서 원문은 열지 않았고 TNB 의 공급 신뢰도 페이지에서 읽었다."
+  },
+  {
+   "id": "saidi-au",
+   "topic": "D1",
+   "kind": "reliability",
+   "country": "AU",
+   "city": null,
+   "metric": "수용가 1곳당 연간 정전시간(SAIDI, 정규화)",
+   "scope": "AER 가 규제하는 배전망(서호주 제외)",
+   "definition": "AER 는 정규화(이상치 제외) 값을 쓴다. 큰 재해일의 정전이 빠지므로 일본처럼 재해를 넣는 값과 바로 견줄 수 없다.",
+   "value": 129,
+   "unit": "분/호·년",
+   "asof": "2025",
+   "basis": "2025 규제연도(2025년 6월까지). 이상치를 뺀 정규화 값",
+   "key": "saidi",
+   "series": [
+    {
+     "period": "2024",
+     "value": 115,
+     "src": [
+      1
+     ],
+     "note": "계산: 129 − 14"
+    },
+    {
+     "period": "2025",
+     "value": 129,
+     "src": [
+      1
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "AER — Electricity infographic, Network performance report 2026 (3쪽 Network service outputs)",
+     "url": "https://www.aer.gov.au/system/files/2026-07/Electricity%20infographic%20-%20Network%20performance%20report%202026.pdf",
+     "date": "2026-07",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "AER — State of the energy market 2025, Chapter 3 Electricity networks",
+     "url": "https://www.aer.gov.au/system/files/2025-08/State%20of%20the%20energy%20market%202025%20-%20Chapter%203%20-%20Electricity%20networks.pdf",
+     "date": "2025-08",
+     "read": "search_summary"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [
+    {
+     "value": 294.5,
+     "basis": "State of the energy market 2025 의 2023-24년 비계획 정전 시간(분). 검색 요약만 보았고 기준이 다르다",
+     "url": "https://www.aer.gov.au/system/files/2025-08/State%20of%20the%20energy%20market%202025%20-%20Chapter%203%20-%20Electricity%20networks.pdf"
+    }
+   ],
+   "conf": "med",
+   "note": "인포그래픽에서 읽은 값이고 2024년보다 14분 늘었다고 적혀 있다(2024년 115분은 계산). 송전은 311분으로 76분 늘었다(2024년 달력연도). 배전 사업자별 값은 보고서 본문을 열지 못해 넣지 않았다 — 규제기관 사이트가 자동 수집을 막아 브라우저로 인포그래픽만 읽었다."
+  },
+  {
+   "id": "saifi-au",
+   "topic": "D1",
+   "kind": "reliability",
+   "country": "AU",
+   "city": null,
+   "metric": "수용가 1곳당 연간 정전횟수(SAIFI, 정규화)",
+   "scope": "AER 가 규제하는 배전망(서호주 제외)",
+   "definition": "AER 의 정규화 값이다.",
+   "value": 1,
+   "unit": "회/호·년",
+   "asof": "2025",
+   "basis": "2025 규제연도. 이상치를 뺀 정규화 값(가중 평균)",
+   "key": "saifi",
+   "sources": [
+    {
+     "n": 1,
+     "title": "AER — Electricity infographic, Network performance report 2026 (3쪽 Network service outputs)",
+     "url": "https://www.aer.gov.au/system/files/2026-07/Electricity%20infographic%20-%20Network%20performance%20report%202026.pdf",
+     "date": "2026-07",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "AER — State of the energy market 2025, Chapter 3 Electricity networks",
+     "url": "https://www.aer.gov.au/system/files/2025-08/State%20of%20the%20energy%20market%202025%20-%20Chapter%203%20-%20Electricity%20networks.pdf",
+     "date": "2025-08",
+     "read": "search_summary"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [
+    {
+     "value": 1.26,
+     "basis": "State of the energy market 2025 의 2023-24년 비계획 정전 횟수. 검색 요약만 보았다",
+     "url": "https://www.aer.gov.au/system/files/2025-08/State%20of%20the%20energy%20market%202025%20-%20Chapter%203%20-%20Electricity%20networks.pdf"
+    }
+   ],
+   "conf": "med",
+   "note": "2024년과 같다고 적혀 있다."
+  },
+  {
+   "id": "saidi-in",
+   "topic": "D1",
+   "kind": "reliability",
+   "country": "IN",
+   "city": null,
+   "metric": "수용가 1곳당 연간 정전시간(SAIDI)",
+   "scope": "전국",
+   "definition": null,
+   "value": null,
+   "unit": "분/호·년",
+   "asof": "2025",
+   "basis": "전국을 하나로 묶은 값이 공표되지 않는다",
+   "key": "saidi",
+   "sources": [
+    {
+     "n": 1,
+     "title": "The Leap Blog — A review of outage reporting by Indian DISCOMs",
+     "url": "https://blog.theleapjournal.org/2025/09/a-review-of-outage-reporting-by-indian.html",
+     "date": "2025-09-25",
+     "read": "search_summary"
+    },
+    {
+     "n": 2,
+     "title": "PIB(인도 정부 공보국) — India's Power Sector: Progress, Reform, and the Road Ahead",
+     "url": "https://static.pib.gov.in/WriteReadData/specificdocs/documents/2026/mar/doc2026318829301.pdf",
+     "date": "2026-03-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "low",
+   "note": "중앙전력청(CEA)이 배전회사별 지수를 내지만 모든 회사가 들어 있지 않고 계산 기준도 주마다 다르다는 검토가 있다(검색 요약). 전국 수준의 공식 지표는 하루 평균 공급 시간이다(supply-hours-in)."
+  },
+  {
+   "id": "saidi-in-mumbai",
+   "topic": "D1",
+   "kind": "reliability",
+   "country": "IN",
+   "city": "뭄바이",
+   "metric": "수용가 1곳당 연간 정전시간(SAIDI)",
+   "scope": "뭄바이(Adani Electricity Mumbai 구역)",
+   "definition": null,
+   "value": 21.27,
+   "unit": "분/호·년",
+   "asof": "2025",
+   "basis": "2024-25회계연도. 회사 연차보고서의 값(검색 요약)",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Adani Energy Solutions — Annual Report 2024-25, Retail power distribution vertical",
+     "url": "https://connect.adani.com/annual_report/2025/aesl/retail-power-distribution-vertical.html",
+     "date": "2025",
+     "read": "search_summary"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "low",
+   "note": "같은 해 정전횟수는 0.67회, 전년은 21.26분·0.69회로 요약에 나온다. 회사 페이지가 접속을 막아 원문을 열지 못했다. 뭄바이의 다른 배전 구역(Tata Power, BEST)은 찾지 못했다."
+  },
+  {
+   "id": "supply-hours-in",
+   "topic": "D1",
+   "kind": "reliability",
+   "country": "IN",
+   "city": null,
+   "metric": "하루 평균 전력 공급 시간(도시)",
+   "scope": "전국 도시 지역",
+   "definition": "배전회사가 보고한 공급 시간의 평균이다. 수용가 수로 가중한 정전 지수가 아니다.",
+   "value": 23.4,
+   "unit": "시간/일",
+   "asof": "2025",
+   "basis": "2024-25회계연도. 정부 공보 자료의 값",
+   "key": "supply_hours_urban",
+   "sources": [
+    {
+     "n": 1,
+     "title": "PIB(인도 정부 공보국) — India's Power Sector: Progress, Reform, and the Road Ahead",
+     "url": "https://static.pib.gov.in/WriteReadData/specificdocs/documents/2026/mar/doc2026318829301.pdf",
+     "date": "2026-03-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "농촌은 22.6시간이다. 도시 값은 하루 0.6시간, 한 해 약 219시간의 공급 중단에 해당한다(계산: (24 − 23.4) × 365). 다른 나라의 SAIDI 와 정의가 달라 나란히 놓을 수 없다."
+  },
+  {
+   "id": "saidi-tw",
+   "topic": "D1",
+   "kind": "reliability",
+   "country": "TW",
+   "city": null,
+   "metric": "호당 연간 정전시간(SAIDI)",
+   "scope": "대만전력(전국)",
+   "definition": "계획(작업) 정전 포함 여부와 최소 지속 시간은 이 장에 없다.",
+   "value": 15.831,
+   "unit": "분/호·년",
+   "asof": "2024",
+   "basis": "대만전력 지속가능보고서의 전국 정전시간",
+   "key": "saidi",
+   "sources": [
+    {
+     "n": 1,
+     "title": "台灣電力公司 2024 永續報告書 — 提升供電穩定性",
+     "url": "https://service.taipower.com.tw/csr/report/20O/2024_%E6%8F%90%E5%8D%87%E4%BE%9B%E9%9B%BB%E7%A9%A9%E5%AE%9A%E6%80%A7.pdf",
+     "date": "2025-07",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "대만전력은 자기 책임이 아닌 정전(굴착 제한, 공공 공사, 낙뢰, 가스 공급 문제)을 따로 설명한다."
+  },
+  {
+   "id": "saifi-tw",
+   "topic": "D1",
+   "kind": "reliability",
+   "country": "TW",
+   "city": null,
+   "metric": "호당 연간 정전횟수(SAIFI)",
+   "scope": "대만전력(전국)",
+   "definition": "계산 기준은 이 장에 없다.",
+   "value": 0.209,
+   "unit": "회/호·년",
+   "asof": "2024",
+   "basis": "대만전력 지속가능보고서의 값",
+   "key": "saifi",
+   "sources": [
+    {
+     "n": 1,
+     "title": "台灣電力公司 2024 永續報告書 — 提升供電穩定性",
+     "url": "https://service.taipower.com.tw/csr/report/20O/2024_%E6%8F%90%E5%8D%87%E4%BE%9B%E9%9B%BB%E7%A9%A9%E5%AE%9A%E6%80%A7.pdf",
+     "date": "2025-07",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "배전 사고로 인한 정전 횟수가 2022년보다 25% 가까이 줄었다고 적혀 있다."
+  },
+  {
+   "id": "mix-kr",
+   "topic": "D5",
+   "kind": "mix",
+   "key": "renewables_share",
+   "country": "KR",
+   "city": null,
+   "metric": "발전량 가운데 재생에너지 비중",
+   "scope": "전국",
+   "definition": "Ember 가 나라 통계를 같은 분류로 맞춘 값이다. 재생에너지는 수력·태양광·풍력·바이오와 그 밖의 재생이고, 원자력은 따로 센다(clean 은 재생+원자력). 나라가 스스로 내는 비중과 분류가 달라 값이 다를 수 있다.",
+   "value": 10.5,
+   "unit": "%",
+   "asof": "2025",
+   "basis": "연간 발전량 기준 비중. 가장 최근 해의 값이며 뒤에 고쳐질 수 있다",
+   "series": [
+    {
+     "period": "2019",
+     "value": 5.6,
+     "src": [
+      1
+     ],
+     "total_twh": 586.8,
+     "clean": 30.5,
+     "shares": {
+      "coal": 41.8,
+      "gas": 26.5,
+      "other_fossil": 1.3,
+      "nuclear": 24.9,
+      "hydro": 0.5,
+      "solar": 2.4,
+      "wind": 0.5,
+      "bioenergy": 2.3
+     }
+    },
+    {
+     "period": "2020",
+     "value": 7,
+     "src": [
+      1
+     ],
+     "total_twh": 577.1,
+     "clean": 34.8,
+     "shares": {
+      "coal": 36,
+      "gas": 28.2,
+      "other_fossil": 1,
+      "nuclear": 27.8,
+      "hydro": 0.7,
+      "solar": 3.4,
+      "wind": 0.5,
+      "bioenergy": 2.4
+     }
+    },
+    {
+     "period": "2021",
+     "value": 7.9,
+     "src": [
+      1
+     ],
+     "total_twh": 607.8,
+     "clean": 33.9,
+     "shares": {
+      "coal": 35.3,
+      "gas": 29.6,
+      "other_fossil": 1.2,
+      "nuclear": 26,
+      "hydro": 0.5,
+      "solar": 4.1,
+      "wind": 0.5,
+      "bioenergy": 2.8
+     }
+    },
+    {
+     "period": "2022",
+     "value": 8.9,
+     "src": [
+      1
+     ],
+     "total_twh": 622.6,
+     "clean": 37.2,
+     "shares": {
+      "coal": 33.6,
+      "gas": 28.2,
+      "other_fossil": 1,
+      "nuclear": 28.3,
+      "hydro": 0.6,
+      "solar": 4.9,
+      "wind": 0.5,
+      "bioenergy": 2.9
+     }
+    },
+    {
+     "period": "2023",
+     "value": 9.5,
+     "src": [
+      1
+     ],
+     "total_twh": 621,
+     "clean": 38.6,
+     "shares": {
+      "coal": 32.7,
+      "gas": 27.6,
+      "other_fossil": 1.1,
+      "nuclear": 29.1,
+      "hydro": 0.6,
+      "solar": 5.4,
+      "wind": 0.5,
+      "bioenergy": 3
+     }
+    },
+    {
+     "period": "2024",
+     "value": 10.5,
+     "src": [
+      1
+     ],
+     "total_twh": 627.8,
+     "clean": 40.5,
+     "shares": {
+      "coal": 29.7,
+      "gas": 28.7,
+      "other_fossil": 1,
+      "nuclear": 30.1,
+      "hydro": 0.7,
+      "solar": 6,
+      "wind": 0.6,
+      "bioenergy": 3.2
+     }
+    },
+    {
+     "period": "2025",
+     "value": 10.5,
+     "src": [
+      1
+     ],
+     "total_twh": 627.8,
+     "clean": 39.9,
+     "shares": {
+      "coal": 31.1,
+      "gas": 28,
+      "other_fossil": 1,
+      "nuclear": 29.4,
+      "hydro": 0.6,
+      "solar": 6,
+      "wind": 0.6,
+      "bioenergy": 3.2
+     }
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "Ember — Yearly Electricity Data (release_generation_yearly_global.csv)",
+     "url": "https://ember-energy.org/data/yearly-electricity-data/",
+     "date": "2026-11-18",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "2025년 발전량 627.8TWh. 전원별 비중은 series 의 shares 에 있다(석탄 31.1%, 가스 28.0%, 원자력 29.4%)."
+  },
+  {
+   "id": "mix-jp",
+   "topic": "D5",
+   "kind": "mix",
+   "key": "renewables_share",
+   "country": "JP",
+   "city": null,
+   "metric": "발전량 가운데 재생에너지 비중",
+   "scope": "전국",
+   "definition": "Ember 가 나라 통계를 같은 분류로 맞춘 값이다. 재생에너지는 수력·태양광·풍력·바이오와 그 밖의 재생이고, 원자력은 따로 센다(clean 은 재생+원자력). 나라가 스스로 내는 비중과 분류가 달라 값이 다를 수 있다.",
+   "value": 23.9,
+   "unit": "%",
+   "asof": "2025",
+   "basis": "연간 발전량 기준 비중. 가장 최근 해의 값이며 뒤에 고쳐질 수 있다",
+   "series": [
+    {
+     "period": "2019",
+     "value": 16.8,
+     "src": [
+      1
+     ],
+     "total_twh": 1047.3,
+     "clean": 23.1,
+     "shares": {
+      "coal": 33.5,
+      "gas": 39.8,
+      "other_fossil": 3.6,
+      "nuclear": 6.3,
+      "hydro": 7.1,
+      "solar": 6.4,
+      "wind": 0.7,
+      "bioenergy": 2.6
+     }
+    },
+    {
+     "period": "2020",
+     "value": 19.1,
+     "src": [
+      1
+     ],
+     "total_twh": 1010.8,
+     "clean": 23.3,
+     "shares": {
+      "coal": 33.7,
+      "gas": 40.5,
+      "other_fossil": 2.5,
+      "nuclear": 4.3,
+      "hydro": 7.8,
+      "solar": 7.5,
+      "wind": 0.8,
+      "bioenergy": 3
+     }
+    },
+    {
+     "period": "2021",
+     "value": 20.1,
+     "src": [
+      1
+     ],
+     "total_twh": 1034.7,
+     "clean": 26,
+     "shares": {
+      "coal": 33.7,
+      "gas": 37.3,
+      "other_fossil": 3,
+      "nuclear": 5.9,
+      "hydro": 7.7,
+      "solar": 8.1,
+      "wind": 0.9,
+      "bioenergy": 3.4
+     }
+    },
+    {
+     "period": "2022",
+     "value": 20.5,
+     "src": [
+      1
+     ],
+     "total_twh": 1040.5,
+     "clean": 25.5,
+     "shares": {
+      "coal": 33.7,
+      "gas": 36.4,
+      "other_fossil": 4.4,
+      "nuclear": 5,
+      "hydro": 7.2,
+      "solar": 8.8,
+      "wind": 0.9,
+      "bioenergy": 3.6
+     }
+    },
+    {
+     "period": "2023",
+     "value": 22.1,
+     "src": [
+      1
+     ],
+     "total_twh": 1006.7,
+     "clean": 29.8,
+     "shares": {
+      "coal": 32.5,
+      "gas": 34.5,
+      "other_fossil": 3.2,
+      "nuclear": 7.7,
+      "hydro": 7.4,
+      "solar": 9.6,
+      "wind": 1,
+      "bioenergy": 4.2
+     }
+    },
+    {
+     "period": "2024",
+     "value": 22.8,
+     "src": [
+      1
+     ],
+     "total_twh": 1015,
+     "clean": 31.1,
+     "shares": {
+      "coal": 32.3,
+      "gas": 34.2,
+      "other_fossil": 2.4,
+      "nuclear": 8.4,
+      "hydro": 7.8,
+      "solar": 9.5,
+      "wind": 1.1,
+      "bioenergy": 4.3
+     }
+    },
+    {
+     "period": "2025",
+     "value": 23.9,
+     "src": [
+      1
+     ],
+     "total_twh": 1027.4,
+     "clean": 33,
+     "shares": {
+      "coal": 31.8,
+      "gas": 32.7,
+      "other_fossil": 2.4,
+      "nuclear": 9.2,
+      "hydro": 7.2,
+      "solar": 10.8,
+      "wind": 1.2,
+      "bioenergy": 4.6
+     }
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "Ember — Yearly Electricity Data (release_generation_yearly_global.csv)",
+     "url": "https://ember-energy.org/data/yearly-electricity-data/",
+     "date": "2026-11-18",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "2025년 발전량 1027.4TWh. 전원별 비중은 series 의 shares 에 있다(석탄 31.8%, 가스 32.7%, 원자력 9.2%)."
+  },
+  {
+   "id": "mix-sg",
+   "topic": "D5",
+   "kind": "mix",
+   "key": "renewables_share",
+   "country": "SG",
+   "city": null,
+   "metric": "발전량 가운데 재생에너지 비중",
+   "scope": "전국",
+   "definition": "Ember 가 나라 통계를 같은 분류로 맞춘 값이다. 재생에너지는 수력·태양광·풍력·바이오와 그 밖의 재생이고, 원자력은 따로 센다(clean 은 재생+원자력). 나라가 스스로 내는 비중과 분류가 달라 값이 다를 수 있다.",
+   "value": 5.5,
+   "unit": "%",
+   "asof": "2025",
+   "basis": "연간 발전량 기준 비중. 가장 최근 해의 값이며 뒤에 고쳐질 수 있다",
+   "series": [
+    {
+     "period": "2019",
+     "value": 2.8,
+     "src": [
+      1
+     ],
+     "total_twh": 54.1,
+     "clean": 2.8,
+     "shares": {
+      "coal": 1.2,
+      "gas": 95.6,
+      "other_fossil": 0.4,
+      "solar": 0.4,
+      "bioenergy": 2.4
+     }
+    },
+    {
+     "period": "2020",
+     "value": 2.8,
+     "src": [
+      1
+     ],
+     "total_twh": 53.1,
+     "clean": 2.8,
+     "shares": {
+      "coal": 1,
+      "gas": 95.8,
+      "other_fossil": 0.4,
+      "solar": 0.6,
+      "bioenergy": 2.2
+     }
+    },
+    {
+     "period": "2021",
+     "value": 2.9,
+     "src": [
+      1
+     ],
+     "total_twh": 55.8,
+     "clean": 2.9,
+     "shares": {
+      "coal": 1.2,
+      "gas": 94.9,
+      "other_fossil": 1,
+      "solar": 0.7,
+      "bioenergy": 2.2
+     }
+    },
+    {
+     "period": "2022",
+     "value": 4.1,
+     "src": [
+      1
+     ],
+     "total_twh": 56.9,
+     "clean": 4.1,
+     "shares": {
+      "coal": 1,
+      "gas": 92.3,
+      "other_fossil": 2.6,
+      "solar": 1.2,
+      "bioenergy": 2.9
+     }
+    },
+    {
+     "period": "2023",
+     "value": 4.5,
+     "src": [
+      1
+     ],
+     "total_twh": 57.3,
+     "clean": 4.5,
+     "shares": {
+      "coal": 1,
+      "gas": 92.6,
+      "other_fossil": 1.9,
+      "solar": 1.6,
+      "bioenergy": 2.9
+     }
+    },
+    {
+     "period": "2024",
+     "value": 5,
+     "src": [
+      1
+     ],
+     "total_twh": 59.6,
+     "clean": 5,
+     "shares": {
+      "coal": 1,
+      "gas": 92.1,
+      "other_fossil": 1.9,
+      "solar": 2.1,
+      "bioenergy": 2.8
+     }
+    },
+    {
+     "period": "2025",
+     "value": 5.5,
+     "src": [
+      1
+     ],
+     "total_twh": 60.1,
+     "clean": 5.5,
+     "shares": {
+      "coal": 0.9,
+      "gas": 91.1,
+      "other_fossil": 2.5,
+      "solar": 2.7,
+      "bioenergy": 2.8
+     }
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "Ember — Yearly Electricity Data (release_generation_yearly_global.csv)",
+     "url": "https://ember-energy.org/data/yearly-electricity-data/",
+     "date": "2026-11-18",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "2025년 발전량 60.1TWh. 전원별 비중은 series 의 shares 에 있다(석탄 0.9%, 가스 91.1%, 원자력 0%)."
+  },
+  {
+   "id": "mix-my",
+   "topic": "D5",
+   "kind": "mix",
+   "key": "renewables_share",
+   "country": "MY",
+   "city": null,
+   "metric": "발전량 가운데 재생에너지 비중",
+   "scope": "전국",
+   "definition": "Ember 가 나라 통계를 같은 분류로 맞춘 값이다. 재생에너지는 수력·태양광·풍력·바이오와 그 밖의 재생이고, 원자력은 따로 센다(clean 은 재생+원자력). 나라가 스스로 내는 비중과 분류가 달라 값이 다를 수 있다.",
+   "value": 21,
+   "unit": "%",
+   "asof": "2025",
+   "basis": "연간 발전량 기준 비중. 가장 최근 해의 값이며 뒤에 고쳐질 수 있다",
+   "series": [
+    {
+     "period": "2019",
+     "value": 16.1,
+     "src": [
+      1
+     ],
+     "total_twh": 178.5,
+     "clean": 16.1,
+     "shares": {
+      "coal": 42.8,
+      "gas": 40.5,
+      "other_fossil": 0.6,
+      "hydro": 14.7,
+      "solar": 0.8,
+      "wind": 0,
+      "bioenergy": 0.6
+     }
+    },
+    {
+     "period": "2020",
+     "value": 17.6,
+     "src": [
+      1
+     ],
+     "total_twh": 174,
+     "clean": 17.6,
+     "shares": {
+      "coal": 51.1,
+      "gas": 30.9,
+      "other_fossil": 0.5,
+      "hydro": 15.7,
+      "solar": 1.2,
+      "wind": 0,
+      "bioenergy": 0.7
+     }
+    },
+    {
+     "period": "2021",
+     "value": 19.3,
+     "src": [
+      1
+     ],
+     "total_twh": 178.6,
+     "clean": 19.3,
+     "shares": {
+      "coal": 47.4,
+      "gas": 32.7,
+      "other_fossil": 0.5,
+      "hydro": 17.4,
+      "solar": 1.2,
+      "wind": 0,
+      "bioenergy": 0.7
+     }
+    },
+    {
+     "period": "2022",
+     "value": 19.1,
+     "src": [
+      1
+     ],
+     "total_twh": 192.5,
+     "clean": 19.1,
+     "shares": {
+      "coal": 42.7,
+      "gas": 36.5,
+      "other_fossil": 1.6,
+      "hydro": 16.6,
+      "solar": 1.8,
+      "wind": 0,
+      "bioenergy": 0.8
+     }
+    },
+    {
+     "period": "2023",
+     "value": 18.8,
+     "src": [
+      1
+     ],
+     "total_twh": 202.8,
+     "clean": 18.8,
+     "shares": {
+      "coal": 42.2,
+      "gas": 36.9,
+      "other_fossil": 2.1,
+      "hydro": 15.8,
+      "solar": 2.2,
+      "wind": 0,
+      "bioenergy": 0.8
+     }
+    },
+    {
+     "period": "2024",
+     "value": 19.8,
+     "src": [
+      1
+     ],
+     "total_twh": 211.2,
+     "clean": 19.8,
+     "shares": {
+      "coal": 42.4,
+      "gas": 35.6,
+      "other_fossil": 2.2,
+      "hydro": 16,
+      "solar": 3,
+      "wind": 0,
+      "bioenergy": 0.8
+     }
+    },
+    {
+     "period": "2025",
+     "value": 21,
+     "src": [
+      1
+     ],
+     "total_twh": 212,
+     "clean": 21,
+     "shares": {
+      "coal": 44.5,
+      "gas": 33.2,
+      "other_fossil": 1.3,
+      "hydro": 16.3,
+      "solar": 3.9,
+      "wind": 0,
+      "bioenergy": 0.8
+     }
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "Ember — Yearly Electricity Data (release_generation_yearly_global.csv)",
+     "url": "https://ember-energy.org/data/yearly-electricity-data/",
+     "date": "2026-11-18",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "2025년 발전량 212.0TWh. 전원별 비중은 series 의 shares 에 있다(석탄 44.5%, 가스 33.2%, 원자력 0%)."
+  },
+  {
+   "id": "mix-au",
+   "topic": "D5",
+   "kind": "mix",
+   "key": "renewables_share",
+   "country": "AU",
+   "city": null,
+   "metric": "발전량 가운데 재생에너지 비중",
+   "scope": "전국",
+   "definition": "Ember 가 나라 통계를 같은 분류로 맞춘 값이다. 재생에너지는 수력·태양광·풍력·바이오와 그 밖의 재생이고, 원자력은 따로 센다(clean 은 재생+원자력). 나라가 스스로 내는 비중과 분류가 달라 값이 다를 수 있다.",
+   "value": 39.8,
+   "unit": "%",
+   "asof": "2025",
+   "basis": "연간 발전량 기준 비중. 가장 최근 해의 값이며 뒤에 고쳐질 수 있다",
+   "series": [
+    {
+     "period": "2019",
+     "value": 20.8,
+     "src": [
+      1
+     ],
+     "total_twh": 265.9,
+     "clean": 20.8,
+     "shares": {
+      "coal": 56.4,
+      "gas": 21,
+      "other_fossil": 1.9,
+      "hydro": 5.3,
+      "solar": 6.9,
+      "wind": 7.3,
+      "bioenergy": 1.3
+     }
+    },
+    {
+     "period": "2020",
+     "value": 24.2,
+     "src": [
+      1
+     ],
+     "total_twh": 265.2,
+     "clean": 24.2,
+     "shares": {
+      "coal": 53.9,
+      "gas": 20,
+      "other_fossil": 1.8,
+      "hydro": 5.4,
+      "solar": 9,
+      "wind": 8.5,
+      "bioenergy": 1.3
+     }
+    },
+    {
+     "period": "2021",
+     "value": 28.9,
+     "src": [
+      1
+     ],
+     "total_twh": 267.5,
+     "clean": 28.9,
+     "shares": {
+      "coal": 51.4,
+      "gas": 17.8,
+      "other_fossil": 1.9,
+      "hydro": 6,
+      "solar": 11.7,
+      "wind": 10,
+      "bioenergy": 1.2
+     }
+    },
+    {
+     "period": "2022",
+     "value": 32,
+     "src": [
+      1
+     ],
+     "total_twh": 272.9,
+     "clean": 32,
+     "shares": {
+      "coal": 47.3,
+      "gas": 18.6,
+      "other_fossil": 2,
+      "hydro": 6.1,
+      "solar": 13.8,
+      "wind": 11,
+      "bioenergy": 1.2
+     }
+    },
+    {
+     "period": "2023",
+     "value": 35,
+     "src": [
+      1
+     ],
+     "total_twh": 274.8,
+     "clean": 35,
+     "shares": {
+      "coal": 45.8,
+      "gas": 17.1,
+      "other_fossil": 2.1,
+      "hydro": 5.5,
+      "solar": 16.7,
+      "wind": 11.6,
+      "bioenergy": 1.2
+     }
+    },
+    {
+     "period": "2024",
+     "value": 35.8,
+     "src": [
+      1
+     ],
+     "total_twh": 283.9,
+     "clean": 35.8,
+     "shares": {
+      "coal": 45,
+      "gas": 17.2,
+      "other_fossil": 2,
+      "hydro": 4.7,
+      "solar": 18.3,
+      "wind": 11.6,
+      "bioenergy": 1.2
+     }
+    },
+    {
+     "period": "2025",
+     "value": 39.8,
+     "src": [
+      1
+     ],
+     "total_twh": 285.9,
+     "clean": 39.8,
+     "shares": {
+      "coal": 42.9,
+      "gas": 15.5,
+      "other_fossil": 1.9,
+      "hydro": 4.4,
+      "solar": 20.4,
+      "wind": 13.8,
+      "bioenergy": 1.1
+     }
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "Ember — Yearly Electricity Data (release_generation_yearly_global.csv)",
+     "url": "https://ember-energy.org/data/yearly-electricity-data/",
+     "date": "2026-11-18",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "2025년 발전량 285.9TWh. 전원별 비중은 series 의 shares 에 있다(석탄 42.9%, 가스 15.5%, 원자력 0%)."
+  },
+  {
+   "id": "mix-in",
+   "topic": "D5",
+   "kind": "mix",
+   "key": "renewables_share",
+   "country": "IN",
+   "city": null,
+   "metric": "발전량 가운데 재생에너지 비중",
+   "scope": "전국",
+   "definition": "Ember 가 나라 통계를 같은 분류로 맞춘 값이다. 재생에너지는 수력·태양광·풍력·바이오와 그 밖의 재생이고, 원자력은 따로 센다(clean 은 재생+원자력). 나라가 스스로 내는 비중과 분류가 달라 값이 다를 수 있다.",
+   "value": 24.6,
+   "unit": "%",
+   "asof": "2025",
+   "basis": "연간 발전량 기준 비중. 가장 최근 해의 값이며 뒤에 고쳐질 수 있다",
+   "series": [
+    {
+     "period": "2019",
+     "value": 18.2,
+     "src": [
+      1
+     ],
+     "total_twh": 1612.5,
+     "clean": 21,
+     "shares": {
+      "coal": 74.3,
+      "gas": 4.5,
+      "other_fossil": 0.2,
+      "nuclear": 2.8,
+      "hydro": 10.1,
+      "solar": 3,
+      "wind": 3.9,
+      "bioenergy": 1.2
+     }
+    },
+    {
+     "period": "2020",
+     "value": 19.5,
+     "src": [
+      1
+     ],
+     "total_twh": 1573.6,
+     "clean": 22.4,
+     "shares": {
+      "coal": 72.7,
+      "gas": 4.8,
+      "other_fossil": 0.2,
+      "nuclear": 2.8,
+      "hydro": 10.4,
+      "solar": 4,
+      "wind": 3.8,
+      "bioenergy": 1.3
+     }
+    },
+    {
+     "period": "2021",
+     "value": 19.3,
+     "src": [
+      1
+     ],
+     "total_twh": 1688.6,
+     "clean": 21.9,
+     "shares": {
+      "coal": 74.4,
+      "gas": 3.6,
+      "other_fossil": 0.2,
+      "nuclear": 2.6,
+      "hydro": 9.5,
+      "solar": 4.5,
+      "wind": 4,
+      "bioenergy": 1.3
+     }
+    },
+    {
+     "period": "2022",
+     "value": 20.6,
+     "src": [
+      1
+     ],
+     "total_twh": 1814.6,
+     "clean": 23.2,
+     "shares": {
+      "coal": 74.1,
+      "gas": 2.5,
+      "other_fossil": 0.2,
+      "nuclear": 2.5,
+      "hydro": 9.6,
+      "solar": 5.8,
+      "wind": 3.9,
+      "bioenergy": 1.3
+     }
+    },
+    {
+     "period": "2023",
+     "value": 19.6,
+     "src": [
+      1
+     ],
+     "total_twh": 1935.6,
+     "clean": 22.1,
+     "shares": {
+      "coal": 74.8,
+      "gas": 2.6,
+      "other_fossil": 0.5,
+      "nuclear": 2.5,
+      "hydro": 7.7,
+      "solar": 6.5,
+      "wind": 4.2,
+      "bioenergy": 1.2
+     }
+    },
+    {
+     "period": "2024",
+     "value": 20.2,
+     "src": [
+      1
+     ],
+     "total_twh": 2052.7,
+     "clean": 22.9,
+     "shares": {
+      "coal": 73.7,
+      "gas": 2.8,
+      "other_fossil": 0.7,
+      "nuclear": 2.7,
+      "hydro": 7.6,
+      "solar": 7.5,
+      "wind": 4,
+      "bioenergy": 1.1
+     }
+    },
+    {
+     "period": "2025",
+     "value": 24.6,
+     "src": [
+      1
+     ],
+     "total_twh": 2092.9,
+     "clean": 27.1,
+     "shares": {
+      "coal": 70,
+      "gas": 2.3,
+      "other_fossil": 0.6,
+      "nuclear": 2.6,
+      "hydro": 8.5,
+      "solar": 9.8,
+      "wind": 5,
+      "bioenergy": 1.2
+     }
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "Ember — Yearly Electricity Data (release_generation_yearly_global.csv)",
+     "url": "https://ember-energy.org/data/yearly-electricity-data/",
+     "date": "2026-11-18",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "2025년 발전량 2092.9TWh. 전원별 비중은 series 의 shares 에 있다(석탄 70.0%, 가스 2.3%, 원자력 2.6%)."
+  },
+  {
+   "id": "mix-tw",
+   "topic": "D5",
+   "kind": "mix",
+   "key": "renewables_share",
+   "country": "TW",
+   "city": null,
+   "metric": "발전량 가운데 재생에너지 비중",
+   "scope": "전국",
+   "definition": "Ember 가 나라 통계를 같은 분류로 맞춘 값이다. 재생에너지는 수력·태양광·풍력·바이오와 그 밖의 재생이고, 원자력은 따로 센다(clean 은 재생+원자력). 나라가 스스로 내는 비중과 분류가 달라 값이 다를 수 있다.",
+   "value": 12.4,
+   "unit": "%",
+   "asof": "2025",
+   "basis": "연간 발전량 기준 비중. 가장 최근 해의 값이며 뒤에 고쳐질 수 있다",
+   "series": [
+    {
+     "period": "2019",
+     "value": 4.9,
+     "src": [
+      1
+     ],
+     "total_twh": 274.1,
+     "clean": 16.7,
+     "shares": {
+      "coal": 47.1,
+      "gas": 34,
+      "other_fossil": 2.2,
+      "nuclear": 11.8,
+      "hydro": 2,
+      "solar": 1.4,
+      "wind": 0.7,
+      "bioenergy": 0.7
+     }
+    },
+    {
+     "period": "2020",
+     "value": 4.8,
+     "src": [
+      1
+     ],
+     "total_twh": 280.2,
+     "clean": 16.1,
+     "shares": {
+      "coal": 45.9,
+      "gas": 36.4,
+      "other_fossil": 1.6,
+      "nuclear": 11.2,
+      "hydro": 1.1,
+      "solar": 2.2,
+      "wind": 0.8,
+      "bioenergy": 0.7
+     }
+    },
+    {
+     "period": "2021",
+     "value": 5.5,
+     "src": [
+      1
+     ],
+     "total_twh": 291.4,
+     "clean": 15.1,
+     "shares": {
+      "coal": 45.1,
+      "gas": 37.9,
+      "other_fossil": 1.9,
+      "nuclear": 9.5,
+      "hydro": 1.2,
+      "solar": 2.9,
+      "wind": 0.8,
+      "bioenergy": 0.7
+     }
+    },
+    {
+     "period": "2022",
+     "value": 7.7,
+     "src": [
+      1
+     ],
+     "total_twh": 288.4,
+     "clean": 16,
+     "shares": {
+      "coal": 42.8,
+      "gas": 39.6,
+      "other_fossil": 1.6,
+      "nuclear": 8.2,
+      "hydro": 2,
+      "solar": 3.8,
+      "wind": 1.2,
+      "bioenergy": 0.7
+     }
+    },
+    {
+     "period": "2023",
+     "value": 9,
+     "src": [
+      1
+     ],
+     "total_twh": 282.8,
+     "clean": 15.3,
+     "shares": {
+      "coal": 43,
+      "gas": 40.3,
+      "other_fossil": 1.4,
+      "nuclear": 6.3,
+      "hydro": 1.4,
+      "solar": 4.7,
+      "wind": 2.2,
+      "bioenergy": 0.7
+     }
+    },
+    {
+     "period": "2024",
+     "value": 11.1,
+     "src": [
+      1
+     ],
+     "total_twh": 289.1,
+     "clean": 15.3,
+     "shares": {
+      "coal": 40,
+      "gas": 43.2,
+      "other_fossil": 1.5,
+      "nuclear": 4.2,
+      "hydro": 1.5,
+      "solar": 5.3,
+      "wind": 3.6,
+      "bioenergy": 0.7
+     }
+    },
+    {
+     "period": "2025",
+     "value": 12.4,
+     "src": [
+      1
+     ],
+     "total_twh": 288.9,
+     "clean": 13.5,
+     "shares": {
+      "coal": 36.1,
+      "gas": 48.8,
+      "other_fossil": 1.5,
+      "nuclear": 1.1,
+      "hydro": 1.9,
+      "solar": 5.5,
+      "wind": 4.2,
+      "bioenergy": 0.8
+     }
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "Ember — Yearly Electricity Data (release_generation_yearly_global.csv)",
+     "url": "https://ember-energy.org/data/yearly-electricity-data/",
+     "date": "2026-11-18",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "2025년 발전량 288.9TWh. 전원별 비중은 series 의 shares 에 있다(석탄 36.1%, 가스 48.8%, 원자력 1.1%)."
+  }
+ ]
 }
