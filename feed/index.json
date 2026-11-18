@@ -1,7 +1,23 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-18T15:35:31+09:00",
+ "generated_kst": "2026-11-18T17:27:24+09:00",
  "reports": [
+  {
+   "slug": "semafor-we-have-to-do-it-amazon-ceo-andy-jassy-on-racing",
+   "type": "interview",
+   "title": "Andy Jassy 인터뷰 : AI 수요 가시성과 데이터센터 반발 속 ‘멈출 수 없는’ 증설",
+   "companies": [
+    {
+     "name": "Amazon",
+     "ticker": null
+    }
+   ],
+   "published_kst": "2026-11-18T17:23:49+09:00",
+   "revised_kst": "2026-11-18T17:23:49+09:00",
+   "revision": 1,
+   "summary": "Jassy는 2027~29년 대형 용량의 상당 부분이 이미 예약됐고 약 5,800억 달러의 백로그가 특정 고객에 몰려 있지 않다는 점을 들어 대규모 CAPEX를 정당화했다. 또 AWS가 5~10년 안에 연 매출 런레이트 1조 달러를 넘을 수 있다는 새 전망을 내놨다. 수요 근거는 강하지만 백로그의 기간과 매출 인식 시점, 주(州) 단위 데이터센터 규제가 줄 영향은 답하지 않았다.",
+   "path": "reports/semafor-we-have-to-do-it-amazon-ceo-andy-jassy-on-racing.json"
+  },
   {
    "slug": "sc26",
    "type": "event",
@@ -1583,7 +1599,7 @@
   }
  ],
  "street": {
-  "updated_kst": "2026-11-18T11:29:20+09:00",
+  "updated_kst": "2026-11-18T17:27:24+09:00",
   "path": "street.json"
  },
  "calendar": {

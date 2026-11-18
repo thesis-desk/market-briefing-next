@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated_kst": "2026-11-18T11:29:20+09:00",
+ "updated_kst": "2026-11-18T17:27:24+09:00",
  "window_days": 14,
  "items_days": 30,
  "index": {
@@ -8,18 +8,18 @@
    "value": -3,
    "label": "엇갈림",
    "orgs": 42,
-   "items": 136
+   "items": 138
   },
   "market": {
    "value": -13,
    "label": "엇갈림",
    "orgs": 29,
-   "items": 90
+   "items": 91
   },
   "by_group": [
    {
     "group": "벤처캐피털",
-    "ai_tech": 6,
+    "ai_tech": 5,
     "ai_tech_orgs": 9,
     "market": -25,
     "market_orgs": 2
@@ -40,9 +40,9 @@
    },
    {
     "group": "투자은행",
-    "ai_tech": 12,
+    "ai_tech": 11,
     "ai_tech_orgs": 6,
-    "market": 26,
+    "market": 25,
     "market_orgs": 6
    },
    {
@@ -98,9 +98,9 @@
    },
    {
     "week": "2026-11-16",
-    "ai_tech": 3,
+    "ai_tech": 1,
     "ai_tech_orgs": 16,
-    "market": -2,
+    "market": -4,
     "market_orgs": 12
    }
   ],
@@ -108,7 +108,7 @@
    "caution": [
     {
      "tag": "투자 회수",
-     "n": 20
+     "n": 21
     },
     {
      "tag": "자금 조달·신용",
@@ -116,11 +116,11 @@
     },
     {
      "tag": "밸류에이션",
-     "n": 15
+     "n": 16
     },
     {
      "tag": "쏠림",
-     "n": 12
+     "n": 13
     },
     {
      "tag": "정책·지정학",
@@ -146,7 +146,7 @@
    "optimism": [
     {
      "tag": "수요·채택",
-     "n": 43
+     "n": 44
     },
     {
      "tag": "투자 회수",
@@ -166,7 +166,7 @@
     },
     {
      "tag": "밸류에이션",
-     "n": 16
+     "n": 17
     },
     {
      "tag": "쏠림",
@@ -284,6 +284,35 @@
     "tier": "standard"
    },
    "note": "유튜브 자막(제작자 제공)(en) 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
+  },
+  {
+   "id": "altimeter-nvidia-bought-into-anthropic-near-350-billion-ge",
+   "group": "벤처캐피털",
+   "org": "Altimeter Capital",
+   "person": null,
+   "kind": "report",
+   "title": "엔비디아는 3,500억 달러 부근에서 Anthropic에 투자했다. Gerstner는 1조 4,000억~1조 5,000억 달러에 가격이 정해질 것으로 본다",
+   "title_orig": "Nvidia Bought Into Anthropic Near $350 Billion. Gerstner Sees It Pricing at $1.4, $1.5 Trillion",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/nvidia-bought-anthropic-near-350-011444697.html",
+   "outlet": "Yahoo Finance",
+   "published_kst": "2026-11-18T02:15:00+09:00",
+   "stance": {
+    "ai_tech": 1,
+    "market": null
+   },
+   "args": [
+    "밸류에이션",
+    "수요·채택"
+   ],
+   "summary": "Altimeter Capital CEO Brad Gerstner는 Anthropic IPO가 1조 7,500억~1조 8,000억 달러에 가격이 정해질 수도 있지만 회사가 그렇게까지 끌어올리지는 않을 것이며, 그것은 위험하다고 봤다. 대신 1조 4,000억~1조 5,000억 달러에 정해질 가능성이 더 크다고 전망했다.",
+   "points": [
+    "Anthropic IPO가 1조 7,500억 달러나 1조 8,000억 달러에 가까운 가격으로 정해질 수도 있다고 본다. 그러나 회사가 그 수준까지 가져가지는 않을 것이라고 생각하며, 그렇게 하면 위험할 것이라고 했다. 1조 4,000억~1조 5,000억 달러에 정해질 가능성이 더 높다고 봤다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
   },
   {
    "id": "burry-michael-burry-warns-the-stock-market-is-obviousl",
@@ -515,6 +544,41 @@
     "tier": "standard"
    },
    "note": "팟캐스트 음성을 음성 인식(Whisper)으로 받아 적은 전사 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
+  },
+  {
+   "id": "bofa-bofa-says-ai-euphoria-is-over-after-fund-manager",
+   "group": "투자은행",
+   "org": "Bank of America",
+   "person": null,
+   "kind": "report",
+   "title": "BofA, 펀드매니저들이 2006년 이후 최대폭으로 기술주 비중을 줄이면서 AI '유포리아'는 끝났다고 밝혀",
+   "title_orig": "BofA Says AI ‘Euphoria’ Is Over After Fund Managers Cut Tech Exposure By Most Since 2006",
+   "url": "https://newsable.asianetnews.com/markets/bofa-says-ai-euphoria-is-over-after-fund-managers-cut-tech-exposure-by-most-since-2006-articleshow-cg4g77p",
+   "outlet": "Asianet Newsable",
+   "published_kst": "2026-11-17T16:10:00+09:00",
+   "stance": {
+    "ai_tech": -1,
+    "market": -1
+   },
+   "args": [
+    "투자 회수",
+    "밸류에이션",
+    "쏠림"
+   ],
+   "summary": "BofA의 마이클 하트넷은 AI와 붐에 대한 '유포리아'가 끝났고, 투자자들이 기업에 AI 지출을 멈추라는 '큰' 메시지를 보내고 있다고 말했다. 다만 기술주 비중 축소가 매력적인 매수 기회를 만들 만큼 충분히 진행되지 않았다고 보고, 향후 몇 달간 위험 회피(risk-off) 기조를 유지하라고 권고했다.",
+   "points": [
+    "BofA의 설문조사에서 기술주를 비중 확대(overweight)로 둔 펀드매니저의 순비율이 10월 37%에서 12%로 떨어졌다. 이는 2006년 6월 이후 월간 기준 최대 하락폭이다. (설문은 운용자산 4,610억 달러, 169명 참여)",
+    "BofA 전략가 마이클 하트넷은 붐과 AI에 대한 유포리아가 끝났다고 말했다. 또한 투자자들이 기업에 AI 지출을 멈추라는 '큰' 메시지를 보내고 있다고 덧붙였다.",
+    "설문에서 순 38%로 사상 최대 비율의 응답자가 기업들이 AI에 과잉투자하고 있다고 답했다.",
+    "응답자의 52%는 향후 6개월 안에 주요 AI 하이퍼스케일러 중 한 곳이 설비투자 삭감을 발표할 것으로 예상했다.",
+    "하트넷은 기술주 비중 축소가 매력적인 매수 기회를 만들 만큼 충분히 진행되지 않았을 수 있다고 본다. 그는 향후 몇 달간 위험 회피 기조를 유지하라고 권고하며, 이번 설문이 매수에 필요한 만큼의 투자자 '공포'를 보여 주지 않는다고 말했다. 또한 과거 설문 수치상 가장 매력적인 진입 시점은 펀드매니저들이 기술주를 더 크게 비중 축소(underweight) 쪽으로 옮겼을 때 나타나는 경향이 있다고 짚었다.",
+    "설문에서 향후 12개월 내 경기침체를 예상하는 응답자는 약 3%에 그쳤고, 현금 보유 비중은 자산의 3.6%로 8월 이후 최저로 떨어졌다. 이는 투자자들이 전반적으로 관망세로 물러나고 있지 않음을 시사한다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
   },
   {
    "id": "apollo-apollo-ceo-says-neocloud-funding-could-tighten-w",
