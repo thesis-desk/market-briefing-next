@@ -2,8 +2,1910 @@
  "schema": 1,
  "bundle": "E",
  "title": "배후 수요",
- "updated_kst": null,
+ "updated_kst": "2026-11-18T20:08:10+09:00",
  "measure": null,
- "notes": [],
- "records": []
+ "notes": [
+  "주제는 E1 인구·GDP, E2 도시별 데이터센터 시장, E3 클라우드 시장, E4 AI 사용 지표, E5 지연시간권이다. 기록의 topic 으로 나뉜다. 지금은 E1 과 E5 만 있다.",
+  "E1 은 IMF 세계경제전망의 값을 그대로 옮긴 것이고 `desk datasets demand` 가 다시 만든다. 지난해 값도 IMF 의 추정치다.",
+  "E5 는 계산값이다. 서울·도쿄·싱가포르에서 각 나라의 대표 도시까지의 왕복 지연시간(WonderNetwork 의 서버 사이 ping, 받은 날의 값)이 50ms·100ms 안이면 그 나라 전체의 인구와 GDP 를 더했다. 입력은 기록의 countries 에 있다.",
+  "E5 의 한계: 나라를 대표 도시 하나로 판정하므로 인도·호주·미국처럼 큰 나라는 과대·과소가 크다(어느 도시든 닿으면 넣은 합은 any_city). 한 측정 사업자의 값이라 실제 사업자 경로와 다를 수 있고 받을 때마다 조금씩 달라진다. 대표 값은 제한 시장(중국·홍콩·러시아)을 뺀 것이고, 넣은 값은 incl_restricted 에 있다. 제한 시장의 범위는 묶음 F4(수출통제 지위)를 모으기 전의 임시 기준이다.",
+  "원문 확인 비중은 건수로 센다(measure 가 null)."
+ ],
+ "summary": {
+  "by_topic": {
+   "E1": 7,
+   "E5": 6
+  },
+  "macro": {
+   "KR": {
+    "gdp_usd_bn": 1881.7,
+    "population_m": 51.69,
+    "gdp_per_capita_usd": 36408,
+    "asof": "2025"
+   },
+   "JP": {
+    "gdp_usd_bn": 4453.1,
+    "population_m": 123.29,
+    "gdp_per_capita_usd": 36119,
+    "asof": "2025"
+   },
+   "SG": {
+    "gdp_usd_bn": 603.9,
+    "population_m": 6.08,
+    "gdp_per_capita_usd": 99365,
+    "asof": "2025"
+   },
+   "MY": {
+    "gdp_usd_bn": 472.7,
+    "population_m": 33.85,
+    "gdp_per_capita_usd": 13965,
+    "asof": "2025"
+   },
+   "AU": {
+    "gdp_usd_bn": 1840.8,
+    "population_m": 27.73,
+    "gdp_per_capita_usd": 66379,
+    "asof": "2025"
+   },
+   "IN": {
+    "gdp_usd_bn": 3909,
+    "population_m": 1463.87,
+    "gdp_per_capita_usd": 2670,
+    "asof": "2025"
+   },
+   "TW": {
+    "gdp_usd_bn": 920.6,
+    "population_m": 23.3,
+    "gdp_per_capita_usd": 39512,
+    "asof": "2025"
+   }
+  },
+  "zones": {
+   "zone-seoul-100": {
+    "hub": "서울",
+    "threshold_ms": 100,
+    "population_m": 204.4,
+    "gdp_usd_bn": 7859.3,
+    "countries": 4,
+    "excl_home": {
+     "countries": 3,
+     "population_m": 152.7,
+     "gdp_usd_bn": 5977.6
+    },
+    "incl_restricted": {
+     "countries": 5,
+     "population_m": 211.9,
+     "gdp_usd_bn": 8286.4
+    }
+   },
+   "zone-seoul-50": {
+    "hub": "서울",
+    "threshold_ms": 50,
+    "population_m": 175,
+    "gdp_usd_bn": 6334.8,
+    "countries": 2,
+    "excl_home": {
+     "countries": 1,
+     "population_m": 123.3,
+     "gdp_usd_bn": 4453.1
+    },
+    "incl_restricted": {
+     "countries": 2,
+     "population_m": 175,
+     "gdp_usd_bn": 6334.8
+    }
+   },
+   "zone-tokyo-100": {
+    "hub": "도쿄",
+    "threshold_ms": 100,
+    "population_m": 797.2,
+    "gdp_usd_bn": 12822.4,
+    "countries": 11,
+    "excl_home": {
+     "countries": 10,
+     "population_m": 673.9,
+     "gdp_usd_bn": 8369.3
+    },
+    "incl_restricted": {
+     "countries": 12,
+     "population_m": 804.7,
+     "gdp_usd_bn": 13249.5
+    }
+   },
+   "zone-tokyo-50": {
+    "hub": "도쿄",
+    "threshold_ms": 50,
+    "population_m": 198.3,
+    "gdp_usd_bn": 7255.4,
+    "countries": 3,
+    "excl_home": {
+     "countries": 2,
+     "population_m": 75,
+     "gdp_usd_bn": 2802.3
+    },
+    "incl_restricted": {
+     "countries": 3,
+     "population_m": 198.3,
+     "gdp_usd_bn": 7255.4
+    }
+   },
+   "zone-singapore-100": {
+    "hub": "싱가포르",
+    "threshold_ms": 100,
+    "population_m": 2824.9,
+    "gdp_usd_bn": 18975.3,
+    "countries": 19,
+    "excl_home": {
+     "countries": 18,
+     "population_m": 2818.8,
+     "gdp_usd_bn": 18371.4
+    },
+    "incl_restricted": {
+     "countries": 20,
+     "population_m": 2832.4,
+     "gdp_usd_bn": 19402.4
+    }
+   },
+   "zone-singapore-50": {
+    "hub": "싱가포르",
+    "threshold_ms": 50,
+    "population_m": 872.1,
+    "gdp_usd_bn": 5558,
+    "countries": 10,
+    "excl_home": {
+     "countries": 9,
+     "population_m": 866,
+     "gdp_usd_bn": 4954.1
+    },
+    "incl_restricted": {
+     "countries": 11,
+     "population_m": 879.6,
+     "gdp_usd_bn": 5985.1
+    }
+   }
+  }
+ },
+ "records": [
+  {
+   "id": "macro-kr",
+   "topic": "E1",
+   "kind": "macro",
+   "country": "KR",
+   "city": null,
+   "value": 1881.7,
+   "unit": "십억 달러",
+   "asof": "2025",
+   "basis": "명목 GDP(경상 달러). IMF 의 추정치이며 다음 판에서 고쳐질 수 있다",
+   "population_m": 51.69,
+   "gdp_per_capita_usd": 36408,
+   "series": [
+    {
+     "period": "2019",
+     "value": 1751,
+     "src": [
+      1
+     ],
+     "population_m": 51.77,
+     "gdp_per_capita_usd": 33827
+    },
+    {
+     "period": "2020",
+     "value": 1744.5,
+     "src": [
+      1
+     ],
+     "population_m": 51.84,
+     "gdp_per_capita_usd": 33653
+    },
+    {
+     "period": "2021",
+     "value": 1943.9,
+     "src": [
+      1
+     ],
+     "population_m": 51.77,
+     "gdp_per_capita_usd": 37549
+    },
+    {
+     "period": "2022",
+     "value": 1802.8,
+     "src": [
+      1
+     ],
+     "population_m": 51.67,
+     "gdp_per_capita_usd": 34888
+    },
+    {
+     "period": "2023",
+     "value": 1844,
+     "src": [
+      1
+     ],
+     "population_m": 51.71,
+     "gdp_per_capita_usd": 35658
+    },
+    {
+     "period": "2024",
+     "value": 1880.8,
+     "src": [
+      1
+     ],
+     "population_m": 51.75,
+     "gdp_per_capita_usd": 36343
+    },
+    {
+     "period": "2025",
+     "value": 1881.7,
+     "src": [
+      1
+     ],
+     "population_m": 51.69,
+     "gdp_per_capita_usd": 36408
+    },
+    {
+     "period": "2026",
+     "value": 2245.8,
+     "src": [
+      1
+     ],
+     "population_m": 51.62,
+     "gdp_per_capita_usd": 43512,
+     "note": "전망"
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "IMF — World Economic Outlook (October 2026) (DataMapper: GDP, 인구, 1인당 GDP)",
+     "url": "https://www.imf.org/external/datamapper/NGDPD@WEO",
+     "date": "2026-11-18",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "2025년 인구 51.69백만 명, 1인당 GDP 36,408달러. 그 뒤 해의 값은 IMF 전망이다."
+  },
+  {
+   "id": "macro-jp",
+   "topic": "E1",
+   "kind": "macro",
+   "country": "JP",
+   "city": null,
+   "value": 4453.1,
+   "unit": "십억 달러",
+   "asof": "2025",
+   "basis": "명목 GDP(경상 달러). IMF 의 추정치이며 다음 판에서 고쳐질 수 있다",
+   "population_m": 123.29,
+   "gdp_per_capita_usd": 36119,
+   "series": [
+    {
+     "period": "2019",
+     "value": 5245.8,
+     "src": [
+      1
+     ],
+     "population_m": 126.22,
+     "gdp_per_capita_usd": 41560
+    },
+    {
+     "period": "2020",
+     "value": 5189.2,
+     "src": [
+      1
+     ],
+     "population_m": 125.85,
+     "gdp_per_capita_usd": 41234
+    },
+    {
+     "period": "2021",
+     "value": 5227,
+     "src": [
+      1
+     ],
+     "population_m": 125.49,
+     "gdp_per_capita_usd": 41652
+    },
+    {
+     "period": "2022",
+     "value": 4444.9,
+     "src": [
+      1
+     ],
+     "population_m": 125.06,
+     "gdp_per_capita_usd": 35542
+    },
+    {
+     "period": "2023",
+     "value": 4389.3,
+     "src": [
+      1
+     ],
+     "population_m": 124.48,
+     "gdp_per_capita_usd": 35260
+    },
+    {
+     "period": "2024",
+     "value": 4207.6,
+     "src": [
+      1
+     ],
+     "population_m": 123.89,
+     "gdp_per_capita_usd": 33962
+    },
+    {
+     "period": "2025",
+     "value": 4453.1,
+     "src": [
+      1
+     ],
+     "population_m": 123.29,
+     "gdp_per_capita_usd": 36119
+    },
+    {
+     "period": "2026",
+     "value": 4342,
+     "src": [
+      1
+     ],
+     "population_m": 122.66,
+     "gdp_per_capita_usd": 35400,
+     "note": "전망"
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "IMF — World Economic Outlook (October 2026) (DataMapper: GDP, 인구, 1인당 GDP)",
+     "url": "https://www.imf.org/external/datamapper/NGDPD@WEO",
+     "date": "2026-11-18",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "2025년 인구 123.29백만 명, 1인당 GDP 36,119달러. 그 뒤 해의 값은 IMF 전망이다."
+  },
+  {
+   "id": "macro-sg",
+   "topic": "E1",
+   "kind": "macro",
+   "country": "SG",
+   "city": null,
+   "value": 603.9,
+   "unit": "십억 달러",
+   "asof": "2025",
+   "basis": "명목 GDP(경상 달러). IMF 의 추정치이며 다음 판에서 고쳐질 수 있다",
+   "population_m": 6.08,
+   "gdp_per_capita_usd": 99365,
+   "series": [
+    {
+     "period": "2019",
+     "value": 376.8,
+     "src": [
+      1
+     ],
+     "population_m": 5.7,
+     "gdp_per_capita_usd": 66069
+    },
+    {
+     "period": "2020",
+     "value": 351.2,
+     "src": [
+      1
+     ],
+     "population_m": 5.69,
+     "gdp_per_capita_usd": 61773
+    },
+    {
+     "period": "2021",
+     "value": 441.1,
+     "src": [
+      1
+     ],
+     "population_m": 5.45,
+     "gdp_per_capita_usd": 80885
+    },
+    {
+     "period": "2022",
+     "value": 514.3,
+     "src": [
+      1
+     ],
+     "population_m": 5.64,
+     "gdp_per_capita_usd": 91228
+    },
+    {
+     "period": "2023",
+     "value": 511.2,
+     "src": [
+      1
+     ],
+     "population_m": 5.92,
+     "gdp_per_capita_usd": 86383
+    },
+    {
+     "period": "2024",
+     "value": 572.9,
+     "src": [
+      1
+     ],
+     "population_m": 6.04,
+     "gdp_per_capita_usd": 94897
+    },
+    {
+     "period": "2025",
+     "value": 603.9,
+     "src": [
+      1
+     ],
+     "population_m": 6.08,
+     "gdp_per_capita_usd": 99365
+    },
+    {
+     "period": "2026",
+     "value": 667.9,
+     "src": [
+      1
+     ],
+     "population_m": 6.12,
+     "gdp_per_capita_usd": 109117,
+     "note": "전망"
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "IMF — World Economic Outlook (October 2026) (DataMapper: GDP, 인구, 1인당 GDP)",
+     "url": "https://www.imf.org/external/datamapper/NGDPD@WEO",
+     "date": "2026-11-18",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "2025년 인구 6.08백만 명, 1인당 GDP 99,365달러. 그 뒤 해의 값은 IMF 전망이다."
+  },
+  {
+   "id": "macro-my",
+   "topic": "E1",
+   "kind": "macro",
+   "country": "MY",
+   "city": null,
+   "value": 472.7,
+   "unit": "십억 달러",
+   "asof": "2025",
+   "basis": "명목 GDP(경상 달러). IMF 의 추정치이며 다음 판에서 고쳐질 수 있다",
+   "population_m": 33.85,
+   "gdp_per_capita_usd": 13965,
+   "series": [
+    {
+     "period": "2019",
+     "value": 365.2,
+     "src": [
+      1
+     ],
+     "population_m": 32.52,
+     "gdp_per_capita_usd": 11228
+    },
+    {
+     "period": "2020",
+     "value": 337.5,
+     "src": [
+      1
+     ],
+     "population_m": 32.45,
+     "gdp_per_capita_usd": 10400
+    },
+    {
+     "period": "2021",
+     "value": 373.8,
+     "src": [
+      1
+     ],
+     "population_m": 32.58,
+     "gdp_per_capita_usd": 11474
+    },
+    {
+     "period": "2022",
+     "value": 407.8,
+     "src": [
+      1
+     ],
+     "population_m": 32.65,
+     "gdp_per_capita_usd": 12490
+    },
+    {
+     "period": "2023",
+     "value": 400.2,
+     "src": [
+      1
+     ],
+     "population_m": 33.06,
+     "gdp_per_capita_usd": 12107
+    },
+    {
+     "period": "2024",
+     "value": 422.4,
+     "src": [
+      1
+     ],
+     "population_m": 33.46,
+     "gdp_per_capita_usd": 12625
+    },
+    {
+     "period": "2025",
+     "value": 472.7,
+     "src": [
+      1
+     ],
+     "population_m": 33.85,
+     "gdp_per_capita_usd": 13965
+    },
+    {
+     "period": "2026",
+     "value": 547.1,
+     "src": [
+      1
+     ],
+     "population_m": 34.23,
+     "gdp_per_capita_usd": 15981,
+     "note": "전망"
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "IMF — World Economic Outlook (October 2026) (DataMapper: GDP, 인구, 1인당 GDP)",
+     "url": "https://www.imf.org/external/datamapper/NGDPD@WEO",
+     "date": "2026-11-18",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "2025년 인구 33.85백만 명, 1인당 GDP 13,965달러. 그 뒤 해의 값은 IMF 전망이다."
+  },
+  {
+   "id": "macro-au",
+   "topic": "E1",
+   "kind": "macro",
+   "country": "AU",
+   "city": null,
+   "value": 1840.8,
+   "unit": "십억 달러",
+   "asof": "2025",
+   "basis": "명목 GDP(경상 달러). IMF 의 추정치이며 다음 판에서 고쳐질 수 있다",
+   "population_m": 27.73,
+   "gdp_per_capita_usd": 66379,
+   "series": [
+    {
+     "period": "2019",
+     "value": 1392,
+     "src": [
+      1
+     ],
+     "population_m": 25.52,
+     "gdp_per_capita_usd": 54544
+    },
+    {
+     "period": "2020",
+     "value": 1366.6,
+     "src": [
+      1
+     ],
+     "population_m": 25.63,
+     "gdp_per_capita_usd": 53319
+    },
+    {
+     "period": "2021",
+     "value": 1660.1,
+     "src": [
+      1
+     ],
+     "population_m": 25.77,
+     "gdp_per_capita_usd": 64411
+    },
+    {
+     "period": "2022",
+     "value": 1731.3,
+     "src": [
+      1
+     ],
+     "population_m": 26.32,
+     "gdp_per_capita_usd": 65778
+    },
+    {
+     "period": "2023",
+     "value": 1748.1,
+     "src": [
+      1
+     ],
+     "population_m": 26.96,
+     "gdp_per_capita_usd": 64849
+    },
+    {
+     "period": "2024",
+     "value": 1799,
+     "src": [
+      1
+     ],
+     "population_m": 27.39,
+     "gdp_per_capita_usd": 65685
+    },
+    {
+     "period": "2025",
+     "value": 1840.8,
+     "src": [
+      1
+     ],
+     "population_m": 27.73,
+     "gdp_per_capita_usd": 66379
+    },
+    {
+     "period": "2026",
+     "value": 2110.7,
+     "src": [
+      1
+     ],
+     "population_m": 28.08,
+     "gdp_per_capita_usd": 75172,
+     "note": "전망"
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "IMF — World Economic Outlook (October 2026) (DataMapper: GDP, 인구, 1인당 GDP)",
+     "url": "https://www.imf.org/external/datamapper/NGDPD@WEO",
+     "date": "2026-11-18",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "2025년 인구 27.73백만 명, 1인당 GDP 66,379달러. 그 뒤 해의 값은 IMF 전망이다."
+  },
+  {
+   "id": "macro-in",
+   "topic": "E1",
+   "kind": "macro",
+   "country": "IN",
+   "city": null,
+   "value": 3909,
+   "unit": "십억 달러",
+   "asof": "2025",
+   "basis": "명목 GDP(경상 달러). IMF 의 추정치이며 다음 판에서 고쳐질 수 있다",
+   "population_m": 1463.87,
+   "gdp_per_capita_usd": 2670,
+   "series": [
+    {
+     "period": "2019",
+     "value": 2780.9,
+     "src": [
+      1
+     ],
+     "population_m": 1389.03,
+     "gdp_per_capita_usd": 2002
+    },
+    {
+     "period": "2020",
+     "value": 2616.8,
+     "src": [
+      1
+     ],
+     "population_m": 1402.62,
+     "gdp_per_capita_usd": 1866
+    },
+    {
+     "period": "2021",
+     "value": 3090.9,
+     "src": [
+      1
+     ],
+     "population_m": 1414.2,
+     "gdp_per_capita_usd": 2186
+    },
+    {
+     "period": "2022",
+     "value": 3257.3,
+     "src": [
+      1
+     ],
+     "population_m": 1425.42,
+     "gdp_per_capita_usd": 2285
+    },
+    {
+     "period": "2023",
+     "value": 3511.7,
+     "src": [
+      1
+     ],
+     "population_m": 1438.07,
+     "gdp_per_capita_usd": 2442
+    },
+    {
+     "period": "2024",
+     "value": 3759.8,
+     "src": [
+      1
+     ],
+     "population_m": 1450.94,
+     "gdp_per_capita_usd": 2591
+    },
+    {
+     "period": "2025",
+     "value": 3909,
+     "src": [
+      1
+     ],
+     "population_m": 1463.87,
+     "gdp_per_capita_usd": 2670
+    },
+    {
+     "period": "2026",
+     "value": 4060.2,
+     "src": [
+      1
+     ],
+     "population_m": 1476.63,
+     "gdp_per_capita_usd": 2750,
+     "note": "전망"
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "IMF — World Economic Outlook (October 2026) (DataMapper: GDP, 인구, 1인당 GDP)",
+     "url": "https://www.imf.org/external/datamapper/NGDPD@WEO",
+     "date": "2026-11-18",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "2025년 인구 1463.87백만 명, 1인당 GDP 2,670달러. 그 뒤 해의 값은 IMF 전망이다."
+  },
+  {
+   "id": "macro-tw",
+   "topic": "E1",
+   "kind": "macro",
+   "country": "TW",
+   "city": null,
+   "value": 920.6,
+   "unit": "십억 달러",
+   "asof": "2025",
+   "basis": "명목 GDP(경상 달러). IMF 의 추정치이며 다음 판에서 고쳐질 수 있다",
+   "population_m": 23.3,
+   "gdp_per_capita_usd": 39512,
+   "series": [
+    {
+     "period": "2019",
+     "value": 613.5,
+     "src": [
+      1
+     ],
+     "population_m": 23.6,
+     "gdp_per_capita_usd": 25993
+    },
+    {
+     "period": "2020",
+     "value": 676.9,
+     "src": [
+      1
+     ],
+     "population_m": 23.56,
+     "gdp_per_capita_usd": 28728
+    },
+    {
+     "period": "2021",
+     "value": 777,
+     "src": [
+      1
+     ],
+     "population_m": 23.38,
+     "gdp_per_capita_usd": 33239
+    },
+    {
+     "period": "2022",
+     "value": 765.6,
+     "src": [
+      1
+     ],
+     "population_m": 23.27,
+     "gdp_per_capita_usd": 32909
+    },
+    {
+     "period": "2023",
+     "value": 757.4,
+     "src": [
+      1
+     ],
+     "population_m": 23.42,
+     "gdp_per_capita_usd": 32339
+    },
+    {
+     "period": "2024",
+     "value": 801.5,
+     "src": [
+      1
+     ],
+     "population_m": 23.4,
+     "gdp_per_capita_usd": 34252
+    },
+    {
+     "period": "2025",
+     "value": 920.6,
+     "src": [
+      1
+     ],
+     "population_m": 23.3,
+     "gdp_per_capita_usd": 39512
+    },
+    {
+     "period": "2026",
+     "value": 1019.6,
+     "src": [
+      1
+     ],
+     "population_m": 23.2,
+     "gdp_per_capita_usd": 43951,
+     "note": "전망"
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "IMF — World Economic Outlook (October 2026) (DataMapper: GDP, 인구, 1인당 GDP)",
+     "url": "https://www.imf.org/external/datamapper/NGDPD@WEO",
+     "date": "2026-11-18",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "2025년 인구 23.3백만 명, 1인당 GDP 39,512달러. 그 뒤 해의 값은 IMF 전망이다."
+  },
+  {
+   "id": "zone-seoul-100",
+   "topic": "E5",
+   "kind": "zone",
+   "country": "KR",
+   "city": "서울",
+   "threshold_ms": 100,
+   "value": 204.4,
+   "unit": "백만 명",
+   "asof": "2025",
+   "basis": "계산: 서울에서 대표 도시까지 왕복 100ms 안에 닿는 나라의 2025년 인구 합. 제한 시장(중국·홍콩·러시아)을 뺀 값이고 자기 나라를 넣었다",
+   "gdp_usd_bn": 7859.3,
+   "reached_countries": 4,
+   "excl_home": {
+    "countries": 3,
+    "population_m": 152.7,
+    "gdp_usd_bn": 5977.6
+   },
+   "incl_restricted": {
+    "countries": 5,
+    "population_m": 211.9,
+    "gdp_usd_bn": 8286.4
+   },
+   "any_city": {
+    "countries": 4,
+    "population_m": 204.4,
+    "gdp_usd_bn": 7859.3
+   },
+   "countries": [
+    {
+     "code": "KOR",
+     "name": "한국",
+     "main_city": "Seoul",
+     "rtt_ms": 0,
+     "min_rtt_ms": 0,
+     "reached": true,
+     "restricted": false,
+     "home": true,
+     "population_m": 51.69,
+     "gdp_usd_bn": 1881.7
+    },
+    {
+     "code": "JPN",
+     "name": "일본",
+     "main_city": "Tokyo",
+     "rtt_ms": 35.02,
+     "min_rtt_ms": 34.26,
+     "reached": true,
+     "restricted": false,
+     "home": false,
+     "population_m": 123.29,
+     "gdp_usd_bn": 4453.1
+    },
+    {
+     "code": "TWN",
+     "name": "대만",
+     "main_city": "Taipei",
+     "rtt_ms": 57.4,
+     "min_rtt_ms": 57.4,
+     "reached": true,
+     "restricted": false,
+     "home": false,
+     "population_m": 23.3,
+     "gdp_usd_bn": 920.6
+    },
+    {
+     "code": "SGP",
+     "name": "싱가포르",
+     "main_city": "Singapore",
+     "rtt_ms": 75.65,
+     "min_rtt_ms": 75.65,
+     "reached": true,
+     "restricted": false,
+     "home": false,
+     "population_m": 6.08,
+     "gdp_usd_bn": 603.9
+    },
+    {
+     "code": "HKG",
+     "name": "홍콩",
+     "main_city": "Hong Kong",
+     "rtt_ms": 92.53,
+     "min_rtt_ms": 92.53,
+     "reached": true,
+     "restricted": true,
+     "home": false,
+     "population_m": 7.51,
+     "gdp_usd_bn": 427.1
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "WonderNetwork — Ping time between Seoul and other cities",
+     "url": "https://wondernetwork.com/pings/Seoul",
+     "date": "2026-11-18",
+     "read": "full"
+    },
+    {
+     "n": 2,
+     "title": "IMF — World Economic Outlook (October 2026) (DataMapper: GDP, 인구, 1인당 GDP)",
+     "url": "https://www.imf.org/external/datamapper/NGDPD@WEO",
+     "date": "2026-11-18",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1,
+    2
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "입력은 countries 에 있다. 나라를 대표 도시 하나로 판정해 그 나라 전체의 인구·GDP 를 더했으므로 큰 나라는 과대·과소가 크다 — 어느 도시든 한도 안에 닿으면 넣은 합은 any_city 에 있다. 한 측정 사업자의 서버 사이 ping 값이라 실제 경로와 다를 수 있다."
+  },
+  {
+   "id": "zone-seoul-50",
+   "topic": "E5",
+   "kind": "zone",
+   "country": "KR",
+   "city": "서울",
+   "threshold_ms": 50,
+   "value": 175,
+   "unit": "백만 명",
+   "asof": "2025",
+   "basis": "계산: 서울에서 대표 도시까지 왕복 50ms 안에 닿는 나라의 2025년 인구 합. 제한 시장(중국·홍콩·러시아)을 뺀 값이고 자기 나라를 넣었다",
+   "gdp_usd_bn": 6334.8,
+   "reached_countries": 2,
+   "excl_home": {
+    "countries": 1,
+    "population_m": 123.3,
+    "gdp_usd_bn": 4453.1
+   },
+   "incl_restricted": {
+    "countries": 2,
+    "population_m": 175,
+    "gdp_usd_bn": 6334.8
+   },
+   "any_city": {
+    "countries": 2,
+    "population_m": 175,
+    "gdp_usd_bn": 6334.8
+   },
+   "countries": [
+    {
+     "code": "KOR",
+     "name": "한국",
+     "main_city": "Seoul",
+     "rtt_ms": 0,
+     "min_rtt_ms": 0,
+     "reached": true,
+     "restricted": false,
+     "home": true,
+     "population_m": 51.69,
+     "gdp_usd_bn": 1881.7
+    },
+    {
+     "code": "JPN",
+     "name": "일본",
+     "main_city": "Tokyo",
+     "rtt_ms": 35.02,
+     "min_rtt_ms": 34.26,
+     "reached": true,
+     "restricted": false,
+     "home": false,
+     "population_m": 123.29,
+     "gdp_usd_bn": 4453.1
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "WonderNetwork — Ping time between Seoul and other cities",
+     "url": "https://wondernetwork.com/pings/Seoul",
+     "date": "2026-11-18",
+     "read": "full"
+    },
+    {
+     "n": 2,
+     "title": "IMF — World Economic Outlook (October 2026) (DataMapper: GDP, 인구, 1인당 GDP)",
+     "url": "https://www.imf.org/external/datamapper/NGDPD@WEO",
+     "date": "2026-11-18",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1,
+    2
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "입력은 countries 에 있다. 나라를 대표 도시 하나로 판정해 그 나라 전체의 인구·GDP 를 더했으므로 큰 나라는 과대·과소가 크다 — 어느 도시든 한도 안에 닿으면 넣은 합은 any_city 에 있다. 한 측정 사업자의 서버 사이 ping 값이라 실제 경로와 다를 수 있다."
+  },
+  {
+   "id": "zone-tokyo-100",
+   "topic": "E5",
+   "kind": "zone",
+   "country": "JP",
+   "city": "도쿄",
+   "threshold_ms": 100,
+   "value": 797.2,
+   "unit": "백만 명",
+   "asof": "2025",
+   "basis": "계산: 도쿄에서 대표 도시까지 왕복 100ms 안에 닿는 나라의 2025년 인구 합. 제한 시장(중국·홍콩·러시아)을 뺀 값이고 자기 나라를 넣었다",
+   "gdp_usd_bn": 12822.4,
+   "reached_countries": 11,
+   "excl_home": {
+    "countries": 10,
+    "population_m": 673.9,
+    "gdp_usd_bn": 8369.3
+   },
+   "incl_restricted": {
+    "countries": 12,
+    "population_m": 804.7,
+    "gdp_usd_bn": 13249.5
+   },
+   "any_city": {
+    "countries": 12,
+    "population_m": 1139.1,
+    "gdp_usd_bn": 43683.7
+   },
+   "countries": [
+    {
+     "code": "JPN",
+     "name": "일본",
+     "main_city": "Tokyo",
+     "rtt_ms": 0,
+     "min_rtt_ms": 0,
+     "reached": true,
+     "restricted": false,
+     "home": true,
+     "population_m": 123.29,
+     "gdp_usd_bn": 4453.1
+    },
+    {
+     "code": "TWN",
+     "name": "대만",
+     "main_city": "Taipei",
+     "rtt_ms": 30.85,
+     "min_rtt_ms": 30.85,
+     "reached": true,
+     "restricted": false,
+     "home": false,
+     "population_m": 23.3,
+     "gdp_usd_bn": 920.6
+    },
+    {
+     "code": "KOR",
+     "name": "한국",
+     "main_city": "Seoul",
+     "rtt_ms": 35.02,
+     "min_rtt_ms": 35.02,
+     "reached": true,
+     "restricted": false,
+     "home": false,
+     "population_m": 51.69,
+     "gdp_usd_bn": 1881.7
+    },
+    {
+     "code": "HKG",
+     "name": "홍콩",
+     "main_city": "Hong Kong",
+     "rtt_ms": 56.43,
+     "min_rtt_ms": 56.43,
+     "reached": true,
+     "restricted": true,
+     "home": false,
+     "population_m": 7.51,
+     "gdp_usd_bn": 427.1
+    },
+    {
+     "code": "KHM",
+     "name": "캄보디아",
+     "main_city": "Phnom Penh",
+     "rtt_ms": 68.72,
+     "min_rtt_ms": 68.72,
+     "reached": true,
+     "restricted": false,
+     "home": false,
+     "population_m": 17.85,
+     "gdp_usd_bn": 50.7
+    },
+    {
+     "code": "SGP",
+     "name": "싱가포르",
+     "main_city": "Singapore",
+     "rtt_ms": 77.87,
+     "min_rtt_ms": 77.87,
+     "reached": true,
+     "restricted": false,
+     "home": false,
+     "population_m": 6.08,
+     "gdp_usd_bn": 603.9
+    },
+    {
+     "code": "THA",
+     "name": "태국",
+     "main_city": "Bangkok",
+     "rtt_ms": 79.62,
+     "min_rtt_ms": 79.62,
+     "reached": true,
+     "restricted": false,
+     "home": false,
+     "population_m": 71.62,
+     "gdp_usd_bn": 577
+    },
+    {
+     "code": "MYS",
+     "name": "말레이시아",
+     "main_city": "Kuala Lumpur",
+     "rtt_ms": 79.77,
+     "min_rtt_ms": 79.77,
+     "reached": true,
+     "restricted": false,
+     "home": false,
+     "population_m": 33.85,
+     "gdp_usd_bn": 472.7
+    },
+    {
+     "code": "IDN",
+     "name": "인도네시아",
+     "main_city": "Jakarta",
+     "rtt_ms": 81.4,
+     "min_rtt_ms": 81.4,
+     "reached": true,
+     "restricted": false,
+     "home": false,
+     "population_m": 284.67,
+     "gdp_usd_bn": 1445.6
+    },
+    {
+     "code": "VNM",
+     "name": "베트남",
+     "main_city": "Ho Chi Minh City",
+     "rtt_ms": 84.01,
+     "min_rtt_ms": 84.01,
+     "reached": true,
+     "restricted": false,
+     "home": false,
+     "population_m": 102.3,
+     "gdp_usd_bn": 494
+    },
+    {
+     "code": "AUS",
+     "name": "호주",
+     "main_city": "Sydney",
+     "rtt_ms": 98.63,
+     "min_rtt_ms": 98.63,
+     "reached": true,
+     "restricted": false,
+     "home": false,
+     "population_m": 27.73,
+     "gdp_usd_bn": 1840.8
+    },
+    {
+     "code": "MMR",
+     "name": "미얀마",
+     "main_city": "Yangon",
+     "rtt_ms": 99.7,
+     "min_rtt_ms": 99.7,
+     "reached": true,
+     "restricted": false,
+     "home": false,
+     "population_m": 54.85,
+     "gdp_usd_bn": 82.3
+    },
+    {
+     "code": "USA",
+     "name": "미국",
+     "main_city": "Los Angeles",
+     "rtt_ms": 105.34,
+     "min_rtt_ms": 95.4,
+     "reached": false,
+     "restricted": false,
+     "home": false,
+     "population_m": 341.89,
+     "gdp_usd_bn": 30861.3
+    },
+    {
+     "code": "RUS",
+     "name": "러시아",
+     "main_city": "Moscow",
+     "rtt_ms": 265.31,
+     "min_rtt_ms": 33.1,
+     "reached": false,
+     "restricted": true,
+     "home": false,
+     "population_m": 144,
+     "gdp_usd_bn": 2572.3
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "WonderNetwork — Ping time between Tokyo and other cities",
+     "url": "https://wondernetwork.com/pings/Tokyo",
+     "date": "2026-11-18",
+     "read": "full"
+    },
+    {
+     "n": 2,
+     "title": "IMF — World Economic Outlook (October 2026) (DataMapper: GDP, 인구, 1인당 GDP)",
+     "url": "https://www.imf.org/external/datamapper/NGDPD@WEO",
+     "date": "2026-11-18",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1,
+    2
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "입력은 countries 에 있다. 나라를 대표 도시 하나로 판정해 그 나라 전체의 인구·GDP 를 더했으므로 큰 나라는 과대·과소가 크다 — 어느 도시든 한도 안에 닿으면 넣은 합은 any_city 에 있다. 한 측정 사업자의 서버 사이 ping 값이라 실제 경로와 다를 수 있다."
+  },
+  {
+   "id": "zone-tokyo-50",
+   "topic": "E5",
+   "kind": "zone",
+   "country": "JP",
+   "city": "도쿄",
+   "threshold_ms": 50,
+   "value": 198.3,
+   "unit": "백만 명",
+   "asof": "2025",
+   "basis": "계산: 도쿄에서 대표 도시까지 왕복 50ms 안에 닿는 나라의 2025년 인구 합. 제한 시장(중국·홍콩·러시아)을 뺀 값이고 자기 나라를 넣었다",
+   "gdp_usd_bn": 7255.4,
+   "reached_countries": 3,
+   "excl_home": {
+    "countries": 2,
+    "population_m": 75,
+    "gdp_usd_bn": 2802.3
+   },
+   "incl_restricted": {
+    "countries": 3,
+    "population_m": 198.3,
+    "gdp_usd_bn": 7255.4
+   },
+   "any_city": {
+    "countries": 3,
+    "population_m": 198.3,
+    "gdp_usd_bn": 7255.4
+   },
+   "countries": [
+    {
+     "code": "JPN",
+     "name": "일본",
+     "main_city": "Tokyo",
+     "rtt_ms": 0,
+     "min_rtt_ms": 0,
+     "reached": true,
+     "restricted": false,
+     "home": true,
+     "population_m": 123.29,
+     "gdp_usd_bn": 4453.1
+    },
+    {
+     "code": "TWN",
+     "name": "대만",
+     "main_city": "Taipei",
+     "rtt_ms": 30.85,
+     "min_rtt_ms": 30.85,
+     "reached": true,
+     "restricted": false,
+     "home": false,
+     "population_m": 23.3,
+     "gdp_usd_bn": 920.6
+    },
+    {
+     "code": "KOR",
+     "name": "한국",
+     "main_city": "Seoul",
+     "rtt_ms": 35.02,
+     "min_rtt_ms": 35.02,
+     "reached": true,
+     "restricted": false,
+     "home": false,
+     "population_m": 51.69,
+     "gdp_usd_bn": 1881.7
+    },
+    {
+     "code": "RUS",
+     "name": "러시아",
+     "main_city": "Moscow",
+     "rtt_ms": 265.31,
+     "min_rtt_ms": 33.1,
+     "reached": false,
+     "restricted": true,
+     "home": false,
+     "population_m": 144,
+     "gdp_usd_bn": 2572.3
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "WonderNetwork — Ping time between Tokyo and other cities",
+     "url": "https://wondernetwork.com/pings/Tokyo",
+     "date": "2026-11-18",
+     "read": "full"
+    },
+    {
+     "n": 2,
+     "title": "IMF — World Economic Outlook (October 2026) (DataMapper: GDP, 인구, 1인당 GDP)",
+     "url": "https://www.imf.org/external/datamapper/NGDPD@WEO",
+     "date": "2026-11-18",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1,
+    2
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "입력은 countries 에 있다. 나라를 대표 도시 하나로 판정해 그 나라 전체의 인구·GDP 를 더했으므로 큰 나라는 과대·과소가 크다 — 어느 도시든 한도 안에 닿으면 넣은 합은 any_city 에 있다. 한 측정 사업자의 서버 사이 ping 값이라 실제 경로와 다를 수 있다."
+  },
+  {
+   "id": "zone-singapore-100",
+   "topic": "E5",
+   "kind": "zone",
+   "country": "SG",
+   "city": "싱가포르",
+   "threshold_ms": 100,
+   "value": 2824.9,
+   "unit": "백만 명",
+   "asof": "2025",
+   "basis": "계산: 싱가포르에서 대표 도시까지 왕복 100ms 안에 닿는 나라의 2025년 인구 합. 제한 시장(중국·홍콩·러시아)을 뺀 값이고 자기 나라를 넣었다",
+   "gdp_usd_bn": 18975.3,
+   "reached_countries": 19,
+   "excl_home": {
+    "countries": 18,
+    "population_m": 2818.8,
+    "gdp_usd_bn": 18371.4
+   },
+   "incl_restricted": {
+    "countries": 20,
+    "population_m": 2832.4,
+    "gdp_usd_bn": 19402.4
+   },
+   "any_city": {
+    "countries": 19,
+    "population_m": 2824.9,
+    "gdp_usd_bn": 18975.3
+   },
+   "countries": [
+    {
+     "code": "SGP",
+     "name": "싱가포르",
+     "main_city": "Singapore",
+     "rtt_ms": 0,
+     "min_rtt_ms": 0,
+     "reached": true,
+     "restricted": false,
+     "home": true,
+     "population_m": 6.08,
+     "gdp_usd_bn": 603.9
+    },
+    {
+     "code": "MYS",
+     "name": "말레이시아",
+     "main_city": "Kuala Lumpur",
+     "rtt_ms": 11.62,
+     "min_rtt_ms": 11.62,
+     "reached": true,
+     "restricted": false,
+     "home": false,
+     "population_m": 33.85,
+     "gdp_usd_bn": 472.7
+    },
+    {
+     "code": "IDN",
+     "name": "인도네시아",
+     "main_city": "Jakarta",
+     "rtt_ms": 12.46,
+     "min_rtt_ms": 12.46,
+     "reached": true,
+     "restricted": false,
+     "home": false,
+     "population_m": 284.67,
+     "gdp_usd_bn": 1445.6
+    },
+    {
+     "code": "THA",
+     "name": "태국",
+     "main_city": "Bangkok",
+     "rtt_ms": 23.2,
+     "min_rtt_ms": 23.2,
+     "reached": true,
+     "restricted": false,
+     "home": false,
+     "population_m": 71.62,
+     "gdp_usd_bn": 577
+    },
+    {
+     "code": "VNM",
+     "name": "베트남",
+     "main_city": "Ho Chi Minh City",
+     "rtt_ms": 27.39,
+     "min_rtt_ms": 27.39,
+     "reached": true,
+     "restricted": false,
+     "home": false,
+     "population_m": 102.3,
+     "gdp_usd_bn": 494
+    },
+    {
+     "code": "HKG",
+     "name": "홍콩",
+     "main_city": "Hong Kong",
+     "rtt_ms": 30.16,
+     "min_rtt_ms": 30.16,
+     "reached": true,
+     "restricted": true,
+     "home": false,
+     "population_m": 7.51,
+     "gdp_usd_bn": 427.1
+    },
+    {
+     "code": "LAO",
+     "name": "라오스",
+     "main_city": "Vientiane",
+     "rtt_ms": 33.22,
+     "min_rtt_ms": 33.22,
+     "reached": true,
+     "restricted": false,
+     "home": false,
+     "population_m": 7.79,
+     "gdp_usd_bn": 16.9
+    },
+    {
+     "code": "PHL",
+     "name": "필리핀",
+     "main_city": "Manila",
+     "rtt_ms": 40.26,
+     "min_rtt_ms": 29.76,
+     "reached": true,
+     "restricted": false,
+     "home": false,
+     "population_m": 113.86,
+     "gdp_usd_bn": 487.1
+    },
+    {
+     "code": "MMR",
+     "name": "미얀마",
+     "main_city": "Yangon",
+     "rtt_ms": 40.7,
+     "min_rtt_ms": 40.7,
+     "reached": true,
+     "restricted": false,
+     "home": false,
+     "population_m": 54.85,
+     "gdp_usd_bn": 82.3
+    },
+    {
+     "code": "TWN",
+     "name": "대만",
+     "main_city": "Taipei",
+     "rtt_ms": 43.51,
+     "min_rtt_ms": 43.51,
+     "reached": true,
+     "restricted": false,
+     "home": false,
+     "population_m": 23.3,
+     "gdp_usd_bn": 920.6
+    },
+    {
+     "code": "BGD",
+     "name": "방글라데시",
+     "main_city": "Dhaka",
+     "rtt_ms": 47.78,
+     "min_rtt_ms": 47.78,
+     "reached": true,
+     "restricted": false,
+     "home": false,
+     "population_m": 173.74,
+     "gdp_usd_bn": 457.9
+    },
+    {
+     "code": "IND",
+     "name": "인도",
+     "main_city": "Mumbai",
+     "rtt_ms": 53.15,
+     "min_rtt_ms": 31.73,
+     "reached": true,
+     "restricted": false,
+     "home": false,
+     "population_m": 1463.87,
+     "gdp_usd_bn": 3909
+    },
+    {
+     "code": "PAK",
+     "name": "파키스탄",
+     "main_city": "Karachi",
+     "rtt_ms": 75.38,
+     "min_rtt_ms": 75.38,
+     "reached": true,
+     "restricted": false,
+     "home": false,
+     "population_m": 240.49,
+     "gdp_usd_bn": 408.2
+    },
+    {
+     "code": "NPL",
+     "name": "네팔",
+     "main_city": "Kathmandu",
+     "rtt_ms": 75.46,
+     "min_rtt_ms": 75.46,
+     "reached": true,
+     "restricted": false,
+     "home": false,
+     "population_m": 29.62,
+     "gdp_usd_bn": 45.5
+    },
+    {
+     "code": "KOR",
+     "name": "한국",
+     "main_city": "Seoul",
+     "rtt_ms": 75.63,
+     "min_rtt_ms": 75.63,
+     "reached": true,
+     "restricted": false,
+     "home": false,
+     "population_m": 51.69,
+     "gdp_usd_bn": 1881.7
+    },
+    {
+     "code": "JPN",
+     "name": "일본",
+     "main_city": "Tokyo",
+     "rtt_ms": 77.92,
+     "min_rtt_ms": 67.79,
+     "reached": true,
+     "restricted": false,
+     "home": false,
+     "population_m": 123.29,
+     "gdp_usd_bn": 4453.1
+    },
+    {
+     "code": "ARE",
+     "name": "아랍에미리트",
+     "main_city": "Dubai",
+     "rtt_ms": 81.94,
+     "min_rtt_ms": 81.94,
+     "reached": true,
+     "restricted": false,
+     "home": false,
+     "population_m": 11.35,
+     "gdp_usd_bn": 614.4
+    },
+    {
+     "code": "BHR",
+     "name": "바레인",
+     "main_city": "Manama",
+     "rtt_ms": 85.22,
+     "min_rtt_ms": 85.22,
+     "reached": true,
+     "restricted": false,
+     "home": false,
+     "population_m": 1.6,
+     "gdp_usd_bn": 49
+    },
+    {
+     "code": "AUS",
+     "name": "호주",
+     "main_city": "Sydney",
+     "rtt_ms": 92.02,
+     "min_rtt_ms": 46.91,
+     "reached": true,
+     "restricted": false,
+     "home": false,
+     "population_m": 27.73,
+     "gdp_usd_bn": 1840.8
+    },
+    {
+     "code": "QAT",
+     "name": "카타르",
+     "main_city": "Doha",
+     "rtt_ms": 92.7,
+     "min_rtt_ms": 92.7,
+     "reached": true,
+     "restricted": false,
+     "home": false,
+     "population_m": 3.17,
+     "gdp_usd_bn": 215.6
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "WonderNetwork — Ping time between Singapore and other cities",
+     "url": "https://wondernetwork.com/pings/Singapore",
+     "date": "2026-11-18",
+     "read": "full"
+    },
+    {
+     "n": 2,
+     "title": "IMF — World Economic Outlook (October 2026) (DataMapper: GDP, 인구, 1인당 GDP)",
+     "url": "https://www.imf.org/external/datamapper/NGDPD@WEO",
+     "date": "2026-11-18",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1,
+    2
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "입력은 countries 에 있다. 나라를 대표 도시 하나로 판정해 그 나라 전체의 인구·GDP 를 더했으므로 큰 나라는 과대·과소가 크다 — 어느 도시든 한도 안에 닿으면 넣은 합은 any_city 에 있다. 한 측정 사업자의 서버 사이 ping 값이라 실제 경로와 다를 수 있다."
+  },
+  {
+   "id": "zone-singapore-50",
+   "topic": "E5",
+   "kind": "zone",
+   "country": "SG",
+   "city": "싱가포르",
+   "threshold_ms": 50,
+   "value": 872.1,
+   "unit": "백만 명",
+   "asof": "2025",
+   "basis": "계산: 싱가포르에서 대표 도시까지 왕복 50ms 안에 닿는 나라의 2025년 인구 합. 제한 시장(중국·홍콩·러시아)을 뺀 값이고 자기 나라를 넣었다",
+   "gdp_usd_bn": 5558,
+   "reached_countries": 10,
+   "excl_home": {
+    "countries": 9,
+    "population_m": 866,
+    "gdp_usd_bn": 4954.1
+   },
+   "incl_restricted": {
+    "countries": 11,
+    "population_m": 879.6,
+    "gdp_usd_bn": 5985.1
+   },
+   "any_city": {
+    "countries": 12,
+    "population_m": 2363.7,
+    "gdp_usd_bn": 11307.8
+   },
+   "countries": [
+    {
+     "code": "SGP",
+     "name": "싱가포르",
+     "main_city": "Singapore",
+     "rtt_ms": 0,
+     "min_rtt_ms": 0,
+     "reached": true,
+     "restricted": false,
+     "home": true,
+     "population_m": 6.08,
+     "gdp_usd_bn": 603.9
+    },
+    {
+     "code": "MYS",
+     "name": "말레이시아",
+     "main_city": "Kuala Lumpur",
+     "rtt_ms": 11.62,
+     "min_rtt_ms": 11.62,
+     "reached": true,
+     "restricted": false,
+     "home": false,
+     "population_m": 33.85,
+     "gdp_usd_bn": 472.7
+    },
+    {
+     "code": "IDN",
+     "name": "인도네시아",
+     "main_city": "Jakarta",
+     "rtt_ms": 12.46,
+     "min_rtt_ms": 12.46,
+     "reached": true,
+     "restricted": false,
+     "home": false,
+     "population_m": 284.67,
+     "gdp_usd_bn": 1445.6
+    },
+    {
+     "code": "THA",
+     "name": "태국",
+     "main_city": "Bangkok",
+     "rtt_ms": 23.2,
+     "min_rtt_ms": 23.2,
+     "reached": true,
+     "restricted": false,
+     "home": false,
+     "population_m": 71.62,
+     "gdp_usd_bn": 577
+    },
+    {
+     "code": "VNM",
+     "name": "베트남",
+     "main_city": "Ho Chi Minh City",
+     "rtt_ms": 27.39,
+     "min_rtt_ms": 27.39,
+     "reached": true,
+     "restricted": false,
+     "home": false,
+     "population_m": 102.3,
+     "gdp_usd_bn": 494
+    },
+    {
+     "code": "HKG",
+     "name": "홍콩",
+     "main_city": "Hong Kong",
+     "rtt_ms": 30.16,
+     "min_rtt_ms": 30.16,
+     "reached": true,
+     "restricted": true,
+     "home": false,
+     "population_m": 7.51,
+     "gdp_usd_bn": 427.1
+    },
+    {
+     "code": "LAO",
+     "name": "라오스",
+     "main_city": "Vientiane",
+     "rtt_ms": 33.22,
+     "min_rtt_ms": 33.22,
+     "reached": true,
+     "restricted": false,
+     "home": false,
+     "population_m": 7.79,
+     "gdp_usd_bn": 16.9
+    },
+    {
+     "code": "PHL",
+     "name": "필리핀",
+     "main_city": "Manila",
+     "rtt_ms": 40.26,
+     "min_rtt_ms": 29.76,
+     "reached": true,
+     "restricted": false,
+     "home": false,
+     "population_m": 113.86,
+     "gdp_usd_bn": 487.1
+    },
+    {
+     "code": "MMR",
+     "name": "미얀마",
+     "main_city": "Yangon",
+     "rtt_ms": 40.7,
+     "min_rtt_ms": 40.7,
+     "reached": true,
+     "restricted": false,
+     "home": false,
+     "population_m": 54.85,
+     "gdp_usd_bn": 82.3
+    },
+    {
+     "code": "TWN",
+     "name": "대만",
+     "main_city": "Taipei",
+     "rtt_ms": 43.51,
+     "min_rtt_ms": 43.51,
+     "reached": true,
+     "restricted": false,
+     "home": false,
+     "population_m": 23.3,
+     "gdp_usd_bn": 920.6
+    },
+    {
+     "code": "BGD",
+     "name": "방글라데시",
+     "main_city": "Dhaka",
+     "rtt_ms": 47.78,
+     "min_rtt_ms": 47.78,
+     "reached": true,
+     "restricted": false,
+     "home": false,
+     "population_m": 173.74,
+     "gdp_usd_bn": 457.9
+    },
+    {
+     "code": "IND",
+     "name": "인도",
+     "main_city": "Mumbai",
+     "rtt_ms": 53.15,
+     "min_rtt_ms": 31.73,
+     "reached": false,
+     "restricted": false,
+     "home": false,
+     "population_m": 1463.87,
+     "gdp_usd_bn": 3909
+    },
+    {
+     "code": "AUS",
+     "name": "호주",
+     "main_city": "Sydney",
+     "rtt_ms": 92.02,
+     "min_rtt_ms": 46.91,
+     "reached": false,
+     "restricted": false,
+     "home": false,
+     "population_m": 27.73,
+     "gdp_usd_bn": 1840.8
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "WonderNetwork — Ping time between Singapore and other cities",
+     "url": "https://wondernetwork.com/pings/Singapore",
+     "date": "2026-11-18",
+     "read": "full"
+    },
+    {
+     "n": 2,
+     "title": "IMF — World Economic Outlook (October 2026) (DataMapper: GDP, 인구, 1인당 GDP)",
+     "url": "https://www.imf.org/external/datamapper/NGDPD@WEO",
+     "date": "2026-11-18",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1,
+    2
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "입력은 countries 에 있다. 나라를 대표 도시 하나로 판정해 그 나라 전체의 인구·GDP 를 더했으므로 큰 나라는 과대·과소가 크다 — 어느 도시든 한도 안에 닿으면 넣은 합은 any_city 에 있다. 한 측정 사업자의 서버 사이 ping 값이라 실제 경로와 다를 수 있다."
+  }
+ ]
 }

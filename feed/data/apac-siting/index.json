@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated_kst": "2026-11-18T20:02:43+09:00",
+ "updated_kst": "2026-11-18T20:08:10+09:00",
  "question": "한국은 아시아·태평양 AI 컴퓨트의 권역 거점이 될 수 있는가",
  "bundles": [
   {
@@ -53,9 +53,9 @@
    "file": "demand.json",
    "title": "배후 수요",
    "status": "collecting",
-   "records": 0,
-   "verified_share": 0,
-   "updated_kst": null
+   "records": 13,
+   "verified_share": 1,
+   "updated_kst": "2026-11-18T20:08:10+09:00"
   },
   {
    "id": "F",
