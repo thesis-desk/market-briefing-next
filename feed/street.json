@@ -5,10 +5,10 @@
  "items_days": 30,
  "index": {
   "ai_tech": {
-   "value": 0,
+   "value": -1,
    "label": "엇갈림",
    "orgs": 42,
-   "items": 143
+   "items": 142
   },
   "market": {
    "value": -12,
@@ -26,7 +26,7 @@
    },
    {
     "group": "PE·대체투자",
-    "ai_tech": 2,
+    "ai_tech": 1,
     "ai_tech_orgs": 8,
     "market": 0,
     "market_orgs": 4

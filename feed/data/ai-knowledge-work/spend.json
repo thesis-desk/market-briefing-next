@@ -2,59 +2,63 @@
  "schema": 1,
  "bundle": "K3",
  "title": "지출과 매출 — 랩·도구·고객",
- "updated_kst": "2026-11-19T11:25:43+09:00",
+ "updated_kst": "2026-11-19T13:36:14+09:00",
  "measure": null,
  "notes": [
   "실제로 나간 돈이다. 회계 매출(감사 여부)과 회사 정의 지표(연환산 매출, 순매출유지율)를 basis·definition 에서 가른다.",
-  "직능별 지출, 코딩 도구의 매출, 법무·고객지원·재무 전문 에이전트의 매출은 아직 없다."
+  "설문과 모형으로 낸 시장 추정(Menlo)은 추정이라고 basis 에 적고, 낸 곳의 이해관계를 definition 에 적는다.",
+  "코딩 도구의 매출, 법무·고객지원·재무 전문 에이전트의 매출, 상장 소프트웨어 회사의 AI 제품 지표는 따로 모은다.",
+  "비상장 회사의 연환산 매출(arr-…)은 회사가 정의를 밝히지 않은 값이다. 시계열의 점마다 회사 발표·익명 출처 보도·정리 사이트 추정을 note 에 적고, 가장 최근 점이 회사 발표가 아니면 conf 를 low 로 둔다. 유료 기사를 옮겨 실은 제3자 페이지는 출처로 쓰지 않는다.",
+  "상장사의 AI 제품 지표는 회사가 고른 지표다. 정의가 바뀌거나 공개가 멈춘 분기를 definition·note 에 적고, 회사 게시 녹취·보도자료와 제3자 전사를 시계열의 note 에서 가른다.",
+  "'확산' 고리의 판정에 넣은 값은 계산 기록 spread-link-test 에 모았다. 기존 전문 정보 사업자(Thomson Reuters, RELX)의 지표는 AI 가 들어간 제품의 몫이지 AI 에 낸 돈이 아니다."
  ],
  "summary": {
-  "records": 6,
-  "with_value": 5,
-  "with_series": 3,
+  "records": 41,
+  "with_value": 38,
+  "with_series": 32,
   "by_hypothesis": {
    "H1": {
-    "지지": 5,
+    "지지": 29,
     "반박": 0,
-    "양쪽": 1,
-    "중립": 0
+    "양쪽": 11,
+    "중립": 1
    },
    "H2": {
-    "지지": 2,
+    "지지": 3,
     "반박": 0,
-    "양쪽": 0,
+    "양쪽": 3,
     "중립": 1
    }
   },
   "by_link": {
    "coding": {
-    "지지": 1,
+    "지지": 5,
     "반박": 0,
-    "양쪽": 0,
+    "양쪽": 2,
     "중립": 0
    },
    "spread": {
-    "지지": 1,
+    "지지": 17,
     "반박": 0,
-    "양쪽": 1,
-    "중립": 0
+    "양쪽": 9,
+    "중립": 1
    },
    "penetration": {
-    "지지": 3,
+    "지지": 6,
     "반박": 0,
-    "양쪽": 1,
+    "양쪽": 5,
     "중립": 0
    },
    "slope": {
-    "지지": 5,
+    "지지": 29,
     "반박": 0,
-    "양쪽": 0,
-    "중립": 0
+    "양쪽": 2,
+    "중립": 1
    },
    "counter": {
-    "지지": 0,
+    "지지": 2,
     "반박": 0,
-    "양쪽": 1,
+    "양쪽": 3,
     "중립": 0
    }
   }
@@ -216,6 +220,12 @@
    "definition": "직전 28일의 사용량 기반 요금 × 13 + 기준일의 월 구독료 × 12. 회계 매출이 아니고 감사 대상이 아니다.",
    "series": [
     {
+     "period": "2026-05",
+     "value": 47,
+     "src": 2,
+     "note": "'이달 초 470억 달러 돌파'"
+    },
+    {
      "period": "2026-09-30",
      "value": 71,
      "src": 1,
@@ -243,6 +253,13 @@
      "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026072484/anthropicpbc-sx1ax2.htm",
      "date": "2026-11-10",
      "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "Anthropic — Series H 발표",
+     "url": "https://www.anthropic.com/news/series-h",
+     "date": "2026-05-28",
+     "read": "partial"
     }
    ],
    "value_src": [
@@ -250,7 +267,7 @@
    ],
    "alt": [],
    "conf": "med",
-   "note": "2026-09-30 값은 원문의 '9월 말보다 100억 달러 늘었다'에서 뺀 계산값이다."
+   "note": "2026-09-30 값은 원문의 '9월 말보다 100억 달러 늘었다'에서 뺀 계산값이다. 2026-05 값은 회사의 자금 조달 발표문에서 읽었다."
   },
   {
    "id": "anthropic-nrr",
@@ -366,6 +383,3023 @@
    "alt": [],
    "conf": "low",
    "note": "검색 요약에서 9월 말 약 500억 달러(파이낸셜타임스 인용)와 약 700억 달러(Axios)가 엇갈렸다. 고르지 못해 값은 비우고 범위로 적었다. 회사마다 연환산 정의가 다르다."
+  },
+  {
+   "id": "ramp-ai-spend-per-employee",
+   "country": "US",
+   "city": null,
+   "metric": "직원 1인당 AI 지출(돈을 내는 기업의 중앙값)",
+   "value": 16.32,
+   "unit": "달러/월(직원 1인당)",
+   "asof": "2026-10",
+   "basis": "AI 에 돈을 내는 기업 가운데 중앙값 기업의 직원 1인당 월 AI 지출",
+   "definition": null,
+   "series": [
+    {
+     "period": "2026-09",
+     "value": 15.38,
+     "src": 1
+    },
+    {
+     "period": "2026-10",
+     "value": 16.32,
+     "src": 1
+    }
+   ],
+   "detail": {
+    "top10pct_median": 800.84,
+    "top1pct_median": 10199.2,
+    "top1_over_median": 625,
+    "ai_share_of_nonpayroll_spend_pct": {
+     "2026-09": 5.68,
+     "2026-10": 5.43
+    }
+   },
+   "links": [
+    "penetration",
+    "counter"
+   ],
+   "sides": {
+    "H1": "양쪽"
+   },
+   "side_basis": "돈을 내는 기업의 절반은 직원 1인당 월 16달러 아래다. 상위 1% 기업은 10,199달러로 625배다. 깊이가 극소수에 몰려 있다는 것이 여지이자 한계다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Ramp Economics Lab — Ramp AI Index (2026-10 자료)",
+     "url": "https://ramp.com/data/ai-index",
+     "date": "2026-11",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "상위 10% 기업의 중앙값은 800.84달러, 상위 1% 는 10,199.20달러다(각 집단 안의 중앙값). 9월의 중앙값 기업은 15.38달러였다. AI 지출은 급여를 뺀 기업 지출의 5.43%(9월 5.68%)다."
+  },
+  {
+   "id": "ramp-token-spend-vs-price",
+   "country": "US",
+   "city": null,
+   "metric": "토큰 단가가 내린 구간의 지출 변화",
+   "value": 10.5,
+   "unit": "% (4주 전 대비 토큰 지출 변화)",
+   "asof": "2026-11-01",
+   "basis": "Ramp 의 토큰 지출 관리 자료 — 2026-11-01 로 끝난 주와 2026-10-04 로 끝난 주의 비교",
+   "definition": "Ramp 의 토큰 지출 관리 기능을 쓰는 기업의 값이다. 표본의 크기와 구성은 공개된 설명에서 확인하지 못했다.",
+   "detail": {
+    "token_volume_change_pct": 29,
+    "blended_price_change_pct": -14.8,
+    "blended_price_per_mtok": {
+     "2026-10-04": 0.62,
+     "2026-11-01": 0.53
+    }
+   },
+   "links": [
+    "slope",
+    "counter"
+   ],
+   "sides": {
+    "H1": "지지",
+    "H2": "양쪽"
+   },
+   "side_basis": "단가가 14.8% 내리는 동안 물량이 29.0% 늘어 지출은 10.5% 늘었다. 가격이 내리면 지출이 준다는 반론과 어긋난다. 다만 4주 한 구간이고, 물량이 는 까닭이 가격인지는 이 자료로 가를 수 없다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Ramp Economics Lab — Ramp AI Index (2026-10 자료)",
+     "url": "https://ramp.com/data/ai-index",
+     "date": "2026-11",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "혼합 단가는 100만 토큰당 0.62 → 0.53달러(OpenAI 0.61 → 0.50, Anthropic 0.63 → 0.55)다. 지출 비중은 Anthropic 49.3%, OpenAI 46.1% 다."
+  },
+  {
+   "id": "menlo-enterprise-genai-spend",
+   "country": "US",
+   "city": null,
+   "metric": "기업의 생성형 AI 지출(추정)",
+   "value": 37,
+   "unit": "십억 달러",
+   "asof": "2025",
+   "basis": "미국 기업의 생성형 AI 지출 추정(Menlo Ventures, 2025년)",
+   "definition": "기업 의사결정자 495명 설문과 자체 모형을 합친 추정이다. 낸 곳은 AI 회사에 투자한 벤처캐피털이고, 보고서에 나오는 회사 다수가 투자처다.",
+   "series": [
+    {
+     "period": "2024",
+     "value": 11.5,
+     "src": 1
+    },
+    {
+     "period": "2025",
+     "value": 37,
+     "src": 1
+    }
+   ],
+   "detail": {
+    "application_layer": 19,
+    "infrastructure_layer": 18
+   },
+   "links": [
+    "slope",
+    "penetration"
+   ],
+   "sides": {
+    "H1": "지지",
+    "H2": "양쪽"
+   },
+   "side_basis": "1년에 3.2배가 됐다. 다만 설문과 모형으로 낸 추정이고 2025년까지의 값이다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Menlo Ventures — 2025: The State of Generative AI in the Enterprise",
+     "url": "https://menlovc.com/perspective/2025-the-state-of-generative-ai-in-the-enterprise/",
+     "date": "2025-12-09",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "응용 계층 190억 달러, 인프라 계층 180억 달러(2024년 92억 달러의 2.0배)로 나뉜다. 2026년판은 아직 나오지 않았다."
+  },
+  {
+   "id": "menlo-departmental-ai-coding-share",
+   "country": "US",
+   "city": null,
+   "metric": "직무별 AI 응용 지출의 코딩 비중",
+   "value": 55,
+   "unit": "%",
+   "asof": "2025",
+   "basis": "직무별 AI 응용 지출 73억 달러 가운데 코딩의 비중(Menlo Ventures, 2025년)",
+   "definition": "설문과 자체 모형의 추정이다(menlo-enterprise-genai-spend 와 같다).",
+   "detail": {
+    "departmental_total_bn": 7.3,
+    "coding_bn": 4,
+    "others_pct": {
+     "IT": 10,
+     "마케팅": 9,
+     "고객 성공": 9,
+     "디자인": 7,
+     "인사": 5
+    },
+    "coding_share_of_application_layer_pct": 21
+   },
+   "links": [
+    "coding",
+    "spread",
+    "counter"
+   ],
+   "sides": {
+    "H1": "양쪽"
+   },
+   "side_basis": "직무별 지출의 절반 넘게가 코딩이고 그 밖의 직무는 각각 10% 아래다. 코딩 밖에서 깊이가 생기지 않았다는 쪽이다. 다만 응용 계층 전체로 보면 코딩은 21%(40 ÷ 190, 계산)이고 나머지는 범용 도구와 산업별 도구다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Menlo Ventures — 2025: The State of Generative AI in the Enterprise",
+     "url": "https://menlovc.com/perspective/2025-the-state-of-generative-ai-in-the-enterprise/",
+     "date": "2025-12-09",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "코딩 40억 달러 다음은 IT 10%, 마케팅 9%, 고객 성공 9%, 디자인 7%, 인사 5% 다. 직무별 지출 전체는 1년에 4.1배가 됐다. 2025년 한 해 값이라 기울기는 2026년판이 나와야 본다."
+  },
+  {
+   "id": "menlo-vertical-ai-spend",
+   "country": "US",
+   "city": null,
+   "metric": "산업별 AI 응용 지출",
+   "value": 3.5,
+   "unit": "십억 달러",
+   "asof": "2025",
+   "basis": "산업별(버티컬) AI 응용 지출(Menlo Ventures, 2025년)",
+   "definition": "설문과 자체 모형의 추정이다(menlo-enterprise-genai-spend 와 같다).",
+   "series": [
+    {
+     "period": "2024",
+     "value": 1.2,
+     "src": 1
+    },
+    {
+     "period": "2025",
+     "value": 3.5,
+     "src": 1
+    }
+   ],
+   "detail": {
+    "healthcare_bn": {
+     "2024": 0.45,
+     "2025": 1.5
+    },
+    "horizontal_bn": 8.4,
+    "horizontal_copilot_share_pct": 86
+   },
+   "links": [
+    "spread",
+    "slope"
+   ],
+   "sides": {
+    "H1": "지지"
+   },
+   "side_basis": "1년에 약 3배가 됐고 절반 가까이가 보건(4.5억 → 약 15억 달러)이다. 코딩 밖 산업에서 지출이 붙는다는 근거다. 다만 절대액은 코딩(40억 달러)보다 작다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Menlo Ventures — 2025: The State of Generative AI in the Enterprise",
+     "url": "https://menlovc.com/perspective/2025-the-state-of-generative-ai-in-the-enterprise/",
+     "date": "2025-12-09",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "범용(수평) 도구는 84억 달러로 5.3배가 됐고 그 86%(72억 달러)가 ChatGPT Enterprise·Claude for Work·Microsoft Copilot 같은 코파일럿이다."
+  },
+  {
+   "id": "anthropic-fortune500-share-of-expenses",
+   "country": "ZZ",
+   "city": null,
+   "metric": "대기업 고객의 총비용 대비 Anthropic 지출",
+   "value": 0.1,
+   "unit": "% (고객사 총비용 대비, '0.1% 미만')",
+   "asof": "2026-09",
+   "basis": "Anthropic 의 10만 달러 이상 Fortune 500 고객에게서 받은 3Q26 매출이 그 회사들의 총비용에서 차지하는 비중(평균)",
+   "definition": "회사가 계산한 값이고 감사 대상이 아니다. 분모가 인건비가 아니라 총비용이라 임금 풀 대비 침투율과 같은 값은 아니다.",
+   "detail": {
+    "fortune500_customers_pct": 50,
+    "global2000_customers_pct": 30,
+    "top10_share_of_expenses_pct_lt": 1,
+    "top10_over_average": 8
+   },
+   "links": [
+    "penetration"
+   ],
+   "sides": {
+    "H1": "양쪽"
+   },
+   "side_basis": "가장 큰 고객군에서도 총비용의 0.1% 가 안 된다. 상위 10곳은 1% 미만으로 평균의 8배를 넘는다 — 먼저 간 고객이 어디까지 갔는지 보이는 값이지만, 나머지가 따라간다는 근거는 아니다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Anthropic, PBC — Form S-1 정정 2호 (SEC EDGAR)",
+     "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026072484/anthropicpbc-sx1ax2.htm",
+     "date": "2026-11-10",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "Fortune 500 의 50% 이상, Global 2000 의 30% 이상이 10만 달러 이상 고객이고 Fortune 10 은 전부다. 상장된 Fortune 500 고객만 넣고 공시된 총비용으로 계산했다고 각주에 적혀 있다."
+  },
+  {
+   "id": "anthropic-multi-product-customers",
+   "country": "ZZ",
+   "city": null,
+   "metric": "API 와 앱을 함께 쓰는 대형 고객의 비중",
+   "value": 50,
+   "unit": "% ('50% 초과')",
+   "asof": "2026-09",
+   "basis": "10만 달러 이상 고객 가운데 Claude Platform(API)과 자체 앱을 함께 쓴 고객의 비중(3Q26)",
+   "definition": "회사 집계이고 감사 대상이 아니다.",
+   "series": [
+    {
+     "period": "2025Q4",
+     "value": 30,
+     "src": 1,
+     "note": "약"
+    },
+    {
+     "period": "2026Q3",
+     "value": 50,
+     "src": 1,
+     "note": "초과"
+    }
+   ],
+   "links": [
+    "spread",
+    "slope"
+   ],
+   "sides": {
+    "H1": "지지"
+   },
+   "side_basis": "세 분기에 약 30% 에서 50% 초과로 올랐다. 개발자가 쓰는 API 에서 일반 직원이 쓰는 앱으로 쓰임이 넓어진다는 간접 근거다. 앱 쪽에 Claude Code 가 포함돼 있어 코딩 밖 확산만 재는 값은 아니다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Anthropic, PBC — Form S-1 정정 2호 (SEC EDGAR)",
+     "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026072484/anthropicpbc-sx1ax2.htm",
+     "date": "2026-11-10",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "회사는 산업별 제품 7종(금융, 재무 자문, 보건, 생명과학, 법률, 교육, 정부)과 지식노동자용 에이전트(Claude Cowork)를 냈다고 적었으나 제품별 매출이나 사용자 수는 공개하지 않았다."
+  },
+  {
+   "id": "anthropic-cost-per-task-cut",
+   "country": "ZZ",
+   "city": null,
+   "metric": "과업당 비용 인하와 그 뒤의 매출",
+   "value": 25,
+   "unit": "% (과업당 비용 인하, 일반 작업)",
+   "asof": "2026-09",
+   "basis": "Fable 5.1 출시(2026-09)로 일반 작업의 비용이 Fable 5 보다 약 25% 내렸다는 회사 설명",
+   "definition": "회사 설명이고 측정 방법은 공개되지 않았다.",
+   "detail": {
+    "complex_coding_agentic_max_pct": 45,
+    "opus_5_5_pct": 40
+   },
+   "links": [
+    "slope",
+    "counter"
+   ],
+   "sides": {
+    "H1": "지지",
+    "H2": "양쪽"
+   },
+   "side_basis": "9월에 과업당 비용을 25~40% 내렸는데 연환산 매출은 9월 말에서 10월 말 사이 100억 달러(14%) 늘었다. 가격을 내려도 지출이 는다는 쪽이다. 다만 한 달의 관찰이고, 인하 폭이 큰 만큼 같은 매출에 드는 컴퓨트가 늘었는지는 알 수 없다.",
+   "refs": [
+    {
+     "bundle": "K3",
+     "id": "anthropic-run-rate"
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "Anthropic, PBC — Form S-1 정정 2호 (SEC EDGAR)",
+     "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026072484/anthropicpbc-sx1ax2.htm",
+     "date": "2026-11-10",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "복잡한 코딩·에이전트 작업은 최대 45%, 같은 달 나온 Opus 5.5 는 Opus 5 보다 과업당 약 40% 내렸다. 인하는 가격 인하와 효율 개선이 섞인 값이라고 회사가 적었다."
+  },
+  {
+   "id": "arr-harvey",
+   "country": "ZZ",
+   "city": null,
+   "metric": "Harvey의 연환산 매출 — 법무",
+   "value": 400,
+   "unit": "백만 달러(연환산)",
+   "asof": "2026-09-09",
+   "basis": "Harvey의 ARR·연환산 매출로 공개된 값 가운데 가장 최근 것(회사 발표)",
+   "definition": "회사가 ARR 의 정의를 밝히지 않았고 2026-05·08 은 '연환산 매출'이라는 표현이다.",
+   "series": [
+    {
+     "period": "2025-02",
+     "value": 50,
+     "src": 1,
+     "note": "회사 발표, 돌파"
+    },
+    {
+     "period": "2025-08-04",
+     "value": 100,
+     "src": 2,
+     "note": "회사 발표, 도달"
+    },
+    {
+     "period": "2025-12",
+     "value": 190,
+     "src": 3,
+     "note": "회사 발표"
+    },
+    {
+     "period": "2026-05",
+     "value": 300,
+     "src": 4,
+     "note": "회사 발표, 약, 연환산 매출"
+    },
+    {
+     "period": "2026-08",
+     "value": 350,
+     "src": 5,
+     "note": "익명 출처 보도, 초과"
+    },
+    {
+     "period": "2026-09-09",
+     "value": 400,
+     "src": 6,
+     "note": "회사 발표, 돌파"
+    }
+   ],
+   "links": [
+    "spread",
+    "slope"
+   ],
+   "sides": {
+    "H1": "지지"
+   },
+   "side_basis": "13개월에 1억 달러에서 4억 달러로 4배가 됐다. 코딩 밖 전문직(법무)에서 지출이 붙는다는 가장 또렷한 사례다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "fortune.com — Harvey 매출 관련 글(회사 발표)",
+     "url": "https://fortune.com/2025/02/12/legal-ai-startup-harvey-300-million-series-d-funding-3-billion-valuation-sequoia/",
+     "date": "2025-02-12",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "cnbc.com — Harvey 매출 관련 글(회사 발표)",
+     "url": "https://www.cnbc.com/2025/08/04/legal-ai-startup-harvey-revenue.html",
+     "date": "2025-08-04",
+     "read": "partial"
+    },
+    {
+     "n": 3,
+     "title": "techcrunch.com — Harvey 매출 관련 글(회사 발표)",
+     "url": "https://techcrunch.com/2026/02/09/harvey-reportedly-raising-at-11b-valuation-just-months-after-it-hit-8b/",
+     "date": "2026-02-09",
+     "read": "partial"
+    },
+    {
+     "n": 4,
+     "title": "nonbillable.co.uk — Harvey 매출 관련 글(회사 발표)",
+     "url": "https://www.nonbillable.co.uk/news/harvey-legora-ramp-up-battle-for-legal-ai-dominance",
+     "date": "2026-05-28",
+     "read": "partial"
+    },
+    {
+     "n": 5,
+     "title": "pymnts.com — Harvey 매출 관련 글(익명 출처 보도)",
+     "url": "https://www.pymnts.com/news/investment-tracker/2026/harvey-targets-15-5-billion-valuation-as-revenue-surges-past-350-million/",
+     "date": "2026-08-07",
+     "read": "partial"
+    },
+    {
+     "n": 6,
+     "title": "lawnext.com — Harvey 매출 관련 글(회사 발표)",
+     "url": "https://www.lawnext.com/2026/09/harvey-raises-another-550m-at-a-15-5b-valuation.html",
+     "date": "2026-09-09",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    6
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "고객은 2025-08 500곳 초과에서 2026-09 3,000곳 초과로 늘었다고 회사가 밝혔다. 절대 수치는 모두 대표의 발언을 언론이 옮긴 것이고 회사 블로그에는 없다. 2026-08 값은 익명 출처 보도다."
+  },
+  {
+   "id": "arr-legora",
+   "country": "ZZ",
+   "city": null,
+   "metric": "Legora의 연환산 매출 — 법무",
+   "value": 200,
+   "unit": "백만 달러(연환산)",
+   "asof": "2026-10-21",
+   "basis": "Legora의 ARR·연환산 매출로 공개된 값 가운데 가장 최근 것(회사 발표)",
+   "definition": "회사가 ARR 의 정의를 밝히지 않았다.",
+   "series": [
+    {
+     "period": "2024-12",
+     "value": 3,
+     "src": 1,
+     "note": "정리 사이트 추정, Sacra 추정"
+    },
+    {
+     "period": "2025-12",
+     "value": 50,
+     "src": 1,
+     "note": "정리 사이트 추정, Sacra 추정"
+    },
+    {
+     "period": "2026-04-02",
+     "value": 100,
+     "src": 2,
+     "note": "회사 발표, 돌파"
+    },
+    {
+     "period": "2026-10-21",
+     "value": 200,
+     "src": 3,
+     "note": "회사 발표, 초과"
+    }
+   ],
+   "links": [
+    "spread",
+    "slope"
+   ],
+   "sides": {
+    "H1": "지지"
+   },
+   "side_basis": "2026-04 에 1억 달러를 넘고 여섯 달 안에 2억 달러를 넘었다. 법무에서 한 회사만의 현상이 아니라는 근거다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "sacra.com — Legora 매출 관련 글(정리 사이트 추정)",
+     "url": "https://sacra.com/c/legora/",
+     "date": null,
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "legora.com — Legora 매출 관련 글(회사 발표)",
+     "url": "https://legora.com/newsroom/legal-teams-adoption-of-ai-propels-legora-past-100-million-in-annual-recurring-revenue",
+     "date": "2026-04-02",
+     "read": "partial"
+    },
+    {
+     "n": 3,
+     "title": "legora.com — Legora 매출 관련 글(회사 발표)",
+     "url": "https://legora.com/newsroom/legora-raises-550-million-series-e-at-8.8-billion-valuation-to-accelerate-growth",
+     "date": "2026-10-21",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    3
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "2026-10 기준 2,400곳 넘는 로펌·사내 법무팀의 14만 명 이상이 쓴다고 회사가 밝혔다. 2024·2025년 말 값은 정리 사이트의 추정이다."
+  },
+  {
+   "id": "arr-sierra",
+   "country": "ZZ",
+   "city": null,
+   "metric": "Sierra의 연환산 매출 — 고객지원",
+   "value": 400,
+   "unit": "백만 달러(연환산)",
+   "asof": "2026-10-30",
+   "basis": "Sierra의 ARR·연환산 매출로 공개된 값 가운데 가장 최근 것(회사 발표)",
+   "definition": "성과(해결 건) 기준 과금이라 좌석 구독의 ARR 과 다르다. 정의는 밝히지 않았다.",
+   "series": [
+    {
+     "period": "2024-12",
+     "value": 26,
+     "src": 1,
+     "note": "정리 사이트 추정, Sacra 추정"
+    },
+    {
+     "period": "2025-11-21",
+     "value": 100,
+     "src": 2,
+     "note": "회사 발표, 도달"
+    },
+    {
+     "period": "2026-02-06",
+     "value": 150,
+     "src": 3,
+     "note": "회사 발표, 초과"
+    },
+    {
+     "period": "2026-05",
+     "value": 200,
+     "src": 4,
+     "note": "회사 발표, 달은 언론 보도 기준(5월 말 발표)"
+    },
+    {
+     "period": "2026-10-30",
+     "value": 400,
+     "src": 4,
+     "note": "회사 발표, 초과"
+    }
+   ],
+   "links": [
+    "spread",
+    "slope"
+   ],
+   "sides": {
+    "H1": "지지"
+   },
+   "side_basis": "11개월에 1억 달러에서 4억 달러 초과로 4배가 됐고 3분기 한 분기에만 1.5억 달러 넘게 더했다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "sacra.com — Sierra 매출 관련 글(정리 사이트 추정)",
+     "url": "https://sacra.com/c/sierra/",
+     "date": null,
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "sierra.ai — Sierra 매출 관련 글(회사 발표)",
+     "url": "https://sierra.ai/blog/100m-arr",
+     "date": "2025-11-21",
+     "read": "partial"
+    },
+    {
+     "n": 3,
+     "title": "sierra.ai — Sierra 매출 관련 글(회사 발표)",
+     "url": "https://sierra.ai/blog/year-two-in-review",
+     "date": "2026-02-06",
+     "read": "partial"
+    },
+    {
+     "n": 4,
+     "title": "sierra.ai — Sierra 매출 관련 글(회사 발표)",
+     "url": "https://sierra.ai/blog/our-customers-ambition-is-accelerating-our-growth",
+     "date": "2026-10-30",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    4
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "Fortune 50 의 절반 가까이와 일한다고 회사가 밝혔다. 2024년 말 값은 정리 사이트의 추정이고 2026-05 의 달은 언론 보도에서 가져왔다."
+  },
+  {
+   "id": "arr-decagon",
+   "country": "ZZ",
+   "city": null,
+   "metric": "Decagon의 연환산 매출 — 고객지원",
+   "value": 100,
+   "unit": "백만 달러(연환산)",
+   "asof": "2026-08-11",
+   "basis": "Decagon의 ARR·연환산 매출로 공개된 값 가운데 가장 최근 것(회사 발표)",
+   "definition": "2024년은 ARR, 2026년은 '연환산 매출'로 표현이 다르다.",
+   "series": [
+    {
+     "period": "2024-12",
+     "value": 10,
+     "src": 1,
+     "note": "회사 발표, 하한: '8자리 ARR'이라고만 밝힘"
+    },
+    {
+     "period": "2025-12",
+     "value": 44,
+     "src": 2,
+     "note": "정리 사이트 추정, Sacra 추정, 연환산 매출"
+    },
+    {
+     "period": "2026-08-11",
+     "value": 100,
+     "src": 3,
+     "note": "회사 발표, 돌파"
+    }
+   ],
+   "links": [
+    "spread",
+    "slope"
+   ],
+   "sides": {
+    "H1": "지지"
+   },
+   "side_basis": "2026-08 에 연환산 매출 1억 달러를 넘었다고 회사가 밝혔다. 같은 직능의 Sierra 보다 작고 공개가 드물다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "decagon.ai — Decagon 매출 관련 글(회사 발표)",
+     "url": "https://decagon.ai/blog/series-c-announcement",
+     "date": "2025-06-23",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "sacra.com — Decagon 매출 관련 글(정리 사이트 추정)",
+     "url": "https://sacra.com/c/decagon/",
+     "date": null,
+     "read": "partial"
+    },
+    {
+     "n": 3,
+     "title": "newcomer.co — Decagon 매출 관련 글(회사 발표)",
+     "url": "https://www.newcomer.co/p/decagon-hit-100-million-betting-against",
+     "date": "2026-08-11",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    3
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "2024년 말 값은 회사가 '8자리 ARR'이라고만 밝혀 하한(1,000만 달러)으로 넣었다. 2025년 말 값은 정리 사이트의 추정이다."
+  },
+  {
+   "id": "arr-intercom-fin",
+   "country": "ZZ",
+   "city": null,
+   "metric": "Fin(옛 Intercom)의 AI 에이전트의 연환산 매출 — 고객지원",
+   "value": 100,
+   "unit": "백만 달러(연환산)",
+   "asof": "2026-04-24",
+   "basis": "Fin(옛 Intercom)의 AI 에이전트의 ARR·연환산 매출로 공개된 값 가운데 가장 최근 것(회사 발표)",
+   "definition": "해결 건당 과금이다. 회사 전체가 아니라 Fin 제품만의 값이다.",
+   "series": [
+    {
+     "period": "2024-06",
+     "value": 12,
+     "src": 1,
+     "note": "회사 발표, 달은 대략(출시 첫해)"
+    },
+    {
+     "period": "2026-04-24",
+     "value": 100,
+     "src": 2,
+     "note": "회사 발표, 돌파"
+    }
+   ],
+   "links": [
+    "spread",
+    "slope"
+   ],
+   "sides": {
+    "H1": "지지"
+   },
+   "side_basis": "AI 에이전트 제품만의 ARR 이 2년이 안 돼 1,200만 달러에서 1억 달러 초과가 됐다. 기존 고객지원 소프트웨어 회사 안에서 일어난 전환이다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "glama.ai — Fin(옛 Intercom)의 AI 에이전트 매출 관련 글(회사 발표)",
+     "url": "https://glama.ai/mcp/servers/@mpnikhil/lenny-rag-mcp/blob/b181b8f2cf8a242f98c80f43cae5ce42514d3771/transcripts/Eoghan%20McCabe.txt",
+     "date": "2025-08-21",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "siliconangle.com — Fin(옛 Intercom)의 AI 에이전트 매출 관련 글(회사 발표)",
+     "url": "https://siliconangle.com/2026/04/24/intercoms-customer-service-agent-takes-new-sales-role/",
+     "date": "2026-04-24",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    2
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "회사 전체 ARR 은 2026-03 에 4억 달러였다. Salesforce 가 2026-09-10 에 인수를 마쳤고 그 뒤 수치는 없다. 2024년 값의 달은 대략이다(출시 첫해)."
+  },
+  {
+   "id": "arr-abridge",
+   "country": "ZZ",
+   "city": null,
+   "metric": "Abridge의 연환산 매출 — 의료 기록",
+   "value": 117,
+   "unit": "백만 달러(연환산)",
+   "asof": "2025-03",
+   "basis": "Abridge의 ARR·연환산 매출로 공개된 값 가운데 가장 최근 것(익명 출처 보도)",
+   "definition": "2025-03 값은 계약 기준 ARR(아직 도입하지 않은 고객의 계약 포함)이다. 회사가 직접 밝힌 수치는 없다.",
+   "series": [
+    {
+     "period": "2024-12",
+     "value": 60,
+     "src": 1,
+     "note": "정리 사이트 추정, Sacra 추정(ARR)"
+    },
+    {
+     "period": "2025-03",
+     "value": 117,
+     "src": 2,
+     "note": "익명 출처 보도, 계약 기준 ARR, 1Q25"
+    }
+   ],
+   "links": [
+    "spread",
+    "slope"
+   ],
+   "sides": {
+    "H1": "중립"
+   },
+   "side_basis": "2025-03 뒤의 값이 어떤 등급의 출처에도 없어 방향을 정하지 않았다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "sacra.com — Abridge 매출 관련 글(정리 사이트 추정)",
+     "url": "https://sacra.com/c/abridge/",
+     "date": null,
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "techcrunch.com — Abridge 매출 관련 글(익명 출처 보도)",
+     "url": "https://techcrunch.com/2025/06/24/in-just-4-months-ai-medical-scribe-abridge-doubles-valuation-to-5-3b/",
+     "date": "2025-06-24",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    2
+   ],
+   "alt": [],
+   "conf": "low",
+   "note": "2026-06 기준 300곳 넘는 의료 시스템에서 쓰인다는 보도가 있다. 2024년 말 값은 정리 사이트의 추정(ARR), 2025-03 값은 익명 출처 보도의 계약 기준 값이라 두 점의 기준이 다르다."
+  },
+  {
+   "id": "arr-openevidence",
+   "country": "ZZ",
+   "city": null,
+   "metric": "OpenEvidence의 연환산 매출 — 의료 정보",
+   "value": 300,
+   "unit": "백만 달러(연환산)",
+   "asof": "2026-07",
+   "basis": "OpenEvidence의 ARR·연환산 매출로 공개된 값 가운데 가장 최근 것(익명 출처 보도)",
+   "definition": "의사에게는 무료이고 광고로 번다. 구독 ARR 이 아니라 연환산 매출이다.",
+   "series": [
+    {
+     "period": "2024-12",
+     "value": 7.9,
+     "src": 1,
+     "note": "정리 사이트 추정, Sacra 추정"
+    },
+    {
+     "period": "2025-07",
+     "value": 50,
+     "src": 2,
+     "note": "익명 출처 보도, Forbes 보도를 옮긴 글"
+    },
+    {
+     "period": "2025-12",
+     "value": 100,
+     "src": 3,
+     "note": "회사 발표, 초과"
+    },
+    {
+     "period": "2026-07",
+     "value": 300,
+     "src": 4,
+     "note": "익명 출처 보도, 약"
+    }
+   ],
+   "links": [
+    "spread",
+    "slope"
+   ],
+   "sides": {
+    "H1": "양쪽"
+   },
+   "side_basis": "1년에 5,000만 달러에서 약 3억 달러가 됐다. 다만 매출 대부분이 제약·의료기기 광고라 지식노동 예산이 AI 로 옮겨 간 지출이 아니다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "sacra.com — OpenEvidence 매출 관련 글(정리 사이트 추정)",
+     "url": "https://sacra.com/c/openevidence/",
+     "date": null,
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "siliconangle.com — OpenEvidence 매출 관련 글(익명 출처 보도)",
+     "url": "https://siliconangle.com/2025/10/20/medical-search-engine-startup-openevidence-closes-200m-investment-led-gv/",
+     "date": "2025-10-20",
+     "read": "partial"
+    },
+    {
+     "n": 3,
+     "title": "cnbc.com — OpenEvidence 매출 관련 글(회사 발표)",
+     "url": "https://www.cnbc.com/2026/01/21/openevidence-chatgpt-for-doctors-doubles-valuation-to-12-billion.html",
+     "date": "2026-01-21",
+     "read": "partial"
+    },
+    {
+     "n": 4,
+     "title": "pymnts.com — OpenEvidence 매출 관련 글(익명 출처 보도)",
+     "url": "https://www.pymnts.com/news/artificial-intelligence/2026/medical-ai-startup-openevidence-weighs-200-million-funding-round/",
+     "date": "2026-07-20",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    4
+   ],
+   "alt": [
+    {
+     "value": 150,
+     "basis": "2025년 말, 정리 사이트(Sacra)의 추정",
+     "url": "https://sacra.com/c/openevidence/"
+    }
+   ],
+   "conf": "low",
+   "note": "미국 의사의 40% 가 쓴다고 대표가 말했다. 2025년 말은 회사가 '1억 달러 초과'라고 했고 정리 사이트는 1.5억 달러로 추정한다(alt). 2025-07·2026-07 값은 익명 출처 보도다."
+  },
+  {
+   "id": "arr-glean",
+   "country": "ZZ",
+   "city": null,
+   "metric": "Glean의 연환산 매출 — 사내 검색·지식 업무",
+   "value": 300,
+   "unit": "백만 달러(연환산)",
+   "asof": "2026-05-28",
+   "basis": "Glean의 ARR·연환산 매출로 공개된 값 가운데 가장 최근 것(회사 발표)",
+   "definition": "회사 보도자료의 ARR 이다.",
+   "series": [
+    {
+     "period": "2025-01",
+     "value": 100,
+     "src": 1,
+     "note": "회사 발표, FY25 4분기(2025-01 종료)에 달성"
+    },
+    {
+     "period": "2025-12-08",
+     "value": 200,
+     "src": 2,
+     "note": "회사 발표"
+    },
+    {
+     "period": "2026-05-28",
+     "value": 300,
+     "src": 3,
+     "note": "회사 발표, 도달"
+    }
+   ],
+   "links": [
+    "spread",
+    "slope"
+   ],
+   "sides": {
+    "H1": "지지"
+   },
+   "side_basis": "16개월에 1억 달러에서 3억 달러가 됐고 세 점 모두 회사 보도자료다. 직능을 가리지 않는 지식 업무 도구에서 지출이 는다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "glean.com — Glean 매출 관련 글(회사 발표)",
+     "url": "https://www.glean.com/press/glean-achieves-100m-arr-in-three-years-delivering-true-ai-roi-to-the-enterprise",
+     "date": "2025-02-05",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "glean.com — Glean 매출 관련 글(회사 발표)",
+     "url": "https://www.glean.com/press/glean-surpasses-200m-in-arr-for-enterprise-ai-doubling-revenue-in-nine-months",
+     "date": "2025-12-08",
+     "read": "partial"
+    },
+    {
+     "n": 3,
+     "title": "glean.com — Glean 매출 관련 글(회사 발표)",
+     "url": "https://www.glean.com/press/glean-surpasses-300m-arr-unrivaled-enterprise-context-fuels-ai-adoption",
+     "date": "2026-05-28",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    3
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "대표는 소프트웨어 구독 매출만 넣고 용역은 뺀다고 말했다. 일부는 사용량 요금이라 연환산에 가깝다는 지적이 있다."
+  },
+  {
+   "id": "arr-hebbia",
+   "country": "ZZ",
+   "city": null,
+   "metric": "Hebbia의 연환산 매출 — 금융",
+   "value": 48,
+   "unit": "백만 달러(연환산)",
+   "asof": "2026-08",
+   "basis": "Hebbia의 ARR·연환산 매출로 공개된 값 가운데 가장 최근 것(정리 사이트 추정)",
+   "definition": "회사가 직접 밝힌 수치는 없다.",
+   "series": [
+    {
+     "period": "2024-07",
+     "value": 13,
+     "src": 1,
+     "note": "익명 출처 보도, 시리즈 B 유치 당시"
+    },
+    {
+     "period": "2024-12",
+     "value": 17,
+     "src": 2,
+     "note": "정리 사이트 추정, Sacra 추정"
+    },
+    {
+     "period": "2025-12",
+     "value": 30,
+     "src": 2,
+     "note": "정리 사이트 추정, Sacra 추정"
+    },
+    {
+     "period": "2026-08",
+     "value": 48,
+     "src": 2,
+     "note": "정리 사이트 추정, Sacra 추정"
+    }
+   ],
+   "links": [
+    "spread",
+    "slope"
+   ],
+   "sides": {
+    "H1": "양쪽"
+   },
+   "side_basis": "2년에 1,300만 달러에서 5,000만 달러 안쪽으로, 다른 직능의 선두보다 느리다. 금융에서는 랩의 자체 제품과 겹친다는 보도가 있다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "techcrunch.com — Hebbia 매출 관련 글(익명 출처 보도)",
+     "url": "https://techcrunch.com/2024/07/09/ai-startup-hebbia-rased-130m-at-a-700m-valuation-on-13-million-of-profitable-revenue",
+     "date": "2024-07-09",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "sacra.com — Hebbia 매출 관련 글(정리 사이트 추정)",
+     "url": "https://sacra.com/c/hebbia/",
+     "date": null,
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    2
+   ],
+   "alt": [],
+   "conf": "low",
+   "note": "2024-07 값만 익명 출처 보도이고 나머지는 정리 사이트의 추정이다. 2026-09 에 5,000만 달러에 가깝다는 유료 매체 보도가 있으나 원문을 열지 못해 넣지 않았다."
+  },
+  {
+   "id": "arr-rogo",
+   "country": "ZZ",
+   "city": null,
+   "metric": "Rogo의 연환산 매출 — 금융",
+   "value": 50,
+   "unit": "백만 달러(연환산)",
+   "asof": "2026-09",
+   "basis": "Rogo의 ARR·연환산 매출로 공개된 값 가운데 가장 최근 것(익명 출처 보도)",
+   "definition": "회사가 직접 밝힌 수치는 없다.",
+   "series": [
+    {
+     "period": "2025-12",
+     "value": 15,
+     "src": 1,
+     "note": "익명 출처 보도"
+    },
+    {
+     "period": "2026-09",
+     "value": 50,
+     "src": 1,
+     "note": "익명 출처 보도, 초과"
+    }
+   ],
+   "links": [
+    "spread",
+    "slope"
+   ],
+   "sides": {
+    "H1": "지지"
+   },
+   "side_basis": "9개월에 1,500만 달러에서 5,000만 달러 초과가 됐다는 보도다. 금융에서도 빠른 사례가 있으나 근거가 약하다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "digg.com — Rogo 매출 관련 글(익명 출처 보도)",
+     "url": "https://digg.com/ai/gpp9r7ys",
+     "date": "2026-09-03",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [
+    {
+     "value": 53,
+     "basis": "2026-08, 정리 사이트(Sacra)의 추정",
+     "url": "https://sacra.com/c/rogo/"
+    }
+   ],
+   "conf": "low",
+   "note": "두 점 모두 유료 매체의 익명 출처 보도를 옮긴 글에서 읽었다. 정리 사이트는 2026-08 을 5,300만 달러로 추정한다(alt). 2026-04 기준 250곳 넘는 기관의 35,000명 이상이 쓴다는 보도가 있다."
+  },
+  {
+   "id": "arr-cursor",
+   "country": "ZZ",
+   "city": null,
+   "metric": "Cursor의 연환산 매출 — 코딩",
+   "value": 4000,
+   "unit": "백만 달러(연환산)",
+   "asof": "2026-06",
+   "basis": "Cursor의 ARR·연환산 매출로 공개된 값 가운데 가장 최근 것(정리 사이트 추정)",
+   "definition": "2025-06 은 ARR, 그 뒤는 '연환산 매출'이다. 정의는 밝히지 않았다.",
+   "series": [
+    {
+     "period": "2024-04",
+     "value": 4,
+     "src": 1,
+     "note": "익명 출처 보도"
+    },
+    {
+     "period": "2024-10",
+     "value": 48,
+     "src": 1,
+     "note": "익명 출처 보도, 월 400만 달러를 연환산"
+    },
+    {
+     "period": "2025-03",
+     "value": 150,
+     "src": 2,
+     "note": "익명 출처 보도, '이미 올랐을 수 있다'는 보도"
+    },
+    {
+     "period": "2025-06-06",
+     "value": 500,
+     "src": 3,
+     "note": "회사 발표, 초과"
+    },
+    {
+     "period": "2025-11-13",
+     "value": 1000,
+     "src": 4,
+     "note": "회사 발표, 돌파"
+    },
+    {
+     "period": "2026-03-02",
+     "value": 2000,
+     "src": 5,
+     "note": "익명 출처 보도, 돌파"
+    },
+    {
+     "period": "2026-04",
+     "value": 3000,
+     "src": 6,
+     "note": "정리 사이트 추정, 4월 말, 익명 출처를 옮긴 글"
+    },
+    {
+     "period": "2026-06",
+     "value": 4000,
+     "src": 6,
+     "note": "정리 사이트 추정, 6월 초 돌파, 익명 출처를 옮긴 글"
+    }
+   ],
+   "links": [
+    "coding",
+    "slope"
+   ],
+   "sides": {
+    "H1": "지지"
+   },
+   "side_basis": "2025-06 5억 달러 초과에서 2026-06 40억 달러 초과로 1년에 8배가 됐다. 코딩 도구의 규모와 속도를 보이는 기준이다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "techcrunch.com — Cursor 매출 관련 글(익명 출처 보도)",
+     "url": "https://techcrunch.com/2024/12/19/in-just-4-months-ai-coding-assistant-cursor-raised-another-100m-at-a-2-5b-valuation-led-by-thrive-sources-say/",
+     "date": "2024-12-19",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "techcrunch.com — Cursor 매출 관련 글(익명 출처 보도)",
+     "url": "https://techcrunch.com/2025/03/07/cursor-in-talks-to-raise-at-a-10b-valuation-as-ai-coding-sector-booms/",
+     "date": "2025-03-07",
+     "read": "partial"
+    },
+    {
+     "n": 3,
+     "title": "cursor.com — Cursor 매출 관련 글(회사 발표)",
+     "url": "https://cursor.com/blog/series-c",
+     "date": "2025-06-06",
+     "read": "partial"
+    },
+    {
+     "n": 4,
+     "title": "cursor.com — Cursor 매출 관련 글(회사 발표)",
+     "url": "https://cursor.com/blog/series-d",
+     "date": "2025-11-13",
+     "read": "partial"
+    },
+    {
+     "n": 5,
+     "title": "techcrunch.com — Cursor 매출 관련 글(익명 출처 보도)",
+     "url": "https://techcrunch.com/2026/03/02/cursor-has-reportedly-surpassed-2b-in-annualized-revenue/",
+     "date": "2026-03-02",
+     "read": "partial"
+    },
+    {
+     "n": 6,
+     "title": "dealroom.co — Cursor 매출 관련 글(정리 사이트 추정)",
+     "url": "https://dealroom.co/news/134107-cursor-tops-4b-annualized-revenue/",
+     "date": null,
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    6
+   ],
+   "alt": [],
+   "conf": "low",
+   "note": "회사 발표는 5억·10억 달러 두 점뿐이고 20억 달러부터는 익명 출처 보도다. 2026-08-14 에 SpaceX 에 인수됐고 그 뒤 수치는 없다."
+  },
+  {
+   "id": "arr-cognition",
+   "country": "ZZ",
+   "city": null,
+   "metric": "Cognition(Devin·Windsurf)의 연환산 매출 — 코딩",
+   "value": 1000,
+   "unit": "백만 달러(연환산)",
+   "asof": "2026-09-25",
+   "basis": "Cognition(Devin·Windsurf)의 ARR·연환산 매출로 공개된 값 가운데 가장 최근 것(회사 발표)",
+   "definition": "2026년 값은 '연환산 매출'이다.",
+   "series": [
+    {
+     "period": "2024-09",
+     "value": 1,
+     "src": 1,
+     "note": "회사 발표, Devin 만"
+    },
+    {
+     "period": "2025-06",
+     "value": 73,
+     "src": 1,
+     "note": "회사 발표, Devin 만, Windsurf 인수 전"
+    },
+    {
+     "period": "2026-05-27",
+     "value": 492,
+     "src": 2,
+     "note": "회사 발표, 연환산 매출"
+    },
+    {
+     "period": "2026-09-08",
+     "value": 900,
+     "src": 3,
+     "note": "회사 발표, 조금 못 미침, 연환산 매출"
+    },
+    {
+     "period": "2026-09-25",
+     "value": 1000,
+     "src": 4,
+     "note": "회사 발표, 돌파"
+    }
+   ],
+   "links": [
+    "coding",
+    "slope"
+   ],
+   "sides": {
+    "H1": "지지"
+   },
+   "side_basis": "2026-05 4.92억 달러에서 2026-09 10억 달러로 넉 달에 두 배가 됐다. 모두 회사 발표다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "cognition.ai — Cognition(Devin·Windsurf) 매출 관련 글(회사 발표)",
+     "url": "https://cognition.ai/blog/funding-growth-and-the-next-frontier-of-ai-coding-agents",
+     "date": "2025-09-08",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "cognition.ai — Cognition(Devin·Windsurf) 매출 관련 글(회사 발표)",
+     "url": "https://cognition.ai/blog/series-d",
+     "date": "2026-05-27",
+     "read": "partial"
+    },
+    {
+     "n": 3,
+     "title": "cognition.ai — Cognition(Devin·Windsurf) 매출 관련 글(회사 발표)",
+     "url": "https://cognition.ai/blog/series-e",
+     "date": "2026-09-08",
+     "read": "partial"
+    },
+    {
+     "n": 4,
+     "title": "cognition.ai — Cognition(Devin·Windsurf) 매출 관련 글(회사 발표)",
+     "url": "https://cognition.ai/blog/1b-run-rate",
+     "date": "2026-09-25",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    4
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "2025-06 까지는 Devin 만의 값이고 2026년은 Windsurf 인수 뒤 회사 전체 값이라 사이에서 계열이 끊긴다."
+  },
+  {
+   "id": "arr-lovable",
+   "country": "ZZ",
+   "city": null,
+   "metric": "Lovable의 연환산 매출 — 코딩(비개발자용 앱 제작)",
+   "value": 600,
+   "unit": "백만 달러(연환산)",
+   "asof": "2026-09-24",
+   "basis": "Lovable의 ARR·연환산 매출로 공개된 값 가운데 가장 최근 것(회사 발표)",
+   "definition": "2026-02 까지 ARR, 그 뒤 '연환산 매출'이다.",
+   "series": [
+    {
+     "period": "2025-07",
+     "value": 100,
+     "src": 1,
+     "note": "회사 발표"
+    },
+    {
+     "period": "2025-11",
+     "value": 200,
+     "src": 1,
+     "note": "회사 발표"
+    },
+    {
+     "period": "2026-01",
+     "value": 300,
+     "src": 1,
+     "note": "회사 발표"
+    },
+    {
+     "period": "2026-02",
+     "value": 400,
+     "src": 1,
+     "note": "회사 발표, 돌파"
+    },
+    {
+     "period": "2026-06-09",
+     "value": 500,
+     "src": 2,
+     "note": "회사 발표, 돌파"
+    },
+    {
+     "period": "2026-09-24",
+     "value": 600,
+     "src": 3,
+     "note": "회사 발표, 돌파"
+    }
+   ],
+   "links": [
+    "coding",
+    "slope"
+   ],
+   "sides": {
+    "H1": "지지"
+   },
+   "side_basis": "14개월에 1억 달러에서 6억 달러가 됐다. 개발자가 아닌 사람이 쓰는 코딩 도구라 코딩과 그 밖의 경계에 있다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "techcrunch.com — Lovable 매출 관련 글(회사 발표)",
+     "url": "https://techcrunch.com/2026/03/11/lovable-says-it-added-100m-in-revenue-last-month-alone-with-just-146-employees/",
+     "date": "2026-03-11",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "techcrunch.com — Lovable 매출 관련 글(회사 발표)",
+     "url": "https://techcrunch.com/2026/06/09/lovable-says-it-has-hit-500m-in-annualized-revenue-with-1-million-new-projects-a-week/",
+     "date": "2026-06-09",
+     "read": "partial"
+    },
+    {
+     "n": 3,
+     "title": "techcrunch.com — Lovable 매출 관련 글(회사 발표)",
+     "url": "https://techcrunch.com/2026/09/24/lovables-annualized-revenue-crosses-600m-as-vibe-coding-takes-off/",
+     "date": "2026-09-24",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    3
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "모두 회사가 언론에 밝힌 값이다. 대부분 개인이 직접 결제하는 구독이다."
+  },
+  {
+   "id": "arr-claude-code",
+   "country": "ZZ",
+   "city": null,
+   "metric": "Claude Code(Anthropic 의 제품)의 연환산 매출 — 코딩",
+   "value": 2500,
+   "unit": "백만 달러(연환산)",
+   "asof": "2026-02-12",
+   "basis": "Claude Code(Anthropic 의 제품)의 ARR·연환산 매출로 공개된 값 가운데 가장 최근 것(회사 발표)",
+   "definition": "회사 발표의 연환산 매출이고 계산 방법은 그 글에 없다.",
+   "series": [
+    {
+     "period": "2025-09-02",
+     "value": 500,
+     "src": 1,
+     "note": "회사 발표, 초과"
+    },
+    {
+     "period": "2025-11",
+     "value": 1000,
+     "src": 2,
+     "note": "회사 발표, 도달"
+    },
+    {
+     "period": "2026-02-12",
+     "value": 2500,
+     "src": 3,
+     "note": "회사 발표, 초과"
+    }
+   ],
+   "links": [
+    "coding",
+    "slope"
+   ],
+   "sides": {
+    "H1": "지지"
+   },
+   "side_basis": "다섯 달에 5억 달러에서 25억 달러 초과가 됐다. 랩 자신의 코딩 제품이다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "anthropic.com — Claude Code(Anthropic 의 제품) 매출 관련 글(회사 발표)",
+     "url": "https://www.anthropic.com/news/anthropic-raises-series-f-at-usd183b-post-money-valuation",
+     "date": "2025-09-02",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "anthropic.com — Claude Code(Anthropic 의 제품) 매출 관련 글(회사 발표)",
+     "url": "https://www.anthropic.com/news/anthropic-acquires-bun-as-claude-code-reaches-usd1b-milestone",
+     "date": "2025-12-03",
+     "read": "partial"
+    },
+    {
+     "n": 3,
+     "title": "anthropic.com — Claude Code(Anthropic 의 제품) 매출 관련 글(회사 발표)",
+     "url": "https://www.anthropic.com/news/anthropic-raises-30-billion-series-g-funding-380-billion-post-money-valuation",
+     "date": "2026-02-12",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    3
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "2026-02 뒤의 값은 회사 자료에 없다. S-1 과 상장 자료에도 제품별 값이 없다."
+  },
+  {
+   "id": "private-app-arr-noncoding-vs-coding",
+   "country": "ZZ",
+   "city": null,
+   "metric": "비상장 AI 응용 회사의 공개된 연환산 매출 합 — 코딩 밖 대 코딩",
+   "value": null,
+   "unit": "백만 달러(연환산)",
+   "asof": "2026-10",
+   "basis": "계산: 회사별 가장 최근 공개 값의 합. 코딩 밖 10곳 2,015 대 코딩 4곳 8,100",
+   "definition": "회사마다 기준일(2025-03~2026-10)과 정의(ARR, 연환산 매출, 계약 기준)가 다르고 회사를 고른 기준이 임의라 규모를 가늠하는 데만 쓴다. 범용 챗 도구와 상장사 제품은 빠져 있다.",
+   "detail": {
+    "noncoding_sum_mn": 2015,
+    "coding_sum_mn": 8100,
+    "ratio": 0.25,
+    "noncoding": {
+     "arr-harvey": {
+      "value": 400,
+      "asof": "2026-09-09"
+     },
+     "arr-legora": {
+      "value": 200,
+      "asof": "2026-10-21"
+     },
+     "arr-sierra": {
+      "value": 400,
+      "asof": "2026-10-30"
+     },
+     "arr-decagon": {
+      "value": 100,
+      "asof": "2026-08-11"
+     },
+     "arr-intercom-fin": {
+      "value": 100,
+      "asof": "2026-04-24"
+     },
+     "arr-abridge": {
+      "value": 117,
+      "asof": "2025-03"
+     },
+     "arr-openevidence": {
+      "value": 300,
+      "asof": "2026-07"
+     },
+     "arr-glean": {
+      "value": 300,
+      "asof": "2026-05-28"
+     },
+     "arr-hebbia": {
+      "value": 48,
+      "asof": "2026-08"
+     },
+     "arr-rogo": {
+      "value": 50,
+      "asof": "2026-09"
+     }
+    },
+    "coding": {
+     "arr-cursor": {
+      "value": 4000,
+      "asof": "2026-06"
+     },
+     "arr-cognition": {
+      "value": 1000,
+      "asof": "2026-09-25"
+     },
+     "arr-lovable": {
+      "value": 600,
+      "asof": "2026-09-24"
+     },
+     "arr-claude-code": {
+      "value": 2500,
+      "asof": "2026-02-12"
+     }
+    }
+   },
+   "links": [
+    "spread",
+    "coding"
+   ],
+   "sides": {
+    "H1": "양쪽"
+   },
+   "side_basis": "코딩 밖 선두 10곳을 다 더해도 코딩 도구 4곳의 25% 다. 코딩 밖에서도 연 3~6배로 크지만 코딩 도구(연 6~8배)보다 느리고 바닥이 작다.",
+   "refs": [
+    {
+     "bundle": "K3",
+     "id": "arr-harvey"
+    },
+    {
+     "bundle": "K3",
+     "id": "arr-legora"
+    },
+    {
+     "bundle": "K3",
+     "id": "arr-sierra"
+    },
+    {
+     "bundle": "K3",
+     "id": "arr-decagon"
+    },
+    {
+     "bundle": "K3",
+     "id": "arr-intercom-fin"
+    },
+    {
+     "bundle": "K3",
+     "id": "arr-abridge"
+    },
+    {
+     "bundle": "K3",
+     "id": "arr-openevidence"
+    },
+    {
+     "bundle": "K3",
+     "id": "arr-glean"
+    },
+    {
+     "bundle": "K3",
+     "id": "arr-hebbia"
+    },
+    {
+     "bundle": "K3",
+     "id": "arr-rogo"
+    },
+    {
+     "bundle": "K3",
+     "id": "arr-cursor"
+    },
+    {
+     "bundle": "K3",
+     "id": "arr-cognition"
+    },
+    {
+     "bundle": "K3",
+     "id": "arr-lovable"
+    },
+    {
+     "bundle": "K3",
+     "id": "arr-claude-code"
+    }
+   ],
+   "sources": [],
+   "value_src": [],
+   "alt": [],
+   "conf": "low",
+   "note": "성장 배수(대략): Harvey 13개월 4배, Sierra 11개월 4배, Glean 16개월 3배, OpenEvidence 12개월 6배 / Cursor 12개월 8배, Lovable 14개월 6배, Claude Code 5개월 5배. Claude Code 는 2026-02, Cursor 는 2026-06 값이라 코딩 쪽 합은 실제보다 작게 잡혔을 가능성이 크다."
+  },
+  {
+   "id": "msft-m365-copilot-paid-seats",
+   "country": "US",
+   "city": null,
+   "metric": "Microsoft 365 Copilot 유료 좌석",
+   "value": 30,
+   "unit": "백만 좌석",
+   "asof": "2026-06-30",
+   "basis": "Microsoft 365 Copilot 유료 좌석 수('3,000만 좌석 초과', FY26 4분기 말)",
+   "definition": "무료 Copilot Chat 사용자는 빼고 센 유료 좌석이다. Copilot 을 묶은 E7 제품군의 좌석은 따로 말한다.",
+   "series": [
+    {
+     "period": "2025-12-31",
+     "value": 15,
+     "src": 1,
+     "label": "FY26 Q2"
+    },
+    {
+     "period": "2026-03-31",
+     "value": 20,
+     "src": 2,
+     "label": "FY26 Q3",
+     "note": "초과"
+    },
+    {
+     "period": "2026-06-30",
+     "value": 30,
+     "src": 3,
+     "label": "FY26 Q4",
+     "note": "초과"
+    }
+   ],
+   "detail": {
+    "customer_breadth": "유료 좌석 35,000개 이상 고객 수가 FY27 1분기에 전년의 8배(회사 표현)",
+    "daily_users_growth_yoy_x": {
+     "FY26 Q2": 10,
+     "FY27 Q1": 5
+    }
+   },
+   "links": [
+    "spread",
+    "slope",
+    "penetration"
+   ],
+   "sides": {
+    "H1": "지지"
+   },
+   "side_basis": "사무직이 쓰는 도구의 유료 좌석이 반년에 1,500만에서 3,000만 초과로 두 배가 됐다. 코딩 밖에서 돈을 내는 사용자가 는다는 가장 큰 표본이다. 다만 회사는 다음 분기에 수치를 갱신하지 않았다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Microsoft — FY26 Q2 실적 발표 녹취(회사 게시)",
+     "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q2",
+     "date": "2026-01-28",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "Microsoft — FY26 Q3 실적 발표 녹취(회사 게시)",
+     "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q3",
+     "date": "2026-04-29",
+     "read": "partial"
+    },
+    {
+     "n": 3,
+     "title": "Microsoft — FY26 Q4 실적 발표 녹취(회사 게시)",
+     "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q4",
+     "date": "2026-07-29",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    3
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "FY27 1분기(2026-09 말) 콜에서 재무책임자는 좌석 수를 갱신하지 않고 매출과 사용의 흐름을 말했다고 답했다. 첫 절대 수치가 FY26 2분기였고 세 분기 뒤 공개가 멈췄다. 좌석당 매출과 제품 단독 매출은 공개된 적이 없다."
+  },
+  {
+   "id": "msft-ai-business-run-rate",
+   "country": "US",
+   "city": null,
+   "metric": "Microsoft AI 사업 연환산 매출",
+   "value": 37,
+   "unit": "십억 달러(연환산)",
+   "asof": "2026-03-31",
+   "basis": "Microsoft 'AI 사업'의 연환산 매출('370억 달러 초과', FY26 3분기)",
+   "definition": "무엇이 들어가는지 회사가 정의하지 않았다. Azure AI 서비스에는 OpenAI 등 랩이 쓰는 몫이 들어 있을 수 있어 랩 매출과 겹칠 수 있다.",
+   "series": [
+    {
+     "period": "2024-12-31",
+     "value": 13,
+     "src": 1,
+     "label": "FY25 Q2",
+     "note": "초과, 전년 대비 +175%"
+    },
+    {
+     "period": "2026-03-31",
+     "value": 37,
+     "src": 2,
+     "label": "FY26 Q3",
+     "note": "초과, 전년 대비 +123%"
+    }
+   ],
+   "links": [
+    "slope",
+    "penetration"
+   ],
+   "sides": {
+    "H1": "지지",
+    "H2": "지지"
+   },
+   "side_basis": "5개 분기에 130억 달러에서 370억 달러 초과가 됐다. 랩 밖에서 AI 매출이 실제로 잡히는 가장 큰 값이다. 다만 Azure 의 AI 서비스와 Copilot 이 섞여 있어 코딩과 그 밖을 가를 수 없다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Microsoft — FY25 Q2 실적 발표 녹취(회사 게시)",
+     "url": "https://www.microsoft.com/en-us/investor/events/fy-2025/earnings-fy-2025-q2",
+     "date": "2025-01-29",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "Microsoft — FY26 Q3 실적 발표 녹취(회사 게시)",
+     "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q3",
+     "date": "2026-04-29",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    2
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "8개 분기 가운데 두 번만 숫자를 밝혔다. 그 밖의 분기에는 '기대를 넘었다'는 식의 표현뿐이다."
+  },
+  {
+   "id": "salesforce-agentforce-arr",
+   "country": "US",
+   "city": null,
+   "metric": "Salesforce Agentforce ARR",
+   "value": 1.5,
+   "unit": "십억 달러(ARR)",
+   "asof": "2026-07-31",
+   "basis": "Salesforce Agentforce 의 연간 반복 매출('15억 달러 초과', FY27 2분기 말)",
+   "definition": "FY27 2분기부터 Slackbot 과 Headless 360 이 포함된다. 첫 점(FY26 1분기)은 ARR 이 아니라 연간 주문액이다.",
+   "series": [
+    {
+     "period": "2025-04-30",
+     "value": 0.1,
+     "src": 1,
+     "label": "FY26 Q1",
+     "note": "연간 주문액(AOV), 제3자 전사"
+    },
+    {
+     "period": "2025-10-31",
+     "value": 0.5,
+     "src": 2,
+     "label": "FY26 Q3",
+     "note": "돌파, 전년 대비 +330%"
+    },
+    {
+     "period": "2026-01-31",
+     "value": 0.8,
+     "src": 3,
+     "label": "FY26 Q4",
+     "note": "전년 대비 +169%"
+    },
+    {
+     "period": "2026-04-30",
+     "value": 1.2,
+     "src": 4,
+     "label": "FY27 Q1",
+     "note": "전년 대비 +205%"
+    },
+    {
+     "period": "2026-07-31",
+     "value": 1.5,
+     "src": 5,
+     "label": "FY27 Q2",
+     "note": "초과, 전년 대비 +240% 초과, 정의 확대"
+    }
+   ],
+   "detail": {
+    "paid_deals": {
+     "2025-01-31": 3000,
+     "2025-04-30": 4000,
+     "2025-07-31": 6000,
+     "2025-10-31": 9500
+    },
+    "agentforce_data360_arr_bn": {
+     "2025-01-31": 0.9,
+     "2025-10-31": 1.4,
+     "2026-01-31": 2.9,
+     "2026-07-31": 3.9
+    },
+    "informatica_cloud_arr_bn": 1.1
+   },
+   "links": [
+    "spread",
+    "slope"
+   ],
+   "sides": {
+    "H1": "지지"
+   },
+   "side_basis": "9개월에 5억 달러에서 15억 달러 초과로 3배가 됐다. 영업·고객서비스 직능에서 에이전트에 돈이 붙는 가장 큰 공시 값이다. 마지막 분기에 정의가 넓어져 그 분기의 증가율은 같은 기준이 아니다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Salesforce — FY26 Q1 실적 발표 녹취(제3자 전사)",
+     "url": "https://allmind.ai/earnings/event/bt_CRM_2026_Q1",
+     "date": "2025-05-28",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "Salesforce — FY26 Q3 실적 보도자료",
+     "url": "https://www.salesforce.com/news/press-releases/2025/12/03/fy26-q3-earnings/",
+     "date": "2025-12-03",
+     "read": "partial"
+    },
+    {
+     "n": 3,
+     "title": "Salesforce — FY26 Q4 실적 보도자료",
+     "url": "https://www.salesforce.com/news/press-releases/2026/02/25/fy26-q4-earnings/",
+     "date": "2026-02-25",
+     "read": "partial"
+    },
+    {
+     "n": 4,
+     "title": "Salesforce — FY27 Q1 실적 보도자료",
+     "url": "https://www.salesforce.com/news/press-releases/2026/05/27/fy27-q1-earnings/",
+     "date": "2026-05-27",
+     "read": "partial"
+    },
+    {
+     "n": 5,
+     "title": "Salesforce — FY27 Q2 실적 보도자료",
+     "url": "https://www.salesforce.com/news/press-releases/2026/08/26/fy27-q2-earnings/",
+     "date": "2026-08-26",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    5
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "유료 계약은 FY25 4분기 3,000건 초과에서 FY26 3분기 9,500건 초과로 늘었고 그 뒤 공개가 멈췄다. 데이터 제품과 합친 'Agentforce 와 Data 360 ARR'은 39억 달러에 가깝지만 FY26 4분기부터 인수한 Informatica 의 11억 달러가 들어 있다."
+  },
+  {
+   "id": "servicenow-ai-acv",
+   "country": "US",
+   "city": null,
+   "metric": "ServiceNow AI 연간 계약액",
+   "value": 1,
+   "unit": "십억 달러(연간 계약액)",
+   "asof": "2026-06-30",
+   "basis": "ServiceNow AI 제품의 연간 계약액('10억 달러 돌파', 2026년 2분기)",
+   "definition": "2025년에는 'Now Assist', 2026년에는 'ServiceNow AI'의 계약액으로 이름이 바뀌었고 인수한 Moveworks 가 들어가 두 점이 같은 범위가 아닐 수 있다.",
+   "series": [
+    {
+     "period": "2025-12-31",
+     "value": 0.6,
+     "src": 1,
+     "label": "Q4 2025",
+     "note": "초과, 제3자 전사"
+    },
+    {
+     "period": "2026-06-30",
+     "value": 1,
+     "src": 2,
+     "label": "Q2 2026",
+     "note": "돌파"
+    }
+   ],
+   "detail": {
+    "target_2026_bn": {
+     "2025-06-30": 1,
+     "2026-03-31": 1.5,
+     "2026-09-30": 1.7
+    }
+   },
+   "links": [
+    "spread",
+    "slope"
+   ],
+   "sides": {
+    "H1": "지지"
+   },
+   "side_basis": "반년에 6억 달러에서 10억 달러가 됐고 회사는 2026년 말 목표를 10억 → 15억 → 17억 달러로 두 번 올렸다. IT·인사·고객서비스 업무 흐름의 AI 다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "ServiceNow — Q4 2025 실적 발표 녹취(제3자 전사)",
+     "url": "https://www.fool.com/earnings/call-transcripts/2026/01/28/servicenow-now-q4-2025-earnings-call-transcript/",
+     "date": "2026-01-28",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "ServiceNow — Q2 2026 실적 보도자료",
+     "url": "https://s205.q4cdn.com/916135447/files/doc_news/ServiceNow-Reports-Second-Quarter-2026-Financial-Results-2026.pdf",
+     "date": "2026-07-22",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    2
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "절대 수치는 세 번만 밝혔다(2025-09 는 '연말까지 5억 달러를 넘길 속도'라는 전망이라 넣지 않았다). 2030년에 계약액의 30% 를 AI 에서 낸다는 장기 목표가 있다."
+  },
+  {
+   "id": "sap-cloud-deals-with-ai-share",
+   "country": "DE",
+   "city": null,
+   "metric": "SAP 클라우드 수주 중 AI 포함 계약 비중",
+   "value": 66.7,
+   "unit": "%",
+   "asof": "2025-12-31",
+   "basis": "SAP 의 분기 클라우드 수주 가운데 AI 가 들어간 계약의 비중('3분의 2', 2025년 4분기)",
+   "definition": "계약에 AI 사용 사례가 하나라도 들어 있으면 센다.",
+   "series": [
+    {
+     "period": "2024-12-31",
+     "value": 50,
+     "src": 1,
+     "label": "Q4 2024",
+     "note": "'절반'"
+    },
+    {
+     "period": "2025-03-31",
+     "value": 50,
+     "src": 2,
+     "label": "Q1 2025",
+     "note": "'약 절반', 제3자 전사"
+    },
+    {
+     "period": "2025-12-31",
+     "value": 66.7,
+     "src": 3,
+     "label": "Q4 2025",
+     "note": "'3분의 2'"
+    }
+   ],
+   "links": [
+    "spread",
+    "penetration"
+   ],
+   "sides": {
+    "H1": "양쪽"
+   },
+   "side_basis": "기업용 업무 소프트웨어 계약의 과반에 AI 가 끼어 들어간다. 다만 AI 가 계약에 들어 있다는 뜻이지 AI 에 낸 돈이 아니다. SAP 은 AI 매출이나 수주액을 공시하지 않는다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "SAP — Q4 2024 실적 보도자료",
+     "url": "https://news.sap.com/2025/01/sap-announces-q4-and-fy-2024-results/",
+     "date": "2025-01-28",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "SAP — Q1 2025 실적 발표 녹취(제3자 전사)",
+     "url": "https://allmind.ai/earnings/event/bt_SAP_2025_Q1",
+     "date": "2025-04-22",
+     "read": "partial"
+    },
+    {
+     "n": 3,
+     "title": "SAP — Q4 2025 실적 보도자료",
+     "url": "https://news.sap.com/2026/01/sap-announces-q4-and-fy-2025-results/",
+     "date": "2026-01-29",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    3
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "'절반', '3분의 2'라는 표현을 숫자로 읽었다. 2026년에는 '가장 큰 계약 50건의 90%'로 지표가 바뀌었다."
+  },
+  {
+   "id": "workday-ai-arr",
+   "country": "US",
+   "city": null,
+   "metric": "Workday AI 제품 ARR",
+   "value": 600,
+   "unit": "백만 달러(ARR)",
+   "asof": "2026-07-31",
+   "basis": "Workday AI 제품의 연간 반복 매출('6억 달러 근접', FY27 2분기 말)",
+   "definition": "콜에서만 말하는 지표이고 분기마다 이름이 바뀐다(신흥 AI 제품 → 에이전트 솔루션 → AI SKU). 보도자료에는 없다.",
+   "series": [
+    {
+     "period": "2026-01-31",
+     "value": 400,
+     "src": 1,
+     "label": "FY26 Q4",
+     "note": "초과, 제3자 전사"
+    },
+    {
+     "period": "2026-04-30",
+     "value": 500,
+     "src": 2,
+     "label": "FY27 Q1",
+     "note": "근접, 제3자 전사"
+    },
+    {
+     "period": "2026-07-31",
+     "value": 600,
+     "src": 3,
+     "label": "FY27 Q2",
+     "note": "근접, 전년 대비 +200% 초과, 제3자 전사"
+    }
+   ],
+   "detail": {
+    "arr_year_ago_mn": 150,
+    "customers_using_own_agents": {
+     "2026-04-30": 4000,
+     "2026-07-31": 5500
+    }
+   },
+   "links": [
+    "spread",
+    "slope"
+   ],
+   "sides": {
+    "H1": "지지"
+   },
+   "side_basis": "1년에 약 1.5억 달러에서 6억 달러 가까이로 늘었다. 인사·재무 직능의 AI 다. 다만 인수한 회사(Paradox, Sana)가 들어가 일부는 사들인 성장이다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Workday — FY26 Q4 실적 발표 녹취(제3자 전사)",
+     "url": "https://www.fool.com/earnings/call-transcripts/2026/05/21/workday-wday-q4-2026-earnings-transcript/",
+     "date": "2026-02-24",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "Workday — FY27 Q1 실적 발표 녹취(제3자 전사)",
+     "url": "https://www.fool.com/earnings/call-transcripts/2026/05/21/workday-wday-q1-2027-earnings-call-transcript/",
+     "date": "2026-05-21",
+     "read": "partial"
+    },
+    {
+     "n": 3,
+     "title": "Workday — FY27 Q2 실적 발표 녹취(제3자 전사)",
+     "url": "https://www.fool.com/earnings/call-transcripts/2026/08/31/workday-wday-q2-2027-earnings-call-transcript/",
+     "date": "2026-08-27",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    3
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "회사 직접 개발 에이전트를 하나 이상 쓰는 고객은 FY27 1분기 4,000곳 초과에서 2분기 5,500곳 초과로 늘었다(보도자료). 1년 전 약 1.5억 달러였다는 말은 FY27 2분기 콜에서 나왔다."
+  },
+  {
+   "id": "tri-genai-acv-share",
+   "country": "CA",
+   "city": null,
+   "metric": "Thomson Reuters 계약액 중 생성형 AI 제품 비중",
+   "value": 34,
+   "unit": "%",
+   "asof": "2026-09-30",
+   "basis": "Thomson Reuters 의 연환산 계약액 가운데 생성형 AI 가 들어간 제품의 비중(2026년 3분기 말)",
+   "definition": "회사 정의 지표다. 생성형 AI 기능이 제품에 들어 있으면 그 제품의 계약액 전체를 센다. AI 에 낸 돈이 아니다.",
+   "series": [
+    {
+     "period": "2024-09-30",
+     "value": 15,
+     "src": 1,
+     "label": "Q3 2024",
+     "note": "처음 공개한 값. 2025년 4분기 콜에서 재무책임자가 되짚었다"
+    },
+    {
+     "period": "2025-06-30",
+     "value": 22,
+     "src": 2,
+     "label": "Q2 2025"
+    },
+    {
+     "period": "2025-09-30",
+     "value": 24,
+     "src": 2,
+     "label": "Q3 2025"
+    },
+    {
+     "period": "2025-12-31",
+     "value": 28,
+     "src": 1,
+     "label": "Q4 2025"
+    },
+    {
+     "period": "2026-03-31",
+     "value": 30,
+     "src": 3,
+     "label": "Q1 2026"
+    },
+    {
+     "period": "2026-06-30",
+     "value": 32,
+     "src": 4,
+     "label": "Q2 2026",
+     "note": "2차 자료"
+    },
+    {
+     "period": "2026-09-30",
+     "value": 34,
+     "src": 5,
+     "label": "Q3 2026",
+     "note": "2차 보도. 보도자료에는 없고 콜에서 말한 값이다"
+    }
+   ],
+   "detail": {
+    "legal_professionals_organic_growth_pct": {
+     "2026Q1": 9,
+     "2026Q2": 10,
+     "2026Q3": 9
+    },
+    "historical_upgrade_ceiling": "계약액의 70% 안팎(경영진 발언)"
+   },
+   "links": [
+    "spread",
+    "penetration"
+   ],
+   "sides": {
+    "H1": "양쪽"
+   },
+   "side_basis": "법무·세무·회계 전문직이 쓰는 주력 도구에서 AI 가 들어간 제품의 몫이 2년에 15% 에서 34% 로 올랐다. 그러나 같은 기간 법무 부문의 유기적 성장은 9~10% 다. 새로 생긴 지출이라기보다 기존 계약이 AI 판으로 옮겨 간 몫이 크다는 뜻으로도 읽힌다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Thomson Reuters — 2025년 4분기 실적 발표 녹취(제3자 전사)",
+     "url": "https://www.fool.com/earnings/call-transcripts/2026/02/05/thomson-reuters-tri-q4-2025-earnings-transcript/",
+     "date": "2026-02-05",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "Thomson Reuters — 2025년 3분기 실적 발표 녹취(제3자 전사)",
+     "url": "https://www.fool.com/earnings/call-transcripts/2025/11/04/thomson-reuters-tri-q3-2025-earnings-transcript/",
+     "date": "2025-11-04",
+     "read": "partial"
+    },
+    {
+     "n": 3,
+     "title": "Thomson Reuters — 2026년 1분기 실적 발표 녹취(제3자 전사)",
+     "url": "https://www.fool.com/earnings/call-transcripts/2026/05/05/thomson-reuters-tri-q1-2026-earnings-transcript/",
+     "date": "2026-05-05",
+     "read": "partial"
+    },
+    {
+     "n": 4,
+     "title": "Finsee — Thomson Reuters Q3 2026 earnings review",
+     "url": "https://finsee.ai/earnings/tri/2026/q3/en/",
+     "date": "2026-11-03",
+     "read": "partial"
+    },
+    {
+     "n": 5,
+     "title": "Crypto Briefing — Thomson Reuters raises revenue guidance amid strong AI-driven growth",
+     "url": "https://cryptobriefing.com/thomson-reuters-raises-guidance-ai-growth/",
+     "date": "2026-11-04",
+     "read": "partial"
+    },
+    {
+     "n": 6,
+     "title": "Thomson Reuters — 2026년 3분기 실적 보도자료",
+     "url": "https://www.prnewswire.com/news-releases/thomson-reuters-reports-third-quarter-2026-results-302927754.html",
+     "date": "2026-11-03",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    5
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "2026년 법무 부문 유기적 매출 증가율은 1분기 9%, 2분기 10%, 3분기 9% 다(보도자료). 경영진은 과거 제품 세대 교체가 계약액의 70% 안팎에서 멈췄다고 말했다(2025년 4분기 콜). CoCounsel 단독 매출은 공개하지 않는다."
+  },
+  {
+   "id": "relx-legal-underlying-growth",
+   "country": "GB",
+   "city": null,
+   "metric": "RELX 법무 부문 기초 매출 증가율",
+   "value": 10,
+   "unit": "%(기초 매출 증가율)",
+   "asof": "2026-09-30",
+   "basis": "RELX 법무 부문(LexisNexis)의 기초 매출 증가율, 2026년 1~9월",
+   "definition": "인수·환율을 뺀 증가율이다. AI 제품만의 매출은 공개하지 않는다.",
+   "series": [
+    {
+     "period": "2025",
+     "value": 9,
+     "src": 1,
+     "label": "2025 연간",
+     "note": "검색 요약"
+    },
+    {
+     "period": "2026-09-30",
+     "value": 10,
+     "src": 2,
+     "label": "2026 1~9월",
+     "note": "콜 보도. 상반기와 같다"
+    }
+   ],
+   "detail": {
+    "us_legal_base_on_protege": "50% 초과(2026-10 콜)",
+    "law_firms_corporate_share_of_division": "약 70%"
+   },
+   "links": [
+    "spread"
+   ],
+   "sides": {
+    "H1": "양쪽"
+   },
+   "side_basis": "미국 법무 매출 기반의 절반 넘게가 AI 플랫폼(Lexis+ Protégé)으로 옮겨 갔고 새 판매의 대부분이 그 플랫폼이다. 그런데 부문 성장률은 9% 에서 10% 로 1%포인트 올랐을 뿐이다. 전문직의 AI 도입이 넓다는 근거이면서, 기존 사업자의 매출로는 크게 잡히지 않는다는 근거다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "RELX — 2025 results presentation",
+     "url": "https://www.relx.com/~/media/Files/R/RELX-Group/documents/results/results-presentations/2025-results-presentation.pdf",
+     "date": "2026-02-12",
+     "read": "search_summary"
+    },
+    {
+     "n": 2,
+     "title": "MarketBeat — RELX Q3 earnings call highlights",
+     "url": "https://www.marketbeat.com/instant-alerts/transcript-relx-q3-earnings-call-highlights-2026-10-22/",
+     "date": "2026-10-22",
+     "read": "partial"
+    },
+    {
+     "n": 3,
+     "title": "RELX — Trading Update (2026-04)",
+     "url": "https://www.relx.com/media/press-releases/year-2026/trading-update-april-2026",
+     "date": "2026-04-23",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    2
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "법무법인·기업 법무(부문의 약 70%)는 두 자릿수로 큰다. 새 플랫폼으로 옮긴 고객의 지출이 늘어난다고 했으나 폭은 밝히지 않았다. 2026-10 거래 현황 보도자료 원문은 받지 못했다(주소 추측 404)."
+  },
+  {
+   "id": "palantir-us-commercial-revenue",
+   "country": "US",
+   "city": null,
+   "metric": "Palantir 미국 민간 부문 매출",
+   "value": 984,
+   "unit": "백만 달러(분기 매출)",
+   "asof": "2026-09-30",
+   "basis": "Palantir 의 미국 민간 부문 분기 매출(2026년 3분기, SEC 제출 보도자료)",
+   "definition": "미국 민간 고객에게서 난 매출 전체다. 생성형 AI 제품(AIP)만의 매출이 아니고 기존 Foundry 와 구축 용역이 들어 있다. 성장의 까닭을 AIP 수요로 설명하는 것은 회사다.",
+   "series": [
+    {
+     "period": "2024-09-30",
+     "value": 179,
+     "src": 1,
+     "label": "Q3 2024",
+     "note": "전년 대비 +54%"
+    },
+    {
+     "period": "2024-12-31",
+     "value": 214,
+     "src": 2,
+     "label": "Q4 2024",
+     "note": "전년 대비 +64%"
+    },
+    {
+     "period": "2025-03-31",
+     "value": 255,
+     "src": 3,
+     "label": "Q1 2025",
+     "note": "전년 대비 +71%"
+    },
+    {
+     "period": "2025-06-30",
+     "value": 306,
+     "src": 4,
+     "label": "Q2 2025",
+     "note": "전년 대비 +93%"
+    },
+    {
+     "period": "2025-09-30",
+     "value": 397,
+     "src": 5,
+     "label": "Q3 2025",
+     "note": "전년 대비 +121%"
+    },
+    {
+     "period": "2025-12-31",
+     "value": 507,
+     "src": 6,
+     "label": "Q4 2025",
+     "note": "전년 대비 +137%"
+    },
+    {
+     "period": "2026-03-31",
+     "value": 595,
+     "src": 7,
+     "label": "Q1 2026",
+     "note": "전년 대비 +133%"
+    },
+    {
+     "period": "2026-06-30",
+     "value": 764,
+     "src": 8,
+     "label": "Q2 2026",
+     "note": "전년 대비 +149%"
+    },
+    {
+     "period": "2026-09-30",
+     "value": 984,
+     "src": 9,
+     "label": "Q3 2026",
+     "note": "전년 대비 +148%"
+    }
+   ],
+   "detail": {
+    "us_commercial_tcv_mn": {
+     "2026Q3": 1463,
+     "yoy_pct": 11
+    },
+    "us_commercial_rdv_mn": {
+     "2026Q3": 6517,
+     "yoy_pct": 79
+    },
+    "us_government_revenue_mn": {
+     "2026Q3": 953,
+     "yoy_pct": 96
+    }
+   },
+   "links": [
+    "spread",
+    "slope"
+   ],
+   "sides": {
+    "H1": "지지"
+   },
+   "side_basis": "코딩 도구가 아닌 기업 운영용 AI 플랫폼의 매출이 8개 분기 연속 늘었고 전년 대비 증가율은 54% 에서 148% 로 올랐다. 분기 10억 달러에 가까워 코딩 밖 AI 지출 가운데 큰 표본이다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Palantir — Q3 2024 실적 보도자료(SEC 제출)",
+     "url": "https://www.sec.gov/Archives/edgar/data/1321655/000132165524000207/a2024q3ex991earningsrelease.htm",
+     "date": "2024-11-04",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "Palantir — Q4 2024 실적 보도자료(SEC 제출)",
+     "url": "https://www.sec.gov/Archives/edgar/data/1321655/000132165525000007/a2024q4ex991earningsrelease.htm",
+     "date": "2025-02-03",
+     "read": "partial"
+    },
+    {
+     "n": 3,
+     "title": "Palantir — Q1 2025 실적 보도자료(SEC 제출)",
+     "url": "https://www.sec.gov/Archives/edgar/data/1321655/000132165525000063/a2025q1ex991pressrelease.htm",
+     "date": "2025-05-05",
+     "read": "partial"
+    },
+    {
+     "n": 4,
+     "title": "Palantir — Q2 2025 실적 보도자료(SEC 제출)",
+     "url": "https://www.sec.gov/Archives/edgar/data/1321655/000132165525000105/a2025q2ex991pressrelease.htm",
+     "date": "2025-08-04",
+     "read": "partial"
+    },
+    {
+     "n": 5,
+     "title": "Palantir — Q3 2025 실적 보도자료(SEC 제출)",
+     "url": "https://www.sec.gov/Archives/edgar/data/1321655/000132165525000130/a2025q3ex991earningsrelease.htm",
+     "date": "2025-11-03",
+     "read": "partial"
+    },
+    {
+     "n": 6,
+     "title": "Palantir — Q4 2025 실적 보도자료(SEC 제출)",
+     "url": "https://www.sec.gov/Archives/edgar/data/1321655/000132165526000004/a2025q4ex991earningsrelease.htm",
+     "date": "2026-02-02",
+     "read": "partial"
+    },
+    {
+     "n": 7,
+     "title": "Palantir — Q1 2026 실적 보도자료(SEC 제출)",
+     "url": "https://www.sec.gov/Archives/edgar/data/1321655/000132165526000026/a2026q1ex991pressrelease.htm",
+     "date": "2026-05-04",
+     "read": "partial"
+    },
+    {
+     "n": 8,
+     "title": "Palantir — Q2 2026 실적 보도자료(SEC 제출)",
+     "url": "https://www.sec.gov/Archives/edgar/data/1321655/000132165526000039/a2026q2ex991pressrelease.htm",
+     "date": "2026-08-03",
+     "read": "partial"
+    },
+    {
+     "n": 9,
+     "title": "Palantir — Q3 2026 실적 보도자료(SEC 제출)",
+     "url": "https://www.sec.gov/Archives/edgar/data/1321655/000132165526000045/a2026q3ex991pressrelease.htm",
+     "date": "2026-11-02",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    9
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "2026년 3분기에 맺은 미국 민간 계약 총액은 14.63억 달러로 전년 대비 11% 늘어 매출 증가율(148%)보다 훨씬 낮다. 미국 민간 잔여 계약 가치는 65.17억 달러(+79%)다."
+  },
+  {
+   "id": "five9-ai-revenue-share",
+   "country": "US",
+   "city": null,
+   "metric": "Five9 구독 매출 중 AI 매출 비중",
+   "value": 17,
+   "unit": "%",
+   "asof": "2026-09-30",
+   "basis": "Five9 구독 매출 가운데 AI 매출의 비중(2026년 3분기, 재무책임자 발언)",
+   "definition": "회사 정의 지표이고 보도자료에는 없다. 콜에서만 말한다.",
+   "series": [
+    {
+     "period": "2025-09-30",
+     "value": 10,
+     "src": 2,
+     "label": "Q3 2025",
+     "note": "2026년 3분기 콜에서 말한 1년 전 값"
+    },
+    {
+     "period": "2026-09-30",
+     "value": 17,
+     "src": 2,
+     "label": "Q3 2026",
+     "note": "AI 매출 약 4,500만 달러, 전년 대비 +91%"
+    }
+   ],
+   "detail": {
+    "ai_revenue_mn": 45,
+    "ai_revenue_yoy_pct": 91,
+    "seat_based_revenue_yoy_pct": 8,
+    "subscription_revenue_yoy_pct": 16,
+    "total_revenue_mn": 323.3,
+    "subscription_dollar_based_retention_pct": 109
+   },
+   "links": [
+    "spread",
+    "slope"
+   ],
+   "sides": {
+    "H1": "지지"
+   },
+   "side_basis": "고객센터 소프트웨어에서 AI 매출이 1년에 91% 늘어 구독 매출의 10% 에서 17% 가 됐다. 같은 분기 상담원 좌석 기반 매출은 8% 늘었다. 고객 응대 직능에서 지출이 사람 좌석에서 AI 로 옮겨 가는 모습이다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Five9 — 2026년 3분기 실적 보도자료(SEC 제출)",
+     "url": "https://www.sec.gov/Archives/edgar/data/1288847/000128884726000143/a093026ex991earningsrelease.htm",
+     "date": "2026-11-05",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "MarketBeat — Five9 Q3 earnings call highlights",
+     "url": "https://www.marketbeat.com/instant-alerts/transcript-five9-q3-earnings-call-highlights-2026-11-05/",
+     "date": "2026-11-05",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    2
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "회사는 2026년 AI 매출 증가율 전망을 60% 이상에서 75% 이상으로 올렸고, 구축이 앞당겨져 2027년 비교 기준이 높다고 했다. 보도자료의 위험 요인에 'AI 가 응대의 더 큰 몫을 맡게 되면 줄어드는 좌석 매출을 AI 매출로 메워야 한다'고 적었다. Level AI 를 3.25억 달러에 인수하기로 했다."
+  },
+  {
+   "id": "adobe-ai-first-arr",
+   "country": "US",
+   "city": null,
+   "metric": "Adobe AI 전용 제품 ARR",
+   "value": 650,
+   "unit": "백만 달러(ARR, 하한)",
+   "asof": "2026-08-28",
+   "basis": "Adobe AI 전용 제품의 연간 반복 매출('6.5억 달러 초과', FY2026 3분기 말)",
+   "definition": "회사 정의 지표다. Firefly, Acrobat AI Assistant, GenStudio 처럼 AI 로 따로 파는 제품의 ARR 이고, 기존 제품에 들어간 AI 기능은 빠진다.",
+   "series": [
+    {
+     "period": "2025-08-29",
+     "value": 250,
+     "src": 2,
+     "label": "FY25 Q3",
+     "note": "초과. 연말 목표 2.5억 달러를 한 분기 먼저 넘겼다"
+    },
+    {
+     "period": "2026-08-28",
+     "value": 650,
+     "src": 3,
+     "label": "FY26 Q3",
+     "note": "초과. 콜 보도의 검색 요약이다. 보도자료에는 '전년 대비 150% 넘게 증가'만 있다"
+    }
+   ],
+   "detail": {
+    "growth_yoy_pct_press_release": "150 초과",
+    "total_arr_bn": 27.5,
+    "share_of_total_arr_pct": 2.4,
+    "total_arr_growth_target_fy2026_pct": 10.2
+   },
+   "links": [
+    "spread",
+    "slope"
+   ],
+   "sides": {
+    "H1": "지지"
+   },
+   "side_basis": "창작·문서·마케팅 직능의 AI 전용 제품 매출이 1년에 2.5배 넘게 늘었다. 다만 전체 ARR 275억 달러의 2% 남짓이고 회사의 전체 ARR 증가율 목표는 10.2% 다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Adobe — FY2026 3분기 실적 보도자료(Business Wire, Seeking Alpha 게재본)",
+     "url": "https://seekingalpha.com/pr/20647784-adobe-reports-record-q3-results",
+     "date": "2026-09-10",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "The Motley Fool — Adobe Reports Record Q3 Revenue",
+     "url": "https://www.fool.com/data-news/2025/09/11/adobe-reports-record-q3-revenue/",
+     "date": "2025-09-11",
+     "read": "partial"
+    },
+    {
+     "n": 3,
+     "title": "Nasdaq — Adobe Q3 earnings call highlights",
+     "url": "https://www.nasdaq.com/articles/adobe-q3-earnings-call-highlights",
+     "date": "2026-09-10",
+     "read": "search_summary"
+    }
+   ],
+   "value_src": [
+    3
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "절대 수치(6.5억 달러 초과)는 원문을 열지 못한 값이다. 보도자료의 '150% 넘게 증가'와 1년 전 '2.5억 달러 초과'를 곱하면 6.25억 달러 초과라 서로 맞는다. 1년 전에는 AI 의 영향을 받은 ARR 이 50억 달러를 넘는다고도 밝혔는데 범위가 훨씬 넓은 지표라 넣지 않았다."
+  },
+  {
+   "id": "spread-link-test",
+   "country": "ZZ",
+   "city": null,
+   "metric": "'확산' 고리의 판정 기준에 넣은 값 — 코딩 밖 지표의 증가율 대 랩 매출 증가율",
+   "value": null,
+   "unit": "배(최근 1년 안팎의 연율 배수)",
+   "asof": "2026-10",
+   "basis": "계산: 코딩 밖 제품 지표 18개의 최근 1년 안팎 연율 배수를 Anthropic 9개월 매출의 전년 대비 배수(13.06배)와 견준다. 기준선은 증가율의 절반(7.03배)이고 넘는 것은 0개다",
+   "definition": "지표마다 가장 최근 점과, 그보다 0.4~1.35년 앞선 점 가운데 1년에 가장 가까운 점을 골라 연율 배수를 낸다. 그런 점이 없는 지표는 견주지 않고 excluded 에 적는다. 지표의 단위(연환산 매출, 좌석, 계약액, 비중)가 서로 다르고 회사 정의 값이라 배수의 크기만 견준다. Five9 와 Agentforce 는 회사가 말한 전년 대비 증가율을 쓴다(stated). 랩은 매출을 공시한 Anthropic 하나다.",
+   "detail": {
+    "above_threshold_count": 0,
+    "compared": 18,
+    "lab_nine_month_multiple": 13.06,
+    "threshold_multiple": 7.03,
+    "median_annualized_multiple": 2.86,
+    "above_threshold": [],
+    "indicators_with_any_fall": [],
+    "five_or_more_points_all_rising": [
+     "arr-harvey",
+     "arr-sierra",
+     "salesforce-agentforce-arr",
+     "palantir-us-commercial-revenue",
+     "tri-genai-acv-share"
+    ],
+    "product_indicators": {
+     "arr-harvey": {
+      "from": "2025-08-04",
+      "to": "2026-09-09",
+      "years": 1.1,
+      "multiple": 4,
+      "annualized": 3.53,
+      "window_ok": true,
+      "points": 6,
+      "rises": 5,
+      "falls": 0
+     },
+     "arr-legora": {
+      "from": "2025-12",
+      "to": "2026-10-21",
+      "years": 0.81,
+      "multiple": 4,
+      "annualized": 5.5,
+      "window_ok": true,
+      "points": 4,
+      "rises": 3,
+      "falls": 0
+     },
+     "arr-sierra": {
+      "from": "2025-11-21",
+      "to": "2026-10-30",
+      "years": 0.94,
+      "multiple": 4,
+      "annualized": 4.38,
+      "window_ok": true,
+      "points": 5,
+      "rises": 4,
+      "falls": 0
+     },
+     "arr-decagon": {
+      "from": "2025-12",
+      "to": "2026-08-11",
+      "years": 0.62,
+      "multiple": 2.27,
+      "annualized": 3.77,
+      "window_ok": true,
+      "points": 3,
+      "rises": 2,
+      "falls": 0
+     },
+     "arr-openevidence": {
+      "from": "2025-07",
+      "to": "2026-07",
+      "years": 1,
+      "multiple": 6,
+      "annualized": 6.01,
+      "window_ok": true,
+      "points": 4,
+      "rises": 3,
+      "falls": 0
+     },
+     "arr-glean": {
+      "from": "2025-01",
+      "to": "2026-05-28",
+      "years": 1.33,
+      "multiple": 3,
+      "annualized": 2.29,
+      "window_ok": true,
+      "points": 3,
+      "rises": 2,
+      "falls": 0
+     },
+     "arr-hebbia": {
+      "from": "2025-12",
+      "to": "2026-08",
+      "years": 0.67,
+      "multiple": 1.6,
+      "annualized": 2.03,
+      "window_ok": true,
+      "points": 4,
+      "rises": 3,
+      "falls": 0
+     },
+     "arr-rogo": {
+      "from": "2025-12",
+      "to": "2026-09",
+      "years": 0.75,
+      "multiple": 3.33,
+      "annualized": 4.98,
+      "window_ok": true,
+      "points": 2,
+      "rises": 1,
+      "falls": 0
+     },
+     "msft-m365-copilot-paid-seats": {
+      "from": "2025-12-31",
+      "to": "2026-06-30",
+      "years": 0.5,
+      "multiple": 2,
+      "annualized": 4.05,
+      "window_ok": true,
+      "points": 3,
+      "rises": 2,
+      "falls": 0
+     },
+     "salesforce-agentforce-arr": {
+      "from": "2025-07-31",
+      "to": "2026-07-31",
+      "years": 1,
+      "multiple": 3.4,
+      "annualized": 3.4,
+      "window_ok": true,
+      "stated": "회사가 말한 전년 대비 증가율(+240% 초과). 계열의 첫 점은 정의가 다른 주문액이라 쓰지 않는다",
+      "points": 5,
+      "rises": 4,
+      "falls": 0
+     },
+     "servicenow-ai-acv": {
+      "from": "2025-12-31",
+      "to": "2026-06-30",
+      "years": 0.5,
+      "multiple": 1.67,
+      "annualized": 2.8,
+      "window_ok": true,
+      "points": 2,
+      "rises": 1,
+      "falls": 0
+     },
+     "workday-ai-arr": {
+      "from": "2026-01-31",
+      "to": "2026-07-31",
+      "years": 0.5,
+      "multiple": 1.5,
+      "annualized": 2.27,
+      "window_ok": true,
+      "points": 3,
+      "rises": 2,
+      "falls": 0
+     },
+     "sap-cloud-deals-with-ai-share": {
+      "from": "2024-12-31",
+      "to": "2025-12-31",
+      "years": 1,
+      "multiple": 1.33,
+      "annualized": 1.33,
+      "window_ok": true,
+      "points": 3,
+      "rises": 1,
+      "falls": 0
+     },
+     "menlo-vertical-ai-spend": {
+      "from": "2024",
+      "to": "2025",
+      "years": 1,
+      "multiple": 2.92,
+      "annualized": 2.92,
+      "window_ok": true,
+      "points": 2,
+      "rises": 1,
+      "falls": 0
+     },
+     "palantir-us-commercial-revenue": {
+      "from": "2025-09-30",
+      "to": "2026-09-30",
+      "years": 1,
+      "multiple": 2.48,
+      "annualized": 2.48,
+      "window_ok": true,
+      "points": 9,
+      "rises": 8,
+      "falls": 0
+     },
+     "adobe-ai-first-arr": {
+      "from": "2025-08-29",
+      "to": "2026-08-28",
+      "years": 1,
+      "multiple": 2.6,
+      "annualized": 2.61,
+      "window_ok": true,
+      "points": 2,
+      "rises": 1,
+      "falls": 0
+     },
+     "tri-genai-acv-share": {
+      "from": "2025-09-30",
+      "to": "2026-09-30",
+      "years": 1,
+      "multiple": 1.42,
+      "annualized": 1.42,
+      "window_ok": true,
+      "points": 7,
+      "rises": 6,
+      "falls": 0
+     },
+     "five9-ai-revenue-share": {
+      "from": "2025-09-30",
+      "to": "2026-09-30",
+      "years": 1,
+      "multiple": 1.91,
+      "annualized": 1.91,
+      "window_ok": true,
+      "stated": "비중이 아니라 AI 매출의 전년 대비 증가율(+91%)",
+      "points": 2,
+      "rises": 1,
+      "falls": 0
+     }
+    },
+    "excluded": {
+     "arr-intercom-fin": {
+      "years": 1.82,
+      "multiple": 8.33,
+      "points": 2,
+      "why": "1년 안팎으로 견줄 두 점이 없다"
+     },
+     "arr-abridge": {
+      "years": 0.25,
+      "multiple": 1.95,
+      "points": 2,
+      "why": "1년 안팎으로 견줄 두 점이 없다"
+     }
+    },
+    "coding_tools": {
+     "arr-cursor": {
+      "from": "2025-06-06",
+      "to": "2026-06",
+      "years": 1.06,
+      "multiple": 8,
+      "annualized": 7.12,
+      "window_ok": true
+     },
+     "arr-cognition": {
+      "from": "2025-06",
+      "to": "2026-09-25",
+      "years": 1.24,
+      "multiple": 13.7,
+      "annualized": 8.21,
+      "window_ok": true
+     },
+     "arr-lovable": {
+      "from": "2025-07",
+      "to": "2026-09-24",
+      "years": 1.16,
+      "multiple": 6,
+      "annualized": 4.7,
+      "window_ok": true
+     },
+     "arr-claude-code": {
+      "from": "2025-09-02",
+      "to": "2026-02-12",
+      "years": 0.45,
+      "multiple": 5,
+      "annualized": 36.83,
+      "window_ok": true
+     }
+    },
+    "occupation_hours_assisted": {
+     "groups": 10,
+     "up_vs_year_ago": 5,
+     "four_straight_quarterly_rises": 0,
+     "down_in_latest_quarter": 9,
+     "down_in_latest_quarter_ids": [
+      "us-genai-hours-assisted-arts-media",
+      "us-genai-hours-assisted-business-financial",
+      "us-genai-hours-assisted-education",
+      "us-genai-hours-assisted-healthcare-practitioners",
+      "us-genai-hours-assisted-legal",
+      "us-genai-hours-assisted-management",
+      "us-genai-hours-assisted-office-admin",
+      "us-genai-hours-assisted-sales",
+      "us-genai-hours-assisted-science"
+     ]
+    }
+   },
+   "links": [
+    "spread"
+   ],
+   "sides": {
+    "H1": "양쪽"
+   },
+   "side_basis": "코딩 밖 제품 지표 20개는 관측된 구간에서 한 번도 내리지 않았고, 견줄 수 있는 18개의 연율 배수는 중앙값이 2.86배다. 번지고 있다는 쪽이다. 그러나 랩 매출 증가율의 절반(7.03배)을 넘는 것은 0개이고 코딩 도구는 그보다 빠르다. 지출의 무게가 코딩 밖으로 옮겨 가고 있지는 않다는 쪽이다.",
+   "refs": [
+    {
+     "bundle": "K3",
+     "id": "anthropic-revenue"
+    },
+    {
+     "bundle": "K3",
+     "id": "arr-harvey"
+    },
+    {
+     "bundle": "K3",
+     "id": "arr-legora"
+    },
+    {
+     "bundle": "K3",
+     "id": "arr-sierra"
+    },
+    {
+     "bundle": "K3",
+     "id": "arr-decagon"
+    },
+    {
+     "bundle": "K3",
+     "id": "arr-intercom-fin"
+    },
+    {
+     "bundle": "K3",
+     "id": "arr-abridge"
+    },
+    {
+     "bundle": "K3",
+     "id": "arr-openevidence"
+    },
+    {
+     "bundle": "K3",
+     "id": "arr-glean"
+    },
+    {
+     "bundle": "K3",
+     "id": "arr-hebbia"
+    },
+    {
+     "bundle": "K3",
+     "id": "arr-rogo"
+    },
+    {
+     "bundle": "K3",
+     "id": "msft-m365-copilot-paid-seats"
+    },
+    {
+     "bundle": "K3",
+     "id": "salesforce-agentforce-arr"
+    },
+    {
+     "bundle": "K3",
+     "id": "servicenow-ai-acv"
+    },
+    {
+     "bundle": "K3",
+     "id": "workday-ai-arr"
+    },
+    {
+     "bundle": "K3",
+     "id": "sap-cloud-deals-with-ai-share"
+    },
+    {
+     "bundle": "K3",
+     "id": "menlo-vertical-ai-spend"
+    },
+    {
+     "bundle": "K3",
+     "id": "palantir-us-commercial-revenue"
+    },
+    {
+     "bundle": "K3",
+     "id": "adobe-ai-first-arr"
+    },
+    {
+     "bundle": "K3",
+     "id": "tri-genai-acv-share"
+    },
+    {
+     "bundle": "K3",
+     "id": "five9-ai-revenue-share"
+    },
+    {
+     "bundle": "K3",
+     "id": "arr-cursor"
+    },
+    {
+     "bundle": "K3",
+     "id": "arr-cognition"
+    },
+    {
+     "bundle": "K3",
+     "id": "arr-lovable"
+    },
+    {
+     "bundle": "K3",
+     "id": "arr-claude-code"
+    },
+    {
+     "bundle": "K2",
+     "id": "us-genai-hours-assisted-management"
+    },
+    {
+     "bundle": "K2",
+     "id": "us-genai-hours-assisted-business-financial"
+    },
+    {
+     "bundle": "K2",
+     "id": "us-genai-hours-assisted-legal"
+    },
+    {
+     "bundle": "K2",
+     "id": "us-genai-hours-assisted-office-admin"
+    },
+    {
+     "bundle": "K2",
+     "id": "us-genai-hours-assisted-sales"
+    },
+    {
+     "bundle": "K2",
+     "id": "us-genai-hours-assisted-architecture-engineering"
+    },
+    {
+     "bundle": "K2",
+     "id": "us-genai-hours-assisted-science"
+    },
+    {
+     "bundle": "K2",
+     "id": "us-genai-hours-assisted-arts-media"
+    },
+    {
+     "bundle": "K2",
+     "id": "us-genai-hours-assisted-education"
+    },
+    {
+     "bundle": "K2",
+     "id": "us-genai-hours-assisted-healthcare-practitioners"
+    }
+   ],
+   "sources": [],
+   "value_src": [],
+   "alt": [],
+   "conf": "low",
+   "note": "설문으로 잰 직업군별 업무시간 보조 비중은 코딩 밖 10개 가운데 5개가 1년 전보다 높지만 4개 분기를 내리 오른 것은 0개이고 9개가 최근 분기(2026Q3)에 내렸다. 판정 기준은 REQUEST.md 에, 판정은 index.json 과 STATUS.md 에 있다. 방향과 판정은 AI 의 해석이다."
   }
  ]
 }

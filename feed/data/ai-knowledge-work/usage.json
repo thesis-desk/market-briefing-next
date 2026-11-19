@@ -2,54 +2,55 @@
  "schema": 1,
  "bundle": "K2",
  "title": "사용 — 사람·기업·업무시간과 쓰임의 분포",
- "updated_kst": "2026-11-19T11:25:43+09:00",
+ "updated_kst": "2026-11-19T12:21:39+09:00",
  "measure": null,
  "notes": [
   "누가 얼마나 쓰는가다. 조사마다 문항과 표본이 달라 값끼리 더하거나 잇지 않는다.",
   "자기 보고 조사는 실제 사용·효과와 다를 수 있다(K5 의 실험 기록 참조).",
-  "한 회사 제품의 사용 분포는 그 제품의 표본이고 시장 전체가 아니다."
+  "한 회사 제품의 사용 분포는 그 제품의 표본이고 시장 전체가 아니다.",
+  "직업별 계열은 표본이 작아 분기 값이 출렁인다. 방향은 처음 두 분기와 마지막 두 분기의 평균을 견줘 정하고(30% 이상 오르면 지지, 10% 이상 내리면 반박) 그 계산을 기록의 detail 에 둔다."
  ],
  "summary": {
-  "records": 8,
-  "with_value": 7,
-  "with_series": 4,
+  "records": 23,
+  "with_value": 21,
+  "with_series": 18,
   "by_hypothesis": {
    "H1": {
-    "지지": 2,
-    "반박": 0,
-    "양쪽": 6,
-    "중립": 0
+    "지지": 10,
+    "반박": 2,
+    "양쪽": 10,
+    "중립": 1
    }
   },
   "by_link": {
    "coding": {
-    "지지": 1,
+    "지지": 2,
     "반박": 0,
     "양쪽": 1,
-    "중립": 0
+    "중립": 1
    },
    "spread": {
-    "지지": 0,
-    "반박": 0,
-    "양쪽": 3,
+    "지지": 7,
+    "반박": 2,
+    "양쪽": 6,
     "중립": 0
    },
    "penetration": {
-    "지지": 1,
+    "지지": 2,
     "반박": 0,
-    "양쪽": 3,
+    "양쪽": 5,
     "중립": 0
    },
    "slope": {
-    "지지": 1,
-    "반박": 0,
-    "양쪽": 4,
-    "중립": 0
+    "지지": 9,
+    "반박": 2,
+    "양쪽": 7,
+    "중립": 1
    },
    "counter": {
     "지지": 0,
     "반박": 0,
-    "양쪽": 1,
+    "양쪽": 2,
     "중립": 0
    }
   }
@@ -158,22 +159,51 @@
    "country": "US",
    "city": null,
    "metric": "업무시간 중 생성형 AI 보조 비중(미국)",
-   "value": 6.3,
+   "value": 5.31,
    "unit": "%",
-   "asof": "2026-06",
+   "asof": "2026-09",
    "basis": "취업자의 전체 업무시간 가운데 생성형 AI 의 도움을 받은 시간의 비중(같은 조사)",
    "definition": null,
    "series": [
     {
-     "period": "2024Q3",
+     "period": "2024Q4",
      "value": 4.1,
-     "src": 1,
-     "note": "분기 미확인"
+     "src": 2
+    },
+    {
+     "period": "2025Q1",
+     "value": 4.68,
+     "src": 2
+    },
+    {
+     "period": "2025Q2",
+     "value": 4.91,
+     "src": 2
+    },
+    {
+     "period": "2025Q3",
+     "value": 5.73,
+     "src": 2
+    },
+    {
+     "period": "2025Q4",
+     "value": 5.59,
+     "src": 2
+    },
+    {
+     "period": "2026Q1",
+     "value": 5.97,
+     "src": 2
     },
     {
      "period": "2026Q2",
-     "value": 6.3,
-     "src": 1
+     "value": 6.27,
+     "src": 2
+    },
+    {
+     "period": "2026Q3",
+     "value": 5.31,
+     "src": 2
     }
    ],
    "links": [
@@ -183,7 +213,7 @@
    "sides": {
     "H1": "양쪽"
    },
-   "side_basis": "업무시간의 94%는 아직 AI 없이 흘러간다. 여지가 크다는 뜻이기도 하고, 2년 가까이 2.2%p 오르는 데 그쳤다는 뜻이기도 하다.",
+   "side_basis": "2024Q4 4.1% 에서 2026Q2 6.3% 까지 올랐다가 2026Q3 에 5.3% 로 내렸다. 업무시간의 95% 가까이가 아직 AI 없이 흘러간다는 점은 여지이고, 최신 분기의 하락은 회의론 쪽이다.",
    "sources": [
     {
      "n": 1,
@@ -191,36 +221,73 @@
      "url": "https://fred.stlouisfed.org/blog/2026/08/does-generative-ai-save-time-at-work/",
      "date": "2026-08-27",
      "read": "full"
+    },
+    {
+     "n": 2,
+     "title": "FRED — Work Hours Assisted: Employed Adults (RPSGENAIASSISTWRKHRSALL), 원천 Bick·Blandin·Deming, Generative AI Adoption Tracker(Real-Time Population Survey)",
+     "url": "https://fred.stlouisfed.org/series/RPSGENAIASSISTWRKHRSALL",
+     "date": null,
+     "read": "full"
     }
    ],
    "value_src": [
-    1
+    2
    ],
    "alt": [],
    "conf": "high",
-   "note": "블로그는 시작 시점을 '대략 같은 기간'이라고만 적었다. 시작 값의 분기는 2024Q3 으로 두었고 확인하지 못했다."
+   "note": "블로그(출처 1)는 2026Q2 까지만 다뤘다. FRED 계열(출처 2)에는 2026Q3 값이 있고 시작 분기는 2024Q4 다.",
+   "revised_kst": "2026-11-19T11:52:37+09:00"
   },
   {
    "id": "us-genai-time-savings",
    "country": "US",
    "city": null,
    "metric": "생성형 AI 로 아낀 업무시간 비중(미국)",
-   "value": 2.2,
+   "value": 2.08,
    "unit": "%",
-   "asof": "2026-06",
+   "asof": "2026-09",
    "basis": "취업자의 전체 업무시간 가운데 생성형 AI 덕에 아꼈다고 답한 시간의 비중(같은 조사)",
    "definition": null,
    "series": [
     {
-     "period": "2024Q3",
-     "value": 1.6,
-     "src": 1,
-     "note": "분기 미확인"
+     "period": "2024Q4",
+     "value": 1.41,
+     "src": 2
+    },
+    {
+     "period": "2025Q1",
+     "value": 1.62,
+     "src": 2
+    },
+    {
+     "period": "2025Q2",
+     "value": 1.82,
+     "src": 2
+    },
+    {
+     "period": "2025Q3",
+     "value": 1.76,
+     "src": 2
+    },
+    {
+     "period": "2025Q4",
+     "value": 1.99,
+     "src": 2
+    },
+    {
+     "period": "2026Q1",
+     "value": 2.07,
+     "src": 2
     },
     {
      "period": "2026Q2",
-     "value": 2.2,
-     "src": 1
+     "value": 2.17,
+     "src": 2
+    },
+    {
+     "period": "2026Q3",
+     "value": 2.08,
+     "src": 2
     }
    ],
    "links": [
@@ -230,7 +297,7 @@
    "sides": {
     "H1": "양쪽"
    },
-   "side_basis": "경제 전체로 보면 아낀 시간이 아직 2% 남짓이다. 거시 통계에 안 잡힌다는 반론과 맞고, 동시에 침투율이 낮다는 주장과도 맞는다.",
+   "side_basis": "경제 전체로 보면 아낀 시간이 아직 2% 남짓이고 2026Q3 에는 조금 내렸다. 거시 통계에 안 잡힌다는 반론과 맞고, 동시에 침투율이 낮다는 주장과도 맞는다.",
    "sources": [
     {
      "n": 1,
@@ -238,14 +305,22 @@
      "url": "https://fred.stlouisfed.org/blog/2026/08/does-generative-ai-save-time-at-work/",
      "date": "2026-08-27",
      "read": "full"
+    },
+    {
+     "n": 2,
+     "title": "FRED — Time Savings: Employed Adults (RPSGENAITSALL), 원천 Bick·Blandin·Deming, Generative AI Adoption Tracker(Real-Time Population Survey)",
+     "url": "https://fred.stlouisfed.org/series/RPSGENAITSALL",
+     "date": null,
+     "read": "full"
     }
    ],
    "value_src": [
-    1
+    2
    ],
    "alt": [],
    "conf": "high",
-   "note": "자기 보고라 블로그도 근사값이라고 적었다."
+   "note": "블로그(출처 1)의 시작 값 1.6% 는 2025Q1 값이었다. FRED 계열(출처 2) 전체로 바꿨다. 자기 보고라 근사값이다.",
+   "revised_kst": "2026-11-19T11:52:37+09:00"
   },
   {
    "id": "claude-ai-coding-share",
@@ -393,6 +468,1282 @@
    "alt": [],
    "conf": "med",
    "note": "같은 문서에서 엔지니어 1인당 하루 코드 기여량은 3Q26 에 2024년 평균의 45배를 넘었다고 적었다."
+  },
+  {
+   "id": "us-genai-hours-assisted-computer-math",
+   "country": "US",
+   "city": null,
+   "metric": "업무시간 중 생성형 AI 보조 비중 — 컴퓨터·수학 직업(미국)",
+   "value": 11.57,
+   "unit": "%",
+   "asof": "2026-09",
+   "basis": "컴퓨터·수학 직업 취업자의 업무시간 가운데 생성형 AI 의 도움을 받은 시간의 비중, 3Q26",
+   "definition": "자기 보고 조사이고 직업별 표본이 작아 분기 값이 크게 출렁인다. 방향은 처음 두 분기 평균과 마지막 두 분기 평균을 견줘 정했다(30% 이상 오르면 지지, 10% 이상 내리면 반박, 그 사이는 양쪽).",
+   "series": [
+    {
+     "period": "2024Q4",
+     "value": 9.18,
+     "src": 1
+    },
+    {
+     "period": "2025Q1",
+     "value": 9.63,
+     "src": 1
+    },
+    {
+     "period": "2025Q2",
+     "value": 11.92,
+     "src": 1
+    },
+    {
+     "period": "2025Q3",
+     "value": 10.44,
+     "src": 1
+    },
+    {
+     "period": "2025Q4",
+     "value": 9.64,
+     "src": 1
+    },
+    {
+     "period": "2026Q1",
+     "value": 11.17,
+     "src": 1
+    },
+    {
+     "period": "2026Q2",
+     "value": 15.14,
+     "src": 1
+    },
+    {
+     "period": "2026Q3",
+     "value": 11.57,
+     "src": 1
+    }
+   ],
+   "detail": {
+    "first2_avg": 9.41,
+    "last2_avg": 13.36,
+    "change_pct": 42
+   },
+   "links": [
+    "coding",
+    "slope"
+   ],
+   "sides": {
+    "H1": "중립"
+   },
+   "side_basis": "코딩이 속한 직업군이라 견줄 기준이다. 처음 두 분기 평균 9.41% 에서 마지막 두 분기 13.36% 로 42% 올랐다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "FRED — Work Hours Assisted: Computer and Mathematical Occupations (RPSGENAIWORKHOURSASSIAUMZ), 원천 Bick·Blandin·Deming, Generative AI Adoption Tracker(Real-Time Population Survey)",
+     "url": "https://fred.stlouisfed.org/series/RPSGENAIWORKHOURSASSIAUMZ",
+     "date": null,
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "분기 값은 FRED 계열 전체를 받아 소수 둘째 자리로 옮겼다."
+  },
+  {
+   "id": "us-genai-hours-assisted-management",
+   "country": "US",
+   "city": null,
+   "metric": "업무시간 중 생성형 AI 보조 비중 — 관리 직업(미국)",
+   "value": 9.64,
+   "unit": "%",
+   "asof": "2026-09",
+   "basis": "관리 직업 취업자의 업무시간 가운데 생성형 AI 의 도움을 받은 시간의 비중, 3Q26",
+   "definition": "자기 보고 조사이고 직업별 표본이 작아 분기 값이 크게 출렁인다. 방향은 처음 두 분기 평균과 마지막 두 분기 평균을 견줘 정했다(30% 이상 오르면 지지, 10% 이상 내리면 반박, 그 사이는 양쪽).",
+   "series": [
+    {
+     "period": "2024Q4",
+     "value": 6.99,
+     "src": 1
+    },
+    {
+     "period": "2025Q1",
+     "value": 8.3,
+     "src": 1
+    },
+    {
+     "period": "2025Q2",
+     "value": 7.69,
+     "src": 1
+    },
+    {
+     "period": "2025Q3",
+     "value": 11.5,
+     "src": 1
+    },
+    {
+     "period": "2025Q4",
+     "value": 9.47,
+     "src": 1
+    },
+    {
+     "period": "2026Q1",
+     "value": 10.52,
+     "src": 1
+    },
+    {
+     "period": "2026Q2",
+     "value": 12.52,
+     "src": 1
+    },
+    {
+     "period": "2026Q3",
+     "value": 9.64,
+     "src": 1
+    }
+   ],
+   "detail": {
+    "first2_avg": 7.65,
+    "last2_avg": 11.08,
+    "change_pct": 45
+   },
+   "links": [
+    "spread",
+    "slope"
+   ],
+   "sides": {
+    "H1": "지지"
+   },
+   "side_basis": "코딩 밖 직업군이다. 처음 두 분기 평균 7.65% 에서 마지막 두 분기 11.08% 로 45% 올랐다. 컴퓨터·수학 직업의 0.83배 수준이다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "FRED — Work Hours Assisted: Management Occupations (RPSGENAIWORKHOURSASSI7S1J), 원천 Bick·Blandin·Deming, Generative AI Adoption Tracker(Real-Time Population Survey)",
+     "url": "https://fred.stlouisfed.org/series/RPSGENAIWORKHOURSASSI7S1J",
+     "date": null,
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "분기 값은 FRED 계열 전체를 받아 소수 둘째 자리로 옮겼다."
+  },
+  {
+   "id": "us-genai-hours-assisted-business-financial",
+   "country": "US",
+   "city": null,
+   "metric": "업무시간 중 생성형 AI 보조 비중 — 경영·재무 직업(미국)",
+   "value": 8.19,
+   "unit": "%",
+   "asof": "2026-09",
+   "basis": "경영·재무 직업 취업자의 업무시간 가운데 생성형 AI 의 도움을 받은 시간의 비중, 3Q26",
+   "definition": "자기 보고 조사이고 직업별 표본이 작아 분기 값이 크게 출렁인다. 방향은 처음 두 분기 평균과 마지막 두 분기 평균을 견줘 정했다(30% 이상 오르면 지지, 10% 이상 내리면 반박, 그 사이는 양쪽).",
+   "series": [
+    {
+     "period": "2024Q4",
+     "value": 4.74,
+     "src": 1
+    },
+    {
+     "period": "2025Q1",
+     "value": 2.42,
+     "src": 1
+    },
+    {
+     "period": "2025Q2",
+     "value": 5.25,
+     "src": 1
+    },
+    {
+     "period": "2025Q3",
+     "value": 6.1,
+     "src": 1
+    },
+    {
+     "period": "2025Q4",
+     "value": 7.47,
+     "src": 1
+    },
+    {
+     "period": "2026Q1",
+     "value": 9.21,
+     "src": 1
+    },
+    {
+     "period": "2026Q2",
+     "value": 8.4,
+     "src": 1
+    },
+    {
+     "period": "2026Q3",
+     "value": 8.19,
+     "src": 1
+    }
+   ],
+   "detail": {
+    "first2_avg": 3.58,
+    "last2_avg": 8.29,
+    "change_pct": 132
+   },
+   "links": [
+    "spread",
+    "slope"
+   ],
+   "sides": {
+    "H1": "지지"
+   },
+   "side_basis": "코딩 밖 직업군이다. 처음 두 분기 평균 3.58% 에서 마지막 두 분기 8.29% 로 132% 올랐다. 컴퓨터·수학 직업의 0.62배 수준이다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "FRED — Work Hours Assisted: Business and Financial Operations Occupations (RPSGENAIWORKHOURSASSI0PRG), 원천 Bick·Blandin·Deming, Generative AI Adoption Tracker(Real-Time Population Survey)",
+     "url": "https://fred.stlouisfed.org/series/RPSGENAIWORKHOURSASSI0PRG",
+     "date": null,
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "분기 값은 FRED 계열 전체를 받아 소수 둘째 자리로 옮겼다."
+  },
+  {
+   "id": "us-genai-hours-assisted-legal",
+   "country": "US",
+   "city": null,
+   "metric": "업무시간 중 생성형 AI 보조 비중 — 법률 직업(미국)",
+   "value": 4.61,
+   "unit": "%",
+   "asof": "2026-09",
+   "basis": "법률 직업 취업자의 업무시간 가운데 생성형 AI 의 도움을 받은 시간의 비중, 3Q26",
+   "definition": "자기 보고 조사이고 직업별 표본이 작아 분기 값이 크게 출렁인다. 방향은 처음 두 분기 평균과 마지막 두 분기 평균을 견줘 정했다(30% 이상 오르면 지지, 10% 이상 내리면 반박, 그 사이는 양쪽).",
+   "series": [
+    {
+     "period": "2024Q4",
+     "value": 0.56,
+     "src": 1
+    },
+    {
+     "period": "2025Q1",
+     "value": 7.22,
+     "src": 1
+    },
+    {
+     "period": "2025Q2",
+     "value": 12.33,
+     "src": 1
+    },
+    {
+     "period": "2025Q3",
+     "value": 5.29,
+     "src": 1
+    },
+    {
+     "period": "2025Q4",
+     "value": 12.11,
+     "src": 1
+    },
+    {
+     "period": "2026Q1",
+     "value": 4.55,
+     "src": 1
+    },
+    {
+     "period": "2026Q2",
+     "value": 5.15,
+     "src": 1
+    },
+    {
+     "period": "2026Q3",
+     "value": 4.61,
+     "src": 1
+    }
+   ],
+   "detail": {
+    "first2_avg": 3.89,
+    "last2_avg": 4.88,
+    "change_pct": 25
+   },
+   "links": [
+    "spread",
+    "slope"
+   ],
+   "sides": {
+    "H1": "양쪽"
+   },
+   "side_basis": "코딩 밖 직업군이다. 처음 두 분기 평균 3.89% 에서 마지막 두 분기 4.88% 로 25% 올랐다. 분기 값이 출렁여 방향을 정하지 않았다. 컴퓨터·수학 직업의 0.37배 수준이다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "FRED — Work Hours Assisted: Legal Occupations (RPSGENAIWORKHOURSASSI4FMQ), 원천 Bick·Blandin·Deming, Generative AI Adoption Tracker(Real-Time Population Survey)",
+     "url": "https://fred.stlouisfed.org/series/RPSGENAIWORKHOURSASSI4FMQ",
+     "date": null,
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "분기 값은 FRED 계열 전체를 받아 소수 둘째 자리로 옮겼다."
+  },
+  {
+   "id": "us-genai-hours-assisted-office-admin",
+   "country": "US",
+   "city": null,
+   "metric": "업무시간 중 생성형 AI 보조 비중 — 사무·행정 지원 직업(미국)",
+   "value": 4.92,
+   "unit": "%",
+   "asof": "2026-09",
+   "basis": "사무·행정 지원 직업 취업자의 업무시간 가운데 생성형 AI 의 도움을 받은 시간의 비중, 3Q26",
+   "definition": "자기 보고 조사이고 직업별 표본이 작아 분기 값이 크게 출렁인다. 방향은 처음 두 분기 평균과 마지막 두 분기 평균을 견줘 정했다(30% 이상 오르면 지지, 10% 이상 내리면 반박, 그 사이는 양쪽).",
+   "series": [
+    {
+     "period": "2024Q4",
+     "value": 2.8,
+     "src": 1
+    },
+    {
+     "period": "2025Q1",
+     "value": 2.2,
+     "src": 1
+    },
+    {
+     "period": "2025Q2",
+     "value": 6.74,
+     "src": 1
+    },
+    {
+     "period": "2025Q3",
+     "value": 5.61,
+     "src": 1
+    },
+    {
+     "period": "2025Q4",
+     "value": 4.63,
+     "src": 1
+    },
+    {
+     "period": "2026Q1",
+     "value": 3.7,
+     "src": 1
+    },
+    {
+     "period": "2026Q2",
+     "value": 5.23,
+     "src": 1
+    },
+    {
+     "period": "2026Q3",
+     "value": 4.92,
+     "src": 1
+    }
+   ],
+   "detail": {
+    "first2_avg": 2.5,
+    "last2_avg": 5.08,
+    "change_pct": 103
+   },
+   "links": [
+    "spread",
+    "slope"
+   ],
+   "sides": {
+    "H1": "지지"
+   },
+   "side_basis": "코딩 밖 직업군이다. 처음 두 분기 평균 2.5% 에서 마지막 두 분기 5.08% 로 103% 올랐다. 컴퓨터·수학 직업의 0.38배 수준이다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "FRED — Work Hours Assisted: Office and Administrative Support Occupations (RPSGENAIWORKHOURSASSIGBH8), 원천 Bick·Blandin·Deming, Generative AI Adoption Tracker(Real-Time Population Survey)",
+     "url": "https://fred.stlouisfed.org/series/RPSGENAIWORKHOURSASSIGBH8",
+     "date": null,
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "분기 값은 FRED 계열 전체를 받아 소수 둘째 자리로 옮겼다."
+  },
+  {
+   "id": "us-genai-hours-assisted-sales",
+   "country": "US",
+   "city": null,
+   "metric": "업무시간 중 생성형 AI 보조 비중 — 영업 직업(미국)",
+   "value": 4.33,
+   "unit": "%",
+   "asof": "2026-09",
+   "basis": "영업 직업 취업자의 업무시간 가운데 생성형 AI 의 도움을 받은 시간의 비중, 3Q26",
+   "definition": "자기 보고 조사이고 직업별 표본이 작아 분기 값이 크게 출렁인다. 방향은 처음 두 분기 평균과 마지막 두 분기 평균을 견줘 정했다(30% 이상 오르면 지지, 10% 이상 내리면 반박, 그 사이는 양쪽).",
+   "series": [
+    {
+     "period": "2024Q4",
+     "value": 3.6,
+     "src": 1
+    },
+    {
+     "period": "2025Q1",
+     "value": 5.18,
+     "src": 1
+    },
+    {
+     "period": "2025Q2",
+     "value": 4.96,
+     "src": 1
+    },
+    {
+     "period": "2025Q3",
+     "value": 3.54,
+     "src": 1
+    },
+    {
+     "period": "2025Q4",
+     "value": 4.33,
+     "src": 1
+    },
+    {
+     "period": "2026Q1",
+     "value": 5.09,
+     "src": 1
+    },
+    {
+     "period": "2026Q2",
+     "value": 7.2,
+     "src": 1
+    },
+    {
+     "period": "2026Q3",
+     "value": 4.33,
+     "src": 1
+    }
+   ],
+   "detail": {
+    "first2_avg": 4.39,
+    "last2_avg": 5.77,
+    "change_pct": 31
+   },
+   "links": [
+    "spread",
+    "slope"
+   ],
+   "sides": {
+    "H1": "지지"
+   },
+   "side_basis": "코딩 밖 직업군이다. 처음 두 분기 평균 4.39% 에서 마지막 두 분기 5.77% 로 31% 올랐다. 컴퓨터·수학 직업의 0.43배 수준이다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "FRED — Work Hours Assisted: Sales and Related Occupations (RPSGENAIWORKHOURSASSIS78B), 원천 Bick·Blandin·Deming, Generative AI Adoption Tracker(Real-Time Population Survey)",
+     "url": "https://fred.stlouisfed.org/series/RPSGENAIWORKHOURSASSIS78B",
+     "date": null,
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "분기 값은 FRED 계열 전체를 받아 소수 둘째 자리로 옮겼다."
+  },
+  {
+   "id": "us-genai-hours-assisted-architecture-engineering",
+   "country": "US",
+   "city": null,
+   "metric": "업무시간 중 생성형 AI 보조 비중 — 건축·공학 직업(미국)",
+   "value": 7.74,
+   "unit": "%",
+   "asof": "2026-09",
+   "basis": "건축·공학 직업 취업자의 업무시간 가운데 생성형 AI 의 도움을 받은 시간의 비중, 3Q26",
+   "definition": "자기 보고 조사이고 직업별 표본이 작아 분기 값이 크게 출렁인다. 방향은 처음 두 분기 평균과 마지막 두 분기 평균을 견줘 정했다(30% 이상 오르면 지지, 10% 이상 내리면 반박, 그 사이는 양쪽).",
+   "series": [
+    {
+     "period": "2024Q4",
+     "value": 4.12,
+     "src": 1
+    },
+    {
+     "period": "2025Q1",
+     "value": 3.14,
+     "src": 1
+    },
+    {
+     "period": "2025Q2",
+     "value": 3.72,
+     "src": 1
+    },
+    {
+     "period": "2025Q3",
+     "value": 6.2,
+     "src": 1
+    },
+    {
+     "period": "2025Q4",
+     "value": 7.52,
+     "src": 1
+    },
+    {
+     "period": "2026Q1",
+     "value": 7.25,
+     "src": 1
+    },
+    {
+     "period": "2026Q2",
+     "value": 5.63,
+     "src": 1
+    },
+    {
+     "period": "2026Q3",
+     "value": 7.74,
+     "src": 1
+    }
+   ],
+   "detail": {
+    "first2_avg": 3.63,
+    "last2_avg": 6.69,
+    "change_pct": 84
+   },
+   "links": [
+    "spread",
+    "slope"
+   ],
+   "sides": {
+    "H1": "지지"
+   },
+   "side_basis": "코딩 밖 직업군이다. 처음 두 분기 평균 3.63% 에서 마지막 두 분기 6.69% 로 84% 올랐다. 컴퓨터·수학 직업의 0.5배 수준이다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "FRED — Work Hours Assisted: Architecture and Engineering Occupations (RPSGENAIWORKHOURSASSI8M6D), 원천 Bick·Blandin·Deming, Generative AI Adoption Tracker(Real-Time Population Survey)",
+     "url": "https://fred.stlouisfed.org/series/RPSGENAIWORKHOURSASSI8M6D",
+     "date": null,
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "분기 값은 FRED 계열 전체를 받아 소수 둘째 자리로 옮겼다."
+  },
+  {
+   "id": "us-genai-hours-assisted-science",
+   "country": "US",
+   "city": null,
+   "metric": "업무시간 중 생성형 AI 보조 비중 — 생명·물리·사회과학 직업(미국)",
+   "value": 8.84,
+   "unit": "%",
+   "asof": "2026-09",
+   "basis": "생명·물리·사회과학 직업 취업자의 업무시간 가운데 생성형 AI 의 도움을 받은 시간의 비중, 3Q26",
+   "definition": "자기 보고 조사이고 직업별 표본이 작아 분기 값이 크게 출렁인다. 방향은 처음 두 분기 평균과 마지막 두 분기 평균을 견줘 정했다(30% 이상 오르면 지지, 10% 이상 내리면 반박, 그 사이는 양쪽).",
+   "series": [
+    {
+     "period": "2024Q4",
+     "value": 3.14,
+     "src": 1
+    },
+    {
+     "period": "2025Q1",
+     "value": 1.34,
+     "src": 1
+    },
+    {
+     "period": "2025Q2",
+     "value": 3.87,
+     "src": 1
+    },
+    {
+     "period": "2025Q3",
+     "value": 3.26,
+     "src": 1
+    },
+    {
+     "period": "2025Q4",
+     "value": 6.29,
+     "src": 1
+    },
+    {
+     "period": "2026Q1",
+     "value": 10.7,
+     "src": 1
+    },
+    {
+     "period": "2026Q2",
+     "value": 10.09,
+     "src": 1
+    },
+    {
+     "period": "2026Q3",
+     "value": 8.84,
+     "src": 1
+    }
+   ],
+   "detail": {
+    "first2_avg": 2.24,
+    "last2_avg": 9.46,
+    "change_pct": 323
+   },
+   "links": [
+    "spread",
+    "slope"
+   ],
+   "sides": {
+    "H1": "지지"
+   },
+   "side_basis": "코딩 밖 직업군이다. 처음 두 분기 평균 2.24% 에서 마지막 두 분기 9.46% 로 323% 올랐다. 컴퓨터·수학 직업의 0.71배 수준이다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "FRED — Work Hours Assisted: Life, Physical, and Social Science Occupations (RPSGENAIWORKHOURSASSIKHJL), 원천 Bick·Blandin·Deming, Generative AI Adoption Tracker(Real-Time Population Survey)",
+     "url": "https://fred.stlouisfed.org/series/RPSGENAIWORKHOURSASSIKHJL",
+     "date": null,
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "분기 값은 FRED 계열 전체를 받아 소수 둘째 자리로 옮겼다."
+  },
+  {
+   "id": "us-genai-hours-assisted-arts-media",
+   "country": "US",
+   "city": null,
+   "metric": "업무시간 중 생성형 AI 보조 비중 — 예술·디자인·미디어 직업(미국)",
+   "value": 4.82,
+   "unit": "%",
+   "asof": "2026-09",
+   "basis": "예술·디자인·미디어 직업 취업자의 업무시간 가운데 생성형 AI 의 도움을 받은 시간의 비중, 3Q26",
+   "definition": "자기 보고 조사이고 직업별 표본이 작아 분기 값이 크게 출렁인다. 방향은 처음 두 분기 평균과 마지막 두 분기 평균을 견줘 정했다(30% 이상 오르면 지지, 10% 이상 내리면 반박, 그 사이는 양쪽).",
+   "series": [
+    {
+     "period": "2024Q4",
+     "value": 8.48,
+     "src": 1
+    },
+    {
+     "period": "2025Q1",
+     "value": 7.07,
+     "src": 1
+    },
+    {
+     "period": "2025Q2",
+     "value": 10.47,
+     "src": 1
+    },
+    {
+     "period": "2025Q3",
+     "value": 9.75,
+     "src": 1
+    },
+    {
+     "period": "2025Q4",
+     "value": 11.43,
+     "src": 1
+    },
+    {
+     "period": "2026Q1",
+     "value": 8.81,
+     "src": 1
+    },
+    {
+     "period": "2026Q2",
+     "value": 6.64,
+     "src": 1
+    },
+    {
+     "period": "2026Q3",
+     "value": 4.82,
+     "src": 1
+    }
+   ],
+   "detail": {
+    "first2_avg": 7.78,
+    "last2_avg": 5.73,
+    "change_pct": -26
+   },
+   "links": [
+    "spread",
+    "slope"
+   ],
+   "sides": {
+    "H1": "반박"
+   },
+   "side_basis": "코딩 밖 직업군이다. 처음 두 분기 평균 7.78% 에서 마지막 두 분기 5.73% 로 26% 내렸다. 컴퓨터·수학 직업의 0.43배 수준이다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "FRED — Work Hours Assisted: Arts, Design, Entertainment, Sports, and Media Occupations (RPSGENAIWORKHOURSASSICFZR), 원천 Bick·Blandin·Deming, Generative AI Adoption Tracker(Real-Time Population Survey)",
+     "url": "https://fred.stlouisfed.org/series/RPSGENAIWORKHOURSASSICFZR",
+     "date": null,
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "분기 값은 FRED 계열 전체를 받아 소수 둘째 자리로 옮겼다."
+  },
+  {
+   "id": "us-genai-hours-assisted-education",
+   "country": "US",
+   "city": null,
+   "metric": "업무시간 중 생성형 AI 보조 비중 — 교육·도서관 직업(미국)",
+   "value": 4.32,
+   "unit": "%",
+   "asof": "2026-09",
+   "basis": "교육·도서관 직업 취업자의 업무시간 가운데 생성형 AI 의 도움을 받은 시간의 비중, 3Q26",
+   "definition": "자기 보고 조사이고 직업별 표본이 작아 분기 값이 크게 출렁인다. 방향은 처음 두 분기 평균과 마지막 두 분기 평균을 견줘 정했다(30% 이상 오르면 지지, 10% 이상 내리면 반박, 그 사이는 양쪽).",
+   "series": [
+    {
+     "period": "2024Q4",
+     "value": 3.81,
+     "src": 1
+    },
+    {
+     "period": "2025Q1",
+     "value": 6.52,
+     "src": 1
+    },
+    {
+     "period": "2025Q2",
+     "value": 2.85,
+     "src": 1
+    },
+    {
+     "period": "2025Q3",
+     "value": 6.5,
+     "src": 1
+    },
+    {
+     "period": "2025Q4",
+     "value": 7.18,
+     "src": 1
+    },
+    {
+     "period": "2026Q1",
+     "value": 5.24,
+     "src": 1
+    },
+    {
+     "period": "2026Q2",
+     "value": 5.15,
+     "src": 1
+    },
+    {
+     "period": "2026Q3",
+     "value": 4.32,
+     "src": 1
+    }
+   ],
+   "detail": {
+    "first2_avg": 5.17,
+    "last2_avg": 4.74,
+    "change_pct": -8
+   },
+   "links": [
+    "spread",
+    "slope"
+   ],
+   "sides": {
+    "H1": "양쪽"
+   },
+   "side_basis": "코딩 밖 직업군이다. 처음 두 분기 평균 5.17% 에서 마지막 두 분기 4.74% 로 8% 내렸다. 분기 값이 출렁여 방향을 정하지 않았다. 컴퓨터·수학 직업의 0.35배 수준이다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "FRED — Work Hours Assisted: Educational Instruction and Library Occupations (RPSGENAIWORKHOURSASSITJ7A), 원천 Bick·Blandin·Deming, Generative AI Adoption Tracker(Real-Time Population Survey)",
+     "url": "https://fred.stlouisfed.org/series/RPSGENAIWORKHOURSASSITJ7A",
+     "date": null,
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "분기 값은 FRED 계열 전체를 받아 소수 둘째 자리로 옮겼다."
+  },
+  {
+   "id": "us-genai-hours-assisted-healthcare-practitioners",
+   "country": "US",
+   "city": null,
+   "metric": "업무시간 중 생성형 AI 보조 비중 — 보건 전문직 직업(미국)",
+   "value": 3.63,
+   "unit": "%",
+   "asof": "2026-09",
+   "basis": "보건 전문직 직업 취업자의 업무시간 가운데 생성형 AI 의 도움을 받은 시간의 비중, 3Q26",
+   "definition": "자기 보고 조사이고 직업별 표본이 작아 분기 값이 크게 출렁인다. 방향은 처음 두 분기 평균과 마지막 두 분기 평균을 견줘 정했다(30% 이상 오르면 지지, 10% 이상 내리면 반박, 그 사이는 양쪽).",
+   "series": [
+    {
+     "period": "2024Q4",
+     "value": 8.84,
+     "src": 1
+    },
+    {
+     "period": "2025Q1",
+     "value": 3.73,
+     "src": 1
+    },
+    {
+     "period": "2025Q2",
+     "value": 3.4,
+     "src": 1
+    },
+    {
+     "period": "2025Q3",
+     "value": 2.73,
+     "src": 1
+    },
+    {
+     "period": "2025Q4",
+     "value": 5.53,
+     "src": 1
+    },
+    {
+     "period": "2026Q1",
+     "value": 8.29,
+     "src": 1
+    },
+    {
+     "period": "2026Q2",
+     "value": 3.84,
+     "src": 1
+    },
+    {
+     "period": "2026Q3",
+     "value": 3.63,
+     "src": 1
+    }
+   ],
+   "detail": {
+    "first2_avg": 6.29,
+    "last2_avg": 3.73,
+    "change_pct": -41
+   },
+   "links": [
+    "spread",
+    "slope"
+   ],
+   "sides": {
+    "H1": "반박"
+   },
+   "side_basis": "코딩 밖 직업군이다. 처음 두 분기 평균 6.29% 에서 마지막 두 분기 3.73% 로 41% 내렸다. 컴퓨터·수학 직업의 0.28배 수준이다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "FRED — Work Hours Assisted: Healthcare Practitioners and Technical Occupations (RPSGENAIWORKHOURSASSI8T60), 원천 Bick·Blandin·Deming, Generative AI Adoption Tracker(Real-Time Population Survey)",
+     "url": "https://fred.stlouisfed.org/series/RPSGENAIWORKHOURSASSI8T60",
+     "date": null,
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "분기 값은 FRED 계열 전체를 받아 소수 둘째 자리로 옮겼다."
+  },
+  {
+   "id": "us-genai-work-adoption-rate",
+   "country": "US",
+   "city": null,
+   "metric": "업무용 생성형 AI 사용률(미국 취업자)",
+   "value": 40.55,
+   "unit": "%",
+   "asof": "2026-09",
+   "basis": "취업자 가운데 업무에 생성형 AI 를 쓰는 사람의 비중(같은 조사), 3Q26",
+   "definition": null,
+   "series": [
+    {
+     "period": "2024Q3",
+     "value": 33.27,
+     "src": 1
+    },
+    {
+     "period": "2024Q4",
+     "value": 31.01,
+     "src": 1
+    },
+    {
+     "period": "2025Q1",
+     "value": 32.75,
+     "src": 1
+    },
+    {
+     "period": "2025Q2",
+     "value": 35.08,
+     "src": 1
+    },
+    {
+     "period": "2025Q3",
+     "value": 37.36,
+     "src": 1
+    },
+    {
+     "period": "2025Q4",
+     "value": 40.65,
+     "src": 1
+    },
+    {
+     "period": "2026Q1",
+     "value": 42.84,
+     "src": 1
+    },
+    {
+     "period": "2026Q2",
+     "value": 45.2,
+     "src": 1
+    },
+    {
+     "period": "2026Q3",
+     "value": 40.55,
+     "src": 1
+    }
+   ],
+   "links": [
+    "penetration",
+    "slope",
+    "counter"
+   ],
+   "sides": {
+    "H1": "양쪽"
+   },
+   "side_basis": "2024Q4 31.0% 에서 2026Q2 45.2% 까지 여섯 분기 연속 올랐다가 2026Q3 에 40.5% 로 처음 내렸다. 한 분기의 하락이 표본 변동인지 추세 변화인지는 다음 분기가 정한다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "FRED — Adoption Rate for Work: Employed Adults (RPSGENAIUSAGESHAREWORK), 원천 Bick·Blandin·Deming, Generative AI Adoption Tracker(Real-Time Population Survey)",
+     "url": "https://fred.stlouisfed.org/series/RPSGENAIUSAGESHAREWORK",
+     "date": null,
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "'지난주에 썼다'(us-genai-work-use-last-week)와 다른 계열이다. 같은 분기에 업무시간 보조 비중과 절감 시간도 함께 내렸다."
+  },
+  {
+   "id": "ramp-ai-adoption-rate",
+   "country": "US",
+   "city": null,
+   "metric": "AI 에 돈을 낸 미국 기업의 비중(Ramp)",
+   "value": 56.8,
+   "unit": "%",
+   "asof": "2026-10",
+   "basis": "그 달에 AI 제품·서비스에 지출이 있었던 미국 기업의 비중(Ramp 를 쓰는 기업 85,000곳 이상)",
+   "definition": "법인카드·청구서 결제에서 AI 회사의 제품·서비스로 분류된 지출이 그 달에 있으면 도입으로 센다. 무료 사용과 다른 소프트웨어에 포함된 AI 기능은 잡히지 않는다.",
+   "series": [
+    {
+     "period": "2023-01",
+     "value": 7.5,
+     "src": 2
+    },
+    {
+     "period": "2023-07",
+     "value": 24.5,
+     "src": 2
+    },
+    {
+     "period": "2024-01",
+     "value": 30.3,
+     "src": 2
+    },
+    {
+     "period": "2024-07",
+     "value": 31.8,
+     "src": 2
+    },
+    {
+     "period": "2025-01",
+     "value": 35.5,
+     "src": 2
+    },
+    {
+     "period": "2025-07",
+     "value": 42.5,
+     "src": 2
+    },
+    {
+     "period": "2025-10",
+     "value": 43.5,
+     "src": 2
+    },
+    {
+     "period": "2026-01",
+     "value": 45.4,
+     "src": 2
+    },
+    {
+     "period": "2026-04",
+     "value": 51.9,
+     "src": 2
+    },
+    {
+     "period": "2026-07",
+     "value": 54.8,
+     "src": 2
+    },
+    {
+     "period": "2026-10",
+     "value": 56.8,
+     "src": 2
+    }
+   ],
+   "detail": {
+    "by_sector_2026_10": {
+     "정보": 80.1,
+     "금융·보험": 74.3,
+     "전문·과학·기술 서비스": 70.8,
+     "제조": 62.8,
+     "교육 서비스": 56.5,
+     "소매": 49.9,
+     "건설": 45,
+     "보건": 43.7,
+     "공공 행정": 36.4,
+     "숙박·음식": 35
+    },
+    "by_size_2026_10": {
+     "초소형": 51.2,
+     "소기업": 63.2,
+     "중견": 66.7,
+     "대기업": 59
+    },
+    "by_provider_2026_10": {
+     "Anthropic": 44.8,
+     "OpenAI": 40.6,
+     "xAI": 6.3
+    },
+    "sector_series_fred": {
+     "금융·보험 2025-10 → 2026-10": [
+      58.5,
+      74.3
+     ],
+     "보건 2025-10 → 2026-10": [
+      29.7,
+      43.7
+     ],
+     "제조 2025-10 → 2026-10": [
+      43.2,
+      62.8
+     ]
+    }
+   },
+   "links": [
+    "penetration",
+    "slope",
+    "spread"
+   ],
+   "sides": {
+    "H1": "지지"
+   },
+   "side_basis": "1년에 13.3%p 올랐고 내린 구간이 없다. 금융·보험 74%, 제조 63%, 보건 44%처럼 기술 업종 밖에서도 오른다. 다만 돈을 냈는가만 보고 얼마나 깊이 쓰는가는 보지 않는다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Ramp Economics Lab — Ramp AI Index (2026-10 자료)",
+     "url": "https://ramp.com/data/ai-index",
+     "date": "2026-11",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "FRED — Artificial Intelligence Adoption by Ramp Businesses: Overall (RAMPAIALL)",
+     "url": "https://fred.stlouisfed.org/series/RAMPAIALL",
+     "date": null,
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1,
+    2
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "센서스 조사(us-firm-ai-use-btos)의 17~20% 와 세 배 차이가 난다. Ramp 는 결제 기록으로 세고 센서스는 설문으로 묻는다. Ramp 고객은 기술 기업·신생 기업 쪽으로 치우쳐 있을 수 있다(대표성은 확인하지 못했다)."
+  },
+  {
+   "id": "non-coding-hours-assisted-vs-computer",
+   "country": "US",
+   "city": null,
+   "metric": "코딩 밖 직업의 AI 보조 시간 ÷ 컴퓨터·수학 직업",
+   "value": null,
+   "unit": "배",
+   "asof": "2026-09",
+   "basis": "계산: 직업군별 업무시간 보조 비중(마지막 두 분기 평균) ÷ 컴퓨터·수학 직업의 같은 값",
+   "definition": null,
+   "range": {
+    "low": 0.28,
+    "high": 0.83
+   },
+   "links": [
+    "spread",
+    "penetration"
+   ],
+   "sides": {
+    "H1": "양쪽"
+   },
+   "side_basis": "쓰는 시간으로 보면 코딩 밖 직업은 컴퓨터·수학 직업의 0.28~0.83배로 차이가 크지 않다. 지출 차이(20배 이상, anthropic-enterprise-user-spend)보다 훨씬 작다. 쓰임은 번졌는데 돈은 아직 따라가지 않았다는 뜻으로 읽힌다.",
+   "refs": [
+    {
+     "bundle": "K2",
+     "id": "us-genai-hours-assisted-computer-math"
+    },
+    {
+     "bundle": "K2",
+     "id": "us-genai-hours-assisted-management"
+    },
+    {
+     "bundle": "K2",
+     "id": "us-genai-hours-assisted-business-financial"
+    },
+    {
+     "bundle": "K2",
+     "id": "us-genai-hours-assisted-legal"
+    },
+    {
+     "bundle": "K2",
+     "id": "us-genai-hours-assisted-office-admin"
+    },
+    {
+     "bundle": "K2",
+     "id": "us-genai-hours-assisted-sales"
+    },
+    {
+     "bundle": "K2",
+     "id": "us-genai-hours-assisted-architecture-engineering"
+    },
+    {
+     "bundle": "K2",
+     "id": "us-genai-hours-assisted-science"
+    },
+    {
+     "bundle": "K2",
+     "id": "us-genai-hours-assisted-arts-media"
+    },
+    {
+     "bundle": "K2",
+     "id": "us-genai-hours-assisted-education"
+    },
+    {
+     "bundle": "K2",
+     "id": "us-genai-hours-assisted-healthcare-practitioners"
+    },
+    {
+     "bundle": "K3",
+     "id": "anthropic-enterprise-user-spend"
+    }
+   ],
+   "sources": [],
+   "value_src": [],
+   "alt": [],
+   "conf": "low",
+   "note": "직업군별 값: 관리 0.83, 경영·재무 0.62, 법률 0.37, 사무·행정 지원 0.38, 영업 0.43, 건축·공학 0.5, 생명·물리·사회과학 0.71, 예술·디자인·미디어 0.43, 교육·도서관 0.35, 보건 전문직 0.28. 지출 쪽 20배는 상위 5% 다량 사용자와 비사용자 평균을 견준 값이라 같은 기준의 비교는 아니다."
+  },
+  {
+   "id": "github-copilot-users",
+   "country": "US",
+   "city": null,
+   "metric": "GitHub Copilot 사용자",
+   "value": 50,
+   "unit": "백만 명",
+   "asof": "2026-06-30",
+   "basis": "GitHub Copilot 사용자 수(무료 포함, FY26 4분기 말)",
+   "definition": "무료 사용자를 포함한 전체 사용자다.",
+   "series": [
+    {
+     "period": "2025-03-31",
+     "value": 15,
+     "src": 1,
+     "label": "FY25 Q3",
+     "note": "초과"
+    },
+    {
+     "period": "2025-06-30",
+     "value": 20,
+     "src": 2,
+     "label": "FY25 Q4"
+    },
+    {
+     "period": "2025-09-30",
+     "value": 26,
+     "src": 3,
+     "label": "FY26 Q1",
+     "note": "초과"
+    },
+    {
+     "period": "2026-06-30",
+     "value": 50,
+     "src": 4,
+     "label": "FY26 Q4"
+    }
+   ],
+   "detail": {
+    "paid_subscribers_mn_fy26q2": 4.7
+   },
+   "links": [
+    "coding",
+    "slope"
+   ],
+   "sides": {
+    "H1": "지지"
+   },
+   "side_basis": "5개 분기에 1,500만에서 5,000만이 됐다. 코딩 도구의 사용자 기반이다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Microsoft — FY25 Q3 실적 발표 녹취(회사 게시)",
+     "url": "https://www.microsoft.com/en-us/investor/events/fy-2025/earnings-fy-2025-q3",
+     "date": "2025-04-30",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "Microsoft — FY25 Q4 실적 발표 녹취(회사 게시)",
+     "url": "https://www.microsoft.com/en-us/investor/events/fy-2025/earnings-fy-2025-q4",
+     "date": "2025-07-30",
+     "read": "partial"
+    },
+    {
+     "n": 3,
+     "title": "Microsoft — FY26 Q1 실적 발표 녹취(회사 게시)",
+     "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q1",
+     "date": "2025-10-29",
+     "read": "partial"
+    },
+    {
+     "n": 4,
+     "title": "Microsoft — FY26 Q4 실적 발표 녹취(회사 게시)",
+     "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q4",
+     "date": "2026-07-29",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    4
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "유료 구독자는 FY26 2분기에 470만 초과(전년 대비 +75%)로 한 번만 공개됐다. 2026-06-01 부터 사용량 과금으로 바뀌어 그 뒤로는 사용량 증가만 말한다."
   }
  ]
 }
