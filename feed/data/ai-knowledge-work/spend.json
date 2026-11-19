@@ -2,7 +2,7 @@
  "schema": 1,
  "bundle": "K3",
  "title": "지출과 매출 — 랩·도구·고객",
- "updated_kst": "2026-11-19T13:36:14+09:00",
+ "updated_kst": "2026-11-19T13:58:24+09:00",
  "measure": null,
  "notes": [
   "실제로 나간 돈이다. 회계 매출(감사 여부)과 회사 정의 지표(연환산 매출, 순매출유지율)를 basis·definition 에서 가른다.",
@@ -10,15 +10,16 @@
   "코딩 도구의 매출, 법무·고객지원·재무 전문 에이전트의 매출, 상장 소프트웨어 회사의 AI 제품 지표는 따로 모은다.",
   "비상장 회사의 연환산 매출(arr-…)은 회사가 정의를 밝히지 않은 값이다. 시계열의 점마다 회사 발표·익명 출처 보도·정리 사이트 추정을 note 에 적고, 가장 최근 점이 회사 발표가 아니면 conf 를 low 로 둔다. 유료 기사를 옮겨 실은 제3자 페이지는 출처로 쓰지 않는다.",
   "상장사의 AI 제품 지표는 회사가 고른 지표다. 정의가 바뀌거나 공개가 멈춘 분기를 definition·note 에 적고, 회사 게시 녹취·보도자료와 제3자 전사를 시계열의 note 에서 가른다.",
-  "'확산' 고리의 판정에 넣은 값은 계산 기록 spread-link-test 에 모았다. 기존 전문 정보 사업자(Thomson Reuters, RELX)의 지표는 AI 가 들어간 제품의 몫이지 AI 에 낸 돈이 아니다."
+  "'확산' 고리의 판정에 넣은 값은 계산 기록 spread-link-test 에 모았다. 기존 전문 정보 사업자(Thomson Reuters, RELX)의 지표는 AI 가 들어간 제품의 몫이지 AI 에 낸 돈이 아니다.",
+  "IT서비스 회사가 밝힌 AI 매출·수주는 회사마다 무엇을 AI 로 세는지가 다르다. 회사 전체 매출 증가율과 함께 본다."
  ],
  "summary": {
-  "records": 41,
-  "with_value": 38,
-  "with_series": 32,
+  "records": 47,
+  "with_value": 44,
+  "with_series": 38,
   "by_hypothesis": {
    "H1": {
-    "지지": 29,
+    "지지": 35,
     "반박": 0,
     "양쪽": 11,
     "중립": 1
@@ -38,19 +39,19 @@
     "중립": 0
    },
    "spread": {
-    "지지": 17,
+    "지지": 23,
     "반박": 0,
     "양쪽": 9,
     "중립": 1
    },
    "penetration": {
-    "지지": 6,
+    "지지": 8,
     "반박": 0,
     "양쪽": 5,
     "중립": 0
    },
    "slope": {
-    "지지": 29,
+    "지지": 35,
     "반박": 0,
     "양쪽": 2,
     "중립": 1
@@ -2961,14 +2962,14 @@
    "value": null,
    "unit": "배(최근 1년 안팎의 연율 배수)",
    "asof": "2026-10",
-   "basis": "계산: 코딩 밖 제품 지표 18개의 최근 1년 안팎 연율 배수를 Anthropic 9개월 매출의 전년 대비 배수(13.06배)와 견준다. 기준선은 증가율의 절반(7.03배)이고 넘는 것은 0개다",
+   "basis": "계산: 코딩 밖 제품 지표 22개의 최근 1년 안팎 연율 배수를 Anthropic 9개월 매출의 전년 대비 배수(13.06배)와 견준다. 기준선은 증가율의 절반(7.03배)이고 넘는 것은 0개다",
    "definition": "지표마다 가장 최근 점과, 그보다 0.4~1.35년 앞선 점 가운데 1년에 가장 가까운 점을 골라 연율 배수를 낸다. 그런 점이 없는 지표는 견주지 않고 excluded 에 적는다. 지표의 단위(연환산 매출, 좌석, 계약액, 비중)가 서로 다르고 회사 정의 값이라 배수의 크기만 견준다. Five9 와 Agentforce 는 회사가 말한 전년 대비 증가율을 쓴다(stated). 랩은 매출을 공시한 Anthropic 하나다.",
    "detail": {
     "above_threshold_count": 0,
-    "compared": 18,
+    "compared": 22,
     "lab_nine_month_multiple": 13.06,
     "threshold_multiple": 7.03,
-    "median_annualized_multiple": 2.86,
+    "median_annualized_multiple": 2.54,
     "above_threshold": [],
     "indicators_with_any_fall": [],
     "five_or_more_points_all_rising": [
@@ -2976,7 +2977,11 @@
      "arr-sierra",
      "salesforce-agentforce-arr",
      "palantir-us-commercial-revenue",
-     "tri-genai-acv-share"
+     "tri-genai-acv-share",
+     "accenture-genai-bookings",
+     "capgemini-genai-bookings-share",
+     "genpact-ats-revenue",
+     "hcltech-advanced-ai-revenue"
     ],
     "product_indicators": {
      "arr-harvey": {
@@ -3178,6 +3183,50 @@
       "points": 2,
       "rises": 1,
       "falls": 0
+     },
+     "accenture-genai-bookings": {
+      "from": "2024-11-30",
+      "to": "2025-11-30",
+      "years": 1,
+      "multiple": 1.83,
+      "annualized": 1.83,
+      "window_ok": true,
+      "points": 8,
+      "rises": 7,
+      "falls": 0
+     },
+     "capgemini-genai-bookings-share": {
+      "from": "2025-03-31",
+      "to": "2026-03-31",
+      "years": 1,
+      "multiple": 1.83,
+      "annualized": 1.83,
+      "window_ok": true,
+      "points": 6,
+      "rises": 5,
+      "falls": 0
+     },
+     "genpact-ats-revenue": {
+      "from": "2025-09-30",
+      "to": "2026-09-30",
+      "years": 1,
+      "multiple": 1.3,
+      "annualized": 1.3,
+      "window_ok": true,
+      "points": 6,
+      "rises": 5,
+      "falls": 0
+     },
+     "hcltech-advanced-ai-revenue": {
+      "from": "2025-09-30",
+      "to": "2026-09-30",
+      "years": 1,
+      "multiple": 2.19,
+      "annualized": 2.19,
+      "window_ok": true,
+      "points": 5,
+      "rises": 4,
+      "falls": 0
      }
     },
     "excluded": {
@@ -3190,6 +3239,18 @@
      "arr-abridge": {
       "years": 0.25,
       "multiple": 1.95,
+      "points": 2,
+      "why": "1년 안팎으로 견줄 두 점이 없다"
+     },
+     "tcs-annualized-ai-revenue": {
+      "years": 0.25,
+      "multiple": 1.19,
+      "points": 2,
+      "why": "1년 안팎으로 견줄 두 점이 없다"
+     },
+     "infosys-ai-revenue-share": {
+      "years": 0.25,
+      "multiple": 1.28,
       "points": 2,
       "why": "1년 안팎으로 견줄 두 점이 없다"
      }
@@ -3252,7 +3313,7 @@
    "sides": {
     "H1": "양쪽"
    },
-   "side_basis": "코딩 밖 제품 지표 20개는 관측된 구간에서 한 번도 내리지 않았고, 견줄 수 있는 18개의 연율 배수는 중앙값이 2.86배다. 번지고 있다는 쪽이다. 그러나 랩 매출 증가율의 절반(7.03배)을 넘는 것은 0개이고 코딩 도구는 그보다 빠르다. 지출의 무게가 코딩 밖으로 옮겨 가고 있지는 않다는 쪽이다.",
+   "side_basis": "코딩 밖 제품 지표 26개는 관측된 구간에서 한 번도 내리지 않았고, 견줄 수 있는 22개의 연율 배수는 중앙값이 2.54배다. 번지고 있다는 쪽이다. 그러나 랩 매출 증가율의 절반(7.03배)을 넘는 것은 0개이고 코딩 도구는 그보다 빠르다. 지출의 무게가 코딩 밖으로 옮겨 가고 있지는 않다는 쪽이다.",
    "refs": [
     {
      "bundle": "K3",
@@ -3340,6 +3401,30 @@
     },
     {
      "bundle": "K3",
+     "id": "accenture-genai-bookings"
+    },
+    {
+     "bundle": "K3",
+     "id": "capgemini-genai-bookings-share"
+    },
+    {
+     "bundle": "K3",
+     "id": "genpact-ats-revenue"
+    },
+    {
+     "bundle": "K3",
+     "id": "hcltech-advanced-ai-revenue"
+    },
+    {
+     "bundle": "K3",
+     "id": "tcs-annualized-ai-revenue"
+    },
+    {
+     "bundle": "K3",
+     "id": "infosys-ai-revenue-share"
+    },
+    {
+     "bundle": "K3",
      "id": "arr-cursor"
     },
     {
@@ -3399,7 +3484,603 @@
    "value_src": [],
    "alt": [],
    "conf": "low",
-   "note": "설문으로 잰 직업군별 업무시간 보조 비중은 코딩 밖 10개 가운데 5개가 1년 전보다 높지만 4개 분기를 내리 오른 것은 0개이고 9개가 최근 분기(2026Q3)에 내렸다. 판정 기준은 REQUEST.md 에, 판정은 index.json 과 STATUS.md 에 있다. 방향과 판정은 AI 의 해석이다."
+   "note": "설문으로 잰 직업군별 업무시간 보조 비중은 코딩 밖 10개 가운데 5개가 1년 전보다 높지만 4개 분기를 내리 오른 것은 0개이고 9개가 최근 분기(2026Q3)에 내렸다. 판정 기준은 REQUEST.md 에, 판정은 index.json 과 STATUS.md 에 있다. 방향과 판정은 AI 의 해석이다.",
+   "revised_kst": "2026-11-19T13:58:24+09:00"
+  },
+  {
+   "id": "accenture-genai-bookings",
+   "country": "IE",
+   "city": null,
+   "metric": "Accenture 생성형 AI 신규 수주",
+   "value": 2.2,
+   "unit": "십억 달러(분기 신규 수주)",
+   "asof": "2025-11-30",
+   "basis": "Accenture 의 분기 AI 신규 수주('고급 AI 신규 수주 22억 달러', 2026 회계연도 1분기)",
+   "definition": "회사 정의 지표이고 수주액이지 매출이 아니다. 2026 회계연도 1분기에 생성형 AI 에서 고급 AI 로 이름과 범위가 바뀌었다.",
+   "series": [
+    {
+     "period": "2024-02-29",
+     "value": 0.6,
+     "src": 1,
+     "label": "Q2 FY24",
+     "note": "초과"
+    },
+    {
+     "period": "2024-05-31",
+     "value": 0.9,
+     "src": 2,
+     "label": "Q3 FY24",
+     "note": "초과"
+    },
+    {
+     "period": "2024-08-31",
+     "value": 1,
+     "src": 3,
+     "label": "Q4 FY24"
+    },
+    {
+     "period": "2024-11-30",
+     "value": 1.2,
+     "src": 4,
+     "label": "Q1 FY25"
+    },
+    {
+     "period": "2025-02-28",
+     "value": 1.4,
+     "src": 5,
+     "label": "Q2 FY25"
+    },
+    {
+     "period": "2025-05-31",
+     "value": 1.5,
+     "src": 6,
+     "label": "Q3 FY25"
+    },
+    {
+     "period": "2025-08-31",
+     "value": 1.8,
+     "src": 7,
+     "label": "Q4 FY25"
+    },
+    {
+     "period": "2025-11-30",
+     "value": 2.2,
+     "src": 8,
+     "label": "Q1 FY26",
+     "note": "이름이 '고급 AI 신규 수주'로 바뀌었다"
+    }
+   ],
+   "detail": {
+    "annual_bookings_bn": {
+     "FY24": 3,
+     "FY25": 5.9
+    },
+    "genai_revenue_ytd_mn": {
+     "2024-05-31": 500
+    }
+   },
+   "links": [
+    "spread",
+    "slope"
+   ],
+   "sides": {
+    "H1": "지지"
+   },
+   "side_basis": "기업이 AI 를 업무에 넣는 일을 맡기는 수주가 7개 분기에 6억 달러 초과에서 22억 달러로 늘었다. 코딩 도구가 아니라 업무 전환 용역에 붙는 돈이다. 다만 회사는 그 뒤 세 분기 보도자료에 이 항목을 싣지 않았다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Accenture — Q2 FY24 실적 보도자료",
+     "url": "https://newsroom.accenture.com/content/accenture-reports-second-quarter-fiscal-2024-results.pdf",
+     "date": "2024-03-21",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "Accenture — Q3 FY24 실적 보도자료",
+     "url": "https://newsroom.accenture.com/content/3QFY24-Earnings/accenture-reports-third-quarter-fiscal-2024-results.pdf",
+     "date": "2024-06-20",
+     "read": "partial"
+    },
+    {
+     "n": 3,
+     "title": "Accenture — Q4 FY24 실적 보도자료",
+     "url": "https://newsroom.accenture.com/content/4q-full-fy24-earnings/accenture-reports-fourth-quarter-and-full-year-fiscal-2024-results.pdf",
+     "date": "2024-09-26",
+     "read": "partial"
+    },
+    {
+     "n": 4,
+     "title": "Accenture — Q1 FY25 실적 보도자료",
+     "url": "https://newsroom.accenture.com/content/1qfy25-earnings/accenture-reports-first-quarter-fiscal-2025-results.pdf",
+     "date": "2024-12-19",
+     "read": "partial"
+    },
+    {
+     "n": 5,
+     "title": "Accenture — Q2 FY25 실적 보도자료",
+     "url": "https://newsroom.accenture.com/content/2qfy25-earnings/accenture-reports-second-quarter-fiscal-2025-results.pdf",
+     "date": "2025-03-20",
+     "read": "partial"
+    },
+    {
+     "n": 6,
+     "title": "Accenture — Q3 FY25 실적 보도자료",
+     "url": "https://newsroom.accenture.com/content/3qfy25-earnings/accenture-reports-third-quarter-fiscal-2025-results.pdf",
+     "date": "2025-06-20",
+     "read": "partial"
+    },
+    {
+     "n": 7,
+     "title": "Accenture — Q4 FY25 실적 보도자료",
+     "url": "https://newsroom.accenture.com/content/4q-full-fy25-earnings/accenture-reports-fourth-quarter-and-full-year-fiscal-2025-results.pdf",
+     "date": "2025-09-25",
+     "read": "partial"
+    },
+    {
+     "n": 8,
+     "title": "Accenture — Q1 FY26 실적 보도자료",
+     "url": "https://newsroom.accenture.com/content/1qfy26-earnings/accenture-reports-first-quarter-fiscal-2026-results.pdf",
+     "date": "2025-12-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    8
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "2026 회계연도 2~4분기 보도자료에는 AI 수주 항목이 없다(본문 검색으로 확인했고, 공개를 그만둔다는 문장은 찾지 못했다). 2024 회계연도에는 생성형 AI 매출도 밝혔다(3분기까지 누계 5억 달러). 연간 수주는 2024 회계연도 30억 달러, 2025 회계연도 59억 달러다."
+  },
+  {
+   "id": "capgemini-genai-bookings-share",
+   "country": "FR",
+   "city": null,
+   "metric": "Capgemini 수주 중 생성형·에이전트 AI 비중",
+   "value": 11,
+   "unit": "%",
+   "asof": "2026-03-31",
+   "basis": "Capgemini 그룹 수주에서 생성형·에이전트 AI 가 차지하는 비중('11% 초과', 2026년 1분기)",
+   "definition": "회사 정의 지표다. 수주에서 차지하는 몫이고 매출이 아니다. 보도자료의 '초과', '약'을 숫자로 읽었다.",
+   "series": [
+    {
+     "period": "2024-09-30",
+     "value": 3.5,
+     "src": 1,
+     "label": "9M 2024",
+     "note": "9개월 누계, 약 6억 유로"
+    },
+    {
+     "period": "2024-12-31",
+     "value": 5,
+     "src": 2,
+     "label": "Q4 2024",
+     "note": "4분기, 연간은 4% 근접"
+    },
+    {
+     "period": "2025-03-31",
+     "value": 6,
+     "src": 3,
+     "label": "Q1 2025",
+     "note": "초과"
+    },
+    {
+     "period": "2025-06-30",
+     "value": 7,
+     "src": 4,
+     "label": "Q2 2025",
+     "note": "초과"
+    },
+    {
+     "period": "2025-12-31",
+     "value": 10,
+     "src": 5,
+     "label": "Q4 2025",
+     "note": "4분기, 초과. 연간은 8% 초과"
+    },
+    {
+     "period": "2026-03-31",
+     "value": 11,
+     "src": 6,
+     "label": "Q1 2026",
+     "note": "초과"
+    }
+   ],
+   "links": [
+    "spread",
+    "slope",
+    "penetration"
+   ],
+   "sides": {
+    "H1": "지지"
+   },
+   "side_basis": "IT서비스 회사의 수주에서 AI 가 차지하는 몫이 6개 분기에 약 3.5% 에서 11% 초과로 올랐다. 기업의 AI 도입이 용역 계약으로 잡힌다. 다만 회사는 그 뒤 두 번의 보도자료에 이 비중을 싣지 않았다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Capgemini — 9M 2024 실적 보도자료",
+     "url": "https://www.capgemini.com/news/press-releases/capgemini-q3-2024-revenues/",
+     "date": "2024-10-30",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "Capgemini — FY 2024 / Q4 2024 실적 보도자료",
+     "url": "https://www.capgemini.com/news/press-releases/full-year-2024-results/",
+     "date": "2025-02-18",
+     "read": "partial"
+    },
+    {
+     "n": 3,
+     "title": "Capgemini — Q1 2025 실적 보도자료",
+     "url": "https://www.capgemini.com/news/press-releases/q1-2025-revenues/",
+     "date": "2025-04-29",
+     "read": "partial"
+    },
+    {
+     "n": 4,
+     "title": "Capgemini — Q2 2025 실적 보도자료",
+     "url": "https://www.capgemini.com/news/press-releases/h1-2025-results/",
+     "date": "2025-07-30",
+     "read": "partial"
+    },
+    {
+     "n": 5,
+     "title": "Capgemini — FY 2025 / Q4 2025 실적 보도자료",
+     "url": "https://www.capgemini.com/news/press-releases/full-year-2025-results/",
+     "date": "2026-02-13",
+     "read": "partial"
+    },
+    {
+     "n": 6,
+     "title": "Capgemini — Q1 2026 실적 보도자료",
+     "url": "https://www.capgemini.com/news/press-releases/q1-2026-revenues/",
+     "date": "2026-04-30",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    6
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "2026년 상반기와 3분기 보도자료에는 이 비중이 없다(본문 검색으로 확인). 같은 기간 그룹 인원은 2025-12 말보다 5,900명 줄었다."
+  },
+  {
+   "id": "genpact-ats-revenue",
+   "country": "US",
+   "city": null,
+   "metric": "Genpact 데이터·AI 부문 매출",
+   "value": 405,
+   "unit": "백만 달러(분기 매출)",
+   "asof": "2026-09-30",
+   "basis": "Genpact 의 Advanced Technology Solutions 순매출, 2026년 3분기",
+   "definition": "회사가 2025년부터 나눠 밝히는 부문이다. 데이터·분석·디지털 기술 용역이 함께 들어 있어 생성형 AI 만의 매출이 아니다.",
+   "series": [
+    {
+     "period": "2025-06-30",
+     "value": 293,
+     "src": 1,
+     "label": "Q2 2025",
+     "note": "전년 대비 +17.3%"
+    },
+    {
+     "period": "2025-09-30",
+     "value": 311,
+     "src": 2,
+     "label": "Q3 2025",
+     "note": "전년 대비 +20.0%"
+    },
+    {
+     "period": "2025-12-31",
+     "value": 323,
+     "src": 3,
+     "label": "Q4 2025",
+     "note": "전년 대비 +15.0%"
+    },
+    {
+     "period": "2026-03-31",
+     "value": 345,
+     "src": 4,
+     "label": "Q1 2026",
+     "note": "전년 대비 +24.3%"
+    },
+    {
+     "period": "2026-06-30",
+     "value": 363,
+     "src": 5,
+     "label": "Q2 2026",
+     "note": "전년 대비 +24.1%"
+    },
+    {
+     "period": "2026-09-30",
+     "value": 405,
+     "src": 6,
+     "label": "Q3 2026",
+     "note": "전년 대비 +30.3%"
+    }
+   ],
+   "detail": {
+    "share_of_revenue_pct": {
+     "2025-06-30": 23,
+     "2026-09-30": 29
+    },
+    "fy2025_mn": 1204
+   },
+   "links": [
+    "spread",
+    "slope"
+   ],
+   "sides": {
+    "H1": "지지"
+   },
+   "side_basis": "업무처리 아웃소싱 회사 안에서 데이터·AI 부문이 전년 대비 15~17% 에서 30% 로 빨라졌고 매출의 23% 에서 29% 가 됐다. 재무·회계·구매 같은 지원 업무의 AI 전환에 돈이 붙는다는 근거다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Genpact — Q2 2025 실적 보도자료",
+     "url": "https://media.genpact.com/2025-08-07-Genpact-Reports-Second-Quarter-2025-Results",
+     "date": "2025-08-07",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "Genpact — Q3 2025 실적 보도자료",
+     "url": "https://media.genpact.com/2025-11-06-Genpact-Reports-Third-Quarter-2025-Results",
+     "date": "2025-11-06",
+     "read": "partial"
+    },
+    {
+     "n": 3,
+     "title": "Genpact — Q4 2025 실적 보도자료",
+     "url": "https://media.genpact.com/2026-02-05-Genpact-Reports-Fourth-Quarter-and-Full-Year-2025-Results",
+     "date": "2026-02-05",
+     "read": "partial"
+    },
+    {
+     "n": 4,
+     "title": "Genpact — Q1 2026 실적 보도자료",
+     "url": "https://media.genpact.com/2026-05-07-Genpact-Reports-First-Quarter-2026-Results",
+     "date": "2026-05-07",
+     "read": "partial"
+    },
+    {
+     "n": 5,
+     "title": "Genpact — Q2 2026 실적 보도자료",
+     "url": "https://media.genpact.com/2026-08-06-Genpact-Reports-Second-Quarter-2026-Results",
+     "date": "2026-08-06",
+     "read": "partial"
+    },
+    {
+     "n": 6,
+     "title": "Genpact — Q3 2026 실적 보도자료",
+     "url": "https://media.genpact.com/2026-11-05-Genpact-Reports-Third-Quarter-2026-Results",
+     "date": "2026-11-05",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    6
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "회사는 2026년 이 부문의 성장 전망을 '25% 이상'으로 올렸다. 2025년 연간은 12.04억 달러(+17.0%)다."
+  },
+  {
+   "id": "hcltech-advanced-ai-revenue",
+   "country": "IN",
+   "city": null,
+   "metric": "HCLTech 고급 AI 매출",
+   "value": 219,
+   "unit": "백만 달러(분기 매출)",
+   "asof": "2026-09-30",
+   "basis": "HCLTech 의 분기 '고급 AI' 매출, 2026-09 분기",
+   "definition": "회사 정의 지표다. 무엇을 고급 AI 로 세는지는 회사 발표 자료의 각주에 있고 옮겨 적지 않았다.",
+   "series": [
+    {
+     "period": "2025-09-30",
+     "value": 100,
+     "src": 1,
+     "label": "Q2 FY26",
+     "note": "초과"
+    },
+    {
+     "period": "2025-12-31",
+     "value": 146,
+     "src": 2,
+     "label": "Q3 FY26"
+    },
+    {
+     "period": "2026-03-31",
+     "value": 155,
+     "src": 3,
+     "label": "Q4 FY26"
+    },
+    {
+     "period": "2026-06-30",
+     "value": 171,
+     "src": 4,
+     "label": "Q1 FY27",
+     "note": "고정환율 전년 대비 +62.1%"
+    },
+    {
+     "period": "2026-09-30",
+     "value": 219,
+     "src": 5,
+     "label": "Q2 FY27",
+     "note": "연환산 8.76억 달러"
+    }
+   ],
+   "detail": {
+    "annualized_mn": {
+     "2026-03-31": 620,
+     "2026-09-30": 876
+    }
+   },
+   "links": [
+    "spread",
+    "slope"
+   ],
+   "sides": {
+    "H1": "지지"
+   },
+   "side_basis": "IT서비스 회사의 AI 매출이 1년에 분기 1억 달러 초과에서 2.19억 달러가 됐다. 회사 전체 매출(분기 약 37억 달러, 고정환율 +2.6%)의 6% 쯤이다. AI 매출은 빠르게 크는데 회사 전체는 거의 그대로다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "HCLTech — Q2 FY26 실적 보도자료",
+     "url": "https://www.hcltech.com/sites/default/files/document/open/quarter-results/2025-10/HCLTech_Q2_FY26_Investor_Release.pdf",
+     "date": null,
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "HCLTech — Q3 FY26 실적 보도자료",
+     "url": "https://www.hcltech.com/sites/default/files/documents/investor-reports/HCLTech_Q3_FY26_Investor_Release.pdf",
+     "date": null,
+     "read": "partial"
+    },
+    {
+     "n": 3,
+     "title": "HCLTech — Q4 FY26 실적 보도자료",
+     "url": "https://www.hcltech.com/sites/default/files/documents/investor-reports/hcltech-q4-fy26-investor-release.pdf",
+     "date": null,
+     "read": "partial"
+    },
+    {
+     "n": 4,
+     "title": "HCLTech — Q1 FY27 실적 보도자료",
+     "url": "https://www.hcltech.com/sites/default/files/documents/investor-reports/HCLTech_Q1_FY27_Investor_Release.pdf",
+     "date": "2026-07-13",
+     "read": "partial"
+    },
+    {
+     "n": 5,
+     "title": "HCLTech — Q2 FY27 실적 보도자료",
+     "url": "https://www.hcltech.com/press-releases/hcltech-delivers-strong-q2-led-record-deal-bookings-33-billion",
+     "date": "2026-10-12",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    5
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "첫 점이 '1억 달러 초과'라 1년 배수 2.19배는 상한이다."
+  },
+  {
+   "id": "tcs-annualized-ai-revenue",
+   "country": "IN",
+   "city": null,
+   "metric": "TCS 연환산 AI 매출",
+   "value": 3.1,
+   "unit": "십억 달러(연환산)",
+   "asof": "2026-09-30",
+   "basis": "TCS 의 연환산 AI 매출, 2026-09 분기",
+   "definition": "회사 정의 지표다. 무엇을 AI 매출로 세는지는 읽은 보도에 없다.",
+   "series": [
+    {
+     "period": "2026-06-30",
+     "value": 2.6,
+     "src": 1,
+     "label": "Q1 FY27"
+    },
+    {
+     "period": "2026-09-30",
+     "value": 3.1,
+     "src": 2,
+     "label": "Q2 FY27",
+     "note": "매출의 10% 를 넘었다고 밝혔다"
+    }
+   ],
+   "links": [
+    "spread",
+    "slope"
+   ],
+   "sides": {
+    "H1": "지지"
+   },
+   "side_basis": "인도에서 가장 큰 IT서비스 회사의 AI 매출이 한 분기에 26억 달러에서 31억 달러가 됐고 매출의 10% 를 넘었다. 다만 회사 전체 매출은 고정환율로 2.8% 늘었을 뿐이다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "TCS — Q1 FY27 보도",
+     "url": "https://lapaasvoice.com/tcs-q2-fy27-annualized-ai-revenue-crosses-3-1-billion-as-india-business-falls-10-3-qoq/",
+     "date": null,
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "TCS — Q2 FY27 보도",
+     "url": "https://www.staffingindustry.com/news/global-daily-news/tcs-q2-revenue-climbs-28-as-ai-business-tops-3-billion",
+     "date": null,
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    2
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "두 점 모두 보도에서 읽었다(회사 사이트는 403). 그 앞 분기의 값은 모으지 못했다."
+  },
+  {
+   "id": "infosys-ai-revenue-share",
+   "country": "IN",
+   "city": null,
+   "metric": "Infosys 매출 중 AI 매출 비중",
+   "value": 10.5,
+   "unit": "%",
+   "asof": "2026-09-30",
+   "basis": "Infosys 매출에서 AI 매출이 차지하는 비중, 2026-09 분기",
+   "definition": "회사 정의 지표이고 2026-06 분기부터 밝힌다. 금액은 밝히지 않는다.",
+   "series": [
+    {
+     "period": "2026-06-30",
+     "value": 8.2,
+     "src": 1,
+     "label": "Q1 FY27"
+    },
+    {
+     "period": "2026-09-30",
+     "value": 10.5,
+     "src": 2,
+     "label": "Q2 FY27",
+     "note": "전 분기 대비 +29%"
+    }
+   ],
+   "links": [
+    "spread",
+    "slope",
+    "penetration"
+   ],
+   "sides": {
+    "H1": "지지"
+   },
+   "side_basis": "AI 매출이 한 분기에 매출의 8.2% 에서 10.5% 가 됐다(전 분기 대비 +29%). 회사 전체 매출은 고정환율로 1.5% 늘었다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Infosys — Q1 FY27 공시 서류",
+     "url": "https://www.sec.gov/Archives/edgar/data/1067491/000106749126000034/exv99w02.htm",
+     "date": "2026-07-23",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "Infosys — Q2 FY27 공시 서류",
+     "url": "https://www.sec.gov/Archives/edgar/data/1067491/000106749126000042/exv99w02.htm",
+     "date": "2026-10-23",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    2
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "분기 매출 51.45억 달러에 곱하면 분기 약 5.4억 달러다(데스크 계산)."
   }
  ]
 }

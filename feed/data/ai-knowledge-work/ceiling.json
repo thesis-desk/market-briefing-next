@@ -2,37 +2,38 @@
  "schema": 1,
  "bundle": "K6",
  "title": "천장과 요구 수준 — 임금 풀, 투자, 필요 매출",
- "updated_kst": "2026-11-19T11:25:43+09:00",
+ "updated_kst": "2026-11-19T13:54:06+09:00",
  "measure": null,
  "notes": [
   "임금 풀은 넘어갈 수 있는 일의 상한이고 벤더 매출의 상한이 아니다.",
   "계산 기록은 basis 가 '계산'으로 시작하고 입력 기록을 refs 로 가리킨다. 출처가 없으므로 원문 확인 비중에서는 확인되지 않은 기록으로 센다.",
-  "임금 풀 추정은 낸 곳마다 직종 범위가 달라 2배 넘게 차이 난다. 직종별 임금 통계로 직접 다시 계산한 값은 아직 없다."
+  "임금 풀 추정은 낸 곳마다 직종 범위가 달라 2배 넘게 차이 난다. 직접 계산한 값(wage-pool-us-direct, wage-pool-global-direct)과 그 입력은 `desk datasets wagepool` 이 공개 통계에서 다시 만든다(auto).",
+  "직접 계산에서 어느 직종을 지식노동으로 볼지와 임금 격차를 넣을지는 데스크의 가정이다. 요청자가 정하면 그 값으로 바꾼다. 임금 풀 대비 회수율은 넣지 않는다."
  ],
  "summary": {
-  "records": 5,
-  "with_value": 3,
+  "records": 11,
+  "with_value": 7,
   "with_series": 0,
   "by_hypothesis": {
    "H1": {
-    "지지": 3,
+    "지지": 5,
     "반박": 0,
     "양쪽": 0,
-    "중립": 0
+    "중립": 4
    },
    "H2": {
     "지지": 0,
     "반박": 2,
-    "양쪽": 2,
+    "양쪽": 3,
     "중립": 1
    }
   },
   "by_link": {
    "ceiling": {
-    "지지": 2,
+    "지지": 4,
     "반박": 1,
     "양쪽": 1,
-    "중립": 0
+    "중립": 4
    },
    "penetration": {
     "지지": 1,
@@ -251,6 +252,481 @@
    "alt": [],
    "conf": "low",
    "note": "2.0 ÷ 40 = 5.0%, 2.0 ÷ 18.6 = 10.8%. 배수는 2,000 ÷ 151 = 13.2, 2,000 ÷ 131 = 15.3. Bain 의 값은 AI 회사 전체의 매출이라 두 랩만 놓고 본 배수는 실제보다 크게 나온다. 임금 풀은 2025년 값이고 2030년까지의 임금 증가는 넣지 않았다."
+  },
+  {
+   "id": "us-wage-bill-oews",
+   "metric": "미국 임금 합 — 전 직종",
+   "value": 10.85,
+   "unit": "조 달러",
+   "asof": "2025",
+   "basis": "미국 전 직종의 고용 × 연평균 임금, 2025년 5월(BLS OEWS)",
+   "definition": "임금·급여를 받는 종사자만 세고 자영업자, 농업 일부, 가사 근로는 빠진다. 임금만이고 복리후생은 들어 있지 않다.",
+   "detail": {
+    "employment": 155495730,
+    "mean_wage_usd": 69770,
+    "by_group": {
+     "11": {
+      "name": "관리",
+      "employment": 11132700,
+      "mean_wage_usd": 145260,
+      "wage_bill_bn": 1617.1
+     },
+     "13": {
+      "name": "경영·재무",
+      "employment": 10537240,
+      "mean_wage_usd": 95230,
+      "wage_bill_bn": 1003.5
+     },
+     "15": {
+      "name": "컴퓨터·수학",
+      "employment": 5260110,
+      "mean_wage_usd": 120080,
+      "wage_bill_bn": 631.6
+     },
+     "17": {
+      "name": "건축·공학",
+      "employment": 2617130,
+      "mean_wage_usd": 106830,
+      "wage_bill_bn": 279.6
+     },
+     "19": {
+      "name": "생명·물리·사회과학",
+      "employment": 1473260,
+      "mean_wage_usd": 94600,
+      "wage_bill_bn": 139.4
+     },
+     "21": {
+      "name": "지역사회·사회복지",
+      "employment": 2668680,
+      "mean_wage_usd": 63410,
+      "wage_bill_bn": 169.2
+     },
+     "23": {
+      "name": "법률",
+      "employment": 1305620,
+      "mean_wage_usd": 139510,
+      "wage_bill_bn": 182.1
+     },
+     "25": {
+      "name": "교육·도서관",
+      "employment": 9100570,
+      "mean_wage_usd": 67540,
+      "wage_bill_bn": 614.7
+     },
+     "27": {
+      "name": "예술·디자인·미디어",
+      "employment": 2046290,
+      "mean_wage_usd": 79790,
+      "wage_bill_bn": 163.3
+     },
+     "29": {
+      "name": "보건 전문직",
+      "employment": 9823860,
+      "mean_wage_usd": 108700,
+      "wage_bill_bn": 1067.9
+     },
+     "31": {
+      "name": "보건 지원",
+      "employment": 7901670,
+      "mean_wage_usd": 40800,
+      "wage_bill_bn": 322.4
+     },
+     "33": {
+      "name": "보호 서비스",
+      "employment": 3776610,
+      "mean_wage_usd": 60720,
+      "wage_bill_bn": 229.3
+     },
+     "35": {
+      "name": "음식 조리·서빙",
+      "employment": 13680750,
+      "mean_wage_usd": 37150,
+      "wage_bill_bn": 508.2
+     },
+     "37": {
+      "name": "건물·부지 관리",
+      "employment": 4548260,
+      "mean_wage_usd": 40880,
+      "wage_bill_bn": 185.9
+     },
+     "39": {
+      "name": "개인 돌봄·서비스",
+      "employment": 3255790,
+      "mean_wage_usd": 41070,
+      "wage_bill_bn": 133.7
+     },
+     "41": {
+      "name": "영업",
+      "employment": 13424300,
+      "mean_wage_usd": 54960,
+      "wage_bill_bn": 737.8
+     },
+     "43": {
+      "name": "사무·행정 지원",
+      "employment": 17753430,
+      "mean_wage_usd": 51560,
+      "wage_bill_bn": 915.4
+     },
+     "45": {
+      "name": "농림어업",
+      "employment": 435200,
+      "mean_wage_usd": 41510,
+      "wage_bill_bn": 18.1
+     },
+     "47": {
+      "name": "건설·채굴",
+      "employment": 6425160,
+      "mean_wage_usd": 65360,
+      "wage_bill_bn": 419.9
+     },
+     "49": {
+      "name": "설치·정비·수리",
+      "employment": 6086190,
+      "mean_wage_usd": 63320,
+      "wage_bill_bn": 385.4
+     },
+     "51": {
+      "name": "생산",
+      "employment": 8565760,
+      "mean_wage_usd": 51600,
+      "wage_bill_bn": 442
+     },
+     "53": {
+      "name": "운송·물류",
+      "employment": 13677150,
+      "mean_wage_usd": 49850,
+      "wage_bill_bn": 681.8
+     }
+    }
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "미국 노동통계국(BLS) — Occupational Employment and Wage Statistics, 2025년 5월",
+     "url": "https://www.bls.gov/oes/current/oes_nat.htm",
+     "date": "2026-11-19",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "conf": "high",
+   "note": "직종 대분류별 고용·연평균 임금·임금 합은 detail.by_group 에 있다.",
+   "links": [
+    "ceiling"
+   ],
+   "sides": {
+    "H1": "중립"
+   },
+   "side_basis": "임금 풀 계산의 입력이다.",
+   "country": "US",
+   "city": null,
+   "alt": [],
+   "auto": true
+  },
+  {
+   "id": "world-gdp-imf",
+   "metric": "세계 명목 GDP",
+   "value": 118.485,
+   "unit": "조 달러",
+   "asof": "2025",
+   "basis": "세계 명목 GDP, 2025년(IMF 세계경제전망)",
+   "definition": "선진국은 IMF 의 분류다. ILO 의 고소득국 분류와 같지 않다.",
+   "detail": {
+    "advanced_economies_tn": 69.605,
+    "us_tn": 30.861
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "IMF — World Economic Outlook, 명목 GDP(DataMapper)",
+     "url": "https://www.imf.org/external/datamapper/NGDPD@WEO/WEOWORLD/ADVEC",
+     "date": "2026-11-19",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "conf": "high",
+   "note": "그해가 끝나기 전에 받은 값은 전망치다.",
+   "links": [
+    "ceiling"
+   ],
+   "sides": {
+    "H1": "중립"
+   },
+   "side_basis": "임금 풀 계산의 입력이다.",
+   "country": "ZZ",
+   "city": null,
+   "alt": [],
+   "auto": true
+  },
+  {
+   "id": "labor-income-share-ilo",
+   "metric": "노동소득 분배율 — 세계",
+   "value": 52.7,
+   "unit": "%(GDP 대비)",
+   "asof": "2025",
+   "basis": "GDP 에서 노동소득이 차지하는 비중, 세계, 2025년(ILO 모형 추정)",
+   "definition": "근로자 보수에 자영업자 소득 가운데 노동의 몫을 더한 것이다. 임금만 센 값보다 넓다.",
+   "detail": {
+    "high_income_pct": 54.6,
+    "us_pct": 55.807,
+    "labor_income_tn": {
+     "world": 62.44,
+     "advanced": 38,
+     "rest": 24.44
+    }
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "ILO — ILOSTAT 모형 추정, 지표 LAP_2GDP_NOC_RT_A",
+     "url": "https://ilostat.ilo.org/data/",
+     "date": "2026-11-19",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "conf": "med",
+   "note": "모형으로 낸 추정이고 최근 해는 전망이다.",
+   "links": [
+    "ceiling"
+   ],
+   "sides": {
+    "H1": "중립"
+   },
+   "side_basis": "임금 풀 계산의 입력이다.",
+   "country": "ZZ",
+   "city": null,
+   "alt": [],
+   "auto": true
+  },
+  {
+   "id": "office-occupation-employment-share-ilo",
+   "metric": "관리자·전문가·기술공·사무직의 고용 비중 — 세계",
+   "value": 24.9,
+   "unit": "%(전체 고용 대비)",
+   "asof": "2025",
+   "basis": "국제표준직업분류 대분류 1~4 의 고용 비중, 세계, 2025년(ILO 모형 추정)",
+   "definition": "대분류 1~4 에는 교사·간호사·의사·기술공처럼 몸으로 하거나 대면이 필요한 일이 들어 있다. 미국 직종 분류와 대응이 정확하지 않다.",
+   "detail": {
+    "high_income_pct": 54.5,
+    "rest_of_world_pct": 17.7,
+    "us_pct": 60.9
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "ILO — ILOSTAT 모형 추정, 지표 EMP_2EMP_SEX_OCU_NB_A",
+     "url": "https://ilostat.ilo.org/data/",
+     "date": "2026-11-19",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "conf": "med",
+   "note": "고소득국 밖의 비중은 세계에서 고소득국을 뺀 인원으로 다시 계산했다.",
+   "links": [
+    "ceiling"
+   ],
+   "sides": {
+    "H1": "중립"
+   },
+   "side_basis": "임금 풀 계산의 입력이다.",
+   "country": "ZZ",
+   "city": null,
+   "alt": [],
+   "auto": true
+  },
+  {
+   "id": "wage-pool-us-direct",
+   "metric": "미국 지식노동 임금 풀(데스크 계산)",
+   "value": null,
+   "unit": "조 달러",
+   "asof": "2025",
+   "basis": "계산: 미국 직종 대분류별 고용 × 연평균 임금의 합. 좁은 범위 4.93조 달러, 넓은 범위 7.52조 달러",
+   "definition": "어느 직종을 지식노동으로 볼지는 데스크의 가정이다. 좁은 범위는 관리·경영·재무·컴퓨터·공학·과학·법률·예술·미디어·사무 지원, 가운데 범위는 여기에 교육·보건 전문직·사회복지, 넓은 범위는 영업까지다. 대분류 단위라 그 안의 현장 직종을 걸러 내지 못한다.",
+   "detail": {
+    "sets": {
+     "narrow": {
+      "groups": [
+       "11",
+       "13",
+       "15",
+       "17",
+       "19",
+       "23",
+       "27",
+       "43"
+      ],
+      "label": "책상에서 하는 전문·사무직",
+      "wage_bill_tn": 4.93,
+      "share_of_wage_bill_pct": 45.5,
+      "share_of_employment_pct": 33.5
+     },
+     "isco_like": {
+      "groups": [
+       "11",
+       "13",
+       "15",
+       "17",
+       "19",
+       "23",
+       "27",
+       "43",
+       "21",
+       "25",
+       "29"
+      ],
+      "label": "교육·보건·사회복지 전문직 포함",
+      "wage_bill_tn": 6.78,
+      "share_of_wage_bill_pct": 62.5,
+      "share_of_employment_pct": 47.4
+     },
+     "wide": {
+      "groups": [
+       "11",
+       "13",
+       "15",
+       "17",
+       "19",
+       "23",
+       "27",
+       "43",
+       "21",
+       "25",
+       "29",
+       "41"
+      ],
+      "label": "영업 포함",
+      "wage_bill_tn": 7.52,
+      "share_of_wage_bill_pct": 69.3,
+      "share_of_employment_pct": 56
+     }
+    },
+    "total_wage_bill_tn": 10.85
+   },
+   "range": {
+    "low": 4.93,
+    "high": 7.52
+   },
+   "links": [
+    "ceiling"
+   ],
+   "sides": {
+    "H1": "지지"
+   },
+   "side_basis": "미국만으로 4.93조~7.52조 달러다. 좁은 범위로도 미국 임금 합의 45.5% 다. 임금 합은 넘어갈 수 있는 일의 상한이지 벤더 매출의 상한이 아니다.",
+   "refs": [
+    {
+     "bundle": "K6",
+     "id": "us-wage-bill-oews"
+    }
+   ],
+   "sources": [],
+   "value_src": [],
+   "conf": "low",
+   "note": "임금만 센 값이다. 복리후생을 넣은 보수 기준으로는 더 크다. 범위를 요청자가 정하면 그 값으로 바꾼다.",
+   "country": "US",
+   "city": null,
+   "alt": [],
+   "auto": true
+  },
+  {
+   "id": "wage-pool-global-direct",
+   "metric": "세계 지식노동 임금 풀(데스크 계산)",
+   "value": null,
+   "unit": "조 달러",
+   "asof": "2025",
+   "basis": "계산: 세계 노동소득 62.44조 달러(세계 GDP × 노동소득 분배율)에 지식노동의 몫을 곱한다. 세계의 실제 직업 구성을 쓰면 18.2조~33.0조 달러, 미국의 직종 구성을 세계에 그대로 적용하면 28.4조~43.3조 달러",
+   "definition": "두 방법을 함께 낸다. ① 미국 구성 적용: 세계 노동소득 × 미국 임금 합에서 그 직종이 차지하는 몫. 세계 전체가 미국과 같은 직종 구성이라고 가정하는 셈이다. ② 실제 구성: 선진국과 그 밖으로 나눠 구역별 노동소득 × 관리자·전문가·기술공·사무직의 고용 비중(ILO). 임금 격차를 넣지 않으면 하한이고, 미국에서 잰 격차(그 직종의 임금 몫 ÷ 고용 몫)를 넣은 값을 함께 낸다. 좁은 범위는 미국의 좁은 범위 ÷ 가운데 범위 비율을 곱한 것이다. 선진국 GDP 는 IMF 분류, 노동소득 분배율과 직업 구성은 ILO 의 고소득국 값이라 구역이 정확히 겹치지 않는다. 직종 범위와 격차는 데스크의 가정이다.",
+   "detail": {
+    "labor_income_tn": {
+     "world": 62.44,
+     "advanced": 38,
+     "rest": 24.44
+    },
+    "office_employment_share_pct": {
+     "world": 24.9,
+     "high_income": 54.5,
+     "us": 60.9,
+     "rest": 17.7
+    },
+    "us_wage_premium": 1.32,
+    "narrow_to_isco_like_ratio": 0.727,
+    "us_mix_tn": {
+     "narrow": 28.4,
+     "isco_like": 39,
+     "wide": 43.3
+    },
+    "actual_mix_tn": {
+     "isco_1_4_no_premium": 25,
+     "isco_1_4_with_us_premium": 33,
+     "narrow_no_premium": 18.2,
+     "narrow_with_us_premium": 24
+    },
+    "published": {
+     "wage-pool-bofa": 18.6,
+     "wage-pool-anthropic-s1": 40
+    }
+   },
+   "range": {
+    "low": 18.2,
+    "high": 43.3
+   },
+   "links": [
+    "ceiling"
+   ],
+   "sides": {
+    "H1": "지지",
+    "H2": "양쪽"
+   },
+   "side_basis": "어느 방법으로도 18.2조 달러 이상이라 천장이 크다는 점은 그대로다. 그러나 공개된 추정의 큰 값(40조 달러 초과)은 미국의 직종 구성을 세계에 적용할 때 나오고(가운데 범위 39.0조 달러), 세계의 실제 직업 구성을 쓰면 25.0조~33.0조 달러다. 같은 직종 범위에서 15~36% 작다. 투자가 요구하는 매출을 임금 풀에 견줄 때 분모가 그만큼 준다.",
+   "refs": [
+    {
+     "bundle": "K6",
+     "id": "us-wage-bill-oews"
+    },
+    {
+     "bundle": "K6",
+     "id": "world-gdp-imf"
+    },
+    {
+     "bundle": "K6",
+     "id": "labor-income-share-ilo"
+    },
+    {
+     "bundle": "K6",
+     "id": "office-occupation-employment-share-ilo"
+    },
+    {
+     "bundle": "K6",
+     "id": "wage-pool-us-direct"
+    },
+    {
+     "bundle": "K6",
+     "id": "wage-pool-bofa"
+    },
+    {
+     "bundle": "K6",
+     "id": "wage-pool-anthropic-s1"
+    }
+   ],
+   "sources": [],
+   "value_src": [],
+   "conf": "low",
+   "note": "노동소득에는 복리후생과 자영업자 소득의 노동 몫이 들어 있어 임금만 센 값보다 넓다. 고소득국 밖에서는 지식노동의 임금 격차가 미국보다 클 수 있어 격차를 넣은 값도 낮게 나왔을 수 있다. 임금 풀 대비 회수율은 요청자가 정할 가정이라 넣지 않았다.",
+   "country": "ZZ",
+   "city": null,
+   "alt": [],
+   "auto": true
   }
  ]
 }
