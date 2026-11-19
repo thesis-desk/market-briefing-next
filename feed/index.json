@@ -1,7 +1,63 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-19T16:15:24+09:00",
+ "generated_kst": "2026-11-19T16:26:20+09:00",
  "reports": [
+  {
+   "slug": "tomorrowx-2026-travis-kalanick-on-jensen-we-don-t-want-an-ai",
+   "type": "interview",
+   "title": "트래비스 칼라닉 (TomorrowX Summit 2026) : 젠슨 복귀 촉구와 아톰즈의 '원자 컴퓨터' 구상",
+   "companies": [
+    {
+     "name": "Atoms (구 CloudKitchens)",
+     "ticker": null
+    },
+    {
+     "name": "Pronto",
+     "ticker": null
+    },
+    {
+     "name": "NVIDIA",
+     "ticker": null
+    }
+   ],
+   "event": "TomorrowX Summit 2026",
+   "event_date": "2026-11-17",
+   "published_kst": "2026-11-19T16:26:20+09:00",
+   "revised_kst": "2026-11-19T16:26:20+09:00",
+   "revision": 1,
+   "summary": "투자 판단에 쓸 만한 내용은 마지막 4분의 젠슨 부분에 몰려 있다. 젠슨이 며칠 만에 밀려났다는 전제가 공개 행사에서 오갔고, 칼라닉은 엔비디아 직원 워크아웃을 공개적으로 부추겼다. 엔비디아에는 경영 공백과 인력 이탈이라는 단기 악재 신호지만, 사건의 경위는 이 대담에 나오지 않는다. 아톰즈·프론토 이야기는 사업 포부이고 검증할 수치가 거의 없다.",
+   "path": "reports/tomorrowx-2026-travis-kalanick-on-jensen-we-don-t-want-an-ai.json"
+  },
+  {
+   "slug": "tomorrowx-2026-elon-musk-on-why-the-future-should-make-you",
+   "type": "interview",
+   "title": "일론 머스크 (TomorrowX Summit 2026) : Starship 상단 첫 회수, 월 0.5GW 컴퓨트 증설, Terafab 일정",
+   "companies": [
+    {
+     "name": "SpaceX",
+     "ticker": null
+    },
+    {
+     "name": "xAI",
+     "ticker": null
+    },
+    {
+     "name": "Tesla",
+     "ticker": null
+    },
+    {
+     "name": "Neuralink",
+     "ticker": null
+    }
+   ],
+   "event": "TomorrowX Summit 2026",
+   "event_date": "2026-11-17",
+   "published_kst": "2026-11-19T16:21:07+09:00",
+   "revised_kst": "2026-11-19T16:21:07+09:00",
+   "revision": 1,
+   "summary": "머스크는 Starship 상단을 처음 회수했다는 실증을 발판으로 세 가지 구상을 내놨다. xAI 학습 스택 전면 재작성, 월 0.5GW(발전소 기준) 컴퓨트 증설, Terafab과 우주 컴퓨트로 이어지는 수직 통합이다. 실적으로 확인된 것은 발사체뿐이다. 나머지는 단가·재원·외부 검증이 없는 일정 약속이어서, 원문이 받쳐 주는 판정은 Tesla 약한 호재와 엔비디아 중립 정도다.",
+   "path": "reports/tomorrowx-2026-elon-musk-on-why-the-future-should-make-you.json"
+  },
   {
    "slug": "ai-knowledge-work-runway",
    "type": "research",
