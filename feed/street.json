@@ -1,14 +1,14 @@
 {
  "schema": 1,
- "updated_kst": "2026-11-19T23:21:58+09:00",
+ "updated_kst": "2026-11-19T23:22:13+09:00",
  "window_days": 14,
  "items_days": 30,
  "index": {
   "ai_tech": {
-   "value": 3,
+   "value": 2,
    "label": "엇갈림",
    "orgs": 41,
-   "items": 144
+   "items": 145
   },
   "market": {
    "value": -10,
@@ -40,9 +40,9 @@
    },
    {
     "group": "투자은행",
-    "ai_tech": 26,
+    "ai_tech": 24,
     "ai_tech_orgs": 6,
-    "market": 27,
+    "market": 26,
     "market_orgs": 6
    },
    {
@@ -98,9 +98,9 @@
    },
    {
     "week": "2026-11-16",
-    "ai_tech": 8,
+    "ai_tech": 7,
     "ai_tech_orgs": 21,
-    "market": 0,
+    "market": -1,
     "market_orgs": 15
    }
   ],
@@ -116,11 +116,11 @@
     },
     {
      "tag": "밸류에이션",
-     "n": 15
+     "n": 16
     },
     {
      "tag": "쏠림",
-     "n": 14
+     "n": 15
     },
     {
      "tag": "정책·지정학",
@@ -128,15 +128,15 @@
     },
     {
      "tag": "금리·거시",
-     "n": 8
+     "n": 9
+    },
+    {
+     "tag": "수요·채택",
+     "n": 6
     },
     {
      "tag": "경쟁·해자",
      "n": 6
-    },
-    {
-     "tag": "수요·채택",
-     "n": 5
     },
     {
      "tag": "전력·공급 제약",
@@ -580,22 +580,37 @@
    "org": "Goldman Sachs",
    "person": null,
    "kind": "report",
-   "title": "골드만삭스, 인도 주식 '비중확대'로 상향…Nifty 50 28,500 전망",
+   "title": "Goldman Sachs, 인도 주식 '비중확대'로 상향…Nifty 50 큰 폭 상승 전망",
    "title_orig": "Goldman Sachs Turns ‘Overweight’ On Indian Equities, Sees Sharp Upside For Nifty 50",
    "url": "https://www.outlookbusiness.com/markets/goldman-sachs-turns-overweight-on-indian-equities-sees-sharp-upside-for-nifty-50",
    "outlet": "Outlook Business",
    "published_kst": "2026-11-19T04:44:00+09:00",
    "stance": {
-    "ai_tech": null,
-    "market": 2
+    "ai_tech": -1,
+    "market": 1
    },
    "args": [
-    "밸류에이션"
+    "밸류에이션",
+    "금리·거시",
+    "수요·채택",
+    "쏠림"
+   ],
+   "summary": "Goldman Sachs는 인도 주식을 '비중확대'로 상향하고 Nifty 50이 2027년 말 28,500에 이를 것으로 전망했다. 실적 호조, 견조한 내수, 외국인 보유 비중 저점을 근거로 AI 트레이드에서 분산하려는 투자자에게 인도가 매력적이라고 봤다. 글로벌 신흥시장 전략가는 AI 설비투자 사이클 둔화가 성장보다 실적과 시장에 더 큰 영향을 준다고 말했다.",
+   "points": [
+    "Goldman Sachs는 인도 주식을 '비중확대'로 상향했으며 벤치마크인 Nifty 50 지수가 2027년 말까지 28,500포인트로 오를 것으로 예상한다.",
+    "예상을 웃도는 실적, 강한 내수, 10년 넘게 가장 낮은 수준의 외국인 보유 비중이 인도를 인공지능 트레이드에서 분산하려는 투자자에게 매력적인 투자처로 만든다고 이 증권사는 주장했다.",
+    "인도 주식은 2년간 아시아·태평양 신흥시장보다 부진했는데, 이는 30년간 두 번뿐이었고 두 번 모두 이후 38%포인트 반등이 뒤따랐다. 상대 수익률이 역사적 추세를 크게 밑도는 만큼 평균 회귀가 likely하다고 본다.",
+    "Nifty 50 목표치에는 밸류에이션 확대가 반영되지 않았고 상승은 실적 모멘텀이 이끈다. 밸류에이션 모델상 선행 PER은 향후 12개월간 2~3% 하락할 것으로 보는데, 외국인 유입이 현금 비중이 매우 낮은 국내 펀드의 매도로 상쇄될 것이기 때문이다.",
+    "선행 PER은 2024년 고점(약 25배)에서 내려와 10년 평균에 근접해 투자 위험이 낮아졌다고 이 증권사는 말했다. 강세 시나리오에서는 밸류에이션이 7~8% 오르고, 약세 시나리오에서는 10~12% 하락(디레이팅)한다.",
+    "MSCI India 이익은 2026년 11%, 이후 2년 동안 매년 15% 늘 것으로 본다. 비용 인플레이션 영향을 반영해 컨센서스보다 약간 낮으며, 금융은 컨센서스를 웃돌고 수출업체(IT)와 소비 민감 기업은 밑돌 것으로 예상한다.",
+    "Sunil Koul 글로벌 신흥시장 주식 전략가는 AI 설비투자 사이클이 둔화하는 것이 성장보다 실적과 시장에 더 불균형적으로 큰 영향을 미친다고 말했으며, 이것이 투자자의 위험 선호를 개선해 신흥시장의 비기술 부문에 포지션을 쌓게 할 것이라고 했다.",
+    "인도 실질 GDP 성장률은 2026년 7.9%에서 2027년 7.2%로 둔화할 것으로 보며, 인도중앙은행(RBI)은 25bp씩 세 차례 추가 인상해 기준금리를 6.25%로 올릴 것이라고 Santanu Sengupta 수석 인도 이코노미스트는 말했다. 그럼에도 성장은 '놀라울 정도로 탄력적'이라고 평가했다."
    ],
    "judged": {
-    "basis": "headline_only",
-    "tier": "light"
-   }
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
   },
   {
    "id": "blackrock-ai-investing-what-s-driving-optimism-amid-market",

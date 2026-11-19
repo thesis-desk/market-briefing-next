@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-19T23:21:58+09:00",
+ "generated_kst": "2026-11-19T23:22:13+09:00",
  "reports": [
   {
    "slug": "ai-compute-balance",
@@ -2371,7 +2371,7 @@
   }
  ],
  "street": {
-  "updated_kst": "2026-11-19T23:21:58+09:00",
+  "updated_kst": "2026-11-19T23:22:13+09:00",
   "path": "street.json"
  },
  "calendar": {
