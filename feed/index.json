@@ -1,7 +1,25 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-19T13:45:23+09:00",
+ "generated_kst": "2026-11-19T13:49:06+09:00",
  "reports": [
+  {
+   "slug": "tomorrowx-2026",
+   "type": "event",
+   "title": "TomorrowX Summit 2026 : 메모리는 2028년까지 계약으로 묶였고, 엔비디아 공백에 대안 가속기가 힘을 얻었다",
+   "companies": [
+    {
+     "name": "마이크론",
+     "ticker": null
+    }
+   ],
+   "event": "TomorrowX Summit 2026",
+   "event_date": "2026-11-17",
+   "published_kst": "2026-11-19T13:49:06+09:00",
+   "revised_kst": "2026-11-19T13:49:06+09:00",
+   "revision": 1,
+   "summary": "주가는 AI 하드웨어의 정점을 반영하고 있지만, 마이크론·AMD·델·스페이스X 같은 공급 측은 수요 둔화를 부인했다. 가장 단단한 근거는 마이크론의 다년 계약 구조이고, 가장 약한 고리는 연산 임대 단가다. 연산 쪽에는 저비용 대형 공급자가 늘고 있고, 최대 수요자는 자체 조달을 말하고 있다.",
+   "path": "reports/tomorrowx-2026.json"
+  },
   {
    "slug": "big-technology-ai-stockpocalypse-anthropic-nears-rsi",
    "type": "interview",
