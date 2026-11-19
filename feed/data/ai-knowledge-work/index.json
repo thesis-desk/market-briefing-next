@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated_kst": "2026-11-19T13:36:14+09:00",
+ "updated_kst": "2026-11-19T13:45:23+09:00",
  "question": "AI 는 코딩을 넘어 범용 지식노동으로 번지는가 — 성장 여지는 얼마나 남았고, 지금의 투자는 회수되는가",
  "bundles": [
   {
@@ -35,9 +35,9 @@
    "file": "labor.json",
    "title": "노동시장 — 고용·채용·외주 인력·생산성",
    "status": "collecting",
-   "records": 2,
-   "verified_share": 1,
-   "updated_kst": "2026-11-19T11:25:43+09:00"
+   "records": 32,
+   "verified_share": 0.938,
+   "updated_kst": "2026-11-19T13:45:23+09:00"
   },
   {
    "id": "K5",

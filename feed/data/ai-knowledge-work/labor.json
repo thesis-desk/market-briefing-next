@@ -2,30 +2,37 @@
  "schema": 1,
  "bundle": "K4",
  "title": "노동시장 — 고용·채용·외주 인력·생산성",
- "updated_kst": "2026-11-19T11:25:43+09:00",
+ "updated_kst": "2026-11-19T13:45:23+09:00",
  "measure": null,
  "notes": [
   "대체가 일어나는가를 고용 쪽에서 본다. 기술 통계와 인과 추정을 definition 에서 가른다.",
-  "IT서비스·BPO 기업의 인력과 매출, 개발자 채용 공고는 아직 없다."
+  "분야별 채용 공고 지수(postings-…)와 업종별 고용(employment-…)은 `desk datasets labor` 가 공개 자료에서 다시 만든다(auto). 방향은 전체 대비 변화가 2022-11 뒤와 최근 1년 두 구간 모두 문턱(공고 5%, 고용 2%)을 넘는지로 매긴다.",
+  "기준점(2022-11-30, ChatGPT 공개일)은 금리 인상과 채용 과열의 되돌림이 시작된 때와 겹친다. 그 뒤의 약세를 AI 로 읽으려면 최근 1년의 방향이 같아야 한다고 보았다."
  ],
  "summary": {
-  "records": 2,
-  "with_value": 2,
-  "with_series": 2,
+  "records": 32,
+  "with_value": 30,
+  "with_series": 30,
   "by_hypothesis": {
    "H1": {
-    "지지": 0,
-    "반박": 0,
-    "양쪽": 2,
-    "중립": 0
+    "지지": 4,
+    "반박": 1,
+    "양쪽": 8,
+    "중립": 19
    }
   },
   "by_link": {
-   "spread": {
+   "coding": {
     "지지": 0,
     "반박": 0,
     "양쪽": 1,
-    "중립": 0
+    "중립": 3
+   },
+   "spread": {
+    "지지": 4,
+    "반박": 1,
+    "양쪽": 6,
+    "중립": 14
    },
    "slope": {
     "지지": 0,
@@ -34,10 +41,10 @@
     "중립": 0
    },
    "counter": {
-    "지지": 0,
-    "반박": 0,
-    "양쪽": 2,
-    "중립": 0
+    "지지": 4,
+    "반박": 1,
+    "양쪽": 8,
+    "중립": 19
    }
   }
  },
@@ -199,6 +206,4365 @@
    "alt": [],
    "conf": "high",
    "note": "거시 통계에 AI 가 잡히는가를 볼 때의 기준 계열이다. 원인을 다룬 연구는 아직 모으지 않았다."
+  },
+  {
+   "id": "postings-total",
+   "metric": "미국 채용 공고 지수 — 전체",
+   "value": 106.23,
+   "basis": "Indeed 미국 전체 채용 공고 지수, 2026-11-13",
+   "series": [
+    {
+     "period": "2022-11-30",
+     "value": 146.65,
+     "src": 1,
+     "label": "ChatGPT 공개"
+    },
+    {
+     "period": "2022-12-31",
+     "value": 142.78,
+     "src": 1
+    },
+    {
+     "period": "2023-03-31",
+     "value": 135.53,
+     "src": 1
+    },
+    {
+     "period": "2023-06-30",
+     "value": 130.29,
+     "src": 1
+    },
+    {
+     "period": "2023-09-30",
+     "value": 125.68,
+     "src": 1
+    },
+    {
+     "period": "2023-12-31",
+     "value": 120.56,
+     "src": 1
+    },
+    {
+     "period": "2024-03-31",
+     "value": 118.97,
+     "src": 1
+    },
+    {
+     "period": "2024-06-30",
+     "value": 113.34,
+     "src": 1
+    },
+    {
+     "period": "2024-09-30",
+     "value": 112.37,
+     "src": 1
+    },
+    {
+     "period": "2024-12-31",
+     "value": 110.64,
+     "src": 1
+    },
+    {
+     "period": "2025-03-31",
+     "value": 106.77,
+     "src": 1
+    },
+    {
+     "period": "2025-06-30",
+     "value": 104.82,
+     "src": 1
+    },
+    {
+     "period": "2025-09-30",
+     "value": 101.37,
+     "src": 1
+    },
+    {
+     "period": "2025-12-31",
+     "value": 103.38,
+     "src": 1
+    },
+    {
+     "period": "2026-03-31",
+     "value": 102.24,
+     "src": 1
+    },
+    {
+     "period": "2026-06-30",
+     "value": 100.96,
+     "src": 1
+    },
+    {
+     "period": "2026-09-30",
+     "value": 103.76,
+     "src": 1
+    },
+    {
+     "period": "2026-11-13",
+     "value": 106.23,
+     "src": 1,
+     "label": "최근"
+    }
+   ],
+   "detail": {
+    "since_base_pct": -27.6,
+    "last_year_pct": 5.2
+   },
+   "links": [
+    "counter"
+   ],
+   "sides": {
+    "H1": "중립"
+   },
+   "side_basis": "분야별 값을 견줄 기준이다.",
+   "note": "기준점(2022-11-30)은 채용 과열이 꺼지기 시작한 때와 겹친다. 그 뒤의 하락을 AI 로 읽을 수 없는 까닭이다.",
+   "country": "US",
+   "city": null,
+   "unit": "지수(2020-02-01=100)",
+   "asof": "2026-11-13",
+   "definition": "Indeed 에 올라온 미국 채용 공고 수의 지수다(2020-02-01 = 100, 7일 이동평균, 계절조정). 한 구인 사이트의 공고이고 고용이 아니다. 분야는 Indeed 의 분류다. 자료는 CC BY 4.0 으로 공개돼 있다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Indeed Hiring Lab — Job Postings Tracker(미국, 분야별)",
+     "url": "https://github.com/hiring-lab/job_postings_tracker",
+     "date": "2026-11-19",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "auto": true
+  },
+  {
+   "id": "postings-software-development",
+   "metric": "미국 채용 공고 지수 — 소프트웨어 개발",
+   "value": 81.71,
+   "basis": "Indeed 미국 채용 공고 지수, 소프트웨어 개발 분야, 2026-11-13",
+   "series": [
+    {
+     "period": "2022-11-30",
+     "value": 142.49,
+     "src": 1,
+     "label": "ChatGPT 공개"
+    },
+    {
+     "period": "2022-12-31",
+     "value": 130.51,
+     "src": 1
+    },
+    {
+     "period": "2023-03-31",
+     "value": 99.62,
+     "src": 1
+    },
+    {
+     "period": "2023-06-30",
+     "value": 82.72,
+     "src": 1
+    },
+    {
+     "period": "2023-09-30",
+     "value": 75.11,
+     "src": 1
+    },
+    {
+     "period": "2023-12-31",
+     "value": 72.62,
+     "src": 1
+    },
+    {
+     "period": "2024-03-31",
+     "value": 70.79,
+     "src": 1
+    },
+    {
+     "period": "2024-06-30",
+     "value": 70.06,
+     "src": 1
+    },
+    {
+     "period": "2024-09-30",
+     "value": 69.32,
+     "src": 1
+    },
+    {
+     "period": "2024-12-31",
+     "value": 67.52,
+     "src": 1
+    },
+    {
+     "period": "2025-03-31",
+     "value": 62.54,
+     "src": 1
+    },
+    {
+     "period": "2025-06-30",
+     "value": 65.53,
+     "src": 1
+    },
+    {
+     "period": "2025-09-30",
+     "value": 64.27,
+     "src": 1
+    },
+    {
+     "period": "2025-12-31",
+     "value": 67.29,
+     "src": 1
+    },
+    {
+     "period": "2026-03-31",
+     "value": 72.87,
+     "src": 1
+    },
+    {
+     "period": "2026-06-30",
+     "value": 73.43,
+     "src": 1
+    },
+    {
+     "period": "2026-09-30",
+     "value": 78.27,
+     "src": 1
+    },
+    {
+     "period": "2026-11-13",
+     "value": 81.71,
+     "src": 1,
+     "label": "최근"
+    }
+   ],
+   "detail": {
+    "since_base_pct": -42.7,
+    "last_year_pct": 23.6,
+    "vs_total_since_base_pct": -20.9,
+    "vs_total_last_year_pct": 17.5,
+    "low_since_base": {
+     "date": "2025-05-17",
+     "value": 61.1
+    }
+   },
+   "links": [
+    "coding",
+    "counter"
+   ],
+   "sides": {
+    "H1": "양쪽"
+   },
+   "side_basis": "소프트웨어 개발 공고는 2022-11 뒤 -42.7%(전체 대비 -20.9%), 최근 1년 +23.6%(전체 대비 +17.5%)다. 두 구간의 방향이 반대다. 앞 구간의 약세가 AI 때문인지 금리·채용 과열의 되돌림인지 이 값으로는 가르지 못한다.",
+   "note": "방향은 전체 대비 변화가 두 구간 모두 ±5% 를 넘는지로 매겼다.",
+   "country": "US",
+   "city": null,
+   "unit": "지수(2020-02-01=100)",
+   "asof": "2026-11-13",
+   "definition": "Indeed 에 올라온 미국 채용 공고 수의 지수다(2020-02-01 = 100, 7일 이동평균, 계절조정). 한 구인 사이트의 공고이고 고용이 아니다. 분야는 Indeed 의 분류다. 자료는 CC BY 4.0 으로 공개돼 있다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Indeed Hiring Lab — Job Postings Tracker(미국, 분야별)",
+     "url": "https://github.com/hiring-lab/job_postings_tracker",
+     "date": "2026-11-19",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "auto": true
+  },
+  {
+   "id": "postings-data-analytics",
+   "metric": "미국 채용 공고 지수 — 데이터·분석",
+   "value": 61.84,
+   "basis": "Indeed 미국 채용 공고 지수, 데이터·분석 분야, 2026-11-13",
+   "series": [
+    {
+     "period": "2022-11-30",
+     "value": 137.55,
+     "src": 1,
+     "label": "ChatGPT 공개"
+    },
+    {
+     "period": "2022-12-31",
+     "value": 128.68,
+     "src": 1
+    },
+    {
+     "period": "2023-03-31",
+     "value": 102.62,
+     "src": 1
+    },
+    {
+     "period": "2023-06-30",
+     "value": 84.26,
+     "src": 1
+    },
+    {
+     "period": "2023-09-30",
+     "value": 77.27,
+     "src": 1
+    },
+    {
+     "period": "2023-12-31",
+     "value": 74.7,
+     "src": 1
+    },
+    {
+     "period": "2024-03-31",
+     "value": 69.49,
+     "src": 1
+    },
+    {
+     "period": "2024-06-30",
+     "value": 70.1,
+     "src": 1
+    },
+    {
+     "period": "2024-09-30",
+     "value": 69.02,
+     "src": 1
+    },
+    {
+     "period": "2024-12-31",
+     "value": 68.05,
+     "src": 1
+    },
+    {
+     "period": "2025-03-31",
+     "value": 63.34,
+     "src": 1
+    },
+    {
+     "period": "2025-06-30",
+     "value": 62.48,
+     "src": 1
+    },
+    {
+     "period": "2025-09-30",
+     "value": 58.5,
+     "src": 1
+    },
+    {
+     "period": "2025-12-31",
+     "value": 58.22,
+     "src": 1
+    },
+    {
+     "period": "2026-03-31",
+     "value": 62.23,
+     "src": 1
+    },
+    {
+     "period": "2026-06-30",
+     "value": 61.03,
+     "src": 1
+    },
+    {
+     "period": "2026-09-30",
+     "value": 62.79,
+     "src": 1
+    },
+    {
+     "period": "2026-11-13",
+     "value": 61.84,
+     "src": 1,
+     "label": "최근"
+    }
+   ],
+   "detail": {
+    "since_base_pct": -55,
+    "last_year_pct": 4.1,
+    "vs_total_since_base_pct": -37.8,
+    "vs_total_last_year_pct": -1,
+    "low_since_base": {
+     "date": "2026-01-06",
+     "value": 58
+    }
+   },
+   "links": [
+    "spread",
+    "counter"
+   ],
+   "sides": {
+    "H1": "중립"
+   },
+   "side_basis": "데이터·분석 공고는 2022-11 뒤 -55.0%(전체 대비 -37.8%), 최근 1년 +4.1%(전체 대비 -1.0%)다. 한 구간이 전체와 비슷해 방향을 정하지 않았다.",
+   "note": "방향은 전체 대비 변화가 두 구간 모두 ±5% 를 넘는지로 매겼다.",
+   "country": "US",
+   "city": null,
+   "unit": "지수(2020-02-01=100)",
+   "asof": "2026-11-13",
+   "definition": "Indeed 에 올라온 미국 채용 공고 수의 지수다(2020-02-01 = 100, 7일 이동평균, 계절조정). 한 구인 사이트의 공고이고 고용이 아니다. 분야는 Indeed 의 분류다. 자료는 CC BY 4.0 으로 공개돼 있다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Indeed Hiring Lab — Job Postings Tracker(미국, 분야별)",
+     "url": "https://github.com/hiring-lab/job_postings_tracker",
+     "date": "2026-11-19",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "auto": true
+  },
+  {
+   "id": "postings-it-operations",
+   "metric": "미국 채용 공고 지수 — IT 운영·지원",
+   "value": 70.4,
+   "basis": "Indeed 미국 채용 공고 지수, IT 운영·지원 분야, 2026-11-13",
+   "series": [
+    {
+     "period": "2022-11-30",
+     "value": 131.41,
+     "src": 1,
+     "label": "ChatGPT 공개"
+    },
+    {
+     "period": "2022-12-31",
+     "value": 126.02,
+     "src": 1
+    },
+    {
+     "period": "2023-03-31",
+     "value": 111.06,
+     "src": 1
+    },
+    {
+     "period": "2023-06-30",
+     "value": 98.01,
+     "src": 1
+    },
+    {
+     "period": "2023-09-30",
+     "value": 88.61,
+     "src": 1
+    },
+    {
+     "period": "2023-12-31",
+     "value": 85.7,
+     "src": 1
+    },
+    {
+     "period": "2024-03-31",
+     "value": 83.05,
+     "src": 1
+    },
+    {
+     "period": "2024-06-30",
+     "value": 78.92,
+     "src": 1
+    },
+    {
+     "period": "2024-09-30",
+     "value": 74.87,
+     "src": 1
+    },
+    {
+     "period": "2024-12-31",
+     "value": 74.23,
+     "src": 1
+    },
+    {
+     "period": "2025-03-31",
+     "value": 71.37,
+     "src": 1
+    },
+    {
+     "period": "2025-06-30",
+     "value": 68.29,
+     "src": 1
+    },
+    {
+     "period": "2025-09-30",
+     "value": 63.95,
+     "src": 1
+    },
+    {
+     "period": "2025-12-31",
+     "value": 64.92,
+     "src": 1
+    },
+    {
+     "period": "2026-03-31",
+     "value": 70.96,
+     "src": 1
+    },
+    {
+     "period": "2026-06-30",
+     "value": 70.03,
+     "src": 1
+    },
+    {
+     "period": "2026-09-30",
+     "value": 68.91,
+     "src": 1
+    },
+    {
+     "period": "2026-11-13",
+     "value": 70.4,
+     "src": 1,
+     "label": "최근"
+    }
+   ],
+   "detail": {
+    "since_base_pct": -46.4,
+    "last_year_pct": 10.2,
+    "vs_total_since_base_pct": -26,
+    "vs_total_last_year_pct": 4.8,
+    "low_since_base": {
+     "date": "2025-12-11",
+     "value": 63.66
+    }
+   },
+   "links": [
+    "spread",
+    "counter"
+   ],
+   "sides": {
+    "H1": "중립"
+   },
+   "side_basis": "IT 운영·지원 공고는 2022-11 뒤 -46.4%(전체 대비 -26.0%), 최근 1년 +10.2%(전체 대비 +4.8%)다. 한 구간이 전체와 비슷해 방향을 정하지 않았다.",
+   "note": "방향은 전체 대비 변화가 두 구간 모두 ±5% 를 넘는지로 매겼다.",
+   "country": "US",
+   "city": null,
+   "unit": "지수(2020-02-01=100)",
+   "asof": "2026-11-13",
+   "definition": "Indeed 에 올라온 미국 채용 공고 수의 지수다(2020-02-01 = 100, 7일 이동평균, 계절조정). 한 구인 사이트의 공고이고 고용이 아니다. 분야는 Indeed 의 분류다. 자료는 CC BY 4.0 으로 공개돼 있다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Indeed Hiring Lab — Job Postings Tracker(미국, 분야별)",
+     "url": "https://github.com/hiring-lab/job_postings_tracker",
+     "date": "2026-11-19",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "auto": true
+  },
+  {
+   "id": "postings-it-systems",
+   "metric": "미국 채용 공고 지수 — IT 시스템·솔루션",
+   "value": 78.12,
+   "basis": "Indeed 미국 채용 공고 지수, IT 시스템·솔루션 분야, 2026-11-13",
+   "series": [
+    {
+     "period": "2022-11-30",
+     "value": 133.58,
+     "src": 1,
+     "label": "ChatGPT 공개"
+    },
+    {
+     "period": "2022-12-31",
+     "value": 124.72,
+     "src": 1
+    },
+    {
+     "period": "2023-03-31",
+     "value": 106.09,
+     "src": 1
+    },
+    {
+     "period": "2023-06-30",
+     "value": 88.56,
+     "src": 1
+    },
+    {
+     "period": "2023-09-30",
+     "value": 86.03,
+     "src": 1
+    },
+    {
+     "period": "2023-12-31",
+     "value": 82.19,
+     "src": 1
+    },
+    {
+     "period": "2024-03-31",
+     "value": 78.99,
+     "src": 1
+    },
+    {
+     "period": "2024-06-30",
+     "value": 79.19,
+     "src": 1
+    },
+    {
+     "period": "2024-09-30",
+     "value": 77.15,
+     "src": 1
+    },
+    {
+     "period": "2024-12-31",
+     "value": 82.27,
+     "src": 1
+    },
+    {
+     "period": "2025-03-31",
+     "value": 70.13,
+     "src": 1
+    },
+    {
+     "period": "2025-06-30",
+     "value": 71.2,
+     "src": 1
+    },
+    {
+     "period": "2025-09-30",
+     "value": 69.93,
+     "src": 1
+    },
+    {
+     "period": "2025-12-31",
+     "value": 69.53,
+     "src": 1
+    },
+    {
+     "period": "2026-03-31",
+     "value": 71.85,
+     "src": 1
+    },
+    {
+     "period": "2026-06-30",
+     "value": 70.99,
+     "src": 1
+    },
+    {
+     "period": "2026-09-30",
+     "value": 76.06,
+     "src": 1
+    },
+    {
+     "period": "2026-11-13",
+     "value": 78.12,
+     "src": 1,
+     "label": "최근"
+    }
+   ],
+   "detail": {
+    "since_base_pct": -41.5,
+    "last_year_pct": 13.6,
+    "vs_total_since_base_pct": -19.2,
+    "vs_total_last_year_pct": 8,
+    "low_since_base": {
+     "date": "2025-06-13",
+     "value": 66.1
+    }
+   },
+   "links": [
+    "spread",
+    "counter"
+   ],
+   "sides": {
+    "H1": "양쪽"
+   },
+   "side_basis": "IT 시스템·솔루션 공고는 2022-11 뒤 -41.5%(전체 대비 -19.2%), 최근 1년 +13.6%(전체 대비 +8.0%)다. 두 구간의 방향이 반대다. 앞 구간의 약세가 AI 때문인지 금리·채용 과열의 되돌림인지 이 값으로는 가르지 못한다.",
+   "note": "방향은 전체 대비 변화가 두 구간 모두 ±5% 를 넘는지로 매겼다.",
+   "country": "US",
+   "city": null,
+   "unit": "지수(2020-02-01=100)",
+   "asof": "2026-11-13",
+   "definition": "Indeed 에 올라온 미국 채용 공고 수의 지수다(2020-02-01 = 100, 7일 이동평균, 계절조정). 한 구인 사이트의 공고이고 고용이 아니다. 분야는 Indeed 의 분류다. 자료는 CC BY 4.0 으로 공개돼 있다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Indeed Hiring Lab — Job Postings Tracker(미국, 분야별)",
+     "url": "https://github.com/hiring-lab/job_postings_tracker",
+     "date": "2026-11-19",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "auto": true
+  },
+  {
+   "id": "postings-customer-service",
+   "metric": "미국 채용 공고 지수 — 고객 서비스",
+   "value": 90.51,
+   "basis": "Indeed 미국 채용 공고 지수, 고객 서비스 분야, 2026-11-13",
+   "series": [
+    {
+     "period": "2022-11-30",
+     "value": 123.91,
+     "src": 1,
+     "label": "ChatGPT 공개"
+    },
+    {
+     "period": "2022-12-31",
+     "value": 116.81,
+     "src": 1
+    },
+    {
+     "period": "2023-03-31",
+     "value": 107.47,
+     "src": 1
+    },
+    {
+     "period": "2023-06-30",
+     "value": 106.33,
+     "src": 1
+    },
+    {
+     "period": "2023-09-30",
+     "value": 103.74,
+     "src": 1
+    },
+    {
+     "period": "2023-12-31",
+     "value": 99.34,
+     "src": 1
+    },
+    {
+     "period": "2024-03-31",
+     "value": 97.35,
+     "src": 1
+    },
+    {
+     "period": "2024-06-30",
+     "value": 92.8,
+     "src": 1
+    },
+    {
+     "period": "2024-09-30",
+     "value": 90.13,
+     "src": 1
+    },
+    {
+     "period": "2024-12-31",
+     "value": 87.6,
+     "src": 1
+    },
+    {
+     "period": "2025-03-31",
+     "value": 83.44,
+     "src": 1
+    },
+    {
+     "period": "2025-06-30",
+     "value": 83.67,
+     "src": 1
+    },
+    {
+     "period": "2025-09-30",
+     "value": 88.73,
+     "src": 1
+    },
+    {
+     "period": "2025-12-31",
+     "value": 90.92,
+     "src": 1
+    },
+    {
+     "period": "2026-03-31",
+     "value": 89.6,
+     "src": 1
+    },
+    {
+     "period": "2026-06-30",
+     "value": 87.79,
+     "src": 1
+    },
+    {
+     "period": "2026-09-30",
+     "value": 87.64,
+     "src": 1
+    },
+    {
+     "period": "2026-11-13",
+     "value": 90.51,
+     "src": 1,
+     "label": "최근"
+    }
+   ],
+   "detail": {
+    "since_base_pct": -27,
+    "last_year_pct": 3.6,
+    "vs_total_since_base_pct": 0.8,
+    "vs_total_last_year_pct": -1.5,
+    "low_since_base": {
+     "date": "2025-05-30",
+     "value": 81.27
+    }
+   },
+   "links": [
+    "spread",
+    "counter"
+   ],
+   "sides": {
+    "H1": "중립"
+   },
+   "side_basis": "고객 서비스 공고는 2022-11 뒤 -27.0%(전체 대비 +0.8%), 최근 1년 +3.6%(전체 대비 -1.5%)다. 한 구간이 전체와 비슷해 방향을 정하지 않았다.",
+   "note": "방향은 전체 대비 변화가 두 구간 모두 ±5% 를 넘는지로 매겼다.",
+   "country": "US",
+   "city": null,
+   "unit": "지수(2020-02-01=100)",
+   "asof": "2026-11-13",
+   "definition": "Indeed 에 올라온 미국 채용 공고 수의 지수다(2020-02-01 = 100, 7일 이동평균, 계절조정). 한 구인 사이트의 공고이고 고용이 아니다. 분야는 Indeed 의 분류다. 자료는 CC BY 4.0 으로 공개돼 있다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Indeed Hiring Lab — Job Postings Tracker(미국, 분야별)",
+     "url": "https://github.com/hiring-lab/job_postings_tracker",
+     "date": "2026-11-19",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "auto": true
+  },
+  {
+   "id": "postings-administrative-assistance",
+   "metric": "미국 채용 공고 지수 — 사무 보조",
+   "value": 93.31,
+   "basis": "Indeed 미국 채용 공고 지수, 사무 보조 분야, 2026-11-13",
+   "series": [
+    {
+     "period": "2022-11-30",
+     "value": 163.68,
+     "src": 1,
+     "label": "ChatGPT 공개"
+    },
+    {
+     "period": "2022-12-31",
+     "value": 160.24,
+     "src": 1
+    },
+    {
+     "period": "2023-03-31",
+     "value": 149.61,
+     "src": 1
+    },
+    {
+     "period": "2023-06-30",
+     "value": 137.96,
+     "src": 1
+    },
+    {
+     "period": "2023-09-30",
+     "value": 130.94,
+     "src": 1
+    },
+    {
+     "period": "2023-12-31",
+     "value": 122.13,
+     "src": 1
+    },
+    {
+     "period": "2024-03-31",
+     "value": 122.46,
+     "src": 1
+    },
+    {
+     "period": "2024-06-30",
+     "value": 115.88,
+     "src": 1
+    },
+    {
+     "period": "2024-09-30",
+     "value": 111.9,
+     "src": 1
+    },
+    {
+     "period": "2024-12-31",
+     "value": 109.89,
+     "src": 1
+    },
+    {
+     "period": "2025-03-31",
+     "value": 99.74,
+     "src": 1
+    },
+    {
+     "period": "2025-06-30",
+     "value": 97.28,
+     "src": 1
+    },
+    {
+     "period": "2025-09-30",
+     "value": 94.59,
+     "src": 1
+    },
+    {
+     "period": "2025-12-31",
+     "value": 96.48,
+     "src": 1
+    },
+    {
+     "period": "2026-03-31",
+     "value": 94.59,
+     "src": 1
+    },
+    {
+     "period": "2026-06-30",
+     "value": 93.53,
+     "src": 1
+    },
+    {
+     "period": "2026-09-30",
+     "value": 95.99,
+     "src": 1
+    },
+    {
+     "period": "2026-11-13",
+     "value": 93.31,
+     "src": 1,
+     "label": "최근"
+    }
+   ],
+   "detail": {
+    "since_base_pct": -43,
+    "last_year_pct": -1.6,
+    "vs_total_since_base_pct": -21.3,
+    "vs_total_last_year_pct": -6.5,
+    "low_since_base": {
+     "date": "2026-04-14",
+     "value": 92.09
+    }
+   },
+   "links": [
+    "spread",
+    "counter"
+   ],
+   "sides": {
+    "H1": "지지"
+   },
+   "side_basis": "사무 보조 공고는 2022-11 뒤 -43.0%(전체 대비 -21.3%), 최근 1년 -1.6%(전체 대비 -6.5%)다. 두 구간 모두 전체보다 약하다. 이 분야에서 사람을 덜 찾는다는 쪽이다.",
+   "note": "방향은 전체 대비 변화가 두 구간 모두 ±5% 를 넘는지로 매겼다.",
+   "country": "US",
+   "city": null,
+   "unit": "지수(2020-02-01=100)",
+   "asof": "2026-11-13",
+   "definition": "Indeed 에 올라온 미국 채용 공고 수의 지수다(2020-02-01 = 100, 7일 이동평균, 계절조정). 한 구인 사이트의 공고이고 고용이 아니다. 분야는 Indeed 의 분류다. 자료는 CC BY 4.0 으로 공개돼 있다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Indeed Hiring Lab — Job Postings Tracker(미국, 분야별)",
+     "url": "https://github.com/hiring-lab/job_postings_tracker",
+     "date": "2026-11-19",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "auto": true
+  },
+  {
+   "id": "postings-accounting",
+   "metric": "미국 채용 공고 지수 — 회계",
+   "value": 106.6,
+   "basis": "Indeed 미국 채용 공고 지수, 회계 분야, 2026-11-13",
+   "series": [
+    {
+     "period": "2022-11-30",
+     "value": 191.11,
+     "src": 1,
+     "label": "ChatGPT 공개"
+    },
+    {
+     "period": "2022-12-31",
+     "value": 185.57,
+     "src": 1
+    },
+    {
+     "period": "2023-03-31",
+     "value": 153.94,
+     "src": 1
+    },
+    {
+     "period": "2023-06-30",
+     "value": 144.3,
+     "src": 1
+    },
+    {
+     "period": "2023-09-30",
+     "value": 147.27,
+     "src": 1
+    },
+    {
+     "period": "2023-12-31",
+     "value": 142.47,
+     "src": 1
+    },
+    {
+     "period": "2024-03-31",
+     "value": 120.3,
+     "src": 1
+    },
+    {
+     "period": "2024-06-30",
+     "value": 117.03,
+     "src": 1
+    },
+    {
+     "period": "2024-09-30",
+     "value": 131.59,
+     "src": 1
+    },
+    {
+     "period": "2024-12-31",
+     "value": 127.84,
+     "src": 1
+    },
+    {
+     "period": "2025-03-31",
+     "value": 105.19,
+     "src": 1
+    },
+    {
+     "period": "2025-06-30",
+     "value": 100.89,
+     "src": 1
+    },
+    {
+     "period": "2025-09-30",
+     "value": 110.43,
+     "src": 1
+    },
+    {
+     "period": "2025-12-31",
+     "value": 111.79,
+     "src": 1
+    },
+    {
+     "period": "2026-03-31",
+     "value": 109.68,
+     "src": 1
+    },
+    {
+     "period": "2026-06-30",
+     "value": 91.81,
+     "src": 1
+    },
+    {
+     "period": "2026-09-30",
+     "value": 104.01,
+     "src": 1
+    },
+    {
+     "period": "2026-11-13",
+     "value": 106.6,
+     "src": 1,
+     "label": "최근"
+    }
+   ],
+   "detail": {
+    "since_base_pct": -44.2,
+    "last_year_pct": -2.6,
+    "vs_total_since_base_pct": -22.9,
+    "vs_total_last_year_pct": -7.4,
+    "low_since_base": {
+     "date": "2026-08-09",
+     "value": 85.17
+    }
+   },
+   "links": [
+    "spread",
+    "counter"
+   ],
+   "sides": {
+    "H1": "지지"
+   },
+   "side_basis": "회계 공고는 2022-11 뒤 -44.2%(전체 대비 -22.9%), 최근 1년 -2.6%(전체 대비 -7.4%)다. 두 구간 모두 전체보다 약하다. 이 분야에서 사람을 덜 찾는다는 쪽이다.",
+   "note": "방향은 전체 대비 변화가 두 구간 모두 ±5% 를 넘는지로 매겼다.",
+   "country": "US",
+   "city": null,
+   "unit": "지수(2020-02-01=100)",
+   "asof": "2026-11-13",
+   "definition": "Indeed 에 올라온 미국 채용 공고 수의 지수다(2020-02-01 = 100, 7일 이동평균, 계절조정). 한 구인 사이트의 공고이고 고용이 아니다. 분야는 Indeed 의 분류다. 자료는 CC BY 4.0 으로 공개돼 있다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Indeed Hiring Lab — Job Postings Tracker(미국, 분야별)",
+     "url": "https://github.com/hiring-lab/job_postings_tracker",
+     "date": "2026-11-19",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "auto": true
+  },
+  {
+   "id": "postings-banking-finance",
+   "metric": "미국 채용 공고 지수 — 금융",
+   "value": 107.31,
+   "basis": "Indeed 미국 채용 공고 지수, 금융 분야, 2026-11-13",
+   "series": [
+    {
+     "period": "2022-11-30",
+     "value": 143.67,
+     "src": 1,
+     "label": "ChatGPT 공개"
+    },
+    {
+     "period": "2022-12-31",
+     "value": 136.97,
+     "src": 1
+    },
+    {
+     "period": "2023-03-31",
+     "value": 116.52,
+     "src": 1
+    },
+    {
+     "period": "2023-06-30",
+     "value": 108.14,
+     "src": 1
+    },
+    {
+     "period": "2023-09-30",
+     "value": 100.46,
+     "src": 1
+    },
+    {
+     "period": "2023-12-31",
+     "value": 93.5,
+     "src": 1
+    },
+    {
+     "period": "2024-03-31",
+     "value": 96.84,
+     "src": 1
+    },
+    {
+     "period": "2024-06-30",
+     "value": 93.55,
+     "src": 1
+    },
+    {
+     "period": "2024-09-30",
+     "value": 94.1,
+     "src": 1
+    },
+    {
+     "period": "2024-12-31",
+     "value": 93.51,
+     "src": 1
+    },
+    {
+     "period": "2025-03-31",
+     "value": 94.55,
+     "src": 1
+    },
+    {
+     "period": "2025-06-30",
+     "value": 97.08,
+     "src": 1
+    },
+    {
+     "period": "2025-09-30",
+     "value": 95.66,
+     "src": 1
+    },
+    {
+     "period": "2025-12-31",
+     "value": 99.22,
+     "src": 1
+    },
+    {
+     "period": "2026-03-31",
+     "value": 101.99,
+     "src": 1
+    },
+    {
+     "period": "2026-06-30",
+     "value": 102.75,
+     "src": 1
+    },
+    {
+     "period": "2026-09-30",
+     "value": 106.61,
+     "src": 1
+    },
+    {
+     "period": "2026-11-13",
+     "value": 107.31,
+     "src": 1,
+     "label": "최근"
+    }
+   ],
+   "detail": {
+    "since_base_pct": -25.3,
+    "last_year_pct": 11.9,
+    "vs_total_since_base_pct": 3.2,
+    "vs_total_last_year_pct": 6.4,
+    "low_since_base": {
+     "date": "2024-10-23",
+     "value": 91.28
+    }
+   },
+   "links": [
+    "spread",
+    "counter"
+   ],
+   "sides": {
+    "H1": "중립"
+   },
+   "side_basis": "금융 공고는 2022-11 뒤 -25.3%(전체 대비 +3.2%), 최근 1년 +11.9%(전체 대비 +6.4%)다. 한 구간이 전체와 비슷해 방향을 정하지 않았다.",
+   "note": "방향은 전체 대비 변화가 두 구간 모두 ±5% 를 넘는지로 매겼다.",
+   "country": "US",
+   "city": null,
+   "unit": "지수(2020-02-01=100)",
+   "asof": "2026-11-13",
+   "definition": "Indeed 에 올라온 미국 채용 공고 수의 지수다(2020-02-01 = 100, 7일 이동평균, 계절조정). 한 구인 사이트의 공고이고 고용이 아니다. 분야는 Indeed 의 분류다. 자료는 CC BY 4.0 으로 공개돼 있다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Indeed Hiring Lab — Job Postings Tracker(미국, 분야별)",
+     "url": "https://github.com/hiring-lab/job_postings_tracker",
+     "date": "2026-11-19",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "auto": true
+  },
+  {
+   "id": "postings-insurance",
+   "metric": "미국 채용 공고 지수 — 보험",
+   "value": 127.38,
+   "basis": "Indeed 미국 채용 공고 지수, 보험 분야, 2026-11-13",
+   "series": [
+    {
+     "period": "2022-11-30",
+     "value": 153.48,
+     "src": 1,
+     "label": "ChatGPT 공개"
+    },
+    {
+     "period": "2022-12-31",
+     "value": 151.74,
+     "src": 1
+    },
+    {
+     "period": "2023-03-31",
+     "value": 146.56,
+     "src": 1
+    },
+    {
+     "period": "2023-06-30",
+     "value": 126.94,
+     "src": 1
+    },
+    {
+     "period": "2023-09-30",
+     "value": 139.46,
+     "src": 1
+    },
+    {
+     "period": "2023-12-31",
+     "value": 132.61,
+     "src": 1
+    },
+    {
+     "period": "2024-03-31",
+     "value": 132.11,
+     "src": 1
+    },
+    {
+     "period": "2024-06-30",
+     "value": 139.69,
+     "src": 1
+    },
+    {
+     "period": "2024-09-30",
+     "value": 138.09,
+     "src": 1
+    },
+    {
+     "period": "2024-12-31",
+     "value": 135.61,
+     "src": 1
+    },
+    {
+     "period": "2025-03-31",
+     "value": 133.18,
+     "src": 1
+    },
+    {
+     "period": "2025-06-30",
+     "value": 124.85,
+     "src": 1
+    },
+    {
+     "period": "2025-09-30",
+     "value": 120.9,
+     "src": 1
+    },
+    {
+     "period": "2025-12-31",
+     "value": 126.81,
+     "src": 1
+    },
+    {
+     "period": "2026-03-31",
+     "value": 130.21,
+     "src": 1
+    },
+    {
+     "period": "2026-06-30",
+     "value": 126.37,
+     "src": 1
+    },
+    {
+     "period": "2026-09-30",
+     "value": 125.94,
+     "src": 1
+    },
+    {
+     "period": "2026-11-13",
+     "value": 127.38,
+     "src": 1,
+     "label": "최근"
+    }
+   ],
+   "detail": {
+    "since_base_pct": -17,
+    "last_year_pct": 4.8,
+    "vs_total_since_base_pct": 14.6,
+    "vs_total_last_year_pct": -0.4,
+    "low_since_base": {
+     "date": "2025-09-15",
+     "value": 119.28
+    }
+   },
+   "links": [
+    "spread",
+    "counter"
+   ],
+   "sides": {
+    "H1": "중립"
+   },
+   "side_basis": "보험 공고는 2022-11 뒤 -17.0%(전체 대비 +14.6%), 최근 1년 +4.8%(전체 대비 -0.4%)다. 한 구간이 전체와 비슷해 방향을 정하지 않았다.",
+   "note": "방향은 전체 대비 변화가 두 구간 모두 ±5% 를 넘는지로 매겼다.",
+   "country": "US",
+   "city": null,
+   "unit": "지수(2020-02-01=100)",
+   "asof": "2026-11-13",
+   "definition": "Indeed 에 올라온 미국 채용 공고 수의 지수다(2020-02-01 = 100, 7일 이동평균, 계절조정). 한 구인 사이트의 공고이고 고용이 아니다. 분야는 Indeed 의 분류다. 자료는 CC BY 4.0 으로 공개돼 있다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Indeed Hiring Lab — Job Postings Tracker(미국, 분야별)",
+     "url": "https://github.com/hiring-lab/job_postings_tracker",
+     "date": "2026-11-19",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "auto": true
+  },
+  {
+   "id": "postings-legal",
+   "metric": "미국 채용 공고 지수 — 법무",
+   "value": 126.35,
+   "basis": "Indeed 미국 채용 공고 지수, 법무 분야, 2026-11-13",
+   "series": [
+    {
+     "period": "2022-11-30",
+     "value": 155.22,
+     "src": 1,
+     "label": "ChatGPT 공개"
+    },
+    {
+     "period": "2022-12-31",
+     "value": 153.64,
+     "src": 1
+    },
+    {
+     "period": "2023-03-31",
+     "value": 143.33,
+     "src": 1
+    },
+    {
+     "period": "2023-06-30",
+     "value": 138.65,
+     "src": 1
+    },
+    {
+     "period": "2023-09-30",
+     "value": 134.08,
+     "src": 1
+    },
+    {
+     "period": "2023-12-31",
+     "value": 126.29,
+     "src": 1
+    },
+    {
+     "period": "2024-03-31",
+     "value": 130.77,
+     "src": 1
+    },
+    {
+     "period": "2024-06-30",
+     "value": 129.65,
+     "src": 1
+    },
+    {
+     "period": "2024-09-30",
+     "value": 128.22,
+     "src": 1
+    },
+    {
+     "period": "2024-12-31",
+     "value": 128.77,
+     "src": 1
+    },
+    {
+     "period": "2025-03-31",
+     "value": 124.78,
+     "src": 1
+    },
+    {
+     "period": "2025-06-30",
+     "value": 120.95,
+     "src": 1
+    },
+    {
+     "period": "2025-09-30",
+     "value": 120.8,
+     "src": 1
+    },
+    {
+     "period": "2025-12-31",
+     "value": 120.76,
+     "src": 1
+    },
+    {
+     "period": "2026-03-31",
+     "value": 119.07,
+     "src": 1
+    },
+    {
+     "period": "2026-06-30",
+     "value": 116.08,
+     "src": 1
+    },
+    {
+     "period": "2026-09-30",
+     "value": 122.01,
+     "src": 1
+    },
+    {
+     "period": "2026-11-13",
+     "value": 126.35,
+     "src": 1,
+     "label": "최근"
+    }
+   ],
+   "detail": {
+    "since_base_pct": -18.6,
+    "last_year_pct": 5.4,
+    "vs_total_since_base_pct": 12.4,
+    "vs_total_last_year_pct": 0.2,
+    "low_since_base": {
+     "date": "2026-06-01",
+     "value": 114.88
+    }
+   },
+   "links": [
+    "spread",
+    "counter"
+   ],
+   "sides": {
+    "H1": "중립"
+   },
+   "side_basis": "법무 공고는 2022-11 뒤 -18.6%(전체 대비 +12.4%), 최근 1년 +5.4%(전체 대비 +0.2%)다. 한 구간이 전체와 비슷해 방향을 정하지 않았다.",
+   "note": "방향은 전체 대비 변화가 두 구간 모두 ±5% 를 넘는지로 매겼다.",
+   "country": "US",
+   "city": null,
+   "unit": "지수(2020-02-01=100)",
+   "asof": "2026-11-13",
+   "definition": "Indeed 에 올라온 미국 채용 공고 수의 지수다(2020-02-01 = 100, 7일 이동평균, 계절조정). 한 구인 사이트의 공고이고 고용이 아니다. 분야는 Indeed 의 분류다. 자료는 CC BY 4.0 으로 공개돼 있다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Indeed Hiring Lab — Job Postings Tracker(미국, 분야별)",
+     "url": "https://github.com/hiring-lab/job_postings_tracker",
+     "date": "2026-11-19",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "auto": true
+  },
+  {
+   "id": "postings-marketing",
+   "metric": "미국 채용 공고 지수 — 마케팅",
+   "value": 78.44,
+   "basis": "Indeed 미국 채용 공고 지수, 마케팅 분야, 2026-11-13",
+   "series": [
+    {
+     "period": "2022-11-30",
+     "value": 122.15,
+     "src": 1,
+     "label": "ChatGPT 공개"
+    },
+    {
+     "period": "2022-12-31",
+     "value": 115.53,
+     "src": 1
+    },
+    {
+     "period": "2023-03-31",
+     "value": 99.27,
+     "src": 1
+    },
+    {
+     "period": "2023-06-30",
+     "value": 90.22,
+     "src": 1
+    },
+    {
+     "period": "2023-09-30",
+     "value": 86.24,
+     "src": 1
+    },
+    {
+     "period": "2023-12-31",
+     "value": 83.76,
+     "src": 1
+    },
+    {
+     "period": "2024-03-31",
+     "value": 81.02,
+     "src": 1
+    },
+    {
+     "period": "2024-06-30",
+     "value": 79.71,
+     "src": 1
+    },
+    {
+     "period": "2024-09-30",
+     "value": 81.14,
+     "src": 1
+    },
+    {
+     "period": "2024-12-31",
+     "value": 81.89,
+     "src": 1
+    },
+    {
+     "period": "2025-03-31",
+     "value": 76.43,
+     "src": 1
+    },
+    {
+     "period": "2025-06-30",
+     "value": 74.53,
+     "src": 1
+    },
+    {
+     "period": "2025-09-30",
+     "value": 78.27,
+     "src": 1
+    },
+    {
+     "period": "2025-12-31",
+     "value": 79.44,
+     "src": 1
+    },
+    {
+     "period": "2026-03-31",
+     "value": 74.35,
+     "src": 1
+    },
+    {
+     "period": "2026-06-30",
+     "value": 73.87,
+     "src": 1
+    },
+    {
+     "period": "2026-09-30",
+     "value": 75.66,
+     "src": 1
+    },
+    {
+     "period": "2026-11-13",
+     "value": 78.44,
+     "src": 1,
+     "label": "최근"
+    }
+   ],
+   "detail": {
+    "since_base_pct": -35.8,
+    "last_year_pct": 0.8,
+    "vs_total_since_base_pct": -11.3,
+    "vs_total_last_year_pct": -4.2,
+    "low_since_base": {
+     "date": "2026-04-29",
+     "value": 73.61
+    }
+   },
+   "links": [
+    "spread",
+    "counter"
+   ],
+   "sides": {
+    "H1": "중립"
+   },
+   "side_basis": "마케팅 공고는 2022-11 뒤 -35.8%(전체 대비 -11.3%), 최근 1년 +0.8%(전체 대비 -4.2%)다. 한 구간이 전체와 비슷해 방향을 정하지 않았다.",
+   "note": "방향은 전체 대비 변화가 두 구간 모두 ±5% 를 넘는지로 매겼다.",
+   "country": "US",
+   "city": null,
+   "unit": "지수(2020-02-01=100)",
+   "asof": "2026-11-13",
+   "definition": "Indeed 에 올라온 미국 채용 공고 수의 지수다(2020-02-01 = 100, 7일 이동평균, 계절조정). 한 구인 사이트의 공고이고 고용이 아니다. 분야는 Indeed 의 분류다. 자료는 CC BY 4.0 으로 공개돼 있다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Indeed Hiring Lab — Job Postings Tracker(미국, 분야별)",
+     "url": "https://github.com/hiring-lab/job_postings_tracker",
+     "date": "2026-11-19",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "auto": true
+  },
+  {
+   "id": "postings-media-communications",
+   "metric": "미국 채용 공고 지수 — 미디어·커뮤니케이션",
+   "value": 66.02,
+   "basis": "Indeed 미국 채용 공고 지수, 미디어·커뮤니케이션 분야, 2026-11-13",
+   "series": [
+    {
+     "period": "2022-11-30",
+     "value": 124.19,
+     "src": 1,
+     "label": "ChatGPT 공개"
+    },
+    {
+     "period": "2022-12-31",
+     "value": 116.51,
+     "src": 1
+    },
+    {
+     "period": "2023-03-31",
+     "value": 105.51,
+     "src": 1
+    },
+    {
+     "period": "2023-06-30",
+     "value": 95.69,
+     "src": 1
+    },
+    {
+     "period": "2023-09-30",
+     "value": 86.93,
+     "src": 1
+    },
+    {
+     "period": "2023-12-31",
+     "value": 84.78,
+     "src": 1
+    },
+    {
+     "period": "2024-03-31",
+     "value": 84.1,
+     "src": 1
+    },
+    {
+     "period": "2024-06-30",
+     "value": 80.35,
+     "src": 1
+    },
+    {
+     "period": "2024-09-30",
+     "value": 78.03,
+     "src": 1
+    },
+    {
+     "period": "2024-12-31",
+     "value": 75.56,
+     "src": 1
+    },
+    {
+     "period": "2025-03-31",
+     "value": 66.72,
+     "src": 1
+    },
+    {
+     "period": "2025-06-30",
+     "value": 64.46,
+     "src": 1
+    },
+    {
+     "period": "2025-09-30",
+     "value": 64.35,
+     "src": 1
+    },
+    {
+     "period": "2025-12-31",
+     "value": 66.87,
+     "src": 1
+    },
+    {
+     "period": "2026-03-31",
+     "value": 62.36,
+     "src": 1
+    },
+    {
+     "period": "2026-06-30",
+     "value": 65.2,
+     "src": 1
+    },
+    {
+     "period": "2026-09-30",
+     "value": 70.48,
+     "src": 1
+    },
+    {
+     "period": "2026-11-13",
+     "value": 66.02,
+     "src": 1,
+     "label": "최근"
+    }
+   ],
+   "detail": {
+    "since_base_pct": -46.8,
+    "last_year_pct": 3.7,
+    "vs_total_since_base_pct": -26.5,
+    "vs_total_last_year_pct": -1.4,
+    "low_since_base": {
+     "date": "2025-08-29",
+     "value": 60.06
+    }
+   },
+   "links": [
+    "spread",
+    "counter"
+   ],
+   "sides": {
+    "H1": "중립"
+   },
+   "side_basis": "미디어·커뮤니케이션 공고는 2022-11 뒤 -46.8%(전체 대비 -26.5%), 최근 1년 +3.7%(전체 대비 -1.4%)다. 한 구간이 전체와 비슷해 방향을 정하지 않았다.",
+   "note": "방향은 전체 대비 변화가 두 구간 모두 ±5% 를 넘는지로 매겼다.",
+   "country": "US",
+   "city": null,
+   "unit": "지수(2020-02-01=100)",
+   "asof": "2026-11-13",
+   "definition": "Indeed 에 올라온 미국 채용 공고 수의 지수다(2020-02-01 = 100, 7일 이동평균, 계절조정). 한 구인 사이트의 공고이고 고용이 아니다. 분야는 Indeed 의 분류다. 자료는 CC BY 4.0 으로 공개돼 있다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Indeed Hiring Lab — Job Postings Tracker(미국, 분야별)",
+     "url": "https://github.com/hiring-lab/job_postings_tracker",
+     "date": "2026-11-19",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "auto": true
+  },
+  {
+   "id": "postings-human-resources",
+   "metric": "미국 채용 공고 지수 — 인사",
+   "value": 100.82,
+   "basis": "Indeed 미국 채용 공고 지수, 인사 분야, 2026-11-13",
+   "series": [
+    {
+     "period": "2022-11-30",
+     "value": 155.45,
+     "src": 1,
+     "label": "ChatGPT 공개"
+    },
+    {
+     "period": "2022-12-31",
+     "value": 144.75,
+     "src": 1
+    },
+    {
+     "period": "2023-03-31",
+     "value": 127.38,
+     "src": 1
+    },
+    {
+     "period": "2023-06-30",
+     "value": 112.76,
+     "src": 1
+    },
+    {
+     "period": "2023-09-30",
+     "value": 108.63,
+     "src": 1
+    },
+    {
+     "period": "2023-12-31",
+     "value": 101.52,
+     "src": 1
+    },
+    {
+     "period": "2024-03-31",
+     "value": 100.62,
+     "src": 1
+    },
+    {
+     "period": "2024-06-30",
+     "value": 94.07,
+     "src": 1
+    },
+    {
+     "period": "2024-09-30",
+     "value": 96.5,
+     "src": 1
+    },
+    {
+     "period": "2024-12-31",
+     "value": 92,
+     "src": 1
+    },
+    {
+     "period": "2025-03-31",
+     "value": 87.63,
+     "src": 1
+    },
+    {
+     "period": "2025-06-30",
+     "value": 84.91,
+     "src": 1
+    },
+    {
+     "period": "2025-09-30",
+     "value": 84.82,
+     "src": 1
+    },
+    {
+     "period": "2025-12-31",
+     "value": 88.47,
+     "src": 1
+    },
+    {
+     "period": "2026-03-31",
+     "value": 91.17,
+     "src": 1
+    },
+    {
+     "period": "2026-06-30",
+     "value": 93.04,
+     "src": 1
+    },
+    {
+     "period": "2026-09-30",
+     "value": 97.48,
+     "src": 1
+    },
+    {
+     "period": "2026-11-13",
+     "value": 100.82,
+     "src": 1,
+     "label": "최근"
+    }
+   ],
+   "detail": {
+    "since_base_pct": -35.1,
+    "last_year_pct": 17.9,
+    "vs_total_since_base_pct": -10.4,
+    "vs_total_last_year_pct": 12.1,
+    "low_since_base": {
+     "date": "2025-05-30",
+     "value": 82.86
+    }
+   },
+   "links": [
+    "spread",
+    "counter"
+   ],
+   "sides": {
+    "H1": "양쪽"
+   },
+   "side_basis": "인사 공고는 2022-11 뒤 -35.1%(전체 대비 -10.4%), 최근 1년 +17.9%(전체 대비 +12.1%)다. 두 구간의 방향이 반대다. 앞 구간의 약세가 AI 때문인지 금리·채용 과열의 되돌림인지 이 값으로는 가르지 못한다.",
+   "note": "방향은 전체 대비 변화가 두 구간 모두 ±5% 를 넘는지로 매겼다.",
+   "country": "US",
+   "city": null,
+   "unit": "지수(2020-02-01=100)",
+   "asof": "2026-11-13",
+   "definition": "Indeed 에 올라온 미국 채용 공고 수의 지수다(2020-02-01 = 100, 7일 이동평균, 계절조정). 한 구인 사이트의 공고이고 고용이 아니다. 분야는 Indeed 의 분류다. 자료는 CC BY 4.0 으로 공개돼 있다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Indeed Hiring Lab — Job Postings Tracker(미국, 분야별)",
+     "url": "https://github.com/hiring-lab/job_postings_tracker",
+     "date": "2026-11-19",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "auto": true
+  },
+  {
+   "id": "postings-sales",
+   "metric": "미국 채용 공고 지수 — 영업",
+   "value": 95.14,
+   "basis": "Indeed 미국 채용 공고 지수, 영업 분야, 2026-11-13",
+   "series": [
+    {
+     "period": "2022-11-30",
+     "value": 117.85,
+     "src": 1,
+     "label": "ChatGPT 공개"
+    },
+    {
+     "period": "2022-12-31",
+     "value": 114.85,
+     "src": 1
+    },
+    {
+     "period": "2023-03-31",
+     "value": 106.71,
+     "src": 1
+    },
+    {
+     "period": "2023-06-30",
+     "value": 102.9,
+     "src": 1
+    },
+    {
+     "period": "2023-09-30",
+     "value": 97.84,
+     "src": 1
+    },
+    {
+     "period": "2023-12-31",
+     "value": 96.88,
+     "src": 1
+    },
+    {
+     "period": "2024-03-31",
+     "value": 95.2,
+     "src": 1
+    },
+    {
+     "period": "2024-06-30",
+     "value": 93.18,
+     "src": 1
+    },
+    {
+     "period": "2024-09-30",
+     "value": 93.51,
+     "src": 1
+    },
+    {
+     "period": "2024-12-31",
+     "value": 94.69,
+     "src": 1
+    },
+    {
+     "period": "2025-03-31",
+     "value": 94.68,
+     "src": 1
+    },
+    {
+     "period": "2025-06-30",
+     "value": 93.69,
+     "src": 1
+    },
+    {
+     "period": "2025-09-30",
+     "value": 90.97,
+     "src": 1
+    },
+    {
+     "period": "2025-12-31",
+     "value": 98.06,
+     "src": 1
+    },
+    {
+     "period": "2026-03-31",
+     "value": 95.41,
+     "src": 1
+    },
+    {
+     "period": "2026-06-30",
+     "value": 90.43,
+     "src": 1
+    },
+    {
+     "period": "2026-09-30",
+     "value": 92.3,
+     "src": 1
+    },
+    {
+     "period": "2026-11-13",
+     "value": 95.14,
+     "src": 1,
+     "label": "최근"
+    }
+   ],
+   "detail": {
+    "since_base_pct": -19.3,
+    "last_year_pct": 3.9,
+    "vs_total_since_base_pct": 11.5,
+    "vs_total_last_year_pct": -1.2,
+    "low_since_base": {
+     "date": "2026-08-06",
+     "value": 89.07
+    }
+   },
+   "links": [
+    "spread",
+    "counter"
+   ],
+   "sides": {
+    "H1": "중립"
+   },
+   "side_basis": "영업 공고는 2022-11 뒤 -19.3%(전체 대비 +11.5%), 최근 1년 +3.9%(전체 대비 -1.2%)다. 한 구간이 전체와 비슷해 방향을 정하지 않았다.",
+   "note": "방향은 전체 대비 변화가 두 구간 모두 ±5% 를 넘는지로 매겼다.",
+   "country": "US",
+   "city": null,
+   "unit": "지수(2020-02-01=100)",
+   "asof": "2026-11-13",
+   "definition": "Indeed 에 올라온 미국 채용 공고 수의 지수다(2020-02-01 = 100, 7일 이동평균, 계절조정). 한 구인 사이트의 공고이고 고용이 아니다. 분야는 Indeed 의 분류다. 자료는 CC BY 4.0 으로 공개돼 있다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Indeed Hiring Lab — Job Postings Tracker(미국, 분야별)",
+     "url": "https://github.com/hiring-lab/job_postings_tracker",
+     "date": "2026-11-19",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "auto": true
+  },
+  {
+   "id": "postings-management",
+   "metric": "미국 채용 공고 지수 — 관리",
+   "value": 106,
+   "basis": "Indeed 미국 채용 공고 지수, 관리 분야, 2026-11-13",
+   "series": [
+    {
+     "period": "2022-11-30",
+     "value": 135.99,
+     "src": 1,
+     "label": "ChatGPT 공개"
+    },
+    {
+     "period": "2022-12-31",
+     "value": 129.2,
+     "src": 1
+    },
+    {
+     "period": "2023-03-31",
+     "value": 121.73,
+     "src": 1
+    },
+    {
+     "period": "2023-06-30",
+     "value": 119.82,
+     "src": 1
+    },
+    {
+     "period": "2023-09-30",
+     "value": 117.72,
+     "src": 1
+    },
+    {
+     "period": "2023-12-31",
+     "value": 115.93,
+     "src": 1
+    },
+    {
+     "period": "2024-03-31",
+     "value": 114.84,
+     "src": 1
+    },
+    {
+     "period": "2024-06-30",
+     "value": 104.85,
+     "src": 1
+    },
+    {
+     "period": "2024-09-30",
+     "value": 108.25,
+     "src": 1
+    },
+    {
+     "period": "2024-12-31",
+     "value": 107.28,
+     "src": 1
+    },
+    {
+     "period": "2025-03-31",
+     "value": 102.44,
+     "src": 1
+    },
+    {
+     "period": "2025-06-30",
+     "value": 100.42,
+     "src": 1
+    },
+    {
+     "period": "2025-09-30",
+     "value": 96,
+     "src": 1
+    },
+    {
+     "period": "2025-12-31",
+     "value": 100.56,
+     "src": 1
+    },
+    {
+     "period": "2026-03-31",
+     "value": 99.92,
+     "src": 1
+    },
+    {
+     "period": "2026-06-30",
+     "value": 99.52,
+     "src": 1
+    },
+    {
+     "period": "2026-09-30",
+     "value": 103.87,
+     "src": 1
+    },
+    {
+     "period": "2026-11-13",
+     "value": 106,
+     "src": 1,
+     "label": "최근"
+    }
+   ],
+   "detail": {
+    "since_base_pct": -22.1,
+    "last_year_pct": 9,
+    "vs_total_since_base_pct": 7.6,
+    "vs_total_last_year_pct": 3.6,
+    "low_since_base": {
+     "date": "2025-10-03",
+     "value": 95.67
+    }
+   },
+   "links": [
+    "spread",
+    "counter"
+   ],
+   "sides": {
+    "H1": "중립"
+   },
+   "side_basis": "관리 공고는 2022-11 뒤 -22.1%(전체 대비 +7.6%), 최근 1년 +9.0%(전체 대비 +3.6%)다. 한 구간이 전체와 비슷해 방향을 정하지 않았다.",
+   "note": "방향은 전체 대비 변화가 두 구간 모두 ±5% 를 넘는지로 매겼다.",
+   "country": "US",
+   "city": null,
+   "unit": "지수(2020-02-01=100)",
+   "asof": "2026-11-13",
+   "definition": "Indeed 에 올라온 미국 채용 공고 수의 지수다(2020-02-01 = 100, 7일 이동평균, 계절조정). 한 구인 사이트의 공고이고 고용이 아니다. 분야는 Indeed 의 분류다. 자료는 CC BY 4.0 으로 공개돼 있다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Indeed Hiring Lab — Job Postings Tracker(미국, 분야별)",
+     "url": "https://github.com/hiring-lab/job_postings_tracker",
+     "date": "2026-11-19",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "auto": true
+  },
+  {
+   "id": "postings-project-management",
+   "metric": "미국 채용 공고 지수 — 프로젝트 관리",
+   "value": 119.04,
+   "basis": "Indeed 미국 채용 공고 지수, 프로젝트 관리 분야, 2026-11-13",
+   "series": [
+    {
+     "period": "2022-11-30",
+     "value": 155.28,
+     "src": 1,
+     "label": "ChatGPT 공개"
+    },
+    {
+     "period": "2022-12-31",
+     "value": 150.04,
+     "src": 1
+    },
+    {
+     "period": "2023-03-31",
+     "value": 135.65,
+     "src": 1
+    },
+    {
+     "period": "2023-06-30",
+     "value": 127.55,
+     "src": 1
+    },
+    {
+     "period": "2023-09-30",
+     "value": 124.2,
+     "src": 1
+    },
+    {
+     "period": "2023-12-31",
+     "value": 119.55,
+     "src": 1
+    },
+    {
+     "period": "2024-03-31",
+     "value": 117.38,
+     "src": 1
+    },
+    {
+     "period": "2024-06-30",
+     "value": 115.22,
+     "src": 1
+    },
+    {
+     "period": "2024-09-30",
+     "value": 111.97,
+     "src": 1
+    },
+    {
+     "period": "2024-12-31",
+     "value": 109.35,
+     "src": 1
+    },
+    {
+     "period": "2025-03-31",
+     "value": 103.4,
+     "src": 1
+    },
+    {
+     "period": "2025-06-30",
+     "value": 99.17,
+     "src": 1
+    },
+    {
+     "period": "2025-09-30",
+     "value": 99.35,
+     "src": 1
+    },
+    {
+     "period": "2025-12-31",
+     "value": 105.82,
+     "src": 1
+    },
+    {
+     "period": "2026-03-31",
+     "value": 106.46,
+     "src": 1
+    },
+    {
+     "period": "2026-06-30",
+     "value": 108.84,
+     "src": 1
+    },
+    {
+     "period": "2026-09-30",
+     "value": 118.38,
+     "src": 1
+    },
+    {
+     "period": "2026-11-13",
+     "value": 119.04,
+     "src": 1,
+     "label": "최근"
+    }
+   ],
+   "detail": {
+    "since_base_pct": -23.3,
+    "last_year_pct": 18,
+    "vs_total_since_base_pct": 5.9,
+    "vs_total_last_year_pct": 12.2,
+    "low_since_base": {
+     "date": "2025-05-17",
+     "value": 98.56
+    }
+   },
+   "links": [
+    "spread",
+    "counter"
+   ],
+   "sides": {
+    "H1": "반박"
+   },
+   "side_basis": "프로젝트 관리 공고는 2022-11 뒤 -23.3%(전체 대비 +5.9%), 최근 1년 +18.0%(전체 대비 +12.2%)다. 두 구간 모두 전체보다 강하다. 대체가 고용 쪽 숫자에 보이지 않는다는 쪽이다.",
+   "note": "방향은 전체 대비 변화가 두 구간 모두 ±5% 를 넘는지로 매겼다.",
+   "country": "US",
+   "city": null,
+   "unit": "지수(2020-02-01=100)",
+   "asof": "2026-11-13",
+   "definition": "Indeed 에 올라온 미국 채용 공고 수의 지수다(2020-02-01 = 100, 7일 이동평균, 계절조정). 한 구인 사이트의 공고이고 고용이 아니다. 분야는 Indeed 의 분류다. 자료는 CC BY 4.0 으로 공개돼 있다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Indeed Hiring Lab — Job Postings Tracker(미국, 분야별)",
+     "url": "https://github.com/hiring-lab/job_postings_tracker",
+     "date": "2026-11-19",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "auto": true
+  },
+  {
+   "id": "postings-knowledge-vs-total",
+   "metric": "사무·지식 분야 채용 공고의 전체 대비 변화",
+   "value": null,
+   "unit": "%(전체 대비 변화)",
+   "asof": "2026-11-13",
+   "basis": "계산: 사무·지식 분야 16개의 공고 지수 변화를 전체 지수의 변화로 나눈다. 두 구간 모두 전체보다 5% 넘게 약한 분야 2개, 강한 분야 1개, 방향이 반대인 분야 3개",
+   "definition": "분야마다 (1 + 분야 변화) ÷ (1 + 전체 변화) − 1 을 2022-11-30 뒤와 최근 52주 두 구간에 낸다. 분야의 크기로 가중하지 않았다. 대면·현장 분야의 평균(hands_on_mean)은 견줄 값이다.",
+   "detail": {
+    "counts": {
+     "지지": 2,
+     "반박": 1,
+     "양쪽": 3,
+     "중립": 10
+    },
+    "sectors": {
+     "software-development": {
+      "name": "소프트웨어 개발",
+      "side": "양쪽",
+      "since_base_pct": -42.7,
+      "last_year_pct": 23.6,
+      "vs_total_since_base_pct": -20.9,
+      "vs_total_last_year_pct": 17.5
+     },
+     "data-analytics": {
+      "name": "데이터·분석",
+      "side": "중립",
+      "since_base_pct": -55,
+      "last_year_pct": 4.1,
+      "vs_total_since_base_pct": -37.8,
+      "vs_total_last_year_pct": -1
+     },
+     "it-operations": {
+      "name": "IT 운영·지원",
+      "side": "중립",
+      "since_base_pct": -46.4,
+      "last_year_pct": 10.2,
+      "vs_total_since_base_pct": -26,
+      "vs_total_last_year_pct": 4.8
+     },
+     "it-systems": {
+      "name": "IT 시스템·솔루션",
+      "side": "양쪽",
+      "since_base_pct": -41.5,
+      "last_year_pct": 13.6,
+      "vs_total_since_base_pct": -19.2,
+      "vs_total_last_year_pct": 8
+     },
+     "customer-service": {
+      "name": "고객 서비스",
+      "side": "중립",
+      "since_base_pct": -27,
+      "last_year_pct": 3.6,
+      "vs_total_since_base_pct": 0.8,
+      "vs_total_last_year_pct": -1.5
+     },
+     "administrative-assistance": {
+      "name": "사무 보조",
+      "side": "지지",
+      "since_base_pct": -43,
+      "last_year_pct": -1.6,
+      "vs_total_since_base_pct": -21.3,
+      "vs_total_last_year_pct": -6.5
+     },
+     "accounting": {
+      "name": "회계",
+      "side": "지지",
+      "since_base_pct": -44.2,
+      "last_year_pct": -2.6,
+      "vs_total_since_base_pct": -22.9,
+      "vs_total_last_year_pct": -7.4
+     },
+     "banking-finance": {
+      "name": "금융",
+      "side": "중립",
+      "since_base_pct": -25.3,
+      "last_year_pct": 11.9,
+      "vs_total_since_base_pct": 3.2,
+      "vs_total_last_year_pct": 6.4
+     },
+     "insurance": {
+      "name": "보험",
+      "side": "중립",
+      "since_base_pct": -17,
+      "last_year_pct": 4.8,
+      "vs_total_since_base_pct": 14.6,
+      "vs_total_last_year_pct": -0.4
+     },
+     "legal": {
+      "name": "법무",
+      "side": "중립",
+      "since_base_pct": -18.6,
+      "last_year_pct": 5.4,
+      "vs_total_since_base_pct": 12.4,
+      "vs_total_last_year_pct": 0.2
+     },
+     "marketing": {
+      "name": "마케팅",
+      "side": "중립",
+      "since_base_pct": -35.8,
+      "last_year_pct": 0.8,
+      "vs_total_since_base_pct": -11.3,
+      "vs_total_last_year_pct": -4.2
+     },
+     "media-communications": {
+      "name": "미디어·커뮤니케이션",
+      "side": "중립",
+      "since_base_pct": -46.8,
+      "last_year_pct": 3.7,
+      "vs_total_since_base_pct": -26.5,
+      "vs_total_last_year_pct": -1.4
+     },
+     "human-resources": {
+      "name": "인사",
+      "side": "양쪽",
+      "since_base_pct": -35.1,
+      "last_year_pct": 17.9,
+      "vs_total_since_base_pct": -10.4,
+      "vs_total_last_year_pct": 12.1
+     },
+     "sales": {
+      "name": "영업",
+      "side": "중립",
+      "since_base_pct": -19.3,
+      "last_year_pct": 3.9,
+      "vs_total_since_base_pct": 11.5,
+      "vs_total_last_year_pct": -1.2
+     },
+     "management": {
+      "name": "관리",
+      "side": "중립",
+      "since_base_pct": -22.1,
+      "last_year_pct": 9,
+      "vs_total_since_base_pct": 7.6,
+      "vs_total_last_year_pct": 3.6
+     },
+     "project-management": {
+      "name": "프로젝트 관리",
+      "side": "반박",
+      "since_base_pct": -23.3,
+      "last_year_pct": 18,
+      "vs_total_since_base_pct": 5.9,
+      "vs_total_last_year_pct": 12.2
+     }
+    },
+    "hands_on_mean": {
+     "vs_total_since_base_pct": 2,
+     "vs_total_last_year_pct": -0.1
+    },
+    "hands_on_sectors": [
+     "Nursing",
+     "Construction",
+     "Food Preparation & Service",
+     "Driving",
+     "Installation & Maintenance",
+     "Personal Care & Home Health",
+     "Retail",
+     "Cleaning & Sanitation"
+    ]
+   },
+   "links": [
+    "spread",
+    "counter"
+   ],
+   "sides": {
+    "H1": "양쪽"
+   },
+   "side_basis": "사무·지식 분야 16개 가운데 2022-11 뒤와 최근 1년 모두 전체보다 약한 것이 2개, 모두 강한 것이 1개, 방향이 반대인 것이 3개다. 소프트웨어 개발은 2022-11 뒤 전체 대비 -20.9% 였다가 최근 1년에는 +17.5% 다.",
+   "refs": [
+    {
+     "bundle": "K4",
+     "id": "postings-total"
+    },
+    {
+     "bundle": "K4",
+     "id": "postings-software-development"
+    },
+    {
+     "bundle": "K4",
+     "id": "postings-data-analytics"
+    },
+    {
+     "bundle": "K4",
+     "id": "postings-it-operations"
+    },
+    {
+     "bundle": "K4",
+     "id": "postings-it-systems"
+    },
+    {
+     "bundle": "K4",
+     "id": "postings-customer-service"
+    },
+    {
+     "bundle": "K4",
+     "id": "postings-administrative-assistance"
+    },
+    {
+     "bundle": "K4",
+     "id": "postings-accounting"
+    },
+    {
+     "bundle": "K4",
+     "id": "postings-banking-finance"
+    },
+    {
+     "bundle": "K4",
+     "id": "postings-insurance"
+    },
+    {
+     "bundle": "K4",
+     "id": "postings-legal"
+    },
+    {
+     "bundle": "K4",
+     "id": "postings-marketing"
+    },
+    {
+     "bundle": "K4",
+     "id": "postings-media-communications"
+    },
+    {
+     "bundle": "K4",
+     "id": "postings-human-resources"
+    },
+    {
+     "bundle": "K4",
+     "id": "postings-sales"
+    },
+    {
+     "bundle": "K4",
+     "id": "postings-management"
+    },
+    {
+     "bundle": "K4",
+     "id": "postings-project-management"
+    }
+   ],
+   "sources": [],
+   "value_src": [],
+   "alt": [],
+   "conf": "low",
+   "auto": true,
+   "country": "US",
+   "city": null,
+   "note": "공고는 채용 의향이고 고용이 아니다. 2022~2023년의 하락은 금리와 채용 과열의 되돌림이 겹쳐 있다. 방향은 AI 의 해석이다."
+  },
+  {
+   "id": "employment-total",
+   "metric": "미국 고용 — 비농업 전체",
+   "value": 159293,
+   "asof": "2026-10",
+   "basis": "미국 비농업 전체 고용(계절조정), 2026-10",
+   "definition": "사업체 조사(CES)의 전 종사자 수이고 계절조정 값이다. 업종은 사업체의 주된 활동으로 나눈 것이라 직종이 아니다. 최근 두 달은 잠정치다.",
+   "series": [
+    {
+     "period": "2022-11",
+     "value": 154242,
+     "src": 1,
+     "label": "ChatGPT 공개"
+    },
+    {
+     "period": "2022-12",
+     "value": 154342,
+     "src": 1
+    },
+    {
+     "period": "2023-03",
+     "value": 155134,
+     "src": 1
+    },
+    {
+     "period": "2023-06",
+     "value": 155880,
+     "src": 1
+    },
+    {
+     "period": "2023-09",
+     "value": 156417,
+     "src": 1
+    },
+    {
+     "period": "2023-12",
+     "value": 156857,
+     "src": 1
+    },
+    {
+     "period": "2024-03",
+     "value": 157466,
+     "src": 1
+    },
+    {
+     "period": "2024-06",
+     "value": 157695,
+     "src": 1
+    },
+    {
+     "period": "2024-09",
+     "value": 157912,
+     "src": 1
+    },
+    {
+     "period": "2024-12",
+     "value": 158316,
+     "src": 1
+    },
+    {
+     "period": "2025-03",
+     "value": 158377,
+     "src": 1
+    },
+    {
+     "period": "2025-06",
+     "value": 158478,
+     "src": 1
+    },
+    {
+     "period": "2025-09",
+     "value": 158548,
+     "src": 1
+    },
+    {
+     "period": "2025-12",
+     "value": 158432,
+     "src": 1
+    },
+    {
+     "period": "2026-03",
+     "value": 158650,
+     "src": 1
+    },
+    {
+     "period": "2026-06",
+     "value": 158892,
+     "src": 1
+    },
+    {
+     "period": "2026-09",
+     "value": 159128,
+     "src": 1,
+     "note": "잠정"
+    },
+    {
+     "period": "2026-10",
+     "value": 159293,
+     "src": 1,
+     "note": "잠정"
+    }
+   ],
+   "detail": {
+    "since_base_pct": 3.3,
+    "last_year_pct": 0.6
+   },
+   "links": [
+    "counter"
+   ],
+   "sides": {
+    "H1": "중립"
+   },
+   "side_basis": "업종별 값을 견줄 기준이다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "미국 노동통계국(BLS) — Current Employment Statistics, 시계열 CES0000000001",
+     "url": "https://data.bls.gov/timeseries/CES0000000001",
+     "date": "2026-11-19",
+     "read": "full"
+    }
+   ],
+   "note": "업종별 기록은 그 업종의 가장 최근 달과 같은 달의 전체 값에 견준다.",
+   "country": "US",
+   "city": null,
+   "unit": "천 명",
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "auto": true
+  },
+  {
+   "id": "employment-computer-systems-design",
+   "metric": "미국 고용 — 컴퓨터 시스템 설계·관련 서비스(IT서비스)",
+   "value": 2354.1,
+   "asof": "2026-10",
+   "basis": "미국 컴퓨터 시스템 설계·관련 서비스(IT서비스)(북미산업분류 5415) 고용, 2026-10",
+   "definition": "사업체 조사(CES)의 전 종사자 수이고 계절조정 값이다. 업종은 사업체의 주된 활동으로 나눈 것이라 직종이 아니다. 최근 두 달은 잠정치다.",
+   "series": [
+    {
+     "period": "2022-11",
+     "value": 2482.9,
+     "src": 1,
+     "label": "ChatGPT 공개"
+    },
+    {
+     "period": "2022-12",
+     "value": 2483,
+     "src": 1
+    },
+    {
+     "period": "2023-03",
+     "value": 2483.5,
+     "src": 1
+    },
+    {
+     "period": "2023-06",
+     "value": 2472.9,
+     "src": 1
+    },
+    {
+     "period": "2023-09",
+     "value": 2456.5,
+     "src": 1
+    },
+    {
+     "period": "2023-12",
+     "value": 2449.8,
+     "src": 1
+    },
+    {
+     "period": "2024-03",
+     "value": 2439.8,
+     "src": 1
+    },
+    {
+     "period": "2024-06",
+     "value": 2444.7,
+     "src": 1
+    },
+    {
+     "period": "2024-09",
+     "value": 2437.6,
+     "src": 1
+    },
+    {
+     "period": "2024-12",
+     "value": 2431.4,
+     "src": 1
+    },
+    {
+     "period": "2025-03",
+     "value": 2408.9,
+     "src": 1
+    },
+    {
+     "period": "2025-06",
+     "value": 2399.9,
+     "src": 1
+    },
+    {
+     "period": "2025-09",
+     "value": 2387.6,
+     "src": 1
+    },
+    {
+     "period": "2025-12",
+     "value": 2380.6,
+     "src": 1
+    },
+    {
+     "period": "2026-03",
+     "value": 2369.6,
+     "src": 1
+    },
+    {
+     "period": "2026-06",
+     "value": 2368.3,
+     "src": 1
+    },
+    {
+     "period": "2026-09",
+     "value": 2350.9,
+     "src": 1,
+     "note": "잠정"
+    },
+    {
+     "period": "2026-10",
+     "value": 2354.1,
+     "src": 1,
+     "note": "잠정"
+    }
+   ],
+   "detail": {
+    "since_base_pct": -5.2,
+    "last_year_pct": -1.1,
+    "vs_total_since_base_pct": -8.2,
+    "vs_total_last_year_pct": -1.7,
+    "change_since_base_thousands": -128.8,
+    "before_base": {
+     "from": "2019-01",
+     "pct": 15.3,
+     "vs_total_pct": 12.2
+    }
+   },
+   "links": [
+    "coding",
+    "counter"
+   ],
+   "sides": {
+    "H1": "중립"
+   },
+   "side_basis": "컴퓨터 시스템 설계·관련 서비스(IT서비스) 고용은 2022-11 뒤 -5.2%(전체 대비 -8.2%), 최근 1년 -1.1%(전체 대비 -1.7%)다. 한 구간이 전체와 비슷해 방향을 정하지 않았다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "미국 노동통계국(BLS) — Current Employment Statistics, 시계열 CES6054150001",
+     "url": "https://data.bls.gov/timeseries/CES6054150001",
+     "date": "2026-11-19",
+     "read": "full"
+    }
+   ],
+   "note": "방향은 전체 대비 변화가 두 구간 모두 ±2% 를 넘는지로 매겼다. 기준점 앞(2019-01~2022-11)에는 +15.3%(전체 대비 +12.2%)였다.",
+   "country": "US",
+   "city": null,
+   "unit": "천 명",
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "auto": true
+  },
+  {
+   "id": "employment-custom-programming",
+   "metric": "미국 고용 — 주문형 프로그래밍 서비스",
+   "value": 1058,
+   "asof": "2026-09",
+   "basis": "미국 주문형 프로그래밍 서비스(북미산업분류 541511) 고용, 2026-09",
+   "definition": "사업체 조사(CES)의 전 종사자 수이고 계절조정 값이다. 업종은 사업체의 주된 활동으로 나눈 것이라 직종이 아니다. 최근 두 달은 잠정치다.",
+   "series": [
+    {
+     "period": "2022-11",
+     "value": 1126.8,
+     "src": 1,
+     "label": "ChatGPT 공개"
+    },
+    {
+     "period": "2022-12",
+     "value": 1125.6,
+     "src": 1
+    },
+    {
+     "period": "2023-03",
+     "value": 1125.9,
+     "src": 1
+    },
+    {
+     "period": "2023-06",
+     "value": 1116.6,
+     "src": 1
+    },
+    {
+     "period": "2023-09",
+     "value": 1101,
+     "src": 1
+    },
+    {
+     "period": "2023-12",
+     "value": 1091.2,
+     "src": 1
+    },
+    {
+     "period": "2024-03",
+     "value": 1086.3,
+     "src": 1
+    },
+    {
+     "period": "2024-06",
+     "value": 1088.8,
+     "src": 1
+    },
+    {
+     "period": "2024-09",
+     "value": 1082.7,
+     "src": 1
+    },
+    {
+     "period": "2024-12",
+     "value": 1079.7,
+     "src": 1
+    },
+    {
+     "period": "2025-03",
+     "value": 1065.8,
+     "src": 1
+    },
+    {
+     "period": "2025-06",
+     "value": 1066.8,
+     "src": 1
+    },
+    {
+     "period": "2025-09",
+     "value": 1066,
+     "src": 1
+    },
+    {
+     "period": "2025-12",
+     "value": 1066.8,
+     "src": 1
+    },
+    {
+     "period": "2026-03",
+     "value": 1063.4,
+     "src": 1
+    },
+    {
+     "period": "2026-06",
+     "value": 1061.4,
+     "src": 1
+    },
+    {
+     "period": "2026-09",
+     "value": 1058,
+     "src": 1,
+     "note": "잠정"
+    }
+   ],
+   "detail": {
+    "since_base_pct": -6.1,
+    "last_year_pct": -0.8,
+    "vs_total_since_base_pct": -9,
+    "vs_total_last_year_pct": -1.2,
+    "change_since_base_thousands": -68.8,
+    "before_base": {
+     "from": "2019-01",
+     "pct": 18.3,
+     "vs_total_pct": 15.1
+    }
+   },
+   "links": [
+    "coding",
+    "counter"
+   ],
+   "sides": {
+    "H1": "중립"
+   },
+   "side_basis": "주문형 프로그래밍 서비스 고용은 2022-11 뒤 -6.1%(전체 대비 -9.0%), 최근 1년 -0.8%(전체 대비 -1.2%)다. 한 구간이 전체와 비슷해 방향을 정하지 않았다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "미국 노동통계국(BLS) — Current Employment Statistics, 시계열 CES6054151101",
+     "url": "https://data.bls.gov/timeseries/CES6054151101",
+     "date": "2026-11-19",
+     "read": "full"
+    }
+   ],
+   "note": "방향은 전체 대비 변화가 두 구간 모두 ±2% 를 넘는지로 매겼다. 기준점 앞(2019-01~2022-11)에는 +18.3%(전체 대비 +15.1%)였다.",
+   "country": "US",
+   "city": null,
+   "unit": "천 명",
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "auto": true
+  },
+  {
+   "id": "employment-software-publishers",
+   "metric": "미국 고용 — 소프트웨어 출판",
+   "value": 653.8,
+   "asof": "2026-09",
+   "basis": "미국 소프트웨어 출판(북미산업분류 5132) 고용, 2026-09",
+   "definition": "사업체 조사(CES)의 전 종사자 수이고 계절조정 값이다. 업종은 사업체의 주된 활동으로 나눈 것이라 직종이 아니다. 최근 두 달은 잠정치다.",
+   "series": [
+    {
+     "period": "2022-11",
+     "value": 664.3,
+     "src": 1,
+     "label": "ChatGPT 공개"
+    },
+    {
+     "period": "2022-12",
+     "value": 660.2,
+     "src": 1
+    },
+    {
+     "period": "2023-03",
+     "value": 657.3,
+     "src": 1
+    },
+    {
+     "period": "2023-06",
+     "value": 657.2,
+     "src": 1
+    },
+    {
+     "period": "2023-09",
+     "value": 661.2,
+     "src": 1
+    },
+    {
+     "period": "2023-12",
+     "value": 643.6,
+     "src": 1
+    },
+    {
+     "period": "2024-03",
+     "value": 642,
+     "src": 1
+    },
+    {
+     "period": "2024-06",
+     "value": 644.2,
+     "src": 1
+    },
+    {
+     "period": "2024-09",
+     "value": 641.9,
+     "src": 1
+    },
+    {
+     "period": "2024-12",
+     "value": 651.4,
+     "src": 1
+    },
+    {
+     "period": "2025-03",
+     "value": 651.6,
+     "src": 1
+    },
+    {
+     "period": "2025-06",
+     "value": 652.7,
+     "src": 1
+    },
+    {
+     "period": "2025-09",
+     "value": 661.4,
+     "src": 1
+    },
+    {
+     "period": "2025-12",
+     "value": 656.8,
+     "src": 1
+    },
+    {
+     "period": "2026-03",
+     "value": 659.4,
+     "src": 1
+    },
+    {
+     "period": "2026-06",
+     "value": 658.6,
+     "src": 1
+    },
+    {
+     "period": "2026-09",
+     "value": 653.8,
+     "src": 1,
+     "note": "잠정"
+    }
+   ],
+   "detail": {
+    "since_base_pct": -1.6,
+    "last_year_pct": -1.1,
+    "vs_total_since_base_pct": -4.7,
+    "vs_total_last_year_pct": -1.5,
+    "change_since_base_thousands": -10.5,
+    "before_base": {
+     "from": "2019-01",
+     "pct": 50.7,
+     "vs_total_pct": 46.6
+    }
+   },
+   "links": [
+    "coding",
+    "counter"
+   ],
+   "sides": {
+    "H1": "중립"
+   },
+   "side_basis": "소프트웨어 출판 고용은 2022-11 뒤 -1.6%(전체 대비 -4.7%), 최근 1년 -1.1%(전체 대비 -1.5%)다. 한 구간이 전체와 비슷해 방향을 정하지 않았다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "미국 노동통계국(BLS) — Current Employment Statistics, 시계열 CES5051320001",
+     "url": "https://data.bls.gov/timeseries/CES5051320001",
+     "date": "2026-11-19",
+     "read": "full"
+    }
+   ],
+   "note": "방향은 전체 대비 변화가 두 구간 모두 ±2% 를 넘는지로 매겼다. 기준점 앞(2019-01~2022-11)에는 +50.7%(전체 대비 +46.6%)였다.",
+   "country": "US",
+   "city": null,
+   "unit": "천 명",
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "auto": true
+  },
+  {
+   "id": "employment-data-processing-hosting",
+   "metric": "미국 고용 — 컴퓨팅 인프라·데이터 처리·호스팅",
+   "value": 454.8,
+   "asof": "2026-10",
+   "basis": "미국 컴퓨팅 인프라·데이터 처리·호스팅(북미산업분류 518) 고용, 2026-10",
+   "definition": "사업체 조사(CES)의 전 종사자 수이고 계절조정 값이다. 업종은 사업체의 주된 활동으로 나눈 것이라 직종이 아니다. 최근 두 달은 잠정치다.",
+   "series": [
+    {
+     "period": "2022-11",
+     "value": 483,
+     "src": 1,
+     "label": "ChatGPT 공개"
+    },
+    {
+     "period": "2022-12",
+     "value": 485.8,
+     "src": 1
+    },
+    {
+     "period": "2023-03",
+     "value": 483.3,
+     "src": 1
+    },
+    {
+     "period": "2023-06",
+     "value": 485.5,
+     "src": 1
+    },
+    {
+     "period": "2023-09",
+     "value": 485.3,
+     "src": 1
+    },
+    {
+     "period": "2023-12",
+     "value": 484.2,
+     "src": 1
+    },
+    {
+     "period": "2024-03",
+     "value": 482.6,
+     "src": 1
+    },
+    {
+     "period": "2024-06",
+     "value": 481.8,
+     "src": 1
+    },
+    {
+     "period": "2024-09",
+     "value": 481.5,
+     "src": 1
+    },
+    {
+     "period": "2024-12",
+     "value": 480.9,
+     "src": 1
+    },
+    {
+     "period": "2025-03",
+     "value": 482.9,
+     "src": 1
+    },
+    {
+     "period": "2025-06",
+     "value": 481.4,
+     "src": 1
+    },
+    {
+     "period": "2025-09",
+     "value": 476.3,
+     "src": 1
+    },
+    {
+     "period": "2025-12",
+     "value": 472.9,
+     "src": 1
+    },
+    {
+     "period": "2026-03",
+     "value": 464,
+     "src": 1
+    },
+    {
+     "period": "2026-06",
+     "value": 460,
+     "src": 1
+    },
+    {
+     "period": "2026-09",
+     "value": 454.8,
+     "src": 1,
+     "note": "잠정"
+    },
+    {
+     "period": "2026-10",
+     "value": 454.8,
+     "src": 1,
+     "note": "잠정"
+    }
+   ],
+   "detail": {
+    "since_base_pct": -5.8,
+    "last_year_pct": -5.4,
+    "vs_total_since_base_pct": -8.8,
+    "vs_total_last_year_pct": -6,
+    "change_since_base_thousands": -28.2,
+    "before_base": {
+     "from": "2019-01",
+     "pct": 46,
+     "vs_total_pct": 42
+    }
+   },
+   "links": [
+    "spread",
+    "counter"
+   ],
+   "sides": {
+    "H1": "지지"
+   },
+   "side_basis": "컴퓨팅 인프라·데이터 처리·호스팅 고용은 2022-11 뒤 -5.8%(전체 대비 -8.8%), 최근 1년 -5.4%(전체 대비 -6.0%)다. 두 구간 모두 전체보다 약하다. 이 분야에서 사람을 덜 찾는다는 쪽이다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "미국 노동통계국(BLS) — Current Employment Statistics, 시계열 CES5051800001",
+     "url": "https://data.bls.gov/timeseries/CES5051800001",
+     "date": "2026-11-19",
+     "read": "full"
+    }
+   ],
+   "note": "방향은 전체 대비 변화가 두 구간 모두 ±2% 를 넘는지로 매겼다. 기준점 앞(2019-01~2022-11)에는 +46.0%(전체 대비 +42.0%)였다.",
+   "country": "US",
+   "city": null,
+   "unit": "천 명",
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "auto": true
+  },
+  {
+   "id": "employment-call-centers",
+   "metric": "미국 고용 — 전화 상담 센터",
+   "value": 307,
+   "asof": "2026-09",
+   "basis": "미국 전화 상담 센터(북미산업분류 56142) 고용, 2026-09",
+   "definition": "사업체 조사(CES)의 전 종사자 수이고 계절조정 값이다. 업종은 사업체의 주된 활동으로 나눈 것이라 직종이 아니다. 최근 두 달은 잠정치다.",
+   "series": [
+    {
+     "period": "2022-11",
+     "value": 423,
+     "src": 1,
+     "label": "ChatGPT 공개"
+    },
+    {
+     "period": "2022-12",
+     "value": 422,
+     "src": 1
+    },
+    {
+     "period": "2023-03",
+     "value": 410.9,
+     "src": 1
+    },
+    {
+     "period": "2023-06",
+     "value": 402.1,
+     "src": 1
+    },
+    {
+     "period": "2023-09",
+     "value": 385.6,
+     "src": 1
+    },
+    {
+     "period": "2023-12",
+     "value": 373,
+     "src": 1
+    },
+    {
+     "period": "2024-03",
+     "value": 364.7,
+     "src": 1
+    },
+    {
+     "period": "2024-06",
+     "value": 358.6,
+     "src": 1
+    },
+    {
+     "period": "2024-09",
+     "value": 351.2,
+     "src": 1
+    },
+    {
+     "period": "2024-12",
+     "value": 343.3,
+     "src": 1
+    },
+    {
+     "period": "2025-03",
+     "value": 334.5,
+     "src": 1
+    },
+    {
+     "period": "2025-06",
+     "value": 328.3,
+     "src": 1
+    },
+    {
+     "period": "2025-09",
+     "value": 322.2,
+     "src": 1
+    },
+    {
+     "period": "2025-12",
+     "value": 317.5,
+     "src": 1
+    },
+    {
+     "period": "2026-03",
+     "value": 311,
+     "src": 1
+    },
+    {
+     "period": "2026-06",
+     "value": 309.1,
+     "src": 1
+    },
+    {
+     "period": "2026-09",
+     "value": 307,
+     "src": 1,
+     "note": "잠정"
+    }
+   ],
+   "detail": {
+    "since_base_pct": -27.4,
+    "last_year_pct": -4.7,
+    "vs_total_since_base_pct": -29.7,
+    "vs_total_last_year_pct": -5.1,
+    "change_since_base_thousands": -116,
+    "before_base": {
+     "from": "2019-01",
+     "pct": -16.4,
+     "vs_total_pct": -18.7
+    }
+   },
+   "links": [
+    "spread",
+    "counter"
+   ],
+   "sides": {
+    "H1": "지지"
+   },
+   "side_basis": "전화 상담 센터 고용은 2022-11 뒤 -27.4%(전체 대비 -29.7%), 최근 1년 -4.7%(전체 대비 -5.1%)다. 두 구간 모두 전체보다 약하다. 이 분야에서 사람을 덜 찾는다는 쪽이다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "미국 노동통계국(BLS) — Current Employment Statistics, 시계열 CES6056142001",
+     "url": "https://data.bls.gov/timeseries/CES6056142001",
+     "date": "2026-11-19",
+     "read": "full"
+    }
+   ],
+   "note": "방향은 전체 대비 변화가 두 구간 모두 ±2% 를 넘는지로 매겼다. 기준점 앞(2019-01~2022-11)에는 -16.4%(전체 대비 -18.7%)였다.",
+   "country": "US",
+   "city": null,
+   "unit": "천 명",
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "auto": true
+  },
+  {
+   "id": "employment-legal-services",
+   "metric": "미국 고용 — 법률 서비스",
+   "value": 1251.2,
+   "asof": "2026-10",
+   "basis": "미국 법률 서비스(북미산업분류 5411) 고용, 2026-10",
+   "definition": "사업체 조사(CES)의 전 종사자 수이고 계절조정 값이다. 업종은 사업체의 주된 활동으로 나눈 것이라 직종이 아니다. 최근 두 달은 잠정치다.",
+   "series": [
+    {
+     "period": "2022-11",
+     "value": 1180.4,
+     "src": 1,
+     "label": "ChatGPT 공개"
+    },
+    {
+     "period": "2022-12",
+     "value": 1180.7,
+     "src": 1
+    },
+    {
+     "period": "2023-03",
+     "value": 1180,
+     "src": 1
+    },
+    {
+     "period": "2023-06",
+     "value": 1185.5,
+     "src": 1
+    },
+    {
+     "period": "2023-09",
+     "value": 1190.1,
+     "src": 1
+    },
+    {
+     "period": "2023-12",
+     "value": 1200.3,
+     "src": 1
+    },
+    {
+     "period": "2024-03",
+     "value": 1194.6,
+     "src": 1
+    },
+    {
+     "period": "2024-06",
+     "value": 1196.2,
+     "src": 1
+    },
+    {
+     "period": "2024-09",
+     "value": 1199.7,
+     "src": 1
+    },
+    {
+     "period": "2024-12",
+     "value": 1207.3,
+     "src": 1
+    },
+    {
+     "period": "2025-03",
+     "value": 1215.7,
+     "src": 1
+    },
+    {
+     "period": "2025-06",
+     "value": 1220.9,
+     "src": 1
+    },
+    {
+     "period": "2025-09",
+     "value": 1226.2,
+     "src": 1
+    },
+    {
+     "period": "2025-12",
+     "value": 1231.2,
+     "src": 1
+    },
+    {
+     "period": "2026-03",
+     "value": 1234.1,
+     "src": 1
+    },
+    {
+     "period": "2026-06",
+     "value": 1244.4,
+     "src": 1
+    },
+    {
+     "period": "2026-09",
+     "value": 1248.8,
+     "src": 1,
+     "note": "잠정"
+    },
+    {
+     "period": "2026-10",
+     "value": 1251.2,
+     "src": 1,
+     "note": "잠정"
+    }
+   ],
+   "detail": {
+    "since_base_pct": 6,
+    "last_year_pct": 1.9,
+    "vs_total_since_base_pct": 2.6,
+    "vs_total_last_year_pct": 1.3,
+    "change_since_base_thousands": 70.8,
+    "before_base": {
+     "from": "2019-01",
+     "pct": 3.2,
+     "vs_total_pct": 0.4
+    }
+   },
+   "links": [
+    "spread",
+    "counter"
+   ],
+   "sides": {
+    "H1": "중립"
+   },
+   "side_basis": "법률 서비스 고용은 2022-11 뒤 +6.0%(전체 대비 +2.6%), 최근 1년 +1.9%(전체 대비 +1.3%)다. 한 구간이 전체와 비슷해 방향을 정하지 않았다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "미국 노동통계국(BLS) — Current Employment Statistics, 시계열 CES6054110001",
+     "url": "https://data.bls.gov/timeseries/CES6054110001",
+     "date": "2026-11-19",
+     "read": "full"
+    }
+   ],
+   "note": "방향은 전체 대비 변화가 두 구간 모두 ±2% 를 넘는지로 매겼다. 기준점 앞(2019-01~2022-11)에는 +3.2%(전체 대비 +0.4%)였다.",
+   "country": "US",
+   "city": null,
+   "unit": "천 명",
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "auto": true
+  },
+  {
+   "id": "employment-accounting-services",
+   "metric": "미국 고용 — 회계·세무·장부·급여 서비스",
+   "value": 1125.9,
+   "asof": "2026-10",
+   "basis": "미국 회계·세무·장부·급여 서비스(북미산업분류 5412) 고용, 2026-10",
+   "definition": "사업체 조사(CES)의 전 종사자 수이고 계절조정 값이다. 업종은 사업체의 주된 활동으로 나눈 것이라 직종이 아니다. 최근 두 달은 잠정치다.",
+   "series": [
+    {
+     "period": "2022-11",
+     "value": 1134,
+     "src": 1,
+     "label": "ChatGPT 공개"
+    },
+    {
+     "period": "2022-12",
+     "value": 1132.7,
+     "src": 1
+    },
+    {
+     "period": "2023-03",
+     "value": 1142.4,
+     "src": 1
+    },
+    {
+     "period": "2023-06",
+     "value": 1145.4,
+     "src": 1
+    },
+    {
+     "period": "2023-09",
+     "value": 1142.5,
+     "src": 1
+    },
+    {
+     "period": "2023-12",
+     "value": 1155.3,
+     "src": 1
+    },
+    {
+     "period": "2024-03",
+     "value": 1153.9,
+     "src": 1
+    },
+    {
+     "period": "2024-06",
+     "value": 1152.6,
+     "src": 1
+    },
+    {
+     "period": "2024-09",
+     "value": 1138.3,
+     "src": 1
+    },
+    {
+     "period": "2024-12",
+     "value": 1125,
+     "src": 1
+    },
+    {
+     "period": "2025-03",
+     "value": 1126,
+     "src": 1
+    },
+    {
+     "period": "2025-06",
+     "value": 1127.6,
+     "src": 1
+    },
+    {
+     "period": "2025-09",
+     "value": 1128.5,
+     "src": 1
+    },
+    {
+     "period": "2025-12",
+     "value": 1129.8,
+     "src": 1
+    },
+    {
+     "period": "2026-03",
+     "value": 1120.9,
+     "src": 1
+    },
+    {
+     "period": "2026-06",
+     "value": 1124.8,
+     "src": 1
+    },
+    {
+     "period": "2026-09",
+     "value": 1123.6,
+     "src": 1,
+     "note": "잠정"
+    },
+    {
+     "period": "2026-10",
+     "value": 1125.9,
+     "src": 1,
+     "note": "잠정"
+    }
+   ],
+   "detail": {
+    "since_base_pct": -0.7,
+    "last_year_pct": 0,
+    "vs_total_since_base_pct": -3.9,
+    "vs_total_last_year_pct": -0.6,
+    "change_since_base_thousands": -8.1,
+    "before_base": {
+     "from": "2019-01",
+     "pct": 11.9,
+     "vs_total_pct": 8.9
+    }
+   },
+   "links": [
+    "spread",
+    "counter"
+   ],
+   "sides": {
+    "H1": "중립"
+   },
+   "side_basis": "회계·세무·장부·급여 서비스 고용은 2022-11 뒤 -0.7%(전체 대비 -3.9%), 최근 1년 -0.0%(전체 대비 -0.6%)다. 한 구간이 전체와 비슷해 방향을 정하지 않았다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "미국 노동통계국(BLS) — Current Employment Statistics, 시계열 CES6054120001",
+     "url": "https://data.bls.gov/timeseries/CES6054120001",
+     "date": "2026-11-19",
+     "read": "full"
+    }
+   ],
+   "note": "방향은 전체 대비 변화가 두 구간 모두 ±2% 를 넘는지로 매겼다. 기준점 앞(2019-01~2022-11)에는 +11.9%(전체 대비 +8.9%)였다.",
+   "country": "US",
+   "city": null,
+   "unit": "천 명",
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "auto": true
+  },
+  {
+   "id": "employment-management-consulting",
+   "metric": "미국 고용 — 경영·과학·기술 컨설팅",
+   "value": 1905.7,
+   "asof": "2026-10",
+   "basis": "미국 경영·과학·기술 컨설팅(북미산업분류 5416) 고용, 2026-10",
+   "definition": "사업체 조사(CES)의 전 종사자 수이고 계절조정 값이다. 업종은 사업체의 주된 활동으로 나눈 것이라 직종이 아니다. 최근 두 달은 잠정치다.",
+   "series": [
+    {
+     "period": "2022-11",
+     "value": 1820.8,
+     "src": 1,
+     "label": "ChatGPT 공개"
+    },
+    {
+     "period": "2022-12",
+     "value": 1827.3,
+     "src": 1
+    },
+    {
+     "period": "2023-03",
+     "value": 1846.8,
+     "src": 1
+    },
+    {
+     "period": "2023-06",
+     "value": 1859.2,
+     "src": 1
+    },
+    {
+     "period": "2023-09",
+     "value": 1865.8,
+     "src": 1
+    },
+    {
+     "period": "2023-12",
+     "value": 1864.3,
+     "src": 1
+    },
+    {
+     "period": "2024-03",
+     "value": 1856,
+     "src": 1
+    },
+    {
+     "period": "2024-06",
+     "value": 1861.7,
+     "src": 1
+    },
+    {
+     "period": "2024-09",
+     "value": 1857.3,
+     "src": 1
+    },
+    {
+     "period": "2024-12",
+     "value": 1880,
+     "src": 1
+    },
+    {
+     "period": "2025-03",
+     "value": 1864.3,
+     "src": 1
+    },
+    {
+     "period": "2025-06",
+     "value": 1858.7,
+     "src": 1
+    },
+    {
+     "period": "2025-09",
+     "value": 1860,
+     "src": 1
+    },
+    {
+     "period": "2025-12",
+     "value": 1871.6,
+     "src": 1
+    },
+    {
+     "period": "2026-03",
+     "value": 1875.2,
+     "src": 1
+    },
+    {
+     "period": "2026-06",
+     "value": 1887.9,
+     "src": 1
+    },
+    {
+     "period": "2026-09",
+     "value": 1888.4,
+     "src": 1,
+     "note": "잠정"
+    },
+    {
+     "period": "2026-10",
+     "value": 1905.7,
+     "src": 1,
+     "note": "잠정"
+    }
+   ],
+   "detail": {
+    "since_base_pct": 4.7,
+    "last_year_pct": 2.5,
+    "vs_total_since_base_pct": 1.4,
+    "vs_total_last_year_pct": 1.9,
+    "change_since_base_thousands": 84.9,
+    "before_base": {
+     "from": "2019-01",
+     "pct": 21.1,
+     "vs_total_pct": 17.8
+    }
+   },
+   "links": [
+    "spread",
+    "counter"
+   ],
+   "sides": {
+    "H1": "중립"
+   },
+   "side_basis": "경영·과학·기술 컨설팅 고용은 2022-11 뒤 +4.7%(전체 대비 +1.4%), 최근 1년 +2.5%(전체 대비 +1.9%)다. 한 구간이 전체와 비슷해 방향을 정하지 않았다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "미국 노동통계국(BLS) — Current Employment Statistics, 시계열 CES6054160001",
+     "url": "https://data.bls.gov/timeseries/CES6054160001",
+     "date": "2026-11-19",
+     "read": "full"
+    }
+   ],
+   "note": "방향은 전체 대비 변화가 두 구간 모두 ±2% 를 넘는지로 매겼다. 기준점 앞(2019-01~2022-11)에는 +21.1%(전체 대비 +17.8%)였다.",
+   "country": "US",
+   "city": null,
+   "unit": "천 명",
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "auto": true
+  },
+  {
+   "id": "employment-advertising-pr",
+   "metric": "미국 고용 — 광고·홍보",
+   "value": 478.2,
+   "asof": "2026-10",
+   "basis": "미국 광고·홍보(북미산업분류 5418) 고용, 2026-10",
+   "definition": "사업체 조사(CES)의 전 종사자 수이고 계절조정 값이다. 업종은 사업체의 주된 활동으로 나눈 것이라 직종이 아니다. 최근 두 달은 잠정치다.",
+   "series": [
+    {
+     "period": "2022-11",
+     "value": 500.5,
+     "src": 1,
+     "label": "ChatGPT 공개"
+    },
+    {
+     "period": "2022-12",
+     "value": 500.7,
+     "src": 1
+    },
+    {
+     "period": "2023-03",
+     "value": 502.3,
+     "src": 1
+    },
+    {
+     "period": "2023-06",
+     "value": 501.4,
+     "src": 1
+    },
+    {
+     "period": "2023-09",
+     "value": 498.8,
+     "src": 1
+    },
+    {
+     "period": "2023-12",
+     "value": 498.2,
+     "src": 1
+    },
+    {
+     "period": "2024-03",
+     "value": 494.5,
+     "src": 1
+    },
+    {
+     "period": "2024-06",
+     "value": 495.3,
+     "src": 1
+    },
+    {
+     "period": "2024-09",
+     "value": 492.3,
+     "src": 1
+    },
+    {
+     "period": "2024-12",
+     "value": 488.4,
+     "src": 1
+    },
+    {
+     "period": "2025-03",
+     "value": 482.1,
+     "src": 1
+    },
+    {
+     "period": "2025-06",
+     "value": 481.2,
+     "src": 1
+    },
+    {
+     "period": "2025-09",
+     "value": 481.3,
+     "src": 1
+    },
+    {
+     "period": "2025-12",
+     "value": 481.7,
+     "src": 1
+    },
+    {
+     "period": "2026-03",
+     "value": 480.5,
+     "src": 1
+    },
+    {
+     "period": "2026-06",
+     "value": 477.8,
+     "src": 1
+    },
+    {
+     "period": "2026-09",
+     "value": 477.8,
+     "src": 1,
+     "note": "잠정"
+    },
+    {
+     "period": "2026-10",
+     "value": 478.2,
+     "src": 1,
+     "note": "잠정"
+    }
+   ],
+   "detail": {
+    "since_base_pct": -4.5,
+    "last_year_pct": -0.6,
+    "vs_total_since_base_pct": -7.6,
+    "vs_total_last_year_pct": -1.2,
+    "change_since_base_thousands": -22.3,
+    "before_base": {
+     "from": "2019-01",
+     "pct": 1.6,
+     "vs_total_pct": -1.2
+    }
+   },
+   "links": [
+    "spread",
+    "counter"
+   ],
+   "sides": {
+    "H1": "중립"
+   },
+   "side_basis": "광고·홍보 고용은 2022-11 뒤 -4.5%(전체 대비 -7.6%), 최근 1년 -0.6%(전체 대비 -1.2%)다. 한 구간이 전체와 비슷해 방향을 정하지 않았다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "미국 노동통계국(BLS) — Current Employment Statistics, 시계열 CES6054180001",
+     "url": "https://data.bls.gov/timeseries/CES6054180001",
+     "date": "2026-11-19",
+     "read": "full"
+    }
+   ],
+   "note": "방향은 전체 대비 변화가 두 구간 모두 ±2% 를 넘는지로 매겼다. 기준점 앞(2019-01~2022-11)에는 +1.6%(전체 대비 -1.2%)였다.",
+   "country": "US",
+   "city": null,
+   "unit": "천 명",
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "auto": true
+  },
+  {
+   "id": "employment-staffing",
+   "metric": "미국 고용 — 고용 알선·인력 파견",
+   "value": 3228.9,
+   "asof": "2026-10",
+   "basis": "미국 고용 알선·인력 파견(북미산업분류 5613) 고용, 2026-10",
+   "definition": "사업체 조사(CES)의 전 종사자 수이고 계절조정 값이다. 업종은 사업체의 주된 활동으로 나눈 것이라 직종이 아니다. 최근 두 달은 잠정치다.",
+   "series": [
+    {
+     "period": "2022-11",
+     "value": 3817.2,
+     "src": 1,
+     "label": "ChatGPT 공개"
+    },
+    {
+     "period": "2022-12",
+     "value": 3759,
+     "src": 1
+    },
+    {
+     "period": "2023-03",
+     "value": 3697,
+     "src": 1
+    },
+    {
+     "period": "2023-06",
+     "value": 3624.7,
+     "src": 1
+    },
+    {
+     "period": "2023-09",
+     "value": 3521.4,
+     "src": 1
+    },
+    {
+     "period": "2023-12",
+     "value": 3409,
+     "src": 1
+    },
+    {
+     "period": "2024-03",
+     "value": 3388.8,
+     "src": 1
+    },
+    {
+     "period": "2024-06",
+     "value": 3330.1,
+     "src": 1
+    },
+    {
+     "period": "2024-09",
+     "value": 3271.5,
+     "src": 1
+    },
+    {
+     "period": "2024-12",
+     "value": 3256.1,
+     "src": 1
+    },
+    {
+     "period": "2025-03",
+     "value": 3223.6,
+     "src": 1
+    },
+    {
+     "period": "2025-06",
+     "value": 3197.3,
+     "src": 1
+    },
+    {
+     "period": "2025-09",
+     "value": 3157.4,
+     "src": 1
+    },
+    {
+     "period": "2025-12",
+     "value": 3143.7,
+     "src": 1
+    },
+    {
+     "period": "2026-03",
+     "value": 3180.5,
+     "src": 1
+    },
+    {
+     "period": "2026-06",
+     "value": 3210.4,
+     "src": 1
+    },
+    {
+     "period": "2026-09",
+     "value": 3208.6,
+     "src": 1,
+     "note": "잠정"
+    },
+    {
+     "period": "2026-10",
+     "value": 3228.9,
+     "src": 1,
+     "note": "잠정"
+    }
+   ],
+   "detail": {
+    "since_base_pct": -15.4,
+    "last_year_pct": 2.9,
+    "vs_total_since_base_pct": -18.1,
+    "vs_total_last_year_pct": 2.3,
+    "change_since_base_thousands": -588.3,
+    "before_base": {
+     "from": "2019-01",
+     "pct": 5.1,
+     "vs_total_pct": 2.2
+    }
+   },
+   "links": [
+    "spread",
+    "counter"
+   ],
+   "sides": {
+    "H1": "양쪽"
+   },
+   "side_basis": "고용 알선·인력 파견 고용은 2022-11 뒤 -15.4%(전체 대비 -18.1%), 최근 1년 +2.9%(전체 대비 +2.3%)다. 두 구간의 방향이 반대다. 앞 구간의 약세가 AI 때문인지 금리·채용 과열의 되돌림인지 이 값으로는 가르지 못한다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "미국 노동통계국(BLS) — Current Employment Statistics, 시계열 CES6056130001",
+     "url": "https://data.bls.gov/timeseries/CES6056130001",
+     "date": "2026-11-19",
+     "read": "full"
+    }
+   ],
+   "note": "방향은 전체 대비 변화가 두 구간 모두 ±2% 를 넘는지로 매겼다. 기준점 앞(2019-01~2022-11)에는 +5.1%(전체 대비 +2.2%)였다.",
+   "country": "US",
+   "city": null,
+   "unit": "천 명",
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "auto": true
+  },
+  {
+   "id": "employment-knowledge-vs-total",
+   "metric": "지식 서비스 업종 고용의 전체 대비 변화",
+   "value": null,
+   "unit": "%(전체 대비 변화)",
+   "asof": "2026-10",
+   "basis": "계산: 지식 서비스 업종 10개의 고용 변화를 비농업 전체의 변화로 나눈다. 두 구간 모두 전체보다 2% 넘게 약한 업종 2개, 강한 업종 0개, 방향이 반대인 업종 1개",
+   "definition": "업종마다 (1 + 업종 변화) ÷ (1 + 전체 변화) − 1 을 2022-11 뒤와 최근 12개월 두 구간에 낸다.",
+   "detail": {
+    "counts": {
+     "지지": 2,
+     "반박": 0,
+     "양쪽": 1,
+     "중립": 7
+    },
+    "industries": {
+     "computer-systems-design": {
+      "name": "컴퓨터 시스템 설계·관련 서비스(IT서비스)",
+      "side": "중립",
+      "since_base_pct": -5.2,
+      "last_year_pct": -1.1,
+      "vs_total_since_base_pct": -8.2,
+      "vs_total_last_year_pct": -1.7,
+      "change_since_base_thousands": -128.8,
+      "before_base": {
+       "from": "2019-01",
+       "pct": 15.3,
+       "vs_total_pct": 12.2
+      }
+     },
+     "custom-programming": {
+      "name": "주문형 프로그래밍 서비스",
+      "side": "중립",
+      "since_base_pct": -6.1,
+      "last_year_pct": -0.8,
+      "vs_total_since_base_pct": -9,
+      "vs_total_last_year_pct": -1.2,
+      "change_since_base_thousands": -68.8,
+      "before_base": {
+       "from": "2019-01",
+       "pct": 18.3,
+       "vs_total_pct": 15.1
+      }
+     },
+     "software-publishers": {
+      "name": "소프트웨어 출판",
+      "side": "중립",
+      "since_base_pct": -1.6,
+      "last_year_pct": -1.1,
+      "vs_total_since_base_pct": -4.7,
+      "vs_total_last_year_pct": -1.5,
+      "change_since_base_thousands": -10.5,
+      "before_base": {
+       "from": "2019-01",
+       "pct": 50.7,
+       "vs_total_pct": 46.6
+      }
+     },
+     "data-processing-hosting": {
+      "name": "컴퓨팅 인프라·데이터 처리·호스팅",
+      "side": "지지",
+      "since_base_pct": -5.8,
+      "last_year_pct": -5.4,
+      "vs_total_since_base_pct": -8.8,
+      "vs_total_last_year_pct": -6,
+      "change_since_base_thousands": -28.2,
+      "before_base": {
+       "from": "2019-01",
+       "pct": 46,
+       "vs_total_pct": 42
+      }
+     },
+     "call-centers": {
+      "name": "전화 상담 센터",
+      "side": "지지",
+      "since_base_pct": -27.4,
+      "last_year_pct": -4.7,
+      "vs_total_since_base_pct": -29.7,
+      "vs_total_last_year_pct": -5.1,
+      "change_since_base_thousands": -116,
+      "before_base": {
+       "from": "2019-01",
+       "pct": -16.4,
+       "vs_total_pct": -18.7
+      }
+     },
+     "legal-services": {
+      "name": "법률 서비스",
+      "side": "중립",
+      "since_base_pct": 6,
+      "last_year_pct": 1.9,
+      "vs_total_since_base_pct": 2.6,
+      "vs_total_last_year_pct": 1.3,
+      "change_since_base_thousands": 70.8,
+      "before_base": {
+       "from": "2019-01",
+       "pct": 3.2,
+       "vs_total_pct": 0.4
+      }
+     },
+     "accounting-services": {
+      "name": "회계·세무·장부·급여 서비스",
+      "side": "중립",
+      "since_base_pct": -0.7,
+      "last_year_pct": 0,
+      "vs_total_since_base_pct": -3.9,
+      "vs_total_last_year_pct": -0.6,
+      "change_since_base_thousands": -8.1,
+      "before_base": {
+       "from": "2019-01",
+       "pct": 11.9,
+       "vs_total_pct": 8.9
+      }
+     },
+     "management-consulting": {
+      "name": "경영·과학·기술 컨설팅",
+      "side": "중립",
+      "since_base_pct": 4.7,
+      "last_year_pct": 2.5,
+      "vs_total_since_base_pct": 1.4,
+      "vs_total_last_year_pct": 1.9,
+      "change_since_base_thousands": 84.9,
+      "before_base": {
+       "from": "2019-01",
+       "pct": 21.1,
+       "vs_total_pct": 17.8
+      }
+     },
+     "advertising-pr": {
+      "name": "광고·홍보",
+      "side": "중립",
+      "since_base_pct": -4.5,
+      "last_year_pct": -0.6,
+      "vs_total_since_base_pct": -7.6,
+      "vs_total_last_year_pct": -1.2,
+      "change_since_base_thousands": -22.3,
+      "before_base": {
+       "from": "2019-01",
+       "pct": 1.6,
+       "vs_total_pct": -1.2
+      }
+     },
+     "staffing": {
+      "name": "고용 알선·인력 파견",
+      "side": "양쪽",
+      "since_base_pct": -15.4,
+      "last_year_pct": 2.9,
+      "vs_total_since_base_pct": -18.1,
+      "vs_total_last_year_pct": 2.3,
+      "change_since_base_thousands": -588.3,
+      "before_base": {
+       "from": "2019-01",
+       "pct": 5.1,
+       "vs_total_pct": 2.2
+      }
+     }
+    }
+   },
+   "links": [
+    "spread",
+    "counter"
+   ],
+   "sides": {
+    "H1": "양쪽"
+   },
+   "side_basis": "지식 서비스 업종 10개 가운데 두 구간 모두 전체보다 약한 것이 2개, 모두 강한 것이 0개다. 가장 약한 것은 전화 상담 센터(2022-11 뒤 -27.4%, -116.0천 명)이다.",
+   "refs": [
+    {
+     "bundle": "K4",
+     "id": "employment-total"
+    },
+    {
+     "bundle": "K4",
+     "id": "employment-computer-systems-design"
+    },
+    {
+     "bundle": "K4",
+     "id": "employment-custom-programming"
+    },
+    {
+     "bundle": "K4",
+     "id": "employment-software-publishers"
+    },
+    {
+     "bundle": "K4",
+     "id": "employment-data-processing-hosting"
+    },
+    {
+     "bundle": "K4",
+     "id": "employment-call-centers"
+    },
+    {
+     "bundle": "K4",
+     "id": "employment-legal-services"
+    },
+    {
+     "bundle": "K4",
+     "id": "employment-accounting-services"
+    },
+    {
+     "bundle": "K4",
+     "id": "employment-management-consulting"
+    },
+    {
+     "bundle": "K4",
+     "id": "employment-advertising-pr"
+    },
+    {
+     "bundle": "K4",
+     "id": "employment-staffing"
+    }
+   ],
+   "sources": [],
+   "value_src": [],
+   "alt": [],
+   "conf": "low",
+   "auto": true,
+   "country": "US",
+   "city": null,
+   "note": "업종 고용은 그 업종에 속한 사업체의 모든 직종을 센다. 줄어든 까닭(해외 이전, 경기, 자동화)은 이 값으로 가르지 못한다. 방향은 AI 의 해석이다."
   }
  ]
 }
