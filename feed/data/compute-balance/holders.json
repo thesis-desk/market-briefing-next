@@ -1,0 +1,615 @@
+{
+ "schema": 1,
+ "bundle": "S2",
+ "title": "보유 — 누가 깔아 두었는가",
+ "updated_kst": "2026-11-19T22:53:22+09:00",
+ "measure": null,
+ "notes": [
+  "회사가 공시·발표한 가동 용량만 적는다. 전력 기준(IT·수전)은 detail.power_basis 에 적고 서로 다른 기준의 값을 더하지 않는다.",
+  "지금은 원천 점검 때 읽은 세 건뿐이다. 하이퍼스케일러·오라클·네오클라우드의 공시와 실적 발표 콜을 이어 넣는다."
+ ],
+ "records": [
+  {
+   "id": "spacex-nameplate-compute",
+   "country": "ZZ",
+   "city": null,
+   "metric": "SpaceX(SpaceXAI) 명목 컴퓨트",
+   "value": 1.7,
+   "unit": "GW",
+   "asof": "2026-09-30",
+   "basis": "회사가 정의한 '명목 컴퓨트'. 냉각·배전 손실 등 지원 설비의 전력은 넣지 않은 값",
+   "company": "SpaceX",
+   "kind": "capacity",
+   "detail": {
+    "year_ago": 0.6,
+    "power_basis": "it"
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "Space Exploration Technologies Corp. — Form 10-Q (2026-09-30 분기)",
+     "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026066880/spcx-20260930.htm",
+     "date": "2026-10-22",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "한 해 전(2025-09-30)은 0.6GW 였다. 회사는 이 값이 실제 전력 소비나 가동률을 뜻하지 않는다고 적었다."
+  },
+  {
+   "id": "coreweave-active-power",
+   "country": "ZZ",
+   "city": null,
+   "metric": "CoreWeave 가동 전력",
+   "value": 1.7,
+   "unit": "GW",
+   "asof": "2026-09-30",
+   "basis": "'1.7GW 초과'. 3분기에 200MW 넘게 늘었다",
+   "company": "CoreWeave",
+   "kind": "capacity",
+   "detail": {
+    "bound": "at_least",
+    "power_basis": "unknown"
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "CoreWeave 2026년 3분기 실적 보도자료 (8-K 첨부)",
+     "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000461/coreweave3q26earningspress.htm",
+     "date": "2026-11-10",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "연초의 두 배라고 밝혔다. 전력 기준(IT·수전)은 보도자료에 없다."
+  },
+  {
+   "id": "coreweave-contracted-power",
+   "country": "ZZ",
+   "city": null,
+   "metric": "CoreWeave 계약 전력",
+   "value": 4.6,
+   "unit": "GW",
+   "asof": "2026-09-30",
+   "basis": "'4.6GW 초과'. 3분기에 900MW 넘게 늘었다",
+   "company": "CoreWeave",
+   "kind": "capacity",
+   "detail": {
+    "bound": "at_least",
+    "international": 1.3,
+    "backlog_usd_bn": 132.5,
+    "power_basis": "unknown"
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "CoreWeave 2026년 3분기 실적 보도자료 (8-K 첨부)",
+     "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000461/coreweave3q26earningspress.htm",
+     "date": "2026-11-10",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "미국 밖 계약 전력은 1.3GW 를 넘는다. 수주잔고는 약 1,325억 달러다."
+  },
+  {
+   "id": "microsoft-capex",
+   "country": "ZZ",
+   "city": null,
+   "metric": "Microsoft 설비투자(분기, 금융리스 포함)",
+   "value": 45.2,
+   "unit": "십억 달러",
+   "asof": "2026-09-30",
+   "basis": "FY2027 1분기 설비투자 '452억 달러'(금융리스 포함). 현금 기준 유형자산 취득은 393.67억 달러",
+   "company": "Microsoft",
+   "kind": "capex",
+   "detail": {
+    "cash_ppe": 39.367,
+    "short_lived_share_pct": 75,
+    "leases_not_yet_commenced": 364.6,
+    "commercial_rpo": 677,
+    "next_quarter_guidance_min": 50
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "Microsoft FY2027 1분기 실적 발표 콜(전사: Stock Analysis)",
+     "url": "https://stockanalysis.com/stocks/msft/transcripts/718712-q1-2027/",
+     "date": null,
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "Microsoft — Form 10-Q (2026-09-30 분기)",
+     "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526436133/msft-20260930.htm",
+     "date": "2026-10-28",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "약 4분의 3이 수명이 짧은 자산(주로 CPU·GPU)이다. 아직 개시하지 않은 리스가 3,646억 달러(주로 데이터센터, FY2027~FY2034 개시), 상업 부문 수주잔고가 6,770억 달러다. 회사는 GW 를 밝히지 않는다."
+  },
+  {
+   "id": "alphabet-capex",
+   "country": "ZZ",
+   "city": null,
+   "metric": "Alphabet 설비투자(분기)",
+   "value": 51.4,
+   "unit": "십억 달러",
+   "asof": "2026-09-30",
+   "basis": "2026년 3분기 설비투자 '514억 달러'. 1~9월 유형자산 취득은 1,319.53억 달러",
+   "company": "Alphabet",
+   "kind": "capex",
+   "detail": {
+    "nine_months_ppe": 131.953,
+    "servers_networking_share_pct": 65,
+    "backlog": 567.7,
+    "cloud_backlog": 560.8,
+    "cloud_revenue_q3": 30.7
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "Alphabet 2026년 3분기 실적 발표 콜(전사: Stock Analysis)",
+     "url": "https://stockanalysis.com/stocks/googl/transcripts/712854-q3-2026/",
+     "date": null,
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "Alphabet — Form 10-Q (2026-09-30 분기)",
+     "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/goog-20260930.htm",
+     "date": "2026-10-29",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "기술 인프라 투자의 약 65%가 서버·네트워크 장비, 35%가 데이터센터다. 수주잔고는 5,677억 달러이고 그중 5,608억 달러가 구글 클라우드다. TPU 시스템을 외부에 파는 매출이 생겼다. 회사는 GW 를 밝히지 않는다."
+  },
+  {
+   "id": "amazon-capex",
+   "country": "ZZ",
+   "city": null,
+   "metric": "Amazon 유형자산 취득(분기)",
+   "value": 77.259,
+   "unit": "십억 달러",
+   "asof": "2026-09-30",
+   "basis": "2026년 3분기 유형자산 취득(현금흐름표). 1~9월 1,756.70억 달러, 최근 12개월 2,151.92억 달러",
+   "company": "Amazon",
+   "kind": "capex",
+   "detail": {
+    "nine_months": 175.67,
+    "ttm": 215.192,
+    "leases_not_yet_commenced": 164.922,
+    "aws_backlog": 578
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "Amazon — Form 10-Q (2026-09-30 분기)",
+     "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000040/amzn-20260930.htm",
+     "date": "2026-10-30",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "아직 개시하지 않은 리스가 1,649억 달러, AWS 중심의 장기 계약 수주잔고가 약 5,780억 달러(가중평균 잔여 6.1년)다. 회사는 GW 를 밝히지 않는다."
+  },
+  {
+   "id": "meta-capex",
+   "country": "ZZ",
+   "city": null,
+   "metric": "Meta 설비투자(분기, 금융리스 원금 포함)",
+   "value": 34.9,
+   "unit": "십억 달러",
+   "asof": "2026-09-30",
+   "basis": "2026년 3분기 설비투자 '349억 달러'. 1~9월 유형자산 취득은 830.55억 달러",
+   "company": "Meta",
+   "kind": "capex",
+   "detail": {
+    "nine_months_ppe": 83.055,
+    "fy2026_guidance": {
+     "low": 135,
+     "high": 145
+    },
+    "leases_not_yet_commenced": 355.73,
+    "contractual_commitments": 454.52
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "Meta 2026년 3분기 실적 발표 콜(전사: Stock Analysis)",
+     "url": "https://stockanalysis.com/stocks/meta/transcripts/718643-q3-2026/",
+     "date": null,
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "Meta — Form 10-Q (2026-09-30 분기)",
+     "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026066773/meta-20260930.htm",
+     "date": "2026-10-22",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "2026년 전망은 1,350억~1,450억 달러다. 아직 개시하지 않은 리스가 3,557억 달러(2036년까지 개시), 해지할 수 없는 약정이 4,545억 달러(제3자 클라우드 용량·서버·에너지 등)다. 회사는 GW 를 밝히지 않는다."
+  },
+  {
+   "id": "oracle-capex",
+   "country": "ZZ",
+   "city": null,
+   "metric": "Oracle 설비투자(분기)",
+   "value": 28.499,
+   "unit": "십억 달러",
+   "asof": "2026-08-31",
+   "basis": "FY2027 1분기(6~8월) 설비투자(현금흐름표). 연간 전망 900억~950억 달러",
+   "company": "Oracle",
+   "kind": "capex",
+   "detail": {
+    "fy2027_guidance": {
+     "low": 90,
+     "high": 95
+    },
+    "rpo": 664,
+    "additional_lease_commitments": 288,
+    "delivered_mw_in_quarter": 850
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "Oracle — Form 10-Q (2026-08-31 분기)",
+     "url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526389274/orcl-20260831.htm",
+     "date": "2026-09-11",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "Oracle FY2027 1분기 실적 발표 콜(전사: Stock Analysis)",
+     "url": "https://stockanalysis.com/stocks/orcl/transcripts/689425-q1-2027/",
+     "date": null,
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "수주잔고가 6,640억 달러, 장부에 없는 추가 리스 약정이 2,880억 달러(주로 데이터센터, 15~19년)다. 콜에서 1분기에 850MW 를 고객에게 인도했다고 밝혔다."
+  },
+  {
+   "id": "microsoft-capacity-added",
+   "country": "ZZ",
+   "city": null,
+   "metric": "Microsoft 가 한 분기에 더한 용량",
+   "value": 1,
+   "unit": "GW/분기",
+   "asof": "2026-06-30",
+   "basis": "FY2026 2분기 '거의 1GW', 3분기·4분기 '1GW 를 더 더했다'. 전체 용량 기준이고 AI 만의 값이 아니다",
+   "company": "Microsoft",
+   "kind": "capacity",
+   "detail": {
+    "by_quarter": {
+     "FY2026Q2": "거의 1",
+     "FY2026Q3": 1,
+     "FY2026Q4": 1
+    },
+    "double_in_years": 2,
+    "implied_total_gw": 8,
+    "power_basis": "unknown",
+    "scope": "전체(AI·비AI)"
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "Microsoft FY2026 4분기 실적 발표 콜(전사: Stock Analysis)",
+     "url": "https://stockanalysis.com/stocks/msft/transcripts/647770-q4-2026/",
+     "date": null,
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "Microsoft FY2026 3분기 실적 발표 콜(전사: Stock Analysis)",
+     "url": "https://stockanalysis.com/stocks/msft/transcripts/547930-q3-2026/",
+     "date": null,
+     "read": "partial"
+    },
+    {
+     "n": 3,
+     "title": "Microsoft FY2026 2분기 실적 발표 콜(전사: Stock Analysis)",
+     "url": "https://stockanalysis.com/stocks/msft/transcripts/405185-q2-2026/",
+     "date": null,
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1,
+    2,
+    3
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "2년 안에 전체 용량을 두 배로 늘리는 길 위에 있다고 했다. 분기 1GW 로 2년이면 8GW 이므로 지금 전체가 8GW 안팎이라는 뜻이다(계산). FY2027 1분기 콜에는 GW 언급이 없다."
+  },
+  {
+   "id": "amazon-capacity-added",
+   "country": "ZZ",
+   "city": null,
+   "metric": "AWS 가 12개월에 더한 전력",
+   "value": 3.99,
+   "unit": "GW/년",
+   "asof": "2025-12-31",
+   "basis": "2025년 4분기 콜: 지난 12개월에 3.99GW, 4분기에만 1GW 넘게 더했다. 전체 용량 기준이고 AI 만의 값이 아니다",
+   "company": "Amazon",
+   "kind": "capacity",
+   "detail": {
+    "ttm_2025q3": 3.8,
+    "q4_2025_min": 1,
+    "double_by": "2027-12",
+    "power_basis": "unknown",
+    "scope": "전체(AI·비AI)"
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "Amazon 2025년 4분기 실적 발표 콜(전사: Stock Analysis)",
+     "url": "https://stockanalysis.com/stocks/amzn/transcripts/406163-q4-2025/",
+     "date": null,
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "Amazon 2025년 3분기 실적 발표 콜(전사: Stock Analysis)",
+     "url": "https://stockanalysis.com/stocks/amzn/transcripts/369430-q3-2025/",
+     "date": null,
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "2022년의 두 배가 됐고 2027년 말까지 다시 두 배로 늘린다고 했다. 2026년 콜들에는 누적 수치가 없다."
+  },
+  {
+   "id": "meta-custom-silicon-rollout",
+   "country": "ZZ",
+   "city": null,
+   "metric": "Meta 의 자체 칩 배치",
+   "value": 1,
+   "unit": "GW",
+   "asof": "2026-04",
+   "basis": "2026년 1분기 콜: Broadcom 과 개발한 자체 칩을 '1GW 넘게' 깔고 있다",
+   "company": "Meta",
+   "kind": "capacity",
+   "detail": {
+    "bound": "at_least",
+    "partner": "Broadcom",
+    "power_basis": "unknown"
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "Meta 2026년 1분기 실적 발표 콜(전사: Stock Analysis)",
+     "url": "https://stockanalysis.com/stocks/meta/transcripts/547899-q1-2026/",
+     "date": null,
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "AMD 칩도 상당량 함께 들인다고 했다. Broadcom 콜은 Meta 의 MTIA 가속기 양산 출하를 예고했다. 기간과 가동 시점은 밝히지 않았다."
+  },
+  {
+   "id": "epoch-sites-it-power",
+   "country": "ZZ",
+   "city": null,
+   "metric": "Epoch AI 가 위성·인허가 자료로 추적한 96개 부지의 IT 전력 합",
+   "value": 14.04,
+   "unit": "GW",
+   "asof": "2026-09-30",
+   "basis": "부지별 추이에서 그날까지의 마지막 값을 더한 것(추정). 2025년 말 6.76, 2026년 말 17.08, 2027년 말 25.03(뒤의 둘은 건설 일정에 따른 전망)",
+   "company": "Epoch AI",
+   "kind": "capacity",
+   "detail": {
+    "dates": [
+     "2025-12-31",
+     "2026-09-30",
+     "2026-12-31",
+     "2027-12-31"
+    ],
+    "by_owner": {
+     "Google": [
+      1.96,
+      3.18,
+      3.52,
+      5.41
+     ],
+     "Meta": [
+      0.54,
+      2.24,
+      3.19,
+      4.59
+     ],
+     "Amazon": [
+      1.07,
+      1.74,
+      1.87,
+      2.11
+     ],
+     "Microsoft": [
+      0.81,
+      1.52,
+      1.52,
+      2.56
+     ],
+     "SpaceXAI": [
+      0.6,
+      1.3,
+      1.3,
+      1.89
+     ],
+     "Oracle": [
+      0.24,
+      0.69,
+      0.9,
+      1.32
+     ],
+     "CoreWeave": [
+      0.2,
+      0.68,
+      0.77,
+      1.31
+     ]
+    },
+    "by_user_shared_counted_fully": {
+     "Anthropic": [
+      1.54,
+      2.86,
+      3.32,
+      4.23
+     ],
+     "OpenAI": [
+      1.12,
+      2.69,
+      3.19,
+      4.73
+     ]
+    },
+    "by_user_shared_split": {
+     "Anthropic_2026_09": 2.23,
+     "OpenAI_2026_09": 2.09
+    },
+    "power_basis": "it",
+    "sites": 96
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "Epoch AI — AI data centers (CSV, CC BY 4.0)",
+     "url": "https://epoch.ai/data/ai-data-centers",
+     "date": null,
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "큰 부지만 덮는다 — 2025년 말 값은 Epoch 의 칩 보유 추정을 IT 전력으로 바꾼 값(약 23GW)의 30%쯤이다. 소유자별 값은 그 회사 전체가 아니라 추적된 부지의 합이라 바닥값으로 읽는다. 시설 전력은 IT 전력의 1.28배로 잡혀 있다."
+  },
+  {
+   "id": "nscale-capacity",
+   "country": "ZZ",
+   "city": null,
+   "metric": "Nscale 가동·계약 용량",
+   "value": 1.37,
+   "unit": "GW",
+   "asof": "2026-11-12",
+   "basis": "'약 1.37GW 의 가동·계약 용량'(자체 부지 1GW, 임차 200MW, 코로케이션 165MW)",
+   "company": "Nscale",
+   "kind": "capacity",
+   "detail": {
+    "microsoft_usd_bn_up_to": 43.8,
+    "anthropic_usd_bn_up_to": 44.6,
+    "potential_gw": 10,
+    "power_basis": "unknown"
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "Nscale plc — Form S-1 정정본",
+     "url": "https://www.sec.gov/Archives/edgar/data/2110365/000119312526458722/ck0002110365-20261112.htm",
+     "date": "2026-11-12",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "Microsoft 와는 2033년 12월까지 최대 약 438억 달러의 작업 명세를 맺었고(32.2억 달러짜리 한 건은 해지), Anthropic 과는 Monarch 캠퍼스에서 Vera Rubin NVL72 를 쓰는 최대 약 446억 달러의 계약을 2026-08-25 에 맺었다. Anthropic 몫의 용량은 적혀 있지 않다."
+  },
+  {
+   "id": "neocloud-capacity-others",
+   "country": "ZZ",
+   "city": null,
+   "metric": "그 밖의 임대 사업자가 공시한 용량(Applied Digital)",
+   "value": 1.41,
+   "unit": "GW",
+   "asof": "2026-08-31",
+   "basis": "Applied Digital 의 계약된 핵심 IT 부하 합 '1,410MW'",
+   "company": "Applied Digital",
+   "kind": "capacity",
+   "detail": {
+    "iren_operating_ai_cloud_mw": 93,
+    "nebius_contracted_gw_min": 2,
+    "nebius_active_mw_2025_12": 170,
+    "power_basis": "it"
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "Applied Digital — Form 10-Q (2026-08-31 분기)",
+     "url": "https://www.sec.gov/Archives/edgar/data/1144879/000114487926000059/apld-20260831.htm",
+     "date": "2026-10-07",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "IREN — Form 10-Q (2026-09-30 분기)",
+     "url": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000066/iren-20260930.htm",
+     "date": "2026-11-05",
+     "read": "partial"
+    },
+    {
+     "n": 3,
+     "title": "Nebius Group — Form 20-F (2025)",
+     "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926052948/nbis-20251231x20f.htm",
+     "date": "2026-04-30",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "같은 날 읽은 다른 곳: IREN 의 가동 중인 AI 클라우드 용량 약 93MW(2026-09-30), Nebius 의 계약 전력 2GW 초과(2026-02)·가동 전력 약 170MW(2025-12-31). 정의가 달라 서로 더하지 않는다."
+  }
+ ]
+}

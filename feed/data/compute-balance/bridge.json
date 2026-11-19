@@ -1,0 +1,918 @@
+{
+ "schema": 1,
+ "bundle": "S4",
+ "title": "맞추기 — 달러와 GW 를 잇는 계산",
+ "updated_kst": "2026-11-19T22:53:22+09:00",
+ "measure": null,
+ "notes": [
+  "모두 계산 기록이다. basis 는 '계산'으로 시작하고 입력 기록을 refs 로 가리킨다.",
+  "단가(십억 달러/GW·년)는 계약마다 범위가 다르다(detail.scope — 클라우드 서비스 전체, GPU 클라우드, 장비만). 범위가 다른 단가를 서로 견줄 때는 그 차이를 함께 읽는다.",
+  "'바닥'이라고 적은 단가는 발표된 최대 용량이 첫날부터 다 깔렸다고 본 값이라 실제 단가는 그보다 높다."
+ ],
+ "records": [
+  {
+   "id": "anthropic-serving-share-of-compute",
+   "country": "ZZ",
+   "city": null,
+   "metric": "Anthropic 컴퓨트 비용 가운데 고객 서비스 몫(상한)",
+   "value": 25.6,
+   "unit": "%",
+   "asof": "2026-09-30",
+   "basis": "계산: 매출원가 ÷ 컴퓨트·인프라 비용, 2026년 1~9월 (4.812 ÷ 18.808)",
+   "refs": [
+    "anthropic-cost-of-revenue",
+    "anthropic-compute-expense"
+   ],
+   "series": [
+    {
+     "period": "2023",
+     "value": 6,
+     "src": 1
+    },
+    {
+     "period": "2024",
+     "value": 29.8,
+     "src": 1
+    },
+    {
+     "period": "2025",
+     "value": 37.9,
+     "src": 1
+    }
+   ],
+   "detail": {
+    "nine_months": {
+     "2025": 41,
+     "2026": 25.6
+    }
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "Anthropic, PBC — Form S-1 정정 3호 (SEC EDGAR)",
+     "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026074338/anthropicpbc-sx1ax3.htm",
+     "date": "2026-11-17",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "매출원가에 인건비·간접비가 조금 섞여 있어 이 값은 고객 서비스 몫의 상한이다. 나머지(74% 이상)가 모델 개발·연구·사내 사용·무료 제공에 쓴 몫이다. 2025년 1~9월 41%에서 내려왔다."
+  },
+  {
+   "id": "anthropic-compute-run-rate",
+   "country": "ZZ",
+   "city": null,
+   "metric": "Anthropic 컴퓨트·인프라 비용의 연 환산",
+   "value": 39.452,
+   "unit": "십억 달러/년",
+   "asof": "2026-09-30",
+   "basis": "계산: 2026년 3분기 컴퓨트·인프라 비용 9.863 × 4",
+   "refs": [
+    "anthropic-compute-expense",
+    "anthropic-commit-spacexai"
+   ],
+   "detail": {
+    "annualized_by_quarter": {
+     "2025Q1": 3.776,
+     "2025Q2": 5.56,
+     "2025Q3": 8.188,
+     "2025Q4": 11.78,
+     "2026Q1": 13.548,
+     "2026Q2": 22.232,
+     "2026Q3": 39.452
+    },
+    "spacexai_at_full_delivery_per_year": 37.2
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "Anthropic, PBC — Form S-1 정정 3호 (SEC EDGAR)",
+     "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026074338/anthropicpbc-sx1ax3.htm",
+     "date": "2026-11-17",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "2025년 4분기의 연 환산(11.78)의 3.3배다. SpaceXAI 약정이 다 인도되면 그 한 건만 연 372억 달러(월 31억 × 12)가 더해진다."
+  },
+  {
+   "id": "unit-price-amazon-floor",
+   "country": "ZZ",
+   "city": null,
+   "metric": "약정 단가의 바닥 — Amazon(Trainium)",
+   "value": 2.2,
+   "unit": "십억 달러/GW·년",
+   "asof": "2026-11-17",
+   "basis": "계산: 최소 약정 110.0 ÷ (발표된 최대 용량 5GW × 계약 기간 10년)",
+   "refs": [
+    "anthropic-commit-amazon"
+   ],
+   "detail": {
+    "usd_bn": 110,
+    "gw": 5,
+    "gw_bound": "up_to",
+    "years": 10,
+    "scope": "클라우드 서비스(칩·시설·전력·운영)"
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "Anthropic, PBC — Form S-1 정정 3호 (SEC EDGAR)",
+     "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026074338/anthropicpbc-sx1ax3.htm",
+     "date": "2026-11-17",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "Anthropic 발표",
+     "url": "https://www.anthropic.com/news/anthropic-amazon-compute",
+     "date": "2026-04-20",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1,
+    2
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "5GW 가 첫날부터 다 깔렸다고 본 바닥값이다. 용량은 단계로 인도되고 5GW 는 '최대'이므로 실제 단가는 이보다 높다. 최소 약정이라 실제 지출도 더 클 수 있다."
+  },
+  {
+   "id": "unit-price-microsoft-floor",
+   "country": "ZZ",
+   "city": null,
+   "metric": "약정 단가의 바닥 — Microsoft(NVIDIA)",
+   "value": 7.1,
+   "unit": "십억 달러/GW·년",
+   "asof": "2026-11-17",
+   "basis": "계산: 최소 약정 47.2 ÷ (발표된 최대 용량 1GW × 계약 기간 6.67년[2026-11~2033-06])",
+   "refs": [
+    "anthropic-commit-microsoft"
+   ],
+   "detail": {
+    "usd_bn": 47.2,
+    "gw": 1,
+    "gw_bound": "up_to",
+    "years": 6.67,
+    "scope": "클라우드 서비스(칩·시설·전력·운영)"
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "Anthropic, PBC — Form S-1 정정 3호 (SEC EDGAR)",
+     "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026074338/anthropicpbc-sx1ax3.htm",
+     "date": "2026-11-17",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "Anthropic 발표",
+     "url": "https://www.anthropic.com/news/microsoft-nvidia-anthropic-announce-strategic-partnerships",
+     "date": "2025-11-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1,
+    2
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "1GW 는 발표 때의 '최대'이고 약정 금액은 그 뒤 여러 번 고쳐졌다. 고친 계약의 용량은 공개되지 않아, 용량이 1GW 보다 커졌다면 단가는 이보다 낮다."
+  },
+  {
+   "id": "unit-price-broadcom-lease",
+   "country": "ZZ",
+   "city": null,
+   "metric": "장비 리스 단가 — Broadcom(TPU 랙)",
+   "value": 9.2,
+   "unit": "십억 달러/GW·년",
+   "asof": "2026-11-17",
+   "basis": "계산: 임차료 합 161.2 ÷ 브로드컴이 공시한 약 3.5GW ÷ 리스 기간 5년 (GW당 46.1)",
+   "refs": [
+    "anthropic-lease-broadcom"
+   ],
+   "detail": {
+    "usd_bn": 161.2,
+    "gw": 3.5,
+    "gw_bound": "approx",
+    "years": 5,
+    "usd_bn_per_gw": 46.1,
+    "scope": "장비(가속기·CPU·메모리 등)만"
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "Anthropic, PBC — Form S-1 정정 3호 (SEC EDGAR)",
+     "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026074338/anthropicpbc-sx1ax3.htm",
+     "date": "2026-11-17",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "Broadcom 8-K 발표",
+     "url": "https://www.sec.gov/Archives/edgar/data/1730168/000119312526144028/d87999d8k.htm",
+     "date": "2026-04-06",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1,
+    2
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "장비만의 값이다. 데이터센터 임차·전력·운영비는 따로 든다. 리스에는 2026년에 가동한 물량도 들어 있어, 리스가 덮는 용량이 3.5GW 보다 크면 단가는 이보다 낮다."
+  },
+  {
+   "id": "unit-price-spacexai-floor",
+   "country": "ZZ",
+   "city": null,
+   "metric": "약정 단가의 바닥 — SpaceXAI(NVIDIA)",
+   "value": 21.9,
+   "unit": "십억 달러/GW·년",
+   "asof": "2026-11-17",
+   "basis": "계산: 다 인도된 뒤의 연 지급액 37.2(월 3.1 × 12) ÷ SpaceX 전체의 명목 컴퓨트 1.7GW(2026-09-30)",
+   "refs": [
+    "anthropic-commit-spacexai",
+    "spacex-nameplate-compute"
+   ],
+   "detail": {
+    "usd_bn_per_year": 37.2,
+    "gw": 1.7,
+    "gw_bound": "seller_total",
+    "scope": "GPU 클라우드 서비스",
+    "epoch_sites_anthropic_max_gw_2026_09": 1.29
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "Anthropic, PBC — Form S-1 정정 3호 (SEC EDGAR)",
+     "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026074338/anthropicpbc-sx1ax3.htm",
+     "date": "2026-11-17",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "Space Exploration Technologies Corp. — Form 10-Q (2026-09-30 분기)",
+     "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026066880/spcx-20260930.htm",
+     "date": "2026-10-22",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1,
+    2
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "SpaceX 가 가진 컴퓨트 전부를 Anthropic 이 쓴다고 본 바닥값이다. SpaceX 가 2026년 12월까지 용량을 더 늘리면 낮아진다. 그래도 다른 계약의 두세 배 수준이라 단기·즉시 인도 용량에 웃돈이 붙었다고 읽힌다(해석). Epoch 부지 자료에서 Anthropic 이 사용자로 적힌 SpaceXAI 부지(Colossus 1·2)는 2026년 9월 말 IT 전력 1.29GW 로, 이것을 다 쓴다고 봐도 단가는 288억 달러다."
+  },
+  {
+   "id": "anthropic-realized-unit-cost-2025q4",
+   "country": "ZZ",
+   "city": null,
+   "metric": "Anthropic 의 실현 단가(2025년 4분기)",
+   "value": 8.4,
+   "unit": "십억 달러/GW·년",
+   "asof": "2025-12-31",
+   "basis": "계산: 2025년 4분기 컴퓨트·인프라 비용의 연 환산 11.78 ÷ 2025년 말 가동 용량 약 1.4GW(Epoch AI 모형 입력의 중앙값 1.38GW)",
+   "refs": [
+    "anthropic-compute-expense"
+   ],
+   "detail": {
+    "annualized_usd_bn": 11.78,
+    "gw": 1.4,
+    "gw_source": "Epoch AI 모형 입력(IT 전력 중앙값 1.38GW). 보도 값은 배분표의 데스크 추정 y2025-anthropic-total 에 있다"
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "Anthropic, PBC — Form S-1 정정 3호 (SEC EDGAR)",
+     "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026074338/anthropicpbc-sx1ax3.htm",
+     "date": "2026-11-17",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "Epoch AI — AI chip users (intermediates_by_lab.csv, CC BY 4.0)",
+     "url": "https://epoch.ai/data/ai-chip-users",
+     "date": "2026-09-09",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1,
+    2
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "분모는 회사 발표가 아니라 Epoch AI 의 추정 입력이고, 보도된 값(약 1.4GW)과 같다. 분기 평균 용량은 연말 값보다 작으므로 실제 단가는 이보다 높다."
+  },
+  {
+   "id": "anthropic-implied-capacity-2026q3",
+   "country": "ZZ",
+   "city": null,
+   "metric": "Anthropic 의 2026년 3분기 평균 가동 용량(비용에서 역산한 상한)",
+   "value": 4.7,
+   "unit": "GW",
+   "asof": "2026-09-30",
+   "basis": "계산: 2026년 3분기 컴퓨트·인프라 비용의 연 환산 39.45 ÷ 2025년 4분기 실현 단가 8.4",
+   "refs": [
+    "anthropic-compute-run-rate",
+    "anthropic-realized-unit-cost-2025q4"
+   ],
+   "detail": {
+    "annualized_usd_bn": 39.45,
+    "unit_cost_assumed": 8.4,
+    "if_3_5_gw_unit_cost": 11.3
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "Anthropic, PBC — Form S-1 정정 3호 (SEC EDGAR)",
+     "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026074338/anthropicpbc-sx1ax3.htm",
+     "date": "2026-11-17",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "단가가 2025년 4분기 그대로라고 본 상한이다. 보도된 2026년 말 전망(3.5GW 초과)이 3분기 평균이었다면 단가는 11.3으로 2025년 4분기보다 34% 높다. 둘 가운데 하나다 — 용량이 보도보다 이미 크거나, 단가가 올랐다(SpaceXAI 같은 비싼 단기 용량)."
+  },
+  {
+   "id": "eq1-nvidia-revenue-per-chip-gw",
+   "country": "ZZ",
+   "city": null,
+   "metric": "등식 1 — NVIDIA 매출 ÷ 그 분기에 팔린 칩 전력",
+   "value": 41.4,
+   "unit": "십억 달러/칩 GW",
+   "asof": "2026-07",
+   "basis": "계산: FY2027 2분기 데이터센터 매출 89.0 ÷ Epoch AI 가 추정한 2026년 2분기 NVIDIA 칩 정격전력 합 2.149GW",
+   "refs": [
+    "nvidia-dc-revenue",
+    "nvidia-revenue-per-gw-stated"
+   ],
+   "detail": {
+    "revenue": 89.023,
+    "chip_gw": 2.149,
+    "per_facility_gw_at_0_55": 22.8,
+    "per_facility_gw_at_0_6": 24.9,
+    "by_quarter": {
+     "FY2026Q3": 40.2,
+     "FY2026Q4": 39.8,
+     "FY2027Q1": 41.5,
+     "FY2027Q2": 41.4
+    },
+    "company_stated_per_gw": {
+     "blackwell": 25,
+     "vera_rubin": 40
+    }
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "NVIDIA — Form 10-Q (2026-07-26 분기)",
+     "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
+     "date": "2026-08-26",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "Epoch AI — AI chip sales (CSV, CC BY 4.0)",
+     "url": "https://epoch.ai/data/ai-chip-sales",
+     "date": null,
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1,
+    2
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "네 분기 내내 402억~415억 달러로 일정하다. 칩 전력을 시설 전력의 0.55~0.6배로 보면 시설 GW당 230억~250억 달러이고, 회사가 Blackwell 세대의 GW당 매출 기회로 밝힌 250억 달러와 맞는다. 400억 달러는 다음 세대(Vera Rubin)의 값이다. 분기 구간은 한 달 어긋난다."
+  },
+  {
+   "id": "eq1-broadcom-revenue-per-chip-gw",
+   "country": "ZZ",
+   "city": null,
+   "metric": "등식 1 — Broadcom AI 매출 ÷ 그 분기에 팔린 TPU 칩 전력(상한)",
+   "value": 27.5,
+   "unit": "십억 달러/칩 GW",
+   "asof": "2026-07",
+   "basis": "계산: FY2026 3분기 AI 반도체 매출 16.7 ÷ Epoch AI 가 추정한 2026년 2분기 구글 TPU 칩 정격전력 합 0.608GW",
+   "refs": [
+    "broadcom-ai-revenue",
+    "broadcom-gw-outlook"
+   ],
+   "detail": {
+    "revenue": 16.7,
+    "chip_gw": 0.608,
+    "per_facility_gw_at_0_55": 15.1,
+    "per_facility_gw_at_0_6": 16.5
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "Broadcom FY2026 3분기 실적 발표 콜(전사: Stock Analysis)",
+     "url": "https://stockanalysis.com/stocks/avgo/transcripts/685349-q3-2026/",
+     "date": "2026-09-02",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "Epoch AI — AI chip sales (CSV, CC BY 4.0)",
+     "url": "https://epoch.ai/data/ai-chip-sales",
+     "date": null,
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1,
+    2
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "분자에 TPU 밖의 고객(메타·오픈AI 등)과 AI 네트워킹이 들어 있어 상한이다. 시설 GW 로 바꾸면 150억~165억 달러로, 콜에서 나온 GW당 110억~120억 달러보다 높다 — 그 차이가 TPU 밖 매출과 네트워킹의 몫이거나 Epoch 의 TPU 물량이 낮게 잡힌 것이다."
+  },
+  {
+   "id": "eq1-nvidia-hyperscale-share-of-capex",
+   "country": "ZZ",
+   "city": null,
+   "metric": "등식 1 — 다섯 회사 설비투자 가운데 NVIDIA 하이퍼스케일 매출의 몫",
+   "value": 25.3,
+   "unit": "%",
+   "asof": "2026-10",
+   "basis": "계산: NVIDIA FY2027 3분기 하이퍼스케일 매출 60.0 ÷ 다섯 회사의 분기 설비투자 합 237.3(Microsoft 45.2 + Alphabet 51.4 + Amazon 77.3 + Meta 34.9 + Oracle 28.5)",
+   "refs": [
+    "nvidia-dc-revenue",
+    "microsoft-capex",
+    "alphabet-capex",
+    "amazon-capex",
+    "meta-capex",
+    "oracle-capex"
+   ],
+   "detail": {
+    "nvidia_hyperscale": 60,
+    "capex_sum": 237.3,
+    "ai_silicon_sum": {
+     "nvidia_dc": 108,
+     "broadcom_ai": 16.7,
+     "amd_dc": 8.5,
+     "marvell_dc": 2.2,
+     "total": 135.4
+    }
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "NVIDIA FY2027 3분기 실적 발표 콜(전사: Stock Analysis)",
+     "url": "https://stockanalysis.com/stocks/nvda/transcripts/739383-q3-2027/",
+     "date": null,
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "Microsoft FY2027 1분기 실적 발표 콜(전사: Stock Analysis)",
+     "url": "https://stockanalysis.com/stocks/msft/transcripts/718712-q1-2027/",
+     "date": null,
+     "read": "partial"
+    },
+    {
+     "n": 3,
+     "title": "Alphabet 2026년 3분기 실적 발표 콜(전사: Stock Analysis)",
+     "url": "https://stockanalysis.com/stocks/googl/transcripts/712854-q3-2026/",
+     "date": null,
+     "read": "partial"
+    },
+    {
+     "n": 4,
+     "title": "Amazon — Form 10-Q (2026-09-30 분기)",
+     "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000040/amzn-20260930.htm",
+     "date": "2026-10-30",
+     "read": "partial"
+    },
+    {
+     "n": 5,
+     "title": "Meta 2026년 3분기 실적 발표 콜(전사: Stock Analysis)",
+     "url": "https://stockanalysis.com/stocks/meta/transcripts/718643-q3-2026/",
+     "date": null,
+     "read": "partial"
+    },
+    {
+     "n": 6,
+     "title": "Oracle — Form 10-Q (2026-08-31 분기)",
+     "url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526389274/orcl-20260831.htm",
+     "date": "2026-09-11",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "분기 구간이 회사마다 한두 달 어긋나고, NVIDIA 가 누구를 하이퍼스케일로 묶는지는 공개돼 있지 않다. Microsoft 는 설비투자의 4분의 3, Alphabet 은 65%가 서버류라고 했으므로 서버류 투자 가운데서는 35~40%쯤이다. 나머지는 자체 칩(TPU·Trainium 등), CPU, 메모리, 네트워킹이다."
+  },
+  {
+   "id": "eq2-chip-to-it-ratio-coreweave",
+   "country": "ZZ",
+   "city": null,
+   "metric": "등식 2 — 칩 전력 ÷ 회사가 밝힌 가동 전력(CoreWeave)",
+   "value": 0.57,
+   "unit": "배",
+   "asof": "2025-12-31",
+   "basis": "계산: Epoch AI 의 2025년 말 CoreWeave 보유 칩 정격전력 0.484GW ÷ 2026년 초 가동 전력 약 0.85GW(2026-09-30 '1.7GW 초과'가 연초의 두 배라는 회사 설명에서 역산)",
+   "refs": [
+    "coreweave-active-power"
+   ],
+   "detail": {
+    "chip_gw": 0.484,
+    "active_gw": 0.85
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "Epoch AI — AI chip owners (CSV, CC BY 4.0)",
+     "url": "https://epoch.ai/data/ai-chip-owners",
+     "date": null,
+     "read": "full"
+    },
+    {
+     "n": 2,
+     "title": "CoreWeave 2026년 3분기 실적 보도자료 (8-K 첨부)",
+     "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000461/coreweave3q26earningspress.htm",
+     "date": "2026-11-10",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1,
+    2
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "배분표가 쓰는 환산 비율(0.6)과 같은 범위다. 분모는 회사 설명에서 역산한 값이라 '초과'의 폭만큼 흔들린다."
+  },
+  {
+   "id": "eq2-chip-to-it-ratio-xai",
+   "country": "ZZ",
+   "city": null,
+   "metric": "등식 2 — 칩 전력 ÷ 회사가 밝힌 명목 컴퓨트(xAI)",
+   "value": 0.51,
+   "unit": "배",
+   "asof": "2025-12-31",
+   "basis": "계산: Epoch AI 의 2025년 말 xAI 보유 칩 정격전력 0.308GW ÷ SpaceX 가 밝힌 2025-09-30 명목 컴퓨트 0.6GW",
+   "refs": [
+    "spacex-nameplate-compute"
+   ],
+   "detail": {
+    "chip_gw": 0.308,
+    "nameplate_gw_2025_09": 0.6,
+    "nameplate_gw_2026_09": 1.7
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "Epoch AI — AI chip owners (CSV, CC BY 4.0)",
+     "url": "https://epoch.ai/data/ai-chip-owners",
+     "date": null,
+     "read": "full"
+    },
+    {
+     "n": 2,
+     "title": "Space Exploration Technologies Corp. — Form 10-Q (2026-09-30 분기)",
+     "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026066880/spcx-20260930.htm",
+     "date": "2026-10-22",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1,
+    2
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "분모가 석 달 이른 값이므로 2025년 말 기준으로는 비율이 이보다 낮다. Epoch 의 xAI 보유 추정이 회사 공시보다 작게 잡혀 있다는 뜻이다 — 배분표의 xAI 행은 공시 값으로 바꿀 근거가 생겼다."
+  },
+  {
+   "id": "eq2-anthropic-share-of-cloud-backlog",
+   "country": "ZZ",
+   "city": null,
+   "metric": "등식 2 — 클라우드 수주잔고 가운데 Anthropic 약정의 몫(구글 클라우드)",
+   "value": 21.6,
+   "unit": "%",
+   "asof": "2026-09-30",
+   "basis": "계산: Anthropic 의 구글 호스팅 최소 약정 121.3 ÷ 구글 클라우드 수주잔고 560.8",
+   "refs": [
+    "anthropic-commit-google-hosting",
+    "anthropic-commit-amazon",
+    "anthropic-commit-microsoft",
+    "openai-commit-amazon",
+    "alphabet-capex",
+    "amazon-capex",
+    "microsoft-capex"
+   ],
+   "detail": {
+    "google_cloud": 21.6,
+    "aws_anthropic": 19,
+    "microsoft_anthropic": 7,
+    "aws_openai": 23.9,
+    "aws_both": 42.9
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "Anthropic, PBC — Form S-1 정정 3호 (SEC EDGAR)",
+     "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026074338/anthropicpbc-sx1ax3.htm",
+     "date": "2026-11-17",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "Alphabet — Form 10-Q (2026-09-30 분기)",
+     "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/goog-20260930.htm",
+     "date": "2026-10-29",
+     "read": "partial"
+    },
+    {
+     "n": 3,
+     "title": "Amazon — Form 10-Q (2026-09-30 분기)",
+     "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000040/amzn-20260930.htm",
+     "date": "2026-10-30",
+     "read": "partial"
+    },
+    {
+     "n": 4,
+     "title": "Microsoft — Form 10-Q (2026-09-30 분기)",
+     "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526436133/msft-20260930.htm",
+     "date": "2026-10-28",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "같은 식으로 AWS 는 19.0%(110.0 ÷ 578), Microsoft 는 7.0%(47.2 ÷ 677)다. OpenAI 의 아마존 약정 138.0 은 AWS 수주잔고의 23.9%다. 약정이 수주잔고에 그대로 잡혔다고 본 값이고, 약정 일부는 9월 말 뒤에 고쳐졌다."
+  },
+  {
+   "id": "eq3-openai-unit-cost-2025",
+   "country": "ZZ",
+   "city": null,
+   "metric": "등식 3 — OpenAI 의 실현 단가(2025년, 바닥)",
+   "value": 8.4,
+   "unit": "십억 달러/GW·년",
+   "asof": "2025-12-31",
+   "basis": "계산: 2025년 컴퓨트 지출 16.0(보도) ÷ 2025년 말 가용 컴퓨팅 약 1.9GW(회사 발표)",
+   "refs": [
+    "openai-compute-spend-2025",
+    "anthropic-realized-unit-cost-2025q4"
+   ],
+   "detail": {
+    "spend": 16,
+    "gw": 1.9
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "Epoch AI — AI companies: Compute spend (CSV, CC BY 4.0)",
+     "url": "https://epoch.ai/data/ai-companies",
+     "date": "2026-11-10",
+     "read": "full"
+    },
+    {
+     "n": 2,
+     "title": "OpenAI — 2025년 컴퓨팅 용량 발표(배분표의 공개 수치 openai-compute-2025)",
+     "url": "https://openai.com/index/a-business-that-scales-with-the-value-of-intelligence/",
+     "date": "2026-01-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1,
+    2
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "한 해 지출을 연말 용량으로 나눠 바닥값이다. Anthropic 의 2025년 4분기 실현 단가(8.4)와 같은 수준으로 나온다 — 서로 다른 경로로 낸 두 값이 맞는다."
+  },
+  {
+   "id": "eq3-inference-share",
+   "country": "ZZ",
+   "city": null,
+   "metric": "등식 3 — 컴퓨트 지출 가운데 추론(고객 서비스)의 몫, 2025년",
+   "value": 49.1,
+   "unit": "%",
+   "asof": "2025-12-31",
+   "basis": "계산: OpenAI 의 추론 지출 8.0 ÷ (추론 8.0 + 연구개발 8.3), 보도 값",
+   "refs": [
+    "openai-compute-spend-2025",
+    "anthropic-serving-share-of-compute"
+   ],
+   "detail": {
+    "openai_2025": 49.1,
+    "anthropic_2025": 37.9,
+    "anthropic_2026_9m": 25.6
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "Epoch AI — AI companies: Compute spend (CSV, CC BY 4.0)",
+     "url": "https://epoch.ai/data/ai-companies",
+     "date": "2026-11-10",
+     "read": "full"
+    },
+    {
+     "n": 2,
+     "title": "Anthropic, PBC — Form S-1 정정 3호 (SEC EDGAR)",
+     "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026074338/anthropicpbc-sx1ax3.htm",
+     "date": "2026-11-17",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1,
+    2
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "같은 해 Anthropic 은 매출원가 ÷ 컴퓨트·인프라 비용으로 37.9%(상한)다. 정의가 다르다(OpenAI 는 보도된 추론 지출, Anthropic 은 매출원가)는 점을 함께 읽는다."
+  },
+  {
+   "id": "eq2-ai-share-of-capacity-adds",
+   "country": "ZZ",
+   "city": null,
+   "metric": "등식 2 — 클라우드가 더한 전체 용량 가운데 AI 칩의 몫(Amazon, 2025년)",
+   "value": 51,
+   "unit": "%",
+   "asof": "2025-12-31",
+   "basis": "계산: Epoch AI 가 추정한 Amazon 의 2025년 칩 전력 증가분 1.15GW ÷ 0.57(칩 전력→IT 전력) = 2.02GW ÷ 회사가 밝힌 12개월 증가 3.99GW",
+   "refs": [
+    "amazon-capacity-added",
+    "microsoft-capacity-added",
+    "eq2-chip-to-it-ratio-coreweave"
+   ],
+   "detail": {
+    "amazon": {
+     "chip_gw_added_2025": 1.15,
+     "it_gw": 2.02,
+     "disclosed_added": 3.99,
+     "share_pct": 51
+    },
+    "microsoft": {
+     "chip_gw_added_2025": 1.29,
+     "it_gw": 2.26,
+     "disclosed_added_per_year": 4,
+     "share_pct": 56
+    },
+    "chip_to_it": 0.57
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "Epoch AI — AI chip owners (CSV, CC BY 4.0)",
+     "url": "https://epoch.ai/data/ai-chip-owners",
+     "date": null,
+     "read": "full"
+    },
+    {
+     "n": 2,
+     "title": "Amazon 2025년 4분기 실적 발표 콜(전사: Stock Analysis)",
+     "url": "https://stockanalysis.com/stocks/amzn/transcripts/406163-q4-2025/",
+     "date": null,
+     "read": "partial"
+    },
+    {
+     "n": 3,
+     "title": "Microsoft FY2026 4분기 실적 발표 콜(전사: Stock Analysis)",
+     "url": "https://stockanalysis.com/stocks/msft/transcripts/647770-q4-2026/",
+     "date": null,
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1,
+    2,
+    3
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "같은 식으로 Microsoft 는 2025년 칩 전력 증가분 1.29GW → IT 2.26GW ÷ 연 4GW(분기 1GW) = 56%다(구간이 반년 어긋난다). 두 회사 모두 새로 더한 용량의 절반쯤이 AI 가속기라는 뜻이고, 나머지는 일반 클라우드이거나 Epoch 이 놓친 물량이다."
+  },
+  {
+   "id": "eq2-epoch-sites-coverage",
+   "country": "ZZ",
+   "city": null,
+   "metric": "등식 2 — Epoch 부지 자료가 회사 공시를 덮는 비율(SpaceX)",
+   "value": 76,
+   "unit": "%",
+   "asof": "2026-09-30",
+   "basis": "계산: Epoch 이 추적한 SpaceXAI 부지의 IT 전력 1.3GW ÷ SpaceX 가 공시한 명목 컴퓨트 1.7GW",
+   "refs": [
+    "epoch-sites-it-power",
+    "spacex-nameplate-compute",
+    "coreweave-active-power"
+   ],
+   "detail": {
+    "spacex": 76,
+    "coreweave": 40,
+    "openai_2025_12": 59
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "Epoch AI — AI data centers (CSV, CC BY 4.0)",
+     "url": "https://epoch.ai/data/ai-data-centers",
+     "date": null,
+     "read": "full"
+    },
+    {
+     "n": 2,
+     "title": "Space Exploration Technologies Corp. — Form 10-Q (2026-09-30 분기)",
+     "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026066880/spcx-20260930.htm",
+     "date": "2026-10-22",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1,
+    2
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "CoreWeave 는 0.68 ÷ 1.7 = 40%, OpenAI 는 2025년 말 1.12 ÷ 1.9 = 59%다. 큰 단일 부지가 많은 곳일수록 잘 덮인다. 하이퍼스케일러의 부지 합을 그 회사 전체로 읽으면 안 된다는 근거다."
+  },
+  {
+   "id": "anthropic-capacity-2026q3-range",
+   "country": "ZZ",
+   "city": null,
+   "metric": "Anthropic 의 2026년 9월 말 가동 용량(세 경로의 범위)",
+   "value": 3.2,
+   "unit": "GW",
+   "asof": "2026-09-30",
+   "basis": "계산: 바닥 = Epoch 부지 자료의 Amazon·SpaceX 부지 2.23GW(공유 부지를 사용자 수로 나눔) + 회사가 2026년에 가동한다고 밝힌 TPU 1GW 이상. 위 = 비용에서 역산한 4.7GW",
+   "refs": [
+    "epoch-sites-it-power",
+    "anthropic-implied-capacity-2026q3",
+    "anthropic-compute-run-rate"
+   ],
+   "detail": {
+    "floor_split": 3.2,
+    "floor_full": 3.9,
+    "cost_implied_cap": 4.7,
+    "tpu_2026_min": 1,
+    "unit_cost_range": {
+     "low": 8.4,
+     "high": 12.3
+    },
+    "excluded": "Azure, Fluidstack 부지"
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "Epoch AI — AI data centers (CSV, CC BY 4.0)",
+     "url": "https://epoch.ai/data/ai-data-centers",
+     "date": null,
+     "read": "full"
+    },
+    {
+     "n": 2,
+     "title": "Anthropic, PBC — Form S-1 정정 3호 (SEC EDGAR)",
+     "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026074338/anthropicpbc-sx1ax3.htm",
+     "date": "2026-11-17",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1,
+    2
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "공유 부지를 전부 Anthropic 몫으로 세면 바닥이 3.9GW 다. Azure 용량은 어느 쪽에도 들어 있지 않다. 그래서 보도된 '2026년 말 3.5GW 초과'는 9월 말에 이미 넘었을 가능성이 크고, 3분기 단가는 GW·년당 84억~123억 달러 범위다(용량 4.7~3.2GW)."
+  }
+ ]
+}

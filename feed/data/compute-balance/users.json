@@ -1,0 +1,778 @@
+{
+ "schema": 1,
+ "bundle": "S3",
+ "title": "사용·소모 — 누가 얼마나 쓰고 얼마를 치르는가",
+ "updated_kst": "2026-11-19T22:53:22+09:00",
+ "measure": null,
+ "notes": [
+  "금액은 십억 달러다. 회사 공시에서 읽은 값만 적는다.",
+  "약정 금액에는 '최소'·'최대'·'회사 예상'이 섞여 있어 basis 와 detail.bound 에 밝힌다. 서로 더하지 않는다 — 합은 회사가 밝힌 총액 기록(anthropic-commitments-total)을 쓴다.",
+  "지금은 Anthropic 의 S-1 정정 3호에서 읽은 기록뿐이다. OpenAI·xAI·하이퍼스케일러의 자기 사용을 이어 넣는다."
+ ],
+ "records": [
+  {
+   "id": "anthropic-compute-expense",
+   "country": "ZZ",
+   "city": null,
+   "metric": "Anthropic 컴퓨트·인프라 비용",
+   "value": 18.808,
+   "unit": "십억 달러",
+   "asof": "2026-09-30",
+   "basis": "성격별 영업비용의 '컴퓨트·인프라' 줄, 2026년 1~9월(미감사)",
+   "company": "Anthropic",
+   "kind": "expense",
+   "series": [
+    {
+     "period": "2023",
+     "value": 0.433,
+     "src": 1
+    },
+    {
+     "period": "2024",
+     "value": 2.522,
+     "src": 1
+    },
+    {
+     "period": "2025",
+     "value": 7.326,
+     "src": 1
+    }
+   ],
+   "detail": {
+    "nine_months": {
+     "2025": 4.381,
+     "2026": 18.808
+    },
+    "quarters": {
+     "2025Q1": 0.944,
+     "2025Q2": 1.39,
+     "2025Q3": 2.047,
+     "2025Q4": 2.945,
+     "2026Q1": 3.387,
+     "2026Q2": 5.558,
+     "2026Q3": 9.863
+    },
+    "pct_of_revenue": {
+     "2023": 1056,
+     "2024": 653,
+     "2025": 160,
+     "2025_9m": 172,
+     "2026_9m": 57
+    }
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "Anthropic, PBC — Form S-1 정정 3호 (SEC EDGAR)",
+     "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026074338/anthropicpbc-sx1ax3.htm",
+     "date": "2026-11-17",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "2026년 3분기 한 분기에 98.6억 달러로, 2025년 한 해(73.3억 달러)보다 많다. 회사는 클라우드 사업자와 미리 약정한 용량이 인도되는 대로 비용이 잡힌다고 설명한다."
+  },
+  {
+   "id": "anthropic-cost-of-revenue",
+   "country": "ZZ",
+   "city": null,
+   "metric": "Anthropic 매출원가(기능별)",
+   "value": 4.812,
+   "unit": "십억 달러",
+   "asof": "2026-09-30",
+   "basis": "기능별 영업비용의 매출원가, 2026년 1~9월(미감사)",
+   "company": "Anthropic",
+   "kind": "expense",
+   "definition": "주석: 매출원가의 거의 전부는 고객 서비스 작업에 쓴 컴퓨트·인프라 비용이고, 일부 인건비와 배분된 간접비가 들어 있다.",
+   "series": [
+    {
+     "period": "2023",
+     "value": 0.026,
+     "src": 1
+    },
+    {
+     "period": "2024",
+     "value": 0.752,
+     "src": 1
+    },
+    {
+     "period": "2025",
+     "value": 2.773,
+     "src": 1
+    }
+   ],
+   "detail": {
+    "nine_months": {
+     "2025": 1.796,
+     "2026": 4.812
+    }
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "Anthropic, PBC — Form S-1 정정 3호 (SEC EDGAR)",
+     "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026074338/anthropicpbc-sx1ax3.htm",
+     "date": "2026-11-17",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "고객에게 서비스하는 데 쓴 컴퓨트가 거의 전부인 줄이다. 무료 사용자에게 쓴 컴퓨트는 여기가 아니라 판매·마케팅비에 들어 있다."
+  },
+  {
+   "id": "anthropic-rnd-expense",
+   "country": "ZZ",
+   "city": null,
+   "metric": "Anthropic 연구개발비(기능별)",
+   "value": 19.24,
+   "unit": "십억 달러",
+   "asof": "2026-09-30",
+   "basis": "기능별 영업비용의 연구개발비, 2026년 1~9월(미감사)",
+   "company": "Anthropic",
+   "kind": "expense",
+   "definition": "주석: 연구개발비는 주로 모델 개발·연구·사내 사용 작업에 쓴 컴퓨트·인프라 비용, 인건비, 소프트웨어 비용, 배분된 간접비다.",
+   "series": [
+    {
+     "period": "2023",
+     "value": 0.422,
+     "src": 1
+    },
+    {
+     "period": "2024",
+     "value": 2.275,
+     "src": 1
+    },
+    {
+     "period": "2025",
+     "value": 6.338,
+     "src": 1
+    }
+   ],
+   "detail": {
+    "nine_months": {
+     "2025": 3.594,
+     "2026": 19.24
+    }
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "Anthropic, PBC — Form S-1 정정 3호 (SEC EDGAR)",
+     "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026074338/anthropicpbc-sx1ax3.htm",
+     "date": "2026-11-17",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "모델 개발·연구·사내 사용에 쓴 컴퓨트가 주된 항목이지만 인건비 등이 섞여 있어 훈련 컴퓨트 값으로 바로 쓸 수 없다."
+  },
+  {
+   "id": "anthropic-commitments-total",
+   "country": "ZZ",
+   "city": null,
+   "metric": "Anthropic 약정 지출 총액",
+   "value": 900.9,
+   "unit": "십억 달러",
+   "asof": "2026-11-17",
+   "basis": "2026-09-30 현재와 그 뒤 맺은 구매 약정·리스(단기 약정, 아직 개시하지 않은 리스 포함)의 합('약 9,009억 달러'). 거의 전부가 컴퓨트·인프라",
+   "company": "Anthropic",
+   "kind": "commitment",
+   "detail": {
+    "parts": {
+     "contractual_table_2026_09_30": 319.993,
+     "short_term_2026_09_30": 17.4,
+     "leases_not_yet_commenced": 451.2,
+     "after_2026_09_30": 105.7,
+     "after_2026_09_30_short_term": 6.6
+    },
+    "by_2030_end": 451.6,
+    "next_12_months": 70.7,
+    "conditional_or_terminable": 186.2,
+    "no_fixed_amount_estimate": {
+     "low": 150,
+     "high": 175
+    },
+    "leases_not_yet_commenced_terms": "2026~2028년 개시, 기간 1년 미만~20년, 가중평균 약 10년"
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "Anthropic, PBC — Form S-1 정정 3호 (SEC EDGAR)",
+     "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026074338/anthropicpbc-sx1ax3.htm",
+     "date": "2026-11-17",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "고정 금액이 없는 약정(회사 추정 1,500억~1,750억 달러)은 이 합에 없다. 합의 1,862억 달러는 상대의 자금·시설·인허가 확보 같은 조건이 붙었거나 해지할 수 있는 계약이다."
+  },
+  {
+   "id": "anthropic-purchase-commitments-schedule",
+   "country": "ZZ",
+   "city": null,
+   "metric": "Anthropic 구매 약정의 연도별 최소 지급액",
+   "value": 313.819,
+   "unit": "십억 달러",
+   "asof": "2026-09-30",
+   "basis": "해지할 수 없고 남은 기간이 1년을 넘는 구매 약정의 최소 지급액 합(주로 클라우드 호스팅·제3자 인프라 서비스)",
+   "company": "Anthropic",
+   "kind": "commitment",
+   "detail": {
+    "by_year": {
+     "2027": 28.424,
+     "2028": 43.473,
+     "2029": 46.901,
+     "2030": 44.214,
+     "2026_q4": 5.053,
+     "after_2030": 145.754
+    },
+    "operating_leases_total": 4.224,
+    "finance_leases_total": 1.95
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "Anthropic, PBC — Form S-1 정정 3호 (SEC EDGAR)",
+     "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026074338/anthropicpbc-sx1ax3.htm",
+     "date": "2026-11-17",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "아직 개시하지 않은 리스 4,512억 달러와 9월 말 뒤에 맺은 약정은 이 표에 없다. 회사는 용량 인도가 늦어지면 지급 시기가 달라질 수 있다고 적었다."
+  },
+  {
+   "id": "anthropic-commit-microsoft",
+   "country": "ZZ",
+   "city": null,
+   "metric": "Anthropic → Microsoft 약정",
+   "value": 47.2,
+   "unit": "십억 달러",
+   "asof": "2026-11-17",
+   "basis": "최소 472억 달러, 최대 492억 달러. 2026-11~2033-06, 사용량과 무관",
+   "company": "Anthropic",
+   "kind": "commitment",
+   "counterparty": "Microsoft",
+   "detail": {
+    "max": 49.2,
+    "from": "2026-11",
+    "to": "2033-06",
+    "signed": "2025-11",
+    "chips": "NVIDIA"
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "Anthropic, PBC — Form S-1 정정 3호 (SEC EDGAR)",
+     "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026074338/anthropicpbc-sx1ax3.htm",
+     "date": "2026-11-17",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "2025년 11월 계약을 2026년 2~11월에 고친 값이다. 발표 때의 금액은 300억 달러였다."
+  },
+  {
+   "id": "anthropic-commit-google-hosting",
+   "country": "ZZ",
+   "city": null,
+   "metric": "Anthropic → Google 클라우드 호스팅 약정",
+   "value": 121.3,
+   "unit": "십억 달러",
+   "asof": "2026-11-17",
+   "basis": "최소 약 1,213억 달러. 2026-04~2033-07, 사용량과 무관(모자라면 차액 지급)",
+   "company": "Anthropic",
+   "kind": "commitment",
+   "counterparty": "Google",
+   "detail": {
+    "from": "2026-04",
+    "to": "2033-07",
+    "signed": "2026-03",
+    "chips": "TPU"
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "Anthropic, PBC — Form S-1 정정 3호 (SEC EDGAR)",
+     "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026074338/anthropicpbc-sx1ax3.htm",
+     "date": "2026-11-17",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "2026년 3월 계약을 5~10월에 고친 값이다."
+  },
+  {
+   "id": "anthropic-commit-google-tpu-extra",
+   "country": "ZZ",
+   "city": null,
+   "metric": "Anthropic 추가 TPU 조달(고정 금액 없음)",
+   "value": 125,
+   "unit": "십억 달러",
+   "asof": "2026-11-17",
+   "basis": "회사 추정 1,250억~1,500억 달러의 아래 값. 고정 금액 약정이 아니며 2028~2031년 인도",
+   "company": "Anthropic",
+   "kind": "commitment",
+   "counterparty": "Google",
+   "detail": {
+    "low": 125,
+    "high": 150,
+    "delivery": "2028~2031",
+    "fixed": false,
+    "chips": "TPU"
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "Anthropic, PBC — Form S-1 정정 3호 (SEC EDGAR)",
+     "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026074338/anthropicpbc-sx1ax3.htm",
+     "date": "2026-11-17",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "구글 호스팅, 구글에서 직접 구매, 제3자 TPU 공급자에게서 구매·리스 가운데 하나로 받는다. 약정 총액 9,009억 달러에 들어 있지 않다."
+  },
+  {
+   "id": "anthropic-commit-amazon",
+   "country": "ZZ",
+   "city": null,
+   "metric": "Anthropic → Amazon 약정",
+   "value": 110,
+   "unit": "십억 달러",
+   "asof": "2026-11-17",
+   "basis": "최소 1,100억 달러. 2026-05~2036-04, 사용량과 무관(모자라면 차액 지급)",
+   "company": "Anthropic",
+   "kind": "commitment",
+   "counterparty": "Amazon",
+   "detail": {
+    "from": "2026-05",
+    "to": "2036-04",
+    "signed": "2026-04",
+    "chips": "Trainium"
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "Anthropic, PBC — Form S-1 정정 3호 (SEC EDGAR)",
+     "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026074338/anthropicpbc-sx1ax3.htm",
+     "date": "2026-11-17",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "2026년 4월 계약이다. 아마존의 전환사채 인수는 이 계약의 용량 인도 단계에 맞춰 50억 달러씩 열린다."
+  },
+  {
+   "id": "anthropic-commit-spacexai",
+   "country": "ZZ",
+   "city": null,
+   "metric": "Anthropic → SpaceXAI 약정",
+   "value": 120.5,
+   "unit": "십억 달러",
+   "asof": "2026-11-17",
+   "basis": "최대 1,205억 달러, 2029년까지. 용량이 다 인도되면 월 약 31억 달러",
+   "company": "Anthropic",
+   "kind": "commitment",
+   "counterparty": "SpaceXAI",
+   "detail": {
+    "bound": "up_to",
+    "monthly_at_full_delivery": 3.1,
+    "full_delivery_expected": "2026-12",
+    "to": "2029",
+    "chips": "NVIDIA",
+    "cancel": "2027-01·2027-03 뒤 90일 통지"
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "Anthropic, PBC — Form S-1 정정 3호 (SEC EDGAR)",
+     "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026074338/anthropicpbc-sx1ax3.htm",
+     "date": "2026-11-17",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "2026년 5~10월에 맺고 고친 여러 계약의 합이다. 용량은 2026년 12월에 다 인도될 것으로 회사가 예상한다. 2027년 1월·3월의 해지 불가 기간이 지나면 어느 쪽이든 90일 전에 알리고 해지할 수 있다."
+  },
+  {
+   "id": "anthropic-commit-amd",
+   "country": "ZZ",
+   "city": null,
+   "metric": "Anthropic → AMD 하드웨어 공급 계약",
+   "value": 20,
+   "unit": "십억 달러",
+   "asof": "2026-11-17",
+   "basis": "첫 물량을 다 들이면 200억 달러를 넘을 것이라는 회사 예상. 고정 금액 약정이 아님",
+   "company": "Anthropic",
+   "kind": "commitment",
+   "counterparty": "AMD",
+   "detail": {
+    "bound": "at_least",
+    "fixed": false,
+    "first_tranche": "2027",
+    "signed": "2026-07",
+    "chips": "AMD"
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "Anthropic, PBC — Form S-1 정정 3호 (SEC EDGAR)",
+     "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026074338/anthropicpbc-sx1ax3.htm",
+     "date": "2026-11-17",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "2027년에 AMD Helios 랙을 직접 사거나 제3자 사업자를 거쳐 쓴다. 첫 물량과 비슷한 크기까지 더 들일 수 있다. 약정 총액 9,009억 달러에 들어 있지 않다."
+  },
+  {
+   "id": "anthropic-commit-nscale",
+   "country": "ZZ",
+   "city": null,
+   "metric": "Anthropic → Nscale 약정",
+   "value": 44.6,
+   "unit": "십억 달러",
+   "asof": "2026-11-17",
+   "basis": "최대 약 446억 달러, 2033년까지. 용량이 인도·검수되는 만큼만 요금 발생",
+   "company": "Anthropic",
+   "kind": "commitment",
+   "counterparty": "Nscale",
+   "detail": {
+    "bound": "up_to",
+    "to": "2033",
+    "signed": "2026-08",
+    "chips": "NVIDIA"
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "Anthropic, PBC — Form S-1 정정 3호 (SEC EDGAR)",
+     "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026074338/anthropicpbc-sx1ax3.htm",
+     "date": "2026-11-17",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "2026년 8월 계약이다. Nscale 이 정해진 기간 안에 GPU 와 데이터센터의 자금을 구하도록 돼 있다. 용량(GW)은 S-1 에 없다."
+  },
+  {
+   "id": "anthropic-commit-lambda",
+   "country": "ZZ",
+   "city": null,
+   "metric": "Anthropic → Lambda 약정",
+   "value": 41.3,
+   "unit": "십억 달러",
+   "asof": "2026-11-17",
+   "basis": "약 413억 달러, 2034년까지. 용량이 인도·검수되는 만큼만 요금 발생",
+   "company": "Anthropic",
+   "kind": "commitment",
+   "counterparty": "Lambda",
+   "detail": {
+    "terminable_part": 34.9,
+    "to": "2034",
+    "signed": "2026-05·06·08",
+    "chips": "NVIDIA"
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "Anthropic, PBC — Form S-1 정정 3호 (SEC EDGAR)",
+     "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026074338/anthropicpbc-sx1ax3.htm",
+     "date": "2026-11-17",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "이 가운데 349억 달러인 2026년 8월 계약은 Lambda 가 기한까지 시설 임차를 확보하지 못해 지금 어느 쪽이든 해지할 수 있는 상태다(회사는 해지할 뜻이 없다고 적었다)."
+  },
+  {
+   "id": "anthropic-lease-broadcom",
+   "country": "ZZ",
+   "city": null,
+   "metric": "Anthropic 장비 리스(Broadcom, TPU)",
+   "value": 161.2,
+   "unit": "십억 달러",
+   "asof": "2026-11-17",
+   "basis": "5년 장비 리스들의 임차료 합 약 1,612억 달러(이자 제외). 장비가 가동 준비되면 분기마다 지급",
+   "company": "Anthropic",
+   "kind": "commitment",
+   "counterparty": "Broadcom",
+   "detail": {
+    "term_years": 5,
+    "chips": "TPU",
+    "online": "일부 2026, 추가분 2027~",
+    "financing": "Broadcom 이 일부를 금융 파트너에 양도"
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "Anthropic, PBC — Form S-1 정정 3호 (SEC EDGAR)",
+     "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026074338/anthropicpbc-sx1ax3.htm",
+     "date": "2026-11-17",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "TPU 장비를 빌려 남이 운영하는 전용 데이터센터에 둔다(회사가 'Anthropic Direct'라 부르는 방식). 일부는 2026년에 가동을 시작했고 나머지는 2027년부터다. 금융리스로 회계 처리한다."
+  },
+  {
+   "id": "openai-microsoft-revenue",
+   "country": "ZZ",
+   "city": null,
+   "metric": "Microsoft 가 OpenAI 에서 올린 매출(분기)",
+   "value": 10,
+   "unit": "십억 달러",
+   "asof": "2026-09-30",
+   "basis": "2026년 7~9월에 OpenAI 와의 상업 계약에서 인식한 매출 '100억 달러'(매출 배분 지급 포함)",
+   "company": "OpenAI",
+   "kind": "expense",
+   "counterparty": "Microsoft",
+   "detail": {
+    "annualized": 40,
+    "receivable": 7.2
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "Microsoft — Form 10-Q (2026-09-30 분기)",
+     "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526436133/msft-20260930.htm",
+     "date": "2026-10-28",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "OpenAI 가 애저에 쓰는 돈과 매출 배분이 섞인 값이다. 연 환산 400억 달러다(계산)."
+  },
+  {
+   "id": "openai-commit-amazon",
+   "country": "ZZ",
+   "city": null,
+   "metric": "OpenAI → Amazon 약정",
+   "value": 138,
+   "unit": "십억 달러",
+   "asof": "2026-09-30",
+   "basis": "기존 380억 달러에 2026년 1분기에 8년간 1,000억 달러를 더했다(아마존 10-Q)",
+   "company": "OpenAI",
+   "kind": "commitment",
+   "counterparty": "Amazon",
+   "detail": {
+    "parts": {
+     "original": 38,
+     "expansion_2026q1": 100
+    },
+    "expansion_years": 8
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "Amazon — Form 10-Q (2026-09-30 분기)",
+     "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000040/amzn-20260930.htm",
+     "date": "2026-10-30",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "아마존은 이 계약에 AWS 칩의 성능에 관한 의무가 들어 있다고 적었다."
+  },
+  {
+   "id": "openai-ohio-lease-capacity",
+   "country": "ZZ",
+   "city": null,
+   "metric": "OpenAI 의 오하이오 부지 임차 용량(NVIDIA 보증 대상)",
+   "value": 4.25,
+   "unit": "GW",
+   "asof": "2026-08",
+   "basis": "IT 부하 '약 4.25GW'. NVIDIA 가 OpenAI 계열사의 임차에 한도 1,050억 달러의 보증을 섰다",
+   "company": "OpenAI",
+   "kind": "capacity",
+   "detail": {
+    "power_basis": "it",
+    "guarantee_cap": 105,
+    "phases": 9,
+    "stage": "계약"
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "NVIDIA — Form 10-Q (2026-07-26 분기)",
+     "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
+     "date": "2026-08-26",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "SB Energy 의 오하이오 파이크 카운티 부지이고 건물 아홉 동이 단계로 지어진다. 가동 중인 용량이 아니라 임차 계약의 크기다."
+  },
+  {
+   "id": "openai-compute-spend-2025",
+   "country": "ZZ",
+   "city": null,
+   "metric": "OpenAI 컴퓨트 지출(2025년)",
+   "value": 16,
+   "unit": "십억 달러",
+   "asof": "2025-12-31",
+   "basis": "보도 값을 Epoch AI 가 모은 것: 2025년 합계 160억 달러(연구개발 83억, 추론 80억으로 따로 보도돼 합과 조금 다르다)",
+   "company": "OpenAI",
+   "kind": "expense",
+   "detail": {
+    "rnd": 8.3,
+    "inference": 8,
+    "source_type": "보도"
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "Epoch AI — AI companies: Compute spend (CSV, CC BY 4.0)",
+     "url": "https://epoch.ai/data/ai-companies",
+     "date": "2026-11-10",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "회사 공시가 아니라 보도다(Epoch 의 신뢰도 표시 'Likely'). OpenAI 는 공시가 없어 지출을 직접 확인할 길이 없다."
+  },
+  {
+   "id": "anthropic-lease-terawulf",
+   "country": "ZZ",
+   "city": null,
+   "metric": "Anthropic 의 데이터센터 임차(TeraWulf)",
+   "value": 0.401,
+   "unit": "GW",
+   "asof": "2026-09-30",
+   "basis": "켄터키 Justified Data Campus 의 핵심 IT 부하 '약 401MW'. 2026년 7월 계약, 20년",
+   "company": "Anthropic",
+   "kind": "capacity",
+   "counterparty": "TeraWulf",
+   "detail": {
+    "power_basis": "it",
+    "term_years": 20,
+    "first_delivery": "2027H2",
+    "full_delivery": "2028H1",
+    "stage": "계약"
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "TeraWulf — Form 10-Q (2026-09-30 분기)",
+     "url": "https://www.sec.gov/Archives/edgar/data/1083301/000162828026071671/wulf-20260930.htm",
+     "date": "2026-11-06",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "2027년 하반기에 처음 인도되고 2028년 상반기에 401MW 가 다 인도될 예정이다. 9월 말 현재 개시 전이다. Anthropic S-1 이 상대를 밝히지 않은 데이터센터 리스의 한 건이다."
+  },
+  {
+   "id": "openai-cerebras-capacity",
+   "country": "ZZ",
+   "city": null,
+   "metric": "OpenAI 가 Cerebras 에서 사기로 약정한 추론 용량",
+   "value": 0.75,
+   "unit": "GW",
+   "asof": "2026-09-30",
+   "basis": "2025년 12월 계약의 약정 용량 '750MW'. 2030년 말까지 합쳐 2.0GW 까지 늘릴 수 있다",
+   "company": "OpenAI",
+   "kind": "capacity",
+   "counterparty": "Cerebras",
+   "detail": {
+    "up_to_gw": 2,
+    "by": "2030-12",
+    "cerebras_rpo_usd_bn": 26.1,
+    "power_basis": "unknown",
+    "stage": "계약"
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "Cerebras Systems — Form 10-Q (2026-09-30 분기)",
+     "url": "https://www.sec.gov/Archives/edgar/data/2021728/000162828026073494/cbrs-20260930.htm",
+     "date": "2026-11-12",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "Cerebras 의 수주잔고는 261억 달러다. 3~4년 계약이고 OpenAI 가 5년까지 늘릴 수 있다."
+  }
+ ]
+}

@@ -1,0 +1,435 @@
+{
+ "schema": 1,
+ "bundle": "S1",
+ "title": "공급 — 설계사의 매출·물량·전력",
+ "updated_kst": "2026-11-19T22:53:22+09:00",
+ "measure": null,
+ "notes": [
+  "아직 기록이 없다. 엔비디아·AMD·브로드컴·미디어텍·마벨의 분기 매출을 칩 전력으로 환산해 Epoch AI 의 판매·부품 추정과 대조한다."
+ ],
+ "records": [
+  {
+   "id": "nvidia-dc-revenue",
+   "country": "ZZ",
+   "city": null,
+   "metric": "NVIDIA 데이터센터 매출(분기)",
+   "value": 108,
+   "unit": "십억 달러",
+   "asof": "2026-10",
+   "basis": "FY2027 3분기(8~10월) 데이터센터 매출 '1,080억 달러', 전 분기 대비 +21%",
+   "company": "NVIDIA",
+   "kind": "revenue",
+   "series": [
+    {
+     "period": "FY2026Q3",
+     "value": 51,
+     "src": 5
+    },
+    {
+     "period": "FY2026Q4",
+     "value": 62,
+     "src": 4
+    },
+    {
+     "period": "FY2027Q1",
+     "value": 75,
+     "src": 3
+    },
+    {
+     "period": "FY2027Q2",
+     "value": 89.023,
+     "src": 2
+    },
+    {
+     "period": "FY2027Q3",
+     "value": 108,
+     "src": 1
+    }
+   ],
+   "detail": {
+    "hyperscale": {
+     "FY2027Q2": 48.71,
+     "FY2027Q3": 60
+    },
+    "ai_clouds_industrial_enterprise_FY2027Q2": 40.313,
+    "year_ago_FY2026Q2": 41.096,
+    "frontier_labs_share_of_dc_this_year_pct": 15
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "NVIDIA FY2027 3분기 실적 발표 콜(전사: Stock Analysis)",
+     "url": "https://stockanalysis.com/stocks/nvda/transcripts/739383-q3-2027/",
+     "date": null,
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "NVIDIA — Form 10-Q (2026-07-26 분기)",
+     "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
+     "date": "2026-08-26",
+     "read": "partial"
+    },
+    {
+     "n": 3,
+     "title": "NVIDIA FY2027 1분기 실적 발표 콜(전사: Stock Analysis)",
+     "url": "https://stockanalysis.com/stocks/nvda/transcripts/568907-q1-2027/",
+     "date": null,
+     "read": "partial"
+    },
+    {
+     "n": 4,
+     "title": "NVIDIA FY2026 4분기 실적 발표 콜(전사: Stock Analysis)",
+     "url": "https://stockanalysis.com/stocks/nvda/transcripts/409967-q4-2026/",
+     "date": null,
+     "read": "partial"
+    },
+    {
+     "n": 5,
+     "title": "NVIDIA FY2026 3분기 실적 발표 콜(전사: Stock Analysis)",
+     "url": "https://stockanalysis.com/stocks/nvda/transcripts/379484-q3-2026/",
+     "date": null,
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "하이퍼스케일 고객이 600억 달러다. 회사는 주요 프런티어 랩이 올해 데이터센터 매출의 약 15%를 차지할 것으로 본다."
+  },
+  {
+   "id": "nvidia-supply-commitments",
+   "country": "ZZ",
+   "city": null,
+   "metric": "NVIDIA 공급·생산능력 약정",
+   "value": 279,
+   "unit": "십억 달러",
+   "asof": "2026-07-26",
+   "basis": "공급·생산능력 약정 잔액. 한 분기 전 1,190억 달러",
+   "company": "NVIDIA",
+   "kind": "commitment",
+   "detail": {
+    "previous_quarter": 119
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "NVIDIA — Form 10-Q (2026-07-26 분기)",
+     "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
+     "date": "2026-08-26",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "한 분기에 2.3배로 늘었다. 앞으로의 출하 능력을 가늠하는 값이다."
+  },
+  {
+   "id": "nvidia-top-customer-share",
+   "country": "ZZ",
+   "city": null,
+   "metric": "NVIDIA 최대 직접 고객의 매출 비중",
+   "value": 16,
+   "unit": "%",
+   "asof": "2026-07-26",
+   "basis": "FY2027 2분기에 직접 고객 한 곳이 전체 매출의 16%",
+   "company": "NVIDIA",
+   "kind": "concentration",
+   "detail": {
+    "h1_top3_pct": [
+     16,
+     15,
+     13
+    ]
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "NVIDIA — Form 10-Q (2026-07-26 분기)",
+     "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
+     "date": "2026-08-26",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "상반기 누계로는 세 곳이 16%·15%·13%다. 직접 고객은 서버 제조사·클라우드·모델 회사가 섞여 있어 최종 사용자와 다르다."
+  },
+  {
+   "id": "broadcom-ai-revenue",
+   "country": "ZZ",
+   "city": null,
+   "metric": "Broadcom AI 반도체 매출(분기)",
+   "value": 16.7,
+   "unit": "십억 달러",
+   "asof": "2026-08-02",
+   "basis": "FY2026 3분기(5~7월) AI 반도체 매출, 전체 매출의 56%",
+   "company": "Broadcom",
+   "kind": "revenue",
+   "detail": {
+    "q4_guidance": 21.7,
+    "fy2026": 58,
+    "fy2027_outlook": 115,
+    "top5_end_customers_share_of_revenue_pct": 50,
+    "rpo": 179.2,
+    "rpo_next_12m_pct": 25,
+    "fy2025": 20
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "Broadcom FY2026 3분기 실적 발표 콜(전사: Stock Analysis)",
+     "url": "https://stockanalysis.com/stocks/avgo/transcripts/685349-q3-2026/",
+     "date": "2026-09-02",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "Broadcom — Form 10-Q (2026-08-02 분기)",
+     "url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016826000080/avgo-20260802.htm",
+     "date": "2026-09-10",
+     "read": "partial"
+    },
+    {
+     "n": 3,
+     "title": "Broadcom FY2025 4분기 실적 발표 콜(전사: Stock Analysis)",
+     "url": "https://stockanalysis.com/stocks/avgo/transcripts/382934-q4-2025/",
+     "date": null,
+     "read": "partial"
+    },
+    {
+     "n": 4,
+     "title": "Broadcom FY2025 3분기 실적 발표 콜(전사: Stock Analysis)",
+     "url": "https://stockanalysis.com/stocks/avgo/transcripts/353878-q3-2025/",
+     "date": null,
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "4분기 가이던스 217억 달러, FY2026 580억 달러, FY2027 은 공급을 확보한 만큼인 약 1,150억 달러라고 밝혔다. 맞춤형 가속기와 AI 네트워킹을 합친 값이다.",
+   "series": [
+    {
+     "period": "FY2025Q3",
+     "value": 5.2,
+     "src": 4
+    },
+    {
+     "period": "FY2026Q3",
+     "value": 16.7,
+     "src": 1
+    }
+   ]
+  },
+  {
+   "id": "broadcom-gw-outlook",
+   "country": "ZZ",
+   "city": null,
+   "metric": "Broadcom 맞춤형 가속기의 배치 전망(애널리스트 합산)",
+   "value": 10,
+   "unit": "GW",
+   "asof": "2027",
+   "basis": "애널리스트가 회사 설명을 더한 값: 2027년 약 10GW(그중 약 6GW 가 Anthropic·OpenAI), 2028년 약 20GW(약 15GW)",
+   "company": "Broadcom",
+   "kind": "capacity",
+   "detail": {
+    "2027": {
+     "total": 10,
+     "anthropic_openai": 6
+    },
+    "2028": {
+     "total": 20,
+     "anthropic_openai": 15
+    },
+    "xpv_platform_gw_through_2028": 20,
+    "revenue_per_gw_analyst": {
+     "low": 11,
+     "high": 12
+    },
+    "power_basis": "unknown"
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "Broadcom FY2026 3분기 실적 발표 콜(전사: Stock Analysis)",
+     "url": "https://stockanalysis.com/stocks/avgo/transcripts/685349-q3-2026/",
+     "date": "2026-09-02",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "Broadcom — Form 10-Q (2026-08-02 분기)",
+     "url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016826000080/avgo-20260802.htm",
+     "date": "2026-09-10",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "CEO 는 GW 를 더해도 된다고 답하면서, 데이터센터가 준비돼야 하므로 2027~2028년에 30GW 가 모두 가동되지는 않을 것으로 본다고 했다. 10-Q 에는 금융 플랫폼으로 2028년까지 20GW 이상을 지원한다고 적혀 있다."
+  },
+  {
+   "id": "amd-dc-revenue",
+   "country": "ZZ",
+   "city": null,
+   "metric": "AMD 데이터센터 매출(분기)",
+   "value": 8.5,
+   "unit": "십억 달러",
+   "asof": "2026-09-26",
+   "basis": "2026년 3분기 데이터센터 부문 매출 '85억 달러', 전년 대비 +97%. 서버 CPU(EPYC)와 AI GPU(Instinct)의 합",
+   "company": "AMD",
+   "kind": "revenue",
+   "detail": {
+    "nine_months": 21,
+    "revenue_per_gw_cited": {
+     "low": 15,
+     "high": 20
+    },
+    "customer_warrant_shares_mn": 320
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "AMD — Form 10-Q (2026-09-26 분기)",
+     "url": "https://www.sec.gov/Archives/edgar/data/2488/000000248826000191/amd-20260926.htm",
+     "date": "2026-11-04",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "AMD 2026년 3분기 실적 발표 콜(전사: Stock Analysis)",
+     "url": "https://stockanalysis.com/stocks/amd/transcripts/724028-q3-2026/",
+     "date": null,
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "AI GPU 만의 매출은 밝히지 않는다. 콜에서 애널리스트가 회사의 GW당 매출 전망을 150억~200억 달러로 인용했다. OpenAI·Meta 에 준 워런트는 합쳐 3억 2천만 주까지다."
+  },
+  {
+   "id": "mediatek-ai-accelerator-revenue",
+   "country": "ZZ",
+   "city": null,
+   "metric": "MediaTek 첫 AI 가속기 매출(분기 가이던스)",
+   "value": 2.5,
+   "unit": "십억 달러",
+   "asof": "2026-12",
+   "basis": "2026년 4분기 매출 '25억 달러'에 대한 회사의 자신(가이던스). 9월에 첫 출하",
+   "company": "MediaTek",
+   "kind": "revenue",
+   "detail": {
+    "2027_outlook": 16,
+    "share_of_asic_market_2027_pct": 20,
+    "first_shipment": "2026-09",
+    "second_program_hvm": "2028Q1"
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "MediaTek 2026년 3분기 실적 발표 콜 전사(회사 IR)",
+     "url": "https://www.mediatek.com/hubfs/MediaTek-Assets/Pdfs/Quarterly%20Earnings%20Release/2026/Quarterly%20Earnings%20Release-2026Q3/Transcript.pdf",
+     "date": null,
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "2027년에는 약 160억 달러를 예상하며 이것이 AI 가속기 ASIC 시장의 약 20%라고 밝혔다(시장 전체 약 800억 달러라는 뜻 — 계산). 고객 이름은 밝히지 않았다. 두 번째 가속기는 2028년 1분기 양산이 목표다."
+  },
+  {
+   "id": "marvell-dc-revenue",
+   "country": "ZZ",
+   "city": null,
+   "metric": "Marvell 데이터센터 매출(분기)",
+   "value": 2.1715,
+   "unit": "십억 달러",
+   "asof": "2026-08-01",
+   "basis": "FY2027 2분기(5~7월) 데이터센터 최종 시장 매출, 전체의 79%",
+   "company": "Marvell",
+   "kind": "revenue",
+   "detail": {
+    "year_ago": 1.4905,
+    "custom_fy2029_outlook_min": 10
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "Marvell — Form 10-Q (2026-08-01 분기)",
+     "url": "https://www.sec.gov/Archives/edgar/data/1835632/000183563226000025/mrvl-20260801.htm",
+     "date": "2026-08-28",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "Marvell FY2027 2분기 실적 발표 콜(전사: Stock Analysis)",
+     "url": "https://stockanalysis.com/stocks/mrvl/transcripts/681364-q2-2027/",
+     "date": null,
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "맞춤형 칩만의 매출은 10-Q 에 없다. 콜에서 맞춤형 사업이 FY2029 에 100억 달러를 넘는다는 기존 전망을 되풀이했고, 한 하이퍼스케일러와의 확대 계약을 8-K 로 냈다고 밝혔다."
+  },
+  {
+   "id": "nvidia-revenue-per-gw-stated",
+   "country": "ZZ",
+   "city": null,
+   "metric": "NVIDIA 가 밝힌 GW당 매출 기회",
+   "value": 25,
+   "unit": "십억 달러/GW",
+   "asof": "2026-08",
+   "basis": "회사 설명: Hopper 세대 약 180억 달러 → Blackwell 250억 달러 → Vera Rubin 400억 달러. 대표 값은 지금 주로 출하되는 Blackwell",
+   "company": "NVIDIA",
+   "kind": "revenue",
+   "detail": {
+    "hopper": 18,
+    "blackwell": 25,
+    "vera_rubin": 40,
+    "whole_data_center": {
+     "before": 30,
+     "now": 60
+    }
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "NVIDIA FY2027 2분기 실적 발표 콜(전사: Stock Analysis)",
+     "url": "https://stockanalysis.com/stocks/nvda/transcripts/676136-q2-2027/",
+     "date": null,
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "데이터센터 전체로는 GW당 약 300억 달러에서 600억 달러로 올랐다고 했다. Vera Rubin 의 400억 달러에는 CPU·GPU·NVLink·네트워킹·Groq LPU 가 들어 있다."
+  }
+ ]
+}
