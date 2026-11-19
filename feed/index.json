@@ -1,7 +1,55 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-20T02:37:59+09:00",
+ "generated_kst": "2026-11-20T05:27:13+09:00",
  "reports": [
+  {
+   "slug": "damodaran-the-rocky-road-from-aggregate-to-per-share-value",
+   "type": "article",
+   "title": "Aswath Damodaran : 주식 수를 어떻게 세느냐가 주당가치를 가른다 — Anthropic 옵션조정 주당가치 $76.98",
+   "companies": [
+    {
+     "name": "Anthropic",
+     "ticker": null
+    }
+   ],
+   "event": "Anthropic IPO",
+   "event_date": "2026-11-19",
+   "published_kst": "2026-11-20T05:27:13+09:00",
+   "revised_kst": "2026-11-20T05:27:13+09:00",
+   "revision": 1,
+   "summary": "Damodaran은 가정 네 가지를 고쳐 Anthropic 지분가치를 1.475조 달러에서 1.352조 달러로 낮추고, 옵션조정 주당가치 $76.98을 제시했다. 공모가 $83은 이보다 약 8% 높다. 다만 이 건에서는 옵션이 깊은 내가격이라 옵션조정 값과 완전희석 값의 차이가 작다. 투자자에게 실제로 중요한 것은 계산 방법의 정교함보다 두 가지다. 하나는 데이터센터 비용과 규제에 관한 가정 변경이고, 다른 하나는 상장 뒤 서비스마다 주식 수 기준이 달라 기본주식 기준 시가총액이 과소 표기될 위험이다(글쓴이는 반대로 '너무 높다'고 썼다).",
+   "path": "reports/damodaran-the-rocky-road-from-aggregate-to-per-share-value.json"
+  },
+  {
+   "slug": "no-priors-superintelligence-needs-the-physical-world-with",
+   "type": "interview",
+   "title": "밥 맥그루 인터뷰 : 하드 테이크오프 반론과 Arda의 유연한 제조 자동화",
+   "companies": [
+    {
+     "name": "Arda",
+     "ticker": null
+    },
+    {
+     "name": "Anduril",
+     "ticker": null
+    },
+    {
+     "name": "OpenAI",
+     "ticker": null
+    },
+    {
+     "name": "Palantir",
+     "ticker": null
+    }
+   ],
+   "event": "No Priors 팟캐스트 출연",
+   "event_date": "2026-11-19",
+   "published_kst": "2026-11-20T05:19:57+09:00",
+   "revised_kst": "2026-11-20T05:19:57+09:00",
+   "revision": 1,
+   "summary": "맥그루의 논지는 연구가 자동화된 뒤에도 병목은 GPU·습식 실험실·공장 같은 물리층에 남는다는 것이고, Arda는 그 가운데 제조 엔지니어링을 소프트웨어로 풀려는 회사다. 거시 논지는 OpenAI 내부 경험이 받치고 있어 무게가 있다. 반면 Arda의 성과는 Anduril 한 곳의 초기 사례뿐이고, 상장 종목에 직접 닿는 근거는 약하다.",
+   "path": "reports/no-priors-superintelligence-needs-the-physical-world-with.json"
+  },
   {
    "slug": "ark-the-ai-shakeup-has-a-message-the-brainstorm-158",
    "type": "article",
@@ -2451,7 +2499,7 @@
   }
  ],
  "street": {
-  "updated_kst": "2026-11-20T02:32:23+09:00",
+  "updated_kst": "2026-11-20T05:22:46+09:00",
   "path": "street.json"
  },
  "calendar": {

@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated_kst": "2026-11-20T02:32:23+09:00",
+ "updated_kst": "2026-11-20T05:22:46+09:00",
  "window_days": 14,
  "items_days": 30,
  "index": {
@@ -8,13 +8,13 @@
    "value": 2,
    "label": "엇갈림",
    "orgs": 41,
-   "items": 145
+   "items": 147
   },
   "market": {
    "value": -11,
    "label": "엇갈림",
    "orgs": 30,
-   "items": 90
+   "items": 91
   },
   "by_group": [
    {
@@ -26,22 +26,22 @@
    },
    {
     "group": "PE·대체투자",
-    "ai_tech": 9,
-    "ai_tech_orgs": 8,
+    "ai_tech": 4,
+    "ai_tech_orgs": 7,
     "market": 13,
     "market_orgs": 4
    },
    {
     "group": "자산운용",
-    "ai_tech": -3,
+    "ai_tech": -7,
     "ai_tech_orgs": 7,
-    "market": 1,
+    "market": -1,
     "market_orgs": 7
    },
    {
     "group": "투자은행",
-    "ai_tech": 23,
-    "ai_tech_orgs": 6,
+    "ai_tech": 27,
+    "ai_tech_orgs": 7,
     "market": 26,
     "market_orgs": 6
    },
@@ -54,7 +54,7 @@
    },
    {
     "group": "투자 거장",
-    "ai_tech": -32,
+    "ai_tech": -31,
     "ai_tech_orgs": 9,
     "market": -51,
     "market_orgs": 9
@@ -98,10 +98,10 @@
    },
    {
     "week": "2026-11-16",
-    "ai_tech": 7,
-    "ai_tech_orgs": 21,
+    "ai_tech": 10,
+    "ai_tech_orgs": 24,
     "market": -1,
-    "market_orgs": 15
+    "market_orgs": 16
    }
   ],
   "args": {
@@ -146,7 +146,7 @@
    "optimism": [
     {
      "tag": "수요·채택",
-     "n": 45
+     "n": 46
     },
     {
      "tag": "투자 회수",
@@ -154,27 +154,27 @@
     },
     {
      "tag": "금리·거시",
-     "n": 23
-    },
-    {
-     "tag": "자금 조달·신용",
-     "n": 20
-    },
-    {
-     "tag": "정책·지정학",
-     "n": 19
+     "n": 22
     },
     {
      "tag": "밸류에이션",
+     "n": 19
+    },
+    {
+     "tag": "자금 조달·신용",
+     "n": 18
+    },
+    {
+     "tag": "정책·지정학",
      "n": 18
     },
     {
      "tag": "쏠림",
-     "n": 13
+     "n": 12
     },
     {
      "tag": "전력·공급 제약",
-     "n": 12
+     "n": 11
     },
     {
      "tag": "경쟁·해자",
@@ -185,6 +185,74 @@
   "method": "기관·인물마다 기간 안 입장 값의 평균을 내고 그 평균들을 다시 평균해 ×50"
  },
  "items": [
+  {
+   "id": "blackrock-ai-looking-beyond-the-buildout-market-take",
+   "group": "자산운용",
+   "org": "BlackRock",
+   "person": null,
+   "kind": "publication",
+   "title": "AI: 구축 단계 너머를 보다 | Market take",
+   "title_orig": "AI: Looking beyond the buildout | Market take",
+   "url": "https://www.youtube.com/watch?v=ibol0_-mgIc",
+   "outlet": "BlackRock (유튜브)",
+   "published_kst": "2026-11-20T04:44:20+09:00",
+   "stance": {
+    "ai_tech": 0,
+    "market": 0
+   },
+   "args": [
+    "밸류에이션",
+    "투자 회수",
+    "자금 조달·신용",
+    "금리·거시"
+   ],
+   "summary": "BlackRock은 AI에 대한 장기 확신(전략적 비중확대)을 유지하되 6~12개월 전술적 시각은 중립이다. 밸류에이션 부담, 컴퓨팅 가격 하락에 따른 공급업체 이익 압박, 도입 병목이 단기 위험이며, AI 투자 자금 수요가 금리를 끌어올려 채권, 특히 물가연동채가 더 매력적이라고 본다.",
+   "points": [
+    "미국 주식은 측정 방식에 따라 닷컴 버블 때에 버금갈 만큼 비싸 보이며, 덜 극단적인 측정도 강한 이익 성장 기대에 의존한다.",
+    "컴퓨팅 비용 하락과 도입 병목은 단기적으로 AI 테마에 부담이 되지만 장기 기회를 훼손하지는 않는다.",
+    "장기 확신은 현재의 AI 승자가 계속 앞서는 데 달려 있지 않고, AI 확산에 따른 생산성·마진·이익 개선에 근거한다.",
+    "AI 투자 자금 수요가 정부와 경합하며 금리 상승 압력을 키워, 장기 금리 전망을 올리고 물가연동채를 선호하게 됐다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "유튜브 자동 생성 자막(en) 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
+  },
+  {
+   "id": "doubleline-bill-campbell-credit-is-getting-picky-bloomberg",
+   "group": "자산운용",
+   "org": "DoubleLine Capital",
+   "person": "Bill Campbell",
+   "kind": "publication",
+   "title": "Bill Campbell: 신용시장이 까다로워지고 있다 | Bloomberg TV",
+   "title_orig": "Bill Campbell: Credit Is Getting Picky | Bloomberg TV",
+   "url": "https://www.youtube.com/watch?v=-j9OSwGBCgY",
+   "outlet": "DoubleLine (유튜브)",
+   "published_kst": "2026-11-20T02:46:45+09:00",
+   "stance": {
+    "ai_tech": 0,
+    "market": 0
+   },
+   "args": [
+    "자금 조달·신용",
+    "투자 회수",
+    "금리·거시",
+    "정책·지정학"
+   ],
+   "summary": "AI 설비투자의 자금 조달(엔비디아 금융 지원, 오프밸런스 부채)과 규제 불확실성을 우려하면서도, 성장이 견조해 위험이 상쇄된다고 본다. 전면 매도는 부적절하며 주식 위험 일부를 저듀레이션 능동 운용 채권(수익률 6~7.5%)으로 옮기길 권한다. 신용시장은 종목별 차별화가 커져 선별 투자 기회가 생겼다고 본다.",
+   "points": [
+    "엔비디아의 네오클라우드 금융 지원과 규제 강화가 AI 성장 모델의 불확실성이다.",
+    "신용시장은 종목별 차별화가 커져, 스프레드가 벌어진 발행물에서 기회를 찾고 있다.",
+    "하이퍼스케일러 건설과 사모신용에 따른 우발부채 우려는 공유하나, 성장이 단기적으로 위험을 상쇄한다고 본다.",
+    "글로벌 경기침체만 아니면 전면 매도 대신 주식 위험 일부를 저듀레이션 능동 채권으로 옮기는 것이 좋다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "유튜브 자동 생성 자막(en) 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
+  },
   {
    "id": "menlo-an-extraordinary-journey-celebrating-anthropic-s",
    "group": "벤처캐피털",
@@ -283,6 +351,29 @@
    "note": "유튜브 자막(제작자 제공)(en) 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
   },
   {
+   "id": "deutsche-bank-ask-india-deutsche-bank-says-ai-adoption-outweig",
+   "group": "투자은행",
+   "org": "Deutsche Bank",
+   "person": null,
+   "kind": "report",
+   "title": "Ask India: 도이체방크 \"모델 경쟁보다 AI 도입이 더 중요하다\"",
+   "title_orig": "Ask India: Deutsche Bank says AI adoption outweighs model race",
+   "url": "https://seekingalpha.com/news/4674800-ask-india-deutsche-bank-says-ai-adoption-outweighs-model-race",
+   "outlet": "Seeking Alpha",
+   "published_kst": "2026-11-19T18:17:00+09:00",
+   "stance": {
+    "ai_tech": 1,
+    "market": null
+   },
+   "args": [
+    "수요·채택"
+   ],
+   "judged": {
+    "basis": "headline_only",
+    "tier": "light"
+   }
+  },
+  {
    "id": "jpmorgan-jpmorgan-s-chief-economist-says-2026-was-likely",
    "group": "투자은행",
    "org": "JPMorgan",
@@ -346,6 +437,29 @@
     "tier": "standard"
    },
    "note": "팟캐스트 음성을 음성 인식(Whisper)으로 받아 적은 전사 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
+  },
+  {
+   "id": "ackman-bill-ackman-says-nvidia-s-board-failed-sharehold",
+   "group": "투자 거장",
+   "org": "Pershing Square",
+   "person": "Bill Ackman",
+   "kind": "report",
+   "title": "빌 애크먼 \"엔비디아 이사회가 주주를 저버렸다\"… 투자자에게 의미하는 것",
+   "title_orig": "Bill Ackman Says Nvidia’s Board Failed Shareholders. What It Means for Investors",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/bill-ackman-says-nvidia-board-144712804.html",
+   "outlet": "Yahoo Finance",
+   "published_kst": "2026-11-19T14:30:00+09:00",
+   "stance": {
+    "ai_tech": 1,
+    "market": null
+   },
+   "args": [
+    "밸류에이션"
+   ],
+   "judged": {
+    "basis": "headline_only",
+    "tier": "light"
+   }
   },
   {
    "id": "damodaran-the-rocky-road-from-aggregate-to-per-share-value",
