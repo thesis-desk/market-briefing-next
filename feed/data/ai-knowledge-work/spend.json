@@ -2,7 +2,7 @@
  "schema": 1,
  "bundle": "K3",
  "title": "지출과 매출 — 랩·도구·고객",
- "updated_kst": "2026-11-19T13:58:24+09:00",
+ "updated_kst": "2026-11-19T14:07:46+09:00",
  "measure": null,
  "notes": [
   "실제로 나간 돈이다. 회계 매출(감사 여부)과 회사 정의 지표(연환산 매출, 순매출유지율)를 basis·definition 에서 가른다.",
@@ -14,12 +14,12 @@
   "IT서비스 회사가 밝힌 AI 매출·수주는 회사마다 무엇을 AI 로 세는지가 다르다. 회사 전체 매출 증가율과 함께 본다."
  ],
  "summary": {
-  "records": 47,
-  "with_value": 44,
-  "with_series": 38,
+  "records": 48,
+  "with_value": 45,
+  "with_series": 39,
   "by_hypothesis": {
    "H1": {
-    "지지": 35,
+    "지지": 36,
     "반박": 0,
     "양쪽": 11,
     "중립": 1
@@ -27,7 +27,7 @@
    "H2": {
     "지지": 3,
     "반박": 0,
-    "양쪽": 3,
+    "양쪽": 4,
     "중립": 1
    }
   },
@@ -51,13 +51,13 @@
     "중립": 0
    },
    "slope": {
-    "지지": 35,
+    "지지": 36,
     "반박": 0,
     "양쪽": 2,
     "중립": 1
    },
    "counter": {
-    "지지": 2,
+    "지지": 3,
     "반박": 0,
     "양쪽": 3,
     "중립": 0
@@ -482,6 +482,71 @@
    "alt": [],
    "conf": "high",
    "note": "혼합 단가는 100만 토큰당 0.62 → 0.53달러(OpenAI 0.61 → 0.50, Anthropic 0.63 → 0.55)다. 지출 비중은 Anthropic 49.3%, OpenAI 46.1% 다."
+  },
+  {
+   "id": "openrouter-token-volume",
+   "country": "ZZ",
+   "city": null,
+   "metric": "OpenRouter 를 지나는 주간 토큰량",
+   "value": 200.6,
+   "unit": "조 토큰/주(4주 평균)",
+   "asof": "2026-11",
+   "basis": "OpenRouter 순위 화면의 주간 토큰량, 최근 4주 평균(2026-11)",
+   "definition": "여러 모델을 한 창구로 중계하는 사업자 한 곳의 물량이다. 랩에 직접 붙는 기업 고객의 물량은 없고 결제액도 공개되지 않는다. 금액은 토큰량 × 받은 날의 단가로 낸 데스크 추정이다.",
+   "series": [
+    {
+     "period": "2025-11",
+     "value": 6.2,
+     "src": 1,
+     "label": "1년 전 4주 평균"
+    },
+    {
+     "period": "2026-11",
+     "value": 200.6,
+     "src": 1,
+     "label": "최근 4주 평균"
+    }
+   ],
+   "detail": {
+    "multiple_1y": 32,
+    "recent_30d_token_share_pct": {
+     "chinese_makers": 69.5,
+     "anthropic": 7
+    },
+    "recent_30d_estimated_spend_share_pct": {
+     "chinese_makers": "37 ~ 39",
+     "us_majors": "60 ~ 62"
+    },
+    "effective_price_per_mtok_usd": {
+     "us_majors": 1.41,
+     "chinese_makers": 0.3
+    },
+    "us_three_token_multiple_1y": "5 ~ 24"
+   },
+   "links": [
+    "slope",
+    "counter"
+   ],
+   "sides": {
+    "H1": "지지",
+    "H2": "양쪽"
+   },
+   "side_basis": "물량은 1년에 32배가 됐다. 값이 싸지면 더 쓴다는 근거다. 그러나 늘어난 물량의 대부분은 단가가 5분의 1 수준인 모델이고 최근 30일 토큰의 70% 를 처리한 쪽이 추정 결제액의 37~39% 를 가져간다. 물량의 증가가 그대로 매출의 증가가 아니다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "OpenRouter — Rankings(순위 화면의 공개 자료)",
+     "url": "https://openrouter.ai/rankings",
+     "date": "2026-11-19",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "값은 데스크의 리포트 openrouter-tokens-vs-spend-2026-11 에서 옮겼다(원자료는 데스크가 2026-11-19 에 받았다). 금액 비중의 과거 추이는 단가 이력이 없어 내지 못한다. 미국 3사의 토큰 절대량도 1년에 5~24배가 됐다."
   },
   {
    "id": "menlo-enterprise-genai-spend",

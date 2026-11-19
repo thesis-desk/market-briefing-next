@@ -2,42 +2,55 @@
  "schema": 1,
  "bundle": "K1",
  "title": "역량 — 납품물·과제 단위로 잰 자동화 수준",
- "updated_kst": "2026-11-19T11:25:43+09:00",
+ "updated_kst": "2026-11-19T14:17:46+09:00",
  "measure": null,
  "notes": [
   "모델이 무엇을 해낼 수 있는가를 잰 지표다. 쓰이고 있는가(K2), 돈이 나가는가(K3)와 구분한다.",
   "벤치마크마다 과제의 범위가 다르다. 값끼리 견주지 않고 같은 지표의 시계열로만 읽는다.",
-  "지표를 만든 곳이 모델 공급사이거나 공급사의 돈을 받는 곳일 수 있다. 기록의 definition 에 적는다."
+  "지표를 만든 곳이 모델 공급사이거나 공급사의 돈을 받는 곳일 수 있다. 기록의 definition 에 적는다.",
+  "시계열의 날짜는 대부분 모델이 나온 날이고 평가한 날이 아니다. Epoch AI 의 자료 파일은 각 순위표를 옮겨 둔 것이다. 벤치마크를 낸 곳의 이해관계는 definition 에 적는다."
  ],
  "summary": {
-  "records": 3,
-  "with_value": 3,
-  "with_series": 2,
+  "records": 12,
+  "with_value": 11,
+  "with_series": 11,
   "by_hypothesis": {
    "H1": {
-    "지지": 3,
+    "지지": 8,
     "반박": 0,
-    "양쪽": 0,
-    "중립": 0
+    "양쪽": 3,
+    "중립": 1
    }
   },
   "by_link": {
    "coding": {
     "지지": 1,
     "반박": 0,
-    "양쪽": 0,
+    "양쪽": 1,
     "중립": 0
    },
    "spread": {
-    "지지": 2,
+    "지지": 6,
     "반박": 0,
-    "양쪽": 0,
+    "양쪽": 1,
+    "중립": 1
+   },
+   "penetration": {
+    "지지": 0,
+    "반박": 0,
+    "양쪽": 1,
     "중립": 0
    },
    "slope": {
-    "지지": 2,
+    "지지": 8,
     "반박": 0,
-    "양쪽": 0,
+    "양쪽": 2,
+    "중립": 1
+   },
+   "counter": {
+    "지지": 1,
+    "반박": 0,
+    "양쪽": 1,
     "중립": 0
    }
   }
@@ -55,15 +68,81 @@
    "definition": "AI 의 결과물을 사람의 결과물과 견줘 '합리적인 의뢰인이 받아들일' 수준 이상이라고 평가자가 본 프로젝트의 비중(평가자 3명 다수결). 원격 프리랜서 일감의 표본이고 회사 안 직무 전체가 아니다.",
    "series": [
     {
-     "period": "2025-10",
-     "value": 2.5,
-     "src": 3,
-     "label": "Manus, 공개 당시 최고"
+     "period": "2025-06-05",
+     "value": 0.83,
+     "src": 4,
+     "label": "gemini-2.5-pro-preview-06-05"
     },
     {
-     "period": "2026-11",
+     "period": "2025-08-07",
+     "value": 1.67,
+     "src": 4,
+     "label": "gpt-5-2025-08-07"
+    },
+    {
+     "period": "2025-09-29",
+     "value": 2.08,
+     "src": 4,
+     "label": "claude-4-5-Sonnet"
+    },
+    {
+     "period": "2025-10-29",
+     "value": 2.5,
+     "src": 2,
+     "label": "Manus (best at launch)"
+    },
+    {
+     "period": "2025-11-24",
+     "value": 3.75,
+     "src": 4,
+     "label": "claude-opus-4-5-20251101-thinking"
+    },
+    {
+     "period": "2026-02-05",
+     "value": 4.17,
+     "src": 4,
+     "label": "claude-opus-4-6 (CoWork)"
+    },
+    {
+     "period": "2026-04-23",
+     "value": 6.25,
+     "src": 4,
+     "label": "Codex GPT 5.5"
+    },
+    {
+     "period": "2026-05-28",
+     "value": 8.33,
+     "src": 4,
+     "label": "Opus 4.8"
+    },
+    {
+     "period": "2026-06-09",
+     "value": 15.83,
+     "src": 4,
+     "label": "Fable 5"
+    },
+    {
+     "period": "2026-09-01",
+     "value": 17.92,
+     "src": 4,
+     "label": "Fable 5.1"
+    },
+    {
+     "period": "2026-09-03",
+     "value": 20.83,
+     "src": 4,
+     "label": "GPT 6 Astra"
+    },
+    {
+     "period": "2026-09-22",
+     "value": 21.25,
+     "src": 4,
+     "label": "Opus 5.5"
+    },
+    {
+     "period": "2026-11-09",
      "value": 41.25,
-     "src": 1,
+     "src": 4,
      "label": "Fable 5.2"
     }
    ],
@@ -125,6 +204,13 @@
      "url": "https://arxiv.org/abs/2510.26787",
      "date": "2025-10",
      "read": "partial"
+    },
+    {
+     "n": 4,
+     "title": "Remote Labor Index — 자료 파일",
+     "url": "https://epoch.ai/data/benchmark_data.zip",
+     "date": "2026-11-19",
+     "read": "partial"
     }
    ],
    "value_src": [
@@ -133,7 +219,7 @@
    ],
    "alt": [],
    "conf": "high",
-   "note": "순위표의 다음 순위는 Opus 5.5 21.25, GPT 6 Astra 20.83, Fable 5.1 17.92, Gemini Argon 4 17.08, Fable 5 15.83 이다. 순위표는 비공개 230건으로 채점한다고 적는데 값은 240건의 배수와 맞는다(41.25% = 99건). 모델별 평가 시점은 순위표에 없어 중간 시점은 시계열에 넣지 않았다."
+   "note": "순위표의 다음 순위는 Opus 5.5 21.25, GPT 6 Astra 20.83, Fable 5.1 17.92, Gemini Argon 4 17.08, Fable 5 15.83 이다. 순위표는 비공개 230건으로 채점한다고 적는데 값은 240건의 배수와 맞는다(41.25% = 99건). 중간 시점의 값은 Epoch AI 가 순위표를 옮겨 둔 자료 파일에서 읽었고 날짜는 모델이 나온 날이다. 376일에 16.5배가 됐다(약 93일마다 2배). 2026-10 의 Gemini Argon 4 는 17.08 로 그 앞 모델(21.25)보다 낮았다."
   },
   {
    "id": "metr-time-horizon-p50",
@@ -273,25 +359,26 @@
    ],
    "alt": [],
    "conf": "high",
-   "note": "2배가 되는 기간은 전체 기간 187.8일, 2023년 이후 128.7일(구간 104.4~158.0일)로 파일에 적혀 있다(중앙값이 16시간을 넘는 점은 뺀 값). 최신 값의 구간은 509~3,304분으로 넓다. 2026-04 뒤에 나온 모델의 값은 파일에 없다."
+   "note": "2배가 되는 기간은 전체 기간 187.8일, 2023년 이후 128.7일(구간 104.4~158.0일)로 파일에 적혀 있다(중앙값이 16시간을 넘는 점은 뺀 값). 최신 값의 구간은 509~3,304분으로 넓다. 2026-04 뒤에 나온 모델의 값은 파일에 없다. METR 은 이 페이지를 더 갱신하지 않는다고 적었고(마지막 갱신 2026-09-08) 16시간을 넘는 측정은 지금의 과제 묶음으로 믿기 어렵다고 밝혔다. 2026-04 뒤 모델의 값은 없다 — 역량이 멈춘 것이 아니라 재는 자가 짧아진 것이다."
   },
   {
    "id": "gdpval-win-or-tie-rate",
    "country": "ZZ",
    "city": null,
    "metric": "전문가 결과물 대비 승·무 비중(최고 모델)",
-   "value": 47.6,
+   "value": 84.9,
    "unit": "%",
-   "asof": "2025-10",
-   "basis": "GDPval gold 부분집합에서 Claude Opus 4.1 의 결과물이 사람 전문가의 결과물보다 낫거나 같다고 평가된 비중(논문 공개 당시 최고)",
-   "definition": "직업 전문가가 사람 결과물과 모델 결과물을 가리고 견준 평가. 과제 단위이고, 과제를 받아 오고 결과를 넘기는 직무 전체가 아니다. 벤치마크를 만든 곳이 모델 공급사(OpenAI)다.",
+   "asof": "2026-04-23",
+   "basis": "GDPval 에서 모델의 결과물이 사람 전문가의 결과물보다 낫거나 같다고 평가된 비중, 그 시점까지의 최고 모델(GPT-5.5)",
+   "definition": "44개 직업의 실제 납품물(문서·표·발표 자료)을 전문가가 눈가림으로 견준다. 50% 면 전문가와 비긴 것이다. 낸 곳은 모델을 파는 OpenAI 다. 날짜는 평가한 날이 아니라 모델이 나온 날이다. 그 시점까지의 최고 값만 남겼다.",
    "links": [
-    "spread"
+    "spread",
+    "slope"
    ],
    "sides": {
     "H1": "지지"
    },
-   "side_basis": "미국 GDP 기여가 큰 9개 부문 44개 직업의 실제 과제에서 잰 값이라 코딩 밖 역량을 직접 본다. 공개 당시 값 하나뿐이고 그 뒤의 값은 원문으로 확인하지 못했다.",
+   "side_basis": "전문가와 비기거나 이긴 비중이 2024-11 의 12% 에서 2026-04 의 85% 가 됐다. 납품물 단위로 잰 역량이 오른다는 근거다. 다만 낸 곳이 모델 공급사이고 2026-04 뒤로 공식 값이 끊겼다.",
    "sources": [
     {
      "n": 1,
@@ -299,10 +386,24 @@
      "url": "https://arxiv.org/html/2510.04374v1",
      "date": "2025-10",
      "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "GDPval — 자료 파일",
+     "url": "https://epoch.ai/data/benchmark_data.zip",
+     "date": "2026-11-19",
+     "read": "partial"
+    },
+    {
+     "n": 3,
+     "title": "GDPval — 2차 보도",
+     "url": "https://www.vellum.ai/md/blog/everything-you-need-to-know-about-gpt-5-5",
+     "date": "2026-11-19",
+     "read": "partial"
     }
    ],
    "value_src": [
-    1
+    3
    ],
    "alt": [
     {
@@ -311,8 +412,1057 @@
      "url": "https://www.gentic.news/article/gpt-5-4-matches-human-experts-on-professional-tasks-82-of-the-time-study-reveals"
     }
    ],
+   "conf": "med",
+   "note": "과제는 전문가가 평균 7시간 걸리는 분량이다. 2025-12 까지는 Epoch AI 가 공식 순위표를 옮겨 둔 자료 파일에서, 2026년 두 점은 공급사 발표를 옮긴 2차 보도에서 읽었다. OpenAI 는 공식 순위표 운영을 그만뒀고(페이지에 '더 운영하지 않는다'고 적혀 있다) 2026-04 뒤 모델의 값은 찾지 못했다. 오름폭은 분기당 약 17점에서 4점으로 줄었다 — 천장에 가까워져서인지는 가르지 못한다.",
+   "series": [
+    {
+     "period": "2024-11-20",
+     "value": 12.3,
+     "src": 2,
+     "label": "GPT-4o"
+    },
+    {
+     "period": "2025-04-16",
+     "value": 34.1,
+     "src": 2,
+     "label": "o3"
+    },
+    {
+     "period": "2025-08-05",
+     "value": 47.6,
+     "src": 2,
+     "label": "Claude Opus 4.1"
+    },
+    {
+     "period": "2025-09-29",
+     "value": 50.3,
+     "src": 2,
+     "label": "Claude Sonnet 4.5"
+    },
+    {
+     "period": "2025-11-18",
+     "value": 53.5,
+     "src": 2,
+     "label": "Gemini 3 Pro"
+    },
+    {
+     "period": "2025-11-24",
+     "value": 59.6,
+     "src": 2,
+     "label": "Claude Opus 4.5"
+    },
+    {
+     "period": "2025-12-11",
+     "value": 70.9,
+     "src": 2,
+     "label": "GPT-5.2"
+    },
+    {
+     "period": "2026-03-05",
+     "value": 83,
+     "src": 3,
+     "label": "GPT-5.4",
+     "note": "2차 보도"
+    },
+    {
+     "period": "2026-04-23",
+     "value": 84.9,
+     "src": 3,
+     "label": "GPT-5.5",
+     "note": "2차 보도"
+    }
+   ],
+   "revised_kst": "2026-11-19T14:17:46+09:00"
+  },
+  {
+   "id": "osworld-verified-best",
+   "country": "ZZ",
+   "city": null,
+   "metric": "컴퓨터 조작 과제 성공률(OSWorld-Verified)",
+   "value": 90.19,
+   "unit": "%",
+   "asof": "2026-07-25",
+   "basis": "OSWorld-Verified 순위표의 최고 성공률, 2026-07 제출분",
+   "definition": "화면을 보고 마우스·키보드로 실제 프로그램을 다루는 과제 361개다. 사람의 성공률은 72.36% 다. 여러 모델을 엮은 에이전트의 제출이 섞여 있고 일부는 낸 곳이 스스로 돌린 값이다. 날짜는 제출일이다.",
+   "series": [
+    {
+     "period": "2025-07-28",
+     "value": 53.1,
+     "src": 1,
+     "label": "Best on 2025-07-28 relaunch: GTA1 w/ o3 (framework) / claude-4-sonnet (general model 43.9)"
+    },
+    {
+     "period": "2025-07-31",
+     "value": 56,
+     "src": 1,
+     "label": "agent s2.5 w/ o3"
+    },
+    {
+     "period": "2025-08-04",
+     "value": 60.76,
+     "src": 1,
+     "label": "CoACT-1"
+    },
+    {
+     "period": "2025-10-03",
+     "value": 63.41,
+     "src": 1,
+     "label": "GTA1 w/ GPT-5"
+    },
+    {
+     "period": "2025-10-04",
+     "value": 69.9,
+     "src": 1,
+     "label": "agent s3 w/ GPT-5 bBoN (N=10)"
+    },
+    {
+     "period": "2025-12-11",
+     "value": 72.58,
+     "src": 1,
+     "label": "agent s3 w/ Opus 4.5 + GPT-5 bBoN (N=10)"
+    },
+    {
+     "period": "2026-02-25",
+     "value": 74.48,
+     "src": 1,
+     "label": "HIPPO Agent w/ Opus 4.5"
+    },
+    {
+     "period": "2026-04-17",
+     "value": 78.34,
+     "src": 1,
+     "label": "OpenAPA w/ gemini-3.1-pro"
+    },
+    {
+     "period": "2026-04-20",
+     "value": 82.56,
+     "src": 1,
+     "label": "Holo3-35B-A3B"
+    },
+    {
+     "period": "2026-05-21",
+     "value": 83.64,
+     "src": 1,
+     "label": "Pointer Agent w/ Opus 4.7"
+    },
+    {
+     "period": "2026-07-25",
+     "value": 90.19,
+     "src": 1,
+     "label": "Intelligence-Indeed Agent"
+    }
+   ],
+   "detail": {
+    "human_baseline_pct": 72.36,
+    "best_single_model_pct": 85.96
+   },
+   "links": [
+    "spread",
+    "slope"
+   ],
+   "sides": {
+    "H1": "지지"
+   },
+   "side_basis": "1년에 53% 에서 90% 가 됐고 2025-12 에 사람의 성공률(72.36%)을 넘었다. 코딩이 아니라 사무용 프로그램을 다루는 일이다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "OSWorld-Verified — 자료 파일",
+     "url": "https://os-world.github.io/static/data/osworld_verified_results.xlsx",
+     "date": "2026-11-19",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
    "conf": "high",
-   "note": "과제는 전문가가 평균 7시간 걸리는 분량이다. 뒤에 나온 모델의 값은 공급사 발표와 2차 보도에만 있어 alt 에 두었다."
+   "note": "단일 모델로는 2026-08 의 85.96% 가 가장 높다. 2026-08 뒤로는 제출이 없고 더 긴 과제를 재는 OSWorld 2.0 으로 넘어갔다."
+  },
+  {
+   "id": "osworld2-best",
+   "country": "ZZ",
+   "city": null,
+   "metric": "긴 컴퓨터 조작 과제 완수율(OSWorld 2.0)",
+   "value": 31.43,
+   "unit": "%",
+   "asof": "2026-07-24",
+   "basis": "OSWorld 2.0 의 최고 완수율, 2026-07 모델",
+   "definition": "사람이 1.6시간쯤 걸리는 긴 업무 흐름 108개를 끝까지 해냈는지 본다(평균 도구 호출 318번). 값은 Epoch AI 가 순위표를 옮겨 둔 자료 파일에서 읽었다. 날짜는 평가한 날이 아니라 모델이 나온 날이다. 그 시점까지의 최고 값만 남겼다.",
+   "series": [
+    {
+     "period": "2026-02-17",
+     "value": 9.3,
+     "src": 1,
+     "label": "Claude Sonnet 4.6 (medium) / standard"
+    },
+    {
+     "period": "2026-04-16",
+     "value": 18.2,
+     "src": 1,
+     "label": "Claude Opus 4.7 (max) / batched tool"
+    },
+    {
+     "period": "2026-05-28",
+     "value": 20.6,
+     "src": 1,
+     "label": "Claude Opus 4.8 (max) / batched tool"
+    },
+    {
+     "period": "2026-07-09",
+     "value": 27.34,
+     "src": 1,
+     "label": "GPT-5.6 Sol (max) / batch tool"
+    },
+    {
+     "period": "2026-07-24",
+     "value": 31.43,
+     "src": 1,
+     "label": "Claude Opus 5 (max) / batch tool"
+    }
+   ],
+   "links": [
+    "spread",
+    "slope"
+   ],
+   "sides": {
+    "H1": "지지"
+   },
+   "side_basis": "다섯 달에 9% 에서 31% 가 됐다. 그러나 긴 업무 흐름은 아직 열에 일곱을 끝내지 못한다. 오르는 속도와 남은 거리를 함께 보이는 값이다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "OSWorld 2.0 — 자료 파일",
+     "url": "https://epoch.ai/data/benchmark_data.zip",
+     "date": "2026-11-19",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "2026-07 뒤 모델의 값은 없다. 사람의 완수율은 찾지 못했다."
+  },
+  {
+   "id": "apex-agents-best",
+   "country": "ZZ",
+   "city": null,
+   "metric": "전문 서비스 장기 과제 통과율(APEX-Agents)",
+   "value": 84.2,
+   "unit": "%",
+   "asof": "2026-11-10",
+   "basis": "APEX-Agents 의 한 번에 통과한 비율, 그 시점까지의 최고 모델(2026-11)",
+   "definition": "투자은행 애널리스트·경영 컨설턴트·기업 변호사의 장기 과제 240개를 채점 기준표로 본다. 낸 곳은 전문가 인력과 학습 자료를 랩에 파는 Mercor 다. 날짜는 평가한 날이 아니라 모델이 나온 날이다. 그 시점까지의 최고 값만 남겼다.",
+   "series": [
+    {
+     "period": "2025-08-05",
+     "value": 4.4,
+     "src": 1,
+     "label": "GPT-OSS-120B"
+    },
+    {
+     "period": "2025-12-01",
+     "value": 21.3,
+     "src": 1,
+     "label": "DeepSeek-V3.2"
+    },
+    {
+     "period": "2026-02-05",
+     "value": 46.3,
+     "src": 1,
+     "label": "Opus 4.6"
+    },
+    {
+     "period": "2026-03-05",
+     "value": 52.4,
+     "src": 1,
+     "label": "GPT-5.4"
+    },
+    {
+     "period": "2026-04-23",
+     "value": 55.1,
+     "src": 1,
+     "label": "GPT-5.5"
+    },
+    {
+     "period": "2026-06-09",
+     "value": 63.6,
+     "src": 1,
+     "label": "Fable 5"
+    },
+    {
+     "period": "2026-07-24",
+     "value": 65.8,
+     "src": 1,
+     "label": "Opus 5"
+    },
+    {
+     "period": "2026-08-13",
+     "value": 67.8,
+     "src": 1,
+     "label": "Gemini 3.7 Flash"
+    },
+    {
+     "period": "2026-09-01",
+     "value": 68.6,
+     "src": 1,
+     "label": "Fable 5.1"
+    },
+    {
+     "period": "2026-09-21",
+     "value": 70,
+     "src": 1,
+     "label": "Grok 4.7"
+    },
+    {
+     "period": "2026-09-22",
+     "value": 73.5,
+     "src": 1,
+     "label": "Opus 5.5"
+    },
+    {
+     "period": "2026-09-28",
+     "value": 75.5,
+     "src": 1,
+     "label": "Sonnet 5.5"
+    },
+    {
+     "period": "2026-10-13",
+     "value": 82.4,
+     "src": 1,
+     "label": "Gemini 4 Argon"
+    },
+    {
+     "period": "2026-11-10",
+     "value": 84.2,
+     "src": 1,
+     "label": "Gemini 4 Carbon"
+    }
+   ],
+   "detail": {
+    "harvey_lab_top_pct": 27.4
+   },
+   "links": [
+    "spread",
+    "slope"
+   ],
+   "sides": {
+    "H1": "지지"
+   },
+   "side_basis": "아홉 달에 46% 에서 84% 가 됐다. 코딩 밖 전문직의 여러 프로그램에 걸친 일에서 통과율이 분기마다 12점쯤 오른다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "APEX-Agents — 자료 파일",
+     "url": "https://epoch.ai/data/benchmark_data.zip",
+     "date": "2026-11-19",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "가장 최근 값(84.2% ± 4.3%)은 Mercor 의 순위표에서도 확인했다. 같은 곳의 법률 과제(Harvey LAB)는 1위가 27.4% 다."
+  },
+  {
+   "id": "tau3-banking-best",
+   "country": "ZZ",
+   "city": null,
+   "metric": "은행 고객 응대 과제 통과율(tau3-Banking)",
+   "value": 55.2,
+   "unit": "%",
+   "asof": "2026-07-19",
+   "basis": "tau3-Banking 의 통과율, 범용 모델 가운데 그 시점까지의 최고(2026-07 모델)",
+   "definition": "약 700건의 사내 문서를 찾아 가며 정책에 맞게 고객 요청을 끝내는 모의 상담이다. 낸 곳은 고객 응대 에이전트를 파는 Sierra 이고 대부분 스스로 돌린 값이다. 날짜는 평가한 날이 아니라 모델이 나온 날이다. 그 시점까지의 최고 값만 남겼다.",
+   "series": [
+    {
+     "period": "2025-06-17",
+     "value": 13.7,
+     "src": 1,
+     "label": "Gemini 2.5 Pro"
+    },
+    {
+     "period": "2025-09-19",
+     "value": 15.7,
+     "src": 2,
+     "label": "Grok 4 fast"
+    },
+    {
+     "period": "2025-09-29",
+     "value": 25.3,
+     "src": 3,
+     "label": "Claude Sonnet 4.5"
+    },
+    {
+     "period": "2025-12-11",
+     "value": 32.2,
+     "src": 4,
+     "label": "GPT-5.2"
+    },
+    {
+     "period": "2026-03-05",
+     "value": 39.4,
+     "src": 5,
+     "label": "GPT-5.4"
+    },
+    {
+     "period": "2026-04-16",
+     "value": 40.2,
+     "src": 6,
+     "label": "Claude Opus 4.7"
+    },
+    {
+     "period": "2026-04-23",
+     "value": 44.6,
+     "src": 7,
+     "label": "GPT-5.5"
+    },
+    {
+     "period": "2026-07-09",
+     "value": 46.9,
+     "src": 8,
+     "label": "GPT-5.6-sol"
+    },
+    {
+     "period": "2026-07-16",
+     "value": 47.9,
+     "src": 9,
+     "label": "Grok 4.5"
+    },
+    {
+     "period": "2026-07-19",
+     "value": 55.2,
+     "src": 10,
+     "label": "Qwen 3.8 Max"
+    }
+   ],
+   "detail": {
+    "tau2_top_pct": 87.9,
+    "custom_agent_top_pct": 73.2
+   },
+   "links": [
+    "spread",
+    "slope"
+   ],
+   "sides": {
+    "H1": "지지"
+   },
+   "side_basis": "범용 모델의 최고 값이 여덟 달에 32% 에서 55% 가 됐다. 그래도 절반 가까이를 틀린다. 고객 응대가 대체되는 속도가 왜 회사 매출에 더디게 보이는지와 맞는 수준이다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "tau-bench — 자료 파일",
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gemini-2-5-pro_sierra_2026-05-05/submission.json",
+     "date": "2026-11-19",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "tau-bench — 자료 파일",
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-4-fast_sierra_2026-05-05/submission.json",
+     "date": "2026-11-19",
+     "read": "partial"
+    },
+    {
+     "n": 3,
+     "title": "tau-bench — 자료 파일",
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-sonnet-4-5_sierra_2026-02-26/submission.json",
+     "date": "2026-11-19",
+     "read": "partial"
+    },
+    {
+     "n": 4,
+     "title": "tau-bench — 자료 파일",
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5-2_sierra_2026-02-26/submission.json",
+     "date": "2026-11-19",
+     "read": "partial"
+    },
+    {
+     "n": 5,
+     "title": "tau-bench — 자료 파일",
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5-4_sierra_2026-03-25/submission.json",
+     "date": "2026-11-19",
+     "read": "partial"
+    },
+    {
+     "n": 6,
+     "title": "tau-bench — 자료 파일",
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/claude-opus-4-7_sierra_2026-05-05/submission.json",
+     "date": "2026-11-19",
+     "read": "partial"
+    },
+    {
+     "n": 7,
+     "title": "tau-bench — 자료 파일",
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5-5_sierra_2026-05-05/submission.json",
+     "date": "2026-11-19",
+     "read": "partial"
+    },
+    {
+     "n": 8,
+     "title": "tau-bench — 자료 파일",
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/gpt-5-6-sol_sierra_2026-08-04/submission.json",
+     "date": "2026-11-19",
+     "read": "partial"
+    },
+    {
+     "n": 9,
+     "title": "tau-bench — 자료 파일",
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/grok-4-5_sierra_2026-08-04/submission.json",
+     "date": "2026-11-19",
+     "read": "partial"
+    },
+    {
+     "n": 10,
+     "title": "tau-bench — 자료 파일",
+     "url": "https://sierra-tau-bench-public.s3.us-west-2.amazonaws.com/submissions/qwen3-8-max_sierra_2026-08-04/submission.json",
+     "date": "2026-11-19",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    10
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "쉬운 판(tau2, 소매·항공·통신)은 87.9% 에서 세 분기째 새 값이 없다(새 모델을 재지 않는다). Opus 4.8 과 Fable 5(39.7%)는 앞선 Opus 4.7(40.2%)보다 낮았다. 외부 회사가 이 과제에 맞춰 낸 에이전트는 73.2% 다(2026-10 제출). 2026-07 뒤 범용 모델의 값은 없다."
+  },
+  {
+   "id": "vals-legalbench-best",
+   "country": "ZZ",
+   "city": null,
+   "metric": "법률 추론 문제 정답률(LegalBench)",
+   "value": 88.56,
+   "unit": "%",
+   "asof": "2026-10-13",
+   "basis": "Vals AI 의 LegalBench 최고 정답률, 2026-10",
+   "definition": "법률 추론을 묻는 시험형 문제다. 낸 곳은 평가 서비스를 파는 Vals AI 이고 문제는 비공개다. 날짜는 평가한 날이 아니라 모델이 나온 날이다. 그 시점까지의 최고 값만 남겼다.",
+   "series": [
+    {
+     "period": "2025-08-07",
+     "value": 86.02,
+     "src": 1,
+     "label": "GPT 5"
+    },
+    {
+     "period": "2025-11-18",
+     "value": 87.03,
+     "src": 1,
+     "label": "Gemini 3 Pro (11/25)"
+    },
+    {
+     "period": "2026-02-19",
+     "value": 87.4,
+     "src": 1,
+     "label": "Gemini 3.1 Pro Preview (02/26)"
+    },
+    {
+     "period": "2026-10-13",
+     "value": 88.56,
+     "src": 1,
+     "label": "Claude Fable 5"
+    }
+   ],
+   "detail": {
+    "later_models_lower": {
+     "Claude Opus 5": 86.97,
+     "GPT 5.5": 86.52
+    },
+    "archived_as_saturated": {
+     "CorpFin v2": 73.19,
+     "TaxEval v2": 80.38
+    }
+   },
+   "links": [
+    "slope",
+    "counter"
+   ],
+   "sides": {
+    "H1": "양쪽"
+   },
+   "side_basis": "14개월에 86.0% 에서 88.6% 로 2.5점 올랐을 뿐이고 나중에 나온 모델(Opus 5 86.97%, GPT 5.5 86.52%)이 더 낮기도 했다. 가설의 반증 조건인 '역량 지표가 두 분기 넘게 멈춘다'에 해당하는 모습이다. 다만 시험형 문제이고 이미 90% 가까이라 더 오를 자리가 좁다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Vals AI LegalBench — 발행처 페이지",
+     "url": "https://www.vals.ai/benchmarks/legal_bench",
+     "date": "2026-11-19",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "같은 곳의 CorpFin(73.19%)과 TaxEval(80.38%)은 낸 곳이 '포화됐다'며 새 모델 평가를 멈췄다 — 100% 에 한참 못 미친 채다."
+  },
+  {
+   "id": "vals-finance-agent",
+   "country": "ZZ",
+   "city": null,
+   "metric": "재무 분석 에이전트 과제 정답률(Vals Finance Agent)",
+   "value": 69.47,
+   "unit": "%",
+   "asof": "2026-11-18",
+   "basis": "Vals AI Finance Agent v2.1 의 최고 정답률, 2026-11-18",
+   "definition": "공시 서류를 찾아 읽고 애널리스트의 조사 과제를 푸는 에이전트 과제다. 판(v1, v1.1, v2, v2.1)마다 문제가 달라 값을 이어 붙일 수 없다. 낸 곳은 평가 서비스를 파는 Vals AI 다.",
+   "series": [
+    {
+     "period": "2026-11-18",
+     "value": 69.47,
+     "src": 4,
+     "label": "Claude Fable 5.2"
+    }
+   ],
+   "detail": {
+    "versions": {
+     "Finance Agent v1 (archived: saturated)": {
+      "top": "Claude Opus 4.6 (Thinking)",
+      "value": 60.65,
+      "page_date": "2026-02-10"
+     },
+     "Finance Agent v1.1": {
+      "top": "Claude Opus 4.7",
+      "value": 64.37,
+      "page_date": "2026-06-04"
+     },
+     "Finance Agent v2 (archived: superseded)": {
+      "top": "Gemini 4 Argon",
+      "value": 65.4,
+      "page_date": "2026-10-29"
+     },
+     "Finance Agent v2.1": {
+      "top": "Claude Fable 5.2",
+      "value": 69.47,
+      "page_date": "2026-11-18"
+     },
+     "Tax Agent Bench": {
+      "top": "Gemini 4 Neon",
+      "value": 54.89,
+      "page_date": "2026-11-18"
+     },
+     "Vals Index v2.2": {
+      "top": "Claude Fable 5.2",
+      "value": 71.31,
+      "page_date": "2026-11-18"
+     }
+    }
+   },
+   "links": [
+    "spread",
+    "penetration"
+   ],
+   "sides": {
+    "H1": "양쪽"
+   },
+   "side_basis": "가장 좋은 모델이 애널리스트 조사 과제의 69% 를 맞힌다. 쓸 만한 수준이라는 근거이면서 열에 셋은 틀린다는 근거다. 판이 바뀔 때마다 60%대에서 다시 시작해 기울기를 낼 수 없다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Vals AI — 발행처 페이지",
+     "url": "https://www.vals.ai/benchmarks/finance_agent_v1",
+     "date": "2026-11-19",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "Vals AI — 발행처 페이지",
+     "url": "https://www.vals.ai/benchmarks/finance_agent",
+     "date": "2026-11-19",
+     "read": "partial"
+    },
+    {
+     "n": 3,
+     "title": "Vals AI — 발행처 페이지",
+     "url": "https://www.vals.ai/benchmarks/fabv2",
+     "date": "2026-11-19",
+     "read": "partial"
+    },
+    {
+     "n": 4,
+     "title": "Vals AI — 발행처 페이지",
+     "url": "https://www.vals.ai/benchmarks/fabv2-1",
+     "date": "2026-11-19",
+     "read": "partial"
+    },
+    {
+     "n": 5,
+     "title": "Vals AI — 발행처 페이지",
+     "url": "https://www.vals.ai/benchmarks/tax_agent_bench",
+     "date": "2026-11-19",
+     "read": "partial"
+    },
+    {
+     "n": 6,
+     "title": "Vals AI — 발행처 페이지",
+     "url": "https://www.vals.ai/benchmarks/vals_index",
+     "date": "2026-11-19",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    4
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "세무 에이전트 과제(Tax Agent Bench)의 1위는 54.89% 다. 금융·코딩·법률·세무를 묶은 Vals Index 는 71.31% 다."
+  },
+  {
+   "id": "swebench-verified-best",
+   "country": "ZZ",
+   "city": null,
+   "metric": "실제 코드 저장소 문제 해결률(SWE-bench Verified)",
+   "value": 83.5,
+   "unit": "%",
+   "asof": "2026-04-16",
+   "basis": "SWE-bench Verified 의 최고 해결률(Epoch AI 가 직접 돌린 값), 2026-04 모델",
+   "definition": "공개 저장소의 실제 문제 500개를 고쳐 시험을 통과하는지 본다. 코딩의 값이고 다른 벤치마크와 견주려고 넣었다. 날짜는 평가한 날이 아니라 모델이 나온 날이다. 그 시점까지의 최고 값만 남겼다.",
+   "series": [
+    {
+     "period": "2024-11-20",
+     "value": 31,
+     "src": 1,
+     "label": "gpt-4o-2024-11-20"
+    },
+    {
+     "period": "2025-02-24",
+     "value": 61,
+     "src": 1,
+     "label": "claude-3-7-sonnet-20250219"
+    },
+    {
+     "period": "2025-04-16",
+     "value": 62.3,
+     "src": 1,
+     "label": "o3-2025-04-16_medium"
+    },
+    {
+     "period": "2025-05-22",
+     "value": 70.7,
+     "src": 1,
+     "label": "claude-opus-4-20250514"
+    },
+    {
+     "period": "2025-08-05",
+     "value": 73.3,
+     "src": 1,
+     "label": "claude-opus-4-1-20250805"
+    },
+    {
+     "period": "2025-08-07",
+     "value": 73.6,
+     "src": 1,
+     "label": "gpt-5-2025-08-07_high"
+    },
+    {
+     "period": "2025-11-24",
+     "value": 76.7,
+     "src": 1,
+     "label": "claude-opus-4-5-20251101"
+    },
+    {
+     "period": "2026-02-05",
+     "value": 78.7,
+     "src": 1,
+     "label": "claude-opus-4-6"
+    },
+    {
+     "period": "2026-04-16",
+     "value": 83.5,
+     "src": 1,
+     "label": "claude-opus-4-7_max"
+    }
+   ],
+   "detail": {
+    "later_models_pct": {
+     "qwen3.6-max-preview": 76.7,
+     "kimi-k2.6": 76.7,
+     "gpt-5.5-pre-release_xhigh": 80.6,
+     "deepseek-v4-pro_max": 77.6,
+     "qwen3.7-max": 77.3,
+     "gemini-3.5-flash_high": 79.3,
+     "glm-5.2_max": 78.7
+    },
+    "swebench_pro_public_top_pct": 61.5
+   },
+   "links": [
+    "coding",
+    "slope"
+   ],
+   "sides": {
+    "H1": "양쪽"
+   },
+   "side_basis": "17개월에 31% 에서 83.5% 가 됐다. 그러나 2026-04 뒤로 잰 모델 일곱은 모두 그보다 낮다(76.7~80.6%). 코딩 벤치마크는 천장에 가까워졌고 지출은 그 뒤에 더 빨리 늘었다 — 점수가 멈춘 뒤에도 쓰임은 는다는 사례다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "SWE-bench Verified — 자료 파일",
+     "url": "https://epoch.ai/data/benchmark_data.zip",
+     "date": "2026-11-19",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "자료 파일의 마지막 모델은 2026-06 이다. 더 어려운 SWE-bench Pro 공개판의 1위는 61.5% 다(날짜 없음)."
+  },
+  {
+   "id": "theagentcompany-best",
+   "country": "ZZ",
+   "city": null,
+   "metric": "가상 회사 업무 과제 해결률(TheAgentCompany)",
+   "value": 42.9,
+   "unit": "%",
+   "asof": "2025-09-29",
+   "basis": "TheAgentCompany 의 최고 해결률, 2025-09 모델",
+   "definition": "가상의 소프트웨어 회사에서 개발·관리·재무·인사 업무를 맡기는 과제다. 값은 Epoch AI 가 옮겨 둔 자료 파일에서 읽었다. 날짜는 평가한 날이 아니라 모델이 나온 날이다. 그 시점까지의 최고 값만 남겼다.",
+   "series": [
+    {
+     "period": "2024-06-07",
+     "value": 1.1,
+     "src": 1,
+     "label": "OpenHands + Qwen-2-72b"
+    },
+    {
+     "period": "2024-07-23",
+     "value": 7.4,
+     "src": 1,
+     "label": "OpenHands + Llama-3.1-405b"
+    },
+    {
+     "period": "2024-10-22",
+     "value": 24,
+     "src": 1,
+     "label": "OpenHands + Claude 3.5 Sonnet"
+    },
+    {
+     "period": "2025-02-24",
+     "value": 30.9,
+     "src": 1,
+     "label": "OpenHands-Versa + Claude 3.7 Sonnet"
+    },
+    {
+     "period": "2025-05-22",
+     "value": 33.1,
+     "src": 1,
+     "label": "OpenHands-Versa + Claude Sonnet 4"
+    },
+    {
+     "period": "2025-09-25",
+     "value": 41.1,
+     "src": 1,
+     "label": "MUSE + Gemini 2.5 Flash"
+    },
+    {
+     "period": "2025-09-29",
+     "value": 42.9,
+     "src": 1,
+     "label": "TTE-MatrixAgent + Deepseek-V3.2"
+    }
+   ],
+   "links": [
+    "spread",
+    "slope"
+   ],
+   "sides": {
+    "H1": "중립"
+   },
+   "side_basis": "2025-09 뒤로 새 항목이 없어 방향을 정하지 않았다. 재지 않게 된 것이고 멈춘 것인지 알 수 없다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "TheAgentCompany — 자료 파일",
+     "url": "https://epoch.ai/data/benchmark_data.zip",
+     "date": "2026-11-19",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "low",
+   "note": "원 순위표는 스크립트로 그려져 읽지 못했다."
+  },
+  {
+   "id": "capability-benchmark-pace",
+   "country": "ZZ",
+   "city": null,
+   "metric": "역량 벤치마크의 흐름 — 오르는 것과 멈춘 것",
+   "value": null,
+   "unit": "개",
+   "asof": "2026-11",
+   "basis": "계산: K1 의 벤치마크를 최고 값의 흐름으로 나눈다. 가장 최근까지 오르는 것 6개, 최고 값이 두 분기 넘게 그대로인 것 2개, 낸 곳이 갱신을 멈춘 것 3개(겹침 있음)",
+   "definition": "오르는 것은 가장 최근 점이 그 앞 점보다 높고 2026년 하반기에도 새 값이 있는 것(GDPval 은 2026-04 까지)이다. 멈춘 것은 최고 값이 두 분기 넘게 바뀌지 않았거나 뒤에 나온 모델이 더 낮은 것이다. 벤치마크마다 단위와 낸 곳이 달라 값을 서로 견주지 않는다.",
+   "detail": {
+    "rising": {
+     "rli-automation-rate": {
+      "from": {
+       "period": "2025-06-05",
+       "value": 0.83
+      },
+      "to": {
+       "period": "2026-11-09",
+       "value": 41.25
+      },
+      "points": 13
+     },
+     "gdpval-win-or-tie-rate": {
+      "from": {
+       "period": "2024-11-20",
+       "value": 12.3
+      },
+      "to": {
+       "period": "2026-04-23",
+       "value": 84.9
+      },
+      "points": 9
+     },
+     "osworld-verified-best": {
+      "from": {
+       "period": "2025-07-28",
+       "value": 53.1
+      },
+      "to": {
+       "period": "2026-07-25",
+       "value": 90.19
+      },
+      "points": 11
+     },
+     "osworld2-best": {
+      "from": {
+       "period": "2026-02-17",
+       "value": 9.3
+      },
+      "to": {
+       "period": "2026-07-24",
+       "value": 31.43
+      },
+      "points": 5
+     },
+     "apex-agents-best": {
+      "from": {
+       "period": "2025-08-05",
+       "value": 4.4
+      },
+      "to": {
+       "period": "2026-11-10",
+       "value": 84.2
+      },
+      "points": 14
+     },
+     "tau3-banking-best": {
+      "from": {
+       "period": "2025-06-17",
+       "value": 13.7
+      },
+      "to": {
+       "period": "2026-07-19",
+       "value": 55.2
+      },
+      "points": 10
+     }
+    },
+    "stalled": {
+     "vals-legalbench-best": {
+      "from": {
+       "period": "2025-08-07",
+       "value": 86.02
+      },
+      "to": {
+       "period": "2026-10-13",
+       "value": 88.56
+      },
+      "points": 4
+     },
+     "swebench-verified-best": {
+      "from": {
+       "period": "2024-11-20",
+       "value": 31
+      },
+      "to": {
+       "period": "2026-04-16",
+       "value": 83.5
+      },
+      "points": 9
+     }
+    },
+    "no_longer_updated": [
+     "metr-time-horizon-p50",
+     "gdpval-win-or-tie-rate",
+     "theagentcompany-best"
+    ],
+    "archived_as_saturated_by_publisher": [
+     "Vals CorpFin v2",
+     "Vals TaxEval v2",
+     "Vals Finance Agent v1",
+     "tau2-bench"
+    ]
+   },
+   "links": [
+    "slope",
+    "counter"
+   ],
+   "sides": {
+    "H1": "지지"
+   },
+   "side_basis": "납품물과 긴 과제를 재는 벤치마크(원격 근무 프로젝트, 전문 서비스 과제, 컴퓨터 조작, 은행 상담)는 2026-11 까지 오르고 있다. 멈춘 것은 시험형이거나 이미 80~90% 인 벤치마크다. 반증 조건인 '역량 지표가 두 분기 넘게 멈춘다'는 납품물 쪽에서는 일어나지 않았다. 다만 가장 많이 인용되는 두 계열(GDPval 공식 순위표, METR 작업 지평)은 2026-04 모델에서 끊겼다.",
+   "refs": [
+    {
+     "bundle": "K1",
+     "id": "rli-automation-rate"
+    },
+    {
+     "bundle": "K1",
+     "id": "gdpval-win-or-tie-rate"
+    },
+    {
+     "bundle": "K1",
+     "id": "osworld-verified-best"
+    },
+    {
+     "bundle": "K1",
+     "id": "osworld2-best"
+    },
+    {
+     "bundle": "K1",
+     "id": "apex-agents-best"
+    },
+    {
+     "bundle": "K1",
+     "id": "tau3-banking-best"
+    },
+    {
+     "bundle": "K1",
+     "id": "vals-legalbench-best"
+    },
+    {
+     "bundle": "K1",
+     "id": "swebench-verified-best"
+    },
+    {
+     "bundle": "K1",
+     "id": "metr-time-horizon-p50"
+    },
+    {
+     "bundle": "K1",
+     "id": "theagentcompany-best"
+    }
+   ],
+   "sources": [],
+   "value_src": [],
+   "alt": [],
+   "conf": "low",
+   "note": "벤치마크를 낸 곳의 이해관계가 갈린다 — 모델 공급사(OpenAI), 전문가 인력·자료를 파는 곳(Scale, Mercor), 에이전트를 파는 곳(Sierra), 평가 서비스를 파는 곳(Vals), 비영리·학계(METR, Epoch, 홍콩대). 방향은 AI 의 해석이다."
   }
  ]
 }

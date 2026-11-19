@@ -2,7 +2,7 @@
  "schema": 1,
  "bundle": "K6",
  "title": "천장과 요구 수준 — 임금 풀, 투자, 필요 매출",
- "updated_kst": "2026-11-19T14:03:51+09:00",
+ "updated_kst": "2026-11-19T14:21:08+09:00",
  "measure": null,
  "notes": [
   "임금 풀은 넘어갈 수 있는 일의 상한이고 벤더 매출의 상한이 아니다.",
@@ -136,7 +136,9 @@
    "basis": "2030년 컴퓨트 수요를 대는 데 필요한 AI 연매출(Bain Global Technology Report 2025)",
    "definition": null,
    "detail": {
-    "shortfall_tn": 0.8
+    "shortfall_bn": 800,
+    "incremental_compute_gw_by_2030": 200,
+    "annual_capex_bn": 500
    },
    "links": [
     "ceiling",
@@ -153,14 +155,35 @@
      "url": "https://www.bloomberg.com/news/articles/2025-09-23/an-800-billion-revenue-shortfall-threatens-ai-future-bain-says",
      "date": "2025-09-23",
      "read": "search_summary"
+    },
+    {
+     "n": 2,
+     "title": "Bain 보도자료·발언을 옮겨 실은 글 1",
+     "url": "https://oodaloop.com/briefs/technology/2-trillion-in-new-revenue-needed-to-fund-ais-scaling-trend",
+     "date": "2025-09-23",
+     "read": "partial"
+    },
+    {
+     "n": 3,
+     "title": "Bain 보도자료·발언을 옮겨 실은 글 2",
+     "url": "https://ianslive.in/2-trillion-in-new-revenue-needed-to-meet-ai-demand-by-2030-report--20250923092549",
+     "date": "2025-09-23",
+     "read": "partial"
+    },
+    {
+     "n": 4,
+     "title": "Bain 보도자료·발언을 옮겨 실은 글 3",
+     "url": "https://www.tomshardware.com/tech-industry/bain-says-compute-demand-is-outpacing-capital",
+     "date": "2025-09-23",
+     "read": "partial"
     }
    ],
    "value_src": [
-    1
+    2
    ],
    "alt": [],
    "conf": "med",
-   "note": "검색 요약만 봤다(Bain 보도자료는 403). 2025-09 추정이라 그 뒤 랩 매출 증가가 반영돼 있지 않다."
+   "note": "Bain 의 보도자료와 보고서는 403 이라 열지 못했고, 보도자료 문장을 옮겨 실은 글에서 읽었다. 2030년까지 늘어나는 컴퓨트를 200GW(절반이 미국), 연 설비투자를 약 5,000억 달러로 봤고 AI 로 아낀 비용을 다시 투자해도 8,000억 달러가 모자란다고 적었다. 2025-09 추정이라 그 뒤 랩 매출과 투자 계획의 증가가 반영돼 있지 않다 — 하이퍼스케일러 다섯 곳의 계획만 이미 연 8,100억 달러를 넘는다."
   },
   {
    "id": "two-lab-run-rate-share-of-wage-pool",

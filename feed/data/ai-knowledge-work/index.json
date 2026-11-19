@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated_kst": "2026-11-19T14:03:51+09:00",
+ "updated_kst": "2026-11-19T14:21:08+09:00",
  "question": "AI 는 코딩을 넘어 범용 지식노동으로 번지는가 — 성장 여지는 얼마나 남았고, 지금의 투자는 회수되는가",
  "bundles": [
   {
@@ -8,27 +8,27 @@
    "file": "capability.json",
    "title": "역량 — 납품물·과제 단위로 잰 자동화 수준",
    "status": "collecting",
-   "records": 3,
-   "verified_share": 1,
-   "updated_kst": "2026-11-19T11:25:43+09:00"
+   "records": 12,
+   "verified_share": 0.917,
+   "updated_kst": "2026-11-19T14:17:46+09:00"
   },
   {
    "id": "K2",
    "file": "usage.json",
    "title": "사용 — 사람·기업·업무시간과 쓰임의 분포",
    "status": "collecting",
-   "records": 23,
-   "verified_share": 0.957,
-   "updated_kst": "2026-11-19T12:21:39+09:00"
+   "records": 24,
+   "verified_share": 0.958,
+   "updated_kst": "2026-11-19T14:06:55+09:00"
   },
   {
    "id": "K3",
    "file": "spend.json",
    "title": "지출과 매출 — 랩·도구·고객",
    "status": "collecting",
-   "records": 47,
-   "verified_share": 0.936,
-   "updated_kst": "2026-11-19T13:58:24+09:00"
+   "records": 48,
+   "verified_share": 0.938,
+   "updated_kst": "2026-11-19T14:07:46+09:00"
   },
   {
    "id": "K4",
@@ -44,9 +44,9 @@
    "file": "effect.json",
    "title": "효과 측정 — 실험과 조사",
    "status": "collecting",
-   "records": 4,
-   "verified_share": 0.75,
-   "updated_kst": "2026-11-19T11:25:43+09:00"
+   "records": 17,
+   "verified_share": 1,
+   "updated_kst": "2026-11-19T14:21:08+09:00"
   },
   {
    "id": "K6",
@@ -54,8 +54,8 @@
    "title": "천장과 요구 수준 — 임금 풀, 투자, 필요 매출",
    "status": "collecting",
    "records": 13,
-   "verified_share": 0.538,
-   "updated_kst": "2026-11-19T14:03:51+09:00"
+   "verified_share": 0.615,
+   "updated_kst": "2026-11-19T14:21:08+09:00"
   }
  ],
  "hypotheses": [

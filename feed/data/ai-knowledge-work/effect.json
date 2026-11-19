@@ -2,27 +2,28 @@
  "schema": 1,
  "bundle": "K5",
  "title": "효과 측정 — 실험과 조사",
- "updated_kst": "2026-11-19T11:25:43+09:00",
+ "updated_kst": "2026-11-19T14:21:08+09:00",
  "measure": null,
  "notes": [
   "생산성·손익 효과를 잰 연구와 조사다. 효과가 있었다는 결과와 없었다는 결과를 같은 무게로 모은다.",
-  "실험(무작위 배정), 도입 시차를 쓴 추정, 자기 평가 조사를 basis·definition 에서 가른다."
+  "실험(무작위 배정), 도입 시차를 쓴 추정, 자기 평가 조사를 basis·definition 에서 가른다.",
+  "설문·보고서는 표본과 정의를 definition 에, 낸 곳의 이해관계를 note 에 적는다. 흔히 옮겨지는 숫자가 원문과 다르면 side_basis 에 원문의 뜻을 적는다. 선례(전기화, 생산성 J 커브)는 방향을 중립으로 둔다."
  ],
  "summary": {
-  "records": 4,
-  "with_value": 4,
-  "with_series": 0,
+  "records": 17,
+  "with_value": 15,
+  "with_series": 1,
   "by_hypothesis": {
    "H1": {
-    "지지": 1,
-    "반박": 3,
-    "양쪽": 0,
-    "중립": 0
+    "지지": 3,
+    "반박": 6,
+    "양쪽": 6,
+    "중립": 2
    },
    "H2": {
     "지지": 0,
-    "반박": 2,
-    "양쪽": 0,
+    "반박": 3,
+    "양쪽": 1,
     "중립": 0
    }
   },
@@ -30,20 +31,32 @@
    "coding": {
     "지지": 0,
     "반박": 1,
-    "양쪽": 0,
+    "양쪽": 1,
     "중립": 0
    },
    "spread": {
-    "지지": 1,
+    "지지": 3,
+    "반박": 1,
+    "양쪽": 2,
+    "중립": 0
+   },
+   "penetration": {
+    "지지": 0,
     "반박": 0,
-    "양쪽": 0,
+    "양쪽": 1,
+    "중립": 0
+   },
+   "slope": {
+    "지지": 0,
+    "반박": 0,
+    "양쪽": 1,
     "중립": 0
    },
    "counter": {
-    "지지": 0,
-    "반박": 3,
-    "양쪽": 0,
-    "중립": 0
+    "지지": 1,
+    "반박": 6,
+    "양쪽": 6,
+    "중립": 2
    }
   }
  },
@@ -65,7 +78,7 @@
    "sides": {
     "H1": "반박"
    },
-   "side_basis": "코딩에서조차 숙련자는 느려졌다는 결과다. 개발자 자신은 20% 빨라졌다고 느꼈다는 점이 자기 보고 조사 전체에 대한 경고가 된다.",
+   "side_basis": "코딩에서조차 숙련자는 느려졌다는 결과다. 개발자 자신은 20% 빨라졌다고 느꼈다는 점이 자기 보고 조사 전체에 대한 경고가 된다. 다만 2025년 상반기 도구의 값이고 낸 곳이 스스로 오래됐다고 밝혔다.",
    "sources": [
     {
      "n": 1,
@@ -80,7 +93,14 @@
    ],
    "alt": [],
    "conf": "high",
-   "note": "개발자 16명, 2025년 2~6월의 도구 기준이다. 개발자는 사전에 24% 단축을 예상했고 사후에도 20% 단축됐다고 추정했다. 그 뒤 도구로 다시 한 실험은 아직 찾지 못했다."
+   "note": "개발자 16명, 과제 246건, 2025년 2~6월의 도구 기준이다. 개발자는 사전에 24% 단축을 예상했고 사후에도 20% 단축됐다고 추정했다. METR 은 2026-02 에 원 글에 '결과가 오래됐다'는 표시를 붙였고 그 뒤 도구로 한 후속 측정을 냈다(metr-dev-productivity-2026-followup).",
+   "detail": {
+    "developers": 16,
+    "tasks": 246,
+    "ci_pct": "+2 ~ +39",
+    "forecast_before_pct": -24,
+    "belief_after_pct": -20
+   }
   },
   {
    "id": "brynjolfsson-genai-at-work",
@@ -106,6 +126,13 @@
      "url": "https://arxiv.org/abs/2304.11771",
      "date": "2023-04",
      "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "NBER Working Paper 31161 — Generative AI at Work(초록)",
+     "url": "https://www.nber.org/papers/w31161",
+     "date": "2023-11",
+     "read": "partial"
     }
    ],
    "value_src": [
@@ -113,7 +140,15 @@
    ],
    "alt": [],
    "conf": "high",
-   "note": "효과는 경험이 적은 상담원에게 더 컸다고 초록이 적었다."
+   "note": "효과는 경험이 적은 상담원에게 더 컸다(앞선 판 기준 평균 14%, 초보·저숙련 34%). 학술지판 초록은 가장 숙련된 상담원은 속도가 조금 오르고 품질이 조금 떨어졌다고 적었다. 14% 로 옮긴 글은 앞선 판의 값이다.",
+   "detail": {
+    "agents": 5172,
+    "nber_version": {
+     "agents": 5179,
+     "average_pct": 14,
+     "novice_pct": 34
+    }
+   }
   },
   {
    "id": "pwc-ceo-survey-2026-no-benefit",
@@ -124,7 +159,7 @@
    "unit": "%",
    "asof": "2026-01",
    "basis": "PwC 2026 글로벌 CEO 조사 — AI 로 비용 절감도 매출 증가도 얻지 못했다고 답한 CEO 의 비중",
-   "definition": "CEO 의 자기 평가다. 효과의 크기나 기간은 재지 않는다.",
+   "definition": "CEO 의 자기 평가이고 지난 12개월을 물었다. 효과의 크기는 재지 않는다. 95개국 4,454명(2025-09-30~11-10 조사), 응답자의 30% 는 매출 1억 달러 이하 회사다.",
    "links": [
     "counter"
    ],
@@ -136,6 +171,13 @@
    "sources": [
     {
      "n": 1,
+     "title": "PwC — 29th Global CEO Survey(보도 전 배포본 PDF)",
+     "url": "https://workplaceinsight.net/wp-content/uploads/2026/01/Report-PwC-2026-Global-CEO-Survey-Strictly-Embargoed-5.45PM-GMT-Monday-19-January-2026.pdf",
+     "date": "2026-01-19",
+     "read": "partial"
+    },
+    {
+     "n": 2,
      "title": "The Register — Majority of CEOs report zero payoff from AI splurge",
      "url": "https://www.theregister.com/2026/01/20/pwc_ai_ceo_survey/",
      "date": "2026-01-20",
@@ -147,7 +189,15 @@
    ],
    "alt": [],
    "conf": "med",
-   "note": "PwC 원문은 열지 못했고 전문지 기사에서 읽었다. 비용이 줄었다는 답이 26%, 비슷한 비중이 비용이 늘었다고 답했다."
+   "note": "보도 전 배포본에서 읽었다(표지에 '편집·자료 변경 가능'이라 적혀 있고 PwC 사이트는 403). 매출이 늘었다 30%, 비용이 줄었다 26%, 둘 다 12% 다. 비용이 오히려 늘었다는 답도 22% 다. AI 를 제품·서비스에 크게 적용한다는 답은 19% 뿐이라, 효과가 없다는 답의 상당수는 아직 깊이 쓰지 않는 회사다.",
+   "detail": {
+    "revenue_up_pct": 30,
+    "cost_down_pct": 26,
+    "both_pct": 12,
+    "cost_up_pct": 22,
+    "applying_ai_to_large_extent_in_products_pct": 19,
+    "ceos": 4454
+   }
   },
   {
    "id": "mit-nanda-genai-pilots-no-return",
@@ -156,9 +206,9 @@
    "metric": "손익 효과가 없었다는 기업 시범 사업 비중",
    "value": 95,
    "unit": "%",
-   "asof": "2025-08",
-   "basis": "MIT NANDA 'The GenAI Divide' — 측정 가능한 손익 효과가 없었다는 기업 생성형 AI 시범 사업의 비중",
-   "definition": null,
+   "asof": "2025-07",
+   "basis": "MIT NANDA 'The GenAI Divide' — 생성형 AI 투자에서 수익을 얻지 못하고 있다는 조직의 비중('조직의 95% 가 수익이 없다')",
+   "definition": "표본은 공개 사례 300건 넘는 검토, 52개 조직 인터뷰, 행사 네 곳에서 받은 임원 153명 설문이다(2025년 1~6월, '예비 결과'라고 적혀 있다). 성공은 사용자나 임원이 뚜렷하고 지속되는 생산성·손익 영향이 있다고 말한 경우이고 시범 사업 6개월 뒤를 본다. 회사의 공식 보고가 아니라 인터뷰에 바탕한 방향성 수치라고 저자가 밝혔다.",
    "links": [
     "counter"
    ],
@@ -166,22 +216,591 @@
     "H1": "반박",
     "H2": "반박"
    },
-   "side_basis": "회의론이 가장 자주 드는 숫자다. 원문의 표본과 정의를 확인하기 전에는 무게를 두기 어렵다.",
+   "side_basis": "회의론이 가장 자주 드는 숫자다. 원문을 보면 95% 는 회사에 맞춰 만든 기업용 도구가 실제 운영까지 간 비율(5%)에서 나온 것이고, 범용 챗 도구는 약 40% 가 배포했으며 시범에서 도입으로 넘어간 비율이 83% 라고 같은 보고서가 적었다. 맞춤 도구의 실패율이지 AI 전체의 실패율이 아니다.",
    "sources": [
     {
      "n": 1,
-     "title": "Forkast — The ROI metric shift: enterprises now demand financial impact, but only 5–8% can actually measure it",
-     "url": "https://forkast.news/the-roi-metric-shift-enterprises-now-demand-financial-impact-but-only-5-8-can-actually-measure-it/",
-     "date": null,
-     "read": "search_summary"
+     "title": "MIT NANDA — The GenAI Divide: State of AI in Business 2025(v0.1 PDF, 제3자 게재본)",
+     "url": "https://mlq.ai/media/quarterly_decks/v0.1_State_of_AI_in_Business_2025_Report.pdf",
+     "date": "2025-07",
+     "read": "partial"
     }
    ],
    "value_src": [
     1
    ],
    "alt": [],
-   "conf": "low",
-   "note": "검색 요약만 봤다. 원문 보고서를 열어 표본 수·'시범 사업'과 '효과'의 정의를 확인해야 한다."
+   "conf": "med",
+   "note": "보고서를 낸 NANDA 는 에이전트 기반 구조를 만드는 프로젝트이고 보고서의 처방이 그 방향과 같다. 6개월 관찰은 성공률을 낮게 잡을 수 있다고 저자가 적었다. MIT 의 공식 게재본은 찾지 못했다.",
+   "detail": {
+    "custom_tools_funnel_pct": {
+     "investigated": 60,
+     "piloted": 20,
+     "production": 5
+    },
+    "general_purpose_tools_deployed_pct": 40,
+    "generic_chatbot_pilot_to_implementation_pct": 83,
+    "interviews": 52,
+    "survey_respondents": 153,
+    "public_initiatives_reviewed": 300
+   }
+  },
+  {
+   "id": "metr-dev-productivity-2026-followup",
+   "country": "ZZ",
+   "city": null,
+   "metric": "AI 허용 시 개발자의 작업 시간 변화(후속 측정)",
+   "value": -18,
+   "unit": "%(작업 시간 변화, 앞 실험에 참가했던 개발자)",
+   "asof": "2026-02",
+   "basis": "METR 의 후속 측정 — AI 를 허용했을 때 과제 완료 시간의 변화, 앞 실험에 참가했던 개발자 10명",
+   "definition": "2025-08 부터 개발자 57명(앞 실험 참가자 10명, 새 참가자 47명), 저장소 143개, 과제 800건 넘게 쟀다. METR 은 이 값을 '믿기 어려운 신호'라고 불렀다 — AI 없이 일하기를 거부한 개발자가 빠졌고, 개발자의 30~50% 가 AI 효과가 클 과제를 내지 않았으며, 보수를 시간당 150달러에서 50달러로 낮췄다.",
+   "detail": {
+    "returning": {
+     "developers": 10,
+     "time_change_pct": -18,
+     "ci_pct": "-38 ~ +9"
+    },
+    "new": {
+     "developers": 47,
+     "time_change_pct": -4,
+     "ci_pct": "-15 ~ +9"
+    },
+    "tasks": "800 초과",
+    "withheld_task_share_pct": "30 ~ 50",
+    "self_reported_value_multiplier_median": "1.4 ~ 2"
+   },
+   "links": [
+    "coding",
+    "counter"
+   ],
+   "sides": {
+    "H1": "양쪽"
+   },
+   "side_basis": "앞 실험의 +19%(느려짐)가 −18%(빨라짐)로 뒤집혔지만 신뢰구간이 0 을 걸친다(−38%~+9%). 새 참가자는 −4% 다. 코딩에서조차 깨끗한 무작위 실험으로 확인된 효과는 2026년에도 어느 쪽으로도 없다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "METR — Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity (+ 2026 follow-ups)",
+     "url": "https://arxiv.org/abs/2507.09089",
+     "date": "2025-07-10",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "METR 은 빠진 과제와 참가자 때문에 추정이 효과의 하한일 가능성이 높다고 적었다. 2026-05 의 기술직 349명 설문에서는 스스로 매긴 가치 배수의 중앙값이 1.4~2배였다."
+  },
+  {
+   "id": "humlum-vestergaard-denmark-earnings",
+   "country": "DK",
+   "city": null,
+   "metric": "챗봇 도입이 임금·근로시간에 준 효과(덴마크 행정 자료)",
+   "value": 2,
+   "unit": "%(신뢰구간이 배제하는 효과의 크기)",
+   "asof": "2024-12",
+   "basis": "Humlum·Vestergaard — 노출 직종 근로자의 소득·근로시간에 대한 효과가 0 에 가깝고 신뢰구간이 2% 넘는 효과를 배제한다(2026-03 개정판)",
+   "definition": "덴마크의 노출 직종 11개, 근로자 약 25,000명·사업장 7,000곳의 설문(2023·2024년 말)을 행정 자료에 이었다. 결과는 2024-12 까지다. 2025-05 판은 1% 넘는 효과를 배제한다고 적었고 개정판에서 2% 로 넓어졌다.",
+   "detail": {
+    "workers": 25000,
+    "workplaces": 7000,
+    "occupations": 11,
+    "bound_2025_version_pct": 1,
+    "self_reported_time_savings_pct": 3,
+    "pass_through_to_earnings_pct": "3 ~ 7",
+    "saved_time_reallocated_pct": 85
+   },
+   "links": [
+    "counter",
+    "spread"
+   ],
+   "sides": {
+    "H1": "반박",
+    "H2": "반박"
+   },
+   "side_basis": "코딩 밖을 포함한 노출 직종에서 행정 자료로 본 임금·근로시간 효과가 없다. 스스로 답한 시간 절감은 약 3% 이고 생산성 이득이 임금으로 넘어간 몫은 3~7% 다. 쓸모가 있어도 통계에 잡히는 크기가 아니라는 가장 단단한 근거다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "NBER Working Paper 33777 / BFI WP 2025-56 / RFBerlin DP 078/26 — Large Language Models, Small Labor Market Effects (May 2025) -> retitled 'Still Waters, Rapid C",
+     "url": "https://www.nber.org/papers/w33777",
+     "date": "2025-05",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "개정판은 제목이 'Still Waters, Rapid Currents'로 바뀌었고 업무 재편과 고임금 직종으로의 이동을 함께 보고한다. 아낀 시간의 85% 는 다른 업무에 다시 썼다. 2024-12 뒤의 결과는 개정판에도 없다."
+  },
+  {
+   "id": "firm-data-on-ai-2026",
+   "country": "ZZ",
+   "city": null,
+   "metric": "AI 가 생산성을 높였다고 답한 임원 비중(7개국)",
+   "value": 15,
+   "unit": "%",
+   "asof": "2026-10",
+   "basis": "Firm Data on AI — 지난 3년 AI 가 생산성에 긍정적 영향을 줬다고 답한 임원의 비중, 2026년 여름 조사(2026-10 개정판)",
+   "definition": "중앙은행의 기업 조사 패널로 7개국(미국, 영국, 독일, 호주, 캐나다, 멕시코, 남아공) 임원 약 9,000명에게 물었다. 임원의 자기 평가다.",
+   "series": [
+    {
+     "period": "2026-02",
+     "value": 8,
+     "src": 1,
+     "label": "앞선 조사",
+     "note": "첫 판의 값. 조사 시점은 약 반년 앞이다"
+    },
+    {
+     "period": "2026-10",
+     "value": 15,
+     "src": 1,
+     "label": "2026년 여름 조사"
+    }
+   ],
+   "detail": {
+    "no_productivity_impact_pct": {
+     "earlier_wave": 89,
+     "summer_2026": 83
+    },
+    "no_employment_effect_pct": "80 초과",
+    "reported_boost_to_annual_productivity_growth_pct": {
+     "earlier_wave": 0.1,
+     "summer_2026": 0.2
+    },
+    "expected_boost_next_3y_pct": 0.6,
+    "expected_employment_effect_next_3y_pct": -0.4,
+    "executives": 9000
+   },
+   "links": [
+    "counter",
+    "slope"
+   ],
+   "sides": {
+    "H1": "양쪽",
+    "H2": "양쪽"
+   },
+   "side_basis": "영향이 없다는 답이 83% 이고 고용에 영향이 없다는 답이 80% 를 넘는다. 손익에 안 잡힌다는 쪽이다. 그러나 반년 사이 긍정 답이 8% 에서 15% 로, 영향 없음이 89% 에서 83% 로 움직였고 임원이 답한 생산성 기여도 연 0.1% 에서 0.2% 가 됐다. 낮지만 오르고 있다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "NBER Working Paper 34836 (Yotzov, Barrero, Bloom, Bunn, Davis, Meyer, Mizen, Thwaites et al.); also Atlanta Fed WP 2026-3 — Firm Data on AI",
+     "url": "https://www.nber.org/papers/w34836",
+     "date": "2026-02",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "첫 판(2026-02)을 옮긴 보도는 '90% 가 효과 없음'이었다. 앞으로 3년의 기대 기여는 연 0.6%, 고용 기대는 −0.4% 다. 회사의 78% 가 AI 를 쓴다고 답했다."
+  },
+  {
+   "id": "hartley-2026-postings-layoffs",
+   "country": "US",
+   "city": null,
+   "metric": "노출 직종의 구인·해고 반응(미국)",
+   "value": null,
+   "unit": "효과",
+   "asof": "2026-07",
+   "basis": "Hartley 외 — AI 노출이 큰 직종의 구인과 해고에 통계적으로 유의한 반응이 없다(NBER 발표 논문)",
+   "definition": "직종의 노출 정도를 연속 처치로 쓴 이중차분이다. 초록만 읽었고 표본 크기는 확인하지 못했다.",
+   "detail": {
+    "perceived_job_loss_probability_2y_pct": 20
+   },
+   "links": [
+    "counter"
+   ],
+   "sides": {
+    "H1": "반박"
+   },
+   "side_basis": "미국의 구인·해고 자료에서도 노출 직종에 뚜렷한 반응이 없다. 근로자는 2년 안에 일자리를 잃을 확률을 20% 로 보는데 자료는 그렇게 움직이지 않았다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Hartley, Jolevski, Melo, Moore (NBER conference paper) — The Labor Market Effects of Generative Artificial Intelligence and Job Loss Fears",
+     "url": "https://conference.nber.org/conf_papers/f241790.pdf",
+     "date": "2026-07-21",
+     "read": "partial"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "med",
+   "note": "2025년 말 미국 근로자의 사용률은 30%대 중후반이라고 초록이 적었다."
+  },
+  {
+   "id": "nordic-register-replications",
+   "country": "ZZ",
+   "city": null,
+   "metric": "젊은 층 고용 격차의 재현(핀란드·노르웨이 행정 자료)",
+   "value": null,
+   "unit": "효과",
+   "asof": "2026-06",
+   "basis": "핀란드 ETLA 와 노르웨이 연구 — 전수 행정 자료로는 AI 노출 직종의 젊은 층 고용·임금에 체계적인 대체 효과가 없다",
+   "definition": "미국 급여 자료로 본 '젊은 층 고노출 직종 고용 격차'(K4 의 us-young-exposed-employment-gap)를 전수 행정 자료로 다시 본 연구 둘이다.",
+   "detail": {
+    "norway_employment_growth_pct": {
+     "most_exposed": 0.1,
+     "least_exposed": 0.3
+    }
+   },
+   "links": [
+    "counter"
+   ],
+   "sides": {
+    "H1": "반박"
+   },
+   "side_basis": "미국에서 19% 로 벌어진 격차가 핀란드와 노르웨이의 전수 자료에서는 보이지 않는다. 미국의 결과가 표본(한 급여 대행사의 고객)이나 미국 고유의 사정에서 나왔을 수 있다는 쪽이다.",
+   "refs": [
+    {
+     "bundle": "K4",
+     "id": "us-young-exposed-employment-gap"
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "ETLA Economic Research, Working Papers No 135 (Kauhanen & Rouvinen) — AI Has Not Impacted the Youth Labor Market in Finland",
+     "url": "https://www.etla.fi/wp-content/uploads/ETLA-Working-Papers-135.pdf",
+     "date": "2026-01-27",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "ETLA Economic Research, Working Papers No 135 — related: Norway (IZA DP 18767, June 2026), employment growth since Oct 2022",
+     "url": "https://docs.iza.org/dp18767.pdf",
+     "date": null,
+     "read": "partial"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "high",
+   "note": "노르웨이는 2022-10 뒤 고용이 가장 노출된 직종에서 +0.1%, 가장 덜 노출된 직종에서 +0.3% 이고 젊은 층 최상위 노출 분위의 효과는 '부정확한 0'이라고 적었다."
+  },
+  {
+   "id": "noy-zhang-writing-experiment",
+   "country": "ZZ",
+   "city": null,
+   "metric": "ChatGPT 사용 시 글쓰기 과제의 시간 변화(실험)",
+   "value": -40,
+   "unit": "%(작업 시간 변화)",
+   "asof": "2023-07",
+   "basis": "Noy·Zhang — 대졸 전문직 453명의 직무별 글쓰기 과제 무작위 실험, ChatGPT 를 준 집단의 작업 시간 변화",
+   "definition": "20~30분짜리 글쓰기 과제를 평가자가 채점한 온라인 실험이다. 2023년 초의 모델이다.",
+   "detail": {
+    "participants": 453,
+    "quality_change_pct": 18
+   },
+   "links": [
+    "spread"
+   ],
+   "sides": {
+    "H1": "지지"
+   },
+   "side_basis": "코딩 밖의 글쓰기에서 무작위 실험으로 확인된 효과다. 시간이 40% 줄고 품질이 18% 올랐다. 다만 짧은 과제이고 실제 직무의 납품물이 아니다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Science 381(6654), 2023; MIT working paper March 2023 — Experimental evidence on the productivity effects of generative artificial intelligence",
+     "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:37440646&resultType=core&format=json",
+     "date": "2023-07-13",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "앞선 판(444명)은 27분 가운데 10분(37%)이 줄었다고 적었다."
+  },
+  {
+   "id": "dellacqua-bcg-consultants",
+   "country": "ZZ",
+   "city": null,
+   "metric": "GPT-4 사용 시 컨설턴트의 과제 완료 변화(실험)",
+   "value": 12.2,
+   "unit": "%(완료한 과제 수 증가, AI 가 잘하는 과제)",
+   "asof": "2023-09",
+   "basis": "Dell'Acqua 외 — BCG 컨설턴트 758명 무작위 실험, AI 가 잘하는 범위 안의 과제에서 완료한 과제 수의 변화",
+   "definition": "과제 18개는 AI 가 잘하는 범위 안, 1개는 밖에서 골랐다. 공저자 셋이 BCG 소속이다. 2023년의 모델이다.",
+   "detail": {
+    "consultants": 758,
+    "speed_pct": 25.1,
+    "quality_pct": "40 초과",
+    "below_average_pct": 43,
+    "above_average_pct": 17,
+    "outside_frontier_correctness_pp": -19
+   },
+   "links": [
+    "spread",
+    "counter"
+   ],
+   "sides": {
+    "H1": "양쪽"
+   },
+   "side_basis": "범위 안에서는 과제를 12.2% 더, 25.1% 빨리, 품질은 40% 넘게 높게 해냈다. 범위 밖 과제에서는 정답률이 19%포인트 떨어졌다(대조군 84.5% 대 사용군 60~70%). 전문직에서 효과가 크다는 근거이면서 맡길 일을 잘못 고르면 해롭다는 근거다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Harvard Business School Working Paper 24-013 (2023); published in Organization Science, March 2026 (DOI 10.1287/orsc.2025.21838, per Crossref metadata) — Naviga",
+     "url": "https://mitsloan.mit.edu/sites/default/files/2023-10/SSRN-id4573321.pdf",
+     "date": "2023-09",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "평균 아래 컨설턴트는 43%, 평균 위는 17% 올랐다. 범위 밖 결과는 과제 하나에서 나왔다."
+  },
+  {
+   "id": "bick-blandin-deming-productivity",
+   "country": "US",
+   "city": null,
+   "metric": "설문의 시간 절감에서 계산한 노동생산성 이득(미국)",
+   "value": 1.1,
+   "unit": "%(함의된 노동생산성 이득)",
+   "asof": "2024-11",
+   "basis": "Bick·Blandin·Deming — 전체 근로시간의 1.4% 를 아꼈다는 설문 값에 임금 가중과 노동분배율 0.57 을 넣어 낸 생산성 이득",
+   "definition": "전국 대표 온라인 설문의 자기 보고 시간 절감에서 계산한 값이고 실제로 잰 산출이 아니다. 임금 가중만 하면 1.9% 다.",
+   "detail": {
+    "time_savings_all_work_hours_pct": {
+     "2024-11": 1.4,
+     "2026-02": 2.3
+    },
+    "europe_2026_pct": "1.0 ~ 1.8",
+    "hours_saved_per_user_per_week": 2.2,
+    "wage_weighted_gain_pct": 1.9,
+    "labor_share": 0.57
+   },
+   "links": [
+    "penetration",
+    "counter"
+   ],
+   "sides": {
+    "H1": "양쪽"
+   },
+   "side_basis": "쓰는 사람은 주에 2.2시간을 아끼지만 전체 근로시간으로는 1.4% 이고 생산성으로는 1.1% 다. 쓸모는 있으나 아직 거시 통계를 움직일 크기가 아니다. 2026년 초에는 미국 2.3%, 유럽 1.0~1.8% 로 올랐다.",
+   "refs": [
+    {
+     "bundle": "K2",
+     "id": "us-genai-time-savings"
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "NBER Working Paper 32966 / St. Louis Fed WP 2024-027 (Management Science 2026 per authors' site); NBER Working Paper 34995 / St. Louis Fed WP 2026-003 (BPEA Spr",
+     "url": "https://www.nber.org/system/files/working_papers/w32966/w32966.pdf",
+     "date": "2024-09",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "저자들은 회사가 모르는 비공식 사용이 많아 통계에 잡히지 않을 수 있다고 적었다. 2026년 값은 같은 저자들의 NBER 34995 에서 읽었다. 분기별 시간 절감 계열은 K2 의 us-genai-time-savings 에 있다."
+  },
+  {
+   "id": "bis-wp1325-firm-productivity",
+   "country": "ZZ",
+   "city": null,
+   "metric": "AI 도입 기업의 노동생산성 차이(유럽·미국)",
+   "value": 4,
+   "unit": "%(노동생산성 수준)",
+   "asof": "2026-01",
+   "basis": "BIS 워킹페이퍼 1325 — 유럽·미국 비금융 기업 12,000곳 넘는 자료에서 AI 도입이 노동생산성 수준에 준 효과(도구변수 추정)",
+   "definition": "기업 설문과 재무 자료를 이은 추정이다. AI 의 정의가 넓고 초록만 읽었다.",
+   "detail": {
+    "firms": "12,000 초과"
+   },
+   "links": [
+    "spread",
+    "counter"
+   ],
+   "sides": {
+    "H1": "지지"
+   },
+   "side_basis": "기업 자료로 인과를 추정한 연구에서 도입 기업의 노동생산성이 4% 높고 고용에 나쁜 영향이 없다. 효과가 있다는 쪽의 가장 넓은 기업 표본이다. 효과는 중대형 기업에 몰려 있다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "BIS Working Papers No 1325 (Aldasoro, Gambacorta, Pal, Revoltella, Weiss, Wolski); also EIB Working Paper 2026/02 — AI adoption, productivity and employment: ev",
+     "url": "https://www.bis.org/publ/work1325.htm",
+     "date": "2026-01-23",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "생성형 AI 만이 아니라 넓은 뜻의 AI 도입이다."
+  },
+  {
+   "id": "cfo-survey-perceived-vs-measured",
+   "country": "US",
+   "city": null,
+   "metric": "임원이 느낀 AI 의 노동생산성 이득(미국 재무 임원)",
+   "value": 1.8,
+   "unit": "%(2025년, 평균)",
+   "asof": "2026-03",
+   "basis": "NBER 34984 — 미국 재무 임원 약 750명이 답한 2025년 AI 의 노동생산성 이득",
+   "definition": "임원의 자기 평가다. 회사의 중앙값은 매출 4,600만 달러, 직원 118명이다.",
+   "detail": {
+    "expected_2026_pct": 3,
+    "revenue_based_pct": "0.4 ~ 0.8",
+    "executives": 750
+   },
+   "links": [
+    "counter"
+   ],
+   "sides": {
+    "H1": "양쪽"
+   },
+   "side_basis": "임원은 1.8% 올랐다고 느끼지만(2026년 기대 3.0%) 매출에서 거꾸로 계산한 값은 0.4~0.8% 다. 저자들이 느낀 값이 잰 값보다 크다고 직접 적었다. 효과가 있다는 답을 그대로 믿을 수 없다는 근거다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "NBER Working Paper 34984 (Baslandze, Edwards, Graham, McClure, Meyer, Sparks, Waddell, Weitz); Duke / Atlanta Fed / Richmond Fed CFO Survey — Artificial Intelli",
+     "url": "https://www.nber.org/papers/w34984",
+     "date": "2026-03",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "2026년 고용에 대한 기대 효과는 −0.4% 미만이다."
+  },
+  {
+   "id": "mind-the-gap-industry-productivity",
+   "country": "US",
+   "city": null,
+   "metric": "AI 도입률이 높은 산업의 생산성 증가 차이(미국)",
+   "value": 3.7,
+   "unit": "%p(도입률 10%p 당 2019~2025 누적 생산성 증가 차이)",
+   "asof": "2025-09",
+   "basis": "Bick·Blandin·Deming 외 'Mind the Gap' — 근로자의 AI 도입률이 10%포인트 높은 산업의 누적 노동생산성 증가 차이, 미국 2019~2025",
+   "definition": "산업 단위의 상관이고 저자들이 인과가 아니라고 밝혔다. 2022~2025 로 좁히면 2.9%포인트, 유럽은 2~5%포인트다.",
+   "detail": {
+    "us_2022_2025_pp": 2.9,
+    "europe_pp": "2 ~ 5"
+   },
+   "links": [
+    "spread",
+    "counter"
+   ],
+   "sides": {
+    "H1": "양쪽"
+   },
+   "side_basis": "많이 쓰는 산업이 생산성도 더 올랐다. 거시 통계에 보이기 시작했다는 쪽이다. 그러나 2019년부터의 값이라 AI 가 퍼지기 전부터 빨리 크던 산업이 AI 도 먼저 받아들였을 수 있다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "NBER Working Paper 34995 (Bick, Blandin, Deming, Fuchs-Schuendeln, Jessen); Brookings Papers on Economic Activity, Spring 2026 — Mind the Gap: AI Adoption in Eu",
+     "url": "https://www.nber.org/papers/w34995",
+     "date": "2026-03",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "고용과는 뚜렷한 관계가 없다고 적었다."
+  },
+  {
+   "id": "productivity-j-curve",
+   "country": "US",
+   "city": null,
+   "metric": "무형자산 때문에 낮게 잡힌 총요소생산성(미국)",
+   "value": 15.9,
+   "unit": "%(조정한 수준이 공식 값보다 높은 정도, 2017년 말)",
+   "asof": "2017-12",
+   "basis": "Brynjolfsson·Rock·Syverson 'The Productivity J-Curve' — 무형 투자를 넣어 조정한 총요소생산성 수준과 공식 값의 차이",
+   "definition": "새 범용 기술에 딸린 무형 투자(조직 개편, 교육)가 통계에 잡히지 않아 처음에는 생산성이 낮게, 나중에는 높게 재진다는 계산이다. 2004년 말에는 11.3% 였다.",
+   "detail": {
+    "end_2004_pct": 11.3
+   },
+   "links": [
+    "counter"
+   ],
+   "sides": {
+    "H1": "중립"
+   },
+   "side_basis": "효과가 통계에 안 잡히는 까닭을 설명하는 선례이고 AI 가 효과를 낸다는 증거는 아니다. 수십 년 쌓인 수준 차이이지 한 해의 오차가 아니다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "American Economic Journal: Macroeconomics 13(1): 333-72 (January 2021); NBER Working Paper 25148 — The Productivity J-Curve: How Intangibles Complement General ",
+     "url": "https://www.aeaweb.org/articles?id=10.1257/mac.20180386",
+     "date": "2021-01",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "논문은 AI 와 관련된 효과가 당시에는 작지만 커지고 있다고 적었다. 초록만 읽었다."
+  },
+  {
+   "id": "electrification-lag",
+   "country": "US",
+   "city": null,
+   "metric": "전기가 공장 동력의 절반이 되기까지 걸린 시간(미국)",
+   "value": 5,
+   "unit": "%(1899년 공장 기계 동력 가운데 전기의 비중, '미만')",
+   "asof": "1899",
+   "basis": "Paul David 'The Dynamo and the Computer' — 1899년 미국 공장의 기계 동력에서 전동기가 차지한 비중",
+   "definition": "절반에 이르는 데 대략 20년이 더 걸렸고 첫 중앙 발전소가 문을 연 지 40년 뒤였다. 1919년의 정확한 비율은 이 논문에 없다.",
+   "detail": {
+    "decades_to_half": 2,
+    "decades_since_first_central_station": 4,
+    "tfp_acceleration_1919_29_pp": 5
+   },
+   "links": [
+    "counter"
+   ],
+   "sides": {
+    "H1": "중립"
+   },
+   "side_basis": "쓸모가 분명한 범용 기술도 생산성 통계에 나타나기까지 수십 년이 걸렸다는 선례다. 제조업 총요소생산성 증가율은 1919~29년에 그 앞 10년보다 5%포인트 높았고 그 절반쯤이 전동기 보급으로 설명된다. AI 가 같은 길을 간다는 증거는 아니다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "American Economic Review, Papers and Proceedings 80(2), May 1990, pp. 355-361 (Paul A. David) — The Dynamo and the Computer: An Historical Perspective on the Mo",
+     "url": "https://gwern.net/doc/economics/automation/1990-david.pdf",
+     "date": "1990-05",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "제3자가 올린 스캔본에서 읽었다."
   }
  ]
 }

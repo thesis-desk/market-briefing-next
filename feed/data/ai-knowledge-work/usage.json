@@ -2,7 +2,7 @@
  "schema": 1,
  "bundle": "K2",
  "title": "사용 — 사람·기업·업무시간과 쓰임의 분포",
- "updated_kst": "2026-11-19T12:21:39+09:00",
+ "updated_kst": "2026-11-19T14:06:55+09:00",
  "measure": null,
  "notes": [
   "누가 얼마나 쓰는가다. 조사마다 문항과 표본이 달라 값끼리 더하거나 잇지 않는다.",
@@ -11,13 +11,13 @@
   "직업별 계열은 표본이 작아 분기 값이 출렁인다. 방향은 처음 두 분기와 마지막 두 분기의 평균을 견줘 정하고(30% 이상 오르면 지지, 10% 이상 내리면 반박) 그 계산을 기록의 detail 에 둔다."
  ],
  "summary": {
-  "records": 23,
-  "with_value": 21,
-  "with_series": 18,
+  "records": 24,
+  "with_value": 22,
+  "with_series": 20,
   "by_hypothesis": {
    "H1": {
     "지지": 10,
-    "반박": 2,
+    "반박": 3,
     "양쪽": 10,
     "중립": 1
    }
@@ -25,13 +25,13 @@
   "by_link": {
    "coding": {
     "지지": 2,
-    "반박": 0,
+    "반박": 1,
     "양쪽": 1,
     "중립": 1
    },
    "spread": {
     "지지": 7,
-    "반박": 2,
+    "반박": 3,
     "양쪽": 6,
     "중립": 0
    },
@@ -339,10 +339,107 @@
    "sides": {
     "H1": "양쪽"
    },
-   "side_basis": "가장 큰 쓰임이 여전히 코딩이지만 대화의 3분의 2는 코딩 밖이다. 다만 대화 수이지 지출이 아니고, 코딩이 API(Claude Code)로 옮겨 가는 중이라 이 비중만으로 확산을 말할 수 없다.",
+   "side_basis": "소비자용 화면에서 코딩 과제의 몫이 정점 40% 에서 34~35% 로 내렸고 쓰임이 여러 과제로 넓어졌다. 번진다는 쪽이다. 그러나 보고서는 코딩이 API 로 옮겨 간 것을 한 까닭으로 들었고 API 에서는 코딩의 몫이 올랐다(claude-api-coding-share).",
    "sources": [
     {
      "n": 1,
+     "title": "Anthropic — Economic Index report: Learning curves (2026-03)",
+     "url": "https://www.anthropic.com/research/economic-index-march-2026-report",
+     "date": "2026-03",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "Anthropic — Economic Index report: Economic primitives (2026-01)",
+     "url": "https://www.anthropic.com/research/anthropic-economic-index-january-2026-report",
+     "date": "2026-01",
+     "read": "partial"
+    },
+    {
+     "n": 3,
+     "title": "Anthropic — Economic Index report (2025-09)",
+     "url": "https://www.anthropic.com/research/anthropic-economic-index-september-2025-report",
+     "date": "2025-09",
+     "read": "partial"
+    },
+    {
+     "n": 4,
+     "title": "Anthropic — Economic Index report: Cadences (2026-06)",
+     "url": "https://www.anthropic.com/research/economic-index-june-2026-report",
+     "date": "2026-06",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "한 회사의 한 제품(소비자용 화면) 표본이다. 2026-03 보고서는 2025-08 뒤로 이 범주의 과제 비중이 Claude.ai 에서 18% 줄고 API 에서 14% 늘었다고도 적었는데, 대화 비중(36% → 35%)과 맞지 않아 기준이 다른 값으로 보인다(확인하지 못했다). 2026-06 보고서는 수치 없이 Claude 쓰임에서 이 직업군이 '약 30%'라고만 적었다.",
+   "series": [
+    {
+     "period": "2025-03",
+     "value": 40,
+     "src": 2,
+     "note": "보고서가 '정점'이라고 적은 값"
+    },
+    {
+     "period": "2025-08",
+     "value": 36,
+     "src": 3
+    },
+    {
+     "period": "2025-11",
+     "value": 34,
+     "src": 2
+    },
+    {
+     "period": "2026-02",
+     "value": 35,
+     "src": 1
+    }
+   ]
+  },
+  {
+   "id": "claude-api-coding-share",
+   "country": "ZZ",
+   "city": null,
+   "metric": "Claude API 쓰임 가운데 컴퓨터·수학 직업군 과제의 비중",
+   "value": 46,
+   "unit": "%",
+   "asof": "2025-11",
+   "basis": "Anthropic 의 직접 판매 API 표본 가운데 컴퓨터·수학 직업군 과제의 비중(2025-11 표본)",
+   "definition": "API 로 오간 기록을 O*NET 과제로 분류한 값이다. 건수 기준이라 토큰·금액 비중과 다르고, Claude Code 는 한 작업을 여러 호출로 나눠 건수가 부풀 수 있다.",
+   "series": [
+    {
+     "period": "2025-08",
+     "value": 44,
+     "src": 1
+    },
+    {
+     "period": "2025-11",
+     "value": 46,
+     "src": 1
+    }
+   ],
+   "links": [
+    "coding",
+    "spread"
+   ],
+   "sides": {
+    "H1": "반박"
+   },
+   "side_basis": "돈을 내고 쓰는 쪽(API)에서는 코딩의 몫이 44% 에서 46% 로 올랐고 그 뒤로도 올랐다고 보고서가 적었다. 매출의 약 8할이 사용량 과금이므로, 금액으로 보면 쓰임이 코딩 밖으로 옮겨 가지 않았다는 쪽이다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Anthropic — Economic Index report: Economic primitives (2026-01)",
+     "url": "https://www.anthropic.com/research/anthropic-economic-index-january-2026-report",
+     "date": "2026-01",
+     "read": "partial"
+    },
+    {
+     "n": 2,
      "title": "Anthropic — Economic Index report: Learning curves (2026-03)",
      "url": "https://www.anthropic.com/research/economic-index-march-2026-report",
      "date": "2026-03",
@@ -353,8 +450,8 @@
     1
    ],
    "alt": [],
-   "conf": "high",
-   "note": "한 회사의 한 제품(소비자용 화면) 표본이다. API 쪽에서는 Claude Code 가 표본의 큰 몫이라고 보고서가 적었다."
+   "conf": "med",
+   "note": "2026-03 보고서는 2025-08 뒤로 API 에서 이 범주의 과제 비중이 14% 늘었다고 적었다(곱하면 약 50% 이지만 보고서가 밝힌 값은 아니다). 같은 보고서에서 API 의 상위 10개 과제 비중은 28%(2025-08) → 32%(2025-11) → 33%(2026-02, 검색 요약)로 올랐다."
   },
   {
    "id": "claude-ai-top10-task-share",
