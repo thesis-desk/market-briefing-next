@@ -2,7 +2,7 @@
  "schema": 1,
  "bundle": "K3",
  "title": "지출과 매출 — 랩·도구·고객",
- "updated_kst": "2026-11-19T14:07:46+09:00",
+ "updated_kst": "2026-11-19T16:15:09+09:00",
  "measure": null,
  "notes": [
   "실제로 나간 돈이다. 회계 매출(감사 여부)과 회사 정의 지표(연환산 매출, 순매출유지율)를 basis·definition 에서 가른다.",
@@ -3028,7 +3028,7 @@
    "unit": "배(최근 1년 안팎의 연율 배수)",
    "asof": "2026-10",
    "basis": "계산: 코딩 밖 제품 지표 22개의 최근 1년 안팎 연율 배수를 Anthropic 9개월 매출의 전년 대비 배수(13.06배)와 견준다. 기준선은 증가율의 절반(7.03배)이고 넘는 것은 0개다",
-   "definition": "지표마다 가장 최근 점과, 그보다 0.4~1.35년 앞선 점 가운데 1년에 가장 가까운 점을 골라 연율 배수를 낸다. 그런 점이 없는 지표는 견주지 않고 excluded 에 적는다. 지표의 단위(연환산 매출, 좌석, 계약액, 비중)가 서로 다르고 회사 정의 값이라 배수의 크기만 견준다. Five9 와 Agentforce 는 회사가 말한 전년 대비 증가율을 쓴다(stated). 랩은 매출을 공시한 Anthropic 하나다.",
+   "definition": "지표마다 가장 최근 점과, 그보다 0.4~1.35년 앞선 점 가운데 1년에 가장 가까운 점을 골라 연율 배수를 낸다. 그런 점이 없는 지표는 견주지 않고 excluded 에 적는다. 지표의 단위(연환산 매출, 좌석, 계약액, 비중)가 서로 다르고 회사 정의 값이라 배수의 크기만 견준다. Five9 와 Agentforce 는 회사가 말한 전년 대비 증가율을 쓴다(stated). 랩은 매출을 공시한 Anthropic 하나다. 견준 두 점이 회사 발표가 아니거나, 범위·구간이 다르거나, '초과'·'근접'으로만 밝힌 값이면 지표마다 caveat 에 적는다.",
    "detail": {
     "above_threshold_count": 0,
     "compared": 22,
@@ -3058,7 +3058,8 @@
       "window_ok": true,
       "points": 6,
       "rises": 5,
-      "falls": 0
+      "falls": 0,
+      "caveat": "두 값 모두 회사가 언론에 밝힌 값"
      },
      "arr-legora": {
       "from": "2025-12",
@@ -3069,7 +3070,8 @@
       "window_ok": true,
       "points": 4,
       "rises": 3,
-      "falls": 0
+      "falls": 0,
+      "caveat": "시작 값은 정리 사이트 추정, 끝 값은 '초과'"
      },
      "arr-sierra": {
       "from": "2025-11-21",
@@ -3080,7 +3082,8 @@
       "window_ok": true,
       "points": 5,
       "rises": 4,
-      "falls": 0
+      "falls": 0,
+      "caveat": "두 값 모두 회사 발표, 끝 값은 '초과'"
      },
      "arr-decagon": {
       "from": "2025-12",
@@ -3091,7 +3094,8 @@
       "window_ok": true,
       "points": 3,
       "rises": 2,
-      "falls": 0
+      "falls": 0,
+      "caveat": "시작 값은 정리 사이트 추정"
      },
      "arr-openevidence": {
       "from": "2025-07",
@@ -3102,7 +3106,8 @@
       "window_ok": true,
       "points": 4,
       "rises": 3,
-      "falls": 0
+      "falls": 0,
+      "caveat": "두 값 모두 익명 출처 보도"
      },
      "arr-glean": {
       "from": "2025-01",
@@ -3113,7 +3118,8 @@
       "window_ok": true,
       "points": 3,
       "rises": 2,
-      "falls": 0
+      "falls": 0,
+      "caveat": "두 값 모두 회사 발표"
      },
      "arr-hebbia": {
       "from": "2025-12",
@@ -3124,7 +3130,8 @@
       "window_ok": true,
       "points": 4,
       "rises": 3,
-      "falls": 0
+      "falls": 0,
+      "caveat": "두 값 모두 정리 사이트 추정"
      },
      "arr-rogo": {
       "from": "2025-12",
@@ -3135,7 +3142,8 @@
       "window_ok": true,
       "points": 2,
       "rises": 1,
-      "falls": 0
+      "falls": 0,
+      "caveat": "두 값 모두 익명 출처 보도, 끝 값은 '초과'"
      },
      "msft-m365-copilot-paid-seats": {
       "from": "2025-12-31",
@@ -3146,7 +3154,8 @@
       "window_ok": true,
       "points": 3,
       "rises": 2,
-      "falls": 0
+      "falls": 0,
+      "caveat": "여섯 달 구간, 끝 값은 '초과'"
      },
      "salesforce-agentforce-arr": {
       "from": "2025-07-31",
@@ -3158,7 +3167,8 @@
       "stated": "회사가 말한 전년 대비 증가율(+240% 초과). 계열의 첫 점은 정의가 다른 주문액이라 쓰지 않는다",
       "points": 5,
       "rises": 4,
-      "falls": 0
+      "falls": 0,
+      "caveat": "회사가 말한 증가율('+240% 초과'), 마지막 분기에 정의 확대"
      },
      "servicenow-ai-acv": {
       "from": "2025-12-31",
@@ -3169,7 +3179,8 @@
       "window_ok": true,
       "points": 2,
       "rises": 1,
-      "falls": 0
+      "falls": 0,
+      "caveat": "여섯 달 구간, 시작 값은 '초과', 지표 이름이 바뀌고 인수한 Moveworks 포함"
      },
      "workday-ai-arr": {
       "from": "2026-01-31",
@@ -3180,7 +3191,8 @@
       "window_ok": true,
       "points": 3,
       "rises": 2,
-      "falls": 0
+      "falls": 0,
+      "caveat": "여섯 달 구간, '초과'·'근접' 값, 인수한 회사 포함"
      },
      "sap-cloud-deals-with-ai-share": {
       "from": "2024-12-31",
@@ -3191,7 +3203,8 @@
       "window_ok": true,
       "points": 3,
       "rises": 1,
-      "falls": 0
+      "falls": 0,
+      "caveat": "'절반'·'3분의 2'를 숫자로 읽음"
      },
      "menlo-vertical-ai-spend": {
       "from": "2024",
@@ -3202,7 +3215,8 @@
       "window_ok": true,
       "points": 2,
       "rises": 1,
-      "falls": 0
+      "falls": 0,
+      "caveat": "설문과 모형의 추정"
      },
      "palantir-us-commercial-revenue": {
       "from": "2025-09-30",
@@ -3213,7 +3227,8 @@
       "window_ok": true,
       "points": 9,
       "rises": 8,
-      "falls": 0
+      "falls": 0,
+      "caveat": "AI 제품만의 매출이 아님"
      },
      "adobe-ai-first-arr": {
       "from": "2025-08-29",
@@ -3224,7 +3239,8 @@
       "window_ok": true,
       "points": 2,
       "rises": 1,
-      "falls": 0
+      "falls": 0,
+      "caveat": "두 값 모두 '초과', 끝 값은 검색 요약으로만 확인"
      },
      "tri-genai-acv-share": {
       "from": "2025-09-30",
@@ -3235,7 +3251,8 @@
       "window_ok": true,
       "points": 7,
       "rises": 6,
-      "falls": 0
+      "falls": 0,
+      "caveat": "AI 가 든 제품의 계약액 비중, 끝 값은 2차 보도"
      },
      "five9-ai-revenue-share": {
       "from": "2025-09-30",
@@ -3247,7 +3264,8 @@
       "stated": "비중이 아니라 AI 매출의 전년 대비 증가율(+91%)",
       "points": 2,
       "rises": 1,
-      "falls": 0
+      "falls": 0,
+      "caveat": "회사가 말한 증가율"
      },
      "accenture-genai-bookings": {
       "from": "2024-11-30",
@@ -3258,7 +3276,8 @@
       "window_ok": true,
       "points": 8,
       "rises": 7,
-      "falls": 0
+      "falls": 0,
+      "caveat": "수주액, 끝 분기에 이름과 범위가 바뀜"
      },
      "capgemini-genai-bookings-share": {
       "from": "2025-03-31",
@@ -3269,7 +3288,8 @@
       "window_ok": true,
       "points": 6,
       "rises": 5,
-      "falls": 0
+      "falls": 0,
+      "caveat": "두 값 모두 '초과'"
      },
      "genpact-ats-revenue": {
       "from": "2025-09-30",
@@ -3280,7 +3300,8 @@
       "window_ok": true,
       "points": 6,
       "rises": 5,
-      "falls": 0
+      "falls": 0,
+      "caveat": "데이터·분석 용역이 함께 든 부문"
      },
      "hcltech-advanced-ai-revenue": {
       "from": "2025-09-30",
@@ -3291,7 +3312,8 @@
       "window_ok": true,
       "points": 5,
       "rises": 4,
-      "falls": 0
+      "falls": 0,
+      "caveat": "시작 값이 '초과'라 배수는 상한"
      }
     },
     "excluded": {
@@ -3327,7 +3349,8 @@
       "years": 1.06,
       "multiple": 8,
       "annualized": 7.12,
-      "window_ok": true
+      "window_ok": true,
+      "caveat": "시작 값은 '초과', 끝 값은 정리 사이트 추정"
      },
      "arr-cognition": {
       "from": "2025-06",
@@ -3335,7 +3358,8 @@
       "years": 1.24,
       "multiple": 13.7,
       "annualized": 8.21,
-      "window_ok": true
+      "window_ok": true,
+      "caveat": "시작은 Devin 만, 끝은 인수한 Windsurf 포함"
      },
      "arr-lovable": {
       "from": "2025-07",
@@ -3343,7 +3367,8 @@
       "years": 1.16,
       "multiple": 6,
       "annualized": 4.7,
-      "window_ok": true
+      "window_ok": true,
+      "caveat": "두 값 모두 회사가 언론에 밝힌 값"
      },
      "arr-claude-code": {
       "from": "2025-09-02",
@@ -3351,7 +3376,8 @@
       "years": 0.45,
       "multiple": 5,
       "annualized": 36.83,
-      "window_ok": true
+      "window_ok": true,
+      "caveat": "다섯 달 구간(5배)을 연율로 편 값, 두 값 모두 '초과'"
      }
     },
     "occupation_hours_assisted": {
@@ -3378,7 +3404,7 @@
    "sides": {
     "H1": "양쪽"
    },
-   "side_basis": "코딩 밖 제품 지표 26개는 관측된 구간에서 한 번도 내리지 않았고, 견줄 수 있는 22개의 연율 배수는 중앙값이 2.54배다. 번지고 있다는 쪽이다. 그러나 랩 매출 증가율의 절반(7.03배)을 넘는 것은 0개이고 코딩 도구는 그보다 빠르다. 지출의 무게가 코딩 밖으로 옮겨 가고 있지는 않다는 쪽이다.",
+   "side_basis": "코딩 밖 제품 지표 26개는 관측된 구간에서 한 번도 내리지 않았고, 견줄 수 있는 22개의 연율 배수는 중앙값이 2.54배다. 번지고 있다는 쪽이다. 그러나 랩 매출 증가율의 절반(7.03배)을 넘는 것은 0개이고, 코딩 도구는 4개 가운데 3개(Cursor, Cognition, Claude Code)가 넘는다(못 넘는 것: Lovable 4.7배). 다만 넘은 쪽도 Cursor 의 끝 값은 추정이고 Cognition 은 인수로 범위가 넓어졌으며 Claude Code 는 다섯 달 구간이다. 지출의 무게가 코딩 밖으로 옮겨 가고 있지는 않다는 쪽이지만 직능별 지출 비중을 직접 잰 값은 아니다.",
    "refs": [
     {
      "bundle": "K3",
