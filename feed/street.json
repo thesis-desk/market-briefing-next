@@ -1,20 +1,20 @@
 {
  "schema": 1,
- "updated_kst": "2026-11-19T20:33:51+09:00",
+ "updated_kst": "2026-11-19T23:21:58+09:00",
  "window_days": 14,
  "items_days": 30,
  "index": {
   "ai_tech": {
-   "value": 2,
+   "value": 3,
    "label": "엇갈림",
    "orgs": 41,
-   "items": 140
+   "items": 144
   },
   "market": {
-   "value": -12,
+   "value": -10,
    "label": "엇갈림",
-   "orgs": 30,
-   "items": 89
+   "orgs": 31,
+   "items": 92
   },
   "by_group": [
    {
@@ -26,14 +26,14 @@
    },
    {
     "group": "PE·대체투자",
-    "ai_tech": 6,
+    "ai_tech": 9,
     "ai_tech_orgs": 8,
-    "market": 0,
-    "market_orgs": 4
+    "market": 10,
+    "market_orgs": 5
    },
    {
     "group": "자산운용",
-    "ai_tech": -1,
+    "ai_tech": -3,
     "ai_tech_orgs": 7,
     "market": 1,
     "market_orgs": 7
@@ -98,10 +98,10 @@
    },
    {
     "week": "2026-11-16",
-    "ai_tech": 7,
+    "ai_tech": 8,
     "ai_tech_orgs": 21,
-    "market": -3,
-    "market_orgs": 14
+    "market": 0,
+    "market_orgs": 15
    }
   ],
   "args": {
@@ -146,11 +146,11 @@
    "optimism": [
     {
      "tag": "수요·채택",
-     "n": 45
+     "n": 46
     },
     {
      "tag": "투자 회수",
-     "n": 35
+     "n": 36
     },
     {
      "tag": "금리·거시",
@@ -158,7 +158,7 @@
     },
     {
      "tag": "자금 조달·신용",
-     "n": 21
+     "n": 22
     },
     {
      "tag": "정책·지정학",
@@ -174,7 +174,7 @@
     },
     {
      "tag": "쏠림",
-     "n": 12
+     "n": 13
     },
     {
      "tag": "경쟁·해자",
@@ -185,6 +185,106 @@
   "method": "기관·인물마다 기간 안 입장 값의 평균을 내고 그 평균들을 다시 평균해 ×50"
  },
  "items": [
+  {
+   "id": "ark-the-ai-shakeup-has-a-message-the-brainstorm-158",
+   "group": "자산운용",
+   "org": "ARK Invest",
+   "person": "Brett, Nick",
+   "kind": "publication",
+   "title": "AI 개편이 던지는 메시지 | The Brainstorm 158",
+   "title_orig": "The AI Shakeup Has A Message | The Brainstorm 158",
+   "url": "https://www.youtube.com/watch?v=hQccIpZp998",
+   "outlet": "ARK Invest (유튜브)",
+   "published_kst": "2026-11-19T22:30:07+09:00",
+   "stance": {
+    "ai_tech": 0,
+    "market": null
+   },
+   "args": [
+    "투자 회수",
+    "수요·채택",
+    "경쟁·해자",
+    "정책·지정학"
+   ],
+   "summary": "젠슨 황의 엔비디아 퇴진이 AI 투자 속도를 늦출 수 있다고 보며, 한 화자는 토큰 단가 하락이 총지출을 늘린다(제본스 역설)는 점에서 수요 확대를 자신한다. 다른 화자는 AI 지출이 매출 성장을 계속 앞설 수 없다며 향후 몇 분기의 조정 가능성을 경계한다. 두 사람은 수요 지속 여부를 두고 견해가 갈린다.",
+   "points": [
+    "젠슨 황이 빠지면 공격적인 AI 투자를 누가 메우느냐가 관건이며, 세미애널리시스는 설비투자 전망을 약 28% 낮췄다.",
+    "지능당 비용이 떨어질수록 총지출이 늘어나는 제본스 역설이 나타나 AI 수요가 커진다고 본다.",
+    "컴퓨트당 수익화가 개선되고 계획된 컴퓨트가 가동되면 2030년 AI 매출이 한 자릿수 후반 조 달러에 이를 수 있다고 전망한다.",
+    "AI 지출이 매출 성장을 계속 앞지를 수 없으므로 몇 분기 지나야 지불 의사를 확인할 수 있다고 경계한다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "유튜브 자동 생성 자막(en) 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
+  },
+  {
+   "id": "blackrock-portfolio-construction-key-investment-themes-to",
+   "group": "자산운용",
+   "org": "BlackRock",
+   "person": null,
+   "kind": "publication",
+   "title": "포트폴리오 구성: 2027년 주목할 핵심 투자 테마",
+   "title_orig": "Portfolio Construction: Key Investment Themes to Watch in 2027",
+   "url": "https://www.youtube.com/watch?v=AySufaw5a_U",
+   "outlet": "BlackRock (유튜브)",
+   "published_kst": "2026-11-19T22:00:38+09:00",
+   "stance": {
+    "ai_tech": 0,
+    "market": null
+   },
+   "args": [
+    "자금 조달·신용",
+    "금리·거시",
+    "경쟁·해자"
+   ],
+   "summary": "화자는 재정적자와 AI 인프라 구축 수요 때문에 2027년에도 높은 자본비용이 이어질 것으로 본다. 이에 따라 높은 비용을 감당할 수 있는 AI 빌더와 재무구조가 약한 기업 사이의 격차가 벌어지고, 소비자 부문에서도 비슷한 양극화가 나타날 것이라고 한다. 또한 AI를 도입해 효율과 매출을 끌어내는 업종별 승자가 새로운 주제로 부상할 것으로 본다.",
+   "points": [
+    "재정적자와 AI 구축 자금 수요 때문에 높은 자본비용이 2027년에도 지속될 것이라는 확신이 있다.",
+    "AI 빌더 사이에서 높은 자본비용을 감당하는 쪽과 재무구조가 약한 쪽의 분리가 커질 것이다.",
+    "소비자 부문에서도 계속 지출할 수 있는 계층과 압박받는 계층의 차별화가 나타나 소비자 대상 기업에 영향을 준다.",
+    "AI를 활용해 효율과 매출을 높이는 업종별 승자가 2027년에 새로운 테마로 부상할 것이다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "유튜브 자막(제작자 제공)(en) 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
+  },
+  {
+   "id": "ubs-ubs-on-air-paul-donovan-daily-audio-should-we-be",
+   "group": "투자은행",
+   "org": "UBS",
+   "person": "Paul Donovan",
+   "kind": "publication",
+   "title": "UBS On-Air: Paul Donovan 데일리 오디오 '연준을 걱정해야 할까?'",
+   "title_orig": "UBS On-Air: Paul Donovan Daily Audio 'Should we be worried by the Fed?'",
+   "url": "https://www.ubs.com/content/dam/podcasts/wma/261119-should-we-be-worried-by-the-fed.mp3",
+   "outlet": "UBS Paul Donovan Daily",
+   "published_kst": "2026-11-19T17:04:00+09:00",
+   "stance": {
+    "ai_tech": 0,
+    "market": -1
+   },
+   "args": [
+    "금리·거시",
+    "수요·채택",
+    "정책·지정학"
+   ],
+   "summary": "Donovan은 Fed 의사록이 임금은 물가 목표와 부합하지만 물가는 그렇지 않다고 본다는 점을 짚는다. 유가 충격과 AI 수요 충격 같은 Fed가 통제할 수 없는 요인을 잡으려 금리를 올리면 경기침체에 가까운 상황을 만들어야 할 위험이 있다고 경고한다. 정상적인 기본 시나리오는 아니지만 Fed발 침체 위험이 의사록에 명시됐다고 본다.",
+   "points": [
+    "의사록에 따르면 연준은 임금 상승률은 물가 목표와 부합하지만 물가 자체는 부합하지 않는다고 본다.",
+    "물가 압력의 확산 요인으로 AI 수요가 거론되었으나 금리 인상으로 다루기 어려운 성격이다.",
+    "연준이 외생 충격발 물가를 잡으려면 나머지 경제에 침체에 가까운 여건을 만들어야 한다.",
+    "연준발 침체가 중심 시나리오는 아니지만 의사록이 그 위험을 명시적으로 부각한다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "팟캐스트 음성을 음성 인식(Whisper)으로 받아 적은 전사 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
+  },
   {
    "id": "damodaran-the-rocky-road-from-aggregate-to-per-share-value",
    "group": "투자 거장",
@@ -248,6 +348,43 @@
     "Anthropic에 대한 관심은 투자설명서에 느슨하게 공개된 컴퓨트 약정에 쏠려 있지만, 자신의 가치평가는 그 약정이 시간이 지나며 어떤 모습이 될지에 대한 기대, 특히 자신의 성장 시나리오가 실현되는 경우에 좌우된다고 했다. 매출 1조 달러를 내려면 이미 확보한 컴퓨트를 유지·교체하는 데 그치지 않고 시간이 갈수록 더해야 하며, 지역 주민 반발과 정치인들이 반대가 표가 된다고 보면서 새 데이터센터 건설은 점점 어려워지고 있다고 경고했다.",
     "한마디로, 매출이 기대에 못 미치고 수익성으로 가는 길이 더 험해지면 Anthropic은 더 위험해진다고 했다. 이 경우 위험은 입력 변수라기보다 결과 변수에 가까워진다.",
     "Anthropic의 IPO에 신중한 태도를 유지하면서도, 불확실성은 무엇에 투자하든 투자의 속성이며 투자 간 차이는 불확실성을 마주하느냐가 아니라 얼마나 마주하느냐에 있다고 말했다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
+  },
+  {
+   "id": "apollo-insurance-capital-will-power-ai-buildout-says-ap",
+   "group": "PE·대체투자",
+   "org": "Apollo",
+   "person": null,
+   "kind": "report",
+   "title": "보험 자본이 AI 구축을 뒷받침할 것이라고 Apollo CEO가 말하다",
+   "title_orig": "Insurance capital will power AI buildout, says Apollo CEO",
+   "url": "https://www.royalgazette.com/reinsurance/business/article/20261119/insurance-capital-will-power-ai-buildout-says-apollo-ceo",
+   "outlet": "The Royal Gazette",
+   "published_kst": "2026-11-19T08:55:00+09:00",
+   "stance": {
+    "ai_tech": 1,
+    "market": 1
+   },
+   "args": [
+    "자금 조달·신용",
+    "투자 회수",
+    "쏠림",
+    "수요·채택"
+   ],
+   "summary": "Rowan은 보험·은퇴 자금이 최대 8조 달러에 이를 수 있는 AI 구축 자금 조달을 뒷받침할 것이라고 주장했다. AI 지출이 수익성 있는 대형 기술기업에 집중돼 있다고 보면서도, 네오클라우드는 높은 수익률을 주는 대신 안전성을 보장하지 못한다고 경고했다. 미국과 오스틴에 대해서는 매우 낙관적이라고 밝혔다.",
+   "points": [
+    "보험과 은퇴 자금이 최대 8조 달러의 자금 조달을 요구할 수 있는 AI 구축을 뒷받침할 것이다.",
+    "이처럼 쏟아지는 신규 채권 발행은 미국 자본시장을 지금까지 한 번도 시험받아 본 적 없는 방식으로 시험할 것이다.",
+    "보험 산업은 은행보다 더 강력한 힘이 될 것이다. 자산을 대차대조표 밖으로 내보내고 장기 자산을 만들어 내는 복잡한 프로젝트 파이낸싱을 원한다면 사모시장으로 와야 한다.",
+    "Apollo는 AI 인프라에 전례 없는 규모의 자본이 필요한 투자등급 기업들에 자금을 대고 있다. AI 지출의 상당 부분은 AI 외 사업에서 수익을 내는 소수의 대형 기술기업에 집중돼 있다.",
+    "3~4년 안에 채권시장은 10대 은행이 지배하는 시장에서, 상위 10대 발행자 중 6곳이 기술기업인 시장으로 바뀔 것이며, 이는 전에 본 적 없는 변혁이다.",
+    "칩을 사들여 임대하는 AI 신생기업인 네오클라우드는 위험이 커지고 있다. 이런 회사는 시가총액이 500억~600억 달러이면서 채권 수익률이 15%에 이를 만큼 매우 높을 수 있다. 그 정도 규모의 회사는 수익률은 줄 수 있어도 안전성까지 반드시 줄 수 있는 것은 아니다.",
+    "오스틴과 미국에 매우 강세 의견이다. 우리는 결국 해법을 찾아내며, 가끔 덜컹거리기도 하지만 성공에 필요한 도구는 모두 갖추고 있다."
    ],
    "judged": {
     "basis": "full_text",
@@ -436,6 +573,29 @@
     "tier": "standard"
    },
    "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
+  },
+  {
+   "id": "goldman-goldman-sachs-turns-overweight-on-indian-equitie",
+   "group": "투자은행",
+   "org": "Goldman Sachs",
+   "person": null,
+   "kind": "report",
+   "title": "골드만삭스, 인도 주식 '비중확대'로 상향…Nifty 50 28,500 전망",
+   "title_orig": "Goldman Sachs Turns ‘Overweight’ On Indian Equities, Sees Sharp Upside For Nifty 50",
+   "url": "https://www.outlookbusiness.com/markets/goldman-sachs-turns-overweight-on-indian-equities-sees-sharp-upside-for-nifty-50",
+   "outlet": "Outlook Business",
+   "published_kst": "2026-11-19T04:44:00+09:00",
+   "stance": {
+    "ai_tech": null,
+    "market": 2
+   },
+   "args": [
+    "밸류에이션"
+   ],
+   "judged": {
+    "basis": "headline_only",
+    "tier": "light"
+   }
   },
   {
    "id": "blackrock-ai-investing-what-s-driving-optimism-amid-market",

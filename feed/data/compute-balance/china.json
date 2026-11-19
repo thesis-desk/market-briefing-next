@@ -1,0 +1,284 @@
+{
+ "schema": 1,
+ "bundle": "S5",
+ "title": "중국과 우회 경로 — 직수입·동남아·밀반입 추정",
+ "updated_kst": "2026-11-19T23:11:48+09:00",
+ "measure": null,
+ "notes": [
+  "중국으로 가는 길을 셋으로 나눠 적는다: 허가받은 직접 판매, 세관에 잡힌 동남아 수입, 외부 기관이 추정한 밀반입.",
+  "세관 자료와 보유 추정은 Epoch AI 의 추정이고, 메가스피드의 구매액은 보도를 검색 요약으로만 본 값이다(conf low). 수사 중인 사안이라 혐의는 확정된 것이 아니다.",
+  "동남아 수입에는 미국 회사의 현지 데이터센터가 섞여 있어 '중국 경로'의 상한으로만 읽는다."
+ ],
+ "records": [
+  {
+   "id": "megaspeed-purchases-reported",
+   "country": "ZZ",
+   "city": null,
+   "metric": "메가스피드가 들인 엔비디아 기술 장비(보도)",
+   "value": 4.8,
+   "unit": "십억 달러",
+   "asof": "2026-02",
+   "basis": "보도: 2024년 6월~2026년 2월에 '최소 48억 달러'어치(뉴욕타임스가 무역 기록으로 집계한 값을 다른 매체가 옮긴 것)",
+   "company": "Megaspeed",
+   "kind": "flow",
+   "detail": {
+    "bound": "at_least",
+    "period": "2024-06~2026-02",
+    "months": 21,
+    "chips_up_to": 240000,
+    "value_up_to": 7.5,
+    "nvidia_stopped_selling": "2025-06",
+    "reported_renter": "Alibaba(보도)",
+    "status": "미국 상무부·법무부 형사 수사, 싱가포르 경찰 수사"
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "Evertiq — US confirms criminal export control investigation into Megaspeed",
+     "url": "https://evertiq.com/design/2026-11-17-us-confirms-criminal-export-control-investigation-into-megaspeed",
+     "date": "2026-11-17",
+     "read": "search_summary"
+    },
+    {
+     "n": 2,
+     "title": "Open — What Is Megaspeed? Seven Things to Know",
+     "url": "https://openthemagazine.com/business/quick-take-what-is-megaspeed-seven-things-to-know-about-the-nvidia-chip-buyer-in-a-48-billion-ai-hardware-trail",
+     "date": null,
+     "read": "search_summary"
+    },
+    {
+     "n": 3,
+     "title": "SCMP — US details criminal probe of Nvidia customer Megaspeed",
+     "url": "https://scmp.com/tech/tech-war/article/3374742/us-details-criminal-probe-nvidia-customer-megaspeed-over-potential-chip-diversion",
+     "date": null,
+     "read": "search_summary"
+    }
+   ],
+   "value_src": [
+    1,
+    2
+   ],
+   "alt": [],
+   "conf": "low",
+   "note": "원 보도를 열지 못했고 검색 요약으로만 봤다. 다른 매체는 말레이시아 자회사를 포함해 칩 최대 24만 개, 약 75억 달러에 접근했을 가능성을 수사가 본다고 적었다. 미국 당국은 엔비디아가 2025년 6월에 이 회사로의 판매를 멈췄다고 밝혔다고 전해진다. 메가스피드는 혐의를 부인하고, 엔비디아는 거래가 적법했다는 입장이다. 미국 상무부·법무부는 2026-11-16 형사 수사를 확인했다."
+  },
+  {
+   "id": "nvidia-china-licensed-sales",
+   "country": "ZZ",
+   "city": null,
+   "metric": "NVIDIA 의 중국 허가 판매(분기)",
+   "value": 2.4,
+   "unit": "십억 달러",
+   "asof": "2026-10",
+   "basis": "FY2027 3분기에 허가받은 Hopper 데이터센터 제품을 중국에 판 매출 '24억 달러'",
+   "company": "NVIDIA",
+   "kind": "revenue",
+   "detail": {
+    "share_of_dc_revenue_pct": 2.2,
+    "in_guidance": false,
+    "h200_inventory_charge_h1": 0.4
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "NVIDIA FY2027 3분기 실적 발표 콜(전사: Stock Analysis)",
+     "url": "https://stockanalysis.com/stocks/nvda/transcripts/739383-q3-2027/",
+     "date": null,
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "NVIDIA — Form 10-Q (2026-07-26 분기)",
+     "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
+     "date": "2026-08-26",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "다음 분기 가이던스에는 이 매출이 없고 더 출하하지 않는다고 했다. 2분기 10-Q 에는 미국 정부가 H200 소량 수출을 허가했지만 중국 정부가 구매를 제한해 허가분을 다 팔지 못했고, 상반기에 4억 달러의 재고 손실을 잡았다고 적혀 있다. 같은 콜에서 새 수출통제(2026-11-16)에 대해 수요가 공급을 크게 웃돌아 실적은 강할 것으로 본다고 했다."
+  },
+  {
+   "id": "epoch-imports-southeast-asia",
+   "country": "ZZ",
+   "city": null,
+   "metric": "동남아 여섯 나라의 AI 칩 수입(세관 자료 추정, 최근 4분기)",
+   "value": 9.6,
+   "unit": "십억 달러",
+   "asof": "2026-06-30",
+   "basis": "Epoch AI 가 세관·생산 자료로 추정한 2025년 3분기~2026년 2분기 수입액 합(말레이시아·인도네시아·태국·베트남·필리핀·싱가포르, 모든 설계사)",
+   "company": "Epoch AI",
+   "kind": "flow",
+   "detail": {
+    "quarters": "2025Q3~2026Q2",
+    "chip_gw": 0.278,
+    "share_of_world_chip_power_pct": 4.1,
+    "world": {
+     "usd_bn": 249.1,
+     "chip_gw": 6.77
+    },
+    "by_country": {
+     "Malaysia": {
+      "usd_bn": 5.7,
+      "chip_gw": 0.162
+     },
+     "Indonesia": {
+      "usd_bn": 2.9,
+      "chip_gw": 0.086
+     },
+     "Thailand": {
+      "usd_bn": 0.8,
+      "chip_gw": 0.024
+     }
+    },
+    "cumulative_usd_bn": 19.1,
+    "malaysia_cumulative_usd_bn": 11.8
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "Epoch AI — AI chip imports (CSV, CC BY 4.0)",
+     "url": "https://epoch.ai/data/ai-chip-imports",
+     "date": "2026-11-12",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "칩 정격전력으로는 0.278GW 로 같은 기간 세계의 4.1%다. 말레이시아가 57억 달러(0.162GW)로 가장 크고 인도네시아 29억, 태국 8억 달러다. 2022년부터의 누계는 191억 달러(말레이시아 118억)다. 싱가포르는 세관상 도착지로는 0 이다. 누가 쓰는 칩인지는 이 자료로 알 수 없다 — 미국 회사의 현지 데이터센터도 들어 있다."
+  },
+  {
+   "id": "epoch-imports-china",
+   "country": "ZZ",
+   "city": null,
+   "metric": "중국의 AI 칩 수입(세관 자료 추정, 최근 4분기)",
+   "value": 12,
+   "unit": "십억 달러",
+   "asof": "2026-06-30",
+   "basis": "Epoch AI 가 세관·생산 자료로 추정한 2025년 3분기~2026년 2분기 수입액 합",
+   "company": "Epoch AI",
+   "kind": "flow",
+   "detail": {
+    "quarters": "2025Q3~2026Q2",
+    "chip_gw": 0.654,
+    "share_of_world_chip_power_pct": 9.7,
+    "us_share_pct": 68.8,
+    "quarterly_chip_gw": {
+     "2025Q1": 0.355,
+     "2025Q2": 0.32,
+     "2025Q3": 0.197,
+     "2025Q4": 0.204,
+     "2026Q1": 0.253,
+     "2026Q2": 0
+    }
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "Epoch AI — AI chip imports (CSV, CC BY 4.0)",
+     "url": "https://epoch.ai/data/ai-chip-imports",
+     "date": "2026-11-12",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "칩 정격전력으로는 0.654GW 로 같은 기간 세계의 9.7%다. 분기 값은 2025년 1분기 0.355GW 에서 줄어 2026년 2분기에는 0 으로 잡혀 있다. 미국은 같은 기간 68.8%다."
+  },
+  {
+   "id": "epoch-china-holdings",
+   "country": "ZZ",
+   "city": null,
+   "metric": "중국이 가진 AI 칩 전력(추정)",
+   "value": 1.863,
+   "unit": "GW",
+   "asof": "2025-12-31",
+   "basis": "Epoch AI 의 보유 추정: 정식 판매분 1.503GW + 밀반입 추정 0.36GW(칩 정격전력)",
+   "company": "Epoch AI",
+   "kind": "capacity",
+   "detail": {
+    "official_gw": 1.503,
+    "smuggled_gw": 0.36,
+    "world_gw": 13.359,
+    "share_chip_power_pct": 13.9,
+    "h100e_share_official_pct": 5.52,
+    "h100e_share_smuggled_pct": 3.16,
+    "official_by_designer": {
+     "huawei": 0.69,
+     "nvidia": 0.76,
+     "cambricon": 0.03,
+     "amd": 0.02
+    },
+    "power_basis": "chip"
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "Epoch AI — AI chip owners (CSV, CC BY 4.0)",
+     "url": "https://epoch.ai/data/ai-chip-owners",
+     "date": null,
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "세계 보유 합 13.359GW 의 13.9%다. 성능 환산(H100e)으로는 정식 5.52% + 밀반입 3.16% = 8.68%로 더 낮다 — 중국이 가진 칩이 구형이고 국산 칩의 성능이 낮기 때문이다. 정식분에는 화웨이 0.69GW 와 엔비디아 0.76GW 가 들어 있다."
+  },
+  {
+   "id": "epoch-china-linked-sea-sites",
+   "country": "ZZ",
+   "city": null,
+   "metric": "동남아에서 중국 회사가 쓰는 것으로 추적된 부지(추정)",
+   "value": 0.315,
+   "unit": "GW",
+   "asof": "2026-11-19",
+   "basis": "Epoch AI 부지 자료의 현재 시설 전력: 말레이시아 Bridge Data Centres MY06(바이트댄스, 243MW) + 인도네시아 Oracle Batam(텐센트, 72MW)",
+   "company": "Epoch AI",
+   "kind": "capacity",
+   "detail": {
+    "sites": {
+     "Bridge Data Centres MY06": {
+      "country": "MY",
+      "user": "ByteDance",
+      "mw": 243,
+      "certainty": "likely"
+     },
+     "Oracle Batam": {
+      "country": "ID",
+      "user": "Tencent",
+      "mw": 72,
+      "certainty": "speculative"
+     }
+    },
+    "power_basis": "utility"
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "Epoch AI — AI data centers (CSV, CC BY 4.0)",
+     "url": "https://epoch.ai/data/ai-data-centers",
+     "date": null,
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "low",
+   "note": "Epoch 은 소유·사용자 표시에 확신 정도를 붙인다 — 앞의 것은 'likely', 뒤의 것은 'speculative'다. 큰 부지만 추적하므로 동남아의 중국 관련 용량 전체가 아니라 눈에 띄는 두 곳이다."
+  }
+ ]
+}

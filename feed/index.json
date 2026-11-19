@@ -1,7 +1,87 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-19T22:53:22+09:00",
+ "generated_kst": "2026-11-19T23:21:58+09:00",
  "reports": [
+  {
+   "slug": "ai-compute-balance",
+   "type": "research",
+   "title": "AI 컴퓨팅 수급 대조 : 누가 얼마나 갖고, 누가 얼마나 쓰며, 얼마를 치르는가",
+   "companies": [
+    {
+     "name": "Anthropic",
+     "ticker": null
+    },
+    {
+     "name": "OpenAI",
+     "ticker": null
+    },
+    {
+     "name": "NVIDIA",
+     "ticker": null
+    },
+    {
+     "name": "Broadcom",
+     "ticker": null
+    },
+    {
+     "name": "AMD",
+     "ticker": null
+    },
+    {
+     "name": "MediaTek",
+     "ticker": null
+    },
+    {
+     "name": "Microsoft",
+     "ticker": null
+    },
+    {
+     "name": "Alphabet",
+     "ticker": null
+    },
+    {
+     "name": "Amazon",
+     "ticker": null
+    },
+    {
+     "name": "Meta",
+     "ticker": null
+    },
+    {
+     "name": "Oracle",
+     "ticker": null
+    },
+    {
+     "name": "CoreWeave",
+     "ticker": null
+    },
+    {
+     "name": "SpaceX",
+     "ticker": null
+    }
+   ],
+   "published_kst": "2026-11-19T23:21:38+09:00",
+   "revised_kst": "2026-11-19T23:21:38+09:00",
+   "revision": 1,
+   "summary": "칩 회사의 매출, 클라우드 회사의 설비투자, 연구소의 지출을 공시에서 모으고 외부 추정(Epoch AI)·보도와 맞대면 돈으로는 대체로 맞춰진다 — 엔비디아의 하이퍼스케일 매출은 다섯 회사 분기 설비투자의 25.3%이고, 매출을 추정 칩 전력으로 나눈 값은 네 분기 동안 칩 GW당 398억~415억 달러 안에 있었다. 앤트로픽의 S-1 은 2026년 3분기 컴퓨트 비용 99억 달러, 1~9월 고객 서비스 몫 25.6% 이하, 약정 약 9,009억 달러를 보여 준다. 그 가운데 구글 호스팅 최소 약정(1,213억 달러)은 구글 클라우드 수주잔고의 21.6%, 아마존 최소 약정(1,100억 달러)은 AWS 수주잔고의 19.0% 크기다(약정이 수주잔고에 그대로 잡혔다고 볼 때). 전력(GW)으로는 임대 사업자와 xAI 까지만 공시로 맞춰지고 연구소의 용량은 조건부 범위로만 나온다. 알파벳과 메타는 가동 용량을 밝히지 않는다. 중국과 동남아 경로는 Epoch AI 가 세관 자료로 추정한 칩 전력 기준으로 세계 칩 수입의 13.8%이고, 남아 있는 동남아 경로는 모두 중국 관련이라고 봐도 4.1% 이하다.",
+   "path": "reports/ai-compute-balance.json"
+  },
+  {
+   "slug": "sixsigma-gdp-10-ai",
+   "type": "article",
+   "title": "식스시그마 : 머스크는 움직이는 AI가 경제를 10배 키운다고 보고, 사이버캡은 AI 사용료를 매달 받는 구조로 팔기 시작했다",
+   "companies": [
+    {
+     "name": "테슬라",
+     "ticker": null
+    }
+   ],
+   "published_kst": "2026-11-19T23:18:50+09:00",
+   "revised_kst": "2026-11-19T23:18:50+09:00",
+   "revision": 1,
+   "summary": "10배 경제론은 머스크의 어림짐작이라 검증할 수 없다. 영상이 보여 주는 새 정보는 사이버캡이 '차 값 한 번 + 자율주행 구독 월 과금'으로 팔린다는 점이다. 테슬라는 중립~약한 호재(확신 낮음)이고, 12월 오스틴 인도 대수와 실제 월 구독료가 판단을 가른다.",
+   "path": "reports/sixsigma-gdp-10-ai.json"
+  },
   {
    "slug": "hon-hai-3q26-earnings",
    "type": "earnings",
@@ -2291,7 +2371,7 @@
   }
  ],
  "street": {
-  "updated_kst": "2026-11-19T20:33:51+09:00",
+  "updated_kst": "2026-11-19T23:21:58+09:00",
   "path": "street.json"
  },
  "calendar": {
@@ -2312,7 +2392,7 @@
   {
    "id": "compute-balance",
    "path": "data/compute-balance/index.json",
-   "updated_kst": "2026-11-19T22:53:22+09:00"
+   "updated_kst": "2026-11-19T23:11:48+09:00"
   }
  ]
 }

@@ -204,7 +204,8 @@
      "low": 150,
      "high": 175
     },
-    "leases_not_yet_commenced_terms": "2026~2028년 개시, 기간 1년 미만~20년, 가중평균 약 10년"
+    "leases_not_yet_commenced_terms": "2026~2028년 개시, 기간 1년 미만~20년, 가중평균 약 10년",
+    "next_12_months_from": "2026-09-30"
    },
    "sources": [
     {

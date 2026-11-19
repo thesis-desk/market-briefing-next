@@ -2,7 +2,7 @@
  "schema": 1,
  "bundle": "S4",
  "title": "맞추기 — 달러와 GW 를 잇는 계산",
- "updated_kst": "2026-11-19T22:53:22+09:00",
+ "updated_kst": "2026-11-19T23:11:48+09:00",
  "measure": null,
  "notes": [
   "모두 계산 기록이다. basis 는 '계산'으로 시작하고 입력 기록을 refs 로 가리킨다.",
@@ -403,7 +403,7 @@
    ],
    "alt": [],
    "conf": "med",
-   "note": "네 분기 내내 402억~415억 달러로 일정하다. 칩 전력을 시설 전력의 0.55~0.6배로 보면 시설 GW당 230억~250억 달러이고, 회사가 Blackwell 세대의 GW당 매출 기회로 밝힌 250억 달러와 맞는다. 400억 달러는 다음 세대(Vera Rubin)의 값이다. 분기 구간은 한 달 어긋난다."
+   "note": "네 분기 내내 398억~415억 달러 안에 있다. 칩 전력을 회사가 밝히는 전력의 0.51~0.6배로 보면(0.6 은 배분표의 가정, 공시와 견준 값은 코어위브 0.57 이하·xAI 0.51 이하) GW당 203억~249억 달러이고, 회사가 Blackwell 세대의 GW당 매출 기회로 밝힌 250억 달러에 위쪽 끝이 닿는다. 400억 달러는 다음 세대(Vera Rubin)의 값이다. 분기 구간은 한 달 어긋난다."
   },
   {
    "id": "eq1-broadcom-revenue-per-chip-gw",
@@ -913,6 +913,174 @@
    "alt": [],
    "conf": "med",
    "note": "공유 부지를 전부 Anthropic 몫으로 세면 바닥이 3.9GW 다. Azure 용량은 어느 쪽에도 들어 있지 않다. 그래서 보도된 '2026년 말 3.5GW 초과'는 9월 말에 이미 넘었을 가능성이 크고, 3분기 단가는 GW·년당 84억~123억 달러 범위다(용량 4.7~3.2GW)."
+  },
+  {
+   "id": "china-megaspeed-share",
+   "country": "ZZ",
+   "city": null,
+   "metric": "중국 경로 — 메가스피드 한 곳의 크기",
+   "value": 0.8,
+   "unit": "%",
+   "asof": "2026-10",
+   "basis": "계산: 보도된 최소 48억 달러를 21개월로 나눈 연 27.4억 달러 ÷ NVIDIA 최근 네 분기 데이터센터 매출 334.0",
+   "refs": [
+    "megaspeed-purchases-reported",
+    "nvidia-dc-revenue",
+    "epoch-imports-southeast-asia"
+   ],
+   "detail": {
+    "annualized_usd_bn": 2.74,
+    "nvidia_ttm_dc": 334,
+    "share_of_sea_cumulative_pct": 25.1,
+    "share_of_malaysia_cumulative_pct": 40.7,
+    "if_7_5_bn_pct_of_ttm": 2.2
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "Evertiq — US confirms criminal export control investigation into Megaspeed",
+     "url": "https://evertiq.com/design/2026-11-17-us-confirms-criminal-export-control-investigation-into-megaspeed",
+     "date": "2026-11-17",
+     "read": "search_summary"
+    },
+    {
+     "n": 2,
+     "title": "조사 자료 묶음 S1 — NVIDIA 데이터센터 매출 기록",
+     "url": "https://thesis-desk.github.io/market-briefing-next/feed/data/compute-balance/supply.json",
+     "date": "2026-11-19",
+     "read": "full"
+    },
+    {
+     "n": 3,
+     "title": "Epoch AI — AI chip imports (CSV, CC BY 4.0)",
+     "url": "https://epoch.ai/data/ai-chip-imports",
+     "date": "2026-11-12",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1,
+    2,
+    3
+   ],
+   "alt": [],
+   "conf": "low",
+   "note": "분자가 보도 값이고(원문 미확인) 엔비디아 매출이 아니라 장비 값이라 대략의 크기다. 같은 48억 달러는 Epoch 이 추정한 동남아 수입 누계 191억 달러의 25%, 말레이시아 누계 118억 달러의 41%다. 엔비디아가 2025년 6월에 판매를 멈췄다는 보도대로라면 지금 분기 매출에 남은 몫은 0 에 가깝다."
+  },
+  {
+   "id": "china-sea-channel-share",
+   "country": "ZZ",
+   "city": null,
+   "metric": "중국 경로 — 동남아 수입 전체의 크기",
+   "value": 4.1,
+   "unit": "%",
+   "asof": "2026-06-30",
+   "basis": "계산: 동남아 여섯 나라의 최근 4분기 칩 전력 0.278GW ÷ 세계 6.77GW (Epoch AI 세관 자료 추정)",
+   "refs": [
+    "epoch-imports-southeast-asia",
+    "nvidia-dc-revenue"
+   ],
+   "detail": {
+    "usd_bn": 9.6,
+    "share_of_nvidia_ttm_dc_pct": 2.9
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "Epoch AI — AI chip imports (CSV, CC BY 4.0)",
+     "url": "https://epoch.ai/data/ai-chip-imports",
+     "date": "2026-11-12",
+     "read": "full"
+    },
+    {
+     "n": 2,
+     "title": "조사 자료 묶음 S1 — NVIDIA 데이터센터 매출 기록",
+     "url": "https://thesis-desk.github.io/market-briefing-next/feed/data/compute-balance/supply.json",
+     "date": "2026-11-19",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1,
+    2
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "금액으로는 96억 달러로 NVIDIA 최근 네 분기 데이터센터 매출의 2.9%다(분자는 모든 설계사, 세관 가격). 동남아로 간 칩이 모두 중국 관련이라고 본 상한이다 — 실제로는 미국 회사의 현지 데이터센터가 섞여 있다."
+  },
+  {
+   "id": "china-widest-envelope",
+   "country": "ZZ",
+   "city": null,
+   "metric": "중국 경로 — 중국 직수입과 동남아를 모두 더한 가장 넓은 테두리",
+   "value": 13.8,
+   "unit": "%",
+   "asof": "2026-06-30",
+   "basis": "계산: 세계 AI 칩 수입(칩 전력) 가운데 중국 9.7% + 동남아 여섯 나라 4.1%, 최근 4분기",
+   "refs": [
+    "epoch-imports-china",
+    "epoch-imports-southeast-asia",
+    "nvidia-china-licensed-sales"
+   ],
+   "detail": {
+    "china_pct": 9.7,
+    "sea_pct": 4.1,
+    "nvidia_licensed_china_share_of_dc_pct": 2.2
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "Epoch AI — AI chip imports (CSV, CC BY 4.0)",
+     "url": "https://epoch.ai/data/ai-chip-imports",
+     "date": "2026-11-12",
+     "read": "full"
+    },
+    {
+     "n": 2,
+     "title": "NVIDIA FY2027 3분기 실적 발표 콜(전사: Stock Analysis)",
+     "url": "https://stockanalysis.com/stocks/nvda/transcripts/739383-q3-2027/",
+     "date": null,
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1,
+    2
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "이 테두리의 대부분은 이미 줄었다. 중국 직수입은 2026년 2분기에 0 으로 잡혀 있고, 엔비디아의 중국 허가 판매(3분기 24억 달러, 데이터센터 매출의 2.2%)는 가이던스에서 빠졌다. 남은 것은 동남아 경로(4.1% 이하)다."
+  },
+  {
+   "id": "china-smuggled-share-of-china-compute",
+   "country": "ZZ",
+   "city": null,
+   "metric": "중국 경로 — 중국이 가진 연산 가운데 밀반입 추정분의 몫",
+   "value": 36.4,
+   "unit": "%",
+   "asof": "2025-12-31",
+   "basis": "계산: 밀반입 추정분의 세계 비중 3.16% ÷ (정식 5.52% + 밀반입 3.16%), H100 환산 성능 기준",
+   "refs": [
+    "epoch-china-holdings"
+   ],
+   "detail": {
+    "chip_power_pct": 19.3
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "Epoch AI — AI chip owners (CSV, CC BY 4.0)",
+     "url": "https://epoch.ai/data/ai-chip-owners",
+     "date": null,
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "칩 전력으로는 0.36 ÷ 1.863 = 19.3%다. 성능으로 본 몫이 더 큰 것은 밀반입분이 최신 칩이기 때문이다. 우회 경로가 막히면 엔비디아의 매출보다 중국 쪽의 최신 연산이 더 크게 줄어든다는 뜻이다. 동남아 부지를 빌려 쓰는 용량은 이 값에 들어 있지 않다."
   }
  ]
 }

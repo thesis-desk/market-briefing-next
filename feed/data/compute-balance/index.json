@@ -1,13 +1,13 @@
 {
  "schema": 1,
- "updated_kst": "2026-11-19T22:53:22+09:00",
+ "updated_kst": "2026-11-19T23:11:48+09:00",
  "question": "누가 AI 컴퓨팅을 얼마나 갖고 있고, 누가 얼마나 쓰며 얼마를 치르는가",
  "bundles": [
   {
    "id": "S1",
    "file": "supply.json",
    "title": "공급 — 설계사의 매출·물량·전력",
-   "status": "collecting",
+   "status": "draft",
    "records": 9,
    "verified_share": 1,
    "updated_kst": "2026-11-19T22:53:22+09:00"
@@ -16,7 +16,7 @@
    "id": "S2",
    "file": "holders.json",
    "title": "보유 — 누가 깔아 두었는가",
-   "status": "collecting",
+   "status": "draft",
    "records": 14,
    "verified_share": 1,
    "updated_kst": "2026-11-19T22:53:22+09:00"
@@ -25,19 +25,28 @@
    "id": "S3",
    "file": "users.json",
    "title": "사용·소모 — 누가 얼마나 쓰고 얼마를 치르는가",
-   "status": "collecting",
+   "status": "draft",
    "records": 20,
    "verified_share": 1,
    "updated_kst": "2026-11-19T22:53:22+09:00"
   },
   {
+   "id": "S5",
+   "file": "china.json",
+   "title": "중국과 우회 경로 — 직수입·동남아·밀반입 추정",
+   "status": "draft",
+   "records": 6,
+   "verified_share": 0.833,
+   "updated_kst": "2026-11-19T23:11:48+09:00"
+  },
+  {
    "id": "S4",
    "file": "bridge.json",
    "title": "맞추기 — 달러와 GW 를 잇는 계산",
-   "status": "collecting",
-   "records": 19,
+   "status": "draft",
+   "records": 23,
    "verified_share": 1,
-   "updated_kst": "2026-11-19T22:53:22+09:00"
+   "updated_kst": "2026-11-19T23:11:48+09:00"
   }
  ],
  "hypotheses": [],
