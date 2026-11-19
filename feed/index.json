@@ -1,7 +1,41 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-19T17:25:45+09:00",
+ "generated_kst": "2026-11-19T20:33:51+09:00",
  "reports": [
+  {
+   "slug": "hon-hai-3q26-earnings",
+   "type": "earnings",
+   "title": "Hon Hai Precision 3Q26 실적발표 : 영업이익률 3.8%로 상승, 잉여현금 유출 확대",
+   "companies": [
+    {
+     "name": "Hon Hai Precision",
+     "ticker": "2317.TW"
+    }
+   ],
+   "event": "3Q26 실적 발표",
+   "event_date": "2026-11-12",
+   "published_kst": "2026-11-19T20:30:43+09:00",
+   "revised_kst": "2026-11-19T20:30:43+09:00",
+   "revision": 1,
+   "summary": "AI 랙 출하 덕분에 매출(+46% YoY)과 영업이익(+64% YoY)이 분기 최고치를 냈고, 매출총이익률이 내려간 가운데서도 영업이익률은 3.83%로 올랐다. 2026년 연간 전망을 4개 부문 모두 상향했고 2027년 두 자릿수 성장 전망을 내놨다. 반면 9개월 FCF는 NT$-287.4B로 유출 폭이 커졌고, 연간 흑자 여부는 답하지 않았다. 이익의 질은 확인됐지만 현금 전환은 아직 확인되지 않았다.",
+   "path": "reports/hon-hai-3q26-earnings.json"
+  },
+  {
+   "slug": "big-technology-why-the-anthropic-ipo-will-fail-with-gary",
+   "type": "interview",
+   "title": "Gary Marcus 인터뷰 : Anthropic 공모가 실패할 이유와 신경기호 AI",
+   "companies": [
+    {
+     "name": "Anthropic",
+     "ticker": null
+    }
+   ],
+   "published_kst": "2026-11-19T20:22:30+09:00",
+   "revised_kst": "2026-11-19T20:22:30+09:00",
+   "revision": 1,
+   "summary": "Marcus의 약세 논거는 기술 비판이 아니라 '9,000억 달러 약정을 감당할 만큼 성장이 이어지느냐'는 질문이다. 대담에 나온 숫자를 이으면 분기 성장률은 147%에서 47%로 꺾였고, 10월 run-rate로 보면 4분기는 약 19~30%로 감속이 이어진다. 다만 그는 매출 숫자를 반박하지 않았고, 조달 논거는 가장 약하다고 물렀으며, 중국 경쟁 약화 논거는 '가장 낫다'고 인정했다. 이 대담은 공모주에 약한 악재 이상의 근거를 주지 못한다.",
+   "path": "reports/big-technology-why-the-anthropic-ipo-will-fail-with-gary.json"
+  },
   {
    "slug": "latent-space-anthropic-know-before-you-ipo-tanay-jaipuria",
    "type": "interview",
@@ -2257,11 +2291,11 @@
   }
  ],
  "street": {
-  "updated_kst": "2026-11-19T17:25:45+09:00",
+  "updated_kst": "2026-11-19T20:33:51+09:00",
   "path": "street.json"
  },
  "calendar": {
-  "updated_kst": "2026-11-19T02:27:20+09:00",
+  "updated_kst": "2026-11-19T20:22:35+09:00",
   "path": "calendar.json"
  },
  "datasets": [

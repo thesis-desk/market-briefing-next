@@ -1,14 +1,14 @@
 {
  "schema": 1,
- "updated_kst": "2026-11-19T17:25:45+09:00",
+ "updated_kst": "2026-11-19T20:33:51+09:00",
  "window_days": 14,
  "items_days": 30,
  "index": {
   "ai_tech": {
-   "value": -1,
+   "value": 1,
    "label": "엇갈림",
-   "orgs": 42,
-   "items": 143
+   "orgs": 41,
+   "items": 142
   },
   "market": {
    "value": -12,
@@ -19,8 +19,8 @@
   "by_group": [
    {
     "group": "벤처캐피털",
-    "ai_tech": 5,
-    "ai_tech_orgs": 9,
+    "ai_tech": 18,
+    "ai_tech_orgs": 8,
     "market": -25,
     "market_orgs": 2
    },
@@ -98,7 +98,7 @@
    },
    {
     "week": "2026-11-16",
-    "ai_tech": 6,
+    "ai_tech": 7,
     "ai_tech_orgs": 21,
     "market": -3,
     "market_orgs": 14
@@ -116,7 +116,7 @@
     },
     {
      "tag": "밸류에이션",
-     "n": 16
+     "n": 15
     },
     {
      "tag": "쏠림",
@@ -216,6 +216,44 @@
     "basis": "full_text",
     "tier": "standard"
    }
+  },
+  {
+   "id": "damodaran-anthropic-sets-83-share-price-for-historic-ipo-h",
+   "group": "투자 거장",
+   "org": "NYU Stern",
+   "person": "Aswath Damodaran",
+   "kind": "report",
+   "title": "Anthropic, 역사적 IPO 공모가 주당 $83 확정… '밸류에이션의 대가' Aswath Damodaran의 평가",
+   "title_orig": "Anthropic sets $83/share price for historic IPO. Here’s what ‘Dean of Valuation’ Aswath Damodaran says",
+   "url": "https://economictimes.indiatimes.com/markets/ipos/fpos/aswath-damodaran-is-not-convinced-by-anthropics-83/share-ipo-pricing-what-does-dean-of-valuation-estimate/articleshow/135980001.cms",
+   "outlet": "The Economic Times",
+   "published_kst": "2026-11-19T09:02:00+09:00",
+   "stance": {
+    "ai_tech": 0,
+    "market": null
+   },
+   "args": [
+    "밸류에이션",
+    "투자 회수",
+    "전력·공급 제약",
+    "정책·지정학"
+   ],
+   "summary": "Damodaran은 Anthropic의 주식 수를 반영한 옵션 조정 주당 가치를 $76.98로 보았다. 이는 공모가 $83보다 낮은 값이다. 10년 내 매출 1조 달러라는 성장 시나리오와 프리미엄 AI 시장의 승자가 될 가능성을 제시하면서도, 컴퓨트 투자 부담, 데이터센터 건설 난관, 규제, 창업자에게 집중된 지배구조를 위험으로 짚었다.",
+   "points": [
+    "Damodaran은 Anthropic의 총 지분 가치를 약 1조 3,520억 달러로 추정했다. 11월 18일 갱신에서 기존 추정치(1조 4,750억 달러)에서 낮췄으며, 하향의 주된 이유는 컴퓨트 비용 상향과 규제 부담이다.",
+    "주당 가치는 완전 희석 기준 $76.46에서 기본(primary) 주식 수 기준 $90.86까지 범위가 있지만, 자신이 쓸 값은 옵션 조정 주당 가치인 $76.98이라고 했다. 이 계산은 Anthropic이 $83 공모가를 공개하기 전에 나온 것이다.",
+    "Damodaran은 Anthropic의 목표 매출을 10년 뒤 1조 달러로 추정했다. 이 정도면 연간 총매출 기준 전체 기업 중 최상위 또는 그 근처가 되며, 마진을 희생해 규모를 내는 Amazon, Walmart 같은 기업과 같은 부류에 들어간다고 말했다.",
+    "Anthropic이 AI 시장의 프리미엄 부문에서 승자로 떠올라 가격 결정력을 가진 채 압도적인 점유율을 차지할 수 있다고 덧붙였다.",
+    "앞선 평가 글에서 Anthropic의 공익법인 구조와 의결권 주식 구조 탓에 주식시장에서 자본을 얼마나 조달하든 창업자가 통제권을 쥔다는 우려를 제기했다. 창업자들이 AI를 더 잘 이해하는 똑똑한 사람들이라 부정적이지 않을 수 있다는 반응도 들었지만, 그는 설득되지 않았고 창업자에게 권력이 집중되는 것은 나쁜 생각이라고 본다.",
+    "Anthropic에 대한 관심은 투자설명서에 느슨하게 공개된 컴퓨트 약정에 쏠려 있지만, 자신의 가치평가는 그 약정이 시간이 지나며 어떤 모습이 될지에 대한 기대, 특히 자신의 성장 시나리오가 실현되는 경우에 좌우된다고 했다. 매출 1조 달러를 내려면 이미 확보한 컴퓨트를 유지·교체하는 데 그치지 않고 시간이 갈수록 더해야 하며, 지역 주민 반발과 정치인들이 반대가 표가 된다고 보면서 새 데이터센터 건설은 점점 어려워지고 있다고 경고했다.",
+    "한마디로, 매출이 기대에 못 미치고 수익성으로 가는 길이 더 험해지면 Anthropic은 더 위험해진다고 했다. 이 경우 위험은 입력 변수라기보다 결과 변수에 가까워진다.",
+    "Anthropic의 IPO에 신중한 태도를 유지하면서도, 불확실성은 무엇에 투자하든 투자의 속성이며 투자 간 차이는 불확실성을 마주하느냐가 아니라 얼마나 마주하느냐에 있다고 말했다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
   },
   {
    "id": "citi-citi-ceo-jane-fraser-on-ai-tech-outages-newsmake",
