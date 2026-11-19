@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated_kst": "2026-11-19T16:15:09+09:00",
+ "updated_kst": "2026-11-20T08:42:35+09:00",
  "question": "AI 는 코딩을 넘어 범용 지식노동으로 번지는가 — 성장 여지는 얼마나 남았고, 지금의 투자는 회수되는가",
  "bundles": [
   {
@@ -26,9 +26,9 @@
    "file": "spend.json",
    "title": "지출과 매출 — 랩·도구·고객",
    "status": "collecting",
-   "records": 48,
-   "verified_share": 0.938,
-   "updated_kst": "2026-11-19T16:15:09+09:00"
+   "records": 50,
+   "verified_share": 0.9,
+   "updated_kst": "2026-11-20T08:42:35+09:00"
   },
   {
    "id": "K4",

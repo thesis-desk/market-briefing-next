@@ -2,7 +2,7 @@
  "schema": 1,
  "bundle": "K3",
  "title": "지출과 매출 — 랩·도구·고객",
- "updated_kst": "2026-11-19T16:15:09+09:00",
+ "updated_kst": "2026-11-20T08:42:35+09:00",
  "measure": null,
  "notes": [
   "실제로 나간 돈이다. 회계 매출(감사 여부)과 회사 정의 지표(연환산 매출, 순매출유지율)를 basis·definition 에서 가른다.",
@@ -14,20 +14,20 @@
   "IT서비스 회사가 밝힌 AI 매출·수주는 회사마다 무엇을 AI 로 세는지가 다르다. 회사 전체 매출 증가율과 함께 본다."
  ],
  "summary": {
-  "records": 48,
-  "with_value": 45,
-  "with_series": 39,
+  "records": 50,
+  "with_value": 47,
+  "with_series": 40,
   "by_hypothesis": {
    "H1": {
     "지지": 36,
     "반박": 0,
-    "양쪽": 11,
+    "양쪽": 12,
     "중립": 1
    },
    "H2": {
     "지지": 3,
     "반박": 0,
-    "양쪽": 4,
+    "양쪽": 5,
     "중립": 1
    }
   },
@@ -41,7 +41,7 @@
    "spread": {
     "지지": 23,
     "반박": 0,
-    "양쪽": 9,
+    "양쪽": 10,
     "중립": 1
    },
    "penetration": {
@@ -53,13 +53,13 @@
    "slope": {
     "지지": 36,
     "반박": 0,
-    "양쪽": 2,
+    "양쪽": 3,
     "중립": 1
    },
    "counter": {
     "지지": 3,
     "반박": 0,
-    "양쪽": 3,
+    "양쪽": 5,
     "중립": 0
    }
   }
@@ -786,6 +786,138 @@
    "alt": [],
    "conf": "med",
    "note": "회사는 산업별 제품 7종(금융, 재무 자문, 보건, 생명과학, 법률, 교육, 정부)과 지식노동자용 에이전트(Claude Cowork)를 냈다고 적었으나 제품별 매출이나 사용자 수는 공개하지 않았다."
+  },
+  {
+   "id": "anthropic-customer-coding-share-case",
+   "country": "ZZ",
+   "city": null,
+   "metric": "한 고객사의 Anthropic 지출 가운데 코딩 비중(사례)",
+   "value": 60,
+   "unit": "%",
+   "asof": "2026-11",
+   "basis": "소프트웨어 회사 한 곳의 Anthropic 지출 가운데 코딩의 비중(보도를 옮긴 증권사 채널의 요약)",
+   "definition": "고객 한 곳의 사례이고 회사 집계가 아니다. 원 기사를 찾지 못해 채널의 요약만 읽었다. 고객이 누구인지, 지출 총액, 금액 기준인지 약정 기준인지는 요약에 없다.",
+   "series": [
+    {
+     "period": "2026-01",
+     "value": 90,
+     "src": 1,
+     "note": "'연초'로만 적혔다, 초과"
+    },
+    {
+     "period": "2026-11",
+     "value": 60,
+     "src": 1
+    }
+   ],
+   "detail": {
+    "non_coding_uses": [
+     "Cowork",
+     "Design",
+     "Security"
+    ],
+    "security_share_of_spend_pct_some_large_customers": [
+     10,
+     20
+    ],
+    "cowork_adoption": "회사 설명으로 출시 뒤 9개월의 도입 속도가 Claude Code 의 초기를 웃돈다. 수치는 공개하지 않았다.",
+    "majority_of_customer_spend": "Claude Code"
+   },
+   "links": [
+    "spread",
+    "counter"
+   ],
+   "sides": {
+    "H1": "양쪽"
+   },
+   "side_basis": "직능별 지출 비중이 한 고객 안에서 옮겨 간 것을 금액 비중으로 적은 첫 값이다(코딩 90% 초과 → 60%). 코딩 밖으로 번진다는 쪽이다. 그러나 같은 보도는 전체 고객 지출의 대부분이 여전히 Claude Code 라고 적었고, 고객은 소프트웨어 회사 한 곳이며, 새 제품에는 크레딧과 할인이 붙어 있다(lab-enterprise-discounts). 비중이 내린 것이 코딩 밖 지출이 늘어서인지 코딩 지출이 줄어서인지도 요약으로는 알 수 없다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "텔레그램 [삼성 이영진] 글로벌 AI/SW — 앤트로픽의 사업 확장과 대형 고객 할인 보도 요약(원 기사는 찾지 못했다)",
+     "url": "https://t.me/Samsung_Global_AI_SW/5126",
+     "date": "2026-11-19",
+     "read": "search_summary"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "low",
+   "note": "일부 대형 고객은 Anthropic 지출의 10~20% 를 사이버보안으로 돌렸다고 한다. 보안은 범용 사무 업무라기보다 개발·IT 에 가까운 쓰임이라 코딩 밖 전부를 지식노동 확산으로 읽을 수는 없다. 계산 기록 spread-link-test 에는 넣지 않았다(두 점이 사례 하나의 비중이고 금액이 없다)."
+  },
+  {
+   "id": "lab-enterprise-discounts",
+   "country": "ZZ",
+   "city": null,
+   "metric": "대형 고객 할인율(Anthropic, 일부 계약)",
+   "value": 30,
+   "unit": "% ('30% 초과', 일부 계약)",
+   "asof": "2026-11",
+   "basis": "Anthropic 이 대형 고객 계약 일부에 준 할인율(보도를 옮긴 증권사 채널의 요약)",
+   "definition": "회사 공시가 아니라 고객 쪽 사례를 모은 보도이고, 원 기사를 찾지 못해 채널의 요약만 읽었다. 정가 대비 할인으로 보이나 기준은 요약에 없다.",
+   "detail": {
+    "by_commit": [
+     {
+      "commit_usd_m": 1,
+      "discount_pct": 15,
+      "note": "약"
+     },
+     {
+      "commit_usd_m": 3,
+      "discount_pct": 30,
+      "note": "약"
+     },
+     {
+      "commit_usd_m": 5,
+      "discount_pct": 30,
+      "note": "연 500만 달러 초과 약정에 30% 초과 제안"
+     }
+    ],
+    "new_product_credits_usd": {
+     "per_user_max": 2000,
+     "per_company_max": 100000
+    },
+    "openai_codex_switch_discount_pct": 40,
+    "share_of_wallet_clause": "일부 할인 계약에 고객의 AI 예산 가운데 일정 비율을 자사 제품에 쓰도록 하는 조항을 넣고 청구서 같은 증빙을 요구한다"
+   },
+   "links": [
+    "counter",
+    "slope"
+   ],
+   "sides": {
+    "H2": "양쪽"
+   },
+   "side_basis": "경쟁 때문에 값이 깎인다. 같은 물량에서 받는 돈이 줄어 요구 매출에 닿는 길이 멀어지고, 새 제품의 도입에는 크레딧이 섞여 있다. 회수에 어긋나는 쪽이다. 다만 할인은 약정 규모와 지갑 점유 조항에 묶여 있어 지출을 붙잡는 장치이기도 하다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "텔레그램 [삼성 이영진] 글로벌 AI/SW — 앤트로픽의 사업 확장과 대형 고객 할인 보도 요약(원 기사는 찾지 못했다)",
+     "url": "https://t.me/Samsung_Global_AI_SW/5126",
+     "date": "2026-11-19",
+     "read": "search_summary"
+    },
+    {
+     "n": 2,
+     "title": "The Next Web — Anthropic ends discounts once tokens run out, The Information reports",
+     "url": "https://thenextweb.com/news/anthropic-openai-enterprise-discounts-tokens-the-information",
+     "date": null,
+     "read": "search_summary"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [
+    {
+     "value": 15,
+     "src": 2,
+     "note": "앞선 보도는 구매 담당자 세 명의 말로 정가 대비 약 15% 라고 적었다(검색 요약, 날짜 미확인)"
+    }
+   ],
+   "conf": "low",
+   "note": "OpenAI 도 Codex 로 옮기는 고객에게 40% 를 깎아 준 사례가 있다고 한다. 할인 폭의 시계열은 없다."
   },
   {
    "id": "anthropic-cost-per-task-cut",
