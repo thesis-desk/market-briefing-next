@@ -1,7 +1,25 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-19T16:36:30+09:00",
+ "generated_kst": "2026-11-19T17:25:45+09:00",
  "reports": [
+  {
+   "slug": "latent-space-anthropic-know-before-you-ipo-tanay-jaipuria",
+   "type": "interview",
+   "title": "Tanay Jaipuria(Wing VC) 인터뷰 : Anthropic S-1의 자본 효율과 성장 감속 위험",
+   "companies": [
+    {
+     "name": "Anthropic",
+     "ticker": null
+    }
+   ],
+   "event": "IPO",
+   "event_date": "2026-11-19",
+   "published_kst": "2026-11-19T17:22:17+09:00",
+   "revised_kst": "2026-11-19T17:22:17+09:00",
+   "revision": 1,
+   "summary": "Anthropic S-1에서 새로 확인된 것은 매출 규모보다 자본 효율이다. 100억 달러 미만을 태워 이 규모에 왔고 유료 추론 총이익률이 85%다. 반대로 3Q부터 꺾인 성장률, 매출의 절반에 가까운 채널·API 의존, 내년 700~800억 달러로 커지는 컴퓨트 지출이 TTM 매출 38배라는 공모 배수를 흔들 위험 축이다.",
+   "path": "reports/latent-space-anthropic-know-before-you-ipo-tanay-jaipuria.json"
+  },
   {
    "slug": "tomorrowx-2026-guy-oseary-on-backing-anthropic-before-its",
    "type": "interview",
@@ -2239,7 +2257,7 @@
   }
  ],
  "street": {
-  "updated_kst": "2026-11-19T11:26:48+09:00",
+  "updated_kst": "2026-11-19T17:25:45+09:00",
   "path": "street.json"
  },
  "calendar": {

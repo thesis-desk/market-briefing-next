@@ -1,14 +1,14 @@
 {
  "schema": 1,
- "updated_kst": "2026-11-19T11:26:48+09:00",
+ "updated_kst": "2026-11-19T17:25:45+09:00",
  "window_days": 14,
  "items_days": 30,
  "index": {
   "ai_tech": {
-   "value": -1,
+   "value": 0,
    "label": "엇갈림",
    "orgs": 42,
-   "items": 142
+   "items": 145
   },
   "market": {
    "value": -12,
@@ -54,14 +54,14 @@
    },
    {
     "group": "투자 거장",
-    "ai_tech": -30,
+    "ai_tech": -29,
     "ai_tech_orgs": 9,
     "market": -51,
     "market_orgs": 9
    },
    {
     "group": "중앙은행·국제기구",
-    "ai_tech": -5,
+    "ai_tech": -4,
     "ai_tech_orgs": 2,
     "market": -17,
     "market_orgs": 2
@@ -98,7 +98,7 @@
    },
    {
     "week": "2026-11-16",
-    "ai_tech": 5,
+    "ai_tech": 6,
     "ai_tech_orgs": 21,
     "market": -3,
     "market_orgs": 14
@@ -154,14 +154,14 @@
     },
     {
      "tag": "금리·거시",
+     "n": 24
+    },
+    {
+     "tag": "정책·지정학",
      "n": 23
     },
     {
      "tag": "자금 조달·신용",
-     "n": 22
-    },
-    {
-     "tag": "정책·지정학",
      "n": 22
     },
     {
@@ -185,6 +185,38 @@
   "method": "기관·인물마다 기간 안 입장 값의 평균을 내고 그 평균들을 다시 평균해 ×50"
  },
  "items": [
+  {
+   "id": "damodaran-the-rocky-road-from-aggregate-to-per-share-value",
+   "group": "투자 거장",
+   "org": "NYU Stern",
+   "person": "Aswath Damodaran",
+   "kind": "publication",
+   "title": "총액에서 주당 가치로 가는 험난한 길: Anthropic IPO 업데이트",
+   "title_orig": "The Rocky Road from Aggregate to Per Share Value: Anthropic's IPO update",
+   "url": "https://aswathdamodaran.blogspot.com/2026/11/the-rocky-road-from-aggregate-to-per.html",
+   "outlet": "Aswath Damodaran (Musings on Markets)",
+   "published_kst": "2026-11-19T09:24:25+09:00",
+   "stance": {
+    "ai_tech": 0,
+    "market": null
+   },
+   "args": [
+    "밸류에이션",
+    "투자 회수",
+    "정책·지정학"
+   ],
+   "summary": "Anthropic 상장 신청서 수정본으로 주당 가치를 다시 계산했다. 총 지분가치는 중간선거 이후 데이터센터 비용과 규제 부담 가정이 반영돼 1.475조 달러에서 약 1.352조 달러로 내려갔고, 옵션 조정 주당 가치는 76.98달러다. 지분 수 계산 방식에 따라 가치가 크게 달라진다는 점도 강조한다.",
+   "points": [
+    "옵션 가치를 따로 평가해 뺀 옵션 조정 주당 가치가 진실에 가장 가깝고, 기본 주식 수 방식과 완전 희석 방식은 후보에서 제외해야 한다.",
+    "지분 총가치 추정치가 내려간 주된 이유는 컴퓨팅 비용 상승과 규제 부담 가정이다.",
+    "주식 수 기준에 따라 주당 가치가 76.46~90.86달러로 갈리며, 저자는 옵션 조정치 76.98달러를 쓴다.",
+    "창업자 한 주에 의결권이 집중된 구조는 규제 당국이 공익을 이유로 수용할 위험을 낳는다고 본다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   }
+  },
   {
    "id": "citi-citi-ceo-jane-fraser-on-ai-tech-outages-newsmake",
    "group": "투자은행",
@@ -333,6 +365,41 @@
    "note": "유튜브 영상의 음성을 음성 인식(Whisper)으로 받아 적은 전사 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
   },
   {
+   "id": "imf-imf-s-katz-says-ai-question-is-earnings-not-whet",
+   "group": "중앙은행·국제기구",
+   "org": "IMF",
+   "person": null,
+   "kind": "report",
+   "title": "IMF의 카츠 \"AI의 문제는 거품이 터지느냐가 아니라 이익이 유지되느냐\"",
+   "title_orig": "IMF’s Katz says AI question is earnings not whether bubble bursts",
+   "url": "https://www.msn.com/en-xl/technology/artificial-intelligence/imf-s-katz-says-ai-question-is-earnings-not-whether-bubble-bursts/ar-AA2hJXM6",
+   "outlet": "Insurance Asia on MSN",
+   "published_kst": "2026-11-19T04:49:46+09:00",
+   "stance": {
+    "ai_tech": 0,
+    "market": null
+   },
+   "args": [
+    "밸류에이션",
+    "투자 회수",
+    "자금 조달·신용"
+   ],
+   "summary": "Katz는 AI 기업이 닷컴 시대와 달리 이익 성장을 보여 밸류에이션이 합리적으로 보이며, 핵심 문제는 이익이 지속될 수 있느냐라고 주장했다. AI 투자 수익률이 기대보다 낮을 수도, 더 높을 수도 있으므로 열린 자세가 필요하다고 했다. IMF는 시장 조정이 신용시장으로 번질 가능성을 면밀히 보고 있으며 회원국에 여러 시나리오를 점검하라고 권고한다고 했다.",
+   "points": [
+    "진짜 질문은 AI의 기술적 약속이 투자자들이 기대하는 것과 다르고 지금까지 이익에 나타난 것과도 다를 경우, 실물경제에 어떤 영향이 있을 것인가이다.",
+    "IMF는 금융시장 조정이 신용시장으로 어떻게 파급될 수 있는지 매우 면밀히 지켜보고 있다.",
+    "예를 들어 칩 생태계의 가치가 얼마나 빨리 감가상각될지에 대한 기대가 생각만큼 빠르지 않을 수 있다는 증거도 보고 있다.",
+    "이 혁명이 어떻게 전개될지 불확실성이 매우 크기 때문에, 회원국들에 다양한 시나리오를 점검하라고 권고하고 있다.",
+    "스테이블코인은 금융 포용과 결제 시스템 개선의 잠재력이 있지만 고유한 위험도 가져온다고 인정했다. 저소득·중간소득 국가를 중심으로 국경 간 결제의 대안 인프라가 될 수 있을지는 판단하기에 너무 이르다고 했다.",
+    "스테이블코인 관련 규제 발전의 가장 중요한 이점은 나머지 금융 시스템이 스테이블코인이 약속한 일부 효익을 제공하도록 사업 구조를 재편하게 만들었다는 점이다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
+  },
+  {
    "id": "blackrock-ai-investing-what-s-driving-optimism-amid-market",
    "group": "자산운용",
    "org": "BlackRock",
@@ -364,6 +431,30 @@
     "tier": "standard"
    },
    "note": "유튜브 자막(제작자 제공)(en) 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
+  },
+  {
+   "id": "blackrock-blackrock-ceo-warns-tighter-ai-regulations-could",
+   "group": "자산운용",
+   "org": "BlackRock",
+   "person": null,
+   "kind": "report",
+   "title": "블랙록 CEO 핑크 \"AI 규제 강화가 미국 경제를 경기침체로 몰 수 있다\" 경고",
+   "title_orig": "BlackRock CEO warns tighter AI regulations could lead to US recession",
+   "url": "https://asia.nikkei.com/editor-s-picks/interview/blackrock-ceo-warns-tighter-ai-regulations-could-lead-to-us-recession",
+   "outlet": "Nikkei Asia",
+   "published_kst": "2026-11-19T02:06:00+09:00",
+   "stance": {
+    "ai_tech": 1,
+    "market": null
+   },
+   "args": [
+    "정책·지정학",
+    "금리·거시"
+   ],
+   "judged": {
+    "basis": "headline_only",
+    "tier": "light"
+   }
   },
   {
    "id": "druckenmiller-copper-falls-over-5-globally-after-stan-druckenm",
