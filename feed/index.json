@@ -1,7 +1,51 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-19T16:26:20+09:00",
+ "generated_kst": "2026-11-19T16:36:30+09:00",
  "reports": [
+  {
+   "slug": "tomorrowx-2026-guy-oseary-on-backing-anthropic-before-its",
+   "type": "interview",
+   "title": "가이 오시리 (TomorrowX Summit 2026) : 매출 0의 Anthropic에 건 직감과 Get Access",
+   "companies": [
+    {
+     "name": "Anthropic",
+     "ticker": null
+    },
+    {
+     "name": "Sound Ventures",
+     "ticker": null
+    },
+    {
+     "name": "Get Access",
+     "ticker": null
+    }
+   ],
+   "event": "TomorrowX Summit 2026",
+   "event_date": "2026-11-17",
+   "published_kst": "2026-11-19T16:36:30+09:00",
+   "revised_kst": "2026-11-19T16:36:30+09:00",
+   "revision": 1,
+   "summary": "오시리의 Anthropic 투자 서사는 데이터가 아니라 창업자 판단에 기댄 사후 회고입니다. 이 대담에는 Anthropic의 사업 수치나 상장 종목 판정에 쓸 근거가 없습니다. 새로 나온 실질 정보는 비상장 라운드에 소액 참여를 여는 Get Access의 구조 정도이며, 배분 규모와 비용이 밝혀지지 않아 평가는 보류합니다.",
+   "path": "reports/tomorrowx-2026-guy-oseary-on-backing-anthropic-before-its.json"
+  },
+  {
+   "slug": "tomorrowx-2026-mu",
+   "type": "interview",
+   "title": "산자이 메로트라·스콧 디보어 (TomorrowX Summit 2026) : 5년 SCA의 구속력과 3D 적층 DRAM",
+   "companies": [
+    {
+     "name": "마이크론",
+     "ticker": null
+    }
+   ],
+   "event": "TomorrowX Summit 2026",
+   "event_date": "2026-11-17",
+   "published_kst": "2026-11-19T16:31:52+09:00",
+   "revised_kst": "2026-11-19T16:31:52+09:00",
+   "revision": 1,
+   "summary": "마이크론 경영진은 주가 조정 뒤에도 수요·가격 판단을 바꾸지 않았고, 2027년 물량의 75%가 팔렸다고 확인했다. 26건의 다년 SCA(선급 현금·재무 약정 320억 달러)를 근거로 이번 계약은 과거 LTA와 다르다고 주장했다. 다만 일부 SCA에는 가격 조건이 없어, 이 계약이 지켜 주는 것은 가격보다 물량에 가깝다고 본다. 3D 적층 DRAM(다층 적층의 시장 진입 2028~2029년 전망)은 메모리를 고객 맞춤 부품으로 바꿀 다음 단계로 제시됐다.",
+   "path": "reports/tomorrowx-2026-mu.json"
+  },
   {
    "slug": "tomorrowx-2026-travis-kalanick-on-jensen-we-don-t-want-an-ai",
    "type": "interview",
