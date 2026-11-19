@@ -1,7 +1,71 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-19T14:21:08+09:00",
+ "generated_kst": "2026-11-19T14:28:30+09:00",
  "reports": [
+  {
+   "slug": "tomorrowx-2026-one-line-moved-the-market-more-than-a-bank",
+   "type": "interview",
+   "title": "Gavin·Antonio·Ron (TomorrowX Summit 2026) : 리테일의 시장 장악력과 AI 투자 사이클의 속도",
+   "companies": [
+    {
+     "name": "iConnections",
+     "ticker": null
+    },
+    {
+     "name": "NVIDIA",
+     "ticker": null
+    },
+    {
+     "name": "Anthropic",
+     "ticker": null
+    },
+    {
+     "name": "TSMC",
+     "ticker": null
+    },
+    {
+     "name": "Micron",
+     "ticker": null
+    },
+    {
+     "name": "Samsung Electronics",
+     "ticker": null
+    },
+    {
+     "name": "SK hynix",
+     "ticker": null
+    }
+   ],
+   "event": "TomorrowX Summit 2026",
+   "event_date": "2026-11-17",
+   "published_kst": "2026-11-19T14:28:30+09:00",
+   "revised_kst": "2026-11-19T14:28:30+09:00",
+   "revision": 1,
+   "summary": "이 대담에서 투자 판단에 쓸 만한 내용은 Gavin의 ‘느리고 매끄럽고 길게’ 논지 하나다. 금리, 크레디트 스프레드, 웨이퍼 부족이 공급 확대를 억누르고 있으니 AI 구축이 통신형 급등·붕괴가 아니라 철도형 장기 구축으로 갈 수 있다는 주장이다. 다만 수치 근거가 제시되지 않았으므로 AI 인프라에 대한 조건부·약한 호재로만 읽는다.",
+   "path": "reports/tomorrowx-2026-one-line-moved-the-market-more-than-a-bank.json"
+  },
+  {
+   "slug": "tomorrowx-2026-brad-gerstner-why-anthropic-s-ipo-is-10x",
+   "type": "interview",
+   "title": "Brad Gerstner (TomorrowX Summit 2026) : Anthropic IPO 10배 초과청약의 근거, 모델 집중론, 엔비디아 이사회 서한",
+   "companies": [
+    {
+     "name": "Anthropic",
+     "ticker": null
+    },
+    {
+     "name": "Nvidia",
+     "ticker": null
+    }
+   ],
+   "event": "TomorrowX Summit 2026",
+   "event_date": "2026-11-17",
+   "published_kst": "2026-11-19T14:23:18+09:00",
+   "revised_kst": "2026-11-19T14:23:18+09:00",
+   "revision": 1,
+   "summary": "Gerstner가 내놓은 핵심 근거는 Anthropic이 2026년 컴퓨트의 약 4분의 1만으로 매출 런레이트 1,000억 달러를 서빙한다는 슬라이드입니다. 이 주장대로라면 수익성 논쟁의 초점은 서빙 원가에서 학습 지출을 어디까지 늘릴지로 옮겨 갑니다. 다만 숫자는 그의 슬라이드에서만 나왔고, 그는 펀드 사상 최대 주문을 낸 당사자입니다. 상장 후 공시로 검증하기 전까지는 중간 확신으로만 받아들입니다.",
+   "path": "reports/tomorrowx-2026-brad-gerstner-why-anthropic-s-ipo-is-10x.json"
+  },
   {
    "slug": "tomorrowx-2026-goldman-sachs-ceo-david-solomon-have-we-seen",
    "type": "interview",
@@ -1938,7 +2002,7 @@
   {
    "id": "ai-knowledge-work",
    "path": "data/ai-knowledge-work/index.json",
-   "updated_kst": "2026-11-19T14:21:08+09:00"
+   "updated_kst": "2026-11-19T14:27:23+09:00"
   },
   {
    "id": "apac-siting",
