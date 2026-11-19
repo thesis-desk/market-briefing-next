@@ -1,0 +1,81 @@
+{
+ "schema": 1,
+ "updated_kst": "2026-11-19T11:25:43+09:00",
+ "question": "AI 는 코딩을 넘어 범용 지식노동으로 번지는가 — 성장 여지는 얼마나 남았고, 지금의 투자는 회수되는가",
+ "bundles": [
+  {
+   "id": "K1",
+   "file": "capability.json",
+   "title": "역량 — 납품물·과제 단위로 잰 자동화 수준",
+   "status": "collecting",
+   "records": 3,
+   "verified_share": 1,
+   "updated_kst": "2026-11-19T11:25:43+09:00"
+  },
+  {
+   "id": "K2",
+   "file": "usage.json",
+   "title": "사용 — 사람·기업·업무시간과 쓰임의 분포",
+   "status": "collecting",
+   "records": 8,
+   "verified_share": 1,
+   "updated_kst": "2026-11-19T11:25:43+09:00"
+  },
+  {
+   "id": "K3",
+   "file": "spend.json",
+   "title": "지출과 매출 — 랩·도구·고객",
+   "status": "collecting",
+   "records": 6,
+   "verified_share": 0.833,
+   "updated_kst": "2026-11-19T11:25:43+09:00"
+  },
+  {
+   "id": "K4",
+   "file": "labor.json",
+   "title": "노동시장 — 고용·채용·외주 인력·생산성",
+   "status": "collecting",
+   "records": 2,
+   "verified_share": 1,
+   "updated_kst": "2026-11-19T11:25:43+09:00"
+  },
+  {
+   "id": "K5",
+   "file": "effect.json",
+   "title": "효과 측정 — 실험과 조사",
+   "status": "collecting",
+   "records": 4,
+   "verified_share": 0.75,
+   "updated_kst": "2026-11-19T11:25:43+09:00"
+  },
+  {
+   "id": "K6",
+   "file": "ceiling.json",
+   "title": "천장과 요구 수준 — 임금 풀, 투자, 필요 매출",
+   "status": "collecting",
+   "records": 5,
+   "verified_share": 0.4,
+   "updated_kst": "2026-11-19T11:25:43+09:00"
+  }
+ ],
+ "hypotheses": [
+  {
+   "id": "H1",
+   "text": "AI 수요의 성장 여지는 크다. 역량은 범용 지식노동의 납품물을 해낼 수준으로 오르고 있고, 실제 사용과 지출은 지식노동 임금에 견줘 아직 낮으며, 지출이 코딩 밖 직능으로 번지고 있다.",
+   "verdict": "판단 보류",
+   "basis": "첫 훑기 28건으로는 판정하지 않는다. 역량(납품물 자동화율 2.5% → 41.25%)과 랩 매출(9개월 매출 13배)은 가설 쪽이고 침투율이 낮다는 점도 확인된다. 그러나 가설의 셋째 조건인 코딩 밖 직능의 지출을 직접 잰 기록이 아직 없고, 지금 있는 것(코딩 도구를 쓰지 않는 기업 사용자의 지출이 월 75달러 미만)은 반대쪽으로도 읽힌다.",
+   "updated_kst": null
+  },
+  {
+   "id": "H2",
+   "text": "지금의 AI 투자 규모는 회수된다. AI 매출이 2030년 무렵 컴퓨트 투자가 요구하는 수준(지식노동 임금의 5~11%)에 닿는다.",
+   "verdict": "판단 보류",
+   "basis": "첫 훑기에서는 기준선만 세웠다. 필요 매출(Bain 의 2030년 연 2조 달러)은 검색 요약만 본 값이고, 하이퍼스케일러 투자 규모와 토큰 가격 하락 뒤의 지출 변화는 아직 모으지 않았다. H1 이 맞아도 벤더가 받는 몫이 작으면 H2 는 틀릴 수 있어 따로 판정한다.",
+   "updated_kst": null
+  }
+ ],
+ "docs": [
+  "REQUEST.md",
+  "STATUS.md"
+ ]
+}

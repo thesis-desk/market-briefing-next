@@ -1,7 +1,35 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-19T10:44:39+09:00",
+ "generated_kst": "2026-11-19T11:26:48+09:00",
  "reports": [
+  {
+   "slug": "big-technology-ai-stockpocalypse-anthropic-nears-rsi",
+   "type": "interview",
+   "title": "Big Technology Podcast 대담(Ranjan Roy) : 데이터센터 반대 표심과 Anthropic IPO",
+   "companies": [
+    {
+     "name": "Anthropic",
+     "ticker": null
+    },
+    {
+     "name": "OpenAI",
+     "ticker": null
+    },
+    {
+     "name": "Nvidia",
+     "ticker": null
+    },
+    {
+     "name": "Kalshi",
+     "ticker": null
+    }
+   ],
+   "published_kst": "2026-11-19T11:23:25+09:00",
+   "revised_kst": "2026-11-19T11:23:25+09:00",
+   "revision": 1,
+   "summary": "두 사람은 중간선거의 데이터센터 반대가 AI 거래의 전제인 증설 경로를 흔들었다는 데 동의한다. 갈리는 지점은 증설이 멈추느냐 여러 해로 늘어지느냐다. 그 충격이 가장 직접 닿는 곳은 상장을 앞둔 Anthropic의 밸류에이션이다. Nvidia·하이퍼스케일러·Oracle처럼 증설 속도에 기대는 쪽에는 약한 악재로 읽힌다. 다만 대담은 의견 위주이고, 수치는 보도 인용과 자동 자막에 기대고 있어 확인이 필요하다.",
+   "path": "reports/big-technology-ai-stockpocalypse-anthropic-nears-rsi.json"
+  },
   {
    "slug": "openrouter-tokens-vs-spend-2026-11",
    "type": "synthesis",
@@ -1859,7 +1887,7 @@
   }
  ],
  "street": {
-  "updated_kst": "2026-11-19T08:25:53+09:00",
+  "updated_kst": "2026-11-19T11:26:48+09:00",
   "path": "street.json"
  },
  "calendar": {
@@ -1867,6 +1895,11 @@
   "path": "calendar.json"
  },
  "datasets": [
+  {
+   "id": "ai-knowledge-work",
+   "path": "data/ai-knowledge-work/index.json",
+   "updated_kst": "2026-11-19T11:25:43+09:00"
+  },
   {
    "id": "apac-siting",
    "path": "data/apac-siting/index.json",

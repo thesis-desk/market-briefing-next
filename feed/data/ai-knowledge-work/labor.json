@@ -1,0 +1,204 @@
+{
+ "schema": 1,
+ "bundle": "K4",
+ "title": "노동시장 — 고용·채용·외주 인력·생산성",
+ "updated_kst": "2026-11-19T11:25:43+09:00",
+ "measure": null,
+ "notes": [
+  "대체가 일어나는가를 고용 쪽에서 본다. 기술 통계와 인과 추정을 definition 에서 가른다.",
+  "IT서비스·BPO 기업의 인력과 매출, 개발자 채용 공고는 아직 없다."
+ ],
+ "summary": {
+  "records": 2,
+  "with_value": 2,
+  "with_series": 2,
+  "by_hypothesis": {
+   "H1": {
+    "지지": 0,
+    "반박": 0,
+    "양쪽": 2,
+    "중립": 0
+   }
+  },
+  "by_link": {
+   "spread": {
+    "지지": 0,
+    "반박": 0,
+    "양쪽": 1,
+    "중립": 0
+   },
+   "slope": {
+    "지지": 0,
+    "반박": 0,
+    "양쪽": 1,
+    "중립": 0
+   },
+   "counter": {
+    "지지": 0,
+    "반박": 0,
+    "양쪽": 2,
+    "중립": 0
+   }
+  }
+ },
+ "records": [
+  {
+   "id": "us-young-exposed-employment-gap",
+   "country": "US",
+   "city": null,
+   "metric": "젊은 층의 AI 고노출 직종 고용 격차(미국)",
+   "value": 19,
+   "unit": "%",
+   "asof": "2026-06",
+   "basis": "22~25세의 AI 고노출 직종 고용이, 저노출 직종의 같은 연령대만큼 늘었을 때보다 낮은 정도(ADP 급여 자료)",
+   "definition": "저자들은 인과 추정이 아닌 기술 통계라고 적었다. 학력을 통제하면 격차가 줄고, 일부 추세는 생성형 AI 확산 전부터 보이며, ADP 표본의 격차가 전국 조사보다 크다.",
+   "series": [
+    {
+     "period": "2025-07",
+     "value": 15,
+     "src": 1,
+     "note": "2025-07 자료 기준, 개정판 산식"
+    },
+    {
+     "period": "2026-06",
+     "value": 19,
+     "src": 1
+    }
+   ],
+   "links": [
+    "spread",
+    "slope",
+    "counter"
+   ],
+   "sides": {
+    "H1": "양쪽"
+   },
+   "side_basis": "격차가 11개월에 15%에서 19%로 벌어진 것은 대체가 채용에서 실제로 일어난다는 쪽이다. 경제 전체의 대체는 보이지 않는다는 같은 글의 결론은 회의론 쪽이다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Stanford Digital Economy Lab — No Widespread Displacement, but the AI Employment Gap for Young Workers Has Widened to 19%",
+     "url": "https://digitaleconomy.stanford.edu/news/canariesaug26/",
+     "date": "2026-08-12",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "경력자에게는 격차가 없고, 조정은 해고보다 채용 축소로 일어난다. AI 가 과제를 자동화하는 쪽으로 쓰이는 직종에 몰려 있다."
+  },
+  {
+   "id": "us-nonfarm-productivity",
+   "country": "US",
+   "city": null,
+   "metric": "미국 노동생산성 증가율",
+   "value": 3.6,
+   "unit": "% (전기 대비 연율)",
+   "asof": "2026-09",
+   "basis": "미국 비농업 기업 부문 노동생산성(시간당 산출), 3Q26, 계절조정",
+   "definition": null,
+   "series": [
+    {
+     "period": "2023Q1",
+     "value": 1.4,
+     "src": 1
+    },
+    {
+     "period": "2023Q2",
+     "value": 3.5,
+     "src": 1
+    },
+    {
+     "period": "2023Q3",
+     "value": 4.8,
+     "src": 1
+    },
+    {
+     "period": "2023Q4",
+     "value": 4.2,
+     "src": 1
+    },
+    {
+     "period": "2024Q1",
+     "value": 1.2,
+     "src": 1
+    },
+    {
+     "period": "2024Q2",
+     "value": 3.6,
+     "src": 1
+    },
+    {
+     "period": "2024Q3",
+     "value": 3.4,
+     "src": 1
+    },
+    {
+     "period": "2024Q4",
+     "value": 2.1,
+     "src": 1
+    },
+    {
+     "period": "2025Q1",
+     "value": -0.1,
+     "src": 1
+    },
+    {
+     "period": "2025Q2",
+     "value": 4.2,
+     "src": 1
+    },
+    {
+     "period": "2025Q3",
+     "value": 4.5,
+     "src": 1
+    },
+    {
+     "period": "2025Q4",
+     "value": 1.2,
+     "src": 1
+    },
+    {
+     "period": "2026Q1",
+     "value": 1.4,
+     "src": 1
+    },
+    {
+     "period": "2026Q2",
+     "value": 2.1,
+     "src": 1
+    },
+    {
+     "period": "2026Q3",
+     "value": 3.6,
+     "src": 1
+    }
+   ],
+   "links": [
+    "counter"
+   ],
+   "sides": {
+    "H1": "양쪽"
+   },
+   "side_basis": "2026년 들어 세 분기 연속 올랐지만 분기 값이 크게 출렁이고(2025Q1 −0.1, 2025Q3 4.5), 이 통계만으로 AI 의 몫을 가를 수 없다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "FRED — Nonfarm Business Sector: Labor Productivity (PRS85006092), 원천 BLS Productivity and Costs",
+     "url": "https://fred.stlouisfed.org/series/PRS85006092",
+     "date": "2026-11-05",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "거시 통계에 AI 가 잡히는가를 볼 때의 기준 계열이다. 원인을 다룬 연구는 아직 모으지 않았다."
+  }
+ ]
+}

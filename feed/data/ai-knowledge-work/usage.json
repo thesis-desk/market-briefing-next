@@ -1,0 +1,398 @@
+{
+ "schema": 1,
+ "bundle": "K2",
+ "title": "사용 — 사람·기업·업무시간과 쓰임의 분포",
+ "updated_kst": "2026-11-19T11:25:43+09:00",
+ "measure": null,
+ "notes": [
+  "누가 얼마나 쓰는가다. 조사마다 문항과 표본이 달라 값끼리 더하거나 잇지 않는다.",
+  "자기 보고 조사는 실제 사용·효과와 다를 수 있다(K5 의 실험 기록 참조).",
+  "한 회사 제품의 사용 분포는 그 제품의 표본이고 시장 전체가 아니다."
+ ],
+ "summary": {
+  "records": 8,
+  "with_value": 7,
+  "with_series": 4,
+  "by_hypothesis": {
+   "H1": {
+    "지지": 2,
+    "반박": 0,
+    "양쪽": 6,
+    "중립": 0
+   }
+  },
+  "by_link": {
+   "coding": {
+    "지지": 1,
+    "반박": 0,
+    "양쪽": 1,
+    "중립": 0
+   },
+   "spread": {
+    "지지": 0,
+    "반박": 0,
+    "양쪽": 3,
+    "중립": 0
+   },
+   "penetration": {
+    "지지": 1,
+    "반박": 0,
+    "양쪽": 3,
+    "중립": 0
+   },
+   "slope": {
+    "지지": 1,
+    "반박": 0,
+    "양쪽": 4,
+    "중립": 0
+   },
+   "counter": {
+    "지지": 0,
+    "반박": 0,
+    "양쪽": 1,
+    "중립": 0
+   }
+  }
+ },
+ "records": [
+  {
+   "id": "us-firm-ai-use-btos",
+   "country": "US",
+   "city": null,
+   "metric": "미국 기업의 AI 사용률",
+   "value": null,
+   "unit": "%",
+   "asof": "2026-05",
+   "basis": "미국 센서스 BTOS — 지난 2주 동안 AI 를 썼다고 답한 기업의 비중, 2025-12-14~2026-05-03 조사 회차의 범위",
+   "definition": "2025-11 에 문항이 '재화·서비스 생산에 AI 를 쓰는가'에서 '어느 업무 기능에든 쓰는가'로 넓어져 이전 값과 이어 볼 수 없다.",
+   "range": {
+    "low": 17,
+    "high": 20
+   },
+   "detail": {
+    "by_size": {
+     "250+": 37,
+     "100-249": 32
+    },
+    "expect_next_6m": {
+     "low": 20,
+     "high": 23
+    }
+   },
+   "links": [
+    "penetration",
+    "slope"
+   ],
+   "sides": {
+    "H1": "양쪽"
+   },
+   "side_basis": "기업 다섯 가운데 넷이 아직 쓰지 않는다는 점은 남은 여지로도, 쓸모가 제한적이라는 근거로도 읽힌다. 방향은 뒤의 회차가 정한다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "U.S. Census Bureau — Large Firms With at Least 20 Employees Biggest AI Users",
+     "url": "https://www.census.gov/library/stories/2026/05/ai-use-businesses.html",
+     "date": "2026-05",
+     "read": "partial"
+    }
+   ],
+   "value_src": [],
+   "alt": [
+    {
+     "value": 24.6,
+     "basis": "2026-10-05~18 회차, 2차 보도(검색 요약) — 센서스 원자료 미확인",
+     "url": "https://fourweekmba.com/ai-goldmans-ai-gauge-hits-record-24-6-firms-beat-forecast/"
+    }
+   ],
+   "conf": "high",
+   "note": "250인 이상 기업은 37%, 100~249인은 32%다. 앞으로 6개월 안에 쓸 것이라는 기업은 20~23%였다. 2026-10 회차 값(24.6%)은 2차 보도만 봐서 alt 에 두었다."
+  },
+  {
+   "id": "us-genai-work-use-last-week",
+   "country": "US",
+   "city": null,
+   "metric": "업무용 생성형 AI 사용자 비중(미국 취업자)",
+   "value": 39.2,
+   "unit": "%",
+   "asof": "2026-06",
+   "basis": "취업자 가운데 지난주 업무에 생성형 AI 를 쓴 사람의 비중(Real-Time Population Survey, 18~64세)",
+   "definition": null,
+   "series": [
+    {
+     "period": "2024Q3",
+     "value": 28.2,
+     "src": 1
+    },
+    {
+     "period": "2026Q2",
+     "value": 39.2,
+     "src": 1
+    }
+   ],
+   "links": [
+    "penetration",
+    "slope"
+   ],
+   "sides": {
+    "H1": "지지"
+   },
+   "side_basis": "7개 분기에 11%p 올랐다. 쓰는 사람의 넓이는 꾸준히 는다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "FRED Blog (St. Louis Fed) — Does generative AI save time at work?",
+     "url": "https://fred.stlouisfed.org/blog/2026/08/does-generative-ai-save-time-at-work/",
+     "date": "2026-08-27",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "Bick·Blandin·Deming 의 추적 조사를 FRED 가 실은 값이다. 응답자의 자기 보고다."
+  },
+  {
+   "id": "us-genai-work-hours-assisted",
+   "country": "US",
+   "city": null,
+   "metric": "업무시간 중 생성형 AI 보조 비중(미국)",
+   "value": 6.3,
+   "unit": "%",
+   "asof": "2026-06",
+   "basis": "취업자의 전체 업무시간 가운데 생성형 AI 의 도움을 받은 시간의 비중(같은 조사)",
+   "definition": null,
+   "series": [
+    {
+     "period": "2024Q3",
+     "value": 4.1,
+     "src": 1,
+     "note": "분기 미확인"
+    },
+    {
+     "period": "2026Q2",
+     "value": 6.3,
+     "src": 1
+    }
+   ],
+   "links": [
+    "penetration",
+    "slope"
+   ],
+   "sides": {
+    "H1": "양쪽"
+   },
+   "side_basis": "업무시간의 94%는 아직 AI 없이 흘러간다. 여지가 크다는 뜻이기도 하고, 2년 가까이 2.2%p 오르는 데 그쳤다는 뜻이기도 하다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "FRED Blog (St. Louis Fed) — Does generative AI save time at work?",
+     "url": "https://fred.stlouisfed.org/blog/2026/08/does-generative-ai-save-time-at-work/",
+     "date": "2026-08-27",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "블로그는 시작 시점을 '대략 같은 기간'이라고만 적었다. 시작 값의 분기는 2024Q3 으로 두었고 확인하지 못했다."
+  },
+  {
+   "id": "us-genai-time-savings",
+   "country": "US",
+   "city": null,
+   "metric": "생성형 AI 로 아낀 업무시간 비중(미국)",
+   "value": 2.2,
+   "unit": "%",
+   "asof": "2026-06",
+   "basis": "취업자의 전체 업무시간 가운데 생성형 AI 덕에 아꼈다고 답한 시간의 비중(같은 조사)",
+   "definition": null,
+   "series": [
+    {
+     "period": "2024Q3",
+     "value": 1.6,
+     "src": 1,
+     "note": "분기 미확인"
+    },
+    {
+     "period": "2026Q2",
+     "value": 2.2,
+     "src": 1
+    }
+   ],
+   "links": [
+    "penetration",
+    "counter"
+   ],
+   "sides": {
+    "H1": "양쪽"
+   },
+   "side_basis": "경제 전체로 보면 아낀 시간이 아직 2% 남짓이다. 거시 통계에 안 잡힌다는 반론과 맞고, 동시에 침투율이 낮다는 주장과도 맞는다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "FRED Blog (St. Louis Fed) — Does generative AI save time at work?",
+     "url": "https://fred.stlouisfed.org/blog/2026/08/does-generative-ai-save-time-at-work/",
+     "date": "2026-08-27",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "자기 보고라 블로그도 근사값이라고 적었다."
+  },
+  {
+   "id": "claude-ai-coding-share",
+   "country": "ZZ",
+   "city": null,
+   "metric": "Claude.ai 대화의 코딩 비중",
+   "value": 35,
+   "unit": "%",
+   "asof": "2026-02",
+   "basis": "Claude.ai 대화 가운데 컴퓨터·수학 직업군 과제의 비중(2026-02 표본)",
+   "definition": "대화를 O*NET 과제로 분류한 값. 대화 건수 기준이라 토큰·금액 비중과 다르다.",
+   "links": [
+    "coding",
+    "spread"
+   ],
+   "sides": {
+    "H1": "양쪽"
+   },
+   "side_basis": "가장 큰 쓰임이 여전히 코딩이지만 대화의 3분의 2는 코딩 밖이다. 다만 대화 수이지 지출이 아니고, 코딩이 API(Claude Code)로 옮겨 가는 중이라 이 비중만으로 확산을 말할 수 없다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Anthropic — Economic Index report: Learning curves (2026-03)",
+     "url": "https://www.anthropic.com/research/economic-index-march-2026-report",
+     "date": "2026-03",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "한 회사의 한 제품(소비자용 화면) 표본이다. API 쪽에서는 Claude Code 가 표본의 큰 몫이라고 보고서가 적었다."
+  },
+  {
+   "id": "claude-ai-top10-task-share",
+   "country": "ZZ",
+   "city": null,
+   "metric": "Claude.ai 쓰임의 집중도(상위 10개 과제)",
+   "value": 19,
+   "unit": "%",
+   "asof": "2026-02",
+   "basis": "Claude.ai 대화 가운데 가장 흔한 O*NET 과제 10개의 비중",
+   "definition": null,
+   "series": [
+    {
+     "period": "2025-11",
+     "value": 24,
+     "src": 1
+    },
+    {
+     "period": "2026-02",
+     "value": 19,
+     "src": 1
+    }
+   ],
+   "links": [
+    "spread",
+    "slope"
+   ],
+   "sides": {
+    "H1": "양쪽"
+   },
+   "side_basis": "석 달 사이 쓰임이 덜 몰리게 됐다. 다만 보고서는 코딩이 API 로 옮겨 간 것과 가벼운 개인 사용자가 늘어난 것을 원인으로 들었고, 같은 기간 API 쪽 집중도는 올랐다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Anthropic — Economic Index report: Learning curves (2026-03)",
+     "url": "https://www.anthropic.com/research/economic-index-march-2026-report",
+     "date": "2026-03",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "같은 보고서에서 과제의 평균 시급 환산 값은 Claude.ai 에서 조금 내렸다(쓰임이 저임금 과제로 넓어짐)."
+  },
+  {
+   "id": "claude-jobs-quarter-tasks",
+   "country": "ZZ",
+   "city": null,
+   "metric": "Claude 가 과제의 4분의 1 이상에 쓰인 직업의 비중",
+   "value": 49,
+   "unit": "%",
+   "asof": "2026-02",
+   "basis": "과제의 4분의 1 이상이 Claude 로 수행된 적이 있는 직업의 비중(누적)",
+   "definition": null,
+   "links": [
+    "spread",
+    "slope"
+   ],
+   "sides": {
+    "H1": "양쪽"
+   },
+   "side_basis": "직업의 절반에 닿았다는 수준은 확산 쪽이지만, 보고서는 이 누적 값이 직전 보고서와 거의 같다고 적었다. 넓이의 기울기는 멈춰 있다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Anthropic — Economic Index report: Learning curves (2026-03)",
+     "url": "https://www.anthropic.com/research/economic-index-march-2026-report",
+     "date": "2026-03",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "새로 나타난 O*NET 과제가 직전 보고서보다 훨씬 적었다고 보고서가 적었다."
+  },
+  {
+   "id": "anthropic-internal-code-share",
+   "country": "ZZ",
+   "city": null,
+   "metric": "AI 가 쓴 코드의 비중(Anthropic 사내)",
+   "value": 90,
+   "unit": "%",
+   "asof": "2026-09",
+   "basis": "Anthropic 코드베이스 기여분 가운데 Claude 가 쓴 비중(2026-09, '90% 초과')",
+   "definition": "회사가 정의해 집계한 값이고 감사 대상이 아니다. '기여'의 단위(줄·커밋)는 읽은 범위에서 확인하지 못했다.",
+   "links": [
+    "coding"
+   ],
+   "sides": {
+    "H1": "지지"
+   },
+   "side_basis": "코딩에서는 보조가 아니라 작성 주체가 바뀌었다는 가장 강한 사례다. 다만 모델을 만드는 회사 자신의 수치다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Anthropic, PBC — Form S-1 정정 2호 (SEC EDGAR)",
+     "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026072484/anthropicpbc-sx1ax2.htm",
+     "date": "2026-11-10",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "같은 문서에서 엔지니어 1인당 하루 코드 기여량은 3Q26 에 2024년 평균의 45배를 넘었다고 적었다."
+  }
+ ]
+}

@@ -1,0 +1,256 @@
+{
+ "schema": 1,
+ "bundle": "K6",
+ "title": "천장과 요구 수준 — 임금 풀, 투자, 필요 매출",
+ "updated_kst": "2026-11-19T11:25:43+09:00",
+ "measure": null,
+ "notes": [
+  "임금 풀은 넘어갈 수 있는 일의 상한이고 벤더 매출의 상한이 아니다.",
+  "계산 기록은 basis 가 '계산'으로 시작하고 입력 기록을 refs 로 가리킨다. 출처가 없으므로 원문 확인 비중에서는 확인되지 않은 기록으로 센다.",
+  "임금 풀 추정은 낸 곳마다 직종 범위가 달라 2배 넘게 차이 난다. 직종별 임금 통계로 직접 다시 계산한 값은 아직 없다."
+ ],
+ "summary": {
+  "records": 5,
+  "with_value": 3,
+  "with_series": 0,
+  "by_hypothesis": {
+   "H1": {
+    "지지": 3,
+    "반박": 0,
+    "양쪽": 0,
+    "중립": 0
+   },
+   "H2": {
+    "지지": 0,
+    "반박": 2,
+    "양쪽": 2,
+    "중립": 1
+   }
+  },
+  "by_link": {
+   "ceiling": {
+    "지지": 2,
+    "반박": 1,
+    "양쪽": 1,
+    "중립": 0
+   },
+   "penetration": {
+    "지지": 1,
+    "반박": 0,
+    "양쪽": 1,
+    "중립": 0
+   },
+   "counter": {
+    "지지": 0,
+    "반박": 1,
+    "양쪽": 0,
+    "중립": 0
+   }
+  }
+ },
+ "records": [
+  {
+   "id": "wage-pool-anthropic-s1",
+   "country": "ZZ",
+   "city": null,
+   "metric": "세계 지식노동 임금 풀",
+   "value": 40,
+   "unit": "조 달러",
+   "asof": "2025",
+   "basis": "세계 지식노동자 임금 합('40조 달러 초과'), Anthropic 의 자체 추정",
+   "definition": null,
+   "links": [
+    "ceiling"
+   ],
+   "sides": {
+    "H1": "지지",
+    "H2": "중립"
+   },
+   "side_basis": "천장이 지금 매출의 수백 배라는 근거다. 다만 임금 합은 넘어갈 수 있는 일의 상한이지 벤더 매출의 상한이 아니고, 상장을 앞둔 회사가 낸 추정이다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Anthropic, PBC — Form S-1 정정 2호 (SEC EDGAR)",
+     "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026072484/anthropicpbc-sx1ax2.htm",
+     "date": "2026-11-10",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "산식: 미국 노동통계국의 2025년 직종별 임금에서 회사가 지식노동자로 본 직종의 임금 합을 구하고, ILO 의 노동소득 비중과 2025년 세계 GDP 로 세계 값으로 넓혔다. 어느 직종을 넣었는지는 읽은 범위에서 확인하지 못했다."
+  },
+  {
+   "id": "wage-pool-bofa",
+   "country": "ZZ",
+   "city": null,
+   "metric": "세계 지식노동 임금 풀(일곱 직능)",
+   "value": 18.6,
+   "unit": "조 달러",
+   "asof": "2025-06",
+   "basis": "세계 지식노동자 임금 합 — 영업·마케팅·고객지원·재무·인사·IT·운영 일곱 직능(BofA Global Research)",
+   "definition": null,
+   "detail": {
+    "agent_share_2030_pct": 10,
+    "value_2030_tn": 1.9,
+    "vendor_capture_pct": 8,
+    "vendor_spend_2030_bn": 155
+   },
+   "links": [
+    "ceiling"
+   ],
+   "sides": {
+    "H1": "지지",
+    "H2": "반박"
+   },
+   "side_basis": "임금 풀은 크지만 같은 분석이 2030년 벤더 몫을 1,550억 달러로 봤다. 천장이 크다는 것과 벤더가 받는 돈이 크다는 것이 다른 문제임을 보이는 추정이다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Allwork.Space — BofA Analysts Project Agentic AI Spending Could Hit $155 Billion By 2030",
+     "url": "https://allwork.space/2025/06/bofa-analysts-project-agentic-ai-spending-could-hit-155-billion-by-2030/",
+     "date": "2025-06-26",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "BofA 는 2030년에 AI 에이전트가 이 일의 10%를 맡아 1.9조 달러의 가치를 내고, 소프트웨어 회사가 그 8%를 가져가면 지출이 1,550억 달러라고 봤다. BofA 원문은 유료라 기사에서 읽었다."
+  },
+  {
+   "id": "required-revenue-bain-2030",
+   "country": "ZZ",
+   "city": null,
+   "metric": "투자가 요구하는 AI 연매출(2030)",
+   "value": 2,
+   "unit": "조 달러/년",
+   "asof": "2025-09",
+   "basis": "2030년 컴퓨트 수요를 대는 데 필요한 AI 연매출(Bain Global Technology Report 2025)",
+   "definition": null,
+   "detail": {
+    "shortfall_tn": 0.8
+   },
+   "links": [
+    "ceiling",
+    "counter"
+   ],
+   "sides": {
+    "H2": "반박"
+   },
+   "side_basis": "Bain 은 AI 로 아낀 비용을 넣어도 매출이 8,000억 달러 모자란다고 봤다. H2 의 기준선이다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Bloomberg — An $800 Billion Revenue Shortfall Threatens AI Future, Bain Says",
+     "url": "https://www.bloomberg.com/news/articles/2025-09-23/an-800-billion-revenue-shortfall-threatens-ai-future-bain-says",
+     "date": "2025-09-23",
+     "read": "search_summary"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "검색 요약만 봤다(Bain 보도자료는 403). 2025-09 추정이라 그 뒤 랩 매출 증가가 반영돼 있지 않다."
+  },
+  {
+   "id": "two-lab-run-rate-share-of-wage-pool",
+   "country": "ZZ",
+   "city": null,
+   "metric": "두 랩 연환산 매출 ÷ 지식노동 임금 풀",
+   "value": null,
+   "unit": "%",
+   "asof": "2026-10",
+   "basis": "계산: (Anthropic 연환산 매출 81 + OpenAI 50~70, 십억 달러) ÷ 세계 지식노동 임금 풀 18.6조~40조 달러",
+   "definition": null,
+   "range": {
+    "low": 0.33,
+    "high": 0.81
+   },
+   "links": [
+    "penetration"
+   ],
+   "sides": {
+    "H1": "지지",
+    "H2": "양쪽"
+   },
+   "side_basis": "임금 풀의 1%에 못 미친다. 침투율이 낮다는 주장의 중심 값이지만, 낮다는 사실만으로는 오를 것이라는 근거가 되지 않는다.",
+   "refs": [
+    {
+     "bundle": "K3",
+     "id": "anthropic-run-rate"
+    },
+    {
+     "bundle": "K3",
+     "id": "openai-run-rate"
+    },
+    {
+     "bundle": "K6",
+     "id": "wage-pool-anthropic-s1"
+    },
+    {
+     "bundle": "K6",
+     "id": "wage-pool-bofa"
+    }
+   ],
+   "sources": [],
+   "value_src": [],
+   "alt": [],
+   "conf": "low",
+   "note": "낮은 쪽 131 ÷ 40,000 = 0.33%, 높은 쪽 151 ÷ 18,600 = 0.81%. 구글·MS·중국 랩의 매출은 빠져 있고, 두 랩 매출에는 지식노동이 아닌 소비자 구독이 섞여 있다. OpenAI 값이 미확인이라 신뢰도가 낮다."
+  },
+  {
+   "id": "required-revenue-share-of-wage-pool",
+   "country": "ZZ",
+   "city": null,
+   "metric": "투자가 요구하는 매출 ÷ 지식노동 임금 풀",
+   "value": null,
+   "unit": "%",
+   "asof": "2025-09",
+   "basis": "계산: Bain 의 2030년 필요 연매출 2조 달러 ÷ 세계 지식노동 임금 풀 18.6조~40조 달러",
+   "definition": null,
+   "range": {
+    "low": 5,
+    "high": 10.8
+   },
+   "links": [
+    "ceiling",
+    "penetration"
+   ],
+   "sides": {
+    "H2": "양쪽"
+   },
+   "side_basis": "투자가 회수되려면 AI 매출이 지식노동 임금의 5~11%에 닿아야 한다. 두 랩의 지금 값(0.33~0.81%)의 13~15배다.",
+   "refs": [
+    {
+     "bundle": "K6",
+     "id": "required-revenue-bain-2030"
+    },
+    {
+     "bundle": "K6",
+     "id": "wage-pool-anthropic-s1"
+    },
+    {
+     "bundle": "K6",
+     "id": "wage-pool-bofa"
+    },
+    {
+     "bundle": "K6",
+     "id": "two-lab-run-rate-share-of-wage-pool"
+    }
+   ],
+   "sources": [],
+   "value_src": [],
+   "alt": [],
+   "conf": "low",
+   "note": "2.0 ÷ 40 = 5.0%, 2.0 ÷ 18.6 = 10.8%. 배수는 2,000 ÷ 151 = 13.2, 2,000 ÷ 131 = 15.3. Bain 의 값은 AI 회사 전체의 매출이라 두 랩만 놓고 본 배수는 실제보다 크게 나온다. 임금 풀은 2025년 값이고 2030년까지의 임금 증가는 넣지 않았다."
+  }
+ ]
+}

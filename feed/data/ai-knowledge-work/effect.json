@@ -1,0 +1,187 @@
+{
+ "schema": 1,
+ "bundle": "K5",
+ "title": "효과 측정 — 실험과 조사",
+ "updated_kst": "2026-11-19T11:25:43+09:00",
+ "measure": null,
+ "notes": [
+  "생산성·손익 효과를 잰 연구와 조사다. 효과가 있었다는 결과와 없었다는 결과를 같은 무게로 모은다.",
+  "실험(무작위 배정), 도입 시차를 쓴 추정, 자기 평가 조사를 basis·definition 에서 가른다."
+ ],
+ "summary": {
+  "records": 4,
+  "with_value": 4,
+  "with_series": 0,
+  "by_hypothesis": {
+   "H1": {
+    "지지": 1,
+    "반박": 3,
+    "양쪽": 0,
+    "중립": 0
+   },
+   "H2": {
+    "지지": 0,
+    "반박": 2,
+    "양쪽": 0,
+    "중립": 0
+   }
+  },
+  "by_link": {
+   "coding": {
+    "지지": 0,
+    "반박": 1,
+    "양쪽": 0,
+    "중립": 0
+   },
+   "spread": {
+    "지지": 1,
+    "반박": 0,
+    "양쪽": 0,
+    "중립": 0
+   },
+   "counter": {
+    "지지": 0,
+    "반박": 3,
+    "양쪽": 0,
+    "중립": 0
+   }
+  }
+ },
+ "records": [
+  {
+   "id": "metr-rct-2025-dev-slowdown",
+   "country": "ZZ",
+   "city": null,
+   "metric": "AI 허용 시 숙련 개발자의 작업 시간 변화(실험)",
+   "value": 19,
+   "unit": "% (작업 시간 증가)",
+   "asof": "2025-07",
+   "basis": "숙련 오픈소스 개발자 무작위 대조 실험 — AI 도구를 허용했을 때 과제 완료 시간의 변화",
+   "definition": "자신이 오래 기여한 저장소의 실제 과제에서 잰 값이다. 표본이 작고 2025년 상반기 도구에 한정된다.",
+   "links": [
+    "counter",
+    "coding"
+   ],
+   "sides": {
+    "H1": "반박"
+   },
+   "side_basis": "코딩에서조차 숙련자는 느려졌다는 결과다. 개발자 자신은 20% 빨라졌다고 느꼈다는 점이 자기 보고 조사 전체에 대한 경고가 된다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity (arXiv 2507.09089, 초록)",
+     "url": "https://arxiv.org/abs/2507.09089",
+     "date": "2025-07",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "개발자 16명, 2025년 2~6월의 도구 기준이다. 개발자는 사전에 24% 단축을 예상했고 사후에도 20% 단축됐다고 추정했다. 그 뒤 도구로 다시 한 실험은 아직 찾지 못했다."
+  },
+  {
+   "id": "brynjolfsson-genai-at-work",
+   "country": "ZZ",
+   "city": null,
+   "metric": "AI 보조 도입 시 고객지원 생산성 변화",
+   "value": 15,
+   "unit": "% (시간당 해결 건수 증가)",
+   "asof": "2023-04",
+   "basis": "고객지원 상담원 5,172명에게 생성형 AI 보조를 차례로 도입했을 때의 생산성 변화(평균)",
+   "definition": "한 회사의 도입 사례이고 무작위 배정이 아니라 도입 시차를 쓴 추정이다.",
+   "links": [
+    "spread"
+   ],
+   "sides": {
+    "H1": "지지"
+   },
+   "side_basis": "코딩 밖 직능(고객지원)에서 실제 업무 자료로 잰 증폭 효과다. 다만 2020~2021년 도입분이라 지금의 모델·에이전트와 거리가 있다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Generative AI at Work (arXiv 2304.11771, 초록)",
+     "url": "https://arxiv.org/abs/2304.11771",
+     "date": "2023-04",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "효과는 경험이 적은 상담원에게 더 컸다고 초록이 적었다."
+  },
+  {
+   "id": "pwc-ceo-survey-2026-no-benefit",
+   "country": "ZZ",
+   "city": null,
+   "metric": "AI 에서 재무 효과를 못 봤다는 CEO 비중",
+   "value": 56,
+   "unit": "%",
+   "asof": "2026-01",
+   "basis": "PwC 2026 글로벌 CEO 조사 — AI 로 비용 절감도 매출 증가도 얻지 못했다고 답한 CEO 의 비중",
+   "definition": "CEO 의 자기 평가다. 효과의 크기나 기간은 재지 않는다.",
+   "links": [
+    "counter"
+   ],
+   "sides": {
+    "H1": "반박",
+    "H2": "반박"
+   },
+   "side_basis": "기업 손익에 안 잡힌다는 반론의 가장 넓은 표본이다. 둘 다 얻었다는 답은 12%뿐이다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "The Register — Majority of CEOs report zero payoff from AI splurge",
+     "url": "https://www.theregister.com/2026/01/20/pwc_ai_ceo_survey/",
+     "date": "2026-01-20",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "PwC 원문은 열지 못했고 전문지 기사에서 읽었다. 비용이 줄었다는 답이 26%, 비슷한 비중이 비용이 늘었다고 답했다."
+  },
+  {
+   "id": "mit-nanda-genai-pilots-no-return",
+   "country": "ZZ",
+   "city": null,
+   "metric": "손익 효과가 없었다는 기업 시범 사업 비중",
+   "value": 95,
+   "unit": "%",
+   "asof": "2025-08",
+   "basis": "MIT NANDA 'The GenAI Divide' — 측정 가능한 손익 효과가 없었다는 기업 생성형 AI 시범 사업의 비중",
+   "definition": null,
+   "links": [
+    "counter"
+   ],
+   "sides": {
+    "H1": "반박",
+    "H2": "반박"
+   },
+   "side_basis": "회의론이 가장 자주 드는 숫자다. 원문의 표본과 정의를 확인하기 전에는 무게를 두기 어렵다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Forkast — The ROI metric shift: enterprises now demand financial impact, but only 5–8% can actually measure it",
+     "url": "https://forkast.news/the-roi-metric-shift-enterprises-now-demand-financial-impact-but-only-5-8-can-actually-measure-it/",
+     "date": null,
+     "read": "search_summary"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "low",
+   "note": "검색 요약만 봤다. 원문 보고서를 열어 표본 수·'시범 사업'과 '효과'의 정의를 확인해야 한다."
+  }
+ ]
+}

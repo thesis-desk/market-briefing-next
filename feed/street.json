@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated_kst": "2026-11-19T08:25:53+09:00",
+ "updated_kst": "2026-11-19T11:26:48+09:00",
  "window_days": 14,
  "items_days": 30,
  "index": {
@@ -8,7 +8,7 @@
    "value": 0,
    "label": "엇갈림",
    "orgs": 42,
-   "items": 142
+   "items": 143
   },
   "market": {
    "value": -12,
@@ -54,7 +54,7 @@
    },
    {
     "group": "투자 거장",
-    "ai_tech": -27,
+    "ai_tech": -30,
     "ai_tech_orgs": 9,
     "market": -51,
     "market_orgs": 9
@@ -98,7 +98,7 @@
    },
    {
     "week": "2026-11-16",
-    "ai_tech": 6,
+    "ai_tech": 5,
     "ai_tech_orgs": 21,
     "market": -3,
     "market_orgs": 14
@@ -136,7 +136,7 @@
     },
     {
      "tag": "수요·채택",
-     "n": 4
+     "n": 5
     },
     {
      "tag": "전력·공급 제약",
@@ -364,6 +364,29 @@
     "tier": "standard"
    },
    "note": "유튜브 자막(제작자 제공)(en) 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
+  },
+  {
+   "id": "druckenmiller-copper-falls-over-5-globally-after-stan-druckenm",
+   "group": "투자 거장",
+   "org": "Duquesne Family Office",
+   "person": "Stanley Druckenmiller",
+   "kind": "report",
+   "title": "스탠 드러켄밀러의 AI 경고 뒤 구리 5% 넘게 급락",
+   "title_orig": "Copper falls over 5% globally after Stan Druckenmiller's AI warning",
+   "url": "https://www.newsbytesapp.com/news/business/copper-falls-over-5-globally-after-stan-druckenmillers-ai-warning/tldr",
+   "outlet": "NewsBytes",
+   "published_kst": "2026-11-19T01:09:00+09:00",
+   "stance": {
+    "ai_tech": -1,
+    "market": null
+   },
+   "args": [
+    "수요·채택"
+   ],
+   "judged": {
+    "basis": "headline_only",
+    "tier": "light"
+   }
   },
   {
    "id": "bofa-nvidia-s-growth-outlook-survives-jensen-huang-su",

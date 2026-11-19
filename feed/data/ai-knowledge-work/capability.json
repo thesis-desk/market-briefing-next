@@ -1,0 +1,318 @@
+{
+ "schema": 1,
+ "bundle": "K1",
+ "title": "역량 — 납품물·과제 단위로 잰 자동화 수준",
+ "updated_kst": "2026-11-19T11:25:43+09:00",
+ "measure": null,
+ "notes": [
+  "모델이 무엇을 해낼 수 있는가를 잰 지표다. 쓰이고 있는가(K2), 돈이 나가는가(K3)와 구분한다.",
+  "벤치마크마다 과제의 범위가 다르다. 값끼리 견주지 않고 같은 지표의 시계열로만 읽는다.",
+  "지표를 만든 곳이 모델 공급사이거나 공급사의 돈을 받는 곳일 수 있다. 기록의 definition 에 적는다."
+ ],
+ "summary": {
+  "records": 3,
+  "with_value": 3,
+  "with_series": 2,
+  "by_hypothesis": {
+   "H1": {
+    "지지": 3,
+    "반박": 0,
+    "양쪽": 0,
+    "중립": 0
+   }
+  },
+  "by_link": {
+   "coding": {
+    "지지": 1,
+    "반박": 0,
+    "양쪽": 0,
+    "중립": 0
+   },
+   "spread": {
+    "지지": 2,
+    "반박": 0,
+    "양쪽": 0,
+    "중립": 0
+   },
+   "slope": {
+    "지지": 2,
+    "반박": 0,
+    "양쪽": 0,
+    "중립": 0
+   }
+  }
+ },
+ "records": [
+  {
+   "id": "rli-automation-rate",
+   "country": "ZZ",
+   "city": null,
+   "metric": "유료 프리랜서 프로젝트를 통째로 맡겼을 때의 자동화율(최고 에이전트)",
+   "value": 41.25,
+   "unit": "%",
+   "asof": "2026-11",
+   "basis": "Remote Labor Index 순위표 1위 에이전트의 자동화율. 2026-11-19 에 읽은 값",
+   "definition": "AI 의 결과물을 사람의 결과물과 견줘 '합리적인 의뢰인이 받아들일' 수준 이상이라고 평가자가 본 프로젝트의 비중(평가자 3명 다수결). 원격 프리랜서 일감의 표본이고 회사 안 직무 전체가 아니다.",
+   "series": [
+    {
+     "period": "2025-10",
+     "value": 2.5,
+     "src": 3,
+     "label": "Manus, 공개 당시 최고"
+    },
+    {
+     "period": "2026-11",
+     "value": 41.25,
+     "src": 1,
+     "label": "Fable 5.2"
+    }
+   ],
+   "detail": {
+    "pace": "최근 3개월 기준 약 3.3개월마다 2배(사이트 표시)",
+    "leaderboard_top": [
+     {
+      "name": "Fable 5.2",
+      "rate": 41.25
+     },
+     {
+      "name": "Opus 5.5",
+      "rate": 21.25
+     },
+     {
+      "name": "GPT 6 Astra",
+      "rate": 20.83
+     },
+     {
+      "name": "Fable 5.1",
+      "rate": 17.92
+     },
+     {
+      "name": "Gemini Argon 4",
+      "rate": 17.08
+     },
+     {
+      "name": "Fable 5",
+      "rate": 15.83
+     }
+    ]
+   },
+   "links": [
+    "spread",
+    "slope"
+   ],
+   "sides": {
+    "H1": "지지"
+   },
+   "side_basis": "과제가 아니라 납품물 단위의 자동화율이 13개월에 2.5%에서 41%로 올랐고, 프로젝트에 디자인·영상·건축·게임 개발이 섞여 있어 코딩 밖 역량의 근거가 된다. 다만 사용이나 지출이 아니라 역량을 잰 값이다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Remote Labor Index (remotelabor.ai)",
+     "url": "https://www.remotelabor.ai/",
+     "date": null,
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "Scale AI — Remote Labor Index leaderboard",
+     "url": "https://scale.com/leaderboard/rli",
+     "date": null,
+     "read": "partial"
+    },
+    {
+     "n": 3,
+     "title": "Remote Labor Index: Measuring AI Automation of Remote Work (arXiv 2510.26787, 초록)",
+     "url": "https://arxiv.org/abs/2510.26787",
+     "date": "2025-10",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1,
+    2
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "순위표의 다음 순위는 Opus 5.5 21.25, GPT 6 Astra 20.83, Fable 5.1 17.92, Gemini Argon 4 17.08, Fable 5 15.83 이다. 순위표는 비공개 230건으로 채점한다고 적는데 값은 240건의 배수와 맞는다(41.25% = 99건). 모델별 평가 시점은 순위표에 없어 중간 시점은 시계열에 넣지 않았다."
+  },
+  {
+   "id": "metr-time-horizon-p50",
+   "country": "ZZ",
+   "city": null,
+   "metric": "50% 성공 작업 지평(최고 모델)",
+   "value": 1044.8,
+   "unit": "분",
+   "asof": "2026-04",
+   "basis": "METR Horizon v1.1 — 과제의 절반을 성공하는 작업 길이(사람이 걸리는 시간 기준), 그 시점까지의 최고 모델",
+   "definition": "소프트웨어·ML 과제 묶음에서 잰 값이다. 범용 지식노동의 작업 길이가 아니고, 16시간을 넘는 추정은 과제 묶음의 한계로 구간이 넓다.",
+   "series": [
+    {
+     "period": "2023-11-06",
+     "value": 4,
+     "src": 1,
+     "label": "GPT-4 1106"
+    },
+    {
+     "period": "2024-05-13",
+     "value": 7,
+     "src": 1,
+     "label": "GPT-4o"
+    },
+    {
+     "period": "2024-06-20",
+     "value": 11.4,
+     "src": 1,
+     "label": "Claude 3.5 Sonnet"
+    },
+    {
+     "period": "2024-09-12",
+     "value": 20.3,
+     "src": 1,
+     "label": "o1-preview"
+    },
+    {
+     "period": "2024-10-22",
+     "value": 20.5,
+     "src": 1,
+     "label": "Claude 3.5 Sonnet(10월)"
+    },
+    {
+     "period": "2024-12-05",
+     "value": 38.8,
+     "src": 1,
+     "label": "o1"
+    },
+    {
+     "period": "2025-02-24",
+     "value": 60.4,
+     "src": 1,
+     "label": "Claude 3.7 Sonnet"
+    },
+    {
+     "period": "2025-04-16",
+     "value": 119.7,
+     "src": 1,
+     "label": "o3"
+    },
+    {
+     "period": "2025-08-07",
+     "value": 203,
+     "src": 1,
+     "label": "GPT-5"
+    },
+    {
+     "period": "2025-11-18",
+     "value": 224.3,
+     "src": 1,
+     "label": "Gemini 3 Pro"
+    },
+    {
+     "period": "2025-11-24",
+     "value": 293,
+     "src": 1,
+     "label": "Claude Opus 4.5"
+    },
+    {
+     "period": "2025-12-11",
+     "value": 352.2,
+     "src": 1,
+     "label": "GPT-5.2"
+    },
+    {
+     "period": "2026-02-05",
+     "value": 718.8,
+     "src": 1,
+     "label": "Claude Opus 4.6"
+    },
+    {
+     "period": "2026-04-07",
+     "value": 1044.8,
+     "src": 1,
+     "label": "Claude Mythos Preview(초기)"
+    }
+   ],
+   "detail": {
+    "doubling_days": {
+     "all_time": 187.8,
+     "from_2023": 128.7,
+     "from_2023_low": 104.4,
+     "from_2023_high": 158
+    },
+    "latest_ci_minutes": {
+     "low": 508.9,
+     "high": 3304.3
+    },
+    "latest_p80_minutes": 185.9
+   },
+   "links": [
+    "coding",
+    "slope"
+   ],
+   "sides": {
+    "H1": "지지"
+   },
+   "side_basis": "역량 지표가 2023년 뒤로 멈춘 적이 없음을 보인다. 다만 과제가 소프트웨어·ML 중심이라 코딩 밖 확산의 근거로는 약하다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "METR — benchmark_results_1_1.yaml (Time Horizons 원자료)",
+     "url": "https://metr.org/assets/benchmark_results_1_1.yaml",
+     "date": null,
+     "read": "full"
+    },
+    {
+     "n": 2,
+     "title": "METR — Task-Completion Time Horizons of Frontier AI Models",
+     "url": "https://metr.org/time-horizons/",
+     "date": null,
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "2배가 되는 기간은 전체 기간 187.8일, 2023년 이후 128.7일(구간 104.4~158.0일)로 파일에 적혀 있다(중앙값이 16시간을 넘는 점은 뺀 값). 최신 값의 구간은 509~3,304분으로 넓다. 2026-04 뒤에 나온 모델의 값은 파일에 없다."
+  },
+  {
+   "id": "gdpval-win-or-tie-rate",
+   "country": "ZZ",
+   "city": null,
+   "metric": "전문가 결과물 대비 승·무 비중(최고 모델)",
+   "value": 47.6,
+   "unit": "%",
+   "asof": "2025-10",
+   "basis": "GDPval gold 부분집합에서 Claude Opus 4.1 의 결과물이 사람 전문가의 결과물보다 낫거나 같다고 평가된 비중(논문 공개 당시 최고)",
+   "definition": "직업 전문가가 사람 결과물과 모델 결과물을 가리고 견준 평가. 과제 단위이고, 과제를 받아 오고 결과를 넘기는 직무 전체가 아니다. 벤치마크를 만든 곳이 모델 공급사(OpenAI)다.",
+   "links": [
+    "spread"
+   ],
+   "sides": {
+    "H1": "지지"
+   },
+   "side_basis": "미국 GDP 기여가 큰 9개 부문 44개 직업의 실제 과제에서 잰 값이라 코딩 밖 역량을 직접 본다. 공개 당시 값 하나뿐이고 그 뒤의 값은 원문으로 확인하지 못했다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "GDPval: Evaluating AI Model Performance on Real-World Economically Valuable Tasks (arXiv 2510.04374v1)",
+     "url": "https://arxiv.org/html/2510.04374v1",
+     "date": "2025-10",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [
+    {
+     "value": 82,
+     "basis": "GPT-5.4, 2026-03, 2차 보도(검색 요약) — 원문 미확인",
+     "url": "https://www.gentic.news/article/gpt-5-4-matches-human-experts-on-professional-tasks-82-of-the-time-study-reveals"
+    }
+   ],
+   "conf": "high",
+   "note": "과제는 전문가가 평균 7시간 걸리는 분량이다. 뒤에 나온 모델의 값은 공급사 발표와 2차 보도에만 있어 alt 에 두었다."
+  }
+ ]
+}
