@@ -1,7 +1,27 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-20T05:27:13+09:00",
+ "generated_kst": "2026-11-20T08:23:49+09:00",
  "reports": [
+  {
+   "slug": "big-technology-why-the-anthropic-ipo-will-succeed-with-aaron",
+   "type": "interview",
+   "title": "Aaron Levie 인터뷰 : Anthropic IPO 강세 논리와 에이전트가 만드는 토큰 수요",
+   "companies": [
+    {
+     "name": "Anthropic",
+     "ticker": null
+    },
+    {
+     "name": "Box",
+     "ticker": null
+    }
+   ],
+   "published_kst": "2026-11-20T08:20:16+09:00",
+   "revised_kst": "2026-11-20T08:20:16+09:00",
+   "revision": 1,
+   "summary": "S-1 수치는 레비의 강세 논리 가운데 수요 쪽을 뒷받침한다: 고객 확산이 넓고 추론에서 이익이 나기 시작했다. 반면 9,000억 달러 지급 약속을 감당할 만큼 성장이 오래 이어질지와 공모 가격의 적정성에는 답하지 않았다. 사업에는 호재지만 주식에 대한 판정은 가격 자료가 나올 때까지 미룬다.",
+   "path": "reports/big-technology-why-the-anthropic-ipo-will-succeed-with-aaron.json"
+  },
   {
    "slug": "damodaran-the-rocky-road-from-aggregate-to-per-share-value",
    "type": "article",
@@ -2499,7 +2519,7 @@
   }
  ],
  "street": {
-  "updated_kst": "2026-11-20T05:22:46+09:00",
+  "updated_kst": "2026-11-20T08:23:49+09:00",
   "path": "street.json"
  },
  "calendar": {
