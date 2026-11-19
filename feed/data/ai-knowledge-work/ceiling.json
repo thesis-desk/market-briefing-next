@@ -2,17 +2,18 @@
  "schema": 1,
  "bundle": "K6",
  "title": "천장과 요구 수준 — 임금 풀, 투자, 필요 매출",
- "updated_kst": "2026-11-19T13:54:06+09:00",
+ "updated_kst": "2026-11-19T14:03:51+09:00",
  "measure": null,
  "notes": [
   "임금 풀은 넘어갈 수 있는 일의 상한이고 벤더 매출의 상한이 아니다.",
   "계산 기록은 basis 가 '계산'으로 시작하고 입력 기록을 refs 로 가리킨다. 출처가 없으므로 원문 확인 비중에서는 확인되지 않은 기록으로 센다.",
   "임금 풀 추정은 낸 곳마다 직종 범위가 달라 2배 넘게 차이 난다. 직접 계산한 값(wage-pool-us-direct, wage-pool-global-direct)과 그 입력은 `desk datasets wagepool` 이 공개 통계에서 다시 만든다(auto).",
-  "직접 계산에서 어느 직종을 지식노동으로 볼지와 임금 격차를 넣을지는 데스크의 가정이다. 요청자가 정하면 그 값으로 바꾼다. 임금 풀 대비 회수율은 넣지 않는다."
+  "직접 계산에서 어느 직종을 지식노동으로 볼지와 임금 격차를 넣을지는 데스크의 가정이다. 요청자가 정하면 그 값으로 바꾼다. 임금 풀 대비 회수율은 넣지 않는다.",
+  "투자가 요구하는 매출의 데스크 모델(required-revenue-desk-model)은 손으로 넣는 계산 기록이다. 가정 다섯 개와 식은 definition·detail 에 있고, 하이퍼스케일러의 투자 계획이 바뀌면 다시 계산한다."
  ],
  "summary": {
-  "records": 11,
-  "with_value": 7,
+  "records": 13,
+  "with_value": 8,
   "with_series": 0,
   "by_hypothesis": {
    "H1": {
@@ -24,16 +25,16 @@
    "H2": {
     "지지": 0,
     "반박": 2,
-    "양쪽": 3,
-    "중립": 1
+    "양쪽": 4,
+    "중립": 2
    }
   },
   "by_link": {
    "ceiling": {
     "지지": 4,
     "반박": 1,
-    "양쪽": 1,
-    "중립": 4
+    "양쪽": 2,
+    "중립": 5
    },
    "penetration": {
     "지지": 1,
@@ -44,7 +45,7 @@
    "counter": {
     "지지": 0,
     "반박": 1,
-    "양쪽": 0,
+    "양쪽": 1,
     "중립": 0
    }
   }
@@ -252,6 +253,213 @@
    "alt": [],
    "conf": "low",
    "note": "2.0 ÷ 40 = 5.0%, 2.0 ÷ 18.6 = 10.8%. 배수는 2,000 ÷ 151 = 13.2, 2,000 ÷ 131 = 15.3. Bain 의 값은 AI 회사 전체의 매출이라 두 랩만 놓고 본 배수는 실제보다 크게 나온다. 임금 풀은 2025년 값이고 2030년까지의 임금 증가는 넣지 않았다."
+  },
+  {
+   "id": "hyperscaler-capex-2026",
+   "country": "US",
+   "city": null,
+   "metric": "하이퍼스케일러 다섯 곳의 연간 설비투자 계획",
+   "value": 822.5,
+   "unit": "십억 달러/년",
+   "asof": "2026-10",
+   "basis": "Amazon·Alphabet·Microsoft·Meta·Oracle 이 2026년 3분기 실적 때 밝힌 연간 설비투자 계획의 합(810~835), 가운데 값",
+   "definition": "회사마다 회계연도와 기준이 다르다(Microsoft 와 Oracle 은 2026년 중반에 시작하는 회계연도, Amazon 은 현금 기준, Meta 는 금융리스 포함). AI 가 아닌 투자(일반 클라우드, 물류, 사무 공간)가 들어 있다.",
+   "detail": {
+    "firms": {
+     "Amazon": {
+      "low": 220,
+      "high": 220,
+      "period": "2026년",
+      "basis": "현금 기준 설비투자, '약 2,200억 달러'",
+      "src": 1
+     },
+     "Alphabet": {
+      "low": 195,
+      "high": 205,
+      "period": "2026년",
+      "basis": "설비투자 전망 1,950억~2,050억 달러",
+      "src": 2
+     },
+     "Microsoft": {
+      "low": 170,
+      "high": 170,
+      "period": "2027 회계연도(2026-07~2027-06)",
+      "basis": "재무책임자의 '약 1,700억 달러'(금융리스 포함 여부는 읽은 보도에 없다)",
+      "src": 3
+     },
+     "Meta": {
+      "low": 135,
+      "high": 145,
+      "period": "2026년",
+      "basis": "금융리스 원금 상환을 넣은 설비투자 1,350억~1,450억 달러",
+      "src": 4
+     },
+     "Oracle": {
+      "low": 90,
+      "high": 95,
+      "period": "2027 회계연도(2026-06~2027-05)",
+      "basis": "설비투자 900억~950억 달러(고객 선급금을 뺀 순현금 기준은 700억 달러 이하)",
+      "src": 5
+     }
+    },
+    "direction_2027": "Amazon 은 2027년에 '의미 있게 더', Alphabet 은 '크게 늘어난다'고 했다(검색 요약으로만 봤다). 금액을 밝힌 곳은 없다."
+   },
+   "range": {
+    "low": 810,
+    "high": 835
+   },
+   "links": [
+    "ceiling"
+   ],
+   "sides": {
+    "H2": "중립"
+   },
+   "side_basis": "투자가 요구하는 매출 계산의 입력이다.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Amazon — 2026년 3분기 실적 발표",
+     "url": "https://www.aboutamazon.com/news/company-news/amazon-earnings-q3-2026-report",
+     "date": "2026-10-29",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "Quartr — Alphabet Q3 2026 earnings summary",
+     "url": "https://quartr.com/events/alphabet-inc-goog-q3-2026_3ebmqmdr",
+     "date": "2026-10-28",
+     "read": "partial"
+    },
+    {
+     "n": 3,
+     "title": "investingLive — Microsoft sees $170bn capex in fiscal 2027 but says it will stay cash flow positive",
+     "url": "https://investinglive.com/stocks/microsoft-sees-170bn-capex-in-fiscal-2027-but-says-it-will-stay-cash-flow-positive/",
+     "date": "2026-10-28",
+     "read": "partial"
+    },
+    {
+     "n": 4,
+     "title": "Meta — 2026년 3분기 실적 보도자료(Finviz 게재본)",
+     "url": "https://finviz.com/news/405782/meta-reports-third-quarter-2026-results",
+     "date": "2026-10-21",
+     "read": "partial"
+    },
+    {
+     "n": 5,
+     "title": "MarketBeat — Oracle Q1 earnings call highlights",
+     "url": "https://www.marketbeat.com/instant-alerts/transcript-oracle-q1-earnings-call-highlights-2026-09-10/",
+     "date": "2026-09-10",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "Microsoft 의 값은 재무책임자 발언을 옮긴 보도에서, Alphabet 과 Oracle 은 실적 요약에서 읽었다. 랩의 직접 투자와 CoreWeave 같은 전문 사업자, 중국 회사는 빠져 있다."
+  },
+  {
+   "id": "required-revenue-desk-model",
+   "country": "ZZ",
+   "city": null,
+   "metric": "투자가 요구하는 AI 연매출(데스크 모델)",
+   "value": null,
+   "unit": "조 달러/년",
+   "asof": "2026-10",
+   "basis": "계산: 설비투자 × AI 몫 × (1 + 그 밖의 운영비 비율) ÷ (1 − 목표 영업이익률) ÷ 최종 매출에서 컴퓨트가 차지하는 몫. 가운데 2.5조 달러, 범위 1.5조~4.1조 달러",
+   "definition": "이 속도의 투자가 이어져 해마다의 감가상각이 설비투자와 같아진 상태를 가정한다. 인프라를 가진 쪽이 감가상각과 그 밖의 운영비(전력·인건비)를 치르고 목표 이익률을 남기려면 받아야 하는 매출을 내고, 그 돈을 내는 AI 제품 쪽의 매출로 넓힌다. 다섯 값(AI 몫, 운영비 비율, 이익률, 컴퓨트 몫, 투자 규모)은 모두 데스크의 가정이고 요청자가 정하면 그 값으로 바꾼다. 컴퓨트 몫의 기준은 Anthropic 의 2026년 3분기 값(매출의 58% 가 컴퓨트·인프라 비용, 증권신고서)이다. 광고·검색처럼 AI 로 지키거나 늘리는 기존 매출과 비용 절감은 넣지 않았다.",
+   "detail": {
+    "cases": {
+     "low": {
+      "ai_share": 0.6,
+      "capex": 810,
+      "other_cost_ratio": 0.4,
+      "margin": 0.25,
+      "compute_share_of_revenue": 0.6,
+      "infrastructure_revenue_bn": 907,
+      "end_revenue_bn": 1512
+     },
+     "central": {
+      "ai_share": 0.7,
+      "capex": 822.5,
+      "other_cost_ratio": 0.5,
+      "margin": 0.3,
+      "compute_share_of_revenue": 0.5,
+      "infrastructure_revenue_bn": 1234,
+      "end_revenue_bn": 2468
+     },
+     "high": {
+      "ai_share": 0.8,
+      "capex": 835,
+      "other_cost_ratio": 0.6,
+      "margin": 0.35,
+      "compute_share_of_revenue": 0.4,
+      "infrastructure_revenue_bn": 1644,
+      "end_revenue_bn": 4110
+     }
+    },
+    "two_lab_run_rate_bn": 141,
+    "multiple_of_two_lab_run_rate": 17.5,
+    "years_to_reach_at_annual_growth": {
+     "1.5x": 7.1,
+     "2x": 4.1,
+     "3x": 2.6
+    },
+    "share_of_wage_pool_pct": {
+     "vs_low_pool": 13.6,
+     "vs_high_pool": 5.7
+    },
+    "per_vintage_annual_revenue_bn": 351,
+    "bain_2030_bn": 2000
+   },
+   "range": {
+    "low": 1.512,
+    "high": 4.11
+   },
+   "links": [
+    "ceiling",
+    "counter"
+   ],
+   "sides": {
+    "H2": "양쪽"
+   },
+   "side_basis": "가운데 값 2.5조 달러는 두 랩의 연환산 매출(약 1,410억 달러)의 17.5배이고 Bain 의 2030년 추정(2조 달러)보다 크다. 다섯 회사의 투자 계획만 연 8,100억 달러를 넘는다. 닿으려면 AI 매출이 해마다 2배씩 4.1년, 3배씩이면 2.6년 늘어야 한다. Anthropic 의 매출은 지난 1년에 13배가 됐다. 그 속도가 한 해 더 이어지면 거의 닿고, 연 2배로 느려지면 2030년 말이 된다.",
+   "refs": [
+    {
+     "bundle": "K6",
+     "id": "hyperscaler-capex-2026"
+    },
+    {
+     "bundle": "K6",
+     "id": "required-revenue-bain-2030"
+    },
+    {
+     "bundle": "K6",
+     "id": "wage-pool-global-direct"
+    },
+    {
+     "bundle": "K3",
+     "id": "anthropic-run-rate"
+    },
+    {
+     "bundle": "K3",
+     "id": "openai-run-rate"
+    },
+    {
+     "bundle": "K3",
+     "id": "anthropic-revenue"
+    }
+   ],
+   "sources": [],
+   "value_src": [],
+   "alt": [],
+   "conf": "low",
+   "note": "두 랩의 매출만 기준으로 삼아 배수와 햇수는 실제보다 크게 나온다(구글·MS·중국 랩과 응용 회사의 매출이 빠져 있다). 한 해 투자분만 놓고 보면 그 설비가 해마다 요구하는 매출은 약 3,510억 달러다(단명 자산 70%·5.5년, 건물 30%·20년 가정). 2027년 투자가 더 늘면 요구 매출도 같은 비율로 는다. 임금 풀 대비 회수율은 요청자가 정할 가정이라 넣지 않았다."
   },
   {
    "id": "us-wage-bill-oews",
