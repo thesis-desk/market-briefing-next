@@ -1,7 +1,87 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-19T23:22:13+09:00",
+ "generated_kst": "2026-11-20T02:37:59+09:00",
  "reports": [
+  {
+   "slug": "ark-the-ai-shakeup-has-a-message-the-brainstorm-158",
+   "type": "article",
+   "title": "ARK Invest : Starship 상단 회수는 궤도 컴퓨트를 앞당기고, 젠슨 이탈은 AI 투자의 속도를 늦춘다",
+   "companies": [
+    {
+     "name": "SpaceX",
+     "ticker": null
+    },
+    {
+     "name": "Nvidia",
+     "ticker": null
+    },
+    {
+     "name": "Anthropic",
+     "ticker": null
+    },
+    {
+     "name": "OpenAI",
+     "ticker": null
+    }
+   ],
+   "published_kst": "2026-11-20T02:37:59+09:00",
+   "revised_kst": "2026-11-20T02:37:59+09:00",
+   "revision": 1,
+   "summary": "ARK의 두 화자는 Starship 상단 회수로 SpaceX의 발사 단가와 궤도 컴퓨트 일정이 앞당겨졌다고 본다. 젠슨 이탈은 엔비디아가 생태계 곳곳에 대던 공격적 자금의 속도가 느려지는 신호로 읽는다. 엔비디아에는 중기 점유율 악재, SpaceX에는 호재로 정리되지만, AI 최종 수요가 버틸지는 두 화자의 의견이 갈렸고 다음 두 분기의 지표가 가를 문제다.",
+   "path": "reports/ark-the-ai-shakeup-has-a-message-the-brainstorm-158.json"
+  },
+  {
+   "slug": "20vc-will-jensen-return-to-nvidia-kalshi-mercor-fractile",
+   "type": "interview",
+   "title": "Jason Lemkin·Rory O'Driscoll 대담(20VC) : 젠슨 퇴진의 승자 앤트로픽, SMB가 소프트웨어를 사지 않는다",
+   "companies": [
+    {
+     "name": "NVIDIA",
+     "ticker": null
+    },
+    {
+     "name": "Anthropic",
+     "ticker": null
+    },
+    {
+     "name": "Kalshi",
+     "ticker": null
+    },
+    {
+     "name": "Mercor",
+     "ticker": null
+    },
+    {
+     "name": "Fractile",
+     "ticker": null
+    },
+    {
+     "name": "HubSpot",
+     "ticker": null
+    },
+    {
+     "name": "Microsoft",
+     "ticker": null
+    },
+    {
+     "name": "Meta",
+     "ticker": null
+    },
+    {
+     "name": "OpenAI",
+     "ticker": null
+    },
+    {
+     "name": "SpaceX",
+     "ticker": null
+    }
+   ],
+   "published_kst": "2026-11-20T02:26:09+09:00",
+   "revised_kst": "2026-11-20T02:26:09+09:00",
+   "revision": 1,
+   "summary": "젠슨 황이 복귀하든 말든 엔비디아가 비상장 AI 생태계의 가치 하단을 떠받치던 구조는 약해졌고, 그 공백의 수혜는 앤트로픽 같은 미국 폐쇄형 모델 공급자에게 간다는 것이 대담의 중심 메시지다. SaaS 쪽에서는 허브스팟·먼데이의 순신규 고객 급감이 SMB의 구매 중단을 보여 주는 가장 구체적인 숫자이고, 그 예산은 인력을 대체하는 에이전트로 옮겨 가고 있다.",
+   "path": "reports/20vc-will-jensen-return-to-nvidia-kalshi-mercor-fractile.json"
+  },
   {
    "slug": "ai-compute-balance",
    "type": "research",
@@ -2371,11 +2451,11 @@
   }
  ],
  "street": {
-  "updated_kst": "2026-11-19T23:22:13+09:00",
+  "updated_kst": "2026-11-20T02:32:23+09:00",
   "path": "street.json"
  },
  "calendar": {
-  "updated_kst": "2026-11-19T20:22:35+09:00",
+  "updated_kst": "2026-11-20T02:26:13+09:00",
   "path": "calendar.json"
  },
  "datasets": [

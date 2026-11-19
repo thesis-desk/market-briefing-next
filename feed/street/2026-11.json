@@ -1,8 +1,38 @@
 {
  "schema": 1,
  "month": "2026-11",
- "updated_kst": "2026-11-19T23:22:13+09:00",
+ "updated_kst": "2026-11-20T02:32:23+09:00",
  "items": [
+  {
+   "id": "menlo-an-extraordinary-journey-celebrating-anthropic-s",
+   "group": "벤처캐피털",
+   "org": "Menlo Ventures",
+   "person": null,
+   "kind": "publication",
+   "title": "특별한 여정: Anthropic의 IPO를 축하하며",
+   "title_orig": "An Extraordinary Journey: Celebrating Anthropic’s IPO",
+   "url": "https://menlovc.com/perspective/an-extraordinary-journey-celebrating-anthropics-ipo",
+   "outlet": "Menlo Ventures",
+   "published_kst": "2026-11-20T01:50:09+09:00",
+   "stance": {
+    "ai_tech": 1,
+    "market": null
+   },
+   "args": [
+    "수요·채택",
+    "경쟁·해자"
+   ],
+   "summary": "Menlo Ventures는 Anthropic 상장을 축하하며 지금을 일생에 한 번뿐인 기술 변혁기로 규정한다. AI는 아직 초기 단계이고 가장 큰 혁신은 앞에 있다고 보며, 스타트업의 성장 속도와 Anthropic의 기업용 LLM API 점유율 상승(12%에서 55%)을 근거로 든다.",
+   "points": [
+    "지금은 일생에 한 번뿐인 기술 변혁기이며, 스타트업이 과거보다 10배 빠르게 성장하고 있다.",
+    "AI는 아직 초기 단계이고 가장 중대한 혁신은 앞으로 나올 것이라고 본다.",
+    "Anthropic의 기업용 LLM API 지출 점유율이 2년 만에 12%에서 55%로 올랐다고 주장한다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   }
+  },
   {
    "id": "ark-the-ai-shakeup-has-a-message-the-brainstorm-158",
    "group": "자산운용",
@@ -69,6 +99,38 @@
     "tier": "standard"
    },
    "note": "유튜브 자막(제작자 제공)(en) 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
+  },
+  {
+   "id": "jpmorgan-jpmorgan-s-chief-economist-says-2026-was-likely",
+   "group": "투자은행",
+   "org": "JPMorgan",
+   "person": null,
+   "kind": "report",
+   "title": "JPMorgan 수석 이코노미스트 \"2026년이 '피크 AI'였을 가능성 높아\"",
+   "title_orig": "JPMorgan’s chief economist says 2026 was likely ‘peak AI'",
+   "url": "https://www.businessinsider.com/ai-capex-peak-jpmorgan-economist-capex-tech-economy-2026-11",
+   "outlet": "Insider",
+   "published_kst": "2026-11-19T17:42:00+09:00",
+   "stance": {
+    "ai_tech": 0,
+    "market": null
+   },
+   "args": [
+    "투자 회수",
+    "금리·거시",
+    "쏠림"
+   ],
+   "summary": "Feroli는 AI가 총수요에 미치는 영향이 2026년에 정점을 찍을 가능성이 높다고 보지만, AI 관련 지출의 둔화는 완만하고 다른 지지 요인이 일부 상쇄할 것으로 내다봤다. 한편 미국 경제가 AI라는 단일 엔진에 의존해 그 기능에 대한 우려가 증폭된다고 지적했다. 2027년에 AI 지출이 줄기 시작해도 다른 분야의 성장이 영향을 상쇄할 것이라는 입장이다.",
+   "points": [
+    "AI가 총수요에 미치는 영향 기준으로 '피크 AI'는 2026년일 가능성이 높다. 선거 이전부터 이미 AI 설비 구축에 대한 지출 증가세는 내년에 소폭 둔화될 예정이었다.",
+    "AI 관련 지출의 완화는 완만할 것으로 예상되며 다른 지지 요인이 일부 상쇄할 것이다. 소비자는 곧 소매 휘발유 가격 하락의 혜택을 보게 되는데, 에너지 시장이 중동 평화 협상 교착을 우회할 방법을 찾고 있기 때문이다.",
+    "미국 경제의 지배적 특징은 AI다. 대규모 설비 구축, 자산시장으로의 파급효과, 생산성과 노동시장에 미치는 효과를 둘러싼 뜨거운 논쟁이 그것이다. 경제가 엔진 하나로 날 때는 그 엔진의 기능에 대한 우려가 증폭된다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
   },
   {
    "id": "ubs-ubs-on-air-paul-donovan-daily-audio-should-we-be",
