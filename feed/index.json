@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-20T21:19:39+09:00",
+ "generated_kst": "2026-11-20T21:22:01+09:00",
  "reports": [
   {
    "slug": "nvidia-dev-enabling-real-time-ai-for-scientific-instruments",
@@ -3381,6 +3381,24 @@
    "path": "reports/marvell-2q27-earnings.json"
   },
   {
+   "slug": "alibaba-1q27-earnings",
+   "type": "earnings",
+   "title": "Alibaba Group 1Q27 실적발표 : 클라우드 마진은 열리고, 현금은 빠르게 줄고",
+   "companies": [
+    {
+     "name": "Alibaba Group",
+     "ticker": "BABA"
+    }
+   ],
+   "event": "1Q27 실적 발표",
+   "event_date": "2026-08-20",
+   "published_kst": "2026-08-20T21:00:00+09:00",
+   "revised_kst": "2026-11-20T21:21:54+09:00",
+   "revision": 1,
+   "summary": "클라우드 외부 매출 성장률이 45%로 빨라지고 부문 EBITA 마진이 11.6%로 올라 AI 수익화가 금액과 마진으로 함께 확인됐다. 반대로 CAPEX 677억 위안이 FCF를 -447억 위안으로 밀어내 순현금이 한 분기에 약 73억 달러 줄었고, CMR 동일 기준 성장률은 +1%로 꺾였다. 비GAAP EPS는 야후 이력의 예상치를 21% 밑돌았다.",
+   "path": "reports/alibaba-1q27-earnings.json"
+  },
+  {
    "slug": "baidu-2q26-earnings",
    "type": "earnings",
    "title": "Baidu 2Q26 실적발표 : 차입으로 두 배 늘린 CapEx, 영업 밖에서 꺾인 순이익",
@@ -3433,6 +3451,42 @@
    "revision": 1,
    "summary": "매출은 NT$1.04조로 전년의 두 배가 됐고, 총이익률도 5.02%로 소폭 올랐다. 다만 이 반등은 재고평가손실이 줄어든 덕이고, 평가손실을 빼면 총이익률은 5.38%에서 5.09%로 오히려 내려갔다. 더 큰 변화는 2Q 단독 영업현금흐름이 +NT$1,381억으로 돌아선 것인데, 매입채무와 채권 매각이 이를 받쳤다.",
    "path": "reports/quanta-computer-2q26-earnings.json"
+  },
+  {
+   "slug": "smic-2q26-earnings",
+   "type": "earnings",
+   "title": "SMIC 2Q26 실적발표 : 가격 인상이 감가상각을 앞질러 GM 25.3%, 앞당긴 출하 뒤 3Q 매출은 +2~4%",
+   "companies": [
+    {
+     "name": "SMIC",
+     "ticker": "0981.HK"
+    }
+   ],
+   "event": "2Q26 실적 발표",
+   "event_date": "2026-08-13",
+   "published_kst": "2026-08-13T21:00:00+09:00",
+   "revised_kst": "2026-11-20T21:21:10+09:00",
+   "revision": 1,
+   "summary": "2Q26은 출하와 웨이퍼 가격이 함께 올라 매출 +20.0%, GM 25.3%로 직전 가이던스를 크게 넘었고, 3Q GM 가이던스 26~28%는 가격 효과가 아직 진행 중임을 보여 준다. 다만 순이익 증가분의 절반가량은 관계사·공정가치 이익이고, 3Q 매출 증가율은 2Q 같은 출하 앞당기기가 더는 없어 +2~4%로 크게 낮아진다.",
+   "path": "reports/smic-2q26-earnings.json"
+  },
+  {
+   "slug": "hon-hai-2q26-earnings",
+   "type": "earnings",
+   "title": "Hon Hai Precision 2Q26 실적발표 : 영업이익 분기 사상 최대, 성장의 값은 운전자본이 치렀다",
+   "companies": [
+    {
+     "name": "Hon Hai Precision",
+     "ticker": "2317.TW"
+    }
+   ],
+   "event": "2Q26 실적 발표",
+   "event_date": "2026-08-12",
+   "published_kst": "2026-08-12T21:00:00+09:00",
+   "revised_kst": "2026-11-20T21:20:04+09:00",
+   "revision": 1,
+   "summary": "매출은 41%(YoY) 늘었고, 영업이익률은 3.75%로 최근 7개 분기 중 가장 높았습니다. 규모가 수익성으로 바뀌고 있다는 회사의 주장이 숫자로 확인됐습니다. 반면 운전자본이 한 분기에 NT$1,747억 늘어 순현금이 32%(QoQ) 줄었습니다. 영업외 이익 감소(펀드 투자이익 기저·순이자비용), 세금, 비지배지분 몫이 지배주주 순이익 증가율(+35%)을 영업이익 증가율(+68%)의 절반 수준으로 낮췄습니다.",
+   "path": "reports/hon-hai-2q26-earnings.json"
   },
   {
    "slug": "lumentum-4q26-earnings",
@@ -3577,6 +3631,24 @@
    "revision": 1,
    "summary": "마진은 가이던스 상단을 넘었고, 연간 성장률·CAPEX·애리조나 투자가 한꺼번에 올라갔다. 3Q 총마진은 하반기 N2 희석 3~4%p 때문에 내려가고, 순이익 증가분 가운데 상당 부분은 설명되지 않은 영업외손익에서 나왔다. 영업 단의 체력은 확인됐지만 이익의 질과 하반기 현금흐름은 따로 봐야 한다.",
    "path": "reports/tsmc-2q26-earnings.json"
+  },
+  {
+   "slug": "micron-3q26-earnings",
+   "type": "earnings",
+   "title": "Micron 3Q26 실적발표 : SCA 16건으로 가격 하한 확보, 가격 상승률은 꺾인다",
+   "companies": [
+    {
+     "name": "Micron",
+     "ticker": "MU"
+    }
+   ],
+   "event": "3Q26 실적 발표",
+   "event_date": "2026-06-24",
+   "published_kst": "2026-06-24T21:00:00+09:00",
+   "revised_kst": "2026-11-20T21:22:01+09:00",
+   "revision": 1,
+   "summary": "Micron은 가격이 다시 가이던스를 크게 넘어 3Q26 매출 $41.5B, 매출총이익률 84.9%를 냈다. SCA는 1건에서 16건으로 늘었고 인수 의무·가격 하한·예치금이 붙은 계약 구조가 처음 공개됐다. 다만 4Q26 가이던스는 가격 상승률이 뚜렷이 둔화한다고 전제한다. 하한 가격 기준으로 잡힌 매출(RPO 약 $100B)은 연 매출의 10% 남짓이어서 이익 하방 보호는 아직 부분적이다.",
+   "path": "reports/micron-3q26-earnings.json"
   },
   {
    "slug": "accenture-3q26-earnings",
@@ -4225,6 +4297,24 @@
    "revision": 1,
    "summary": "비수기인 1분기에 매출이 직전 분기보다 늘었고, 조정 EPS는 컨센서스를 31.8% 웃돌았다. 수주잔고는 대형 단건 없이 고르게 45억 달러 늘어난 485억 달러였고, 회사는 연간 가이던스를 올렸다. 다만 상향된 가이던스는 2Q~4Q 조정 EBITDA 마진이 1분기보다 약 2%p 높아진다는 전제 위에 있다. 가스 발전 수주는 아직 잔고에 하나도 들어오지 않았다.",
    "path": "reports/quanta-services-1q26-earnings.json"
+  },
+  {
+   "slug": "samsung-electronics-1q26-earnings",
+   "type": "earnings",
+   "title": "삼성전자 1Q26 실적발표 : 영업이익률 43%, 메모리 다년 계약 첫 체결",
+   "companies": [
+    {
+     "name": "삼성전자",
+     "ticker": "005930.KS"
+    }
+   ],
+   "event": "1Q26 실적 발표",
+   "event_date": "2026-04-30",
+   "published_kst": "2026-04-30T21:00:00+09:00",
+   "revised_kst": "2026-11-20T21:20:26+09:00",
+   "revision": 1,
+   "summary": "메모리 가격 상승과 서버 중심 판매로 영업이익률이 한 분기 만에 21%에서 43%로 뛰었습니다. 다년 공급 계약이 일부 체결되고 2027년 수요까지 미리 들어오면서 메모리 호황의 가시성은 높아졌습니다. 반면 같은 메모리 원가가 MX·디스플레이·TV 이익을 누르기 시작해, 회사 안에서 수혜와 피해가 갈리는 분기였습니다.",
+   "path": "reports/samsung-electronics-1q26-earnings.json"
   },
   {
    "slug": "sandisk-3q26-earnings",
@@ -4909,6 +4999,24 @@
    "revision": 1,
    "summary": "매출 $680억(+73%)으로 성장이 다시 빨라졌다. 1Q27 가이던스 $780억과 달력 2027년 출하분까지 잡은 공급 약정으로 수요 가시성도 넓혔다. 다만 고객 CapEx가 계속 늘 수 있는지, 중국 매출이 0인 점, 운영비와 전략 투자의 확대에는 숫자로 된 답이 없었다.",
    "path": "reports/nvidia-4q26-earnings.json"
+  },
+  {
+   "slug": "isu-petasys-4q25-earnings",
+   "type": "earnings",
+   "title": "이수페타시스 4Q25 실적발표 : 마진 18.8%로 도약, 다중적층 CAPA 조기 확보로 방향 전환",
+   "companies": [
+    {
+     "name": "ISU Petasys",
+     "ticker": "007660.KS"
+    }
+   ],
+   "event": "4Q25 실적 발표",
+   "event_date": "2026-02-24",
+   "published_kst": "2026-02-24T21:00:00+09:00",
+   "revised_kst": "2026-11-20T21:21:32+09:00",
+   "revision": 1,
+   "summary": "2025년 연결 매출 1조 888억 원(+30%), 영업이익 2,047억 원(+101%)으로 최대 실적이다. 이번 자료에서 새로 나온 것은 두 가지다. 10.5K㎡/월을 '27.1Q에 조기 확보하는 추가 투자 검토(기존 계획은 '28.4Q 12.5K)와 2026년 다중적층 매출 비중 31% 전망이다. 다만 4Q25만 떼어 보면 수주잔고 흐름상 별도 매출이 3분기보다 줄었을 가능성이 있고, EPS는 컨센서스를 18.5% 밑돌았다. 추가 투자는 아직 '검토' 단계다.",
+   "path": "reports/isu-petasys-4q25-earnings.json"
   },
   {
    "slug": "quanta-services-4q25-earnings",
@@ -5834,7 +5942,7 @@
   "path": "street.json"
  },
  "calendar": {
-  "updated_kst": "2026-11-20T17:56:46+09:00",
+  "updated_kst": "2026-11-20T21:19:40+09:00",
   "path": "calendar.json"
  },
  "datasets": [

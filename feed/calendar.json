@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated_kst": "2026-11-20T17:56:46+09:00",
+ "updated_kst": "2026-11-20T21:19:40+09:00",
  "events": [
   {
    "company": "Arista Networks",
@@ -1216,8 +1216,8 @@
    "official": false,
    "source_url": "https://stockanalysis.com/stocks/mu/transcripts/609470-q3-2026/",
    "consensus_snapshot": false,
-   "report_slug": null,
-   "status": "queued",
+   "report_slug": "micron-3q26-earnings",
+   "status": "published",
    "note": "원문이 올라온 것을 보고 넣은 일정"
   },
   {
