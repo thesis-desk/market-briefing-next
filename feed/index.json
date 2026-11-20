@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-20T22:54:39+09:00",
+ "generated_kst": "2026-11-20T22:56:45+09:00",
  "reports": [
   {
    "slug": "tomorrowx-2026-your-brain-runs-on-20-watts-lessons-from",
@@ -3267,6 +3267,60 @@
    "path": "reports/ntt-data-2q27-earnings.json"
   },
   {
+   "slug": "eaton-3q26-earnings",
+   "type": "earnings",
+   "title": "Eaton 3Q26 실적발표 : Global 유기 27%로 가속, Americas 증설이 마진으로",
+   "companies": [
+    {
+     "name": "Eaton",
+     "ticker": "ETN"
+    }
+   ],
+   "event": "3Q26 실적 발표",
+   "event_date": "2026-11-03",
+   "published_kst": "2026-11-03T21:00:00+09:00",
+   "revised_kst": "2026-11-20T22:56:25+09:00",
+   "revision": 1,
+   "summary": "매출·세그먼트 마진·조정 EPS가 모두 사상 최고였고, 유기 성장과 EPS 가이던스를 올해 세 번째로 올렸다. 다만 가이던스는 4분기 유기 성장이 3분기보다 낮아지는 것을 전제한다. Electrical Americas 하반기 마진 개선 폭도 직전 분기의 450~500bp 대신 ‘400bp 초과’라는 하한만 제시해, 4분기 32% 안팎이라는 이전 경로를 회사가 다시 확인해 주지는 않았다.",
+   "path": "reports/eaton-3q26-earnings.json"
+  },
+  {
+   "slug": "super-micro-1q27-earnings",
+   "type": "earnings",
+   "title": "Super Micro Computer 1Q27 실적발표 : 이연분이 끌어올린 매출, 선수금이 메운 운전자본",
+   "companies": [
+    {
+     "name": "Super Micro Computer",
+     "ticker": "SMCI"
+    }
+   ],
+   "event": "1Q27 실적 발표",
+   "event_date": "2026-11-03",
+   "published_kst": "2026-11-03T21:00:00+09:00",
+   "revised_kst": "2026-11-20T22:56:45+09:00",
+   "revision": 1,
+   "summary": "이전 여러 분기에서 밀렸던 배치 약 $2.3B가 들어오며 매출 $19.9B·Non-GAAP 총마진 12.8%로 가이던스를 크게 넘었고, FY27 매출 가이던스를 $72–82B로 올렸다. 다만 가이던스 중앙값 기준으로는 하반기 분기 매출이 상반기보다 낮고, 하반기 총마진이 상반기보다 낮다는 점은 회사도 인정했다. 최대 고객 44% 집중과 의무전환우선주로 빠지는 분기 약 $300M의 이익을 감안하면, 질적 개선은 절반만 확인된 분기다.",
+   "path": "reports/super-micro-1q27-earnings.json"
+  },
+  {
+   "slug": "talen-energy-3q26-earnings",
+   "type": "earnings",
+   "title": "Talen Energy 3Q26 실적발표 : 2029 주당 FCF 56~60달러 제시, 신규 대형 계약은 이번에도 없었다",
+   "companies": [
+    {
+     "name": "Talen Energy",
+     "ticker": "TLN"
+    }
+   ],
+   "event": "3Q26 실적 발표",
+   "event_date": "2026-11-03",
+   "published_kst": "2026-11-03T21:00:00+09:00",
+   "revised_kst": "2026-11-20T22:55:58+09:00",
+   "revision": 1,
+   "summary": "3Q 조정 EBITDA 6.69억 달러로 2026 가이던스 달성 경로를 확인했고, 2027 공식 가이던스와 2029 전망을 처음 내놨다. 다만 주당 FCF 상향의 상당 부분은 ASR에 따른 주식 수 기준 변경에서 나왔다. 2027 총 FCF는 직전 분기 함축치와 사실상 같다. 신규 대형부하 계약은 이번에도 나오지 않았다.",
+   "path": "reports/talen-energy-3q26-earnings.json"
+  },
+  {
    "slug": "apple-4q26-earnings",
    "type": "earnings",
    "title": "Apple 4Q26 실적발표 : 환급 끝난 마진은 메모리에 밀리고, 공급 병목은 공정에서 메모리로",
@@ -3463,6 +3517,24 @@
    "revision": 1,
    "summary": "3분기에 매출이 57% 늘고 조정 EBITDA 마진은 12.1%까지 올랐다. 잔고는 765kV 송전 같은 대형 건 없이(발전은 NiSource 발전소 한 건 편입) 한 분기 만에 약 100억 달러 늘었다. 다만 연간 가이던스가 함축하는 4분기 마진은 약 10%로 3분기보다 2%p 낮게 잡혀 보수적일 가능성이 있고, 성장의 제약은 인력에서 자재·OEM 공급 쪽으로 옮겨 갔다.",
    "path": "reports/quanta-services-3q26-earnings.json"
+  },
+  {
+   "slug": "sandisk-1q27-earnings",
+   "type": "earnings",
+   "title": "Sandisk 1Q27 실적발표 : 성장은 가격에서 물량으로, 데이터센터 비중 44%",
+   "companies": [
+    {
+     "name": "Sandisk",
+     "ticker": "SNDK"
+    }
+   ],
+   "event": "1Q27 실적 발표",
+   "event_date": "2026-10-29",
+   "published_kst": "2026-10-29T21:00:00+09:00",
+   "revised_kst": "2026-11-20T22:55:49+09:00",
+   "revision": 1,
+   "summary": "매출 110억 달러(QoQ +23%)와 비GAAP 매출총이익률 85.1%로 가이던스 상단을 넘었다. 다만 성장 동력이 가격(4Q26 증가분의 약 3분의 2)에서 물량(60%)으로 옮겨 갔고, 2Q27 가이던스는 순이익 증가율이 매출 증가율보다 낮아 마진 확대가 멈춘 구간에 들어섰음을 보여 준다. 조회일 주가는 FY27 컨센서스 EPS의 약 3.3배로, 시장은 이 이익을 정점으로 보고 있다.",
+   "path": "reports/sandisk-1q27-earnings.json"
   },
   {
    "slug": "alphabet-3q26-earnings",
