@@ -1,7 +1,35 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-20T23:03:54+09:00",
+ "generated_kst": "2026-11-20T23:09:01+09:00",
  "reports": [
+  {
+   "slug": "menlo-2026-the-state-of-enterprise-ai",
+   "type": "article",
+   "title": "Menlo Ventures : 에이전트가 기업 AI 지출을 1년 만에 5배로 키웠고, SaaS를 잠식하기보다 시장을 넓힌다",
+   "companies": [
+    {
+     "name": "Anthropic",
+     "ticker": null
+    },
+    {
+     "name": "OpenAI",
+     "ticker": null
+    },
+    {
+     "name": "Google",
+     "ticker": null
+    },
+    {
+     "name": "Microsoft",
+     "ticker": null
+    }
+   ],
+   "published_kst": "2026-11-20T23:09:01+09:00",
+   "revised_kst": "2026-11-20T23:09:01+09:00",
+   "revision": 1,
+   "summary": "Menlo는 기업 AI 배포 지출이 1년 만에 $33B에서 $177B(연환산)로 커졌다고 본다. 이 증가를 에이전트가 이끌었고 돈의 대부분은 Anthropic·OpenAI로 갔으며, AI는 SaaS를 대체하기보다 새 예산으로 소프트웨어 시장을 키운다고 주장한다. 숫자 대부분은 Menlo 자체 모델의 추정이고, 핵심 수혜자가 Menlo 포트폴리오와 겹친다. 성장의 방향은 받아들이되 시장 크기와 랩 점유율은 할인해 읽을 자료다.",
+   "path": "reports/menlo-2026-the-state-of-enterprise-ai.json"
+  },
   {
    "slug": "pdd-3q26-earnings",
    "type": "earnings",
