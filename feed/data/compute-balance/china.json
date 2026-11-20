@@ -2,12 +2,13 @@
  "schema": 1,
  "bundle": "S5",
  "title": "중국과 우회 경로 — 직수입·동남아·밀반입 추정",
- "updated_kst": "2026-11-19T23:11:48+09:00",
+ "updated_kst": "2026-11-20T16:16:38+09:00",
  "measure": null,
  "notes": [
   "중국으로 가는 길을 셋으로 나눠 적는다: 허가받은 직접 판매, 세관에 잡힌 동남아 수입, 외부 기관이 추정한 밀반입.",
   "세관 자료와 보유 추정은 Epoch AI 의 추정이고, 메가스피드의 구매액은 보도를 검색 요약으로만 본 값이다(conf low). 수사 중인 사안이라 혐의는 확정된 것이 아니다.",
-  "동남아 수입에는 미국 회사의 현지 데이터센터가 섞여 있어 '중국 경로'의 상한으로만 읽는다."
+  "동남아 수입에는 미국 회사의 현지 데이터센터가 섞여 있어 '중국 경로'의 상한으로만 읽는다.",
+  "회사 공시(엔비디아·AMD 10-K, DayOne F-1, 알리바바·바이두 20-F)는 금액과 시설 용량을 준다. 칩 개수나 임대한 칩의 양을 밝힌 공시는 없다."
  ],
  "records": [
   {
@@ -279,6 +280,425 @@
    "alt": [],
    "conf": "low",
    "note": "Epoch 은 소유·사용자 표시에 확신 정도를 붙인다 — 앞의 것은 'likely', 뒤의 것은 'speculative'다. 큰 부지만 추적하므로 동남아의 중국 관련 용량 전체가 아니라 눈에 띄는 두 곳이다."
+  },
+  {
+   "id": "epoch-china-legal-foreign-chips",
+   "country": "CN",
+   "city": null,
+   "metric": "중국이 정식으로 들인 외국 AI 칩(추정 누계)",
+   "value": 0.778,
+   "unit": "GW",
+   "asof": "2025-12-31",
+   "basis": "Epoch AI 의 보유 추정 가운데 엔비디아·AMD 칩의 정격전력 합(화웨이·캠브리콘 제외)",
+   "company": "Epoch AI",
+   "kind": "capacity",
+   "detail": {
+    "units_k": 1831,
+    "h100e_m": 0.41,
+    "by_chip_units_k": {
+     "H20": 1490,
+     "A800": 121,
+     "H800": 115,
+     "A100": 73,
+     "MI308X": 32
+    },
+    "power_basis": "chip"
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "Epoch AI — AI chip owners (CSV, CC BY 4.0)",
+     "url": "https://epoch.ai/data/ai-chip-owners",
+     "date": null,
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "약 183만 개, 성능으로 41만 H100e 다. H20 이 149만 개로 대부분이고 H800 11.5만, A800 12.1만, A100 7.3만, AMD MI308X 3.2만 개다. 수출 규격에 맞춘 저성능 칩이라 전력에 견줘 성능이 낮다."
+  },
+  {
+   "id": "epoch-china-customs-nvidia",
+   "country": "CN",
+   "city": null,
+   "metric": "중국의 엔비디아 칩 수입액(세관 자료 추정)",
+   "value": 20.87,
+   "unit": "십억 달러",
+   "asof": "2025",
+   "basis": "Epoch AI 가 세관 자료로 추정한 2025년 수입액. 2023년 41.6억, 2024년 184.9억, 2026년 상반기 58.6억 달러",
+   "company": "Epoch AI",
+   "kind": "flow",
+   "series": [
+    {
+     "period": "2023",
+     "value": 4.16,
+     "src": 1
+    },
+    {
+     "period": "2024",
+     "value": 18.49,
+     "src": 1
+    },
+    {
+     "period": "2025",
+     "value": 20.87,
+     "src": 1
+    }
+   ],
+   "detail": {
+    "2026_h1": 5.86,
+    "chip_gw": {
+     "2024": 0.6,
+     "2025": 0.6,
+     "2026_h1": 0.12
+    }
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "Epoch AI — AI chip imports (CSV, CC BY 4.0)",
+     "url": "https://epoch.ai/data/ai-chip-imports",
+     "date": "2026-11-12",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "2026년 2분기는 0 으로 잡혀 있다. 칩 전력으로는 2024·2025년에 각각 0.6GW 다."
+  },
+  {
+   "id": "nvidia-china-hq-revenue",
+   "country": "CN",
+   "city": null,
+   "metric": "NVIDIA 의 중국(홍콩 포함) 본사 고객 매출",
+   "value": 19.677,
+   "unit": "십억 달러",
+   "asof": "2026-01-25",
+   "basis": "10-K 의 지역별 매출(고객 본사 소재지 기준, 전 제품). FY2026 196.77억, FY2025 250.48억, FY2024 123.30억 달러",
+   "company": "NVIDIA",
+   "kind": "revenue",
+   "series": [
+    {
+     "period": "FY2024",
+     "value": 12.33,
+     "src": 1
+    },
+    {
+     "period": "FY2025",
+     "value": 25.048,
+     "src": 1
+    },
+    {
+     "period": "FY2026",
+     "value": 19.677,
+     "src": 1
+    }
+   ],
+   "detail": {
+    "fy2027_q1": 4.55,
+    "fy2027_q2": 7.88,
+    "fy2027_h1": 12.43,
+    "fy2026_h1": 13.644,
+    "h200_share_of_dc_revenue_q2": "1% 미만"
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "NVIDIA — Form 10-K (2026-01-25 회계연도)",
+     "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm",
+     "date": "2026-02-25",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "NVIDIA — Form 10-Q (2026-07-26 분기)",
+     "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
+     "date": "2026-08-26",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "FY2026 3분기부터 청구지 대신 고객 본사 소재지로 나누고 앞선 해도 다시 적었다. 데이터센터만이 아니라 게임·워크스테이션 등 전 제품이고 직접 고객(유통사·서버 제조사 포함) 기준이다. FY2027 상반기는 124.30억(1분기 45.50억, 2분기 78.80억) 달러다. 같은 10-Q 는 중국 데이터센터 연산 시장에서 사실상 배제됐고 H200 출하가 2분기 데이터센터 매출의 1% 미만이라고 적어, 2분기 78.8억 달러의 구성은 공시로 알 수 없다."
+  },
+  {
+   "id": "nvidia-china-billing-revenue",
+   "country": "CN",
+   "city": null,
+   "metric": "NVIDIA 의 중국(홍콩 포함) 청구지 매출",
+   "value": 17.108,
+   "unit": "십억 달러",
+   "asof": "2025-01-26",
+   "basis": "10-K 의 지역별 매출(청구지 기준, 전 제품). FY2025 171.08억, FY2024 103.06억, FY2023 57.85억 달러",
+   "company": "NVIDIA",
+   "kind": "revenue",
+   "series": [
+    {
+     "period": "FY2023",
+     "value": 5.785,
+     "src": 1
+    },
+    {
+     "period": "FY2024",
+     "value": 10.306,
+     "src": 1
+    },
+    {
+     "period": "FY2025",
+     "value": 17.108,
+     "src": 1
+    }
+   ],
+   "detail": {
+    "singapore_billing": {
+     "FY2023": 2.288,
+     "FY2024": 6.831,
+     "FY2025": 23.684
+    },
+    "singapore_shipments_share_fy2025": "2% 미만"
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "NVIDIA — Form 10-K (2025-01-26 회계연도)",
+     "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581025000023/nvda-20250126.htm",
+     "date": "2025-02-26",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "같은 표에서 싱가포르 청구 매출은 FY2025 236.84억, FY2024 68.31억 달러다. 회사는 고객이 싱가포르를 청구 창구로 쓸 뿐 제품은 거의 다른 곳으로 가고, 싱가포르로 실제 출하된 것은 FY2025 매출의 2% 미만이라고 적었다."
+  },
+  {
+   "id": "nvidia-h20-charge",
+   "country": "CN",
+   "city": null,
+   "metric": "NVIDIA 의 H20 재고·구매약정 손실",
+   "value": 4.5,
+   "unit": "십억 달러",
+   "asof": "2025-04-27",
+   "basis": "10-K: 2025년 4월 H20 수출에 허가가 필요해지면서 FY2026 1분기에 '45억 달러' 손실",
+   "company": "NVIDIA",
+   "kind": "charge",
+   "detail": {
+    "h20_licensed_revenue": 0.06,
+    "h200_charge_fy2027_h1": 0.4
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "NVIDIA — Form 10-K (2026-01-25 회계연도)",
+     "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm",
+     "date": "2026-02-25",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "NVIDIA — Form 10-Q (2026-07-26 분기)",
+     "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
+     "date": "2026-08-26",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "2025년 8월 허가 뒤 H20 매출은 약 6천만 달러뿐이었다. H200 은 2026년 2월 소량 허가를 받았으나 중국 정부의 제한으로 허가분을 다 팔지 못했고 FY2027 상반기에 4억 달러 손실을 더 잡았다."
+  },
+  {
+   "id": "amd-mi308-charge",
+   "country": "CN",
+   "city": null,
+   "metric": "AMD 의 MI308 재고 손실과 중국 청구 매출",
+   "value": 0.8,
+   "unit": "십억 달러",
+   "asof": "2025-06-28",
+   "basis": "10-K: 2025년 2분기 MI308 수출 제한으로 '약 8억 달러' 손실, 4분기에 허가 출하를 시작하며 약 3.6억 달러 환입",
+   "company": "AMD",
+   "kind": "charge",
+   "detail": {
+    "reversal_q4_2025": 0.36,
+    "net_charge_2025": 0.44,
+    "china_billing_revenue": {
+     "2023": 3.417,
+     "2024": 6.231,
+     "2025": 7.751
+    }
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "AMD — Form 10-K (2025-12-27 회계연도)",
+     "url": "https://www.sec.gov/Archives/edgar/data/2488/000000248826000018/amd-20251227.htm",
+     "date": "2026-02-04",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "중국(홍콩 포함) 청구지 매출은 2025년 77.51억, 2024년 62.31억, 2023년 34.17억 달러다. PC·서버 CPU 가 섞인 전 제품 값이라 AI 칩 몫은 나뉘지 않는다."
+  },
+  {
+   "id": "dayone-billings",
+   "country": "MY",
+   "city": null,
+   "metric": "DayOne 의 과금 중 IT 용량(조호르·바탐 중심)",
+   "value": 444,
+   "unit": "MW",
+   "asof": "2025-12-31",
+   "basis": "F-1 의 핵심 지표 표: 과금 중 IT 용량(Billings) 2024년 말 121, 2025년 말 444, 2026-06 말 666, 2026-09-20 953MW",
+   "company": "DayOne Data Centers",
+   "kind": "capacity",
+   "series": [
+    {
+     "period": "2024-12-31",
+     "value": 121,
+     "src": 1
+    },
+    {
+     "period": "2025-12-31",
+     "value": 444,
+     "src": 1
+    },
+    {
+     "period": "2026-06-30",
+     "value": 666,
+     "src": 1
+    },
+    {
+     "period": "2026-09-20",
+     "value": 953,
+     "src": 1
+    }
+   ],
+   "detail": {
+    "bookings_mw": {
+     "2024-12-31": 430,
+     "2025-12-31": 1250,
+     "2026-06-30": 1786,
+     "2026-09-20": 2281
+    },
+    "sijori_billings_mw": {
+     "2024-12-31": 117,
+     "2025-12-31": 438,
+     "2026-09-20": 861
+    },
+    "largest_customer_revenue_pct": {
+     "2025": 69.4,
+     "2026_h1": 69.2
+    },
+    "second_customer_revenue_pct": {
+     "2025": 12.3,
+     "2026_h1": 15.1
+    },
+    "anchor_customer_bookings_mw": 838,
+    "revenue_musd": {
+     "2024": 178.1,
+     "2025": 484.3,
+     "2026_h1": 512
+    },
+    "malaysia_revenue_pct": {
+     "2025": 81.5,
+     "2026_h1": 87
+    }
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "DayOne Data Centers — Form F-1",
+     "url": "https://www.sec.gov/Archives/edgar/data/2118192/000119312526414188/d223752df1.htm",
+     "date": "2026-10-05",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "GDS 에서 갈라져 나온 싱가포르 본사 사업자다. 최대 고객('세계적인 숏폼 영상 플랫폼을 가진 글로벌 기술 회사')이 매출의 69.4%(2025년)·69.2%(2026년 상반기), 둘째 고객이 12.3%·15.1%다. 고객 이름은 적지 않았다 — 최대 고객을 바이트댄스로 읽는 것은 데스크 해석이다. 조호르 NTP 의 앵커 고객 계약은 조호르·방콕·헬싱키에 걸쳐 838MW(2026-09-20)로 늘었다. 계약 총량(Bookings)은 2,281MW 이고 대부분 2028년 말까지 인도한다. 싱가포르·조호르·바탐 권역만 보면 과금 용량이 117→438→861MW 다. 건물과 전력을 빌려주는 사업이라 서버와 칩은 고객 것이고, 일반 서버와 AI 서버가 나뉘지 않는다."
+  },
+  {
+   "id": "alibaba-capex",
+   "country": "CN",
+   "city": null,
+   "metric": "알리바바의 설비투자",
+   "value": 18.275,
+   "unit": "십억 달러",
+   "asof": "2026-03-31",
+   "basis": "20-F 현금흐름 설명: FY2026 설비투자 'RMB126,063 million (US$18,275 million)'",
+   "company": "Alibaba Group",
+   "kind": "capex",
+   "detail": {
+    "rmb_bn": 126.063
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "Alibaba Group — Form 20-F (2026-03-31 회계연도)",
+     "url": "https://www.sec.gov/Archives/edgar/data/1577552/000119312526231755/baba-20260331.htm",
+     "date": "2026-05-20",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "칩 구매액은 나누어 밝히지 않는다. 같은 보고서의 위험 요인은 미국 클라우드 사업자와 그 해외 재판매사가 중국 고객에게 첨단 칩 연산을 원격으로 제공하는 것을 막는 규제(원격 접근 보안법 등)를 사업 위험으로 적었다 — 그 경로를 쓰고 있음을 시사하지만 규모는 없다. 자체 칩(T-Head)이 양산 단계라고 적었다."
+  },
+  {
+   "id": "baidu-capex",
+   "country": "CN",
+   "city": null,
+   "metric": "바이두의 설비투자",
+   "value": 1.7,
+   "unit": "십억 달러",
+   "asof": "2025-12-31",
+   "basis": "20-F: 설비투자 2023년 RMB112억, 2024년 81억, 2025년 121억(US$17억)",
+   "company": "Baidu",
+   "kind": "capex",
+   "detail": {
+    "rmb_bn": {
+     "2023": 11.2,
+     "2024": 8.1,
+     "2025": 12.1
+    }
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "Baidu — Form 20-F (2025 회계연도)",
+     "url": "https://www.sec.gov/Archives/edgar/data/1329099/000119312526109289/d38065d20f.htm",
+     "date": "2026-03-17",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "주로 서버·네트워크 장비라고 적었다. 칩 구매액은 나누어 밝히지 않는다."
   }
  ]
 }

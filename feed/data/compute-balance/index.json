@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated_kst": "2026-11-19T23:11:48+09:00",
+ "updated_kst": "2026-11-20T16:16:38+09:00",
  "question": "누가 AI 컴퓨팅을 얼마나 갖고 있고, 누가 얼마나 쓰며 얼마를 치르는가",
  "bundles": [
   {
@@ -35,18 +35,18 @@
    "file": "china.json",
    "title": "중국과 우회 경로 — 직수입·동남아·밀반입 추정",
    "status": "draft",
-   "records": 6,
-   "verified_share": 0.833,
-   "updated_kst": "2026-11-19T23:11:48+09:00"
+   "records": 15,
+   "verified_share": 0.933,
+   "updated_kst": "2026-11-20T16:16:38+09:00"
   },
   {
    "id": "S4",
    "file": "bridge.json",
    "title": "맞추기 — 달러와 GW 를 잇는 계산",
    "status": "draft",
-   "records": 23,
+   "records": 27,
    "verified_share": 1,
-   "updated_kst": "2026-11-19T23:11:48+09:00"
+   "updated_kst": "2026-11-20T16:16:38+09:00"
   }
  ],
  "hypotheses": [],

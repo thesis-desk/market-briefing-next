@@ -2,7 +2,7 @@
  "schema": 1,
  "bundle": "S4",
  "title": "맞추기 — 달러와 GW 를 잇는 계산",
- "updated_kst": "2026-11-19T23:11:48+09:00",
+ "updated_kst": "2026-11-20T16:16:38+09:00",
  "measure": null,
  "notes": [
   "모두 계산 기록이다. basis 는 '계산'으로 시작하고 입력 기록을 refs 로 가리킨다.",
@@ -1081,6 +1081,201 @@
    "alt": [],
    "conf": "med",
    "note": "칩 전력으로는 0.36 ÷ 1.863 = 19.3%다. 성능으로 본 몫이 더 큰 것은 밀반입분이 최신 칩이기 때문이다. 우회 경로가 막히면 엔비디아의 매출보다 중국 쪽의 최신 연산이 더 크게 줄어든다는 뜻이다. 동남아 부지를 빌려 쓰는 용량은 이 값에 들어 있지 않다."
+  },
+  {
+   "id": "china-foreign-chip-tally",
+   "country": "ZZ",
+   "city": null,
+   "metric": "중국이 쓰는 외국 AI 칩 — 세 갈래의 합(어림)",
+   "value": 1.5,
+   "unit": "GW",
+   "asof": "2025-12-31",
+   "basis": "계산: 정식 0.78 + 밀반입 추정 0.36 + 해외 임대로 추적된 0.35~0.47(칩 정격전력). 대표 값은 아래쪽 합",
+   "company": "데스크",
+   "refs": [
+    "epoch-china-legal-foreign-chips",
+    "epoch-china-holdings",
+    "epoch-china-linked-sea-sites",
+    "megaspeed-purchases-reported",
+    "nvidia-china-hq-revenue",
+    "dayone-billings"
+   ],
+   "detail": {
+    "legal": {
+     "chip_gw": 0.778,
+     "h100e_m": 0.41
+    },
+    "smuggled": {
+     "chip_gw": 0.36,
+     "h100e_m": 0.66
+    },
+    "rented_tracked": {
+     "chip_gw_low": 0.35,
+     "chip_gw_high": 0.47,
+     "sites_chip_gw": 0.18,
+     "megaspeed_chip_gw": [
+      0.17,
+      0.29
+     ]
+    },
+    "total_chip_gw": [
+     1.49,
+     1.61
+    ],
+    "world_chip_gw": 13.359,
+    "share_pct": [
+     11.2,
+     12
+    ],
+    "filing_checks": {
+     "legal_usd_ratio_filing_to_customs": 0.94,
+     "china_hq_billed_outside_fy2025_usd_bn": 7.94,
+     "dayone_largest_customer_it_mw_2025": 308
+    }
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "Epoch AI — AI chip owners (CSV, CC BY 4.0)",
+     "url": "https://epoch.ai/data/ai-chip-owners",
+     "date": null,
+     "read": "full"
+    },
+    {
+     "n": 2,
+     "title": "Epoch AI — AI data centers (CSV, CC BY 4.0)",
+     "url": "https://epoch.ai/data/ai-data-centers",
+     "date": null,
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1,
+    2
+   ],
+   "alt": [],
+   "conf": "low",
+   "note": "임대는 가장 약한 갈래다 — Epoch 부지 두 곳(시설 0.315GW × 0.57 = 0.18)에 보도된 메가스피드 물량(최대 24만 개를 개당 0.7~1.2kW 로 본 0.17~0.29)을 더한 어림이고, 메가스피드 물량이 밀반입 추정과 겹칠 수 있다. 성능(H100e)으로는 정식 41만, 밀반입 66만으로 밀반입 쪽이 더 크다. 세계 보유 13.36GW 의 11~12%쯤이다. 회사 공시로 대조하면 정식 구매는 금액이 세관 추정과 맞고(china-legal-dollar-crosscheck), 임대는 칩의 양을 밝힌 공시가 없어 값을 바꾸지 않았다 — DayOne F-1 의 최대 고객 용량(2025년 말 약 308MW)은 빌린 시설이지 빌린 칩이 아니어서 합에 넣지 않는다."
+  },
+  {
+   "id": "nvidia-china-hq-billing-gap",
+   "country": "ZZ",
+   "city": null,
+   "metric": "NVIDIA 매출에서 중국 본사 고객이 중국 밖에서 청구받은 몫(순액)",
+   "value": 7.94,
+   "unit": "십억 달러",
+   "asof": "2025-01-26",
+   "basis": "계산: 본사 소재지 기준 중국 매출 − 청구지 기준 중국 매출. FY2025 250.48 − 171.08 = 79.40억, FY2024 123.30 − 103.06 = 20.24억 달러",
+   "company": "데스크",
+   "refs": [
+    "nvidia-china-hq-revenue",
+    "nvidia-china-billing-revenue"
+   ],
+   "detail": {
+    "FY2024": 2.024,
+    "FY2025": 7.94,
+    "chip_gw_if_all_ai": [
+     0.19,
+     0.2
+    ]
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "NVIDIA — Form 10-K (2026-01-25 회계연도)",
+     "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm",
+     "date": "2026-02-25",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "NVIDIA — Form 10-K (2025-01-26 회계연도)",
+     "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581025000023/nvda-20250126.htm",
+     "date": "2025-02-26",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "중국 회사가 중국 밖 법인으로 산 몫의 단서다. 순액이라 반대 방향(외국 회사의 중국 내 청구)이 있으면 실제는 더 크고, 전 제품이고 세계에 서버를 파는 중국 본사 제조사가 섞여 있어 '중국 회사의 해외 AI 칩'보다는 넓다. 전부 AI 칩이라고 보고 S4 의 단가(칩 1GW 에 398~415억 달러)로 바꾸면 FY2025 한 해 0.19~0.20GW 가 위쪽 끝이다. FY2026 부터는 청구지 기준 값을 더 내지 않아 이어지지 않는다."
+  },
+  {
+   "id": "china-legal-dollar-crosscheck",
+   "country": "ZZ",
+   "city": null,
+   "metric": "중국 정식 구매 — 회사 공시와 세관 추정의 비",
+   "value": 0.94,
+   "unit": "배",
+   "asof": "2026-01-25",
+   "basis": "계산: NVIDIA FY2026 중국 본사 고객 매출 196.77억 ÷ Epoch 세관 추정 2025년 208.7억 달러",
+   "company": "데스크",
+   "refs": [
+    "nvidia-china-hq-revenue",
+    "epoch-china-customs-nvidia"
+   ],
+   "detail": {
+    "fy2025_vs_2024": 1.35,
+    "fy2026_vs_2025": 0.94
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "NVIDIA — Form 10-K (2026-01-25 회계연도)",
+     "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm",
+     "date": "2026-02-25",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "Epoch AI — AI chip imports (CSV, CC BY 4.0)",
+     "url": "https://epoch.ai/data/ai-chip-imports",
+     "date": "2026-11-12",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "기간이 한 달 어긋나고(회계연도는 2월~이듬해 1월) 공시는 전 제품, 세관 추정은 칩이라 같은 것은 아니다. 그래도 두 해 모두 0.9~1.4배 안이라 정식 구매 갈래의 크기는 두 원천이 서로 받친다."
+  },
+  {
+   "id": "dayone-largest-customer-mw",
+   "country": "ZZ",
+   "city": null,
+   "metric": "DayOne 최대 고객의 과금 IT 용량(어림)",
+   "value": 308,
+   "unit": "MW",
+   "asof": "2025-12-31",
+   "basis": "계산: 과금 용량 × 최대 고객 매출 비중. 2025년 말 444 × 69.4% = 308MW, 2026-06 말 666 × 69.2% = 461MW",
+   "company": "데스크",
+   "refs": [
+    "dayone-billings"
+   ],
+   "detail": {
+    "2025-12-31": 308,
+    "2026-06-30": 461,
+    "assumption": "매출 비중 = 용량 비중"
+   },
+   "sources": [
+    {
+     "n": 1,
+     "title": "DayOne Data Centers — Form F-1",
+     "url": "https://www.sec.gov/Archives/edgar/data/2118192/000119312526414188/d223752df1.htm",
+     "date": "2026-10-05",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "low",
+   "note": "매출 비중을 용량 비중으로 본 가정이다. 최대 고객을 바이트댄스로 읽으면 한 사업자에서만 Epoch 부지 추적(말레이시아 243MW)보다 큰 해외 용량이 나온다. 다만 이것은 빌린 건물·전력이고 안의 서버는 고객 소유이며 일반 서버가 섞여 있다. 중국 본사 회사는 중국 밖에서도 첨단 칩을 직접 사려면 허가가 필요하므로, 이 용량을 임대 칩의 양으로 더하지 않고 해외 자가 운영 용량의 위쪽 끝으로만 읽는다."
   }
  ]
 }

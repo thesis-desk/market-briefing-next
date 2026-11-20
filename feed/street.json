@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated_kst": "2026-11-20T14:21:30+09:00",
+ "updated_kst": "2026-11-20T18:28:13+09:00",
  "window_days": 14,
  "items_days": 30,
  "index": {
@@ -8,13 +8,13 @@
    "value": 3,
    "label": "엇갈림",
    "orgs": 42,
-   "items": 152
+   "items": 151
   },
   "market": {
    "value": -11,
    "label": "엇갈림",
    "orgs": 30,
-   "items": 93
+   "items": 94
   },
   "by_group": [
    {
@@ -33,9 +33,9 @@
    },
    {
     "group": "자산운용",
-    "ai_tech": -6,
+    "ai_tech": -7,
     "ai_tech_orgs": 7,
-    "market": -2,
+    "market": -3,
     "market_orgs": 7
    },
    {
@@ -100,8 +100,8 @@
     "week": "2026-11-16",
     "ai_tech": 11,
     "ai_tech_orgs": 26,
-    "market": -1,
-    "market_orgs": 17
+    "market": 2,
+    "market_orgs": 18
    }
   ],
   "args": {
@@ -150,41 +150,143 @@
     },
     {
      "tag": "투자 회수",
-     "n": 37
+     "n": 35
     },
     {
      "tag": "금리·거시",
-     "n": 22
+     "n": 23
     },
     {
      "tag": "정책·지정학",
-     "n": 19
+     "n": 20
     },
     {
      "tag": "자금 조달·신용",
-     "n": 19
+     "n": 18
     },
     {
      "tag": "밸류에이션",
-     "n": 19
+     "n": 18
     },
     {
      "tag": "경쟁·해자",
      "n": 12
     },
     {
-     "tag": "쏠림",
-     "n": 12
-    },
-    {
      "tag": "전력·공급 제약",
      "n": 11
+    },
+    {
+     "tag": "쏠림",
+     "n": 10
     }
    ]
   },
   "method": "기관·인물마다 기간 안 입장 값의 평균을 내고 그 평균들을 다시 평균해 ×50"
  },
  "items": [
+  {
+   "id": "blackrock-international-investing-how-are-ai-and-geopoliti",
+   "group": "자산운용",
+   "org": "BlackRock",
+   "person": "Mike Pyle",
+   "kind": "publication",
+   "title": "국제 투자: AI와 지정학 위험은 투자 전망을 어떻게 바꾸고 있는가?",
+   "title_orig": "International Investing: How are AI and geopolitical risks shaping the investment outlook?",
+   "url": "https://www.youtube.com/watch?v=ZswQ7z6ZbMQ",
+   "outlet": "BlackRock (유튜브)",
+   "published_kst": "2026-11-20T18:00:03+09:00",
+   "stance": {
+    "ai_tech": 1,
+    "market": 0
+   },
+   "args": [
+    "금리·거시",
+    "자금 조달·신용",
+    "수요·채택",
+    "정책·지정학"
+   ],
+   "summary": "AI 설비 구축을 위한 자본 수요와 각국 정부의 재정 조달 수요가 맞붙으면서 금리가 올랐다고 본다. 이 금리 상승은 AI 전환에 따른 성장·생산성 기대 때문이라 주식시장이 비교적 견조하게 버텨 왔다고 평가한다. 다만 중동과 러시아-우크라이나발 지정학 위험으로 에너지 시장의 완충 여력이 소진돼, 일본 같은 에너지 수입국에는 위험이 크다고 경고한다.",
+   "points": [
+    "AI 구축을 위한 역사적 규모의 자본 수요가 시장을 움직이는 핵심 요인이며, 일본 기업도 그 공급망에 속해 있다.",
+    "금리 상승은 AI 전환에 따른 성장·생산성 기대를 반영한 것이라, 주식시장이 비교적 견조하게 버틸 수 있었다.",
+    "높은 금리 환경이 비교적 견조한 주식시장과 공존해 왔다는 점을 긍정적으로 본다.",
+    "에너지 시장의 완충 여력이 대부분 소진돼, 지정학 위험이 되살아나면 일본 같은 수입국에 큰 경제·시장 위험이 된다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "유튜브 자막(제작자 제공)(en) 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
+  },
+  {
+   "id": "goldman-goldman-s-tim-moe-on-upgrading-india-prefering-k",
+   "group": "투자은행",
+   "org": "Goldman Sachs",
+   "person": "Tim Moe",
+   "kind": "publication",
+   "title": "골드만삭스 팀 모, 인도 비중 상향과 대만보다 한국 선호",
+   "title_orig": "Goldman’s Tim Moe on Upgrading India, Prefering Korea Over Taiwan",
+   "url": "https://www.youtube.com/watch?v=QyEgvD91PT4",
+   "outlet": "Bloomberg Television (유튜브)",
+   "published_kst": "2026-11-20T17:06:43+09:00",
+   "stance": {
+    "ai_tech": 0,
+    "market": 1
+   },
+   "args": [
+    "밸류에이션",
+    "자금 조달·신용",
+    "쏠림",
+    "정책·지정학"
+   ],
+   "summary": "팀 모는 엔비디아의 AI 금융 역할, 중국 공급, 미국 정치 등 불확실성과 연말 위험 축소가 AI 트레이드를 짓눌렀다고 본다. 다만 시장이 거품 구간까지 간 적은 없고 한국 반도체 주가는 지나치게 비관적으로 반영돼 있다고 평가한다. 아시아에서는 대만 비중을 줄이고 인도와 중국을 올리되, AI 심리가 먼저 안정돼야 한다고 말한다.",
+   "points": [
+    "AI 트레이드는 새로 부각된 불확실성 때문에 상반기 이후 크게 눌렸다.",
+    "AI 쏠림을 줄이려고 대만 비중을 낮추고 그 자리를 인도로 채웠다.",
+    "한국 반도체 주가는 이익 대폭 삭감을 반영해 과도하게 비관적이다.",
+    "집계 기준으로 시장이 거품 밸류에이션에 이른 적은 없었다고 본다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "유튜브 자막(제작자 제공)(en) 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
+  },
+  {
+   "id": "jpmorgan-healthcare-s-next-wave-ai-innovation-and-the-fut",
+   "group": "투자은행",
+   "org": "JPMorgan",
+   "person": null,
+   "kind": "publication",
+   "title": "헬스케어의 다음 물결: AI, 혁신, 그리고 접근성의 미래",
+   "title_orig": "Healthcare’s next wave: AI, innovation and the future of access",
+   "url": "https://www.youtube.com/watch?v=DY5doXk8JD8",
+   "outlet": "JPMorgan (유튜브)",
+   "published_kst": "2026-11-20T15:15:23+09:00",
+   "stance": {
+    "ai_tech": null,
+    "market": 1
+   },
+   "args": [
+    "수요·채택",
+    "금리·거시",
+    "정책·지정학",
+    "경쟁·해자"
+   ],
+   "summary": "JPMorgan 제약·의료기기 애널리스트들은 제약·바이오가 25년 커리어 중 가장 탄탄한 신약 혁신 사이클에 있고 경기·금리에 덜 민감한 방어 섹터라고 본다. 의료기기는 고금리와 보험 축소로 시술량이 둔화된 저점이나 2027년 반등을 기대한다. AI는 임상 개발 효율화에는 이미 도움이 되지만 신약 발굴의 변혁 여부는 3~5년 뒤에야 알 수 있다고 본다.",
+   "points": [
+    "제약 섹터는 자신의 커리어에서 가장 탄탄한 R&D 혁신 사이클에 있다.",
+    "제약은 금리·경기에 덜 민감한 방어 섹터이며 이는 M&A 환경을 건강하게 만들 것이다.",
+    "의료기기는 고금리와 보험 축소로 시술량이 둔화됐으며 2027년 바닥을 지나 개선을 기대한다.",
+    "AI의 신약 발굴 효과가 변혁적일지는 아직 판단하기 이르며 3~5년 뒤에야 알 수 있다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "유튜브 자동 생성 자막(en) 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
+  },
   {
    "id": "blackrock-how-ai-and-interest-rates-are-changing-corporate",
    "group": "자산운용",
