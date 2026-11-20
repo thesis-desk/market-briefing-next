@@ -1,7 +1,25 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-20T11:24:16+09:00",
+ "generated_kst": "2026-11-20T14:21:30+09:00",
  "reports": [
+  {
+   "slug": "sixsigma-12-0-5-p-10-fomc",
+   "type": "article",
+   "title": "식스시그마 : 12월 인상 폭은 물가 숫자가 아니라 워시 의장의 1월 예고 여부가 가른다",
+   "companies": [
+    {
+     "name": "미국 연방준비제도(Fed)",
+     "ticker": null
+    }
+   ],
+   "event": "10월 FOMC 의사록 공개",
+   "event_date": "2026-11-18",
+   "published_kst": "2026-11-20T14:17:23+09:00",
+   "revised_kst": "2026-11-20T14:17:23+09:00",
+   "revision": 1,
+   "summary": "10월 의사록과 10월 CPI로 0.5%p 검토 조건은 이미 충족됐고, 채널은 시장 확률 7.3%가 낮다고 본다. 남은 변수는 워시 의장이 1월 인상을 미리 말할지인데, 의장은 평시 선제 안내에 반대해 왔다. 방향(추가 긴축)은 근거가 단단하지만 폭에 대한 채널의 확률 판단은 정성적이어서 확신은 중간이다.",
+   "path": "reports/sixsigma-12-0-5-p-10-fomc.json"
+  },
   {
    "slug": "big-technology-storm-clouds-ahead-for-apple-debating-amazon",
    "type": "interview",
@@ -2543,7 +2561,7 @@
   }
  ],
  "street": {
-  "updated_kst": "2026-11-20T08:23:49+09:00",
+  "updated_kst": "2026-11-20T14:21:30+09:00",
   "path": "street.json"
  },
  "calendar": {
