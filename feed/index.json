@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-20T08:42:35+09:00",
+ "generated_kst": "2026-11-20T10:34:31+09:00",
  "reports": [
   {
    "slug": "big-technology-why-the-anthropic-ipo-will-succeed-with-aaron",
@@ -695,8 +695,8 @@
    "event": "OpenRouter 모델별 사용량 분석",
    "event_date": "2026-11-19",
    "published_kst": "2026-11-19T10:44:39+09:00",
-   "revised_kst": "2026-11-19T10:44:39+09:00",
-   "revision": 1,
+   "revised_kst": "2026-11-20T10:34:31+09:00",
+   "revision": 2,
    "summary": "OpenRouter 를 지나는 토큰은 1년 사이 32배(주 6.2조 → 200.6조)가 됐고 늘어난 물량의 대부분은 중국 오픈 모델이다. 그러나 최근 30일을 단가로 환산하면 순서가 뒤집힌다. 최근 30일 토큰의 70%를 처리한 중국 제작사의 추정 결제액 비중은 37~39%이고, 토큰 25%의 미국 대형사가 60~62%다. Anthropic 은 토큰 7%로 추정 결제액의 28~39%를 가져갔다. 금액은 공개되지 않아 토큰량 × 단가로 낸 데스크 추정이며 캐시 비율을 몰라 절대액의 폭이 6.6배다.",
    "path": "reports/openrouter-tokens-vs-spend-2026-11.json"
   },

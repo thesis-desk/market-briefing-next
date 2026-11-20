@@ -130,6 +130,7 @@
 | `fact_table` | 원문에서 확인한 값의 표 | `title`, `head`, `rows`, `note`, `src`, `loc`, `t` |
 | `calc_table` | 계산한 값의 표 | `title`, `head`, `rows`, `note` |
 | `view_table` | 해석을 정리한 표 | `title`, `head`, `rows`, `note` |
+| `fact_chart` · `calc_chart` · `view_chart` | 그림의 값(막대 `bars`, 하한·중앙·상한 `range`, 꺾은선 `line`) | `form`, `title`, `unit`, `labels`, `series`(`[{label, values}]`), `note`, `src`, `loc` |
 | `calc` | 가정과 사실로 계산한 값 | `text`, `inputs[]`(`name`, `value`), `formula` |
 | `assumption` | 계산·판단의 전제 | `by`(`ai` \| `user`), `text` |
 | `explain` | 배경 설명(AI) | `text` 또는 `items` |
