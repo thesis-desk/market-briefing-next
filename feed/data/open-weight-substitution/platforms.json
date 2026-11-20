@@ -1,0 +1,757 @@
+{
+ "schema": 1,
+ "bundle": "W3",
+ "title": "추론·사후 학습 시장 — 플랫폼 매출, 맞춤 비중, 채택률",
+ "updated_kst": "2026-11-20T22:54:08+09:00",
+ "measure": null,
+ "notes": [
+  "방향(sides)은 AI 의 해석이다.",
+  "회사가 직접 잰 값과 자기 보고는 definition 에 밝혔다."
+ ],
+ "summary": {
+  "records": 22,
+  "with_value": 20,
+  "by_hypothesis": {
+   "H1": {
+    "지지": 1,
+    "반박": 0,
+    "양쪽": 0,
+    "중립": 1
+   },
+   "H2": {
+    "지지": 0,
+    "반박": 0,
+    "양쪽": 0,
+    "중립": 1
+   },
+   "H3": {
+    "지지": 11,
+    "반박": 6,
+    "양쪽": 3,
+    "중립": 2
+   }
+  }
+ },
+ "records": [
+  {
+   "id": "fireworks-run-rate",
+   "country": "US",
+   "city": null,
+   "metric": "Fireworks AI 의 연환산 매출",
+   "value": 1.5,
+   "unit": "십억 달러",
+   "asof": "2026-09",
+   "basis": "3분기 말, 대표의 발언",
+   "definition": "Fireworks 대표가 무대에서 말한 자기 보고 값이다. 감사받지 않았고 자동 자막으로 받아 적었다.",
+   "quote": "we reached 1.5 billion revenue other than u revenue run rate",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Lin Qiao: Why AI Companies Are \"Scaling to Bankruptcy\" | TomorrowX Summit (iConnections, 영상)",
+     "url": "https://www.youtube.com/watch?v=ufMUsXzT7qc",
+     "date": "2026-11-20",
+     "read": "full"
+    },
+    {
+     "n": 2,
+     "title": "Menlo Ventures — 2026: The State of Enterprise AI",
+     "url": "https://menlovc.com/perspective/2026-the-state-of-enterprise-ai",
+     "date": "2026-11-03",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H3": "지지"
+   },
+   "side_basis": "특화·전용 배포 플랫폼 한 곳의 규모다.",
+   "note": "Menlo 보고서는 Fireworks 와 Modal 이 올해 연환산 10억 달러를 넘었다고 적었다."
+  },
+  {
+   "id": "fireworks-growth-ex-top-customer",
+   "country": "US",
+   "city": null,
+   "metric": "Fireworks 의 매출 증가 배수 — 최대 고객 제외, 9개월",
+   "value": 13,
+   "unit": "배",
+   "asof": "2026-09",
+   "basis": "대표의 발언. 진행자는 '약 1억 → 13억 달러'로 옮겼다",
+   "definition": "Fireworks 대표가 무대에서 말한 자기 보고 값이다. 감사받지 않았고 자동 자막으로 받아 적었다.",
+   "quote": "we have grown uh in the past nine months this year by 13 times",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Lin Qiao: Why AI Companies Are \"Scaling to Bankruptcy\" | TomorrowX Summit (iConnections, 영상)",
+     "url": "https://www.youtube.com/watch?v=ufMUsXzT7qc",
+     "date": "2026-11-20",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H3": "지지"
+   },
+   "side_basis": "이 속도가 이어지면 규모가 달라진다.",
+   "note": "최대 고객은 인수됐다고 했고 그 뒤 고객으로 남았는지는 말하지 않았다."
+  },
+  {
+   "id": "fireworks-custom-traffic-share",
+   "country": "US",
+   "city": null,
+   "metric": "Fireworks 트래픽 가운데 맞춤 모델·맞춤 배포의 몫",
+   "value": 80,
+   "unit": "%(이상)",
+   "asof": "2026-11-17",
+   "basis": "대표의 발언. 고객 데이터로 학습한 모델과 범용 모델의 전용 배포를 묶은 값",
+   "definition": "Fireworks 대표가 무대에서 말한 자기 보고 값이다. 감사받지 않았고 자동 자막으로 받아 적었다.",
+   "quote": "I think more than 80% of the traffic goes that way",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Lin Qiao: Why AI Companies Are \"Scaling to Bankruptcy\" | TomorrowX Summit (iConnections, 영상)",
+     "url": "https://www.youtube.com/watch?v=ufMUsXzT7qc",
+     "date": "2026-11-20",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H2": "중립",
+    "H3": "지지"
+   },
+   "side_basis": "공개 API 집계(OpenRouter)에 잡히지 않는 쪽이 이 회사에서는 다수다.",
+   "note": "그 부분만 6개월에 5배가 됐다고 했다. 기업 고객의 토큰은 6개월에 12배.",
+   "detail": {
+    "custom_growth_6m": 5,
+    "enterprise_token_growth_6m": 12
+   }
+  },
+  {
+   "id": "menlo-post-training-adoption",
+   "country": "ZZ",
+   "city": null,
+   "metric": "사후 학습을 하는 AI 빌더의 비중",
+   "value": 10,
+   "unit": "%",
+   "asof": "2026",
+   "basis": "Menlo 조사, 2025년 6%",
+   "definition": "Menlo Ventures 의 추정이다. 산출 방법은 확인하지 않았다. Menlo 는 Anthropic 과 Fireworks 양쪽의 주주다.",
+   "quote": "Adoption rose from 6% of AI builders in 2025 to 10% this year, but it remains limited.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Menlo Ventures — 2026: The State of Enterprise AI",
+     "url": "https://menlovc.com/perspective/2026-the-state-of-enterprise-ai",
+     "date": "2026-11-03",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H3": "양쪽"
+   },
+   "side_basis": "늘고 있지만 열 곳 가운데 한 곳이다.",
+   "note": "하는 곳의 91%가 바깥 협력사를 쓴다(인프라 50%, 전문가 데이터·평가 41%, 전문 업체 30%).",
+   "detail": {
+    "year_ago": 6,
+    "use_outside_partners": 91
+   }
+  },
+  {
+   "id": "menlo-open-source-volume-growth",
+   "country": "ZZ",
+   "city": null,
+   "metric": "오픈소스 토큰 물량의 1년 증가 배수",
+   "value": 22.5,
+   "unit": "배",
+   "asof": "2026-09",
+   "basis": "Menlo 추정, 월 2.9천조 토큰. 클로즈드는 12.1배",
+   "definition": "Menlo Ventures 의 추정이다. 산출 방법은 확인하지 않았다. Menlo 는 Anthropic 과 Fireworks 양쪽의 주주다.",
+   "quote": "Open-source volume is up 22.5x to an estimated 2.9 quadrillion tokens per month",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Menlo Ventures — 2026: The State of Enterprise AI",
+     "url": "https://menlovc.com/perspective/2026-the-state-of-enterprise-ai",
+     "date": "2026-11-03",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H1": "중립",
+    "H3": "양쪽"
+   },
+   "side_basis": "물량은 클로즈드보다 빨리 늘지만 돈은 따라가지 않았다.",
+   "note": "많은 부분이 Fireworks·Modal 같은 추론 클라우드에서 돈다고 적었다.",
+   "detail": {
+    "closed_growth": 12.1
+   }
+  },
+  {
+   "id": "fireworks-vs-anthropic-quarterly-revenue",
+   "country": "US",
+   "city": null,
+   "metric": "Fireworks 의 분기 환산 매출 ÷ Anthropic 의 분기 매출",
+   "value": 2.2,
+   "unit": "%",
+   "asof": "2026-09",
+   "basis": "계산: 연환산 15억 달러 ÷ 4 = 3.75억 달러, Anthropic 2026년 3분기 매출 170억 달러",
+   "definition": null,
+   "quote": null,
+   "sources": [
+    {
+     "n": 1,
+     "title": "Lin Qiao: Why AI Companies Are \"Scaling to Bankruptcy\" | TomorrowX Summit (iConnections, 영상)",
+     "url": "https://www.youtube.com/watch?v=ufMUsXzT7qc",
+     "date": "2026-11-20",
+     "read": "full"
+    },
+    {
+     "n": 2,
+     "title": "Anthropic, PBC — Form S-1 정정 2호 (SEC EDGAR)",
+     "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026072484/anthropicpbc-sx1ax2.htm",
+     "date": "2026-11-10",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H3": "반박"
+   },
+   "side_basis": "지금 크기로는 프론티어 랩의 매출을 깎는다고 보기 어렵다.",
+   "note": "연환산 매출과 인식 매출이라 기준이 다르다. Menlo 가 잡은 기업 AI 배포 지출 1,768억 달러에 견주면 0.85%다.",
+   "refs": [
+    {
+     "bundle": "W3",
+     "id": "fireworks-run-rate"
+    }
+   ],
+   "detail": {
+    "anthropic_q3_2026_revenue_bn": 17
+   }
+  },
+  {
+   "id": "fireworks-own-compute",
+   "country": "US",
+   "city": null,
+   "metric": "Fireworks 의 자체 컴퓨트 계획",
+   "value": null,
+   "unit": "해당 없음",
+   "asof": "2026-11-17",
+   "basis": "대표의 발언. 시점·규모는 말하지 않았다",
+   "definition": "Fireworks 대표가 무대에서 말한 자기 보고 값이다. 감사받지 않았고 자동 자막으로 받아 적었다.",
+   "quote": "I think it's not a question of if, it's a question of when",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Lin Qiao: Why AI Companies Are \"Scaling to Bankruptcy\" | TomorrowX Summit (iConnections, 영상)",
+     "url": "https://www.youtube.com/watch?v=ufMUsXzT7qc",
+     "date": "2026-11-20",
+     "read": "full"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H3": "중립"
+   },
+   "side_basis": "특화 모델이 퍼져도 GPU 수요는 같은 쪽이라는 정황이다.",
+   "note": "지금은 GPU 를 갖지 않고 조달한 용량·고객 용량·협력사 용량에서 돈다."
+  },
+  {
+   "id": "fireworks-series-d-arr",
+   "country": "US",
+   "city": null,
+   "metric": "Fireworks AI 의 연환산 매출 — 시리즈 D 발표",
+   "value": 1,
+   "unit": "십억 달러",
+   "asof": "2026-07",
+   "basis": "회사 글. 하루 40조 토큰",
+   "definition": "회사가 직접 밝힌 값이다. 제3자 검증은 없다.",
+   "quote": "surpasses $1 billion in annualized revenue run rate and serves more than 40 trillion tokens every day",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Fireworks Raises $1.5 Billion Series D",
+     "url": "https://fireworks.ai/blog/fireworks-series-d-funding",
+     "date": "2026-07-15",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H3": "지지"
+   },
+   "side_basis": "넉 달 뒤 대표는 15억 달러라고 말했다.",
+   "note": "TomorrowX 발언(15억 달러)보다 앞선 시점의 회사 공식 수치. 정의는 밝히지 않았다."
+  },
+  {
+   "id": "fireworks-specialized-token-share",
+   "country": "US",
+   "city": null,
+   "metric": "Fireworks 토큰 가운데 고객 데이터로 특화한 모델의 몫 — 회사 글",
+   "value": 95,
+   "unit": "%(이상)",
+   "asof": "2026-07",
+   "basis": "시리즈 D 발표",
+   "definition": "회사가 직접 밝힌 값이다. 제3자 검증은 없다.",
+   "quote": "More than 95% of those tokens come from models specialized on customers’ proprietary data and optimized for specific jobs.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Fireworks Raises $1.5 Billion Series D",
+     "url": "https://fireworks.ai/blog/fireworks-series-d-funding",
+     "date": "2026-07-15",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H3": "지지"
+   },
+   "side_basis": "넉 달 뒤 대표는 무대에서 '80% 이상'이라고 말했다. 두 값의 정의가 같은지 알 수 없다.",
+   "note": "TomorrowX 발언의 \"80% 초과\"와 수치가 다르다(정의 또는 시점 차이). 품질 동등성 근거는 아니어서 H2는 중립."
+  },
+  {
+   "id": "fireworks-gross-margin",
+   "country": "US",
+   "city": null,
+   "metric": "Fireworks 의 매출총이익률",
+   "value": 50,
+   "unit": "%(약)",
+   "asof": "2026",
+   "basis": "추정. 투자자에게는 60%를 목표로 제시했다고 적었다",
+   "definition": "Sacra 의 추정이다. 회사가 확인한 값이 아니고 게시일이 없어 열람일을 적었다.",
+   "quote": "gross margin sits at approximately 50%, below the 70%-plus typical of subscription software businesses",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Fireworks AI revenue, valuation & funding | Sacra",
+     "url": "https://sacra.com/c/fireworks-ai/",
+     "date": "2026-11-20",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "low",
+   "sides": {
+    "H3": "반박"
+   },
+   "side_basis": "소프트웨어보다 낮은 마진이다. 매출의 절반은 컴퓨트 원가로 나간다.",
+   "note": "GPU를 소유하지 않고 제3자에게서 조달한다는 점도 같은 페이지에 있다. 추정치."
+  },
+  {
+   "id": "together-bookings-2q26",
+   "country": "US",
+   "city": null,
+   "metric": "Together AI 의 연간 수주",
+   "value": 1.15,
+   "unit": "십억 달러",
+   "asof": "2026-06",
+   "basis": "회사가 밝힌 값(TechCrunch). 수주는 다년 약정을 포함할 수 있다",
+   "definition": "회사가 직접 밝힌 값이다. 제3자 검증은 없다.",
+   "quote": "claims annual bookings of over $1.15 billion as of its last quarter",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Neocloud Together AI raises $800M, leaps to $8.3B valuation",
+     "url": "https://techcrunch.com/2026/07/01/neocloud-together-ai-raises-800m-leaps-to-8-3b-valuation",
+     "date": "2026-07-01",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H3": "지지"
+   },
+   "side_basis": "오픈 모델 추론 플랫폼 또 한 곳의 규모다.",
+   "note": "수주(bookings)는 다년 약정을 포함할 수 있어 인식 매출과 다르다. 회사 발표이며 GPU 임대가 섞여 있다."
+  },
+  {
+   "id": "together-api-share-of-revenue",
+   "country": "US",
+   "city": null,
+   "metric": "Together AI 매출 가운데 오픈 모델 토큰 API 의 몫",
+   "value": 35,
+   "unit": "%",
+   "asof": "2026",
+   "basis": "추정, 30~40%의 가운데 값. 나머지는 GPU 임대",
+   "definition": "Sacra 의 추정이다. 회사가 확인한 값이 아니고 게시일이 없어 열람일을 적었다.",
+   "quote": "accounts for roughly 30–40% of revenue and scales with inference volume",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Together AI revenue, valuation & funding | Sacra",
+     "url": "https://sacra.com/c/together-ai/",
+     "date": "2026-11-20",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "low",
+   "sides": {
+    "H3": "반박"
+   },
+   "side_basis": "플랫폼 매출을 모두 오픈웨이트 추론 지출로 읽으면 크게 잡힌다.",
+   "note": "플랫폼 매출 전체를 오픈웨이트 추론 지출로 읽으면 과대 계상된다. 값은 범위의 중간값이며 원문은 30–40%."
+  },
+  {
+   "id": "baseten-revenue-20x",
+   "country": "US",
+   "city": null,
+   "metric": "Baseten 의 1년 매출 증가 배수",
+   "value": 20,
+   "unit": "배",
+   "asof": "2026-06",
+   "basis": "시리즈 F 발표. 추론량은 40배. 절대 금액은 밝히지 않았다",
+   "definition": "회사가 직접 밝힌 값이다. 제3자 검증은 없다.",
+   "quote": "Over the last year, our revenue has grown 20x, and inference volume has grown 40x.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Announcing our Series F",
+     "url": "https://baseten.co/blog/announcing-our-series-f/",
+     "date": "2026-06-22",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H3": "지지"
+   },
+   "side_basis": "추론과 사후 학습을 함께 파는 곳의 증가율이다.",
+   "note": "절대 금액은 공개하지 않았다. 고객으로 Cursor·Notion·Harvey·Abridge 등을 들며 추론과 후속 학습을 함께 판다고 설명."
+  },
+  {
+   "id": "baseten-arr-sacra-mar26",
+   "country": "US",
+   "city": null,
+   "metric": "Baseten 의 연환산 매출",
+   "value": 0.6,
+   "unit": "십억 달러",
+   "asof": "2026-03",
+   "basis": "추정. 2025-12 는 2억 달러",
+   "definition": "Sacra 의 추정이다. 회사가 확인한 값이 아니고 게시일이 없어 열람일을 적었다.",
+   "quote": "Sacra estimates that Baseten hit $600M in annualized revenue in March 2026",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Baseten revenue, valuation & funding | Sacra",
+     "url": "https://sacra.com/c/baseten/",
+     "date": "2026-11-20",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "low",
+   "sides": {
+    "H3": "지지"
+   },
+   "side_basis": "한 분기에 세 배라는 추정이다.",
+   "note": "Sacra 추정치(제3자 리서치, 회사 공시 아님). 페이지에 게시일이 없어 열람일을 적음. 한 분기에 3배라는 수치는 회사가 확인하지 않았다."
+  },
+  {
+   "id": "modal-run-rate-1b-oct26",
+   "country": "US",
+   "city": null,
+   "metric": "Modal 의 연환산 매출",
+   "value": 1,
+   "unit": "십억 달러",
+   "asof": "2026-10",
+   "basis": "회사 발표의 2차 요약. 약 3억 달러는 코드 실행 샌드박스",
+   "definition": null,
+   "quote": "Modal has crossed $1B in annualized run rate and raised a $750M Series D at a $15.75B post-money valuation",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Modal Hits $1B Run Rate: AI-Native Infrastructure's Breakout Moment",
+     "url": "https://futurumgroup.com/insights/modal-hits-1b-run-rate-ai-native-infrastructures-breakout-moment",
+     "date": "2026-10-15",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "low",
+   "sides": {
+    "H3": "중립"
+   },
+   "side_basis": "모델 추론만의 매출이 아니다.",
+   "note": "10억 달러 중 약 3억 달러는 코드 실행 샌드박스로 모델 추론이 아니다. 2차 출처."
+  },
+  {
+   "id": "applied-compute-arr-100m",
+   "country": "US",
+   "city": null,
+   "metric": "Applied Compute 의 연환산 반복 매출",
+   "value": 0.1,
+   "unit": "십억 달러(초과)",
+   "asof": "2026-11",
+   "basis": "투자 유치 발표. 연구원 지원 매출이 섞여 있다",
+   "definition": "회사가 직접 밝힌 값이다. 제3자 검증은 없다.",
+   "quote": "annualized recurring revenue has topped $100 million",
+   "sources": [
+    {
+     "n": 1,
+     "title": "AI cloud startup Applied Compute raises $350M after reaching key revenue milestone",
+     "url": "https://siliconangle.com/2026/11/03/ai-cloud-startup-applied-compute-raises-350m-after-reaching-key-revenue-milestone/",
+     "date": "2026-11-04",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H3": "지지"
+   },
+   "side_basis": "사후 학습만 하는 회사가 출범 18개월 안에 이 크기가 됐다.",
+   "note": "후속 학습 전문 업체로 출범 18개월 미만. 연구원 지원(용역) 매출이 섞여 있어 반복 매출 정의가 불분명하다."
+  },
+  {
+   "id": "nebius-token-factory-run-rate",
+   "country": "NL",
+   "city": null,
+   "metric": "Nebius Token Factory 의 계약액 증가",
+   "value": null,
+   "unit": "해당 없음",
+   "asof": "2026-09",
+   "basis": "3분기 실적 발표. 전 분기의 17배, 연환산은 '수억 달러대'에 가깝다고만 밝혔다",
+   "definition": "회사가 직접 밝힌 값이다. 제3자 검증은 없다.",
+   "quote": "logging a 17-fold quarter-over-increase in contract value",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Shares of AI cloud operator Nebius drop 16%+ despite strong earnings results",
+     "url": "https://siliconangle.com/?p=854058",
+     "date": "2026-11-12",
+     "read": "full"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H3": "지지"
+   },
+   "side_basis": "상장 네오클라우드의 오픈 모델 추론 사업이다.",
+   "note": "정확한 매출 수치는 공개하지 않았다. 계약액 기준이라 인식 매출과 다르고, 회사 전체 연환산 64억 달러(검색 요약)에 비하면 작은 부분이다."
+  },
+  {
+   "id": "galaxy-identical-quotes",
+   "country": "ZZ",
+   "city": null,
+   "metric": "추론 플랫폼 다섯 곳이 같은 오픈 모델에 매긴 입력 단가",
+   "value": 1.74,
+   "unit": "달러/100만 토큰",
+   "asof": "2026-07",
+   "basis": "Galaxy 가 OpenRouter 자료로 정리(2026-07-22). 출력은 3.48달러",
+   "definition": null,
+   "quote": "quote the exact same price: $1.74/$3.48",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Inference Market (and Micro) Structure",
+     "url": "https://www.galaxy.com/insights/perspectives/inference-market-and-micro-structure",
+     "date": "2026-08-11",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H3": "반박"
+   },
+   "side_basis": "같은 모델을 같은 값에 판다. 범용 토큰 판매는 차별화가 어렵다는 근거다.",
+   "note": "서버리스 토큰 판매는 차별화가 어렵다는 근거. 같은 모델의 호가가 0.435~1.74달러로 4배 벌어진다는 점도 있다. 전용 배포·후속 학습 매출에는 직접 해당하지 않는다."
+  },
+  {
+   "id": "ramp-adoption-sep26",
+   "country": "ZZ",
+   "city": null,
+   "metric": "AI 에 돈을 쓰는 기업 가운데 모델 서빙 플랫폼을 쓰는 비율",
+   "value": 6.4,
+   "unit": "%",
+   "asof": "2026-08",
+   "basis": "2026-01 4.5%, 06 5.8%, 07 6.1%",
+   "definition": "Ramp 의 법인카드·청구 자료다. 미국 중소·성장 기업 표본이고 모델 서빙 플랫폼 결제를 오픈 모델 사용의 대리 지표로 썼다.",
+   "quote": "Only 6.4% of AI spending businesses use them and 3.6% of businesses overall",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Cracks in the AI Thesis Part 2",
+     "url": "https://ramp.com/data/ai-index-sept-2026",
+     "date": "2026-09-09",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H3": "양쪽"
+   },
+   "side_basis": "오르지만 느리다.",
+   "note": "4.5%(1월)→5.8%(6월)→6.1%→6.4%로 오르지만 속도가 느리다. Ramp는 실제 채택이 이보다 낮을 것이라고 단서를 단다.",
+   "detail": {
+    "2026-01": 4.5,
+    "2026-06": 5.8,
+    "2026-07": 6.1
+   }
+  },
+  {
+   "id": "ramp-not-replacing-closed",
+   "country": "ZZ",
+   "city": null,
+   "metric": "모델 서빙 플랫폼을 쓰는 기업 가운데 OpenAI 나 Anthropic 도 쓰는 비율",
+   "value": 96.4,
+   "unit": "%",
+   "asof": "2026-06",
+   "basis": "2026-06",
+   "definition": "Ramp 의 법인카드·청구 자료다. 미국 중소·성장 기업 표본이고 모델 서빙 플랫폼 결제를 오픈 모델 사용의 대리 지표로 썼다.",
+   "quote": "85.8% also used OpenAI, 93.2% used Anthropic, and 96.4% used at least one of the two",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Our latest data on China vs. the American AI Labs",
+     "url": "https://ramp.com/data/ai-index-july-2026",
+     "date": "2026-07-08",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H1": "지지",
+    "H3": "반박"
+   },
+   "side_basis": "바꾸는 것이 아니라 함께 쓴다.",
+   "note": "대체가 아니라 병행이라는 근거. 다만 병행 여부만 보여 주고 지출 배분 변화는 보여 주지 않는다."
+  },
+  {
+   "id": "ramp-heavy-spenders",
+   "country": "ZZ",
+   "city": null,
+   "metric": "모델 서빙 플랫폼을 쓰는 기업의 직원 1인당 월 AI 지출(중앙값)",
+   "value": 248,
+   "unit": "달러",
+   "asof": "2026-06",
+   "basis": "일반 AI 지출 기업은 10.59달러",
+   "definition": "Ramp 의 법인카드·청구 자료다. 미국 중소·성장 기업 표본이고 모델 서빙 플랫폼 결제를 오픈 모델 사용의 대리 지표로 썼다.",
+   "quote": "They spent a median of $248 per employee on AI in June, about 23 times the median AI-spending business at $10.59.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Our latest data on China vs. the American AI Labs",
+     "url": "https://ramp.com/data/ai-index-july-2026",
+     "date": "2026-07-08",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H3": "지지"
+   },
+   "side_basis": "옮기는 곳은 수가 적어도 지출이 큰 고객이다.",
+   "note": "오픈 모델로 옮기는 쪽은 소수지만 지출이 큰 고객이다. 기업 수 비중이 작아도 지출 영향은 클 수 있다."
+  },
+  {
+   "id": "openai-run-rate-aug26",
+   "country": "US",
+   "city": null,
+   "metric": "OpenAI 의 연환산 매출",
+   "value": 40,
+   "unit": "십억 달러(초과)",
+   "asof": "2026-08",
+   "basis": "Epoch AI 가 보도를 모은 값. 소비자 구독을 포함한다",
+   "definition": null,
+   "quote": "from $13 billion last August to over $40 billion now",
+   "sources": [
+    {
+     "n": 1,
+     "title": "An update on AI’s most important number",
+     "url": "https://epoch.ai/gradient-updates/an-update-on-ais-most-important-number",
+     "date": "2026-08-27",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "low",
+   "sides": {
+    "H3": "반박"
+   },
+   "side_basis": "플랫폼들의 매출을 견줄 크기다.",
+   "note": "소비자 구독 포함 전체 매출. 기업 API만 따로 나눈 수치는 연 페이지 어디에서도 찾지 못했다."
+  }
+ ]
+}

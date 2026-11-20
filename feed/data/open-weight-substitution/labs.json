@@ -1,0 +1,606 @@
+{
+ "schema": 1,
+ "bundle": "W4",
+ "title": "프론티어 랩의 노출과 대응 — 가격, 위험요인 문구, 계층별 몫",
+ "updated_kst": "2026-11-20T22:54:08+09:00",
+ "measure": null,
+ "notes": [
+  "방향(sides)은 AI 의 해석이다.",
+  "회사가 직접 잰 값과 자기 보고는 definition 에 밝혔다."
+ ],
+ "summary": {
+  "records": 18,
+  "with_value": 12,
+  "by_hypothesis": {
+   "H1": {
+    "지지": 8,
+    "반박": 4,
+    "양쪽": 1,
+    "중립": 0
+   },
+   "H2": {
+    "지지": 0,
+    "반박": 1,
+    "양쪽": 1,
+    "중립": 0
+   },
+   "H3": {
+    "지지": 2,
+    "반박": 3,
+    "양쪽": 3,
+    "중립": 0
+   }
+  }
+ },
+ "records": [
+  {
+   "id": "anthropic-s1-open-weight-risk",
+   "country": "US",
+   "city": null,
+   "metric": "Anthropic 상장 서류의 오픈웨이트 경쟁 문구",
+   "value": null,
+   "unit": "해당 없음",
+   "asof": "2026-11-10",
+   "basis": "위험요인 절",
+   "definition": "증권신고서의 위험요인은 일어날 수 있는 일을 넓게 적는 글이다. 일어났다는 뜻이 아니다.",
+   "quote": "open-weight or open-source AI models may capture a portion of the market for certain use cases, which could exert pricing pressure on our offerings",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Anthropic, PBC — Form S-1 정정 2호 (SEC EDGAR)",
+     "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026072484/anthropicpbc-sx1ax2.htm",
+     "date": "2026-11-10",
+     "read": "partial"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H1": "지지",
+    "H3": "양쪽"
+   },
+   "side_basis": "회사가 스스로 일부 쓰임새의 시장을 내줄 수 있고 가격 압박이 될 수 있다고 적었다. 범위는 '비용 효율을 앞세우는 일감'으로 한정했다.",
+   "note": "경쟁 절에서도 오픈웨이트를 '비용 효율을 지능보다 앞세우는' 쪽으로 적었다."
+  },
+  {
+   "id": "anthropic-s1-shift-to-lower-priced-models",
+   "country": "US",
+   "city": null,
+   "metric": "Anthropic 상장 서류의 저가 모델 이동 문구",
+   "value": null,
+   "unit": "해당 없음",
+   "asof": "2026-11-10",
+   "basis": "위험요인 절",
+   "definition": "증권신고서의 위험요인은 일어날 수 있는 일을 넓게 적는 글이다. 일어났다는 뜻이 아니다.",
+   "quote": "shift usage to lower-priced models, including in response to competitive offerings",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Anthropic, PBC — Form S-1 정정 2호 (SEC EDGAR)",
+     "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026072484/anthropicpbc-sx1ax2.htm",
+     "date": "2026-11-10",
+     "read": "partial"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H1": "지지"
+   },
+   "side_basis": "소형 계층에서의 이동이 매출 변수라고 회사가 적었다.",
+   "note": "사용량 기반 매출이 줄 수 있는 이유로 고객이 더 싼 모델로 옮기는 경우를 들었다."
+  },
+  {
+   "id": "anthropic-price-reduction-offset",
+   "country": "US",
+   "city": null,
+   "metric": "가격 인하와 계약 할인이 깎은 Anthropic 의 분기 매출 증가분",
+   "value": 600,
+   "unit": "백만 달러",
+   "asof": "2026-09",
+   "basis": "2026년 2분기 → 3분기. 2025년 3분기 → 4분기에는 약 7,000만 달러",
+   "definition": null,
+   "quote": "partially offset by a decrease of approximately $600 million from price reductions introduced as part of new model versions and contractual discounts",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Anthropic, PBC — Form S-1 정정 2호 (SEC EDGAR)",
+     "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026072484/anthropicpbc-sx1ax2.htm",
+     "date": "2026-11-10",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H3": "양쪽"
+   },
+   "side_basis": "가격이 내려가고 있다는 근거이지만 원인이 오픈웨이트인지는 서류에 없다.",
+   "note": "3분기 매출 170억 달러의 3.5%다(계산). 새 모델 버전의 가격 인하와 계약 할인을 합친 값이고 오픈웨이트 때문이라는 설명은 없다.",
+   "detail": {
+    "prior_period_musd": 70,
+    "q3_2026_revenue_bn": 17
+   }
+  },
+  {
+   "id": "menlo-small-model-price-cuts",
+   "country": "ZZ",
+   "city": null,
+   "metric": "프론티어 랩의 소형 모델 가격 인하 폭",
+   "value": 80,
+   "unit": "%(이상)",
+   "asof": "2026-09",
+   "basis": "Menlo 의 서술",
+   "definition": "Menlo Ventures 의 추정이다. 산출 방법은 확인하지 않았다. Menlo 는 Anthropic 과 Fireworks 양쪽의 주주다.",
+   "quote": "Frontier labs have cut small-model prices by 80% or more",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Menlo Ventures — 2026: The State of Enterprise AI",
+     "url": "https://menlovc.com/perspective/2026-the-state-of-enterprise-ai",
+     "date": "2026-11-03",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H1": "지지"
+   },
+   "side_basis": "가격으로 맞섰지만 물량을 지키지 못했다는 서술이다.",
+   "note": "값을 내렸는데도 소형 클로즈드의 토큰 몫이 줄었다."
+  },
+  {
+   "id": "menlo-google-enterprise-api-share",
+   "country": "US",
+   "city": null,
+   "metric": "기업 API 지출 가운데 Google 의 몫",
+   "value": 9,
+   "unit": "%",
+   "asof": "2026-09",
+   "basis": "Menlo 추정, 1년 전 21%. Anthropic 40% → 55%, OpenAI 27% → 31%",
+   "definition": "Menlo Ventures 의 추정이다. 산출 방법은 확인하지 않았다. Menlo 는 Anthropic 과 Fireworks 양쪽의 주주다.",
+   "quote": "its API spend now skews toward cheaper Flash models",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Menlo Ventures — 2026: The State of Enterprise AI",
+     "url": "https://menlovc.com/perspective/2026-the-state-of-enterprise-ai",
+     "date": "2026-11-03",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H1": "지지"
+   },
+   "side_basis": "최상위 모델에서 밀린 랩의 지출이 소형 계층에 몰렸고 그 계층이 오픈웨이트와 겹친다.",
+   "note": "Google 의 API 지출이 값싼 Flash 쪽으로 쏠렸다고 적었다.",
+   "detail": {
+    "year_ago": 21,
+    "anthropic": 55,
+    "anthropic_year_ago": 40,
+    "openai": 31,
+    "openai_year_ago": 27
+   }
+  },
+  {
+   "id": "anthropic-haiku-5-5-list-price",
+   "country": "US",
+   "city": null,
+   "metric": "Claude Haiku 5.5 의 정가",
+   "value": 0.1,
+   "unit": "달러/100만 입력 토큰",
+   "asof": "2026-11",
+   "basis": "공식 가격표, 10만 토큰 이하 프롬프트. 출력 0.50달러. Haiku 4.5 는 1달러/5달러",
+   "definition": null,
+   "quote": "Claude Haiku 5.5 (for prompts up to 100,000 tokens) | $0.10 / MTok",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Claude API pricing (platform docs)",
+     "url": "https://platform.claude.com/docs/en/about-claude/pricing",
+     "date": "2026-11-20",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "sides": {
+    "H1": "지지",
+    "H3": "반박"
+   },
+   "side_basis": "소형 등급의 값을 한 세대에 10분의 1로 내렸다. 소형 계층이 싸움터라는 근거이자 랩이 값으로 맞선다는 근거다.",
+   "note": "같은 표의 Haiku 4.5(1달러/5달러) 대비 입력·출력 모두 90% 낮다(표의 두 값으로 계산). 출시일 2026-10-15는 검색 요약에서만 확인.",
+   "detail": {
+    "haiku_4_5": 1
+   }
+  },
+  {
+   "id": "openai-gpt-6-luna-list-price",
+   "country": "US",
+   "city": null,
+   "metric": "GPT-6 Luna 의 정가",
+   "value": 0.1,
+   "unit": "달러/100만 입력 토큰",
+   "asof": "2026-11",
+   "basis": "공식 가격표. 출력 0.50달러",
+   "definition": null,
+   "quote": "| gpt-6-luna | $0.10 | $0.50 | $0.01 |",
+   "sources": [
+    {
+     "n": 1,
+     "title": "OpenAI API pricing (developers docs, markdown)",
+     "url": "https://developers.openai.com/api/docs/pricing.md",
+     "date": "2026-11-20",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "sides": {
+    "H1": "지지",
+    "H3": "반박"
+   },
+   "side_basis": "Haiku 5.5·Muse Ember 와 같은 값이다.",
+   "note": "Haiku 5.5, Muse Ember와 같은 값. openai.com 출시 글은 curl 차단이라 개발자 문서로 확인."
+  },
+  {
+   "id": "openai-luna-80pct-cut",
+   "country": "US",
+   "city": null,
+   "metric": "OpenAI 의 2026-07 가격 인하 폭 — 소형 Luna",
+   "value": 80,
+   "unit": "%",
+   "asof": "2026-07",
+   "basis": "통신 보도. 중간 등급 Terra 는 20%, 최상위 Sol 은 그대로",
+   "definition": null,
+   "quote": "lowered the cost of its smaller GPT-5.6 Luna model by 80 percent and its mid-tier Terra by 20 percent",
+   "sources": [
+    {
+     "n": 1,
+     "title": "OpenAI slashes prices of smaller models amid rising AI spending scrutiny",
+     "url": "https://www.thestandard.com.hk/innovation/article/338733/OpenAI-slashes-prices-of-smaller-models-amid-rising-AI-spending-scrutiny",
+     "date": "2026-07-31",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H1": "지지"
+   },
+   "side_basis": "인하가 소형에서 가장 크고 최상위는 0이었다.",
+   "note": "인하가 소형에 가장 크고 최상위는 0%였다는 점이 H1과 맞는다. Menlo의 '소형 80% 이상 인하'와 같은 사건."
+  },
+  {
+   "id": "openai-gpt-6-sol-luna-50pct-cut",
+   "country": "US",
+   "city": null,
+   "metric": "GPT-6 Sol·Luna 의 API 가격 인하 폭",
+   "value": 50,
+   "unit": "%",
+   "asof": "2026-09",
+   "basis": "InfoWorld 가 옮긴 OpenAI 글. 직전 세대 대비",
+   "definition": null,
+   "quote": "by reducing API prices for Sol and Luna by 50%",
+   "sources": [
+    {
+     "n": 1,
+     "title": "OpenAI, Anthropic cut AI model costs as price-performance race intensifies",
+     "url": "https://www.infoworld.com/article/4225637/openai-anthropic-cut-ai-model-costs-as-price-performance-race-intensifies.html",
+     "date": "2026-09-23",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H1": "반박"
+   },
+   "side_basis": "두 달 뒤에는 위 등급(Sol)도 내렸다. 가격 압박이 소형에 그치지 않는다.",
+   "note": "Sol은 소형이 아니라 주력 바로 아래 등급이라 인하가 위로 번졌다는 뜻도 된다. OpenAI는 원인을 캐싱·추론 효율로 설명한다."
+  },
+  {
+   "id": "anthropic-opus-5-5-20pct-cut",
+   "country": "US",
+   "city": null,
+   "metric": "Opus 5.5 의 토큰 가격 인하 폭 — Opus 5 대비",
+   "value": 20,
+   "unit": "%",
+   "asof": "2026-09",
+   "basis": "InfoWorld 가 옮긴 회사 발표",
+   "definition": null,
+   "quote": "launched Claude Opus 5.5 with token prices 20% below those of Opus 5",
+   "sources": [
+    {
+     "n": 1,
+     "title": "OpenAI, Anthropic cut AI model costs as price-performance race intensifies",
+     "url": "https://www.infoworld.com/article/4225637/openai-anthropic-cut-ai-model-costs-as-price-performance-race-intensifies.html",
+     "date": "2026-09-23",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H1": "반박"
+   },
+   "side_basis": "최상위 등급의 정가도 내렸다.",
+   "note": "상위 등급 정가 인하. 40%는 회사 주장이며 독립 검증 없음."
+  },
+  {
+   "id": "anthropic-sonnet-5-intro-price-kept",
+   "country": "US",
+   "city": null,
+   "metric": "Sonnet 5 의 가격 — 예고한 인상의 취소",
+   "value": 2,
+   "unit": "달러/100만 입력 토큰",
+   "asof": "2026-09",
+   "basis": "공식 가격표의 주석. 3달러/15달러로 올리려던 것을 하지 않았다",
+   "definition": null,
+   "quote": "The previously scheduled increase to $3/$15 per million input/output tokens on September 1, 2026 will not occur.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Claude API pricing (platform docs)",
+     "url": "https://platform.claude.com/docs/en/about-claude/pricing",
+     "date": "2026-11-20",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "sides": {
+    "H1": "반박"
+   },
+   "side_basis": "중간 등급에서도 값을 올리지 못했다. 이유는 문서에 없다.",
+   "note": "가격 압박이 소형 등급에 그치지 않고 중간 등급까지 올라왔다는 신호. 취소 사유는 문서에 없다."
+  },
+  {
+   "id": "gemini-3-5-flash-lite-list-price",
+   "country": "US",
+   "city": null,
+   "metric": "Gemini 3.5 Flash-Lite 의 정가",
+   "value": 0.3,
+   "unit": "달러/100만 입력 토큰",
+   "asof": "2026-11",
+   "basis": "공식 가격표. 2.5 Flash-Lite 0.10달러, 3.1 은 0.25달러",
+   "definition": null,
+   "quote": "* $0.30 (text / image / video / audio)",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Gemini Developer API pricing",
+     "url": "https://ai.google.dev/gemini-api/docs/pricing.md.txt",
+     "date": "2026-11-20",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "sides": {
+    "H1": "양쪽"
+   },
+   "side_basis": "Google 은 소형 등급의 값을 세대마다 올렸다. Menlo 가 적은 Google 의 몫 하락과 함께 읽을 값이다.",
+   "note": "Haiku 5.5·Luna·Ember의 0.10달러보다 3배 비싸고, 앞 세대 3.1 Flash-Lite(0.25달러/1.50달러)보다 오히려 올랐다. 구글은 소형 정가 인하에 동참하지 않았다. 출시일(7월 21일)은 검색 요약.",
+   "detail": {
+    "flash_lite_2_5": 0.1,
+    "flash_lite_3_1": 0.25
+   }
+  },
+  {
+   "id": "meta-muse-ember-price",
+   "country": "US",
+   "city": null,
+   "metric": "Meta Muse Ember 의 가격",
+   "value": 0.1,
+   "unit": "달러/100만 입력 토큰",
+   "asof": "2026-11",
+   "basis": "제3자 글이 Meta 문서를 인용. 공식 화면은 확인하지 못했다",
+   "definition": null,
+   "quote": "Meta Muse Ember costs $0.10 per million input tokens and $0.50 per million output, the same sticker as Claude Haiku 5.5 and GPT-6 Luna.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Meta Muse Ember pricing: the $0.10 rate and the three switches that set your bill",
+     "url": "https://www.eesel.ai/blog/meta-muse-ember-pricing",
+     "date": "2026-11-10",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "low",
+   "sides": {
+    "H1": "지지"
+   },
+   "side_basis": "세 랩의 소형 모델이 같은 값에 모였다.",
+   "note": "세 회사 소형 모델이 같은 값에 모였다. 20만 입력 토큰을 넘으면 요청 전체가 3배. 공식 페이지 미확인."
+  },
+  {
+   "id": "openai-fine-tuning-wind-down",
+   "country": "US",
+   "city": null,
+   "metric": "OpenAI 의 셀프서비스 미세조정 종료",
+   "value": null,
+   "unit": "해당 없음",
+   "asof": "2027-01",
+   "basis": "공식 지원 종료 공지. 2026-05 신규 차단, 2027-01-06 기존 고객도 새 작업 불가",
+   "definition": null,
+   "quote": "Active existing customers will no longer be able to create new fine-tuning jobs on this date.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Deprecations | OpenAI API",
+     "url": "https://developers.openai.com/api/docs/deprecations",
+     "date": "2026-11-20",
+     "read": "full"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "high",
+   "sides": {
+    "H2": "양쪽",
+    "H3": "지지"
+   },
+   "side_basis": "랩이 특화 수단을 스스로 거뒀다. 특화하려는 수요가 오픈웨이트 쪽으로 갈 자리가 넓어진다.",
+   "note": "연구소가 특화 수단을 스스로 거둔 사례. 특화 수요가 오픈웨이트 쪽으로 갈 여지를 넓히지만 지출 이동을 직접 보여 주지는 않는다. 이미 만든 모델의 추론은 기반 모델 종료 때까지 유지."
+  },
+  {
+   "id": "bedrock-claude-fine-tuning-only-claude-3-haiku",
+   "country": "US",
+   "city": null,
+   "metric": "Amazon Bedrock 에서 미세조정할 수 있는 Anthropic 모델",
+   "value": null,
+   "unit": "해당 없음",
+   "asof": "2026-11",
+   "basis": "공식 문서의 지원 목록. Claude 3 Haiku 하나",
+   "definition": null,
+   "quote": "anthropic.claude-3-haiku-20240307-v1:0:200k",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Customize a model with fine-tuning in Amazon Bedrock",
+     "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/custom-model-supported.html",
+     "date": "2026-11-20",
+     "read": "full"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "high",
+   "sides": {
+    "H3": "지지"
+   },
+   "side_basis": "최근 Haiku 는 미세조정 대상이 아니다.",
+   "note": "Haiku 4.5·5.5용 파인튜닝은 목록에 없다. Claude 3 Haiku가 2026-09-10 종료됐다는 AWS 블로그 문구는 검색 요약에서만 봤다."
+  },
+  {
+   "id": "vertex-supervised-tuning-models",
+   "country": "US",
+   "city": null,
+   "metric": "Vertex AI 에서 미세조정할 수 있는 Gemini 모델",
+   "value": null,
+   "unit": "해당 없음",
+   "asof": "2026-11",
+   "basis": "공식 문서. 현행 Flash·Flash-Lite 를 지원한다",
+   "definition": null,
+   "quote": "The following Gemini models support supervised tuning:",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Introduction to tuning | Vertex AI",
+     "url": "https://cloud.google.com/vertex-ai/generative-ai/docs/models/tune-models",
+     "date": "2026-11-20",
+     "read": "full"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "high",
+   "sides": {
+    "H3": "반박"
+   },
+   "side_basis": "클로즈드 소형 모델도 특화할 수 있는 길이 남아 있다.",
+   "note": "OpenAI가 파인튜닝을 접는 것과 반대 방향. 폐쇄형 소형 모델도 특화가 가능하다는 뜻이라 H3에는 반대 증거. 가격과 도입 건수는 이 문서에 없다."
+  },
+  {
+   "id": "enterprise-discount-terms",
+   "country": "US",
+   "city": null,
+   "metric": "Anthropic·OpenAI 의 기업 할인 조건",
+   "value": null,
+   "unit": "해당 없음",
+   "asof": "2026-09",
+   "basis": "The Information 보도의 2차 요약",
+   "definition": null,
+   "quote": "OpenAI is now more aggressive than Anthropic on discounts as it focuses on enterprise sales",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Anthropic ends discounts once tokens run out, The Information reports",
+     "url": "https://thenextweb.com/news/anthropic-openai-enterprise-discounts-tokens-the-information",
+     "date": "2026-09-28",
+     "read": "full"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "low",
+   "sides": {
+    "H3": "양쪽"
+   },
+   "side_basis": "할인 경쟁의 상대는 오픈웨이트가 아니라 서로다.",
+   "note": "할인 경쟁의 상대는 오픈웨이트가 아니라 서로다. 원문(The Information)은 유료라 2차 요약만 읽었다."
+  },
+  {
+   "id": "openai-cfo-luna-cheaper-than-glm",
+   "country": "US",
+   "city": null,
+   "metric": "OpenAI CFO 의 발언 — Luna 가 GLM 5.3 보다 싸다",
+   "value": 80,
+   "unit": "%(Luna 인하 폭)",
+   "asof": "2026-09",
+   "basis": "골드만삭스 콘퍼런스 발언(Reuters)",
+   "definition": null,
+   "quote": "we are cheaper",
+   "sources": [
+    {
+     "n": 1,
+     "title": "OpenAI offers AI for chip design, touts cost advantage over open-source, CFO says",
+     "url": "https://www.thestar.com.my/tech/tech-news/2026/09/09/openai-offers-ai-for-chip-design-touts-cost-advantage-over-open-source-cfo-says",
+     "date": "2026-09-09",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H1": "반박",
+    "H2": "반박"
+   },
+   "side_basis": "랩은 소형 계층을 내주지 않고 값으로 되찾겠다는 쪽이다.",
+   "note": "폐쇄 연구소가 소형 등급 가격을 내려 맞대응한다는 근거 — 공개 모델이 항상 더 싸다는 전제에 대한 반박. 이해당사자의 주장이고 비교 조건은 밝히지 않았다. 가격 인하 뒤 사용량이 약 10배 늘었다고 한다."
+  }
+ ]
+}

@@ -1,0 +1,560 @@
+{
+ "schema": 1,
+ "bundle": "W5",
+ "title": "반대 증거 — 특화가 통하지 않는 조건, 도입 장벽, 기피",
+ "updated_kst": "2026-11-20T22:54:08+09:00",
+ "measure": null,
+ "notes": [
+  "방향(sides)은 AI 의 해석이다.",
+  "회사가 직접 잰 값과 자기 보고는 definition 에 밝혔다."
+ ],
+ "summary": {
+  "records": 17,
+  "with_value": 5,
+  "by_hypothesis": {
+   "H1": {
+    "지지": 1,
+    "반박": 2,
+    "양쪽": 0,
+    "중립": 0
+   },
+   "H2": {
+    "지지": 0,
+    "반박": 7,
+    "양쪽": 1,
+    "중립": 1
+   },
+   "H3": {
+    "지지": 0,
+    "반박": 9,
+    "양쪽": 0,
+    "중립": 0
+   }
+  }
+ },
+ "records": [
+  {
+   "id": "aa-same-band-closed-cheaper",
+   "country": "ZZ",
+   "city": null,
+   "metric": "같은 점수대(지능 지수 24.9~51.5점)의 오픈웨이트 가운데 더 싼 클로즈드가 있는 모델 수",
+   "value": 7,
+   "unit": "개(7개 가운데)",
+   "asof": "2026-11-20",
+   "basis": "계산: 점수가 같거나 높으면서 과제당 비용이 더 낮은 클로즈드가 있는가",
+   "definition": "Artificial Analysis 가 같은 과제로 잰 값(토큰의 95.5%가 캐시 읽기인 에이전트 과제). 데스크 기록 content/market/usage/frontier.json 에서 계산했다.",
+   "quote": null,
+   "sources": [
+    {
+     "n": 1,
+     "title": "Artificial Analysis — 지능 지수와 과제당 비용",
+     "url": "https://artificialanalysis.ai/",
+     "date": "2026-11-20",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H2": "반박",
+    "H1": "반박"
+   },
+   "side_basis": "범용 에이전트 과제에서는 소형 클로즈드가 과제당 더 싸다. 그런데도 소형 클로즈드의 물량이 줄었다는 Menlo 의 값과 어긋난다.",
+   "note": "이 점수대의 최저가는 Muse Ember(36.0점, 0.14달러)다. 범용 오픈웨이트를 공개 API 가격으로 쓴 값이고 특화 모델은 재지 않았다.",
+   "refs": [
+    {
+     "bundle": "W1",
+     "id": "menlo-small-closed-token-share"
+    }
+   ]
+  },
+  {
+   "id": "selfhost-breakeven-vs-terra",
+   "country": "ZZ",
+   "city": null,
+   "metric": "Kimi K3.1 Pro 자체 서빙이 GPT-6.1 Terra 의 API 보다 싸지는 가동률",
+   "value": 58,
+   "unit": "%",
+   "asof": "2026-11-20",
+   "basis": "계산: GB300 NVL72, 하이퍼스케일러급 소유 원가 시간당 2.31달러, 사용자당 초당 100토큰",
+   "definition": "데스크 기록 content/market/usage/selfhost.json 의 계산이다. 처리량 출처에 비공식 배포라는 안내가 붙어 있다.",
+   "quote": null,
+   "sources": [
+    {
+     "n": 1,
+     "title": "SemiAnalysis InferenceX — Kimi K3 on GB300 NVL72",
+     "url": "https://inferencex.semianalysis.com/run/kimi-k3-on-gb300-nvl72",
+     "date": "2026-10-27",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "Artificial Analysis — 지능 지수와 과제당 비용",
+     "url": "https://artificialanalysis.ai/",
+     "date": "2026-11-20",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "low",
+   "sides": {
+    "H2": "반박"
+   },
+   "side_basis": "직접 굴려도 조건을 다 채워야 점수가 더 높은 클로즈드의 API 를 이긴다.",
+   "note": "가장 큰 오픈 모델(2.8T)을 범용 과제로 굴린 값이다. 작은 특화 모델의 서빙 원가는 재지 않았다."
+  },
+  {
+   "id": "menlo-post-training-holdbacks",
+   "country": "ZZ",
+   "city": null,
+   "metric": "사후 학습이 퍼지지 못하는 이유(Menlo 의 서술)",
+   "value": null,
+   "unit": "해당 없음",
+   "asof": "2026-11-03",
+   "basis": "보고서의 서술",
+   "definition": "Menlo Ventures 의 추정이다. 산출 방법은 확인하지 않았다. Menlo 는 Anthropic 과 Fireworks 양쪽의 주주다.",
+   "quote": "specialized models need constant updates to keep pace with a frontier that moves every few months",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Menlo Ventures — 2026: The State of Enterprise AI",
+     "url": "https://menlovc.com/perspective/2026-the-state-of-enterprise-ai",
+     "date": "2026-11-03",
+     "read": "partial"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H2": "반박",
+    "H3": "반박"
+   },
+   "side_basis": "비용 절감이 맞더라도 유지 비용과 역량이 걸림돌이다.",
+   "note": "특화 모델은 몇 달마다 움직이는 프론티어를 따라 계속 고쳐야 하고, 응용 회사 대부분은 학습시킬 역량이 없다고 적었다."
+  },
+  {
+   "id": "fireworks-eval-build-time",
+   "country": "US",
+   "city": null,
+   "metric": "특화 모델 학습 전에 평가를 만드는 데 걸리는 기간",
+   "value": 3,
+   "unit": "개월(3~6개월의 아래 값)",
+   "asof": "2026-11-17",
+   "basis": "Fireworks 대표의 발언, '함께 일하는 최고 팀' 기준",
+   "definition": "Fireworks 대표가 무대에서 말한 자기 보고 값이다. 감사받지 않았고 자동 자막으로 받아 적었다.",
+   "quote": "the best team we work with take month three to six month to build eval",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Lin Qiao: Why AI Companies Are \"Scaling to Bankruptcy\" | TomorrowX Summit (iConnections, 영상)",
+     "url": "https://www.youtube.com/watch?v=ufMUsXzT7qc",
+     "date": "2026-11-20",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H3": "반박"
+   },
+   "side_basis": "판매자 스스로 밝힌 도입 장벽이다.",
+   "note": "용량 조달과 평가 만들기가 전업 업무가 된다고 했다. Fireworks 는 이를 없앤 상품을 냈다고 주장한다."
+  },
+  {
+   "id": "harvey-no-customer-data",
+   "country": "US",
+   "city": null,
+   "metric": "Harvey 특화 모델의 학습 자료",
+   "value": null,
+   "unit": "해당 없음",
+   "asof": "2026-08-14",
+   "basis": "회사 글",
+   "definition": null,
+   "quote": "no customer data is ever used for training purposes",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Harvey — Training Frontier Review Table Models With Applied Compute",
+     "url": "https://www.harvey.ai/blog/training-frontier-review-table-models-with-applied-compute",
+     "date": "2026-08-14",
+     "read": "partial"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H2": "중립"
+   },
+   "side_basis": "'기업 안의 사적 데이터가 해자'라는 Fireworks 의 설명과 다른 경로다. 같은 방법을 경쟁사도 쓸 수 있다.",
+   "note": "합성 자료, 공개 법률 자료, 전문가가 만든 자료로 학습했다."
+  },
+  {
+   "id": "mistral-critical-industries-avoid-chinese-models",
+   "country": "FR",
+   "city": null,
+   "metric": "중국 오픈웨이트에 대한 업종별 기피(Mistral 대표의 발언)",
+   "value": null,
+   "unit": "해당 없음",
+   "asof": "2026-11-10",
+   "basis": "대담에서 한 말. 유럽 방산 고객은 쓰지 않고 금융은 매우 꺼린다고 했다",
+   "definition": "중국 모델과 경쟁하는 오픈웨이트 회사 대표의 발언이다. 자동 자막으로 받아 적었다.",
+   "quote": "they would never use uh Chinese technology if you work on the finance sector again because it's critical infrastructure they are very reluctant to do it",
+   "sources": [
+    {
+     "n": 1,
+     "title": "20VC — Mistral CEO: Why OpenAI & Anthropic Will Come for Your Business (영상)",
+     "url": "https://www.youtube.com/watch?v=KotQbLX8pOw",
+     "date": "2026-11-10",
+     "read": "partial"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "low",
+   "sides": {
+    "H3": "반박"
+   },
+   "side_basis": "특화 모델의 기반이 중국 오픈웨이트이면 규제 업종에서는 쓰임이 막힌다.",
+   "note": "Mistral 은 자기 플랫폼 토큰의 약 80%가 자사 모델이라고 했다. 경쟁사의 말이라 걸러 들어야 한다."
+  },
+  {
+   "id": "a16z-cio-away-from-fine-tuning",
+   "country": "ZZ",
+   "city": null,
+   "metric": "대기업의 미세조정 이탈(a16z CIO 설문)",
+   "value": null,
+   "unit": "해당 없음",
+   "asof": "2026-01",
+   "basis": "2026-01 설문의 서술",
+   "definition": "a16z 의 CIO 설문(대기업 100곳)이다. a16z 는 클로즈드 랩과 오픈 모델 플랫폼 양쪽의 주주다.",
+   "quote": "enterprises have trended away from fine tuning models and instead moved towards prompt engineering and routing across models",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Leaders, gainers and unexpected winners in the enterprise AI arms race",
+     "url": "https://a16z.com/leaders-gainers-and-unexpected-winners-in-the-enterprise-ai-arms-race/",
+     "date": "2026-01-30",
+     "read": "full"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H2": "반박",
+    "H3": "반박"
+   },
+   "side_basis": "대기업은 미세조정에서 프롬프트와 라우팅으로 옮겼다고 적었다. Menlo 의 6% → 10% 와 엇갈린다.",
+   "note": "Menlo의 후속 학습 채택 6%→10%와 방향이 엇갈린다. 2026년 1월 시점이라 이후 변화는 반영되지 않았다."
+  },
+  {
+   "id": "a16z-cio-tco-converging",
+   "country": "ZZ",
+   "city": null,
+   "metric": "오픈·클로즈드의 총소유비용(a16z CIO 설문)",
+   "value": null,
+   "unit": "해당 없음",
+   "asof": "2026-01",
+   "basis": "2026-01 설문의 서술",
+   "definition": "a16z 의 CIO 설문(대기업 100곳)이다. a16z 는 클로즈드 랩과 오픈 모델 플랫폼 양쪽의 주주다.",
+   "quote": "total cost of ownership (TCO) between open and closed models is converging",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Leaders, gainers and unexpected winners in the enterprise AI arms race",
+     "url": "https://a16z.com/leaders-gainers-and-unexpected-winners-in-the-enterprise-ai-arms-race/",
+     "date": "2026-01-30",
+     "read": "full"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H2": "반박"
+   },
+   "side_basis": "CIO 들은 두 쪽의 총소유비용이 가까워지고 있다고 답했다.",
+   "note": "\"비용의 일부\"라는 H2의 비용 우위 전제에 대한 반대 근거. 수치 없는 응답 요약."
+  },
+  {
+   "id": "a16z-cio-closed-preference",
+   "country": "ZZ",
+   "city": null,
+   "metric": "클로즈드 모델을 선호하는 대기업의 비중(a16z CIO 설문)",
+   "value": null,
+   "unit": "해당 없음",
+   "asof": "2026-01",
+   "basis": "2026-01 설문의 서술. 3분의 1 초과",
+   "definition": "a16z 의 CIO 설문(대기업 100곳)이다. a16z 는 클로즈드 랩과 오픈 모델 플랫폼 양쪽의 주주다.",
+   "quote": "Over a third of enterprises now prefer closed source models",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Leaders, gainers and unexpected winners in the enterprise AI arms race",
+     "url": "https://a16z.com/leaders-gainers-and-unexpected-winners-in-the-enterprise-ai-arms-race/",
+     "date": "2026-01-30",
+     "read": "full"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H3": "반박"
+   },
+   "side_basis": "클로즈드 선호가 늘었다.",
+   "note": "표본 100곳의 대기업 설문. a16z는 폐쇄형 연구소와 오픈 모델 플랫폼 양쪽에 투자한 이해당사자다."
+  },
+  {
+   "id": "unblocked-frontier-still-better",
+   "country": "US",
+   "city": null,
+   "metric": "Unblocked 의 자체 평가 — 옮긴 뒤에도 프론티어가 낫다",
+   "value": null,
+   "unit": "해당 없음",
+   "asof": "2026-08",
+   "basis": "운영 중 리뷰 반응을 모델별로 모은 비교",
+   "definition": "회사가 직접 밝힌 값이다. 제3자 검증은 없다.",
+   "quote": "The frontier models are still better. Opus wins our precision measurements, makes fewer mistakes per task",
+   "sources": [
+    {
+     "n": 1,
+     "title": "What We Learned Moving Our Agent Loops from Anthropic to GLM",
+     "url": "https://getunblocked.com/blog/moving-agent-loops-from-anthropic-to-glm/",
+     "date": "2026-08-13",
+     "read": "full"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H1": "지지",
+    "H2": "반박"
+   },
+   "side_basis": "옮긴 회사 스스로 품질은 프론티어가 낫다고 적었다.",
+   "note": "프런티어는 정밀도가 중요한 핵심 경로에, GLM은 '고빈도 말단 작업'에 둔다고 정리한다. Fireworks 지연 시간은 Opus 경로보다 약 30% 길었다."
+  },
+  {
+   "id": "unblocked-compliance-orgs-stay-on-claude",
+   "country": "US",
+   "city": null,
+   "metric": "규제·계약 제약이 있는 고객의 호출",
+   "value": null,
+   "unit": "해당 없음",
+   "asof": "2026-08",
+   "basis": "검색 호출의 약 4분의 1 이 Opus 에 남았다",
+   "definition": "회사가 직접 밝힌 값이다. 제3자 검증은 없다.",
+   "quote": "Opus still serves roughly a quarter of those calls, largely for compliance-constrained organizations",
+   "sources": [
+    {
+     "n": 1,
+     "title": "What We Learned Moving Our Agent Loops from Anthropic to GLM",
+     "url": "https://getunblocked.com/blog/moving-agent-loops-from-anthropic-to-glm/",
+     "date": "2026-08-13",
+     "read": "full"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H3": "반박"
+   },
+   "side_basis": "모델 공급사·지역 제한이 있는 고객은 옮기지 못한다.",
+   "note": "중국 기반 공개 가중치 모델을 계약상 쓸 수 없는 고객층이 있다는 직접 사례. Claude는 장애 대비 예비 경로로도 남는다."
+  },
+  {
+   "id": "intercom-still-heavy-anthropic-customer",
+   "country": "US",
+   "city": null,
+   "metric": "Intercom 이 핵심 모델을 바꾼 뒤의 Anthropic 사용",
+   "value": null,
+   "unit": "해당 없음",
+   "asof": "2026-03",
+   "basis": "대표의 글",
+   "definition": "회사가 직접 밝힌 값이다. 제3자 검증은 없다.",
+   "quote": "we remain very heavy customers of Anthropic",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Announcing Fin Apex: The age of vertical models is here",
+     "url": "https://www.intercom.com/blog/announcing-fin-apex-the-age-of-vertical-models-is-here/",
+     "date": "2026-03-26",
+     "read": "full"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H3": "반박"
+   },
+   "side_basis": "핵심 답변 모델을 바꾸고도 Anthropic 의 큰 고객으로 남았다고 했다.",
+   "note": "제품 핵심 경로는 빠져나갔지만 사내 코딩 도구 지출은 남는다 — 이탈이 전면적이지 않다는 근거."
+  },
+  {
+   "id": "decagon-finetune-not-one-time",
+   "country": "US",
+   "city": null,
+   "metric": "미세조정의 유지 부담(Decagon)",
+   "value": null,
+   "unit": "해당 없음",
+   "asof": "2026",
+   "basis": "제3자 요약으로 읽었다",
+   "definition": null,
+   "quote": "They constantly train new models and deprecate old ones as the open source frontier advances",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Decagon: Building Production AI Agents at Enterprise Scale with Open Source Models",
+     "url": "https://www.zenml.io/llmops-database/building-production-ai-agents-at-enterprise-scale-with-open-source-models",
+     "date": null,
+     "read": "partial"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "low",
+   "sides": {
+    "H2": "양쪽"
+   },
+   "side_basis": "오픈소스 최전선이 움직일 때마다 새로 학습하고 옛 모델을 버린다.",
+   "note": "특화 모델이 낡는다는 주장의 근거이자, 사내 연구팀(Decagon Labs)을 상시 유지해야 한다는 비용 근거. 원 인터뷰는 직접 확인하지 않았다."
+  },
+  {
+   "id": "decagon-enterprise-open-share-11pct",
+   "country": "ZZ",
+   "city": null,
+   "metric": "기업 LLM 지출 가운데 오픈소스의 몫(Decagon 대표가 인용)",
+   "value": 11,
+   "unit": "%",
+   "asof": "2026-07",
+   "basis": "출처를 밝히지 않았다. 1년 전 19%",
+   "definition": null,
+   "quote": "Open source models just fell to 11% of enterprise LLM spend, down from 19% a year ago",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Everyone is wrong about open source AI in the enterprise",
+     "url": "https://decagon.ai/blog/everyone-is-wrong-about-open-source-ai-in-the-enterprise",
+     "date": "2026-07-09",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "low",
+   "sides": {
+    "H3": "반박"
+   },
+   "side_basis": "오픈 모델을 쓰는 회사의 대표가 스스로 든 반대 값이다. a16z 설문을 인용한 다른 보도와 같은 숫자다.",
+   "note": "같은 글에 'the share of LLM spend on open source will eventually inflect up'이지만 여러 해가 걸린다고 적혀 있다. 새 용도는 프런티어 모델에서 시작하므로 분모가 더 빨리 커진다는 논리.",
+   "detail": {
+    "year_ago": 19
+   }
+  },
+  {
+   "id": "lease-end-fine-tuning-calcification",
+   "country": "US",
+   "city": null,
+   "metric": "미세조정에서 에이전트 방식으로 돌아선 사례(Lease End)",
+   "value": null,
+   "unit": "해당 없음",
+   "asof": "2026",
+   "basis": "제3자 요약으로 읽었다",
+   "definition": null,
+   "quote": "fine-tuning locked the team into their specific model rather than providing flexibility",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Lease End: From Fine-Tuning to Agentic RAG: Reducing Technical Debt in Conversational AI for Auto Lease Buyouts",
+     "url": "https://www.zenml.io/llmops-database/from-fine-tuning-to-agentic-rag-reducing-technical-debt-in-conversational-ai-for-auto-lease-buyouts",
+     "date": null,
+     "read": "partial"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "low",
+   "sides": {
+    "H2": "반박"
+   },
+   "side_basis": "미세조정이 특정 모델 버전에 묶여 고치는 데 오래 걸렸다고 했다.",
+   "note": "미세조정을 버리고 범용 모델로 돌아간 사례. 미세조정 대상이 공개 가중치였는지는 요약에서 확인되지 않는다(기술 태그는 anthropic·openai). 발표 원본은 확인하지 않았다."
+  },
+  {
+   "id": "att-not-using-chinese-models",
+   "country": "US",
+   "city": null,
+   "metric": "AT&T 의 중국 오픈소스 모델 사용",
+   "value": null,
+   "unit": "해당 없음",
+   "asof": "2026-08",
+   "basis": "The Information 인터뷰의 2차 인용",
+   "definition": null,
+   "quote": "The company is not using open-source models from the Chinese firms DeepSeek and Moonshot",
+   "sources": [
+    {
+     "n": 1,
+     "title": "AT&T Slashes AI Costs by Adopting Model Routers and Open Source",
+     "url": "https://pymnts.com/news/artificial-intelligence/2026/att-slashes-ai-costs-by-adopting-model-routers-and-open-source",
+     "date": "2026-08-20",
+     "read": "full"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H3": "반박"
+   },
+   "side_basis": "오픈 모델로 40%를 돌리는 회사도 중국 모델은 쓰지 않는다.",
+   "note": "대기업이 중국 기반 모델을 배제한 사례. 다만 미국산 공개 모델로는 옮기고 있어 이탈 자체를 막지는 못한다."
+  },
+  {
+   "id": "openrouter-chinese-open-weight-agentic",
+   "country": "ZZ",
+   "city": null,
+   "metric": "중국 오픈웨이트의 쓰임 — 에이전트 작업(OpenRouter COO)",
+   "value": 51,
+   "unit": "%",
+   "asof": "2026-04",
+   "basis": "Tech Times 가 옮긴 발언. 2026-04 중국 사업자 트래픽은 전체 토큰의 약 51%",
+   "definition": "OpenRouter 가 자기 플랫폼 자료로 낸 값이다. 개발자·스타트업 중심의 한 채널이고 전용 배포와 직접 계약은 잡히지 않는다.",
+   "quote": "disproportionately heavy in agentic flows run by U.S. developers",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Chinese AI Models Lead OpenRouter Traffic; Coding Gains Come With China Data Risk",
+     "url": "https://www.techtimes.com/articles/317352/20260529/chinese-ai-models-lead-openrouter-traffic-coding-gains-come-china-data-risk.htm",
+     "date": "2026-05-29",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "low",
+   "sides": {
+    "H1": "반박"
+   },
+   "side_basis": "오픈웨이트가 단순 반복 작업이 아니라 미국 개발자의 에이전트 작업에서 많이 쓰인다는 말이다.",
+   "note": "오픈웨이트가 단순 반복 작업이 아니라 코딩 에이전트를 가져가고 있다는 반증. 다만 OpenRouter는 개발자 중심 중개 플랫폼이라 기업 직접 계약을 대표하지 않고, 토큰 점유이지 지출 점유가 아니다."
+  }
+ ]
+}

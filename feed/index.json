@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-20T22:36:42+09:00",
+ "generated_kst": "2026-11-20T22:54:39+09:00",
  "reports": [
   {
    "slug": "tomorrowx-2026-your-brain-runs-on-20-watts-lessons-from",
@@ -3267,6 +3267,24 @@
    "path": "reports/ntt-data-2q27-earnings.json"
   },
   {
+   "slug": "apple-4q26-earnings",
+   "type": "earnings",
+   "title": "Apple 4Q26 실적발표 : 환급 끝난 마진은 메모리에 밀리고, 공급 병목은 공정에서 메모리로",
+   "companies": [
+    {
+     "name": "Apple",
+     "ticker": "AAPL"
+    }
+   ],
+   "event": "4Q26 실적 발표",
+   "event_date": "2026-11-02",
+   "published_kst": "2026-11-02T21:00:00+09:00",
+   "revised_kst": "2026-11-20T22:54:39+09:00",
+   "revision": 1,
+   "summary": "9월 분기 매출은 +12%로 가이던스 상단(+11%)을 넘었고 아이폰·Mac·Greater China가 이끌었다. 다만 관세 환급이 거의 끝난 12월 분기의 매출총이익률 가이던스 45~46%는 메모리 원가 때문에 환급 제외 기준으로 약 140bp 하락을 뜻한다. 매출이 +8.5%(중앙) 늘어도 EPS는 전년과 거의 같은 수준에 그칠 수 있다.",
+   "path": "reports/apple-4q26-earnings.json"
+  },
+  {
    "slug": "cxmt-3q26-earnings",
    "type": "earnings",
    "title": "CXMT 3Q26 실적발표 : 성장은 +19%로 둔화, 이익은 소수주주 몫이 커졌다",
@@ -3375,6 +3393,150 @@
    "path": "reports/tokyo-electron-2q27-earnings.json"
   },
   {
+   "slug": "amazon-3q26-earnings",
+   "type": "earnings",
+   "title": "Amazon 3Q26 실적발표 : AWS 39% 6분기 연속 가속, 2027·2028년 40%+ 첫 제시",
+   "companies": [
+    {
+     "name": "Amazon",
+     "ticker": "AMZN"
+    }
+   ],
+   "event": "3Q26 실적 발표",
+   "event_date": "2026-10-29",
+   "published_kst": "2026-10-29T21:00:00+09:00",
+   "revised_kst": "2026-11-20T22:50:20+09:00",
+   "revision": 1,
+   "summary": "AWS가 39.3%로 가속하고 전사 영업이익률은 사상 최고인 13.9%를 기록했다. 경영진은 2027·2028년 AWS 40%+ 성장이라는 중기 숫자를 처음 내놨다. 반면 광고·리테일은 Prime Day 이동으로 둔화했고, 4Q 가이던스가 함축하는 이익률은 Leo 비용과 운송비 탓에 3Q보다 낮다. CapEx도 분기 759억 달러로 뛰었다.",
+   "path": "reports/amazon-3q26-earnings.json"
+  },
+  {
+   "slug": "cognizant-3q26-earnings",
+   "type": "earnings",
+   "title": "Cognizant 3Q26 실적발표 : 연간 매출 상단 재하향, 마진은 4년 최고",
+   "companies": [
+    {
+     "name": "Cognizant",
+     "ticker": "CTSH"
+    }
+   ],
+   "event": "3Q26 실적 발표",
+   "event_date": "2026-10-29",
+   "published_kst": "2026-10-29T21:00:00+09:00",
+   "revised_kst": "2026-11-20T22:54:10+09:00",
+   "revision": 1,
+   "summary": "3분기는 매출 4.8% cc, 조정 영업이익률 16.3%로 잘 마쳤다. 그러나 헬스케어·소비자 부문의 재량 지출 둔화로 연간 매출 상단을 다시 낮췄고, 4분기 유기 성장은 약 2%로 내려간다. 이익 쪽은 Project Leap 절감과 자사주 매입으로 EPS 가이던스를 지켰다. 매출이 둔화하는 가운데 이익률을 끌어올리는 국면이 한 분기 더 이어졌다.",
+   "path": "reports/cognizant-3q26-earnings.json"
+  },
+  {
+   "slug": "intel-3q26-earnings",
+   "type": "earnings",
+   "title": "Intel 3Q26 실적발표 : 서버 15년 만의 최대 성장, PC는 메모리에 꺾였다",
+   "companies": [
+    {
+     "name": "Intel",
+     "ticker": "INTC"
+    }
+   ],
+   "event": "3Q26 실적 발표",
+   "event_date": "2026-10-29",
+   "published_kst": "2026-10-29T21:00:00+09:00",
+   "revised_kst": "2026-11-20T22:53:37+09:00",
+   "revision": 1,
+   "summary": "3Q는 매출·마진·EPS가 모두 가이던스를 크게 넘었다. 반면 4Q 가이던스는 메모리발 PC 재고 조정과 이스라엘 Fab 28 사고로 매출 $15.5B, 마진 38%까지 내려갔다. 서버는 공급이 수요를 따라가지 못하는 상태가 2027년까지 이어지고, 2027년은 CapEx가 급증해 FCF가 플러스가 아닐 가능성이 높은 투자의 해로 예고됐다.",
+   "path": "reports/intel-3q26-earnings.json"
+  },
+  {
+   "slug": "quanta-services-3q26-earnings",
+   "type": "earnings",
+   "title": "Quanta Services 3Q26 실적발표 : 12%대 마진, 한 분기에 100억 달러 늘어난 잔고",
+   "companies": [
+    {
+     "name": "Quanta Services",
+     "ticker": "PWR"
+    }
+   ],
+   "event": "3Q26 실적 발표",
+   "event_date": "2026-10-29",
+   "published_kst": "2026-10-29T21:00:00+09:00",
+   "revised_kst": "2026-11-20T22:53:21+09:00",
+   "revision": 1,
+   "summary": "3분기에 매출이 57% 늘고 조정 EBITDA 마진은 12.1%까지 올랐다. 잔고는 765kV 송전 같은 대형 건 없이(발전은 NiSource 발전소 한 건 편입) 한 분기 만에 약 100억 달러 늘었다. 다만 연간 가이던스가 함축하는 4분기 마진은 약 10%로 3분기보다 2%p 낮게 잡혀 보수적일 가능성이 있고, 성장의 제약은 인력에서 자재·OEM 공급 쪽으로 옮겨 갔다.",
+   "path": "reports/quanta-services-3q26-earnings.json"
+  },
+  {
+   "slug": "alphabet-3q26-earnings",
+   "type": "earnings",
+   "title": "Alphabet 3Q26 실적발표 : Cloud 매출 두 배, 현금은 TPU 재고로",
+   "companies": [
+    {
+     "name": "Alphabet",
+     "ticker": "GOOGL"
+    }
+   ],
+   "event": "3Q26 실적 발표",
+   "event_date": "2026-10-28",
+   "published_kst": "2026-10-28T21:00:00+09:00",
+   "revised_kst": "2026-11-20T22:45:26+09:00",
+   "revision": 1,
+   "summary": "매출 +25%와 Cloud +103%(영업이익률 36.2%)로 성장의 중심이 Cloud와 TPU 시스템으로 확실히 옮겨 갔다. 반면 Search·YouTube 성장은 감속했고, SpaceX 평가손실로 EPS가 기록상 예상치를 29.5% 밑돌았으며, TPU 재고와 CapEx로 FCF 적자가 -$9.1B로 커졌다. TPU 시스템 매출 규모와 마진이 공개되지 않아 Cloud 성장의 질은 아직 판단 근거가 부족하다.",
+   "path": "reports/alphabet-3q26-earnings.json"
+  },
+  {
+   "slug": "ge-vernova-3q26-earnings",
+   "type": "earnings",
+   "title": "GE Vernova 3Q26 실적발표 : 고가 가스터빈 첫 출하로 Power 마진 21%, Trench 인수와 자사주 한도 두 배",
+   "companies": [
+    {
+     "name": "GE Vernova",
+     "ticker": "GEV"
+    }
+   ],
+   "event": "3Q26 실적 발표",
+   "event_date": "2026-10-28",
+   "published_kst": "2026-10-28T21:00:00+09:00",
+   "revised_kst": "2026-11-20T22:49:54+09:00",
+   "revision": 1,
+   "summary": "좋은 가격에 받은 가스터빈이 처음 출하된 분기다. Power 마진이 21.4%로 뛰었고 연간 매출·마진·FCF 가이던스를 모두 올렸다. 동시에 $9B짜리 Trench 인수와 자사주 한도 두 배 확대로 쌓인 현금의 쓰임새를 정했다. 다만 FCF는 여전히 사실상 전부 선수금에서 나오고, Electrification 분기 수주는 두 분기 연속 줄었다($7.1B → $6.3B → $5.4B).",
+   "path": "reports/ge-vernova-3q26-earnings.json"
+  },
+  {
+   "slug": "kla-1q27-earnings",
+   "type": "earnings",
+   "title": "KLA 1Q27 실적발표 : 2027년 WFE $200B 초과로 상향, 매출총이익률은 62%대에 묶여",
+   "companies": [
+    {
+     "name": "KLA",
+     "ticker": "KLAC"
+    }
+   ],
+   "event": "1Q27 실적 발표",
+   "event_date": "2026-10-28",
+   "published_kst": "2026-10-28T21:00:00+09:00",
+   "revised_kst": "2026-11-20T22:45:17+09:00",
+   "revision": 1,
+   "summary": "공급 병목이 풀리면서 9월 분기 매출 $4.14B, 영업이익률 46.1%가 나왔고 12월 가이던스 $4.7B로 하반기 가속이 굳어졌다. 성장 전망은 한 단계 올라갔다. 반면 메모리 원가와 제품 구성 탓에 매출총이익률은 62%대에서 움직이지 않아, 이익 개선은 당분간 영업비용 레버리지에서만 나온다.",
+   "path": "reports/kla-1q27-earnings.json"
+  },
+  {
+   "slug": "microsoft-1q27-earnings",
+   "type": "earnings",
+   "title": "Microsoft 1Q27 실적발표 : 효율로 끌어올린 Azure 48%, 미뤄진 3P 용량",
+   "companies": [
+    {
+     "name": "Microsoft",
+     "ticker": "MSFT"
+    }
+   ],
+   "event": "1Q27 실적 발표",
+   "event_date": "2026-10-28",
+   "published_kst": "2026-10-28T21:00:00+09:00",
+   "revised_kst": "2026-11-20T22:46:03+09:00",
+   "revision": 1,
+   "summary": "매출 923억 달러(+19%), 영업이익률 50%, Azure +48%로 직전 분기에 낸 가이던스 상단을 모두 넘었다. 성장은 새 용량보다 기존 설비의 효율에서 나왔고, 외부(3P) 용량이 늦게 들어와 CapEx는 안내보다 적은 452억 달러에 그쳤다. 2Q 가이던스는 Azure를 49~50%로 더 높였지만 영업이익률 함축치는 약 46.8%로 내려가고, Windows OEM과 M365 E3 판매 부진이 약점으로 남았다.",
+   "path": "reports/microsoft-1q27-earnings.json"
+  },
+  {
    "slug": "samsung-electro-mechanics-3q26-earnings",
    "type": "earnings",
    "title": "삼성전기 3Q26 실적발표 : 영업이익률 18% 돌파, 투자·차입 가속",
@@ -3391,6 +3553,24 @@
    "revision": 1,
    "summary": "매출과 영업이익 모두 분기 최대를 기록했다. 매출 증가분의 80% 이상이 영업이익으로 남아 영업이익률이 12.7%에서 18.4%로 뛰었다. 다만 영업외손실 확대와 설비투자·차입 증가가 순이익과 재무구조 쪽 개선 폭을 줄였고, EPS는 조회 시점 컨센서스에 부합하는 수준이었다.",
    "path": "reports/samsung-electro-mechanics-3q26-earnings.json"
+  },
+  {
+   "slug": "vertiv-3q26-earnings",
+   "type": "earnings",
+   "title": "Vertiv 3Q26 실적발표 : 수주 100% 증가, 2분기 지연 만회",
+   "companies": [
+    {
+     "name": "Vertiv",
+     "ticker": "VRT"
+    }
+   ],
+   "event": "3Q26 실적 발표",
+   "event_date": "2026-10-28",
+   "published_kst": "2026-10-28T21:00:00+09:00",
+   "revised_kst": "2026-11-20T22:47:34+09:00",
+   "revision": 1,
+   "summary": "3Q26은 매출 +61%, 조정 영업이익률 25.2%로 회사 가이던스를 크게 넘었고, 연간 가이던스를 모든 항목에서 올려 2분기 매출 지연이 시점 문제였음을 확인했다. 다만 수주 수치를 앞으로 공개하지 않겠다는 방침, 품질 논란에 대한 정성적 답변, 연간 FCF 전환율 하락(약 90% → 약 77%)은 남은 숙제다.",
+   "path": "reports/vertiv-3q26-earnings.json"
   },
   {
    "slug": "asm-international-3q26-earnings",
@@ -3447,6 +3627,78 @@
    "path": "reports/infosys-2q27-earnings.json"
   },
   {
+   "slug": "ibm-3q26-earnings",
+   "type": "earnings",
+   "title": "IBM 3Q26 실적발표 : TP 반등으로 이연 확인, 소프트웨어 9% 가속",
+   "companies": [
+    {
+     "name": "IBM",
+     "ticker": "IBM"
+    }
+   ],
+   "event": "3Q26 실적 발표",
+   "event_date": "2026-10-21",
+   "published_kst": "2026-10-21T21:00:00+09:00",
+   "revised_kst": "2026-11-20T22:46:29+09:00",
+   "revision": 1,
+   "summary": "3Q 매출은 6%(고정환율), 소프트웨어는 9% 성장했고 TP가 +10%로 돌아서 2Q 부진이 수요 소멸이 아니라 거래 이연이었음이 확인됐다. 다만 연간 매출 가이던스는 4% 기본 시나리오에 묶여 4Q 감속을 깔고 있고, AI 매출 지표와 인력 지표는 이번에도 공개되지 않았다.",
+   "path": "reports/ibm-3q26-earnings.json"
+  },
+  {
+   "slug": "lam-research-1q27-earnings",
+   "type": "earnings",
+   "title": "Lam Research 1Q27 실적발표 : 영업이익률 40% 돌파, 2027년 WFE 2,000억 달러 초과",
+   "companies": [
+    {
+     "name": "Lam Research",
+     "ticker": "LRCX"
+    }
+   ],
+   "event": "1Q27 실적 발표",
+   "event_date": "2026-10-21",
+   "published_kst": "2026-10-21T21:00:00+09:00",
+   "revised_kst": "2026-11-20T22:45:07+09:00",
+   "revision": 1,
+   "summary": "매출 82.2억 달러와 처음으로 40%를 넘긴 영업이익률로 직전 분기의 마진 단계 상승이 굳었고, 2027년 WFE 2,000억 달러 초과라는 첫 숫자가 나왔다. 다만 12월 분기 매출 가이던스는 전분기 대비 약 5% 성장에 그쳤다(회사는 공급망 제약이 없었다면 조금 더 높았을 것이라고 함). 가이던스 대비 상회 폭이 줄어 EPS 상회 폭은 직전 세 분기의 8% 안팎에서 1% 아래로 내려갔다. 비GAAP 세율은 16.5%로 올라 앞으로도 이어질 전망이다.",
+   "path": "reports/lam-research-1q27-earnings.json"
+  },
+  {
+   "slug": "meta-3q26-earnings",
+   "type": "earnings",
+   "title": "Meta 3Q26 실적발표 : Muse 1천만 명, 순부채 전환",
+   "companies": [
+    {
+     "name": "Meta",
+     "ticker": "META"
+    }
+   ],
+   "event": "3Q26 실적 발표",
+   "event_date": "2026-10-21",
+   "published_kst": "2026-10-21T21:00:00+09:00",
+   "revised_kst": "2026-11-20T22:43:32+09:00",
+   "revision": 1,
+   "summary": "광고 엔진은 매출 가이던스 상단을 넘겼습니다(646억 달러, +26%, 단가 +14%). 그러나 99억 달러 법률 비용으로 GAAP 이익이 급감했고, 잉여현금흐름은 음수로 돌아섰으며, 순현금은 순부채가 됐습니다. 회사는 자본 조달에 쓸 무의결권 주식도 신설했습니다. Muse는 사용 지표가 강하지만 단위 경제성이 공개되지 않아, AI 투자가 영업현금 밖의 자금에 기대기 시작한 분기로 읽습니다.",
+   "path": "reports/meta-3q26-earnings.json"
+  },
+  {
+   "slug": "spacex-3q26-earnings",
+   "type": "earnings",
+   "title": "SpaceX 3Q26 실적발표 : SI 매출 세 배로 흑자 전환, 4Q CAPEX 두 배",
+   "companies": [
+    {
+     "name": "SpaceX",
+     "ticker": "SPCX"
+    }
+   ],
+   "event": "3Q26 실적 발표",
+   "event_date": "2026-10-20",
+   "published_kst": "2026-10-20T21:00:00+09:00",
+   "revised_kst": "2026-11-20T22:45:35+09:00",
+   "revision": 1,
+   "summary": "클라우드 계약이 가동되며 SI 매출이 한 분기 만에 25.6억 달러에서 75.6억 달러로 세 배가 됐고, 전사 영업손익과 GAAP 순손익이 모두 흑자로 돌아섰다. 4Q CAPEX 가이던스는 추가 용량 가동을 이유로 350억~400억 달러가 되어 직전 가이던스(2Q 수준)의 약 두 배가 됐다. 컴퓨트 계약 파이프라인의 가시성을 근거로 1Q27 매출 가이던스도 처음 나왔다. 다만 이번 분기 순이익의 약 37%는 영업 밖 항목에서 나왔다.",
+   "path": "reports/spacex-3q26-earnings.json"
+  },
+  {
    "slug": "tsmc-3q26-earnings",
    "type": "earnings",
    "title": "TSMC 3Q26 실적발표 : 가이던스 상단 돌파, N2·해외 팹발 마진 희석",
@@ -3499,6 +3751,42 @@
    "revision": 1,
    "summary": "국제 매출이 1Q 횡보에서 2Q 고정환율 기준 1.2% 성장으로 돌아섰고, 주요 업종이 고르게 성장했다. 연환산 AI 매출도 31억 달러로 매출의 10%를 넘었다. 반면 영업이익률은 24%에 머물렀고, 경영진은 FY27 출구 25%를 다시 확인하지 않은 채 하반기 역풍(MHP 약 50bp 포함)만 덧붙였다. 매출의 질은 나아졌지만 이익 추정은 위보다 아래로 움직일 여지가 크다고 본다.",
    "path": "reports/tcs-2q27-earnings.json"
+  },
+  {
+   "slug": "accenture-4q26-earnings",
+   "type": "earnings",
+   "title": "Accenture 4Q26 실적발표 : 4Q 매출 7% 반등, FY27 성장은 인수에 기댄다",
+   "companies": [
+    {
+     "name": "Accenture",
+     "ticker": "ACN"
+    }
+   ],
+   "event": "4Q26 실적 발표",
+   "event_date": "2026-10-01",
+   "published_kst": "2026-10-01T21:00:00+09:00",
+   "revised_kst": "2026-11-20T22:41:09+09:00",
+   "revision": 1,
+   "summary": "4Q 매출이 현지통화 +7%로 가이던스 상단(5%)을 넘었습니다. 수주 book-to-bill도 1.2로 회복해 3Q의 공백은 일시적이었던 것으로 정리됐습니다. 다만 FY27 가이던스 3~6% 가운데 2~2.5%p가 인수 몫이어서 유기 성장 둔화를 함축하고, 4Q에 나타난 가격 하락과 DSO 50일이 새 부담으로 떠올랐습니다.",
+   "path": "reports/accenture-4q26-earnings.json"
+  },
+  {
+   "slug": "micron-4q26-earnings",
+   "type": "earnings",
+   "title": "Micron 4Q26 실적발표 : 장기계약 26건으로 확대, 가격 상승률은 10~30%대로 둔화",
+   "companies": [
+    {
+     "name": "Micron",
+     "ticker": "MU"
+    }
+   ],
+   "event": "4Q26 실적 발표",
+   "event_date": "2026-09-30",
+   "published_kst": "2026-09-30T21:00:00+09:00",
+   "revised_kst": "2026-11-20T22:39:35+09:00",
+   "revision": 1,
+   "summary": "4Q26은 매출 $54.2B, 비GAAP 매출총이익률 87.0%로 세 분기 연속 가이던스 상단을 넘었습니다. SCA가 26건, RPO가 약 $150B로 늘어 FY27의 하방은 더 두꺼워졌습니다. 다만 분기 가격 상승률이 DRAM 10%대 후반, NAND 약 30%로 꺾였고 비용과 CapEx가 함께 커집니다. 그래서 1Q27은 매출 증가율이 13%로 낮아지고 매출총이익률이 FY27 저점을 찍는 분기입니다.",
+   "path": "reports/micron-4q26-earnings.json"
   },
   {
    "slug": "oracle-1q27-earnings",
@@ -3589,6 +3877,24 @@
    "revision": 1,
    "summary": "2Q26 매출은 995억 위안으로 1Q26의 두 배였고, 영업이익률은 82%로 올라 상장 직전 회사가 내놓은 상반기 전망 상단을 매출 기준 25% 넘었다. 가격·생산능력·장기공급계약은 수치가 공개되지 않았고 조회일 기준 3Q EPS는 컨센서스를 22% 밑돌아, 주가 판단은 가격 고점이 얼마나 이어지느냐에 달려 있다.",
    "path": "reports/cxmt-2q26-earnings.json"
+  },
+  {
+   "slug": "iren-4q26-earnings",
+   "type": "earnings",
+   "title": "IREN 4Q26 실적발표 : 2026년 용량 계약 ARR 40억 달러, 비투자등급 GPU 금융 성사",
+   "companies": [
+    {
+     "name": "IREN",
+     "ticker": "IREN"
+    }
+   ],
+   "event": "4Q26 실적 발표",
+   "event_date": "2026-08-27",
+   "published_kst": "2026-08-27T21:00:00+09:00",
+   "revised_kst": "2026-11-20T22:37:45+09:00",
+   "revision": 1,
+   "summary": "보고 분기 숫자는 채굴 철수 과도기의 모습이다. 매출 1억 3,720만 달러에 순손실 6억 8,400만 달러를 냈다. 바뀐 것은 앞으로의 그림이다. 2026년 용량이 계약 ARR 40억 달러로 사실상 다 팔렸고, 신규 3년 계약 단가가 IT MW당 2,000만 달러를 넘었으며, 비투자등급 고객 몫의 GPU 금융이 9%에 성사됐다. 남은 과제는 FY27 CapEx 250~300억 달러 가운데 데이터센터 몫을 지분 희석 없이 조달하는 일이다.",
+   "path": "reports/iren-4q26-earnings.json"
   },
   {
    "slug": "marvell-2q27-earnings",
@@ -7363,6 +7669,11 @@
    "id": "online-narratives",
    "path": "data/online-narratives/index.json",
    "updated_kst": "2026-11-20T19:21:15+09:00"
+  },
+  {
+   "id": "open-weight-substitution",
+   "path": "data/open-weight-substitution/index.json",
+   "updated_kst": "2026-11-20T22:54:08+09:00"
   }
  ]
 }

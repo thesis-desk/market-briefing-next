@@ -1,0 +1,879 @@
+{
+ "schema": 1,
+ "bundle": "W2",
+ "title": "특화 모델 사례 — 누가 무엇을 무엇으로 옮겼고 비용·품질을 어떻게 밝혔나",
+ "updated_kst": "2026-11-20T22:54:08+09:00",
+ "measure": null,
+ "notes": [
+  "방향(sides)은 AI 의 해석이다.",
+  "회사가 직접 잰 값과 자기 보고는 definition 에 밝혔다."
+ ],
+ "summary": {
+  "records": 26,
+  "with_value": 23,
+  "by_hypothesis": {
+   "H1": {
+    "지지": 6,
+    "반박": 5,
+    "양쪽": 2,
+    "중립": 0
+   },
+   "H2": {
+    "지지": 15,
+    "반박": 0,
+    "양쪽": 5,
+    "중립": 0
+   },
+   "H3": {
+    "지지": 10,
+    "반박": 0,
+    "양쪽": 0,
+    "중립": 0
+   }
+  }
+ },
+ "records": [
+  {
+   "id": "harvey-review-table-quality",
+   "country": "US",
+   "city": null,
+   "metric": "Harvey Review Table 특화 모델의 답변 점수",
+   "value": 0.903,
+   "unit": "점(0~1)",
+   "asof": "2026-08-14",
+   "basis": "Harvey 자체 벤치마크, 최소 추론 설정. Fable 5 0.867, GPT-5.6 Sol 0.857",
+   "definition": "Harvey 와 협력사가 자체 벤치마크로 잰 값이다. 제3자 검증은 없다.",
+   "quote": "the AC Review Table model reached 0.903 on our benchmark, compared with 0.867 for Fable 5 and 0.857 for GPT-5.6-Sol",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Harvey — Training Frontier Review Table Models With Applied Compute",
+     "url": "https://www.harvey.ai/blog/training-frontier-review-table-models-with-applied-compute",
+     "date": "2026-08-14",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H1": "지지",
+    "H2": "지지"
+   },
+   "side_basis": "셀마다 한 번 부르는 짧은 추출 작업에서 특화 오픈웨이트가 프론티어보다 점수가 높았다.",
+   "note": "기반은 GLM 5.2 이고 Applied Compute 가 학습시켰다. 고객 데이터는 학습에 쓰지 않았다고 밝혔다.",
+   "detail": {
+    "fable_5": 0.867,
+    "gpt_5_6_sol": 0.857,
+    "base": "GLM 5.2"
+   }
+  },
+  {
+   "id": "harvey-review-table-cost",
+   "country": "US",
+   "city": null,
+   "metric": "Harvey Review Table 특화 모델의 셀당 비용 변화 — Claude Sonnet 5 대비",
+   "value": -54.8,
+   "unit": "%",
+   "asof": "2026-08-14",
+   "basis": "Harvey 자체 측정, 같은 과제",
+   "definition": "Harvey 와 협력사가 자체 벤치마크로 잰 값이다. 제3자 검증은 없다.",
+   "quote": "average cost per cell fell by 54.8% compared to Claude Sonnet 5 on the same tasks",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Harvey — Training Frontier Review Table Models With Applied Compute",
+     "url": "https://www.harvey.ai/blog/training-frontier-review-table-models-with-applied-compute",
+     "date": "2026-08-14",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "Harvey — Harvey Tenet Research Preview",
+     "url": "https://www.harvey.ai/blog/post-training-update-harvey-tenet",
+     "date": "2026-08-20",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H1": "지지",
+    "H2": "지지"
+   },
+   "side_basis": "Harvey 에서 추론 물량이 가장 많은 축의 일이 프론티어에서 특화 모델로 옮겨 가는 사례다.",
+   "note": "Tenet 글은 같은 모델을 '가장 강한 기준 모델의 약 10분의 1 비용'이라고 적었다. 견준 모델이 달라 두 값이 다르다."
+  },
+  {
+   "id": "harvey-tenet-lab-all-pass",
+   "country": "US",
+   "city": null,
+   "metric": "Harvey Tenet 의 LAB 전 항목 통과율",
+   "value": 19.7,
+   "unit": "%",
+   "asof": "2026-08",
+   "basis": "LAB 보류 과제, 기반 Kimi K3 는 10.8%",
+   "definition": "Harvey 와 협력사가 자체 벤치마크로 잰 값이다. 제3자 검증은 없다.",
+   "quote": "Harvey Tenet scores 19.7% all-pass on LAB against 10.8% for base Kimi K3",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Fireworks — Post-training Kimi K3 with Harvey for long-horizon legal work",
+     "url": "https://fireworks.ai/blog/post-training-kimi-k3-with-harvey-for-long-horizon-legal-work",
+     "date": "2026-08-26",
+     "read": "full"
+    },
+    {
+     "n": 2,
+     "title": "Harvey — Harvey Tenet Research Preview",
+     "url": "https://www.harvey.ai/blog/post-training-update-harvey-tenet",
+     "date": "2026-08-20",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H2": "양쪽"
+   },
+   "side_basis": "기반 모델의 두 배 가까이 올랐지만 긴 법률 과제에서 프론티어 1위를 넘지는 못했다.",
+   "note": "Kimi K3 를 Fireworks 와 비동기 강화학습으로 사후 학습했다. LAB 에서는 2위, LAB Contracts 에서는 1위라고 밝혔다. 연구 미리보기 단계다.",
+   "detail": {
+    "base_kimi_k3": 10.8
+   }
+  },
+  {
+   "id": "harvey-tenet-cost-per-task",
+   "country": "US",
+   "city": null,
+   "metric": "Harvey Tenet 의 LAB 과제당 비용",
+   "value": 5.92,
+   "unit": "달러",
+   "asof": "2026-08",
+   "basis": "기반 Kimi K3 는 5.62달러",
+   "definition": "Harvey 와 협력사가 자체 벤치마크로 잰 값이다. 제3자 검증은 없다.",
+   "quote": "Harvey Tenet runs at $5.92 per LAB task against $5.62 for base Kimi K3",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Fireworks — Post-training Kimi K3 with Harvey for long-horizon legal work",
+     "url": "https://fireworks.ai/blog/post-training-kimi-k3-with-harvey-for-long-horizon-legal-work",
+     "date": "2026-08-26",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H2": "양쪽"
+   },
+   "side_basis": "긴 에이전트 과제에서는 사후 학습이 비용을 낮추지 않았다(품질만 올렸다).",
+   "note": "비용은 기반 모델과 같은 수준이고, 프론티어 모델과 견준 값은 글의 그림에만 있어 읽지 못했다.",
+   "detail": {
+    "base_kimi_k3": 5.62
+   }
+  },
+  {
+   "id": "harvey-multi-model-routing",
+   "country": "US",
+   "city": null,
+   "metric": "Harvey 가 일마다 쓰는 모델(특화 모델을 내기 전)",
+   "value": null,
+   "unit": "해당 없음",
+   "asof": "2026-03-10",
+   "basis": "회사 글. 긴 법률 추론은 Opus 4.6·GPT-5.2, 대량 처리(Vault)는 Sonnet 4.6·Gemini 3 Flash",
+   "definition": null,
+   "quote": "models like Sonnet 4.6 and Gemini 3 Flash deliver strong performance with a significantly lower latency footprint",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Harvey — Why Harvey is Multi-Model by Design",
+     "url": "https://www.harvey.ai/blog/why-harvey-is-multi-model-by-design",
+     "date": "2026-03-10",
+     "read": "partial"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H1": "지지"
+   },
+   "side_basis": "특화 모델이 먼저 들어간 자리가 프론티어의 최상위 모델이 아니라 중·소형 클로즈드가 맡던 대량 처리다.",
+   "note": "다섯 달 뒤 대량 처리 쪽(Review Table)부터 특화 오픈웨이트로 바꿨다."
+  },
+  {
+   "id": "fireworks-specialized-cost-reduction",
+   "country": "US",
+   "city": null,
+   "metric": "특화 모델의 비용 절감 배수 — 기성 모델 대비",
+   "value": 5,
+   "unit": "배(5~10배라고 말한 범위의 아래 값)",
+   "asof": "2026-11-17",
+   "basis": "Fireworks 대표의 발언. 무엇과 견준 값인지 밝히지 않았다",
+   "definition": "Fireworks 대표가 무대에서 말한 자기 보고 값이다. 감사받지 않았고 자동 자막으로 받아 적었다.",
+   "quote": "we bring down the cost by five to 10 times compared with using off-the-shelf model",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Lin Qiao: Why AI Companies Are \"Scaling to Bankruptcy\" | TomorrowX Summit (iConnections, 영상)",
+     "url": "https://www.youtube.com/watch?v=ufMUsXzT7qc",
+     "date": "2026-11-20",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "low",
+   "sides": {
+    "H2": "지지"
+   },
+   "side_basis": "판매자의 주장이고 사례·측정이 붙지 않았다.",
+   "note": "공동 진행자는 '클로즈드만 쓰는 기업은 지출을 50~70% 줄일 수 있다'고 따로 말했다."
+  },
+  {
+   "id": "cursor-composer-kimi-base-85pct-compute",
+   "country": "US",
+   "city": null,
+   "metric": "Cursor Composer 2·2.5 의 기반과 자체 학습의 비중",
+   "value": 85,
+   "unit": "%(전체 연산 가운데 자체 추가 학습·강화학습)",
+   "asof": "2026-05",
+   "basis": "제품 페이지. 기반은 Kimi K2.5 공개 체크포인트",
+   "definition": "회사가 직접 밝힌 값이다. 제3자 검증은 없다.",
+   "quote": "85% of its compute goes into additional training and RL",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Composer (product page)",
+     "url": "https://cursor.com/composer",
+     "date": null,
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H2": "지지"
+   },
+   "side_basis": "가장 큰 코딩 도구가 자체 모델을 중국 오픈웨이트 위에 올렸다.",
+   "note": "기반 모델 Kimi K2.5, 학습은 Cursor. 같은 페이지에 SpaceXAI와 10배 연산으로 더 큰 모델을 처음부터 학습 중이라고 적혀 있어, 공개 가중치 기반이 영구적이지 않을 수 있다."
+  },
+  {
+   "id": "cursor-composer25-aa-cost-per-task",
+   "country": "US",
+   "city": null,
+   "metric": "Cursor Composer 2.5 의 코딩 에이전트 과제당 비용",
+   "value": 0.07,
+   "unit": "달러",
+   "asof": "2026-05",
+   "basis": "Artificial Analysis 코딩 에이전트 지수. Fast 는 0.44달러, Opus 4.7 max 4.10달러, GPT-5.5 xhigh 4.82달러. 지수 점수는 62 대 66·65",
+   "definition": "Artificial Analysis 의 측정이다. Cursor 가 매긴 가격 기준이라 원가와 다를 수 있고, 견준 프론티어 모델은 2026-05 의 것이다.",
+   "quote": "These cost $4.10 and $4.82 per task respectively, ~10x the cost of Composer 2.5 Fast ($0.44)",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Cursor's Composer 2.5: third on the Coding Agent Index and ~10-60x lower cost than rivals",
+     "url": "https://artificialanalysis.ai/articles/cursor-composer-2-5-coding-agent-index",
+     "date": "2026-05-20",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "sides": {
+    "H1": "반박",
+    "H2": "지지",
+    "H3": "지지"
+   },
+   "side_basis": "제3자가 잰 값이고 긴 코딩 에이전트 과제다. 오픈웨이트 기반 특화 모델이 프론티어에 가까운 점수를 10분의 1 아래 비용으로 냈다. 칼럼이 잰 바로 그 종류의 일이다.",
+   "note": "이 조사에서 유일한 제3자 비용·품질 동시 측정. 고노력 설정의 폐쇄 모델이 3~4점 더 높다. Composer는 Cursor 안에서만 쓸 수 있고 외부 API가 없다."
+  },
+  {
+   "id": "cursor-composer25-cursorbench",
+   "country": "US",
+   "city": null,
+   "metric": "Composer 2.5 의 자체 벤치마크 점수",
+   "value": 63.2,
+   "unit": "%",
+   "asof": "2026-05",
+   "basis": "CursorBench v3.1. Opus 4.7 max 64.8%, GPT-5.5 xhigh 64.3%",
+   "definition": "회사가 직접 밝힌 값이다. 제3자 검증은 없다.",
+   "quote": "CursorBench v3.1 (harder tasks) 63.2% 64.8% max 61.6% xhigh (default) 64.3% xhigh",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Composer (product page)",
+     "url": "https://cursor.com/composer",
+     "date": null,
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H2": "지지"
+   },
+   "side_basis": "자체 벤치마크에서는 프론티어에 조금 못 미친다.",
+   "note": "표의 열 순서는 Composer 2.5 / Opus 4.7 / GPT-5.5 / Composer 2. Terminal-Bench 2.0에서는 GPT-5.5(82.7%)가 Composer 2.5(69.3%)를 크게 앞선다 — 과제에 따라 격차가 남는다."
+  },
+  {
+   "id": "cursor-composer2-price",
+   "country": "US",
+   "city": null,
+   "metric": "Cursor Composer 2 의 가격",
+   "value": 0.5,
+   "unit": "달러/100만 입력 토큰",
+   "asof": "2026-03",
+   "basis": "입력 100만 토큰당. 출력은 2.50달러",
+   "definition": "회사가 직접 밝힌 값이다. 제3자 검증은 없다.",
+   "quote": "priced at $0.50/M input and $2.50/M output tokens",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Introducing Composer 2",
+     "url": "https://cursor.com/blog/composer-2",
+     "date": "2026-03-19",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H2": "지지"
+   },
+   "side_basis": "소형 클로즈드보다는 비싸고 프론티어보다는 싸게 매겼다.",
+   "note": "기반은 Moonshot Kimi K2.5(이 글에는 기반 모델 이름이 없고 'continued pretraining'으로만 적혀 있다). CursorBench 61.3은 Cursor 내부 벤치마크. Cursor 안에서 옮겨 간 트래픽 비중은 공개하지 않았다."
+  },
+  {
+   "id": "intercom-fin-apex-100pct-traffic",
+   "country": "US",
+   "city": null,
+   "metric": "Intercom Fin 의 답변 모델 가운데 자체 사후 학습 모델로 옮긴 몫",
+   "value": 100,
+   "unit": "%(약)",
+   "asof": "2026-03",
+   "basis": "영어 채팅·이메일 대화. Sonnet 4.0 에서 Apex 1.0 으로",
+   "definition": "회사가 직접 밝힌 값이다. 제3자 검증은 없다.",
+   "quote": "customer conversations are now running on Apex",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Announcing Fin Apex: The age of vertical models is here",
+     "url": "https://www.intercom.com/blog/announcing-fin-apex-the-age-of-vertical-models-is-here/",
+     "date": "2026-03-26",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H1": "양쪽",
+    "H2": "지지",
+    "H3": "지지"
+   },
+   "side_basis": "운영 물량 전부를 옮긴 사례다. 바뀐 것은 최상위가 아니라 중간 등급 모델이다.",
+   "note": "기반 공개 가중치 모델 이름은 글에 없다. 학습은 사내 AI 그룹(60명). Fin은 주당 약 200만 건 해결, 반복 매출 약 1억 달러 규모라고 적혀 있다. 대체된 것은 소형 등급이 아니라 Sonnet 등급이다."
+  },
+  {
+   "id": "intercom-fin-apex-resolution-68-75",
+   "country": "US",
+   "city": null,
+   "metric": "Apex 로 바꾼 뒤 고객 한 곳의 해결률",
+   "value": 75,
+   "unit": "%",
+   "asof": "2026-03",
+   "basis": "바꾸기 전 68%",
+   "definition": "회사가 직접 밝힌 값이다. 제3자 검증은 없다. 고객 한 곳의 값이다.",
+   "quote": "saw their resolution rate improve overnight from 68% to 75%",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Announcing Fin Apex: The age of vertical models is here",
+     "url": "https://www.intercom.com/blog/announcing-fin-apex-the-age-of-vertical-models-is-here/",
+     "date": "2026-03-26",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "low",
+   "sides": {
+    "H2": "지지"
+   },
+   "side_basis": "품질이 내리지 않고 올랐다는 회사의 사례다.",
+   "note": "비용은 'far cheaper'라고만 하고 수치가 없다. 고객 한 곳의 수치라 평균이 아니다."
+  },
+  {
+   "id": "intercom-qwen-summarization-250k",
+   "country": "US",
+   "city": null,
+   "metric": "Intercom 이 요약 작업 하나에 쓰던 월 비용",
+   "value": 250000,
+   "unit": "달러/월",
+   "asof": "2026",
+   "basis": "GPT 에서 미세조정한 14B Qwen 으로 바꿔 거의 다 아꼈다고 했다. 팟캐스트 소개문에서 읽었다",
+   "definition": "회사가 직접 밝힌 값이다. 제3자 검증은 없다.",
+   "quote": "replaced it with a fine-tuned 14B parameter Qwen model and saved almost all of it",
+   "sources": [
+    {
+     "n": 1,
+     "title": "How Intercom Cut $250K/Month by Ditching GPT for Open Models | Fergal Reid (Chain of Thought)",
+     "url": "https://pocketcasts.com/podcast/chain-of-thought-ai-agents-infrastructure-engineering/96953080-89bb-013d-aba9-0affd8d03709/how-intercom-cut-250kmonth-by-ditching-gpt-for-qwen/7cac9f9c-4443-4b79-9155-5694d4e47dd5",
+     "date": null,
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "low",
+   "sides": {
+    "H1": "지지",
+    "H2": "지지"
+   },
+   "side_basis": "짧고 반복되는 일에서 소형 오픈웨이트로 바꾼 전형이다.",
+   "note": "기반 Qwen 14B, 학습은 Intercom. 에피소드 소개문만 읽었고 전문(chainofthought.show)은 받지 않았다. 방송 날짜 미확인. 요약이라는 고빈도 반복 작업이 옮겨 간 전형."
+  },
+  {
+   "id": "decagon-90pct-open-source",
+   "country": "US",
+   "city": null,
+   "metric": "Decagon 의 작업량 가운데 오픈소스 모델의 몫",
+   "value": 90,
+   "unit": "%(약)",
+   "asof": "2026-07",
+   "basis": "대표의 글",
+   "definition": "회사가 직접 밝힌 값이다. 제3자 검증은 없다.",
+   "quote": "we now run ~90% of our workloads on open source models",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Everyone is wrong about open source AI in the enterprise",
+     "url": "https://decagon.ai/blog/everyone-is-wrong-about-open-source-ai-in-the-enterprise",
+     "date": "2026-07-09",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H2": "지지",
+    "H3": "지지"
+   },
+   "side_basis": "고객 지원 에이전트 회사가 대부분을 오픈 모델로 돌린다.",
+   "note": "기반 모델 이름과 서빙 업체는 글에 없다. 이유로 든 것은 비용이 아니라 지연 시간 — 작은 모델을 과제에 맞게 강하게 미세조정해야 하는데 폐쇄 연구소의 소형 모델은 그렇게 다듬을 수 없다는 설명."
+  },
+  {
+   "id": "decagon-cost-secondary",
+   "country": "US",
+   "city": null,
+   "metric": "Decagon 이 오픈웨이트로 간 이유",
+   "value": null,
+   "unit": "해당 없음",
+   "asof": "2026-07",
+   "basis": "대표의 글",
+   "definition": "회사가 직접 밝힌 값이다. 제3자 검증은 없다.",
+   "quote": "Small + fine-tuned means open weights. The cost savings are real but secondary",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Everyone is wrong about open source AI in the enterprise",
+     "url": "https://decagon.ai/blog/everyone-is-wrong-about-open-source-ai-in-the-enterprise",
+     "date": "2026-07-09",
+     "read": "full"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H2": "양쪽"
+   },
+   "side_basis": "작고 미세조정된 모델이 필요해서였고 비용 절감은 부차적이라고 했다.",
+   "note": "H1의 '소형 등급을 가져간다'는 구도와 맞는다. 비용 수치는 없다."
+  },
+  {
+   "id": "unblocked-glm-68-not-95",
+   "country": "US",
+   "city": null,
+   "metric": "Unblocked 가 Claude Opus 에서 GLM 5.2 로 옮긴 뒤의 과제당 비용 절감",
+   "value": 68,
+   "unit": "%",
+   "asof": "2026-08",
+   "basis": "같은 PR·프롬프트로 두 모델을 돌린 자체 비교. 토큰 단가로 계산한 기대치는 95%",
+   "definition": "회사가 직접 밝힌 값이다. 제3자 검증은 없다.",
+   "quote": "Per-token math promised 95% savings; per-task reality delivered 68%",
+   "sources": [
+    {
+     "n": 1,
+     "title": "What We Learned Moving Our Agent Loops from Anthropic to GLM",
+     "url": "https://getunblocked.com/blog/moving-agent-loops-from-anthropic-to-glm/",
+     "date": "2026-08-13",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H1": "반박",
+    "H2": "양쪽",
+    "H3": "지지"
+   },
+   "side_basis": "최상위 모델이 하던 에이전트 일을 옮겼다. 다만 절감은 토큰 단가가 약속한 것보다 작았다 — 칼럼의 '싼 것은 토큰이지 일이 아니다'가 절반만 맞는다는 값이다.",
+   "note": "후학습 없이 GLM 5.2를 그대로 사용, 서빙은 Fireworks·Baseten(Together는 제외). GLM이 과제당 토큰을 더 써서 절감폭이 줄었다. 옮기기 전 AI 지출의 80% 이상이 Opus였다."
+  },
+  {
+   "id": "unblocked-code-review-glm-share-86",
+   "country": "US",
+   "city": null,
+   "metric": "Unblocked 코드 리뷰 호출 가운데 GLM 의 몫",
+   "value": 86,
+   "unit": "%",
+   "asof": "2026-08",
+   "basis": "한 달 사이 6% → 86%. 호출당 0.089 → 0.027달러",
+   "definition": "회사가 직접 밝힌 값이다. 제3자 검증은 없다.",
+   "quote": "| Code review | 6% → 86% | $0.089 → $0.027 | down 68% |",
+   "sources": [
+    {
+     "n": 1,
+     "title": "What We Learned Moving Our Agent Loops from Anthropic to GLM",
+     "url": "https://getunblocked.com/blog/moving-agent-loops-from-anthropic-to-glm/",
+     "date": "2026-08-13",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H1": "반박",
+    "H3": "지지"
+   },
+   "side_basis": "옮기는 속도가 빠르다.",
+   "note": "검색 에이전트는 2%→43%, 호출당 43% 절감. 단위는 호출이지 완료된 리뷰가 아니라고 글에서 밝힌다."
+  },
+  {
+   "id": "att-40pct-open-source-routing",
+   "country": "US",
+   "city": null,
+   "metric": "AT&T 직원 AI 질의 가운데 오픈소스 모델이 처리하는 몫",
+   "value": 40,
+   "unit": "%",
+   "asof": "2026-08",
+   "basis": "The Information 인터뷰의 2차 인용. 목표는 60~70%",
+   "definition": "회사가 직접 밝힌 값이다. 제3자 검증은 없다.",
+   "quote": "from the current 40% to between 60% and 70% in the coming years",
+   "sources": [
+    {
+     "n": 1,
+     "title": "AT&T Slashes AI Costs by Adopting Model Routers and Open Source",
+     "url": "https://pymnts.com/news/artificial-intelligence/2026/att-slashes-ai-costs-by-adopting-model-routers-and-open-source",
+     "date": "2026-08-20",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H3": "지지"
+   },
+   "side_basis": "대기업이 사내 질의를 오픈 모델로 돌린다.",
+   "note": "후학습이 아니라 라우팅으로 쉬운 질의를 Nemotron·Llama·Gemma에 보낸다. Anthropic·OpenAI 지출을 '늘리지 않는' 것이 목표라고 적혀 있다(줄이는 것이 아님)."
+  },
+  {
+   "id": "att-coding-cost-down-56",
+   "country": "US",
+   "city": null,
+   "metric": "AT&T 가 라우팅으로 줄인 코딩 등 고급 작업 비용",
+   "value": 56,
+   "unit": "%(최대)",
+   "asof": "2026-08",
+   "basis": "최대치. 품질 하락은 2%라고 했다. 2차 인용",
+   "definition": "회사가 직접 밝힌 값이다. 제3자 검증은 없다.",
+   "quote": "by as much as 56% by using tools that route employees",
+   "sources": [
+    {
+     "n": 1,
+     "title": "AT&T Slashes AI Costs by Adopting Model Routers and Open Source",
+     "url": "https://pymnts.com/news/artificial-intelligence/2026/att-slashes-ai-costs-by-adopting-model-routers-and-open-source",
+     "date": "2026-08-20",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H1": "양쪽",
+    "H2": "양쪽"
+   },
+   "side_basis": "코딩 같은 고급 작업에서도 비용을 줄였지만 품질이 조금 내렸다.",
+   "note": "품질 측정 방법은 기사에 없다. 공개 모델이 프런티어보다 6~10개월 뒤처진다고 AT&T가 평가한다."
+  },
+  {
+   "id": "pinterest-cost-per-transaction-under-8pct",
+   "country": "US",
+   "city": null,
+   "metric": "Pinterest 의 사후 학습 오픈 모델 거래당 비용 — 비슷한 클로즈드 모델 대비",
+   "value": 8,
+   "unit": "%(미만)",
+   "asof": "2026-08",
+   "basis": "대표의 실적 발표 발언. 2차 인용",
+   "definition": "회사가 직접 밝힌 값이다. 제3자 검증은 없다.",
+   "quote": "we are achieving cost per transaction at less than 8% of the cost of comparable closed proprietary models",
+   "sources": [
+    {
+     "n": 1,
+     "title": "The Pulse: tech companies move to open AI models",
+     "url": "https://blog.pragmaticengineer.com/the-pulse-tech-companies-move-to-open-ai-models/",
+     "date": "2026-09-10",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H2": "지지",
+    "H3": "지지"
+   },
+   "side_basis": "상장사 대표가 실적 발표에서 밝힌 값이다.",
+   "note": "자사 클라우드 안에서 오픈 모델을 후학습한다고 한다. 기반 모델과 옮긴 트래픽 비중은 없다. 실적 발표 시점은 기사의 '지난달' 표현으로 추정했고 원 녹취록은 확인하지 않았다."
+  },
+  {
+   "id": "pinterest-still-uses-openai-coding",
+   "country": "US",
+   "city": null,
+   "metric": "Pinterest 가 미세조정으로 줄였다고 밝힌 비용",
+   "value": 90,
+   "unit": "%",
+   "asof": "2026-03",
+   "basis": "Fortune 인터뷰. 일부 기능과 사내 코딩에는 OpenAI 를 계속 쓴다",
+   "definition": "회사가 직접 밝힌 값이다. 제3자 검증은 없다.",
+   "quote": "including using OpenAI for some features and internal use cases like coding",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Why Pinterest is going all in on open-source AI",
+     "url": "https://fortune.com/2026/03/17/why-pinterest-is-going-all-in-on-open-source-ai/",
+     "date": "2026-03-17",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H1": "지지",
+    "H2": "지지"
+   },
+   "side_basis": "옮긴 것은 자기 제품의 대량 작업이고 코딩은 프론티어에 남았다.",
+   "note": "Qwen으로 핀 이미지 내용을 분석해 설명문을 만든다. 같은 기사에 미세조정으로 90% 비용 절감, 프런티어 대비 10% 미만 비용이라는 회사 설명이 있다. 코딩은 프런티어에 남는다."
+  },
+  {
+   "id": "uber-cost-per-session-down-52",
+   "country": "US",
+   "city": null,
+   "metric": "Uber 의 AI 세션당 비용 절감",
+   "value": 52,
+   "unit": "%",
+   "asof": "2026-09",
+   "basis": "요청당은 34%. 2차 인용",
+   "definition": "회사가 직접 밝힌 값이다. 제3자 검증은 없다.",
+   "quote": "Uber cut the cost per AI request by 34%, and the cost per AI session by 52%",
+   "sources": [
+    {
+     "n": 1,
+     "title": "The Pulse: tech companies move to open AI models",
+     "url": "https://blog.pragmaticengineer.com/the-pulse-tech-companies-move-to-open-ai-models/",
+     "date": "2026-09-10",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H3": "지지"
+   },
+   "side_basis": "오픈 모델로 일부를 돌려 줄인 값이다.",
+   "note": "절감은 모델 선택·노력 수준 낮추기·프롬프트 캐시를 합친 결과이고, 오픈 모델 전환이 가장 큰 요인이라는 것은 필자의 추정이다. Uber 원문은 받지 않았다."
+  },
+  {
+   "id": "uber-code-review-open-030-vs-050",
+   "country": "US",
+   "city": null,
+   "metric": "Uber 의 코드 리뷰 한 건 비용 — 가장 비싼 오픈웨이트",
+   "value": 0.3,
+   "unit": "달러",
+   "asof": "2026-09",
+   "basis": "가장 싼 프론티어는 0.50달러, 가장 비싼 프론티어는 2.50달러. 2차 인용",
+   "definition": "회사가 직접 밝힌 값이다. 제3자 검증은 없다.",
+   "quote": "The most expensive open weight model costs $0.30 per code review, vs $0.50 for the cheapest frontier model",
+   "sources": [
+    {
+     "n": 1,
+     "title": "The Pulse: tech companies move to open AI models",
+     "url": "https://blog.pragmaticengineer.com/the-pulse-tech-companies-move-to-open-ai-models/",
+     "date": "2026-09-10",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H1": "반박",
+    "H2": "지지"
+   },
+   "side_basis": "코드 리뷰에서 가장 비싼 오픈웨이트가 가장 싼 프론티어보다 쌌다. 과제당으로 잰 값이다.",
+   "note": "과제당 비용으로도 공개 모델이 싸다는 근거. 품질 비교 수치는 인용문에 없다. 후학습 여부도 나와 있지 않다."
+  },
+  {
+   "id": "lindy-claude-to-deepseek",
+   "country": "US",
+   "city": null,
+   "metric": "Lindy 의 Claude → DeepSeek 전환",
+   "value": null,
+   "unit": "해당 없음",
+   "asof": "2026-06",
+   "basis": "대표의 CNBC 발언을 옮긴 보도. Anthropic 이 값을 내리면 돌아가겠다고 했다",
+   "definition": "회사가 직접 밝힌 값이다. 제3자 검증은 없다.",
+   "quote": "Crivello said he'd switch back if Anthropic cut prices",
+   "sources": [
+    {
+     "n": 1,
+     "title": "AI startup Lindy ditched Claude entirely for Deepseek, saving millions as cost pressure mounts on Anthropic",
+     "url": "https://the-decoder.com/ai-startup-lindy-ditched-claude-entirely-for-deepseek-saving-millions-as-cost-pressure-mounts-on-anthropic/",
+     "date": "2026-06-26",
+     "read": "partial"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "low",
+   "sides": {
+    "H1": "반박",
+    "H3": "지지"
+   },
+   "side_basis": "에이전트 회사가 프론티어를 통째로 바꿨다. 이유는 가격이고 가격이 내리면 돌아간다고 했다.",
+   "note": "후학습 없이 DeepSeek v4를 그대로 사용. 25명 회사에서 AI 비용이 인건비를 넘었다고 한다. 가격이 내리면 돌아가겠다는 발언은 이탈이 가격 탄력적임을 보여 준다. 기사 뒷부분은 구독자 전용."
+  },
+  {
+   "id": "c3ai-narwhal-74-vs-60",
+   "country": "US",
+   "city": null,
+   "metric": "C3 AI 미세조정 모델(27B)의 자체 코딩 평가 점수",
+   "value": 74,
+   "unit": "%",
+   "asof": "2026-04",
+   "basis": "97개 과제. 도구를 쓴 GPT-5.4·Claude Opus 4.6 은 약 60%",
+   "definition": "회사가 직접 밝힌 값이다. 제3자 검증은 없다.",
+   "quote": "Narwhal V11 (27B, fine-tuned): 74% (<1 s response time)",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Why C3 AI Fine-Tunes Its Own Models, Even With Frontier AI This Strong",
+     "url": "https://c3.ai/blog/why-c3-ai-fine-tunes-its-own-models-even-with-frontier-ai-this-strong",
+     "date": "2026-04-30",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "low",
+   "sides": {
+    "H2": "지지"
+   },
+   "side_basis": "자기 분야의 좁은 평가에서 프론티어를 앞섰다는 주장이다.",
+   "note": "자사 플랫폼 API라는 프런티어 모델이 본 적 없는 지식이 걸린 좁은 과제. 기반 모델 이름과 비용 수치는 없다. 단일 GPU, 1초 미만 응답."
+  },
+  {
+   "id": "tinder-spend-1m-to-10m-routes-open",
+   "country": "US",
+   "city": null,
+   "metric": "Tinder 의 AI 지출(연환산)",
+   "value": 10,
+   "unit": "백만 달러(연환산)",
+   "asof": "2026-09",
+   "basis": "1월 100만 달러 속도에서 7월 1,000만 달러. FT 보도의 2차 인용",
+   "definition": "회사가 직접 밝힌 값이다. 제3자 검증은 없다.",
+   "quote": "we were spending at the rate of $1 million per year and by July it had climbed to $10 million",
+   "sources": [
+    {
+     "n": 1,
+     "title": "US Companies Turn to Open Models as AI Bills Climb",
+     "url": "https://rits.shanghai.nyu.edu/ai/us-companies-turn-to-open-models-as-ai-bills-climb/",
+     "date": "2026-09-28",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "low",
+   "sides": {
+    "H1": "지지",
+    "H3": "지지"
+   },
+   "side_basis": "청구액이 불어나자 비기술 직원의 질의부터 오픈 모델로 돌렸다. Fireworks 대표가 말한 '파산으로 가는 확장'의 사례다.",
+   "note": "후학습이 아니라 사내 일반 질의의 라우팅. 3차 인용이라 FT 원문 확인이 필요하다. PNC·CH Robinson·Siemens도 검토 중으로 거론된다."
+  }
+ ]
+}

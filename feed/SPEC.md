@@ -224,7 +224,7 @@
 
 ## data/<id>/ — 조사 자료 묶음
 
-한 질문을 두고 손으로 모은 기록이다. 화면에는 없고 feed 로만 나간다. 지금은 `apac-siting`(아시아·태평양 AI 컴퓨트 입지 비교), `ai-knowledge-work`(AI 는 코딩을 넘어 범용 지식노동으로 번지는가), `compute-balance`(누가 AI 컴퓨팅을 얼마나 갖고 쓰는가), `online-narratives`(X·Substack 의 글은 주가를 움직이는가)다.
+한 질문을 두고 손으로 모은 기록이다. 화면에는 없고 feed 로만 나간다. 지금은 `apac-siting`(아시아·태평양 AI 컴퓨트 입지 비교), `ai-knowledge-work`(AI 는 코딩을 넘어 범용 지식노동으로 번지는가), `compute-balance`(누가 AI 컴퓨팅을 얼마나 갖고 쓰는가), `online-narratives`(X·Substack 의 글은 주가를 움직이는가), `open-weight-substitution`(오픈웨이트는 클로즈드 모델의 어느 일을 얼마나 가져가는가)이다.
 
 | 경로 | 내용 |
 | --- | --- |
@@ -287,6 +287,8 @@
 `gates.json`(묶음 I)의 기록은 `topic`(`I1` 대용량 전력 블록 · `I2` 돈과 임차 약정 · `I3` 수요의 종류)과 `kind`(`block` 단일 부지의 계획 용량 | `grid` 접속 심사와 기간 | `selfgen` 자가 발전과 직접 구매 | `anchor` 임차·수요 주체 | `carrier` 투자 주체의 규모 | `cost` 사업비 | `workload` 수요의 종류), `item` 을 갖는다. `block` 기록에는 `gate` 가 붙는다: `site`, `operator`, `tenant`(쓰는 쪽이거나 `null`), `mw`(`value`·`basis`), `stage`, `first_power`, `power`(전력을 받는 길), `capital`(돈을 대는 쪽), `serves`(`국내` | `권역·세계` | `불명`). 용량은 계획·목표·구상 단계의 숫자가 섞여 있어 더하지 않는다. 그 밖에 기록마다 입력 값(`detail`, `cases`)과 다른 묶음을 가리키는 `refs` 가 있다.
 
 조사 `online-narratives` 의 묶음은 셋이다. `cases.json`(N1)의 기록은 사례 1건이고 `category`(`thesis` 장문 논지 | `relay` 유료 글·소식의 전달 | `short` 공매도 포지션 공개 | `mention` 종목 언급 | `headline` 속보 중계), `direction`(`down` | `up`), `claim`, `targets[]`(`ticker`·`name`·`role`)와 대표 종목 `primary`, `origin`(최초 글의 `author`·`platform`·`url`·`posted_at`·`precision`·`paywall`·`position_disclosed`·`reach`), `market`(`t0`·`open_at`·`close_at`·`session`), `timeline[]`(`at`·`precision`·`step`·`who`·`what`·`src`), `attribution[]`(언론이 주가를 글 탓으로 돌렸는가), `confounders[]`(같은 날의 다른 재료), `response[]`, `aftermath`(`status`·`what`), `price_as_reported[]` 를 갖는다. 대표 값은 최초 글 게시부터 다음 정규장 시작까지의 시간이다. `prices.json`(N2)의 기록은 사례 × 종목이고 `returns`(`d0`·`low0`·`high0`·`d1`·`d5`·`d20` — 전 거래일 종가 대비 누적 %), `benchmark_returns`, `excess`, `vol60`, `z0`, `retraced5`·`retraced20` 을 갖는다(아직 오지 않은 거래일은 `null`). `arrival.json`(N3)의 기록은 한국 텔레그램 채널에 처음 닿은 시각이고 `first`(`at`·`kind`·`via`), `after_close`, `hours_before_close`, `counts`, `origin_before_close` 를 갖는다. 식과 읽는 법은 파일마다의 `notes` 에, 가설 넷의 판정과 조건을 채운 사례 목록은 `index.json` 에 있다.
+
+조사 `open-weight-substitution` 의 묶음(W1~W5: `tiers.json` 계층별 몫 · `cases.json` 특화 모델 사례 · `platforms.json` 추론·사후 학습 시장 · `labs.json` 프론티어 랩의 노출과 대응 · `counter.json` 반대 증거)의 기록은 `metric`(무엇을 잰 값인가), `definition`(누가 쟀나와 한계, 없으면 `null`), `quote`(원문 문장, 없으면 `null`), `sides`(가설 `H1`·`H2`·`H3` 마다 `지지` | `반박` | `양쪽` | `중립` — AI 의 해석), `side_basis`, `refs`, `detail` 을 더 가진다. 묶음 파일의 `summary` 에 가설별 방향 건수가 있다.
 
 조사 `ai-knowledge-work` 의 묶음(K1~K6: `capability.json` 역량 · `usage.json` 사용 · `spend.json` 지출과 매출 · `labor.json` 노동시장 · `effect.json` 효과 측정 · `ceiling.json` 천장과 요구 수준)의 기록은 `metric`(무엇을 잰 값인가), `definition`(정의와 한계, 없으면 `null`), `links`(입증의 고리: `coding` 코딩의 존재 증명 | `spread` 코딩 밖 확산 | `ceiling` 천장 | `penetration` 침투율 | `slope` 기울기 | `counter` 반대 증거), `sides`(가설 `H1`·`H2` 마다의 방향: `지지` | `반박` | `양쪽` | `중립` — AI 의 해석), `side_basis`(그 이유)를 갖는다. 같은 지표의 시점별 값은 `series`(`period`·`value`·`src`·`label`·`note`)에, 하나로 고르지 못한 값이나 범위로 낸 계산은 `range`(`low`·`high`, 이때 `value` 는 `null` 일 수 있다)에 있다. 계산 기록은 `basis` 가 "계산"으로 시작하고 `sources` 가 비어 있으며 입력 기록을 `refs` 로 가리킨다. 묶음 파일의 `summary` 에 `by_hypothesis`·`by_link` 의 방향별 건수가 있다. `labor.json` 에서 `auto` 가 `true` 인 기록(`postings-…` 분야별 채용 공고 지수, `employment-…` 업종별 고용)은 공개 자료에서 명령으로 다시 만든 것이고, `detail` 에 기준점(2022-11) 뒤와 최근 1년의 변화(`since_base_pct`·`last_year_pct`)와 전체 대비 변화(`vs_total_…`)가 있다. `ceiling.json` 의 `auto` 기록은 임금 풀을 직접 계산한 것이다 — 입력 넷(`us-wage-bill-oews`·`world-gdp-imf`·`labor-income-share-ilo`·`office-occupation-employment-share-ilo`)과 계산 둘(`wage-pool-us-direct`·`wage-pool-global-direct`, 값은 `range` 에, 방법별 값은 `detail.us_mix_tn`·`detail.actual_mix_tn` 에 조 달러로 있다). 직종 범위와 임금 격차는 데스크의 가정이다. `index.json` 의 가설 H1 에는 고리별 판정 `by_criterion` 이 붙는다.
 
@@ -364,3 +366,4 @@
 바뀐 것
 
 - 조사 `online-narratives`(`data/online-narratives/`)를 더했다. 묶음은 N1 사례(`cases`) · N2 주가 반응(`prices`) · N3 한국 도착(`arrival`)이고 가설 넷(H1~H4)의 판정이 `index.json` 에 있다. 리포트는 `x-substack-price-impact` 다.
+- 조사 `open-weight-substitution`(`data/open-weight-substitution/`)을 더했다. 묶음은 W1 계층별 몫(`tiers`) · W2 특화 모델 사례(`cases`) · W3 추론·사후 학습 시장(`platforms`) · W4 프론티어 랩의 노출과 대응(`labs`) · W5 반대 증거(`counter`)이고 가설 셋(H1~H3)은 모두 `판단 보류`다. 기존 키는 그대로다.

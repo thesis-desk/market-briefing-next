@@ -1,0 +1,79 @@
+{
+ "schema": 1,
+ "updated_kst": "2026-11-20T22:54:08+09:00",
+ "question": "오픈웨이트는 클로즈드 모델의 어느 일을 얼마나 가져가는가 — 소형 클로즈드 계층과 특화(사후 학습) 모델",
+ "bundles": [
+  {
+   "id": "W1",
+   "file": "tiers.json",
+   "title": "계층별 몫 — 프론티어·소형 클로즈드·오픈웨이트의 토큰과 지출",
+   "status": "collecting",
+   "records": 18,
+   "verified_share": 1,
+   "updated_kst": "2026-11-20T22:54:08+09:00"
+  },
+  {
+   "id": "W2",
+   "file": "cases.json",
+   "title": "특화 모델 사례 — 누가 무엇을 무엇으로 옮겼고 비용·품질을 어떻게 밝혔나",
+   "status": "collecting",
+   "records": 26,
+   "verified_share": 1,
+   "updated_kst": "2026-11-20T22:54:08+09:00"
+  },
+  {
+   "id": "W3",
+   "file": "platforms.json",
+   "title": "추론·사후 학습 시장 — 플랫폼 매출, 맞춤 비중, 채택률",
+   "status": "collecting",
+   "records": 22,
+   "verified_share": 1,
+   "updated_kst": "2026-11-20T22:54:08+09:00"
+  },
+  {
+   "id": "W4",
+   "file": "labs.json",
+   "title": "프론티어 랩의 노출과 대응 — 가격, 위험요인 문구, 계층별 몫",
+   "status": "collecting",
+   "records": 18,
+   "verified_share": 1,
+   "updated_kst": "2026-11-20T22:54:08+09:00"
+  },
+  {
+   "id": "W5",
+   "file": "counter.json",
+   "title": "반대 증거 — 특화가 통하지 않는 조건, 도입 장벽, 기피",
+   "status": "collecting",
+   "records": 17,
+   "verified_share": 1,
+   "updated_kst": "2026-11-20T22:54:08+09:00"
+  }
+ ],
+ "hypotheses": [
+  {
+   "id": "H1",
+   "text": "오픈웨이트가 물량을 가져가는 곳은 프론티어가 아니라 소형 클로즈드 계층(대량·반복 작업)이다.",
+   "verdict": "판단 보류",
+   "basis": "모으는 중이다. 1차로 넣은 값은 Menlo 한 곳과 Harvey 한 사례에 기대고 있다.",
+   "updated_kst": null
+  },
+  {
+   "id": "H2",
+   "text": "고객의 일에 맞춰 사후 학습한 오픈웨이트는 좁은 일에서 클로즈드 API 와 같은 품질을 몇 분의 1 비용으로 낸다.",
+   "verdict": "판단 보류",
+   "basis": "모으는 중이다. 짧은 추출 작업과 긴 에이전트 과제에서 결과가 갈린다.",
+   "updated_kst": null
+  },
+  {
+   "id": "H3",
+   "text": "특화·전용 배포로 옮겨 가는 지출이 프론티어 랩의 기업 API 매출을 깎을 크기로 커지고 있다.",
+   "verdict": "판단 보류",
+   "basis": "모으는 중이다. 플랫폼의 증가율은 가파르지만 지출 몫은 작다.",
+   "updated_kst": null
+  }
+ ],
+ "docs": [
+  "REQUEST.md",
+  "STATUS.md"
+ ]
+}

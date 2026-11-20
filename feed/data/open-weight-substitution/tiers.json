@@ -1,0 +1,625 @@
+{
+ "schema": 1,
+ "bundle": "W1",
+ "title": "계층별 몫 — 프론티어·소형 클로즈드·오픈웨이트의 토큰과 지출",
+ "updated_kst": "2026-11-20T22:54:08+09:00",
+ "measure": null,
+ "notes": [
+  "방향(sides)은 AI 의 해석이다.",
+  "회사가 직접 잰 값과 자기 보고는 definition 에 밝혔다."
+ ],
+ "summary": {
+  "records": 18,
+  "with_value": 14,
+  "by_hypothesis": {
+   "H1": {
+    "지지": 5,
+    "반박": 2,
+    "양쪽": 0,
+    "중립": 6
+   },
+   "H3": {
+    "지지": 3,
+    "반박": 7,
+    "양쪽": 3,
+    "중립": 1
+   }
+  }
+ },
+ "records": [
+  {
+   "id": "menlo-open-source-token-share",
+   "country": "ZZ",
+   "city": null,
+   "metric": "기업 AI 토큰 가운데 오픈소스 모델의 몫",
+   "value": 19,
+   "unit": "%",
+   "asof": "2026-09",
+   "basis": "Menlo 추정, 1년 전 11%",
+   "definition": "Menlo Ventures 의 추정이다. 산출 방법은 확인하지 않았다. Menlo 는 Anthropic 과 Fireworks 양쪽의 주주다.",
+   "quote": "open-source models’ share of usage rose from 11% to 19%",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Menlo Ventures — 2026: The State of Enterprise AI",
+     "url": "https://menlovc.com/perspective/2026-the-state-of-enterprise-ai",
+     "date": "2026-11-03",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H1": "중립",
+    "H3": "양쪽"
+   },
+   "side_basis": "물량이 옮겨 간다는 근거이지만 어느 계층에서 왔는지는 이 값만으로 모른다.",
+   "note": "쓰임은 거의 두 배가 됐다.",
+   "detail": {
+    "year_ago": 11
+   }
+  },
+  {
+   "id": "menlo-open-source-spend-share",
+   "country": "ZZ",
+   "city": null,
+   "metric": "기업 모델 지출 가운데 오픈소스 모델의 몫",
+   "value": 4,
+   "unit": "%",
+   "asof": "2026-09",
+   "basis": "Menlo 추정, 1년 전 6%",
+   "definition": "Menlo Ventures 의 추정이다. 산출 방법은 확인하지 않았다. Menlo 는 Anthropic 과 Fireworks 양쪽의 주주다.",
+   "quote": "its share of spending fell from 6% to 4%",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Menlo Ventures — 2026: The State of Enterprise AI",
+     "url": "https://menlovc.com/perspective/2026-the-state-of-enterprise-ai",
+     "date": "2026-11-03",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H3": "반박"
+   },
+   "side_basis": "특화·오픈웨이트로 가는 돈이 커진다는 가설과 반대 방향이다.",
+   "note": "토큰 몫이 느는 동안 지출 몫은 내렸다. Menlo 는 오픈소스 토큰 단가가 3.3분의 1이 된 결과로 적었다.",
+   "detail": {
+    "year_ago": 6
+   }
+  },
+  {
+   "id": "menlo-small-closed-token-share",
+   "country": "ZZ",
+   "city": null,
+   "metric": "기업 AI 토큰 가운데 소형 클로즈드 모델(Haiku·Luna 등)의 몫",
+   "value": 13,
+   "unit": "%",
+   "asof": "2026-09",
+   "basis": "Menlo 추정, 1년 전 29%",
+   "definition": "Menlo Ventures 의 추정이다. 산출 방법은 확인하지 않았다. Menlo 는 Anthropic 과 Fireworks 양쪽의 주주다.",
+   "quote": "small closed models like Haiku and Luna still saw their share of tokens fall from 29% to 13% as open-source competes for those workloads",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Menlo Ventures — 2026: The State of Enterprise AI",
+     "url": "https://menlovc.com/perspective/2026-the-state-of-enterprise-ai",
+     "date": "2026-11-03",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H1": "지지"
+   },
+   "side_basis": "오픈소스가 그 일감을 두고 경쟁한 결과라고 보고서가 직접 적었다.",
+   "note": "프론티어 랩이 소형 모델 값을 80% 넘게 내렸는데도 몫이 절반 아래로 내렸다고 적었다.",
+   "detail": {
+    "year_ago": 29
+   }
+  },
+  {
+   "id": "menlo-frontier-spend-share",
+   "country": "ZZ",
+   "city": null,
+   "metric": "기업 AI 지출 가운데 프론티어 모델의 몫",
+   "value": 63,
+   "unit": "%",
+   "asof": "2026-09",
+   "basis": "Menlo 추정, 1년 전 35%. 토큰 몫은 18% → 42%",
+   "definition": "Menlo Ventures 의 추정이다. 산출 방법은 확인하지 않았다. Menlo 는 Anthropic 과 Fireworks 양쪽의 주주다.",
+   "quote": "Their share of spending also climbed, from 35% to 63%.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Menlo Ventures — 2026: The State of Enterprise AI",
+     "url": "https://menlovc.com/perspective/2026-the-state-of-enterprise-ai",
+     "date": "2026-11-03",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H1": "지지",
+    "H3": "반박"
+   },
+   "side_basis": "돈과 물량이 모두 위로 올라갔다. 프론티어가 먹히고 있다는 그림과 반대다.",
+   "note": "프론티어의 토큰 몫이 오픈소스보다 빨리 늘었다.",
+   "detail": {
+    "year_ago": 35,
+    "token_share": 42,
+    "token_share_year_ago": 18
+   }
+  },
+  {
+   "id": "menlo-open-source-token-price",
+   "country": "ZZ",
+   "city": null,
+   "metric": "오픈소스 토큰의 평균 단가",
+   "value": 0.13,
+   "unit": "달러/100만 토큰",
+   "asof": "2026-09",
+   "basis": "Menlo 추정. 1년 사이 3.3분의 1. 클로즈드 혼합 단가는 0.70달러(24% 하락)",
+   "definition": "Menlo Ventures 의 추정이다. 산출 방법은 확인하지 않았다. Menlo 는 Anthropic 과 Fireworks 양쪽의 주주다.",
+   "quote": "The average open-source token fell 3.3x in price to $0.13 per million",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Menlo Ventures — 2026: The State of Enterprise AI",
+     "url": "https://menlovc.com/perspective/2026-the-state-of-enterprise-ai",
+     "date": "2026-11-03",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H1": "중립",
+    "H3": "반박"
+   },
+   "side_basis": "물량이 늘어도 단가가 더 빨리 내려 지출 몫이 줄었다.",
+   "note": "클로즈드 혼합 단가가 오픈소스의 5.4배다(0.70 ÷ 0.13, 계산).",
+   "detail": {
+    "closed_blended": 0.7
+   }
+  },
+  {
+   "id": "menlo-chinese-share-of-open-source-spend",
+   "country": "ZZ",
+   "city": null,
+   "metric": "오픈소스 지출 가운데 중국 모델의 몫",
+   "value": 89,
+   "unit": "%",
+   "asof": "2026-09",
+   "basis": "Menlo 추정. Kimi 61%, DeepSeek 15%, GLM 11%, Qwen 3%. Llama 7%",
+   "definition": "Menlo Ventures 의 추정이다. 산출 방법은 확인하지 않았다. Menlo 는 Anthropic 과 Fireworks 양쪽의 주주다.",
+   "quote": "Chinese models grew to 89% of open-source spend",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Menlo Ventures — 2026: The State of Enterprise AI",
+     "url": "https://menlovc.com/perspective/2026-the-state-of-enterprise-ai",
+     "date": "2026-11-03",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H1": "중립"
+   },
+   "side_basis": "누가 먹히는지가 아니라 누가 먹는지에 대한 값이다.",
+   "note": "특화 모델의 기반도 중국 오픈웨이트일 가능성이 높다는 정황이다."
+  },
+  {
+   "id": "openrouter-china-token-share",
+   "country": "ZZ",
+   "city": null,
+   "metric": "OpenRouter 를 지나는 토큰 가운데 중국 모델의 몫",
+   "value": 51.4,
+   "unit": "%",
+   "asof": "2026-11-19",
+   "basis": "최근 30일, 작업별 상위 10개 모델로 이름이 나온 부분 기준. 미국 대형사는 13.3%",
+   "definition": "OpenRouter 한 채널의 집계다. 전용 배포와 직접 계약은 잡히지 않는다. 데스크 기록 content/market/usage/tasks.json.",
+   "quote": null,
+   "sources": [
+    {
+     "n": 1,
+     "title": "OpenRouter Rankings",
+     "url": "https://openrouter.ai/rankings",
+     "date": "2026-11-20",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H1": "중립",
+    "H3": "반박"
+   },
+   "side_basis": "토큰은 넘어갔지만 지출은 따라가지 않았다.",
+   "note": "지출 몫은 중국 17.3%, 미국 40.0%다(같은 기록).",
+   "detail": {
+    "china_spend_share": 17.3,
+    "us_spend_share": 40,
+    "us_token_share": 13.3
+   }
+  },
+  {
+   "id": "openrouter-weekly-token-growth-open",
+   "country": "ZZ",
+   "city": null,
+   "metric": "OpenRouter 주간 토큰의 1년 증가 배수 — 오픈 모델",
+   "value": 103.1,
+   "unit": "배",
+   "asof": "2026-11-09",
+   "basis": "계산: 2025-11-24 주 대비 2026-11-09 주. 같은 기간 Google·Anthropic·OpenAI 합은 14.7배, 클로즈드 전체는 9.3배",
+   "definition": "데스크 기록 content/market/usage/weekly.json 에서 계산했다.",
+   "quote": null,
+   "sources": [
+    {
+     "n": 1,
+     "title": "OpenRouter Rankings",
+     "url": "https://openrouter.ai/rankings",
+     "date": "2026-11-20",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H1": "지지"
+   },
+   "side_basis": "오픈 모델이 늘어난 동안 프론티어 랩의 물량이 줄지 않았다.",
+   "note": "미국 3사의 토큰도 같은 기간 늘었다.",
+   "detail": {
+    "us_labs": 14.7,
+    "closed": 9.3
+   }
+  },
+  {
+   "id": "openrouter-closed-spend-share",
+   "country": "ZZ",
+   "city": null,
+   "metric": "OpenRouter 지출 가운데 클로즈드 모델의 몫",
+   "value": 73,
+   "unit": "%",
+   "asof": "2026-09",
+   "basis": "주간 지출. 2026-01-05 주 89%",
+   "definition": "OpenRouter 가 자기 플랫폼 자료로 낸 값이다. 개발자·스타트업 중심의 한 채널이고 전용 배포와 직접 계약은 잡히지 않는다.",
+   "quote": "saw 73% of spend in the second week of September as opposed to 89% the week of Jan 5",
+   "sources": [
+    {
+     "n": 1,
+     "title": "The Token State of Play - Inferred | OpenRouter",
+     "url": "https://openrouter.ai/data/newsletter/the-token-state-of-play",
+     "date": "2026-09-22",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H1": "중립",
+    "H3": "지지"
+   },
+   "side_basis": "오픈웨이트의 지출 몫이 여덟 달에 11%에서 27%로 올랐다(100에서 뺀 값). 돈이 따라가지 않는다는 칼럼의 첫째 고리와 방향이 다르다.",
+   "note": "오픈웨이트 지출 비중이 11%→27%로 오른 셈(100에서 뺀 값, 원문에는 폐쇄형 수치만 있음). 개발자·스타트업 중심 라우터라 기업 전체를 대표하지 않는다.",
+   "detail": {
+    "jan_2026": 89
+   }
+  },
+  {
+   "id": "openrouter-open-token-share",
+   "country": "ZZ",
+   "city": null,
+   "metric": "OpenRouter 토큰 가운데 오픈웨이트의 몫 — 정점",
+   "value": 79,
+   "unit": "%",
+   "asof": "2026-07",
+   "basis": "주간 토큰. 2026-07 초 79%가 정점이고 그 뒤 62% 위",
+   "definition": "OpenRouter 가 자기 플랫폼 자료로 낸 값이다. 개발자·스타트업 중심의 한 채널이고 전용 배포와 직접 계약은 잡히지 않는다.",
+   "quote": "It reached 79% in early July, its high point, and has held above 62% since.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "The Token State of Play - Inferred | OpenRouter",
+     "url": "https://openrouter.ai/data/newsletter/the-token-state-of-play",
+     "date": "2026-09-22",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H1": "중립",
+    "H3": "양쪽"
+   },
+   "side_basis": "물량은 이미 뒤집혔지만 정점 뒤로는 내려왔다.",
+   "note": "토큰 72%에 지출 27%라는 격차는 오픈웨이트가 값싼 대량 작업에 몰려 있음을 뜻한다. 정점 이후 비중이 내려온 점은 반대 근거."
+  },
+  {
+   "id": "openrouter-open-labs-spend-single-digit",
+   "country": "ZZ",
+   "city": null,
+   "metric": "Moonshot·Z.ai·DeepSeek 의 OpenRouter 지출 몫",
+   "value": null,
+   "unit": "해당 없음",
+   "asof": "2026-08",
+   "basis": "월 지출. 1~8월에 10배 넘게 늘었고 전체의 한 자릿수 후반",
+   "definition": "OpenRouter 가 자기 플랫폼 자료로 낸 값이다. 개발자·스타트업 중심의 한 채널이고 전용 배포와 직접 계약은 잡히지 않는다.",
+   "quote": "When viewed as a percentage of all spend the three labs are still only in the high single digits",
+   "sources": [
+    {
+     "n": 1,
+     "title": "The Token State of Play - Inferred | OpenRouter",
+     "url": "https://openrouter.ai/data/newsletter/the-token-state-of-play",
+     "date": "2026-09-22",
+     "read": "full"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H3": "양쪽"
+   },
+   "side_basis": "증가율은 가파르고 몫은 작다. 데스크 기록(11-19 까지 30일)에서는 세 곳의 합이 16.8%라 그 뒤로도 올랐을 가능성이 있다(집계 방식이 달라 바로 견줄 수는 없다).",
+   "note": "증가율은 H3를 지지하나 절대 비중은 아직 작다. 정확한 % 값은 원문에 없다."
+  },
+  {
+   "id": "openrouter-luna-cheap-closed-tier",
+   "country": "ZZ",
+   "city": null,
+   "metric": "OpenAI·Anthropic 합산 토큰 가운데 GPT 5.6 Luna 의 몫",
+   "value": 47,
+   "unit": "%",
+   "asof": "2026-09",
+   "basis": "2026-09-14 주",
+   "definition": "OpenRouter 가 자기 플랫폼 자료로 낸 값이다. 개발자·스타트업 중심의 한 채널이고 전용 배포와 직접 계약은 잡히지 않는다.",
+   "quote": "GPT 5.6 Luna took 47% of combined OpenAI and Anthropic token volume in the week of Sep 14",
+   "sources": [
+    {
+     "n": 1,
+     "title": "The Token State of Play - Inferred | OpenRouter",
+     "url": "https://openrouter.ai/data/newsletter/the-token-state-of-play",
+     "date": "2026-09-22",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H1": "반박",
+    "H3": "반박"
+   },
+   "side_basis": "값을 크게 내린 소형 클로즈드가 물량을 되찾았다. 소형 클로즈드가 밀려나기만 한다는 그림과 다르다.",
+   "note": "대량·저가 구간이 격전지라는 점은 H1과 맞지만, 폐쇄형 연구소가 저가 모델과 할인으로 그 구간을 되찾고 있다는 반대 근거이기도 하다."
+  },
+  {
+   "id": "openrouter-deepseek-us-startups",
+   "country": "ZZ",
+   "city": null,
+   "metric": "OpenRouter 의 미국 스타트업 가운데 DeepSeek 을 운영에 쓰는 비율",
+   "value": 40,
+   "unit": "%(초과)",
+   "asof": "2026-09",
+   "basis": "2026-01 약 13%",
+   "definition": "OpenRouter 가 자기 플랫폼 자료로 낸 값이다. 개발자·스타트업 중심의 한 채널이고 전용 배포와 직접 계약은 잡히지 않는다.",
+   "quote": "over 40% of US startups on OpenRouter now use DeepSeek in production",
+   "sources": [
+    {
+     "n": 1,
+     "title": "The Token State of Play - Inferred | OpenRouter",
+     "url": "https://openrouter.ai/data/newsletter/the-token-state-of-play",
+     "date": "2026-09-22",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H3": "지지"
+   },
+   "side_basis": "중국 오픈웨이트를 운영에 쓰는 곳이 여덟 달에 세 배가 됐다.",
+   "note": "OpenRouter 이용 스타트업에 한정된 표본.",
+   "detail": {
+    "jan_2026": 13
+   }
+  },
+  {
+   "id": "openrouter-2025-oss-one-third",
+   "country": "ZZ",
+   "city": null,
+   "metric": "OpenRouter 토큰 가운데 오픈웨이트의 몫 — 2025년 말",
+   "value": 33,
+   "unit": "%(약 3분의 1)",
+   "asof": "2025-11",
+   "basis": "OpenRouter·a16z 의 약 100조 토큰 분석",
+   "definition": null,
+   "quote": "OSS models have grown steadily, reaching approximately one-third of usage by late 2025",
+   "sources": [
+    {
+     "n": 1,
+     "title": "State of AI: An Empirical 100 Trillion Token Study with OpenRouter",
+     "url": "https://arxiv.org/html/2601.10088v1",
+     "date": "2026-01-15",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H3": "중립"
+   },
+   "side_basis": "2026년 값과 견줄 기준점이다.",
+   "note": "2026년 수치(72%)와 견줄 기준점. 값 33은 \"약 3분의 1\"을 옮긴 것."
+  },
+  {
+   "id": "openrouter-2025-proprietary-upper-bound",
+   "country": "ZZ",
+   "city": null,
+   "metric": "오픈·클로즈드의 역할 분담(OpenRouter·a16z 연구의 해석)",
+   "value": null,
+   "unit": "해당 없음",
+   "asof": "2025-11",
+   "basis": "저자의 해석",
+   "definition": null,
+   "quote": "Proprietary systems continue to define the upper bound of reliability and performance, particularly for regulated or enterprise workloads.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "State of AI: An Empirical 100 Trillion Token Study with OpenRouter",
+     "url": "https://arxiv.org/html/2601.10088v1",
+     "date": "2026-01-15",
+     "read": "full"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H1": "지지"
+   },
+   "side_basis": "클로즈드가 신뢰성과 성능의 위쪽을, 오픈 모델이 비용과 맞춤이 중요한 일을 맡는다고 적었다.",
+   "note": "저자 해석이며 수치가 아니다. 같은 글은 오픈 모델 안에서는 소형이 줄고 중·대형으로 사용이 옮겨 갔다고 적는다."
+  },
+  {
+   "id": "etr-open-weight-34pct-tokens",
+   "country": "ZZ",
+   "city": null,
+   "metric": "기업 AI 토큰 가운데 오픈웨이트의 몫(ETR 설문)",
+   "value": 34,
+   "unit": "%",
+   "asof": "2026-09",
+   "basis": "응답 200, 1년 전 23%. 2차 인용으로 읽었다",
+   "definition": null,
+   "quote": "open-weight models now handle 34% of enterprise AI token usage, up from 23% a year earlier",
+   "sources": [
+    {
+     "n": 1,
+     "title": "US Companies Turn to Open Models as AI Bills Climb",
+     "url": "https://rits.shanghai.nyu.edu/ai/us-companies-turn-to-open-models-as-ai-bills-climb/",
+     "date": "2026-09-28",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "low",
+   "sides": {
+    "H3": "지지"
+   },
+   "side_basis": "Menlo(19%)와 수준은 다르지만 방향이 같다.",
+   "note": "토큰 기준이지 지출 기준이 아니다. 가장 큰 걸림돌은 끝나지 않은 보안·규정 검토(62%)이고 품질 우려는 10%뿐이다.",
+   "detail": {
+    "year_ago": 23
+   }
+  },
+  {
+   "id": "vercel-anthropic-over-half-spend",
+   "country": "ZZ",
+   "city": null,
+   "metric": "Vercel AI Gateway 의 지출과 토큰 1위",
+   "value": null,
+   "unit": "해당 없음",
+   "asof": "2026-07",
+   "basis": "TechCrunch 가 공개 대시보드를 읽은 것",
+   "definition": null,
+   "quote": "Anthropic still accounts for more than half of the overall AI spend on the platform",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Why the rise of open source AI isn't hurting Anthropic yet",
+     "url": "https://techcrunch.com/2026/07/07/why-the-rise-of-open-source-ai-isnt-hurting-anthropic-yet/",
+     "date": "2026-07-07",
+     "read": "full"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H1": "지지",
+    "H3": "반박"
+   },
+   "side_basis": "토큰 1위는 DeepSeek 이지만 지출의 절반 넘게가 Anthropic 이다. OpenRouter 밖의 채널에서도 같은 모양이다.",
+   "note": "토큰은 옮겨 가도 돈은 프런티어에 남는다는 근거. OpenRouter에서 Opus 4.8의 평균 토큰 단가가 DeepSeek V4 Flash의 약 23배라고 같은 기사가 적는다."
+  },
+  {
+   "id": "ramp-growth-goes-to-cheaper-closed",
+   "country": "ZZ",
+   "city": null,
+   "metric": "프론티어에서 빠진 사용량이 가는 곳(Ramp 9월 지수)",
+   "value": null,
+   "unit": "해당 없음",
+   "asof": "2026-09",
+   "basis": "2차 인용으로 읽었다",
+   "definition": "Ramp 의 법인카드·청구 자료다. 미국 중소·성장 기업 표본이고 모델 서빙 플랫폼 결제를 오픈 모델 사용의 대리 지표로 썼다.",
+   "quote": "most of the growth is going to cheaper closed models such as GPT-5.6 Terra",
+   "sources": [
+    {
+     "n": 1,
+     "title": "US Companies Turn to Open Models as AI Bills Climb",
+     "url": "https://rits.shanghai.nyu.edu/ai/us-companies-turn-to-open-models-as-ai-bills-climb/",
+     "date": "2026-09-28",
+     "read": "full"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "low",
+   "sides": {
+    "H1": "반박",
+    "H3": "반박"
+   },
+   "side_basis": "빠진 물량의 대부분이 오픈 모델이 아니라 더 싼 클로즈드(GPT-5.6 Terra 등)로 갔다고 적었다.",
+   "note": "소형 폐쇄 등급이 잠식되기는커녕 수요를 받아 가고 있다는 반대 근거. 다만 자체 호스팅은 클라우드 청구로 잡혀 Ramp 수치가 공개 모델 사용을 낮게 볼 수 있다고 글에서 밝힌다."
+  }
+ ]
+}
