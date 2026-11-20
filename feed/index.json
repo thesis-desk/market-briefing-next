@@ -1,7 +1,23 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-20T23:09:01+09:00",
+ "generated_kst": "2026-11-20T23:26:47+09:00",
  "reports": [
+  {
+   "slug": "deepmind-institute-principles-for-a-new-utopianism",
+   "type": "article",
+   "title": "Google DeepMind Institute : 종말 회피만으로는 부족하다, AGI 시대에는 겸손한 '새 유토피아'가 필요하다",
+   "companies": [
+    {
+     "name": "Google DeepMind",
+     "ticker": null
+    }
+   ],
+   "published_kst": "2026-11-20T23:20:03+09:00",
+   "revised_kst": "2026-11-20T23:20:03+09:00",
+   "revision": 1,
+   "summary": "구글 딥마인드 산하 연구소 이름으로 나온 이 에세이는 AGI 담론의 무게중심을 위험 관리에서 긍정적 사회 구상으로 옮기자고 주장한다. 구체안으로는 기본소득(UBI) 대신 보편적 기본서비스(UBS)를 내세운다. 실적·밸류에이션에 직접 닿는 정보는 없다. 투자자에게는 AGI 개발사가 사회적 정당성 서사를 어떻게 짜는지 보여 주는 신호 정도로 읽힌다(확신 중간).",
+   "path": "reports/deepmind-institute-principles-for-a-new-utopianism.json"
+  },
   {
    "slug": "menlo-2026-the-state-of-enterprise-ai",
    "type": "article",
@@ -7568,7 +7584,7 @@
   }
  ],
  "street": {
-  "updated_kst": "2026-11-20T21:56:20+09:00",
+  "updated_kst": "2026-11-20T23:26:47+09:00",
   "path": "street.json"
  },
  "calendar": {

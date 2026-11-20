@@ -1,8 +1,48 @@
 {
  "schema": 1,
  "month": "2026-11",
- "updated_kst": "2026-11-20T21:56:20+09:00",
+ "updated_kst": "2026-11-20T23:26:47+09:00",
  "items": [
+  {
+   "id": "ark-cathie-wood-on-ark-s-anthropic-position-our-conf",
+   "group": "자산운용",
+   "org": "ARK Invest",
+   "person": "Cathie Wood",
+   "kind": "publication",
+   "title": "캐시 우드, ARK의 Anthropic 보유에 대해: 시간이 갈수록 확신이 커졌다",
+   "title_orig": "Cathie Wood on ARK's Anthropic position: Our confidence has grown with time",
+   "url": "https://www.youtube.com/watch?v=9s_ufgiiyLY",
+   "outlet": "CNBC Television (유튜브)",
+   "published_kst": "2026-11-20T22:06:38+09:00",
+   "stance": {
+    "ai_tech": 2,
+    "market": 1
+   },
+   "args": [
+    "경쟁·해자",
+    "수요·채택",
+    "밸류에이션",
+    "전력·공급 제약"
+   ],
+   "summary": "캐시 우드는 ARK가 2023년 초부터 보유한 Anthropic에 대한 확신이 시간이 갈수록 커졌고 주가 하락 시 물타기 중이라고 말한다. AI 과열 우려는 '걱정의 벽을 오르는' 국면이며 닷컴 버블과는 다르다고 보고, 컴퓨팅·전력을 쥔 Anthropic·OpenAI·SpaceX/xAI가 유리하다고 주장한다. 중국 모델은 파레토 프런티어에 못 미친다고 본다.",
+   "points": [
+    "Anthropic은 ARK 벤처 펀드에서 단연 최고 수익 종목이며 확신이 흔들리지 않아 물타기 중이다.",
+    "AI 과열과 정치 불안은 걱정의 벽을 오르는 과정이며, 지금은 닷컴 버블이 아니라 80~90년대 상승장에 가깝다고 본다.",
+    "프런티어 최전선은 Anthropic이, 그 나머지 구간은 OpenAI가 장악했고 중국 모델은 프런티어에 못 미친다고 본다.",
+    "궤도 데이터센터 컴퓨팅 비용이 2년 내 지상 컴퓨팅보다 낮아질 것이며 SpaceX가 데이터센터 경쟁에서 앞선다고 본다."
+   ],
+   "evidence": [
+    {
+     "ko": "AI 과열과 정치 불안은 걱정의 벽을 오르는 과정이며, 지금은 닷컴 버블이 아니라 80~90년대 상승장에 가깝다고 본다.",
+     "orig": "I THINK WE'RE CLIMBING A WALL OF WORRY. EVERYBODY IS WORRIED ABOUT AI HYPE AND AND THE POLITICAL SITUATION AFTER THE ELECTION."
+    }
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "유튜브 자막(제작자 제공)(en) 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
+  },
   {
    "id": "blackrock-international-investing-how-are-ai-and-geopoliti",
    "group": "자산운용",
@@ -106,6 +146,50 @@
    "note": "유튜브 자동 생성 자막(en) 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
   },
   {
+   "id": "ark-ant-stock-down-20-from-listing-day-high-cathie-w",
+   "group": "자산운용",
+   "org": "ARK Invest",
+   "person": null,
+   "kind": "report",
+   "title": "ANT 주가 상장일 고점 대비 20% 하락: Cathie Wood \"Anthropic에 대한 확신은 전혀 흔들리지 않았다\"",
+   "title_orig": "ANT Stock Down 20% From Listing Day High: Cathie Wood Says Confidence In Anthropic ‘Has Not Been Shaken At All’",
+   "url": "https://stocktwits.com/news-articles/markets/equity/ant-stock-down-20-from-listing-day-high-cathie-wood-says-confidence-in-anthropic-has-not-been-shaken-at-all/cNbSKOqR9KD",
+   "outlet": "Stocktwits",
+   "published_kst": "2026-11-20T14:43:00+09:00",
+   "stance": {
+    "ai_tech": 2,
+    "market": 1
+   },
+   "args": [
+    "경쟁·해자",
+    "수요·채택",
+    "전력·공급 제약",
+    "밸류에이션"
+   ],
+   "summary": "Cathie Wood는 Anthropic이 ARK 벤처 펀드에서 단연 최고 수익 종목이며, 상장 이후 주가 하락에도 확신은 흔들리지 않았다고 밝혔다. Anthropic이 가격 대비 지능의 파레토 프런티어를 선도하고 중국 모델은 거기에 못 미친다고 보았다. 시장은 '걱정의 벽을 오르고 있다'며 기술 섹터에 낙관적이고, SpaceX의 궤도 컴퓨팅을 AI 경쟁의 복병으로 꼽았다.",
+   "points": [
+    "Anthropic은 벤처 펀드 ARKVX에서 단연 가장 성과가 좋은 주식이며, ARK는 2023년 초부터 Anthropic을 보유해 왔다.",
+    "Anthropic을 매우 면밀히 지켜봐 왔고, Anthropic이 기업(엔터프라이즈) 시장을 사실상 장악하면서 시간이 갈수록 확신이 커졌다. OpenAI와의 경쟁 심화에도 평가는 바뀌지 않았으며, 확신은 전혀 흔들리지 않았다.",
+    "여기에 대한 확신은 전혀 흔들리지 않았다.",
+    "닷컴·통신 버블을 겪지 않은 사람들을 위해 말하면, 그 시절에 Anthropic이 상장했다면 첫날 아마 세 배로 올랐을 것이다. 당시는 그만큼 광기가 있었다. 즉 이번 Anthropic 상장은 1990년대 후반의 투기 과열에 비해 비교적 절제된 것이었다.",
+    "최근 시장 변동성에도 기술 섹터 전반에 대해 낙관을 유지하며, 시장이 '걱정의 벽을 오르고 있다'고 말했다.",
+    "Anthropic은 AI 모델의 가격과 지능 수준의 관계인 파레토 프런티어의 선두에 있고, 나머지 구간은 OpenAI가 지배한다. 중국 모델은 파레토 프런티어에 올라와 있지 않으며, 많은 사람들이 이를 이해하지 못한다고 본다.",
+    "SpaceX는 AI 경쟁의 '복병'이다. 이 게임의 핵심은 컴퓨팅 파워와 에너지이며, 이 세 회사가 어느 쪽으로든 유리한 위치에 있다고 본다.",
+    "궤도 컴퓨팅의 비용이 앞으로 2년 안에 하락해 지상 컴퓨팅 비용보다 낮아질 것으로 믿는다."
+   ],
+   "evidence": [
+    {
+     "ko": "SpaceX는 AI 경쟁의 '복병'이다. 이 게임의 핵심은 컴퓨팅 파워와 에너지이며, 이 세 회사가 어느 쪽으로든 유리한 위치에 있다고 본다.",
+     "orig": "“I think it’s a sleeper,” she said. “I think the name of the game here is computing power and energy or power. And I think these three companies have a preferred position out there, one way or the other.”"
+    }
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
+  },
+  {
    "id": "blackrock-how-ai-and-interest-rates-are-changing-corporate",
    "group": "자산운용",
    "org": "BlackRock",
@@ -138,6 +222,68 @@
     "tier": "standard"
    },
    "note": "유튜브 자동 생성 자막(en) 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
+  },
+  {
+   "id": "bofa-bank-of-america-strategist-warns-doom-loop-could",
+   "group": "투자은행",
+   "org": "Bank of America",
+   "person": null,
+   "kind": "report",
+   "title": "Bank of America 전략가, 월가가 경착륙 위험을 낮게 반영하는 가운데 악순환이 주식에 타격을 줄 수 있다고 경고",
+   "title_orig": "Bank of America strategist warns doom loop could hit stocks with Wall Street underpricing hard-landing risks",
+   "url": "https://www.msn.com/en-us/news/other/bank-of-america-strategist-warns-doom-loop-could-hit-stocks-with-wall-street-underpricing-hard-landing-risks/ar-AA2hQXRG",
+   "outlet": "MarketWatch on MSN",
+   "published_kst": "2026-11-20T13:43:00+09:00",
+   "stance": {
+    "ai_tech": null,
+    "market": -1
+   },
+   "args": [
+    "금리·거시",
+    "밸류에이션"
+   ],
+   "summary": "Hartnett는 S&P 500이 경기침체를 피하는 연착륙 시나리오에서 7,000 아래면 매수할 만한 수준에 다가서고 있지만, 월가가 경착륙 위험을 낮게 반영하고 있다고 경고했다. 실적·GDP 추정치 하향과 비중 축소가 맞물리는 악순환을 우려하며, 투자자는 연준이 인상에서 인하로 돌아설 때까지 위험자산 매수를 기다려야 한다고 봤다.",
+   "points": [
+    "연준이 여전히 월가의 가장 좋은 친구이고 회사채와 S&P 500이 계속 하락한다면, 시장 혼란이 연준의 금리 인상 사이클을 '단락(short-circuit)'시킬 것이다. 하지만 중간선거 이후 연준이 '인플레이션에 강경한 사람'이 된다면 경착륙 위험이 커진다.",
+    "미국이 경기침체를 피하는 연착륙 시나리오에서는 S&P 500이 7,000 아래로 내려가면 매수 대상이 된다.",
+    "경착륙 가능성이 너무 낮게 평가되어 있다고 본다.",
+    "GDP와 주당순이익 추정치가 일단 하향되면 주식 비중이 축소되고 투자자들은 보유한 것만 파는 악순환(doom loop)이 올까 우려한다. 현재 투자자들은 변동성이 낮은 방어주로 '숨어' 있다.",
+    "투자자는 서사가 연준 인상에서 인하로 바뀔 때까지 기다린 뒤, 암호화폐·반도체·구리·소비재·콘도 등 '경기민감 C' 종목을 사야 한다."
+   ],
+   "evidence": [
+    {
+     "ko": "연준이 여전히 월가의 가장 좋은 친구이고 회사채와 S&P 500이 계속 하락한다면, 시장 혼란이 연준의 금리 인상 사이클을 '단락(short-circuit)'시킬 것이다. 하지만 중간선거 이후 연준이 '인플레이션에 강경한 사람'이 된다면 경착륙 위험이 커진다.",
+     "orig": "if the Fed is still Wall Street’s best friend and corporate credit and the S&P 500 continue to slide, market turmoil will “short-circuit” the Fed rate-hike cycle. But if the Fed is now an “inflation tough guy” after the midterms, the hard-landing risks grow."
+    }
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
+  },
+  {
+   "id": "damodaran-aswath-damodaran-sets-140-nvidia-limit-buy-after",
+   "group": "투자 거장",
+   "org": "NYU Stern",
+   "person": "Aswath Damodaran",
+   "kind": "report",
+   "title": "다모다란, 젠슨 황 퇴진 후 엔비디아 140달러 지정가 매수 설정…팀 쿡은 위기 시 임시 CEO 외에는 부적합",
+   "title_orig": "Aswath Damodaran sets $140 Nvidia limit buy after Jensen Huang exit, calls Tim Cook not a good fit except as temporary CEO during crisis",
+   "url": "https://www.msn.com/en-us/money/technology/aswath-damodaran-sets-140-nvidia-limit-buy-after-jensen-huang-exit-calls-tim-cook-not-a-good-fit-except-as-temporary-ceo-during-crisis/ar-AA2hRujY",
+   "outlet": "Benzinga on MSN",
+   "published_kst": "2026-11-20T12:56:27+09:00",
+   "stance": {
+    "ai_tech": -1,
+    "market": null
+   },
+   "args": [
+    "밸류에이션"
+   ],
+   "judged": {
+    "basis": "headline_only",
+    "tier": "light"
+   }
   },
   {
    "id": "vanguard-vanguard-warned-about-risks-of-ai-boom-in-2027-a",
