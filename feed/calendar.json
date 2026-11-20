@@ -516,8 +516,8 @@
    "official": false,
    "source_url": "https://stockanalysis.com/stocks/dell/transcripts/382878-q4-2026/",
    "consensus_snapshot": false,
-   "report_slug": null,
-   "status": "queued",
+   "report_slug": "dell-4q26-earnings",
+   "status": "published",
    "note": "원문이 올라온 것을 보고 넣은 일정"
   },
   {
@@ -558,8 +558,8 @@
    "official": false,
    "source_url": "https://stockanalysis.com/stocks/avgo/transcripts/529911-q1-2026/",
    "consensus_snapshot": false,
-   "report_slug": null,
-   "status": "queued",
+   "report_slug": "broadcom-1q26-earnings",
+   "status": "published",
    "note": "원문이 올라온 것을 보고 넣은 일정"
   },
   {

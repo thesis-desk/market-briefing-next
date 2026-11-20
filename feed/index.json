@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-20T18:46:14+09:00",
+ "generated_kst": "2026-11-20T18:50:46+09:00",
  "reports": [
   {
    "slug": "nvidia-dev-build-tool-calling-parsers-in-rust-with-ai-agents",
@@ -3035,6 +3035,24 @@
    "path": "reports/lumentum-4q26-earnings.json"
   },
   {
+   "slug": "broadcom-1q26-earnings",
+   "type": "earnings",
+   "title": "Broadcom 1Q26 실적발표 : 2027년 AI 칩 1,000억 달러 가시권, 랙 마진 희석 우려 철회",
+   "companies": [
+    {
+     "name": "Broadcom",
+     "ticker": "AVGO"
+    }
+   ],
+   "event": "1Q26 실적 발표",
+   "event_date": "2026-03-04",
+   "published_kst": "2026-03-04T21:00:00+09:00",
+   "revised_kst": "2026-11-20T18:48:59+09:00",
+   "revision": 1,
+   "summary": "AI 반도체가 가이던스를 넘고 2Q 가이던스에서 전년 대비 +140%로 더 가속했다. 회사는 2027년 AI 칩 매출 1,000억 달러 초과(약 10GW)를 고객별 물량과 함께 제시했고, 직전 분기에 예고했던 랙 판매에 따른 마진 희석은 크지 않다며 사실상 거둬들였다. 남은 약점은 소프트웨어 성장 둔화, 그리고 수주잔고와 랙 매출을 공개하지 않은 점이다.",
+   "path": "reports/broadcom-1q26-earnings.json"
+  },
+  {
    "slug": "coreweave-4q25-earnings",
    "type": "earnings",
    "title": "CoreWeave 4Q25 실적발표 : CapEx 두 배, 마진은 1분기 바닥",
@@ -3051,6 +3069,24 @@
    "revision": 1,
    "summary": "매출과 백로그는 커졌지만 이익은 증설 속도와 이자 부담에 눌렸다. 2026년에는 CapEx 300~350억 달러를 쓰면서 마진이 1분기에 바닥을 찍고 4분기에 두 자릿수 초반으로 돌아온다고 약속했다. 판단은 증설 속도보다 마진 회복과 금리 하락이 실제로 이뤄지는지에 달렸다.",
    "path": "reports/coreweave-4q25-earnings.json"
+  },
+  {
+   "slug": "dell-4q26-earnings",
+   "type": "earnings",
+   "title": "Dell Technologies 4Q26 실적발표 : AI 백로그 430억 달러로 급증, PC 마진은 가격 인상 지연에 후퇴",
+   "companies": [
+    {
+     "name": "Dell Technologies",
+     "ticker": "DELL"
+    }
+   ],
+   "event": "4Q26 실적 발표",
+   "event_date": "2026-02-26",
+   "published_kst": "2026-02-26T21:00:00+09:00",
+   "revised_kst": "2026-11-20T18:50:46+09:00",
+   "revision": 1,
+   "summary": "4Q26은 AI 수주 341억 달러와 기말 백로그 430억 달러로 FY27 AI 매출 가이던스 500억 달러의 대부분을 이미 확보한 분기였다. 반면 FY27 가이던스는 AI를 뺀 사업이 거의 늘지 않는 구조이고, PC 마진은 메모리 원가 급등 속에서 가격 인상을 늦춘 탓에 6%에서 4.7%로 내려갔다.",
+   "path": "reports/dell-4q26-earnings.json"
   },
   {
    "slug": "talen-energy-4q25-earnings",
