@@ -11,7 +11,7 @@
 | 경로 | 내용 |
 | --- | --- |
 | `index.json` | 목록. 가장 먼저 읽는 파일 |
-| `reports/<슬러그>.json` | 리포트 1건(실적 발표·투자자의 날·인터뷰·글 분석·종합·행사 정리·조사 리포트) |
+| `reports/<슬러그>.json` | 리포트 1건(실적 발표·투자자의 날·인터뷰·글 분석·행사 정리). 비밀번호로 잠근 유형(종합·조사 리포트, `config/site.toml`의 `[sealed]`)은 싣지 않는다 |
 | `street.json` | 금융권 시각 최근 30일 항목과 지수 |
 | `street/YYYY-MM.json` | 금융권 시각 월별 보관(한국시간 공개 월) |
 | `calendar.json` | 실적·투자자의 날 일정과 대기 목록 |
@@ -53,7 +53,7 @@
 
 - `generated_kst` 는 빌드 시각이 아니라 **가장 최근에 바뀐 기록의 시각**이다. 내용이 그대로면 이 값도 그대로다.
 - `datasets` 는 조사 자료 묶음의 목록이다: `[{"id": "apac-siting", "path": "data/apac-siting/index.json", "updated_kst": "…"}]`. 묶음이 하나도 없으면 키가 없다. `updated_kst` 는 기록이 아직 없으면 `null`.
-- `type`: `earnings` | `investor_day` | `interview` | `article` | `synthesis` | `event`(행사 정리) | `research`(조사 리포트).
+- `type`: `earnings` | `investor_day` | `interview` | `article` | `event`(행사 정리). 종합(`synthesis`)·조사 리포트(`research`)는 잠가 싣지 않는다.
 - `companies[].ticker` 는 없으면 `null`. `event`·`event_date` 는 있을 때만.
 - `revision` 은 처음 게시할 때 1이다. `revised_kst` 는 고친 적이 없으면 `published_kst` 와 같다.
 - `path` 는 `feed/` 기준 상대 경로다.
@@ -116,8 +116,8 @@
 | `investor_view` | 투자자 관점 | 투자자 관점 | investor |
 
 - 전사본이 없어 콜 정리를 싣지 못한 리포트도 `prepared`·`qa` 절은 있다. 그 사실을 `view` 블록 하나로 적는다.
-- 인터뷰·글 분석·종합·행사 정리·조사 리포트는 화면의 절을 그대로 내보낸다. `id` 는 순번(`s1`, `s2` …)이고 `layer` 는 모두 `common` 이다.
-- 조사 리포트(`research`)는 조사 자료 묶음(`data/<id>/`)에서 쓴 중립 리포트다. 표의 값은 묶음 파일의 값 그대로이고, 여러 기록에서 온 표는 `src` 가 묶음 파일(출처 `kind` 가 `dataset`)을 가리키며 `loc` 에 기록 id 가 있다. `companies` 는 조사 대상 회사다.
+- 인터뷰·글 분석·행사 정리는 화면의 절을 그대로 내보낸다. `id` 는 순번(`s1`, `s2` …)이고 `layer` 는 모두 `common` 이다.
+- 종합·조사 리포트(`synthesis`·`research`)는 비밀번호로 잠가 `feed/` 에 싣지 않는다(`config/site.toml` 의 `[sealed]`). 조사 자료 묶음(`data/<id>/`)은 그대로 나가고, 묶음에서 쓴 조사 리포트는 자체 분석 탭에서 잠겨 있다.
 - 출처 목록(`sources`)과 작성·검토 기록(`review`)은 절이 아니라 최상위 필드다.
 
 ### 블록 `kind`

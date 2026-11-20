@@ -363,58 +363,6 @@
    "path": "reports/sixsigma-11-17.json"
   },
   {
-   "slug": "x-substack-price-impact",
-   "type": "research",
-   "title": "X·Substack 의 글은 주가를 움직이는가 : 사례 11건의 해부",
-   "companies": [
-    {
-     "name": "NVIDIA",
-     "ticker": null
-    },
-    {
-     "name": "Micron",
-     "ticker": null
-    },
-    {
-     "name": "AMD",
-     "ticker": null
-    },
-    {
-     "name": "Bloom Energy",
-     "ticker": null
-    },
-    {
-     "name": "Applied Optoelectronics",
-     "ticker": null
-    },
-    {
-     "name": "Visa",
-     "ticker": null
-    },
-    {
-     "name": "오로스테크놀로지",
-     "ticker": null
-    },
-    {
-     "name": "에이피알",
-     "ticker": null
-    },
-    {
-     "name": "SK하이닉스",
-     "ticker": null
-    },
-    {
-     "name": "삼성전자",
-     "ticker": null
-    }
-   ],
-   "published_kst": "2026-11-20T19:23:08+09:00",
-   "revised_kst": "2026-11-20T19:23:08+09:00",
-   "revision": 1,
-   "summary": "주가 급변의 계기로 지목됐거나 이름난 계정이 종목을 겨냥한 X·Substack 글 11건을 일별 시세로 쟀다. 언론이 주가 움직임을 글 탓으로 돌린 7건 가운데 지목된 종목이 평소 하루 변동의 두 배 넘게 움직인 것은 3건(엔비디아 25-01 −16.97%, 비자 −4.50%, 오로스테크놀로지 +30.00%)이고, 그런 보도가 없는 4건에서는 없었다. 한 건 차이의 판정이다 — SOCAMM 건의 마이크론은 사건 다음 날의 −13.25% 가 기준을 넘는다. 20거래일 뒤 절반 넘게 되돌린 것은 7건 가운데 3건이고, 한국 텔레그램에는 8건 가운데 6건이 사건 거래일 종가 전에 닿았다.",
-   "path": "reports/x-substack-price-impact.json"
-  },
-  {
    "slug": "nvidia-dev-build-tool-calling-parsers-in-rust-with-ai-agents",
    "type": "article",
    "title": "NVIDIA Technical Blog : 도구 호출 파서는 사람이 검토한 기대값과 공용 적합성 테스트 묶음 위에서 AI 에이전트로 만든다",
@@ -702,70 +650,6 @@
    "path": "reports/20vc-will-jensen-return-to-nvidia-kalshi-mercor-fractile.json"
   },
   {
-   "slug": "ai-compute-balance",
-   "type": "research",
-   "title": "AI 컴퓨팅 수급 대조 : 누가 얼마나 갖고, 누가 얼마나 쓰며, 얼마를 치르는가",
-   "companies": [
-    {
-     "name": "Anthropic",
-     "ticker": null
-    },
-    {
-     "name": "OpenAI",
-     "ticker": null
-    },
-    {
-     "name": "NVIDIA",
-     "ticker": null
-    },
-    {
-     "name": "Broadcom",
-     "ticker": null
-    },
-    {
-     "name": "AMD",
-     "ticker": null
-    },
-    {
-     "name": "MediaTek",
-     "ticker": null
-    },
-    {
-     "name": "Microsoft",
-     "ticker": null
-    },
-    {
-     "name": "Alphabet",
-     "ticker": null
-    },
-    {
-     "name": "Amazon",
-     "ticker": null
-    },
-    {
-     "name": "Meta",
-     "ticker": null
-    },
-    {
-     "name": "Oracle",
-     "ticker": null
-    },
-    {
-     "name": "CoreWeave",
-     "ticker": null
-    },
-    {
-     "name": "SpaceX",
-     "ticker": null
-    }
-   ],
-   "published_kst": "2026-11-19T23:21:38+09:00",
-   "revised_kst": "2026-11-19T23:21:38+09:00",
-   "revision": 1,
-   "summary": "칩 회사의 매출, 클라우드 회사의 설비투자, 연구소의 지출을 공시에서 모으고 외부 추정(Epoch AI)·보도와 맞대면 돈으로는 대체로 맞춰진다 — 엔비디아의 하이퍼스케일 매출은 다섯 회사 분기 설비투자의 25.3%이고, 매출을 추정 칩 전력으로 나눈 값은 네 분기 동안 칩 GW당 398억~415억 달러 안에 있었다. 앤트로픽의 S-1 은 2026년 3분기 컴퓨트 비용 99억 달러, 1~9월 고객 서비스 몫 25.6% 이하, 약정 약 9,009억 달러를 보여 준다. 그 가운데 구글 호스팅 최소 약정(1,213억 달러)은 구글 클라우드 수주잔고의 21.6%, 아마존 최소 약정(1,100억 달러)은 AWS 수주잔고의 19.0% 크기다(약정이 수주잔고에 그대로 잡혔다고 볼 때). 전력(GW)으로는 임대 사업자와 xAI 까지만 공시로 맞춰지고 연구소의 용량은 조건부 범위로만 나온다. 알파벳과 메타는 가동 용량을 밝히지 않는다. 중국과 동남아 경로는 Epoch AI 가 세관 자료로 추정한 칩 전력 기준으로 세계 칩 수입의 13.8%이고, 남아 있는 동남아 경로는 모두 중국 관련이라고 봐도 4.1% 이하다.",
-   "path": "reports/ai-compute-balance.json"
-  },
-  {
    "slug": "sixsigma-gdp-10-ai",
    "type": "article",
    "title": "식스시그마 : 머스크는 움직이는 AI가 경제를 10배 키운다고 보고, 사이버캡은 AI 사용료를 매달 받는 구조로 팔기 시작했다",
@@ -950,46 +834,6 @@
    "revision": 1,
    "summary": "머스크는 Starship 상단을 처음 회수했다는 실증을 발판으로 세 가지 구상을 내놨다. xAI 학습 스택 전면 재작성, 월 0.5GW(발전소 기준) 컴퓨트 증설, Terafab과 우주 컴퓨트로 이어지는 수직 통합이다. 실적으로 확인된 것은 발사체뿐이다. 나머지는 단가·재원·외부 검증이 없는 일정 약속이어서, 원문이 받쳐 주는 판정은 Tesla 약한 호재와 엔비디아 중립 정도다.",
    "path": "reports/tomorrowx-2026-elon-musk-on-why-the-future-should-make-you.json"
-  },
-  {
-   "slug": "ai-knowledge-work-runway",
-   "type": "research",
-   "title": "AI 와 범용 지식노동 : 갈 길은 얼마나 남았고, 지금의 투자는 회수되는가",
-   "companies": [
-    {
-     "name": "Anthropic",
-     "ticker": null
-    },
-    {
-     "name": "OpenAI",
-     "ticker": null
-    },
-    {
-     "name": "Microsoft",
-     "ticker": null
-    },
-    {
-     "name": "Alphabet",
-     "ticker": null
-    },
-    {
-     "name": "Amazon",
-     "ticker": null
-    },
-    {
-     "name": "Meta",
-     "ticker": null
-    },
-    {
-     "name": "Oracle",
-     "ticker": null
-    }
-   ],
-   "published_kst": "2026-11-19T16:15:24+09:00",
-   "revised_kst": "2026-11-19T16:15:24+09:00",
-   "revision": 1,
-   "summary": "AI 는 코딩 밖으로 번지고 있지만 코딩 도구와 랩 전체보다 느리다. 성장 여지는 어느 방법으로 재도 크다 — 지식노동 임금 합은 18.2조 달러를 넘고 두 랩의 연환산 매출은 그 1% 에 못 미치며, 납품물을 재는 역량 지표는 값이 있는 마지막 시점까지 올랐다. 그 여지를 메우고 있는지는 근거가 갈린다 — 쓸모는 실험에서는 크지만 임금·고용을 본 행정 자료와 임원 조사에서는 작거나 없다. 투자가 요구하는 매출은 데스크 모델의 가운데 값(연 2.5조 달러, 범위 1.5조~4.1조 달러)으로 두 랩 연환산 매출의 17.5배다. 두 가설 모두 엇갈림으로 판정한다.",
-   "path": "reports/ai-knowledge-work-runway.json"
   },
   {
    "slug": "tomorrowx-2026-meta-president-dina-powell-mccormick-on-data",
@@ -1232,88 +1076,6 @@
    "path": "reports/big-technology-ai-stockpocalypse-anthropic-nears-rsi.json"
   },
   {
-   "slug": "openrouter-tokens-vs-spend-2026-11",
-   "type": "synthesis",
-   "title": "OpenRouter : 토큰은 중국 오픈 모델이, 추정 결제액은 미국 클로즈드 모델이 많다 (최근 30일)",
-   "companies": [
-    {
-     "name": "OpenRouter",
-     "ticker": null
-    },
-    {
-     "name": "Anthropic",
-     "ticker": null
-    },
-    {
-     "name": "OpenAI",
-     "ticker": null
-    },
-    {
-     "name": "Google",
-     "ticker": null
-    },
-    {
-     "name": "DeepSeek",
-     "ticker": null
-    },
-    {
-     "name": "Tencent",
-     "ticker": null
-    }
-   ],
-   "event": "OpenRouter 모델별 사용량 분석",
-   "event_date": "2026-11-19",
-   "published_kst": "2026-11-19T10:44:39+09:00",
-   "revised_kst": "2026-11-20T17:30:21+09:00",
-   "revision": 3,
-   "summary": "OpenRouter 를 지나는 토큰은 1년 사이 32배(주 6.2조 → 200.6조)가 됐고 늘어난 물량의 대부분은 중국 오픈 모델이다. 그러나 최근 30일을 단가로 환산하면 순서가 뒤집힌다. 최근 30일 토큰의 70%를 처리한 중국 제작사의 추정 결제액 비중은 37~39%이고, 토큰 25%의 미국 대형사가 60~62%다. Anthropic 은 토큰 7%로 추정 결제액의 28~39%를 가져갔다. 금액은 공개되지 않아 토큰량 × 단가로 낸 데스크 추정이며 캐시 비율을 몰라 절대액의 폭이 6.6배다.",
-   "path": "reports/openrouter-tokens-vs-spend-2026-11.json"
-  },
-  {
-   "slug": "apac-ai-siting-korea-ref",
-   "type": "research",
-   "title": "아시아·태평양 AI 컴퓨트 입지 비교 : 참고 자료",
-   "companies": [
-    {
-     "name": "AWS",
-     "ticker": null
-    },
-    {
-     "name": "Microsoft",
-     "ticker": null
-    },
-    {
-     "name": "Google",
-     "ticker": null
-    },
-    {
-     "name": "Oracle",
-     "ticker": null
-    },
-    {
-     "name": "Meta",
-     "ticker": null
-    },
-    {
-     "name": "OpenAI",
-     "ticker": null
-    },
-    {
-     "name": "Anthropic",
-     "ticker": null
-    },
-    {
-     "name": "xAI",
-     "ticker": null
-    }
-   ],
-   "published_kst": "2026-11-19T08:52:53+09:00",
-   "revised_kst": "2026-11-19T08:52:53+09:00",
-   "revision": 1,
-   "summary": "본문 「아시아·태평양 AI 컴퓨트 입지 비교 : 한국은 권역 거점이 될 수 있나」의 판단을 받치는 표와 계산이다. 비용의 크기, 미국 밖의 300MW 이상 계획 14건, 전력 심사와 접속, 한국의 건별 현황과 500MW 의 사업비, 랩 용량의 쓰임별 집계, 그 밖의 조건 열두 요인, 두 가설의 판정, 자료의 범위를 싣는다.",
-   "path": "reports/apac-ai-siting-korea-ref.json"
-  },
-  {
    "slug": "citi-citi-ceo-jane-fraser-on-ai-tech-outages-newsmake",
    "type": "article",
    "title": "Citi(제인 프레이저) : AI 투자와 기술 장애·인플레이션의 위험은 실재하지만 관리할 수 있고, 은행은 통제가 갖춰질 때만 빠르게 간다",
@@ -1428,50 +1190,6 @@
    "revision": 1,
    "summary": "올트먼은 AI 수요 자체는 의심하지 않으면서도, 칩 공급망이 같은 소수 고객의 수요를 겹쳐 세고 있다고 공개적으로 인정했다. 엔비디아 외 칩 공급망에는 약한 경고이고, 메모리에는 단기 호재와 중기 증산 위험이 함께 있다. 데이터센터 반발은 해법이 제시되지 않은 정치 리스크로 남았다.",
    "path": "reports/semafor-sam-altman-on-jensen-huang-anthropic-s-ipo-and.json"
-  },
-  {
-   "slug": "apac-ai-siting-korea",
-   "type": "research",
-   "title": "아시아·태평양 AI 컴퓨트 입지 비교 : 한국은 권역 거점이 될 수 있나",
-   "companies": [
-    {
-     "name": "AWS",
-     "ticker": null
-    },
-    {
-     "name": "Microsoft",
-     "ticker": null
-    },
-    {
-     "name": "Google",
-     "ticker": null
-    },
-    {
-     "name": "Oracle",
-     "ticker": null
-    },
-    {
-     "name": "Meta",
-     "ticker": null
-    },
-    {
-     "name": "OpenAI",
-     "ticker": null
-    },
-    {
-     "name": "Anthropic",
-     "ticker": null
-    },
-    {
-     "name": "xAI",
-     "ticker": null
-    }
-   ],
-   "published_kst": "2026-11-19T00:32:22+09:00",
-   "revised_kst": "2026-11-19T08:52:53+09:00",
-   "revision": 3,
-   "summary": "미국 밖에서 500MW 급 단일 부지가 착공에 이른 길은 둘이다 — 전원과 자본이 준비된 곳의 권역·세계용 부지(아부다비, 앨버타)와, 국내 수요를 한 주체가 모아 짓는 부지(인도의 릴라이언스, Google). 한국은 어느 쪽에도 들지 못했다. 국내 수요는 GPU 26만 장(최대) 공급 계획으로 가늠되고 언론은 500~600MW 로 추정하지만, 여러 주체로 나뉘어 한 곳에 40~270MW 로 계획돼 있다. 성사된 건에서 읽은 권역·세계용의 조건(계통 대기를 피하는 전원, 스스로 돈을 대는 주체)과 권역 거점의 조건(도달 범위, 국제 네트워크)도 갖추지 못했다. 판단을 가장 크게 바꿀 수 있는 계기는 울산 900MW 확장의 계약이다.",
-   "path": "reports/apac-ai-siting-korea.json"
   },
   {
    "slug": "tencent-3q26-earnings",
