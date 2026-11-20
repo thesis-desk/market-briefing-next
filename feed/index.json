@@ -1,7 +1,31 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-20T10:34:31+09:00",
+ "generated_kst": "2026-11-20T11:24:16+09:00",
  "reports": [
+  {
+   "slug": "big-technology-storm-clouds-ahead-for-apple-debating-amazon",
+   "type": "interview",
+   "title": "M.G. Siegler 인터뷰 : 메모리 비용에 꺾인 Apple 마진, iPhone Duo와 Amazon Bee Frontier",
+   "companies": [
+    {
+     "name": "Apple",
+     "ticker": null
+    },
+    {
+     "name": "Amazon",
+     "ticker": null
+    },
+    {
+     "name": "OpenAI",
+     "ticker": null
+    }
+   ],
+   "published_kst": "2026-11-20T11:24:16+09:00",
+   "revised_kst": "2026-11-20T11:24:16+09:00",
+   "revision": 1,
+   "summary": "AI 지출을 피한 Apple이 메모리 가격이라는 경로로 AI 붐의 비용을 나눠 내기 시작했다. 가격 인상과 고가 신제품(Duo)이 이를 얼마나 상쇄할지가 다음 몇 분기의 쟁점이다. 근거는 숫자보다 출연자의 기억과 정성 평가에 기대고 있어 실적 자료로 확인해야 한다.",
+   "path": "reports/big-technology-storm-clouds-ahead-for-apple-debating-amazon.json"
+  },
   {
    "slug": "big-technology-why-the-anthropic-ipo-will-succeed-with-aaron",
    "type": "interview",
