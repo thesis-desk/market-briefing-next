@@ -1,7 +1,25 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-20T22:56:45+09:00",
+ "generated_kst": "2026-11-20T23:03:54+09:00",
  "reports": [
+  {
+   "slug": "pdd-3q26-earnings",
+   "type": "earnings",
+   "title": "PDD Holdings 3Q26 실적발표 : 거래 서비스 −12%, 판촉비 줄여 마진 30%",
+   "companies": [
+    {
+     "name": "PDD Holdings",
+     "ticker": "PDD"
+    }
+   ],
+   "event": "3Q26 실적 발표",
+   "event_date": "2026-11-19",
+   "published_kst": "2026-11-20T23:03:08+09:00",
+   "revised_kst": "2026-11-20T23:03:08+09:00",
+   "revision": 1,
+   "summary": "매출은 1,083억 위안으로 전년 수준에 멈췄습니다. 거래 서비스 매출은 12% 줄었습니다. 그런데도 판매·마케팅비를 크게 줄여 비GAAP 영업이익률이 30%(전년 약 25%)로 올랐습니다. 다만 영업 아래 항목이 전년 대비 약 60억 위안 나빠져 순이익은 전년 수준에 머물렀고, 회사는 이 마진을 외삽하지 말라고 못 박았습니다.",
+   "path": "reports/pdd-3q26-earnings.json"
+  },
   {
    "slug": "tomorrowx-2026-your-brain-runs-on-20-watts-lessons-from",
    "type": "interview",
@@ -3213,6 +3231,60 @@
    "path": "reports/anthropic-s-1.json"
   },
   {
+   "slug": "constellation-energy-3q26-earnings",
+   "type": "earnings",
+   "title": "Constellation Energy 3Q26 실적발표 : 장기계약 4.6GW 추가, 연간 가이던스 재상향",
+   "companies": [
+    {
+     "name": "Constellation Energy",
+     "ticker": "CEG"
+    }
+   ],
+   "event": "3Q26 실적 발표",
+   "event_date": "2026-11-09",
+   "published_kst": "2026-11-09T21:00:00+09:00",
+   "revised_kst": "2026-11-20T23:03:54+09:00",
+   "revision": 1,
+   "summary": "3Q 조정 영업 EPS 5.06달러로 연간 가이던스를 두 분기 연속 올렸다. 더 큰 변화는 이익의 기간 구조다. 2032년 무탄소 기저 발전의 약 45%가 2040년대까지 장기계약으로 묶였고, 출력 증강 외의 계약 경로(Peak+)가 첫 건을 냈다. 다만 계약 가격은 여전히 공개되지 않았고, 올해 초과 이익 중 상업 부문 몫은 회사도 반복을 장담하지 않는다.",
+   "path": "reports/constellation-energy-3q26-earnings.json"
+  },
+  {
+   "slug": "oklo-3q26-earnings",
+   "type": "earnings",
+   "title": "Oklo 3Q26 실적발표 : Aurora 가동에 1년 완충, 설비 집행은 가속",
+   "companies": [
+    {
+     "name": "Oklo",
+     "ticker": "OKLO"
+    }
+   ],
+   "event": "3Q26 실적 발표",
+   "event_date": "2026-11-06",
+   "published_kst": "2026-11-06T21:00:00+09:00",
+   "revised_kst": "2026-11-20T23:02:45+09:00",
+   "revision": 1,
+   "summary": "3분기 설비투자는 1.54억 달러(역산)로 연간 가이던스를 맞출 속도까지 올라왔고, 영업손실은 2분기 수준에서 멈췄다. 반면 10-Q가 Aurora-INL 가동 시점을 2028~2029년으로 적으면서 첫 호기 일정에 1년의 완충이 생겼다. 총비용·PPA 단가·구속력 있는 계약 같은 상업 조건은 이번에도 나오지 않았다.",
+   "path": "reports/oklo-3q26-earnings.json"
+  },
+  {
+   "slug": "vistra-3q26-earnings",
+   "type": "earnings",
+   "title": "Vistra 3Q26 실적발표 : 2026년 범위 상향 축소, 2027년 첫 가이던스 $7.7~8.5B",
+   "companies": [
+    {
+     "name": "Vistra",
+     "ticker": "VST"
+    }
+   ],
+   "event": "3Q26 실적 발표",
+   "event_date": "2026-11-06",
+   "published_kst": "2026-11-06T21:00:00+09:00",
+   "revised_kst": "2026-11-20T23:02:01+09:00",
+   "revision": 1,
+   "summary": "3분기 조정 EBITDA $2.378B는 사상 최대다. 이를 바탕으로 2026년 가이던스를 중간값을 올려 좁혔고, 2027년 가이던스 $7.7~8.5B를 처음 내놨다. 다만 2027년 중간값은 직전 분기에 '하단 쪽'이라던 기존 사업에 Cogentrix·Meta 기여(약 $700M)를 더한 값과 같다. ERCOT 가격 약세, 텍사스 정치 변수, 아직 서명되지 않은 원전 PPA는 그대로 남았다.",
+   "path": "reports/vistra-3q26-earnings.json"
+  },
+  {
    "slug": "wiwynn-3q26-earnings",
    "type": "earnings",
    "title": "Wiwynn 3Q26 실적발표 : 매출 56% 점프, 성장의 값은 차입과 증자로",
@@ -3249,6 +3321,24 @@
    "path": "reports/hua-hong-3q26-earnings.json"
   },
   {
+   "slug": "iren-1q27-earnings",
+   "type": "earnings",
+   "title": "IREN 1Q27 실적발표 : 40억 달러 ARR 1~2월로 지연, 자금시장 탓에 CapEx 감속",
+   "companies": [
+    {
+     "name": "IREN",
+     "ticker": "IREN"
+    }
+   ],
+   "event": "1Q27 실적 발표",
+   "event_date": "2026-11-05",
+   "published_kst": "2026-11-05T21:00:00+09:00",
+   "revised_kst": "2026-11-20T23:00:59+09:00",
+   "revision": 1,
+   "summary": "AI 클라우드 매출이 2억 달러로 약 3배 늘고 조정 EBITDA 마진이 14%에서 29%로 올라 손익이 보이기 시작했습니다. 반면 40억 달러 운영 ARR 목표는 12월에서 1월(늦으면 2월 말)로 밀렸고, FY27 CapEx는 자금시장 사정으로 약 200억 달러로 내려갔습니다. 수요와 단가 신호는 강해졌지만 판단의 열쇠는 남은 60억 달러 조달과 첫 데이터센터 금융입니다.",
+   "path": "reports/iren-1q27-earnings.json"
+  },
+  {
    "slug": "ntt-data-2q27-earnings",
    "type": "earnings",
    "title": "NTT DATA Group 2Q27 실적발표 : 국내는 수주 급증, 해외는 매각이익 빼면 제자리",
@@ -3265,6 +3355,24 @@
    "revision": 1,
    "summary": "상반기 매출은 10.9% 늘었지만 영업이익은 전년 DC 매각이익 1,295억엔이 사라져 46.4% 줄었다. 매각이익을 빼면 국내가 이익 성장을 이끌었고 해외는 제자리였다. 연간 영업이익 4,700억엔 달성은 하반기 국내 실적과, 계획에 들어 있는 것으로 추정되는 약 700억엔 규모의 DC 매각이익 실현에 달려 있다.",
    "path": "reports/ntt-data-2q27-earnings.json"
+  },
+  {
+   "slug": "arista-3q26-earnings",
+   "type": "earnings",
+   "title": "Arista Networks 3Q26 실적발표 : 상장 후 최고 성장, 2027년 +38~40% 첫 제시",
+   "companies": [
+    {
+     "name": "Arista Networks",
+     "ticker": "ANET"
+    }
+   ],
+   "event": "3Q26 실적 발표",
+   "event_date": "2026-11-03",
+   "published_kst": "2026-11-03T21:00:00+09:00",
+   "revised_kst": "2026-11-20T22:59:10+09:00",
+   "revision": 1,
+   "summary": "3Q26 매출 $3.66B(+58.5%)로 가이던스를 크게 넘겼고, 연간 목표를 올해 네 번째로 올렸으며, 2027년 매출 약 $18.5B·영업이익률 약 49%를 처음 내놓았다. 다만 제품 이연매출이 줄고 재고가 $3.2B로 늘었다. 이번 매출에 이연 해소가 얼마나 기여했는지는 답해지지 않았다.",
+   "path": "reports/arista-3q26-earnings.json"
   },
   {
    "slug": "eaton-3q26-earnings",
