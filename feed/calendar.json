@@ -1454,8 +1454,8 @@
    "official": false,
    "source_url": "https://stockanalysis.com/stocks/anet/transcripts/661010-q2-2026/",
    "consensus_snapshot": false,
-   "report_slug": null,
-   "status": "queued",
+   "report_slug": "arista-2q26-earnings",
+   "status": "published",
    "note": "원문이 올라온 것을 보고 넣은 일정"
   },
   {
@@ -1468,8 +1468,8 @@
    "official": false,
    "source_url": "https:///files/doc_financials/2026/q2/SpaceX-Reports-Second-Quarter-2026-Results.pdf",
    "consensus_snapshot": false,
-   "report_slug": null,
-   "status": "queued",
+   "report_slug": "spacex-2q26-earnings",
+   "status": "published",
    "note": "원문이 올라온 것을 보고 넣은 일정"
   },
   {
@@ -1482,8 +1482,8 @@
    "official": false,
    "source_url": "https://stockanalysis.com/stocks/sndk/transcripts/658567-q4-2026/",
    "consensus_snapshot": false,
-   "report_slug": null,
-   "status": "queued",
+   "report_slug": "sandisk-4q26-earnings",
+   "status": "published",
    "note": "원문이 올라온 것을 보고 넣은 일정"
   },
   {
@@ -1496,8 +1496,8 @@
    "official": false,
    "source_url": "https://stockanalysis.com/stocks/tln/transcripts/660922-q2-2026/",
    "consensus_snapshot": false,
-   "report_slug": null,
-   "status": "queued",
+   "report_slug": "talen-energy-2q26-earnings",
+   "status": "published",
    "note": "원문이 올라온 것을 보고 넣은 일정"
   },
   {
@@ -1510,8 +1510,8 @@
    "official": false,
    "source_url": "https://stockanalysis.com/stocks/ceg/transcripts/665938-q2-2026/",
    "consensus_snapshot": false,
-   "report_slug": null,
-   "status": "queued",
+   "report_slug": "constellation-energy-2q26-earnings",
+   "status": "published",
    "note": "원문이 올라온 것을 보고 넣은 일정"
   },
   {
@@ -1524,8 +1524,8 @@
    "official": false,
    "source_url": "https://stockanalysis.com/stocks/oklo/transcripts/666873-q2-2026/",
    "consensus_snapshot": false,
-   "report_slug": null,
-   "status": "queued",
+   "report_slug": "oklo-2q26-earnings",
+   "status": "published",
    "note": "원문이 올라온 것을 보고 넣은 일정"
   },
   {
@@ -1538,8 +1538,8 @@
    "official": false,
    "source_url": "https://stockanalysis.com/stocks/vst/transcripts/662288-q2-2026/",
    "consensus_snapshot": false,
-   "report_slug": null,
-   "status": "queued",
+   "report_slug": "vistra-2q26-earnings",
+   "status": "published",
    "note": "원문이 올라온 것을 보고 넣은 일정"
   },
   {
@@ -1552,8 +1552,8 @@
    "official": false,
    "source_url": "https://stockanalysis.com/stocks/crwv/transcripts/662772-q2-2026/",
    "consensus_snapshot": false,
-   "report_slug": null,
-   "status": "queued",
+   "report_slug": "coreweave-2q26-earnings",
+   "status": "published",
    "note": "원문이 올라온 것을 보고 넣은 일정"
   },
   {
@@ -1580,8 +1580,8 @@
    "official": false,
    "source_url": "https://stockanalysis.com/stocks/smci/transcripts/660964-q4-2026/",
    "consensus_snapshot": false,
-   "report_slug": null,
-   "status": "queued",
+   "report_slug": "super-micro-4q26-earnings",
+   "status": "published",
    "note": "원문이 올라온 것을 보고 넣은 일정"
   },
   {
@@ -1594,8 +1594,8 @@
    "official": false,
    "source_url": "https://stockanalysis.com/stocks/csco/transcripts/668273-q4-2026/",
    "consensus_snapshot": false,
-   "report_slug": null,
-   "status": "queued",
+   "report_slug": "cisco-4q26-earnings",
+   "status": "published",
    "note": "원문이 올라온 것을 보고 넣은 일정"
   },
   {
@@ -1608,8 +1608,8 @@
    "official": false,
    "source_url": "https://stockanalysis.com/stocks/nbis/transcripts/655490-q2-2026/",
    "consensus_snapshot": false,
-   "report_slug": null,
-   "status": "queued",
+   "report_slug": "nebius-2q26-earnings",
+   "status": "published",
    "note": "원문이 올라온 것을 보고 넣은 일정"
   },
   {
@@ -1622,8 +1622,8 @@
    "official": false,
    "source_url": "https://stockanalysis.com/stocks/amat/transcripts/557838-q3-2026/",
    "consensus_snapshot": false,
-   "report_slug": null,
-   "status": "queued",
+   "report_slug": "applied-materials-3q26-earnings",
+   "status": "published",
    "note": "원문이 올라온 것을 보고 넣은 일정"
   },
   {
@@ -1650,8 +1650,8 @@
    "official": false,
    "source_url": "https://stockanalysis.com/stocks/pdd/transcripts/681134-q2-2026/",
    "consensus_snapshot": false,
-   "report_slug": null,
-   "status": "queued",
+   "report_slug": "pdd-2q26-earnings",
+   "status": "published",
    "note": "원문이 올라온 것을 보고 넣은 일정"
   },
   {
@@ -1664,8 +1664,8 @@
    "official": false,
    "source_url": "https://stockanalysis.com/stocks/nvda/transcripts/676136-q2-2027/",
    "consensus_snapshot": false,
-   "report_slug": null,
-   "status": "queued",
+   "report_slug": "nvidia-2q27-earnings",
+   "status": "published",
    "note": "원문이 올라온 것을 보고 넣은 일정"
   },
   {
@@ -1706,8 +1706,8 @@
    "official": false,
    "source_url": "https://stockanalysis.com/stocks/dell/transcripts/589603-q2-2027/",
    "consensus_snapshot": false,
-   "report_slug": null,
-   "status": "queued",
+   "report_slug": "dell-2q27-earnings",
+   "status": "published",
    "note": "원문이 올라온 것을 보고 넣은 일정"
   },
   {
@@ -1720,8 +1720,8 @@
    "official": false,
    "source_url": "https://stockanalysis.com/stocks/avgo/transcripts/685349-q3-2026/",
    "consensus_snapshot": false,
-   "report_slug": null,
-   "status": "queued",
+   "report_slug": "broadcom-3q26-earnings",
+   "status": "published",
    "note": "원문이 올라온 것을 보고 넣은 일정"
   },
   {
@@ -1734,8 +1734,8 @@
    "official": false,
    "source_url": "https://stockanalysis.com/stocks/hpe/transcripts/683499-q3-2026/",
    "consensus_snapshot": false,
-   "report_slug": null,
-   "status": "queued",
+   "report_slug": "hpe-3q26-earnings",
+   "status": "published",
    "note": "원문이 올라온 것을 보고 넣은 일정"
   },
   {
@@ -1748,8 +1748,8 @@
    "official": false,
    "source_url": "https://investor.oracle.com/investor-news/news-details/2026/Oracle-Announces-Q1-Results-Driven-by-Triple-Digit-Growth-in-Cloud-Infrastructure-Revenues/default.aspx",
    "consensus_snapshot": false,
-   "report_slug": null,
-   "status": "queued",
+   "report_slug": "oracle-1q27-earnings",
+   "status": "published",
    "note": "원문이 올라온 것을 보고 넣은 일정"
   },
   {
