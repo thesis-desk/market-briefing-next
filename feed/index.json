@@ -1,7 +1,83 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-21T05:53:46+09:00",
+ "generated_kst": "2026-11-21T08:37:28+09:00",
  "reports": [
+  {
+   "slug": "deepmind-institute-the-economics-of-intelligence",
+   "type": "article",
+   "title": "Google DeepMind Institute : AI가 경제를 바꾸는 시점은 개인 역량이 아니라 에이전트 간 조정 능력이 정한다",
+   "companies": [
+    {
+     "name": "Google DeepMind",
+     "ticker": null
+    }
+   ],
+   "published_kst": "2026-11-21T08:33:19+09:00",
+   "revised_kst": "2026-11-21T08:33:19+09:00",
+   "revision": 1,
+   "summary": "이 글은 AI의 경제 효과를 개인 역량과 조정 능력이라는 두 축으로 나눈다. 역량 향상은 임금과 가격을 서서히 움직일 뿐이고, 조정 능력이 임계점을 넘을 때 시장 집중·고용·임금이 한꺼번에 뒤집힌다고 주장한다. 조정 임계점이 어디인지, 언제 오는지는 정량화하지 않았다. 따라서 투자 판단에 쓸 것은 결론이 아니라 관찰 지표다. 단독 벤치마크가 아니라 다중 에이전트의 규모 수익, 그리고 지금 가장 먼저 움직인다는 임금·직무 구성을 보라는 것이다.",
+   "path": "reports/deepmind-institute-the-economics-of-intelligence.json"
+  },
+  {
+   "slug": "deepmind-institute-what-is-work-for-human-wellbeing-and-the",
+   "type": "article",
+   "title": "Google DeepMind Institute : AI로 일자리가 흔들릴 때 소득 보전만으로는 일이 주던 가치를 메울 수 없다",
+   "companies": [
+    {
+     "name": "Google DeepMind",
+     "ticker": null
+    }
+   ],
+   "published_kst": "2026-11-21T08:28:58+09:00",
+   "revised_kst": "2026-11-21T08:28:58+09:00",
+   "revision": 1,
+   "summary": "딥마인드는 4개국 설문, 100편이 넘는 실증 연구 검토, 질적 연구를 묶어 '일은 소득 외에 선택권·지위·소속·목적을 함께 주는 묶음이고, AI 전환 정책은 소득 보전을 넘어 이것까지 다뤄야 한다'고 주장한다. 방향은 설득력이 있지만 근거의 상당 부분이 가상 상황에 대한 응답과 다른 맥락의 연구를 옮겨 온 것이다. 종목 판정을 내릴 근거는 이 글에 없고, 투자자에게는 AI 확산에 따른 정책·사회적 수용성 논의가 어느 쪽으로 가는지 보여 주는 신호로 읽힌다.",
+   "path": "reports/deepmind-institute-what-is-work-for-human-wellbeing-and-the.json"
+  },
+  {
+   "slug": "openai-hebbia",
+   "type": "article",
+   "title": "OpenAI : GPT-6 Astra, Hebbia의 금융 리서치 시험에서 출처 인용과 발표자료 작성 모두 1위",
+   "companies": [
+    {
+     "name": "OpenAI",
+     "ticker": null
+    },
+    {
+     "name": "Hebbia",
+     "ticker": null
+    }
+   ],
+   "published_kst": "2026-11-21T08:25:34+09:00",
+   "revised_kst": "2026-11-21T08:25:34+09:00",
+   "revision": 1,
+   "summary": "금융 실사 업무의 모델 경쟁이 답의 정확도에서 '추적 가능한 인용'과 '회사 양식을 지킨 완성 산출물'로 옮겨 가고 있다는 신호로 읽힌다. 다만 OpenAI가 직접 낸 고객 사례이고, 본문에 비교 모델과 표본이 없으며, 정식 출시판이 아닌 출시 전 빌드로 시험했다. 투자 판단의 근거로 쓰기에는 약하다.",
+   "path": "reports/openai-hebbia.json"
+  },
+  {
+   "slug": "all-in-anthropic-goes-public-nvidia-in-crisis-markets-tank",
+   "type": "interview",
+   "title": "올인 팟캐스트 대담(차마스·프리드버그·칼라카니스) : 앤트로픽 상장과 엔비디아 경영 공백, 오픈소스 규제",
+   "companies": [
+    {
+     "name": "Anthropic",
+     "ticker": null
+    },
+    {
+     "name": "NVIDIA",
+     "ticker": null
+    },
+    {
+     "name": "Palo Alto Networks",
+     "ticker": null
+    }
+   ],
+   "published_kst": "2026-11-21T08:22:29+09:00",
+   "revised_kst": "2026-11-21T08:22:29+09:00",
+   "revision": 1,
+   "summary": "세 출연자는 AI 수요가 아직 초입이라는 데는 대체로 동의했다. 그러나 금리·인플레이션·청문회 일정 때문에 단기 위험 선호에서는 갈렸다. 시장은 수직통합과 대담한 인수에 보상하고 자사주 매입에는 보상하지 않는다는 것이 이번 회차의 관통 메시지다. 엔비디아는 12월 1~2일 의회 청문회 전까지 판단을 미뤄야 하는 구간이다.",
+   "path": "reports/all-in-anthropic-goes-public-nvidia-in-crisis-markets-tank.json"
+  },
   {
    "slug": "ignite-2026",
    "type": "event",
@@ -7844,7 +7920,7 @@
   }
  ],
  "street": {
-  "updated_kst": "2026-11-21T05:39:24+09:00",
+  "updated_kst": "2026-11-21T08:37:28+09:00",
   "path": "street.json"
  },
  "calendar": {

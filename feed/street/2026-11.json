@@ -1,8 +1,142 @@
 {
  "schema": 1,
  "month": "2026-11",
- "updated_kst": "2026-11-21T05:39:24+09:00",
+ "updated_kst": "2026-11-21T08:37:28+09:00",
  "items": [
+  {
+   "id": "doubleline-on-the-ticker-tape-rumblings-of-2018",
+   "group": "자산운용",
+   "org": "DoubleLine Capital",
+   "person": "Eric Dahl, Ryan Kimmel",
+   "kind": "publication",
+   "title": "티커 테이프 소식: 2018년의 조짐?",
+   "title_orig": "On the Ticker Tape, Rumblings of 2018?",
+   "url": "https://www.youtube.com/watch?v=wk-egAWLNl8",
+   "outlet": "DoubleLine (유튜브)",
+   "published_kst": "2026-11-21T07:56:52+09:00",
+   "stance": {
+    "ai_tech": 0,
+    "market": 0
+   },
+   "args": [
+    "금리·거시",
+    "투자 회수",
+    "밸류에이션"
+   ],
+   "summary": "화자들은 이번 주 미국 증시가 S&P 500 기준 조정 구간에 들어섰다고 짚는다. AI 확장의 지속 가능성과 연준의 금리 인상 기조가 시장을 짓누르고 있으며, 시장 모습이 2018년 말과 닮았다는 시각을 소개하되 확정하지 않고 지켜보자고 한다. 시장이 AI 거품과 연준 우려 사이에서 서사를 오가며 불안정하게 움직인다고 본다.",
+   "points": [
+    "AI 확장의 지속 가능성에 대한 의문이 금리 상승과 연준의 인상 성향과 맞물려 시장을 짓누르고 있다.",
+    "현재 시장 모습이 2018년 말과 닮았다는 시각이 있으나, 화자들은 결론을 유보하고 지켜보자고 한다.",
+    "시장이 AI 거품 논란과 연준 부담 서사 사이를 오가며 불안정하게 거래되고 있다.",
+    "FOMC 의사록이 상당히 매파적이어서 연준이 물가에 집중하며 추가 인상을 선호하는 것으로 읽힌다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "유튜브 영상의 음성을 음성 인식(Whisper)으로 받아 적은 전사 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
+  },
+  {
+   "id": "blackrock-mike-pyle-on-ai-s-next-phase-why-selectivity-mat",
+   "group": "자산운용",
+   "org": "BlackRock",
+   "person": "Mike Pyle",
+   "kind": "publication",
+   "title": "Mike Pyle이 말하는 AI의 다음 국면: 왜 선별이 중요한가 | Bloomberg",
+   "title_orig": "Mike Pyle on AI's Next Phase: Why Selectivity Matters | Bloomberg",
+   "url": "https://www.youtube.com/watch?v=XYDlbCvn_O0",
+   "outlet": "BlackRock (유튜브)",
+   "published_kst": "2026-11-21T07:54:39+09:00",
+   "stance": {
+    "ai_tech": 0,
+    "market": null
+   },
+   "args": [
+    "투자 회수",
+    "자금 조달·신용",
+    "정책·지정학",
+    "경쟁·해자"
+   ],
+   "summary": "블랙록의 Mike Pyle은 AI 펀더멘털에 대한 확신은 유지하지만, AI 인프라 구축의 '방향성 국면'은 끝나가고 승자와 패자가 갈리는 양면적 국면으로 넘어간다고 본다. 높은 자본비용과 정책 불확실성 속에서 재무구조·사업모델이 강한 기업을 골라야 하며, 다음 초점은 기업의 AI 도입 효율을 누가 만들어 내느냐라고 말한다. 채권은 분산 수단으로 불확실하다고 보고 롱숏 전략을 강조한다.",
+   "points": [
+    "AI 대전환은 특정 기업보다 크지만, 이제는 구축과 도입 양쪽에서 승자와 패자가 갈리는 양면적 국면이라 선별적 시장이 된다.",
+    "지속적으로 높은 자본비용 속에서 재무구조가 강하고 지역사회와 협력하는 기업이 다음 구축 단계의 승자가 될 것이다.",
+    "투자자의 다음 관심은 기업 도입 영역에서 누가 효율을 실제로 끌어내느냐이며, 블랙록은 2027년 이를 주시한다.",
+    "전통적 분산 수단의 매력이 떨어진 환경에서 양면적 불확실성을 활용하는 롱숏 전략이 중요하며, 채권은 분산 수단으로서 불확실하다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "유튜브 자동 생성 자막(en) 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
+  },
+  {
+   "id": "morgan-stanley-china-s-bet-on-physical-ai",
+   "group": "투자은행",
+   "org": "Morgan Stanley",
+   "person": "Laura Wang, Robin Xing",
+   "kind": "publication",
+   "title": "중국의 피지컬 AI 베팅",
+   "title_orig": "China's Bet on Physical AI",
+   "url": "https://www.morganstanley.com/insights/podcasts/thoughts-on-the-market",
+   "outlet": "Morgan Stanley Thoughts on the Market",
+   "published_kst": "2026-11-21T06:30:00+09:00",
+   "stance": {
+    "ai_tech": 1,
+    "market": 1
+   },
+   "args": [
+    "투자 회수",
+    "수요·채택",
+    "정책·지정학",
+    "금리·거시"
+   ],
+   "summary": "중국의 피지컬 AI 투자는 향후 10년간 약 12조 달러 규모의 Industry 5.0 투자로 이어질 수 있으며, 생산성 효과는 2028년부터 뚜렷해질 것이라고 본다. 기존 공장 개조 중심의 투자, 반내권 정책, 주택 시장 안정이 맞물리면 산업 기업 이익률과 중국 증시 이익 성장이 개선될 것으로 전망한다. 다만 2027년까지는 대차대조표 회복 과정이라 거시 효과가 제한적이고, 투자 규율과 소비 개혁이 선행돼야 한다고 단서를 단다.",
+   "points": [
+    "피지컬 AI 투자의 생산성 효과는 2028년부터 더 뚜렷해질 것으로 본다.",
+    "현재는 칩 등 병목 분야 투자가 중국 전체 설비투자의 극히 일부라 성장 기여가 제한적이고 디플레이션 탈출 효과도 작다.",
+    "정책 변화와 투자 성격 변화로 중국 산업 기업의 이익률이 3~5년 내 5%에서 8%로 개선될 수 있다고 본다.",
+    "이 흐름으로 중국 증시 이익 성장률이 2030년까지 연 6%에서 10% 이상으로, ROE도 12~13%대로 오를 수 있다고 전망한다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   }
+  },
+  {
+   "id": "pimco-charting-the-year-ahead-with-marc-seidner",
+   "group": "자산운용",
+   "org": "PIMCO",
+   "person": "Marc Seidner",
+   "kind": "publication",
+   "title": "Marc Seidner와 함께 보는 올해 차트: 앞으로의 한 해",
+   "title_orig": "Charting the Year Ahead with Marc Seidner",
+   "url": "https://www.youtube.com/watch?v=URzxp5EB5Zg",
+   "outlet": "PIMCO (유튜브)",
+   "published_kst": "2026-11-21T06:12:42+09:00",
+   "stance": {
+    "ai_tech": -1,
+    "market": 0
+   },
+   "args": [
+    "쏠림",
+    "자금 조달·신용",
+    "밸류에이션",
+    "투자 회수"
+   ],
+   "summary": "AI는 중요한 투자 테마지만 지수·채권·사모대출까지 AI 쏠림이 번지고 있다고 본다. 하이퍼스케일러는 잉여현금흐름이 마이너스로 돌아서 부채로 투자를 조달하고 있고, 신용 사이클이 진행 중이라며 모멘텀 쏠림 대신 가치·퀄리티·저베타, 상품, 고품질 지방채 등으로 분산하고 액티브로 운용하라고 권한다.",
+   "points": [
+    "하이퍼스케일러는 더 이상 잉여현금흐름이 플러스가 아니며 AI 투자를 부채 발행으로 조달하고 있다.",
+    "기술 관련 발행이 비금융 회사채 발행에서 차지하는 비중이 2~3년 전 3~4%에서 올해 25~30%로 급등했다.",
+    "AI 테마는 모멘텀 성격이 강해 급반전할 수 있으며, 가치·퀄리티·저베타 팩터가 분산 효과를 냈다.",
+    "AA 등급 AI 관련 기업의 채권 스프레드가 160~200bp로 1년 전의 3~4배 수준까지 벌어져 시장이 위험 프리미엄을 요구하기 시작했다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "유튜브 영상의 음성을 음성 인식(Whisper)으로 받아 적은 전사 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
+  },
   {
    "id": "fed-feds-note-when-productivity-booms-do-interest-ra",
    "group": "중앙은행·국제기구",
