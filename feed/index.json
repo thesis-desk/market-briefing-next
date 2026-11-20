@@ -1,7 +1,59 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-20T19:13:04+09:00",
+ "generated_kst": "2026-11-20T19:21:52+09:00",
  "reports": [
+  {
+   "slug": "x-substack-price-impact",
+   "type": "research",
+   "title": "X·Substack 의 글은 주가를 움직이는가 : 사례 11건의 해부",
+   "companies": [
+    {
+     "name": "NVIDIA",
+     "ticker": null
+    },
+    {
+     "name": "Micron",
+     "ticker": null
+    },
+    {
+     "name": "AMD",
+     "ticker": null
+    },
+    {
+     "name": "Bloom Energy",
+     "ticker": null
+    },
+    {
+     "name": "Applied Optoelectronics",
+     "ticker": null
+    },
+    {
+     "name": "Visa",
+     "ticker": null
+    },
+    {
+     "name": "오로스테크놀로지",
+     "ticker": null
+    },
+    {
+     "name": "에이피알",
+     "ticker": null
+    },
+    {
+     "name": "SK하이닉스",
+     "ticker": null
+    },
+    {
+     "name": "삼성전자",
+     "ticker": null
+    }
+   ],
+   "published_kst": "2026-11-20T19:21:15+09:00",
+   "revised_kst": "2026-11-20T19:21:15+09:00",
+   "revision": 1,
+   "summary": "주가 급변의 계기로 지목됐거나 이름난 계정이 종목을 겨냥한 X·Substack 글 11건을 일별 시세로 쟀다. 언론이 주가 움직임을 글 탓으로 돌린 7건 가운데 지목된 종목이 평소 하루 변동의 두 배 넘게 움직인 것은 3건(엔비디아 25-01 −16.97%, 비자 −4.50%, 오로스테크놀로지 +30.00%)이고, 그런 보도가 없는 4건에서는 없었다. 한 건 차이의 판정이다 — SOCAMM 건의 마이크론은 사건 다음 날의 −13.25% 가 기준을 넘는다. 20거래일 뒤 절반 넘게 되돌린 것은 7건 가운데 3건이고, 한국 텔레그램에는 8건 가운데 6건이 사건 거래일 종가 전에 닿았다.",
+   "path": "reports/x-substack-price-impact.json"
+  },
   {
    "slug": "nvidia-dev-build-tool-calling-parsers-in-rust-with-ai-agents",
    "type": "article",
@@ -2611,6 +2663,24 @@
    "path": "reports/quanta-computer-3q26-earnings.json"
   },
   {
+   "slug": "wistron-3q26-earnings",
+   "type": "earnings",
+   "title": "Wistron 3Q26 실적발표 : 마진은 반등, 성장 자금은 빚과 증자로",
+   "companies": [
+    {
+     "name": "Wistron",
+     "ticker": "3231.TW"
+    }
+   ],
+   "event": "3Q26 실적 발표",
+   "event_date": "2026-11-11",
+   "published_kst": "2026-11-11T21:00:00+09:00",
+   "revised_kst": "2026-11-20T19:18:28+09:00",
+   "revision": 1,
+   "summary": "3Q26 매출은 NT$1,149.1B로 전분기보다 28% 늘었고 영업이익률은 4.24%로 두 분기 연속 올랐다. 다만 9개월 영업현금흐름은 -NT$158.5B이고, 그 공백을 차입·사채·GDR 증자로 메운다. 지배주주 순이익의 절반가량은 지분 38%인 Wiwynn에서 나온다. 이익의 질과 주당 가치는 희석·이자·소수주주 몫을 빼고 봐야 한다.",
+   "path": "reports/wistron-3q26-earnings.json"
+  },
+  {
    "slug": "semianalysis-we-visited-chinas-stargate-in-inner",
    "type": "article",
    "title": "SemiAnalysis : 중국판 스타게이트 Galaxy는 수직계열화로 미국보다 빠르고 싸게 지어진다",
@@ -3087,6 +3157,78 @@
    "revision": 1,
    "summary": "매출 $1.01B(+109% YoY)에서 non-GAAP 매출총이익률이 50.4%가 됐다. 회사가 분기 매출 $2B에서나 넘을 것으로 잡았던 문턱이다. 1Q27 가이던스 중앙값 $1.25B는 OFC 목표를 한 분기 이상 앞당긴다. 이번 분기에 달라진 것은 수요의 크기다. 고출력 레이저는 증산이 예정대로인데도 수요가 가속해 공급이 더 뒤처졌고, CPO로 가는 중간 단계인 NPO와 ELS 모듈이라는 추가 매출원이 생겼다.",
    "path": "reports/lumentum-4q26-earnings.json"
+  },
+  {
+   "slug": "amazon-1q26-earnings",
+   "type": "earnings",
+   "title": "Amazon 1Q26 실적발표 : AWS 28% 가속, 백로그 3,640억 달러",
+   "companies": [
+    {
+     "name": "Amazon",
+     "ticker": "AMZN"
+    }
+   ],
+   "event": "1Q26 실적 발표",
+   "event_date": "2026-04-29",
+   "published_kst": "2026-04-29T21:00:00+09:00",
+   "revised_kst": "2026-11-20T19:21:21+09:00",
+   "revision": 1,
+   "summary": "AWS가 28%로 가속하고 백로그가 한 분기 만에 49% 늘어 2026년 CapEx 약 2,000억 달러를 받칠 수요 근거가 강해졌다. 사상 최고 영업이익률 13.1%로 가이던스 상단도 넘겼다. 다만 잉여현금흐름은 콜에서 공개되지 않았고, 회사 스스로 투자 초기의 현금흐름 압박을 인정했다.",
+   "path": "reports/amazon-1q26-earnings.json"
+  },
+  {
+   "slug": "microsoft-3q26-earnings",
+   "type": "earnings",
+   "title": "Microsoft 3Q26 실적발표 : 좌석에서 사용량으로, 1,900억 달러짜리 공급 제약",
+   "companies": [
+    {
+     "name": "Microsoft",
+     "ticker": "MSFT"
+    }
+   ],
+   "event": "3Q26 실적 발표",
+   "event_date": "2026-04-29",
+   "published_kst": "2026-04-29T21:00:00+09:00",
+   "revised_kst": "2026-11-20T19:21:52+09:00",
+   "revision": 1,
+   "summary": "Azure(고정환율 39%)와 M365 Commercial Cloud(고정환율 15%)가 직전 분기 가이던스를 넘었고, M365 Copilot 유료 좌석은 2,000만 이상으로 늘었습니다. 다만 회사는 공급 제약이 최소 2026년 내내 이어진다고 보고, 부품 가격 상승분 250억 달러를 포함해 2026 역년 CapEx를 약 1,900억 달러로 제시했습니다. 성장의 질은 좋아졌고, 남은 질문은 마진(Microsoft Cloud 매출총이익률 4Q 약 64%)과 현금흐름이 이 투자 속도를 따라오느냐입니다.",
+   "path": "reports/microsoft-3q26-earnings.json"
+  },
+  {
+   "slug": "bloom-energy-1q26-earnings",
+   "type": "earnings",
+   "title": "Bloom Energy 1Q26 실적발표 : 가이던스 대폭 상향, Oracle 최대 2.45GW 단독 공급",
+   "companies": [
+    {
+     "name": "Bloom Energy",
+     "ticker": "BE"
+    }
+   ],
+   "event": "1Q26 실적 발표",
+   "event_date": "2026-04-28",
+   "published_kst": "2026-04-28T21:00:00+09:00",
+   "revised_kst": "2026-11-20T19:18:46+09:00",
+   "revision": 1,
+   "summary": "매출이 전년 대비 2.3배로 늘었고, 연간 매출 가이던스는 새 하단이 이전 상단을 넘는 수준으로 올라갔다. Oracle의 최대 2.45GW 단독 공급으로 ‘계통 없는 Bloom 단독 데이터센터 전원’이라는 주장이 대형 사례를 얻었다. 다만 수주잔고 수치가 빠졌고 제품 마진이 직전 분기보다 내려, 새 가이던스를 맞추려면 남은 세 분기에 34%대 매출총이익률이 필요하다.",
+   "path": "reports/bloom-energy-1q26-earnings.json"
+  },
+  {
+   "slug": "intel-1q26-earnings",
+   "type": "earnings",
+   "title": "Intel 1Q26 실적발표 : 서버 CPU 수요 상향, 2분기 마진은 제자리",
+   "companies": [
+    {
+     "name": "Intel",
+     "ticker": "INTC"
+    }
+   ],
+   "event": "1Q26 실적 발표",
+   "event_date": "2026-04-23",
+   "published_kst": "2026-04-23T21:00:00+09:00",
+   "revised_kst": "2026-11-20T19:16:37+09:00",
+   "revision": 1,
+   "summary": "1Q26은 가격 인상, 충당금 처리됐던 재고 판매, 18A 수율 개선으로 가이던스를 크게 넘겼고 서버 CPU 전망도 올라갔다. 다만 2Q 가이던스는 매출이 늘어도 매출총이익이 제자리이고 하반기에는 메모리·기판 원가와 PC 수요 약화가 기다린다. 수요의 강도보다 마진 확대 속도와 현금흐름이 다음 판단 지점이다.",
+   "path": "reports/intel-1q26-earnings.json"
   },
   {
    "slug": "ge-vernova-1q26-earnings",
@@ -3998,7 +4140,7 @@
   {
    "id": "online-narratives",
    "path": "data/online-narratives/index.json",
-   "updated_kst": "2026-11-20T19:09:06+09:00"
+   "updated_kst": "2026-11-20T19:21:15+09:00"
   }
  ]
 }
