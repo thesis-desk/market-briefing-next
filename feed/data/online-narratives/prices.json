@@ -1,0 +1,1248 @@
+{
+ "schema": 1,
+ "bundle": "N2",
+ "title": "주가 반응 — 사건일과 그 뒤 1·5·20거래일",
+ "updated_kst": "2026-11-20T18:44:24+09:00",
+ "measure": null,
+ "notes": [
+  "값은 모두 계산이다. 등락률은 사건 거래일(t0)의 전 거래일 종가를 기준으로 한 누적 변화율(%)이고, 야후 파이낸스 일별 시세의 수정 전 종가(close)·저가·고가를 쓴다.",
+  "d0 는 t0 종가, low0·high0 는 t0 장중 저가·고가, d1·d5·d20 은 t0 뒤 1·5·20번째 거래일 종가다. 자료 기준일까지 그 거래일이 오지 않았으면 null 이다.",
+  "excess 는 종목의 값에서 같은 날짜로 계산한 기준 지수의 값을 뺀 것이다(미국 종목은 S&P 500, 유가증권시장 종목은 코스피, 코스닥 종목은 코스닥 지수). 한국과 미국의 휴장일이 달라도 종목이 상장된 시장의 거래일로 센다.",
+  "vol60 은 t0 전 60거래일 일간 등락률의 표준편차(%), z0 는 d0 ÷ vol60 이다. 평소 하루 변동에 견줘 사건일 움직임이 얼마나 큰지를 본다.",
+  "retraced5·retraced20 은 사건일 초과 등락(excess.d0)이 5·20거래일 뒤 얼마나 지워졌는가다: 1 − excess.dN ÷ excess.d0. 1 이상이면 모두 되돌린 것, 0 이하이면 같은 방향으로 더 간 것이다. excess.d0 의 크기가 1%p 보다 작으면 내지 않는다(null).",
+  "사건 거래일은 최초 글이 나온 뒤 그 종목의 시장이 처음 반응할 수 있었던 정규장이다(묶음 N1 의 기록에 근거가 있다). 같은 날의 다른 재료는 가려내지 못한다 — 묶음 N1 의 confounders 를 함께 읽는다."
+ ],
+ "records": [
+  {
+   "id": "deepseek-emanuel-2025-01-nvda",
+   "primary": true,
+   "country": "US",
+   "city": null,
+   "value": -16.97,
+   "unit": "%",
+   "asof": "2025-01-27",
+   "basis": "계산: 사건 거래일 종가 ÷ 전 거래일 종가 − 1 (야후 일별 종가)",
+   "case": "deepseek-emanuel-2025-01",
+   "ticker": "NVDA",
+   "name": "엔비디아",
+   "role": "지목",
+   "benchmark": {
+    "ticker": "^GSPC",
+    "name": "S&P 500"
+   },
+   "t0": "2025-01-27",
+   "dates": {
+    "t-1": "2025-01-24",
+    "t0": "2025-01-27",
+    "t+1": "2025-01-28",
+    "t+5": "2025-02-03",
+    "t+20": "2025-02-25"
+   },
+   "base_close": 142.62,
+   "close0": 118.42,
+   "returns": {
+    "d0": -16.97,
+    "low0": -18.17,
+    "high0": -9.97,
+    "d1": -9.56,
+    "d5": -18.2,
+    "d20": -11.21
+   },
+   "benchmark_returns": {
+    "d0": -1.46,
+    "d1": -0.55,
+    "d5": -1.75,
+    "d20": -2.39
+   },
+   "excess": {
+    "d0": -15.51,
+    "d1": -9.01,
+    "d5": -16.45,
+    "d20": -8.82
+   },
+   "vol60": 2.52,
+   "z0": -6.7,
+   "retraced5": -0.06,
+   "retraced20": 0.43,
+   "sources": [
+    {
+     "n": 1,
+     "title": "Yahoo Finance 일별 시세 — NVDA",
+     "url": "https://query1.finance.yahoo.com/v8/finance/chart/NVDA?period1=1726704000&period2=1741910400&interval=1d",
+     "date": "2026-11-20",
+     "read": "full"
+    },
+    {
+     "n": 2,
+     "title": "Yahoo Finance 일별 시세 — ^GSPC",
+     "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?period1=1726704000&period2=1741910400&interval=1d",
+     "date": "2026-11-20",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "conf": "high",
+   "note": "엔비디아의 2025-01-27 종가는 전 거래일보다 -16.97%, 같은 날 S&P 500 -1.46%. 장중 저가 -18.17%, 고가 -9.97%."
+  },
+  {
+   "id": "tariff-pause-headline-2025-04-gspc",
+   "primary": true,
+   "country": "US",
+   "city": null,
+   "value": -0.23,
+   "unit": "%",
+   "asof": "2025-04-07",
+   "basis": "계산: 사건 거래일 종가 ÷ 전 거래일 종가 − 1 (야후 일별 종가)",
+   "case": "tariff-pause-headline-2025-04",
+   "ticker": "^GSPC",
+   "name": "S&P 500",
+   "role": "지목",
+   "benchmark": null,
+   "t0": "2025-04-07",
+   "dates": {
+    "t-1": "2025-04-04",
+    "t0": "2025-04-07",
+    "t+1": "2025-04-08",
+    "t+5": "2025-04-14",
+    "t+20": "2025-05-06"
+   },
+   "base_close": 5074.08,
+   "close0": 5062.25,
+   "returns": {
+    "d0": -0.23,
+    "low0": -4.71,
+    "high0": 3.4,
+    "d1": -1.8,
+    "d5": 6.54,
+    "d20": 10.5
+   },
+   "benchmark_returns": {
+    "d0": null,
+    "d1": null,
+    "d5": null,
+    "d20": null
+   },
+   "excess": {
+    "d0": -0.23,
+    "d1": -1.8,
+    "d5": 6.54,
+    "d20": 10.5
+   },
+   "vol60": 1.39,
+   "z0": -0.2,
+   "retraced5": null,
+   "retraced20": null,
+   "sources": [
+    {
+     "n": 1,
+     "title": "Yahoo Finance 일별 시세 — ^GSPC",
+     "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?period1=1732752000&period2=1747958400&interval=1d",
+     "date": "2026-11-20",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "conf": "high",
+   "note": "S&P 500의 2025-04-07 종가는 전 거래일보다 -0.23%. 지수 자체가 대상이라 초과 등락은 지수의 등락과 같다. 장중 저가 -4.71%, 고가 +3.40%."
+  },
+  {
+   "id": "citrini-2028-2026-02-v",
+   "primary": true,
+   "country": "US",
+   "city": null,
+   "value": -4.5,
+   "unit": "%",
+   "asof": "2026-02-23",
+   "basis": "계산: 사건 거래일 종가 ÷ 전 거래일 종가 − 1 (야후 일별 종가)",
+   "case": "citrini-2028-2026-02",
+   "ticker": "V",
+   "name": "비자",
+   "role": "지목",
+   "benchmark": {
+    "ticker": "^GSPC",
+    "name": "S&P 500"
+   },
+   "t0": "2026-02-23",
+   "dates": {
+    "t-1": "2026-02-20",
+    "t0": "2026-02-23",
+    "t+1": "2026-02-24",
+    "t+5": "2026-03-02",
+    "t+20": "2026-03-23"
+   },
+   "base_close": 320.95,
+   "close0": 306.52,
+   "returns": {
+    "d0": -4.5,
+    "low0": -5.06,
+    "high0": -0.13,
+    "d1": -4.28,
+    "d5": -0.14,
+    "d20": -5.14
+   },
+   "benchmark_returns": {
+    "d0": -1.04,
+    "d1": -0.28,
+    "d5": -0.4,
+    "d20": -4.75
+   },
+   "excess": {
+    "d0": -3.46,
+    "d1": -4,
+    "d5": 0.26,
+    "d20": -0.39
+   },
+   "vol60": 1.48,
+   "z0": -3,
+   "retraced5": 1.08,
+   "retraced20": 0.89,
+   "sources": [
+    {
+     "n": 1,
+     "title": "Yahoo Finance 일별 시세 — V",
+     "url": "https://query1.finance.yahoo.com/v8/finance/chart/V?period1=1760572800&period2=1775779200&interval=1d",
+     "date": "2026-11-20",
+     "read": "full"
+    },
+    {
+     "n": 2,
+     "title": "Yahoo Finance 일별 시세 — ^GSPC",
+     "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?period1=1760572800&period2=1775779200&interval=1d",
+     "date": "2026-11-20",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "conf": "high",
+   "note": "비자의 2026-02-23 종가는 전 거래일보다 -4.50%, 같은 날 S&P 500 -1.04%. 장중 저가 -5.06%, 고가 -0.13%."
+  },
+  {
+   "id": "citrini-2028-2026-02-dash",
+   "primary": false,
+   "country": "US",
+   "city": null,
+   "value": -6.6,
+   "unit": "%",
+   "asof": "2026-02-23",
+   "basis": "계산: 사건 거래일 종가 ÷ 전 거래일 종가 − 1 (야후 일별 종가)",
+   "case": "citrini-2028-2026-02",
+   "ticker": "DASH",
+   "name": "도어대시",
+   "role": "지목",
+   "benchmark": {
+    "ticker": "^GSPC",
+    "name": "S&P 500"
+   },
+   "t0": "2026-02-23",
+   "dates": {
+    "t-1": "2026-02-20",
+    "t0": "2026-02-23",
+    "t+1": "2026-02-24",
+    "t+5": "2026-03-02",
+    "t+20": "2026-03-23"
+   },
+   "base_close": 176.29,
+   "close0": 164.66,
+   "returns": {
+    "d0": -6.6,
+    "low0": -8.45,
+    "high0": -4.38,
+    "d1": -6.76,
+    "d5": 0.07,
+    "d20": -9.25
+   },
+   "benchmark_returns": {
+    "d0": -1.04,
+    "d1": -0.28,
+    "d5": -0.4,
+    "d20": -4.75
+   },
+   "excess": {
+    "d0": -5.56,
+    "d1": -6.48,
+    "d5": 0.47,
+    "d20": -4.5
+   },
+   "vol60": 2.59,
+   "z0": -2.5,
+   "retraced5": 1.08,
+   "retraced20": 0.19,
+   "sources": [
+    {
+     "n": 1,
+     "title": "Yahoo Finance 일별 시세 — DASH",
+     "url": "https://query1.finance.yahoo.com/v8/finance/chart/DASH?period1=1760572800&period2=1775779200&interval=1d",
+     "date": "2026-11-20",
+     "read": "full"
+    },
+    {
+     "n": 2,
+     "title": "Yahoo Finance 일별 시세 — ^GSPC",
+     "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?period1=1760572800&period2=1775779200&interval=1d",
+     "date": "2026-11-20",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "conf": "high",
+   "note": "도어대시의 2026-02-23 종가는 전 거래일보다 -6.60%, 같은 날 S&P 500 -1.04%. 장중 저가 -8.45%, 고가 -4.38%."
+  },
+  {
+   "id": "citrini-2028-2026-02-axp",
+   "primary": false,
+   "country": "US",
+   "city": null,
+   "value": -7.2,
+   "unit": "%",
+   "asof": "2026-02-23",
+   "basis": "계산: 사건 거래일 종가 ÷ 전 거래일 종가 − 1 (야후 일별 종가)",
+   "case": "citrini-2028-2026-02",
+   "ticker": "AXP",
+   "name": "아메리칸 익스프레스",
+   "role": "동반",
+   "benchmark": {
+    "ticker": "^GSPC",
+    "name": "S&P 500"
+   },
+   "t0": "2026-02-23",
+   "dates": {
+    "t-1": "2026-02-20",
+    "t0": "2026-02-23",
+    "t+1": "2026-02-24",
+    "t+5": "2026-03-02",
+    "t+20": "2026-03-23"
+   },
+   "base_close": 346.18,
+   "close0": 321.24,
+   "returns": {
+    "d0": -7.2,
+    "low0": -8.39,
+    "high0": -0.1,
+    "d1": -7.42,
+    "d5": -11.19,
+    "d20": -12.79
+   },
+   "benchmark_returns": {
+    "d0": -1.04,
+    "d1": -0.28,
+    "d5": -0.4,
+    "d20": -4.75
+   },
+   "excess": {
+    "d0": -6.16,
+    "d1": -7.14,
+    "d5": -10.79,
+    "d20": -8.04
+   },
+   "vol60": 1.5,
+   "z0": -4.8,
+   "retraced5": -0.75,
+   "retraced20": -0.31,
+   "sources": [
+    {
+     "n": 1,
+     "title": "Yahoo Finance 일별 시세 — AXP",
+     "url": "https://query1.finance.yahoo.com/v8/finance/chart/AXP?period1=1760572800&period2=1775779200&interval=1d",
+     "date": "2026-11-20",
+     "read": "full"
+    },
+    {
+     "n": 2,
+     "title": "Yahoo Finance 일별 시세 — ^GSPC",
+     "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?period1=1760572800&period2=1775779200&interval=1d",
+     "date": "2026-11-20",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "conf": "high",
+   "note": "아메리칸 익스프레스의 2026-02-23 종가는 전 거래일보다 -7.20%, 같은 날 S&P 500 -1.04%. 장중 저가 -8.39%, 고가 -0.10%."
+  },
+  {
+   "id": "citrini-2028-2026-02-ma",
+   "primary": false,
+   "country": "US",
+   "city": null,
+   "value": -5.77,
+   "unit": "%",
+   "asof": "2026-02-23",
+   "basis": "계산: 사건 거래일 종가 ÷ 전 거래일 종가 − 1 (야후 일별 종가)",
+   "case": "citrini-2028-2026-02",
+   "ticker": "MA",
+   "name": "마스터카드",
+   "role": "동반",
+   "benchmark": {
+    "ticker": "^GSPC",
+    "name": "S&P 500"
+   },
+   "t0": "2026-02-23",
+   "dates": {
+    "t-1": "2026-02-20",
+    "t0": "2026-02-23",
+    "t+1": "2026-02-24",
+    "t+5": "2026-03-02",
+    "t+20": "2026-03-23"
+   },
+   "base_close": 526.41,
+   "close0": 496.03,
+   "returns": {
+    "d0": -5.77,
+    "low0": -6.92,
+    "high0": -0.7,
+    "d1": -5.4,
+    "d5": -1.03,
+    "d20": -4.94
+   },
+   "benchmark_returns": {
+    "d0": -1.04,
+    "d1": -0.28,
+    "d5": -0.4,
+    "d20": -4.75
+   },
+   "excess": {
+    "d0": -4.73,
+    "d1": -5.12,
+    "d5": -0.63,
+    "d20": -0.19
+   },
+   "vol60": 1.43,
+   "z0": -4,
+   "retraced5": 0.87,
+   "retraced20": 0.96,
+   "sources": [
+    {
+     "n": 1,
+     "title": "Yahoo Finance 일별 시세 — MA",
+     "url": "https://query1.finance.yahoo.com/v8/finance/chart/MA?period1=1760572800&period2=1775779200&interval=1d",
+     "date": "2026-11-20",
+     "read": "full"
+    },
+    {
+     "n": 2,
+     "title": "Yahoo Finance 일별 시세 — ^GSPC",
+     "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?period1=1760572800&period2=1775779200&interval=1d",
+     "date": "2026-11-20",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "conf": "high",
+   "note": "마스터카드의 2026-02-23 종가는 전 거래일보다 -5.77%, 같은 날 S&P 500 -1.04%. 장중 저가 -6.92%, 고가 -0.70%."
+  },
+  {
+   "id": "citrini-2028-2026-02-igv",
+   "primary": false,
+   "country": "US",
+   "city": null,
+   "value": -4.75,
+   "unit": "%",
+   "asof": "2026-02-23",
+   "basis": "계산: 사건 거래일 종가 ÷ 전 거래일 종가 − 1 (야후 일별 종가)",
+   "case": "citrini-2028-2026-02",
+   "ticker": "IGV",
+   "name": "iShares 소프트웨어 ETF",
+   "role": "동반",
+   "benchmark": {
+    "ticker": "^GSPC",
+    "name": "S&P 500"
+   },
+   "t0": "2026-02-23",
+   "dates": {
+    "t-1": "2026-02-20",
+    "t0": "2026-02-23",
+    "t+1": "2026-02-24",
+    "t+5": "2026-03-02",
+    "t+20": "2026-03-23"
+   },
+   "base_close": 80.78,
+   "close0": 76.94,
+   "returns": {
+    "d0": -4.75,
+    "low0": -5.38,
+    "high0": -1.6,
+    "d1": -2.93,
+    "d5": 2.46,
+    "d20": 4.53
+   },
+   "benchmark_returns": {
+    "d0": -1.04,
+    "d1": -0.28,
+    "d5": -0.4,
+    "d20": -4.75
+   },
+   "excess": {
+    "d0": -3.71,
+    "d1": -2.65,
+    "d5": 2.86,
+    "d20": 9.28
+   },
+   "vol60": 1.79,
+   "z0": -2.7,
+   "retraced5": 1.77,
+   "retraced20": 3.5,
+   "sources": [
+    {
+     "n": 1,
+     "title": "Yahoo Finance 일별 시세 — IGV",
+     "url": "https://query1.finance.yahoo.com/v8/finance/chart/IGV?period1=1760572800&period2=1775779200&interval=1d",
+     "date": "2026-11-20",
+     "read": "full"
+    },
+    {
+     "n": 2,
+     "title": "Yahoo Finance 일별 시세 — ^GSPC",
+     "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?period1=1760572800&period2=1775779200&interval=1d",
+     "date": "2026-11-20",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "conf": "high",
+   "note": "iShares 소프트웨어 ETF의 2026-02-23 종가는 전 거래일보다 -4.75%, 같은 날 S&P 500 -1.04%. 장중 저가 -5.38%, 고가 -1.60%."
+  },
+  {
+   "id": "citron-aaoi-2026-04-aaoi",
+   "primary": true,
+   "country": "US",
+   "city": null,
+   "value": 12.98,
+   "unit": "%",
+   "asof": "2026-04-10",
+   "basis": "계산: 사건 거래일 종가 ÷ 전 거래일 종가 − 1 (야후 일별 종가)",
+   "case": "citron-aaoi-2026-04",
+   "ticker": "AAOI",
+   "name": "어플라이드 옵토일렉트로닉스",
+   "role": "지목",
+   "benchmark": {
+    "ticker": "^GSPC",
+    "name": "S&P 500"
+   },
+   "t0": "2026-04-10",
+   "dates": {
+    "t-1": "2026-04-09",
+    "t0": "2026-04-10",
+    "t+1": "2026-04-13",
+    "t+5": "2026-04-17",
+    "t+20": "2026-05-08"
+   },
+   "base_close": 133.3,
+   "close0": 150.6,
+   "returns": {
+    "d0": 12.98,
+    "low0": -3.96,
+    "high0": 16.09,
+    "d1": 14.92,
+    "d5": 19.59,
+    "d20": 11.73
+   },
+   "benchmark_returns": {
+    "d0": -0.11,
+    "d1": 0.9,
+    "d5": 4.42,
+    "d20": 8.41
+   },
+   "excess": {
+    "d0": 13.09,
+    "d1": 14.02,
+    "d5": 15.17,
+    "d20": 3.32
+   },
+   "vol60": 11.38,
+   "z0": 1.1,
+   "retraced5": -0.16,
+   "retraced20": 0.75,
+   "sources": [
+    {
+     "n": 1,
+     "title": "Yahoo Finance 일별 시세 — AAOI",
+     "url": "https://query1.finance.yahoo.com/v8/finance/chart/AAOI?period1=1764547200&period2=1779753600&interval=1d",
+     "date": "2026-11-20",
+     "read": "full"
+    },
+    {
+     "n": 2,
+     "title": "Yahoo Finance 일별 시세 — ^GSPC",
+     "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?period1=1764547200&period2=1779753600&interval=1d",
+     "date": "2026-11-20",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "conf": "high",
+   "note": "어플라이드 옵토일렉트로닉스의 2026-04-10 종가는 전 거래일보다 +12.98%, 같은 날 S&P 500 -0.11%. 장중 저가 -3.96%, 고가 +16.09%."
+  },
+  {
+   "id": "serenity-auros-2026-05-322310-kq",
+   "primary": true,
+   "country": "KR",
+   "city": null,
+   "value": 30,
+   "unit": "%",
+   "asof": "2026-05-04",
+   "basis": "계산: 사건 거래일 종가 ÷ 전 거래일 종가 − 1 (야후 일별 종가)",
+   "case": "serenity-auros-2026-05",
+   "ticker": "322310.KQ",
+   "name": "오로스테크놀로지",
+   "role": "지목",
+   "benchmark": {
+    "ticker": "^KQ11",
+    "name": "코스닥"
+   },
+   "t0": "2026-05-04",
+   "dates": {
+    "t-1": "2026-04-30",
+    "t0": "2026-05-04",
+    "t+1": "2026-05-06",
+    "t+5": "2026-05-12",
+    "t+20": "2026-06-04"
+   },
+   "base_close": 34500,
+   "close0": 44850,
+   "returns": {
+    "d0": 30,
+    "low0": 7.1,
+    "high0": 30,
+    "d1": 24.78,
+    "d5": -6.81,
+    "d20": -20.29
+   },
+   "benchmark_returns": {
+    "d0": 1.79,
+    "d1": 1.49,
+    "d5": -1.1,
+    "d20": -11.96
+   },
+   "excess": {
+    "d0": 28.21,
+    "d1": 23.29,
+    "d5": -5.71,
+    "d20": -8.33
+   },
+   "vol60": 6.56,
+   "z0": 4.6,
+   "retraced5": 1.2,
+   "retraced20": 1.3,
+   "sources": [
+    {
+     "n": 1,
+     "title": "Yahoo Finance 일별 시세 — 322310.KQ",
+     "url": "https://query1.finance.yahoo.com/v8/finance/chart/322310.KQ?period1=1766620800&period2=1781827200&interval=1d",
+     "date": "2026-11-20",
+     "read": "full"
+    },
+    {
+     "n": 2,
+     "title": "Yahoo Finance 일별 시세 — ^KQ11",
+     "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EKQ11?period1=1766620800&period2=1781827200&interval=1d",
+     "date": "2026-11-20",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "conf": "high",
+   "note": "오로스테크놀로지의 2026-05-04 종가는 전 거래일보다 +30.00%, 같은 날 코스닥 +1.79%. 장중 저가 +7.10%, 고가 +30.00%."
+  },
+  {
+   "id": "citrini-korea-2026-05-278470-ks",
+   "primary": true,
+   "country": "KR",
+   "city": null,
+   "value": 0.94,
+   "unit": "%",
+   "asof": "2026-05-04",
+   "basis": "계산: 사건 거래일 종가 ÷ 전 거래일 종가 − 1 (야후 일별 종가)",
+   "case": "citrini-korea-2026-05",
+   "ticker": "278470.KS",
+   "name": "에이피알",
+   "role": "지목",
+   "benchmark": {
+    "ticker": "^KS11",
+    "name": "코스피"
+   },
+   "t0": "2026-05-04",
+   "dates": {
+    "t-1": "2026-04-30",
+    "t0": "2026-05-04",
+    "t+1": "2026-05-06",
+    "t+5": "2026-05-12",
+    "t+20": "2026-06-04"
+   },
+   "base_close": 424500,
+   "close0": 428500,
+   "returns": {
+    "d0": 0.94,
+    "low0": -1.88,
+    "high0": 4.36,
+    "d1": -0.59,
+    "d5": -2.12,
+    "d20": -4.59
+   },
+   "benchmark_returns": {
+    "d0": 5.12,
+    "d1": 11.91,
+    "d5": 15.83,
+    "d20": 30.92
+   },
+   "excess": {
+    "d0": -4.18,
+    "d1": -12.5,
+    "d5": -17.95,
+    "d20": -35.51
+   },
+   "vol60": 4.29,
+   "z0": 0.2,
+   "retraced5": -3.29,
+   "retraced20": -7.5,
+   "sources": [
+    {
+     "n": 1,
+     "title": "Yahoo Finance 일별 시세 — 278470.KS",
+     "url": "https://query1.finance.yahoo.com/v8/finance/chart/278470.KS?period1=1766620800&period2=1781827200&interval=1d",
+     "date": "2026-11-20",
+     "read": "full"
+    },
+    {
+     "n": 2,
+     "title": "Yahoo Finance 일별 시세 — ^KS11",
+     "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EKS11?period1=1766620800&period2=1781827200&interval=1d",
+     "date": "2026-11-20",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "conf": "high",
+   "note": "에이피알의 2026-05-04 종가는 전 거래일보다 +0.94%, 같은 날 코스피 +5.12%. 장중 저가 -1.88%, 고가 +4.36%."
+  },
+  {
+   "id": "socamm-tmtb-2026-06-mu",
+   "primary": true,
+   "country": "US",
+   "city": null,
+   "value": -7.74,
+   "unit": "%",
+   "asof": "2026-06-04",
+   "basis": "계산: 사건 거래일 종가 ÷ 전 거래일 종가 − 1 (야후 일별 종가)",
+   "case": "socamm-tmtb-2026-06",
+   "ticker": "MU",
+   "name": "마이크론",
+   "role": "지목",
+   "benchmark": {
+    "ticker": "^GSPC",
+    "name": "S&P 500"
+   },
+   "t0": "2026-06-04",
+   "dates": {
+    "t-1": "2026-06-03",
+    "t0": "2026-06-04",
+    "t+1": "2026-06-05",
+    "t+5": "2026-06-11",
+    "t+20": "2026-07-06"
+   },
+   "base_close": 1079.57,
+   "close0": 996,
+   "returns": {
+    "d0": -7.74,
+    "low0": -9.99,
+    "high0": -4,
+    "d1": -19.97,
+    "d5": -7.75,
+    "d20": -8.78
+   },
+   "benchmark_returns": {
+    "d0": 0.41,
+    "d1": -2.25,
+    "d5": -2.11,
+    "d20": -0.22
+   },
+   "excess": {
+    "d0": -8.15,
+    "d1": -17.72,
+    "d5": -5.64,
+    "d20": -8.56
+   },
+   "vol60": 5.27,
+   "z0": -1.5,
+   "retraced5": 0.31,
+   "retraced20": -0.05,
+   "sources": [
+    {
+     "n": 1,
+     "title": "Yahoo Finance 일별 시세 — MU",
+     "url": "https://query1.finance.yahoo.com/v8/finance/chart/MU?period1=1769299200&period2=1784505600&interval=1d",
+     "date": "2026-11-20",
+     "read": "full"
+    },
+    {
+     "n": 2,
+     "title": "Yahoo Finance 일별 시세 — ^GSPC",
+     "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?period1=1769299200&period2=1784505600&interval=1d",
+     "date": "2026-11-20",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "conf": "high",
+   "note": "마이크론의 2026-06-04 종가는 전 거래일보다 -7.74%, 같은 날 S&P 500 +0.41%. 장중 저가 -9.99%, 고가 -4.00%."
+  },
+  {
+   "id": "socamm-tmtb-2026-06-000660-ks",
+   "primary": false,
+   "country": "KR",
+   "city": null,
+   "value": -9.92,
+   "unit": "%",
+   "asof": "2026-06-05",
+   "basis": "계산: 사건 거래일 종가 ÷ 전 거래일 종가 − 1 (야후 일별 종가)",
+   "case": "socamm-tmtb-2026-06",
+   "ticker": "000660.KS",
+   "name": "SK하이닉스",
+   "role": "동반",
+   "benchmark": {
+    "ticker": "^KS11",
+    "name": "코스피"
+   },
+   "t0": "2026-06-05",
+   "dates": {
+    "t-1": "2026-06-04",
+    "t0": "2026-06-05",
+    "t+1": "2026-06-08",
+    "t+5": "2026-06-12",
+    "t+20": "2026-07-03"
+   },
+   "base_close": 2298000,
+   "close0": 2070000,
+   "returns": {
+    "d0": -9.92,
+    "low0": -9.92,
+    "high0": -4.79,
+    "d1": -16.84,
+    "d5": -6.44,
+    "d20": 5.53
+   },
+   "benchmark_returns": {
+    "d0": -5.54,
+    "d1": -13.37,
+    "d5": -5.97,
+    "d20": -6.38
+   },
+   "excess": {
+    "d0": -4.38,
+    "d1": -3.47,
+    "d5": -0.47,
+    "d20": 11.91
+   },
+   "vol60": 5.5,
+   "z0": -1.8,
+   "retraced5": 0.89,
+   "retraced20": 3.72,
+   "sources": [
+    {
+     "n": 1,
+     "title": "Yahoo Finance 일별 시세 — 000660.KS",
+     "url": "https://query1.finance.yahoo.com/v8/finance/chart/000660.KS?period1=1769385600&period2=1784592000&interval=1d",
+     "date": "2026-11-20",
+     "read": "full"
+    },
+    {
+     "n": 2,
+     "title": "Yahoo Finance 일별 시세 — ^KS11",
+     "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EKS11?period1=1769385600&period2=1784592000&interval=1d",
+     "date": "2026-11-20",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "conf": "high",
+   "note": "SK하이닉스의 2026-06-05 종가는 전 거래일보다 -9.92%, 같은 날 코스피 -5.54%. 장중 저가 -9.92%, 고가 -4.79%."
+  },
+  {
+   "id": "socamm-tmtb-2026-06-005930-ks",
+   "primary": false,
+   "country": "KR",
+   "city": null,
+   "value": -6.4,
+   "unit": "%",
+   "asof": "2026-06-05",
+   "basis": "계산: 사건 거래일 종가 ÷ 전 거래일 종가 − 1 (야후 일별 종가)",
+   "case": "socamm-tmtb-2026-06",
+   "ticker": "005930.KS",
+   "name": "삼성전자",
+   "role": "동반",
+   "benchmark": {
+    "ticker": "^KS11",
+    "name": "코스피"
+   },
+   "t0": "2026-06-05",
+   "dates": {
+    "t-1": "2026-06-04",
+    "t0": "2026-06-05",
+    "t+1": "2026-06-08",
+    "t+5": "2026-06-12",
+    "t+20": "2026-07-03"
+   },
+   "base_close": 351500,
+   "close0": 329000,
+   "returns": {
+    "d0": -6.4,
+    "low0": -7.54,
+    "high0": -2.42,
+    "d1": -15.93,
+    "d5": -8.25,
+    "d20": -11.95
+   },
+   "benchmark_returns": {
+    "d0": -5.54,
+    "d1": -13.37,
+    "d5": -5.97,
+    "d20": -6.38
+   },
+   "excess": {
+    "d0": -0.86,
+    "d1": -2.56,
+    "d5": -2.28,
+    "d20": -5.57
+   },
+   "vol60": 4.61,
+   "z0": -1.4,
+   "retraced5": null,
+   "retraced20": null,
+   "sources": [
+    {
+     "n": 1,
+     "title": "Yahoo Finance 일별 시세 — 005930.KS",
+     "url": "https://query1.finance.yahoo.com/v8/finance/chart/005930.KS?period1=1769385600&period2=1784592000&interval=1d",
+     "date": "2026-11-20",
+     "read": "full"
+    },
+    {
+     "n": 2,
+     "title": "Yahoo Finance 일별 시세 — ^KS11",
+     "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EKS11?period1=1769385600&period2=1784592000&interval=1d",
+     "date": "2026-11-20",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "conf": "high",
+   "note": "삼성전자의 2026-06-05 종가는 전 거래일보다 -6.40%, 같은 날 코스피 -5.54%. 장중 저가 -7.54%, 고가 -2.42%."
+  },
+  {
+   "id": "burry-mu-short-2026-07-mu",
+   "primary": true,
+   "country": "US",
+   "city": null,
+   "value": 0.94,
+   "unit": "%",
+   "asof": "2026-07-06",
+   "basis": "계산: 사건 거래일 종가 ÷ 전 거래일 종가 − 1 (야후 일별 종가)",
+   "case": "burry-mu-short-2026-07",
+   "ticker": "MU",
+   "name": "마이크론",
+   "role": "지목",
+   "benchmark": {
+    "ticker": "^GSPC",
+    "name": "S&P 500"
+   },
+   "t0": "2026-07-06",
+   "dates": {
+    "t-1": "2026-07-02",
+    "t0": "2026-07-06",
+    "t+1": "2026-07-07",
+    "t+5": "2026-07-13",
+    "t+20": "2026-08-03"
+   },
+   "base_close": 975.56,
+   "close0": 984.75,
+   "returns": {
+    "d0": 0.94,
+    "low0": 0.54,
+    "high0": 4.45,
+    "d1": -3.81,
+    "d5": -3.95,
+    "d20": -14.97
+   },
+   "benchmark_returns": {
+    "d0": 0.72,
+    "d1": 0.28,
+    "d5": 0.43,
+    "d20": 1.57
+   },
+   "excess": {
+    "d0": 0.22,
+    "d1": -4.09,
+    "d5": -4.38,
+    "d20": -16.54
+   },
+   "vol60": 6.62,
+   "z0": 0.1,
+   "retraced5": null,
+   "retraced20": null,
+   "sources": [
+    {
+     "n": 1,
+     "title": "Yahoo Finance 일별 시세 — MU",
+     "url": "https://query1.finance.yahoo.com/v8/finance/chart/MU?period1=1772064000&period2=1787270400&interval=1d",
+     "date": "2026-11-20",
+     "read": "full"
+    },
+    {
+     "n": 2,
+     "title": "Yahoo Finance 일별 시세 — ^GSPC",
+     "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?period1=1772064000&period2=1787270400&interval=1d",
+     "date": "2026-11-20",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "conf": "high",
+   "note": "마이크론의 2026-07-06 종가는 전 거래일보다 +0.94%, 같은 날 S&P 500 +0.72%. 장중 저가 +0.54%, 고가 +4.45%."
+  },
+  {
+   "id": "hunterbrook-be-2026-07-be",
+   "primary": true,
+   "country": "US",
+   "city": null,
+   "value": -5.67,
+   "unit": "%",
+   "asof": "2026-07-08",
+   "basis": "계산: 사건 거래일 종가 ÷ 전 거래일 종가 − 1 (야후 일별 종가)",
+   "case": "hunterbrook-be-2026-07",
+   "ticker": "BE",
+   "name": "블룸에너지",
+   "role": "지목",
+   "benchmark": {
+    "ticker": "^GSPC",
+    "name": "S&P 500"
+   },
+   "t0": "2026-07-08",
+   "dates": {
+    "t-1": "2026-07-07",
+    "t0": "2026-07-08",
+    "t+1": "2026-07-09",
+    "t+5": "2026-07-15",
+    "t+20": "2026-08-05"
+   },
+   "base_close": 269.57,
+   "close0": 254.29,
+   "returns": {
+    "d0": -5.67,
+    "low0": -12.7,
+    "high0": 0.06,
+    "d1": -4.66,
+    "d5": -11.2,
+    "d20": -13.07
+   },
+   "benchmark_returns": {
+    "d0": -0.28,
+    "d1": 0.53,
+    "d5": 0.91,
+    "d20": 2.93
+   },
+   "excess": {
+    "d0": -5.39,
+    "d1": -5.19,
+    "d5": -12.11,
+    "d20": -16
+   },
+   "vol60": 7.56,
+   "z0": -0.8,
+   "retraced5": -1.25,
+   "retraced20": -1.97,
+   "sources": [
+    {
+     "n": 1,
+     "title": "Yahoo Finance 일별 시세 — BE",
+     "url": "https://query1.finance.yahoo.com/v8/finance/chart/BE?period1=1772236800&period2=1787443200&interval=1d",
+     "date": "2026-11-20",
+     "read": "full"
+    },
+    {
+     "n": 2,
+     "title": "Yahoo Finance 일별 시세 — ^GSPC",
+     "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?period1=1772236800&period2=1787443200&interval=1d",
+     "date": "2026-11-20",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "conf": "high",
+   "note": "블룸에너지의 2026-07-08 종가는 전 거래일보다 -5.67%, 같은 날 S&P 500 -0.28%. 장중 저가 -12.70%, 고가 +0.06%."
+  },
+  {
+   "id": "muddy-waters-nvda-2026-11-nvda",
+   "primary": true,
+   "country": "US",
+   "city": null,
+   "value": -0.44,
+   "unit": "%",
+   "asof": "2026-11-17",
+   "basis": "계산: 사건 거래일 종가 ÷ 전 거래일 종가 − 1 (야후 일별 종가)",
+   "case": "muddy-waters-nvda-2026-11",
+   "ticker": "NVDA",
+   "name": "엔비디아",
+   "role": "지목",
+   "benchmark": {
+    "ticker": "^GSPC",
+    "name": "S&P 500"
+   },
+   "t0": "2026-11-17",
+   "dates": {
+    "t-1": "2026-11-16",
+    "t0": "2026-11-17",
+    "t+1": "2026-11-18",
+    "t+5": null,
+    "t+20": null
+   },
+   "base_close": 156.14,
+   "close0": 155.46,
+   "returns": {
+    "d0": -0.44,
+    "low0": -3.72,
+    "high0": 1.31,
+    "d1": -3.32,
+    "d5": null,
+    "d20": null
+   },
+   "benchmark_returns": {
+    "d0": -1.03,
+    "d1": -1.25,
+    "d5": null,
+    "d20": null
+   },
+   "excess": {
+    "d0": 0.59,
+    "d1": -2.07,
+    "d5": null,
+    "d20": null
+   },
+   "vol60": 2.76,
+   "z0": -0.2,
+   "retraced5": null,
+   "retraced20": null,
+   "sources": [
+    {
+     "n": 1,
+     "title": "Yahoo Finance 일별 시세 — NVDA",
+     "url": "https://query1.finance.yahoo.com/v8/finance/chart/NVDA?period1=1783641600&period2=1795219200&interval=1d",
+     "date": "2026-11-20",
+     "read": "full"
+    },
+    {
+     "n": 2,
+     "title": "Yahoo Finance 일별 시세 — ^GSPC",
+     "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?period1=1783641600&period2=1795219200&interval=1d",
+     "date": "2026-11-20",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "conf": "high",
+   "note": "엔비디아의 2026-11-17 종가는 전 거래일보다 -0.44%, 같은 날 S&P 500 -1.03%. 장중 저가 -3.72%, 고가 +1.31%. 자료 기준일(2026-11-20)까지 d5·d20 의 거래일이 오지 않았다."
+  },
+  {
+   "id": "hunterbrook-amd-2026-11-amd",
+   "primary": true,
+   "country": "US",
+   "city": null,
+   "value": -7.72,
+   "unit": "%",
+   "asof": "2026-11-19",
+   "basis": "계산: 사건 거래일 종가 ÷ 전 거래일 종가 − 1 (야후 일별 종가)",
+   "case": "hunterbrook-amd-2026-11",
+   "ticker": "AMD",
+   "name": "AMD",
+   "role": "지목",
+   "benchmark": {
+    "ticker": "^GSPC",
+    "name": "S&P 500"
+   },
+   "t0": "2026-11-19",
+   "dates": {
+    "t-1": "2026-11-18",
+    "t0": "2026-11-19",
+    "t+1": null,
+    "t+5": null,
+    "t+20": null
+   },
+   "base_close": 530.14,
+   "close0": 489.19,
+   "returns": {
+    "d0": -7.72,
+    "low0": -11.24,
+    "high0": 4.69,
+    "d1": null,
+    "d5": null,
+    "d20": null
+   },
+   "benchmark_returns": {
+    "d0": -2.02,
+    "d1": null,
+    "d5": null,
+    "d20": null
+   },
+   "excess": {
+    "d0": -5.7,
+    "d1": null,
+    "d5": null,
+    "d20": null
+   },
+   "vol60": 5.08,
+   "z0": -1.5,
+   "retraced5": null,
+   "retraced20": null,
+   "sources": [
+    {
+     "n": 1,
+     "title": "Yahoo Finance 일별 시세 — AMD",
+     "url": "https://query1.finance.yahoo.com/v8/finance/chart/AMD?period1=1783814400&period2=1795219200&interval=1d",
+     "date": "2026-11-20",
+     "read": "full"
+    },
+    {
+     "n": 2,
+     "title": "Yahoo Finance 일별 시세 — ^GSPC",
+     "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?period1=1783814400&period2=1795219200&interval=1d",
+     "date": "2026-11-20",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "conf": "high",
+   "note": "AMD의 2026-11-19 종가는 전 거래일보다 -7.72%, 같은 날 S&P 500 -2.02%. 장중 저가 -11.24%, 고가 +4.69%. 자료 기준일(2026-11-20)까지 d1·d5·d20 의 거래일이 오지 않았다."
+  }
+ ]
+}

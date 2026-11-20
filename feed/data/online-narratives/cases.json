@@ -1,0 +1,4319 @@
+{
+ "schema": 1,
+ "bundle": "N1",
+ "title": "사례 — 글에서 언론까지의 시간표",
+ "updated_kst": "2026-11-20T18:43:16+09:00",
+ "measure": null,
+ "notes": [
+  "사례 1건이 기록 하나다. 2025~2026년에 X·Substack(또는 개인 블로그, 공매도 조사 매체가 X 로 알린 글)이 주가 급변의 계기로 지목됐거나, 유명 계정이 종목을 겨냥한 건을 손으로 골랐다. 주가를 움직였다고 알려진 건에서 골랐으므로 이런 글이 주가를 움직이는 빈도는 이 묶음으로 알 수 없다.",
+  "대표 값은 최초 글 게시부터 대표 종목 시장의 다음 정규장 시작까지의 시간(계산)이다. 읽고 판단할 시간이 있었는지를 본다. 정규장 중에 나온 글은 0 이다.",
+  "category 는 글의 종류다: thesis 장문 논지 · relay 유료 글·소식의 전달 · short 공매도 포지션 공개 · mention 종목 언급 · headline 속보 중계. direction 은 글이 가리킨 주가 방향이다.",
+  "timeline 의 시각은 UTC 다. 원문이 미국 동부시간으로 적은 것은 바꿔 적었고 what 에 원래 표기를 남겼다. step 이 background 인 줄은 최초 글보다 앞선 배경이다.",
+  "attribution 은 언론이 주가 움직임을 이 글 때문이라고 썼는지를 우리 문장으로 옮긴 것이고, confounders 는 같은 날 주가의 다른 이유로 거론된 것이다. 둘을 가르는 일은 하지 않았다.",
+  "X 글의 시각·좋아요 수는 로그인 없이 열리는 공개 임베드 주소에서 2026-11-20 에 읽은 값이다. 긴 글은 앞부분만 읽혔다. 조회수와 재게시 수는 얻지 못했다.",
+  "유료 글(Substack 의 only_paid)은 게시 시각·제목·공개된 앞부분과 반응 수만 읽었고 본문은 싣지 않는다."
+ ],
+ "records": [
+  {
+   "id": "deepseek-emanuel-2025-01",
+   "country": "US",
+   "city": null,
+   "value": 47.4,
+   "unit": "시간",
+   "asof": "2025-01-27",
+   "basis": "계산: 최초 글 게시 시각부터 대표 종목 시장의 다음 정규장 시작까지의 시간. 정규장 중에 나온 글은 0",
+   "title": "Jeffrey Emanuel 의 블로그 글 「The Short Case for Nvidia Stock」과 2025-01-27 엔비디아 급락",
+   "category": "thesis",
+   "direction": "down",
+   "claim": "AI 에는 낙관적이지만 DeepSeek 의 효율 개선, 빅테크 자체 칩, 경쟁 하드웨어·소프트웨어 등 여러 힘이 겹쳐 엔비디아의 초과 이익은 지속되기 어렵고, 주식은 공매도 대상이거나 적어도 보유할 만하지 않다는 주장.",
+   "targets": [
+    {
+     "ticker": "NVDA",
+     "name": "엔비디아",
+     "role": "지목"
+    }
+   ],
+   "primary": "NVDA",
+   "origin": {
+    "author": "Jeffrey Emanuel",
+    "handle": "@doodlestein",
+    "platform": "blog",
+    "url": "https://youtubetranscriptoptimizer.com/blog/05_the_short_case_for_nvda",
+    "posted_kst": "2025-01-26T00:03:39+09:00",
+    "precision": "minute",
+    "paywall": "free",
+    "position_disclosed": "글 본문에는 포지션 공시 문구를 찾지 못함. 2025-02-07 diginomica 인터뷰에서 게시 당시 엔비디아 포지션이 없었고 공매도도 하지 않았다고 말함(\"I had no position in NVIDIA\").",
+    "reach": [
+     {
+      "metric": "likes",
+      "value": 937,
+      "asof": "2026-11-20",
+      "src": 2,
+      "note": "글쓴이의 X 소개 글(1883168862704947237) 좋아요"
+     },
+     {
+      "metric": "views",
+      "value": 500000,
+      "asof": "2025-02-01",
+      "src": 5,
+      "note": "MarketWatch(Slashdot 요약) 'nearly half a million views' — 글쓴이의 X 글 조회수. 블로그 자체 조회수는 원문에서 못 찾음"
+     },
+     {
+      "metric": "views",
+      "value": 13000000,
+      "asof": "2025-02-01",
+      "src": 5,
+      "note": "Morgan Brown(Dropbox) 의 X 타래 조회수 'over 13 million'"
+     },
+     {
+      "metric": "subscribers",
+      "value": 15000,
+      "asof": "2025-02-01",
+      "src": 5,
+      "note": "글쓴이 X 팔로어 약 2,000 → 15,000 이상"
+     }
+    ],
+    "note": "블로그는 게시 날짜(2025-01-25)만 적는다. 시각은 글쓴이가 X 에 글을 소개한 시각이다."
+   },
+   "market": {
+    "t0": "2025-01-27",
+    "open_kst": "2025-01-27T23:30:00+09:00",
+    "close_kst": "2025-01-28T06:00:00+09:00",
+    "session": "휴장일"
+   },
+   "db_era": false,
+   "timeline": [
+    {
+     "at": "2025-01-24T20:00:00Z",
+     "precision": "hour",
+     "step": "background",
+     "who": "Jeffrey Emanuel",
+     "platform": "blog",
+     "what": "금요일 오후 3시(동부)쯤 쓰기 시작해 토요일 새벽 2시 30분~3시쯤 한 번에 끝냈다고 인터뷰에서 밝힘(원 표기: 'around 3 p.m. Eastern … 2:30 in the morning on Saturday').",
+     "src": 6
+    },
+    {
+     "at": "2025-01-25",
+     "precision": "day",
+     "step": "origin",
+     "who": "Jeffrey Emanuel",
+     "platform": "blog",
+     "what": "개인 블로그에 「The Short Case for Nvidia Stock」 게시(페이지 표기 'January 25, 2025 · 60 min read', 시각 표기 없음). MarketWatch 는 1월 24일로 적고 Value Investors Club·Reddit·X 에도 올렸다고 씀.",
+     "src": 1
+    },
+    {
+     "at": "2025-01-25T15:03:39Z",
+     "precision": "minute",
+     "step": "origin",
+     "who": "Jeffrey Emanuel (@doodlestein)",
+     "platform": "x",
+     "what": "X 에 글을 소개('whether NVDA stock is finally a decent short').",
+     "src": 2
+    },
+    {
+     "at": "2025-01-26T18:14:25Z",
+     "precision": "minute",
+     "step": "amplify",
+     "who": "Chamath Palihapitiya (@chamath)",
+     "platform": "x",
+     "what": "'This report is long but very good' 라며 DeepSeek R1 대목을 인용해 공유(좋아요 11,818).",
+     "src": 3
+    },
+    {
+     "at": "2025-01-27T01:19:13Z",
+     "precision": "minute",
+     "step": "amplify",
+     "who": "Morgan Brown (@morganb, Dropbox)",
+     "platform": "x",
+     "what": "글을 가리킨 타래를 올림 — MarketWatch 는 조회수 1,300만 이상으로 보도. 시각은 글 번호(1883686164336709661)에서 계산한 값이고 본문은 임베드로 읽히지 않음.",
+     "src": 5
+    },
+    {
+     "at": "2025-01-27T05:37:54Z",
+     "precision": "minute",
+     "step": "amplify",
+     "who": "Naval Ravikant (@naval)",
+     "platform": "x",
+     "what": "글쓴이 글을 인용해 'Come for the trade, stay for the dazzling 60-minute education' 라고 공유(h/t @snowmaker).",
+     "src": 4
+    },
+    {
+     "at": "2025-01-27",
+     "precision": "day",
+     "step": "market",
+     "who": "Nvidia",
+     "platform": "market",
+     "what": "엔비디아 시가총액이 하루에 약 6,000억 달러 줄어 단일 기업 사상 최대 하루 감소로 보도됨.",
+     "src": 5
+    },
+    {
+     "at": "2025-01-29",
+     "precision": "day",
+     "step": "media",
+     "who": "Matt Levine (Bloomberg Opinion)",
+     "platform": "bloomberg",
+     "what": "칼럼에서 이 글이 급락의 '중요한 촉매'였다는 온라인 이야기를 전하며 '가장 영향력 큰 공매도 리포트 후보'라고 씀(원문 403, MarketWatch·Slashdot 인용으로 확인).",
+     "src": 7
+    },
+    {
+     "at": "2025-02-01",
+     "precision": "day",
+     "step": "media",
+     "who": "MarketWatch",
+     "platform": "marketwatch",
+     "what": "「The blogger who helped spark Nvidia's $600 billion stock collapse…」 보도 — 조회수·팔로어 증가, 헤지펀드가 시간당 1,000달러에 통화 요청했다는 내용(원문 401, Slashdot 요약으로 읽음).",
+     "src": 5
+    },
+    {
+     "at": "2025-02-07",
+     "precision": "day",
+     "step": "response",
+     "who": "Jeffrey Emanuel",
+     "platform": "diginomica",
+     "what": "인터뷰에서 게시 당시 포지션이 없었고 글이 그렇게 퍼질 줄 몰랐다고 설명.",
+     "src": 6
+    }
+   ],
+   "attribution": [
+    {
+     "outlet": "MarketWatch (Slashdot 요약)",
+     "what": "제목에서 이 블로거가 엔비디아 6,000억 달러 급락을 '촉발하는 데 일조했다'고 씀.",
+     "src": 5
+    },
+    {
+     "outlet": "Bloomberg Opinion (Matt Levine) — MarketWatch 인용",
+     "what": "단정하지 않고, 글이 매도의 중요한 촉매였다는 온라인 이야기를 전하며 역대 가장 영향력 큰 공매도 리포트 후보라고 평가.",
+     "src": 5
+    },
+    {
+     "outlet": "diginomica",
+     "what": "이 글이 사상 최대 하루 낙폭을 촉발했다는 평가가 널리 퍼져 있다고 씀.",
+     "src": 6
+    }
+   ],
+   "confounders": [
+    {
+     "what": "DeepSeek R1 공개 자체에 대한 시장 반응 — diginomica 는 사건을 'DeepSeek AI market correction'이라 부르고, MarketWatch 도 글의 논거로 DeepSeek 등장을 듦. 글이 퍼진 시점과 DeepSeek 충격이 겹쳐 글의 몫을 분리한 보도는 찾지 못함.",
+     "src": 6
+    },
+    {
+     "what": "검색 요약: 글쓴이 본인은 글이 DeepSeek 에 시장이 반응하던 때에 예상 밖으로 퍼지며 충격을 보탰다고 주장(매체 본문 미확인).",
+     "src": 5
+    }
+   ],
+   "response": [
+    {
+     "who": "Jeffrey Emanuel",
+     "at": "2025-02-07",
+     "what": "게시 때 포지션 없음, 토요일 새벽에 끝내 공매도할 수 없었고 장전 거래도 하지 않았다고 말함.",
+     "src": 6
+    }
+   ],
+   "aftermath": {
+    "status": "미정",
+    "what": "읽은 원문 범위에서는 주장(엔비디아 초과 이익 지속 불가)의 이후 검증을 다룬 자료를 확인하지 못함. 주가의 이후 회복 여부는 다른 쪽 계산에 맡김.",
+    "src": []
+   },
+   "price_as_reported": [
+    {
+     "ticker": "NVDA",
+     "move": "시가총액 약 -6,000억 달러(단일 기업 사상 최대 하루 감소로 보도)",
+     "when": "2025-01-27 종가",
+     "src": 5
+    }
+   ],
+   "not_found": [
+    "블로그 게시의 정확한 시각(페이지는 날짜만 표기, lastModified 2025-01-26T23:22:32Z 는 블로그 전체 빌드 시각으로 보임)",
+    "Bloomberg Matt Levine 칼럼 원문(403) — 인용 문구는 MarketWatch 를 옮긴 Slashdot 요약으로만 확인",
+    "MarketWatch 원문(401), semiwiki 전재본(403)",
+    "글쓴이가 밝힌 블로그 조회수 — 확인한 것은 X 글 조회수 '약 50만'뿐",
+    "2025-01-27 엔비디아 종가 등락률(-17% 안팎)을 적은 원문은 읽지 못함(검색 요약에 '개장 때 약 -12.5%'만 있음)",
+    "Morgan Brown 의 X 타래 본문(임베드 주소가 빈 값 반환)",
+    "주장의 이후 경과를 다룬 원문"
+   ],
+   "refs": [
+    {
+     "bundle": "N2",
+     "id": "deepseek-emanuel-2025-01-nvda"
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "The Short Case for Nvidia Stock — Jeffrey Emanuel",
+     "url": "https://youtubetranscriptoptimizer.com/blog/05_the_short_case_for_nvda",
+     "date": "2025-01-25",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "X @doodlestein 1883168862704947237",
+     "url": "https://x.com/doodlestein/status/1883168862704947237",
+     "date": "2025-01-25",
+     "read": "full"
+    },
+    {
+     "n": 3,
+     "title": "X @chamath 1883579259769462819",
+     "url": "https://x.com/chamath/status/1883579259769462819",
+     "date": "2025-01-26",
+     "read": "partial"
+    },
+    {
+     "n": 4,
+     "title": "X @naval 1883751264082969057",
+     "url": "https://x.com/naval/status/1883751264082969057",
+     "date": "2025-01-27",
+     "read": "full"
+    },
+    {
+     "n": 5,
+     "title": "One Blogger Helped Spark NVIDIA's $600B Stock Collapse (Slashdot 의 MarketWatch 기사 요약)",
+     "url": "https://tech.slashdot.org/story/25/02/01/2235213/",
+     "date": "2025-02-01",
+     "read": "partial"
+    },
+    {
+     "n": 6,
+     "title": "Jeffrey Emanuel and the lessons we should all learn from the $2 trillion DeepSeek AI market correction — diginomica",
+     "url": "https://diginomica.com/jeffrey-emanuel-and-lessons-we-should-all-learn-2-trillion-deepseek-ai-market-correction",
+     "date": "2025-02-07",
+     "read": "partial"
+    },
+    {
+     "n": 7,
+     "title": "Matt Levine, Money Stuff: OpenAI Doesn't Want AI Cheaters — Bloomberg Opinion",
+     "url": "https://www.bloomberg.com/opinion/articles/2025-01-29/openai-doesn-t-want-ai-cheaters",
+     "date": "2025-01-29",
+     "read": "search_summary"
+    },
+    {
+     "n": 8,
+     "title": "The blogger who helped spark Nvidia's $600 billion stock collapse and a panic in Silicon Valley — MarketWatch",
+     "url": "https://www.marketwatch.com/story/the-blogger-who-helped-spark-nvidias-600-billion-stock-collapse-and-a-panic-in-silicon-valley-52aba340",
+     "date": "2025-02-01",
+     "read": "search_summary"
+    }
+   ],
+   "value_src": [
+    2
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "토요일에 나온 무료 글이 월요일 개장까지 이틀 가까이 X 에서 퍼졌다. DeepSeek R1 공개에 대한 시장 반응과 겹쳐 있고, 글의 몫을 따로 가른 보도는 찾지 못했다."
+  },
+  {
+   "id": "tariff-pause-headline-2025-04",
+   "country": "US",
+   "city": null,
+   "value": 0,
+   "unit": "시간",
+   "asof": "2025-04-07",
+   "basis": "계산: 최초 글 게시 시각부터 대표 종목 시장의 다음 정규장 시작까지의 시간. 정규장 중에 나온 글은 0",
+   "title": "2025-04-07 '관세 90일 유예 검토' 가짜 헤드라인과 S&P 500 급등락",
+   "category": "headline",
+   "direction": "up",
+   "claim": "케빈 해싯 NEC 위원장이 '트럼프가 중국을 뺀 모든 나라에 관세 90일 유예를 검토 중'이라고 말했다는 헤드라인. 실제 Fox News 발언은 '대통령이 결정할 것'이라는 유보적 답이었다.",
+   "targets": [
+    {
+     "ticker": "^GSPC",
+     "name": "S&P 500",
+     "role": "지목"
+    }
+   ],
+   "primary": "^GSPC",
+   "origin": {
+    "author": "Hammer Capital(익명)",
+    "handle": "@yourfavorito",
+    "platform": "x",
+    "url": "https://x.com/yourfavorito/status/1909247727730372704",
+    "posted_kst": "2025-04-07T23:11:45+09:00",
+    "precision": "minute",
+    "paywall": "free",
+    "position_disclosed": null,
+    "reach": [
+     {
+      "metric": "subscribers",
+      "value": 700,
+      "asof": "2025-04-07",
+      "src": 2,
+      "note": "PolitiFact 'nearly 700 followers'. NPR 은 'just over 1,100', 본인은 '600 followers' 라고 적음"
+     },
+     {
+      "metric": "likes",
+      "value": 32,
+      "asof": "2026-11-20",
+      "src": 5
+     }
+    ]
+   },
+   "market": {
+    "t0": "2025-04-07",
+    "open_kst": "2025-04-07T22:30:00+09:00",
+    "close_kst": "2025-04-08T05:00:00+09:00",
+    "session": "장중"
+   },
+   "db_era": false,
+   "timeline": [
+    {
+     "at": "2025-04-07T12:30:00Z",
+     "precision": "hour",
+     "step": "background",
+     "who": "Kevin Hassett / Fox News",
+     "platform": "tv",
+     "what": "오전 8시 30분(동부)쯤 Fox News 에서 '90일 유예를 검토하겠느냐'는 질문에 '대통령이 결정할 것'이라고 답함(12:33Z 에 Aaron Rupar 가 클립 게시).",
+     "src": 1
+    },
+    {
+     "at": "2025-04-07T14:09:00Z",
+     "precision": "minute",
+     "step": "market",
+     "who": "S&P 500",
+     "platform": "market",
+     "what": "10:09 ET 에 지수가 오르기 시작 — 첫 X 글보다 앞섬. Hammer Capital·Walter Bloomberg 모두 '10:09 에 헤드라인을 처음 봤다'고 주장.",
+     "src": 2
+    },
+    {
+     "at": "2025-04-07T14:11:45Z",
+     "precision": "minute",
+     "step": "origin",
+     "who": "Hammer Capital (@yourfavorito)",
+     "platform": "x",
+     "what": "'HASSETT: TRUMP IS CONSIDERING A 90-DAY PAUSE IN TARIFFS FOR ALL COUNTRIES EXCEPT CHINA / mother of all squeezes incoming' 게시(원 표기 10:11 a.m. ET, CNN·NPR·PolitiFact 가 최초 글로 지목).",
+     "src": 5
+    },
+    {
+     "at": "2025-04-07T14:12:21Z",
+     "precision": "minute",
+     "step": "amplify",
+     "who": "T3 Live (@t3live)",
+     "platform": "x",
+     "what": "'Markets RIPPING on Headline' 라며 같은 문구 게시. 같은 무렵 NYSE 객장에서 환호(CNN, 10:12 ET).",
+     "src": 6
+    },
+    {
+     "at": "2025-04-07T14:13:00Z",
+     "precision": "minute",
+     "step": "amplify",
+     "who": "Walter Bloomberg (@DeItaone, 팔로어 약 85만)",
+     "platform": "x",
+     "what": "사이렌 이모지와 함께 같은 문구 게시(10:13 ET). 뒤에 삭제해 글 번호 없음.",
+     "src": 3
+    },
+    {
+     "at": "2025-04-07T14:14:00Z",
+     "precision": "minute",
+     "step": "media",
+     "who": "ForexLive",
+     "platform": "web",
+     "what": "10:14 ET 기사에서 헤드라인이 '어디에나' 돌지만 출처가 불분명하다고 경고.",
+     "src": 2
+    },
+    {
+     "at": "2025-04-07T14:15:00Z",
+     "precision": "minute",
+     "step": "media",
+     "who": "CNBC (Carl Quintanilla, David Faber)",
+     "platform": "tv",
+     "what": "10:15 ET 쯤 앵커가 헤드라인을 읽고 1분 안에 자막으로 띄움 — '출처를 확인 중'이라고 덧붙임.",
+     "src": 4
+    },
+    {
+     "at": "2025-04-07T14:16:35Z",
+     "precision": "minute",
+     "step": "amplify",
+     "who": "unusual_whales (@unusual_whales)",
+     "platform": "x",
+     "what": "'BREAKING: Trump is reportedly expecting to announce a 90 day tariff pause' 게시(백악관 계정이 인용해 부인한 글).",
+     "src": 7
+    },
+    {
+     "at": "2025-04-07T14:18:00Z",
+     "precision": "minute",
+     "step": "market",
+     "who": "S&P 500",
+     "platform": "market",
+     "what": "10:08~10:18 ET 10분 동안 시가총액 2.4조 달러 증가, 장 초반 -4.7% 에서 +3.4% 까지 반전(Dow Jones Market Data).",
+     "src": 3
+    },
+    {
+     "at": "2025-04-07T14:19:00Z",
+     "precision": "minute",
+     "step": "media",
+     "who": "Reuters",
+     "platform": "wire",
+     "what": "CNBC 를 출처로 속보 송고(CNN 10:19, WSJ 10:20 ET).",
+     "src": 4
+    },
+    {
+     "at": "2025-04-07T14:33:00Z",
+     "precision": "minute",
+     "step": "response",
+     "who": "백악관 대변인 Karoline Leavitt (CNBC Eamon Javers 전언)",
+     "platform": "tv",
+     "what": "10:33 ET 90일 유예설은 'fake news' 라고 부인.",
+     "src": 2
+    },
+    {
+     "at": "2025-04-07T14:38:00Z",
+     "precision": "minute",
+     "step": "response",
+     "who": "Rapid Response 47 (@RapidResponse47)",
+     "platform": "x",
+     "what": "'Wrong. Not only did Director Hassett not say this' 게시, 14:39Z 'Wrong. Fake News.', 14:41Z 대변인 명의 부인 글.",
+     "src": 7
+    },
+    {
+     "at": "2025-04-07T14:41:00Z",
+     "precision": "minute",
+     "step": "market",
+     "who": "S&P 500",
+     "platform": "market",
+     "what": "10:41 ET 까지 상승분 전부 반납 — 약 23분 동안 2.5조 달러 감소. 종가는 -0.2%, 장중 변동 폭은 2020년 3월 이후 최대.",
+     "src": 3
+    },
+    {
+     "at": "2025-04-07T16:28:00Z",
+     "precision": "minute",
+     "step": "response",
+     "who": "Reuters",
+     "platform": "wire",
+     "what": "12:28 p.m. ET 에 원 속보 철회 공지('regrets its error', CNBC 헤드라인에서 가져왔다고 설명).",
+     "src": 4
+    },
+    {
+     "at": "2025-04-07T16:46:16Z",
+     "precision": "minute",
+     "step": "response",
+     "who": "Hammer Capital (@yourfavorito)",
+     "platform": "x",
+     "what": "'트레이딩 데스크들이 10:09 에 이 헤드라인을 돌리기 시작했고 나는 시장이 반응하던 것을 옮겼을 뿐, Fox 인터뷰의 잘못된 해석이었다'고 해명.",
+     "src": 8
+    }
+   ],
+   "attribution": [
+    {
+     "outlet": "NPR",
+     "what": "수조 달러 규모 등락이 X 의 허위 게시물에서 비롯된 것으로 보인다고 씀.",
+     "src": 1
+    },
+    {
+     "outlet": "Dow Jones / WSJ",
+     "what": "허위 정보에 따른 급등락으로 규정하되 헤드라인의 출처는 불분명하다고 씀.",
+     "src": 3
+    },
+    {
+     "outlet": "CNN (KRDO 전재)",
+     "what": "최초 X 글을 Hammer Capital 로 지목하고 CNBC·Reuters 가 증폭했다고 재구성.",
+     "src": 4
+    },
+    {
+     "outlet": "PolitiFact",
+     "what": "지수가 첫 X 글보다 2분 앞서 오르기 시작했다고 지적 — X 글이 유일한 출발점인지 불분명.",
+     "src": 2
+    }
+   ],
+   "confounders": [
+    {
+     "what": "지수는 10:09 ET 부터 올랐고(첫 X 글 10:11 전), 두 계정 모두 10:09 에 '트레이딩 데스크'발 헤드라인을 봤다고 주장 — X 이전의 비공개 채널(데스크 채팅·단말) 유통 가능성.",
+     "src": 2
+    },
+    {
+     "what": "CNN 은 지수가 이미 장 초반 저점에서 회복 중이었다고 적음. 4월 2일 관세 발표 뒤 며칠 급락해 유동성이 얇고 헤드라인에 초 단위로 반응하는 매매가 겹침(WSJ).",
+     "src": 4
+    },
+    {
+     "what": "증폭의 큰 몫은 X 가 아니라 CNBC 방송 자막과 Reuters 속보(10:15~10:20 ET).",
+     "src": 3
+    }
+   ],
+   "response": [
+    {
+     "who": "백악관(Leavitt, Rapid Response 47)",
+     "at": "2025-04-07T14:33:00Z",
+     "what": "'fake news' 라고 부인, 해싯이 그런 말을 하지 않았다며 클립 게시.",
+     "src": 7
+    },
+    {
+     "who": "CNBC",
+     "at": "2025-04-07",
+     "what": "'시장 움직임을 실시간으로 쫓다 확인되지 않은 정보를 자막에 냈고 곧 방송에서 정정했다' — 정보 출처는 밝히지 않음.",
+     "src": 1
+    },
+    {
+     "who": "Reuters",
+     "at": "2025-04-07T16:28:00Z",
+     "what": "CNBC 헤드라인에서 가져온 잘못된 기사를 철회하고 오류를 유감이라고 밝힘(철회 기사 STORY_TIME 1431 GMT 표기).",
+     "src": 9
+    },
+    {
+     "who": "Walter Bloomberg (@DeItaone)",
+     "at": "2025-04-07",
+     "what": "글 삭제. CNN 에 따르면 Reuters 에서 처음 봤다고 주장, WSJ 에는 10:09 에 헤드라인을 봤고 10:12 의 다른 계정 글과 시장 움직임을 보고 믿을 만하다고 판단했다고 설명.",
+     "src": 2
+    },
+    {
+     "who": "Hammer Capital (@yourfavorito)",
+     "at": "2025-04-07T16:46:16Z",
+     "what": "지어낸 것이 아니라 데스크발 헤드라인을 옮겼다고 해명, 출처는 밝히지 않음. NPR·PolitiFact 의 추가 질의에는 답하지 않음.",
+     "src": 8
+    }
+   ],
+   "aftermath": {
+    "status": "엇갈림",
+    "what": "당일 헤드라인(해싯 발언)은 백악관이 부인했고 Reuters 가 철회해 허위로 정리됨. 다만 이틀 뒤인 2025-04-09 트럼프가 실제로 90일 유예(중국 제외)를 발표했다는 것은 검색 요약(PolitiFact 04-09, Al Jazeera 04-10)으로만 확인.",
+    "src": [
+     2,
+     10
+    ]
+   },
+   "price_as_reported": [
+    {
+     "ticker": "SPX",
+     "move": "장 초반 -4.7% → +3.4% 까지 반전, 종가 -0.2%",
+     "when": "2025-04-07 장중·종가",
+     "src": 3
+    },
+    {
+     "ticker": "SPX",
+     "move": "시가총액 +2.4조 달러(10:08~10:18 ET), 이후 약 23분 동안 -2.5조 달러(10:41 ET 까지)",
+     "when": "2025-04-07 장중",
+     "src": 3
+    }
+   ],
+   "not_found": [
+    "Walter Bloomberg 원 글의 번호와 초 단위 시각(삭제됨 — 10:13 ET 는 WSJ·CNN 보도 값)",
+    "10:09 ET 에 '트레이딩 데스크'가 돌렸다는 헤드라인의 실제 출처(모든 재구성 기사가 불분명하다고 적음)",
+    "NYT 재구성 기사는 열지 않음. 장중 고점 대비 등락을 '7~8%'로 적은 원문은 읽지 못함(검색 요약에 '7% 넘게 급등'만 있음)",
+    "Reuters 속보 시각이 10:19(CNN) 와 10:20(WSJ) 로 1분 차이, Reuters 철회 기사의 STORY_TIME 1431 GMT 는 무엇의 시각인지 불분명",
+    "Fortune·Lead Stories 기사는 저장만 하고 본문은 읽지 않음(raw 에 있음), euronews 406"
+   ],
+   "refs": [
+    {
+     "bundle": "N2",
+     "id": "tariff-pause-headline-2025-04-gspc"
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "How a false X post about pausing tariffs led to multitrillion-dollar market swings — NPR (Bobby Allyn)",
+     "url": "https://www.npr.org/2025/04/07/nx-s1-5355055/tariffs-markets-x-social-media",
+     "date": "2025-04-07",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "PolitiFact: X posts on Hassett tariff pause and stock market rally",
+     "url": "https://www.politifact.com/factchecks/2025/apr/08/tweets/trump-hassett-tariff-pause-stock-market-rally-x/",
+     "date": "2025-04-08",
+     "read": "partial"
+    },
+    {
+     "n": 3,
+     "title": "The False Tariff Headline That Sent Stocks on a $2 Trillion Ride -- Update — Dow Jones Newswires/WSJ (Jack Pitcher, Isabella Simonetti), itiger 전재",
+     "url": "https://itiger.com/hans/news/2525079460",
+     "date": "2025-04-07",
+     "read": "partial"
+    },
+    {
+     "n": 4,
+     "title": "How actual fake news caused a market whiplash — CNN, KRDO 전재",
+     "url": "https://krdo.com/news/2025/04/07/how-actual-fake-news-caused-a-market-whiplash/",
+     "date": "2025-04-07",
+     "read": "partial"
+    },
+    {
+     "n": 5,
+     "title": "X @yourfavorito 1909247727730372704 (최초 글)",
+     "url": "https://x.com/yourfavorito/status/1909247727730372704",
+     "date": "2025-04-07",
+     "read": "full"
+    },
+    {
+     "n": 6,
+     "title": "X @t3live 1909247879891345788",
+     "url": "https://x.com/t3live/status/1909247879891345788",
+     "date": "2025-04-07",
+     "read": "full"
+    },
+    {
+     "n": 7,
+     "title": "X @RapidResponse47 1909254335822692548 · 1909254710361575428(unusual_whales 인용) · 1909255140671984072",
+     "url": "https://x.com/RapidResponse47/status/1909254710361575428",
+     "date": "2025-04-07",
+     "read": "full"
+    },
+    {
+     "n": 8,
+     "title": "X @yourfavorito 1909286613848310103 (해명)",
+     "url": "https://x.com/yourfavorito/status/1909286613848310103",
+     "date": "2025-04-07",
+     "read": "full"
+    },
+    {
+     "n": 9,
+     "title": "Story withdrawn on Hassett's comments on tariff pause — Reuters, Kitco 전재",
+     "url": "https://www.kitco.com/news/off-the-wire/2025-04-07/story-withdrawn-hassetts-comments-tariff-pause",
+     "date": "2025-04-07",
+     "read": "full"
+    },
+    {
+     "n": 10,
+     "title": "PolitiFact: Trump pauses country tariffs 90 days (flip-flop)",
+     "url": "https://www.politifact.com/factchecks/2025/apr/09/donald-trump/flip-flop-trump-pauses-country-tariffs-90-days",
+     "date": "2025-04-09",
+     "read": "search_summary"
+    },
+    {
+     "n": 11,
+     "title": "X @atrupar 1909222878244979085 (Fox 인터뷰 클립) · 1909250858044313876 (CNBC 방송 클립, 14:24Z)",
+     "url": "https://x.com/atrupar/status/1909222878244979085",
+     "date": "2025-04-07",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    5
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "장중에 X 계정들과 방송 자막·통신 속보를 거쳐 퍼진 잘못된 헤드라인이다. PolitiFact 는 지수가 첫 X 글(10:11 ET)보다 2분 먼저 오르기 시작했다고 적었다. 등락은 30여 분 안에 끝나 종가에는 남지 않았다."
+  },
+  {
+   "id": "citrini-2028-2026-02",
+   "country": "US",
+   "city": null,
+   "value": 19.1,
+   "unit": "시간",
+   "asof": "2026-02-23",
+   "basis": "계산: 최초 글 게시 시각부터 대표 종목 시장의 다음 정규장 시작까지의 시간. 정규장 중에 나온 글은 0",
+   "title": "Citrini Research 의 Substack 글 「The 2028 Global Intelligence Crisis」와 2026-02-23 미국 증시 급락",
+   "category": "thesis",
+   "direction": "down",
+   "claim": "2028년 6월 시점의 가상 매크로 메모 형식으로, AI 에이전트가 화이트칼라 일자리를 대체해 소비가 무너지고 실업률 10.2%·S&P 500 고점 대비 -38% 에 이르는 시나리오를 그림. 글 스스로 '예측이 아닌 시나리오'라고 밝힘.",
+   "targets": [
+    {
+     "ticker": "V",
+     "name": "비자",
+     "role": "지목"
+    },
+    {
+     "ticker": "DASH",
+     "name": "도어대시",
+     "role": "지목"
+    },
+    {
+     "ticker": "AXP",
+     "name": "아메리칸 익스프레스",
+     "role": "동반"
+    },
+    {
+     "ticker": "MA",
+     "name": "마스터카드",
+     "role": "동반"
+    },
+    {
+     "ticker": "IGV",
+     "name": "iShares 소프트웨어 ETF",
+     "role": "동반"
+    }
+   ],
+   "primary": "V",
+   "origin": {
+    "author": "Citrini(James van Geelen), 공저 Alap Shah",
+    "handle": "citrini / alapshah1 (Substack)",
+    "platform": "substack",
+    "url": "https://www.citriniresearch.com/p/2028gic",
+    "posted_kst": "2026-02-23T04:22:00+09:00",
+    "precision": "minute",
+    "paywall": "free",
+    "position_disclosed": null,
+    "reach": [
+     {
+      "metric": "likes",
+      "value": 9487,
+      "asof": "2026-11-20",
+      "src": 1,
+      "note": "Substack reaction_count"
+     },
+     {
+      "metric": "reposts",
+      "value": 1906,
+      "asof": "2026-11-20",
+      "src": 1,
+      "note": "Substack restacks. 댓글 90, 분량 7,375낱말"
+     }
+    ]
+   },
+   "market": {
+    "t0": "2026-02-23",
+    "open_kst": "2026-02-23T23:30:00+09:00",
+    "close_kst": "2026-02-24T06:00:00+09:00",
+    "session": "휴장일"
+   },
+   "db_era": false,
+   "timeline": [
+    {
+     "at": "2026-02-22T19:22:00Z",
+     "precision": "minute",
+     "step": "origin",
+     "who": "Citrini Research (Citrini, Alap Shah)",
+     "platform": "substack",
+     "what": "「THE 2028 GLOBAL INTELLIGENCE CRISIS — A Thought Exercise in Financial History, from the Future」 무료 공개(일요일 14:22 ET).",
+     "src": 1
+    },
+    {
+     "at": "2026-02-22",
+     "precision": "day",
+     "step": "amplify",
+     "who": "트레이딩 데스크·소셜미디어",
+     "platform": "x 등",
+     "what": "주말 동안 트레이딩 데스크와 소셜미디어에서 널리 돌았다고 보도(퍼뜨린 계정 이름은 확인 못 함).",
+     "src": 2
+    },
+    {
+     "at": "2026-02-23",
+     "precision": "day",
+     "step": "market",
+     "who": "미국 증시",
+     "platform": "market",
+     "what": "월요일 다우 -821.9포인트(-1.7%), S&P 500 -1%, 나스닥 -1.1%.",
+     "src": 2
+    },
+    {
+     "at": "2026-02-24T03:04:52Z",
+     "precision": "minute",
+     "step": "response",
+     "who": "Noah Smith (Noahpinion)",
+     "platform": "substack",
+     "what": "반박 글 「The Citrini post is just a scary bedtime story」 게시(유료 전용, 본문 미열람).",
+     "src": 3
+    },
+    {
+     "at": "2026-02-24",
+     "precision": "day",
+     "step": "media",
+     "who": "Bloomberg",
+     "platform": "bloomberg",
+     "what": "「Citrini Founder Shocked His AI Prediction Spurred Stocks Selloff」 — 창업자 James van Geelen 은 월요일 급락을 일으킬 줄 몰랐다고 보도(원문 403, 검색 요약).",
+     "src": 4
+    },
+    {
+     "at": "2026-02-24T13:56:00Z",
+     "precision": "minute",
+     "step": "media",
+     "who": "City AM",
+     "platform": "web",
+     "what": "'가상의 리서치 노트가 월요일 미 기술주 급락을 불렀다'고 보도하며 관세 정책 변화·밸류에이션을 함께 거론(원 표기 Tuesday 24 February 2026 1:56 pm, 런던).",
+     "src": 2
+    },
+    {
+     "at": "2026-02-25T20:49:00Z",
+     "precision": "minute",
+     "step": "media",
+     "who": "Bloomberg News (Shirin Ghaffary)",
+     "platform": "bloomberg",
+     "what": "이번 주 하락은 자가 출판된 허구가 일부 원인이 된 첫 사례일 수 있다고 씀(Bloomberg Law 전재, 앞부분만 공개).",
+     "src": 5
+    },
+    {
+     "at": "2026-02-26T13:03:28Z",
+     "precision": "minute",
+     "step": "response",
+     "who": "Stephen Smith (Substack)",
+     "platform": "substack",
+     "what": "「A 7,000-Word AI Crisis Memo Moved Markets. Here's What It Missed.」 — 조직의 실제 도입 속도를 들어 시나리오의 시간표를 비판.",
+     "src": 6
+    },
+    {
+     "at": "2026-02-26",
+     "precision": "day",
+     "step": "response",
+     "who": "Citadel Securities (Frank Flight)",
+     "platform": "report",
+     "what": "매크로 전략 보고서로 반박 — 소프트웨어 엔지니어 구인 전년비 +11%, 컴퓨트·에너지 제약이 대체 속도를 막는다고 주장(Fortune 02-26 보도, 보고서 자체 날짜는 미확인).",
+     "src": 7
+    },
+    {
+     "at": "2026-03-01",
+     "precision": "day",
+     "step": "aftermath",
+     "who": "Gerard MacDonell (Front Harbor Macro) 등",
+     "platform": "benzinga/yahoo",
+     "what": "경제학자·전략가들이 '생산은 소득을 낳는다'며 반박, 글을 '우화적 에세이'라고 부름.",
+     "src": 8
+    }
+   ],
+   "attribution": [
+    {
+     "outlet": "City AM",
+     "what": "급락이 이 글에 뒤따랐고 글이 급락을 '일으켰다'고 쓰되, 무역 불확실성과 AI 도구 우려에 더해진 것으로 서술.",
+     "src": 2
+    },
+    {
+     "outlet": "Bloomberg News (Shirin Ghaffary)",
+     "what": "글이 하락의 '일부' 원인이었을 수 있다고 한정해 씀.",
+     "src": 5
+    },
+    {
+     "outlet": "Bloomberg",
+     "what": "제목에서 창업자의 AI 예측이 주식 매도를 촉발했다고 씀(원문 미열람).",
+     "src": 4
+    },
+    {
+     "outlet": "Invezz",
+     "what": "제목에서 글이 Visa·DoorDash 등의 매도를 촉발했다고 씀(검색 결과 제목만, 원문 403).",
+     "src": 9
+    }
+   ],
+   "confounders": [
+    {
+     "what": "미국 관세 정책 변화 — 무효 판결을 받은 조치를 트럼프가 다른 법적 근거의 새 글로벌 관세로 대체하려 해 시장이 이미 불안정했다고 City AM 이 함께 거론.",
+     "src": 2
+    },
+    {
+     "what": "그달 초 Anthropic 의 새 AI 도구가 부른 소프트웨어주 매도가 이어지던 중이었음(City AM: 'adding to pressure already building from new AI tools').",
+     "src": 2
+    },
+    {
+     "what": "밸류에이션 부담 — S&P 500 CAPE 가 40 을 넘었다는 점을 City AM 이 함께 듦.",
+     "src": 2
+    },
+    {
+     "what": "검색 요약: 글이 퍼지기 몇 시간 전 Anthropic 의 COBOL 관련 발표가 IBM 에 영향을 줬다는 보도(매체·원문 미확인).",
+     "src": 9
+    }
+   ],
+   "response": [
+    {
+     "who": "Citrini Research (글 서문)",
+     "at": "2026-02-22T19:22:00Z",
+     "what": "'What follows is a scenario, not a prediction' — 덜 탐구된 꼬리 위험을 모형화하려는 사고 실험이라고 서문에 명시.",
+     "src": 1
+    },
+    {
+     "who": "James van Geelen (Citrini 창업자)",
+     "at": "2026-02-24",
+     "what": "Bloomberg 에 자기 글이 월요일 급락을 일으킬 줄 몰랐다고 밝힘(검색 요약, 원문 403).",
+     "src": 4
+    }
+   ],
+   "aftermath": {
+    "status": "미정",
+    "what": "2028년을 가정한 시나리오라 검증 시점이 오지 않음. 게시 이틀~일주일 안에 Noah Smith, Citadel Securities(Frank Flight), Gerard MacDonell 등의 반박이 이어졌고 Citadel 은 현재 고용 데이터가 붕괴를 보이지 않는다고 주장.",
+    "src": [
+     3,
+     7,
+     8
+    ]
+   },
+   "price_as_reported": [
+    {
+     "ticker": "DJIA",
+     "move": "-1.7% (-821.9포인트)",
+     "when": "2026-02-23 종가",
+     "src": 2
+    },
+    {
+     "ticker": "SPX",
+     "move": "-1%",
+     "when": "2026-02-23 종가",
+     "src": 2
+    },
+    {
+     "ticker": "IXIC",
+     "move": "-1.1%",
+     "when": "2026-02-23 종가",
+     "src": 2
+    }
+   ],
+   "not_found": [
+    "Citrini 의 X 게시 글 번호·시각 — 받은 기사 어디에도 x.com/…/status 링크가 없었음",
+    "X 조회수 — 검색 요약에 '2,200만 이상', '2,440만'이 있으나 어느 매체인지 확인 못 함",
+    "결제·소프트웨어·사모대출 개별 종목 등락률(IBM·American Express 포함)을 적은 원문 — Invezz·FXStreet·SCMP 403, fintool 은 본문이 스크립트로만 로드",
+    "Bloomberg 02-24 원문(403) — van Geelen 의 해명 문구를 직접 읽지 못함",
+    "반등 시점 — 검색 요약에 '화요일 회복'이 있으나 원문 미확인",
+    "Citadel Securities 보고서 원문(403)과 그 발행일, Michael Bloch 의 「The 2028 Global Intelligence Boom」(검색 요약만)",
+    "관세를 급락의 이유로 든 미국 매체 원문(검색 요약: 대법원 판결 뒤 트럼프의 15% 글로벌 관세 발표) — City AM 의 일반적 언급만 읽음"
+   ],
+   "refs": [
+    {
+     "bundle": "N2",
+     "id": "citrini-2028-2026-02-v"
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "THE 2028 GLOBAL INTELLIGENCE CRISIS — Citrini Research (Substack API)",
+     "url": "https://www.citriniresearch.com/api/v1/posts/2028gic",
+     "date": "2026-02-22",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "Citrini Research report rattles markets as AI fears deepen tech sell-off — City AM (Saskia Koopman)",
+     "url": "https://www.cityam.com/?p=2402273",
+     "date": "2026-02-24",
+     "read": "partial"
+    },
+    {
+     "n": 3,
+     "title": "The Citrini post is just a scary bedtime story — Noahpinion (Substack API, 유료)",
+     "url": "https://www.noahpinion.blog/api/v1/posts/the-citrini-post-is-just-a-scary",
+     "date": "2026-02-24",
+     "read": "partial"
+    },
+    {
+     "n": 4,
+     "title": "Citrini Founder Shocked His AI Prediction Spurred Stocks Selloff — Bloomberg",
+     "url": "https://www.bloomberg.com/news/articles/2026-02-24/citrini-founder-shocked-his-ai-prediction-spurred-stocks-selloff",
+     "date": "2026-02-24",
+     "read": "search_summary"
+    },
+    {
+     "n": 5,
+     "title": "Wall Street Doesn't Know What to Think About AI Anymore — Bloomberg News (Shirin Ghaffary), Bloomberg Law 전재",
+     "url": "https://news.bgov.com/banking-law/wall-street-doesnt-know-what-to-think-about-ai-anymore",
+     "date": "2026-02-25",
+     "read": "partial"
+    },
+    {
+     "n": 6,
+     "title": "A 7,000-Word AI Crisis Memo Moved Markets. Here's What It Missed. — Stephen Smith (Substack API)",
+     "url": "https://www.smithstephen.com/api/v1/posts/a-7000-word-ai-crisis-memo-moved",
+     "date": "2026-02-26",
+     "read": "partial"
+    },
+    {
+     "n": 7,
+     "title": "Citadel demolishes viral doomsday AI essay (Citrini) — Fortune",
+     "url": "https://fortune.com/2026/02/26/citadel-demolishes-viral-doomsday-ai-essay-citrini-macro-fundamentals-engels-pause/",
+     "date": "2026-02-26",
+     "read": "partial"
+    },
+    {
+     "n": 8,
+     "title": "Economists Challenge Citrini's AI Doom Thesis, Call It 'Allegorical' — Benzinga/Yahoo Finance (Piero Cingari)",
+     "url": "https://finance.yahoo.com/news/economists-challenge-citrinis-ai-doom-223019137.html",
+     "date": "2026-03-01",
+     "read": "partial"
+    },
+    {
+     "n": 9,
+     "title": "Citrini's 'thought exercise' on AI sparks selloff in Visa, DoorDash, others — Invezz",
+     "url": "https://invezz.com/news/2026/02/23/citrinis-thought-exercise-on-ai-sparks-selloff-in-visa-doordash-others",
+     "date": "2026-02-23",
+     "read": "search_summary"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "일요일에 무료로 공개된 가상 시나리오다. 월요일 개장까지 19시간이 있었다. 대표 종목은 언론 제목(Invezz, 검색 결과로만 확인)이 지목한 첫 종목 비자로 두었고, 동반 종목은 같은 날 함께 내린 결제·소프트웨어 종목을 시세로 확인한 것이다(묶음 N2). 관세 정책 변화와 앞선 소프트웨어주 매도가 같은 날의 재료로 함께 거론됐다."
+  },
+  {
+   "id": "citron-aaoi-2026-04",
+   "country": "US",
+   "city": null,
+   "value": 0,
+   "unit": "시간",
+   "asof": "2026-04-10",
+   "basis": "계산: 최초 글 게시 시각부터 대표 종목 시장의 다음 정규장 시작까지의 시간. 정규장 중에 나온 글은 0",
+   "title": "Citron Research 의 AAOI 공매도 X 글(2026-04-10) — 당일 주가는 반대로 상승",
+   "category": "short",
+   "direction": "down",
+   "claim": "AAOI 는 2주 전 85달러에서 140달러로 올랐고 '임의의 보도자료' 하나에 시가총액 35억 달러가 붙었으니 85달러로 되돌아가야 한다는 주장. LITE(엔비디아가 고른 협력사)의 반대 사례('anti-$LITE')로 규정하고, 선행 PER 112배·매출총이익률 31%·가격 결정력 없음·오라클 의존을 근거로 들었다.",
+   "targets": [
+    {
+     "ticker": "AAOI",
+     "name": "어플라이드 옵토일렉트로닉스",
+     "role": "지목"
+    }
+   ],
+   "primary": "AAOI",
+   "origin": {
+    "author": "Citron Research (Andrew Left)",
+    "handle": "@CitronResearch",
+    "platform": "x",
+    "url": "https://x.com/CitronResearch/status/2042598525817463059",
+    "posted_kst": "2026-04-10T22:40:12+09:00",
+    "precision": "minute",
+    "paywall": "free",
+    "position_disclosed": "AAOI 공매도(글 첫머리 'Citron Short $AAOI'). Benzinga 요약에 따르면 같은 글에서 Corning 은 매수 보유라고 밝힘. 규모·진입가는 밝히지 않음.",
+    "reach": [
+     {
+      "metric": "likes",
+      "value": 902,
+      "asof": "2026-11-20",
+      "src": 1
+     },
+     {
+      "metric": "replies",
+      "value": 191,
+      "asof": "2026-11-20",
+      "src": 1
+     }
+    ]
+   },
+   "market": {
+    "t0": "2026-04-10",
+    "open_kst": "2026-04-10T22:30:00+09:00",
+    "close_kst": "2026-04-11T05:00:00+09:00",
+    "session": "장중"
+   },
+   "db_era": true,
+   "timeline": [
+    {
+     "at": "2026-03-30",
+     "precision": "day",
+     "step": "background",
+     "who": "AAOI",
+     "platform": "market",
+     "what": "Benzinga 가 급등의 출발점으로 잡은 날: 3월 30일 85.19달러에서 4월 10일 147.50달러까지 약 73% 상승했다고 보도.",
+     "src": 3
+    },
+    {
+     "at": "2026-04-10T13:40:12Z",
+     "precision": "minute",
+     "step": "origin",
+     "who": "Citron Research",
+     "platform": "x",
+     "what": "AAOI 공매도 글 게시(미 동부 09:40, 정규장 개장 10분 뒤). 2주 전 85달러·오늘 140달러, 85달러 복귀 주장, 'anti-$LITE' 표현.",
+     "src": 1
+    },
+    {
+     "at": "2026-04-10T14:01:00Z",
+     "precision": "minute",
+     "step": "media",
+     "who": "Newsquawk",
+     "platform": "newswire",
+     "what": "'Citron Research is short Applied Optoelectronics (AAOI)' 헤드라인 송출(출처로 X 글 번호 2042598525817463059 를 링크).",
+     "src": 2
+    },
+    {
+     "at": "2026-04-10T16:59:00Z",
+     "precision": "hour",
+     "step": "media",
+     "who": "Benzinga",
+     "platform": "news",
+     "what": "'Citron Calls Applied Optoelectronics' Valuation Delusional' 기사. 게재 시점 주가 +11.36%(148.44달러), 회사는 논평 요청에 바로 답하지 않았다고 적음. (Webull 표시 시각 04/10 16:59 — 다른 Webull 기사와 대조하면 UTC 로 보이나 확정 아님)",
+     "src": 3
+    },
+    {
+     "at": "2026-04-10",
+     "precision": "day",
+     "step": "media",
+     "who": "Stocktwits",
+     "platform": "news",
+     "what": "Citron 이 밸류에이션이 펀더멘털과 동떨어졌다고 공매도했다는 기사, 금요일 오전 주가는 11% 넘게 상승 중이라고 보도(검색 요약으로만 확인).",
+     "src": 6
+    },
+    {
+     "at": "2026-04-10",
+     "precision": "day",
+     "step": "media",
+     "who": "Investing.com",
+     "platform": "news",
+     "what": "'Citron 공매도 의견에도 AAOI 주가 상승' 제목의 기사(미러 사이트 표기 April 10, 2026 02:08 PM, 시간대 불명; 검색 요약으로만 확인).",
+     "src": 7
+    },
+    {
+     "at": "2026-04-10",
+     "precision": "day",
+     "step": "market",
+     "who": "AAOI",
+     "platform": "market",
+     "what": "뉴스레터 Main St. Betz 에 따르면 금요일 종가 150.48달러, 당일 +13%. 같은 날 광통신 종목 전반(LWLG +26% 등)이 급등했다고 적음.",
+     "src": 4
+    },
+    {
+     "at": "2026-04-12T14:30:46Z",
+     "precision": "minute",
+     "step": "amplify",
+     "who": "The Bear Cave (Edwin Dorsey)",
+     "platform": "substack",
+     "what": "주간 뉴스레터 #321 의 'New Activist Report' 첫 항목으로 Citron 의 AAOI 비판 트윗(고평가·오라클 관계)을 소개.",
+     "src": 5
+    },
+    {
+     "at": "2026-04-12",
+     "precision": "day",
+     "step": "amplify",
+     "who": "Main St. Betz",
+     "platform": "newsletter",
+     "what": "특별호에서 Citron 이 랠리를 'delusional' 이라 부르며 85달러 복귀를 예상했지만 주가는 당일 13% 더 올랐다고 정리.",
+     "src": 4
+    },
+    {
+     "at": "2026-04-15",
+     "precision": "day",
+     "step": "market",
+     "who": "AAOI",
+     "platform": "market",
+     "what": "자동 생성 뉴스(rallies.ai)가 당일 약 3% 하락을 공매도 의견·매도 의견 하향·ATM 증자 한도 확대(2.5억→5억 달러) 탓으로 설명. 매도 하향의 주체·날짜는 확인 못 함.",
+     "src": 8
+    },
+    {
+     "at": "2026-06-01",
+     "precision": "day",
+     "step": "aftermath",
+     "who": "Andrew Left / 미 연방 배심원단(로스앤젤레스)",
+     "platform": "court",
+     "what": "Citron 창립자 Andrew Left 가 17개 혐의 중 13개(증권 사기 계획 1건 + 개별 증권 사기) 유죄 평결, 4개 무죄. 종목 포지션을 잡고 가격을 움직일 공개 발언을 한 뒤 곧바로 반대로 매매하면서 이를 숨겼다는 혐의. 선고 예정일 8월 31일. 보도는 이 평결을 AAOI 글과 연결하지 않음.",
+     "src": 10
+    },
+    {
+     "at": "2026-06-09",
+     "precision": "day",
+     "step": "aftermath",
+     "who": "AAOI",
+     "platform": "market",
+     "what": "TIKR 보도: 당일 약 17% 하락해 163달러 안팎, 52주 범위 15~234달러 — 글 이후 85달러로 가기는커녕 234달러까지 올랐다가 조정.",
+     "src": 12
+    },
+    {
+     "at": "2026-10-21",
+     "precision": "day",
+     "step": "aftermath",
+     "who": "AAOI",
+     "platform": "market",
+     "what": "24/7 Wall St: 주가 76.74달러, 6개월간 53% 하락. Rosenblatt·Needham 은 목표가 220달러 유지. Citron 이 말한 85달러 아래로 내려온 시점.",
+     "src": 13
+    }
+   ],
+   "attribution": [
+    {
+     "outlet": "Benzinga (Webull 전재)",
+     "what": "하락을 글 탓으로 돌리지 않음. Citron 이 급등의 타당성을 문제 삼았다고 전하면서 게재 시점 주가는 11.36% 상승 중이라고 씀.",
+     "src": 3
+    },
+    {
+     "outlet": "Investing.com (미러)",
+     "what": "제목 자체가 '공매도 의견에도 주가 상승' — 글이 주가를 끌어내리지 못했다는 틀.",
+     "src": 7
+    },
+    {
+     "outlet": "Main St. Betz (뉴스레터)",
+     "what": "Citron 이 공매도했지만 주가는 금요일 13% 더 올랐다고 서술(글의 영향 없음, 오히려 반대 방향).",
+     "src": 4
+    },
+    {
+     "outlet": "rallies.ai (자동 생성)",
+     "what": "닷새 뒤(4월 15일) 약 3% 하락을 'delusional' 공매도 의견과 매도 하향이 겹친 밸류에이션 우려로 설명.",
+     "src": 8
+    }
+   ],
+   "confounders": [
+    {
+     "what": "4월 초 발표된 800G 트랜시버 7,100만 달러 추가 수주(같은 고객 3월 중순 이후 누계 1.24억 달러)와 두 번째 하이퍼스케일 고객 1만 대 출하 — Benzinga 가 급등 배경으로 설명.",
+     "src": 3
+    },
+    {
+     "what": "같은 금요일 광통신 종목 전반 급등(LWLG +26% 등)과 2주간 10억 달러 넘는 신규 수주 보도, Rosenblatt 목표가 140달러 상향(같은 주).",
+     "src": 4
+    },
+    {
+     "what": "공매도 잔고가 유통주식의 13.68%(1,030만 주)로 숏커버 여지 — Benzinga. rallies.ai 는 3월 31일 기준 12.78% 로 적음.",
+     "src": 3
+    },
+    {
+     "what": "그 다음 주 약세의 다른 이유로 ATM 증자 한도 2.5억→5억 달러 확대, 텍사스 Pearland 부동산 5,840만 달러 취득 계약이 거론됨.",
+     "src": 8
+    }
+   ],
+   "response": [
+    {
+     "who": "Applied Optoelectronics",
+     "at": "2026-04-10T16:59:00Z",
+     "what": "Benzinga 의 논평 요청에 바로 답하지 않음. 회사의 공식 반박은 찾지 못함.",
+     "src": 3
+    },
+    {
+     "who": "Rosenblatt·Needham (애널리스트)",
+     "at": "2026-10-21T00:00:00Z",
+     "what": "당일 반박 보고서는 찾지 못함. 10월 기준 두 곳 모두 목표가 220달러(월가 최고) 유지로 보도.",
+     "src": 13
+    }
+   ],
+   "aftermath": {
+    "status": "엇갈림",
+    "what": "단기로는 빗나감: 글 당일 +13%(150.48달러)로 마감했고 6월까지 52주 고점 234달러까지 올랐다. 그 뒤 6개월간 53% 떨어져 10월 21일 76.74달러로 Citron 의 85달러 아래에 도달. Citron 의 포지션 유지·청산 여부는 확인 못 함. 별개로 Andrew Left 는 6월 1일 증권 사기 유죄 평결(13/17개 혐의)을 받았고 선고는 8월 31일로 잡혔다(선고 결과 미확인).",
+    "src": [
+     4,
+     10,
+     11,
+     12,
+     13
+    ]
+   },
+   "price_as_reported": [
+    {
+     "ticker": "AAOI",
+     "move": "+73% (85.19→147.50달러)",
+     "when": "2026-03-30 ~ 2026-04-10",
+     "src": 3
+    },
+    {
+     "ticker": "AAOI",
+     "move": "+11.36% (148.44달러)",
+     "when": "2026-04-10 장중(Benzinga 게재 시점)",
+     "src": 3
+    },
+    {
+     "ticker": "AAOI",
+     "move": "+13% (종가 150.48달러)",
+     "when": "2026-04-10 종가",
+     "src": 4
+    },
+    {
+     "ticker": "AAOI",
+     "move": "약 -3%",
+     "when": "2026-04-15 장중",
+     "src": 8
+    },
+    {
+     "ticker": "AAOI",
+     "move": "-17% (163달러 안팎)",
+     "when": "2026-06-09",
+     "src": 12
+    },
+    {
+     "ticker": "AAOI",
+     "move": "6개월 -53% (76.74달러)",
+     "when": "2026-10-21",
+     "src": 13
+    }
+   ],
+   "not_found": [
+    "X 글 전문 — 공개 임베드는 앞 275자만 준다(긴 글). 뒷부분(PER 112배, 오라클 부채 등)은 Benzinga 요약으로만 확인.",
+    "X 글의 조회수·재게시 수(임베드는 좋아요·답글 수만 제공).",
+    "글을 퍼뜨린 개별 X 계정과 그 시각 — 찾지 못함(뉴스레터 두 곳만 확인).",
+    "Stocktwits 원문(Cloudflare 확인 화면), Benzinga 원문(차단, Webull 전재본으로 읽음), Investing.com 원문(미러가 Vercel 확인 화면) — 우회하지 않음.",
+    "AAOI 회사의 공식 반박과 당일 애널리스트 반박 보고서.",
+    "rallies.ai 가 말한 4월 중순 '매도 의견 하향'의 주체 — 검색에서는 B. Riley 의 2025-11-10 하향만 나와 4월 사건으로 확인되지 않음.",
+    "4월 10일 공식 종가(뉴스레터의 150.48달러만 확인)와 7,100만 달러 수주 보도자료의 정확한 날짜.",
+    "Citron 의 후속 글·포지션 청산 여부, Andrew Left 의 8월 31일 선고 결과."
+   ],
+   "refs": [
+    {
+     "bundle": "N2",
+     "id": "citron-aaoi-2026-04-aaoi"
+    },
+    {
+     "bundle": "N3",
+     "id": "citron-aaoi-2026-04"
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "Citron Research X 글 (공개 임베드, 앞 275자만)",
+     "url": "https://x.com/CitronResearch/status/2042598525817463059",
+     "date": "2026-04-10",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "Newsquawk: Citron Research is short Applied Optoelectronics (AAOI)",
+     "url": "https://www.newsquawk.com/headlines/citron-research-is-short-applied-optoelectronics-aaoi",
+     "date": "2026-04-10",
+     "read": "full"
+    },
+    {
+     "n": 3,
+     "title": "Benzinga (Webull AU 전재): Citron Calls Applied Optoelectronics' Valuation 'Delusional'",
+     "url": "https://www.webull.com.au/news-detail/14688798700094464",
+     "date": "2026-04-10",
+     "read": "full"
+    },
+    {
+     "n": 4,
+     "title": "Main St. Betz: The $1 Billion Middle Finger (Special Edition)",
+     "url": "https://main-street-betz.beehiiv.com/p/the-1-billion-middle-finger",
+     "date": "2026-04-12",
+     "read": "partial"
+    },
+    {
+     "n": 5,
+     "title": "The Bear Cave #321",
+     "url": "https://thebearcave.substack.com/p/the-bear-cave-321",
+     "date": "2026-04-12",
+     "read": "partial"
+    },
+    {
+     "n": 6,
+     "title": "Stocktwits: Citron Shorts Applied Optoelectronics, Calls Valuation Detached From Fundamentals And Flags Downside Risks",
+     "url": "https://stocktwits.com/news-articles/markets/equity/citron-shorts-applied-optoelectronics-calls-valuation-detached-from-fundamentals-and-flags-downside-risks/cZJ0039RItN",
+     "date": "2026-04-10",
+     "read": "search_summary"
+    },
+    {
+     "n": 7,
+     "title": "Investing.com (trade-intel 미러): Applied Optoelectronics stock rises despite Citron short call",
+     "url": "https://trade-intel-aife.vercel.app/news/applied-optoelectronics-stock-rises-despite-citron-short-call-investingcom",
+     "date": "2026-04-10",
+     "read": "search_summary"
+    },
+    {
+     "n": 8,
+     "title": "rallies.ai: AAOI dips as valuation worries resurface after short-seller broadside and Sell downgrade",
+     "url": "https://rallies.ai/news/aaoi-dips-as-valuation-worries-resurface-after-short-seller-broadside-and-sell-downgrade",
+     "date": "2026-04-15",
+     "read": "full"
+    },
+    {
+     "n": 9,
+     "title": "rallies.ai: AAOI jumps 18% as AI data-center optics demand story reignites, shorts pressured",
+     "url": "https://rallies.ai/news/aaoi-jumps-18-as-ai-data-center-optics-demand-story-reignites-shorts-pressured",
+     "date": "2026-04-26",
+     "read": "partial"
+    },
+    {
+     "n": 10,
+     "title": "InvestmentNews: Andrew Left found guilty of securities fraud scheme",
+     "url": "https://www.investmentnews.com/alternatives/andrew-left-found-guilty-of-securities-fraud-scheme/266833",
+     "date": "2026-06-02",
+     "read": "partial"
+    },
+    {
+     "n": 11,
+     "title": "The Irish Times (FT 전재): Short seller Andrew Left found guilty of securities fraud",
+     "url": "https://www.irishtimes.com/business/markets/2026/06/02/short-seller-andrew-left-found-guilty-of-securities-fraud/",
+     "date": "2026-06-02",
+     "read": "partial"
+    },
+    {
+     "n": 12,
+     "title": "TIKR: Applied Optoelectronics Fell 17% Today",
+     "url": "https://www.tikr.com/blog/applied-optoelectronics-fell-17-today-heres-where-the-stock-could-head-in-2026",
+     "date": "2026-06-09",
+     "read": "partial"
+    },
+    {
+     "n": 13,
+     "title": "24/7 Wall St: Applied Optoelectronics Cratered 50% Over 6 Months",
+     "url": "https://247wallst.com/investing/2026/10/21/applied-optoelectronics-cratered-50-over-6-months-its-going-to-triple-according-to-2-wall-street-pros/",
+     "date": "2026-10-21",
+     "read": "partial"
+    },
+    {
+     "n": 14,
+     "title": "Fenwick: Criminal conviction of activist short seller Andrew Left signals new era (증권 사기 계획 1건 + 개별 12건, 중부 캘리포니아 연방법원)",
+     "url": "https://www.fenwick.com/insights/publications/criminal-conviction-of-activist-short-seller-andrew-left-signals-new-era",
+     "date": "2026-06",
+     "read": "search_summary"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "개장 10분 뒤에 올린 공매도 글이다. 주가는 당일 반대 방향으로 올랐고, 글이 말한 85달러 아래로 내려온 것은 여섯 달 뒤다."
+  },
+  {
+   "id": "serenity-auros-2026-05",
+   "country": "KR",
+   "city": null,
+   "value": 0,
+   "unit": "시간",
+   "asof": "2026-05-04",
+   "basis": "계산: 최초 글 게시 시각부터 대표 종목 시장의 다음 정규장 시작까지의 시간. 정규장 중에 나온 글은 0",
+   "title": "익명 X 계정 Serenity 의 오로스테크놀로지 언급과 2026-05-04 상한가",
+   "category": "mention",
+   "direction": "up",
+   "claim": "오로스테크놀로지(322310)는 시총 약 2.69억 달러의 잘 알려지지 않은 삼성전자·SK하이닉스 공급사이고, HBM4 설비투자에서 하이브리드 본딩 계측 물량이 크게 늘 것이라는 주장.",
+   "targets": [
+    {
+     "ticker": "322310.KQ",
+     "name": "오로스테크놀로지",
+     "role": "지목"
+    }
+   ],
+   "primary": "322310.KQ",
+   "origin": {
+    "author": "Serenity (익명)",
+    "handle": "@aleabitoreddit",
+    "platform": "x",
+    "url": "https://x.com/aleabitoreddit/status/2051099481693954525",
+    "posted_kst": "2026-05-04T09:39:58+09:00",
+    "precision": "minute",
+    "paywall": "free",
+    "position_disclosed": null,
+    "reach": [
+     {
+      "metric": "likes",
+      "value": 1326,
+      "asof": "2026-11-20",
+      "src": 1
+     },
+     {
+      "metric": "replies",
+      "value": 87,
+      "asof": "2026-11-20",
+      "src": 1
+     },
+     {
+      "metric": "followers",
+      "value": 840000,
+      "asof": "2026-06-18",
+      "src": 12
+     },
+     {
+      "metric": "subscribers",
+      "value": 55000,
+      "asof": "2026-06-18",
+      "src": 12
+     }
+    ]
+   },
+   "market": {
+    "t0": "2026-05-04",
+    "open_kst": "2026-05-04T09:00:00+09:00",
+    "close_kst": "2026-05-04T15:30:00+09:00",
+    "session": "장중"
+   },
+   "db_era": true,
+   "timeline": [
+    {
+     "at": "2026-04-28T02:42:36Z",
+     "precision": "minute",
+     "step": "background",
+     "who": "Serenity (@aleabitoreddit)",
+     "platform": "x",
+     "what": "\"$IBKR has Korean stocks now\" — IBKR에서 한국 주식 거래가 열린 것을 알리며 '롱 못 하던 아이디어가 많았다'고 씀(글 번호 2048956013374755266, 좋아요 2,098).",
+     "src": 11
+    },
+    {
+     "at": "2026-04-28T02:46:51Z",
+     "precision": "minute",
+     "step": "background",
+     "who": "Jukan (@jukan05)",
+     "platform": "x",
+     "what": "위 글을 인용해 'IBKR이 드디어 한국 주식을 지원한다'고 퍼뜨림(좋아요 1,006).",
+     "src": 11
+    },
+    {
+     "at": "2026-04-28",
+     "precision": "day",
+     "step": "background",
+     "who": "삼성증권·IBKR",
+     "platform": "증권사",
+     "what": "삼성증권이 IBKR 앱을 통해 일부 종목에 대한 외국인 통합계좌 시범 운영을 시작(이데일리 5/6 보도의 날짜).",
+     "src": 4
+    },
+    {
+     "at": "2026-05-04T00:04:00Z",
+     "precision": "minute",
+     "step": "market",
+     "who": "오로스테크놀로지",
+     "platform": "telegram",
+     "what": "한국 시각 09:04 기준 +17.68%(40,600원), 52주 신고가라는 시세 알림이 텔레그램에 올라옴 — Serenity 의 글(09:39)보다 35분 앞선다.",
+     "src": 23
+    },
+    {
+     "at": "2026-05-04T00:39:58Z",
+     "precision": "minute",
+     "step": "origin",
+     "who": "Serenity (@aleabitoreddit)",
+     "platform": "x",
+     "what": "오로스(322310)를 '시총 2.69억 달러, 덜 알려진 삼성·SK하이닉스 공급사, HBM4 하이브리드 본딩 계측 수혜'로 언급(한국 시각 09:39, 개장 39분 뒤. 좋아요 1,326·답글 87).",
+     "src": 1
+    },
+    {
+     "at": "2026-05-04",
+     "precision": "day",
+     "step": "market",
+     "who": "오로스테크놀로지",
+     "platform": "KRX",
+     "what": "당일 상한가 마감, 이후 삼성증권 창구가 매수 1위에 오름(스마트투데이 보도).",
+     "src": 2
+    },
+    {
+     "at": "2026-05-04T09:07:17Z",
+     "precision": "minute",
+     "step": "media",
+     "who": "Bloomingbit(한경 계열 영문)",
+     "platform": "언론",
+     "what": "삼성증권이 IBKR 통합계좌 시범 운영 소식에 +28.28%, 코스피 6,900 돌파 사상 최고(원문 18:07 KST). 오로스 언급은 없음.",
+     "src": 7
+    },
+    {
+     "at": "2026-05-05T23:06:34Z",
+     "precision": "minute",
+     "step": "media",
+     "who": "이데일리",
+     "platform": "언론",
+     "what": "NH투자증권 보고서 인용 — 삼성증권이 4월 28일부터 IBKR 앱으로 시범 운영, 하나·삼성 두 곳이 통합계좌 운영 중(원문 5/6 08:06 KST).",
+     "src": 4
+    },
+    {
+     "at": "2026-05-06",
+     "precision": "day",
+     "step": "response",
+     "who": "한국거래소",
+     "platform": "KRX",
+     "what": "오로스테크놀로지를 소수계좌 집중으로 투자주의 지정, 소수계좌는 외국인 계좌로 드러남. 주가 -4.01%.",
+     "src": 2
+    },
+    {
+     "at": "2026-05-06",
+     "precision": "day",
+     "step": "aftermath",
+     "who": "Serenity",
+     "platform": "x",
+     "what": "유리기판 업종을 거론하며 필옵틱스·HB테크놀로지·와이씨켐을 언급(스마트투데이 보도, 글 번호 미확인).",
+     "src": 2
+    },
+    {
+     "at": "2026-05-07T08:00:00Z",
+     "precision": "minute",
+     "step": "media",
+     "who": "스마트투데이 김세형 기자",
+     "platform": "언론",
+     "what": "'오로스테크, 노란머리 외국인 단타 첫 희생양?' — @serenity 언급→삼성증권 창구 매수→상한가→급락 경로를 처음 정리(원문 17:00 KST). 당일 -8.25%.",
+     "src": 2
+    },
+    {
+     "at": "2026-05-07",
+     "precision": "day",
+     "step": "response",
+     "who": "삼성증권",
+     "platform": "증권사",
+     "what": "IBKR 제휴 외국인 통합계좌 서비스를 정식 론칭(5/11 실적 컨퍼런스콜에서 확인, 5/12 보도자료).",
+     "src": 3
+    },
+    {
+     "at": "2026-05-08",
+     "precision": "day",
+     "step": "aftermath",
+     "who": "오로스테크놀로지",
+     "platform": "KRX",
+     "what": "알파디스틸 리포트 기준 35,450원까지 밀려 고점 52,000원 대비 -32%, 그 사이 신규 수주·가이던스 변경은 없었다고 적음.",
+     "src": 10
+    },
+    {
+     "at": "2026-06-13T10:03:47Z",
+     "precision": "minute",
+     "step": "aftermath",
+     "who": "Serenity (@aleabitoreddit)",
+     "platform": "x",
+     "what": "'Okay my fellow Koreans, it's been awhile' — 후성(093370)을 중국의 대일 수출통제에 따른 WF6 공급 차질 수혜로 지목(좋아요 1,759·답글 191).",
+     "src": 13
+    },
+    {
+     "at": "2026-06-17T21:00:00Z",
+     "precision": "minute",
+     "step": "media",
+     "who": "아시아경제 김동표 기자",
+     "platform": "언론",
+     "what": "'84만 해외 팔로워가 찍은 후성' — 급등의 배후로 Serenity 계정이 지목된다고 보도(원문 6/18 06:00 KST).",
+     "src": 12
+    }
+   ],
+   "attribution": [
+    {
+     "outlet": "스마트투데이 (2026-05-07)",
+     "what": "상한가를 @serenity 언급과 IBKR·삼성증권 통합계좌 개시 탓으로 풀이했다(단정이 아니라 '관측'·'풀이된다').",
+     "src": 2
+    },
+    {
+     "outlet": "신한투자증권 강진혁 연구원 (스마트투데이 인용)",
+     "what": "오로스를 미국 개인투자자 진입에 따른 변동성 확대의 예로 들었다.",
+     "src": 2
+    },
+    {
+     "outlet": "알파디스틸 리포트 1358 (자동 생성형 리서치 사이트)",
+     "what": "@serenity가 IBKR 한국 주식 거래 가능을 언급하며 추천해 상한가에 들어갔다고 적었다.",
+     "src": 10
+    },
+    {
+     "outlet": "아시아경제 (2026-06-18, 후성)",
+     "what": "후성 급등의 배후로 Serenity 계정이 지목된다고 썼다(같은 기사 본문은 삼성증권 리포트의 WF6·불산 가격 논리).",
+     "src": 12
+    },
+    {
+     "outlet": "한국경제 (2026-06-17, 후성)",
+     "what": "후성 급등을 외국인 순매수(6/1~16 1,005억 원)와 반도체·2차전지 업황으로 설명했고 Serenity는 언급하지 않았다.",
+     "src": 16
+    }
+   ],
+   "confounders": [
+    {
+     "what": "5월 4일 코스피 6,900 돌파 사상 최고치 랠리, 증권주 일제 급등(삼성증권 +28.28%) — 시장 전체가 강했던 날.",
+     "src": 7
+    },
+    {
+     "what": "IBKR 통합계좌 시범 운영(4/28~)으로 해외 개인의 매수 통로가 막 열린 시점 — 글 자체와 통로 개방 효과를 가르기 어렵다.",
+     "src": 4
+    },
+    {
+     "what": "같은 날(5/4) 오이솔루션 +16%, HB테크놀로지 강세 등 '미국 인플루언서 언급 종목'으로 묶인 다른 종목도 외국인 순매수로 급등.",
+     "src": 2
+    },
+    {
+     "what": "오로스는 4월에 1nm급 계측 장비 퀄 통과 보도(The Elec)가 있었음 — 글 이전부터 있던 재료(검색 요약으로만 확인).",
+     "src": 21
+    },
+    {
+     "what": "후성: 삼성증권 리포트(6/18)가 든 WF6 수급 불안·불산 가격 상승·리튬염 수요, 일본 업체 감산 예고 — 글과 별개의 펀더멘털 재료.",
+     "src": 17
+    }
+   ],
+   "response": [
+    {
+     "who": "한국거래소",
+     "at": "2026-05-06",
+     "what": "오로스테크놀로지를 소수계좌 집중 종목으로 투자주의 지정(스마트투데이). 알파디스틸은 5/4·6·7 세 차례 지정, 5/6 외국인 매수 관여율 41.07%, 5/7 단일계좌 거래량 상위 등 3종 사유라고 적음.",
+     "src": 2
+    },
+    {
+     "who": "삼성증권",
+     "at": "2026-05-11",
+     "what": "컨퍼런스콜에서 5월 7일 정식 론칭을 확인하고 '거래대금·수익 추정은 이르다'고 밝힘. 2023년부터 IBKR과 논의, 2025년 9월 혁신금융서비스 지정.",
+     "src": 3
+    },
+    {
+     "who": "Serenity (후성 글)",
+     "at": "2026-06-13",
+     "what": "BlockBeats 속보가 옮긴 글 요지에 '시장 관찰·가정 분석일 뿐 현재 보유 포지션 없음'이 들어 있음.",
+     "src": 14
+    },
+    {
+     "who": "한국거래소 (후성)",
+     "at": "2026-06-15",
+     "what": "후성을 투자경고 종목으로 지정(한국경제).",
+     "src": 16
+    }
+   ],
+   "aftermath": {
+    "status": "엇갈림",
+    "what": "오로스는 상한가 뒤 5/6 -4.01%, 5/7 -8.25%로 되밀렸고(스마트투데이) 알파디스틸은 5/8 35,450원(고점 대비 -32%)까지를 '유동성 거품의 정상화'로 봤다. HBM4 하이브리드 본딩 계측 수주라는 주장 자체가 확인·부인된 보도는 찾지 못했다. 후성은 6월 급등 뒤 투자경고 지정과 6/16 -14.29% 급락이 이어졌으나 WF6 공급 차질 자체는 삼성증권 리포트 등이 같은 방향으로 서술했다.",
+    "src": [
+     2,
+     10,
+     12,
+     16
+    ]
+   },
+   "price_as_reported": [
+    {
+     "ticker": "322310",
+     "move": "상한가(가격제한폭, 기사에 등락률 수치는 없음)",
+     "when": "2026-05-04 종가",
+     "src": 2
+    },
+    {
+     "ticker": "322310",
+     "move": "-4.01%",
+     "when": "2026-05-06 종가",
+     "src": 2
+    },
+    {
+     "ticker": "322310",
+     "move": "-8.25%",
+     "when": "2026-05-07 종가",
+     "src": 2
+    },
+    {
+     "ticker": "322310",
+     "move": "상한가 44,850원 → 고점 52,000원 → 35,450원(-32%)",
+     "when": "2026-05-04~05-08 (알파디스틸 표기, 고점 날짜를 휴장일인 5/5로 적어 날짜 불확실)",
+     "src": 10
+    },
+    {
+     "ticker": "016360",
+     "move": "+28.28% (137,900원, 장중 상한가 139,700원)",
+     "when": "2026-05-04 종가",
+     "src": 7
+    },
+    {
+     "ticker": "오이솔루션(종목코드 미확인)",
+     "move": "+16% / +21%",
+     "when": "2026-05-04 / 2026-05-07 종가",
+     "src": 2
+    },
+    {
+     "ticker": "093370",
+     "move": "+18%",
+     "when": "2026-06-15 종가(아시아경제 '전 거래일')",
+     "src": 12
+    },
+    {
+     "ticker": "093370",
+     "move": "-14.29% (19,200원)",
+     "when": "2026-06-16 종가",
+     "src": 12
+    },
+    {
+     "ticker": "093370",
+     "move": "6월 들어 +67% → 6/17 종가 17,580원 기준 6월 +53.27%",
+     "when": "2026-06-16 / 2026-06-17",
+     "src": 16
+    }
+   ],
+   "not_found": [
+    "5월 4일 당일에 나온 오로스테크놀로지 상한가 특징주 기사(매체·시각) — 가장 이른 귀속 보도로 확인한 것은 5/7 17:00 KST 스마트투데이",
+    "오로스테크놀로지 회사 측의 공식 반응·해명",
+    "'삼성증권이 IBKR의 독점 파트너'라는 근거 — 확인한 기사들은 '손잡았다'·'미국 시장 최초'라고만 썼고 독점이라는 표현은 없음. 하나증권(홍콩 엠퍼러증권)이 먼저 운영 중이고 키움(Webull)·미래에셋 등이 준비 중",
+    "통합계좌 시범 개시일의 1차 자료(삼성증권·IBKR 공지) — 4월 28일은 이데일리의 NH투자증권 보고서 인용, Serenity·Jukan의 X 글 시각(4/28 02:42Z)과는 맞음. 하나증권 최초 개시 시점은 2025년 8월(이데일리·헤럴드)과 10월(스마트투데이)로 엇갈림",
+    "Serenity 오로스 글의 뒷부분('Basically pure play on …' 이후)과 본인 포지션 공개 여부 — 임베드는 앞 279자만 줌",
+    "5월 6일 유리기판 글, 7월 5일 BBU 글의 X 글 번호와 시각",
+    "블룸버그의 Serenity 소개 기사 원문(아시아경제가 '블룸버그 등 외신에도 소개'라고만 씀)",
+    "스마트투데이가 계정을 '@serenity'로 적었으나 실제 핸들은 @aleabitoreddit — 기사 표기 오류로 보임",
+    "알파디스틸은 52,000원 고점을 '5월 5일'(어린이날 휴장)로, 5/6 종가를 -7%로 적어 스마트투데이(-4.01%)와 다름 — 일별 수치는 시세 자료로 따로 확인 필요",
+    "5월 4일 당일·5월 초 다른 한국 매체의 오로스 귀속 보도 — 검색 3회에서 스마트투데이 한 건만 나옴(단일 매체 의존)"
+   ],
+   "refs": [
+    {
+     "bundle": "N2",
+     "id": "serenity-auros-2026-05-322310-kq"
+    },
+    {
+     "bundle": "N3",
+     "id": "serenity-auros-2026-05"
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "Serenity on X: So I do think Auros (322310) is very interesting at $269M MC over in Korea",
+     "url": "https://x.com/aleabitoreddit/status/2051099481693954525",
+     "date": "2026-05-04",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "오로스테크, 노란머리 외국인 단타 첫 희생양? (스마트투데이)",
+     "url": "https://www.smarttoday.co.kr/ko-kr/articles/107295",
+     "date": "2026-05-07",
+     "read": "full"
+    },
+    {
+     "n": 3,
+     "title": "삼성증권, IBKR 외국인통합계좌서비스 정식 론칭 (스마트투데이)",
+     "url": "https://www.smarttoday.co.kr/ko-kr/articles/107386",
+     "date": "2026-05-12",
+     "read": "full"
+    },
+    {
+     "n": 4,
+     "title": "외국인도 韓주식 쉽게 산다…통합계좌에 증권株 기대감 (이데일리, 다음뉴스)",
+     "url": "https://v.daum.net/v/20260506080634965",
+     "date": "2026-05-06",
+     "read": "partial"
+    },
+    {
+     "n": 5,
+     "title": "외국인도 이제 삼전닉스 직접 산다…이틀새 주가 50% 뛴 곳 (한국경제)",
+     "url": "https://www.hankyung.com/article/2026050678016",
+     "date": "2026-05-06",
+     "read": "full"
+    },
+    {
+     "n": 6,
+     "title": "외국인 통합계좌, 증권사 브로커리지 실적 더 밀어올린다 (비즈워치)",
+     "url": "https://news.bizwatch.co.kr/article/market/2026/05/06/0001",
+     "date": "2026-05-06",
+     "read": "full"
+    },
+    {
+     "n": 7,
+     "title": "Samsung Securities Jumps 28% as Foreign Trading Service Nears Launch (Bloomingbit)",
+     "url": "https://en.bloomingbit.io/feed/news/111323",
+     "date": "2026-05-04",
+     "read": "partial"
+    },
+    {
+     "n": 8,
+     "title": "삼성증권, 글로벌 증권사 IBKR과 '외국인통합계좌' 서비스 (헤럴드경제 미주판)",
+     "url": "https://www.heraldk.com/article/2026051117440760882",
+     "date": "2026-05-12",
+     "read": "full"
+    },
+    {
+     "n": 9,
+     "title": "삼성증권, IBKR과 '외국인통합계좌' 서비스 오픈 (아시아경제 CORE)",
+     "url": "https://core.asiae.co.kr/article/2026051210311513651",
+     "date": "2026-05-12",
+     "read": "full"
+    },
+    {
+     "n": 10,
+     "title": "알파디스틸 리포트 1358 — 오로스테크놀로지(5월 4~7일 단타 사이클)",
+     "url": "https://alphadistill.com/report/1358",
+     "date": null,
+     "read": "partial"
+    },
+    {
+     "n": 11,
+     "title": "Jukan on X: IBKR is finally supporting Korean stocks (Serenity 글 인용)",
+     "url": "https://x.com/jukan05/status/2048957085770203478",
+     "date": "2026-04-28",
+     "read": "full"
+    },
+    {
+     "n": 12,
+     "title": "84만 해외 팔로워가 찍은 후성, \"반도체·불산 수혜 랠리 vs 밸류 부담\"[클릭e종목] (아시아경제)",
+     "url": "https://view.asiae.co.kr/article/2026061717475099542",
+     "date": "2026-06-18",
+     "read": "full"
+    },
+    {
+     "n": 13,
+     "title": "Serenity on X: Okay my fellow Koreans, it's been awhile. Foosung (093370, ~$1.2B MC)",
+     "url": "https://x.com/aleabitoreddit/status/2065736884752703865",
+     "date": "2026-06-13",
+     "read": "partial"
+    },
+    {
+     "n": 14,
+     "title": "South Korean company Foosung may benefit from a tightened WF6 supply chain (KuCoin, BlockBeats 속보)",
+     "url": "https://www.kucoin.com/news/flash/korean-firm-foosung-may-benefit-from-tightened-wf6-supply-chain",
+     "date": "2026-06-13",
+     "read": "partial"
+    },
+    {
+     "n": 15,
+     "title": "[단독] '후성' 급등 예견한 투자의神 \"삼성SDI, 고출력 원통형배터리·BBU 부족 최대 수혜\" (더구루)",
+     "url": "https://theguru.co.kr/news/article.html?no=103981",
+     "date": "2026-07-06",
+     "read": "full"
+    },
+    {
+     "n": 16,
+     "title": "반도체·배터리 쌍끌이…불기둥 뿜은 후성 (한국경제)",
+     "url": "https://www.hankyung.com/article/2026061725501",
+     "date": "2026-06-17",
+     "read": "full"
+    },
+    {
+     "n": 17,
+     "title": "후성 136% 폭등 비결은 '반도체·불산'…\"밸류 부담은 변수\" (파이낸셜뉴스)",
+     "url": "https://www.fnnews.com/news/202606180716328127",
+     "date": "2026-06-18",
+     "read": "full"
+    },
+    {
+     "n": 18,
+     "title": "세레니티는 누구인가? 시장을 움직이는 익명의 '병목 현상 사냥꾼' (CoinEx 아카데미)",
+     "url": "https://www.coinex.com/ko/academy/detail/6924-who-is-serenity-the-anonymous-bottleneck-hunter-whose-posts-move-markets",
+     "date": null,
+     "read": "partial"
+    },
+    {
+     "n": 19,
+     "title": "China's Export Controls to Japan Create Bottleneck; 'White-Haired Stock God' Serenity Claims South Korea's Foosung to Become a 'Big Winner' (HTX)",
+     "url": "https://www.htx.com/news/chinas-export-controls-to-japan-create-bottleneck-white-hair-glBKPbuH/",
+     "date": "2026-06-15",
+     "read": "partial"
+    },
+    {
+     "n": 20,
+     "title": "Moonlight on X: 白毛股神 Serenity … Foosung (한국 언론 보도를 중국어권에 전함)",
+     "url": "https://x.com/Moon1ightSt/status/2067063594676854927",
+     "date": "2026-06-17",
+     "read": "full"
+    },
+    {
+     "n": 21,
+     "title": "AUROS Technology Targets Mass Supply of 1nm-Level Metrology Tools This Year (The Elec 요약, pulse.bot)",
+     "url": "https://www.pulse.bot/semiconductors/news/auros-technology-targets-mass-supply-of-1nm-level-metrology-tools-this-year-395a8b2a-bfef-414e-9228-8e81760dc026",
+     "date": "2026-04",
+     "read": "search_summary"
+    },
+    {
+     "n": 22,
+     "title": "Reuters(Ozan Ergenay, Danilo Masoni) — X-FAB 주가가 X 글 이후 장중 최대 76% 급등, 같은 계정(@aleabitoreddit)이 2월 Raspberry Pi 급등과도 연결 (wdez.com 전재)",
+     "url": "https://wdez.com/?p=952093",
+     "date": "2026-05-27",
+     "read": "search_summary"
+    },
+    {
+     "n": 23,
+     "title": "텔레그램 시세 알림 — 오로스테크놀로지 +17.68% (2026-05-04 09:04 기준)",
+     "url": "https://t.me/awake_realtimeCheck/56985",
+     "date": "2026-05-04",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "언론은 상한가를 이 글과 외국인 통합계좌 개방 탓으로 풀이했다. 다만 글은 개장 39분 뒤(09:39)에 올라왔고, 텔레그램의 시세 알림에는 09:04 에 이미 +17.68% 로 찍혀 있다. 글보다 먼저 오른 까닭(같은 계정의 앞선 언급이 있었는지 포함)은 확인하지 못했다.",
+   "other_posts": [
+    {
+     "date": "2026-04-28T02:42:36Z",
+     "what": "IBKR에서 한국 주식 거래가 열렸다고 알림(좋아요 2,098)",
+     "targets": [],
+     "url": "https://x.com/aleabitoreddit/status/2048956013374755266",
+     "src": 11
+    },
+    {
+     "date": "2026-05-04",
+     "what": "오이솔루션이 '미국 인플루언서 언급 종목'으로 꼽혀 5/4 +16%, 5/7 +21%(어느 계정의 어느 글인지는 기사에 없음)",
+     "targets": [
+      "오이솔루션"
+     ],
+     "url": null,
+     "src": 2
+    },
+    {
+     "date": "2026-05-06",
+     "what": "유리기판 업종을 거론하며 한국 종목 언급. HB테크놀로지는 5/4 이후 사흘 연속 강세로 보도",
+     "targets": [
+      "필옵틱스",
+      "HB테크놀로지",
+      "와이씨켐"
+     ],
+     "url": null,
+     "src": 2
+    },
+    {
+     "date": "2026-06-13T10:03:47Z",
+     "what": "후성(093370, 시총 약 12억 달러)을 중국의 대일 수출통제로 일본 WF6 공급망(세계 공급의 25%)이 멈추는 데 따른 수혜주로 지목(좋아요 1,759·답글 191). 후성은 6월 +67% 뒤 투자경고 지정",
+     "targets": [
+      "후성(093370)"
+     ],
+     "url": "https://x.com/aleabitoreddit/status/2065736884752703865",
+     "src": 13
+    },
+    {
+     "date": "2026-07-05",
+     "what": "고출력 원통형 배터리·BBU 셀 부족을 언급하며 수혜 기업으로 삼성SDI·파나소닉 에너지·무라타·LG에너지솔루션을 꼽음(더구루 7/6 보도, 글 번호 미확인)",
+     "targets": [
+      "삼성SDI",
+      "LG에너지솔루션"
+     ],
+     "url": null,
+     "src": 15
+    }
+   ],
+   "identity_as_reported": {
+    "anonymous": true,
+    "what": "신원 미상. 전직 AI 연구자이고 2018년 엔비디아 영입 제안을 거절했다고 스스로 주장. 레딧(u/AleaBito, r/wallstreetbets에서 영구 차단)에서 X로 옮김. 백발 애니메이션 아바타로 중국어권에서 '白毛股神'으로 불림. 팔로워 84만·X 유료 구독자 5만5000명(머스크 4만6000명보다 많음)·블룸버그 등 외신에 소개됐다는 것은 아시아경제·더구루 서술이고, 수익률·경력은 본인 스크린샷뿐이라 검증되지 않았다는 것이 CoinEx 글의 지적. 로이터는 5월 27일 X-FAB(파리 상장) 급등과 2월 Raspberry Pi 급등을 이 계정의 글과 연결해 보도했고 X-FAB은 설명할 미공개 정보가 없다고 밝혔다(검색 요약).",
+    "src": [
+     12,
+     15,
+     18,
+     22
+    ]
+   }
+  },
+  {
+   "id": "citrini-korea-2026-05",
+   "country": "KR",
+   "city": null,
+   "value": 0,
+   "unit": "시간",
+   "asof": "2026-05-04",
+   "basis": "계산: 최초 글 게시 시각부터 대표 종목 시장의 다음 정규장 시작까지의 시간. 정규장 중에 나온 글은 0",
+   "title": "Citrini 가 X 에 올린 '관심 있게 보는 한국 종목' 목록(2026-05-04) — 첫 종목 에이피알",
+   "category": "mention",
+   "direction": "up",
+   "claim": "최근 들여다본 흥미로운 한국 종목 목록. 첫째로 에이피알(APR)을 '전 세계에서 보유할 가치가 있는 유일한 화장품주'라며 SNS 현장 영업력, 미국 오프라인 침투, 메디큐브 이후 SKU 확장을 근거로 듦.",
+   "targets": [
+    {
+     "ticker": "278470.KS",
+     "name": "에이피알",
+     "role": "지목"
+    }
+   ],
+   "primary": "278470.KS",
+   "origin": {
+    "author": "Citrini",
+    "handle": "@citrini",
+    "platform": "x",
+    "url": "https://x.com/citrini/status/2051124024814522810",
+    "posted_kst": "2026-05-04T11:17:30+09:00",
+    "precision": "minute",
+    "paywall": "free",
+    "position_disclosed": null,
+    "reach": [
+     {
+      "metric": "likes",
+      "value": 1239,
+      "asof": "2026-11-20",
+      "src": 1
+     },
+     {
+      "metric": "replies",
+      "value": 60,
+      "asof": "2026-11-20",
+      "src": 1
+     }
+    ]
+   },
+   "market": {
+    "t0": "2026-05-04",
+    "open_kst": "2026-05-04T09:00:00+09:00",
+    "close_kst": "2026-05-04T15:30:00+09:00",
+    "session": "장중"
+   },
+   "db_era": true,
+   "timeline": [
+    {
+     "at": "2026-04-28T02:42:36Z",
+     "precision": "minute",
+     "step": "background",
+     "who": "Serenity (@aleabitoreddit), Jukan (@jukan05)",
+     "platform": "x",
+     "what": "배경 — IBKR에서 한국 주식 거래가 열렸다는 글이 퍼짐(좋아요 2,098 / 1,006). 미국 X 계정들이 한국 종목을 다루기 시작한 계기.",
+     "src": 3
+    },
+    {
+     "at": "2026-05-03",
+     "precision": "day",
+     "step": "background",
+     "who": "코리아타임스·아시아경제 영문",
+     "platform": "언론",
+     "what": "에이피알이 TIME '세계에서 가장 영향력 있는 100대 기업'에 K뷰티 기업 최초로 선정됐다는 보도(글 전날, 별개 재료. 검색 요약으로 확인).",
+     "src": 5
+    },
+    {
+     "at": "2026-05-04T00:39:58Z",
+     "precision": "minute",
+     "step": "background",
+     "who": "Serenity (@aleabitoreddit)",
+     "platform": "x",
+     "what": "같은 날 아침 1시간 38분 먼저 오로스테크놀로지(322310)를 언급한 글이 올라옴(좋아요 1,326) — 같은 날 한국 종목 언급이 겹침.",
+     "src": 4
+    },
+    {
+     "at": "2026-05-04T02:17:30Z",
+     "precision": "minute",
+     "step": "origin",
+     "who": "Citrini (@citrini)",
+     "platform": "x",
+     "what": "'Some interesting Korean names I've been looking into' — 1) APR Corporation … (한국 시각 11:17, 장중. 좋아요 1,239·답글 60).",
+     "src": 1
+    },
+    {
+     "at": "2026-05-04T06:24:52Z",
+     "precision": "minute",
+     "step": "amplify",
+     "who": "Smartkarma (@smartkarma)",
+     "platform": "x",
+     "what": "Citrini 글을 인용해 'Gosh everyone waking up to Korean stocks now.'(한국 시각 15:24, 좋아요 5).",
+     "src": 2
+    },
+    {
+     "at": "2026-05-04T09:07:17Z",
+     "precision": "minute",
+     "step": "market",
+     "who": "코스피",
+     "platform": "KRX",
+     "what": "당일 코스피가 6,900을 넘어 사상 최고, 삼성증권은 IBKR 통합계좌 소식에 +28.28%(Bloomingbit 18:07 KST) — Citrini 글이나 에이피알 언급은 없음.",
+     "src": 6
+    },
+    {
+     "at": "2026-05-08T00:20:00Z",
+     "precision": "minute",
+     "step": "market",
+     "who": "에너지경제",
+     "platform": "언론",
+     "what": "[특징주] 에이피알이 실적·목표가 상향에 09:20 기준 +3.99%(417,500원) — 증권가 호평을 이유로 들었고 Citrini 언급은 없음(검색 요약).",
+     "src": 7
+    }
+   ],
+   "attribution": [],
+   "confounders": [
+    {
+     "what": "글 전날(5/3) 에이피알의 TIME 100대 영향력 기업 선정 보도.",
+     "src": 5
+    },
+    {
+     "what": "5월 4일 코스피 사상 최고치(6,900 돌파)와 IBKR 통합계좌 시범 운영에 따른 해외 개인 유입 기대.",
+     "src": 6
+    },
+    {
+     "what": "에이피알은 이미 외국인 순매수 상위 종목(올해 1조589억 원, 5/9 헤럴드경제)이고 1분기 실적·목표가 상향 재료가 5/8 특징주 기사로 나옴(검색 요약).",
+     "src": 8
+    }
+   ],
+   "response": [],
+   "aftermath": {
+    "status": "미정",
+    "what": "글이 주가를 움직였다고 쓴 한국 언론 보도를 찾지 못했다. 에이피알은 5/8 실적·목표가 상향으로 강세였다는 특징주 기사만 확인(검색 요약).",
+    "src": [
+     7
+    ]
+   },
+   "price_as_reported": [
+    {
+     "ticker": "278470",
+     "move": "+3.99% (417,500원, 09:20 기준)",
+     "when": "2026-05-08 장 초반 — Citrini 글과 연결한 보도 아님",
+     "src": 7
+    }
+   ],
+   "not_found": [
+    "글의 2번 이후 종목 목록 — 공개 임베드는 앞 279자(1번 APR 설명 중간)까지만 주고, 한국 언론·블로그가 목록을 옮긴 글을 검색(한국어·영어 6회)으로 찾지 못함. threadreaderapp은 로그인 화면이라 중단",
+    "이 글을 다룬 한국 언론 보도(매체·시각) — 찾지 못함. 검색에 걸린 '시트리니' 기사는 6월 무렵 코스피 과열 경고(Investing.com)로 다른 건",
+    "언급 종목의 5월 4일 당일 주가 반응을 이 글과 연결한 보도 — 찾지 못함(attribution 비어 있음)",
+    "글쓴이의 포지션 공개 여부 — 잘린 뒷부분에 있을 수 있으나 확인 못 함",
+    "리포스트·조회 수 — 임베드가 주지 않음"
+   ],
+   "refs": [
+    {
+     "bundle": "N2",
+     "id": "citrini-korea-2026-05-278470-ks"
+    },
+    {
+     "bundle": "N3",
+     "id": "citrini-korea-2026-05"
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "Citrini on X: Some interesting Korean names I've been looking into",
+     "url": "https://x.com/citrini/status/2051124024814522810",
+     "date": "2026-05-04",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "Smartkarma on X: Gosh everyone waking up to Korean stocks now. (Citrini 글 인용)",
+     "url": "https://x.com/smartkarma/status/2051186277241012666",
+     "date": "2026-05-04",
+     "read": "full"
+    },
+    {
+     "n": 3,
+     "title": "Jukan on X: IBKR is finally supporting Korean stocks (Serenity 글 인용)",
+     "url": "https://x.com/jukan05/status/2048957085770203478",
+     "date": "2026-04-28",
+     "read": "full"
+    },
+    {
+     "n": 4,
+     "title": "Serenity on X: So I do think Auros (322310) is very interesting",
+     "url": "https://x.com/aleabitoreddit/status/2051099481693954525",
+     "date": "2026-05-04",
+     "read": "partial"
+    },
+    {
+     "n": 5,
+     "title": "APR named among Time's 100 most influential companies (The Korea Times)",
+     "url": "https://www.koreatimes.co.kr/business/companies/20260503/apr-named-among-times-100-most-influential-companies",
+     "date": "2026-05-03",
+     "read": "search_summary"
+    },
+    {
+     "n": 6,
+     "title": "Samsung Securities Jumps 28% as Foreign Trading Service Nears Launch (Bloomingbit)",
+     "url": "https://en.bloomingbit.io/feed/news/111323",
+     "date": "2026-05-04",
+     "read": "partial"
+    },
+    {
+     "n": 7,
+     "title": "[특징주] 에이피알, 2026 실적·목표가 상향…강세 (에너지경제)",
+     "url": "https://m.ekn.kr/view.php?key=20260508028063021",
+     "date": "2026-05-08",
+     "read": "search_summary"
+    },
+    {
+     "n": 8,
+     "title": "\"장원영도 쓸 정도면\" 외국인이 1조 넘게 폭풍 매수…'K-뷰티' 새 대장주 [투자360] (헤럴드경제)",
+     "url": "https://www.heraldk.com/article/2026050901400059890",
+     "date": "2026-05-09",
+     "read": "search_summary"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "한국 장중(11:17)에 올라온 종목 목록 글이다. 공개 임베드로는 첫 종목(에이피알)까지만 읽혔고, 이 글이 주가를 움직였다고 쓴 보도는 찾지 못했다."
+  },
+  {
+   "id": "socamm-tmtb-2026-06",
+   "country": "US",
+   "city": null,
+   "value": 0.7,
+   "unit": "시간",
+   "asof": "2026-06-04",
+   "basis": "계산: 최초 글 게시 시각부터 대표 종목 시장의 다음 정규장 시작까지의 시간. 정규장 중에 나온 글은 0",
+   "title": "SemiAnalysis 유료 노트의 'Vera Rubin SOCAMM 용량 절반' 내용이 퍼진 2026-06-04~05 메모리주 급락",
+   "category": "relay",
+   "direction": "down",
+   "claim": "엔비디아가 Vera Rubin NVL72 랙의 CPU 쪽 SOCAMM D램을 랙당 약 55TB에서 약 28TB로(192GB 모듈 8개 → 96GB 모듈 8개, CPU당 1,536GB → 768GB) 줄인다는 SemiAnalysis 기관용 노트. 시장은 이를 AI 메모리 수요 둔화 신호로 읽었다.",
+   "targets": [
+    {
+     "ticker": "MU",
+     "name": "마이크론",
+     "role": "지목"
+    },
+    {
+     "ticker": "000660.KS",
+     "name": "SK하이닉스",
+     "role": "동반"
+    },
+    {
+     "ticker": "005930.KS",
+     "name": "삼성전자",
+     "role": "동반"
+    }
+   ],
+   "primary": "MU",
+   "origin": {
+    "author": "SemiAnalysis(기관용 유료 노트). 시각이 확인되는 첫 전달은 TMT Breakout 의 유료 글 'TMTB Morning Wrap'",
+    "handle": "@dylan522p",
+    "platform": "substack",
+    "url": "https://www.tmtbreakout.com/p/tmtb-morning-wrap-374",
+    "posted_kst": "2026-06-04T21:48:11+09:00",
+    "precision": "minute",
+    "paywall": "paid",
+    "position_disclosed": null,
+    "reach": [
+     {
+      "metric": "likes",
+      "value": 14,
+      "asof": "2026-11-20",
+      "src": 1,
+      "note": "TMT Breakout 6월 4일 Morning Wrap 의 reaction_count(유료 글)"
+     }
+    ],
+    "note": "최초 노트는 유료이고 게시 시각을 확인하지 못했다(PhotonCap 은 6월 4일 아침에 돌았다고 적는다). 시각이 확인되는 첫 전달 글의 게시 시각을 썼다. 그 글에 용량 축소 문구가 있는지는 유료라 확인하지 못했다."
+   },
+   "market": {
+    "t0": "2026-06-04",
+    "open_kst": "2026-06-04T22:30:00+09:00",
+    "close_kst": "2026-06-05T05:00:00+09:00",
+    "session": "개장 전"
+   },
+   "db_era": true,
+   "timeline": [
+    {
+     "at": "2026-06-04",
+     "precision": "day",
+     "step": "origin",
+     "who": "SemiAnalysis",
+     "platform": "report-site",
+     "what": "Vera Rubin NVL72 랙의 SOCAMM D램이 약 55TB → 약 28TB 로 준다는 기관용 노트가 6월 4일 아침 시장에 돌았다(PhotonCap 서술, 원문 미확인).",
+     "src": 4
+    },
+    {
+     "at": "2026-06-04T12:48:11Z",
+     "precision": "minute",
+     "step": "amplify",
+     "who": "TMT Breakout",
+     "platform": "substack",
+     "what": "유료 글 'TMTB Morning Wrap' 게시(Substack 검색어 SOCAMM 에 걸리는 6월 초 유일한 글). 공개된 첫 문단은 브로드컴 실적 탓에 반도체 선물 -3% 라는 내용이고, '1536GB→768GB' 문구가 본문에 있는지는 유료라 확인 못 함.",
+     "src": 1
+    },
+    {
+     "at": "2026-06-04",
+     "precision": "day",
+     "step": "market",
+     "who": "Micron",
+     "platform": "NASDAQ",
+     "what": "마이크론 6월 4일 -7.74%(MoneyDJ/TechNews 가 옮긴 수치), 장중 한때 10% 가까이 하락(PhotonCap).",
+     "src": 6
+    },
+    {
+     "at": "2026-06-05T02:59:54Z",
+     "precision": "minute",
+     "step": "media",
+     "who": "이데일리",
+     "platform": "news",
+     "what": "한국 장중(11:59 KST) 미래에셋·대신증권 견해를 묶어 'SOCAMM 축소는 수요 둔화 신호가 아니다, 삼성전자·SK하이닉스 조정은 매수 기회'라고 보도. 대신 류형근은 192GB 8개 → 96GB 8개로 추정.",
+     "src": 3
+    },
+    {
+     "at": "2026-06-05T03:31:49Z",
+     "precision": "minute",
+     "step": "amplify",
+     "who": "Korea119 (@Klaytonlolus)",
+     "platform": "x",
+     "what": "SemiAnalysis 의 올해 마이크론 약세 보고서들이 번번이 틀렸다는 시간표를 올림(좋아요 260, 글 번호 2062739140568137883). MoneyDJ 가 기사에 인용.",
+     "src": 7
+    },
+    {
+     "at": "2026-06-05",
+     "precision": "day",
+     "step": "market",
+     "who": "SK hynix / Micron",
+     "platform": "KRX/NASDAQ",
+     "what": "6월 5일 SK하이닉스 -9.92%, 중국 A주 메모리 지수 -4%(증권시보→TechFlow). 마이크론은 금요일 -13%(-13.25%, 종가 864.01달러)로 2025년 4월 이후 최대 하루 낙폭.",
+     "src": 5
+    },
+    {
+     "at": "2026-06-06",
+     "precision": "day",
+     "step": "media",
+     "who": "Tiger Brokers Deep News",
+     "platform": "news",
+     "what": "'SemiAnalysis 보고서가 매도를 촉발, 마이크론 13% 급락' — 55TB→28TB 보고서를 직접 원인으로 서술.",
+     "src": 2
+    },
+    {
+     "at": "2026-06-06T02:52:48Z",
+     "precision": "minute",
+     "step": "media",
+     "who": "TechFlow(증권시보 인용, KuCoin 게재)",
+     "platform": "news",
+     "what": "SemiAnalysis 보고서가 글로벌 메모리주 조정을 불렀고, 축소는 CPU 쪽 시스템 메모리일 뿐 GPU 와 무관하다는 업계 해석을 전함.",
+     "src": 5
+    },
+    {
+     "at": "2026-06-05~07",
+     "precision": "day",
+     "step": "response",
+     "who": "Dylan Patel",
+     "platform": "x",
+     "what": "X 에서 보고서가 '어떤 의미로도 약세가 아니다'라고 해명(6월 5~7일 사이, 글 번호·시각 미확인). 용량 축소 자체를 부인했다는 보도는 찾지 못함.",
+     "src": 6
+    },
+    {
+     "at": "2026-06-08 이전",
+     "precision": "day",
+     "step": "response",
+     "who": "SemiAnalysis",
+     "platform": "x",
+     "what": "'보고서가 파문을 일으켰지만 일부가 잘못된 결론을 낸다, 가짜뉴스라는 사람들은 컴퓨텍스 하이닉스 부스를 안 가 본 것'이라고 반박(6월 8일자 기사에 실림).",
+     "src": 8
+    },
+    {
+     "at": "2026-06-08T00:20:00Z",
+     "precision": "minute",
+     "step": "media",
+     "who": "MoneyDJ / TechNews 科技新報",
+     "platform": "news",
+     "what": "'엔비디아 메모리 수요 반토막 소문 반박, 젠슨 황: 부족의 끝이 안 보인다'(대만 시각 6월 8일 08:20) — Patel 해명, Barron's 의 HBM 구축효과 해석, 황의 SK하이닉스 협력 발언을 정리.",
+     "src": 6
+    },
+    {
+     "at": "2026-06-10",
+     "precision": "day",
+     "step": "aftermath",
+     "who": "TrendForce",
+     "platform": "report-site",
+     "what": "보도자료에서 이번 변화를 수요 조정이 아닌 공급 제약에 따른 구조 타협으로 설명(LPDRAM 공급이 엔비디아 추정 수요의 약 60%).",
+     "src": 9
+    },
+    {
+     "at": "2026-06-16T03:20:20Z",
+     "precision": "minute",
+     "step": "aftermath",
+     "who": "PhotonCap",
+     "platform": "substack",
+     "what": "'줄어든 것은 HBM 이 아니다' — 축소가 사실이어도 CPU 쪽 LPDDR5X 용량 계층의 공급·전력·열 한계라는 해석.",
+     "src": 4
+    }
+   ],
+   "attribution": [
+    {
+     "outlet": "Tiger Brokers Deep News (2026-06-06)",
+     "what": "마이크론 13% 급락의 직접 원인을 SemiAnalysis 보고서로 적음.",
+     "src": 2
+    },
+    {
+     "outlet": "MoneyDJ / TechNews (2026-06-08)",
+     "what": "Barron's·Kucoin 을 인용해 급락의 도화선이 SemiAnalysis 보고서라고 적음.",
+     "src": 6
+    },
+    {
+     "outlet": "TechFlow / 증권시보 (2026-06-06)",
+     "what": "SemiAnalysis 보고서가 글로벌 메모리주 전반의 조정을 촉발했다고 적음(SK하이닉스 -9.92% 포함).",
+     "src": 5
+    },
+    {
+     "outlet": "PhotonCap (2026-06-16)",
+     "what": "6월 4일 아침에 돈 SemiAnalysis 노트를 방아쇠로 지목. TMT Breakout·Jukan 은 언급하지 않음.",
+     "src": 4
+    }
+   ],
+   "confounders": [
+    {
+     "what": "브로드컴(AVGO) 실적·혹 탄 발언 실망으로 6월 4일 개장 전 반도체 선물 -3%(TMT Breakout Morning Wrap 공개 첫 문단). 같은 글이 CRWD 하락과 모멘텀 되돌림 가능성도 언급.",
+     "src": 1
+    },
+    {
+     "what": "한국 증권사(미래에셋·대신)는 메모리 공급 부족이 축소의 원인이라며 수요 둔화 해석을 반박.",
+     "src": 3
+    }
+   ],
+   "response": [
+    {
+     "who": "Dylan Patel (SemiAnalysis)",
+     "at": null,
+     "what": "X 에서 보고서가 '약세 의미가 전혀 없다'고 해명. 공유하는 사람들이 보고서 대부분을 빼고 옮긴다는 취지의 글도 있었다고 보도됨(검색 요약). 글 번호·시각 미확인.",
+     "src": 6
+    },
+    {
+     "who": "SemiAnalysis 계정",
+     "at": null,
+     "what": "가짜뉴스 주장에 '하이닉스 컴퓨텍스 부스를 안 가 본 것'이라며 사실관계는 유지.",
+     "src": 8
+    },
+    {
+     "who": "Jensen Huang (Nvidia)",
+     "at": "2026-06-05",
+     "what": "메모리 부족의 끝이 보이지 않는다, SK하이닉스와 협력 심화 발언(MoneyDJ). 엔비디아가 'Vera 는 최대 1.5TB, SKU·고객별 구성 차이'라고 답했다는 보도는 검색 요약으로만 확인.",
+     "src": 6
+    },
+    {
+     "who": "미래에셋증권·대신증권",
+     "at": "2026-06-05T02:59:54Z",
+     "what": "SOCAMM 축소는 수요 둔화가 아니며 삼성전자·SK하이닉스 매수 의견 유지.",
+     "src": 3
+    }
+   ],
+   "aftermath": {
+    "status": "엇갈림",
+    "what": "SemiAnalysis 는 축소 사실(55TB→28TB)은 유지하고 '약세 해석'만 부인했다 — 힌트의 '용량 축소 부인'과 다르다. 엔비디아는 '최대 1.5TB' 사양을 재확인했다고 보도됐으나(검색 요약) 768GB 가 표준 출하 구성인지는 확정되지 않았다. TrendForce 는 6월 10일 공급 제약에 따른 조정으로 설명. SemiAnalysis 공개 글과 TMT Breakout 정정 여부는 확인하지 못했다.",
+    "src": [
+     6,
+     8,
+     9
+    ]
+   },
+   "price_as_reported": [
+    {
+     "ticker": "MU",
+     "move": "-7.74%",
+     "when": "2026-06-04 종가",
+     "src": 6
+    },
+    {
+     "ticker": "MU",
+     "move": "-13.25% (종가 864.01달러)",
+     "when": "2026-06-05 종가",
+     "src": 6
+    },
+    {
+     "ticker": "MU",
+     "move": "-13% (2025년 4월 이후 최대 하루 낙폭)",
+     "when": "2026-06-05(금) 종가",
+     "src": 2
+    },
+    {
+     "ticker": "MU",
+     "move": "장중 약 -10%",
+     "when": "2026-06-04 장중",
+     "src": 4
+    },
+    {
+     "ticker": "000660.KS",
+     "move": "-9.92%",
+     "when": "2026-06-05 종가",
+     "src": 5
+    }
+   ],
+   "not_found": [
+    "TMT Breakout 글 본문의 '1536GB → 768GB' 문구(유료 글이라 확인 불가. SOCAMM 검색에 걸리는 6월 글: 06-04 12:48Z Morning Wrap, 06-08 12:29Z Morning Wrap, 06-08 21:02Z EOD Wrap, 06-09 21:34Z EOD Wrap — 모두 only_paid)",
+    "TMT Breakout 의 정정 여부(6월 8·9일 Wrap 이 후속일 수 있으나 유료)",
+    "Jukan(@jukan05/@Jukanlosreve)의 X 글 번호·시각·좋아요 수 — 검색 세 번에 안 나옴",
+    "Dylan Patel(@dylan522p) 해명 글의 번호·정확한 시각 — 2차 보도로만 확인",
+    "SemiAnalysis 가 6월 10일 무렵 공개했다는 글의 주소와 내용",
+    "SemiAnalysis 노트의 실제 발행일(힌트 6월 3일 vs PhotonCap '6월 4일 아침')",
+    "한국 일간지의 6월 5일 코스피·삼성전자 등락률 보도(이데일리 영문 기사에는 수치 없음)",
+    "엔비디아 공식 답변 원문(tomshw.it·xenospectrum 등은 검색 요약으로만 봄)",
+    "华尔街见闻 원문(wallstreetcn.com/articles/3774082)은 curl 로 본문이 오지 않음"
+   ],
+   "refs": [
+    {
+     "bundle": "N2",
+     "id": "socamm-tmtb-2026-06-mu"
+    },
+    {
+     "bundle": "N3",
+     "id": "socamm-tmtb-2026-06"
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "TMTB Morning Wrap (TMT Breakout, 유료) — posts API·archive 검색(SOCAMM)",
+     "url": "https://www.tmtbreakout.com/p/tmtb-morning-wrap-374",
+     "date": "2026-06-04",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "Semianalysis Report Ignites Market Sell-Off, Sending Micron Shares Plunging 13% (Tiger Brokers Deep News)",
+     "url": "https://www.itiger.com/news/1179875810",
+     "date": "2026-06-06",
+     "read": "partial"
+    },
+    {
+     "n": 3,
+     "title": "SOCAMM's Contraction Doesn't Signal Slowing Demand… Corrections in Samsung and SK Hynix Present Buying Opportunities (Edaily)",
+     "url": "https://en.edaily.co.kr/news/eda202606055349/",
+     "date": "2026-06-05",
+     "read": "partial"
+    },
+    {
+     "n": 4,
+     "title": "The Cut Was Not HBM: The SOCAMM Selloff and the Optical Memory Fabric (PhotonCap, 일부 유료)",
+     "url": "https://photoncap.net/p/the-cut-was-not-hbm-the-socamm-selloff",
+     "date": "2026-06-16",
+     "read": "partial"
+    },
+    {
+     "n": 5,
+     "title": "NVIDIA's New AI Server Platform Reportedly Cuts Memory Capacity, Sending Shockwaves in Global Storage Stocks (TechFlow/증권시보, KuCoin)",
+     "url": "https://www.kucoin.com/news/flash/nvidia-s-new-ai-server-platform-reportedly-cuts-memory-capacity-sending-shockwaves-in-global-storage-stocks",
+     "date": "2026-06-06",
+     "read": "full"
+    },
+    {
+     "n": 6,
+     "title": "打臉輝達記憶體需求砍半傳聞 黃仁勳：短缺沒盡頭 (MoneyDJ / TechNews)",
+     "url": "https://technews.tw/?p=1568330",
+     "date": "2026-06-08",
+     "read": "partial"
+    },
+    {
+     "n": 7,
+     "title": "X 글 @Klaytonlolus (Korea119) 2062739140568137883",
+     "url": "https://x.com/Klaytonlolus/status/2062739140568137883",
+     "date": "2026-06-05",
+     "read": "partial"
+    },
+    {
+     "n": 8,
+     "title": "SemiAnalysis Rebuts Vera SOCAMM Controversy, Claims Critics Missed Hynix Computex Booth (Tiger Brokers Deep News; 원문 华尔街见闻 3774082)",
+     "url": "https://www.itiger.com/news/1162955731",
+     "date": "2026-06-08",
+     "read": "partial"
+    },
+    {
+     "n": 9,
+     "title": "TrendForce Press Center 2026-06-10",
+     "url": "https://www.trendforce.com/presscenter/news/20260610-13090.html",
+     "date": "2026-06-10",
+     "read": "search_summary"
+    },
+    {
+     "n": 10,
+     "title": "SK와 '베라 루빈' 동맹 맺은 젠슨 황… 소캠2 스펙 낮춘 속사정 (디지털데일리)",
+     "url": "https://www.ddaily.co.kr/page/view/2026060914301734049",
+     "date": "2026-06-09",
+     "read": "search_summary"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "note": "유료 기관용 노트의 내용이 유료 Substack 글과 X 를 거쳐 퍼졌다. 같은 날 개장 전 브로드컴 실적에 따른 반도체 선물 약세가 함께 있었다. SemiAnalysis 는 용량 축소라는 사실은 유지하고 약세 해석만 부인했다."
+  },
+  {
+   "id": "burry-mu-short-2026-07",
+   "country": "US",
+   "city": null,
+   "value": 88.6,
+   "unit": "시간",
+   "asof": "2026-07-06",
+   "basis": "계산: 최초 글 게시 시각부터 대표 종목 시장의 다음 정규장 시작까지의 시간. 정규장 중에 나온 글은 0",
+   "title": "마이클 버리가 Substack 유료 글에서 마이크론 공매도를 공개(2026-07-02)",
+   "category": "short",
+   "direction": "down",
+   "claim": "버리가 7월 1일 마이크론을 주당 1,051.87달러에 공매도했다고 7월 2일 유료 글에서 밝혔다. 마이크론은 '경기순환주의 전형'이라 좋을 때 과하게 오르고 나쁠 때 과하게 내린다는 논리.",
+   "targets": [
+    {
+     "ticker": "MU",
+     "name": "마이크론",
+     "role": "지목"
+    }
+   ],
+   "primary": "MU",
+   "origin": {
+    "author": "Michael Burry",
+    "handle": "Cassandra Unchained",
+    "platform": "substack",
+    "url": "https://michaeljburry.substack.com/p/trading-post-july-2-2026",
+    "posted_kst": "2026-07-03T05:53:04+09:00",
+    "precision": "minute",
+    "paywall": "paid",
+    "position_disclosed": "7월 1일 마이크론 주식 공매도(1,051.87달러, MarketWatch 가 옮긴 수치). 글 부제는 '새 공매도 하나와 매수 포지션 다섯 개 추가'.",
+    "reach": [
+     {
+      "metric": "likes",
+      "value": 329,
+      "asof": "2026-11-20",
+      "src": 1
+     },
+     {
+      "metric": "reposts",
+      "value": 16,
+      "asof": "2026-11-20",
+      "src": 1
+     }
+    ]
+   },
+   "market": {
+    "t0": "2026-07-06",
+    "open_kst": "2026-07-06T22:30:00+09:00",
+    "close_kst": "2026-07-07T05:00:00+09:00",
+    "session": "장 마감 뒤"
+   },
+   "db_era": true,
+   "timeline": [
+    {
+     "at": "2026-06-30T19:55:15Z",
+     "precision": "minute",
+     "step": "background",
+     "who": "Michael Burry",
+     "platform": "substack",
+     "what": "앞선 유료 글 'Trading Post June 30, 2026'(부제: 윈도드레싱, SOX, 캐터필러) — 언론은 NVDA·AMAT·SOXX 공매도와 '한국의 대규모 반도체 지출은 종말의 시작' 발언으로 보도.",
+     "src": 2
+    },
+    {
+     "at": "2026-07-01",
+     "precision": "day",
+     "step": "background",
+     "who": "Michael Burry / Micron",
+     "platform": "NASDAQ",
+     "what": "버리가 마이크론을 1,051.87달러에 공매도한 날. 같은 날(수) 마이크론은 약 11% 하락했고 메타의 잉여 클라우드 용량 매각 검토 보도가 일부 원인으로 거론됐다(하락률·원인은 검색 요약).",
+     "src": 3
+    },
+    {
+     "at": "2026-07-02T20:53:04Z",
+     "precision": "minute",
+     "step": "origin",
+     "who": "Michael Burry",
+     "platform": "substack",
+     "what": "유료 글 'Trading Post July 2, 2026' 게시(미 동부 16:53, 정규장 마감 뒤). 첫 문장: 어제 많이 내린 종목 하나를 공매도했다.",
+     "src": 1
+    },
+    {
+     "at": "2026-07-02",
+     "precision": "day",
+     "step": "amplify",
+     "who": "X 계정들·Seeking Alpha",
+     "platform": "x/news",
+     "what": "MarketWatch 는 이 내용이 'X 계정들과 Seeking Alpha 등에서 널리 보도됐다'고 적음(계정 이름·글 번호 미확인).",
+     "src": 3
+    },
+    {
+     "at": "2026-07-03",
+     "precision": "day",
+     "step": "media",
+     "who": "MarketWatch(Dow Jones) → Tiger Brokers 전재",
+     "platform": "news",
+     "what": "'Michael Burry Makes a Bearish Bet Against Hot Memory Stock Micron: Reports' — 1,051.87달러와 글 인용을 'reportedly'로 전함(기사 일자는 추정, 전재본에서 날짜 미확인).",
+     "src": 3
+    },
+    {
+     "at": "2026-07-03",
+     "precision": "day",
+     "step": "media",
+     "who": "Invezz",
+     "platform": "news",
+     "what": "'버리, 마이크론 공매도… AI 칩 랠리가 지나쳤다고 경고'(주소의 날짜 기준, 본문은 검색 요약).",
+     "src": 4
+    },
+    {
+     "at": "2026-07-06T16:00:00Z",
+     "precision": "hour",
+     "step": "media",
+     "who": "Bloomberg Opinion (Shuli Ren) → The Star 전재",
+     "platform": "news",
+     "what": "칼럼 '버리의 메모리 반도체 견해는 옳다' — 마이크론이 '경기순환주의 전형'이라는 버리 글을 인용하고 삼성·SK하이닉스·마이크론의 호황·불황 주기를 논함.",
+     "src": 5
+    },
+    {
+     "at": "2026-07-24T18:22:00Z",
+     "precision": "minute",
+     "step": "aftermath",
+     "who": "Michael Burry",
+     "platform": "substack",
+     "what": "유료 글 'Trading Post July 24, 2026 - 4 Shorts, 3 Longs' — 언론은 마이크론 933.86달러 추가 공매도, NVDA·SOXX 공매도 확대로 보도(가격은 검색 요약).",
+     "src": 6
+    },
+    {
+     "at": "2026-07-31",
+     "precision": "day",
+     "step": "media",
+     "who": "Montgomery Investment Management",
+     "platform": "blog",
+     "what": "'The Big Short targets AI' — 공개 포지션 표에 마이크론 1,052달러 공매도를 '순수 메모리 사이클 베팅'으로 정리.",
+     "src": 7
+    },
+    {
+     "at": "2026-09-22T17:06:28Z",
+     "precision": "minute",
+     "step": "aftermath",
+     "who": "Michael Burry",
+     "platform": "substack",
+     "what": "유료 글 'Trading Post September 22, 2026'(부제: Quick Update) — 힌트의 9월 23일 무렵 공매도 확대 공개에 해당하는 것으로 보이나 내용·보도는 미확인.",
+     "src": 8
+    },
+    {
+     "at": "2026-11-19T17:39:23Z",
+     "precision": "minute",
+     "step": "aftermath",
+     "who": "Michael Burry",
+     "platform": "substack",
+     "what": "archive 검색어 Micron 에 7월 2일 이후 23건이 걸리고 최신은 11월 19일 글 — 마이크론을 계속 다루고 있다(본문은 유료).",
+     "src": 9
+    }
+   ],
+   "attribution": [
+    {
+     "outlet": "MarketWatch(Tiger Brokers 전재)",
+     "what": "주가 움직임을 글 탓으로 돌린 문장은 확인하지 못함. 공매도 사실을 'reportedly'로 전함.",
+     "src": 3
+    },
+    {
+     "outlet": "Bloomberg Opinion (Shuli Ren)",
+     "what": "주가 반응이 아니라 버리의 논리를 평가한 칼럼(동의).",
+     "src": 5
+    }
+   ],
+   "confounders": [
+    {
+     "what": "글은 7월 2일 정규장 마감 뒤(16:53 ET)에 나왔다. 보도된 하락(7월 1일 약 -11%, 7월 2일 -5%)은 공개 이전이고, 7월 1일 하락은 메타의 잉여 클라우드 용량 매각 검토 보도가 일부 원인으로 거론됨(검색 요약).",
+     "src": 3
+    },
+    {
+     "what": "6월 30일 글의 '한국 반도체 대규모 지출은 종말의 시작' 발언과 NVDA·AMAT·SOXX 공매도 공개가 이틀 전에 이미 보도됨.",
+     "src": 10
+    }
+   ],
+   "response": [],
+   "aftermath": {
+    "status": "미정",
+    "what": "버리는 7월 24일 글에서 마이크론 공매도를 늘렸다고 보도됐고(933.86달러, 검색 요약) 11월까지 마이크론을 계속 다룬다. 마이크론·애널리스트의 직접 반응과 그 뒤 손익은 확인하지 못했다.",
+    "src": [
+     6,
+     9
+    ]
+   },
+   "price_as_reported": [
+    {
+     "ticker": "MU",
+     "move": "약 -11%",
+     "when": "2026-07-01(수) — 공개 전, 검색 요약",
+     "src": 3
+    },
+    {
+     "ticker": "MU",
+     "move": "-5%",
+     "when": "2026-07-02(목) — 글은 마감 뒤 게시, 검색 요약",
+     "src": 3
+    }
+   ],
+   "not_found": [
+    "CNBC·Bloomberg 뉴스(칼럼 말고)의 보도와 시각 — 검색에 안 나옴",
+    "MarketWatch 기사의 정확한 게시 시각(전재본은 로그인 벽, 날짜 미확인)",
+    "글 공개 뒤 첫 거래일(7월 3일은 미국 휴장 전날 단축/휴장 여부 포함)의 마이크론 등락을 글 탓으로 돌린 보도",
+    "마이크론 회사나 애널리스트의 직접 반응",
+    "글을 퍼뜨린 X 계정 이름과 글 번호",
+    "9월 22~23일 공매도 확대 공개의 내용과 언론 보도(글의 존재만 확인)",
+    "ForkLog 가 적은 마이크론 고점 1,213.37달러·7월 31일 종가 823.03달러는 검색 요약끼리 어긋나 싣지 않음",
+    "Substack archive API 는 offset 을 받지 않고(limit ≤25, 커서 방식) 6~9월 전체 목록은 검색어로만 훑었다 — 다른 헤드라인 건이 빠졌을 수 있음"
+   ],
+   "refs": [
+    {
+     "bundle": "N2",
+     "id": "burry-mu-short-2026-07-mu"
+    },
+    {
+     "bundle": "N3",
+     "id": "burry-mu-short-2026-07"
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "Trading Post July 2, 2026 (Cassandra Unchained, 유료) — posts API",
+     "url": "https://michaeljburry.substack.com/p/trading-post-july-2-2026",
+     "date": "2026-07-02",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "Trading Post June 30, 2026 (Cassandra Unchained, 유료) — posts API",
+     "url": "https://michaeljburry.substack.com/p/trading-post-june-30th-2026",
+     "date": "2026-06-30",
+     "read": "partial"
+    },
+    {
+     "n": 3,
+     "title": "Michael Burry Makes a Bearish Bet Against Hot Memory Stock Micron: Reports (MarketWatch/Dow Jones, Tiger Brokers 전재 — 로그인 벽 앞부분만)",
+     "url": "https://www.itiger.com/news/2648166374",
+     "date": null,
+     "read": "partial"
+    },
+    {
+     "n": 4,
+     "title": "Michael Burry shorts Micron stock, warns AI chip rally has gone too far (Invezz)",
+     "url": "https://invezz.com/news/2026/07/03/michael-burry-shorts-micron-stock-warns-ai-chip-rally-has-gone-too-far/",
+     "date": "2026-07-03",
+     "read": "search_summary"
+    },
+    {
+     "n": 5,
+     "title": "Burry's take on memory chipmakers is spot on (Bloomberg Opinion, Shuli Ren — The Star 전재)",
+     "url": "https://www.thestar.com.my/business/business-news/2026/07/07/burrys-take-on-memory-chipmakers-is-spot-on",
+     "date": "2026-07-07",
+     "read": "partial"
+    },
+    {
+     "n": 6,
+     "title": "Cassandra Unchained archive 검색(Micron) — 'Trading Post July 24, 2026 - 4 Shorts, 3 Longs' 외",
+     "url": "https://michaeljburry.substack.com/p/trading-post-july-24-2026",
+     "date": "2026-07-24",
+     "read": "partial"
+    },
+    {
+     "n": 7,
+     "title": "The Big Short targets AI (Montgomery Investment Management)",
+     "url": "https://www.montinvest.com/investor-insights/insights/the-big-short-targets-ai",
+     "date": "2026-07-31",
+     "read": "partial"
+    },
+    {
+     "n": 8,
+     "title": "Trading Post September 22, 2026 (Cassandra Unchained, 유료) — posts API",
+     "url": "https://michaeljburry.substack.com/p/trading-post-september-22-2026",
+     "date": "2026-09-22",
+     "read": "partial"
+    },
+    {
+     "n": 9,
+     "title": "Cassandra Unchained archive API(최신 25건, 검색 Micron·Korea)",
+     "url": "https://michaeljburry.substack.com/api/v1/archive?sort=new&limit=25",
+     "date": "2026-11-20",
+     "read": "full"
+    },
+    {
+     "n": 10,
+     "title": "Michael Burry Is Short NVDA, AMAT, SOXX — Sees Big Korea Chip Spending As 'Beginning Of The End' (Stocktwits)",
+     "url": "https://stocktwits.com/news-articles/markets/equity/michael-burry-is-short-nvda-amat-soxx-sees-big-korea-chip-spending-as-beginning-of-the-end/cZmdCmjR70C",
+     "date": null,
+     "read": "search_summary"
+    },
+    {
+     "n": 11,
+     "title": "Yahoo Finance 일별 시세 — MU (2026-06-29~07-14)",
+     "url": "https://query1.finance.yahoo.com/v8/finance/chart/MU?period1=1782691200&period2=1784073600&interval=1d",
+     "date": "2026-11-20",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "유료 글이고 정규장 마감 53분 뒤에 나왔다. 마이크론의 7월 1일(−10.57%)·2일(−5.49%) 하락은 글이 공개되기 전이다(야후 일별 종가). 7월 3일은 미국 휴장이어서 글이 반영될 수 있었던 첫 거래일은 7월 6일이다.",
+   "other_posts": [
+    {
+     "date": "2026-06-30",
+     "what": "'Trading Post June 30, 2026' — NVDA(198.09달러)·AMAT(729.40달러)·SOXX(642.80달러) 공매도 공개, 캐터필러·테슬라 공매도 언급, 한국의 대규모 반도체 투자 계획이 부른 랠리를 '종말의 시작'이라 부름(가격·발언은 Stocktwits 등 검색 요약, 글은 유료). 헤럴드는 월요일, 다른 매체는 화요일 글로 적어 날짜 표기가 갈린다.",
+     "targets": [
+      "NVDA",
+      "AMAT",
+      "SOXX",
+      "CAT",
+      "TSLA"
+     ],
+     "url": "https://michaeljburry.substack.com/p/trading-post-june-30th-2026",
+     "src": 2
+    },
+    {
+     "date": "2026-07-02",
+     "what": "'Trading Post July 2, 2026' — 마이크론 1,051.87달러 공매도(이 사례).",
+     "targets": [
+      "MU"
+     ],
+     "url": "https://michaeljburry.substack.com/p/trading-post-july-2-2026",
+     "src": 1
+    },
+    {
+     "date": "2026-07-24",
+     "what": "'Trading Post July 24, 2026 - 4 Shorts, 3 Longs' — 언론(工商時報 7월 26일, NeoFeed 등)은 '7월 25일 업데이트'로 마이크론 933.86달러·NVDA 210.28달러·SOXX 535.83달러 공매도 확대, 캐터필러 추가, 테슬라·팔란티어 유지로 보도(검색 요약, 글과 보도의 대응은 추정).",
+     "targets": [
+      "MU",
+      "NVDA",
+      "SOXX",
+      "CAT",
+      "TSLA",
+      "PLTR"
+     ],
+     "url": "https://michaeljburry.substack.com/p/trading-post-july-24-2026",
+     "src": 6
+    },
+    {
+     "date": "2026-09-22",
+     "what": "'Trading Post September 22, 2026' — 힌트의 마이크론·네비우스·SOXX·팔란티어 공매도 확대 공개로 보이는 글. 글의 존재·시각만 확인, 내용과 언론 보도는 미확인.",
+     "targets": [
+      "MU",
+      "NBIS",
+      "SOXX",
+      "PLTR"
+     ],
+     "url": "https://michaeljburry.substack.com/p/trading-post-september-22-2026",
+     "src": 8
+    }
+   ]
+  },
+  {
+   "id": "hunterbrook-be-2026-07",
+   "country": "US",
+   "city": null,
+   "value": 0,
+   "unit": "시간",
+   "asof": "2026-07-08",
+   "basis": "계산: 최초 글 게시 시각부터 대표 종목 시장의 다음 정규장 시작까지의 시간. 정규장 중에 나온 글은 0",
+   "title": "Hunterbrook 의 Bloom Energy 보고서 'Bloom's Big Lie'와 공매도 공개(2026-07-08)",
+   "category": "short",
+   "direction": "down",
+   "claim": "Bloom Energy CEO 가 2025년 2월 이후 최소 다섯 번 '중국 공급망이 없다·스칸듐을 중국에 의존하지 않는다'고 말했지만, 무역 자료·중국 기업 공시·위성사진·중국 공급사와의 대화로 보면 중국산 스칸듐에 의존하고 있고(네 갈래 경로, Hunan Oriental Scandium 이 최대 공급사라고 주장), 연 5GW 목표에는 산화스칸듐 약 220톤이 필요해 세계 공급 전망 약 240톤을 거의 다 써야 한다는 주장. 매출의 질(4분기 매출 74%가 Brookfield 합작사), 200억 달러 수주잔고와 감사받은 이행의무 4.9억 달러의 차이, Oracle Project Jupiter 지연도 함께 제기.",
+   "targets": [
+    {
+     "ticker": "BE",
+     "name": "블룸에너지",
+     "role": "지목"
+    }
+   ],
+   "primary": "BE",
+   "origin": {
+    "author": "Hunterbrook Media (Till Daldrup, Dhruv Patel, Jean Wang, Blake Spendley, Sam Koppelman / 편집 Vikas Kumar)",
+    "handle": "@hntrbrkmedia",
+    "platform": "report-site",
+    "url": "https://hntrbrk.com/investigations/bloom",
+    "posted_kst": "2026-07-09T01:59:00+09:00",
+    "precision": "minute",
+    "paywall": "free",
+    "position_disclosed": "게시 시점 Hunterbrook Capital 은 $BE 공매도(파생상품 포함)·비교 종목 묶음 매수, 그리고 $NB 매수(파생상품 포함)·비교 종목 묶음 공매도. 포지션은 바뀔 수 있다고 명시(보고서 맨 위 고지).",
+    "reach": [
+     {
+      "metric": "likes",
+      "value": 1175,
+      "asof": "2026-11-20",
+      "src": 3
+     },
+     {
+      "metric": "replies",
+      "value": 117,
+      "asof": "2026-11-20",
+      "src": 3
+     },
+     {
+      "metric": "substack_reactions",
+      "value": 45,
+      "asof": "2026-11-20",
+      "src": 2
+     },
+     {
+      "metric": "substack_restacks",
+      "value": 3,
+      "asof": "2026-11-20",
+      "src": 2
+     }
+    ]
+   },
+   "market": {
+    "t0": "2026-07-08",
+    "open_kst": "2026-07-08T22:30:00+09:00",
+    "close_kst": "2026-07-09T05:00:00+09:00",
+    "session": "장중"
+   },
+   "db_era": true,
+   "timeline": [
+    {
+     "at": "2026-07-08T00:31:18Z",
+     "precision": "minute",
+     "step": "background",
+     "who": "Bloom Energy COO Satish Chitoori",
+     "platform": "blog",
+     "what": "보고서 하루 전 회사 블로그에 스칸듐 설명 글 게시(표기 Jul 7, 2026; 메타 게시 시각 UTC 7월 8일 00:31, 7월 20일 수정). 여러 나라·여러 공급사에서 조달하고 연 25GW 까지 뒷받침되며 중국에 의존하지 않는다는 내용. Hunterbrook 은 회사가 질의에 답하지 않고 이 글을 올렸다고 적음.",
+     "src": 4
+    },
+    {
+     "at": "2026-07-08T16:59:00Z",
+     "precision": "minute",
+     "step": "origin",
+     "who": "Hunterbrook Media",
+     "platform": "report-site",
+     "what": "'Bloom's Big Lie' 게시(페이지 표기 'July 8, 2026 12:59 PM EST' — 7월이라 실제는 EDT 로 보고 16:59 UTC 로 환산; 문자 그대로 EST 면 17:59 UTC). 맨 위에 공매도 포지션 고지.",
+     "src": 1
+    },
+    {
+     "at": "2026-07-08T17:01:15Z",
+     "precision": "minute",
+     "step": "origin",
+     "who": "Hunterbrook (@hntrbrkmedia)",
+     "platform": "x",
+     "what": "X 에 보고서 링크와 요지 게시(글 번호 2074901639924732200, 좋아요 1,175·답글 117).",
+     "src": 3
+    },
+    {
+     "at": "2026-07-08T17:03:10Z",
+     "precision": "minute",
+     "step": "origin",
+     "who": "Hunterbrook Media",
+     "platform": "substack",
+     "what": "뉴스레터(newsletter.hntrbrk.com)로 같은 글 발송 — 무료, 14,245낱말, 반응 45·리스택 3.",
+     "src": 2
+    },
+    {
+     "at": "2026-07-08T17:51:00Z",
+     "precision": "hour",
+     "step": "media",
+     "who": "Benzinga",
+     "platform": "news",
+     "what": "'Bloom Energy Hit By Explosive Short Report' 기사. 게재 시점 주가 -9.89%(242.91달러), 회사는 바로 답하지 않음. (Webull 표시 시각 07/08 17:51, UTC 로 보임)",
+     "src": 5
+    },
+    {
+     "at": "2026-07-08",
+     "precision": "day",
+     "step": "market",
+     "who": "BE",
+     "platform": "market",
+     "what": "종가 254.29달러, -15.28달러(-5.7%), 이틀 연속 하락. 회사는 Stocktwits·Benzinga 에 '보고서를 검토 중이며 바로잡겠다'고 답하고 7월 7일 블로그를 가리킴.",
+     "src": 7
+    },
+    {
+     "at": "2026-07-08T20:12:58Z",
+     "precision": "minute",
+     "step": "media",
+     "who": "Seeking Alpha",
+     "platform": "news",
+     "what": "'Bloom Energy falls amid Hunterbrook short report (update)' — 원 표기 Jul 08, 4:12 PM ET, 4:15 PM 에 주가와 회사 입장을 덧붙여 수정. 6% 하락으로 보도.",
+     "src": 6
+    },
+    {
+     "at": "2026-07-09T12:36:00Z",
+     "precision": "hour",
+     "step": "response",
+     "who": "Bloom Energy",
+     "platform": "sec-8k",
+     "what": "8-K(Item 7.01) 제출: 재무·회계 관련 주장은 'false and misleading', 스칸듐 결론도 거부. 현 수요·수주잔고를 채울 공급이 충분하고 중국에 의존하지 않으며 연 25GW 공급망을 확보했다고 밝힘. Tradingpedia 12:36 UTC·Newsquawk 12:39 UTC 가 가장 이른 보도(EDGAR 접수 시각은 확인 못 함).",
+     "src": 8
+    },
+    {
+     "at": "2026-07-09",
+     "precision": "day",
+     "step": "response",
+     "who": "Baird",
+     "platform": "broker-note",
+     "what": "Outperform·목표가 310달러 유지(7월 9일). '오래되고 재탕된 내용'이라는 문구는 원문으로 확인하지 못함.",
+     "src": 11
+    },
+    {
+     "at": "2026-07-09",
+     "precision": "day",
+     "step": "amplify",
+     "who": "Crossroads Capital",
+     "platform": "report",
+     "what": "별도 공매도 보고서로 스칸듐 '공급 벽'과 공시 불투명을 제기(Stocktwits 는 Hunterbrook 주장과 사실상 같다고 평가). BE 는 장 초반 +6% 뒤 +1.1%(257.02달러)로 마감.",
+     "src": 12
+    },
+    {
+     "at": "2026-07-09T23:03:38Z",
+     "precision": "minute",
+     "step": "media",
+     "who": "Bloomberg News (Mining.com 전재)",
+     "platform": "news",
+     "what": "보고서로 주가가 급락했다가 목요일 일부 회복했다고 보도. 회사는 스칸듐의 실제 조달처를 공개하지 않았다고 지적.",
+     "src": 13
+    },
+    {
+     "at": "2026-07-12T14:30:10Z",
+     "precision": "minute",
+     "step": "amplify",
+     "who": "The Bear Cave (Hunterbrook Media 소유)",
+     "platform": "substack",
+     "what": "주간 뉴스레터 #334 첫 항목으로 보고서 요지를 소개하고 Hunterbrook X 글을 링크. Crossroads 보고서도 함께 언급.",
+     "src": 15
+    },
+    {
+     "at": "2026-07-28",
+     "precision": "day",
+     "step": "aftermath",
+     "who": "Bloom Energy",
+     "platform": "earnings",
+     "what": "2분기 실적 발표: 매출 10.7억 달러(+165.5%), 비GAAP EPS 0.78달러, 연간 매출 가이던스 39~42억 달러로 상향. 발표 전 정규장에서 약 13% 하락(Hunterbrook 공매도 압력으로 설명), 다음 날 장 초반 +11% 뒤 반락.",
+     "src": 19
+    },
+    {
+     "at": "2026-07-30T18:00:21Z",
+     "precision": "minute",
+     "step": "aftermath",
+     "who": "Hunterbrook Media",
+     "platform": "report-site",
+     "what": "후속 보고서 'Do Bloom's Fuel Cells Work as Claimed? Data Says No' 게시 — 4개 지역 정부 자료로 효율·출력·수명 미달을 주장. 공매도 포지션 유지 고지.",
+     "src": 20
+    },
+    {
+     "at": "2026-07-30",
+     "precision": "day",
+     "step": "aftermath",
+     "who": "투자자(원고) / 북부 캘리포니아 연방지방법원",
+     "platform": "court",
+     "what": "Hunterbrook 보고서에 근거해 중국산 스칸듐 의존을 알리지 않았다는 증권 집단소송 제기(Bloomberg Law 7월 31일 보도 '목요일 제기'). 같은 날 Mizuho 는 Outperform 으로 상향(목표가 242달러로 하향).",
+     "src": 21
+    }
+   ],
+   "attribution": [
+    {
+     "outlet": "Bloomberg News (Mining.com 전재)",
+     "what": "보고서 때문에 주가가 급락했다고 명시하고 목요일 일부 회복을 덧붙임.",
+     "src": 13
+    },
+    {
+     "outlet": "Seeking Alpha",
+     "what": "Hunterbrook 공매도 보고서 속에 6% 하락했다고 제목과 첫 문장에서 직접 연결.",
+     "src": 6
+    },
+    {
+     "outlet": "Benzinga",
+     "what": "Hunterbrook 조사 보고서 이후 주가가 하락 압력을 받고 있다고 쓰고 포지션 공개를 함께 전함(매수 종목을 Nebius 로 표기).",
+     "src": 5
+    },
+    {
+     "outlet": "Stocktwits (Asianet 전재)",
+     "what": "보고서 게시 뒤 6% 하락이라고 쓰되 이틀 연속 하락이었다는 점을 함께 적음.",
+     "src": 7
+    },
+    {
+     "outlet": "Barchart",
+     "what": "7월 8일 보고서 공개 뒤 약 12% 하락했다고 서술(장중 저점 기준으로 보임), 7월 9일 반등은 회사의 부인 덕으로 설명.",
+     "src": 16
+    },
+    {
+     "outlet": "Robbins LLP (집단소송 소장 요약)",
+     "what": "소장은 이 보고서 소식으로 7월 8일 주가가 15.28달러(5.7%) 떨어졌다고 주장.",
+     "src": 22
+    },
+    {
+     "outlet": "24/7 Wall St",
+     "what": "7월 28일 실적 발표 전 13% 하락을 Hunterbrook 의 공매도 압력 탓으로 설명.",
+     "src": 19
+    }
+   ],
+   "confounders": [
+    {
+     "what": "7월 8일은 이틀째 하락이었고, 주가는 6월 25일 52주 고점 351.28달러에서 이미 크게 밀려 20일·50일 이동평균 아래에 있었다.",
+     "src": 7
+    },
+    {
+     "what": "같은 날 시장 전반 약세 — Benzinga 기사에 걸린 당일 시황 제목이 이란 휴전 무산으로 S&P 500 급락·유가 관련주 상승(연결 제목으로만 확인).",
+     "src": 5
+    },
+    {
+     "what": "하루 뒤 Crossroads Capital 이 비슷한 내용의 별도 공매도 보고서를 냄 — 이후 약세는 두 보고서가 겹침.",
+     "src": 12
+    },
+    {
+     "what": "7월 6일 Jefferies 가 Hold 유지(목표가 246달러) — 보고서 이전부터 엇갈린 애널리스트 시각.",
+     "src": 11
+    },
+    {
+     "what": "7월 16일 장중 -13.64% 때는 내부자 매도도 함께 거론됨(IDF·Oaktree 의 Nebius 관련 자금 조달 호재에도 하락).",
+     "src": 18
+    }
+   ],
+   "response": [
+    {
+     "who": "Bloom Energy COO Satish Chitoori (블로그, 보고서 이전)",
+     "at": "2026-07-08T00:31:18Z",
+     "what": "스칸듐은 전해질에 극소량 들어가는 첨가물이고 티타늄·니켈·코발트·우라늄 공정 부산물에서 회수하며, 어느 한 공급사·한 나라도 회사 운명을 좌우하지 않는다고 설명. 조달망은 비공개. 힌트의 '블로그로 답함'과 달리 보고서보다 약 16시간 먼저 나온 선제 글이다.",
+     "src": 4
+    },
+    {
+     "who": "Bloom Energy (언론 답변)",
+     "at": "2026-07-08T20:15:00Z",
+     "what": "보고서를 검토 중이며 기록을 바로잡겠다, 20년간 쌓은 다국적 공급망과 소재 회수 기술이 있다고 답함(Seeking Alpha 는 4:15 PM ET 수정본에 회사 입장 반영).",
+     "src": 7
+    },
+    {
+     "who": "Bloom Energy (8-K)",
+     "at": "2026-07-09T12:36:00Z",
+     "what": "재무·회계 주장은 'false and misleading', 스칸듐 결론 거부, 공급 충분·중국 비의존·25GW 공급망 가시성. 자세한 내용은 COO 블로그를 보라고 안내.",
+     "src": 8
+    },
+    {
+     "who": "Baird",
+     "at": "2026-07-09T00:00:00Z",
+     "what": "Outperform·310달러 유지. 검색 요약에는 담당 애널리스트(Kallo)가 스칸듐 우려는 큰 위험이 아니라고 했다는 인용이 있으나 원문 미확인.",
+     "src": 11
+    },
+    {
+     "who": "UBS / Mizuho",
+     "at": "2026-07-30T00:00:00Z",
+     "what": "UBS 는 7월 1일 목표가 350달러·Buy(보고서 이전), Mizuho 는 7월 30일 Outperform 상향.",
+     "src": 23
+    }
+   ],
+   "aftermath": {
+    "status": "엇갈림",
+    "what": "회사는 8-K 로 전면 부인했지만 실제 조달처는 공개하지 않았다(Bloomberg). 2분기 실적은 사상 최대 매출과 가이던스 상향으로 성장 스토리를 뒷받침했으나, Hunterbrook 은 7월 30일 후속 보고서를 내고 공매도를 유지했고 같은 날 증권 집단소송이 제기됐다. 규제 당국이나 제3자가 중국산 스칸듐 의존 여부를 확정한 자료는 찾지 못함. 주가는 7월 9일 257.02달러에서 7월 28일 종가 167달러 안팎(7월 29일 +11%가 185.85달러라는 보도에서 역산)까지 밀렸다.",
+    "src": [
+     8,
+     13,
+     19,
+     20,
+     21
+    ]
+   },
+   "price_as_reported": [
+    {
+     "ticker": "BE",
+     "move": "-9.89% (242.91달러)",
+     "when": "2026-07-08 장중(Benzinga 게재 시점)",
+     "src": 5
+    },
+    {
+     "ticker": "BE",
+     "move": "약 -12%",
+     "when": "2026-07-08 (Barchart·Parameter, 장중 저점 기준으로 보임)",
+     "src": 16
+    },
+    {
+     "ticker": "BE",
+     "move": "-5.7% (종가 254.29달러, -15.28달러)",
+     "when": "2026-07-08 종가",
+     "src": 22
+    },
+    {
+     "ticker": "BE",
+     "move": "+6%",
+     "when": "2026-07-09 오전",
+     "src": 10
+    },
+    {
+     "ticker": "BE",
+     "move": "+1.1% (종가 257.02달러)",
+     "when": "2026-07-09 종가",
+     "src": 12
+    },
+    {
+     "ticker": "BE",
+     "move": "-3.41% (248.09달러 안팎)",
+     "when": "2026-07-10 정규장",
+     "src": 17
+    },
+    {
+     "ticker": "BE",
+     "move": "-13.64%",
+     "when": "2026-07-16 장중",
+     "src": 18
+    },
+    {
+     "ticker": "BE",
+     "move": "-13% (검색 요약의 다른 보도는 -11.3%)",
+     "when": "2026-07-28 정규장(실적 발표 전)",
+     "src": 19
+    },
+    {
+     "ticker": "BE",
+     "move": "+11% (185.85달러) → 오전 11시 -2% (164.35달러)",
+     "when": "2026-07-29 장 초반",
+     "src": 19
+    },
+    {
+     "ticker": "BE",
+     "move": "+26%",
+     "when": "2026-07-30 (Mizuho 상향, 검색 요약)",
+     "src": 24
+    }
+   ],
+   "not_found": [
+    "Baird 의 '오래되고 재탕된 내용'이라는 문구 — 원 보고서도, 그 문구를 인용한 기사도 열어 보지 못함. 확인된 것은 7월 9일 Outperform·310달러 유지뿐(검색 요약에 '여러 약세 논거를 되풀이했다'는 취지의 문장이 있으나 출처 페이지 미확인).",
+    "8-K 의 EDGAR 접수 시각 — sec.gov 가 자동 도구 요청을 막아 우회하지 않음. 가장 이른 보도 시각(12:36~12:39 UTC)으로 대신함.",
+    "X 글의 조회수·재게시 수(임베드는 좋아요·답글 수만 제공), 글을 퍼뜨린 개별 X 계정과 시각.",
+    "보고서가 공개한 매수 종목 $NB 의 회사명 — 고지문에 티커만 있다. 본문에 NioCorp(네브래스카 Elk Creek, 산화스칸듐 연 100톤 계획)가 나오지만 티커와 묶어 적지 않았고 Benzinga 는 Nebius(NBIS)로 적었다.",
+    "Barchart 원문 두 건(빈 응답), Stocktwits 원문(Cloudflare), Nasdaq 'Why Bloom Energy Stock Crashed in July'(차단), Kalkine(차단), MEXC — 우회하지 않고 전재본으로 대신함.",
+    "7월 8일 회사 첫 입장문의 정확한 시각(Seeking Alpha 4:15 PM ET 수정본에 반영된 것만 확인)과 7월 28일 실적 보도자료의 정확한 시각.",
+    "COO 블로그의 7월 20일 수정 내용(읽은 것은 수정본), 후속 보고서에 대한 회사 답변, Hunterbrook 의 7월 30일 X 글 번호.",
+    "집단소송 사건 번호와 그 뒤 진행, 3분기 이후 스칸듐 조달처에 관한 회사 추가 공시."
+   ],
+   "refs": [
+    {
+     "bundle": "N2",
+     "id": "hunterbrook-be-2026-07-be"
+    },
+    {
+     "bundle": "N3",
+     "id": "hunterbrook-be-2026-07"
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "Hunterbrook Media: Bloom's Big Lie (보고서 페이지)",
+     "url": "https://hntrbrk.com/investigations/bloom",
+     "date": "2026-07-08",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "Hunterbrook 뉴스레터: Bloom's Big Lie (Substack API)",
+     "url": "https://newsletter.hntrbrk.com/p/blooms-big-lie",
+     "date": "2026-07-08",
+     "read": "partial"
+    },
+    {
+     "n": 3,
+     "title": "Hunterbrook X 글",
+     "url": "https://x.com/hntrbrkmedia/status/2074901639924732200",
+     "date": "2026-07-08",
+     "read": "full"
+    },
+    {
+     "n": 4,
+     "title": "Bloom Energy 블로그: Demystifying Scandium Oxide: Why It Matters in Bloom Fuel Cells (Satish Chitoori)",
+     "url": "https://www.bloomenergy.com/blog/demystifying-scandium-oxide-why-it-matters-in-bloom-fuel-cells/",
+     "date": "2026-07-07",
+     "read": "partial"
+    },
+    {
+     "n": 5,
+     "title": "Benzinga (Webull AU 전재): Bloom Energy Hit By Explosive Short Report Questioning China-Free Supply Claims",
+     "url": "https://www.webull.com.au/news-detail/15192948794450944",
+     "date": "2026-07-08",
+     "read": "full"
+    },
+    {
+     "n": 6,
+     "title": "Seeking Alpha: Bloom Energy falls amid Hunterbrook short report (update)",
+     "url": "https://seekingalpha.com/news/4612375-bloom-energy-falls-amid-hunterbook-short-report",
+     "date": "2026-07-08",
+     "read": "partial"
+    },
+    {
+     "n": 7,
+     "title": "Stocktwits (Asianet 전재): BE Stock Drops 6% After Short Seller Flags Supply Chain Snag On Chinese Overreliance",
+     "url": "https://newsable.asianetnews.com/markets/be-stock-drops-6-after-short-seller-flags-supply-chain-snag-on-chinese-overreliance-bloom-energy-says-will-correct-record-articleshow-653hmyq",
+     "date": "2026-07-08",
+     "read": "partial"
+    },
+    {
+     "n": 8,
+     "title": "Bloom Energy 8-K (2026-07-09, 0001628280-26-047734) — Boardroom Alpha 사본",
+     "url": "https://www.boardroomalpha.com/sec/be-8-k-2026-07-09-0001628280-26-047734",
+     "date": "2026-07-09",
+     "read": "full"
+    },
+    {
+     "n": 9,
+     "title": "Newsquawk: Bloom Energy (BE) rejects Hunterbrook Media short report (12:39 UTC)",
+     "url": "https://www.newsquawk.com/headlines/bloom-energy-be-rejects-hunterbrook-media-short-report",
+     "date": "2026-07-09",
+     "read": "full"
+    },
+    {
+     "n": 10,
+     "title": "Tradingpedia: Bloom Energy gains as it challenges short claims (12:36 UTC)",
+     "url": "https://www.tradingpedia.com/2026/07/09/bloom-energy-gains-as-it-challenges-short-claims/",
+     "date": "2026-07-09",
+     "read": "partial"
+    },
+    {
+     "n": 11,
+     "title": "Parameter: Bloom Energy (BE) Stock Rallies 6% Following Rebuttal to Short Seller Claims",
+     "url": "https://parameter.io/bloom-energy-be-stock-rallies-6-following-rebuttal-to-short-seller-claims/",
+     "date": "2026-07-09",
+     "read": "partial"
+    },
+    {
+     "n": 12,
+     "title": "Stocktwits (Asianet 전재): BE Stock Ends Higher: Bloom Energy Denies Supply Chain And Scandium Allegations Following New Crossroads Capital Attack",
+     "url": "https://newsable.asianetnews.com/markets/be-stock-ends-higher-bloom-energy-denies-supply-chain-and-scandium-allegations-following-new-crossroads-capital-attack-articleshow-e9v9xsr",
+     "date": "2026-07-09",
+     "read": "partial"
+    },
+    {
+     "n": 13,
+     "title": "Bloomberg News (Mining.com 전재): Bloom Energy criticism spotlights obscure but vital rare mineral",
+     "url": "https://www.mining.com/web/bloom-energy-criticism-spotlights-obscure-but-vital-rare-mineral/",
+     "date": "2026-07-09",
+     "read": "partial"
+    },
+    {
+     "n": 14,
+     "title": "HedgeFundAlpha: Crossroads Capital: Short Bloom Energy [In-Depth Report]",
+     "url": "https://hedgefundalpha.com/?p=2206483",
+     "date": "2026-07-10",
+     "read": "partial"
+    },
+    {
+     "n": 15,
+     "title": "The Bear Cave #334",
+     "url": "https://thebearcave.substack.com/p/the-bear-cave-334",
+     "date": "2026-07-12",
+     "read": "partial"
+    },
+    {
+     "n": 16,
+     "title": "Barchart (Webull 전재): Short Seller Hunterbrook Attacked Bloom Energy's Supply-Chain Claims. BE Stock Is Bruised, But Not Broken.",
+     "url": "https://www.webull.com/news/15225931815150592",
+     "date": "2026-07-14",
+     "read": "partial"
+    },
+    {
+     "n": 17,
+     "title": "Tiger Brokers: Movement Alert — Bloom Energy Declines 3.41% in Regular Trading",
+     "url": "https://www.itiger.com/news/1154305127",
+     "date": "2026-07-10",
+     "read": "partial"
+    },
+    {
+     "n": 18,
+     "title": "Barchart (Webull AU 전재): 7월 16일 장중 -13.64% 와 IDF·Oaktree 자금 조달을 다룬 기사",
+     "url": "https://www.webull.com.au/news-detail/15254125407773696",
+     "date": "2026-07",
+     "read": "partial"
+    },
+    {
+     "n": 19,
+     "title": "24/7 Wall St: Bloom Energy Gains and Loses 11% on Record $1.07B Q2 Revenue, Raised 2026 Guidance",
+     "url": "https://247wallst.com/investing/2026/07/29/bloom-energy-soars-11-on-record-1-07b-q2-revenue-raised-2026-guidance/",
+     "date": "2026-07-29",
+     "read": "partial"
+    },
+    {
+     "n": 20,
+     "title": "Hunterbrook 뉴스레터: Do Bloom's Fuel Cells Work as Claimed? Data Says No (Substack API; 보고서 주소 hntrbrk.com/investigations/bloom-2)",
+     "url": "https://newsletter.hntrbrk.com/p/do-blooms-fuel-cells-work-as-claimed",
+     "date": "2026-07-30",
+     "read": "partial"
+    },
+    {
+     "n": 21,
+     "title": "Bloomberg Law: Bloom Energy Investor Sues Over Short Seller's China Accusations (첫 문단만 공개)",
+     "url": "https://news.bloomberglaw.com/class-action/bloom-energy-investor-sues-over-short-sellers-china-accusations",
+     "date": "2026-07-31",
+     "read": "partial"
+    },
+    {
+     "n": 22,
+     "title": "Robbins LLP: Bloom Energy Class Action Lawsuit (소장 요약)",
+     "url": "https://robbinsllp.com/bloom-energy-class-action-lawsuit/",
+     "date": "2026-07-31",
+     "read": "partial"
+    },
+    {
+     "n": 23,
+     "title": "Benzinga (Webull CA 전재): 2분기 실적 뒤 기사 — 애널리스트 조정 목록(Mizuho 7월 30일 상향 등)",
+     "url": "https://www.webull.ca/news-detail/15316426490913792",
+     "date": "2026-07-30",
+     "read": "partial"
+    },
+    {
+     "n": 24,
+     "title": "검색 요약: 24/7 Wall St 의 2분기 실적 정리(7월 30일 +26%, Mizuho 상향)와 Barchart 3304085(Baird 애널리스트 발언)",
+     "url": "https://247wallst.com/companies/be/earnings/2026/Q2/",
+     "date": "2026-07",
+     "read": "search_summary"
+    },
+    {
+     "n": 25,
+     "title": "Yahoo Finance 일별 시세 — BE (2026-07-01~07-31)",
+     "url": "https://query1.finance.yahoo.com/v8/finance/chart/BE?period1=1782864000&period2=1785542400&interval=1d",
+     "date": "2026-11-20",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1,
+    3
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "장중(12:59 ET)에 나온 무료 보고서다. 전날에도 8.64% 내려 이틀째 하락이었다(야후 일별 종가). 하루 뒤 다른 곳의 비슷한 공매도 보고서가 겹쳤다."
+  },
+  {
+   "id": "muddy-waters-nvda-2026-11",
+   "country": "US",
+   "city": null,
+   "value": 0,
+   "unit": "시간",
+   "asof": "2026-11-17",
+   "basis": "계산: 최초 글 게시 시각부터 대표 종목 시장의 다음 정규장 시작까지의 시간. 정규장 중에 나온 글은 0",
+   "title": "Muddy Waters 의 엔비디아 공매도 공개(2026-11-17)",
+   "category": "short",
+   "direction": "down",
+   "claim": "2026-10 슈퍼마이크로(SMCI) 상대 집단소송 소장이 엔비디아 GPU 조달·배분을 맡았다고 지목한 전 SMCI 최고성장책임자 Cenly Chen 과, 2026-06 말까지 엔비디아 서열 3위급(EVP Worldwide Field Operations)이던 Ajay K. Puri 가 2024~2026년 여러 번 함께 사진에 찍혔고 일부 사진 태그는 그녀를 'Cenly Puri'로 적었다. 사진 속 여성이 그 Cenly Chen 과 같은 사람인지 엔비디아가 답하라는 문제 제기(보고서 스스로 형사 기소된 사실이 없고 소장 주장은 입증되지 않았다고 적음).",
+   "targets": [
+    {
+     "ticker": "NVDA",
+     "name": "엔비디아",
+     "role": "지목"
+    }
+   ],
+   "primary": "NVDA",
+   "origin": {
+    "author": "Muddy Waters Research (Carson Block)",
+    "handle": "@muddywatersre",
+    "platform": "report-site",
+    "url": "https://muddywatersresearch.com/research/2026/mw-short-nvda/",
+    "posted_kst": "2026-11-18T04:52:18+09:00",
+    "precision": "minute",
+    "paywall": "free",
+    "position_disclosed": "\"Muddy Waters is short NVIDIA (NVDA).\" 이용약관에 '보고서 공개와 함께 공매도 포지션의 상당 부분(substantial majority)을 되사기 시작할 생각'이라고 명시",
+    "reach": []
+   },
+   "market": {
+    "t0": "2026-11-17",
+    "open_kst": "2026-11-17T23:30:00+09:00",
+    "close_kst": "2026-11-18T06:00:00+09:00",
+    "session": "장중"
+   },
+   "db_era": true,
+   "timeline": [
+    {
+     "at": "2026-05-13",
+     "precision": "day",
+     "step": "background",
+     "who": "Culper Research",
+     "platform": "report-site",
+     "what": "배경 — 'NVIDIA (NVDA): The China Problem' 공개(수요일). 엔비디아 2026 회계연도 컴퓨트 매출의 20% 이상이 불법 전용·동남아 중개상을 거친 중국 수요이고, 싱가포르 Megaspeed 가 알리바바 자금으로 움직이며 젠슨 황이 Megaspeed 경영진(Alice Huang)과 '불편할 만큼 가깝다'는 주장. 당시 시장은 거의 반응하지 않았다고 보도됨.",
+     "src": 7
+    },
+    {
+     "at": "2026-11-12",
+     "precision": "day",
+     "step": "background",
+     "who": "Nvidia",
+     "platform": "company",
+     "what": "배경 — 젠슨 황이 CEO 에서 물러났다고 엔비디아가 발표(중국 스파이 의심 인물과의 관계 보도 뒤). CFO Colette Kress 가 임시 CEO. 6거래일 동안 시가총액 약 1조 달러가 사라졌다고 보도됨.",
+     "src": 4
+    },
+    {
+     "at": "2026-11-13T10:55:54Z",
+     "precision": "minute",
+     "step": "background",
+     "who": "Decrypt",
+     "platform": "news",
+     "what": "배경 — 상원 은행위 Tim Scott 위원장이 11-12 서한으로 젠슨 황에게 12-03 공개 청문회 출석을 요청(불응 시 소환장 경고), 하원 3개 위원회 위원장은 12-01 비공개 녹취 면담을 요청했다고 보도(시각은 페이지 표기, 시간대 미표기).",
+     "src": 14
+    },
+    {
+     "at": "2026-11-17",
+     "precision": "day",
+     "step": "background",
+     "who": "Nvidia 이사회",
+     "platform": "company",
+     "what": "국가안보 정책·수출통제 준수·세계 무역 위험을 감독하는 이사회 상설위원회를 신설하고 기존 국가안보팀·무역준수팀이 위원회와 임시 CEO 에게 보고하게 했다고 보도됨(검색 요약으로만 봄, 시각 미확인. Muddy Waters 보고서에 대한 답으로 나온 것인지는 확인 못 함).",
+     "src": 10
+    },
+    {
+     "at": "2026-11-17T15:20:43Z",
+     "precision": "minute",
+     "step": "background",
+     "who": "Business Upturn(같은 날 Axios·UPI·CNBC 도 보도)",
+     "platform": "news",
+     "what": "젠슨 황의 12월 1일 의회 출석 보도 — 하원 외교·중국·정보위 위원장들이 요청한 비공개 녹취 면담(공개 증언이 아님), 12월 2일은 법무책임자 Tim Teter. 상원 은행위는 12월 3일 공개 청문회 출석을 따로 요청. 보고서 게시(19:52Z)보다 앞선 보도다.",
+     "src": 13
+    },
+    {
+     "at": "2026-11-17T19:52:18Z",
+     "precision": "minute",
+     "step": "origin",
+     "who": "Muddy Waters Research",
+     "platform": "report-site",
+     "what": "'MW is Short NVIDIA: More Questions About China' 게시(페이지 메타 datePublished). 12쪽 PDF 'NVIDIA: More China' 첨부.",
+     "src": 1
+    },
+    {
+     "at": "2026-11-17T19:53:00Z",
+     "precision": "minute",
+     "step": "origin",
+     "who": "Muddy Waters (@muddywatersre)",
+     "platform": "x",
+     "what": "X 에 엔비디아 공매도를 알리는 글을 19:53 UTC 에 올렸고 그때 주가는 전일 종가보다 2.3% 낮았다고 2차 기사가 적음(글 번호 미확인, 검색 요약으로만 봄).",
+     "src": 9
+    },
+    {
+     "at": "2026-11-17T20:08:00Z",
+     "precision": "hour",
+     "step": "media",
+     "who": "Reuters",
+     "platform": "news",
+     "what": "X 글 약 15분 뒤 로이터가 보도했다고 2차 기사가 적음(로이터 원문 미확인).",
+     "src": 9
+    },
+    {
+     "at": "2026-11-17T20:17:36Z",
+     "precision": "minute",
+     "step": "media",
+     "who": "Crypto Briefing",
+     "platform": "news",
+     "what": "직접 받아 확인한 가장 이른 기사(게시 25분 뒤).",
+     "src": 2
+    },
+    {
+     "at": "2026-11-17T21:00:00Z",
+     "precision": "hour",
+     "step": "market",
+     "who": "Nvidia",
+     "platform": "company",
+     "what": "3분기 실적 발표 — 매출 1,158억 달러(전년비 +103%)로 예상 상회. 평소와 달리 10-Q 를 함께 내지 않았다고 보도됨. 기사들은 보고서가 실적 \"몇 시간 전\"에 나왔다고만 적어, 여기 시각은 장 마감(21:00Z) 뒤로 본 추정이다.",
+     "src": 5
+    },
+    {
+     "at": "2026-11-18",
+     "precision": "day",
+     "step": "aftermath",
+     "who": "The Information",
+     "platform": "news",
+     "what": "Puri 와 Chen 이 부부라고 보도(직장 동료들에게 알린 사실). Muddy Waters 측은 자사 논지를 뒷받침한다고 말함. Business Insider 기사를 통해 확인.",
+     "src": 3
+    },
+    {
+     "at": "2026-11-18T14:34:02Z",
+     "precision": "minute",
+     "step": "response",
+     "who": "Super Micro Computer / Nvidia (Business Insider)",
+     "platform": "news",
+     "what": "SMCI 대변인: 'Chen 은 엔비디아와의 관계를 관리하지 않았고 GPU 배분도 정하지 않았다. 18년 근무 뒤 2026년 초 자진 사임해 ChronoScale CEO 로 갔다.' 엔비디아는 논평 요청에 답하지 않음.",
+     "src": 3
+    },
+    {
+     "at": "2026-11-19T15:27:52Z",
+     "precision": "minute",
+     "step": "aftermath",
+     "who": "Hunterbrook Media",
+     "platform": "report-site",
+     "what": "이틀 뒤 AMD 를 겨냥한 공매도 보고서가 나오며 '중국 관계' 공매도 캠페인이 엔비디아에서 AMD 로 번짐(hunterbrook-amd-2026-11).",
+     "src": 4
+    },
+    {
+     "at": "2026-11-19T18:53:26Z",
+     "precision": "minute",
+     "step": "media",
+     "who": "Barchart (Yahoo Finance 전재)",
+     "platform": "news",
+     "what": "'보고서 날 주가는 이미 약 2% 내려 있었고 공매도 잔고는 1.16%'라며 실적 전망을 바꿀 만큼 큰 위험은 아니라는 평가.",
+     "src": 5
+    }
+   ],
+   "attribution": [
+    {
+     "outlet": "Barchart (Yahoo Finance 전재)",
+     "what": "하락을 보고서 때문이라고 쓰지 않음 — 공개 전에 이미 내려 있었다고 적음.",
+     "src": 5
+    },
+    {
+     "outlet": "Business Insider (AOL 전재)",
+     "what": "주가 움직임을 보고서와 연결하지 않음. 실적 발표를 앞둔 공매도 공개라는 점과 당사자 답변만 다룸.",
+     "src": 3
+    },
+    {
+     "outlet": "fourweekmba.com (검색 요약)",
+     "what": "X 글 시점에 주가가 이미 전일 종가보다 2.3% 낮았다고 적음 — 보고서가 하락의 출발점이 아니라는 서술.",
+     "src": 9
+    }
+   ],
+   "confounders": [
+    {
+     "what": "같은 날 보고서 몇 시간 뒤 엔비디아 3분기 실적 발표(매출 1,158억 달러, 예상 상회). 보고서는 발표 몇 시간 전에 나왔고, 실적 뒤 시간외에서 5% 넘게 올랐다는 검색 요약이 있음.",
+     "src": 5
+    },
+    {
+     "what": "젠슨 황 CEO 사임(11-12)과 그 뒤 6거래일 약 1조 달러 시총 증발 — 주가는 실적 직전 고점 대비 약 35% 아래였음.",
+     "src": 5
+    },
+    {
+     "what": "11-12 마이클 버리가 나스닥100 풋 포지션을 두 배로 늘렸고 반도체주가 더 싸질 것이라고 밝힘.",
+     "src": 5
+    },
+    {
+     "what": "같은 날(11-17) 의회의 대중 칩 판매 제한 법안 추진(CNBC), 젠슨 황의 12-01 하원 면담 보도, 엔비디아의 수출통제 감독 위원회 신설 보도가 겹침.",
+     "src": 15
+    },
+    {
+     "what": "실적 발표 때 10-Q 를 함께 내지 않은 이례적 절차.",
+     "src": 5
+    }
+   ],
+   "response": [
+    {
+     "who": "Nvidia",
+     "at": "2026-11-18T14:34:02Z",
+     "what": "Business Insider 의 논평 요청에 답하지 않음. 실적 설명회에서도 보고서 세부 내용을 다루지 않았다고 전해짐(뒤 문장은 검색 요약).",
+     "src": 3
+    },
+    {
+     "who": "Super Micro Computer 대변인",
+     "at": "2026-11-18T14:34:02Z",
+     "what": "Chen 이 엔비디아와의 관계를 관리하거나 GPU 배분을 정하지 않았다고 반박. 2026년 초 자진 사임.",
+     "src": 3
+    },
+    {
+     "who": "Muddy Waters 측 대리인",
+     "at": "2026-11-18T14:34:02Z",
+     "what": "The Information 의 '부부' 보도가 두 사람의 연결에 관한 자사 논지를 뒷받침한다고 말함. 게시 전 SMCI 는 동일인 여부 확인 요청에 답하지 않았다고 함.",
+     "src": 3
+    },
+    {
+     "who": "Nvidia 이사회",
+     "at": "2026-11-17T00:00:00Z",
+     "what": "수출통제 준수 등을 감독하는 상설위원회 신설(보고서와의 인과는 확인 못 함, 검색 요약).",
+     "src": 10
+    }
+   ],
+   "aftermath": {
+    "status": "엇갈림",
+    "what": "보고서가 던진 질문(사진 속 여성이 SMCI 의 Cenly Chen 인가)은 다음 날 The Information 이 두 사람이 부부라고 보도하며 사실 쪽으로 기울었다(Business Insider 경유 확인, The Information 원문은 못 봄). 다만 Chen 이 엔비디아 GPU 조달·배분을 맡았다는 소장 주장은 SMCI 가 부인했고, Puri·엔비디아의 위법은 누구도 주장하지 않았으며 엔비디아는 답하지 않았다. 젠슨 황의 하원 면담은 12-01 예정.",
+    "src": [
+     3,
+     1,
+     13
+    ]
+   },
+   "price_as_reported": [
+    {
+     "ticker": "NVDA",
+     "move": "약 -2% (보고서 공개 전 이미)",
+     "when": "2026-11-17 장중",
+     "src": 5
+    },
+    {
+     "ticker": "NVDA",
+     "move": "-2.3% (X 글 시점, 전일 종가 대비)",
+     "when": "2026-11-17 19:53Z",
+     "src": 9
+    },
+    {
+     "ticker": "NVDA",
+     "move": "+5% 초과 (실적 뒤 시간외, 검색 요약으로만 봄·매체 미특정)",
+     "when": "2026-11-17 시간외",
+     "src": 12
+    },
+    {
+     "ticker": "NVDA",
+     "move": "-27.9% (Culper 보고서가 나온 5월 고점 235.74달러 대비)",
+     "when": "2026-11-15 기준",
+     "src": 6
+    }
+   ],
+   "not_found": [
+    "@muddywatersre 의 X 글 번호·좋아요 수 — 검색 두 번과 받은 기사 본문에 status 주소가 없었다. '19:53 UTC'는 2차 기사(fourweekmba, 403 으로 본문 못 받음)의 검색 요약일 뿐이다. 보고서 페이지 메타의 19:52:18Z 와는 맞는다.",
+    "보고서 PDF 본문 — 받아 두었으나 이 환경에 PDF 텍스트 추출 도구가 없어 읽지 못했다. 핵심 주장은 보고서 페이지의 요약문으로 확인.",
+    "로이터 원문과 정확한 보도 시각.",
+    "엔비디아의 공식 답변 — 찾지 못함(Business Insider 에 무응답). 상설위원회 신설이 이 보고서에 대한 답인지도 원문으로 확인 못 함(Axios·BBN Times·SCMP 모두 403/봇 확인 화면, 우회하지 않음).",
+    "11-17 종가 등락률과 11-18 정규장 등락률을 적은 기사 — 직접 읽은 기사에는 '공개 전 이미 약 -2%'뿐이다.",
+    "The Information 의 11-18 원문(유료). Business Insider 의 인용으로만 확인.",
+    "Culper 보고서 원문 PDF 와 정확한 게시 시각 — Benzinga 5-18 기사의 '수요일 공개'와 검색 요약의 '5월 13일'로 날짜만 확인. '당일 주가 약 +3%'는 검색 요약에만 있어 싣지 않음.",
+    "힌트의 \"12월 1일 의회 증언\"은 공개 증언이 아니라 하원 3개 위원회의 비공개 녹취 면담으로 확인됨(Decrypt 11-13, Business Upturn 11-17). 황 본인이 출석에 \"동의\"했다는 Axios·UPI 기사 본문은 403 으로 못 읽음.",
+    "이사회 상설위원회 신설 — 검색 요약(BBN Times 등)으로만 확인. 엔비디아 보도자료·공시 원문과 발표 시각은 찾지 못함.",
+    "엔비디아 3분기 실적 발표의 정확한 시각 — 읽은 기사에는 \"보고서 몇 시간 뒤\"로만 나온다."
+   ],
+   "refs": [
+    {
+     "bundle": "N2",
+     "id": "muddy-waters-nvda-2026-11-nvda"
+    },
+    {
+     "bundle": "N3",
+     "id": "muddy-waters-nvda-2026-11"
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "MW is Short NVIDIA: More Questions About China (NVDA US) — Muddy Waters Research (PDF: https://muddywatersresearch.com/wp-content/uploads/2026/11/MW_NVDA_20261117.pdf)",
+     "url": "https://muddywatersresearch.com/research/2026/mw-short-nvda/",
+     "date": "2026-11-17",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "Muddy Waters discloses Nvidia short, questions ex-executive's possible link to China chip smuggling case — Crypto Briefing",
+     "url": "https://cryptobriefing.com/muddy-waters-nvidia-short-china-smuggling/",
+     "date": "2026-11-17",
+     "read": "partial"
+    },
+    {
+     "n": 3,
+     "title": "Another short-seller announces a bet against Nvidia over possible ties to China — Business Insider (AOL)",
+     "url": "https://www.aol.com/articles/another-short-seller-announces-bet-143402000.html",
+     "date": "2026-11-18",
+     "read": "full"
+    },
+    {
+     "n": 4,
+     "title": "AMD Has Its Own China Problem — Hunterbrook Media (젠슨 황 11-12 사임 서술)",
+     "url": "https://hntrbrk.com/investigations/amd-china",
+     "date": "2026-11-19",
+     "read": "partial"
+    },
+    {
+     "n": 5,
+     "title": "Muddy Waters Has Issued a New Short Call on Nvidia. I Still Expect NVDA Stock to Grind Higher. — Barchart (Yahoo Finance)",
+     "url": "https://finance.yahoo.com/news/muddy-waters-issued-short-call-185326049.html",
+     "date": "2026-11-19",
+     "read": "partial"
+    },
+    {
+     "n": 6,
+     "title": "Meet the short seller that flagged Nvidia's 'significant China problem' six months ago — Fortune",
+     "url": "https://fortune.com/2026/11/15/research-firm-shorted-nvidia-china-problem-six-months-alice-huang/",
+     "date": "2026-11-15",
+     "read": "partial"
+    },
+    {
+     "n": 7,
+     "title": "'Tip Of The Iceberg': Culper Research Targets Nvidia's Alleged China Problem — Benzinga (Yahoo Finance)",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/tip-iceberg-culper-research-targets-203103809.html",
+     "date": "2026-05-18",
+     "read": "partial"
+    },
+    {
+     "n": 8,
+     "title": "AMD stock plunges after short-seller says the chip maker has its own China problems — Business Insider (Culper 5월·NYT 10월 말·The Information 보도 순서 서술)",
+     "url": "https://uk.finance.yahoo.com/news/amd-stock-plunges-short-seller-175252445.html",
+     "date": "2026-11-19",
+     "read": "full"
+    },
+    {
+     "n": 9,
+     "title": "Muddy Waters Discloses Nvidia Short Hours Before Results — fourweekmba.com",
+     "url": "https://fourweekmba.com/ai-muddy-waters-discloses-nvidia-short-hours-before-results/",
+     "date": "2026-11-17",
+     "read": "search_summary"
+    },
+    {
+     "n": 10,
+     "title": "Nvidia Creates Export Control Committee as Jensen Huang Agrees To Testify Before Congress — BBN Times",
+     "url": "https://www.bbntimes.com/technology/nvidia-export-control-committee-huang-congress",
+     "date": "2026-11-17",
+     "read": "search_summary"
+    },
+    {
+     "n": 11,
+     "title": "Jensen Huang agrees to face Congress over Nvidia scandal — Axios (같은 내용 UPI 2026-11-17, CNBC 'Congress pushes bills to stymie chip sales to China amid Huang scandal')",
+     "url": "https://www.axios.com/2026/11/17/nvidia-jensen-huang-congress-testify-dates",
+     "date": "2026-11-17",
+     "read": "search_summary"
+    },
+    {
+     "n": 12,
+     "title": "Muddy Waters Takes Aim at Nvidia Ahead of Earnings, Questioning Former Executive's China Links — BigGo Finance (시간외 +5% 는 검색 요약에 나온 값으로, 이 매체가 출처인지는 확인 못 함)",
+     "url": "https://finance.biggo.com/news/4fb9a0a7-519f-490a-be80-439684919a5e",
+     "date": "2026-11-17",
+     "read": "search_summary"
+    },
+    {
+     "n": 13,
+     "title": "Jensen Huang to testify before Congress on December 1 as Nvidia faces scrutiny over China chip exports — Business Upturn",
+     "url": "https://businessupturn.com/usa/news/jensen-huang-to-testify-before-congress-on-december-1-as-nvidia-faces-scrutiny-over-china-chip-exports/",
+     "date": "2026-11-17",
+     "read": "partial"
+    },
+    {
+     "n": 14,
+     "title": "Congress Summons Ex-Nvidia CEO Jensen Huang, Lutnick Over Chip Exports to China — Decrypt",
+     "url": "https://decrypt.co/383211/congress-summons-ex-nvidia-ceo-jensen-huang-lutnick-over-chip-exports-to-china",
+     "date": "2026-11-13",
+     "read": "partial"
+    },
+    {
+     "n": 15,
+     "title": "Congress pushes bills to stymie chip sales to China amid Huang scandal — CNBC (관련 기사 제목: Jensen Huang slated to appear before House panels Dec. 1; Nvidia lawyer due to testify Dec. 2)",
+     "url": "https://www.cnbc.com/2026/11/17/congress-ai-china-jensen-huang-chips.html",
+     "date": "2026-11-17",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "장 마감 68분 전에 나왔고 같은 날 마감 뒤 실적 발표가 있었다. 읽은 기사 가운데 당일 하락을 이 보고서 탓으로 쓴 곳은 없고, 한 곳은 공개 전에 이미 2%쯤 내려 있었다고 적었다."
+  },
+  {
+   "id": "hunterbrook-amd-2026-11",
+   "country": "US",
+   "city": null,
+   "value": 0,
+   "unit": "시간",
+   "asof": "2026-11-19",
+   "basis": "계산: 최초 글 게시 시각부터 대표 종목 시장의 다음 정규장 시작까지의 시간. 정규장 중에 나온 글은 0",
+   "title": "Hunterbrook 의 AMD 보고서 'AMD Has Its Own China Problem'과 공매도 공개(2026-11-19)",
+   "category": "short",
+   "direction": "down",
+   "claim": "미국 수출통제 명단(Entity List, 2025-03)에 오른 중국 서버업체 IEIT Systems 가 등재 뒤에도 AMD 의 새 펌웨어를 최소 6개 판 자사 BIOS 갱신에 넣었고(최근 2026-10-19 게시분에 2026-07 배포 TurinPI 1.0.0.B), IEIT 와 연결된 Maginfra·Kaytus·Aivres 의 펌웨어가 거의 같다. AMD 의 중국·홍콩 청구 매출 비중(2025 회계연도 22.4%)이 엔비디아(9.1%)보다 커서 수출규제 강화에 엔비디아 못지않게 노출돼 있다는 주장.",
+   "targets": [
+    {
+     "ticker": "AMD",
+     "name": "AMD",
+     "role": "지목"
+    }
+   ],
+   "primary": "AMD",
+   "origin": {
+    "author": "Hunterbrook Media (Sam Koppelman, Jenny Ahn, Jean Wang, Till Daldrup, Blake Spendley, JD Jean-Jacques / 편집 Vikas Kumar)",
+    "handle": "@hntrbrkmedia",
+    "platform": "report-site",
+    "url": "https://hntrbrk.com/investigations/amd-china",
+    "posted_kst": "2026-11-20T00:27:52+09:00",
+    "precision": "minute",
+    "paywall": "free",
+    "position_disclosed": "\"Hunterbrook Capital is short $AMD and long a basket of comparable securities\" (게시 시점 기준, 포지션은 언제든 바뀔 수 있다고 명시)",
+    "reach": []
+   },
+   "market": {
+    "t0": "2026-11-19",
+    "open_kst": "2026-11-19T23:30:00+09:00",
+    "close_kst": "2026-11-20T06:00:00+09:00",
+    "session": "장중"
+   },
+   "db_era": true,
+   "timeline": [
+    {
+     "at": "2026-11-19T15:27:52Z",
+     "precision": "minute",
+     "step": "origin",
+     "who": "Hunterbrook Media",
+     "platform": "report-site",
+     "what": "보고서 'AMD Has Its Own China Problem' 게시(화면 표기 'November 19, 2026 10:27 AM EST', 페이지 메타 datePublished 15:27:52Z). 첫머리에 Hunterbrook Capital 의 AMD 공매도·비교 종목 바스켓 매수 포지션을 밝힘.",
+     "src": 1
+    },
+    {
+     "at": "2026-11-19T15:45:44Z",
+     "precision": "minute",
+     "step": "media",
+     "who": "Crypto Briefing",
+     "platform": "news",
+     "what": "게시 18분 뒤 첫 기사. 이 시점 AMD 는 장중 최대 -2.9%로 적음.",
+     "src": 11
+    },
+    {
+     "at": "2026-11-19T16:36:21Z",
+     "precision": "minute",
+     "step": "media",
+     "who": "Wccftech",
+     "platform": "news",
+     "what": "보고서 요약 기사 게시. Hunterbrook 이 공매도 당사자라 AMD 를 나쁘게 그릴 이해관계가 있다고 단서를 붙임. 19:31Z 에 'AMD Responds' 갱신.",
+     "src": 2
+    },
+    {
+     "at": "2026-11-19T17:51:03Z",
+     "precision": "minute",
+     "step": "amplify",
+     "who": "tae kim (@firstadopter)",
+     "platform": "x",
+     "what": "보고서를 '엉터리(clown show)'라고 비판하는 글을 올림(좋아요 692, 조회 시점 2026-11-20). 퍼뜨리기보다는 반박 쪽 확산.",
+     "src": 3
+    },
+    {
+     "at": "2026-11-19T18:01:10Z",
+     "precision": "minute",
+     "step": "response",
+     "who": "AMD (The Kobeissi Letter 가 블룸버그 인용해 전함)",
+     "platform": "x",
+     "what": "AMD 가 주장을 공식 부인했다는 속보 글(좋아요 2,574). 글은 낙폭을 -13%로 적음. AMD 답변이 확인되는 가장 이른 시각으로, 실제 답변은 이보다 앞선다.",
+     "src": 4
+    },
+    {
+     "at": "2026-11-19T18:48:00Z",
+     "precision": "minute",
+     "step": "market",
+     "who": "AMD 주가(Motley Fool 보도)",
+     "platform": "news",
+     "what": "'1:48 p.m. ET' 기준 약 -9%(원문 표기 동부시간). 기사 머리 시세 표시는 -7.72%.",
+     "src": 5
+    },
+    {
+     "at": "2026-11-19T19:55:41Z",
+     "precision": "minute",
+     "step": "media",
+     "who": "CNBC",
+     "platform": "news",
+     "what": "하원 외교위 Mast 의원의 '상무부가 중국 기업에 AI 칩 87.9만 개 이상 판매 승인' 기사 안에서 AMD 가 Hunterbrook 보고서 뒤 내렸다고 씀(CNBC 는 주장을 독자 확인하지 않았다고 표기).",
+     "src": 6
+    },
+    {
+     "at": "2026-11-19T21:00:00Z",
+     "precision": "hour",
+     "step": "market",
+     "who": "AMD 종가",
+     "platform": "market",
+     "what": "종가 489.19달러, -7.72%(장중 최대 약 -10~-11%)로 보도. 인텔은 약 +5%, 엔비디아는 기술주 전반과 함께 하락.",
+     "src": 10
+    },
+    {
+     "at": "2026-11-19T22:37:49Z",
+     "precision": "minute",
+     "step": "media",
+     "who": "Yahoo Finance(24/7 Wall St. 계열 기사)",
+     "platform": "news",
+     "what": "'오늘 8% 하락'으로 쓰고, 인텔의 중국 청구 비중(24.0%)이 더 크다는 점과 22.4%에 규제 대상이 아닌 PC 칩이 포함된다는 반론을 실음.",
+     "src": 8
+    },
+    {
+     "at": "2026-11-19T23:47:45Z",
+     "precision": "minute",
+     "step": "response",
+     "who": "AMD 대변인(Business Insider)",
+     "platform": "news",
+     "what": "'주장은 AMD 의 사업 관행과 관계를 왜곡한다. 미국 수출통제 법규를 지키고 전 세계 사업장에서 엄격한 준수 절차를 둔다'는 성명 전문이 실림.",
+     "src": 7
+    },
+    {
+     "at": "2026-11-20T01:53:51Z",
+     "precision": "minute",
+     "step": "media",
+     "who": "investingLive",
+     "platform": "news",
+     "what": "'장중 최대 -11%, 종가 약 -8%'. Hunterbrook 스스로 수출 위반을 입증하지 못했다고 인정했다는 점을 제목 아래에 강조. 상무부는 논평하지 않음.",
+     "src": 9
+    }
+   ],
+   "attribution": [
+    {
+     "outlet": "Business Insider (Yahoo Finance UK 전재)",
+     "what": "하락을 Hunterbrook 의 공매도 공개 때문이라고 직접 씀.",
+     "src": 7
+    },
+    {
+     "outlet": "CNBC",
+     "what": "AMD 하락을 Hunterbrook 보고서 뒤의 일로 적되, 주장은 독자 확인하지 않았다고 밝힘.",
+     "src": 6
+    },
+    {
+     "outlet": "Motley Fool",
+     "what": "보고서 때문이라고 쓰면서 젠슨 황 사임의 여파가 남은 시장이라는 배경을 함께 듦.",
+     "src": 5
+    },
+    {
+     "outlet": "investingLive",
+     "what": "보고서 때문이라고 쓰되, 이달 수출 허가 강화로 이미 눌린 주식이었다는 점과 아시아 반도체주 매도를 함께 듦.",
+     "src": 9
+    },
+    {
+     "outlet": "Trending Topics",
+     "what": "제목에서 공매도 세력의 표적이 된 뒤 7.7% 하락이라고 씀. 엔비디아는 기술주 전반 약세로 설명.",
+     "src": 10
+    }
+   ],
+   "confounders": [
+    {
+     "what": "상무부의 새 잠정 최종 규칙이 같은 날(11-19) 발효 — 싱가포르 등 5개국행 첨단 칩에 허가 요구. AMD 의 2025 회계연도 싱가포르 청구액 42.8억 달러(매출의 10% 초과)라고 보고서 스스로 적음.",
+     "src": 1
+    },
+    {
+     "what": "같은 날 CNBC 가 '상무부가 중국 기업에 AI 칩 87.9만 개 이상(엔비디아·AMD) 판매를 승인했다'는 Mast 의원 발언을 보도 — 의회의 대중 칩 수출 압박 재료.",
+     "src": 6
+    },
+    {
+     "what": "기술주 전반 약세 — 엔비디아도 '세계적으로 압박받는 기술 섹터와 함께' 내렸다고 보도. 아시아 반도체주 매도도 거론.",
+     "src": 10
+    },
+    {
+     "what": "젠슨 황의 CEO 사임(11-12) 여파가 이어지는 시장이라는 배경. AMD 는 '엔비디아 위기의 수혜주'로 올라 있던 상태(윌리엄 블레어 상향 등).",
+     "src": 5
+    },
+    {
+     "what": "이달 들어 강화된 미국 수출 허가 요건으로 주가가 이미 눌려 있었다는 서술.",
+     "src": 9
+    },
+    {
+     "what": "엔비디아 3분기 실적 발표는 이틀 전(11-17)이라 같은 날 재료는 아님. 실적 뒤 반응은 muddy-waters-nvda-2026-11 쪽 참고.",
+     "src": 7
+    }
+   ],
+   "response": [
+    {
+     "who": "AMD (게시 전)",
+     "at": "2026-11-19T15:27:52Z",
+     "what": "Hunterbrook 의 질문에 시간을 더 달라고 한 뒤 약속한 다음 날까지 답하지 않았다고 보고서가 적음. IEIT·Maginfra·Kaytus·Aivres·Hygon·Tongfu·상무부 BIS 도 무응답.",
+     "src": 1
+    },
+    {
+     "who": "AMD 대변인",
+     "at": "2026-11-19T18:01:10Z",
+     "what": "주장이 AMD 의 사업 관행과 관계를 왜곡하며, 미국 수출통제 법규를 준수한다고 부인(블룸버그 인용 X 글로 확인되는 가장 이른 시각. 성명 전문은 Business Insider 23:47Z 기사).",
+     "src": 4
+    },
+    {
+     "who": "tae kim (@firstadopter, 기술 담당 기자)",
+     "at": "2026-11-19T17:51:03Z",
+     "what": "보고서를 '엉터리'라고 평가하며 반박 글을 공유.",
+     "src": 3
+    }
+   ],
+   "aftermath": {
+    "status": "미정",
+    "what": "게시 다음 날(11-20) 현재 AMD 는 부인, 상무부는 논평 없음, 조사 착수 보도 없음. Hunterbrook 스스로 'IEIT 가 코드를 어떻게 얻었는지, 허가가 있었는지 모른다'고 적었고 \"records Hunterbrook found don't establish on their own a violation of export laws\" 라는 단서를 붙였다. 50% 지분 규칙 유예는 2027-01-10 만료 예정.",
+    "src": [
+     1,
+     9
+    ]
+   },
+   "price_as_reported": [
+    {
+     "ticker": "AMD",
+     "move": "-7.72% (종가 489.19달러)",
+     "when": "2026-11-19 종가",
+     "src": 10
+    },
+    {
+     "ticker": "AMD",
+     "move": "약 -8%",
+     "when": "2026-11-19 종가",
+     "src": 7
+    },
+    {
+     "ticker": "AMD",
+     "move": "장중 최대 -11%",
+     "when": "2026-11-19 장중",
+     "src": 7
+    },
+    {
+     "ticker": "AMD",
+     "move": "장중 최대 약 -10%",
+     "when": "2026-11-19 장중",
+     "src": 10
+    },
+    {
+     "ticker": "AMD",
+     "move": "약 -9%",
+     "when": "2026-11-19 13:48 ET",
+     "src": 5
+    },
+    {
+     "ticker": "AMD",
+     "move": "-13% (X 글의 표기, 다른 매체와 다름)",
+     "when": "2026-11-19 장중",
+     "src": 4
+    },
+    {
+     "ticker": "AMD",
+     "move": "장중 최대 -2.9% (게시 18분 뒤 기사)",
+     "when": "2026-11-19 15:45Z 무렵",
+     "src": 11
+    },
+    {
+     "ticker": "INTC",
+     "move": "약 +5%",
+     "when": "2026-11-19",
+     "src": 10
+    }
+   ],
+   "not_found": [
+    "@hntrbrkmedia 의 X 글 번호·시각·좋아요 수 — 검색 두 번과 받은 기사 본문 어디에도 status 주소가 없었다(보고서 페이지에는 계정 주소만 있음). 공개 임베드 타임라인(syndication.twitter.com)도 429 로 받지 못함.",
+    "AMD 성명을 처음 실은 블룸버그 기사 원문과 정확한 시각 — 18:01:10Z 의 X 글이 블룸버그를 인용한 것만 확인(실제 답변은 그 이전).",
+    "Hunterbrook 포지션의 크기, 보고서 조회 수·구독자 수 같은 도달 지표.",
+    "nacionale.com 기사 본문(403, 우회하지 않음). 제목의 '7.7%'만 검색 결과로 확인.",
+    "장중 저점 수치는 매체마다 다르다(-9.6%, 약 -10%, -11%, X 글 -13%). 어느 것이 맞는지는 시세 자료로 따로 확인해야 한다.",
+    "상무부(BIS)의 답변이나 조사 착수 여부 — 보도 없음."
+   ],
+   "refs": [
+    {
+     "bundle": "N2",
+     "id": "hunterbrook-amd-2026-11-amd"
+    },
+    {
+     "bundle": "N3",
+     "id": "hunterbrook-amd-2026-11"
+    }
+   ],
+   "sources": [
+    {
+     "n": 1,
+     "title": "AMD Has Its Own China Problem — Hunterbrook Media",
+     "url": "https://hntrbrk.com/investigations/amd-china",
+     "date": "2026-11-19",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "Hunterbrook Says It's Not Just NVIDIA, 'AMD Has A China Problem Of Its Own' [Update: AMD Responds] — Wccftech",
+     "url": "https://wccftech.com/hunterbrook-says-its-not-just-nvidia-amd-has-a-china-problem-of-its-own-with-amd-firmware-now-traced-to-blacklisted-ieit-servers/",
+     "date": "2026-11-19",
+     "read": "partial"
+    },
+    {
+     "n": 3,
+     "title": "X 글 — tae kim (@firstadopter)",
+     "url": "https://x.com/firstadopter/status/2123474147959328898",
+     "date": "2026-11-19",
+     "read": "full"
+    },
+    {
+     "n": 4,
+     "title": "X 글 — The Kobeissi Letter (@KobeissiLetter), AMD 부인 속보(블룸버그 인용)",
+     "url": "https://x.com/KobeissiLetter/status/2123476690873847984",
+     "date": "2026-11-19",
+     "read": "partial"
+    },
+    {
+     "n": 5,
+     "title": "First Nvidia, Now AMD: A Short Seller Just Put Its China Business Under the Microscope — The Motley Fool",
+     "url": "https://www.fool.com/investing/2026/11/19/first-nvidia-now-amd-a-short-seller-just-put-its-china-business-under-the-microscope/",
+     "date": "2026-11-19",
+     "read": "partial"
+    },
+    {
+     "n": 6,
+     "title": "Commerce approved sales of more than 879,000 AI chips to China: Mast — CNBC",
+     "url": "https://www.cnbc.com/2026/11/19/nvidia-amd-china-chip-sales-congress.html",
+     "date": "2026-11-19",
+     "read": "partial"
+    },
+    {
+     "n": 7,
+     "title": "AMD stock plunges after short-seller says the chip maker has its own China problems — Business Insider (Yahoo Finance UK)",
+     "url": "https://uk.finance.yahoo.com/news/amd-stock-plunges-short-seller-175252445.html",
+     "date": "2026-11-19",
+     "read": "full"
+    },
+    {
+     "n": 8,
+     "title": "Shots Fired: Hunterbrook Shorts AMD Over China. Its China and Hong Kong Billing Share Is Nearly 2.5x Nvidia's — Yahoo Finance",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/shots-fired-hunterbrook-shorts-amd-223749072.html",
+     "date": "2026-11-19",
+     "read": "partial"
+    },
+    {
+     "n": 9,
+     "title": "ICYMI: AMD slides 8% as short seller Hunterbrook ties its firmware to a blacklisted Chinese firm — investingLive",
+     "url": "https://investinglive.com/stocks/icymi-amd-slides-8-as-short-seller-hunterbrook-ties-its-firmware-to-a-blacklisted-chinese-firm/",
+     "date": "2026-11-20",
+     "read": "partial"
+    },
+    {
+     "n": 10,
+     "title": "AMD Shares Fall 7.7% After Short Seller Targets Its China Ties — Trending Topics",
+     "url": "https://www.trendingtopics.eu/amd-hunterbrook-short-seller-china/",
+     "date": "2026-11-20",
+     "read": "partial"
+    },
+    {
+     "n": 11,
+     "title": "AMD shares slide as Hunterbrook Capital discloses short position — Crypto Briefing",
+     "url": "https://cryptobriefing.com/amd-shares-fall-hunterbrook-short-position/",
+     "date": "2026-11-19",
+     "read": "partial"
+    },
+    {
+     "n": 12,
+     "title": "AMD stock closes down 7.7% after short seller Hunterbrook ties its firmware to a blacklisted Chinese firm — Nacionale",
+     "url": "https://www.nacionale.com/en/articles/why-is-amd-stock-down-today-hunterbrook-short-ieit-china-firmware-report",
+     "date": "2026-11-19",
+     "read": "search_summary"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "note": "장중(10:27 ET)에 나온 무료 보고서다. 같은 날 싱가포르 등 다섯 나라로 가는 칩의 허가 규칙 발효와 의회발 대중 칩 수출 보도가 겹쳤다. 자료 기준일까지 사건 뒤 거래일이 하루뿐이다."
+  }
+ ]
+}

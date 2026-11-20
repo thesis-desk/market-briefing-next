@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-20T18:29:40+09:00",
+ "generated_kst": "2026-11-20T18:46:14+09:00",
  "reports": [
   {
    "slug": "nvidia-dev-build-tool-calling-parsers-in-rust-with-ai-agents",
@@ -2819,6 +2819,42 @@
    "path": "reports/hyosung-heavy-3q26-earnings.json"
   },
   {
+   "slug": "kioxia-2q27-earnings",
+   "type": "earnings",
+   "title": "Kioxia 2Q27 실적발표 : 3Q는 숨 고르기, CY28 물량 절반 넘게 장기계약",
+   "companies": [
+    {
+     "name": "Kioxia",
+     "ticker": "285A.T"
+    }
+   ],
+   "event": "2Q27 실적 발표(회사 표기 FY2026 Q2)",
+   "event_date": "2026-10-30",
+   "published_kst": "2026-10-30T21:00:00+09:00",
+   "revised_kst": "2026-11-20T18:42:57+09:00",
+   "revision": 1,
+   "summary": "2Q27은 ASP 급등으로 매출이 전분기의 1.4배가 되고 Non-GAAP 영업이익률이 80%에 이르러 회사 가이던스를 넘었다. 반면 3Q 가이던스는 환율 역풍과 출하 이월 탓에 사실상 횡보다. 이번 분기에 새로 나온 것은 CY28 GB 물량의 절반을 크게 넘는 다년 장기공급계약, 첫 배당, 초과현금 100% 환원 원칙이다.",
+   "path": "reports/kioxia-2q27-earnings.json"
+  },
+  {
+   "slug": "tokyo-electron-2q27-earnings",
+   "type": "earnings",
+   "title": "Tokyo Electron 2Q27 실적발표 : 영업이익 1조 엔 첫 가이던스, DRAM·중국이 끌어올린 분기",
+   "companies": [
+    {
+     "name": "Tokyo Electron",
+     "ticker": "8035.T"
+    }
+   ],
+   "event": "2Q27 실적 발표",
+   "event_date": "2026-10-30",
+   "published_kst": "2026-10-30T21:00:00+09:00",
+   "revised_kst": "2026-11-20T18:34:57+09:00",
+   "revision": 1,
+   "summary": "2Q27 매출은 9,350억 엔(전분기 대비 +27.7%)으로 분기 최대였고, 상반기는 7월 회사 예상을 전 항목에서 넘었다. 처음 내놓은 통기 가이던스는 매출 3.7조 엔, 영업이익 1.169조 엔이다. 다만 하반기 GPM 48.3%는 2Q 47.8%와 거의 같아, 이익 레버리지는 볼륨이 이끌고 마진 확대는 FY2028로 미뤄지는 구도다.",
+   "path": "reports/tokyo-electron-2q27-earnings.json"
+  },
+  {
    "slug": "samsung-electro-mechanics-3q26-earnings",
    "type": "earnings",
    "title": "삼성전기 3Q26 실적발표 : 영업이익률 18% 돌파, 투자·차입 가속",
@@ -2999,6 +3035,96 @@
    "path": "reports/lumentum-4q26-earnings.json"
   },
   {
+   "slug": "coreweave-4q25-earnings",
+   "type": "earnings",
+   "title": "CoreWeave 4Q25 실적발표 : CapEx 두 배, 마진은 1분기 바닥",
+   "companies": [
+    {
+     "name": "CoreWeave",
+     "ticker": "CRWV"
+    }
+   ],
+   "event": "4Q25 실적 발표",
+   "event_date": "2026-02-26",
+   "published_kst": "2026-02-26T21:00:00+09:00",
+   "revised_kst": "2026-11-20T18:40:21+09:00",
+   "revision": 1,
+   "summary": "매출과 백로그는 커졌지만 이익은 증설 속도와 이자 부담에 눌렸다. 2026년에는 CapEx 300~350억 달러를 쓰면서 마진이 1분기에 바닥을 찍고 4분기에 두 자릿수 초반으로 돌아온다고 약속했다. 판단은 증설 속도보다 마진 회복과 금리 하락이 실제로 이뤄지는지에 달렸다.",
+   "path": "reports/coreweave-4q25-earnings.json"
+  },
+  {
+   "slug": "talen-energy-4q25-earnings",
+   "type": "earnings",
+   "title": "Talen Energy 4Q25 실적발표 : 가이던스 상단 초과, 개발 건 공개 중단",
+   "companies": [
+    {
+     "name": "Talen Energy",
+     "ticker": "TLN"
+    }
+   ],
+   "event": "4Q25 실적 발표",
+   "event_date": "2026-02-26",
+   "published_kst": "2026-02-26T21:00:00+09:00",
+   "revised_kst": "2026-11-20T18:45:56+09:00",
+   "revision": 1,
+   "summary": "FY2025 조정 EBITDA·FCF는 수정 가이던스 상단을 넘었지만, 초과분은 대부분 Freedom·Guernsey 인수 시점에서 나왔다. 2026 가이던스는 그대로 재확인했다. 이번 콜에서 달라진 것은 두 가지다. Cornerstone 인수로 성장 축이 M&A 쪽으로 기울었고, Montour 부결 이후 경영진이 개발 파이프라인을 공개하지 않기로 하면서 계약 쪽 상방을 밖에서 확인할 길이 좁아졌다.",
+   "path": "reports/talen-energy-4q25-earnings.json"
+  },
+  {
+   "slug": "vistra-4q25-earnings",
+   "type": "earnings",
+   "title": "Vistra 4Q25 실적발표 : 원전 3.8GW 장기계약 완성, Cogentrix 인수로 가스 26GW",
+   "companies": [
+    {
+     "name": "Vistra",
+     "ticker": "VST"
+    }
+   ],
+   "event": "4Q25 실적 발표",
+   "event_date": "2026-02-26",
+   "published_kst": "2026-02-26T21:00:00+09:00",
+   "revised_kst": "2026-11-20T18:42:55+09:00",
+   "revision": 1,
+   "summary": "기록적인 2025년 실적(조정 EBITDA $5.9B)보다 큰 변화는 이익 구조에 있다. Meta 계약으로 원전 장기계약이 3.8GW가 됐고 Cogentrix 인수로 가스 발전이 늘어, 회사는 이익의 절반 가까이를 안정 수익원으로 만들면서 주당 FCF 경로를 $12.50 초과에서 약 $16로 제시했다. 다만 계약 기여의 대부분은 2027년 이후에 들어오고, 가이던스는 인수가 종결될 때까지 갱신되지 않는다.",
+   "path": "reports/vistra-4q25-earnings.json"
+  },
+  {
+   "slug": "nvidia-4q26-earnings",
+   "type": "earnings",
+   "title": "Nvidia 4Q26 실적발표 : 2027년까지 확보한 공급, 3.5배 뛴 네트워킹",
+   "companies": [
+    {
+     "name": "Nvidia",
+     "ticker": "NVDA"
+    }
+   ],
+   "event": "4Q26 실적 발표",
+   "event_date": "2026-02-25",
+   "published_kst": "2026-02-25T21:00:00+09:00",
+   "revised_kst": "2026-11-20T18:40:20+09:00",
+   "revision": 1,
+   "summary": "매출 $680억(+73%)으로 성장이 다시 빨라졌다. 1Q27 가이던스 $780억과 달력 2027년 출하분까지 잡은 공급 약정으로 수요 가시성도 넓혔다. 다만 고객 CapEx가 계속 늘 수 있는지, 중국 매출이 0인 점, 운영비와 전략 투자의 확대에는 숫자로 된 답이 없었다.",
+   "path": "reports/nvidia-4q26-earnings.json"
+  },
+  {
+   "slug": "quanta-services-4q25-earnings",
+   "type": "earnings",
+   "title": "Quanta Services 4Q25 실적발표 : 변압기 직접 생산, 입찰에서 장기 협상으로",
+   "companies": [
+    {
+     "name": "Quanta Services",
+     "ticker": "PWR"
+    }
+   ],
+   "event": "4Q25 실적 발표",
+   "event_date": "2026-02-19",
+   "published_kst": "2026-02-19T21:00:00+09:00",
+   "revised_kst": "2026-11-20T18:35:14+09:00",
+   "revision": 1,
+   "summary": "4Q25는 매출·조정 EBITDA·조정 EPS가 분기 사상 최대였고 FCF는 4분기 기준 최대였으며, 기말 수주잔고는 440억 달러로 늘었다. 이번 콜에서 새로 나온 것은 두 가지다. 회사가 345~765kV 변압기·차단기를 직접 만드는 데 투자하기로 했고, 마진을 끌어올리는 대신 5~10년 단위 장기 계약으로 이익을 쌓겠다는 방침을 분명히 했다. 대형 765kV 송전과 가스 발전은 아직 수주잔고에 들어오지 않았다.",
+   "path": "reports/quanta-services-4q25-earnings.json"
+  },
+  {
    "slug": "applied-materials-1q26-earnings",
    "type": "earnings",
    "title": "Applied Materials 1Q26 실적발표 : 장비 20%+ 성장 선언, 성장의 상한은 클린룸",
@@ -3015,6 +3141,42 @@
    "revision": 1,
    "summary": "매출은 전년보다 줄었지만 가이던스 상단에서 마감했다. 회사는 역년 2026 반도체 장비 매출이 20% 넘게 성장한다고 처음 수치로 밝히고 2Q 매출 +9%를 가이던스로 냈다. 이번 콜의 요지는 성장 속도를 정하는 것이 수요가 아니라 고객의 클린룸이라는 점이다.",
    "path": "reports/applied-materials-1q26-earnings.json"
+  },
+  {
+   "slug": "arista-4q25-earnings",
+   "type": "earnings",
+   "title": "Arista Networks 4Q25 실적발표 : AI 목표 $3.25B로 상향, 메모리 원가는 가격 인상으로",
+   "companies": [
+    {
+     "name": "Arista Networks",
+     "ticker": "ANET"
+    }
+   ],
+   "event": "4Q25 실적 발표",
+   "event_date": "2026-02-12",
+   "published_kst": "2026-02-12T21:00:00+09:00",
+   "revised_kst": "2026-11-20T18:36:43+09:00",
+   "revision": 1,
+   "summary": "4Q25 매출 $2.49B는 가이던스 상단 $2.4B를 넘었고, 2026 매출 가이던스는 +25%($11.25B), AI 센터 목표는 $2.75B에서 $3.25B로 올라갔다. 다만 AI·캠퍼스 목표를 빼면 나머지 사업은 계산상 거의 제자리가 함축된다(회사는 정체 가이드가 아니라고 했다). 메모리 원가는 2025년처럼 흡수하지 못해 일부 SKU 가격 인상이 예고됐다. 이후 실적은 이 가이던스가 수요가 아니라 출하 가능량 기준의 보수적 숫자였음을 보여 준다.",
+   "path": "reports/arista-4q25-earnings.json"
+  },
+  {
+   "slug": "nebius-4q25-earnings",
+   "type": "earnings",
+   "title": "Nebius 4Q25 실적발표 : 가격·계약기간 동반 상승, $16–20B CapEx 외부 조달 예고",
+   "companies": [
+    {
+     "name": "Nebius",
+     "ticker": "NBIS"
+    }
+   ],
+   "event": "4Q25 실적 발표",
+   "event_date": "2026-02-12",
+   "published_kst": "2026-02-12T21:00:00+09:00",
+   "revised_kst": "2026-11-20T18:31:56+09:00",
+   "revision": 1,
+   "summary": "ARR $1.2B로 자체 가이던스 상단을 넘었고, 매진 상태에서 판매 단가와 계약 기간이 함께 늘어났다. 다만 2026년 매출과 EBITDA는 하반기 용량 가동에 몰려 있다. 또 CapEx의 약 40%($6.4–8B)는 회사가 지금까지 쓰지 않던 부채·지분 조달로 메워야 한다.",
+   "path": "reports/nebius-4q25-earnings.json"
   },
   {
    "slug": "cisco-2q26-earnings",
@@ -3544,6 +3706,11 @@
    "id": "compute-balance",
    "path": "data/compute-balance/index.json",
    "updated_kst": "2026-11-20T16:16:38+09:00"
+  },
+  {
+   "id": "online-narratives",
+   "path": "data/online-narratives/index.json",
+   "updated_kst": "2026-11-20T18:46:14+09:00"
   }
  ]
 }

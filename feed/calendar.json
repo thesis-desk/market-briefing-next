@@ -446,8 +446,8 @@
    "official": false,
    "source_url": "https://stockanalysis.com/stocks/anet/transcripts/395850-q4-2025/",
    "consensus_snapshot": false,
-   "report_slug": null,
-   "status": "queued",
+   "report_slug": "arista-4q25-earnings",
+   "status": "published",
    "note": "원문이 올라온 것을 보고 넣은 일정"
   },
   {
@@ -460,8 +460,8 @@
    "official": false,
    "source_url": "https://stockanalysis.com/stocks/nbis/transcripts/402284-q4-2025/",
    "consensus_snapshot": false,
-   "report_slug": null,
-   "status": "queued",
+   "report_slug": "nebius-4q25-earnings",
+   "status": "published",
    "note": "원문이 올라온 것을 보고 넣은 일정"
   },
   {
@@ -474,8 +474,8 @@
    "official": false,
    "source_url": "https://stockanalysis.com/stocks/pwr/transcripts/398892-q4-2025/",
    "consensus_snapshot": false,
-   "report_slug": null,
-   "status": "queued",
+   "report_slug": "quanta-services-4q25-earnings",
+   "status": "published",
    "note": "원문이 올라온 것을 보고 넣은 일정"
   },
   {
@@ -488,8 +488,8 @@
    "official": false,
    "source_url": "https://stockanalysis.com/stocks/nvda/transcripts/409967-q4-2026/",
    "consensus_snapshot": false,
-   "report_slug": null,
-   "status": "queued",
+   "report_slug": "nvidia-4q26-earnings",
+   "status": "published",
    "note": "원문이 올라온 것을 보고 넣은 일정"
   },
   {
@@ -502,8 +502,8 @@
    "official": false,
    "source_url": "https://stockanalysis.com/stocks/crwv/transcripts/404215-q4-2025/",
    "consensus_snapshot": false,
-   "report_slug": null,
-   "status": "queued",
+   "report_slug": "coreweave-4q25-earnings",
+   "status": "published",
    "note": "원문이 올라온 것을 보고 넣은 일정"
   },
   {
@@ -530,8 +530,8 @@
    "official": false,
    "source_url": "https://stockanalysis.com/stocks/tln/transcripts/398753-q4-2025/",
    "consensus_snapshot": false,
-   "report_slug": null,
-   "status": "queued",
+   "report_slug": "talen-energy-4q25-earnings",
+   "status": "published",
    "note": "원문이 올라온 것을 보고 넣은 일정"
   },
   {
@@ -544,8 +544,8 @@
    "official": false,
    "source_url": "https://stockanalysis.com/stocks/vst/transcripts/393576-q4-2025/",
    "consensus_snapshot": false,
-   "report_slug": null,
-   "status": "queued",
+   "report_slug": "vistra-4q25-earnings",
+   "status": "published",
    "note": "원문이 올라온 것을 보고 넣은 일정"
   },
   {

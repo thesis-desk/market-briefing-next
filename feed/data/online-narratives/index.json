@@ -1,0 +1,144 @@
+{
+ "schema": 1,
+ "updated_kst": "2026-11-20T18:46:14+09:00",
+ "question": "X·Substack 의 글은 주가를 움직이는가 — 어떤 경로로 퍼지고, 얼마나 오래 가며, 한국 텔레그램에는 언제 닿는가",
+ "bundles": [
+  {
+   "id": "N1",
+   "file": "cases.json",
+   "title": "사례 — 글에서 언론까지의 시간표",
+   "status": "draft",
+   "records": 11,
+   "verified_share": 1,
+   "updated_kst": "2026-11-20T18:43:16+09:00"
+  },
+  {
+   "id": "N2",
+   "file": "prices.json",
+   "title": "주가 반응 — 사건일과 그 뒤 1·5·20거래일",
+   "status": "verified",
+   "records": 17,
+   "verified_share": 1,
+   "updated_kst": "2026-11-20T18:44:24+09:00"
+  },
+  {
+   "id": "N3",
+   "file": "arrival.json",
+   "title": "한국 도착 — 텔레그램 채널에 처음 닿은 시각과 경로",
+   "status": "verified",
+   "records": 8,
+   "verified_share": 1,
+   "updated_kst": "2026-11-20T18:45:56+09:00"
+  }
+ ],
+ "hypotheses": [
+  {
+   "id": "H1",
+   "text": "크기 — 이런 글은 지목한 종목을 평소 하루 변동의 두 배 넘게 움직인다",
+   "verdict": "반박",
+   "basis": "대표 종목 11건 가운데 조건(사건일 등락률이 직전 60거래일 표준편차의 2배 이상이고 초과 등락의 방향이 글과 같음)을 채운 것은 3건이다: 엔비디아(2025-01) -16.97%(z -6.7) [deepseek-emanuel-2025-01], 비자(2026-02) -4.50%(z -3.0) [citrini-2028-2026-02], 오로스테크놀로지(2026-05) +30.00%(z +4.6) [serenity-auros-2026-05]. 글의 방향으로 움직였지만 2배에 못 미친 것이 3건(마이크론(2026-06) -7.74%(z -1.5) [socamm-tmtb-2026-06], 블룸에너지(2026-07) -5.67%(z -0.8) [hunterbrook-be-2026-07], AMD(2026-11) -7.72%(z -1.5) [hunterbrook-amd-2026-11]), 종가 기준으로 움직임이 없었거나 반대로 간 것이 5건이다.",
+   "counts": {
+    "n": 11,
+    "met": 3
+   },
+   "met_cases": [
+    "deepseek-emanuel-2025-01",
+    "citrini-2028-2026-02",
+    "serenity-auros-2026-05"
+   ],
+   "same_direction_below_threshold": [
+    "socamm-tmtb-2026-06",
+    "hunterbrook-be-2026-07",
+    "hunterbrook-amd-2026-11"
+   ],
+   "none_or_opposite": [
+    "tariff-pause-headline-2025-04",
+    "citron-aaoi-2026-04",
+    "citrini-korea-2026-05",
+    "burry-mu-short-2026-07",
+    "muddy-waters-nvda-2026-11"
+   ],
+   "updated_kst": "2026-11-20T18:46:14+09:00"
+  },
+  {
+   "id": "H2",
+   "text": "지속 — 그 움직임은 20거래일 안에 절반 넘게 되돌려진다",
+   "verdict": "엇갈림",
+   "basis": "사건일 초과 등락이 1%p 이상이고 20거래일이 지난 7건 가운데 절반 넘게 되돌린 것은 3건이다(비자(2026-02) 0.89, 어플라이드 옵토일렉트로닉스(2026-04) 0.75, 오로스테크놀로지(2026-05) 1.3). 되돌리지 않은 것은 엔비디아(2025-01) 0.43, 에이피알(2026-05) -7.5, 마이크론(2026-06) -0.05, 블룸에너지(2026-07) -1.97이다. 20거래일이 아직 오지 않은 1건과 사건일 초과 등락이 1%p 에 못 미친 3건은 세지 않았다.",
+   "counts": {
+    "n": 7,
+    "met": 3
+   },
+   "met_cases": [
+    "citrini-2028-2026-02",
+    "citron-aaoi-2026-04",
+    "serenity-auros-2026-05"
+   ],
+   "unmet_cases": [
+    "deepseek-emanuel-2025-01",
+    "citrini-korea-2026-05",
+    "socamm-tmtb-2026-06",
+    "hunterbrook-be-2026-07"
+   ],
+   "pending_cases": [
+    "hunterbrook-amd-2026-11"
+   ],
+   "small_move_cases": [
+    "tariff-pause-headline-2025-04",
+    "burry-mu-short-2026-07",
+    "muddy-waters-nvda-2026-11"
+   ],
+   "updated_kst": "2026-11-20T18:46:14+09:00"
+  },
+  {
+   "id": "H3",
+   "text": "도착 시점 — 한국 텔레그램에는 대상 종목의 시장이 반응한 뒤에야 닿는다",
+   "verdict": "반박",
+   "basis": "텔레그램 원본 DB 로 잴 수 있는 8건 가운데 첫 글이 사건 거래일 정규장 종가보다 늦은 것은 2건이다(블룸에너지(2026-07) 종가 21분 뒤, 엔비디아(2026-11) 종가 3분 뒤). 나머지 6건은 종가 전에 닿았고, 종가까지 남은 시간은 어플라이드 옵토일렉트로닉스(2026-04) 4.4시간, 오로스테크놀로지(2026-05) 3.2시간, 에이피알(2026-05) 4.0시간, 마이크론(2026-06) 6.4시간, 마이크론(2026-07) 93.4시간, AMD(2026-11) 4분이다.",
+   "counts": {
+    "n": 8,
+    "met": 2
+   },
+   "met_cases": [
+    "hunterbrook-be-2026-07",
+    "muddy-waters-nvda-2026-11"
+   ],
+   "unmet_cases": [
+    "citron-aaoi-2026-04",
+    "serenity-auros-2026-05",
+    "citrini-korea-2026-05",
+    "socamm-tmtb-2026-06",
+    "burry-mu-short-2026-07",
+    "hunterbrook-amd-2026-11"
+   ],
+   "updated_kst": "2026-11-20T18:46:14+09:00"
+  },
+  {
+   "id": "H4",
+   "text": "도착 경로 — 닿을 때는 최초 글이 아니라 언론·증권사·시황 요약을 거친다",
+   "verdict": "엇갈림",
+   "basis": "잴 수 있는 8건 가운데 사건 거래일 종가 전에 최초 글의 주소를 달았거나 그 글을 옮긴 텔레그램 글이 없었던 것은 3건이고(블룸에너지(2026-07) — 시황 요약, 엔비디아(2026-11) — 시황 요약, AMD(2026-11) — 시황 요약), 셋 다 한국 시각 0~5시에 나온 공매도 조사 보고서다. 나머지 5건은 최초 글의 번역이나 그 내용을 전한 채널 글이 종가 전에 있었다.",
+   "counts": {
+    "n": 8,
+    "met": 3
+   },
+   "met_cases": [
+    "hunterbrook-be-2026-07",
+    "muddy-waters-nvda-2026-11",
+    "hunterbrook-amd-2026-11"
+   ],
+   "unmet_cases": [
+    "citron-aaoi-2026-04",
+    "serenity-auros-2026-05",
+    "citrini-korea-2026-05",
+    "socamm-tmtb-2026-06",
+    "burry-mu-short-2026-07"
+   ],
+   "updated_kst": "2026-11-20T18:46:14+09:00"
+  }
+ ],
+ "docs": [
+  "REQUEST.md",
+  "STATUS.md"
+ ]
+}
