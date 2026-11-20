@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-20T19:23:08+09:00",
+ "generated_kst": "2026-11-20T19:28:05+09:00",
  "reports": [
   {
    "slug": "x-substack-price-impact",
@@ -2871,6 +2871,24 @@
    "path": "reports/wiwynn-3q26-earnings.json"
   },
   {
+   "slug": "hua-hong-3q26-earnings",
+   "type": "earnings",
+   "title": "Hua Hong Semiconductor 3Q26 실적발표 : 화리 편입, 가격 인상 연장",
+   "companies": [
+    {
+     "name": "Hua Hong Semiconductor",
+     "ticker": "1347.HK"
+    }
+   ],
+   "event": "3Q26 실적 발표",
+   "event_date": "2026-11-05",
+   "published_kst": "2026-11-05T21:00:00+09:00",
+   "revised_kst": "2026-11-20T19:27:57+09:00",
+   "revision": 1,
+   "summary": "화리(Huali Micro)를 빼고도 매출과 GM이 3Q 가이던스 상단을 넘었습니다. 4Q 가이던스(매출 10.8억~10.9억 달러, GM 25~26%)와 2027년 추가 인상 발언으로 가격 인상 국면이 이어진다는 점이 확인됐습니다. 다만 경영진이 말한 2027년 GM(25% 안팎 또는 그 이상)은 4Q 가이던스와 같은 수준이어서, 증설 감가상각을 감안하면 마진이 더 오를 여지는 크지 않을 수 있습니다.",
+   "path": "reports/hua-hong-3q26-earnings.json"
+  },
+  {
    "slug": "ntt-data-2q27-earnings",
    "type": "earnings",
    "title": "NTT DATA Group 2Q27 실적발표 : 국내는 수주 급증, 해외는 매각이익 빼면 제자리",
@@ -3159,6 +3177,24 @@
    "path": "reports/lumentum-4q26-earnings.json"
   },
   {
+   "slug": "alphabet-1q26-earnings",
+   "type": "earnings",
+   "title": "Alphabet 1Q26 실적발표 : Cloud 백로그 두 배, TPU 외부 판매 개시",
+   "companies": [
+    {
+     "name": "Alphabet",
+     "ticker": "GOOGL"
+    }
+   ],
+   "event": "1Q26 실적 발표",
+   "event_date": "2026-04-29",
+   "published_kst": "2026-04-29T21:00:00+09:00",
+   "revised_kst": "2026-11-20T19:25:30+09:00",
+   "revision": 1,
+   "summary": "Cloud가 매출 +63%, 영업이익률 32.9%로 가속했고 백로그는 $462B로 거의 두 배가 됐다. AI 투자가 매출로 돌아온다는 증거가 한 분기 더 쌓였다. 대신 EPS $5.11의 절반가량은 비상장 지분 평가이익이다. CapEx 상향과 2027년 '크게 증가' 예고 속에 분기 FCF는 $10.1B로 줄었다.",
+   "path": "reports/alphabet-1q26-earnings.json"
+  },
+  {
    "slug": "amazon-1q26-earnings",
    "type": "earnings",
    "title": "Amazon 1Q26 실적발표 : AWS 28% 가속, 백로그 3,640억 달러",
@@ -3175,6 +3211,24 @@
    "revision": 1,
    "summary": "AWS가 28%로 가속하고 백로그가 한 분기 만에 49% 늘어 2026년 CapEx 약 2,000억 달러를 받칠 수요 근거가 강해졌다. 사상 최고 영업이익률 13.1%로 가이던스 상단도 넘겼다. 다만 잉여현금흐름은 콜에서 공개되지 않았고, 회사 스스로 투자 초기의 현금흐름 압박을 인정했다.",
    "path": "reports/amazon-1q26-earnings.json"
+  },
+  {
+   "slug": "meta-1q26-earnings",
+   "type": "earnings",
+   "title": "Meta 1Q26 실적발표 : 광고 단가 반등, 메모리값에 CapEx 상향",
+   "companies": [
+    {
+     "name": "Meta",
+     "ticker": "META"
+    }
+   ],
+   "event": "1Q26 실적 발표",
+   "event_date": "2026-04-29",
+   "published_kst": "2026-04-29T21:00:00+09:00",
+   "revised_kst": "2026-11-20T19:28:05+09:00",
+   "revision": 1,
+   "summary": "광고 매출이 33% 늘어 총매출이 1분기 가이던스 상단 근처에 닿았고, 광고 단가 상승률이 +6%에서 +12%로 뛰었다. 반면 연간 CapEx는 주로 부품 가격(특히 메모리) 때문에 100억 달러 올랐고, 계약 약정이 1,070억 달러 늘었다. 회사는 컴퓨트 수요를 계속 과소평가해 왔다고 밝혔다. 이익 약속은 유지했지만 투자 상한은 열어 둔 분기다.",
+   "path": "reports/meta-1q26-earnings.json"
   },
   {
    "slug": "microsoft-3q26-earnings",

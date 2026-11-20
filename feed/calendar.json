@@ -782,8 +782,8 @@
    "official": false,
    "source_url": "https://stockanalysis.com/stocks/googl/transcripts/551989-q1-2026/",
    "consensus_snapshot": false,
-   "report_slug": null,
-   "status": "queued",
+   "report_slug": "alphabet-1q26-earnings",
+   "status": "published",
    "note": "원문이 올라온 것을 보고 넣은 일정"
   },
   {
@@ -838,8 +838,8 @@
    "official": false,
    "source_url": "https://stockanalysis.com/stocks/meta/transcripts/547899-q1-2026/",
    "consensus_snapshot": false,
-   "report_slug": null,
-   "status": "queued",
+   "report_slug": "meta-1q26-earnings",
+   "status": "published",
    "note": "원문이 올라온 것을 보고 넣은 일정"
   },
   {
