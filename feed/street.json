@@ -8,7 +8,7 @@
    "value": 3,
    "label": "엇갈림",
    "orgs": 42,
-   "items": 151
+   "items": 150
   },
   "market": {
    "value": -11,
@@ -61,7 +61,7 @@
    },
    {
     "group": "중앙은행·국제기구",
-    "ai_tech": -4,
+    "ai_tech": -5,
     "ai_tech_orgs": 2,
     "market": -17,
     "market_orgs": 2
