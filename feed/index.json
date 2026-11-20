@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-20T21:44:43+09:00",
+ "generated_kst": "2026-11-20T22:02:44+09:00",
  "reports": [
   {
    "slug": "tomorrowx-2026-your-brain-runs-on-20-watts-lessons-from",
@@ -3591,6 +3591,24 @@
    "path": "reports/isu-petasys-2q26-earnings.json"
   },
   {
+   "slug": "hua-hong-2q26-earnings",
+   "type": "earnings",
+   "title": "Hua Hong Semiconductor 2Q26 실적발표 : 가격이 마진을 끌어올리고, 일부 제품 주문은 생산능력의 1.5~2배",
+   "companies": [
+    {
+     "name": "Hua Hong Semiconductor",
+     "ticker": "1347.HK"
+    }
+   ],
+   "event": "2Q26 실적 발표",
+   "event_date": "2026-08-13",
+   "published_kst": "2026-08-13T21:00:00+09:00",
+   "revised_kst": "2026-11-20T21:47:58+09:00",
+   "revision": 1,
+   "summary": "가격 인상이 손익에 반영되기 시작했다. GM이 13.0%에서 16.5%로 뛰었고 매출과 GM 모두 가이던스 상단을 넘었다. 3Q 가이던스(GM 16~18%)는 하반기 감가상각 증가를 가격이 흡수한다는 뜻이다. 다만 금융비용과 비지배지분 손실 때문에 연결 순이익은 390만 달러에 그쳐 이익 구조는 아직 얇다.",
+   "path": "reports/hua-hong-2q26-earnings.json"
+  },
+  {
    "slug": "jd-2q26-earnings",
    "type": "earnings",
    "title": "JD.com 2Q26 실적발표 : 매출은 역성장, 이익은 반등",
@@ -3663,6 +3681,24 @@
    "path": "reports/hon-hai-2q26-earnings.json"
   },
   {
+   "slug": "tencent-2q26-earnings",
+   "type": "earnings",
+   "title": "Tencent 2Q26 실적발표 : 컴퓨트 선급에 잉여현금 적자 전환, 광고는 22%로 가속",
+   "companies": [
+    {
+     "name": "Tencent Holdings",
+     "ticker": "0700.HK"
+    }
+   ],
+   "event": "2Q26 실적 발표",
+   "event_date": "2026-08-12",
+   "published_kst": "2026-08-12T21:00:00+09:00",
+   "revised_kst": "2026-11-20T21:52:29+09:00",
+   "revision": 1,
+   "summary": "매출 +11%, Non-IFRS 영업이익 +9%로 이익 성장은 지켰지만, 운영 CAPEX 518억 위안과 컴퓨트 선급금 약 514억 위안이 겹쳐 잉여현금흐름이 -138억 위안으로 돌아섰고 순현금은 한 분기 만에 1,469억에서 582억 위안으로 줄었다. 기존 사업의 마진(신규 AI 제외 42.0%)과 광고·국내 게임 가속이 AI 투자를 흡수하고 있으나, 이번 분기부터 텐센트의 AI 투자는 손익보다 현금과 재무상태표에서 먼저 확인되는 단계에 들어섰다.",
+   "path": "reports/tencent-2q26-earnings.json"
+  },
+  {
    "slug": "lumentum-4q26-earnings",
    "type": "earnings",
    "title": "Lumentum 4Q26 실적발표 : 마진 50%를 절반 규모에서 돌파, 병목은 수요가 아니라 레이저 공급",
@@ -3697,6 +3733,24 @@
    "revision": 1,
    "summary": "양평 리전 GPU 매출이 붙고 KCP 거래대금이 빨라지면서 2Q26 영업이익은 579억 원(이익률 7.6%)으로 사상 최대를 기록했다. 다만 GPU 매출과 마진은 공개하지 않은 채 내년까지 최소 30MW 증설을 예고했다. 앞으로는 늘어나는 상각비를 GPU 매출이 앞서 가는지가 관건이다.",
    "path": "reports/nhn-2q26-earnings.json"
+  },
+  {
+   "slug": "naver-2q26-earnings",
+   "type": "earnings",
+   "title": "NAVER 2Q26 실적발표 : AI 팩토리 출범, 이익률은 15.4%로 한 번 더 내려갔다",
+   "companies": [
+    {
+     "name": "NAVER",
+     "ticker": "035420.KS"
+    }
+   ],
+   "event": "2Q26 실적 발표",
+   "event_date": "2026-08-07",
+   "published_kst": "2026-08-07T21:00:00+09:00",
+   "revised_kst": "2026-11-20T21:46:16+09:00",
+   "revision": 1,
+   "summary": "매출은 16.2% 늘었다. 그러나 N페이 커넥트, 월드컵 중계권, 마케팅 비용이 늘면서 영업이익은 전년과 같았고, 감가상각 연한을 늘린 효과를 빼면 이익률은 14%대다. 엔비디아·브룩필드와 함께하는 AI 팩토리가 새 성장 축으로 올라왔다. 다만 하반기 이익률이 상반기보다 낮다는 회사 설명대로라면 올해 영업이익은 전년보다 줄어든다.",
+   "path": "reports/naver-2q26-earnings.json"
   },
   {
    "slug": "wiwynn-2q26-earnings",
@@ -3753,6 +3807,78 @@
    "path": "reports/sk-telecom-2q26-earnings.json"
   },
   {
+   "slug": "amd-2q26-earnings",
+   "type": "earnings",
+   "title": "AMD 2Q26 실적발표 : 2027년 데이터센터 ‘두 배 초과’를 처음 숫자로 냈고, 작년 11월 장기 모델을 크게 웃돌겠다고 했다",
+   "companies": [
+    {
+     "name": "AMD",
+     "ticker": "AMD"
+    }
+   ],
+   "event": "2Q26 실적 발표",
+   "event_date": "2026-08-04",
+   "published_kst": "2026-08-04T21:00:00+09:00",
+   "revised_kst": "2026-11-20T22:02:44+09:00",
+   "revision": 1,
+   "summary": "2Q26은 가이던스 상단 매출(115억 달러)과 56% 매출총이익률로 끝났다. 회사는 2027년 서버 CPU 70% 초과, 데이터센터 부문 두 배 초과 성장을 처음 제시하고 장기 목표(매출 성장 35% 초과, 연간 EPS 20달러)를 크게 넘을 것이라고 했다. 약점은 게이밍과 클라이언트·게이밍 마진, 둔화한 현금흐름, 그리고 끝내 공개하지 않은 데이터센터 AI 매출 금액이다.",
+   "path": "reports/amd-2q26-earnings.json"
+  },
+  {
+   "slug": "wistron-2q26-earnings",
+   "type": "earnings",
+   "title": "Wistron 2Q26 실적발표 : 마진 반등, 현금 부족은 차입과 증자로 메운다",
+   "companies": [
+    {
+     "name": "Wistron",
+     "ticker": "3231.TW"
+    }
+   ],
+   "event": "2Q26 실적 발표",
+   "event_date": "2026-08-04",
+   "published_kst": "2026-08-04T21:00:00+09:00",
+   "revised_kst": "2026-11-20T21:49:37+09:00",
+   "revision": 1,
+   "summary": "2Q26에는 매출총이익률이 5.66%로 반등해 지배주주 순이익이 전 분기보다 54% 늘었다. 그러나 분기 영업현금흐름은 약 −NT$1,108억으로 두 분기 연속 큰 유출이었고, 순차입금은 NT$4,721억까지 불었다. 이사회가 GDR 최대 2.5억 주 발행 신청을 승인하면서 성장 자금을 자본 시장에서 구하는 단계로 넘어갔다. 이번 분기로 이익 개선은 확인됐고, 남은 질문은 현금이다.",
+   "path": "reports/wistron-2q26-earnings.json"
+  },
+  {
+   "slug": "eaton-2q26-earnings",
+   "type": "earnings",
+   "title": "Eaton 2Q26 실적발표 : Americas 램프 고비 통과, 마진 회복의 절반 이상은 가격",
+   "companies": [
+    {
+     "name": "Eaton",
+     "ticker": "ETN"
+    }
+   ],
+   "event": "2Q26 실적 발표",
+   "event_date": "2026-07-31",
+   "published_kst": "2026-07-31T21:00:00+09:00",
+   "revised_kst": "2026-11-20T22:02:36+09:00",
+   "revision": 1,
+   "summary": "매출·마진·EPS가 모두 가이던스 상단을 넘었고 연간 가이던스를 다시 올렸다. Americas 마진은 1분기를 바닥으로 +190bp 회복했고 하반기 +450~500bp의 구성까지 내놓았지만, 그중 약 300bp가 가격-원가라 가격 실현이 핵심 변수로 남는다.",
+   "path": "reports/eaton-2q26-earnings.json"
+  },
+  {
+   "slug": "hyosung-heavy-2q26-earnings",
+   "type": "earnings",
+   "title": "효성중공업 2Q26 실적발표 : 수주 가이던스 12조로 상향, 중공업 마진 20%로 복귀",
+   "companies": [
+    {
+     "name": "Hyosung Heavy Industries",
+     "ticker": "298040.KS"
+    }
+   ],
+   "event": "2Q26 실적 발표",
+   "event_date": "2026-07-31",
+   "published_kst": "2026-07-31T21:00:00+09:00",
+   "revised_kst": "2026-11-20T21:58:14+09:00",
+   "revision": 1,
+   "summary": "2Q26 연결 영업이익은 2,643억원(OPM 15.7%)으로 공개된 2024년 이후 분기 가운데 가장 많다. 중공업 마진이 20.2%로 돌아와 1Q26의 후퇴는 매출 인식 시점의 문제였던 것으로 보이고, 회사는 연간 신규수주 가이던스를 8.4조원에서 12조원으로 올렸다. 다만 이 가이던스를 그대로 풀면 하반기 수주는 상반기보다 느려지고, 건설 수주잔고는 설명 없이 줄었다.",
+   "path": "reports/hyosung-heavy-2q26-earnings.json"
+  },
+  {
    "slug": "kioxia-1q27-earnings",
    "type": "earnings",
    "title": "Kioxia 1Q27 실적발표 : 순현금 전환과 자사주 8,000억 엔, 판가 상승 폭은 둔화",
@@ -3771,6 +3897,42 @@
    "path": "reports/kioxia-1q27-earnings.json"
   },
   {
+   "slug": "amazon-2q26-earnings",
+   "type": "earnings",
+   "title": "Amazon 2Q26 실적발표 : AWS 36.7%로 가속, CapEx 2,200억 달러로 상향",
+   "companies": [
+    {
+     "name": "Amazon",
+     "ticker": "AMZN"
+    }
+   ],
+   "event": "2Q26 실적 발표",
+   "event_date": "2026-07-30",
+   "published_kst": "2026-07-30T21:00:00+09:00",
+   "revised_kst": "2026-11-20T21:53:34+09:00",
+   "revision": 1,
+   "summary": "AWS 성장률이 28%에서 36.7%로 뛰고 백로그가 4,960억 달러로 늘어 수요 쪽 근거는 직전 분기보다 강해졌다. 대신 메모리 가격 때문에 2026년 CapEx가 2,000억에서 2,200억 달러로 올랐다. 잉여현금흐름은 콜에서 언급되지 않았고 보도자료를 확보하지 못해 확인하지 못했다. 영업이익 275억 달러 가운데 약 12억 달러는 일회성 이익이다.",
+   "path": "reports/amazon-2q26-earnings.json"
+  },
+  {
+   "slug": "apple-3q26-earnings",
+   "type": "earnings",
+   "title": "Apple 3Q26 실적발표 : 환급이 가린 메모리 마진 하락, 9월 분기 공급 제약 확대",
+   "companies": [
+    {
+     "name": "Apple",
+     "ticker": "AAPL"
+    }
+   ],
+   "event": "3Q26 실적 발표",
+   "event_date": "2026-07-30",
+   "published_kst": "2026-07-30T21:00:00+09:00",
+   "revised_kst": "2026-11-20T22:01:24+09:00",
+   "revision": 1,
+   "summary": "6월 분기 매출은 가이던스 안의 +16%였다. 하지만 관세 환급을 걷어 내면 매출총이익률은 메모리 원가 때문에 내려가기 시작했고, 9월 분기는 공급 제약 확대와 환율로 성장이 +9~11%로 꺾인다. 수요보다 원가와 공급이 실적을 묶는 국면에 들어섰다.",
+   "path": "reports/apple-3q26-earnings.json"
+  },
+  {
    "slug": "capgemini-2q26-earnings",
    "type": "earnings",
    "title": "Capgemini 2Q26 실적발표 : 성장 목표는 올렸고, 마진은 하반기에 몰렸다",
@@ -3787,6 +3949,42 @@
    "revision": 1,
    "summary": "상반기 성장은 회사 예상보다 강했다. 2분기 유기 성장이 약 5%로 1분기에 함축했던 약 3.5%를 넘었고, 회사는 연간 성장 목표를 올렸다. 반면 영업마진은 프랑스·기타 유럽의 저가동으로 보합(+10bp)에 그쳤고 순이익은 구조조정·이자·세금으로 31% 줄었다. 연간 마진·현금 목표를 지키려면 하반기 마진이 전년보다 0.5~0.9pt 올라야 한다.",
    "path": "reports/capgemini-2q26-earnings.json"
+  },
+  {
+   "slug": "quanta-services-2q26-earnings",
+   "type": "earnings",
+   "title": "Quanta Services 2Q26 실적발표 : 11%대로 오른 마진, 인수 네 건이 얹힌 가이던스",
+   "companies": [
+    {
+     "name": "Quanta Services",
+     "ticker": "PWR"
+    }
+   ],
+   "event": "2Q26 실적 발표",
+   "event_date": "2026-07-30",
+   "published_kst": "2026-07-30T21:00:00+09:00",
+   "revised_kst": "2026-11-20T21:54:35+09:00",
+   "revision": 1,
+   "summary": "2Q26은 매출 96억 달러, 조정 EBITDA 마진 약 11.5%로 1분기 저마진이 계절적이었음을 보였다. 인수 네 건에 인수 외 상향이 더해져 연간 가이던스가 전 항목 올라갔다. 다만 대형 송전과 가스 발전은 아직 잔고 밖에 있어, 다음 단계 성장은 2027년 하반기 현장 투입이라는 회사의 일정에 걸려 있다.",
+   "path": "reports/quanta-services-2q26-earnings.json"
+  },
+  {
+   "slug": "samsung-electro-mechanics-2q26-earnings",
+   "type": "earnings",
+   "title": "삼성전기 2Q26 실적발표 : 영업이익률 12.7%로 도약, 설비투자가 늘며 잉여현금흐름은 적자 전환",
+   "companies": [
+    {
+     "name": "Samsung Electro-Mechanics",
+     "ticker": "009150.KS"
+    }
+   ],
+   "event": "2Q26 실적 발표",
+   "event_date": "2026-07-30",
+   "published_kst": "2026-07-30T21:00:00+09:00",
+   "revised_kst": "2026-11-20T21:49:36+09:00",
+   "revision": 1,
+   "summary": "AI 서버·전장용 MLCC와 FCBGA가 실적을 이끌었다. 매출은 3조 4,572억 원(전분기 대비 +8%), 영업이익률은 12.7%로 1Q26의 일회성 비용을 뺀 11.0%도 넘었다. 다만 분기 유·무형자산 투자가 6,039억 원으로 두 배 넘게 늘어 잉여현금흐름이 적자로 돌았고 순현금이 줄었다.",
+   "path": "reports/samsung-electro-mechanics-2q26-earnings.json"
   },
   {
    "slug": "samsung-electronics-2q26-earnings",
@@ -3843,6 +4041,42 @@
    "path": "reports/tokyo-electron-1q27-earnings.json"
   },
   {
+   "slug": "cognizant-2q26-earnings",
+   "type": "earnings",
+   "title": "Cognizant 2Q26 실적발표 : 연간 매출 상단 하향, 자사주로 EPS 상향",
+   "companies": [
+    {
+     "name": "Cognizant",
+     "ticker": "CTSH"
+    }
+   ],
+   "event": "2Q26 실적 발표",
+   "event_date": "2026-07-29",
+   "published_kst": "2026-07-29T21:00:00+09:00",
+   "revised_kst": "2026-11-20T21:54:21+09:00",
+   "revision": 1,
+   "summary": "2Q26은 매출 성장이 회사 예상의 상단이었고 조정 영업이익률도 전년보다 40bp 높았다. 그러나 회사는 재량 지출 회복 가정을 접고 연간 매출 가이던스 상단을 6.5%에서 5.5%로 내렸다. EPS 가이던스 상향은 리볼버 차입까지 동원한 자사주 매입에서 나왔고, 가이던스가 함축하는 순이익은 오히려 줄었다.",
+   "path": "reports/cognizant-2q26-earnings.json"
+  },
+  {
+   "slug": "lam-research-4q26-earnings",
+   "type": "earnings",
+   "title": "Lam Research 4Q26 실적발표 : NAND 매출 두 배, 장기 마진 목표 상향",
+   "companies": [
+    {
+     "name": "Lam Research",
+     "ticker": "LRCX"
+    }
+   ],
+   "event": "4Q26 실적 발표",
+   "event_date": "2026-07-29",
+   "published_kst": "2026-07-29T21:00:00+09:00",
+   "revised_kst": "2026-11-20T21:46:13+09:00",
+   "revision": 1,
+   "summary": "6월 분기 Lam Research는 매출·GM·OPM·EPS가 모두 사상 최대였고, 매출을 뺀 세 지표는 가이던스 상단을 넘었다. 성장의 축이 파운드리에서 메모리, 특히 NAND 전환 투자로 옮겨 갔고, GM이 52%로 한 단계 올라선 데 이어 장기 목표도 GM 50%대 중반·OPM 40%대 중반으로 높였다. 다만 세율 상승, 운전자본 증가, 더는 '상향 편향'이 없다는 WFE 전망은 함께 봐야 한다.",
+   "path": "reports/lam-research-4q26-earnings.json"
+  },
+  {
    "slug": "meta-2q26-earnings",
    "type": "earnings",
    "title": "Meta 2Q26 실적발표 : 잉여현금 바닥, 컴퓨트·API 판매 예고",
@@ -3861,6 +4095,24 @@
    "path": "reports/meta-2q26-earnings.json"
   },
   {
+   "slug": "microsoft-4q26-earnings",
+   "type": "earnings",
+   "title": "Microsoft 4Q26 실적발표 : 효율로 끌어올린 Azure 43%, 회계 변경으로 줄어든 CapEx",
+   "companies": [
+    {
+     "name": "Microsoft",
+     "ticker": "MSFT"
+    }
+   ],
+   "event": "4Q26 실적 발표",
+   "event_date": "2026-07-29",
+   "published_kst": "2026-07-29T21:00:00+09:00",
+   "revised_kst": "2026-11-20T21:58:01+09:00",
+   "revision": 1,
+   "summary": "자체 가이던스를 넘은 매출 900억 달러, Azure +43%, 1Q27 Azure 가이던스 약 45%로 상업 부문의 가속이 확인됐다. 다만 EPS에는 일회성 이익 0.27달러가 섞여 있고, MPC 영업이익은 −14%다. 2026 역년 CapEx 기대치가 약 1,900억 달러에서 약 1,750억 달러로 낮아진 것은 리스 분류가 바뀐 결과이지 투자를 줄인 것이 아니다.",
+   "path": "reports/microsoft-4q26-earnings.json"
+  },
+  {
    "slug": "sk-hynix-2q26-earnings",
    "type": "earnings",
    "title": "SK하이닉스 2Q26 실적발표 : 10여 고객과 LTA 체결, 올해 투자 40조 원 후반",
@@ -3877,6 +4129,24 @@
    "revision": 1,
    "summary": "가격 상승(D램 약 30%, 낸드 50% 중반)과 출하 가이던스 달성으로 영업이익률이 76%까지 올랐다. 새로 나온 것은 10여 개 고객과 맺은 5년 기본 LTA와 2026년 투자 40조 원 후반이다. 다만 순이익 93.9조 원에는 투자자산 매각·평가이익 63.3조 원이 크게 들어 있어, EPS 서프라이즈(+85%)는 걸러서 봐야 한다.",
    "path": "reports/sk-hynix-2q26-earnings.json"
+  },
+  {
+   "slug": "vertiv-2q26-earnings",
+   "type": "earnings",
+   "title": "Vertiv 2Q26 실적발표 : 대형 프로젝트발 매출 지연, EMEA·APAC 반등",
+   "companies": [
+    {
+     "name": "Vertiv",
+     "ticker": "VRT"
+    }
+   ],
+   "event": "2Q26 실적 발표",
+   "event_date": "2026-07-29",
+   "published_kst": "2026-07-29T21:00:00+09:00",
+   "revised_kst": "2026-11-20T21:51:45+09:00",
+   "revision": 1,
+   "summary": "이익은 가이던스를 크게 웃돌고 현금도 강했지만, 매출은 대형·다단계 프로젝트의 시점 이동으로 가이던스에 못 미쳤다. 회사는 연간 전망을 모든 항목에서 올렸고, 하반기 함축 매출 증가율 약 45%에 더 많은 것을 걸었다.",
+   "path": "reports/vertiv-2q26-earnings.json"
   },
   {
    "slug": "bloom-energy-2q26-earnings",
@@ -3913,6 +4183,42 @@
    "revision": 1,
    "summary": "6월 분기는 매출 $3.66B로 사상 최대였고, 매출총이익률과 EPS는 가이던스 상단에 닿았다. 9월 분기 가이던스($4.0B)와 백로그 약 $12.5B로 하반기 가속은 숫자로 확인됐다. 반면 메모리 원가 역풍은 더 커진 채 2027년까지 이어지고, 2027년 WFE 성장률 전망은 '2026년보다 높음'에서 '비슷함(20%대 중반)'으로 낮아졌다. 2026년 KLA 매출 성장률이 WFE 성장률을 밑도는 점도 확인할 숙제로 남았다.",
    "path": "reports/kla-4q26-earnings.json"
+  },
+  {
+   "slug": "celestica-2q26-earnings",
+   "type": "earnings",
+   "title": "Celestica 2Q26 실적발표 : 2027년 성장 가속 예고, 랙 고객 OpenAI 공개",
+   "companies": [
+    {
+     "name": "Celestica",
+     "ticker": "CLS"
+    }
+   ],
+   "event": "2Q26 실적 발표",
+   "event_date": "2026-07-27",
+   "published_kst": "2026-07-27T21:00:00+09:00",
+   "revised_kst": "2026-11-20T21:55:05+09:00",
+   "revision": 1,
+   "summary": "가이던스 상단을 넘긴 분기에 연간 전망을 다시 올리고 2027년 성장 가속까지 예고해 수요의 지속성은 한 단계 더 확인됐다. 다만 마진 개선은 매출총이익률이 아니라 비용 레버리지에서 나왔고, 연간 전망은 4분기 매출 약 63.5억 달러·마진 약 8.8%를 요구해 하반기 쏠림이 커졌다.",
+   "path": "reports/celestica-2q26-earnings.json"
+  },
+  {
+   "slug": "infosys-1q27-earnings",
+   "type": "earnings",
+   "title": "Infosys 1Q27 실적발표 : 성장 가이던스 하향, AI 매출 비중 8.2%로 확대",
+   "companies": [
+    {
+     "name": "Infosys",
+     "ticker": "INFY"
+    }
+   ],
+   "event": "1Q27 실적 발표",
+   "event_date": "2026-07-23",
+   "published_kst": "2026-07-23T21:00:00+09:00",
+   "revised_kst": "2026-11-20T21:44:55+09:00",
+   "revision": 1,
+   "summary": "1Q27 매출은 인수 기여를 빼면 전분기와 거의 같았다. 회사는 FY27 매출 가이던스 상단을 3.5%에서 3.0%로 낮췄고, 이 가이던스에 들어 있는 유기적 성장 중간값은 약 2.3%에서 약 0.55%로 내려갔다. 공개된 AI 매출 8.2%와 영업이익률 21.1% 방어는 긍정적이다. 다만 회사가 AI발 가격 압축의 크기를 밝히지 않았고 계산상 AI 외 매출이 줄고 있어, 성장이 회복된다는 근거는 아직 약하다.",
+   "path": "reports/infosys-1q27-earnings.json"
   },
   {
    "slug": "intel-2q26-earnings",
@@ -4003,6 +4309,24 @@
    "revision": 1,
    "summary": "마진은 가이던스 상단을 넘었고, 연간 성장률·CAPEX·애리조나 투자가 한꺼번에 올라갔다. 3Q 총마진은 하반기 N2 희석 3~4%p 때문에 내려가고, 순이익 증가분 가운데 상당 부분은 설명되지 않은 영업외손익에서 나왔다. 영업 단의 체력은 확인됐지만 이익의 질과 하반기 현금흐름은 따로 봐야 한다.",
    "path": "reports/tsmc-2q26-earnings.json"
+  },
+  {
+   "slug": "asml-2q26-earnings",
+   "type": "earnings",
+   "title": "ASML 2Q26 실적발표 : 연 매출 가이던스 대폭 상향, 2027년 EUV는 수주로 거의 채워져",
+   "companies": [
+    {
+     "name": "ASML",
+     "ticker": "ASML"
+    }
+   ],
+   "event": "2Q26 실적 발표",
+   "event_date": "2026-07-15",
+   "published_kst": "2026-07-15T21:00:00+09:00",
+   "revised_kst": "2026-11-20T22:02:41+09:00",
+   "revision": 1,
+   "summary": "2Q26 매출과 총마진은 IBM 업그레이드 덕에 가이던스 상단을 넘었고, 연간 가이던스는 매출 430억~450억 유로(이전 360억~400억), 총마진 54~56%(이전 51~53%)로 올라갔다. 새로 확인된 것은 두 가지다. 2027년 Low NA EUV 물량이 수주로 거의 채워져 용량을 30% 늘리기로 한 것, 그리고 성장의 축이 메모리(시스템 매출 +75% 초과)로 넓어진 것이다.",
+   "path": "reports/asml-2q26-earnings.json"
   },
   {
    "slug": "micron-3q26-earnings",
@@ -4365,6 +4689,24 @@
    "path": "reports/nebius-1q26-earnings.json"
   },
   {
+   "slug": "softbank-4q26-earnings",
+   "type": "earnings",
+   "title": "소프트뱅크그룹 4Q26 실적발표 : OpenAI 재평가로 LTV 17%, 400억 달러 브리지 재가동",
+   "companies": [
+    {
+     "name": "SoftBank Group Corp.",
+     "ticker": "9984.T"
+    }
+   ],
+   "event": "4Q26 실적 발표(회사 표기 Q4 FY2025)",
+   "event_date": "2026-05-13",
+   "published_kst": "2026-05-13T21:00:00+09:00",
+   "revised_kst": "2026-11-20T22:02:35+09:00",
+   "revision": 1,
+   "summary": "OpenAI의 평가 기준이 사전가치 2,600억 달러에서 7,300억 달러로 올라 연간 순이익 ¥5조, NAV ¥40.1조, LTV 17.0%를 만든 분기다. 숫자는 비상장 지분 한 종목의 평가에 기대고 있다. 영업현금흐름은 적자로 돌아섰고, 다음 300억 달러 출자는 다시 1년 만기 무담보 브리지로 시작했다.",
+   "path": "reports/softbank-4q26-earnings.json"
+  },
+  {
    "slug": "tencent-1q26-earnings",
    "type": "earnings",
    "title": "Tencent 1Q26 실적발표 : AI 손실 늘어도 마진 유지, 하반기 CAPEX 대폭 증가 예고",
@@ -4615,6 +4957,24 @@
    "revision": 1,
    "summary": "1Q26 매출 $2.71B로 가이던스 $2.6B를 넘었고, 연간 매출 목표를 $11.5B(+27.7%)로, AI 목표를 $3.5B로 올렸다. 다만 성장의 상한은 이제 수요가 아니라 공급이다. 매출총이익률은 고객 구성 탓에 62.4%까지 내려왔고, 원가 상승분은 회사가 상당 부분 떠안고 있다.",
    "path": "reports/arista-1q26-earnings.json"
+  },
+  {
+   "slug": "cameco-1q26-earnings",
+   "type": "earnings",
+   "title": "Cameco 1Q26 실적발표 : 실현가격은 가이던스 위로, 미국 원자로는 ‘20기’ 협상 중",
+   "companies": [
+    {
+     "name": "Cameco",
+     "ticker": "CCJ"
+    }
+   ],
+   "event": "1Q26 실적 발표",
+   "event_date": "2026-05-05",
+   "published_kst": "2026-05-05T21:00:00+09:00",
+   "revised_kst": "2026-11-20T21:59:26+09:00",
+   "revision": 1,
+   "summary": "1Q26은 우라늄 실현가격(CA$91.26/lb, 연간 가이던스 CA$85~89 상단 위)과 웨스팅하우스 조정 EBITDA(+33%) 덕에 조정 EPS가 0.16 → 0.47로 뛰었다. 다만 경영진은 전년 대비 개선이 주로 인도 시점과 우라늄 가격 개선 덕이지 근본적 변화가 아니라고 선을 그었고, 연간 가이던스는 그대로다. 새로 나온 것은 미국에서 거론되는 원자로가 10기가 아니라 20기라는 경영진의 틀과 ‘시장연동 계약 중간값 US$115~120’ 주장이다. 반면 미국 정부 본계약과 장납기 품목 발주는 아직 없고, 영업현금흐름은 적자로 돌아섰다.",
+   "path": "reports/cameco-1q26-earnings.json"
   },
   {
    "slug": "eaton-1q26-earnings",
@@ -4977,6 +5337,24 @@
    "path": "reports/celestica-1q26-earnings.json"
   },
   {
+   "slug": "hyosung-heavy-1q26-earnings",
+   "type": "earnings",
+   "title": "효성중공업 1Q26 실적발표 : 수주 4.2조로 잔고 15.1조, 중공업 마진은 13%대로 후퇴",
+   "companies": [
+    {
+     "name": "Hyosung Heavy Industries",
+     "ticker": "298040.KS"
+    }
+   ],
+   "event": "1Q26 실적 발표",
+   "event_date": "2026-04-24",
+   "published_kst": "2026-04-24T21:00:00+09:00",
+   "revised_kst": "2026-11-20T21:47:42+09:00",
+   "revision": 1,
+   "summary": "중공업 신규수주가 한 분기에 4조1,745억원(종전 분기 최대의 약 1.9배)으로 늘어 잔고가 11.9조원에서 15.1조원이 됐다. 반면 중공업 영업이익률이 20.2%에서 13.4%로 내려가 이익은 4Q25보다 크게 줄었다. 수주의 규모는 확인됐지만, 회사가 2분기에 몰려 있다고 밝힌 고수익 오더가 마진을 되돌릴지는 이 자료로 확인되지 않는다.",
+   "path": "reports/hyosung-heavy-1q26-earnings.json"
+  },
+  {
    "slug": "infosys-4q26-earnings",
    "type": "earnings",
    "title": "Infosys 4Q26 실적발표 : FY27 성장 눈높이 하향, 인력은 줄고 수주는 버팀",
@@ -5121,6 +5499,24 @@
    "path": "reports/vertiv-1q26-earnings.json"
   },
   {
+   "slug": "asm-international-1q26-earnings",
+   "type": "earnings",
+   "title": "ASM International 1Q26 실적발표 : 2분기 €980m로 가속, 운전자본에 현금 묶여",
+   "companies": [
+    {
+     "name": "ASM International",
+     "ticker": "ASM.AS"
+    }
+   ],
+   "event": "1Q26 실적 발표",
+   "event_date": "2026-04-21",
+   "published_kst": "2026-04-21T21:00:00+09:00",
+   "revised_kst": "2026-11-20T21:54:17+09:00",
+   "revision": 1,
+   "summary": "1Q26 매출은 가이던스 상단(€863m), 조정 영업이익률은 분기 최고(33.1%)였다. 2Q 가이던스 €980m ±5%로 4Q25에 예고한 가속이 숫자로 확인됐다. 반대로 매출채권이 크게 늘어 FCF는 두 분기 연속 마이너스였고, 신규 주문·수주잔고 수치가 공시에서 빠졌다. 그래서 가시성은 공시 수치보다 '올해 물량은 다 찼다'는 경영진 발언에 기댄다.",
+   "path": "reports/asm-international-1q26-earnings.json"
+  },
+  {
    "slug": "tsmc-1q26-earnings",
    "type": "earnings",
    "title": "TSMC 1Q26 실적발표 : 총마진 66% 돌파, N3 재증설과 ‘30% 초과’ 성장",
@@ -5137,6 +5533,42 @@
    "revision": 1,
    "summary": "1Q26은 매출이 가이던스 상단을 넘고 총마진이 가이던스 상단을 1.2%p 웃돈 분기다. 회사는 2026년 성장 전망을 ‘30% 초과’로 올렸고, 목표 용량에 이른 노드에는 증설하지 않던 관행을 깨고 N3를 다시 늘리며 CAPEX 범위 상단을 택했다. 2Q까지는 마진이 오르지만 하반기에는 N2·해외 팹 희석과 중동발 소재 비용이 겹치고, 스마트폰 매출 감소는 소비자 수요 둔화의 첫 신호다.",
    "path": "reports/tsmc-1q26-earnings.json"
+  },
+  {
+   "slug": "asml-1q26-earnings",
+   "type": "earnings",
+   "title": "ASML 1Q26 실적발표 : 연 매출 가이던스 상향, EUV는 내년 80대 체제로",
+   "companies": [
+    {
+     "name": "ASML",
+     "ticker": "ASML"
+    }
+   ],
+   "event": "1Q26 실적 발표",
+   "event_date": "2026-04-15",
+   "published_kst": "2026-04-15T21:00:00+09:00",
+   "revised_kst": "2026-11-20T21:50:47+09:00",
+   "revision": 1,
+   "summary": "1Q26 매출은 가이던스 안, 총마진은 상단인 53.0%였다. 회사는 2026년 매출 가이던스를 360억~400억 유로로 올리고, 비EUV 전망을 보합에서 성장으로 바꿨다. 다만 2분기 마진 가이던스는 51~52%로 내려가고, FCF는 −26억 유로로 돌아섰으며, 수주 금액은 공개하지 않았다. 숫자로 확인할 수 있는 것은 하반기에 가서야 나온다.",
+   "path": "reports/asml-1q26-earnings.json"
+  },
+  {
+   "slug": "tcs-4q26-earnings",
+   "type": "earnings",
+   "title": "TCS 4Q26 실적발표 : 메가딜 3건으로 수주 120억 달러, 26% 마진은 '장기' 목표로",
+   "companies": [
+    {
+     "name": "Tata Consultancy Services",
+     "ticker": "TCS.NS"
+    }
+   ],
+   "event": "4Q26 실적 발표",
+   "event_date": "2026-04-09",
+   "published_kst": "2026-04-09T21:00:00+09:00",
+   "revised_kst": "2026-11-20T21:57:06+09:00",
+   "revision": 1,
+   "summary": "4Q26 매출은 고정환율 기준 전분기 대비 +1.2%로 3분기 연속 늘었고, 수주(TCV $12B)와 AI 매출(연환산 $2.3B)은 직전 분기에 세운 기준을 넘었다. 다만 4Q 마진 개선(+10bp)은 환율 덕(+110bp)이었고, 26% 마진은 '장기' 목표로 물러났다. 1Q27에는 임금 인상 역풍 150~200bp가 기다리고 있어 성장 회복과 마진 방어를 동시에 증명해야 하는 국면이다.",
+   "path": "reports/tcs-4q26-earnings.json"
   },
   {
    "slug": "pdd-4q25-earnings",
@@ -6508,7 +6940,7 @@
   }
  ],
  "street": {
-  "updated_kst": "2026-11-20T18:28:13+09:00",
+  "updated_kst": "2026-11-20T21:56:20+09:00",
   "path": "street.json"
  },
  "calendar": {

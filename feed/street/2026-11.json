@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "month": "2026-11",
- "updated_kst": "2026-11-20T18:28:13+09:00",
+ "updated_kst": "2026-11-20T21:56:20+09:00",
  "items": [
   {
    "id": "blackrock-international-investing-how-are-ai-and-geopoliti",
@@ -138,6 +138,44 @@
     "tier": "standard"
    },
    "note": "유튜브 자동 생성 자막(en) 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
+  },
+  {
+   "id": "vanguard-vanguard-warned-about-risks-of-ai-boom-in-2027-a",
+   "group": "자산운용",
+   "org": "Vanguard",
+   "person": null,
+   "kind": "report",
+   "title": "Vanguard, 2027년 AI 붐의 위험을 경고하고 미국 경제 성장률 3%를 전망",
+   "title_orig": "Vanguard Warned about Risks of AI Boom in 2027 and Forecasted US Economic Growth of 3%",
+   "url": "https://incrypted.com/en/vanguard-warned-about-risks-of-ai-boom-in-2027-and-forecast-us-economic-growth-of-3",
+   "outlet": "INCRYPTED",
+   "published_kst": "2026-11-20T12:43:00+09:00",
+   "stance": {
+    "ai_tech": -1,
+    "market": 0
+   },
+   "args": [
+    "밸류에이션",
+    "투자 회수",
+    "쏠림",
+    "금리·거시"
+   ],
+   "summary": "Vanguard는 AI 인프라 투자가 내년 미국 경제 성장률을 약 3%로 떠받치겠지만, 인프라 구축에서 대중적 도입으로 넘어가는 시기에 불확실성이 가장 크다고 본다. 매끄러운 전환은 가능성이 낮고 복잡한 시나리오에서는 주식시장이 크게 조정받을 수 있다고 한다. 향후 3~5년 미국 주식의 연평균 수익률은 5~8%로 전망하며, AI 섹터를 떠나지 말고 인프라 쏠림을 줄여 분산하라고 권고한다.",
+   "points": [
+    "수석 글로벌 이코노미스트 Joe Davis에 따르면 대규모 AI 인프라 지출이 내년 미국 경제 성장률을 약 3%로 떠받칠 것이다. 다만 가장 큰 불확실성은 인프라 구축에서 기술의 광범위한 도입으로 넘어가는 시기에 나타난다.",
+    "과거 기술 사이클을 보면 대규모 투자 시기 뒤에, 기술의 대중적 도입이 경제적 성과를 내기 시작하기 전까지 지출이 일시적으로 둔화될 수 있다.",
+    "애널리스트들은 AI 기업의 주요 위험으로 다음을 꼽는다: 현재 주가 밸류에이션을 정당화할 만큼 AI 매출 성장이 빠르지 않은 상황, 높은 차입 비용과 투자 둔화, 데이터센터 칩의 빠른 노후화, 더 저렴한 경쟁 모델의 등장, 컴퓨팅 파워가 사용자의 지불 의향보다 빨리 가동되는 상황. 이 경우 단기 실적이 강해도 안정적인 밸류에이션이 보장되지 않는다.",
+    "Vanguard는 대중적 AI 도입으로의 매끄러운 전환 가능성이 낮다고 보며, 더 복잡한 시나리오에서는 주식시장이 크게 조정받을 수 있다고 본다.",
+    "그에 따라 Vanguard는 향후 3~5년간 미국 주식의 연평균 수익률을 5~8%로 전망한다.",
+    "Vanguard에 따르면 2027년에는 강한 기업 이익이 미국, 유럽, 일본, 신흥국 주식시장을 떠받칠 것이다.",
+    "Vanguard는 투자자에게 AI 섹터에서 완전히 빠져나오라고 촉구하지는 않지만, 기술 인프라를 직접 구축하는 기업에 대한 과도한 포트폴리오 쏠림은 줄이라고 권고한다.",
+    "Vanguard는 전략의 핵심 원칙을 \"투자를 유지하되 범위를 넓혀라\"라고 요약한다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
   },
   {
    "id": "blackrock-japan-weeks-2026-what-s-shaping-japan-s-investme",
