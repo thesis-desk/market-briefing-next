@@ -1,8 +1,105 @@
 {
  "schema": 1,
  "month": "2026-11",
- "updated_kst": "2026-11-20T23:26:47+09:00",
+ "updated_kst": "2026-11-21T04:30:00+09:00",
  "items": [
+  {
+   "id": "fed-feds-note-when-productivity-booms-do-interest-ra",
+   "group": "중앙은행·국제기구",
+   "org": "미 연준",
+   "person": "Antoine Lepetit, David Miller",
+   "kind": "publication",
+   "title": "FEDS Note: 생산성이 급증하면 금리는 오르는가?",
+   "title_orig": "FEDS Note: When productivity booms, do interest rates rise?",
+   "url": "https://www.federalreserve.gov/econres/notes/feds-notes/when-productivity-booms-do-interest-rates-rise-20261120.html",
+   "outlet": "FEDS Notes",
+   "published_kst": "2026-11-21T04:30:00+09:00",
+   "stance": {
+    "ai_tech": 0,
+    "market": null
+   },
+   "args": [
+    "금리·거시",
+    "수요·채택"
+   ],
+   "summary": "연준 스태프 두 명은 생산성 성장 기대가 높아지는 충격이 오히려 10년물 국채금리와 r*(장기 균형 실질금리) 대용치를 낮춘다고 VAR 분석으로 보인다. 이에 따라 2022년 말 이후 AI 기대가 생산성 전망을 밝혔더라도 최근 장기금리 급등은 설명되지 않으며, 다른 거시 요인을 가리킨다고 결론 짓는다. AI 투자 사이클의 밸류에이션이나 거품 여부에 대한 판단은 내놓지 않는다.",
+   "points": [
+    "미래 생산성 성장을 예고하는 뉴스 충격은 10년물 국채금리와 r* 대용치를 모두 낮춘다.",
+    "금리 하락은 단기금리의 일시적 소폭 상승보다 기간프리미엄의 큰 하락이 더 크기 때문이다.",
+    "ChatGPT 출시 이후 미래 TFP 뉴스는 현재 10년물 실질금리에 누적 영향이 거의 없었다.",
+    "AI 낙관론으로는 최근 장기 국채금리 급등을 설명할 수 없으며 다른 거시 요인이 원인이다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "웹 페이지에서 뽑은 본문 기준. 페이지 앞뒤의 메뉴·다른 글 목록이 섞였을 수 있음"
+  },
+  {
+   "id": "blackrock-portfolio-construction-is-the-60-40-portfolio-de",
+   "group": "자산운용",
+   "org": "BlackRock",
+   "person": null,
+   "kind": "publication",
+   "title": "포트폴리오 구성: 60/40 포트폴리오는 끝났는가?",
+   "title_orig": "Portfolio Construction: Is the 60/40 Portfolio Dead?",
+   "url": "https://www.youtube.com/watch?v=_wNEg2Lte_c",
+   "outlet": "BlackRock (유튜브)",
+   "published_kst": "2026-11-21T02:11:05+09:00",
+   "stance": {
+    "ai_tech": 1,
+    "market": 0
+   },
+   "args": [
+    "쏠림",
+    "금리·거시",
+    "자금 조달·신용",
+    "밸류에이션"
+   ],
+   "summary": "60/40 포트폴리오는 죽지 않았지만 채권 헤지 기능이 약해져 더 동적인 운용과 크레딧 중심의 인컴 확보가 필요하다고 본다. AI는 장기적으로 계속 선호하고 비중도 확대(overweight) 상태이나, 모멘텀·고베타 종목에 쏠려 붐비는 거래가 되었다고 보고 전술적으로 비중을 줄여 고품질 기업 쪽으로 옮겼다.",
+   "points": [
+    "60/40은 유효하지만 지난 10년과 달리 더 동적인 운용과 채권 쪽의 변화가 필요하다.",
+    "인플레이션과 대규모 채권 공급으로 장기 국채의 헤지 기능이 2000~2020년보다 불안정해졌다.",
+    "분산된 크레딧 포트폴리오로 약 7%의 수익률을 확보할 수 있는 기회가 오랜만에 생겼다.",
+    "AI는 장기적으로 선호하고 비중확대를 유지하되, 모멘텀·고베타 종목은 쏠림 때문에 전술적으로 줄였다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "유튜브 자막(제작자 제공)(en) 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
+  },
+  {
+   "id": "blackrock-the-new-rules-of-diversification-stocks-bonds-an",
+   "group": "자산운용",
+   "org": "BlackRock",
+   "person": "Rich Mat, Tom Becker (진행: John Dioro)",
+   "kind": "publication",
+   "title": "분산투자의 새 규칙: 주식, 채권, 대안투자",
+   "title_orig": "The New Rules of Diversification: Stocks, Bonds and Alternative Investments",
+   "url": "https://www.youtube.com/watch?v=mkRpaOR3J2k",
+   "outlet": "BlackRock (유튜브)",
+   "published_kst": "2026-11-21T00:54:11+09:00",
+   "stance": {
+    "ai_tech": null,
+    "market": 0
+   },
+   "args": [
+    "금리·거시",
+    "쏠림"
+   ],
+   "summary": "블랙록 운용역들은 2022년 이후 디스인플레이션에서 리플레이션 국면으로 바뀌어 주식·채권 상관이 무너졌고, 10년물 금리가 5%를 넘는 등 거시 환경이 불안정하다고 본다. 주식·채권만으로는 분산이 부족하므로 시장중립 헤지펀드 같은 비상관 대안 수익원을 코어 포트폴리오에 더하라고 권한다. 시장 방향에 대한 낙관이나 경계는 드러내지 않고 민첩한 대응을 강조한다.",
+   "points": [
+    "2022년은 디스인플레이션에서 리플레이션으로 넘어간 분기점이었고, 이후 주식과 채권이 함께 움직이며 상관관계가 사라졌다.",
+    "높아진 금리와 지속적 성장 환경에서 채권과 주식 모두 성과를 낼 수 있지만 환경 변화에 민첩하게 적응해야 한다.",
+    "최근 6~12개월 주식시장은 테마·모멘텀 주도였으나 여름 이후 모멘텀이 약해지며 종목별 승자와 패자를 가리는 일이 중요해졌다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "유튜브 자동 생성 자막(en) 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
+  },
   {
    "id": "ark-cathie-wood-on-ark-s-anthropic-position-our-conf",
    "group": "자산운용",

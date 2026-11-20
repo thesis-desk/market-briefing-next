@@ -1,7 +1,111 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-20T23:26:47+09:00",
+ "generated_kst": "2026-11-21T04:30:00+09:00",
  "reports": [
+  {
+   "slug": "fed-feds-note-when-productivity-booms-do-interest-ra",
+   "type": "article",
+   "title": "미 연준 FEDS Notes : 생산성 기대가 커지면 장기금리는 오르지 않고 내린다",
+   "companies": [
+    {
+     "name": "Federal Reserve",
+     "ticker": null
+    }
+   ],
+   "published_kst": "2026-11-21T02:37:10+09:00",
+   "revised_kst": "2026-11-21T02:37:10+09:00",
+   "revision": 1,
+   "summary": "연준 스태프의 VAR 분석 결과는 교과서 이론과 반대다. 미래 생산성에 대한 호재는 10년 국채금리와 r* 대리지표를 모두 낮췄다. 이 모형으로는 'AI 낙관이 장기금리를 끌어올렸다'는 설명이 성립하지 않는다. 다만 1990년대 후반 한 차례의 경험에 부분적으로 기대는 추정이고, 그림 속 크기는 본문에 없다. 그래서 AI 성장주의 할인율 논쟁에서 금리 상방 위험 하나를 덜어 주는 근거로만 읽는다.",
+   "path": "reports/fed-feds-note-when-productivity-booms-do-interest-ra.json"
+  },
+  {
+   "slug": "together-qwen3-tts",
+   "type": "article",
+   "title": "Together AI : Qwen3 TTS를 실시간 음성 에이전트용으로 문자 100만 개당 20달러에 제공",
+   "companies": [
+    {
+     "name": "Together AI",
+     "ticker": null
+    },
+    {
+     "name": "Qwen",
+     "ticker": null
+    }
+   ],
+   "published_kst": "2026-11-21T02:27:11+09:00",
+   "revised_kst": "2026-11-21T02:27:11+09:00",
+   "revision": 1,
+   "summary": "새 모델의 성능 발표라기보다, Apache 2.0으로 공개된 Qwen 음성 모델을 Together AI가 지연을 줄인 서빙과 함께 판매하기 시작했다는 출시 공지다. 모델은 누구나 호스팅할 수 있으므로 차별점은 서빙 지연과 API 완성도뿐이다. 그 핵심 수치인 첫 음성 97ms는 최선값 하나만 공개됐고 측정 조건이 없어, 판단의 근거로 쓰기에는 약하다.",
+   "path": "reports/together-qwen3-tts.json"
+  },
+  {
+   "slug": "nvidia-dev-reducing-rollout-bottlenecks-in-reinforcement",
+   "type": "article",
+   "title": "NVIDIA Technical Blog : RL 학습의 병목은 롤아웃 추론이고, Dynamo가 라우팅·가중치 배포·복구로 이를 줄인다",
+   "companies": [
+    {
+     "name": "NVIDIA",
+     "ticker": null
+    }
+   ],
+   "published_kst": "2026-11-21T02:24:56+09:00",
+   "revised_kst": "2026-11-21T02:24:56+09:00",
+   "revision": 1,
+   "summary": "NVIDIA는 RL post-training의 롤아웃을 추론 서빙 문제로 보고, 학습 루프 안에 Dynamo를 넣는 제품 글을 냈다. 성능 근거는 측정 조건이 없는 고객사의 '최대' 수치뿐이다. 공개된 비용 절감 폭(GPU-시간 최대 5%)은 GPU 수요를 줄일 만한 크기가 아니다. 그래서 NVIDIA에는 추론 소프트웨어 장악력을 넓힌다는 점에서 약한 호재로 본다.",
+   "path": "reports/nvidia-dev-reducing-rollout-bottlenecks-in-reinforcement.json"
+  },
+  {
+   "slug": "deepmind-institute-artificial-symbiotic-intelligence",
+   "type": "article",
+   "title": "Google DeepMind Institute : AGI는 단일 거대 모델이 아니라 사람과 에이전트가 섞인 사회로 온다",
+   "companies": [
+    {
+     "name": "Google DeepMind",
+     "ticker": null
+    }
+   ],
+   "published_kst": "2026-11-21T02:21:31+09:00",
+   "revised_kst": "2026-11-21T02:21:31+09:00",
+   "revision": 1,
+   "summary": "프런티어 모델을 만드는 쪽에서 나온 글인데도, 능력이 모델 가중치에만 있지 않고 오케스트레이션 하네스·공유 지식베이스·프로토콜과 제도라는 골격, 그리고 인간 사용자에게 있다고 본다. 다만 수치나 사례 없이 쓴 비전 에세이여서 투자 판단에 쓸 근거는 약하다. 종목 단위로 판정할 근거도 없다.",
+   "path": "reports/deepmind-institute-artificial-symbiotic-intelligence.json"
+  },
+  {
+   "slug": "deepmind-institute-cheaters-and-whistleblowers-in-the-agent",
+   "type": "article",
+   "title": "Google DeepMind Institute : 에이전트 무리의 안전은 개별 모델 정렬만이 아니라 제도와 인프라 설계에 달렸다",
+   "companies": [
+    {
+     "name": "Google DeepMind",
+     "ticker": null
+    }
+   ],
+   "published_kst": "2026-11-21T02:18:14+09:00",
+   "revised_kst": "2026-11-21T02:18:14+09:00",
+   "revision": 1,
+   "summary": "같은 Gemini 인스턴스 100개를 묶자 채점기 허점이 30분 만에 번졌고, 허점을 안 에이전트 중 다수는 신고했지만 막을 장치가 없었다. 단일 실험이라 일반화 근거는 약하다. 다만 멀티 에이전트를 배치할 때 검증기와 거버넌스 계층이 별도의 비용·위험 항목이라는 점은 분명히 보여 준다. 종목 판정의 근거는 거의 주지 않는 글이다.",
+   "path": "reports/deepmind-institute-cheaters-and-whistleblowers-in-the-agent.json"
+  },
+  {
+   "slug": "sixsigma-30-100",
+   "type": "article",
+   "title": "식스시그마 : 올해 AI 안경 부정행위는 모두 시험장 사람이 잡았고, 아무도 못 본 시험의 만점은 어느 쪽으로도 증명되지 않는다",
+   "companies": [
+    {
+     "name": "Meta",
+     "ticker": null
+    },
+    {
+     "name": "EssilorLuxottica",
+     "ticker": null
+    }
+   ],
+   "published_kst": "2026-11-21T02:14:18+09:00",
+   "revised_kst": "2026-11-21T02:14:18+09:00",
+   "revision": 1,
+   "summary": "AI 안경 커닝은 장비가 아니라 시험장의 사람 눈으로만 걸러지고 있고, 탐지기는 올해 수능에 없다. 그래서 점수의 신뢰가 '시험장이 안경을 어떻게 확인했는가'로 옮겨 가고 있다는 주장이다. 다만 이 영상은 상장사에 대한 직접 근거가 약해 종목 판정은 못 한다(확신 낮음).",
+   "path": "reports/sixsigma-30-100.json"
+  },
   {
    "slug": "deepmind-institute-principles-for-a-new-utopianism",
    "type": "article",
@@ -1290,7 +1394,7 @@
   {
    "slug": "sc26",
    "type": "event",
-   "title": "SC26 : HPC 신규 조달은 2027년 차세대 물량으로 밀렸고, 그 사이 네이티브 FP64 수요는 AMD 몫",
+   "title": "SC26 : HPC 교체 수요는 2027년 차세대 칩까지 멈췄고, 그 사이 FP64 입찰은 AMD 몫",
    "companies": [
     {
      "name": "엔비디아",
@@ -1308,9 +1412,9 @@
    "event": "SC26",
    "event_date": "2026-11-15",
    "published_kst": "2026-11-18T15:00:30+09:00",
-   "revised_kst": "2026-11-18T15:35:31+09:00",
-   "revision": 2,
-   "summary": "SC26 1판에서 확인된 것은 HPC 신규 설치가 사라진 것이 아니라 2027~2028년 차세대 물량을 기다리며 밀렸다는 점이다. 그 공백기의 네이티브 FP64 수요는 AMD MI430X가 먼저 받는다. 엔비디아는 Rubin HPC를 2028년으로 예고하면서 FP64 수치를 내놓지 않았고, 대신 CPO·Vera CPU·스케줄러로 HPC 쪽 입지를 넓히려 한다.",
+   "revised_kst": "2026-11-21T02:44:49+09:00",
+   "revision": 3,
+   "summary": "SC26의 수치로 보면 HPC 구매는 2027~2028년 차세대 칩을 기다리며 멈춘 공백기일 가능성이 크다(새 하드웨어가 AI 팩토리로 갔다는 해석도 맞선다). 그 사이 네이티브 FP64가 필요한 입찰은 AMD가 가져갈 가능성이 크다. 엔비디아는 HPC 전용 GPU를 2028년에야 내놓지만 CPU 전용 HPC와 광 네트워킹으로 영역을 넓히고 있다. 인텔은 CPU 전용 HPC에서도 밀려나고 있다.",
    "path": "reports/sc26.json"
   },
   {
@@ -7584,11 +7688,11 @@
   }
  ],
  "street": {
-  "updated_kst": "2026-11-20T23:26:47+09:00",
+  "updated_kst": "2026-11-21T04:30:00+09:00",
   "path": "street.json"
  },
  "calendar": {
-  "updated_kst": "2026-11-20T21:19:40+09:00",
+  "updated_kst": "2026-11-21T02:27:21+09:00",
   "path": "calendar.json"
  },
  "datasets": [
