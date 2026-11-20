@@ -1,7 +1,163 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-21T04:30:00+09:00",
+ "generated_kst": "2026-11-21T05:53:46+09:00",
  "reports": [
+  {
+   "slug": "ignite-2026",
+   "type": "event",
+   "title": "Microsoft Ignite 2026 : 마이크로소프트는 AI 원가를 자사 모델·라우터로 옮기고, 과금은 사용량으로 넓힌다",
+   "companies": [
+    {
+     "name": "마이크로소프트",
+     "ticker": null
+    },
+    {
+     "name": "엔비디아",
+     "ticker": null
+    }
+   ],
+   "event": "Microsoft Ignite 2026",
+   "event_date": "2026-11-17",
+   "published_kst": "2026-11-21T05:53:46+09:00",
+   "revised_kst": "2026-11-21T05:53:46+09:00",
+   "revision": 1,
+   "summary": "이번 Ignite에서 마이크로소프트는 Copilot의 일상 작업을 자사 MAI 모델과 자사 라우터(Auto·Decision-1.1)로 처리하고, 에이전트 서비스마다 사용량 계량기를 붙이는 구조를 갖췄다. 방향은 마이크로소프트에 유리하다. 다만 성능·가격 수치는 모두 회사 측정이고 일부는 출시 할인가 기준이며, 매출·처리 비중·마이아 배치 물량은 하나도 공개되지 않았다.",
+   "path": "reports/ignite-2026.json"
+  },
+  {
+   "slug": "goldman-goldman-s-tim-moe-on-upgrading-india-prefering-k",
+   "type": "article",
+   "title": "Goldman Sachs(팀 모) : AI 쏠림에서 분산할 때, 대만을 줄여 인도를 사고 한국은 낙폭이 과하다",
+   "companies": [
+    {
+     "name": "Goldman Sachs",
+     "ticker": null
+    }
+   ],
+   "published_kst": "2026-11-21T05:45:41+09:00",
+   "revised_kst": "2026-11-21T05:45:41+09:00",
+   "revision": 1,
+   "summary": "골드만삭스의 아시아 전략은 AI 하드웨어 비중을 줄이는 쪽으로 방향을 틀었다. 대만을 낮춰 인도를 올렸고, 중국에서는 A주 대신 H주를 고른다. 한국은 메모리 비관이 지나치게 반영됐다며 비중확대를 지켰지만, AI 심리가 먼저 진정돼야 한다는 조건을 달았고 바닥 시점은 말하지 않았다. 인도·중국 판단의 근거인 이익 가속 전망은 골드만 자체 추정이라 검증 장치가 약하다.",
+   "path": "reports/goldman-goldman-s-tim-moe-on-upgrading-india-prefering-k.json"
+  },
+  {
+   "slug": "apple-ml-depth-pro-2-monocular",
+   "type": "article",
+   "title": "Apple Machine Learning Research : 사진과 영상을 처리하는 한 네트워크로 깊이 추정의 선명도와 시간 일관성을 함께 잡았다",
+   "companies": [
+    {
+     "name": "Apple",
+     "ticker": null
+    }
+   ],
+   "published_kst": "2026-11-21T05:35:52+09:00",
+   "revised_kst": "2026-11-21T05:35:52+09:00",
+   "revision": 1,
+   "summary": "Depth Pro 2는 2024년 Depth Pro를 영상과 실시간 카메라 입력까지 넓힌 연구다. 공개 페이지의 본문과 캡션에는 성능 수치가 없어 '모든 축에서 선행 연구를 앞선다'는 주장을 이 글만으로는 검증할 수 없다. 코드와 가중치를 공개했으므로 Apple만의 독점 우위로 이어진다고 보기 어렵고, Apple에 대한 투자 판단은 중립이며 근거도 약하다.",
+   "path": "reports/apple-ml-depth-pro-2-monocular.json"
+  },
+  {
+   "slug": "deepmind-institute-bending-the-curve-of-discovery-ai-in",
+   "type": "article",
+   "title": "Google DeepMind Institute : AI는 과학의 '발명 방법'을 바꾸고 있지만 병목은 실험·검증으로 내려갔다",
+   "companies": [
+    {
+     "name": "Google DeepMind",
+     "ticker": null
+    }
+   ],
+   "published_kst": "2026-11-21T05:33:50+09:00",
+   "revised_kst": "2026-11-21T05:33:50+09:00",
+   "revision": 1,
+   "summary": "구글 쪽 연구진은 Gemini 로그·특화 모델 목록·설문을 근거로 AI가 과학의 범용 기술이며 '발명 방법의 발명'이 될 수 있다고 주장한다. 그러나 같은 데이터가 보여 주는 핵심은 가치가 막히는 곳이 모델이 아니라 습식 실험·검증·임상이라는 점이다. 투자 시사점은 과학용 모델 자체보다 검증 인프라와 오케스트레이션 계층 쪽에 있다고 보며, 종목 판정은 근거가 얇아 대부분 중립·저확신이다.",
+   "path": "reports/deepmind-institute-bending-the-curve-of-discovery-ai-in.json"
+  },
+  {
+   "slug": "deepmind-institute-the-case-for-global-benefit-from-ai",
+   "type": "article",
+   "title": "Google DeepMind Institute : AI의 혜택은 개발에 기여하지 않은 사람까지 포함해 모두가 누려야 할 도덕적 권리다",
+   "companies": [
+    {
+     "name": "Google DeepMind",
+     "ticker": null
+    }
+   ],
+   "published_kst": "2026-11-21T05:30:25+09:00",
+   "revised_kst": "2026-11-21T05:30:25+09:00",
+   "revision": 1,
+   "summary": "구글 딥마인드 연구소가 권리·호혜·공정·선행이라는 네 가지 논거로 'AI 혜택은 전 세계 모두의 몫'이라는 규범을 세운 에세이를 냈다. 수치와 사업 약속은 거의 없다. 실행안(경량 모델 보급, 공익 용도 보조, 가중치 공개)은 회사 재량으로 조절할 수 있는 일이고, 원문이 든 자사 사례도 AlphaFold 공개 하나뿐이다. 따라서 투자 판단을 바꿀 새 정보라기보다 앞으로의 접근·가격 정책에 명분을 미리 깔아 두는 글로 읽는 편이 맞다.",
+   "path": "reports/deepmind-institute-the-case-for-global-benefit-from-ai.json"
+  },
+  {
+   "slug": "anthropic-formal-verification",
+   "type": "article",
+   "title": "Anthropic : LLM으로 형식 검증을 대량 생산할 수 있게 됐고, 보안의 기본 수단이 '찾기'에서 '증명'으로 옮겨 간다",
+   "companies": [
+    {
+     "name": "Anthropic",
+     "ticker": null
+    },
+    {
+     "name": "Theorem",
+     "ticker": null
+    }
+   ],
+   "published_kst": "2026-11-21T05:26:59+09:00",
+   "revised_kst": "2026-11-21T05:26:59+09:00",
+   "revision": 1,
+   "summary": "Claude가 OSS-Fuzz 라이브러리 123개의 RISC-V 바이너리에서 '64MB 미만 입력에 크래시 없음'을 증명한 결과는, 형식 검증이 소수 전문가의 수작업에서 토큰을 쓰는 작업으로 바뀌고 있다는 것을 보여 준다. 다만 증명의 전제(단일 스레드 정적 RISC-V·musl, ASan이 잡는 범위)가 실제 배포 환경과 다르고, 절대 비용과 결함 수정본의 반영 여부는 공개되지 않았다. 그래서 '증명된 소프트웨어'가 실제 운영 환경에 닿기까지는 아직 한 단계가 남아 있다고 본다.",
+   "path": "reports/anthropic-formal-verification.json"
+  },
+  {
+   "slug": "openai-combatting-adversarial-distillation",
+   "type": "article",
+   "title": "OpenAI : 적대적 증류는 안전·국가안보 문제이며, 추론 흔적 보호와 캠페인 단속을 겹쳐서 막는다",
+   "companies": [
+    {
+     "name": "OpenAI",
+     "ticker": null
+    }
+   ],
+   "published_kst": "2026-11-21T05:22:28+09:00",
+   "revised_kst": "2026-11-21T05:22:28+09:00",
+   "revision": 1,
+   "summary": "OpenAI가 증류 방어를 지식재산 문제에서 안전·국가안보 문제로 옮겨 짜고, 추론 탈취 공격 성공률을 54.0%에서 0.2%로 낮췄다고 공개했다. 수치는 극적이지만 모두 자체 평가다. 투자 관점의 핵심은 두 가지다. 첫째, 미국 프런티어 모델사가 증류에 맞서 해자를 지키려 한다. 둘째, OpenAI는 DeepSeek·Moonshot AI를 증류 시도 주체로 지목하면서 외국 행위자 제재 입법과 수출통제 관련 법안을 지지한다는 입장을 다시 밝혔다. 원문에 지명된 상장 종목은 없다.",
+   "path": "reports/openai-combatting-adversarial-distillation.json"
+  },
+  {
+   "slug": "openai-introducing-medchembench",
+   "type": "article",
+   "title": "OpenAI : AI는 분자 구조는 거의 정확히 읽지만, 다음에 시험할 화합물 고르기와 물성 수치 예측은 아직 절반 수준이다",
+   "companies": [
+    {
+     "name": "OpenAI",
+     "ticker": null
+    }
+   ],
+   "published_kst": "2026-11-21T05:17:53+09:00",
+   "revised_kst": "2026-11-21T05:17:53+09:00",
+   "revision": 1,
+   "summary": "OpenAI가 의약화학 추론 벤치마크 MedChemBench를 내놨다. 자사 최신 모델은 99문항에서 80%대 중반을 받았고 GPT-5.6 세대(58.2%)보다 크게 앞섰다. 다만 신약 개발의 가치가 몰리는 화합물 선택과 물성 수치 예측은 절반 수준이다. 비교 대상도 자사 모델뿐이고 학습 데이터 노출을 배제하지 못한 자체 평가라서, 신약 발견 능력이나 사업성의 증거로 보기는 이르다.",
+   "path": "reports/openai-introducing-medchembench.json"
+  },
+  {
+   "slug": "sixsigma-10-168-3",
+   "type": "article",
+   "title": "식스시그마 : 코어위브는 2027년까지 지금 금리의 회사채 대신 고객 선불과 7%대 DDTL로 버티겠다고 했지만, 고객 구성과 텍사스 전력은 답하지 않았다",
+   "companies": [
+    {
+     "name": "CoreWeave",
+     "ticker": "CRWV"
+    }
+   ],
+   "event": "3Q26 실적 컨퍼런스콜",
+   "event_date": "2026-11-10",
+   "published_kst": "2026-11-21T05:15:04+09:00",
+   "revised_kst": "2026-11-21T05:15:04+09:00",
+   "revision": 1,
+   "summary": "코어위브 경영진은 15%까지 오른 회사채 대신 고객 선불(약 90억 달러)과 고객 계약 담보 대출(7~7.5%)로 조달하겠다고 했다. 이 계획의 성패는 선불 입금과 다음 DDTL의 실제 금리에 달렸고, 수주잔고 증가분의 고객 구성과 텍사스 전력은 답이 없어 확인할 것이 남는다. 이 리포트는 자동 자막만 읽었으므로 수치는 콜 원음·보도자료로 확인해야 한다.",
+   "path": "reports/sixsigma-10-168-3.json"
+  },
   {
    "slug": "fed-feds-note-when-productivity-booms-do-interest-ra",
    "type": "article",
@@ -7688,7 +7844,7 @@
   }
  ],
  "street": {
-  "updated_kst": "2026-11-21T04:30:00+09:00",
+  "updated_kst": "2026-11-21T05:39:24+09:00",
   "path": "street.json"
  },
  "calendar": {

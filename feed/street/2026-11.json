@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "month": "2026-11",
- "updated_kst": "2026-11-21T04:30:00+09:00",
+ "updated_kst": "2026-11-21T05:39:24+09:00",
  "items": [
   {
    "id": "fed-feds-note-when-productivity-booms-do-interest-ra",
@@ -34,6 +34,71 @@
     "tier": "standard"
    },
    "note": "웹 페이지에서 뽑은 본문 기준. 페이지 앞뒤의 메뉴·다른 글 목록이 섞였을 수 있음"
+  },
+  {
+   "id": "goldman-the-outlook-for-retail-stocks-as-black-friday-ap",
+   "group": "투자은행",
+   "org": "Goldman Sachs",
+   "person": "Scott Feiler",
+   "kind": "publication",
+   "title": "블랙프라이데이를 앞둔 소매주 전망",
+   "title_orig": "The Outlook for Retail Stocks as Black Friday Approaches",
+   "url": "https://www.goldmansachs.com/insights/the-markets",
+   "outlet": "Goldman Sachs The Markets",
+   "published_kst": "2026-11-21T04:16:00+09:00",
+   "stance": {
+    "ai_tech": null,
+    "market": 1
+   },
+   "args": [
+    "수요·채택",
+    "금리·거시"
+   ],
+   "summary": "화자는 미국 소비가 견조하고 4분기가 3분기 말보다 강하게 시작했다며 블랙프라이데이도 양호할 것으로 본다. 소비재 중 경기소비재에 선별적으로 낙관적이며 호텔·크루즈 등 여행 관련주의 하락 시 매수를 권한다. 다만 내년 원자재 비용으로 마진 압박이 있고 가격 전가력이 종목을 가를 것이라고 본다.",
+   "points": [
+    "10월 소매판매가 예상을 웃돌았고 소비는 견조하며 기업들도 안정적이라고 본다.",
+    "고용이 탄탄하고 휘발유 가격이 고점에서 내려와 소비가 일시적 물가 부담을 이겨내며 지출하고 있다고 본다.",
+    "내년에는 원자재 비용으로 마진이 낮아질 것이며 가격 전가력 유무가 승패를 가를 것이다.",
+    "호텔과 크루즈 등 여행주는 조정 때마다 사야 하며, 할인된 우량 경기소비재 개별 종목도 선호한다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "기관이 회차 페이지에 낸 공식 대본(PDF) 기준. 화자 이름이 대본에 적혀 있음"
+  },
+  {
+   "id": "blackrock-volatility-what-s-next-for-stocks-and-bonds-tom",
+   "group": "자산운용",
+   "org": "BlackRock",
+   "person": "Tom Becker",
+   "kind": "publication",
+   "title": "변동성: 주식과 채권의 다음 행보는? (Bloomberg의 Tom Becker)",
+   "title_orig": "Volatility: What's Next for Stocks and Bonds? (Tom Becker on Bloomberg)",
+   "url": "https://www.youtube.com/watch?v=SfKBxtE1mV8",
+   "outlet": "BlackRock (유튜브)",
+   "published_kst": "2026-11-21T03:24:03+09:00",
+   "stance": {
+    "ai_tech": -1,
+    "market": -1
+   },
+   "args": [
+    "밸류에이션",
+    "자금 조달·신용",
+    "금리·거시",
+    "쏠림"
+   ],
+   "summary": "Tom Becker는 지난 6주간 포트폴리오 위험을 줄여 최근 몇 년 중 가장 낮은 수준으로 운용 중이라고 밝힌다. 좋은 소식이 이미 주가에 반영됐고 포지션이 위험자산 매수로 쏠려 있다고 본다. 실질금리 상승, 회사채 공급, IPO 창구의 축소로 금융 여건이 조이는 가운데, 아시아 반도체·메모리 랠리는 증가율 둔화를 시장이 의식하는 단계라고 해석한다. 채권은 위험 대비 보상이 중립이라고 본다.",
+   "points": [
+    "BlackRock은 위험 비중을 최근 몇 년 중 가장 낮게 줄여 '집 가까이'에 머물고 있다.",
+    "미국 주식은 좋은 소식이 이미 가격에 반영돼 방향성 베팅의 위험 대비 보상이 불분명하다.",
+    "IPO 창구가 닫혀 가는 것은 실질금리 상승과 순환 금융 우려 속에 금융 여건이 조여진다는 신호다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "유튜브 자막(제작자 제공)(en) 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
   },
   {
    "id": "blackrock-portfolio-construction-is-the-60-40-portfolio-de",
@@ -101,6 +166,45 @@
    "note": "유튜브 자동 생성 자막(en) 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
   },
   {
+   "id": "a16z-charts-of-the-week-there-is-no-gen-z",
+   "group": "벤처캐피털",
+   "org": "Andreessen Horowitz (a16z)",
+   "person": null,
+   "kind": "publication",
+   "title": "이번 주의 차트: Gen Z는 없다",
+   "title_orig": "Charts of the Week: There is No Gen Z",
+   "url": "https://www.a16z.news/p/charts-of-the-week-there-is-no-gen",
+   "outlet": "a16z",
+   "published_kst": "2026-11-21T00:08:14+09:00",
+   "stance": {
+    "ai_tech": 0,
+    "market": 0
+   },
+   "args": [
+    "투자 회수",
+    "수요·채택",
+    "금리·거시"
+   ],
+   "summary": "AI 투자 수익(AI ROI)을 가늠할 데이터가 불완전하고 출처마다 엇갈려, 시장이 근거 없이 분위기로 움직인다고 본다. 헤지펀드의 기술주 대량 순매도와 설비투자 과잉 응답 급증으로 심리가 급반전했지만 어느 쪽이 맞는지는 판단하지 않는다. 드러켄밀러가 장기적으로 AI에 낙관하면서도 향후 12개월은 불확실해 매매를 쉬고 있다는 발언을 소개한다.",
+   "points": [
+    "드러켄밀러는 향후 12개월의 불확실성이 전례 없이 커서 롱도 숏도 잡지 않고 쉬고 있다.",
+    "AI 수요·지출을 보여 주는 데이터가 출처마다 크게 달라 실제 상황을 알기 어렵다.",
+    "헤지펀드가 정보기술 업종을 역대급 규모로 순매도했다.",
+    "심리가 짧은 기간에 급반전했지만 그만한 사건이 있었다고 보기는 어렵고, 불확실성 속에서 분위기가 시장을 좌우한다."
+   ],
+   "evidence": [
+    {
+     "ko": "심리가 짧은 기간에 급반전했지만 그만한 사건이 있었다고 보기는 어렵고, 불확실성 속에서 분위기가 시장을 좌우한다.",
+     "orig": "Mostly, investors just don’t know. And when they don’t know, vibes and speculation predominate, and right now, for whatever reasons, the vibes are bad."
+    }
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "웹 페이지 본문 기준. 그림 19개 속 글자는 확인하지 못함"
+  },
+  {
    "id": "ark-cathie-wood-on-ark-s-anthropic-position-our-conf",
    "group": "자산운용",
    "org": "ARK Invest",
@@ -139,6 +243,38 @@
     "tier": "standard"
    },
    "note": "유튜브 자막(제작자 제공)(en) 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
+  },
+  {
+   "id": "blackrock-blackrock-s-larry-fink-says-ai-is-creating-a-new",
+   "group": "자산운용",
+   "org": "BlackRock",
+   "person": null,
+   "kind": "report",
+   "title": "BlackRock의 Larry Fink, AI가 1조 달러 규모의 새 자산군을 만들고 있으며 트럼프의 정책이 이를 가속할 수 있다고 말해",
+   "title_orig": "BlackRock’s Larry Fink says AI is creating a new trillion dollar asset class, and Trump’s policies may accelerate it",
+   "url": "https://www.msn.com/en-us/news/other/blackrock-s-larry-fink-says-ai-is-creating-a-new-trillion-dollar-asset-class-and-trump-s-policies-may-accelerate-it/ar-AA22MzXn",
+   "outlet": "24/7 Wall St. on MSN",
+   "published_kst": "2026-11-20T19:31:03+09:00",
+   "stance": {
+    "ai_tech": 2,
+    "market": null
+   },
+   "args": [
+    "수요·채택",
+    "전력·공급 제약",
+    "투자 회수"
+   ],
+   "summary": "Larry Fink는 Milken Institute 콘퍼런스에서 수요가 공급을 계속 웃돌기 때문에 AI 거품은 보지 않는다고 단언했다. 컴퓨트·칩·메모리·전력의 네 시장에서 부족이 나타나고 있으며, 이것이 '컴퓨트 선물' 같은 1조 달러 규모의 새 자산군으로 이어질 수 있다고 보았다.",
+   "points": [
+    "AI가 컴퓨팅 파워, 칩, 메모리, 전력이라는 네 가지 핵심 시장에서 이미 부족 현상을 일으키고 있으며, 기업들이 갈수록 더 큰 AI 시스템을 만들려고 경쟁하고 있다고 경고했다.",
+    "수요가 공급을 계속 앞지르고 있으므로 자신은 AI 거품을 보지 않는다고 거품 우려를 정면으로 반박했다.",
+    "석유, 천연가스, 전력이 거대한 선물시장으로 발전했듯 AI 인프라도 같은 길을 걸을 수 있다고 보며, 미래의 AI 컴퓨팅 용량 이용권에 연계된 계약인 '컴퓨트 선물'을 중심으로 1조 달러 규모의 자산군이 생길 수 있다고 믿는다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
   },
   {
    "id": "blackrock-international-investing-how-are-ai-and-geopoliti",
@@ -419,6 +555,38 @@
     "tier": "standard"
    },
    "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
+  },
+  {
+   "id": "theory-the-10x-wall",
+   "group": "벤처캐피털",
+   "org": "Tomasz Tunguz (Theory Ventures)",
+   "person": "Tomasz Tunguz",
+   "kind": "publication",
+   "title": "10배의 벽",
+   "title_orig": "The 10x Wall",
+   "url": "https://tomtunguz.com/the-10x-wall",
+   "outlet": "Tomasz Tunguz",
+   "published_kst": "2026-11-20T09:00:00+09:00",
+   "stance": {
+    "ai_tech": -1,
+    "market": null
+   },
+   "args": [
+    "밸류에이션",
+    "투자 회수",
+    "쏠림"
+   ],
+   "summary": "Anthropic과 SpaceX는 시가총액·매출·선행 매출 배수(9.5x)가 거의 같고, 성장률이 각각 288%, 466%인데도 20% 성장 기업처럼 평가받는다고 본다. 시총 1조 달러 이상에서는 선행 매출 배수가 10배 안팎을 넘지 못하며, P/E 20~26배가 실질 기준이라 멀티플 확장은 끝났고 이익 성장으로 따라잡는 길만 남았다고 주장한다.",
+   "points": [
+    "Anthropic과 SpaceX는 성장률이 크게 달라도 동일한 선행 매출 배수 9.5배로 평가받는다.",
+    "두 회사는 역대 최고 속도로 성장하는데도 시장은 20% 성장 기업처럼 값을 매긴다.",
+    "기업가치 1조 달러 이상에서는 성장률과 무관하게 선행 매출 배수가 약 10배를 넘지 못한다.",
+    "1조 달러 규모에서는 멀티플 확장이 끝났고 이익 성장으로 따라잡아야만 주가가 복리로 오른다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   }
   },
   {
    "id": "blackrock-japan-weeks-2026-what-s-shaping-japan-s-investme",
