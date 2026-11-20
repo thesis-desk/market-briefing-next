@@ -224,7 +224,7 @@
 
 ## data/<id>/ — 조사 자료 묶음
 
-한 질문을 두고 손으로 모은 기록이다. 화면에는 없고 feed 로만 나간다. 지금은 `apac-siting`(아시아·태평양 AI 컴퓨트 입지 비교)과 `ai-knowledge-work`(AI 는 코딩을 넘어 범용 지식노동으로 번지는가)다.
+한 질문을 두고 손으로 모은 기록이다. 화면에는 없고 feed 로만 나간다. 지금은 `apac-siting`(아시아·태평양 AI 컴퓨트 입지 비교), `ai-knowledge-work`(AI 는 코딩을 넘어 범용 지식노동으로 번지는가), `compute-balance`(누가 AI 컴퓨팅을 얼마나 갖고 쓰는가), `online-narratives`(X·Substack 의 글은 주가를 움직이는가)다.
 
 | 경로 | 내용 |
 | --- | --- |
@@ -285,6 +285,8 @@
 `counter.json`(묶음 H)의 기록은 묶음 A~G 에서 추린 것이다. `kind`(`against_h1` H1 에 어긋나는 사실 | `against_h2` H2 에 어긋나는 사실 | `rival_constraint` 경쟁 입지의 제약), `hypothesis`(`H1` | `H2` | `null`), `criterion`, `statement`(한 문장), `refs[]`(근거 기록: `bundle`·`id`)가 있고, 값이 있으면 `value_from`(`bundle`·`id`·`field`)이 가리키는 기록의 값과 같다. `sources[]` 는 가리키는 기록의 출처를 옮긴 것이고 `from` 에 어느 기록에서 왔는지 적혀 있다. 파일의 `summary` 에 `by_kind`·`by_hypothesis`·`by_country`·`by_criterion` 건수가 있다. 가설에 맞는 사실은 이 파일에 없다.
 
 `gates.json`(묶음 I)의 기록은 `topic`(`I1` 대용량 전력 블록 · `I2` 돈과 임차 약정 · `I3` 수요의 종류)과 `kind`(`block` 단일 부지의 계획 용량 | `grid` 접속 심사와 기간 | `selfgen` 자가 발전과 직접 구매 | `anchor` 임차·수요 주체 | `carrier` 투자 주체의 규모 | `cost` 사업비 | `workload` 수요의 종류), `item` 을 갖는다. `block` 기록에는 `gate` 가 붙는다: `site`, `operator`, `tenant`(쓰는 쪽이거나 `null`), `mw`(`value`·`basis`), `stage`, `first_power`, `power`(전력을 받는 길), `capital`(돈을 대는 쪽), `serves`(`국내` | `권역·세계` | `불명`). 용량은 계획·목표·구상 단계의 숫자가 섞여 있어 더하지 않는다. 그 밖에 기록마다 입력 값(`detail`, `cases`)과 다른 묶음을 가리키는 `refs` 가 있다.
+
+조사 `online-narratives` 의 묶음은 셋이다. `cases.json`(N1)의 기록은 사례 1건이고 `category`(`thesis` 장문 논지 | `relay` 유료 글·소식의 전달 | `short` 공매도 포지션 공개 | `mention` 종목 언급 | `headline` 속보 중계), `direction`(`down` | `up`), `claim`, `targets[]`(`ticker`·`name`·`role`)와 대표 종목 `primary`, `origin`(최초 글의 `author`·`platform`·`url`·`posted_at`·`precision`·`paywall`·`position_disclosed`·`reach`), `market`(`t0`·`open_at`·`close_at`·`session`), `timeline[]`(`at`·`precision`·`step`·`who`·`what`·`src`), `attribution[]`(언론이 주가를 글 탓으로 돌렸는가), `confounders[]`(같은 날의 다른 재료), `response[]`, `aftermath`(`status`·`what`), `price_as_reported[]` 를 갖는다. 대표 값은 최초 글 게시부터 다음 정규장 시작까지의 시간이다. `prices.json`(N2)의 기록은 사례 × 종목이고 `returns`(`d0`·`low0`·`high0`·`d1`·`d5`·`d20` — 전 거래일 종가 대비 누적 %), `benchmark_returns`, `excess`, `vol60`, `z0`, `retraced5`·`retraced20` 을 갖는다(아직 오지 않은 거래일은 `null`). `arrival.json`(N3)의 기록은 한국 텔레그램 채널에 처음 닿은 시각이고 `first`(`at`·`kind`·`via`), `after_close`, `hours_before_close`, `counts`, `origin_before_close` 를 갖는다. 식과 읽는 법은 파일마다의 `notes` 에, 가설 넷의 판정과 조건을 채운 사례 목록은 `index.json` 에 있다.
 
 조사 `ai-knowledge-work` 의 묶음(K1~K6: `capability.json` 역량 · `usage.json` 사용 · `spend.json` 지출과 매출 · `labor.json` 노동시장 · `effect.json` 효과 측정 · `ceiling.json` 천장과 요구 수준)의 기록은 `metric`(무엇을 잰 값인가), `definition`(정의와 한계, 없으면 `null`), `links`(입증의 고리: `coding` 코딩의 존재 증명 | `spread` 코딩 밖 확산 | `ceiling` 천장 | `penetration` 침투율 | `slope` 기울기 | `counter` 반대 증거), `sides`(가설 `H1`·`H2` 마다의 방향: `지지` | `반박` | `양쪽` | `중립` — AI 의 해석), `side_basis`(그 이유)를 갖는다. 같은 지표의 시점별 값은 `series`(`period`·`value`·`src`·`label`·`note`)에, 하나로 고르지 못한 값이나 범위로 낸 계산은 `range`(`low`·`high`, 이때 `value` 는 `null` 일 수 있다)에 있다. 계산 기록은 `basis` 가 "계산"으로 시작하고 `sources` 가 비어 있으며 입력 기록을 `refs` 로 가리킨다. 묶음 파일의 `summary` 에 `by_hypothesis`·`by_link` 의 방향별 건수가 있다. `labor.json` 에서 `auto` 가 `true` 인 기록(`postings-…` 분야별 채용 공고 지수, `employment-…` 업종별 고용)은 공개 자료에서 명령으로 다시 만든 것이고, `detail` 에 기준점(2022-11) 뒤와 최근 1년의 변화(`since_base_pct`·`last_year_pct`)와 전체 대비 변화(`vs_total_…`)가 있다. `ceiling.json` 의 `auto` 기록은 임금 풀을 직접 계산한 것이다 — 입력 넷(`us-wage-bill-oews`·`world-gdp-imf`·`labor-income-share-ilo`·`office-occupation-employment-share-ilo`)과 계산 둘(`wage-pool-us-direct`·`wage-pool-global-direct`, 값은 `range` 에, 방법별 값은 `detail.us_mix_tn`·`detail.actual_mix_tn` 에 조 달러로 있다). 직종 범위와 임금 격차는 데스크의 가정이다. `index.json` 의 가설 H1 에는 고리별 판정 `by_criterion` 이 붙는다.
 
@@ -356,3 +358,9 @@
 - 조사 `apac-siting` 에 묶음 I(`data/apac-siting/gates.json`, 관문 조건 — 대용량 전력 블록, 돈과 임차 약정, 수요의 종류)를 더했다. 기록의 공통 필드는 같고 단일 부지 기록에 `gate`(부지, 쓰는 쪽, 용량, 단계, 전력을 받는 길, 돈을 대는 쪽, 쓰임)가 붙는다.
 - 리포트 `apac-ai-siting-korea` 를 2판으로 고쳤다(`revisions` 에 기록). 절의 수는 아홉으로 같지만 제목과 내용이 바뀌었고 표는 39개에서 17개로 줄었다 — 건별 장부는 묶음 파일에만 있다. `QUESTIONS.md` 에 34·35 를 더했다.
 - 같은 리포트를 3판에서 본문과 참고 자료로 나눴다. 본문 `apac-ai-siting-korea` 는 여섯 절(답, 바닥 사실, 사는 쪽이 용량을 두는 네 갈래, 한국을 대보기, 무엇이 바뀌면 달라지나, 약한 곳)이고, 표와 계산은 새 리포트 `apac-ai-siting-korea-ref`(아홉 절)로 옮겼다. 용량 값 목록(`capacity`)은 참고 자료에만 있다. 묶음 I 에 수요의 종류 기록 셋(GPU 도입 계획의 전력 환산, Microsoft 와 Anthropic 의 용량 배치)을 더해 23건이 됐다. `QUESTIONS.md` 에 36·37 을 더했다.
+
+### 2026-11-20 — schema 1
+
+바뀐 것
+
+- 조사 `online-narratives`(`data/online-narratives/`)를 더했다. 묶음은 N1 사례(`cases`) · N2 주가 반응(`prices`) · N3 한국 도착(`arrival`)이고 가설 넷(H1~H4)의 판정이 `index.json` 에 있다. 리포트는 `x-substack-price-impact` 다.

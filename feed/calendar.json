@@ -572,8 +572,8 @@
    "official": false,
    "source_url": "https://stockanalysis.com/stocks/mrvl/transcripts/411233-q4-2026/",
    "consensus_snapshot": false,
-   "report_slug": null,
-   "status": "queued",
+   "report_slug": "marvell-4q26-earnings",
+   "status": "published",
    "note": "원문이 올라온 것을 보고 넣은 일정"
   },
   {
@@ -586,8 +586,8 @@
    "official": false,
    "source_url": "https://stockanalysis.com/stocks/hpe/transcripts/484323-q1-2026/",
    "consensus_snapshot": false,
-   "report_slug": null,
-   "status": "queued",
+   "report_slug": "hpe-1q26-earnings",
+   "status": "published",
    "note": "원문이 올라온 것을 보고 넣은 일정"
   },
   {
@@ -600,8 +600,8 @@
    "official": false,
    "source_url": "https://investor.oracle.com/investor-news/news-details/2026/Oracle-Announces-Fiscal-Year-2026-Third-Quarter-Financial-Results/default.aspx",
    "consensus_snapshot": false,
-   "report_slug": null,
-   "status": "queued",
+   "report_slug": "oracle-3q26-earnings",
+   "status": "published",
    "note": "원문이 올라온 것을 보고 넣은 일정"
   },
   {
@@ -628,8 +628,8 @@
    "official": false,
    "source_url": "https://stockanalysis.com/stocks/oklo/transcripts/406066-q4-2025/",
    "consensus_snapshot": false,
-   "report_slug": null,
-   "status": "queued",
+   "report_slug": "oklo-4q25-earnings",
+   "status": "published",
    "note": "원문이 올라온 것을 보고 넣은 일정"
   },
   {
@@ -642,8 +642,8 @@
    "official": false,
    "source_url": "https://stockanalysis.com/stocks/mu/transcripts/532241-q2-2026/",
    "consensus_snapshot": false,
-   "report_slug": null,
-   "status": "queued",
+   "report_slug": "micron-2q26-earnings",
+   "status": "published",
    "note": "원문이 올라온 것을 보고 넣은 일정"
   },
   {
@@ -656,8 +656,8 @@
    "official": false,
    "source_url": "https://stockanalysis.com/stocks/acn/transcripts/532769-q2-2026/",
    "consensus_snapshot": false,
-   "report_slug": null,
-   "status": "queued",
+   "report_slug": "accenture-2q26-earnings",
+   "status": "published",
    "note": "원문이 올라온 것을 보고 넣은 일정"
   },
   {
@@ -670,8 +670,8 @@
    "official": false,
    "source_url": "https://stockanalysis.com/stocks/pdd/transcripts/418000-q4-2025/",
    "consensus_snapshot": false,
-   "report_slug": null,
-   "status": "queued",
+   "report_slug": "pdd-4q25-earnings",
+   "status": "published",
    "note": "원문이 올라온 것을 보고 넣은 일정"
   },
   {
@@ -698,8 +698,8 @@
    "official": false,
    "source_url": "https://stockanalysis.com/stocks/gev/transcripts/547713-q1-2026/",
    "consensus_snapshot": false,
-   "report_slug": null,
-   "status": "queued",
+   "report_slug": "ge-vernova-1q26-earnings",
+   "status": "published",
    "note": "원문이 올라온 것을 보고 넣은 일정"
   },
   {
@@ -712,8 +712,8 @@
    "official": false,
    "source_url": "https://stockanalysis.com/stocks/ibm/transcripts/547925-q1-2026/",
    "consensus_snapshot": false,
-   "report_slug": null,
-   "status": "queued",
+   "report_slug": "ibm-1q26-earnings",
+   "status": "published",
    "note": "원문이 올라온 것을 보고 넣은 일정"
   },
   {
@@ -726,8 +726,8 @@
    "official": false,
    "source_url": "https://stockanalysis.com/stocks/lrcx/transcripts/543808-q3-2026/",
    "consensus_snapshot": false,
-   "report_slug": null,
-   "status": "queued",
+   "report_slug": "lam-research-3q26-earnings",
+   "status": "published",
    "note": "원문이 올라온 것을 보고 넣은 일정"
   },
   {
@@ -740,8 +740,8 @@
    "official": false,
    "source_url": "https://stockanalysis.com/stocks/vrt/transcripts/555273-q1-2026/",
    "consensus_snapshot": false,
-   "report_slug": null,
-   "status": "queued",
+   "report_slug": "vertiv-1q26-earnings",
+   "status": "published",
    "note": "원문이 올라온 것을 보고 넣은 일정"
   },
   {

@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-20T18:50:46+09:00",
+ "generated_kst": "2026-11-20T19:13:04+09:00",
  "reports": [
   {
    "slug": "nvidia-dev-build-tool-calling-parsers-in-rust-with-ai-agents",
@@ -2593,6 +2593,24 @@
    "path": "reports/coreweave-3q26-earnings.json"
   },
   {
+   "slug": "quanta-computer-3q26-earnings",
+   "type": "earnings",
+   "title": "Quanta Computer 3Q26 실적발표 : 매출 늘고 영업이익 줄어, GDR 증자로 자본 확충",
+   "companies": [
+    {
+     "name": "Quanta Computer",
+     "ticker": "2382.TW"
+    }
+   ],
+   "event": "3Q26 실적 발표",
+   "event_date": "2026-11-11",
+   "published_kst": "2026-11-11T21:00:00+09:00",
+   "revised_kst": "2026-11-20T19:10:38+09:00",
+   "revision": 1,
+   "summary": "매출은 전년의 2.25배로 커졌지만 매출총이익률 4.75%는 이 리포트가 확인한 분기(3Q25, 1Q26~3Q26) 중 가장 낮았고, 영업이익률 2.89%는 1Q26(역산 2.85%) 다음으로 낮았다. 판관비·재고평가손실·감가상각이 함께 늘었고, 순이익이 제자리를 지킨 것은 환차익과 낮아진 세율 덕이다. 9개월 영업현금으로 설비투자와 배당을 다 대지 못한 부족분은 8월 GDR 증자와 차입으로 메웠다.",
+   "path": "reports/quanta-computer-3q26-earnings.json"
+  },
+  {
    "slug": "semianalysis-we-visited-chinas-stargate-in-inner",
    "type": "article",
    "title": "SemiAnalysis : 중국판 스타게이트 Galaxy는 수직계열화로 미국보다 빠르고 싸게 지어진다",
@@ -2729,6 +2747,24 @@
    "path": "reports/semianalysis-spacex-ai-cloud.json"
   },
   {
+   "slug": "softbank-2q27-earnings",
+   "type": "earnings",
+   "title": "SoftBank Group 2Q27 실적발표 : 발전설비 손실 ¥0.6T, 브리지 대출 조기 졸업",
+   "companies": [
+    {
+     "name": "SoftBank Group Corp.",
+     "ticker": "9984.T"
+    }
+   ],
+   "event": "2Q27 실적 발표(회사 표기 Q2 FY2026)",
+   "event_date": "2026-11-10",
+   "published_kst": "2026-11-10T21:00:00+09:00",
+   "revised_kst": "2026-11-20T18:54:09+09:00",
+   "revision": 1,
+   "summary": "2분기(회사 표기 Q2 FY2026)는 미국 발전설비 선급금 손실 ¥597.2B와 금융비용 급증으로 지배주주 순손실 ¥1,115.3B를 냈다. 다만 손실은 대부분 일회성이고, $40B 브리지 대출을 만기 6개월 전에 장기 자금으로 갈아 끼워 유동성은 오히려 두꺼워졌다. 더 큰 변수는 분기 뒤의 일이다. Arm·소프트뱅크·Intel 주가와 환율을 11월 9일 값으로 바꾼 프로포마 NAV는 ¥44.7T로 줄었고(9월 말 ¥59.8T), 데스크 추정 LTV는 20% 안팎으로 올라 회사는 단기 방어 모드로 돌아섰다.",
+   "path": "reports/softbank-2q27-earnings.json"
+  },
+  {
    "slug": "anthropic-s-1",
    "type": "article",
    "title": "Anthropic S-1 정정 2호 : 분기 매출 170억 달러, 9,009억 달러 컴퓨트 약정을 공모와 공급사 자금으로 떠받친다",
@@ -2745,6 +2781,24 @@
    "revision": 2,
    "summary": "Anthropic은 3분기 매출 170억 달러와 조정영업이익 흑자를 앞세워 공모가 범위 70~78달러(중간가 기준 기본 주식수 시가총액 약 9,680억 달러)로 상장에 나선다. 다만 9,009억 달러 컴퓨트 약정, 단기 컴퓨트에서 오는 이익률 압박, 그리고 공급사가 투자자·채권자·고객을 겸하는 순환 구조가 함께 공개됐다. 투자 판단은 매출이 약정 지출 속도를 따라잡는지에 달려 있다.",
    "path": "reports/anthropic-s-1.json"
+  },
+  {
+   "slug": "wiwynn-3q26-earnings",
+   "type": "earnings",
+   "title": "Wiwynn 3Q26 실적발표 : 매출 56% 점프, 성장의 값은 차입과 증자로",
+   "companies": [
+    {
+     "name": "Wiwynn",
+     "ticker": "6669.TW"
+    }
+   ],
+   "event": "3Q26 실적 발표",
+   "event_date": "2026-11-06",
+   "published_kst": "2026-11-06T21:00:00+09:00",
+   "revised_kst": "2026-11-20T19:02:54+09:00",
+   "revision": 1,
+   "summary": "3Q26 매출은 NT$434.6B로 전분기 대비 56% 늘었고 영업이익률은 7.5%로 올라 이익 체력은 확인됐다. 그러나 재고와 대리구매 채권이 함께 불어나면서 9개월 영업현금흐름이 −NT$56.8B로 나빠졌다. 이를 은행차입·전환사채·GDR로 메우는 구조가 굳어지고 있어, 이익 증가와 주주 희석·금융비용 증가를 함께 봐야 하는 국면이다.",
+   "path": "reports/wiwynn-3q26-earnings.json"
   },
   {
    "slug": "ntt-data-2q27-earnings",
@@ -3033,6 +3087,204 @@
    "revision": 1,
    "summary": "매출 $1.01B(+109% YoY)에서 non-GAAP 매출총이익률이 50.4%가 됐다. 회사가 분기 매출 $2B에서나 넘을 것으로 잡았던 문턱이다. 1Q27 가이던스 중앙값 $1.25B는 OFC 목표를 한 분기 이상 앞당긴다. 이번 분기에 달라진 것은 수요의 크기다. 고출력 레이저는 증산이 예정대로인데도 수요가 가속해 공급이 더 뒤처졌고, CPO로 가는 중간 단계인 NPO와 ELS 모듈이라는 추가 매출원이 생겼다.",
    "path": "reports/lumentum-4q26-earnings.json"
+  },
+  {
+   "slug": "ge-vernova-1q26-earnings",
+   "type": "earnings",
+   "title": "GE Vernova 1Q26 실적발표 : 가스 계약 100GW 돌파, FCF 가이던스 $6.5~7.5B로 상향",
+   "companies": [
+    {
+     "name": "GE Vernova",
+     "ticker": "GEV"
+    }
+   ],
+   "event": "1Q26 실적 발표",
+   "event_date": "2026-04-22",
+   "published_kst": "2026-04-22T21:00:00+09:00",
+   "revised_kst": "2026-11-20T19:11:56+09:00",
+   "revision": 1,
+   "summary": "수주 $18.3B(+71%)와 운전자본 유입으로 1분기 FCF $4.8B를 냈고, 이 한 분기만으로 2025년 연간 FCF를 넘겼다. 그 결과 연간 매출·마진·FCF 가이던스를 모두 올렸다. 다만 가격 상승분은 아직 확정 수주가 아니라 SRA에 쌓여 있다. Wind는 하반기 흑자를 전제로 해야 연간 손실 가이던스가 맞고, 1분기 EPS에는 Prolec 인수 관련 이익이 섞여 있다.",
+   "path": "reports/ge-vernova-1q26-earnings.json"
+  },
+  {
+   "slug": "ibm-1q26-earnings",
+   "type": "earnings",
+   "title": "IBM 1Q26 실적발표 : 레드햇 10% 복귀, 컨플루언트 조기 편입",
+   "companies": [
+    {
+     "name": "IBM",
+     "ticker": "IBM"
+    }
+   ],
+   "event": "1Q26 실적 발표",
+   "event_date": "2026-04-22",
+   "published_kst": "2026-04-22T21:00:00+09:00",
+   "revised_kst": "2026-11-20T19:13:04+09:00",
+   "revision": 1,
+   "summary": "IBM 1Q26은 매출 6%, 영업 세전이익률 +140bp, FCF +13%로 회사가 제시한 1분기 경로를 웃돌았다. 레드햇이 10%로 돌아오고 컨플루언트가 예정보다 약 2개월 일찍 편입되면서 소프트웨어 연간 전망은 10%+로 올라갔다. 다만 이 상향은 대부분 컨플루언트 편입 시점의 효과이고, 전사 가이던스는 그대로 유지됐다.",
+   "path": "reports/ibm-1q26-earnings.json"
+  },
+  {
+   "slug": "lam-research-3q26-earnings",
+   "type": "earnings",
+   "title": "Lam Research 3Q26 실적발표 : WFE 1,400억 달러로 상향, NAND 전환 투자 앞당김",
+   "companies": [
+    {
+     "name": "Lam Research",
+     "ticker": "LRCX"
+    }
+   ],
+   "event": "3Q26 실적 발표",
+   "event_date": "2026-04-22",
+   "published_kst": "2026-04-22T21:00:00+09:00",
+   "revised_kst": "2026-11-20T19:06:10+09:00",
+   "revision": 1,
+   "summary": "3월 분기는 매출 58.4억 달러, EPS 1.47달러로 가이던스 상단을 넘었습니다. 6월 분기 가이던스(매출 66억 달러, GM 50.5%)도 성장과 마진 확대가 이어진다는 뜻입니다. 2026년 WFE 전망은 1,400억 달러(상향 편향)로 올렸고 NAND 전환 투자는 2027년 말 이전으로 앞당겨졌습니다. 반면 고객 선급금은 4년 가까이 만에 최저로 줄었고 현금이 크게 감소했습니다. GM은 연말까지 50.5% 근처에서 평탄해진다고 예고했습니다.",
+   "path": "reports/lam-research-3q26-earnings.json"
+  },
+  {
+   "slug": "vertiv-1q26-earnings",
+   "type": "earnings",
+   "title": "Vertiv 1Q26 실적발표 : 마진 서프라이즈, 하반기에 몰린 연간 상향",
+   "companies": [
+    {
+     "name": "Vertiv",
+     "ticker": "VRT"
+    }
+   ],
+   "event": "1Q26 실적 발표",
+   "event_date": "2026-04-22",
+   "published_kst": "2026-04-22T21:00:00+09:00",
+   "revised_kst": "2026-11-20T19:10:28+09:00",
+   "revision": 1,
+   "summary": "1분기 조정 영업이익률 20.8%로 가이던스(19%)를 크게 넘기고 연간 EPS 가이던스를 6.35달러로 올렸다. 다만 상향된 연간 값은 하반기 매출 약 +40%, 마진 약 25%를 전제한다. 그 근거인 증설 가동과 EMEA 반등은 수주 수치 공시가 끊겨 숫자로 확인할 수 없다.",
+   "path": "reports/vertiv-1q26-earnings.json"
+  },
+  {
+   "slug": "pdd-4q25-earnings",
+   "type": "earnings",
+   "title": "PDD Holdings 4Q25 실적발표 : 광고 매출 5%로 둔화, 2026년 단기 이익 압박 예고",
+   "companies": [
+    {
+     "name": "PDD Holdings",
+     "ticker": "PDD"
+    }
+   ],
+   "event": "4Q25 실적 발표",
+   "event_date": "2026-03-25",
+   "published_kst": "2026-03-25T21:00:00+09:00",
+   "revised_kst": "2026-11-20T19:04:07+09:00",
+   "revision": 1,
+   "summary": "4Q25 매출은 12% 늘었고 증가분의 대부분은 거래 서비스(+19%)에서 나왔으며, 광고 매출은 5% 증가에 그쳤다. 연간 비GAAP 영업이익은 13% 줄었다. 경영진은 정량 가이던스 없이 2026년 단기 수익성 압박을 예고했고, 공급망 투자를 더 늘리겠다고 했다. 이익보다 투자를 앞세우는 방침이 수치와 함께 확인된 분기다.",
+   "path": "reports/pdd-4q25-earnings.json"
+  },
+  {
+   "slug": "accenture-2q26-earnings",
+   "type": "earnings",
+   "title": "Accenture 2Q26 실적발표 : 연간 하단 상향, 인수 $5B로 비인력 매출 확장",
+   "companies": [
+    {
+     "name": "Accenture",
+     "ticker": "ACN"
+    }
+   ],
+   "event": "2Q26 실적 발표",
+   "event_date": "2026-03-19",
+   "published_kst": "2026-03-19T21:00:00+09:00",
+   "revised_kst": "2026-11-20T19:03:33+09:00",
+   "revision": 1,
+   "summary": "매출은 가이던스 상단, 수주는 사상 최대였고, 연간 성장률·EPS 하단과 잉여현금흐름 가이던스($1B)를 올렸다. 다만 현지통화 수주 성장은 +1%로 꺾였고 컨설팅 매출 성장도 +3%에 머물렀다. 회사는 인수 규모를 $3B에서 $5B로 늘려 인력에 연동되지 않는(non-FTE) 매출 쪽으로 사업 구성을 바꾸기 시작했다.",
+   "path": "reports/accenture-2q26-earnings.json"
+  },
+  {
+   "slug": "micron-2q26-earnings",
+   "type": "earnings",
+   "title": "Micron 2Q26 실적발표 : 가격이 마진을 81%까지 끌고, 첫 5년 SCA 체결",
+   "companies": [
+    {
+     "name": "Micron",
+     "ticker": "MU"
+    }
+   ],
+   "event": "2Q26 실적 발표",
+   "event_date": "2026-03-18",
+   "published_kst": "2026-03-18T21:00:00+09:00",
+   "revised_kst": "2026-11-20T19:02:15+09:00",
+   "revision": 1,
+   "summary": "2Q26은 출하 비트가 아니라 가격이 만든 분기다. 매출 $23.9B, 매출총이익률 75%로 직전 가이던스(매출 $18.7B, 68%±1%p)의 상단을 크게 넘었고, 3Q26 가이던스는 매출 $33.5B·81%다. 첫 5년 SCA로 이익의 지속성을 받칠 장치가 처음 생겼지만 조건은 공개되지 않았다. FY26 CapEx가 $25B 초과로 오르면서 2027~28년에 들어올 신규 공급이 다음 쟁점이 됐다.",
+   "path": "reports/micron-2q26-earnings.json"
+  },
+  {
+   "slug": "oklo-4q25-earnings",
+   "type": "earnings",
+   "title": "Oklo 4Q25 실적발표 : 메타 선불 계약, 투자 지출 본격화",
+   "companies": [
+    {
+     "name": "Oklo",
+     "ticker": "OKLO"
+    }
+   ],
+   "event": "4Q25 실적 발표",
+   "event_date": "2026-03-17",
+   "published_kst": "2026-03-17T21:00:00+09:00",
+   "revised_kst": "2026-11-20T18:57:58+09:00",
+   "revision": 1,
+   "summary": "매출이 없는 개발 단계라 손익보다 실행 이정표와 현금 계획을 봐야 하는 분기였다. Meta 선불 계약으로 첫 대형 고객이 생겼고 2026년 투자현금 가이던스(3.5억~4.5억 달러)로 건설 단계 지출이 시작됐다. 반면 Aurora INL의 첫 원자로 건설비와 PPA 조건은 이번에도 나오지 않았고, 가동 시점은 '2028년'으로만 제시됐다.",
+   "path": "reports/oklo-4q25-earnings.json"
+  },
+  {
+   "slug": "oracle-3q26-earnings",
+   "type": "earnings",
+   "title": "Oracle 3Q26 실적발표 : AI 마진 32%, CapEx와 오라클 현금의 분리",
+   "companies": [
+    {
+     "name": "Oracle",
+     "ticker": "ORCL"
+    }
+   ],
+   "event": "3Q26 실적 발표",
+   "event_date": "2026-03-10",
+   "published_kst": "2026-03-10T21:00:00+09:00",
+   "revised_kst": "2026-11-20T18:57:27+09:00",
+   "revision": 1,
+   "summary": "매출과 non-GAAP EPS가 15년여 만에 함께 달러 기준 20% 넘게 늘었다. 새로 인도한 AI 용량의 매출총이익률 32%와 300억 달러 조달 완료로 2Q의 마진·자금 우려는 일부 줄었다. 다만 콜에서 매출 총액·OCI 성장률·마진·현금흐름 수치가 빠졌고, RPO 순증과 분기 인도 MW는 둔화·정체해 이 자료만으로는 가속을 확인하지 못한다.",
+   "path": "reports/oracle-3q26-earnings.json"
+  },
+  {
+   "slug": "hpe-1q26-earnings",
+   "type": "earnings",
+   "title": "Hewlett Packard Enterprise 1Q26 실적발표 : 네트워킹은 올리고, AI 서버는 마진 뒤로",
+   "companies": [
+    {
+     "name": "Hewlett Packard Enterprise",
+     "ticker": "HPE"
+    }
+   ],
+   "event": "1Q26 실적 발표",
+   "event_date": "2026-03-09",
+   "published_kst": "2026-03-09T21:00:00+09:00",
+   "revised_kst": "2026-11-20T18:54:23+09:00",
+   "revision": 1,
+   "summary": "1Q26은 네트워킹 성장과 메모리 원가의 가격 전가로 EPS·마진이 가이던스를 넘었다. 회사는 FY26 EPS·FCF·네트워킹 전망을 올렸지만, 메모리 공급이 모자라자 고마진 주문을 우선하면서 Cloud & AI 매출 전망 상단을 낮췄다. 계산해 보면 연간 EPS 상향분은 1Q 초과분과 2Q 가이던스에서 나왔고, 새 가이던스가 함축하는 하반기 EPS는 직전 분기 가이던스가 함축하던 값보다 약간 낮다.",
+   "path": "reports/hpe-1q26-earnings.json"
+  },
+  {
+   "slug": "marvell-4q26-earnings",
+   "type": "earnings",
+   "title": "Marvell 4Q26 실적발표 : 인터커넥트 50%로 상향, FY28 매출 150억 달러 제시",
+   "companies": [
+    {
+     "name": "Marvell",
+     "ticker": "MRVL"
+    }
+   ],
+   "event": "4Q26 실적 발표",
+   "event_date": "2026-03-05",
+   "published_kst": "2026-03-05T21:00:00+09:00",
+   "revised_kst": "2026-11-20T18:52:48+09:00",
+   "revision": 1,
+   "summary": "4Q26 실적은 가이던스를 소폭 넘는 데 그쳤다. 이번 콜의 무게는 전망에 있다. FY27 매출 전망을 석 달 만에 약 100억 달러에서 110억 달러 근접으로, FY28을 약 150억 달러로 다시 올렸고, 상향분은 대부분 인터커넥트에서 나왔다. 반면 1Q27 가이던스를 역산하면 비GAAP 영업이익률은 4Q26보다 낮아지고, 4Q26 재고 증가가 영업현금흐름과 같은 규모였다.",
+   "path": "reports/marvell-4q26-earnings.json"
   },
   {
    "slug": "broadcom-1q26-earnings",
@@ -3746,7 +3998,7 @@
   {
    "id": "online-narratives",
    "path": "data/online-narratives/index.json",
-   "updated_kst": "2026-11-20T18:46:14+09:00"
+   "updated_kst": "2026-11-20T19:09:06+09:00"
   }
  ]
 }

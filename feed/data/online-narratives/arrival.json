@@ -2,11 +2,11 @@
  "schema": 1,
  "bundle": "N3",
  "title": "한국 도착 — 텔레그램 채널에 처음 닿은 시각과 경로",
- "updated_kst": "2026-11-20T18:45:56+09:00",
+ "updated_kst": "2026-11-20T19:08:20+09:00",
  "measure": null,
  "notes": [
   "이 데스크가 읽는 한국 텔레그램 채널의 원본 DB(읽기 전용)에서 사례마다 정해 둔 낱말에 맞는 글을 찾아 센 값이다. 채널 목록 밖의 한국 투자자에게 언제 닿았는지는 알 수 없다.",
-  "대표 값은 최초 글 게시 시각부터 텔레그램 첫 글까지의 시간(시간 단위, 계산)이다. 최초 글 시각은 묶음 N1 의 origin.posted_at 이다.",
+  "대표 값은 최초 글 게시 시각부터 텔레그램 첫 글까지의 시간(시간 단위, 계산)이다. 최초 글 시각은 묶음 N1 의 origin.posted_at 이다. lag_minutes 는 같은 값을 분으로, minutes_after_close 는 첫 글 시각에서 사건 거래일 종가를 뺀 값을 분으로 적은 것이다(음수면 종가 전). 분은 초를 반올림했다.",
   "after_close 는 첫 글이 사건 거래일 정규장 종가보다 늦었는가, origin_before_close 는 종가 전에 최초 글의 주소를 달았거나 그 글을 옮긴 텔레그램 글이 있었는가다. 최초 글을 옮긴 글인지는 주소·글 번호와 손으로 적은 표시(origin_marks)로 가린다.",
   "first.kind 는 첫 글을 읽고 손으로 적은 종류다: 원문 번역(최초 글을 옮김) · 재인용(다른 계정·매체가 옮긴 것을 다시 옮김) · 언론 인용 · 증권사 코멘트 · 시황 요약 · 시세 알림.",
   "같은 글을 여러 채널이 전달한 것은 채널 수에는 넣고 건수에는 본문 앞 80자가 같은 것을 하나로 센다.",
@@ -37,6 +37,8 @@
    "after_open": true,
    "after_close": false,
    "hours_before_close": 4.4,
+   "lag_minutes": 115,
+   "minutes_after_close": -265,
    "counts": {
     "h6": 2,
     "h24": 2,
@@ -89,6 +91,8 @@
    "after_open": true,
    "after_close": false,
    "hours_before_close": 3.2,
+   "lag_minutes": 157,
+   "minutes_after_close": -193,
    "counts": {
     "h6": 1,
     "h24": 2,
@@ -141,6 +145,8 @@
    "after_open": true,
    "after_close": false,
    "hours_before_close": 4,
+   "lag_minutes": 13,
+   "minutes_after_close": -239,
    "counts": {
     "h6": 2,
     "h24": 2,
@@ -193,6 +199,8 @@
    "after_open": true,
    "after_close": false,
    "hours_before_close": 6.4,
+   "lag_minutes": 47,
+   "minutes_after_close": -385,
    "counts": {
     "h6": 2,
     "h24": 13,
@@ -219,7 +227,7 @@
     1
    ],
    "conf": "high",
-   "note": "시각이 확인되는 첫 전달 글(유료)의 46분 뒤, 미국 개장 4분 뒤에 닿았다. 한국 정규장이 열리기 10시간 넘게 전이다. 최초 글을 옮긴 글인지는 본문에 SemiAnalysis·TMT Breakout 이 적혔는지로 가렸다.",
+   "note": "시각이 확인되는 첫 전달 글(유료)의 47분 뒤, 미국 개장 5분 뒤에 닿았다. 한국 정규장이 열리기 10시간 넘게 전이다. 최초 글을 옮긴 글인지는 본문에 SemiAnalysis·TMT Breakout 이 적혔는지로 가렸다.",
    "second_market": {
     "name": "한국 정규장(2026-06-05)",
     "open_kst": "2026-06-05T09:00:00+09:00",
@@ -250,6 +258,8 @@
    "after_open": false,
    "after_close": false,
    "hours_before_close": 93.4,
+   "lag_minutes": 102,
+   "minutes_after_close": -5605,
    "counts": {
     "h6": 1,
     "h24": 3,
@@ -304,6 +314,8 @@
    "after_open": true,
    "after_close": true,
    "hours_before_close": -0.3,
+   "lag_minutes": 202,
+   "minutes_after_close": 21,
    "counts": {
     "h6": 5,
     "h24": 13,
@@ -330,7 +342,7 @@
     1
    ],
    "conf": "med",
-   "note": "미국 장중(12:59 ET)에 나온 보고서가 장 마감 20분 뒤 시황 요약으로 처음 닿았다. 첫 글은 공개 주소가 없는 채널의 글이고, 공개 주소가 있는 첫 글은 11분 뒤의 증권사 옹호 의견 번역이다."
+   "note": "미국 장중(12:59 ET)에 나온 보고서가 장 마감 21분 뒤 시황 요약으로 처음 닿았다. 첫 글은 공개 주소가 없는 채널의 글이고, 공개 주소가 있는 첫 글은 11분 뒤의 증권사 옹호 의견 번역이다."
   },
   {
    "id": "muddy-waters-nvda-2026-11",
@@ -356,6 +368,8 @@
    "after_open": true,
    "after_close": true,
    "hours_before_close": 0,
+   "lag_minutes": 70,
+   "minutes_after_close": 3,
    "counts": {
     "h6": 4,
     "h24": 4,
@@ -382,7 +396,7 @@
     1
    ],
    "conf": "high",
-   "note": "장 마감 68분 전에 나온 보고서가 마감 2분 뒤 시황 요약으로 닿았다."
+   "note": "장 마감 68분 전에 나온 보고서가 마감 3분 뒤 시황 요약으로 닿았다."
   },
   {
    "id": "hunterbrook-amd-2026-11",
@@ -408,6 +422,8 @@
    "after_open": true,
    "after_close": false,
    "hours_before_close": 0.1,
+   "lag_minutes": 328,
+   "minutes_after_close": -4,
    "counts": {
     "h6": 1,
     "h24": 10,
@@ -434,7 +450,7 @@
     1
    ],
    "conf": "high",
-   "note": "장중(10:27 ET)에 나온 보고서가 5.5시간 뒤, 장 마감 5분 전에 종목별 요약으로 닿았다."
+   "note": "장중(10:27 ET)에 나온 보고서가 5.5시간 뒤, 장 마감 4분 전에 종목별 요약으로 닿았다."
   }
  ]
 }
