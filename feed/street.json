@@ -8,13 +8,13 @@
    "value": 2,
    "label": "엇갈림",
    "orgs": 44,
-   "items": 157
+   "items": 156
   },
   "market": {
    "value": -11,
    "label": "엇갈림",
    "orgs": 31,
-   "items": 101
+   "items": 100
   },
   "by_group": [
    {
@@ -146,11 +146,11 @@
    "optimism": [
     {
      "tag": "수요·채택",
-     "n": 51
+     "n": 50
     },
     {
      "tag": "투자 회수",
-     "n": 36
+     "n": 35
     },
     {
      "tag": "금리·거시",
@@ -162,11 +162,11 @@
     },
     {
      "tag": "정책·지정학",
-     "n": 20
+     "n": 19
     },
     {
      "tag": "자금 조달·신용",
-     "n": 19
+     "n": 18
     },
     {
      "tag": "경쟁·해자",
@@ -10034,29 +10034,6 @@
    "judged": {
     "basis": "full_text",
     "tier": "standard"
-   }
-  },
-  {
-   "id": "boe-bank-of-england-chief-sounds-alarm-over-ai-borro",
-   "group": "중앙은행·국제기구",
-   "org": "영란은행",
-   "person": null,
-   "kind": "report",
-   "title": "AI 차입 열풍이 시장 붕괴를 촉발할 수 있다며 영란은행 총재가 경고",
-   "title_orig": "Bank of England chief sounds alarm over AI borrowing binge that could trigger market crash",
-   "url": "https://www.thisismoney.co.uk/money/markets/article-16229061/Bank-England-chief-sounds-alarm-AI-borrowing-binge-trigger-market-crash.html",
-   "outlet": "This is Money",
-   "published_kst": "2026-10-22T11:00:00+09:00",
-   "stance": {
-    "ai_tech": -2,
-    "market": -2
-   },
-   "args": [
-    "자금 조달·신용"
-   ],
-   "judged": {
-    "basis": "headline_only",
-    "tier": "light"
    }
   }
  ]
