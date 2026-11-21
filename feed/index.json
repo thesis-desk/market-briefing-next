@@ -1,7 +1,29 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-22T05:25:57+09:00",
+ "generated_kst": "2026-11-22T08:16:14+09:00",
  "reports": [
+  {
+   "slug": "together-qwen4-max",
+   "type": "article",
+   "title": "Together AI : Qwen4 Max는 저장소 하나를 통째로 받아 1달러 안쪽으로 실제 버그를 고친다",
+   "companies": [
+    {
+     "name": "Together AI",
+     "ticker": null
+    },
+    {
+     "name": "Alibaba",
+     "ticker": null
+    }
+   ],
+   "event": "Qwen4 Max의 Together AI 서버리스 추론 출시",
+   "event_date": "2026-11-21",
+   "published_kst": "2026-11-22T08:16:14+09:00",
+   "revised_kst": "2026-11-22T08:16:14+09:00",
+   "revision": 1,
+   "summary": "공개 저장소의 실제 버그 하나로 '검색 없이 전체를 넣는' 장문맥 코딩을 재현 가능하게 보여 준 점은 의미가 있다. 다만 사례가 하나이고, 판매자가 쓴 글이며, 하루 남은 할인 가격을 기준으로 했다. 비용 구조는 출력이 아니라 입력이 지배한다는 점이 이 글에서 가장 쓸모 있는 정보다.",
+   "path": "reports/together-qwen4-max.json"
+  },
   {
    "slug": "blackrock-how-ai-and-interest-rates-are-changing-corporate",
    "type": "article",
