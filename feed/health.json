@@ -1,16 +1,16 @@
 {
  "schema": 1,
- "updated_kst": "2026-11-22T02:23:50+09:00",
+ "updated_kst": "2026-11-22T05:25:57+09:00",
  "collectors": [
   {
    "name": "reports",
-   "items": 417,
-   "last_kst": "2026-11-22T02:23:50+09:00"
+   "items": 419,
+   "last_kst": "2026-11-22T05:25:57+09:00"
   },
   {
    "name": "street",
-   "items": 301,
-   "last_kst": "2026-11-22T02:19:40+09:00"
+   "items": 302,
+   "last_kst": "2026-11-22T05:21:52+09:00"
   },
   {
    "name": "calendar",

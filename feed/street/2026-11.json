@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "month": "2026-11",
- "updated_kst": "2026-11-22T02:19:40+09:00",
+ "updated_kst": "2026-11-22T05:21:52+09:00",
  "items": [
   {
    "id": "boldstart-what-s-in-ai-infra-vc-525",
@@ -36,6 +36,42 @@
     "tier": "standard"
    },
    "note": "웹 페이지 본문 기준. 그림 6개 속 글자는 확인하지 못함"
+  },
+  {
+   "id": "howard-marks-howard-marks-warns-openai-and-anthropic-their-ai",
+   "group": "투자 거장",
+   "org": "Oaktree Capital",
+   "person": "Howard Marks",
+   "kind": "report",
+   "title": "Howard Marks, OpenAI와 Anthropic에 경고: AI 선두가 오래가지 못할 수 있다",
+   "title_orig": "Howard Marks warns OpenAI and Anthropic their AI lead may not last",
+   "url": "https://cryptobriefing.com/howard-marks-warns-ai-leaders-risks",
+   "outlet": "Crypto Briefing",
+   "published_kst": "2026-11-21T21:06:00+09:00",
+   "stance": {
+    "ai_tech": -1,
+    "market": null
+   },
+   "args": [
+    "경쟁·해자",
+    "투자 회수"
+   ],
+   "summary": "Marks는 2026년 11월 11일자 메모 \"A Layman Thinks About AI\"에서 AI 기술이 빠르게 발전하는 만큼 OpenAI와 Anthropic의 선두도 빅테크의 추격으로 흔들릴 수 있다고 봤다. 연간 1조 달러로 추산되는 AI 투자가 충분한 수익으로 돌아올지 의문을 제기하고, 큰 자본 소요가 수익성을 짓누를 수 있다고 지적했다. 불확실성이 큰 이 분야에는 겸손하고 절제된 접근이 필요하다는 입장이다.",
+   "points": [
+    "Marks는 AI가 빠르게 발전하고 주요 기술 기업들이 경쟁에 나서면서 OpenAI와 Anthropic이 쥔 선두가 위협받을 수 있다고 주장한다.",
+    "그의 핵심 우려는 지속성이다. 기술이 이렇게 빠르게 개선되면 오늘 한 기업이 쌓은 우위는 다음 돌파구에 지워질 수 있다.",
+    "대형 기술 기업들은 현재의 선두 AI 연구소들과 정면으로 경쟁할 자원을 갖추고 있으며, Marks는 이 경쟁을 기존 서열에 대한 실질적 위협으로 짚는다.",
+    "Marks는 메모에 Anthropic의 Claude 모델이 낸 의견을 포함했는데, Claude는 선두 AI 연구소들의 예측 가능성에 10점 만점에 2점이라는 낮은 점수를 매겼다.",
+    "Marks는 앞선 기술 전환기를 돌아보며, 초기 선점을 지속적 성공으로 이어 간 사례로 Microsoft와 Amazon을, 경계할 사례로 Napster와 Yahoo를 든다.",
+    "Marks는 AI에 필요한 연간 투자 규모가 1조 달러에 이를 것이라는 추정치를 인용한다.",
+    "Marks는 이처럼 거대한 인프라 지출이 충분한 수익을 낼지 의문을 제기하며, 막대한 자본 소요가 수익성에 부담이 될 수 있다고 지적한다.",
+    "메모는 불확실성이 크고 경쟁에 남기 위한 비용이 계속 오르는 이 분야에 대해 겸손하고 절제된 접근을 주문한다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
   },
   {
    "id": "coatue-billionaire-investor-philippe-laffont-just-highl",

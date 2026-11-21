@@ -1,7 +1,48 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-22T02:23:50+09:00",
+ "generated_kst": "2026-11-22T05:25:57+09:00",
  "reports": [
+  {
+   "slug": "blackrock-how-ai-and-interest-rates-are-changing-corporate",
+   "type": "article",
+   "title": "BlackRock : AI 시대의 신용 위험은 고레버리지 소형 소프트웨어에서 먼저 드러난다",
+   "companies": [
+    {
+     "name": "BlackRock",
+     "ticker": null
+    }
+   ],
+   "published_kst": "2026-11-22T05:25:57+09:00",
+   "revised_kst": "2026-11-22T05:25:57+09:00",
+   "revision": 1,
+   "summary": "블랙록은 AI가 두 갈래로 신용에 부담을 준다고 본다. 막대한 투자 수요는 모든 차입자의 조달 비용을 밀어 올리고, 기술 대체는 일부 사업의 상환 능력을 깎는다. 위험이 몰리는 곳은 소프트웨어 전반이 아니라 저금리·고배수 시기에 고레버리지로 인수된 비상장 소형 소프트웨어라고 짚는다. 방향은 설득력이 있지만 규모를 보여 주는 수치가 없으므로 선별 기준으로만 쓸 만하다.",
+   "path": "reports/blackrock-how-ai-and-interest-rates-are-changing-corporate.json"
+  },
+  {
+   "slug": "decoder-anthropic-ipo-ai-safety-openai-nvidia-structure",
+   "type": "interview",
+   "title": "Hayden Field 대담 : Anthropic 상장 뒤의 토큰 마진 압력과 창업자 통제 구조",
+   "companies": [
+    {
+     "name": "Anthropic",
+     "ticker": null
+    },
+    {
+     "name": "OpenAI",
+     "ticker": null
+    },
+    {
+     "name": "Nvidia",
+     "ticker": null
+    }
+   ],
+   "event": "Anthropic Nasdaq 상장",
+   "published_kst": "2026-11-22T05:18:58+09:00",
+   "revised_kst": "2026-11-22T05:18:58+09:00",
+   "revision": 1,
+   "summary": "Anthropic 상장의 투자 쟁점은 공모가가 아니라 토큰 마진의 지속성이다. 고객은 작업마다 싼 모델로 돌리고 Microsoft는 모델을 서로 대체 가능하게 만들겠다고 하는데, 주주에게는 경영진을 견제할 수단이 없다. 그래서 회사를 실제로 묶는 것은 컴퓨트 대금을 대야 하는 자금 수요뿐이고, 그 압력이 안전 투자를 깎아 먹는지가 다음 공시부터 확인할 지점이다(확신 중간).",
+   "path": "reports/decoder-anthropic-ipo-ai-safety-openai-nvidia-structure.json"
+  },
   {
    "slug": "boldstart-what-s-in-ai-infra-vc-525",
    "type": "article",
@@ -8056,7 +8097,7 @@
   }
  ],
  "street": {
-  "updated_kst": "2026-11-22T02:19:40+09:00",
+  "updated_kst": "2026-11-22T05:21:52+09:00",
   "path": "street.json"
  },
  "calendar": {
