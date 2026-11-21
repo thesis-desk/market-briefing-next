@@ -1,7 +1,43 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-21T14:19:01+09:00",
+ "generated_kst": "2026-11-21T23:32:36+09:00",
  "reports": [
+  {
+   "slug": "tomorrowx-2026-databricks-ceo-ali-ghodsi-how-ai-now-runs-a",
+   "type": "interview",
+   "title": "Ali Ghodsi (TomorrowX Summit 2026) : 에이전트 Genie로 회사를 운영하는 법, 기업 AI 확산이 5~10년 걸리는 이유",
+   "companies": [
+    {
+     "name": "Databricks",
+     "ticker": null
+    }
+   ],
+   "event": "TomorrowX Summit 2026",
+   "event_date": "2026-11-17",
+   "published_kst": "2026-11-21T23:32:36+09:00",
+   "revised_kst": "2026-11-21T23:32:36+09:00",
+   "revision": 1,
+   "summary": "Ghodsi의 메시지는 '모델보다 데이터·권한·조직 맥락(온톨로지)이 병목'이라는 것이다. 이 말이 맞다면 가치는 데이터·보안 계층과 업무 현대화를 맡는 업체로 간다. 다만 판매자의 일화이고 정량 근거는 '일부 그룹 최대 60% 비용 절감' 하나뿐이어서 확신은 낮다.",
+   "path": "reports/tomorrowx-2026-databricks-ceo-ali-ghodsi-how-ai-now-runs-a.json"
+  },
+  {
+   "slug": "tomorrowx-2026-why-boring-company-tunnels-cost-millions-not",
+   "type": "interview",
+   "title": "스티브 데이비스 (TomorrowX Summit 2026) : 마일당 수백만 달러 터널과 무인 굴착(ZPIT), 남은 병목은 속도",
+   "companies": [
+    {
+     "name": "The Boring Company",
+     "ticker": null
+    }
+   ],
+   "event": "TomorrowX Summit 2026",
+   "event_date": "2026-11-17",
+   "published_kst": "2026-11-21T23:27:43+09:00",
+   "revised_kst": "2026-11-21T23:27:43+09:00",
+   "revision": 1,
+   "summary": "데이비스는 보링컴퍼니의 터널 원가가 마일당 한 자릿수 백만 달러라고 주장하고, 그 근거로 기계 재설계·부품 내재화·전기화·무인화를 들었다. 그러나 굴착 속도는 아직 목표에 못 미친다고 스스로 인정했으므로 쟁점은 원가보다 속도와 기계 생산량이며, 원문에는 상장 종목을 판정할 근거가 없다.",
+   "path": "reports/tomorrowx-2026-why-boring-company-tunnels-cost-millions-not.json"
+  },
   {
    "slug": "deepmind-institute-what-comes-after-agi",
    "type": "article",
@@ -7976,7 +8012,7 @@
   }
  ],
  "street": {
-  "updated_kst": "2026-11-21T14:19:01+09:00",
+  "updated_kst": "2026-11-21T23:15:43+09:00",
   "path": "street.json"
  },
  "calendar": {

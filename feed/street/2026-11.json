@@ -1,8 +1,42 @@
 {
  "schema": 1,
  "month": "2026-11",
- "updated_kst": "2026-11-21T14:19:01+09:00",
+ "updated_kst": "2026-11-21T23:15:43+09:00",
  "items": [
+  {
+   "id": "boldstart-what-s-in-ai-infra-vc-525",
+   "group": "벤처캐피털",
+   "org": "Ed Sim (boldstart ventures)",
+   "person": "Ed Sim",
+   "kind": "publication",
+   "title": "AI/인프라/VC에서 뜨거운 것 #525",
+   "title_orig": "What’s 🔥 in AI/Infra/VC #525",
+   "url": "https://www.whatshot.vc/p/whats-in-aiinfravc-525",
+   "outlet": "What's Hot in AI/Infra/VC (Ed Sim)",
+   "published_kst": "2026-11-21T22:40:47+09:00",
+   "stance": {
+    "ai_tech": 0,
+    "market": 0
+   },
+   "args": [
+    "투자 회수",
+    "자금 조달·신용",
+    "쏠림",
+    "밸류에이션"
+   ],
+   "summary": "Ed Sim은 Anthropic과 SpaceX의 IPO가 보여 준 성과에 감탄하면서도, 벤처 자금이 상위 소수 기업에 쏠리고 초기 라운드부터 가격에 성공이 선반영되는 점을 우려한다. 하이퍼스케일러 설비투자가 1조 달러에 근접하고 Goldman은 연 3.5조 달러의 고객 매출이 필요하다고 보는데, 실패 시 비용은 아직 보지 못했다고 말한다. 다만 공개시장에서 재매수할 지점을 찾고 있으며 미래에 대해서는 여전히 매우 낙관적이라고 밝힌다.",
+   "points": [
+    "벤처 자금이 상위 소수 기업에 몰리면서 펀드가 커지고, 1조 달러급 성과를 쫓게 되어 조 달러 미만의 훌륭한 기업들이 왜곡된다.",
+    "기술 산업이 자본 경량에서 사상 최대의 자본 집약 산업으로 바뀌었고, 하이퍼스케일러 설비투자 기대치가 1년 만에 4000억 달러에서 1조 달러에 근접했다.",
+    "AI 스타트업의 초기 라운드부터 규모와 가치가 크게 올라 성공이 가격에 선반영되어 있다.",
+    "가장 큰 금액이 가장 높은 가격에 마지막으로 들어가고 컴퓨트 약정까지 겹쳐 있어, 실패했을 때의 손실이 과거와 다르다. Goldman은 연 3.5조 달러의 고객 매출이 필요하다고 본다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "웹 페이지 본문 기준. 그림 6개 속 글자는 확인하지 못함"
+  },
   {
    "id": "doubleline-on-the-ticker-tape-rumblings-of-2018",
    "group": "자산운용",
