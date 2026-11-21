@@ -1,7 +1,51 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-21T23:32:36+09:00",
+ "generated_kst": "2026-11-22T02:23:50+09:00",
  "reports": [
+  {
+   "slug": "boldstart-what-s-in-ai-infra-vc-525",
+   "type": "article",
+   "title": "boldstart ventures(Ed Sim) : 창업 단계부터 1조 달러 성공을 가격에 넣는 벤처, 실패의 청구서는 아직 오지 않았다",
+   "companies": [
+    {
+     "name": "Anthropic",
+     "ticker": "PANW"
+    },
+    {
+     "name": "SpaceX",
+     "ticker": "AAPL"
+    },
+    {
+     "name": "Palo Alto Networks",
+     "ticker": null
+    },
+    {
+     "name": "CrowdStrike",
+     "ticker": null
+    },
+    {
+     "name": "Zscaler",
+     "ticker": null
+    },
+    {
+     "name": "Apple",
+     "ticker": null
+    },
+    {
+     "name": "OpenAI",
+     "ticker": null
+    },
+    {
+     "name": "Netlify",
+     "ticker": null
+    }
+   ],
+   "published_kst": "2026-11-22T02:23:50+09:00",
+   "revised_kst": "2026-11-22T02:23:50+09:00",
+   "revision": 1,
+   "summary": "Anthropic·SpaceX의 1조 달러 상장이 벤처 전 단계를 '다음 Anthropic' 찾기로 몰아가고 있으며, 그 결과 첫 라운드 가격 분산이 커지고 중간 규모 회사는 자금을 받지 못한다는 진단이다. 경고는 설득력 있지만 근거의 상당수가 컨퍼런스 발표·자체 표본·남의 트윗이고, 글쓴이 자신은 공개시장 재매수와 낙관을 함께 밝혀 '청구서'의 시점과 규모는 답하지 않는다.",
+   "path": "reports/boldstart-what-s-in-ai-infra-vc-525.json"
+  },
   {
    "slug": "tomorrowx-2026-databricks-ceo-ali-ghodsi-how-ai-now-runs-a",
    "type": "interview",
@@ -8012,11 +8056,11 @@
   }
  ],
  "street": {
-  "updated_kst": "2026-11-21T23:15:43+09:00",
+  "updated_kst": "2026-11-22T02:19:40+09:00",
   "path": "street.json"
  },
  "calendar": {
-  "updated_kst": "2026-11-21T02:27:21+09:00",
+  "updated_kst": "2026-11-22T02:13:12+09:00",
   "path": "calendar.json"
  },
  "datasets": [

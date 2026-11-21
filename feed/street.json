@@ -1,26 +1,26 @@
 {
  "schema": 1,
- "updated_kst": "2026-11-21T23:15:43+09:00",
+ "updated_kst": "2026-11-22T02:19:40+09:00",
  "window_days": 14,
  "items_days": 30,
  "index": {
   "ai_tech": {
-   "value": 2,
+   "value": 4,
    "label": "엇갈림",
-   "orgs": 44,
-   "items": 155
+   "orgs": 45,
+   "items": 157
   },
   "market": {
-   "value": -10,
+   "value": -11,
    "label": "엇갈림",
    "orgs": 31,
-   "items": 102
+   "items": 103
   },
   "by_group": [
    {
     "group": "벤처캐피털",
-    "ai_tech": 22,
-    "ai_tech_orgs": 9,
+    "ai_tech": 30,
+    "ai_tech_orgs": 10,
     "market": -17,
     "market_orgs": 3
    },
@@ -40,9 +40,9 @@
    },
    {
     "group": "투자은행",
-    "ai_tech": 26,
+    "ai_tech": 25,
     "ai_tech_orgs": 7,
-    "market": 27,
+    "market": 26,
     "market_orgs": 6
    },
    {
@@ -98,8 +98,8 @@
    },
    {
     "week": "2026-11-16",
-    "ai_tech": 8,
-    "ai_tech_orgs": 30,
+    "ai_tech": 11,
+    "ai_tech_orgs": 31,
     "market": 4,
     "market_orgs": 22
    }
@@ -107,20 +107,20 @@
   "args": {
    "caution": [
     {
+     "tag": "투자 회수",
+     "n": 22
+    },
+    {
      "tag": "밸류에이션",
      "n": 21
     },
     {
-     "tag": "투자 회수",
-     "n": 21
-    },
-    {
      "tag": "쏠림",
-     "n": 17
+     "n": 18
     },
     {
      "tag": "자금 조달·신용",
-     "n": 16
+     "n": 17
     },
     {
      "tag": "정책·지정학",
@@ -146,11 +146,11 @@
    "optimism": [
     {
      "tag": "수요·채택",
-     "n": 50
+     "n": 51
     },
     {
      "tag": "투자 회수",
-     "n": 34
+     "n": 35
     },
     {
      "tag": "금리·거시",
@@ -158,7 +158,7 @@
     },
     {
      "tag": "밸류에이션",
-     "n": 22
+     "n": 23
     },
     {
      "tag": "정책·지정학",
@@ -170,7 +170,7 @@
     },
     {
      "tag": "경쟁·해자",
-     "n": 14
+     "n": 15
     },
     {
      "tag": "전력·공급 제약",
@@ -218,6 +218,83 @@
     "tier": "standard"
    },
    "note": "웹 페이지 본문 기준. 그림 6개 속 글자는 확인하지 못함"
+  },
+  {
+   "id": "coatue-billionaire-investor-philippe-laffont-just-highl",
+   "group": "벤처캐피털",
+   "org": "Coatue",
+   "person": null,
+   "kind": "report",
+   "title": "억만장자 투자자 필리프 라퐁, 에이전틱 AI 시대의 큰 승자로 예상하는 2개 기업을 강조",
+   "title_orig": "Billionaire Investor Philippe Laffont Just Highlighted 2 Companies He Expects to Be Big Winners of the Agentic AI Era",
+   "url": "https://www.fool.com/investing/2026/11/21/billionaire-investor-philippe-laffont-just-highlighted-2-companies-he-expects-to-be-big-winners-of-the-agentic-ai-era",
+   "outlet": "The Motley Fool",
+   "published_kst": "2026-11-21T17:44:00+09:00",
+   "stance": {
+    "ai_tech": 2,
+    "market": null
+   },
+   "args": [
+    "수요·채택",
+    "투자 회수",
+    "밸류에이션",
+    "경쟁·해자"
+   ],
+   "summary": "Coatue는 에이전틱 AI가 이제 막 시작된 단계로 보고 Meta와 Intel을 수혜주로 꼽았다. Meta는 주목(attention) 수익화에서 의도(intent) 수익화로 넘어가며 AI 에이전트 상거래에서 큰 매출을 낼 것으로 봤고, 서버 CPU 수요도 급증할 것으로 전망했다. Intel은 주가 하락을 매수 기회로 봤다.",
+   "points": [
+    "Laffont와 Coatue 팀은 Meta의 피드 기반 앱에서 Muse로의 전환을 주목(attention)을 수익화하는 단계에서 의도(intent)를 수익화하는 단계로의 전환으로 설명한다.",
+    "Laffont는 2031년에 에이전틱 AI 상거래가 전 세계 총상품거래액(GMV)에서 2조 5천억 달러를 차지할 수 있다고 추정한다.",
+    "Coatue의 애널리스트들은 일일 활성 사용자(DAU)당 연간 광고 매출이 올해 68달러에서 2031년까지 153달러로 오를 것으로 본다.",
+    "Laffont는 에이전틱 AI에는 GPU와 CPU가 같은 수로 필요한 데이터센터가 요구될 것이며, 그 결과 Intel이 수혜를 볼 좋은 위치에 있다고 믿는다.",
+    "Coatue의 애널리스트들은 GPU 수요의 큰 변곡점은 이미 지났지만 CPU 수요의 거센 물결은 이제 막 시작됐다고 주장하며, 더 많은 업무가 에이전트에 넘어갈수록 CPU 수요가 치솟을 것으로 본다.",
+    "Coatue의 애널리스트들은 서버 CPU의 전체 시장 규모(TAM)가 2026년 400억 달러에서 2031년 3000억 달러로 커질 것으로 본다.",
+    "Laffont는 여름 고점 이후 Intel 주가가 크게 내린 것을 매수 기회로 본다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
+  },
+  {
+   "id": "bofa-end-of-boom-ai-euphoria-bank-of-america-says-mon",
+   "group": "투자은행",
+   "org": "Bank of America",
+   "person": null,
+   "kind": "report",
+   "title": "'호황과 AI 열기의 끝': BofA, 펀드매니저들이 2006년 이후 최대 폭으로 기술주 비중 축소… 준비되셨습니까?",
+   "title_orig": "‘End of boom & AI euphoria’: Bank of America says money managers cut tech bets by the most since 2006. Are you ready?",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/end-boom-ai-euphoria-bank-122000896.html",
+   "outlet": "Yahoo Finance",
+   "published_kst": "2026-11-21T13:20:00+09:00",
+   "stance": {
+    "ai_tech": -1,
+    "market": -1
+   },
+   "args": [
+    "투자 회수",
+    "자금 조달·신용",
+    "쏠림"
+   ],
+   "summary": "BoA 월간 펀드매니저 설문은 기술주 비중확대 비율이 지난달 순 37%에서 이번 달 순 12%로 급감해 2006년 6월 이후 최대 월간 축소라고 전한다. BoA 전략가들은 이를 'AI 열기와 호황의 끝'이라 평했고, 응답자 절반 이상이 6개월 내 하이퍼스케일러의 설비투자 삭감을, 38%가 AI 하이퍼스케일러 채권발 신용 사건을 예상했다.",
+   "points": [
+    "BoA의 11월 월간 펀드매니저 설문에서 기술주 비중확대(오버웨이트) 응답은 순 12%로, 지난달 순 37%에서 떨어졌다. 비중확대가 비중축소보다 여전히 많지만 폭은 크게 줄었으며, 이는 2006년 6월 이후 가장 큰 한 달 기술주 포지션 축소다.",
+    "BoA 전략가들은 이번 설문이 'AI 열기와 호황의 끝'을 보여준다고 평가했다.",
+    "BoA 설문에서 펀드매니저의 52%가 앞으로 6개월 안에 AI 하이퍼스케일러가 설비투자(capex) 삭감을 발표할 것으로 예상했다.",
+    "응답자의 38%는 AI 하이퍼스케일러 채권을 신용 사건(크레딧 이벤트)이 발생할 가능성이 가장 높은 원천으로 꼽았다.",
+    "BoA 설문에서 펀드매니저의 36%는 2027년에 해외 주식이 가장 좋은 성과를 낼 것으로 보았고, 17%는 금이 가장 좋을 것이라고 답했다."
+   ],
+   "evidence": [
+    {
+     "ko": "BoA 전략가들은 이번 설문이 'AI 열기와 호황의 끝'을 보여준다고 평가했다.",
+     "orig": "BoA's strategists say the survey shows an \"end of boom & AI euphoria,\" reports Fortune."
+    }
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
   },
   {
    "id": "doubleline-on-the-ticker-tape-rumblings-of-2018",
