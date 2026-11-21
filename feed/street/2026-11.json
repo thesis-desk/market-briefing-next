@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "month": "2026-11",
- "updated_kst": "2026-11-21T08:37:28+09:00",
+ "updated_kst": "2026-11-21T11:27:31+09:00",
  "items": [
   {
    "id": "doubleline-on-the-ticker-tape-rumblings-of-2018",
@@ -337,6 +337,45 @@
     "tier": "standard"
    },
    "note": "웹 페이지 본문 기준. 그림 19개 속 글자는 확인하지 못함"
+  },
+  {
+   "id": "ark-jim-cramer-says-investors-were-fooled-badly-by-a",
+   "group": "자산운용",
+   "org": "ARK Invest",
+   "person": null,
+   "kind": "report",
+   "title": "짐 크레이머는 투자자들이 Anthropic에 '심하게 속았다'고 말하고, 캐시 우드는 '걱정의 벽'을 오르라고 말한다. 누가 맞을까?",
+   "title_orig": "Jim Cramer says investors were ‘fooled badly’ by Anthropic — Cathie Wood says climb the ‘wall of worry.’ Who’s right?",
+   "url": "https://www.aol.com/articles/jim-cramer-says-investors-were-230000000.html",
+   "outlet": "AOL",
+   "published_kst": "2026-11-21T00:00:00+09:00",
+   "stance": {
+    "ai_tech": 1,
+    "market": 1
+   },
+   "args": [
+    "수요·채택",
+    "밸류에이션",
+    "금리·거시"
+   ],
+   "summary": "Cathie Wood는 Anthropic 상장 후 급락을 매수 기회로 보고 물타기에 나섰다. 기업 고객 사이에서 AI 사업이 커지며 Anthropic에 대한 확신이 더 커졌다고 밝혔다. 닷컴 버블 비교를 반박하며 현재를 1980~90년대 강세장에 빗대고, 시장이 '걱정의 벽'을 오르는 중이라며 낙관을 유지했다.",
+   "points": [
+    "Ark는 2023년 초 Anthropic이 상장하기 한참 전에 처음 투자했고, Anthropic은 Ark 벤처 펀드에서 가장 성과가 좋은 주식 투자가 되었다. 우드는 Anthropic의 AI 사업이 기업 고객 사이에서 확대되면서 이 회사에 대한 확신이 더 커졌다고 말했다.",
+    "우드는 금요일 CNBC에 자신이 '물타기(averaging down)'를 하고 있다고 말했다. 즉 더 낮은 가격에 주식을 더 사서 평균 매입 단가를 낮추고 있다는 뜻이다.",
+    "우드는 닷컴 버블과의 비교를 반박했다. 그는 현재가 인플레이션과 고금리 우려 속에서도 주가가 오른 1980년대와 1990년대 강세장과 더 닮았다고 본다.",
+    "우리는 '걱정의 벽'을 오르고 있으며, 자신은 여전히 '꽤 낙관적'이라고 말했다."
+   ],
+   "evidence": [
+    {
+     "ko": "우리는 '걱정의 벽'을 오르고 있으며, 자신은 여전히 '꽤 낙관적'이라고 말했다.",
+     "orig": "“We’re climbing a wall of worry,” Wood said, adding that she remained “quite optimistic.”"
+    }
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
   },
   {
    "id": "ark-cathie-wood-on-ark-s-anthropic-position-our-conf",

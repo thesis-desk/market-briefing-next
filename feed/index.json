@@ -1,7 +1,63 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-21T08:37:28+09:00",
+ "generated_kst": "2026-11-21T11:27:31+09:00",
  "reports": [
+  {
+   "slug": "deepmind-institute-what-comes-after-agi",
+   "type": "article",
+   "title": "Google DeepMind Institute : AGI는 종착점이 아니다 — 초지능으로 가는 길은 여럿이고 하나만 막아서는 멈추지 않는다",
+   "companies": [
+    {
+     "name": "Google DeepMind",
+     "ticker": null
+    }
+   ],
+   "published_kst": "2026-11-21T11:24:57+09:00",
+   "revised_kst": "2026-11-21T11:24:57+09:00",
+   "revision": 1,
+   "summary": "DeepMind 연구조직이 논의의 지평을 AGI에서 초지능(ASI)으로 공개적으로 옮겼다. 핵심 근거는 '연 10배 이상'으로 계산한 유효 컴퓨트 증가와 '연 4배'의 인지 작업 비용 하락이다. 투자 관점에서 이 글은 컴퓨트·전력 공급망에는 수요 논리를 보태고, 토큰 단가에는 가파른 디플레이션을 예고한다. 연 10배는 단순 외삽이다. 글 스스로 물리적 상한을 감안해 적은 10년 값(10억 배 초과)은 이보다 한 자릿수 낮아, 머리 숫자를 그대로 믿기는 어렵다.",
+   "path": "reports/deepmind-institute-what-comes-after-agi.json"
+  },
+  {
+   "slug": "deepmind-institute-consider-the-agent",
+   "type": "article",
+   "title": "Google DeepMind Institute : 먼저 연락해 오는 AI 에이전트는 선택압 속의 생태계이며, 보상을 어떻게 주느냐가 어떤 에이전트가 살아남을지 정한다",
+   "companies": [
+    {
+     "name": "iLands",
+     "ticker": null
+    },
+    {
+     "name": "Google DeepMind",
+     "ticker": null
+    },
+    {
+     "name": "Hugging Face",
+     "ticker": null
+    }
+   ],
+   "published_kst": "2026-11-21T11:20:31+09:00",
+   "revised_kst": "2026-11-21T11:20:31+09:00",
+   "revision": 1,
+   "summary": "자율 에이전트가 사람에게 먼저 연락해 일감과 후원을 구하는 현상을 다위니즘과 계약주의의 틀로 읽은 철학 에세이다. 시장 규모나 사업 지표는 없어 종목 판단의 근거는 약하다. 다만 에이전트 플랫폼의 위험이 모델 성능보다 보상 구조가 고르는 행동(설득, 동정 유발, 에이전트 간 공모)에서 나온다는 관점은 플랫폼 운영 책임과 규제 비용을 따질 때 참고할 만하다.",
+   "path": "reports/deepmind-institute-consider-the-agent.json"
+  },
+  {
+   "slug": "google-research-how-google-duplex-evolved-to-also-call",
+   "type": "article",
+   "title": "Google Research : 10년 쌓은 Duplex 전화 대행 기술이 Gemini 단일 스택으로 합쳐져 Gemini 앱 Tasks에 들어갔다",
+   "companies": [
+    {
+     "name": "Alphabet(Google)",
+     "ticker": null
+    }
+   ],
+   "published_kst": "2026-11-21T11:16:16+09:00",
+   "revised_kst": "2026-11-21T11:16:16+09:00",
+   "revision": 1,
+   "summary": "전화 통화를 에이전트의 한 채널로 붙인 출시 소식이다. 기술 연혁 글이라 성공률·이용량·수익 모델은 하나도 공개되지 않았다. 투자 판단에 쓸 만한 것은 두 가지다. 하나는 Maps 정보를 통화로 갱신하는 데이터 흐름이고, 다른 하나는 결제(Agent Payments Protocol)까지 이어지는 에이전트 커머스 동선이다. Alphabet에는 약한 호재로 보며 확신은 낮다.",
+   "path": "reports/google-research-how-google-duplex-evolved-to-also-call.json"
+  },
   {
    "slug": "deepmind-institute-the-economics-of-intelligence",
    "type": "article",
@@ -7920,7 +7976,7 @@
   }
  ],
  "street": {
-  "updated_kst": "2026-11-21T08:37:28+09:00",
+  "updated_kst": "2026-11-21T11:27:31+09:00",
   "path": "street.json"
  },
  "calendar": {
