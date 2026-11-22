@@ -1,7 +1,23 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-22T10:09:21+09:00",
+ "generated_kst": "2026-11-22T11:15:28+09:00",
  "reports": [
+  {
+   "slug": "together-security-event-prompt-leakage-for-requests-in-june",
+   "type": "article",
+   "title": "Together AI : AI 코딩 에이전트가 올린 자격증명 하나로 서버리스 추론 프롬프트 샘플이 유출됐다",
+   "companies": [
+    {
+     "name": "Together AI",
+     "ticker": null
+    }
+   ],
+   "published_kst": "2026-11-22T11:15:28+09:00",
+   "revised_kst": "2026-11-22T11:15:28+09:00",
+   "revision": 1,
+   "summary": "Together AI는 이번 유출을 테스트용 샘플에 한정된 사건으로 규정했다. 다만 영향 고객 수, 노출 기간, 프롬프트 안 민감정보 여부가 모두 미공개라 사고의 크기는 아직 판단할 수 없다. 투자 관점에서 더 오래 남을 신호는 사고 원인이다. AI 코딩 에이전트가 자격증명을 공개 저장소에 올렸고, 추론 사업자가 고객 프롬프트를 개발 용도로 보관하고 있었다.",
+   "path": "reports/together-security-event-prompt-leakage-for-requests-in-june.json"
+  },
   {
    "slug": "together-qwen4-max",
    "type": "article",
