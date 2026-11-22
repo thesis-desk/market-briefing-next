@@ -1,8 +1,74 @@
 {
  "schema": 1,
  "month": "2026-11",
- "updated_kst": "2026-11-22T05:21:52+09:00",
+ "updated_kst": "2026-11-22T23:15:54+09:00",
  "items": [
+  {
+   "id": "dalio-billionaire-ray-dalio-says-rising-bond-yields-ar",
+   "group": "투자 거장",
+   "org": "Bridgewater 창업자",
+   "person": "Ray Dalio",
+   "kind": "report",
+   "title": "억만장자 Ray Dalio, 채권금리 상승으로 주식시장의 완충 여력이 줄고 있다고 말해 — 캐나다 투자자가 배울 점",
+   "title_orig": "Billionaire Ray Dalio says rising bond yields are shrinking the stock market's cushion — what Canadian investors can learn",
+   "url": "https://www.msn.com/en-ca/money/economy/billionaire-ray-dalio-says-rising-bond-yields-are-shrinking-the-stock-market-s-cushion-what-canadian-investors-can-learn/ar-AA2hXSGo",
+   "outlet": "Money.ca on MSN",
+   "published_kst": "2026-11-22T14:15:00+09:00",
+   "stance": {
+    "ai_tech": 0,
+    "market": -1
+   },
+   "args": [
+    "밸류에이션",
+    "금리·거시",
+    "쏠림",
+    "자금 조달·신용"
+   ],
+   "summary": "Dalio는 미국 재정적자와 부채로 장기금리가 오르면서 주식과 채권의 기대수익률 격차(위험 프리미엄 완충)가 좁아졌고, 주식이 비싸졌다고 봤다. 미 국채 위기가 3년 안에 올 수 있다고 전망하고 주식의 금리 민감도가 커질 것이라 했다. 다만 주식을 팔라는 것은 아니며, AI로 비용을 줄이거나 매출을 늘리는 기업은 저평가돼 왔다고 봤다.",
+   "points": [
+    "채권금리 상승으로 주식과 채권의 기대수익률이 훨씬 가까워졌다. 두 기대수익률 사이의 완충(cushion)이 좁아졌다.",
+    "미국 정부는 연간 약 7조 달러를 지출하고 약 5조 달러를 거둬들여, 걷는 것보다 약 40% 더 쓴다. 부채가 갚는 속도보다 빠르게 쌓이면 이자 부담이 커진다.",
+    "지출이 수입을 넘는 추세가 이어지는 만큼, 향후 3년 안에 미국 부채 위기가 올 것으로 예상한다.",
+    "다른 자산군, 특히 주식이 금리에 더 민감해질 것으로 예상한다. 이는 보상 없이 주식시장의 위험만 더한다.",
+    "주식이 비싸지면서 기대수익률이 떨어지고, 채권 가격 하락으로 채권의 기대수익률은 올라 두 수익률이 가까워졌다. 이 때문에 주식이 '비싸' 보인다.",
+    "주식을 팔라고 말하지 않으며, 다음 수익은 AI로 비용을 줄이거나 매출을 늘리는 기업에서 나올 수 있다고 본다. 이런 기업은 그동안 '덜 주목받았다'고 했다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
+  },
+  {
+   "id": "blackrock-larry-fink-says-americans-retirement-savings-sho-2",
+   "group": "자산운용",
+   "org": "BlackRock",
+   "person": null,
+   "kind": "report",
+   "title": "래리 핑크, 미국인의 퇴직 저축이 10조 달러 AI 구축 자금을 대야 한다고 말해 — 하지만 이 계획은 너무 위험하지 않은가?",
+   "title_orig": "Larry Fink says Americans' retirement savings should fund the $10 trillion AI buildout — but is that plan too risky?",
+   "url": "https://www.msn.com/en-us/money/technology/larry-fink-says-americans-retirement-savings-should-fund-the-10-trillion-ai-buildout-but-is-that-plan-too-risky/ar-AA2hXQap",
+   "outlet": "Moneywise on MSN",
+   "published_kst": "2026-11-22T12:45:00+09:00",
+   "stance": {
+    "ai_tech": 1,
+    "market": null
+   },
+   "args": [
+    "투자 회수",
+    "자금 조달·신용"
+   ],
+   "summary": "Fink는 더 많은 미국인이 미국과 함께 성장한다는 생각으로 투자에 참여하면 AI 인프라에 투자할 자금이 충분하다고 주장했다. 데이터센터와 에너지 인프라 구축 규모가 향후 10년간 전국적으로 10조 달러에 이를 수 있다고 추산했다.",
+   "points": [
+    "더 많은 미국인이 미국과 함께 성장한다는 생각을 하게 되면, 이 인프라에 투자할 자금은 충분하고도 남을 것이다. 핑크는 2026년 초 텍사스주 웨이코의 Texas State Technical College를 그렉 애벗 주지사와 함께 방문한 자리에서 이렇게 말했다.",
+    "핑크는 당시 전국적인 데이터센터 및 에너지 인프라 구축 규모가 향후 10년간 총 10조 달러에 이를 수 있다고 추산했다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
+  },
   {
    "id": "boldstart-what-s-in-ai-infra-vc-525",
    "group": "벤처캐피털",
