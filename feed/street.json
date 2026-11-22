@@ -1,26 +1,26 @@
 {
  "schema": 1,
- "updated_kst": "2026-11-22T23:15:54+09:00",
+ "updated_kst": "2026-11-23T02:19:16+09:00",
  "window_days": 14,
  "items_days": 30,
  "index": {
   "ai_tech": {
-   "value": 6,
+   "value": 8,
    "label": "엇갈림",
-   "orgs": 45,
+   "orgs": 44,
    "items": 156
   },
   "market": {
    "value": -9,
    "label": "엇갈림",
    "orgs": 30,
-   "items": 101
+   "items": 102
   },
   "by_group": [
    {
     "group": "벤처캐피털",
-    "ai_tech": 35,
-    "ai_tech_orgs": 10,
+    "ai_tech": 44,
+    "ai_tech_orgs": 9,
     "market": -17,
     "market_orgs": 3
    },
@@ -102,17 +102,24 @@
     "ai_tech_orgs": 33,
     "market": 2,
     "market_orgs": 23
+   },
+   {
+    "week": "2026-11-23",
+    "ai_tech": null,
+    "ai_tech_orgs": 0,
+    "market": null,
+    "market_orgs": 0
    }
   ],
   "args": {
    "caution": [
     {
-     "tag": "투자 회수",
+     "tag": "밸류에이션",
      "n": 20
     },
     {
-     "tag": "밸류에이션",
-     "n": 20
+     "tag": "투자 회수",
+     "n": 19
     },
     {
      "tag": "자금 조달·신용",
@@ -127,11 +134,11 @@
      "n": 7
     },
     {
-     "tag": "정책·지정학",
-     "n": 7
+     "tag": "경쟁·해자",
+     "n": 6
     },
     {
-     "tag": "경쟁·해자",
+     "tag": "정책·지정학",
      "n": 6
     },
     {
@@ -142,7 +149,7 @@
    "optimism": [
     {
      "tag": "수요·채택",
-     "n": 50
+     "n": 51
     },
     {
      "tag": "투자 회수",
@@ -157,12 +164,12 @@
      "n": 23
     },
     {
-     "tag": "정책·지정학",
+     "tag": "자금 조달·신용",
      "n": 19
     },
     {
-     "tag": "자금 조달·신용",
-     "n": 18
+     "tag": "정책·지정학",
+     "n": 19
     },
     {
      "tag": "경쟁·해자",
@@ -174,7 +181,7 @@
     },
     {
      "tag": "쏠림",
-     "n": 11
+     "n": 12
     }
    ]
   },
@@ -240,6 +247,41 @@
    "points": [
     "더 많은 미국인이 미국과 함께 성장한다는 생각을 하게 되면, 이 인프라에 투자할 자금은 충분하고도 남을 것이다. 핑크는 2026년 초 텍사스주 웨이코의 Texas State Technical College를 그렉 애벗 주지사와 함께 방문한 자리에서 이렇게 말했다.",
     "핑크는 당시 전국적인 데이터센터 및 에너지 인프라 구축 규모가 향후 10년간 총 10조 달러에 이를 수 있다고 추산했다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
+  },
+  {
+   "id": "jpmorgan-jpmorgan-says-290b-ai-fueled-ipo-wave-is-a-drop",
+   "group": "투자은행",
+   "org": "JPMorgan",
+   "person": null,
+   "kind": "report",
+   "title": "JPMorgan, 2,900억 달러 AI발 IPO 물결은 70조 달러 증시에서 '새발의 피'… 'AI의 최종 승자는 아직 존재하지 않을 수도'",
+   "title_orig": "JPMorgan Says $290B AI-Fueled IPO Wave Is A ‘Drop In The Bucket’ For $70 Trillion Stock Market — ‘Eventual Winners In AI May Not Even Exist Yet’",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/jpmorgan-says-290b-ai-fueled-083620282.html",
+   "outlet": "Yahoo Finance",
+   "published_kst": "2026-11-22T09:36:00+09:00",
+   "stance": {
+    "ai_tech": 1,
+    "market": 1
+   },
+   "args": [
+    "수요·채택",
+    "자금 조달·신용",
+    "쏠림"
+   ],
+   "summary": "JPMorgan은 2026년 미국 IPO 규모가 약 2,900억 달러로 역대급이지만 약 70조 달러 규모의 미국 증시에 비하면 1% 미만이라 시장이 충분히 소화할 수 있다고 본다. 가계·해외 투자자 매수와 자사주 매입 덕에 수요가 공급보다 더 빠르게 늘고 있다고 평가했다. 또 AI의 최종 승자는 아직 존재하지 않을 수 있다고 덧붙였다.",
+   "points": [
+    "2026년 미국 IPO 조달액은 약 2,900억 달러로 2021년 정점인 약 3,300억 달러에 근접하고 있으며, 유상증자·SPAC·전환사채를 제외하고도 20년 만에 가장 강한 발행 연도 중 하나다.",
+    "약 70조 달러 규모의 미국 주식시장에 비하면 예상되는 IPO 발행액은 전체 시가총액의 1% 미만이다.",
+    "순 주식 공급은 2020~21년 IPO 붐 이후 처음으로 플러스로 돌아섰지만, 여러 요인에 힘입어 수요가 그보다 더 빠르게 늘고 있다.",
+    "오늘날 대형 비상장 기업들은 상장 시점에 이미 상당한 성장과 가치 창출이 이루어진 상태이며, 그 상당 부분이 비상장 시장에서 일어났다.",
+    "전 세계 매출 1억 달러 이상 기업의 약 85~95%는 여전히 비상장이며, 유니콘의 가치 합계는 약 8조 달러로 추정된다. 풍부한 민간 자본 덕에 기업이 상장을 미룰 수 있다.",
+    "기술 발전 속도를 감안하면 AI의 최종 승자는 아직 존재하지 않을 수도 있다."
    ],
    "judged": {
     "basis": "full_text",
@@ -10182,39 +10224,6 @@
     "다음 주 발표될 근원·헤드라인 PCE 물가 전망치가 연준에 불리한 방향으로 움직이고 있다.",
     "10년물 금리는 5% 부근에서 박스권을 보일 것으로 본다.",
     "시장은 다음 주 연준 회의에서 금리 인상 가능성을 10~20% 정도로 반영하고 있다."
-   ],
-   "judged": {
-    "basis": "full_text",
-    "tier": "standard"
-   },
-   "note": "유튜브 자동 생성 자막(en) 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
-  },
-  {
-   "id": "doubleline-jeffrey-sherman-on-ai-debt-issuance-and-the-stre",
-   "group": "자산운용",
-   "org": "DoubleLine Capital",
-   "person": "Jeffrey Sherman",
-   "kind": "publication",
-   "title": "제프리 셔먼, AI 채권 발행과 트리플 C 등급의 압박을 말하다 | Bloomberg",
-   "title_orig": "Jeffrey Sherman on AI Debt Issuance and the Stress in Triple C | Bloomberg",
-   "url": "https://www.youtube.com/watch?v=o8HokvTKlzw",
-   "outlet": "DoubleLine (유튜브)",
-   "published_kst": "2026-10-24T01:31:44+09:00",
-   "stance": {
-    "ai_tech": 0,
-    "market": 0
-   },
-   "args": [
-    "자금 조달·신용",
-    "투자 회수",
-    "수요·채택"
-   ],
-   "summary": "하이퍼스케일러는 차입 비용이 오르기 전에 더 많이 발행할 유인이 있고, 수요도 받쳐 주어 발행이 소화되고 있다고 본다. 스프레드가 넓어진 만큼 일부 하이퍼스케일러·네오클라우드 채권을 조금씩 담기 시작했지만 큰 베팅은 아니라고 한다. CCC 등급은 약세이며 설비투자·자금 조달 의문이 이어지면 압박이 커질 것으로 보고, 아직 전이는 없다고 평가한다.",
-   "points": [
-    "하이퍼스케일러 채권은 수요가 받쳐 주어 지금까지 발행 물량이 시장에 소화되고 있다.",
-    "가격이 내려 매력이 생긴 하이퍼스케일러와 네오클라우드 채권을 소규모로 매수하기 시작했다.",
-    "CCC 등급 스프레드가 크게 넓어졌지만 낮은 등급 단일 B로는 번지지 않아 전이는 아직 없다고 본다.",
-    "설비투자와 자금 조달 필요에 대한 의문이 커지면 CCC 자산에 압박이 더 커질 것으로 본다."
    ],
    "judged": {
     "basis": "full_text",

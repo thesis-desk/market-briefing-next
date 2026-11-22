@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "month": "2026-11",
- "updated_kst": "2026-11-22T23:15:54+09:00",
+ "updated_kst": "2026-11-23T02:19:16+09:00",
  "items": [
   {
    "id": "dalio-billionaire-ray-dalio-says-rising-bond-yields-ar",
@@ -62,6 +62,41 @@
    "points": [
     "더 많은 미국인이 미국과 함께 성장한다는 생각을 하게 되면, 이 인프라에 투자할 자금은 충분하고도 남을 것이다. 핑크는 2026년 초 텍사스주 웨이코의 Texas State Technical College를 그렉 애벗 주지사와 함께 방문한 자리에서 이렇게 말했다.",
     "핑크는 당시 전국적인 데이터센터 및 에너지 인프라 구축 규모가 향후 10년간 총 10조 달러에 이를 수 있다고 추산했다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
+  },
+  {
+   "id": "jpmorgan-jpmorgan-says-290b-ai-fueled-ipo-wave-is-a-drop",
+   "group": "투자은행",
+   "org": "JPMorgan",
+   "person": null,
+   "kind": "report",
+   "title": "JPMorgan, 2,900억 달러 AI발 IPO 물결은 70조 달러 증시에서 '새발의 피'… 'AI의 최종 승자는 아직 존재하지 않을 수도'",
+   "title_orig": "JPMorgan Says $290B AI-Fueled IPO Wave Is A ‘Drop In The Bucket’ For $70 Trillion Stock Market — ‘Eventual Winners In AI May Not Even Exist Yet’",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/jpmorgan-says-290b-ai-fueled-083620282.html",
+   "outlet": "Yahoo Finance",
+   "published_kst": "2026-11-22T09:36:00+09:00",
+   "stance": {
+    "ai_tech": 1,
+    "market": 1
+   },
+   "args": [
+    "수요·채택",
+    "자금 조달·신용",
+    "쏠림"
+   ],
+   "summary": "JPMorgan은 2026년 미국 IPO 규모가 약 2,900억 달러로 역대급이지만 약 70조 달러 규모의 미국 증시에 비하면 1% 미만이라 시장이 충분히 소화할 수 있다고 본다. 가계·해외 투자자 매수와 자사주 매입 덕에 수요가 공급보다 더 빠르게 늘고 있다고 평가했다. 또 AI의 최종 승자는 아직 존재하지 않을 수 있다고 덧붙였다.",
+   "points": [
+    "2026년 미국 IPO 조달액은 약 2,900억 달러로 2021년 정점인 약 3,300억 달러에 근접하고 있으며, 유상증자·SPAC·전환사채를 제외하고도 20년 만에 가장 강한 발행 연도 중 하나다.",
+    "약 70조 달러 규모의 미국 주식시장에 비하면 예상되는 IPO 발행액은 전체 시가총액의 1% 미만이다.",
+    "순 주식 공급은 2020~21년 IPO 붐 이후 처음으로 플러스로 돌아섰지만, 여러 요인에 힘입어 수요가 그보다 더 빠르게 늘고 있다.",
+    "오늘날 대형 비상장 기업들은 상장 시점에 이미 상당한 성장과 가치 창출이 이루어진 상태이며, 그 상당 부분이 비상장 시장에서 일어났다.",
+    "전 세계 매출 1억 달러 이상 기업의 약 85~95%는 여전히 비상장이며, 유니콘의 가치 합계는 약 8조 달러로 추정된다. 풍부한 민간 자본 덕에 기업이 상장을 미룰 수 있다.",
+    "기술 발전 속도를 감안하면 AI의 최종 승자는 아직 존재하지 않을 수도 있다."
    ],
    "judged": {
     "basis": "full_text",

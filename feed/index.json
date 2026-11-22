@@ -1,7 +1,72 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-22T23:15:54+09:00",
+ "generated_kst": "2026-11-23T02:38:09+09:00",
  "reports": [
+  {
+   "slug": "tomorrowx-2026-intel-ceo-lip-bu-tan-on-saving-intel-and",
+   "type": "interview",
+   "title": "립부 탄 Intel CEO (TomorrowX Summit 2026) : 14A로 TSMC 따라잡기, 분기 부진의 원인과 CPU 재건",
+   "companies": [
+    {
+     "name": "Intel",
+     "ticker": null
+    }
+   ],
+   "event": "TomorrowX Summit 2026",
+   "event_date": "2026-11-17",
+   "published_kst": "2026-11-23T02:38:09+09:00",
+   "revised_kst": "2026-11-23T02:38:09+09:00",
+   "revision": 1,
+   "summary": "취임 18개월 차의 립부 탄은 파운드리를 장기 과제로 두었다. 14A 내부 제품은 2027년 테이프아웃·2028년 양산 목표로 'TSMC와 거의 같은 시점, 약간 뒤일 수도'라고 말했고, 2027년 말~28년에 대등해진다는 진행자의 정리에는 '예'라고 답했다. 직전 분기 부진은 메모리 가격 같은 외부 요인과 함께 PC·서버 간 전환이 안 되는 아키텍처라는 구조적 약점 탓이라고 인정했다. 데이터센터 CPU 수요가 강하다는 말이 주가로 이어지려면 공급 제약 해소와 다음 세대 제품이 먼저 확인돼야 하므로, Intel에 대한 판정은 중립으로 본다.",
+   "path": "reports/tomorrowx-2026-intel-ceo-lip-bu-tan-on-saving-intel-and.json"
+  },
+  {
+   "slug": "tomorrowx-2026-scott-wu-from-survival-mode-to-creative-mode",
+   "type": "interview",
+   "title": "Scott Wu (TomorrowX Summit 2026) : 가격 35% 인하 뒤 런레이트 16억 달러 전망, 자체 모델과 AI 보안",
+   "companies": [
+    {
+     "name": "Cognition",
+     "ticker": null
+    }
+   ],
+   "event": "TomorrowX Summit 2026",
+   "event_date": "2026-11-17",
+   "published_kst": "2026-11-23T02:33:12+09:00",
+   "revised_kst": "2026-11-23T02:33:12+09:00",
+   "revision": 1,
+   "summary": "Cognition의 Scott Wu는 Devin Cloud 가격을 35% 내린 뒤에도 매출이 9월 수준을 크게 넘었다며 수요 탄력성을 내세웠다. 가격 인하의 재원으로 토큰의 30~40%를 자체 모델로 돌린 원가 구조를 제시했고, 다음 성장축으로 보안을 꼽았다. 수치는 모두 비상장사 창업자의 자기 발표와 전언이다. 프런티어 랩의 API 매출과 IT 아웃소싱에는 약한 악재로, 컴퓨트 공급에는 약한 호재로 읽는다.",
+   "path": "reports/tomorrowx-2026-scott-wu-from-survival-mode-to-creative-mode.json"
+  },
+  {
+   "slug": "lightspeed-partner-at-lightspeed-venture-partners-sebastian",
+   "type": "article",
+   "title": "Lightspeed(Sebastian Duesterhoeft) : 앤트로픽의 진짜 강점은 엔터프라이즈 집중과 자본 제약에서 나온 컴퓨트 전략이며, 상장 후에도 장기 보유한다",
+   "companies": [
+    {
+     "name": "Anthropic",
+     "ticker": null
+    },
+    {
+     "name": "Lightspeed Venture Partners",
+     "ticker": null
+    },
+    {
+     "name": "OpenAI",
+     "ticker": null
+    },
+    {
+     "name": "Mistral AI",
+     "ticker": null
+    }
+   ],
+   "event": "Anthropic IPO",
+   "published_kst": "2026-11-23T02:23:42+09:00",
+   "revised_kst": "2026-11-23T02:23:42+09:00",
+   "revision": 1,
+   "summary": "앤트로픽 상장 시점에 나온 최대 주주급 VC 파트너의 장기 낙관론이다. 새로 나온 수치는 2023년 말 첫 투자 때의 회사 규모 정도이고, 실적·밸류에이션·컴퓨트 계약에 대한 구체적 정보는 없다. 정보가치는 '컴퓨트 전략이 S1으로 드러난 핵심 강점'이라는 시각과 '상장 후 분기 변동은 감수한다'는 예고에 그친다.",
+   "path": "reports/lightspeed-partner-at-lightspeed-venture-partners-sebastian.json"
+  },
   {
    "slug": "sixsigma-ai-2",
    "type": "article",
@@ -8205,11 +8270,11 @@
   }
  ],
  "street": {
-  "updated_kst": "2026-11-22T23:15:54+09:00",
+  "updated_kst": "2026-11-23T02:19:16+09:00",
   "path": "street.json"
  },
  "calendar": {
-  "updated_kst": "2026-11-22T02:13:12+09:00",
+  "updated_kst": "2026-11-23T02:13:11+09:00",
   "path": "calendar.json"
  },
  "datasets": [
