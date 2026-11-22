@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-22T08:16:14+09:00",
+ "generated_kst": "2026-11-22T10:09:21+09:00",
  "reports": [
   {
    "slug": "together-qwen4-max",
@@ -8150,7 +8150,7 @@
   {
    "id": "open-weight-substitution",
    "path": "data/open-weight-substitution/index.json",
-   "updated_kst": "2026-11-20T22:54:08+09:00"
+   "updated_kst": "2026-11-22T10:09:21+09:00"
   }
  ]
 }

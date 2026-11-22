@@ -1,31 +1,31 @@
 {
  "schema": 1,
- "updated_kst": "2026-11-20T22:54:08+09:00",
+ "updated_kst": "2026-11-22T10:09:21+09:00",
  "question": "오픈웨이트는 클로즈드 모델의 어느 일을 얼마나 가져가는가 — 소형 클로즈드 계층과 특화(사후 학습) 모델",
  "bundles": [
   {
    "id": "W1",
    "file": "tiers.json",
    "title": "계층별 몫 — 프론티어·소형 클로즈드·오픈웨이트의 토큰과 지출",
-   "status": "collecting",
-   "records": 18,
+   "status": "draft",
+   "records": 24,
    "verified_share": 1,
-   "updated_kst": "2026-11-20T22:54:08+09:00"
+   "updated_kst": "2026-11-22T10:09:21+09:00"
   },
   {
    "id": "W2",
    "file": "cases.json",
    "title": "특화 모델 사례 — 누가 무엇을 무엇으로 옮겼고 비용·품질을 어떻게 밝혔나",
-   "status": "collecting",
+   "status": "draft",
    "records": 26,
    "verified_share": 1,
-   "updated_kst": "2026-11-20T22:54:08+09:00"
+   "updated_kst": "2026-11-22T10:09:21+09:00"
   },
   {
    "id": "W3",
    "file": "platforms.json",
    "title": "추론·사후 학습 시장 — 플랫폼 매출, 맞춤 비중, 채택률",
-   "status": "collecting",
+   "status": "draft",
    "records": 22,
    "verified_share": 1,
    "updated_kst": "2026-11-20T22:54:08+09:00"
@@ -34,42 +34,42 @@
    "id": "W4",
    "file": "labs.json",
    "title": "프론티어 랩의 노출과 대응 — 가격, 위험요인 문구, 계층별 몫",
-   "status": "collecting",
+   "status": "draft",
    "records": 18,
    "verified_share": 1,
-   "updated_kst": "2026-11-20T22:54:08+09:00"
+   "updated_kst": "2026-11-22T10:09:21+09:00"
   },
   {
    "id": "W5",
    "file": "counter.json",
    "title": "반대 증거 — 특화가 통하지 않는 조건, 도입 장벽, 기피",
-   "status": "collecting",
-   "records": 17,
+   "status": "draft",
+   "records": 19,
    "verified_share": 1,
-   "updated_kst": "2026-11-20T22:54:08+09:00"
+   "updated_kst": "2026-11-22T10:09:21+09:00"
   }
  ],
  "hypotheses": [
   {
    "id": "H1",
    "text": "오픈웨이트가 물량을 가져가는 곳은 프론티어가 아니라 소형 클로즈드 계층(대량·반복 작업)이다.",
-   "verdict": "판단 보류",
-   "basis": "모으는 중이다. 1차로 넣은 값은 Menlo 한 곳과 Harvey 한 사례에 기대고 있다.",
-   "updated_kst": null
+   "verdict": "엇갈림",
+   "basis": "앞 절반(프론티어가 아니다)은 지출로 보면 선다 — 프론티어의 지출 몫은 Menlo 35% → 63%, Ramp 10월 69.5%(9월 67.7%)이고 OpenRouter 에서도 작업별 지출 1위는 대부분 Opus 5.5 다. 뒤 절반(가는 곳은 소형 클로즈드다)은 서지 않는다 — 소형 클로즈드는 값을 80% 내려 물량을 되찾았고(Luna), 오픈웨이트는 코딩·에이전트 작업의 토큰 1위이며, 오픈웨이트 위에 올린 특화 모델이 프론티어급 코딩 에이전트 일을 가져간 사례(Cursor)가 있다. 틀렸다고 볼 조건 둘 가운데 첫째(프론티어 몫의 하락)는 닿지 않았고 둘째(긴 에이전트 과제의 지출)는 토큰으로만 닿았다.",
+   "updated_kst": "2026-11-22T10:09:21+09:00"
   },
   {
    "id": "H2",
    "text": "고객의 일에 맞춰 사후 학습한 오픈웨이트는 좁은 일에서 클로즈드 API 와 같은 품질을 몇 분의 1 비용으로 낸다.",
-   "verdict": "판단 보류",
-   "basis": "모으는 중이다. 짧은 추출 작업과 긴 에이전트 과제에서 결과가 갈린다.",
-   "updated_kst": null
+   "verdict": "지지",
+   "basis": "짧고 반복되는 좁은 일에서는 선다 — Pinterest(회사 녹취록: 거래당 비용이 비슷한 클로즈드의 8% 미만이고 성능은 더 낫다), Harvey Review Table, Intercom, 그리고 제3자가 잰 Cursor. 틀렸다고 볼 조건 가운데 '접고 돌아간 사례가 쌓인다'는 3차에서도 한 건(Lease End)뿐이고, 제3자가 잰 값이 회사 값과 어긋난 경우는 없다. 다만 근거는 한 건을 빼고 모두 자기 보고이고, 긴 과제(Harvey Tenet)에서는 기반 모델보다 비용이 내리지 않았으며, 사후 학습 없이 옮긴 곳(Unblocked, Uber 의 시험)은 품질이 프론티어에 못 미친다고 적었다. 판정의 범위는 좁은 일이다.",
+   "updated_kst": "2026-11-22T10:09:21+09:00"
   },
   {
    "id": "H3",
    "text": "특화·전용 배포로 옮겨 가는 지출이 프론티어 랩의 기업 API 매출을 깎을 크기로 커지고 있다.",
-   "verdict": "판단 보류",
-   "basis": "모으는 중이다. 플랫폼의 증가율은 가파르지만 지출 몫은 작다.",
-   "updated_kst": null
+   "verdict": "엇갈림",
+   "basis": "증가율은 맞고 크기는 아니다. 플랫폼 매출은 빠르게 늘고(Fireworks 연환산 10억 → 15억 달러, 7월 → 9월) OpenRouter 에서 오픈웨이트의 지출 몫은 1월 11%에서 약 4분의 1 이 됐다. 그러나 그 몫은 지난 분기에 멈췄고, 기업 설문(Menlo)에서는 6% → 4%로 내렸으며, Ramp 에서는 최상위 모델의 지출 몫이 10월에 더 올랐다. Fireworks 의 분기 환산 매출은 Anthropic 3분기 매출(170억 달러)의 2.2%다. 틀렸다고 볼 조건 셋 가운데 '지출 몫이 계속 내린다'는 표본에 따라 갈리고, '사후 학습 채택률이 멈춘다'는 닿지 않았으며(6% → 10%), 고객 집중도는 자료가 없다.",
+   "updated_kst": "2026-11-22T10:09:21+09:00"
   }
  ],
  "docs": [

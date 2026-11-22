@@ -2,7 +2,7 @@
  "schema": 1,
  "bundle": "W2",
  "title": "특화 모델 사례 — 누가 무엇을 무엇으로 옮겼고 비용·품질을 어떻게 밝혔나",
- "updated_kst": "2026-11-20T22:54:08+09:00",
+ "updated_kst": "2026-11-22T10:09:21+09:00",
  "measure": null,
  "notes": [
   "방향(sides)은 AI 의 해석이다.",
@@ -14,21 +14,21 @@
   "by_hypothesis": {
    "H1": {
     "지지": 6,
-    "반박": 5,
-    "양쪽": 2,
+    "반박": 3,
+    "양쪽": 4,
     "중립": 0
    },
    "H2": {
-    "지지": 15,
+    "지지": 14,
     "반박": 0,
-    "양쪽": 5,
+    "양쪽": 6,
     "중립": 0
    },
    "H3": {
-    "지지": 10,
+    "지지": 9,
     "반박": 0,
     "양쪽": 0,
-    "중립": 0
+    "중립": 1
    }
   }
  },
@@ -306,7 +306,7 @@
     "H3": "지지"
    },
    "side_basis": "제3자가 잰 값이고 긴 코딩 에이전트 과제다. 오픈웨이트 기반 특화 모델이 프론티어에 가까운 점수를 10분의 1 아래 비용으로 냈다. 칼럼이 잰 바로 그 종류의 일이다.",
-   "note": "이 조사에서 유일한 제3자 비용·품질 동시 측정. 고노력 설정의 폐쇄 모델이 3~4점 더 높다. Composer는 Cursor 안에서만 쓸 수 있고 외부 API가 없다."
+   "note": "이 조사에서 유일한 제3자 비용·품질 동시 측정. 고노력 설정의 폐쇄 모델이 3~4점 더 높다. Composer는 Cursor 안에서만 쓸 수 있고 외부 API가 없다. 3차(2026-11-22)에 원문을 다시 받아 값이 그대로임을 확인했다. 같은 날 Artificial Analysis 의 코딩 에이전트 지수 화면에는 Composer 가 없어 지금 프론티어와 견준 값은 없다."
   },
   {
    "id": "cursor-composer25-cursorbench",
@@ -662,13 +662,20 @@
    "metric": "Pinterest 의 사후 학습 오픈 모델 거래당 비용 — 비슷한 클로즈드 모델 대비",
    "value": 8,
    "unit": "%(미만)",
-   "asof": "2026-08",
-   "basis": "대표의 실적 발표 발언. 2차 인용",
+   "asof": "2026-08-04",
+   "basis": "2분기 실적 발표의 준비된 발언(회사 녹취록). 견준 상대는 '비슷한 클로즈드 독점 모델'",
    "definition": "회사가 직접 밝힌 값이다. 제3자 검증은 없다.",
    "quote": "we are achieving cost per transaction at less than 8% of the cost of comparable closed proprietary models",
    "sources": [
     {
      "n": 1,
+     "title": "Pinterest — Second Quarter 2026 Earnings Call Transcript",
+     "url": "https://s204.q4cdn.com/369458543/files/doc_earnings/2026/q2/transcript/Q2-2026-Transcript.pdf",
+     "date": "2026-08-04",
+     "read": "full"
+    },
+    {
+     "n": 2,
      "title": "The Pulse: tech companies move to open AI models",
      "url": "https://blog.pragmaticengineer.com/the-pulse-tech-companies-move-to-open-ai-models/",
      "date": "2026-09-10",
@@ -685,7 +692,7 @@
     "H3": "지지"
    },
    "side_basis": "상장사 대표가 실적 발표에서 밝힌 값이다.",
-   "note": "자사 클라우드 안에서 오픈 모델을 후학습한다고 한다. 기반 모델과 옮긴 트래픽 비중은 없다. 실적 발표 시점은 기사의 '지난달' 표현으로 추정했고 원 녹취록은 확인하지 않았다."
+   "note": "자사 클라우드 안에서 오픈 모델을 사후 학습한다. 같은 발언에서 자기 쓰임(Pinterest Assistant)에는 클로즈드 제3자 모델보다 성능이 낫다고 했다(\"superior performance for our use cases compared with closed third-party models\"). 기반 모델과 옮긴 트래픽 비중은 없다. 3차에서 회사 녹취록으로 확인했다."
   },
   {
    "id": "pinterest-still-uses-openai-coding",
@@ -726,13 +733,20 @@
    "metric": "Uber 의 AI 세션당 비용 절감",
    "value": 52,
    "unit": "%",
-   "asof": "2026-09",
-   "basis": "요청당은 34%. 2차 인용",
+   "asof": "2026-07",
+   "basis": "모델 하나를 고정해 놓고 잰 최적화 효과다(2~7월). 요청 1,000건당 비용은 정점 대비 약 34%, 세션당 비용은 6월 정점 대비 52% 내렸다",
    "definition": "회사가 직접 밝힌 값이다. 제3자 검증은 없다.",
-   "quote": "Uber cut the cost per AI request by 34%, and the cost per AI session by 52%",
+   "quote": "isolating our own optimization gains means holding one model fixed, since behavior shifts with every upgrade and model family. We did that from February to July: cost per 1,000 model requests is down almost 34% from its peak, and cost per session is down 52% from its June peak.",
    "sources": [
     {
      "n": 1,
+     "title": "Uber Engineering — The efficient software factory",
+     "url": "https://www.uber.com/us/en/blog/efficient-software-factory/",
+     "date": "2026-08-27",
+     "read": "full"
+    },
+    {
+     "n": 2,
      "title": "The Pulse: tech companies move to open AI models",
      "url": "https://blog.pragmaticengineer.com/the-pulse-tech-companies-move-to-open-ai-models/",
      "date": "2026-09-10",
@@ -745,25 +759,33 @@
    "alt": [],
    "conf": "med",
    "sides": {
-    "H3": "지지"
+    "H3": "중립"
    },
-   "side_basis": "오픈 모델로 일부를 돌려 줄인 값이다.",
-   "note": "절감은 모델 선택·노력 수준 낮추기·프롬프트 캐시를 합친 결과이고, 오픈 모델 전환이 가장 큰 요인이라는 것은 필자의 추정이다. Uber 원문은 받지 않았다."
+   "side_basis": "원문은 이 절감을 모델을 고정한 채 잰 값이라고 적었다. 오픈 모델로 옮겨 줄인 값이 아니다(하위 에이전트의 기본 모델을 낮추기, 프롬프트 캐시, 요청당 토큰 줄이기).",
+   "note": "2차 글(The Pragmatic Engineer)은 오픈 모델 전환이 가장 큰 요인이라고 추정했지만 Uber 원문에는 그런 말이 없다. 3차에서 원문을 읽고 방향을 지지 → 중립으로 고쳤다.",
+   "revised_kst": "2026-11-22T10:09:21+09:00"
   },
   {
    "id": "uber-code-review-open-030-vs-050",
    "country": "US",
    "city": null,
-   "metric": "Uber 의 코드 리뷰 한 건 비용 — 가장 비싼 오픈웨이트",
-   "value": 0.3,
+   "metric": "Uber 의 코드 리뷰 한 건 비용 — 품질이 가장 높은 오픈웨이트",
+   "value": 0.28,
    "unit": "달러",
-   "asof": "2026-09",
-   "basis": "가장 싼 프론티어는 0.50달러, 가장 비싼 프론티어는 2.50달러. 2차 인용",
-   "definition": "회사가 직접 밝힌 값이다. 제3자 검증은 없다.",
-   "quote": "The most expensive open weight model costs $0.30 per code review, vs $0.50 for the cheapest frontier model",
+   "asof": "2026-08",
+   "basis": "원문 그림 5(구성 10개). 오픈웨이트 A 0.28달러·F1 0.48, 운영 중인 프론티어 C 0.47달러·F1 0.50, 프론티어 A 2.42달러·F1 0.483, 프론티어 B 2.22달러·0.94달러(하네스 둘), 오픈웨이트 C 0.06달러·F1 0.31",
+   "definition": "Uber 가 자기 코드 리뷰 벤치마크(알려진 버그가 있는 실제 풀 리퀘스트)로 잰 값이다. 모델 이름은 가렸다. 제3자 검증은 없다.",
+   "quote": "switching models improved our F1 while dramatically reducing cost/PR. In the figure, the dashed line is the Pareto frontier.",
    "sources": [
     {
      "n": 1,
+     "title": "Uber Engineering — The efficient software factory",
+     "url": "https://www.uber.com/us/en/blog/efficient-software-factory/",
+     "date": "2026-08-27",
+     "read": "full"
+    },
+    {
+     "n": 2,
      "title": "The Pulse: tech companies move to open AI models",
      "url": "https://blog.pragmaticengineer.com/the-pulse-tech-companies-move-to-open-ai-models/",
      "date": "2026-09-10",
@@ -776,11 +798,22 @@
    "alt": [],
    "conf": "med",
    "sides": {
-    "H1": "반박",
-    "H2": "지지"
+    "H1": "양쪽",
+    "H2": "양쪽"
    },
-   "side_basis": "코드 리뷰에서 가장 비싼 오픈웨이트가 가장 싼 프론티어보다 쌌다. 과제당으로 잰 값이다.",
-   "note": "과제당 비용으로도 공개 모델이 싸다는 근거. 품질 비교 수치는 인용문에 없다. 후학습 여부도 나와 있지 않다."
+   "side_basis": "가장 좋은 오픈웨이트가 운영 중인 프론티어보다 건당 40% 싸고 F1 은 0.02 낮다. 그런데 Uber 가 운영에 올린 것은 프론티어 모델(그림의 'what we run')이다. 오픈웨이트가 쓸 만한 자리에 왔지만 옮기지는 않았다.",
+   "note": "값은 그림에서 읽었다. 2차 글이 0.30달러 대 0.50달러로 옮긴 값의 원래 숫자는 0.28달러 대 0.47달러다. 사후 학습 여부는 나와 있지 않다. 3차에서 값과 방향을 고쳤다(H1 반박 → 양쪽, H2 지지 → 양쪽).",
+   "detail": {
+    "production_model": "프론티어 C",
+    "production_cost": 0.47,
+    "production_f1": 0.5,
+    "open_a_f1": 0.48,
+    "frontier_a_cost": 2.42,
+    "frontier_a_f1": 0.483,
+    "open_c_cost": 0.06,
+    "open_c_f1": 0.31
+   },
+   "revised_kst": "2026-11-22T10:09:21+09:00"
   },
   {
    "id": "lindy-claude-to-deepseek",
@@ -789,13 +822,27 @@
    "metric": "Lindy 의 Claude → DeepSeek 전환",
    "value": null,
    "unit": "해당 없음",
-   "asof": "2026-06",
-   "basis": "대표의 CNBC 발언을 옮긴 보도. Anthropic 이 값을 내리면 돌아가겠다고 했다",
+   "asof": "2026-06-04",
+   "basis": "대표의 X 글과 The New Stack 인터뷰. 핵심 쓰임은 메일함 분류와 답장 초안이고, 워크플로 자동화는 Sonnet 보다 못하다고 했다",
    "definition": "회사가 직접 밝힌 값이다. 제3자 검증은 없다.",
-   "quote": "Crivello said he'd switch back if Anthropic cut prices",
+   "quote": "Pulled the trigger today and switched 100% of Lindy traffic to DeepSeek v4, churning from Anthropic models. Saves us millions of $ and we're actually seeing an *increase* in performance on many core use cases.",
    "sources": [
     {
      "n": 1,
+     "title": "Flo Crivello (@Altimor) — X",
+     "url": "https://x.com/Altimor/status/2062389885437366342",
+     "date": "2026-06-04",
+     "read": "full"
+    },
+    {
+     "n": 2,
+     "title": "This AI agent startup ditched Anthropic for DeepSeek — and says it's saving millions",
+     "url": "https://thenewstack.io/lindy-deepseek-anthropic-switch/",
+     "date": "2026-06-09",
+     "read": "full"
+    },
+    {
+     "n": 3,
      "title": "AI startup Lindy ditched Claude entirely for Deepseek, saving millions as cost pressure mounts on Anthropic",
      "url": "https://the-decoder.com/ai-startup-lindy-ditched-claude-entirely-for-deepseek-saving-millions-as-cost-pressure-mounts-on-anthropic/",
      "date": "2026-06-26",
@@ -804,13 +851,13 @@
    ],
    "value_src": [],
    "alt": [],
-   "conf": "low",
+   "conf": "med",
    "sides": {
-    "H1": "반박",
+    "H1": "양쪽",
     "H3": "지지"
    },
-   "side_basis": "에이전트 회사가 프론티어를 통째로 바꿨다. 이유는 가격이고 가격이 내리면 돌아간다고 했다.",
-   "note": "후학습 없이 DeepSeek v4를 그대로 사용. 25명 회사에서 AI 비용이 인건비를 넘었다고 한다. 가격이 내리면 돌아가겠다는 발언은 이탈이 가격 탄력적임을 보여 준다. 기사 뒷부분은 구독자 전용."
+   "side_basis": "에이전트 회사가 제품의 Claude 트래픽을 통째로 바꿨다. 다만 옮긴 핵심 쓰임은 메일 분류·초안 같은 반복 작업이고 견준 상대는 Sonnet(중간 등급)이다. 최상위 프론티어가 하던 일은 아니다.",
+   "note": "사후 학습 없이 DeepSeek v4 를 미국 추론 사업자(Atlas Cloud)에서 쓴다. 옮기는 데 든 일과 남은 것은 반대 증거 기록 lindy-migration-effort-and-return-condition 에 있다. 3차에서 대표의 글과 인터뷰 전문으로 확인했다."
   },
   {
    "id": "c3ai-narwhal-74-vs-60",

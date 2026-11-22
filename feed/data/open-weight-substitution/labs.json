@@ -2,7 +2,7 @@
  "schema": 1,
  "bundle": "W4",
  "title": "프론티어 랩의 노출과 대응 — 가격, 위험요인 문구, 계층별 몫",
- "updated_kst": "2026-11-20T22:54:08+09:00",
+ "updated_kst": "2026-11-22T10:09:21+09:00",
  "measure": null,
  "notes": [
   "방향(sides)은 AI 의 해석이다.",
@@ -51,6 +51,13 @@
      "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026072484/anthropicpbc-sx1ax2.htm",
      "date": "2026-11-10",
      "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "Anthropic, PBC — 최종 투자설명서 Form 424B4 (SEC EDGAR)",
+     "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026074944/anthropicpbc-424b4.htm",
+     "date": "2026-11-19",
+     "read": "partial"
     }
    ],
    "value_src": [],
@@ -81,6 +88,13 @@
      "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026072484/anthropicpbc-sx1ax2.htm",
      "date": "2026-11-10",
      "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "Anthropic, PBC — 최종 투자설명서 Form 424B4 (SEC EDGAR)",
+     "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026074944/anthropicpbc-424b4.htm",
+     "date": "2026-11-19",
+     "read": "partial"
     }
    ],
    "value_src": [],
@@ -110,6 +124,13 @@
      "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026072484/anthropicpbc-sx1ax2.htm",
      "date": "2026-11-10",
      "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "Anthropic, PBC — 최종 투자설명서 Form 424B4 (SEC EDGAR)",
+     "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026074944/anthropicpbc-424b4.htm",
+     "date": "2026-11-19",
+     "read": "partial"
     }
    ],
    "value_src": [
@@ -121,7 +142,7 @@
     "H3": "양쪽"
    },
    "side_basis": "가격이 내려가고 있다는 근거이지만 원인이 오픈웨이트인지는 서류에 없다.",
-   "note": "3분기 매출 170억 달러의 3.5%다(계산). 새 모델 버전의 가격 인하와 계약 할인을 합친 값이고 오픈웨이트 때문이라는 설명은 없다.",
+   "note": "3분기 매출 170억 달러의 3.5%다(계산). 새 모델 버전의 가격 인하와 계약 할인을 합친 값이고 오픈웨이트 때문이라는 설명은 없다. 최종 투자설명서(2026-11-19)에 같은 문장이 있다. 모델 등급별 매출은 서류에 없다.",
    "detail": {
     "prior_period_musd": 70,
     "q3_2026_revenue_bn": 17

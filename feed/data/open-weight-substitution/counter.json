@@ -2,15 +2,15 @@
  "schema": 1,
  "bundle": "W5",
  "title": "반대 증거 — 특화가 통하지 않는 조건, 도입 장벽, 기피",
- "updated_kst": "2026-11-20T22:54:08+09:00",
+ "updated_kst": "2026-11-22T10:09:21+09:00",
  "measure": null,
  "notes": [
   "방향(sides)은 AI 의 해석이다.",
   "회사가 직접 잰 값과 자기 보고는 definition 에 밝혔다."
  ],
  "summary": {
-  "records": 17,
-  "with_value": 5,
+  "records": 19,
+  "with_value": 6,
   "by_hypothesis": {
    "H1": {
     "지지": 1,
@@ -20,13 +20,13 @@
    },
    "H2": {
     "지지": 0,
-    "반박": 7,
+    "반박": 8,
     "양쪽": 1,
     "중립": 1
    },
    "H3": {
     "지지": 0,
-    "반박": 9,
+    "반박": 11,
     "양쪽": 0,
     "중립": 0
    }
@@ -555,6 +555,79 @@
    },
    "side_basis": "오픈웨이트가 단순 반복 작업이 아니라 미국 개발자의 에이전트 작업에서 많이 쓰인다는 말이다.",
    "note": "오픈웨이트가 단순 반복 작업이 아니라 코딩 에이전트를 가져가고 있다는 반증. 다만 OpenRouter는 개발자 중심 중개 플랫폼이라 기업 직접 계약을 대표하지 않고, 토큰 점유이지 지출 점유가 아니다."
+  },
+  {
+   "id": "lindy-migration-effort-and-return-condition",
+   "country": "US",
+   "city": null,
+   "metric": "Lindy — 옮기는 데 든 일과 돌아갈 조건",
+   "value": null,
+   "unit": "해당 없음",
+   "asof": "2026-06-09",
+   "basis": "대표의 인터뷰. 6~9개월 평가, 예상의 100배 일, 워크플로 자동화는 Sonnet 보다 못함, 사내 사용은 Claude 유지",
+   "definition": "회사가 직접 밝힌 값이다. 제3자 검증은 없다.",
+   "quote": "I wouldn’t be surprised if Anthropic’s next release earned [them] our business back, but they would need to significantly cut prices.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "This AI agent startup ditched Anthropic for DeepSeek — and says it's saving millions",
+     "url": "https://thenewstack.io/lindy-deepseek-anthropic-switch/",
+     "date": "2026-06-09",
+     "read": "full"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H3": "반박"
+   },
+   "side_basis": "옮기는 비용이 크고(평가 6~9개월), 옮긴 뒤에도 일부 일은 Sonnet 이 낫다고 했으며, 값이 내리면 돌아간다고 했다. 이탈이 굳은 것이 아니라 값에 달려 있다.",
+   "note": "\"100x more work than we thought\", \"It’s still less good than Sonnet at ‘workflow automation,’ which is more secondary for us\". 자체 서빙은 검토하지 않았다고 했다.",
+   "refs": [
+    {
+     "bundle": "W2",
+     "id": "lindy-claude-to-deepseek"
+    }
+   ]
+  },
+  {
+   "id": "uber-code-review-runs-on-frontier",
+   "country": "US",
+   "city": null,
+   "metric": "Uber 코드 리뷰의 운영 모델 — 더 싼 오픈웨이트를 두고 프론티어를 쓴다",
+   "value": 0.47,
+   "unit": "달러",
+   "asof": "2026-08",
+   "basis": "원문 그림 5. 운영 중인 프론티어 C 는 건당 0.47달러·F1 0.50, 가장 좋은 오픈웨이트 A 는 0.28달러·F1 0.48",
+   "definition": "Uber 가 자기 코드 리뷰 벤치마크로 잰 값이다. 모델 이름은 가렸다. 제3자 검증은 없다.",
+   "quote": "Move to whatever is Pareto optimal, and keep moving. The frontier shifts every few weeks.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Uber Engineering — The efficient software factory",
+     "url": "https://www.uber.com/us/en/blog/efficient-software-factory/",
+     "date": "2026-08-27",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H2": "반박",
+    "H3": "반박"
+   },
+   "side_basis": "건당 40% 싼 오픈웨이트가 있는데도 운영에는 F1 이 0.02 높은 프론티어를 올렸다. 품질 차이가 작아도 값 차이가 이 정도면 옮기지 않은 사례다.",
+   "note": "값은 그림에서 읽었다. 하위 에이전트에는 '더 약하고 싼 모델'을 기본으로 둔다고 적었지만 오픈웨이트인지는 밝히지 않았다.",
+   "refs": [
+    {
+     "bundle": "W2",
+     "id": "uber-code-review-open-030-vs-050"
+    }
+   ]
   }
  ]
 }
