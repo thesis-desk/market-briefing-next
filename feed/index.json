@@ -1,7 +1,43 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-22T14:15:20+09:00",
+ "generated_kst": "2026-11-22T20:17:20+09:00",
  "reports": [
+  {
+   "slug": "sixsigma-ai-2",
+   "type": "article",
+   "title": "식스시그마 : 메모리를 더 넣을수록 AI 회사가 더 벌기 때문에 새 공장이 도는 2028년 전까지 D램 값은 떨어지지 않는다",
+   "companies": [
+    {
+     "name": "마이크론",
+     "ticker": null
+    },
+    {
+     "name": "SK하이닉스",
+     "ticker": null
+    },
+    {
+     "name": "삼성전자",
+     "ticker": null
+    },
+    {
+     "name": "엔비디아",
+     "ticker": null
+    },
+    {
+     "name": "샌디스크",
+     "ticker": null
+    },
+    {
+     "name": "키옥시아",
+     "ticker": null
+    }
+   ],
+   "published_kst": "2026-11-22T20:17:20+09:00",
+   "revised_kst": "2026-11-22T20:17:20+09:00",
+   "revision": 1,
+   "summary": "층마다 메모리를 더 넣으면 같은 GPU로 팔 수 있는 토큰이 늘어난다는 수요 측 논리는 구조적이고 지표로도 뒷받침된다. 반면 2028년 전까지 D램 값이 떨어지지 않는다는 결론은 공급사 발언과 물량 계약에 기대고 있고, 가격 하락 시점에 대한 반증은 약하다. 확신은 수요 구조 중상, 가격 시점 중간이다.",
+   "path": "reports/sixsigma-ai-2.json"
+  },
   {
    "slug": "sixsigma-oae5m8zkh-q",
    "type": "article",
