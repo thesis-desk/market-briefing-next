@@ -1,7 +1,71 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-23T02:38:09+09:00",
+ "generated_kst": "2026-11-23T05:34:45+09:00",
  "reports": [
+  {
+   "slug": "tomorrowx-2026-aravind-srinivas-ai-and-the-american-dream",
+   "type": "interview",
+   "title": "Aravind Srinivas (TomorrowX Summit 2026) : 모델 중립 에이전트로 ARR 10억 달러, IPO는 2028년 기준",
+   "companies": [
+    {
+     "name": "Perplexity",
+     "ticker": null
+    }
+   ],
+   "event": "TomorrowX Summit 2026",
+   "event_date": "2026-11-17",
+   "published_kst": "2026-11-23T05:34:45+09:00",
+   "revised_kst": "2026-11-23T05:34:45+09:00",
+   "revision": 1,
+   "summary": "Perplexity는 답변 엔진에서 모델 중립 에이전트 오케스트레이터로 옮겨 ARR 10억 달러 돌파와 매출총이익률 약 56%를 제시했다. 다만 성장 동력인 에이전트 작업의 60~70%를 Anthropic Opus에 기대고 있어, 토큰 마크업 모델이 이어질 수 있는지가 핵심 쟁점이다. 상장 종목에 주는 직접 신호는 약하다.",
+   "path": "reports/tomorrowx-2026-aravind-srinivas-ai-and-the-american-dream.json"
+  },
+  {
+   "slug": "tomorrowx-2026-david-sacks-on-the-future-of-ai-uncertainty",
+   "type": "interview",
+   "title": "데이비드 색스 (TomorrowX Summit 2026) : 중간선거 이후 AI 규제와 Anthropic 독점 우려",
+   "companies": [
+    {
+     "name": "Anthropic",
+     "ticker": null
+    },
+    {
+     "name": "OpenAI",
+     "ticker": null
+    },
+    {
+     "name": "Nvidia",
+     "ticker": null
+    },
+    {
+     "name": "Hugging Face",
+     "ticker": null
+    }
+   ],
+   "event": "TomorrowX Summit 2026",
+   "event_date": "2026-11-17",
+   "published_kst": "2026-11-23T05:27:13+09:00",
+   "revised_kst": "2026-11-23T05:27:13+09:00",
+   "revision": 1,
+   "summary": "전직 백악관 AI 차르가 다음 2년의 정책 위험을 두 곳으로 짚었다. 하나는 주 단위 데이터센터 모라토리엄이고, 다른 하나는 연방 AI 부처 신설 여부다. Anthropic이 상장 마케팅에 내건 'RSI 기반 승자독식'은 그 자체로 반독점 대응을 부를 수 있다고 공개적으로 경고했다. 투자자에게는 Anthropic의 프리미엄 논리가 곧 정책 위험이라는 점이 이 대담에서 새로 나온 쟁점이다.",
+   "path": "reports/tomorrowx-2026-david-sacks-on-the-future-of-ai-uncertainty.json"
+  },
+  {
+   "slug": "openai-perplexity-and-intelligence",
+   "type": "article",
+   "title": "OpenAI : 사전학습 손실(퍼플렉서티)을 업계 공통 지표로 삼고, 그 값에 개발 한도를 걸자",
+   "companies": [
+    {
+     "name": "OpenAI",
+     "ticker": null
+    }
+   ],
+   "published_kst": "2026-11-23T05:16:07+09:00",
+   "revised_kst": "2026-11-23T05:16:07+09:00",
+   "revision": 1,
+   "summary": "OpenAI 수석과학자가 내부 사전학습 손실 추이를 처음 공개했다. 그는 로그 퍼플렉서티 0.68~0.7 구간에서 다시 한 번 능력이 도약할 것으로 보고, 퍼플렉서티와 다른 측정값에 기준을 둔 업계 공동 개발 한도를 제안했다. 2026년의 가속을 주로 장기 연구와 컴퓨트 투자의 결과로 본 설명은 인프라 수요 논리를 받쳐 준다. 반대로 한도 제안이 채택되면 사전학습 확장에 상한이 생길 수 있다. 양면적 신호다.",
+   "path": "reports/openai-perplexity-and-intelligence.json"
+  },
   {
    "slug": "tomorrowx-2026-intel-ceo-lip-bu-tan-on-saving-intel-and",
    "type": "interview",
