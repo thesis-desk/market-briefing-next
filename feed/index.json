@@ -1,7 +1,29 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-23T08:04:52+09:00",
+ "generated_kst": "2026-11-23T08:22:05+09:00",
  "reports": [
+  {
+   "slug": "tomorrowx-2026-arm-ceo-rene-haas-on-nvidia-ai-agents-and-the",
+   "type": "interview",
+   "title": "르네 하스 Arm CEO (TomorrowX Summit 2026) : 에이전트발 CPU 수요, AGI CPU 매진, 엔비디아 리더십 교체",
+   "companies": [
+    {
+     "name": "Arm",
+     "ticker": null
+    },
+    {
+     "name": "NVIDIA",
+     "ticker": null
+    }
+   ],
+   "event": "TomorrowX Summit 2026",
+   "event_date": "2026-11-17",
+   "published_kst": "2026-11-23T08:22:05+09:00",
+   "revised_kst": "2026-11-23T08:22:05+09:00",
+   "revision": 1,
+   "summary": "하스는 에이전트가 CPU 수요를 끌어올린다는 논리를 자체 칩 AGI CPU의 매진과 4년 뒤 매출 250억 달러 목표에 연결했다. 엔비디아 리더십 교체가 Arm과의 관계를 흔들지 않는다고도 못 박았다. 다만 물량·고객·기간·마진은 공개하지 않아, 호재의 크기는 아직 CEO의 말에 기대고 있다.",
+   "path": "reports/tomorrowx-2026-arm-ceo-rene-haas-on-nvidia-ai-agents-and-the.json"
+  },
   {
    "slug": "tomorrowx-2026-aravind-srinivas-ai-and-the-american-dream",
    "type": "interview",
