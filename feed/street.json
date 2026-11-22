@@ -8,13 +8,13 @@
    "value": 6,
    "label": "엇갈림",
    "orgs": 44,
-   "items": 155
+   "items": 154
   },
   "market": {
    "value": -9,
    "label": "엇갈림",
    "orgs": 30,
-   "items": 101
+   "items": 100
   },
   "by_group": [
    {
@@ -56,7 +56,7 @@
     "group": "투자 거장",
     "ai_tech": -29,
     "ai_tech_orgs": 8,
-    "market": -51,
+    "market": -52,
     "market_orgs": 8
    },
    {
@@ -142,7 +142,7 @@
    "optimism": [
     {
      "tag": "수요·채택",
-     "n": 51
+     "n": 50
     },
     {
      "tag": "투자 회수",
