@@ -1,7 +1,41 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-22T11:15:28+09:00",
+ "generated_kst": "2026-11-22T14:15:20+09:00",
  "reports": [
+  {
+   "slug": "sixsigma-oae5m8zkh-q",
+   "type": "article",
+   "title": "식스시그마 : 텍사스 데이터센터의 처지는 1월 19일 전에 주 정부 허가를 받았는지, 판매세 면제를 유지하는지로 갈린다",
+   "companies": [
+    {
+     "name": "SpaceX",
+     "ticker": null
+    },
+    {
+     "name": "QTS",
+     "ticker": null
+    },
+    {
+     "name": "Anthropic",
+     "ticker": null
+    },
+    {
+     "name": "삼성전자",
+     "ticker": null
+    },
+    {
+     "name": "SK하이닉스",
+     "ticker": null
+    }
+   ],
+   "event": "텍사스 데이터센터 허가 재개와 판매세 면제 폐지 법안",
+   "event_date": "2026-11-16",
+   "published_kst": "2026-11-22T14:15:20+09:00",
+   "revised_kst": "2026-11-22T14:15:20+09:00",
+   "revision": 1,
+   "summary": "텍사스는 데이터센터를 받으면서 세금은 내게 하는 방향으로 움직이고 있고, 공화·민주가 이 점에서 겹친다. 영상의 결론대로 '허가 완료 여부'와 '판매세 면제 유지 여부'가 갈림길이라는 틀은 타당하지만, 새 주지사의 소급 보류 범위와 상·하원 법안의 기존 인증 처리는 아직 열려 있어 판정은 조건부다.",
+   "path": "reports/sixsigma-oae5m8zkh-q.json"
+  },
   {
    "slug": "together-security-event-prompt-leakage-for-requests-in-june",
    "type": "article",

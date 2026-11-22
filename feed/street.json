@@ -5,16 +5,16 @@
  "items_days": 30,
  "index": {
   "ai_tech": {
-   "value": 5,
+   "value": 6,
    "label": "엇갈림",
-   "orgs": 45,
-   "items": 156
+   "orgs": 44,
+   "items": 155
   },
   "market": {
-   "value": -10,
+   "value": -9,
    "label": "엇갈림",
-   "orgs": 31,
-   "items": 102
+   "orgs": 30,
+   "items": 101
   },
   "by_group": [
    {
@@ -54,10 +54,10 @@
    },
    {
     "group": "투자 거장",
-    "ai_tech": -31,
-    "ai_tech_orgs": 9,
+    "ai_tech": -29,
+    "ai_tech_orgs": 8,
     "market": -51,
-    "market_orgs": 9
+    "market_orgs": 8
    },
    {
     "group": "중앙은행·국제기구",
@@ -108,11 +108,11 @@
    "caution": [
     {
      "tag": "투자 회수",
-     "n": 21
+     "n": 20
     },
     {
      "tag": "밸류에이션",
-     "n": 21
+     "n": 20
     },
     {
      "tag": "자금 조달·신용",
@@ -120,7 +120,7 @@
     },
     {
      "tag": "쏠림",
-     "n": 17
+     "n": 16
     },
     {
      "tag": "금리·거시",
@@ -10155,37 +10155,6 @@
     "tier": "standard"
    },
    "note": "유튜브 자동 생성 자막(en) 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
-  },
-  {
-   "id": "blackrock-larry-fink-says-americans-retirement-savings-nee",
-   "group": "자산운용",
-   "org": "BlackRock",
-   "person": null,
-   "kind": "report",
-   "title": "Larry Fink, 미국인의 퇴직 저축이 10조 달러 규모 AI 인프라 수요를 뒷받침해야 한다고 말해... 자산을 지켜라",
-   "title_orig": "Larry Fink says Americans’ retirement savings need to fund $10 trillion AI infrastructure needs. Protect your wealth",
-   "url": "https://finance.yahoo.com/technology/ai/articles/larry-fink-says-americans-retirement-104500238.html",
-   "outlet": "Yahoo Finance",
-   "published_kst": "2026-10-23T12:44:00+09:00",
-   "stance": {
-    "ai_tech": 1,
-    "market": null
-   },
-   "args": [
-    "투자 회수",
-    "자금 조달·신용",
-    "수요·채택"
-   ],
-   "summary": "Larry Fink는 더 많은 미국인이 미국과 함께 성장한다는 생각을 갖게 되면 AI 인프라에 투자할 자금이 충분하고도 남을 것이라고 주장했다. 그는 향후 10년간 미국 내 데이터센터와 에너지 인프라 구축 규모를 약 10조 달러로 추산했다.",
-   "points": [
-    "더 많은 미국인이 미국과 함께 성장한다는 생각을 하도록 만들 수 있다면, 이 인프라에 투자하고도 남을 만큼 충분한 자금이 생길 것이다.",
-    "Fink는 당시 미국 전역의 데이터센터와 에너지 인프라 구축 규모가 향후 10년간 총 10조 달러에 이를 수 있다고 추산했다."
-   ],
-   "judged": {
-    "basis": "full_text",
-    "tier": "standard"
-   },
-   "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
   }
  ]
 }
