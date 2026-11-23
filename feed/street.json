@@ -5,10 +5,10 @@
  "items_days": 30,
  "index": {
   "ai_tech": {
-   "value": 8,
+   "value": 7,
    "label": "엇갈림",
    "orgs": 44,
-   "items": 156
+   "items": 155
   },
   "market": {
    "value": -9,
@@ -19,7 +19,7 @@
   "by_group": [
    {
     "group": "벤처캐피털",
-    "ai_tech": 44,
+    "ai_tech": 43,
     "ai_tech_orgs": 9,
     "market": -17,
     "market_orgs": 3
@@ -149,7 +149,7 @@
    "optimism": [
     {
      "tag": "수요·채택",
-     "n": 51
+     "n": 50
     },
     {
      "tag": "투자 회수",
@@ -169,18 +169,18 @@
     },
     {
      "tag": "정책·지정학",
-     "n": 19
+     "n": 18
     },
     {
      "tag": "경쟁·해자",
      "n": 15
     },
     {
-     "tag": "전력·공급 제약",
-     "n": 13
+     "tag": "쏠림",
+     "n": 12
     },
     {
-     "tag": "쏠림",
+     "tag": "전력·공급 제약",
      "n": 12
     }
    ]
@@ -10198,38 +10198,6 @@
     "tier": "standard"
    },
    "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
-  },
-  {
-   "id": "doubleline-fairly-choppy-markets-light-macro-heading-into-f",
-   "group": "자산운용",
-   "org": "DoubleLine Capital",
-   "person": "Jeff Mayberry",
-   "kind": "publication",
-   "title": "등락이 큰 시장, 연준 회의를 앞둔 가벼운 거시 일정",
-   "title_orig": "Fairly Choppy Markets, Light Macro Heading Into Fed Day",
-   "url": "https://www.youtube.com/watch?v=tmqQq4iE2Z4",
-   "outlet": "DoubleLine (유튜브)",
-   "published_kst": "2026-10-24T09:21:24+09:00",
-   "stance": {
-    "ai_tech": null,
-    "market": 0
-   },
-   "args": [
-    "금리·거시",
-    "쏠림"
-   ],
-   "summary": "진행자들은 이번 주 증시가 대형주 약세와 중소형·가치주 강세로 엇갈렸고, 10년물 금리는 5% 부근에서 등락한다고 짚는다. 10월 미국 PMI는 매우 강했지만 물가 압력도 매우 강했다고 평가한다. 다음 주 연준 회의에서는 금리 인상 확률이 10~20%이며 반대표 수가 관건이라고 본다.",
-   "points": [
-    "10월 S&P 글로벌 PMI는 성장이 매우 강했지만 물가 압력도 그만큼 강했다.",
-    "다음 주 발표될 근원·헤드라인 PCE 물가 전망치가 연준에 불리한 방향으로 움직이고 있다.",
-    "10년물 금리는 5% 부근에서 박스권을 보일 것으로 본다.",
-    "시장은 다음 주 연준 회의에서 금리 인상 가능성을 10~20% 정도로 반영하고 있다."
-   ],
-   "judged": {
-    "basis": "full_text",
-    "tier": "standard"
-   },
-   "note": "유튜브 자동 생성 자막(en) 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
   }
  ]
 }
