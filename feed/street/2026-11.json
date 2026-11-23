@@ -1,8 +1,73 @@
 {
  "schema": 1,
  "month": "2026-11",
- "updated_kst": "2026-11-24T05:29:16+09:00",
+ "updated_kst": "2026-11-24T08:24:09+09:00",
  "items": [
+  {
+   "id": "morgan-stanley-from-evs-to-robots-china-s-edge-in-physical-ai",
+   "group": "투자은행",
+   "org": "Morgan Stanley",
+   "person": "Laura Wang, Tim Hsiao, Sheng Zhong",
+   "kind": "publication",
+   "title": "EV에서 로봇으로: 피지컬 AI에서 중국의 강점",
+   "title_orig": "From EVs to Robots: China’s Edge in Physical AI",
+   "url": "https://www.morganstanley.com/insights/podcasts/thoughts-on-the-market",
+   "outlet": "Morgan Stanley Thoughts on the Market",
+   "published_kst": "2026-11-24T07:00:00+09:00",
+   "stance": {
+    "ai_tech": 1,
+    "market": null
+   },
+   "args": [
+    "수요·채택",
+    "경쟁·해자",
+    "전력·공급 제약"
+   ],
+   "summary": "중국은 방대한 공급망과 실제 응용 현장에서 모이는 데이터 덕에 피지컬 AI(자동차·로봇)에서 구조적 강점이 있다고 본다. 스마트 EV가 피지컬 AI 확산의 핵심 플랫폼이며 단기 수혜는 하드웨어 부품 업체, 중장기에는 서비스·라이선스 수익이 커진다고 주장한다. 다만 첨단 칩과 최첨단 모델은 중국의 격차로 남아 있다고 인정한다.",
+   "points": [
+    "중국의 강점은 최첨단 모델이 아니라 제조·공급망과 실제 응용 현장에서 모이는 데이터의 선순환에 있다.",
+    "첨단 칩과 최첨단 모델의 제약은 중국이 메워야 할 격차로 남아 있다.",
+    "스마트 EV는 이미 대부분의 신차에 적용되어 피지컬 AI 확산의 유력한 플랫폼이며, 로보택시도 크게 늘 것으로 전망한다.",
+    "향후 12~18개월은 센서·라이다·컴퓨팅 같은 하드웨어 부품 업체가 먼저 수혜를 본다고 본다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   }
+  },
+  {
+   "id": "pimco-the-credit-market-lens-making-sense-of-diverging",
+   "group": "자산운용",
+   "org": "PIMCO",
+   "person": "Latfi Karui",
+   "kind": "publication",
+   "title": "신용시장 렌즈: 투자등급과 하이일드 신용의 엇갈린 신호 읽기",
+   "title_orig": "The Credit Market Lens: Making Sense of Diverging Signals in Investment Grade and High Yield Credit",
+   "url": "https://www.youtube.com/watch?v=QVApveMkxNk",
+   "outlet": "PIMCO (유튜브)",
+   "published_kst": "2026-11-24T06:06:30+09:00",
+   "stance": {
+    "ai_tech": 0,
+    "market": -1
+   },
+   "args": [
+    "자금 조달·신용",
+    "쏠림",
+    "투자 회수"
+   ],
+   "summary": "PIMCO는 투자등급(IG)에서는 AI 관련 하이퍼스케일러의 재레버리지와 대규모 발행 때문에 등급 간 스프레드 압축이 극단까지 갔고, 더 갈 여지는 적다고 본다. 하이일드(HY)는 약한 펀더멘털과 차환 부담으로 CCC 등급의 스프레드 확대가 이어질 것으로 본다. 주식은 방어주에, 신용은 AI 이외 채권으로의 분산에 프리미엄을 지불하고 있다고 진단한다.",
+   "points": [
+    "IG의 등급 간 스프레드 압축은 더 진행될 여지가 적은 반면, HY의 스프레드 확대(디컴프레션)는 지속될 가능성이 높다.",
+    "하이퍼스케일러의 설비투자가 영업 잉여현금흐름을 넘어서면서 재레버리지와 대규모 발행이 AA 스프레드를 압박하고 BBB와의 압축을 가속했다.",
+    "AI 구축 속도가 느려져도 규모가 작아지는 것은 아니며, 컴퓨팅과 자금 조달 수요는 여전히 크다.",
+    "만기가 2년 안에 돌아오는 CCC 발행사가 현재 금리로 차환하면 쿠폰 부담이 약 10%포인트 늘어, 부실 CCC는 2023~24년식 구조조정 경로를 밟을 수 있다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "유튜브 영상의 음성을 음성 인식(Whisper)으로 받아 적은 전사 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
+  },
   {
    "id": "blackrock-inflation-beyond-the-mideast-energy-shock",
    "group": "자산운용",
@@ -2018,6 +2083,39 @@
     "tier": "standard"
    },
    "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
+  },
+  {
+   "id": "blackstone-figs-ceo-trina-spear-on-scrubs-the-power-of-cust",
+   "group": "PE·대체투자",
+   "org": "Blackstone",
+   "person": "Trina Spear",
+   "kind": "publication",
+   "title": "FIGS CEO 트리나 스피어: 스크럽, 고객 집착의 힘, 그리고 AI가 대체할 수 없는 일자리",
+   "title_orig": "FIGS CEO Trina Spear on Scrubs, The Power of Customer Obsession, and the Jobs AI Can’t Replace",
+   "url": "https://www.blackstone.com/insights/article/figs-ceo-trina-spear-on-scrubs-the-power-of-customer-obsession-and-the-jobs-ai-cant-replace",
+   "outlet": "Blackstone Insights",
+   "published_kst": "2026-11-19T07:58:00+09:00",
+   "stance": {
+    "ai_tech": 2,
+    "market": 1
+   },
+   "args": [
+    "수요·채택",
+    "투자 회수",
+    "정책·지정학",
+    "금리·거시"
+   ],
+   "summary": "Blackstone 소속 인사들은 데이터센터 산업의 사망 선고는 시기상조이며 규제는 전면 중단이 아닌 책임 개발 기준으로 수렴할 것으로 본다. 변동성에도 GDP 3.4%, 노동생산성 3.6%, AI 컴퓨트 수요가 성장을 떠받친다고 보며, 인플레이션 우려는 노이즈로 취급한다. 또한 의료는 AI에 의해 대체되기 어려운 분야로 본다.",
+   "points": [
+    "데이터센터 산업의 종말을 예견하는 시각은 시기상조이며, 전면 중단보다 책임 있는 개발이라는 중간 지대가 기본 시나리오다.",
+    "시장 변동성에도 성장과 생산성 상승, AI 컴퓨트 수요가 증시의 회복력을 뒷받침한다.",
+    "CoreWeave의 2027년 용량이 10배 초과 청약될 만큼 AI 인프라 수요가 강하다.",
+    "의료 종사자는 AI가 대체하기 어려운 직군이며, AI는 행정 업무를 덜어 주는 역할을 한다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   }
   },
   {
    "id": "citi-citi-ceo-jane-fraser-on-ai-tech-outages-newsmake",

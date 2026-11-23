@@ -1,7 +1,43 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-24T05:33:02+09:00",
+ "generated_kst": "2026-11-24T08:35:44+09:00",
  "reports": [
+  {
+   "slug": "anthropic-working-with-ai",
+   "type": "article",
+   "title": "Anthropic : AI의 가치는 도구 배포가 아니라 조직 개편에서 나오고, 고용 충격은 해고보다 채용 축소와 해외 외주 감축으로 먼저 온다",
+   "companies": [
+    {
+     "name": "Anthropic",
+     "ticker": null
+    }
+   ],
+   "published_kst": "2026-11-24T08:21:27+09:00",
+   "revised_kst": "2026-11-24T08:21:27+09:00",
+   "revision": 1,
+   "summary": "고객사 58곳의 정성 인터뷰로 보면 기업 AI 도입의 제약은 모델 성능보다 조직 쪽 병목이다. 노동 대체는 국내 해고보다 채용 동결과 해외 외주 계약 축소로 먼저 나타난다. 표본이 Anthropic 고객이고 효과가 자기 보고라 방향 신호로만 쓸 만하다. 투자 측면에서는 해외 아웃소싱 서비스와 특정 업무용 외부 솔루션에 악재, 범용 모델 공급자의 토큰 수요에는 완만한 호재로 읽는다.",
+   "path": "reports/anthropic-working-with-ai.json"
+  },
+  {
+   "slug": "openai-richpanel-ai-customer-support",
+   "type": "article",
+   "title": "OpenAI : Richpanel, AI가 상담 에이전트 셋업까지 맡아 30일 안에 고객지원 50%를 자동화",
+   "companies": [
+    {
+     "name": "Richpanel",
+     "ticker": null
+    },
+    {
+     "name": "OpenAI",
+     "ticker": null
+    }
+   ],
+   "published_kst": "2026-11-24T08:16:21+09:00",
+   "revised_kst": "2026-11-24T08:16:21+09:00",
+   "revision": 1,
+   "summary": "OpenAI가 낸 고객 사례 홍보 글이다. 비싼 추론 모델은 에이전트 셋업에, 저가 모델은 대량 상담에 쓰는 모델 계층화와 '셋업 담당 엔지니어(FDE)를 AI로 대체'한 방식이 6개월 약 300건 배포를 가능하게 했다는 것이 요지다. 다만 자동화율·고객 만족도의 정의와 수치가 없고 모두 Richpanel CEO의 자기 보고여서, 사업 모델의 방향을 보여 주는 신호로 읽는 편이 맞다.",
+   "path": "reports/openai-richpanel-ai-customer-support.json"
+  },
   {
    "slug": "morgan-stanley-china-s-bet-on-physical-ai",
    "type": "article",
@@ -8627,7 +8663,7 @@
   }
  ],
  "street": {
-  "updated_kst": "2026-11-24T05:29:16+09:00",
+  "updated_kst": "2026-11-24T08:24:09+09:00",
   "path": "street.json"
  },
  "calendar": {
@@ -8635,7 +8671,7 @@
   "path": "calendar.json"
  },
  "watch": {
-  "updated_kst": "2026-11-23T22:46:19+09:00",
+  "updated_kst": "2026-11-24T08:35:44+09:00",
   "path": "watch.json"
  },
  "datasets": [
