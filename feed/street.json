@@ -11,10 +11,10 @@
    "items": 152
   },
   "market": {
-   "value": -10,
+   "value": -9,
    "label": "엇갈림",
-   "orgs": 30,
-   "items": 100
+   "orgs": 29,
+   "items": 99
   },
   "by_group": [
    {
@@ -56,8 +56,8 @@
     "group": "투자 거장",
     "ai_tech": -31,
     "ai_tech_orgs": 9,
-    "market": -55,
-    "market_orgs": 8
+    "market": -56,
+    "market_orgs": 7
    },
    {
     "group": "중앙은행·국제기구",

@@ -1026,16 +1026,6 @@
      "text": "값을 비워 둠"
     },
     {
-     "name": "Gemini API 토큰",
-     "state": "ok",
-     "text": "22.0 → 32.0(분당 십억 개, +45%)"
-    },
-    {
-     "name": "Gemini 앱 사용자",
-     "state": "ok",
-     "text": "9.5 → 10.0(억 명, +5%)"
-    },
-    {
      "name": "토큰 1월 판정",
      "state": "ok",
      "text": "2026년 1월: 휴가 전 대비 +54%(기본 기준 +40%) — 재가속 · 다음 판정 2027-01-25"
@@ -1597,6 +1587,25 @@
       "rough": false
      },
      {
+      "key": "appratings:claude",
+      "label": "Claude 앱 평가",
+      "kind": "dev",
+      "source": "앱스토어 미국",
+      "unit": "새 평가/주",
+      "main": false,
+      "measure": "volume",
+      "vendor": "anthropic",
+      "base": null,
+      "first": null,
+      "window": null,
+      "ratio_pct": null,
+      "last_year_pct": null,
+      "yoy": null,
+      "trend": [],
+      "trend_end": null,
+      "rough": false
+     },
+     {
       "key": "appstore:claude",
       "label": "Claude 앱",
       "kind": "dev",
@@ -1753,6 +1762,25 @@
       "kind": "dev",
       "source": "VS Code",
       "unit": "설치/주",
+      "main": false,
+      "measure": "volume",
+      "vendor": "openai",
+      "base": null,
+      "first": null,
+      "window": null,
+      "ratio_pct": null,
+      "last_year_pct": null,
+      "yoy": null,
+      "trend": [],
+      "trend_end": null,
+      "rough": false
+     },
+     {
+      "key": "appratings:chatgpt",
+      "label": "ChatGPT 앱 평가",
+      "kind": "dev",
+      "source": "앱스토어 미국",
+      "unit": "새 평가/주",
       "main": false,
       "measure": "volume",
       "vendor": "openai",
@@ -1991,6 +2019,25 @@
       "kind": "dev",
       "source": "VS Code",
       "unit": "설치/주",
+      "main": false,
+      "measure": "volume",
+      "vendor": "google",
+      "base": null,
+      "first": null,
+      "window": null,
+      "ratio_pct": null,
+      "last_year_pct": null,
+      "yoy": null,
+      "trend": [],
+      "trend_end": null,
+      "rough": false
+     },
+     {
+      "key": "appratings:gemini",
+      "label": "Gemini 앱 평가",
+      "kind": "dev",
+      "source": "앱스토어 미국",
+      "unit": "새 평가/주",
       "main": false,
       "measure": "volume",
       "vendor": "google",
