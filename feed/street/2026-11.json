@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "month": "2026-11",
- "updated_kst": "2026-11-24T02:35:10+09:00",
+ "updated_kst": "2026-11-24T05:29:16+09:00",
  "items": [
   {
    "id": "blackrock-inflation-beyond-the-mideast-energy-shock",
@@ -127,6 +127,45 @@
     "적정 수익을 내려면 2030년까지 AI 모델·애플리케이션 연매출이 최소 1.5조 달러가 되어야 한다고 추정한다.",
     "높은 기대, 집중된 지수, AI 수익화 불확실성 때문에 글로벌 주식 의견을 중립으로 낮췄고 이번 변동성이 그 판단을 뒷받침한다고 본다.",
     "기본 시나리오는 건설적이지만 단기 상승 촉매는 적고 변동성은 높게 유지될 것으로 본다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "팟캐스트 음성을 음성 인식(Whisper)으로 받아 적은 전사 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
+  },
+  {
+   "id": "ubs-ubs-on-air-paul-donovan-daily-audio-slowdown-sil",
+   "group": "투자은행",
+   "org": "UBS",
+   "person": "Paul Donovan",
+   "kind": "publication",
+   "title": "UBS 온에어: Paul Donovan 데일리 오디오 '경기 둔화의 긍정적 측면?'",
+   "title_orig": "UBS On-Air: Paul Donovan Daily Audio 'Slowdown silver-linings?'",
+   "url": "https://www.ubs.com/content/dam/podcasts/wma/261123-slowdown-silver-linings.mp3",
+   "outlet": "UBS Paul Donovan Daily",
+   "published_kst": "2026-11-23T17:41:10+09:00",
+   "stance": {
+    "ai_tech": 0,
+    "market": 0
+   },
+   "args": [
+    "투자 회수",
+    "자금 조달·신용",
+    "수요·채택"
+   ],
+   "summary": "주식 약세가 실물 경제 악화의 신호라고 보기는 어렵다고 본다. AI 투자가 둔화하면 단기적으로는 다른 부문에 자원이 풀려 순이익이 될 수 있다고 한다. 다만 AI 자금 조달의 순환 구조에 대한 의구심과 구리 가격 하락이 보여 주는 AI 물리적 수요 기대 변화는 주시한다.",
+   "points": [
+    "최근 주식 약세는 향후 경제 문제를 알리는 자동적 신호가 아니다.",
+    "AI 투자가 둔화하면 자원이 다른 부문으로 풀려 단기적으로는 경제에 순이익이 될 수 있다.",
+    "AI 자금 조달의 순환 구조가 의문시되며, AI에 대한 신선함이 옅어지고 있다.",
+    "구리 가격 하락은 AI의 물리적 수요에 대한 기대가 적어도 당분간 바뀌었음을 시사한다."
+   ],
+   "evidence": [
+    {
+     "ko": "AI 자금 조달의 순환 구조가 의문시되며, AI에 대한 신선함이 옅어지고 있다.",
+     "orig": "On the financial markets point of view, there are concerns about the circular nature of some AI financing. The Ouroboros funding model may be questioned as the AI toy loses some of its shiny newness."
+    }
    ],
    "judged": {
     "basis": "full_text",

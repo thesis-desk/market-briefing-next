@@ -1,7 +1,74 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-24T02:48:59+09:00",
+ "generated_kst": "2026-11-24T05:33:02+09:00",
  "reports": [
+  {
+   "slug": "morgan-stanley-china-s-bet-on-physical-ai",
+   "type": "article",
+   "title": "Morgan Stanley : 중국의 물리 AI는 2028년부터 이익과 소득으로 돌아온다, 2027년은 아직 병목 투자 단계",
+   "companies": [
+    {
+     "name": "Morgan Stanley",
+     "ticker": null
+    }
+   ],
+   "event": "Morgan Stanley 25th Annual Asia Pacific Summit (싱가포르)",
+   "published_kst": "2026-11-24T05:33:02+09:00",
+   "revised_kst": "2026-11-24T05:33:02+09:00",
+   "revision": 1,
+   "summary": "모건스탠리는 기존 공장 개조 중심의 투자, 지방정부 보조금 축소, 부동산 안정이 겹치면 이번 물리 AI 투자는 과거와 달리 기업 이익과 가계 소득으로 이어진다고 본다. 거시 효과와 주식시장 개선(이익 성장 10% 이상, ROE 13% 근접)은 모두 2028~2030년의 조건부 전망이고, 2027년까지 확실한 수혜는 상류 병목 업종에 한정된다.",
+   "path": "reports/morgan-stanley-china-s-bet-on-physical-ai.json"
+  },
+  {
+   "slug": "nvidia-dev-accelerating-direct-sparse-solvers-for",
+   "type": "article",
+   "title": "NVIDIA Technical Blog : cuDSS 1.0으로 CAE·EDA의 희소 직접 해법을 단일 GPU에서 정식 운용할 수 있다",
+   "companies": [
+    {
+     "name": "NVIDIA",
+     "ticker": null
+    }
+   ],
+   "published_kst": "2026-11-24T05:26:33+09:00",
+   "revised_kst": "2026-11-24T05:26:33+09:00",
+   "revision": 1,
+   "summary": "cuDSS 1.0의 새 내용은 대칭 부정치 행렬의 정확도를 높이는 기본값 변경, 고정(pinned) 메모리 처리기, 기호 분해 가속이다. 처리 단계별 2.5~151배 가속과 약 30% 메모리 절감은 상당 부분 이전 버전에서 쌓인 성과다. 모두 NVIDIA가 직접 측정한 결과이고, MKL 대비 끝단(end-to-end) 가속은 제시되지 않았다. NVIDIA에는 CAE·EDA에서 CPU 해법을 대체할 근거가 하나 더 쌓인 약한 호재로 보지만, 종목 판단을 바꿀 자료는 아니다.",
+   "path": "reports/nvidia-dev-accelerating-direct-sparse-solvers-for.json"
+  },
+  {
+   "slug": "google-research-supercharging-transformer-residual",
+   "type": "article",
+   "title": "Google Research : 잔차 연결을 '이전 층을 골라 쓰는 라우팅'으로 바꾸면 같은 품질을 더 적은 층·스텝으로 얻는다",
+   "companies": [
+    {
+     "name": "Google",
+     "ticker": null
+    }
+   ],
+   "published_kst": "2026-11-24T05:21:56+09:00",
+   "revised_kst": "2026-11-24T05:21:56+09:00",
+   "revision": 1,
+   "summary": "2025년 ICML 논문(DeepCrossAttention)을 1년 반 뒤에 다시 소개하는 글이다. 성능 수치는 LM1B·C4 같은 소규모 벤치마크 결과라 새롭지 않다. 이 글에서 새로 볼 것은 Moonshot AI의 attention residuals와 Thinking Machines의 Inkling 2가 같은 방향의 설계를 채택했다는 대목이다. 상장 종목의 판정을 바꿀 근거는 이 글에 없다.",
+   "path": "reports/google-research-supercharging-transformer-residual.json"
+  },
+  {
+   "slug": "big-technology-inside-the-stunning-return-of-jensen-huang",
+   "type": "interview",
+   "title": "알렉스 칸트로위츠 단독 해설 : 젠슨 황의 엔비디아 CEO 복귀, 지배구조 선례와 미·중 AI",
+   "companies": [
+    {
+     "name": "NVIDIA",
+     "ticker": null
+    }
+   ],
+   "event": "젠슨 황 엔비디아 CEO 복직",
+   "event_date": "2026-11-23",
+   "published_kst": "2026-11-24T05:19:10+09:00",
+   "revised_kst": "2026-11-24T05:19:10+09:00",
+   "revision": 1,
+   "summary": "엔비디아 이사회와 대통령은 사실상 젠슨 황을 '너무 커서 못 자르는 CEO'로 인정했고, 시장은 그 판단에 하루 만에 시가총액 약 1조 달러를 붙였다. 단기 키맨 리스크는 걷혔지만 조사·정권 교체·중국 경로 축소라는 부담은 그대로 남아 있다. 이번 복귀는 위험이 해소된 결과라기보다 위험이 한 사람에게 몰려 있다는 사실을 다시 확인한 사건으로 읽어야 한다.",
+   "path": "reports/big-technology-inside-the-stunning-return-of-jensen-huang.json"
+  },
   {
    "slug": "tomorrowx-2026-mu-2",
    "type": "interview",
@@ -8560,7 +8627,7 @@
   }
  ],
  "street": {
-  "updated_kst": "2026-11-24T02:35:10+09:00",
+  "updated_kst": "2026-11-24T05:29:16+09:00",
   "path": "street.json"
  },
  "calendar": {
