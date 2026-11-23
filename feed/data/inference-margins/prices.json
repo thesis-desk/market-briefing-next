@@ -2,7 +2,7 @@
  "schema": 1,
  "bundle": "P1",
  "title": "단가 — 같은 오픈 모델의 사업자별·채널별 토큰 단가와 추이",
- "updated_kst": "2026-11-23T16:47:33+09:00",
+ "updated_kst": "2026-11-23T17:11:22+09:00",
  "measure": null,
  "notes": [
   "방향(sides)은 AI 의 해석이다.",
@@ -10,14 +10,14 @@
   "조사 open-weight-substitution 에서 옮겨 온 기록은 note 끝에 그렇다고 적었다. 값과 출처는 그 조사의 3차 확인을 거친 그대로다."
  ],
  "summary": {
-  "records": 27,
-  "with_value": 25,
+  "records": 28,
+  "with_value": 26,
   "by_hypothesis": {
    "H1": {
     "지지": 7,
     "반박": 6,
     "양쪽": 13,
-    "중립": 1
+    "중립": 2
    },
    "H3": {
     "지지": 0,
@@ -1394,6 +1394,43 @@
       "p50_latency_ms": 992
      }
     ]
+   }
+  },
+  {
+   "id": "openrouter-october-tokens-790t",
+   "country": "ZZ",
+   "city": null,
+   "metric": "OpenRouter 월간 처리 토큰 — 2026년 10월",
+   "value": 790,
+   "unit": "조 토큰",
+   "asof": "2026-10",
+   "basis": "OpenRouter 10월 결산. 9월보다 37%, 1월의 25배. 플랫폼 역사상 가장 큰 달. 에이전트로 분류된 키가 76%(약 600조 토큰)를 썼다(1년 전 8%)",
+   "definition": "OpenRouter 가 자기 플랫폼 자료로 낸 값이다. 개발자·스타트업 중심의 한 채널이고 전용 배포·직접 계약은 잡히지 않는다.",
+   "quote": "October was the largest month in OpenRouter's history: 790T tokens, up 37% from September and a startling 25x from January.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "OpenRouter — October 2026",
+     "url": "https://openrouter.ai/data/october-2026",
+     "date": "2026-11-23",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H1": "중립"
+   },
+   "side_basis": "물량이 빠르게 커지는 시장이라는 바탕이다. 누가 얼마를 남기는지는 가르지 않는다.",
+   "note": "같은 기간 오픈웨이트 유효 단가는 70% 내렸다(openrouter-effective-price-gap-oct). 물량은 단가 하락보다 빨리 늘었다.",
+   "detail": {
+    "growth_vs_sep_pct": 37,
+    "multiple_vs_jan": 25,
+    "agentic_share_pct": 76,
+    "agentic_share_year_ago_pct": 8
    }
   }
  ]

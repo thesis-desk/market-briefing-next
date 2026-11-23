@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated_kst": "2026-11-23T16:48:13+09:00",
+ "updated_kst": "2026-11-23T17:25:31+09:00",
  "question": "오픈웨이트 추론을 파는 쪽에서 돈은 어디에 남는가 — 토큰 재판매, 사후 학습·전용 배포, 하이퍼스케일러",
  "bundles": [
   {
@@ -8,18 +8,18 @@
    "file": "prices.json",
    "title": "단가 — 같은 오픈 모델의 사업자별·채널별 토큰 단가와 추이",
    "status": "collecting",
-   "records": 27,
+   "records": 28,
    "verified_share": 1,
-   "updated_kst": "2026-11-23T16:47:33+09:00"
+   "updated_kst": "2026-11-23T17:11:22+09:00"
   },
   {
    "id": "P2",
    "file": "costs.json",
    "title": "원가 — 칩·랙 세대별 서빙 원가와 GPU 시간당 값",
    "status": "collecting",
-   "records": 17,
-   "verified_share": 0.941,
-   "updated_kst": "2026-11-23T16:44:12+09:00"
+   "records": 19,
+   "verified_share": 0.895,
+   "updated_kst": "2026-11-23T17:25:31+09:00"
   },
   {
    "id": "P3",

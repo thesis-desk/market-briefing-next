@@ -2,7 +2,7 @@
  "schema": 1,
  "bundle": "P2",
  "title": "원가 — 칩·랙 세대별 서빙 원가와 GPU 시간당 값",
- "updated_kst": "2026-11-23T16:44:12+09:00",
+ "updated_kst": "2026-11-23T17:25:31+09:00",
  "measure": null,
  "notes": [
   "방향(sides)은 AI 의 해석이다.",
@@ -10,14 +10,14 @@
   "조사 open-weight-substitution 에서 옮겨 온 기록은 note 끝에 그렇다고 적었다. 값과 출처는 그 조사의 3차 확인을 거친 그대로다."
  ],
  "summary": {
-  "records": 17,
-  "with_value": 16,
+  "records": 19,
+  "with_value": 17,
   "by_hypothesis": {
    "H1": {
     "지지": 3,
     "반박": 0,
-    "양쪽": 9,
-    "중립": 5
+    "양쪽": 10,
+    "중립": 6
    }
   }
  },
@@ -802,6 +802,141 @@
      "Offline": "tie",
      "Server": "97%",
      "Interactive": "119%"
+    }
+   }
+  },
+  {
+   "id": "ix-nvl72-vs-hgx-hourly-rate",
+   "country": "ZZ",
+   "city": null,
+   "metric": "NVL72 랙과 8장 노드(HGX)의 GPU 한 장 시간당 보유 원가 — 같은 세대끼리",
+   "value": 1.02,
+   "unit": "배(GB300 NVL72 ÷ B300)",
+   "asof": "2026-11",
+   "basis": "GB300 NVL72 2.31달러 ÷ B300 2.26달러 = 1.02배, GB200 NVL72 1.86달러 ÷ B200 1.73달러 = 1.08배(GPU 한 장 시간당, 하이퍼스케일러급 보유). 칩 한 장 TDP 1,400W 대 1,100W(1.27배), 1,200W 대 1,000W(1.2배). 한 묶음(scale-up)은 72장 대 8장",
+   "definition": "SemiAnalysis InferenceX 의 비공식 사본 화면('Data may be modified or out of date')이다. 시간당 값은 SemiAnalysis AI Cloud TCO 모델의 하이퍼스케일러급 보유 기준(서버 설비·전력·코로케이션·자본비용)이고 가동률 가정은 화면에 없다.",
+   "quote": "When owned at large hyperscaler volume, the SemiAnalysis TCO model rates GB300 NVL72 at $2.31/hr versus $2.26/hr for B300.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "InferenceX — GB300 NVL72 vs B300",
+     "url": "https://inferencex.semianalysis.com/chips/gb300-nvl72-vs-b300",
+     "date": "2026-11-23",
+     "read": "full"
+    },
+    {
+     "n": 2,
+     "title": "InferenceX — GB200 NVL72 vs B200",
+     "url": "https://inferencex.semianalysis.com/chips/gb200-nvl72-vs-b200",
+     "date": "2026-11-23",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H1": "중립"
+   },
+   "side_basis": "GPU 한 장의 보유 원가는 NVL72 나 8장 노드나 거의 같다. 100만 토큰당 원가의 차이는 전부 처리량에서 난다.",
+   "note": "소매 임대 기준은 GB300 NVL72 5.00 대 B300 4.25달러(1.18배)다(ix-gpu-hourly-rate-tiers). 데스크 가격 탭은 GB200·GB300 NVL72 의 임대가를 받지 않는다.",
+   "detail": {
+    "gb300_nvl72": 2.31,
+    "b300": 2.26,
+    "gb200_nvl72": 1.86,
+    "b200": 1.73,
+    "tdp_w": {
+     "gb300_nvl72": 1400,
+     "b300": 1100,
+     "gb200_nvl72": 1200,
+     "b200": 1000
+    },
+    "scale_up": {
+     "nvl72": 72,
+     "hgx": 8
+    }
+   }
+  },
+  {
+   "id": "nvl72-vs-hgx-cost-by-model",
+   "country": "ZZ",
+   "city": null,
+   "metric": "NVL72 랙 대 8장 노드(HGX)의 100만 토큰당 서빙 원가 배수 — 모델 크기·작업별",
+   "value": null,
+   "unit": "배(NVL72 ÷ 같은 세대 8장 노드)",
+   "asof": "2026-11",
+   "basis": "계산(InferenceX 순위 화면, 같은 사용자당 속도에서 잰 값): Kimi K3(2.8T, 에이전트 코딩, 초당 125토큰) GB200 NVL72 0.13 ÷ B200 0.24 = 0.54배(두 쪽 모두 Dynamo vLLM), GB300 NVL72 0.059 ÷ B300 0.23 = 0.26배(B300 은 분리 서빙 없는 vLLM). Kimi K3.1 Pro(2.8T, 에이전트 코딩, 초당 50토큰) GB300 NVL72 0.013 ÷ B300 0.028 = 0.46배, GB200 NVL72 0.14 ÷ B200 0.075 = 1.87배(GB200 NVL72 은 분리 서빙 없는 vLLM, B200 은 Dynamo SGLang). DeepSeek R1(671B, 단일 대화 8k/1k, 초당 125토큰) GB200 NVL72 0.67 ÷ B200 0.20 = 3.35배, GB300 NVL72 0.80 ÷ B300 0.57 = 1.40배(B300 은 fp8). gpt-oss-120b 는 NVL72 를 재지 않았고, DeepSeek V4.1 Flash(552B)는 블랙웰 구성이 모두 0.001달러로 같다",
+   "definition": "SemiAnalysis InferenceX 의 비공식 사본 화면('Data may be modified or out of date')이다. 시간당 값은 SemiAnalysis AI Cloud TCO 모델의 하이퍼스케일러급 보유 기준(서버 설비·전력·코로케이션·자본비용)이고 가동률 가정은 화면에 없다. 분모는 캐시 재사용 입력을 포함한 전체 토큰이고, 칩마다 측정일과 서빙 엔진이 다르다.",
+   "quote": null,
+   "sources": [],
+   "value_src": [],
+   "alt": [],
+   "conf": "low",
+   "sides": {
+    "H1": "양쪽"
+   },
+   "side_basis": "2.8T 급 초대형 모델의 에이전트 작업에서는 NVL72 가 같은 세대 8장 노드보다 원가가 절반 아래이고, 671B 모델의 짧은 대화에서는 8장 노드가 1.4~3.4배 싸다. 토큰 재판매의 마진은 모델에 맞는 랙과 분리 서빙 소프트웨어를 갖췄느냐에 달렸다 — 같은 GB200 NVL72 도 분리 서빙 없이 돌리면 B200 보다 비쌌다.",
+   "note": "원가는 측정 처리량을 시간당 값으로 나눈 것이라 랙을 꽉 채워 돌릴 때의 값이다. 72장 한 묶음을 한 모델의 물량으로 채우지 못하면 NVL72 의 이점은 줄어든다.",
+   "refs": [
+    {
+     "bundle": "P2",
+     "id": "ix-kimi-k3-cost-per-mtok-by-chip"
+    },
+    {
+     "bundle": "P2",
+     "id": "ix-kimi-k31-pro-cost-per-mtok-by-chip"
+    },
+    {
+     "bundle": "P2",
+     "id": "ix-deepseek-r1-cost-per-mtok-by-chip-50tps"
+    },
+    {
+     "bundle": "P2",
+     "id": "ix-gptoss-120b-cost-per-mtok-by-chip"
+    },
+    {
+     "bundle": "P2",
+     "id": "ix-deepseek-v41-flash-cost-per-mtok-by-chip"
+    },
+    {
+     "bundle": "P2",
+     "id": "ix-nvl72-vs-hgx-hourly-rate"
+    }
+   ],
+   "detail": {
+    "kimi_k3_125": {
+     "gb200_nvl72/b200": 0.54,
+     "gb300_nvl72/b300": 0.26
+    },
+    "kimi_k31_pro_50": {
+     "gb300_nvl72/b300": 0.46,
+     "gb200_nvl72/b200": 1.87
+    },
+    "deepseek_r1_chat_125": {
+     "gb200_nvl72/b200": 3.35,
+     "gb300_nvl72/b300": 1.4
+    },
+    "tokens_per_gpu": {
+     "kimi_k3": {
+      "gb300_nvl72": 10839,
+      "gb200_nvl72": 4091,
+      "b300": 2722,
+      "b200": 2043
+     },
+     "kimi_k31_pro": {
+      "gb300_nvl72": 49748,
+      "b300": 22563,
+      "b200": 6383,
+      "gb200_nvl72": 3660
+     },
+     "deepseek_r1": {
+      "b200": 2430,
+      "b300": 1104,
+      "gb300_nvl72": 803,
+      "gb200_nvl72": 775
+     }
     }
    }
   }

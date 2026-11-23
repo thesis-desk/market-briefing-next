@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-23T16:48:13+09:00",
+ "generated_kst": "2026-11-23T17:26:40+09:00",
  "reports": [
   {
    "slug": "sixsigma-10-4-0-ai",
@@ -8396,7 +8396,7 @@
   "path": "calendar.json"
  },
  "watch": {
-  "updated_kst": "2026-11-23T14:13:41+09:00",
+  "updated_kst": "2026-11-23T17:26:40+09:00",
   "path": "watch.json"
  },
  "datasets": [
@@ -8418,7 +8418,7 @@
   {
    "id": "inference-margins",
    "path": "data/inference-margins/index.json",
-   "updated_kst": "2026-11-23T16:48:13+09:00"
+   "updated_kst": "2026-11-23T17:25:31+09:00"
   },
   {
    "id": "online-narratives",
