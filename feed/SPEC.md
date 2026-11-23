@@ -1,6 +1,6 @@
 # feed 형식 명세
 
-이 사이트의 리포트와 금융권 시각을 정적 JSON 파일로 내보낸다. JavaScript 실행이나 로그인 없이 읽을 수 있다.
+이 사이트의 리포트·금융권 시각·감시 대상을 정적 JSON 파일로 내보낸다. JavaScript 실행이나 로그인 없이 읽을 수 있다.
 사이트를 빌드할 때 화면과 같은 원천에서 함께 만들며, 손으로 따로 관리하지 않는다. 자료는 이 사이트에서 밖으로만 나간다.
 
 - 기준 주소: `<사이트 주소>/feed/`
@@ -16,6 +16,7 @@
 | `street/YYYY-MM.json` | 금융권 시각 월별 보관(한국시간 공개 월) |
 | `calendar.json` | 실적·투자자의 날 일정과 대기 목록 |
 | `health.json` | 수집 상태와 놓친 것(`missed`) |
+| `watch.json` | 첫 화면의 감시 대상(AI 설비투자 사이클을 보는 네 갈래의 상태와 그림의 값) |
 | `data/<id>/` | 조사 자료 묶음. 한 질문을 두고 손으로 모은 기록(화면 없음) |
 | `SPEC.md` | 이 문서 |
 | `QUESTIONS.md` | 판단하기 어려웠던 것 |
@@ -31,7 +32,7 @@
 - 필드 이름은 바꾸지 않는다. 바꿔야 하면 `schema` 번호를 올리고 이 문서의 변경 이력에 적는다. 값의 종류(예: 출처 `kind`)는 늘어날 수 있다.
 - 유료 출처(`access: "paid"`)는 화면과 똑같이 본문을 싣지 않는다. 짧은 인용과 이 사이트의 문장으로 쓴 사실·해석만 나간다. 화면에 없는 것을 feed 에 더 넣지 않는다.
 - 이미지·영상은 파일로 넣지 않는다. 원본 주소와 시각(초, `t`)만 넣는다.
-- 게시 전에 화면의 리포트 수·금융권 항목 수가 feed 의 수와 같은지 검사한다. 다르면 게시하지 않는다.
+- 게시 전에 화면의 리포트 수·금융권 항목 수가 feed 의 수와 같은지, 첫 화면 감시 대상의 항목·상태가 `watch.json` 과 같은지 검사한다. 다르면 게시하지 않는다.
 
 ## index.json
 
@@ -47,12 +48,14 @@
    "summary": "목록에 보이는 요약(해석)", "path": "reports/coreweave-3q26-earnings.json"}
  ],
  "street": {"updated_kst": "…", "path": "street.json"},
- "calendar": {"updated_kst": "…", "path": "calendar.json"}
+ "calendar": {"updated_kst": "…", "path": "calendar.json"},
+ "watch": {"updated_kst": "…", "path": "watch.json"}
 }
 ```
 
 - `generated_kst` 는 빌드 시각이 아니라 **가장 최근에 바뀐 기록의 시각**이다. 내용이 그대로면 이 값도 그대로다.
 - `datasets` 는 조사 자료 묶음의 목록이다: `[{"id": "apac-siting", "path": "data/apac-siting/index.json", "updated_kst": "…"}]`. 묶음이 하나도 없으면 키가 없다. `updated_kst` 는 기록이 아직 없으면 `null`.
+- `watch.updated_kst` 는 감시 대상이 읽는 기록(실적에서 옮긴 분기 값·거시 지표·가격·종목 표) 가운데 가장 최근에 바뀐 시각이다.
 - `type`: `earnings` | `investor_day` | `interview` | `article` | `event`(행사 정리). 종합(`synthesis`)·조사 리포트(`research`)는 잠가 싣지 않는다.
 - `companies[].ticker` 는 없으면 `null`. `event`·`event_date` 는 있을 때만.
 - `revision` 은 처음 게시할 때 1이다. `revised_kst` 는 고친 적이 없으면 `published_kst` 와 같다.
@@ -222,6 +225,59 @@
 - `collectors[].last_kst` 는 그 기록이 마지막으로 바뀐 시각이다. 오래 멈춰 있으면 수집이 돌지 않은 것이다.
 - `missed` 는 `calendar.json` 에서 `status` 가 `missed` 인 일정이다.
 
+## watch.json
+
+첫 화면 아래의 감시 대상을 그대로 낸다. 사이트 빌드가 화면을 그릴 때와 같은 계산(`site/src/lib/watch.ts`)의 결과이고, 신호의 상태는 따로 저장하지 않으므로 이 파일이 화면 밖에서 상태를 읽는 유일한 곳이다. 기록이 없으면 `updated_kst` 가 `null` 이고 `items` 가 빈 목록이다.
+
+```json
+{
+ "schema": 1, "updated_kst": "…", "unit": "십억 달러",
+ "quarters": [{"end": "2025-12", "label": "4Q25"}, {"end": "2026-09", "label": "3Q26"}],
+ "rules": {"turn_count": 2, "high_pos": 90, "decel_pt": 1},
+ "labels": {"state": {"ok": "유지", "warn": "경계", "turn": "꺾임", "none": "보류"}, "move": {…}, "stance": {…}, "verdict": {…}},
+ "items": [
+  {"id": "capex", "no": 1, "title": "빅테크 설비투자 가이던스", "question": "…", "state": "warn", "headline": "…",
+   "signals": [{"name": "마이크로소프트", "state": "warn", "text": "…"}],
+   "theses": [{"id": "…", "title": "…", "statement": "…", "verdict": "mixed", "recent": [{"when": "2026-11-20", "daily": true, "verdict": "mixed"}]}],
+   "gaps": ["…"],
+   "companies": [{"id": "microsoft", "name": "마이크로소프트", "basis": "금융리스 포함", "report": "microsoft-1q27-earnings",
+                  "capex": [37.5, 31.9, 41, 45.2], "why_blank": ["…", null, null, null],
+                  "guidance": {"label": "…", "move": "down", "prior": {"label": "…", "low": 0, "high": 0},
+                               "history": [{"date": "2026-10-28", "low": 170, "high": 170, "bound": "약", "note": "…", "report": "…"}]},
+                  "next_year": {"label": "2027년", "stance": "up", "text": "…", "date": "…", "report": "…"},
+                  "next_earnings": {"date": "2027-01-28", "confirmed": false, "period": null},
+                  "signal": {"state": "warn", "text": "…"}}],
+   "total": {"quarter": "2026-09", "value": 0}}
+ ]
+}
+```
+
+- 항목은 화면 순서대로 넷이다: `capex`(빅테크 설비투자 가이던스) · `financing`(자금 조달 구조) · `demand`(최종 수요 매출) · `supply`(공급망 선행지표).
+- 무엇이 무엇인가: `question` 은 사용자가 적은 물음이다. 값(`capex`·`values`·`growth`·스프레드·가격·가이던스)은 확인된 사실이다. 상태(`state`)·`signals`·`headline`·`total`·`pace`·`fcf_note` 는 규칙으로 계산한 값이다(AI 없음). `theses[].verdict` 는 AI 의 해석이다. 상태와 가설 판정은 섞지 않는다.
+- `state`: `ok`(유지) | `warn`(경계) | `turn`(꺾임) | `none`(보류, 판단할 값이 없음). 항목의 상태는 신호 가운데 꺾임이 `rules.turn_count` 개 이상이면 꺾임, 하나라도 경계·꺾임이면 경계, 그 밖에는 유지다. 신호마다의 규칙은 첫 화면의 "상태를 정하는 규칙"과 `docs/areas/digest.md` 의 "감시 대상"에 있고, 문턱값은 `rules`(`high_pos`: 52주 범위 안 자리 %, `decel_pt`: 성장률 둔화 %p)와 행마다의 `widen_bp`·`drop_pct` 다.
+- `quarters[].end` 는 분기 말의 달이다. 분기 값의 목록(`capex`·`values`·`growth`)은 `quarters` 와 길이·순서가 같고, 회사가 밝히지 않은 분기는 `null` 이다. 그 이유는 같은 자리의 `why_blank` 에 있다(빈 칸이 없으면 키가 없다). 화면처럼 최근 여섯 분기까지만 나간다. 금액의 단위는 `unit`(십억 달러)이다.
+- `report` 는 그 값을 옮겨 온 실적 리포트의 슬러그(`reports/<슬러그>.json`)다. 없으면 `null`.
+- `theses[].verdict`: `supported` | `mixed` | `weakened` | `broken` | `null`(아직 점검 전). `recent` 는 자료가 있던 최근 점검 여덟 번까지이고, `when` 은 일일 점검이면 날짜, 주간 점검이면 `2026-W46` 같은 주다.
+- `labels` 는 화면에 쓰는 한국어 이름이다(상태·가이던스 변화·내년 계획·가설 판정).
+- `capex.companies`
+  - `guidance.history` 는 올해 들어 제시한 설비투자 가이던스의 변화이고 마지막이 지금 값이다. `low`·`high` 는 범위의 양 끝(하나의 값이면 같다), `bound` 는 "약"·"이상" 같은 말이다.
+  - `guidance.move`: `up` | `same` | `down` | `first`. `prior` 는 회사가 새 연도의 가이던스로 넘어왔을 때 지난 계획의 마지막 값이다.
+  - `next_year.stance`: `up`(증가 예고) | `flat`(동결) | `down`(축소) | `none`(미제시).
+  - `next_earnings` 는 종목 표의 다음 실적일이고, 없으면 `null` 이다.
+  - `total` 은 가장 최근 분기의 합계다. 회사마다 기준(`basis`)이 달라 크기를 가늠하는 값이다. 한 곳이라도 값이 없으면 `null` 이다.
+- `financing`
+  - `spreads` 는 미국 IG·HY 스프레드다. `value` 는 `unit`(%p), `m1_bp`·`m3_bp` 는 한 달·석 달 변화(bp), `weekly` 는 최근 1년의 주간 값(마지막이 `date`), `pos` 는 52주 범위(`range_52w`) 안의 자리(%)다.
+  - `ai_spreads` 는 AI 발행사의 회사채 스프레드로, 발행사마다 채권 하나다. 채권의 독일 거래소 종가로 계산한 만기수익률(`ytm`, %)에서 남은 만기가 같은 미국 국채 수익률을 뺀 값이다. `value` 는 %p 이고 화면은 ×100 해 bp 로 보인다. `url` 은 종가를 받은 곳이다.
+  - `fcf` 는 분기 잉여현금흐름이다. `debt` 는 부채 잔액이고, 화면처럼 첫 분기(`start`)와 가장 최근 분기(`end`)만 나간다.
+- `demand`
+  - `clouds[].growth` 는 클라우드 사업의 전년 대비 매출 성장률(%)이다. `label` 은 사업 이름이다(마이크로소프트는 Azure 금액을 밝히지 않아 Microsoft Cloud).
+  - `pace` 는 설비투자와 클라우드 매출이 함께 있는 첫 분기(`from`)부터 가장 최근 분기(`to`)까지의 증가 배수(`capex_x`·`revenue_x`)다. `lag` 은 매출이 더 느린가다. 설비투자는 회사 전체이고 계절을 맞추지 않았다.
+  - `labs` 는 AI 랩의 연환산 매출(회사 정의 지표)이다. 조사 자료 묶음 `data/ai-knowledge-work/spend.json` 의 기록에서 읽는다. 값을 비운 랩은 `value` 가 `null` 이고, 보도된 범위(`range`, 원문 미확인)가 있으면 함께 나간다.
+- `supply.indicators`
+  - `group`: `GPU 임대가` | `메모리`. `m1_pct`·`m3_pct` 는 한 달·석 달 변화(%)이고, 기록이 짧아 아직 없으면 `null` 이다. 그 사정은 `short` 에 적는다.
+  - `trend` 는 화면의 작은 꺾은선 값이고, `trend_step` 은 그 간격(`day` | `week` | `month`)이다.
+  - GPU 임대가는 모델 × 채널의 기준가(GPU 한 장 · 시간당 달러)다. 수출물가지수는 한국은행(2020=100), 현물가·고정거래가는 TrendForce 다. 전체 표는 가격 탭에 있다.
+
 ## data/<id>/ — 조사 자료 묶음
 
 한 질문을 두고 손으로 모은 기록이다. 화면에는 없고 feed 로만 나간다. 지금은 `apac-siting`(아시아·태평양 AI 컴퓨트 입지 비교), `ai-knowledge-work`(AI 는 코딩을 넘어 범용 지식노동으로 번지는가), `compute-balance`(누가 AI 컴퓨팅을 얼마나 갖고 쓰는가), `online-narratives`(X·Substack 의 글은 주가를 움직이는가), `open-weight-substitution`(오픈웨이트는 클로즈드 모델의 어느 일을 얼마나 가져가는가)이다.
@@ -367,3 +423,9 @@
 
 - 조사 `online-narratives`(`data/online-narratives/`)를 더했다. 묶음은 N1 사례(`cases`) · N2 주가 반응(`prices`) · N3 한국 도착(`arrival`)이고 가설 넷(H1~H4)의 판정이 `index.json` 에 있다. 리포트는 `x-substack-price-impact` 다.
 - 조사 `open-weight-substitution`(`data/open-weight-substitution/`)을 더했다. 묶음은 W1 계층별 몫(`tiers`) · W2 특화 모델 사례(`cases`) · W3 추론·사후 학습 시장(`platforms`) · W4 프론티어 랩의 노출과 대응(`labs`) · W5 반대 증거(`counter`)이고 가설 셋(H1~H3)은 모두 `판단 보류`다. 기존 키는 그대로다.
+
+### 2026-11-23 — schema 1
+
+바뀐 것
+
+- `watch.json` 을 더했다. 첫 화면의 감시 대상(네 갈래의 상태·신호·그림의 값·이어진 가설·빈 곳)을 화면과 같은 계산으로 낸다. `index.json` 에 `watch` 를 더했다(기존 키는 그대로).

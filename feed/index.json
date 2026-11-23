@@ -8363,6 +8363,10 @@
   "updated_kst": "2026-11-23T02:13:11+09:00",
   "path": "calendar.json"
  },
+ "watch": {
+  "updated_kst": "2026-11-23T08:30:31+09:00",
+  "path": "watch.json"
+ },
  "datasets": [
   {
    "id": "ai-knowledge-work",

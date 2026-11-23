@@ -8,13 +8,13 @@
    "value": 7,
    "label": "엇갈림",
    "orgs": 44,
-   "items": 156
+   "items": 154
   },
   "market": {
    "value": -10,
    "label": "엇갈림",
    "orgs": 30,
-   "items": 102
+   "items": 101
   },
   "by_group": [
    {
@@ -153,15 +153,15 @@
    "optimism": [
     {
      "tag": "수요·채택",
-     "n": 50
+     "n": 49
     },
     {
      "tag": "투자 회수",
-     "n": 36
+     "n": 35
     },
     {
      "tag": "금리·거시",
-     "n": 26
+     "n": 25
     },
     {
      "tag": "밸류에이션",
@@ -169,7 +169,7 @@
     },
     {
      "tag": "자금 조달·신용",
-     "n": 19
+     "n": 18
     },
     {
      "tag": "정책·지정학",
@@ -185,7 +185,7 @@
     },
     {
      "tag": "전력·공급 제약",
-     "n": 12
+     "n": 11
     }
    ]
   },
@@ -10208,37 +10208,6 @@
     "tier": "standard"
    },
    "note": "웹 페이지 본문 기준. 그림 1개 속 글자는 확인하지 못함"
-  },
-  {
-   "id": "citadel-billionaire-ken-griffin-says-we-may-be-in-a-bubb",
-   "group": "PE·대체투자",
-   "org": "Citadel",
-   "person": null,
-   "kind": "report",
-   "title": "억만장자 켄 그리핀, 우리가 버블 속에 있을 수 있다고 말하다. 역사가 말해주는 다음 국면은",
-   "title_orig": "Billionaire Ken Griffin Says We May Be in a Bubble. Here’s What History Says Happens Next.",
-   "url": "https://www.fool.com/investing/2026/10/24/billionaire-ken-griffin-says-we-may-be-in-a-bubble-here-s-what-history-says-happens-next",
-   "outlet": "The Motley Fool",
-   "published_kst": "2026-10-24T12:10:00+09:00",
-   "stance": {
-    "ai_tech": -1,
-    "market": 0
-   },
-   "args": [
-    "밸류에이션",
-    "쏠림"
-   ],
-   "summary": "Ken Griffin은 Bloomberg 인터뷰에서 현재 시점에 거의 확실히 버블이 존재한다고 말했다. 동시에 경제의 급진적 변화에는 대체로 버블이 얽혀 있으며, 버블 반대편에 있는 기업들이 수십 년간 시장 주도 기업이 된다고 보았다.",
-   "points": [
-    "현재 시점에는 거의 확실히 버블이 존재한다.",
-    "경제의 모든 급진적 변화는 대체로 버블과 얽혀 있다.",
-    "버블의 반대편에 서 있는 기업들, 즉 버블 이후에 살아남은 기업들이 수십 년간 시장 주도 기업이 된다."
-   ],
-   "judged": {
-    "basis": "full_text",
-    "tier": "standard"
-   },
-   "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
   }
  ]
 }
