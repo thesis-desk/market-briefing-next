@@ -1,7 +1,39 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-23T11:26:06+09:00",
+ "generated_kst": "2026-11-23T14:26:00+09:00",
  "reports": [
+  {
+   "slug": "sixsigma-10-4-0-ai",
+   "type": "article",
+   "title": "식스시그마 : 증류가 막히자 중국 AI가 세계 상위 10위에서 사라졌다",
+   "companies": [
+    {
+     "name": "앤트로픽",
+     "ticker": null
+    },
+    {
+     "name": "오픈AI",
+     "ticker": null
+    },
+    {
+     "name": "알리바바",
+     "ticker": null
+    },
+    {
+     "name": "딥시크",
+     "ticker": null
+    },
+    {
+     "name": "문샷",
+     "ticker": null
+    }
+   ],
+   "published_kst": "2026-11-23T14:22:39+09:00",
+   "revised_kst": "2026-11-23T14:22:39+09:00",
+   "revision": 1,
+   "summary": "처음 보는 문제로 다시 재자 중국 모델 점수만 크게 빠졌다는 관찰은 설득력이 있다(확신 중~상). 다만 이것을 '증류 차단의 효과'로 읽는 인과는 아직 증명되지 않았다. 순위가 무너진 직접 계기는 평가 방식 변경이고, 오픈AI의 차단 이후에 나온 중국 모델은 아직 없다(확신 낮음~중간).",
+   "path": "reports/sixsigma-10-4-0-ai.json"
+  },
   {
    "slug": "tomorrowx-2026-arm-ceo-rene-haas-on-nvidia-ai-agents-and-the",
    "type": "interview",
@@ -8356,7 +8388,7 @@
   }
  ],
  "street": {
-  "updated_kst": "2026-11-23T11:26:06+09:00",
+  "updated_kst": "2026-11-23T14:26:00+09:00",
   "path": "street.json"
  },
  "calendar": {
@@ -8364,7 +8396,7 @@
   "path": "calendar.json"
  },
  "watch": {
-  "updated_kst": "2026-11-23T08:30:31+09:00",
+  "updated_kst": "2026-11-23T14:13:41+09:00",
   "path": "watch.json"
  },
  "datasets": [
