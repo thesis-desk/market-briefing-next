@@ -5,16 +5,16 @@
  "items_days": 30,
  "index": {
   "ai_tech": {
-   "value": 6,
+   "value": 7,
    "label": "엇갈림",
    "orgs": 44,
-   "items": 153
+   "items": 152
   },
   "market": {
    "value": -10,
    "label": "엇갈림",
    "orgs": 30,
-   "items": 100
+   "items": 99
   },
   "by_group": [
    {
@@ -40,7 +40,7 @@
    },
    {
     "group": "투자은행",
-    "ai_tech": 26,
+    "ai_tech": 31,
     "ai_tech_orgs": 7,
     "market": 29,
     "market_orgs": 6
@@ -127,7 +127,7 @@
     },
     {
      "tag": "쏠림",
-     "n": 16
+     "n": 15
     },
     {
      "tag": "금리·거시",
