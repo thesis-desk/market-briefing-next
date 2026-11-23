@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated_kst": "2026-11-23T14:26:00+09:00",
+ "updated_kst": "2026-11-23T20:19:20+09:00",
  "window_days": 14,
  "items_days": 30,
  "index": {
@@ -8,10 +8,10 @@
    "value": 7,
    "label": "엇갈림",
    "orgs": 44,
-   "items": 152
+   "items": 151
   },
   "market": {
-   "value": -9,
+   "value": -8,
    "label": "엇갈림",
    "orgs": 29,
    "items": 99
@@ -35,14 +35,14 @@
     "group": "자산운용",
     "ai_tech": -11,
     "ai_tech_orgs": 8,
-    "market": 0,
+    "market": 1,
     "market_orgs": 7
    },
    {
     "group": "투자은행",
     "ai_tech": 31,
     "ai_tech_orgs": 7,
-    "market": 29,
+    "market": 28,
     "market_orgs": 6
    },
    {
@@ -56,7 +56,7 @@
     "group": "투자 거장",
     "ai_tech": -31,
     "ai_tech_orgs": 9,
-    "market": -56,
+    "market": -55,
     "market_orgs": 7
    },
    {
@@ -106,20 +106,20 @@
    {
     "week": "2026-11-23",
     "ai_tech": -50,
-    "ai_tech_orgs": 1,
-    "market": -50,
-    "market_orgs": 2
+    "ai_tech_orgs": 2,
+    "market": -25,
+    "market_orgs": 4
    }
   ],
   "args": {
    "caution": [
     {
      "tag": "밸류에이션",
-     "n": 20
+     "n": 21
     },
     {
      "tag": "투자 회수",
-     "n": 19
+     "n": 20
     },
     {
      "tag": "자금 조달·신용",
@@ -134,16 +134,16 @@
      "n": 8
     },
     {
+     "tag": "수요·채택",
+     "n": 6
+    },
+    {
      "tag": "경쟁·해자",
      "n": 6
     },
     {
      "tag": "정책·지정학",
      "n": 6
-    },
-    {
-     "tag": "수요·채택",
-     "n": 5
     },
     {
      "tag": "전력·공급 제약",
@@ -153,11 +153,11 @@
    "optimism": [
     {
      "tag": "수요·채택",
-     "n": 48
+     "n": 47
     },
     {
      "tag": "투자 회수",
-     "n": 35
+     "n": 34
     },
     {
      "tag": "금리·거시",
@@ -169,11 +169,11 @@
     },
     {
      "tag": "자금 조달·신용",
-     "n": 18
+     "n": 17
     },
     {
      "tag": "정책·지정학",
-     "n": 17
+     "n": 16
     },
     {
      "tag": "경쟁·해자",
@@ -192,6 +192,62 @@
   "method": "기관·인물마다 기간 안 입장 값의 평균을 내고 그 평균들을 다시 평균해 ×50"
  },
  "items": [
+  {
+   "id": "morgan-stanley-stocks-are-serving-up-a-fat-pitch-for-investors",
+   "group": "투자은행",
+   "org": "Morgan Stanley",
+   "person": null,
+   "kind": "report",
+   "title": "모건스탠리 최고 전략가 “지금 주식은 절호의 기회(fat pitch)”",
+   "title_orig": "Stocks are serving up a ‘fat pitch’ for investors right now, says Morgan Stanley’s top strategist",
+   "url": "https://www.marketwatch.com/story/stocks-are-serving-up-a-fat-pitch-for-investors-right-now-as-morgan-stanleys-top-strategist-19abe30a",
+   "outlet": "MarketWatch",
+   "published_kst": "2026-11-23T10:40:00+09:00",
+   "stance": {
+    "ai_tech": null,
+    "market": 1
+   },
+   "args": [
+    "밸류에이션"
+   ],
+   "judged": {
+    "basis": "headline_only",
+    "tier": "light"
+   }
+  },
+  {
+   "id": "burry-michael-burry-sees-1929-s-and-2000-s-lack-of-a-p",
+   "group": "투자 거장",
+   "org": "Michael Burry",
+   "person": null,
+   "kind": "report",
+   "title": "Michael Burry, 1929년과 2000년의 '실적상 직접적 원인의 부재'를 지적… 엔비디아 추정치는 계속 상승",
+   "title_orig": "Michael Burry Sees 1929’s and 2000’s “Lack of a Proximate Cause in Earnings.” Nvidia’s Estimates Keep Rising",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/michael-burry-sees-1929-2000-093524058.html",
+   "outlet": "Yahoo Finance",
+   "published_kst": "2026-11-23T10:35:00+09:00",
+   "stance": {
+    "ai_tech": -1,
+    "market": -1
+   },
+   "args": [
+    "밸류에이션",
+    "투자 회수",
+    "수요·채택"
+   ],
+   "summary": "Burry는 현재의 AI 하락장이 1929년과 2000년처럼 실적에서 직접적인 원인을 찾기 어렵다는 점이 닮았다고 본다. 지금의 선도 기업들이 실적은 좋지만, 1929년과 2000년의 정점도 실제 사업 악화보다 1년가량 앞섰다고 지적했다. 또한 엔비디아가 아시아에서 밝힌 것보다 더 많은 매출과 이익을 인식했다는 증거가 나오는 것이 진짜 폭로라고 말했다.",
+   "points": [
+    "오늘날이 1929년, 2000년과 비슷한 점 하나는 실적에서 직접적인 원인이 없다는 것이다.",
+    "오늘날의 선도 기업들이 실적 면에서는 아주 잘하고 있음을 인정했다.",
+    "1929년과 2000년의 정점은 실제 사업 악화보다 1년 안팎 앞서 나타났다.",
+    "진짜 폭로는 엔비디아가 밝힌 것보다 더 많은 매출과 이익을 아시아에서 인식했다는 증거일 것이다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
+  },
   {
    "id": "el-erian-mohamed-el-erian-warns-wall-street-turmoil-could",
    "group": "투자 거장",

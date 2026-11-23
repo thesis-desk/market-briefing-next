@@ -1,7 +1,23 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-23T17:26:40+09:00",
+ "generated_kst": "2026-11-23T20:19:20+09:00",
  "reports": [
+  {
+   "slug": "sixsigma-ai-3",
+   "type": "article",
+   "title": "식스시그마 : 앤트로픽은 돈을 못 버는 게 아니라 안 벌고 있다",
+   "companies": [
+    {
+     "name": "Anthropic",
+     "ticker": null
+    }
+   ],
+   "published_kst": "2026-11-23T20:16:28+09:00",
+   "revised_kst": "2026-11-23T20:16:28+09:00",
+   "revision": 1,
+   "summary": "앤트로픽의 1~9월 순손실 1,040억 달러는 대부분 현금이 나가지 않은 평가손이고, 고객용 컴퓨트 4분의 1만으로도 연구개발비를 낸 뒤 조정 흑자가 난다는 영상의 주장은 인용된 수치 안에서는 일관된다. 다만 35% 마진 목표와 컴퓨트 비용 목표 사이의 차이, 주식보상 규모, 세대별 모델의 투자 회수는 영상에 없어서, '안 벌고 있다'는 결론은 아직 가설에 가깝다.",
+   "path": "reports/sixsigma-ai-3.json"
+  },
   {
    "slug": "sixsigma-10-4-0-ai",
    "type": "article",
@@ -8388,7 +8404,7 @@
   }
  ],
  "street": {
-  "updated_kst": "2026-11-23T14:26:00+09:00",
+  "updated_kst": "2026-11-23T20:19:20+09:00",
   "path": "street.json"
  },
  "calendar": {
