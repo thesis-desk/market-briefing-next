@@ -1026,6 +1026,16 @@
      "text": "값을 비워 둠"
     },
     {
+     "name": "앤트로픽 기업 결제",
+     "state": "ok",
+     "text": "기업 토큰 결제액 전월 대비 +0.5%"
+    },
+    {
+     "name": "오픈AI 기업 결제",
+     "state": "ok",
+     "text": "기업 토큰 결제액 전월 대비 +2.1%"
+    },
+    {
      "name": "토큰 1월 판정",
      "state": "ok",
      "text": "2026년 1월: 휴가 전 대비 +54%(기본 기준 +40%) — 재가속 · 다음 판정 2027-01-25"
@@ -1237,6 +1247,247 @@
      }
     }
    ],
+   "ramp": {
+    "url": "https://ramp.com/data/ai-index",
+    "fetched": "2026-11-23",
+    "growth": {
+     "months": [
+      "2026-06",
+      "2026-07",
+      "2026-08",
+      "2026-09",
+      "2026-10"
+     ],
+     "rows": [
+      {
+       "vendor": "Anthropic",
+       "values_pct": [
+        17.5,
+        34.9,
+        2.8,
+        -12.6,
+        0.5
+       ],
+       "signal": {
+        "state": "ok",
+        "text": "기업 토큰 결제액 전월 대비 +0.5%"
+       }
+      },
+      {
+       "vendor": "OpenAI",
+       "values_pct": [
+        20.8,
+        53.4,
+        -4,
+        21.7,
+        2.1
+       ],
+       "signal": {
+        "state": "ok",
+        "text": "기업 토큰 결제액 전월 대비 +2.1%"
+       }
+      }
+     ]
+    },
+    "adoption": {
+     "month": "2026-10",
+     "rows": [
+      {
+       "name": "Overall",
+       "value": 56.7962743938498,
+       "change": 0.971046617440102
+      },
+      {
+       "name": "Anthropic",
+       "value": 44.7782377291544,
+       "change": 1.0867208613877963
+      },
+      {
+       "name": "OpenAI",
+       "value": 40.5647545830869,
+       "change": -0.050241723241597924
+      },
+      {
+       "name": "SpaceXAI",
+       "value": 6.27291543465405,
+       "change": 2.16062782076585
+      }
+     ]
+    },
+    "per_employee": {
+     "month": "2026-10",
+     "rows": [
+      {
+       "name": "Top 1%",
+       "value": 10199.20045,
+       "change": 852.7006583333405
+      },
+      {
+       "name": "Top 10%",
+       "value": 800.836334724978,
+       "change": 7.585972406136989
+      },
+      {
+       "name": "Median",
+       "value": 16.316327572663,
+       "change": 0.9317121880475998
+      }
+     ]
+    },
+    "token_index": {
+     "week": "2026-11-01",
+     "volume": 1449.52820094296,
+     "spend": 593.945370235911
+    }
+   },
+   "capacity": {
+    "weeks": [
+     "2026-08-31",
+     "2026-09-07",
+     "2026-09-14",
+     "2026-09-21",
+     "2026-09-28",
+     "2026-10-05",
+     "2026-10-12",
+     "2026-10-19",
+     "2026-10-26",
+     "2026-11-02",
+     "2026-11-09",
+     "2026-11-16"
+    ],
+    "recent_weeks": 4,
+    "rows": [
+     {
+      "vendor": "anthropic",
+      "since": "2026-08-20",
+      "url": "https://status.claude.com",
+      "counts": [
+       8,
+       3,
+       2,
+       1,
+       2,
+       5,
+       0,
+       7,
+       4,
+       1,
+       6,
+       5
+      ],
+      "hours": [
+       8.754999999999999,
+       101.31027777777777,
+       1.988888888888889,
+       1.6325,
+       8.357222222222223,
+       150.3763888888889,
+       0,
+       8.411666666666667,
+       6.969444444444445,
+       0.4363888888888889,
+       94.58833333333334,
+       64.15249999999999
+      ],
+      "recent": {
+       "count": 16,
+       "hours": 166.14666666666665
+      },
+      "prior_avg": 3.5,
+      "last": {
+       "created": "2026-11-19T09:10:24+00:00",
+       "name": "Elevated errors for Claude Mythos 5.2 and Claude Fable 5.2",
+       "impact": "major"
+      }
+     },
+     {
+      "vendor": "openai",
+      "since": "2026-10-23",
+      "url": "https://status.openai.com",
+      "counts": [
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       5,
+       5,
+       10,
+       3
+      ],
+      "hours": [
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       7.586388888888889,
+       115.17750000000001,
+       103.47083333333335,
+       26.41861111111111
+      ],
+      "recent": {
+       "count": 23,
+       "hours": 252.65333333333336
+      },
+      "prior_avg": null,
+      "last": {
+       "created": "2026-11-19T16:01:12+00:00",
+       "name": "Elevated error rates for gpt-6 Luna API requests",
+       "impact": "major"
+      }
+     },
+     {
+      "vendor": "google",
+      "since": "2026-02-27",
+      "url": "https://status.cloud.google.com",
+      "counts": [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      "hours": [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      "recent": {
+       "count": 0,
+       "hours": 0
+      },
+      "prior_avg": 0,
+      "last": {
+       "created": "2026-02-27T12:37:00+00:00",
+       "name": "Vertex AI Gemini API customers experienced increased error rates when accessing the global endpoint.",
+       "impact": "low"
+      }
+     }
+    ]
+   },
    "tokens": {
     "label": "앤트로픽 토큰",
     "year": 2026,
@@ -1273,6 +1524,7 @@
       "main": true,
       "measure": "volume",
       "vendor": null,
+      "group": "OpenRouter 토큰",
       "base": 883924582267.5,
       "first": 1088092399008,
       "window": 1359310261382,
@@ -1319,6 +1571,7 @@
       "main": false,
       "measure": "volume",
       "vendor": null,
+      "group": "OpenRouter 토큰",
       "base": 823500796454,
       "first": 703514597380,
       "window": 960706274645.5,
@@ -1365,6 +1618,7 @@
       "main": false,
       "measure": "volume",
       "vendor": null,
+      "group": "OpenRouter 토큰",
       "base": 1317692372726,
       "first": 1553286914818,
       "window": 1882632458025.5,
@@ -1403,6 +1657,160 @@
       "rough": false
      },
      {
+      "key": "openrouter-spend:anthropic",
+      "label": "앤트로픽 결제액",
+      "kind": "openrouter-spend",
+      "source": "OpenRouter 정가 추정",
+      "unit": "달러/주",
+      "main": false,
+      "measure": "volume",
+      "vendor": null,
+      "group": "OpenRouter 결제액",
+      "base": null,
+      "first": null,
+      "window": null,
+      "ratio_pct": null,
+      "last_year_pct": null,
+      "yoy": null,
+      "trend": [],
+      "trend_end": null,
+      "rough": false
+     },
+     {
+      "key": "openrouter-spend:openai",
+      "label": "오픈AI 결제액",
+      "kind": "openrouter-spend",
+      "source": "OpenRouter 정가 추정",
+      "unit": "달러/주",
+      "main": false,
+      "measure": "volume",
+      "vendor": null,
+      "group": "OpenRouter 결제액",
+      "base": null,
+      "first": null,
+      "window": null,
+      "ratio_pct": null,
+      "last_year_pct": null,
+      "yoy": null,
+      "trend": [],
+      "trend_end": null,
+      "rough": false
+     },
+     {
+      "key": "openrouter-spend:google",
+      "label": "구글 결제액",
+      "kind": "openrouter-spend",
+      "source": "OpenRouter 정가 추정",
+      "unit": "달러/주",
+      "main": false,
+      "measure": "volume",
+      "vendor": null,
+      "group": "OpenRouter 결제액",
+      "base": null,
+      "first": null,
+      "window": null,
+      "ratio_pct": null,
+      "last_year_pct": null,
+      "yoy": null,
+      "trend": [],
+      "trend_end": null,
+      "rough": false
+     },
+     {
+      "key": "ramp:token_index:Token Spend",
+      "label": "기업 토큰 결제액",
+      "kind": "ramp",
+      "source": "Ramp",
+      "unit": "지수/주",
+      "main": false,
+      "measure": "volume",
+      "vendor": null,
+      "group": "기업 결제(Ramp)",
+      "base": null,
+      "first": 100,
+      "window": 118.08729136660051,
+      "ratio_pct": null,
+      "last_year_pct": null,
+      "yoy": null,
+      "trend": [
+       298.314297632967,
+       332.427899057862,
+       330.921255786042,
+       320.55768836809,
+       370.786814080583,
+       379.772317863238,
+       361.154591034992,
+       392.166797449546,
+       366.334931408635,
+       493.698231251681,
+       504.309933016513,
+       561.266873408089,
+       591.281174179419,
+       573.327578543933,
+       551.516251879547,
+       541.612472051797,
+       519.398595205774,
+       529.316798663577,
+       499.000794193204,
+       583.176064966864,
+       566.769347700039,
+       537.311563777736,
+       545.405006858924,
+       528.776679538271,
+       522.868937451382,
+       593.945370235911
+      ],
+      "trend_end": "2026-10-26",
+      "rough": false
+     },
+     {
+      "key": "ramp:token_index:Token Volumes",
+      "label": "기업 토큰 사용량",
+      "kind": "ramp",
+      "source": "Ramp",
+      "unit": "지수/주",
+      "main": false,
+      "measure": "volume",
+      "vendor": null,
+      "group": "기업 결제(Ramp)",
+      "base": null,
+      "first": 100,
+      "window": 115.962890501812,
+      "ratio_pct": null,
+      "last_year_pct": null,
+      "yoy": null,
+      "trend": [
+       372.641808797028,
+       396.4851724676,
+       416.003095311459,
+       401.172191840448,
+       470.113644491454,
+       466.957683580116,
+       464.784852693959,
+       531.949365736567,
+       471.293703846203,
+       612.847628784632,
+       623.439299349855,
+       665.544499103939,
+       766.194717248112,
+       797.158944032219,
+       815.360711138892,
+       841.703898850855,
+       873.035451961993,
+       898.583991083637,
+       837.439846691639,
+       977.583649922697,
+       1039.59965600392,
+       1123.30579799739,
+       1203.49188221917,
+       1252.0599283928,
+       1319.84102715197,
+       1449.52820094296
+      ],
+      "trend_end": "2026-10-26",
+      "rough": false
+     },
+     {
       "key": "github:claude-commits",
       "label": "Claude 커밋",
       "kind": "dev",
@@ -1411,6 +1819,7 @@
       "main": false,
       "measure": "volume",
       "vendor": "anthropic",
+      "group": null,
       "base": 302567,
       "first": 685350,
       "window": 802722.5,
@@ -1444,14 +1853,25 @@
       "main": false,
       "measure": "volume",
       "vendor": "anthropic",
-      "base": null,
-      "first": null,
-      "window": null,
-      "ratio_pct": null,
+      "group": null,
+      "base": 32962,
+      "first": 42087,
+      "window": 46908.5,
+      "ratio_pct": 42.310842788665724,
       "last_year_pct": null,
       "yoy": null,
-      "trend": [],
-      "trend_end": null,
+      "trend": [
+       37448,
+       32495,
+       33429,
+       32570,
+       35857,
+       41217,
+       42087,
+       45361,
+       48456
+      ],
+      "trend_end": "2026-01-19",
       "rough": false
      },
      {
@@ -1463,6 +1883,7 @@
       "main": false,
       "measure": "volume",
       "vendor": "anthropic",
+      "group": null,
       "base": 3368949.5,
       "first": 3518508,
       "window": 3932604.5,
@@ -1512,6 +1933,7 @@
       "main": false,
       "measure": "volume",
       "vendor": "anthropic",
+      "group": null,
       "base": null,
       "first": null,
       "window": null,
@@ -1557,6 +1979,7 @@
       "main": false,
       "measure": "volume",
       "vendor": "anthropic",
+      "group": null,
       "base": null,
       "first": null,
       "window": null,
@@ -1576,6 +1999,7 @@
       "main": false,
       "measure": "volume",
       "vendor": "anthropic",
+      "group": null,
       "base": null,
       "first": null,
       "window": null,
@@ -1595,6 +2019,7 @@
       "main": false,
       "measure": "volume",
       "vendor": "anthropic",
+      "group": null,
       "base": null,
       "first": null,
       "window": null,
@@ -1614,6 +2039,7 @@
       "main": false,
       "measure": "rank",
       "vendor": "anthropic",
+      "group": null,
       "base": null,
       "first": null,
       "window": null,
@@ -1633,14 +2059,25 @@
       "main": false,
       "measure": "volume",
       "vendor": "openai",
-      "base": null,
-      "first": null,
-      "window": null,
-      "ratio_pct": null,
+      "group": null,
+      "base": 51204,
+      "first": 52287,
+      "window": 54328,
+      "ratio_pct": 6.101085852667754,
       "last_year_pct": null,
       "yoy": null,
-      "trend": [],
-      "trend_end": null,
+      "trend": [
+       58314,
+       54038,
+       48370,
+       48002,
+       46365,
+       47704,
+       52287,
+       53138,
+       55518
+      ],
+      "trend_end": "2026-01-19",
       "rough": false
      },
      {
@@ -1652,6 +2089,7 @@
       "main": false,
       "measure": "volume",
       "vendor": "openai",
+      "group": null,
       "base": 8748956.5,
       "first": 8847130,
       "window": 9952407.5,
@@ -1701,6 +2139,7 @@
       "main": false,
       "measure": "volume",
       "vendor": "openai",
+      "group": null,
       "base": null,
       "first": null,
       "window": null,
@@ -1746,6 +2185,7 @@
       "main": false,
       "measure": "volume",
       "vendor": "openai",
+      "group": null,
       "base": null,
       "first": null,
       "window": null,
@@ -1765,6 +2205,7 @@
       "main": false,
       "measure": "volume",
       "vendor": "openai",
+      "group": null,
       "base": null,
       "first": null,
       "window": null,
@@ -1784,6 +2225,7 @@
       "main": false,
       "measure": "volume",
       "vendor": "openai",
+      "group": null,
       "base": null,
       "first": null,
       "window": null,
@@ -1803,6 +2245,7 @@
       "main": false,
       "measure": "rank",
       "vendor": "openai",
+      "group": null,
       "base": null,
       "first": null,
       "window": null,
@@ -1822,14 +2265,25 @@
       "main": false,
       "measure": "volume",
       "vendor": "google",
-      "base": null,
-      "first": null,
-      "window": null,
-      "ratio_pct": null,
+      "group": null,
+      "base": 16194,
+      "first": 19981,
+      "window": 23333.5,
+      "ratio_pct": 44.087316289983946,
       "last_year_pct": null,
       "yoy": null,
-      "trend": [],
-      "trend_end": null,
+      "trend": [
+       14654,
+       15805,
+       16583,
+       17847,
+       16459,
+       15878,
+       19981,
+       22640,
+       24027
+      ],
+      "trend_end": "2026-01-19",
       "rough": false
      },
      {
@@ -1841,6 +2295,7 @@
       "main": false,
       "measure": "volume",
       "vendor": "google",
+      "group": null,
       "base": 2377795,
       "first": 3336079,
       "window": 3559058,
@@ -1890,6 +2345,7 @@
       "main": false,
       "measure": "volume",
       "vendor": "google",
+      "group": null,
       "base": null,
       "first": null,
       "window": null,
@@ -1935,6 +2391,7 @@
       "main": false,
       "measure": "volume",
       "vendor": "google",
+      "group": null,
       "base": 387619.5,
       "first": 378970,
       "window": 512558.5,
@@ -1984,6 +2441,7 @@
       "main": false,
       "measure": "volume",
       "vendor": "google",
+      "group": null,
       "base": null,
       "first": null,
       "window": null,
@@ -2003,6 +2461,7 @@
       "main": false,
       "measure": "volume",
       "vendor": "google",
+      "group": null,
       "base": null,
       "first": null,
       "window": null,
@@ -2022,6 +2481,7 @@
       "main": false,
       "measure": "volume",
       "vendor": "google",
+      "group": null,
       "base": null,
       "first": null,
       "window": null,
@@ -2041,6 +2501,7 @@
       "main": false,
       "measure": "volume",
       "vendor": "google",
+      "group": null,
       "base": null,
       "first": null,
       "window": null,
@@ -2060,6 +2521,7 @@
       "main": false,
       "measure": "rank",
       "vendor": "google",
+      "group": null,
       "base": null,
       "first": null,
       "window": null,
