@@ -1,0 +1,1686 @@
+{
+ "schema": 1,
+ "bundle": "P4",
+ "title": "하이퍼스케일러 — 오픈 모델 상품·단가·미세조정·전용 용량",
+ "updated_kst": "2026-11-23T16:48:13+09:00",
+ "measure": null,
+ "notes": [
+  "방향(sides)은 AI 의 해석이다.",
+  "누가 잰 값인지(회사 자기 보고·추정·제3자)는 definition 에 밝혔다.",
+  "조사 open-weight-substitution 에서 옮겨 온 기록은 note 끝에 그렇다고 적었다. 값과 출처는 그 조사의 3차 확인을 거친 그대로다."
+ ],
+ "summary": {
+  "records": 44,
+  "with_value": 32,
+  "by_hypothesis": {
+   "H1": {
+    "지지": 5,
+    "반박": 1,
+    "양쪽": 5,
+    "중립": 9
+   },
+   "H2": {
+    "지지": 11,
+    "반박": 0,
+    "양쪽": 2,
+    "중립": 0
+   },
+   "H3": {
+    "지지": 12,
+    "반박": 9,
+    "양쪽": 8,
+    "중립": 8
+   }
+  }
+ },
+ "records": [
+  {
+   "id": "bedrock-claude-fine-tuning-only-claude-3-haiku",
+   "country": "US",
+   "city": null,
+   "metric": "Amazon Bedrock 에서 미세조정할 수 있는 Anthropic 모델",
+   "value": null,
+   "unit": "해당 없음",
+   "asof": "2026-11",
+   "basis": "공식 문서의 지원 목록. Claude 3 Haiku 하나",
+   "definition": null,
+   "quote": "anthropic.claude-3-haiku-20240307-v1:0:200k",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Customize a model with fine-tuning in Amazon Bedrock",
+     "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/custom-model-supported.html",
+     "date": "2026-11-20",
+     "read": "full"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "high",
+   "sides": {
+    "H2": "지지",
+    "H3": "중립"
+   },
+   "side_basis": "하이퍼스케일러에서 미세조정할 수 있는 Anthropic 모델은 옛 소형 모델 하나다. 최신 클로즈드 모델은 고객이 맞춤할 길이 사실상 없어 맞춤 수요는 오픈웨이트로 간다.",
+   "note": "Haiku 4.5·5.5용 파인튜닝은 목록에 없다. Claude 3 Haiku가 2026-09-10 종료됐다는 AWS 블로그 문구는 검색 요약에서만 봤다. 조사 open-weight-substitution 의 W4 기록을 옮겨 왔다."
+  },
+  {
+   "id": "vertex-supervised-tuning-models",
+   "country": "US",
+   "city": null,
+   "metric": "Vertex AI 에서 미세조정할 수 있는 Gemini 모델",
+   "value": null,
+   "unit": "해당 없음",
+   "asof": "2026-11",
+   "basis": "공식 문서. 현행 Flash·Flash-Lite 를 지원한다",
+   "definition": null,
+   "quote": "The following Gemini models support supervised tuning:",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Introduction to tuning | Vertex AI",
+     "url": "https://cloud.google.com/vertex-ai/generative-ai/docs/models/tune-models",
+     "date": "2026-11-20",
+     "read": "full"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "high",
+   "sides": {
+    "H3": "중립"
+   },
+   "side_basis": "Google 은 자기 모델의 미세조정을 Vertex 에서 판다. 하이퍼스케일러가 맞춤 상품을 직접 쥔 사례다.",
+   "note": "OpenAI가 파인튜닝을 접는 것과 반대 방향. 폐쇄형 소형 모델도 특화가 가능하다는 뜻이라 H3에는 반대 증거. 가격과 도입 건수는 이 문서에 없다. 조사 open-weight-substitution 의 W4 기록을 옮겨 왔다."
+  },
+  {
+   "id": "bedrock-kimi-k3-1-pro-highspeed-price",
+   "country": "US",
+   "city": null,
+   "metric": "AWS Bedrock Kimi K3.1 Pro - Highspeed 토큰 단가(입력/출력, Global CRIS, Standard)",
+   "value": 4,
+   "unit": "달러/100만 입력 토큰",
+   "asof": "2026-11",
+   "basis": "Bedrock 공식 가격표 Moonshot AI 항목, Global cross-region inference, Standard 등급. 출력 $20.00, 캐시 읽기 $0.20, 캐시 쓰기(30분) $5.00. US CRIS·IN CRIS 는 입력 $4.40/출력 $22.00(10% 할증)",
+   "definition": "AWS 자기 공시 정가(파는 쪽). 할인·약정 전 표시가",
+   "quote": "Kimi K3.1 Pro - Highspeed Inference option Input Output Cache read Cache write (30 min) Global CRIS $4.00 $20.00 $0.20 $5.00 US CRIS $4.40 $22.00",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Amazon Bedrock Pricing",
+     "url": "https://aws.amazon.com/bedrock/pricing/",
+     "date": "2026-11-23",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "sides": {
+    "H1": "중립",
+    "H3": "양쪽"
+   },
+   "side_basis": "중국 최신 오픈웨이트 모델을 하이퍼스케일러가 바로 판다는 점은 H3 쪽, 'Highspeed' 이름의 고가 단가는 독립 사업자 최저가와 견줘야 판단된다.",
+   "note": "Kimi 3 는 Global CRIS $3.00/$15.00, US CRIS $3.30/$16.50. Kimi K2 Thinking $0.60/$2.50, Kimi K2.5 $0.60/$3.00(미국 3개 리전). OpenRouter 최저가와 대조 필요.",
+   "detail": {
+    "kimi-3-global": "3.00/15.00",
+    "kimi-3-us": "3.30/16.50",
+    "kimi-k2-thinking-us": "0.60/2.50",
+    "kimi-k2.5-us": "0.60/3.00",
+    "output_price": 20
+   }
+  },
+  {
+   "id": "bedrock-deepseek-v3-2-price",
+   "country": "US",
+   "city": null,
+   "metric": "AWS Bedrock DeepSeek v3.2 토큰 단가(입력/출력, 미국 리전 Standard)",
+   "value": 0.62,
+   "unit": "달러/100만 입력 토큰",
+   "asof": "2026-11",
+   "basis": "Bedrock 공식 가격표 DeepSeek 항목, US East(N. Virginia)·Ohio·Oregon, Standard 등급. 출력 $1.85. 뭄바이·상파울루·자카르타·도쿄·스톡홀름은 $0.74/$2.22. DeepSeek-R1 $1.35/$5.40(가격 JSON 에서 풀어 낸 us-east-1 값)",
+   "definition": "AWS 자기 공시 정가",
+   "quote": "Regions: US East (N. Virginia), US East (Ohio) and US West (Oregon) DeepSeek models ... DeepSeek v3.2 $ 0.62 $ 1.85",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Amazon Bedrock Pricing",
+     "url": "https://aws.amazon.com/bedrock/pricing/",
+     "date": "2026-11-23",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "sides": {
+    "H1": "중립",
+    "H3": "중립"
+   },
+   "side_basis": "같은 모델의 독립 사업자 단가와 견줘야 방향이 나온다. 하이퍼스케일러가 중국 모델을 미국 리전에서 판다는 사실 자체만 적는다.",
+   "note": "DeepSeek V4 계열은 Bedrock 가격표에 없음(2026-11-23 기준 화면). Priority 는 Standard 의 +75%, Flex 는 -50%.",
+   "detail": {
+    "output_price": 1.85,
+    "deepseek-r1-useast1": "1.35/5.40",
+    "apac-eu": "0.74/2.22"
+   }
+  },
+  {
+   "id": "bedrock-minimax-m2-5-price",
+   "country": "US",
+   "city": null,
+   "metric": "AWS Bedrock MiniMax M2.5 토큰 단가(입력/출력, 미국 리전)",
+   "value": 0.3,
+   "unit": "달러/100만 입력 토큰",
+   "asof": "2026-11",
+   "basis": "Bedrock 공식 가격표, 미국 3개 리전 Standard. 출력 $1.20. M2·M2.1 도 같은 $0.30/$1.20. 런던 $0.47/$1.86",
+   "definition": "AWS 자기 공시 정가",
+   "quote": "Minimax M2 $ 0.30 $ 1.20 Minimax M2.1 $ 0.30 $ 1.20 MiniMax M2.5 $ 0.30 $ 1.20",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Amazon Bedrock Pricing",
+     "url": "https://aws.amazon.com/bedrock/pricing/",
+     "date": "2026-11-23",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "sides": {
+    "H1": "중립"
+   },
+   "side_basis": "세 세대 모델을 같은 값으로 묶어 판다 — 모델 세대가 바뀌어도 하이퍼스케일러 정가는 안 내렸다는 점은 OpenRouter 추이와 견줘 볼 값.",
+   "note": "MiniMax 최신(M3 등)은 Bedrock 가격표에 없음.",
+   "detail": {
+    "output_price": 1.2
+   }
+  },
+  {
+   "id": "bedrock-gemma-4-31b-price",
+   "country": "US",
+   "city": null,
+   "metric": "AWS Bedrock Gemma 4 31B 토큰 단가(입력/출력, 미국 리전)",
+   "value": 0.14,
+   "unit": "달러/100만 입력 토큰",
+   "asof": "2026-11",
+   "basis": "Bedrock 공식 가격표 Google 항목, 미국 3개 리전. 출력 $0.40. Gemma 4 26B A4B $0.13/$0.40, Gemma 4 E2B $0.04/$0.08, Gemma 3 27B $0.23/$0.38",
+   "definition": "AWS 자기 공시 정가",
+   "quote": "Gemma 4 31B $0.14 $0.40 Gemma 4 26B A4B $0.13 $0.40 Gemma 4 E2B $0.04 $ 0.08",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Amazon Bedrock Pricing",
+     "url": "https://aws.amazon.com/bedrock/pricing/",
+     "date": "2026-11-23",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "sides": {
+    "H3": "지지"
+   },
+   "side_basis": "경쟁 클라우드(Google)의 오픈 모델까지 AWS 가 자기 계약 안에서 판다 — 하이퍼스케일러가 오픈 모델 카탈로그를 넓히는 증거.",
+   "note": "Gemma 3 27B($0.23/$0.38)가 Gemma 4 31B 보다 입력 단가가 높다(구세대 정가 유지).",
+   "detail": {
+    "output_price": 0.4
+   }
+  },
+  {
+   "id": "bedrock-llama-4-maverick-price",
+   "country": "US",
+   "city": null,
+   "metric": "AWS Bedrock Llama 4 Maverick 17B 토큰 단가(입력/출력, us-east-1, 온디맨드)",
+   "value": 0.24,
+   "unit": "달러/100만 입력 토큰",
+   "asof": "2026-11",
+   "basis": "Bedrock 가격 화면의 자리표시자를 AWS 공개 가격 JSON(meteredUnitMaps/bedrock, 게시 2026-11-11)으로 풀어 낸 us-east-1 값. 출력 $0.97, 배치 $0.12/$0.485. Llama 4 Scout $0.17/$0.66, Llama 3.3 70B $0.72/$0.72",
+   "definition": "AWS 자기 공시 정가",
+   "quote": "Llama 4 Maverick 17B $0.24 $0.97 $0.12 $0.485",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Amazon Bedrock Pricing",
+     "url": "https://aws.amazon.com/bedrock/pricing/",
+     "date": "2026-11-23",
+     "read": "full"
+    },
+    {
+     "n": 2,
+     "title": "AWS pricing JSON bedrock",
+     "url": "https://b0.p.awsstatic.com/pricing/2.0/meteredUnitMaps/bedrock/USD/current/bedrock.json",
+     "date": "2026-11-11",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "sides": {
+    "H1": "중립"
+   },
+   "side_basis": "배치는 정확히 절반 — 하이퍼스케일러도 유휴 용량을 할인으로 판다.",
+   "note": "화면 값이 JS 로 채워지는 구조라 가격 JSON 으로 풀었다. 풀이 규칙(1K 단가×1000)은 화면 표기와 맞춤.",
+   "detail": {
+    "output_price": 0.97,
+    "batch": "0.12/0.485",
+    "scout": "0.17/0.66",
+    "llama-3.3-70b": "0.72/0.72"
+   }
+  },
+  {
+   "id": "bedrock-nemotron-3-super-price",
+   "country": "US",
+   "city": null,
+   "metric": "AWS Bedrock NVIDIA Nemotron 3 Super 120B A12B 토큰 단가(입력/출력, 미국 리전)",
+   "value": 0.15,
+   "unit": "달러/100만 입력 토큰",
+   "asof": "2026-11",
+   "basis": "Bedrock 공식 가격표 NVIDIA 항목, 미국 3개 리전. 출력 $0.65. Nemotron 3 Nano 30B A3B $0.06/$0.24, Nemotron Nano 2 $0.06/$0.23. Flex·배치는 Standard 의 50% 할인",
+   "definition": "AWS 자기 공시 정가",
+   "quote": "NVIDIA Nemotron 3 Super 120B A12B $ 0.15 $ 0.65",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Amazon Bedrock Pricing",
+     "url": "https://aws.amazon.com/bedrock/pricing/",
+     "date": "2026-11-23",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "sides": {
+    "H1": "중립"
+   },
+   "side_basis": "같은 모델의 독립 사업자 값과 견줄 기준점.",
+   "note": "같은 모델의 독립 사업자 단가와 견줄 기준점이다.",
+   "detail": {
+    "output_price": 0.65,
+    "nemotron-3-nano": "0.06/0.24"
+   }
+  },
+  {
+   "id": "bedrock-mistral-large-3-price",
+   "country": "US",
+   "city": null,
+   "metric": "AWS Bedrock Mistral Large 3 토큰 단가(입력/출력, 미국 리전)",
+   "value": 0.5,
+   "unit": "달러/100만 입력 토큰",
+   "asof": "2026-11",
+   "basis": "Bedrock 공식 가격표 Mistral 항목, 미국 3개 리전. 출력 $1.50. Devstral 2 123B $0.40/$2.00, Ministral 14B 3.0 $0.20/$0.20. 구 Mistral Large(24.02) 는 $4/$12 로 그대로 남아 있음",
+   "definition": "AWS 자기 공시 정가",
+   "quote": "Devstral 2 123B $ 0.40 $ 2.00 ... Mistral Large 3 $ 0.50 $ 1.50",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Amazon Bedrock Pricing",
+     "url": "https://aws.amazon.com/bedrock/pricing/",
+     "date": "2026-11-23",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "sides": {
+    "H1": "지지"
+   },
+   "side_basis": "같은 회사의 대형 모델 정가가 세대 교체로 $4/$12(24.02) 에서 $0.50/$1.50(Large 3)으로 1/8 수준 — 하이퍼스케일러 채널에서도 오픈 모델 단가가 빠르게 내렸다.",
+   "note": "세대 간 비교라 같은 모델의 인하는 아니다.",
+   "detail": {
+    "output_price": 1.5,
+    "mistral-large-24.02": "4/12"
+   }
+  },
+  {
+   "id": "bedrock-gpt-oss-120b-price",
+   "country": "US",
+   "city": null,
+   "metric": "AWS Bedrock gpt-oss-120b 토큰 단가(입력/출력, Standard, us-east-1)",
+   "value": 0.15,
+   "unit": "달러/100만 입력 토큰",
+   "asof": "2026-11",
+   "basis": "Bedrock 가격 화면 자리표시자를 AWS 공개 가격 JSON 으로 풀어 낸 us-east-1 Standard 값. 출력 $0.60. gpt-oss-20b $0.07/$0.30. Priority $0.2625/$1.05(+75%), Flex·Batch $0.075/$0.30(-50%)",
+   "definition": "AWS 자기 공시 정가",
+   "quote": "gpt-oss-20b $0.07 $0.3 gpt-oss-120b $0.15 $0.6",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Amazon Bedrock Pricing",
+     "url": "https://aws.amazon.com/bedrock/pricing/",
+     "date": "2026-11-23",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "sides": {
+    "H1": "중립",
+    "H3": "중립"
+   },
+   "side_basis": "독립 사업자 gpt-oss-120b 단가와 견줄 기준점. 하이퍼스케일러 정가가 독립 사업자 최저가보다 높으면 H3 반대 쪽.",
+   "note": "gpt-oss-20b 미세조정: 학습 시간당 $80, 추론 $0.09/$0.39, 월 보관 $1.95(us-east-1·us-west-2). GPT OSS Safeguard 120B $0.15/$0.60.",
+   "detail": {
+    "output_price": 0.6,
+    "gpt-oss-20b": "0.07/0.30",
+    "priority": "0.2625/1.05",
+    "flex_batch": "0.075/0.30",
+    "gpt-oss-20b-ft": "train $80/h, infer 0.09/0.39, store $1.95/mo"
+   }
+  },
+  {
+   "id": "bedrock-glm-5-3-price",
+   "country": "US",
+   "city": null,
+   "metric": "AWS Bedrock GLM 5.3 토큰 단가(입력/출력, Global CRIS, Standard)",
+   "value": 1.68,
+   "unit": "달러/100만 입력 토큰",
+   "asof": "2026-11",
+   "basis": "Bedrock 공식 가격표 Z AI 항목. 출력 $5.28, 캐시 읽기 $0.312, 캐시 쓰기 30분 $2.10. US CRIS $1.848/$5.808(10% 할증). GLM 5 $1.00/$3.20, GLM 4.7 $0.60/$2.20, GLM 4.7 Flash $0.07/$0.40(미국 3개 리전)",
+   "definition": "AWS 자기 공시 정가",
+   "quote": "GLM 5.3 On-Demand pricing ... Global CRIS $ 1.68 $ 5.28 $ 0.312 $ 2.10 US CRIS $ 1.848 $ 5.808",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Amazon Bedrock Pricing",
+     "url": "https://aws.amazon.com/bedrock/pricing/",
+     "date": "2026-11-23",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "sides": {
+    "H1": "중립",
+    "H3": "양쪽"
+   },
+   "side_basis": "최신 중국 모델을 바로 올림(H3 쪽). 세대가 올라갈수록 정가도 올라감(GLM 4.7 $0.60 → 5 $1.00 → 5.3 $1.68) — 오픈 모델 단가가 늘 내리기만 하는 건 아니다(H1 반대 쪽 재료).",
+   "note": "GLM 5.2 는 Bedrock 가격표에 없음(5.3 이 올라와 있음). 미국 리전 고정 라우팅(US CRIS)은 10% 할증.",
+   "detail": {
+    "output_price": 5.28,
+    "glm-5": "1.00/3.20",
+    "glm-4.7": "0.60/2.20",
+    "glm-4.7-flash": "0.07/0.40",
+    "us_cris": "1.848/5.808"
+   }
+  },
+  {
+   "id": "bedrock-qwen3-price",
+   "country": "US",
+   "city": null,
+   "metric": "AWS Bedrock Qwen3 계열 토큰 단가(입력/출력, 미국 리전)",
+   "value": 0.15,
+   "unit": "달러/100만 입력 토큰",
+   "asof": "2026-11",
+   "basis": "Bedrock 공식 가격표 Qwen 항목. Qwen3 32B·Qwen3 Coder 30B A3B $0.15/$0.60(us-east-1), Qwen3 Next 80B A3B $0.15/$1.20, Qwen3 VL 235B A22B $0.53/$2.66, Qwen3 Coder Next $0.50/$1.20. Qwen3 32B 미세조정: 학습 시간당 $80, 추론 $0.20/$0.78, 월 보관 $1.95",
+   "definition": "AWS 자기 공시 정가",
+   "quote": "Qwen3 Next 80B A3B $ 0.15 $ 1.20 Qwen3 VL 235B A22B $ 0.53 $ 2.66 Qwen3 Coder Next $ 0.50 $ 1.20",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Amazon Bedrock Pricing",
+     "url": "https://aws.amazon.com/bedrock/pricing/",
+     "date": "2026-11-23",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "sides": {
+    "H2": "양쪽",
+    "H3": "중립"
+   },
+   "side_basis": "미세조정 모델 추론 단가($0.20/$0.78)가 기본 모델($0.15/$0.60)보다 약 30% 높다 — 고객 데이터를 묶은 쪽에 웃돈이 붙는다는 작은 증거(H2).",
+   "note": "Qwen 3.5/4 등 최신 세대는 Bedrock 가격표에 없음.",
+   "detail": {
+    "qwen3-32b-ft": "train $80/h, infer 0.20/0.78, store $1.95/mo",
+    "qwen3-vl-235b": "0.53/2.66"
+   }
+  },
+  {
+   "id": "bedrock-custom-model-import-cmu-price",
+   "country": "US",
+   "city": null,
+   "metric": "AWS Bedrock Custom Model Import 단가(Custom Model Unit 분당)",
+   "value": 0.05718,
+   "unit": "달러/CMU·분",
+   "asof": "2026-11",
+   "basis": "Bedrock 공식 가격표 Custom Model Import, us-east-1·us-west-2. 5분 단위 과금, CMU 월 보관 $1.95. 프랑크푸르트 $0.07144. Llama 3.1 8B 128K 는 2 CMU, 70B 128K 는 8 CMU 필요. 계산: 70B = 8×0.05718×60 = 시간당 $27.45",
+   "definition": "AWS 자기 공시 정가. 지원 구조: Llama, 멀티모달 Llama, Mistral, Mixtral, Flan, Qwen, OpenAI(gpt-oss)",
+   "quote": "Price per Custom Model Unit per min* $0.05718 Monthly storage cost per Custom Model Unit $1.95 ... Llama 3.1 70B 128k model requires 8 Custom Model Units.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Amazon Bedrock Pricing",
+     "url": "https://aws.amazon.com/bedrock/pricing/",
+     "date": "2026-11-23",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "sides": {
+    "H2": "지지",
+    "H3": "지지"
+   },
+   "side_basis": "고객이 미세조정한 가중치를 들여와 시간 단위로 띄우는 상품 — 전용 용량·고객 데이터를 묶은 일을 하이퍼스케일러가 직접 판다.",
+   "note": "Kimi·DeepSeek·GLM 구조는 Custom Model Import 지원 목록에 없음(화면 탭 기준).",
+   "detail": {
+    "calc_70b_per_hour": 27.45,
+    "calc_8b_per_hour": 6.86,
+    "frankfurt": 0.07144
+   }
+  },
+  {
+   "id": "bedrock-llama-provisioned-throughput-price",
+   "country": "US",
+   "city": null,
+   "metric": "AWS Bedrock Llama 3.1 Provisioned Throughput 단가(모델 유닛 시간당, 약정별)",
+   "value": 24,
+   "unit": "달러/모델유닛·시간",
+   "asof": "2026-11",
+   "basis": "Bedrock 가격 JSON 으로 풀어 낸 us-west-2 값. Llama 3.1 8B·70B: 무약정 $24, 1개월 $21.18, 6개월 $13.08(무약정 대비 -45.5%). Llama 3.2 90B: $30/$26.48/$16.35. 미세조정 학습 100만 토큰당 8B $1.49, 70B $7.99. 커스텀 모델은 같은 PT 가격",
+   "definition": "AWS 자기 공시 정가",
+   "quote": "Llama 3.1 Instruct (8B) $24 $21.18 $13.08 Llama 3.1 Instruct (70B) $24 $21.18 $13.08",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Amazon Bedrock Pricing",
+     "url": "https://aws.amazon.com/bedrock/pricing/",
+     "date": "2026-11-23",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "sides": {
+    "H2": "지지"
+   },
+   "side_basis": "6개월 약정이 무약정보다 45% 싸다 — 하이퍼스케일러도 전용 용량을 장기 약정으로 묶어 판다.",
+   "note": "신형 오픈 모델(Kimi, GLM, DeepSeek V3.2, MiniMax)의 PT 가격은 화면에 없음. Anthropic PT 는 '영업팀 문의'. 'The prices are the same for custom models as base models.'",
+   "detail": {
+    "1m": 21.18,
+    "6m": 13.08,
+    "llama-3.2-90b": "30/26.48/16.35",
+    "ft_train_8b": 1.49,
+    "ft_train_70b": 7.99
+   }
+  },
+  {
+   "id": "vertex-deepseek-v4-1-flash-price",
+   "country": "US",
+   "city": null,
+   "metric": "Google Vertex AI(Model Garden MaaS) DeepSeek-V4.1-Flash 토큰 단가(입력/출력)",
+   "value": 0.3,
+   "unit": "달러/100만 입력 토큰",
+   "asof": "2026-11",
+   "basis": "Google Cloud Partner Models 가격 화면 Deepseek 항목. 출력 $1.20, 캐시 적중 $0.03(DeepSeek-V4.1-Flash-1017 판은 캐시 $0.006). DeepSeek-V3.2 $0.56/$1.68(배치 $0.28/$0.84), V3.1 $0.60/$1.70, R1(0528) $1.35/$5.40",
+   "definition": "Google 자기 공시 정가(관리형 API, 서버리스)",
+   "quote": "DeepSeek-V4.1-Flash-1017| Input| $0.30 | Output| $1.20 | Cache Hit| $0.006 | DeepSeek-V4.1-Flash| Input| $0.30 | Output| $1.20 | Cache Hit| $0.03",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Partner Models pricing | Google Cloud",
+     "url": "https://cloud.google.com/model-garden/partner-models/pricing",
+     "date": "2026-11-23",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "sides": {
+    "H3": "지지",
+    "H1": "중립"
+   },
+   "side_basis": "Google 은 최신 DeepSeek V4.1 Flash 를 관리형 API 로 이미 판다(Bedrock 가격표에는 V3.2 까지만). 독립 사업자 단가와 견줘 H1 판단.",
+   "note": "Bedrock DeepSeek v3.2 $0.62/$1.85 대 Vertex V3.2 $0.56/$1.68 — 같은 모델에서 Vertex 가 약 10% 싸다.",
+   "detail": {
+    "output_price": 1.2,
+    "v3.2": "0.56/1.68",
+    "v3.2_batch": "0.28/0.84",
+    "v3.1": "0.60/1.70",
+    "r1": "1.35/5.40",
+    "bedrock_v3.2": "0.62/1.85"
+   }
+  },
+  {
+   "id": "vertex-glm-5-2-price",
+   "country": "US",
+   "city": null,
+   "metric": "Google Vertex AI MaaS GLM-5.2 토큰 단가(입력/출력)",
+   "value": 1.4,
+   "unit": "달러/100만 입력 토큰",
+   "asof": "2026-11",
+   "basis": "Google Cloud Partner Models 가격 화면 GLM 항목. 출력 $4.40, 캐시 입력 $0.14. GLM-5 $1.00/$3.20, GLM-4.7 $0.60/$2.20",
+   "definition": "Google 자기 공시 정가",
+   "quote": "GLM-5.2| Input| $1.40 | Output| $4.40 | Cached Input:| $0.14",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Partner Models pricing | Google Cloud",
+     "url": "https://cloud.google.com/model-garden/partner-models/pricing",
+     "date": "2026-11-23",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "sides": {
+    "H1": "양쪽",
+    "H3": "지지"
+   },
+   "side_basis": "GLM-5·4.7 은 Bedrock 과 Vertex 정가가 정확히 같다($1.00/$3.20, $0.60/$2.20) — 하이퍼스케일러 간 단가가 모델 개발사 권장가로 수렴(H1 '수렴'). 세대가 오르면 정가도 오른다(H1 '하락' 반대).",
+   "note": "Bedrock 은 GLM 5.3 Global $1.68/$5.28, Vertex 는 GLM-5.2. 두 클라우드가 서로 다른 최신판을 올렸다.",
+   "detail": {
+    "output_price": 4.4,
+    "glm-5": "1.00/3.20 (Bedrock 동일)",
+    "glm-4.7": "0.60/2.20 (Bedrock 동일)"
+   }
+  },
+  {
+   "id": "vertex-gpt-oss-120b-price",
+   "country": "US",
+   "city": null,
+   "metric": "Google Vertex AI MaaS gpt-oss-120b 토큰 단가(입력/출력)",
+   "value": 0.09,
+   "unit": "달러/100만 입력 토큰",
+   "asof": "2026-11",
+   "basis": "Google Cloud Partner Models 가격 화면 OpenAI 항목. 출력 $0.36, 배치 $0.045/$0.18. gpt-oss-20b $0.07/$0.25(배치 $0.035/$0.125)",
+   "definition": "Google 자기 공시 정가",
+   "quote": "gpt-oss-120b| Input| $0.09 | Output| $0.36 | Batch Input| $0.045 | Batch Output| $0.18",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Partner Models pricing | Google Cloud",
+     "url": "https://cloud.google.com/model-garden/partner-models/pricing",
+     "date": "2026-11-23",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "sides": {
+    "H1": "지지",
+    "H3": "양쪽"
+   },
+   "side_basis": "같은 gpt-oss-120b 가 Bedrock $0.15/$0.60 대 Vertex $0.09/$0.36 — 하이퍼스케일러끼리도 40% 차이로 값 경쟁을 한다. 원가 근처까지 내리는 범용품 경쟁 신호.",
+   "note": "계산: Vertex/Bedrock = 0.09/0.15 = 0.60(입력), 0.36/0.60 = 0.60(출력).",
+   "detail": {
+    "output_price": 0.36,
+    "bedrock": "0.15/0.60",
+    "gpt-oss-20b": "0.07/0.25"
+   }
+  },
+  {
+   "id": "vertex-kimi-minimax-qwen-price",
+   "country": "US",
+   "city": null,
+   "metric": "Google Vertex AI MaaS 중국 모델 단가(Kimi-K2-Thinking·MiniMax-M2·Qwen3)",
+   "value": 0.6,
+   "unit": "달러/100만 입력 토큰(Kimi-K2-Thinking)",
+   "asof": "2026-11",
+   "basis": "Google Cloud Partner Models 가격 화면. Kimi-K2-Thinking $0.60/$2.50(캐시 $0.06), MiniMax-M2 $0.30/$1.20, Qwen3-Next-80B $0.15/$1.20, Qwen3-Coder-480B-A35B $0.22/$1.80, Qwen3-235B-A22B-2507 $0.22/$0.88",
+   "definition": "Google 자기 공시 정가",
+   "quote": "Kimi-K2-Thinking| Input| $0.60 | Output| $2.50 | Cache Hit| $0.06",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Partner Models pricing | Google Cloud",
+     "url": "https://cloud.google.com/model-garden/partner-models/pricing",
+     "date": "2026-11-23",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "sides": {
+    "H1": "지지",
+    "H3": "중립"
+   },
+   "side_basis": "Kimi K2 Thinking·MiniMax M2·Qwen3 Next 의 Vertex 값이 Bedrock 과 소수점까지 같다 — 하이퍼스케일러 정가는 개발사 권장가를 그대로 따르는 것으로 보인다.",
+   "note": "Vertex 관리형 API 에는 Kimi K3.x 가 없다(Bedrock 에는 Kimi K3.1 Pro Highspeed·Kimi 3). Bedrock Qwen3 235B 2507 는 us-east-1 가격 미공개([?]), 시드니 $0.2266/$0.9064.",
+   "detail": {
+    "minimax-m2": "0.30/1.20 (Bedrock 동일)",
+    "qwen3-next-80b": "0.15/1.20 (Bedrock 동일)",
+    "qwen3-coder-480b": "0.22/1.80",
+    "qwen3-235b-2507": "0.22/0.88"
+   }
+  },
+  {
+   "id": "vertex-llama-4-maverick-price",
+   "country": "US",
+   "city": null,
+   "metric": "Google Vertex AI MaaS Llama 4 Maverick·Scout 토큰 단가",
+   "value": 0.35,
+   "unit": "달러/100만 입력 토큰(Maverick)",
+   "asof": "2026-11",
+   "basis": "Google Cloud Partner Models 가격 화면 Meta 항목. Llama 4 Maverick $0.35/$1.15(배치 절반), Scout $0.25/$0.70, Llama 3.3 70B $0.72/$0.72. Gemma 4 26B(1차 모델 화면) $0.15/$0.60",
+   "definition": "Google 자기 공시 정가",
+   "quote": "Llama 4 Maverick| Input| $0.35 | Output| $1.15 | Batch Input| $0.175 | Batch Output| $0.575",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Partner Models pricing | Google Cloud",
+     "url": "https://cloud.google.com/model-garden/partner-models/pricing",
+     "date": "2026-11-23",
+     "read": "full"
+    },
+    {
+     "n": 2,
+     "title": "Agent Platform Pricing | Google Cloud",
+     "url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "date": "2026-11-23",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "sides": {
+    "H1": "양쪽"
+   },
+   "side_basis": "Llama 4 Maverick 은 Bedrock $0.24/$0.97 이 Vertex 보다 31% 싸고, gpt-oss-120b 는 반대 — 하이퍼스케일러마다 모델별로 값을 달리 정한다. Gemma 4 26B 는 Google 자사 $0.15/$0.60 이 AWS $0.13/$0.40 보다 비싸다.",
+   "note": "Llama 3.3 70B 는 두 클라우드 모두 $0.72/$0.72.",
+   "detail": {
+    "scout": "0.25/0.70",
+    "bedrock_maverick": "0.24/0.97",
+    "gemma-4-26b-vertex": "0.15/0.60",
+    "gemma-4-26b-bedrock": "0.13/0.40"
+   }
+  },
+  {
+   "id": "vertex-open-model-sft-price",
+   "country": "US",
+   "city": null,
+   "metric": "Google Vertex AI 오픈 모델 관리형 미세조정(SFT) 단가",
+   "value": 6.57,
+   "unit": "달러/100만 학습 토큰(Qwen 3 32B)",
+   "asof": "2026-11",
+   "basis": "Agent Platform 가격 화면 튜닝 표. Qwen 3 32B $6.57, Qwen 3 14B $8.46, Qwen 3 8B $4.18, Llama 3.3 70B $6.72, Llama 4 Scout $5.77, Llama 3.1 8B $0.67, Gemma 3 27B $6.83(모두 100만 count 당). Gemini 계열은 $0.0015~$0.025/1천 count",
+   "definition": "Google 자기 공시 정가",
+   "quote": "Qwen 3 32B| Supervised fine-tuning| $6.57 / 1,000,000 count | ... Llama 3.3 70B| Supervised fine-tuning| $6.72 / 1,000,000 count",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Agent Platform Pricing | Google Cloud",
+     "url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "date": "2026-11-23",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "sides": {
+    "H2": "지지",
+    "H3": "지지"
+   },
+   "side_basis": "하이퍼스케일러가 중국(Qwen)·미국(Llama, Gemma) 오픈 모델의 관리형 미세조정을 토큰 단가로 판다 — 사후 학습 자리에 하이퍼스케일러가 직접 들어와 있다.",
+   "note": "Qwen 3 14B($8.46)가 32B($6.57)보다 비싸다(원문 그대로). 미세조정 모델 서빙 가격은 이 화면에 오픈 모델 기준으로 따로 없음. AWS 는 학습 시간당 $80(gpt-oss-20b, Qwen3 32B).",
+   "detail": {
+    "qwen3-14b": 8.46,
+    "qwen3-8b": 4.18,
+    "llama-3.3-70b": 6.72,
+    "llama-4-scout": 5.77,
+    "gemma-3-27b": 6.83
+   }
+  },
+  {
+   "id": "azure-foundry-fireworks-models-price",
+   "country": "US",
+   "city": null,
+   "metric": "Microsoft Azure Foundry 의 Fireworks 호스팅 모델(FW) 토큰 단가 — 독립 사업자 모델을 하이퍼스케일러가 되파는 값",
+   "value": 0.375,
+   "unit": "달러/100만 입력 토큰(FW DeepSeek V4.1 Flash Global)",
+   "asof": "2026-11",
+   "basis": "Azure Foundry Models 가격 화면 fireworks 항목(가격은 페이지에 박힌 data-amount JSON 의 us-east 값). FW DeepSeek V4.1 Flash Global $0.375/$1.50(캐시 $0.008), FW DeepSeek V4 Pro Data Zone $1.925/$3.828, FW DeepSeek V4 Flash Data Zone $0.15/$0.31, FW GLM 5.2 Data Zone $1.54/$4.84, FW GLM 5.2 Fast Data Zone $2.31/$7.26, FW GLM 5.3 Flash Global $0.188/$0.625, FW Kimi K3 Global $3.00/$15.00, FW Kimi K2.6 Data Zone $1.045/$4.40, FW MiniMax 3 Data Zone $0.33/$1.32, FW Nemotron 3U Data Zone $0.66/$2.64. 전용 용량: Provisioned Managed Global 시간당 $1.0, 월 약정 $260, 연 약정 $2,652(단위당)",
+   "definition": "Microsoft 자기 공시 정가. 'FW' 접두어 모델은 Fireworks 가 서빙하고 Azure 가 청구하는 구조로 보임(화면 이름 기준 해석)",
+   "quote": "FW DeepSeek V4.1 Flash Global | Input: $0.375 $- /1M Tokens Cached Input: $0.008 $- /1M Tokens Output: $1.5 $- /1M Tokens",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Foundry Models pricing — Fireworks",
+     "url": "https://azure.microsoft.com/en-us/pricing/details/ai-foundry-models/fireworks/",
+     "date": "2026-11-23",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "sides": {
+    "H3": "반박",
+    "H1": "양쪽"
+   },
+   "side_basis": "Microsoft 가 독립 추론 사업자(Fireworks)를 자기 카탈로그에 협력사로 들여 판다 — 하이퍼스케일러가 독립 사업자를 밀어내기보다 유통 채널이 되는 사례(H3 반대). 같은 DeepSeek V4.1 Flash 를 Azure 자체판 $0.30/$1.20, FW판 $0.375/$1.50 으로 함께 판다.",
+   "note": "계산: FW V4.1 Flash / Azure 자체 V4.1 Flash = 0.375/0.30 = 1.25 (25% 비쌈). 반대로 FW V4 Flash Data Zone $0.15/$0.31 은 Azure 자체 V4 Flash Global $0.19/$0.51 보다 싸다. FW Kimi K3 Global $3/$15 는 Bedrock Kimi 3 Global CRIS 와 같은 값.",
+   "detail": {
+    "fw_v4.1_flash_global": "0.375/1.50",
+    "ms_v4.1_flash_global": "0.30/1.20",
+    "fw_v4_flash_dz": "0.15/0.31",
+    "ms_v4_flash_global": "0.19/0.51",
+    "fw_kimi_k3_global": "3.00/15.00",
+    "provisioned_global": "1.0/h, 260/mo, 2652/yr"
+   }
+  },
+  {
+   "id": "azure-foundry-deepseek-price",
+   "country": "US",
+   "city": null,
+   "metric": "Microsoft Azure Foundry(서버리스) DeepSeek 토큰 단가 — V4 Pro·V4 Flash·V4.1 Flash",
+   "value": 1.74,
+   "unit": "달러/100만 입력 토큰(DeepSeek-V4 Pro Global)",
+   "asof": "2026-11",
+   "basis": "Azure Foundry Models 가격 화면 deepseek 항목(data-amount JSON us-east 값). DeepSeek-V4 Pro Global $1.74/$3.48(캐시 $0.145), V4 Flash Global $0.19/$0.51(캐시 $0.028), V4 Flash 0731 Global $0.44/$1.32, V4.1 Flash Global $0.30/$1.20(캐시 $0.006), V3.2 Global $0.58/$1.68, V3.2 DataZone $0.64/$1.85, R1 Global $1.35/$5.40, V3.1 $1.23/$4.94",
+   "definition": "Microsoft 자기 공시 정가",
+   "quote": "DeepSeek-V4 Pro Global | $1.74 $- | $0.145 $- | $3.48 $- ... DeepSeek V4.1 Flash Global | $0.3 $- | $0.006 $- | $1.2 $-",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Foundry Models pricing — DeepSeek",
+     "url": "https://azure.microsoft.com/en-us/pricing/details/ai-foundry-models/deepseek/",
+     "date": "2026-11-23",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "sides": {
+    "H1": "지지",
+    "H3": "지지"
+   },
+   "side_basis": "DeepSeek V4.1 Flash 가 Azure($0.30/$1.20)·Vertex($0.30/$1.20)에서 같은 값, V3.2 도 Azure Global $0.58/$1.68 ≈ Vertex $0.56/$1.68 ≈ Bedrock $0.62/$1.85 — 하이퍼스케일러 세 곳 단가가 한 점으로 모인다. 최신 중국 모델을 하이퍼스케일러 셋 다 판다(H3).",
+   "note": "DataZone(지역 내 처리)은 Global 보다 약 10% 비싸다. 프로비저닝: R1·V3·V3 0324 Global 최소 100 PTU, PTU 시간당 $1.0, 월 예약 $260.",
+   "detail": {
+    "v4_flash_global": "0.19/0.51",
+    "v4.1_flash_global": "0.30/1.20",
+    "v3.2_global": "0.58/1.68",
+    "r1_global": "1.35/5.40",
+    "ptu": "min 100, $1.0/h, $260/mo"
+   }
+  },
+  {
+   "id": "azure-foundry-kimi-price",
+   "country": "US",
+   "city": null,
+   "metric": "Microsoft Azure Foundry Kimi 토큰 단가(K2 Thinking~K2.7 Code)",
+   "value": 0.95,
+   "unit": "달러/100만 입력 토큰(Kimi K2.6 Thinking Global)",
+   "asof": "2026-11",
+   "basis": "Azure Foundry Models 가격 화면 kimi 항목. K2.6 Thinking Global $0.95/$4.00(캐시 $0.16), K2.7 Code $0.95/$4.00(캐시 $0.19), K2.5 Thinking Global $0.60/$3.00, K2 Thinking Global $0.60/$2.50, DataZone $0.66/$2.75. Kimi K3 은 Microsoft 자체판이 없고 Fireworks판(FW Kimi K3 Global $3.00/$15.00)만 있음",
+   "definition": "Microsoft 자기 공시 정가",
+   "quote": "Kimi K2.6 Thinking Global | $0.95 $- | $0.16 $- | $4.0 $- Kimi K2.7 Code | $0.95 $- | $0.19 $- | $4.0 $-",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Foundry Models pricing — Kimi",
+     "url": "https://azure.microsoft.com/en-us/pricing/details/ai-foundry-models/kimi/",
+     "date": "2026-11-23",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "sides": {
+    "H3": "반박",
+    "H1": "중립"
+   },
+   "side_basis": "Microsoft 는 최신 Kimi K3 를 직접 올리지 않고 Fireworks 를 통해 판다 — 최신 중국 모델의 빠른 공급은 독립 사업자가 맡는다(H3 반대).",
+   "note": "Kimi K2 Thinking 값($0.60/$2.50)은 Bedrock·Vertex 와 같다.",
+   "detail": {
+    "k2.5": "0.60/3.00",
+    "k2_thinking_global": "0.60/2.50",
+    "k2_thinking_dz": "0.66/2.75",
+    "fw_kimi_k3": "3.00/15.00"
+   }
+  },
+  {
+   "id": "azure-foundry-managed-compute-gpu-price",
+   "country": "US",
+   "city": null,
+   "metric": "Microsoft Azure Foundry Managed Compute(오픈·커스텀 모델 전용 배포) GPU 시간당 값",
+   "value": 7.91,
+   "unit": "달러/GPU·시간(H100 Global)",
+   "asof": "2026-11",
+   "basis": "Azure Foundry Models 가격 화면 Managed Compute 표. A100 80G $3.95, H100 $7.91, H200 $9.10, MI300 $7.91(모두 Global, 1 Compute Hour 당)",
+   "definition": "Microsoft 자기 공시 정가. 오픈소스·커스텀 모델을 전용 GPU 에 띄우는 관리형 상품",
+   "quote": "Managed A100 80G Global | $3.95 $- Managed H100 Global | $7.91 $- Managed H200 Global | $9.1 $- Managed MI300 Global | $7.91 $-",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Foundry Models pricing — DeepSeek(공통 Managed Compute 표)",
+     "url": "https://azure.microsoft.com/en-us/pricing/details/ai-foundry-models/deepseek/",
+     "date": "2026-11-23",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "sides": {
+    "H2": "지지",
+    "H3": "양쪽"
+   },
+   "side_basis": "하이퍼스케일러가 전용 배포를 GPU 시간 단가로 판다(H2 자리 진입). 다만 H100 시간당 $7.91 은 독립 GPU 임대 시세보다 높은 편이라 가격 경쟁력은 독립 사업자 쪽일 수 있다 — P2 갈래의 GPU 시간당 값과 견줄 것.",
+   "note": "MI300 이 H100 과 같은 값. 이 값이 GPU 하나당인지 노드당인지는 화면 문구('Price/1 Compute Hour')만으로 확정 못 함.",
+   "detail": {
+    "a100": 3.95,
+    "h200": 9.1,
+    "mi300": 7.91
+   }
+  },
+  {
+   "id": "azure-gpt-oss-120b-price",
+   "country": "US",
+   "city": null,
+   "metric": "Microsoft Azure(Foundry/OpenAI 가격 화면) gpt-oss-120b 토큰 단가",
+   "value": 0.15,
+   "unit": "달러/100만 입력 토큰",
+   "asof": "2026-11",
+   "basis": "Azure OpenAI 가격 화면 gpt-oss 표(data-amount JSON us-east). 출력 $0.60. 견줄 값: Bedrock $0.15/$0.60(같음), Vertex $0.09/$0.36",
+   "definition": "Microsoft 자기 공시 정가",
+   "quote": "gpt-oss-120b | Input: $0.15 $- Output: $0.6 $-",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Azure OpenAI Service pricing",
+     "url": "https://azure.microsoft.com/en-us/pricing/details/cognitive-services/openai-service/",
+     "date": "2026-11-23",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "sides": {
+    "H1": "양쪽"
+   },
+   "side_basis": "AWS·Azure 는 같은 값, Google 만 40% 낮다 — 하이퍼스케일러 간 수렴과 한 곳의 인하가 함께 보인다.",
+   "note": "Microsoft 자체 MAI-DS-R1(DeepSeek R1 사후 학습판) Global $1.35/$5.40 — 원본 R1 과 같은 값.",
+   "detail": {
+    "bedrock": "0.15/0.60",
+    "vertex": "0.09/0.36",
+    "mai-ds-r1": "1.35/5.40"
+   }
+  },
+  {
+   "id": "amzn-q3-2026-bedrock-growth",
+   "country": "US",
+   "city": null,
+   "metric": "Amazon Bedrock 성장 — 포춘 500 고객 지출 전년 대비 배수, 토큰 물량 전년 대비 배수",
+   "value": 17,
+   "unit": "배(토큰 물량, 전년 동기 대비)",
+   "asof": "2026-09",
+   "basis": "Andy Jassy 의 3분기 실적 발표 글(aboutamazon.com, 2026-10-30). 포춘 500 기업의 Bedrock 지출 약 7배, Bedrock 전체 토큰 물량 약 17배(전년 대비). 'AWS 역사상 가장 빨리 크는 수십억 달러 서비스'",
+   "definition": "회사 자기 보고(CEO). 절대 매출액·오픈 모델 비중은 밝히지 않음",
+   "quote": "Fortune 500 companies spending nearly 7x more on Bedrock year over year and total Bedrock token volume growing nearly 17x year over year. Bedrock is the fastest growing multi-billion dollar service in AWS's history.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Q3 Earnings: Andy Jassy on AWS' 39% year-over-year growth",
+     "url": "https://www.aboutamazon.com/news/company-news/aws-growth-ai-demand-q3-2026-earnings",
+     "date": "2026-10-30",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "sides": {
+    "H3": "지지",
+    "H1": "양쪽"
+   },
+   "side_basis": "하이퍼스케일러 추론 서비스가 대기업 계약에서 빠르게 커진다(H3). 토큰 17배 대 지출 7배(포춘 500 한정이라 같은 분모는 아님) — 토큰당 지출은 내려가는 방향으로 읽힐 수 있음(H1, 해석).",
+   "note": "'multi-billion dollar' 는 연환산 매출 수십억 달러로 읽힘. 오픈 모델 고객 비중 수치는 없음.",
+   "detail": {
+    "f500_spend_multiple": 7,
+    "token_volume_multiple": 17
+   }
+  },
+  {
+   "id": "amzn-q3-2026-bedrock-kimi-glm",
+   "country": "US",
+   "city": null,
+   "metric": "Amazon 경영진 — Bedrock 에 Kimi·GLM 'Bedrock-managed' 판을 막 추가",
+   "value": null,
+   "unit": "해당 없음",
+   "asof": "2026-10",
+   "basis": "Jassy 3분기 실적 글. OpenAI 모델 추가·사용 급증, 'Bedrock-managed versions of Kimi, GLM, and SpaceX models' 추가. 데이터 비공유(입출력을 모델 제공사와 공유하지 않음)를 Bedrock 선택 이유로 듦. 보도(Benzinga, 검색 요약)는 Jassy 가 Kimi K3·GLM 5.3 을 거명하고 'Western world is very hungry for additional open models that are Western open models' 라고 했다고 전함",
+   "definition": "회사 자기 보고(CEO). 'Western open models' 발언은 검색 요약으로만 확인",
+   "quote": "We recently added OpenAI models to Bedrock and usage is growing quickly. We also just added Bedrock-managed versions of Kimi, GLM, and SpaceX models.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Q3 Earnings: Andy Jassy on AWS' 39% year-over-year growth",
+     "url": "https://www.aboutamazon.com/news/company-news/aws-growth-ai-demand-q3-2026-earnings",
+     "date": "2026-10-30",
+     "read": "full"
+    },
+    {
+     "n": 2,
+     "title": "Benzinga — Amazon Q3 2026 call (검색 요약)",
+     "url": "https://www.benzinga.com/node/62735230",
+     "date": "2026-10-29",
+     "read": "search_summary"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H3": "지지"
+   },
+   "side_basis": "AWS 가 중국 최신 오픈웨이트(Kimi K3, GLM 5.3)를 자기 관리형으로 올리고 보안·데이터 비공유를 내세워 기업 계약에 묶는다.",
+   "note": "Bedrock 가격표에는 Kimi K3.1 Pro Highspeed·Kimi 3·GLM 5.3 이 이미 올라 있음(별도 후보)."
+  },
+  {
+   "id": "aws-bedrock-open-weights-launch-2026-02",
+   "country": "US",
+   "city": null,
+   "metric": "AWS Bedrock 중국 오픈웨이트 모델 일괄 추가 시점(2026-02-10, 6종)과 Project Mantle",
+   "value": 6,
+   "unit": "모델 수",
+   "asof": "2026-02",
+   "basis": "AWS What's New 2026-02-10: DeepSeek V3.2, MiniMax M2.1, GLM 4.7, GLM 4.7 Flash, Kimi K2.5, Qwen3 Coder Next 추가. 새 분산 추론 엔진 Project Mantle 위에서 서빙(신규 모델 온보딩 가속, OpenAI API 호환). 2026-03-18 MiniMax M2.5·GLM 5 추가",
+   "definition": "회사 자기 공시(보도자료)",
+   "quote": "These six models bring customers access to the most capable open weights models available today, delivering frontier-class performance at significantly lower inference costs.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Amazon Bedrock adds support for six fully-managed open weights models",
+     "url": "https://aws.amazon.com/about-aws/whats-new/2026/02/amazon-bedrock-adds-support-six-open-weights-models/",
+     "date": "2026-02-10",
+     "read": "full"
+    },
+    {
+     "n": 2,
+     "title": "Minimax M2.5 and GLM 5 models now available on Amazon Bedrock",
+     "url": "https://aws.amazon.com/about-aws/whats-new/2026/03/amazon-bedrock-minimax-glm/",
+     "date": "2026-03-18",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "sides": {
+    "H3": "지지"
+   },
+   "side_basis": "AWS 가 오픈 모델 온보딩 속도를 올리려고 전용 서빙 엔진을 만들었다 — 독립 사업자의 강점(새 모델 즉시 제공)을 따라잡으려는 투자. 그전에는 늦게 올렸다는 뜻이기도 하다.",
+   "note": "'OpenAI API 호환'은 독립 사업자에서 옮겨 오는 비용을 낮춘다.",
+   "detail": {
+    "2026-02-10": "DeepSeek V3.2, MiniMax M2.1, GLM 4.7, GLM 4.7 Flash, Kimi K2.5, Qwen3 Coder Next",
+    "2026-03-18": "MiniMax M2.5, GLM 5"
+   }
+  },
+  {
+   "id": "reinvent-2026-keynote-schedule",
+   "country": "US",
+   "city": null,
+   "metric": "AWS re:Invent 2026 기조연설 일정과 연사(행사 전 공개분)",
+   "value": 5,
+   "unit": "기조연설 수",
+   "asof": "2026-11",
+   "basis": "re:Invent 2026 기조연설 화면(라스베이거스, 11/30~12/4, 미 태평양시). 개발자 기조 11/30 19:30~20:45(Clare Liguori, Marc Brooker 등). CEO 기조 12/1 08:30~10:30 Matt Garman — 동반 연사 Allianz COO Barbara Karuth-Zelle, DoorDash CEO Tony Xu, OpenAI CEO Sam Altman, Peter DeSantis(SVP Foundational AI·Custom Silicon). Data & AI 기조 12/2 08:30~10:00 Swami Sivasubramanian. 파트너 기조 12/2 15:00~16:00 Garman. 기술 혁신 기조 12/3 08:30~10:00",
+   "definition": "AWS 자기 공시 일정. 발표 내용은 행사 전이라 없음",
+   "quote": "CEO Keynote AWS CEO Matt Garman shares new launches and the innovations powering the agentic era, from AI infrastructure to agents. Speakers Matt Garman ... Sam Altman, Co-Founder and CEO, OpenAI",
+   "sources": [
+    {
+     "n": 1,
+     "title": "AWS re:Invent 2026 Keynotes - Speakers & Schedule",
+     "url": "https://aws.amazon.com/events/reinvent/sessions/keynotes/",
+     "date": "2026-11-23",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "sides": {
+    "H3": "중립"
+   },
+   "side_basis": "일정 자체는 가설 방향이 없다. CEO 기조에 OpenAI CEO 가 서는 점은 Bedrock 의 폐쇄형 최상위 모델 확보 쪽 신호로, 오픈웨이트 비중과는 따로 본다.",
+   "note": "한국 시각으로 CEO 기조는 12/2(수) 01:30~03:30 KST. Data & AI 기조 12/3 01:30 KST.",
+   "detail": {
+    "ceo_keynote_kst": "2026-12-02 01:30-03:30",
+    "data_ai_kst": "2026-12-03 01:30-03:00"
+   }
+  },
+  {
+   "id": "reinvent-2026-aiml-track-sessions",
+   "country": "US",
+   "city": null,
+   "metric": "re:Invent 2026 AI/ML 트랙의 Bedrock·SageMaker·Trainium 세션(오픈 모델·미세조정 관련)",
+   "value": null,
+   "unit": "해당 없음",
+   "asof": "2026-11",
+   "basis": "AWS ML 블로그 'attendee's guide to the re:Invent 2026 AI/ML track'. AIM364(Bedrock 대 SageMaker 선택), AIM443(HyperPod 학습 후 같은 모델을 Bedrock 추론으로), AIM310(Trainium3·Trn3 UltraServer 의 대형 MoE 서빙), AIM402(LLM 을 몇 시간 안에 미세조정·배포), AIM2205(자체 데이터로 모델 시험, 미세조정이 언제 값어치 있는가), AIM214(Vanguard 가 HyperPod 에서 커스텀 LLM 학습·서빙), AIM213(CrowdStrike LLM 추론), AIM448(Bedrock 추론 옵션 선택), AIM435(정책 증류)",
+   "definition": "AWS 자기 공시(행사 안내)",
+   "quote": "Experienced builders should look at AIM443 . In this 400-level chalk talk, you build a training pipeline on Amazon SageMaker HyperPod. You bring in company data and keep governance in place. Then you deploy the same model to Amazon Bedrock for inference",
+   "sources": [
+    {
+     "n": 1,
+     "title": "The attendee's guide to the AWS re:Invent 2026 AI/ML track",
+     "url": "https://aws.amazon.com/blogs/machine-learning/the-attendees-guide-to-the-aws-reinvent-2026-ai-ml-track/",
+     "date": "2026-11",
+     "read": "full"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "high",
+   "sides": {
+    "H2": "지지",
+    "H3": "지지"
+   },
+   "side_basis": "AWS 가 '고객 데이터로 미세조정 → Bedrock 서빙' 경로를 행사 핵심 동선으로 민다 — 사후 학습·전용 배포 자리를 하이퍼스케일러가 자기 계약 안에 묶으려 한다.",
+   "note": "오픈웨이트 중국 모델을 이름으로 다룬 세션은 안내 글에 없음."
+  },
+  {
+   "id": "azure-fireworks-on-foundry-partnership",
+   "country": "US",
+   "city": null,
+   "metric": "Microsoft Foundry 의 Fireworks AI 입점(공개 미리보기 2026-03-11) — Azure 청구·MACC 차감·PTU 전용 용량·자체 가중치(BYOW)",
+   "value": null,
+   "unit": "해당 없음",
+   "asof": "2026-03",
+   "basis": "Azure 블로그(2026-03-11)와 Fireworks 협력 화면. Fireworks 서빙 오픈 모델을 Foundry 1차 모델로 노출, 서버리스(토큰 단가, Data Zone Standard) 또는 PTU(시간당) 선택, 미세조정·양자화 가중치 업로드(BYOW). 사용량은 Azure 계정 청구, MACC(Azure 소비 약정) 차감, PTU 는 ACD 대상. 서버리스 PayGo 최대 100만 TPM. 출시 모델: DeepSeek V3.2, Kimi K2.5, MiniMax M2.5, GLM-5, gpt-oss-120b",
+   "definition": "Microsoft·Fireworks 공동 발표(양쪽 모두 파는 쪽). 고객 인용(UiPath 등)은 Fireworks 가 고른 것",
+   "quote": "Usage runs through your existing Azure account and counts toward MACC. PTU is also ACD-eligible.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Introducing Fireworks AI on Microsoft Foundry",
+     "url": "https://azure.microsoft.com/en-us/blog/introducing-fireworks-ai-on-microsoft-foundry-bringing-high-performance-low-latency-open-model-inference-to-azure/",
+     "date": "2026-03-11",
+     "read": "full"
+    },
+    {
+     "n": 2,
+     "title": "Fireworks — Microsoft partner page",
+     "url": "https://fireworks.ai/partners/microsoft",
+     "date": "2026-11-23",
+     "read": "full"
+    },
+    {
+     "n": 3,
+     "title": "Introducing Fireworks on Microsoft Foundry",
+     "url": "https://fireworks.ai/blog/fireworks-on-microsoft-foundry",
+     "date": "2026-03-08",
+     "read": "full"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "high",
+   "sides": {
+    "H3": "양쪽",
+    "H2": "지지"
+   },
+   "side_basis": "독립 사업자가 하이퍼스케일러 약정(MACC)을 소진하는 통로로 들어갔다 — 독립 사업자 자리가 좁아진 게 아니라 하이퍼스케일러 계약 안으로 옮겨 간 것(H3 반대). 다만 청구·고객 관계는 Microsoft 가 쥐어 독립 사업자의 가격 결정력·마진은 줄 수 있다(H3 지지). 상품 축이 PTU·BYOW 인 점은 H2.",
+   "note": "Kimi K3 처럼 Microsoft 자체판이 없는 최신 모델은 FW 판으로만 판다(가격 후보 azure-foundry-fireworks-models-price).",
+   "detail": {
+    "serverless_max_tpm": 1000000,
+    "launch_models": "DeepSeek V3.2, Kimi K2.5, MiniMax M2.5, GLM-5, gpt-oss-120b"
+   }
+  },
+  {
+   "id": "fireworks-foundry-onboarding-lag",
+   "country": "US",
+   "city": null,
+   "metric": "Fireworks 신모델이 Microsoft Foundry 에 올라가기까지의 지연(일)",
+   "value": 7.5,
+   "unit": "일(5~10일 범위의 가운데)",
+   "asof": "2026-11",
+   "basis": "Fireworks 의 Microsoft 협력 화면 FAQ. 새 모델은 Microsoft 온보딩 절차를 거쳐 Fireworks 출시 후 보통 5~10일 뒤 Foundry 에 오름. 출시 당일 접근은 fireworks.ai 직접. 값 7.5 는 범위 가운데(계산)",
+   "definition": "Fireworks 자기 보고(파는 쪽). Microsoft 블로그는 같은 상품에 'day-zero access' 라고 적어 서로 다름",
+   "quote": "New models go through a Microsoft onboarding pipeline, typically 5–10 days after we release them on the Fireworks platform. For day-of-release access, use fireworks.ai directly.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Fireworks — Microsoft partner page",
+     "url": "https://fireworks.ai/partners/microsoft",
+     "date": "2026-11-23",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "sides": {
+    "H3": "반박"
+   },
+   "side_basis": "최신 오픈 모델을 가장 먼저 쓰려면 하이퍼스케일러 채널이 아니라 독립 사업자 직판으로 가야 한다 — 독립 사업자의 남는 자리(속도)를 보여 준다.",
+   "note": "Microsoft 블로그 'Evaluate models faster with day‑zero access' 와 상충.",
+   "detail": {
+    "range_days": "5-10"
+   }
+  },
+  {
+   "id": "together-aws-marketplace",
+   "country": "US",
+   "city": null,
+   "metric": "Together AI 의 AWS Marketplace 입점·APN 가입 — AWS 크레딧·약정 지출로 결제",
+   "value": null,
+   "unit": "해당 없음",
+   "asof": "2024-12",
+   "basis": "Together AI 블로그(2024-12-02). AWS Marketplace 입점, AWS Partner Network 가입, AWS 고객은 기존 클라우드 크레딧·약정 지출(committed spend)로 결제. '2~3배 빠른 추론', 200개 넘는 오픈 모델",
+   "definition": "Together 자기 발표(파는 쪽)",
+   "quote": "AWS customers can now use their existing cloud credits and committed s[pend]",
+   "sources": [
+    {
+     "n": 1,
+     "title": "AWS Marketplace now offering Together AI",
+     "url": "https://www.together.ai/blog/together-ai-available-aws-marketplace-to-accelerate-enterprise-ai-development",
+     "date": "2024-12-02",
+     "read": "full"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "high",
+   "sides": {
+    "H3": "반박"
+   },
+   "side_basis": "독립 사업자가 하이퍼스케일러 약정 지출을 끌어 쓰는 통로를 확보 — 하이퍼스케일러 계약이 독립 사업자를 막는 벽이 아니라 판매 경로가 된다.",
+   "note": "2024년 자료라 오래됐다. 마켓플레이스 수수료율은 공개 안 됨."
+  },
+  {
+   "id": "google-baseten-a4-cost-performance",
+   "country": "US",
+   "city": null,
+   "metric": "Baseten 이 Google Cloud A4(B200)·DWS 로 얻은 추론 가격 대비 성능 개선",
+   "value": 225,
+   "unit": "% (고처리량 추론 가격 대비 성능 개선)",
+   "asof": "2025-09",
+   "basis": "Google Cloud 블로그(2025-09-05, Baseten 개발자 관계 책임자 글). A4 VM(NVIDIA HGX B200)과 Dynamic Workload Scheduler 로 고처리량 225%, 지연 민감 25% 가격 대비 성능 개선. DeepSeek V3·R1·Llama 4 Maverick 을 Model API 로 서빙. B200 전용 배포도 제공",
+   "definition": "Baseten·Google 공동 홍보(양쪽 다 파는 쪽). 비교 기준 세대 명시 부족",
+   "quote": "Baseten has achieved 225% better cost-performance for high-throughput inference and 25% better cost-performance for latency-sensitive inference.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "How Baseten achieves 225% better cost-performance for AI inference",
+     "url": "https://cloud.google.com/blog/products/ai-machine-learning/how-baseten-achieves-better-cost-performance-for-ai-inference",
+     "date": "2025-09-05",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H3": "반박"
+   },
+   "side_basis": "Google 은 독립 추론 사업자를 GPU 대형 고객·협력사로 홍보한다 — 하이퍼스케일러 입장에서 독립 사업자는 경쟁자이면서 인프라 매출원.",
+   "note": "Baseten 의 AWS 전략적 협력 계약(2025-12) 보도자료는 businesswire 403 으로 못 열었다.",
+   "detail": {
+    "latency_sensitive_gain_pct": 25
+   }
+  },
+  {
+   "id": "bedrock-kimi-k3-glm-5-3-launch-dates",
+   "country": "US",
+   "city": null,
+   "metric": "Bedrock 의 Kimi K3(2026-09-18)·GLM 5.3(2026-10-05) 출시일과 AWS 가 든 이유",
+   "value": null,
+   "unit": "해당 없음",
+   "asof": "2026-10",
+   "basis": "AWS ML 블로그 'Introducing Kimi K3 on Amazon Bedrock'(2026-09-18), 'Introducing GLM 5.3 on Amazon Bedrock'(2026-10-05). GLM 5.3 은 753B MoE, 교차 리전 추론 전용, 암묵·명시 프롬프트 캐시, OpenAI 호환 Responses·Chat Completions API. AWS 가 든 이유: 오픈웨이트를 쓰려면 원래 자체 추론 인프라를 돌려야 했다",
+   "definition": "AWS 자기 공시(블로그)",
+   "quote": "Meeting those demands with open-weight models has historically meant provisioning and operating your own inference infrastructure.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Introducing GLM 5.3 on Amazon Bedrock",
+     "url": "https://aws.amazon.com/blogs/machine-learning/introducing-glm-5-3-on-amazon-bedrock/",
+     "date": "2026-10-05",
+     "read": "full"
+    },
+    {
+     "n": 2,
+     "title": "Introducing Kimi K3 on Amazon Bedrock",
+     "url": "https://aws.amazon.com/blogs/machine-learning/introducing-kimi-k3-on-amazon-bedrock/",
+     "date": "2026-09-18",
+     "read": "partial"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "high",
+   "sides": {
+    "H3": "지지"
+   },
+   "side_basis": "AWS 는 오픈웨이트 모델을 '직접 띄울 필요 없는 관리형 API'로 판다 — 자체 호스팅·독립 사업자 대체를 겨냥한 문구.",
+   "note": "Kimi K3 블로그 본문은 글자 추출에서 본문이 잘 안 잡혀 partial. 출시일은 메타데이터 기준. Moonshot 이 K3 공개 후 Bedrock 출시까지의 간격은 이 자료로 못 셈.",
+   "detail": {
+    "kimi_k3": "2026-09-18",
+    "glm_5_3": "2026-10-05",
+    "glm_5_3_params": "753B MoE"
+   }
+  },
+  {
+   "id": "msft-fy27q1-foundry-open-source-revenue-10x",
+   "country": "US",
+   "city": null,
+   "metric": "Microsoft Foundry 의 오픈소스 모델 매출 증가 배수(전년 대비)와 Foundry 고객 수",
+   "value": 10,
+   "unit": "배(오픈소스 모델 매출, 전년 대비)",
+   "asof": "2026-09",
+   "basis": "Microsoft FY27 1분기 실적 콜(2026-10-28) Nadella 발언 전사(TradingKey 게재). Foundry 고객 12만 곳 이상, Foundry 매출 3배 이상(전년 대비), 여러 모델로 에이전트를 만드는 고객 5배, Foundry 의 오픈소스 모델 매출 10배. CFO 측 요약: Foundry 성장에 '용량 배분 확대와 토큰당 매출 상승'이 기여, 토큰 가격은 예측하기 어렵다",
+   "definition": "회사 자기 보고(CEO·CFO), 제3자 전사본. 오픈소스 모델 매출 절대액·비중은 밝히지 않음",
+   "quote": "the number of customers building agentic solutions with multiple models increased 5x year-over-year and revenue from open source models on foundry increased 10x.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Microsoft Q1 FY2027 earnings call transcript (TradingKey)",
+     "url": "https://www.tradingkey.com/news/transcripts/262249601-tradingkey",
+     "date": "2026-10-28",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "sides": {
+    "H3": "지지",
+    "H1": "반박"
+   },
+   "side_basis": "하이퍼스케일러 안에서 오픈 모델 매출이 10배로 컸다(H3). 같은 콜에서 Foundry 매출 성장에 '토큰당 매출 상승'이 기여했다고 해, 하이퍼스케일러 채널에서는 토큰 단가가 범용품처럼 내리지만은 않는다(H1 반대, 오픈 모델에 한정된 말은 아님).",
+   "note": "10배의 기저가 작을 수 있다(절대액 미공개). Microsoft 는 오픈웨이트·자체 MAI·프런티어 모델 사이를 고객이 오간다고 봄. 자체 MAIbase 2 가 '테스트한 다른 오픈웨이트 모델보다 학습 연산 효율 4~12배'라고 주장.",
+   "detail": {
+    "foundry_customers": 120000,
+    "foundry_revenue_multiple": ">3x",
+    "multi_model_customers_multiple": 5,
+    "revenue_per_token": "increased (CFO)"
+   }
+  },
+  {
+   "id": "vertex-online-prediction-gpu-node-price",
+   "country": "US",
+   "city": null,
+   "metric": "Google Vertex AI 온라인 예측(전용 엔드포인트·Model Garden 자체 배포) 8-GPU 노드 시간당 값",
+   "value": 148.212,
+   "unit": "달러/노드·시간(a4-highgpu-8g, us-central1)",
+   "asof": "2026-11",
+   "basis": "Vertex AI(Gemini platform) 가격 화면 'Prediction and explanation' 절, 아이오와(us-central1). a4-highgpu-8g $148.212, a3-megagpu-8g $106.65, a3-ultragpu-8g $96.02(시간당, 온디맨드). 1년 Flexible Savings Plan -10%, 3년 -20%(a4: $133.39/$118.57). 계산: 8 GPU 기계로 보면 a4 GPU 당 $18.53/시간, a3-ultra $12.00/시간. 예약·스팟 사용 시 GCE SKU + Vertex 관리 수수료로 나눠 청구",
+   "definition": "Google 자기 공시 정가. 기계 형식-GPU 대응(a4=B200 등)은 이 화면에서 직접 확인하지 않음",
+   "quote": "a3-ultragpu-8g| $96.015616 / 1 hour $86.4140544 / 1 hour $76.8124928 / 1 hour | a3-megagpu-8g| $106.65474 / 1 hour ... a4-highgpu-8g| $148.212 / 1 hour $133.3908 / 1 hour $118.5696 / 1 hour",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Vertex AI (Gemini platform) pricing",
+     "url": "https://cloud.google.com/vertex-ai/pricing",
+     "date": "2026-11-23",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "low",
+   "sides": {
+    "H2": "지지",
+    "H3": "양쪽"
+   },
+   "side_basis": "하이퍼스케일러가 오픈 모델 전용 배포를 노드 시간 단가로 판다(H2 자리). 노드 값이 독립 GPU 임대·독립 사업자 전용 배포가보다 높으면 H3 반대 — P2/P3 갈래 값과 대조 필요.",
+   "note": "Azure Managed Compute H100 $7.91/GPU·시간과 견줄 값. Vertex 학습용 표의 a3-highgpu-8g 는 $101.01, 예측용은 $105.40(관리 수수료 차이로 보임).",
+   "detail": {
+    "a3-megagpu-8g": 106.65,
+    "a3-ultragpu-8g": 96.02,
+    "a3-highgpu-8g_prediction": 105.4,
+    "fsp_1y_discount": "10%",
+    "fsp_3y_discount": "20%",
+    "calc_a4_per_gpu": 18.53
+   }
+  },
+  {
+   "id": "activant-enterprise-on-hyperscaler-apis",
+   "country": "US",
+   "city": null,
+   "metric": "투자사 분석 — 기업 오픈 모델 수요는 하이퍼스케일러 API 에 몰리고, Microsoft 는 Fireworks 엔진을 자체 개발 대신 들였다",
+   "value": null,
+   "unit": "해당 없음",
+   "asof": "2026-08",
+   "basis": "Activant Capital 'Inference is accelerating'(2026-08-06). (1) OpenRouter 는 세계 토큰의 5~10% 만 잡고 스타트업 쪽으로 치우침, 기업 배포는 규정 준수·데이터 주권·비용 규율 때문에 하이퍼스케일러 API 에 몰림. (2) Microsoft 가 3월 Fireworks 추론 플랫폼을 Azure AI Foundry 에 통합 — 자체 재구축 대신 채택. 다만 EU Data Boundary 제외, FedRAMP 없음, PCI 불가로 출시. (3) '규정 준수로 Bedrock 을 이기는 건 불가능'",
+   "definition": "투자사 분석(독립 추론 사업자 쪽 투자 이해관계 가능성 있음 — 확인 못 함). 하이퍼스케일러 오픈 모델 물량은 '크지만 비공개'",
+   "quote": "Enterprise deployments concentrate on Hyperscaler APIs, where compliance, data sovereignty, and cost discipline drive the buying decision.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Inference is accelerating — Activant Capital",
+     "url": "https://www.activantcapital.com/research/inference-is-accelerating",
+     "date": "2026-08-06",
+     "read": "full"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H3": "양쪽"
+   },
+   "side_basis": "기업 물량이 하이퍼스케일러 API 로 간다는 판단은 H3 지지. 반면 Microsoft 가 커널·엔진 기술을 독립 사업자에게서 사 온 사례는 독립 사업자의 기술 우위가 하이퍼스케일러 안에서도 값을 받는다는 H3 반대 증거.",
+   "note": "같은 글: 'Microsoft shipped the integration excluded from its EU Data Boundary commitments, without FedRAMP coverage, and barred from PCI workloads.' 규정 준수가 핵심인 회사가 이를 감수했다는 해석은 Activant 의 것.",
+   "detail": {
+    "openrouter_share_of_global_tokens": "5-10%",
+    "fireworks_tokens_per_day_claim": "25T (Fireworks 자기 보고, Activant 인용)"
+   }
+  },
+  {
+   "id": "aws-marketplace-fireworks-enterprise-contract",
+   "country": "US",
+   "city": null,
+   "metric": "Fireworks AI 의 AWS Marketplace 공개 계약 단가(12개월 엔터프라이즈 약정)",
+   "value": 500000,
+   "unit": "달러/12개월 계약",
+   "asof": "2026-11",
+   "basis": "AWS Marketplace 'Fireworks by Fireworks AI' 판매 화면. 계약형 가격: 12개월 계약 Enterprise 차원 $500,000(무제한 배포 모델), 약정 초과분은 Additional Usage 차원 단위당 $1.00. AWS 청구로 결제. 화면 문구: LoRA 미세조정 '다른 사업자 대비 2배 비용 효율', 미세조정 모델 최대 100개를 추가 비용 없이 전환",
+   "definition": "Fireworks 자기 공시(마켓플레이스 판매자, 파는 쪽). 비공개 맞춤 제안(private offer) 가격은 알 수 없음",
+   "quote": "12-month contract (1) Dimension $500,000.00 The following dimensions are not included in the contract terms, which will be charged based on your usage. Dimension Cost/unit $1.00",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Fireworks by Fireworks AI | AWS Marketplace",
+     "url": "https://aws.amazon.com/marketplace/pp/prodview-xjyibdnkmirz6",
+     "date": "2026-11-23",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "sides": {
+    "H3": "반박",
+    "H2": "지지"
+   },
+   "side_basis": "Fireworks 가 AWS 의 마켓플레이스로 기업 약정을 판다 — AWS 계약 안에서 독립 사업자가 Bedrock 과 나란히 팔리는 구조(H3 반대). 공개 상품이 토큰 단가가 아니라 연 $50만 엔터프라이즈 약정·미세조정 중심인 점은 H2 쪽.",
+   "note": "Microsoft(Foundry 1차 모델 통합), AWS(마켓플레이스), Google(마켓플레이스 — AI Magazine 보도, 원문 403 으로 미확인) 세 곳 모두와 판매 경로가 있다.",
+   "detail": {
+    "additional_usage_unit": 1,
+    "google_marketplace": "AI Magazine 보도(search_summary), 원문 403"
+   }
+  },
+  {
+   "id": "bedrock-reserved-tier-closed-only",
+   "country": "US",
+   "city": null,
+   "metric": "Bedrock Reserved 등급(약정 TPM 단가)이 공개된 모델 범위 — Anthropic 폐쇄형만, 오픈웨이트 신모델은 없음",
+   "value": null,
+   "unit": "해당 없음",
+   "asof": "2026-11",
+   "basis": "Bedrock 가격 화면 'Reserved Tier Pricing' 표에는 Claude(Opus 4.6/4.5, Sonnet 4.6/4.5, Haiku 4.5)만 있다(예: Opus 4.6 Global 1천 입력 TPM 당 시간당 $0.30, 3개월 약정 $0.27). Kimi·GLM·DeepSeek·MiniMax·Qwen·gpt-oss 는 Standard/Priority/Flex(·Batch) 토큰 단가만 공시. 오픈 모델 전용 용량 공시가는 구형 Llama·Titan·Nova 의 모델 유닛 PT 와 Custom Model Import 뿐",
+   "definition": "AWS 자기 공시 화면에서 읽은 범위(없음을 확인한 값)",
+   "quote": "Reserved Tier Pricing Global Cross region Inference ... Anthropic models Price per hour per 1K Input TPM with 1-Month Commitment",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Amazon Bedrock Pricing",
+     "url": "https://aws.amazon.com/bedrock/pricing/",
+     "date": "2026-11-23",
+     "read": "full"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H2": "양쪽",
+    "H3": "반박"
+   },
+   "side_basis": "AWS 는 최신 오픈웨이트 모델을 서버리스 토큰으로만 공시하고, 전용 용량·약정은 폐쇄형 위주다 — 오픈 모델 전용 배포 자리는 하이퍼스케일러 공시 상품에서 비어 있어 독립 사업자(전용 배포)의 자리가 남는다(H3 반대). 영업팀 비공개 계약은 알 수 없음.",
+   "note": "Azure 는 Fireworks 판 오픈 모델에 PTU(시간당 $1.0, 월 $260, 연 $2,652)를 공시해 AWS 와 다르다.",
+   "detail": {
+    "opus_4.6_reserved_global_1m": "0.30/1.50 per 1K TPM-hour",
+    "opus_4.6_reserved_global_3m": "0.27/1.35"
+   }
+  },
+  {
+   "id": "baseten-aws-sca-2025-12",
+   "country": "US",
+   "city": null,
+   "metric": "Baseten–AWS 전략적 협력 계약(SCA, 2025-12-03) — 고객 VPC 안 하이브리드 배포, 기존 AWS 약정으로 결제, 공동 판매",
+   "value": null,
+   "unit": "해당 없음",
+   "asof": "2025-12",
+   "basis": "Business Wire 보도자료(2025-12-03, financialcontent 재게재본으로 읽음; businesswire 원문은 403). Baseten 추론 스택을 고객의 AWS GPU·VPC 에서 돌리고 수요가 넘치면 Baseten Cloud 로 확장. 기술 통합·공동 go-to-market 심화. 고객 사례 Scaled Cognition: 자체 AWS GPU 에서 Baseten 스택, 'existing AWS commitments' 로 운영. AWS 채널·제휴 부사장 인용",
+   "definition": "Baseten 자기 발표(AWS 임원 인용 포함). 계약 조건·금액 미공개",
+   "quote": "The hybrid cloud solution and access to cutting-edge GPUs while working with our existing AWS commitments were key to our success on launch day and beyond.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Baseten Signs Strategic Collaboration Agreement with AWS (syndicated)",
+     "url": "https://markets.financialcontent.com/dowtheoryletters/article/bizwire-2025-12-3-baseten-signs-strategic-collaboration-agreement-with-aws-to-deliver-high-performance-ai-model-inference-at-scale",
+     "date": "2025-12-03",
+     "read": "full"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "high",
+   "sides": {
+    "H3": "반박",
+    "H2": "지지"
+   },
+   "side_basis": "AWS 가 독립 추론 사업자를 공동 판매 협력사로 들이고 고객 약정 소진 통로를 열어 준다(H3 반대). 상품이 고객 전용 VPC 배포라는 점은 H2.",
+   "note": "Google 쪽은 Baseten 이 Google Cloud Marketplace 에 있고 A4(B200) 고객이라는 Google 블로그(별도 후보)."
+  },
+  {
+   "id": "aws-pre-reinvent-2026-november-launches",
+   "country": "US",
+   "city": null,
+   "metric": "re:Invent 2026 직전(11월) AWS 의 Bedrock·SageMaker 발표 — 오픈웨이트 신모델 출시는 없음",
+   "value": null,
+   "unit": "해당 없음",
+   "asof": "2026-11",
+   "basis": "AWS 주간 정리(11/9, 11/16)와 What's New 피드(11/19~21). 11월 발표: Claude Fable 5.2 의 Bedrock 출시, Bedrock AgentCore 차세대 런타임 기본값(2초 내 시작, 메모리 과금 최대 68% 인하), AgentCore Web Answer, Bedrock Web Search 언어 확대, SageMaker JumpStart 모델 리더보드(처리량·지연·비용 비교 후 배포·미세조정, 11/20), Lambda GPU 인스턴스(11/18). 11월 정리에 오픈웨이트 모델 Bedrock 추가는 없음(마지막은 10/5 GLM 5.3)",
+   "definition": "AWS 자기 공시(블로그·피드). '없음'은 저장한 두 주간 정리와 최근 100건 피드 범위 안에서의 확인",
+   "quote": "Amazon SageMaker JumpStart now offers a model leaderboard in Amazon SageMaker Studio. You can use it to compare foundation models side by side on throughput, latency, and cost, and then deploy or customize the model that fits your workload.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "AWS Weekly Roundup (November 16, 2026)",
+     "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-aws-nitro-sandboxes-aws-emulator-and-more-november-16-2026/",
+     "date": "2026-11-16",
+     "read": "full"
+    },
+    {
+     "n": 2,
+     "title": "AWS Weekly Roundup (November 9, 2026)",
+     "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-agentcore-runtime-v2-amazon-dynamodb-bulk-put-items-and-more-november-9-2026/",
+     "date": "2026-11-09",
+     "read": "full"
+    },
+    {
+     "n": 3,
+     "title": "SageMaker JumpStart model leaderboard",
+     "url": "https://aws.amazon.com/about-aws/whats-new/2026/1/sagemaker-jumpstart-model-leaderboard/",
+     "date": "2026-11-20",
+     "read": "full"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H3": "중립",
+    "H2": "지지"
+   },
+   "side_basis": "행사 전 발표는 에이전트 실행 환경과 '비교 후 배포·미세조정' 동선에 몰려 있다 — 모델 단가 경쟁보다 플랫폼 묶음 쪽(H2 일부). 큰 발표는 행사 중(12/1 CEO 기조)으로 미뤄진 것으로 보임.",
+   "note": "re:Invent 세션 2,200개 이상. 행사 후 다시 확인할 것: Trainium3 기반 Bedrock 서빙, 오픈 모델 Reserved/PT, Custom Model Import 지원 구조 확대."
+  },
+  {
+   "id": "googl-q3-2026-no-open-model-mention",
+   "country": "US",
+   "city": null,
+   "metric": "Alphabet 3분기 실적 발언(Pichai·Kurian)에 오픈 모델·Model Garden 언급 없음 — Gemini·TPU 중심",
+   "value": null,
+   "unit": "해당 없음",
+   "asof": "2026-10",
+   "basis": "Alphabet 2026 3분기 실적 콜 전사본 PDF(IR, 8쪽, 준비 발언 위주). Kurian: 최근 12개월 2,600개 넘는 고객이 1천억 토큰 이상, 약 75곳이 Gemini Enterprise 에서 10조 토큰 이상 사용. Pichai: 모델 API 분당 약 320억 토큰(전 분기 대비 +40%). TPU 고객 약 100곳, TPU 8i 추론 가격 대비 성능 80% 개선. 'open model'·'Model Garden'·'Vertex' 낱말은 저장한 전사본에 없음",
+   "definition": "회사 자기 보고. '없음'은 저장한 8쪽 PDF 범위 안의 확인(Q&A 전체가 담겼는지 확인 못 함)",
+   "quote": "Over the past 12 months, more than 2,600 customers have used at least 100 billion tokens; and nearly 75, at least 10 trillion tokens on Gemini Enterprise.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Alphabet 2026 Q3 Earnings Transcript",
+     "url": "https://s206.q4cdn.com/479360582/files/doc_events/2026/Oct/28/2026_Q3_Earnings_Transcript.pdf",
+     "date": "2026-10-28",
+     "read": "full"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H3": "반박"
+   },
+   "side_basis": "Google 경영진은 오픈웨이트 재판매를 성장 동력으로 내세우지 않는다 — 세 하이퍼스케일러가 같은 강도로 오픈 모델 시장을 노리는 건 아니다. 다만 Vertex 단가표에는 최신 DeepSeek V4.1 Flash·GLM-5.2 가 있고 gpt-oss-120b 가 가장 싸다.",
+   "note": "Amazon(Kimi·GLM 거명), Microsoft(오픈소스 모델 매출 10배)와 대비.",
+   "detail": {
+    "api_tokens_per_minute": "~32B (+40% QoQ)",
+    "tpu_customers": "~100"
+   }
+  },
+  {
+   "id": "openrouter-hyperscaler-endpoint-position",
+   "country": "US",
+   "city": null,
+   "metric": "OpenRouter 같은 모델 공급자 목록 안에서 하이퍼스케일러(Amazon Bedrock·Google) 단가의 자리 — Kimi K3·GLM 5.3·gpt-oss-120b",
+   "value": 1.2,
+   "unit": "배(Bedrock GLM 5.3 / Z.AI 자체 단가, 입력·출력 모두)",
+   "asof": "2026-11-23",
+   "basis": "OpenRouter 공개 API(models/<id>/endpoints, 2026-11-23 수집). Kimi K3: Amazon Bedrock $3.00/$15.00(US 판 $3.30/$16.50) = Moonshot AI 자체 $3.00/$15.00 = Fireworks·Together·BaseTen·Nebius $3.00/$15.00; 표시 최저 입력가 $0.153(Wafer, 출력 $16.00). GLM 5.3: Amazon Bedrock $1.68/$5.28 대 Z.AI 자체 $1.40/$4.40(계산: 1.68/1.40 = 1.20), Fireworks·Together·BaseTen $1.40/$4.40, DeepInfra $0.45/$2.00. gpt-oss-120b: Amazon Bedrock $0.15/$0.60 = Fireworks·Together·Groq $0.15/$0.60, Google $0.09/$0.36, 최저 $0.03/$0.15(Near AI·Venice·CoreWeave). DeepSeek V3.2 목록에는 하이퍼스케일러 없음",
+   "definition": "OpenRouter 가 공급자별로 게시한 단가(제3자 집계 화면, 공급자 자기 신고가). 하이퍼스케일러 값만 이 갈래 책임, 독립 사업자 값은 대조용",
+   "quote": "moonshotai/kimi-k3 endpoints: Amazon Bedrock 3.000/15.000, Moonshot AI 3.000/15.000, Fireworks 3.000/15.000 (계산한 100만 토큰 단가)",
+   "sources": [
+    {
+     "n": 1,
+     "title": "OpenRouter API — kimi-k3 endpoints",
+     "url": "https://openrouter.ai/api/v1/models/moonshotai/kimi-k3/endpoints",
+     "date": "2026-11-23",
+     "read": "full"
+    },
+    {
+     "n": 2,
+     "title": "OpenRouter API — glm-5.3 endpoints",
+     "url": "https://openrouter.ai/api/v1/models/z-ai/glm-5.3/endpoints",
+     "date": "2026-11-23",
+     "read": "full"
+    },
+    {
+     "n": 3,
+     "title": "OpenRouter API — gpt-oss-120b endpoints",
+     "url": "https://openrouter.ai/api/v1/models/openai/gpt-oss-120b/endpoints",
+     "date": "2026-11-23",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "sides": {
+    "H1": "지지",
+    "H3": "양쪽"
+   },
+   "side_basis": "하이퍼스케일러 정가는 대체로 모델 개발사 자체가와 같고(Kimi K3, gpt-oss) 독립 대형사(Fireworks·Together·BaseTen)도 같은 값 — 정가가 개발사 권장가로 수렴(H1). 하이퍼스케일러가 최저가로 독립 사업자를 밀어내지는 않고(H3 반대), 최저가는 소형 독립 사업자가 낸다. 9월 AlphaSignal 의 'Bedrock 이 1.76배' 는 지금 Moonshot 자체가 $3/$15 라서 성립하지 않는다(그 사이 OpenRouter 표시 단가 변경으로 보임).",
+   "note": "API 단가는 토큰당 달러를 ×100만 해서 적었다. 일부 공급자(Wafer 등)는 입력은 아주 싸고 출력은 비싼 비대칭 가격.",
+   "detail": {
+    "kimi_k3": {
+     "bedrock": "3.00/15.00",
+     "bedrock_us": "3.30/16.50",
+     "moonshot": "3.00/15.00",
+     "fireworks": "3.00/15.00 (다른 판 4.50/22.50)"
+    },
+    "glm_5_3": {
+     "bedrock": "1.68/5.28",
+     "z_ai": "1.40/4.40",
+     "deepinfra_min": "0.45/2.00"
+    },
+    "gpt_oss_120b": {
+     "bedrock": "0.15/0.60",
+     "google": "0.09/0.36",
+     "min": "0.03/0.15"
+    }
+   }
+  }
+ ]
+}

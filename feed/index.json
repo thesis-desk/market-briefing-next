@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-23T14:26:00+09:00",
+ "generated_kst": "2026-11-23T16:48:13+09:00",
  "reports": [
   {
    "slug": "sixsigma-10-4-0-ai",
@@ -8414,6 +8414,11 @@
    "id": "compute-balance",
    "path": "data/compute-balance/index.json",
    "updated_kst": "2026-11-20T16:16:38+09:00"
+  },
+  {
+   "id": "inference-margins",
+   "path": "data/inference-margins/index.json",
+   "updated_kst": "2026-11-23T16:48:13+09:00"
   },
   {
    "id": "online-narratives",

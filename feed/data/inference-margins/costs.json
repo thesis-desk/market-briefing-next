@@ -1,0 +1,809 @@
+{
+ "schema": 1,
+ "bundle": "P2",
+ "title": "원가 — 칩·랙 세대별 서빙 원가와 GPU 시간당 값",
+ "updated_kst": "2026-11-23T16:44:12+09:00",
+ "measure": null,
+ "notes": [
+  "방향(sides)은 AI 의 해석이다.",
+  "누가 잰 값인지(회사 자기 보고·추정·제3자)는 definition 에 밝혔다.",
+  "조사 open-weight-substitution 에서 옮겨 온 기록은 note 끝에 그렇다고 적었다. 값과 출처는 그 조사의 3차 확인을 거친 그대로다."
+ ],
+ "summary": {
+  "records": 17,
+  "with_value": 16,
+  "by_hypothesis": {
+   "H1": {
+    "지지": 3,
+    "반박": 0,
+    "양쪽": 9,
+    "중립": 5
+   }
+  }
+ },
+ "records": [
+  {
+   "id": "selfhost-breakeven-vs-terra",
+   "country": "ZZ",
+   "city": null,
+   "metric": "Kimi K3.1 Pro 자체 서빙이 GPT-6.1 Terra 의 API 보다 싸지는 가동률",
+   "value": 58,
+   "unit": "%",
+   "asof": "2026-11-20",
+   "basis": "계산: GB300 NVL72, 하이퍼스케일러급 소유 원가 시간당 2.31달러, 사용자당 초당 100토큰",
+   "definition": "데스크 기록 content/market/usage/selfhost.json 의 계산이다. 처리량 출처에 비공식 배포라는 안내가 붙어 있다.",
+   "quote": null,
+   "sources": [
+    {
+     "n": 1,
+     "title": "SemiAnalysis InferenceX — Kimi K3 on GB300 NVL72",
+     "url": "https://inferencex.semianalysis.com/run/kimi-k3-on-gb300-nvl72",
+     "date": "2026-10-27",
+     "read": "partial"
+    },
+    {
+     "n": 2,
+     "title": "Artificial Analysis — 지능 지수와 과제당 비용",
+     "url": "https://artificialanalysis.ai/",
+     "date": "2026-11-20",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "low",
+   "sides": {
+    "H1": "양쪽"
+   },
+   "side_basis": "최신 랙·하이퍼스케일러급 원가에서도 가동률 58%를 넘겨야 저가 클로즈드 API 보다 싸다. 원가가 가동률에 달려 있어 물량을 모은 큰 사업자만 토큰 재판매에서 남길 수 있다는 뜻으로도 읽힌다.",
+   "note": "가장 큰 오픈 모델(2.8T)을 범용 과제로 굴린 값이다. 작은 특화 모델의 서빙 원가는 재지 않았다. 조사 open-weight-substitution 의 W5 기록을 옮겨 왔다."
+  },
+  {
+   "id": "gpu-neocloud-h100-rental",
+   "country": "ZZ",
+   "city": null,
+   "metric": "H100 한 장의 시간당 임대가 — 네오클라우드 정가 기준가",
+   "value": 3.79,
+   "unit": "달러/GPU·시간",
+   "asof": "2026-11-23",
+   "basis": "정가 중앙값(표본 3곳). 2026-01 2.547달러 → 2026-10 3.615달러(+41.9%), 1년 전 대비 +48.83%",
+   "definition": "데스크가 사업자들의 공개 가격표에서 날마다 받아 계산한 채널 기준가다(content/market/prices.json 의 gpu.summary). 네오클라우드 기준가는 표본 사업자 2~3곳의 정가 중앙값이고, 지난 달의 값은 지금 기준가에 지수의 비율을 곱해 거슬러 올라간 값이다. 계약가·장기 약정가는 잡히지 않는다.",
+   "quote": null,
+   "sources": [
+    {
+     "n": 1,
+     "title": "Research Desk 가격 탭 — GPU 임대가(모델 × 채널 기준가)",
+     "url": "https://thesis-desk.github.io/market-briefing-next/prices/",
+     "date": "2026-11-23",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H1": "지지"
+   },
+   "side_basis": "GPU 를 빌려 토큰을 파는 사업자에게 원가의 대부분인 GPU 값이 올해 내리지 않고 올랐다.",
+   "note": "하이퍼스케일러 정가는 같은 기간 그대로였다. 칩 한 장의 처리량(같은 칩에서 소프트웨어 개선)은 이 값에 들어 있지 않다.",
+   "detail": {
+    "jan_2026": 2.547,
+    "oct_2026": 3.615,
+    "jan_oct_pct": 41.9,
+    "y1_pct": 48.83,
+    "providers": 3
+   }
+  },
+  {
+   "id": "gpu-neocloud-h200-rental",
+   "country": "ZZ",
+   "city": null,
+   "metric": "H200 한 장의 시간당 임대가 — 네오클라우드 정가 기준가",
+   "value": 4.6,
+   "unit": "달러/GPU·시간",
+   "asof": "2026-11-23",
+   "basis": "정가 중앙값(표본 2곳). 2026-01 2.981달러 → 2026-10 4.6달러(+54.3%), 1년 전 대비 +54.29%",
+   "definition": "데스크가 사업자들의 공개 가격표에서 날마다 받아 계산한 채널 기준가다(content/market/prices.json 의 gpu.summary). 네오클라우드 기준가는 표본 사업자 2~3곳의 정가 중앙값이고, 지난 달의 값은 지금 기준가에 지수의 비율을 곱해 거슬러 올라간 값이다. 계약가·장기 약정가는 잡히지 않는다.",
+   "quote": null,
+   "sources": [
+    {
+     "n": 1,
+     "title": "Research Desk 가격 탭 — GPU 임대가(모델 × 채널 기준가)",
+     "url": "https://thesis-desk.github.io/market-briefing-next/prices/",
+     "date": "2026-11-23",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H1": "지지"
+   },
+   "side_basis": "GPU 를 빌려 토큰을 파는 사업자에게 원가의 대부분인 GPU 값이 올해 내리지 않고 올랐다.",
+   "note": "하이퍼스케일러 정가는 같은 기간 그대로였다. 칩 한 장의 처리량(같은 칩에서 소프트웨어 개선)은 이 값에 들어 있지 않다.",
+   "detail": {
+    "jan_2026": 2.981,
+    "oct_2026": 4.6,
+    "jan_oct_pct": 54.3,
+    "y1_pct": 54.29,
+    "providers": 2
+   }
+  },
+  {
+   "id": "gpu-neocloud-b200-rental",
+   "country": "ZZ",
+   "city": null,
+   "metric": "B200 한 장의 시간당 임대가 — 네오클라우드 정가 기준가",
+   "value": 7.99,
+   "unit": "달러/GPU·시간",
+   "asof": "2026-11-23",
+   "basis": "정가 중앙값(표본 3곳). 2026-01 5.299달러 → 2026-10 7.628달러(+44.0%), 1년 전 대비 +50.78%",
+   "definition": "데스크가 사업자들의 공개 가격표에서 날마다 받아 계산한 채널 기준가다(content/market/prices.json 의 gpu.summary). 네오클라우드 기준가는 표본 사업자 2~3곳의 정가 중앙값이고, 지난 달의 값은 지금 기준가에 지수의 비율을 곱해 거슬러 올라간 값이다. 계약가·장기 약정가는 잡히지 않는다.",
+   "quote": null,
+   "sources": [
+    {
+     "n": 1,
+     "title": "Research Desk 가격 탭 — GPU 임대가(모델 × 채널 기준가)",
+     "url": "https://thesis-desk.github.io/market-briefing-next/prices/",
+     "date": "2026-11-23",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H1": "지지"
+   },
+   "side_basis": "GPU 를 빌려 토큰을 파는 사업자에게 원가의 대부분인 GPU 값이 올해 내리지 않고 올랐다.",
+   "note": "하이퍼스케일러 정가는 같은 기간 그대로였다. 칩 한 장의 처리량(같은 칩에서 소프트웨어 개선)은 이 값에 들어 있지 않다.",
+   "detail": {
+    "jan_2026": 5.299,
+    "oct_2026": 7.628,
+    "jan_oct_pct": 44,
+    "y1_pct": 50.78,
+    "providers": 3
+   }
+  },
+  {
+   "id": "token-price-vs-gpu-rent-2026",
+   "country": "ZZ",
+   "city": null,
+   "metric": "오픈웨이트 유효 토큰 단가와 네오클라우드 GPU 임대가의 변화 — 2026-01 → 2026-10",
+   "value": null,
+   "unit": "%",
+   "asof": "2026-10",
+   "basis": "계산: 오픈웨이트 유효 토큰 단가(OpenRouter, 100만 토큰당 0.28 → 0.084달러) −70.0%, 같은 기간 네오클라우드 GPU 임대 기준가 H100 +41.9% · H200 +54.3% · B200 +44.0%",
+   "definition": "데스크의 계산이다. 토큰 단가는 OpenRouter 한 채널의 청구액 ÷ 토큰이라 값싼 모델로 옮겨 간 구성 변화와 캐시 적중이 섞여 있다. 같은 모델·같은 칩의 값을 견준 것이 아니다.",
+   "quote": null,
+   "sources": [],
+   "value_src": [],
+   "alt": [],
+   "conf": "low",
+   "sides": {
+    "H1": "양쪽"
+   },
+   "side_basis": "파는 값은 내리고 빌리는 값은 올랐다. 그러나 같은 칩의 처리량도 빠르게 오른다 — 엔비디아는 소프트웨어만으로 한 달에 토큰 원가를 최대 5분의 1로 줄였다고 주장하고, 같은 모델의 원가가 칩 세대에 따라 30배 넘게 벌어진다. GPU 를 빌려 토큰을 되파는 마진이 줄었는지는 칩 세대와 소프트웨어를 따라갔느냐에 달렸다.",
+   "note": "판정에 쓰려면 같은 모델의 단가 추이(P1)와 같은 칩의 처리량 개선(P2)으로 다시 재야 한다. 지금은 방향을 보여 주는 값이다.",
+   "refs": [
+    {
+     "bundle": "P1",
+     "id": "openrouter-effective-price-gap-oct"
+    },
+    {
+     "bundle": "P2",
+     "id": "gpu-neocloud-h100-rental"
+    },
+    {
+     "bundle": "P2",
+     "id": "gpu-neocloud-h200-rental"
+    },
+    {
+     "bundle": "P2",
+     "id": "gpu-neocloud-b200-rental"
+    },
+    {
+     "bundle": "P2",
+     "id": "nvidia-software-5x-token-cost-deepseek-v4-one-month"
+    },
+    {
+     "bundle": "P2",
+     "id": "ix-deepseek-r1-cost-per-mtok-by-chip-50tps"
+    }
+   ],
+   "detail": {
+    "token_jan": 0.28,
+    "token_oct": 0.084,
+    "token_pct": -70,
+    "gpu_pct": {
+     "H100": 41.9,
+     "H200": 54.3,
+     "B200": 44
+    }
+   }
+  },
+  {
+   "id": "ix-kimi-k31-pro-cost-per-mtok-by-chip",
+   "country": "ZZ",
+   "city": null,
+   "metric": "Kimi K3.1 Pro(2.8T) 칩별 100만 토큰당 서빙 원가(에이전트 코딩 작업, 사용자당 50토큰/초)",
+   "value": 0.013,
+   "unit": "달러/100만 토큰(입력+출력 합계)",
+   "asof": "2026-11",
+   "basis": "InferenceX 측정 처리량(GPU당 토큰/초)을 SemiAnalysis AI Cloud TCO 모델의 하이퍼스케일러 소유 기준 GPU 시간당 값으로 나눈 값. 값은 1위 GB300 NVL72. 범위 0.013(GB300 NVL72)~0.14(GB200 NVL72)",
+   "definition": "제3자 측정(SemiAnalysis InferenceX)이나 받은 화면은 'Unofficial deployment — not affiliated with or endorsed by SemiAnalysis. Its Data may be modified or out of date' 안내가 붙은 비공식 사본이다. 화면마다 값이 어긋날 수 있어 범위로 적는다. 분모는 입력(캐시 재사용 입력 포함)+출력 전체 토큰이라 시장 단가(출력 단가)와 바로 비교하면 안 된다. 가동률 가정은 화면에 없다(측정 처리량을 그대로 시간당 값으로 나눔).",
+   "quote": "GB300 NVL72 is the cheapest at $0.013 per million tokens, 36% below MI355X.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Cheapest GPU for Kimi K3.1 Pro | InferenceX",
+     "url": "https://inferencex.semianalysis.com/rankings/cheapest-gpu-for-kimi-k31-pro",
+     "date": "2026-11-23",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H1": "양쪽"
+   },
+   "side_basis": "원가 바닥이 매우 낮아 시장 단가와 견주면 이론 마진은 크다(H1 반박 쪽). 다만 측정점이 최적 배치이고 분모가 전체 토큰이라 실제 사업자 원가는 이보다 높다.",
+   "note": "칩별: GB300 NVL72 0.013(49,748 tok/s/GPU, Dynamo vLLM), MI355X 0.020(20,729), B300 0.028(22,563), B200 0.075(6,383), GB200 NVL72 0.14(3,660). 모두 fp4.",
+   "detail": {
+    "interactivity": "사용자당 50 tokens/s",
+    "workload": "AgentX agentic coding",
+    "chips": {
+     "GB300 NVL72": 0.013,
+     "MI355X": 0.02,
+     "B300": 0.028,
+     "B200": 0.075,
+     "GB200 NVL72": 0.14
+    },
+    "H200/H100": "이 측정점에 없음(순위 제외)",
+    "rate_basis": "Owning at Large Hyperscaler Volume $/chip/hr",
+    "newest_result": "2026-11-21"
+   }
+  },
+  {
+   "id": "ix-deepseek-v41-flash-cost-per-mtok-by-chip",
+   "country": "ZZ",
+   "city": null,
+   "metric": "DeepSeek V4.1 Flash(552B) 칩별 100만 토큰당 서빙 원가(에이전트 코딩, 사용자당 125토큰/초)",
+   "value": 0.001,
+   "unit": "달러/100만 토큰(입력+출력 합계)",
+   "asof": "2026-11",
+   "basis": "InferenceX 측정 처리량 ÷ 하이퍼스케일러 소유 기준 GPU 시간당 값. GB300 NVL72·B300·B200·GB200 NVL72 모두 0.001, MI355X 0.003",
+   "definition": "제3자 측정(SemiAnalysis InferenceX), 비공식 사본 화면('Data may be modified or out of date'). GPU당 처리량이 100만 토큰/초를 넘는 값(GB300 1,048,780)이 나와 캐시 재사용 입력을 대량 포함한 전체 토큰 기준으로 보인다 — 출력 토큰 원가로 읽으면 안 된다. 가동률 가정 없음.",
+   "quote": "GB300 NVL72 is the cheapest at $0.001 per million tokens, 29% below B300.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Cheapest GPU for DeepSeek V4.1 Flash | InferenceX",
+     "url": "https://inferencex.semianalysis.com/rankings/cheapest-gpu-for-deepseek-v41-flash",
+     "date": "2026-11-23",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "low",
+   "sides": {
+    "H1": "중립"
+   },
+   "side_basis": "분모 정의가 시장 단가와 달라 마진 판단에 직접 쓰기 어렵다. 소형·희소 모델의 원가 바닥이 거의 0이라는 방향만 읽힌다.",
+   "note": "GPU당 토큰/초: GB300 NVL72 1,048,780, B300 726,160, GB200 NVL72 376,830, B200 353,905, MI355X 150,079. 값이 반올림돼 칩 간 차이가 0.001 단위에 묻힌다.",
+   "detail": {
+    "interactivity": "사용자당 125 tokens/s",
+    "workload": "AgentX agentic coding",
+    "chips": {
+     "GB300 NVL72": 0.001,
+     "B300": 0.001,
+     "B200": 0.001,
+     "GB200 NVL72": 0.001,
+     "MI355X": 0.003
+    },
+    "H200/H100": "이 측정점에 없음"
+   }
+  },
+  {
+   "id": "ix-gptoss-120b-cost-per-mtok-by-chip",
+   "country": "ZZ",
+   "city": null,
+   "metric": "gpt-oss-120b 칩별 100만 토큰당 서빙 원가(단일 대화 8k 입력/1k 출력, 사용자당 125토큰/초)",
+   "value": 0.019,
+   "unit": "달러/100만 토큰(입력+출력 합계)",
+   "asof": "2026-11",
+   "basis": "InferenceX 측정 처리량 ÷ 하이퍼스케일러 소유 기준 GPU 시간당 값. B200 0.019(24,821 tok/s/GPU), MI355X 0.023(18,019)",
+   "definition": "제3자 측정(SemiAnalysis InferenceX), 비공식 사본 화면. 이 측정점에 B200·MI355X 두 칩만 있다. 가동률 가정 없음.",
+   "quote": "B200 is the cheapest at $0.019 per million tokens, 16% below MI355X.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Cheapest GPU for gpt-oss-120b | InferenceX",
+     "url": "https://inferencex.semianalysis.com/rankings/cheapest-gpu-for-gptoss-120b",
+     "date": "2026-11-23",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H1": "양쪽"
+   },
+   "side_basis": "단일 대화 작업이라 시장 단가와 견주기 가장 쉬운 측정점. 원가가 100만 토큰당 2센트 수준이면 시장 단가가 몇 배여도 원가 위다.",
+   "note": "8k/1k 작업이므로 출력 토큰만의 원가로 환산하면 약 9배(전체 9k 토큰 중 1k가 출력) — 단순 환산 시 출력 100만 토큰당 약 0.17달러(B200).",
+   "detail": {
+    "interactivity": "사용자당 125 tokens/s",
+    "workload": "single-turn chat 8k in / 1k out",
+    "chips": {
+     "B200": 0.019,
+     "MI355X": 0.023
+    }
+   }
+  },
+  {
+   "id": "ix-gpu-hourly-rate-tiers",
+   "country": "ZZ",
+   "city": null,
+   "metric": "InferenceX가 원가 계산에 쓰는 칩별 GPU 시간당 값(하이퍼스케일러 소유 기준 / 소매 기준)",
+   "value": 2.31,
+   "unit": "달러/GPU·시간",
+   "asof": "2026-11",
+   "basis": "값은 GB300 NVL72 하이퍼스케일러 소유 기준. 소유/소매: GB300 NVL72 2.31/5.00, B300 2.26/4.25, B200 1.73/3.70, H200 1.22/2.90, H100 1.17/2.00, MI355X 1.50/2.90",
+   "definition": "SemiAnalysis AI Cloud TCO 모델의 요율 단계(서버 설비비·전력·코로케이션·자본비용을 쌓은 총소유비용). 조사회사 추정. 비공식 사본 화면.",
+   "quote": "The SemiAnalysis AI Cloud TCO model rates GB300 NVL72 at about $2.31/hr when owned at large hyperscaler volume and $5.00/hr at the retail tier.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "InferenceX chips pages (gb300-nvl72, b300, b200, h200, h100, mi355x)",
+     "url": "https://inferencex.semianalysis.com/chips/gb300-nvl72",
+     "date": "2026-11-23",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H1": "중립"
+   },
+   "side_basis": "원가 계산의 가정값. 독립 사업자가 소매 요율로 빌리면 원가는 소유 기준의 약 1.7~2.4배.",
+   "note": "랭킹의 100만 토큰당 원가는 소유 기준 요율을 쓴다. 소매 요율로 바꾸면 원가가 GB300 2.2배, B200 2.1배, H200 2.4배, H100 1.7배, MI355X 1.9배.",
+   "detail": {
+    "owned_hyperscaler": {
+     "GB300 NVL72": 2.31,
+     "B300": 2.26,
+     "B200": 1.73,
+     "H200": 1.22,
+     "H100": 1.17,
+     "MI355X": 1.5
+    },
+    "retail": {
+     "GB300 NVL72": 5,
+     "B300": 4.25,
+     "B200": 3.7,
+     "H200": 2.9,
+     "H100": 2,
+     "MI355X": 2.9
+    },
+    "utilization": "화면에 가동률 가정 없음"
+   }
+  },
+  {
+   "id": "ix-deepseek-r1-cost-per-mtok-by-chip-50tps",
+   "country": "ZZ",
+   "city": null,
+   "metric": "DeepSeek R1 칩별 100만 토큰당 서빙 원가(단일 대화 8k/1k, 사용자당 50토큰/초) — 세대 간 비교",
+   "value": 2.19,
+   "unit": "달러/100만 토큰(입력+출력 합계)",
+   "asof": "2026-11",
+   "basis": "InferenceX 칩별 run 화면의 '사용자당 50 tok/s' 칸. 값은 H100(2.19). H200 0.28, B200 0.065, GB200 NVL72 0.085, GB300 NVL72 0.11, B300 0.34(fp8), MI355X 0.18. 사용자당 100 tok/s 칸: H100 6.32, H200 0.48, B200 0.17, B300 0.49, GB200 0.38, GB300 0.41, MI355X 0.058",
+   "definition": "제3자 측정(SemiAnalysis InferenceX), 비공식 사본 화면. 같은 모델·같은 작업이라도 cheapest 랭킹 화면(사용자당 125 tok/s: MI355X 0.090, B200 0.20, B300 0.57, GB200 0.67, GB300 0.80)과 run 화면 값이 어긋난다. 측정일이 칩마다 다르다(H100 2026-02 이후 재측정 없음, MI355X 2026-11-05까지) — 세대 차이와 소프트웨어 개선이 섞여 있다. 요율은 하이퍼스케일러 소유 기준.",
+   "quote": "DeepSeek R1 sustains 148 tokens/s per GPU on H100 at 50 tokens/s per user, which works out to $2.19 per million tokens at hyperscaler pricing",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Running DeepSeek R1 on H100/H200/B200/B300/GB200 NVL72/GB300 NVL72/MI355X | InferenceX",
+     "url": "https://inferencex.semianalysis.com/run/deepseek-r1-on-h100",
+     "date": "2026-11-23",
+     "read": "full"
+    },
+    {
+     "n": 2,
+     "title": "Cheapest GPU for DeepSeek R1 | InferenceX",
+     "url": "https://inferencex.semianalysis.com/rankings/cheapest-gpu-for-deepseek-r1",
+     "date": "2026-11-23",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H1": "양쪽"
+   },
+   "side_basis": "H100→블랙웰에서 같은 조건 원가가 10~30배 내린다. 단가가 원가보다 빨리 내린다는 H1과 견줄 원가 하락 폭의 근거. 원가가 이렇게 빨리 내리면 단가 하락을 버틸 여지도 크다.",
+   "note": "H100 대비 B200 원가 약 34분의 1(50 tok/s 기준). 다만 frontier 값이 들쭉날쭉하다(MI355X는 75 tok/s가 50 tok/s보다 싸다) — 최적 설정 탐색 정도가 칩마다 다르다는 뜻.",
+   "detail": {
+    "interactivity": "사용자당 50 tokens/s(값), 100 tokens/s(보조)",
+    "workload": "single-turn chat 8k in / 1k out",
+    "per_user_50": {
+     "H100": 2.19,
+     "H200": 0.28,
+     "B200": 0.065,
+     "GB200 NVL72": 0.085,
+     "GB300 NVL72": 0.11,
+     "B300(fp8)": 0.34,
+     "MI355X": 0.18
+    },
+    "per_user_100": {
+     "H100": 6.32,
+     "H200": 0.48,
+     "B200": 0.17,
+     "B300": 0.49,
+     "GB200 NVL72": 0.38,
+     "GB300 NVL72": 0.41,
+     "MI355X": 0.058
+    },
+    "ranking_125": {
+     "MI355X": 0.09,
+     "B200": 0.2,
+     "B300": 0.57,
+     "GB200 NVL72": 0.67,
+     "GB300 NVL72": 0.8
+    },
+    "run_dates": {
+     "H100": "2026-02-08~02-13",
+     "H200": "2025-12-15~2026-10-22",
+     "B200": "2026-01-29~09-16",
+     "B300": "2026-01-28~10-20",
+     "GB200": "2026-02-05~03-23",
+     "GB300": "2026-02-03~06-17",
+     "MI355X": "2026-01-14~11-05"
+    }
+   }
+  },
+  {
+   "id": "ix-kimi-k31-pro-gb300-interactivity-ladder",
+   "country": "ZZ",
+   "city": null,
+   "metric": "GB300 NVL72 위 Kimi K3.1 Pro의 사용자당 속도별 100만 토큰당 원가와 요율 단계별 원가",
+   "value": 0.013,
+   "unit": "달러/100만 토큰(입력+출력 합계)",
+   "asof": "2026-11",
+   "basis": "InferenceX run 화면. 사용자당 50 tok/s 0.013, 75 0.017, 100 0.024, 150 0.042, 200 0.063(하이퍼스케일러 소유 2.31달러/GPU·시간). 소매 5.00달러/GPU·시간이면 50 tok/s에서 0.028",
+   "definition": "제3자 측정(SemiAnalysis InferenceX), 비공식 사본 화면. 측정일 2026-11-17~18, Dynamo vLLM fp4, 16개 설정. 에이전트 코딩 작업이라 분모에 캐시 재사용 입력이 많이 들어간 전체 토큰.",
+   "quote": "Kimi K3.1 Pro sustains 49,748 tokens/s per GPU on GB300 NVL72 at 50 tokens/s per user, which works out to $0.013 per million tokens at hyperscaler pricing",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Running Kimi K3.1 Pro on GB300 NVL72 | InferenceX",
+     "url": "https://inferencex.semianalysis.com/run/kimi-k31-pro-on-gb300-nvl72",
+     "date": "2026-11-23",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H1": "양쪽"
+   },
+   "side_basis": "빠른 속도를 파는 사업자는 원가가 4~5배 높다(50→200 tok/s). 속도로 차별화하면 같은 모델이라도 원가·단가가 갈린다 — 범용품화의 예외 경로.",
+   "note": "사용자당 속도를 4배(50→200) 올리면 원가가 약 4.8배. 소유→소매 요율 차이만으로 2.2배.",
+   "detail": {
+    "ladder_owned": {
+     "50": 0.013,
+     "75": 0.017,
+     "100": 0.024,
+     "150": 0.042,
+     "200": 0.063
+    },
+    "retail_50": 0.028
+   }
+  },
+  {
+   "id": "ix-kimi-k3-cost-per-mtok-by-chip",
+   "country": "ZZ",
+   "city": null,
+   "metric": "Kimi K3(2.8T) 칩별 100만 토큰당 서빙 원가(에이전트 코딩, 사용자당 125토큰/초)",
+   "value": 0.059,
+   "unit": "달러/100만 토큰(입력+출력 합계)",
+   "asof": "2026-11",
+   "basis": "InferenceX cheapest 랭킹. GB300 NVL72 0.059(10,839 tok/s/GPU), MI355X 0.11, GB200 NVL72 0.13, B300 0.23, B200 0.24. GB300 run 화면(2026-10-27 측정)의 사다리: 50 tok/s 0.025, 75 0.035, 100 0.051, 150 0.063, 200 0.077",
+   "definition": "제3자 측정(SemiAnalysis InferenceX), 비공식 사본 화면. 랭킹(125 tok/s, 0.059)과 run 화면(100 tok/s 0.051, 150 tok/s 0.063)이 보간 차이로 어긋난다. H200은 35개 설정을 돌렸으나 이 속도 구간 값 없음. 요율은 하이퍼스케일러 소유 기준.",
+   "quote": "GB300 NVL72 is the cheapest at $0.059 per million tokens, 49% below MI355X.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Cheapest GPU for Kimi K3 | InferenceX",
+     "url": "https://inferencex.semianalysis.com/rankings/cheapest-gpu-for-kimi-k3",
+     "date": "2026-11-23",
+     "read": "full"
+    },
+    {
+     "n": 2,
+     "title": "Running Kimi K3 on GB300 NVL72 | InferenceX",
+     "url": "https://inferencex.semianalysis.com/run/kimi-k3-on-gb300-nvl72",
+     "date": "2026-11-23",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H1": "양쪽"
+   },
+   "side_basis": "같은 2.8T급 모델에서 칩 선택에 따라 원가가 4배(GB300 대 B200) 벌어진다 — 최신 랙을 먼저 확보한 사업자는 같은 단가에서도 마진이 크다(범용품 안에서도 원가 차별화).",
+   "note": "후속 모델 Kimi K3.1 Pro(50 tok/s/user)는 GB300 0.013 — 모델 세대·측정 속도가 달라 직접 비교하지 않는다. H100은 Kimi K3 run 목록에 없음.",
+   "detail": {
+    "interactivity": "사용자당 125 tokens/s(랭킹)",
+    "workload": "AgentX agentic coding",
+    "chips": {
+     "GB300 NVL72": 0.059,
+     "MI355X": 0.11,
+     "GB200 NVL72": 0.13,
+     "B300": 0.23,
+     "B200": 0.24
+    },
+    "gb300_ladder": {
+     "50": 0.025,
+     "75": 0.035,
+     "100": 0.051,
+     "150": 0.063,
+     "200": 0.077
+    }
+   }
+  },
+  {
+   "id": "nvidia-gb300-vs-hopper-35x-cost-per-token-claim",
+   "country": "US",
+   "city": null,
+   "metric": "엔비디아 주장: GB300 NVL72의 토큰당 원가가 호퍼 대비 최대 35분의 1(저지연 구간), GB200 NVL72 대비 장문 코딩 1.5분의 1, 루빈은 블랙웰 대비 10분의 1",
+   "value": 35,
+   "unit": "배(토큰당 원가 하락, 호퍼 대비 최대)",
+   "asof": "2026-02",
+   "basis": "엔비디아 블로그. GB300 NVL72 메가와트당 처리량 최대 50배 → 토큰당 원가 35배 낮음(호퍼 대비, 가장 큰 차이는 저지연 에이전트 구간). 128k 입력/8k 출력 작업은 GB200 NVL72 대비 최대 1.5배 낮음. Signal65 분석 인용: GB200 NVL72 토큰당 원가 호퍼의 10분의 1. 루빈: MoE 추론 메가와트당 처리량 블랙웰 대비 최대 10배 → 100만 토큰당 원가 10분의 1",
+   "definition": "회사 주장(엔비디아, 칩 판매자 — 세대 교체를 팔아야 하는 이해관계). 근거로 SemiAnalysis InferenceX 데이터를 든다. '최대(up to)' 값이며 저지연 구간의 극단값. 루빈 수치는 출시 전 예상.",
+   "quote": "NVIDIA GB300 NVL72 systems now deliver up to 50x higher throughput per megawatt, resulting in 35x lower cost per token compared with the NVIDIA Hopper platform.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "New SemiAnalysis InferenceX Data Shows NVIDIA Blackwell Ultra Delivers up to 50x Better Performance and 35x Lower Costs for Agentic AI (NVIDIA Blog)",
+     "url": "https://blogs.nvidia.com/blog/data-blackwell-ultra-performance-lower-cost-agentic-ai/",
+     "date": "2026-02-16",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H1": "양쪽"
+   },
+   "side_basis": "세대마다 원가가 한 자릿수~수십 배 내리면 단가가 빨리 내려도 최신 칩을 먼저 깐 사업자는 마진을 지킬 수 있다(H1 반박). 반대로 원가 하락이 모두에게 열리면 단가 하락 압력도 커진다(H1 지지).",
+   "note": "같은 글: 'Baseten, DeepInfra, Fireworks AI and Together AI'가 블랙웰로 토큰당 원가를 최대 10배 낮췄다고 적음 — 독립 추론 사업자가 최신 칩을 빨리 받는다는 엔비디아 쪽 문장(H3 관련).",
+   "detail": {
+    "vs_hopper_max": "35x(저지연)",
+    "vs_gb200_long_context": "1.5x(128k in/8k out)",
+    "gb200_vs_hopper_signal65": "10x",
+    "rubin_vs_blackwell": "10x(예상)",
+    "providers_named": [
+     "Baseten",
+     "DeepInfra",
+     "Fireworks AI",
+     "Together AI"
+    ]
+   }
+  },
+  {
+   "id": "nvidia-software-5x-token-cost-deepseek-v4-one-month",
+   "country": "US",
+   "city": null,
+   "metric": "엔비디아 주장: 블랙웰에서 추론 소프트웨어만으로 DeepSeek V4 토큰 원가를 한 달 만에 최대 5분의 1로",
+   "value": 5,
+   "unit": "배(토큰 원가 하락, 소프트웨어만, 최대)",
+   "asof": "2026-06",
+   "basis": "엔비디아 블로그. 같은 칩에서 소프트웨어 개선만으로 원가 하락. 사례로 Baseten·DeepInfra·Together AI·DigitalOcean 등을 든다",
+   "definition": "회사 주장(엔비디아). '최대' 값, 측정 조건 상세는 글에 없음.",
+   "quote": "On the NVIDIA Blackwell platform, the software stack has already reduced token costs by up to 5x on the DeepSeek V4 model in just one month.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "How NVIDIA’s Inference Software Stack Powers the Lowest Token Cost (NVIDIA Blog)",
+     "url": "https://blogs.nvidia.com/?p=95780",
+     "date": "2026-06-30",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H1": "양쪽"
+   },
+   "side_basis": "새 오픈 모델 출시 직후 한 달 안에 원가가 크게 내린다 — 출시 초기에 단가를 유지하면 마진이 넓고, 원가 하락이 공개 소프트웨어로 모두에게 퍼지면 단가도 빨리 내린다.",
+   "note": "InferenceX DeepSeek R1 run 화면에서도 칩별 측정일이 다르고 같은 칩의 값이 소프트웨어로 바뀐다 — 세대 비교에 소프트웨어 효과가 섞인다.",
+   "detail": {
+    "providers_named": [
+     "Baseten",
+     "Cognition",
+     "Deep Infra",
+     "DigitalOcean",
+     "Hippocratic AI",
+     "Together AI",
+     "Cursor"
+    ]
+   }
+  },
+  {
+   "id": "amd-mi355x-40pct-tokens-per-dollar-claim",
+   "country": "US",
+   "city": null,
+   "metric": "AMD 주장: MI355X가 Llama 3.1 405B(FP4) 추론에서 B200 대비 달러당 토큰 최대 40% 많음",
+   "value": 40,
+   "unit": "%(달러당 토큰, B200 대비 최대)",
+   "asof": "2025-06",
+   "basis": "AMD 블로그(MI350 시리즈 출시). 각주 7 조건의 '최대' 값",
+   "definition": "회사 주장(AMD, 칩 판매자 — 엔비디아 대비 원가 우위를 팔아야 하는 이해관계). 제3자 측정은 아래 InferenceX GLM-5 비교 참조(최대 29.6% 절감, 일부 속도에서 역전).",
+   "quote": "On Llama 3.1 405B inference in FP4, it delivers up to 40% better tokens-per-dollar than B200",
+   "sources": [
+    {
+     "n": 1,
+     "title": "AMD Instinct MI350 Series GPUs: A Game Changer for Inference, Training and HPC Workloads (AMD blog)",
+     "url": "https://www.amd.com/en/blogs/2025/amd-instinct-mi350-series-game-changer.html",
+     "date": "2025-06-12",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H1": "중립"
+   },
+   "side_basis": "칩 공급자 간 경쟁이 원가 바닥을 더 내린다는 회사 주장. 마진 방향은 단가가 따라 내리느냐에 달렸다.",
+   "note": "발표일은 검색 결과·기사 기준 2025-06-12(AMD Advancing AI). 화면 HTML에서 게시일 메타는 찾지 못함.",
+   "detail": {
+    "model": "Llama 3.1 405B FP4",
+    "baseline": "NVIDIA B200"
+   }
+  },
+  {
+   "id": "ix-blog-glm5-mi355x-vs-b200-cost",
+   "country": "ZZ",
+   "city": null,
+   "metric": "GLM-5 FP8(8k/1k, 단일 노드) MI355X 대 B200 100만 토큰당 원가 — 사용자당 속도별",
+   "value": 29.6,
+   "unit": "%(MI355X 원가 절감, 최대)",
+   "asof": "2026-05",
+   "basis": "InferenceX 블로그. 원가 = GPU 시간당 TCO ÷ (3600×GPU당 처리량/1e6). B200 1.95, MI355X 1.48달러/GPU·시간. MTP 사용 시 사용자당 24.3 tok/s에서 B200 0.3388 대 MI355X 0.2384달러/100만 토큰(29.6% 절감), 35 tok/s 16.5%, 77 tok/s 19.4%, 90 tok/s에서 MI355X가 2.8% 비쌈",
+   "definition": "제3자 측정(SemiAnalysis InferenceX 블로그, 비공식 사본 화면). 이 글의 시간당 값(B200 1.95)은 칩 화면의 값(B200 1.73)과 다르다 — 화면·시점마다 요율이 어긋난다. 출시 14주 뒤 소프트웨어(SGLang TileLang) 개선이 반영된 결과.",
+   "quote": "With MTP, the largest interpolated saving is about 29.6% near 24.3 tok/s/user ($0.3388/M on B200 vs $0.2384/M on MI355X",
+   "sources": [
+    {
+     "n": 1,
+     "title": "MI355X GLM-5 FP8 SGLang cheaper than B200 (InferenceX blog)",
+     "url": "https://inferencex.semianalysis.com/blog/mi355x-glm5-fp8-sglang-40-cheaper-than-b200",
+     "date": "2026-05-25",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H1": "중립"
+   },
+   "side_basis": "AMD의 '최대 40%' 주장을 제3자가 일부(최대 약 30%, 저속 구간) 확인. 고속 구간에서는 우위가 사라진다.",
+   "note": "같은 사이트의 다른 글 제목: 'GLM 5.3 on AgentX: NVIDIA Is Up to 5x Cheaper per Token at 150 tok/s/user' — 작업·속도에 따라 칩 순위가 뒤집힌다.",
+   "detail": {
+    "interactivity_mtp": {
+     "35": [
+      0.3982,
+      0.3325
+     ],
+     "55": [
+      0.55,
+      0.4538
+     ],
+     "77": [
+      0.8203,
+      0.6608
+     ],
+     "90": [
+      1.0475,
+      1.0765
+     ],
+     "18.1": [
+      0.2987,
+      0.2159
+     ],
+     "24.3": [
+      0.3388,
+      0.2384
+     ]
+    },
+    "columns": "[B200, MI355X] 달러/100만 토큰",
+    "rates": {
+     "B200": 1.95,
+     "MI355X": 1.48
+    },
+    "snapshot": "2026-05-20, SGLang v0.5.12"
+   }
+  },
+  {
+   "id": "amd-mlperf-6-0-mi355x-generational",
+   "country": "US",
+   "city": null,
+   "metric": "MLPerf Inference 6.0: MI355X가 Llama 2 70B Server에서 MI325X 대비 처리량 3.1배, B200 대비 Server 97%·Offline 동급",
+   "value": 3.1,
+   "unit": "배(처리량, 직전 세대 대비)",
+   "asof": "2026",
+   "basis": "AMD 블로그가 정리한 MLPerf Inference 6.0 제출 결과. MI355X 100,282 토큰/초(Llama 2 70B Server). 87장 11노드로 Offline 1,042,110 토큰/초",
+   "definition": "제출 결과는 MLCommons 표준 벤치마크이나 비교·해석은 회사 블로그(AMD 자기 보고). 처리량 비교이며 원가(달러) 비교가 아니다.",
+   "quote": "The AMD Instinct MI355X GPU delivered 100,282 tokens per second, displaying 3.1x more throughput than the previously submitted AMD Instinct™ MI325X GPU results.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "MLPerf 6.0: AMD Instinct MI355X GPUs Surpass 1M Tokens/Sec (AMD blog)",
+     "url": "https://amd.com/en/blogs/2026/amd-delivers-breakthrough-mlperf-inference-6-0-results.html",
+     "date": "2026",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H1": "중립"
+   },
+   "side_basis": "세대 간 처리량 상승(=원가 하락 여력)의 표준 벤치마크 근거. 단가와의 비교는 별도.",
+   "note": "B200 대비: Offline 동급, Server 97%, Interactive 119%. B300 대비 단일 노드 Offline 91%, Server 82%(다른 모델 항목). 게시일 메타는 찾지 못함.",
+   "detail": {
+    "vs_MI325X": "3.1x (Llama 2 70B Server)",
+    "vs_B200": {
+     "Offline": "tie",
+     "Server": "97%",
+     "Interactive": "119%"
+    }
+   }
+  }
+ ]
+}

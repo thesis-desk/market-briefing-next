@@ -1,0 +1,1400 @@
+{
+ "schema": 1,
+ "bundle": "P1",
+ "title": "단가 — 같은 오픈 모델의 사업자별·채널별 토큰 단가와 추이",
+ "updated_kst": "2026-11-23T16:47:33+09:00",
+ "measure": null,
+ "notes": [
+  "방향(sides)은 AI 의 해석이다.",
+  "누가 잰 값인지(회사 자기 보고·추정·제3자)는 definition 에 밝혔다.",
+  "조사 open-weight-substitution 에서 옮겨 온 기록은 note 끝에 그렇다고 적었다. 값과 출처는 그 조사의 3차 확인을 거친 그대로다."
+ ],
+ "summary": {
+  "records": 27,
+  "with_value": 25,
+  "by_hypothesis": {
+   "H1": {
+    "지지": 7,
+    "반박": 6,
+    "양쪽": 13,
+    "중립": 1
+   },
+   "H3": {
+    "지지": 0,
+    "반박": 0,
+    "양쪽": 1,
+    "중립": 0
+   }
+  }
+ },
+ "records": [
+  {
+   "id": "galaxy-identical-quotes",
+   "country": "ZZ",
+   "city": null,
+   "metric": "추론 플랫폼 다섯 곳이 같은 오픈 모델에 매긴 입력 단가",
+   "value": 1.74,
+   "unit": "달러/100만 토큰",
+   "asof": "2026-07",
+   "basis": "Galaxy 가 OpenRouter 자료로 정리(2026-07-22). 출력은 3.48달러",
+   "definition": null,
+   "quote": "quote the exact same price: $1.74/$3.48",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Inference Market (and Micro) Structure",
+     "url": "https://www.galaxy.com/insights/perspectives/inference-market-and-micro-structure",
+     "date": "2026-08-11",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H1": "양쪽"
+   },
+   "side_basis": "다섯 사업자가 같은 오픈 모델에 한 푼도 다르지 않은 값을 매겼다(값으로 차별화하지 못한다). 같은 모델의 호가가 4배 벌어진 곳도 있어 값이 한 점으로 모인 것은 아니다.",
+   "note": "서버리스 토큰 판매는 차별화가 어렵다는 근거. 같은 모델의 호가가 0.435~1.74달러로 4배 벌어진다는 점도 있다. 전용 배포·후속 학습 매출에는 직접 해당하지 않는다. 조사 open-weight-substitution 의 W3 기록을 옮겨 왔다."
+  },
+  {
+   "id": "openrouter-effective-price-gap-oct",
+   "country": "ZZ",
+   "city": null,
+   "metric": "OpenRouter 의 유효 토큰 단가 — 클로즈드 ÷ 오픈웨이트",
+   "value": 6.2,
+   "unit": "배",
+   "asof": "2026-10",
+   "basis": "클로즈드 100만 토큰당 1.21 → 0.52달러, 오픈웨이트 0.28 → 0.084달러(1월 → 10월). 1월의 격차는 4.3배",
+   "definition": "OpenRouter 가 자기 플랫폼 자료로 낸 값이다. 개발자·스타트업 중심의 한 채널이고 전용 배포와 직접 계약은 잡히지 않는다. 유료 트래픽만 센다(무료 모델 제외). 유효 단가는 청구액 ÷ (입력 + 출력 토큰)이고 모델 구성과 캐시 적중률에 따라 움직인다.",
+   "quote": "The blended price per million tokens fell from $1.21 to $0.52 for closed-weight models and from $0.28 to $0.084 for open weights. The gap between them widened from 4.3× to 6.2×.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "October 2026 data recap | OpenRouter",
+     "url": "https://openrouter.ai/data/october-2026",
+     "date": "2026-11-12",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H1": "지지"
+   },
+   "side_basis": "오픈웨이트의 유효 단가가 열 달에 70% 내렸다(0.28 → 0.084달러). 같은 기간 클로즈드는 57% 내렸다. 다만 모델 구성 변화가 섞인 값이다.",
+   "note": "8월의 클로즈드 단가 하락은 대부분 구성 변화라고 적었다(GPT-5.6 Luna, 100만 토큰당 약 0.07달러, 가 가장 많이 쓰인 유료 클로즈드 모델이 됐다). 조사 open-weight-substitution 의 W1 기록을 옮겨 왔다.",
+   "detail": {
+    "closed_jan": 1.21,
+    "closed_oct": 0.52,
+    "open_jan": 0.28,
+    "open_oct": 0.084,
+    "gap_jan": 4.3
+   }
+  },
+  {
+   "id": "menlo-open-source-token-price",
+   "country": "ZZ",
+   "city": null,
+   "metric": "오픈소스 토큰의 평균 단가",
+   "value": 0.13,
+   "unit": "달러/100만 토큰",
+   "asof": "2026-09",
+   "basis": "Menlo 추정. 1년 사이 3.3분의 1. 클로즈드 혼합 단가는 0.70달러(24% 하락)",
+   "definition": "Menlo Ventures 의 추정이다. 미국 기업 의사결정자 약 400명 설문(Morning Consult, 2026-09-08~26, 응답자의 AI 지출 합계 40억 달러 초과)에서 모델별 작업 비중을 받아 AI 지출로 가중했고, 토큰 단가는 공개 매출·토큰 자료와 OpenRouter·Ramp·Vercel 을 맞춰 본 자체 모델이다. Menlo 는 Anthropic 과 Fireworks 양쪽의 주주다.",
+   "quote": "The average open-source token fell 3.3x in price to $0.13 per million",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Menlo Ventures — 2026: The State of Enterprise AI",
+     "url": "https://menlovc.com/perspective/2026-the-state-of-enterprise-ai",
+     "date": "2026-11-03",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H1": "지지"
+   },
+   "side_basis": "기업 표본에서도 오픈소스 토큰 단가가 1년에 3.3분의 1이 됐다. 클로즈드 혼합 단가(24% 하락)보다 훨씬 빨리 내렸다.",
+   "note": "클로즈드 혼합 단가가 오픈소스의 5.4배다(0.70 ÷ 0.13, 계산). 조사 open-weight-substitution 의 W1 기록을 옮겨 왔다.",
+   "detail": {
+    "closed_blended": 0.7
+   }
+  },
+  {
+   "id": "same-model-serverless-price-fw-together-deepinfra-2026-11",
+   "country": "US",
+   "city": null,
+   "metric": "같은 오픈 모델의 서버리스 토큰 단가: Fireworks·Together·DeepInfra",
+   "value": 1.2,
+   "unit": "달러/100만 출력 토큰(DeepSeek V4.1 Flash 1017, Fireworks=Together)",
+   "asof": "2026-11",
+   "basis": "세 사업자 공개 가격표 같은 날 비교(입력/캐시입력/출력, 100만 토큰당). GLM-5.3: Fireworks 1.40/0.26/4.40 = Together 1.40/0.26/4.40. Kimi K3.1 Pro: Fireworks 2.00/0.20/10.00 = Together 2.00/0.20/10.00, DeepInfra 1.90/0.19/9.50(5% 할인). DeepSeek V4.1 Flash 1017: Fireworks·Together 0.30/0.006/1.20, DeepInfra 정가 0.20/0.006/0.60 에서 51% 할인 0.098/0.0029/0.294",
+   "definition": "각 사업자 자기 공개 정가. 데스크 대조",
+   "quote": "DeepSeek-V4.1-Flash-1017 51% off ... $0.20 / $0.006 cached $0.098 / $0.0029 cached $0.60 $0.294",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Fireworks AI Pricing",
+     "url": "https://fireworks.ai/pricing",
+     "date": "2026-11-23",
+     "read": "full"
+    },
+    {
+     "n": 2,
+     "title": "Together AI Pricing",
+     "url": "https://www.together.ai/pricing",
+     "date": "2026-11-23",
+     "read": "full"
+    },
+    {
+     "n": 3,
+     "title": "DeepInfra Pricing",
+     "url": "https://deepinfra.com/pricing",
+     "date": "2026-11-23",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "sides": {
+    "H1": "지지"
+   },
+   "side_basis": "Fireworks 와 Together 가 세 모델 모두 소수점까지 같은 값을 붙였다(가격 수렴). DeepInfra 는 같은 모델 출력을 그 4분의 1 값에 판다(할인 경쟁).",
+   "note": "가격 수렴은 모델 개발사 권장가를 그대로 따르는 것일 수도 있다(원인 미확인). raw 파일: together-pricing.html, deepinfra-pricing.html 함께.",
+   "detail": {
+    "GLM-5.3": {
+     "fireworks": [
+      1.4,
+      0.26,
+      4.4
+     ],
+     "together": [
+      1.4,
+      0.26,
+      4.4
+     ]
+    },
+    "Kimi-K3.1-Pro": {
+     "fireworks": [
+      2,
+      0.2,
+      10
+     ],
+     "together": [
+      2,
+      0.2,
+      10
+     ],
+     "deepinfra": [
+      1.9,
+      0.19,
+      9.5
+     ]
+    },
+    "DeepSeek-V4.1-Flash-1017": {
+     "fireworks": [
+      0.3,
+      0.006,
+      1.2
+     ],
+     "together": [
+      0.3,
+      0.006,
+      1.2
+     ],
+     "deepinfra_discounted": [
+      0.098,
+      0.0029,
+      0.294
+     ]
+    }
+   }
+  },
+  {
+   "id": "or-anchor-at-developer-list-price",
+   "country": "ZZ",
+   "city": null,
+   "metric": "개발사 직판 정가와 똑같은 값을 매긴 사업자 수(OpenRouter, 4개 모델)",
+   "value": null,
+   "unit": "곳",
+   "asof": "2026-11-23",
+   "basis": "계산: 출력 단가가 개발사 자체 엔드포인트(Moonshot AI·Z.AI)의 값과 소수점까지 같은 사업자 수. Kimi K3 $3/$15: 20곳 중 11곳(Moonshot 포함: Alibaba, Bedrock us-east-2, Baseten, Fireworks, KT, Modal, Nebius, Parasail, River, Together). Kimi K3.1 Pro $2/$10: 20곳 중 10곳. GLM 5.2 $1.40/$4.40: 20곳 중 8곳. GLM 5.3 $1.40/$4.40: 35곳 중 14곳(Together, Fireworks, Baseten, Nebius, Modal, Parasail, Crusoe, SambaNova, Mistral 등). DeepSeek V4.1 Flash 는 DeepSeek 직판이 목록에 없지만 $0.30/$1.20 에 9곳(Together, Fireworks, Baseten, Google Vertex, Nebius, Modal, Parasail, SiliconFlow, Venice)이 모였고, Baidu 의 할인 전 값도 0.0498/(1−0.834)=0.30 으로 같은 정가다.",
+   "definition": "OpenRouter 공개 API 의 사업자 게시가(중개사 집계). 실제 거래 단가·물량 가중 아님. 개발사 정가 자체가 개발사의 가격 결정이다.",
+   "quote": null,
+   "sources": [
+    {
+     "n": 1,
+     "title": "OpenRouter API models/moonshotai/kimi-k3/endpoints",
+     "url": "https://openrouter.ai/api/v1/models/moonshotai/kimi-k3/endpoints",
+     "date": "2026-11-23",
+     "read": "full"
+    },
+    {
+     "n": 2,
+     "title": "OpenRouter API models/moonshotai/kimi-k3.1-pro/endpoints",
+     "url": "https://openrouter.ai/api/v1/models/moonshotai/kimi-k3.1-pro/endpoints",
+     "date": "2026-11-23",
+     "read": "full"
+    },
+    {
+     "n": 3,
+     "title": "OpenRouter API models/z-ai/glm-5.2/endpoints",
+     "url": "https://openrouter.ai/api/v1/models/z-ai/glm-5.2/endpoints",
+     "date": "2026-11-23",
+     "read": "full"
+    },
+    {
+     "n": 4,
+     "title": "OpenRouter API models/z-ai/glm-5.3/endpoints",
+     "url": "https://openrouter.ai/api/v1/models/z-ai/glm-5.3/endpoints",
+     "date": "2026-11-23",
+     "read": "full"
+    },
+    {
+     "n": 5,
+     "title": "OpenRouter API models/deepseek/deepseek-v4.1-flash/endpoints",
+     "url": "https://openrouter.ai/api/v1/models/deepseek/deepseek-v4.1-flash/endpoints",
+     "date": "2026-11-23",
+     "read": "full"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "high",
+   "sides": {
+    "H1": "양쪽"
+   },
+   "side_basis": "미국 주요 독립 사업자(Together·Fireworks·Baseten·Nebius·Modal·Parasail)가 같은 값에 모인다는 점은 범용품식 수렴이지만, 모이는 점이 원가 아래로 깎인 값이 아니라 개발사가 정한 정가라서 '가격 경쟁으로 마진이 녹는다'보다 '개발사 정가를 받아 쓰는 가격 수용자'에 가깝다.",
+   "note": "정가에 모인 사업자 대부분이 양자화 정보를 'unknown' 으로 둔다. 정가 아래를 내는 쪽은 주로 fp4·mxfp4 를 밝힌 신생 사업자(Wafer, Relace, inference.net)와 판촉 할인 사업자다.",
+   "detail": {
+    "kimi-k3": "11/20",
+    "kimi-k3.1-pro": "10/20",
+    "glm-5.2": "8/20",
+    "glm-5.3": "14/35",
+    "deepseek-v4.1-flash": "9/28 at $1.20"
+   }
+  },
+  {
+   "id": "or-speed-tier-premium",
+   "country": "ZZ",
+   "city": null,
+   "metric": "같은 사업자의 속도 등급(fast) 출력 단가 ÷ 표준 등급 출력 단가",
+   "value": 1.5,
+   "unit": "배",
+   "asof": "2026-11-23",
+   "basis": "계산: GLM 5.3 Fireworks fast·Baseten fast·Parasail fast $6.60 ÷ 표준 $4.40 = 1.5. Kimi K3 Fireworks fast·Parasail fast $22.50 ÷ $15 = 1.5. DeepSeek V4.1 Flash Parasail fast·Fireworks us $1.80 ÷ $1.20 = 1.5. Kimi K3.1 Pro inference.net fast $13.50 ÷ $9.00 = 1.5. 예외: Moonshot highspeed $20 ÷ $10 = 2.0, Venice ultrafast(DeepSeek V4.1 Flash) $6.00 ÷ $1.20 = 5.0, Alibaba fast(GLM 5.2) $7.26 ÷ $3.04 = 2.4.",
+   "definition": "OpenRouter 공개 API 의 사업자 게시가(중개사 집계). 실제 거래 단가·물량 가중 아님.",
+   "quote": null,
+   "sources": [
+    {
+     "n": 1,
+     "title": "OpenRouter API models/z-ai/glm-5.3/endpoints",
+     "url": "https://openrouter.ai/api/v1/models/z-ai/glm-5.3/endpoints",
+     "date": "2026-11-23",
+     "read": "full"
+    },
+    {
+     "n": 2,
+     "title": "OpenRouter API models/moonshotai/kimi-k3/endpoints",
+     "url": "https://openrouter.ai/api/v1/models/moonshotai/kimi-k3/endpoints",
+     "date": "2026-11-23",
+     "read": "full"
+    },
+    {
+     "n": 3,
+     "title": "OpenRouter API models/deepseek/deepseek-v4.1-flash/endpoints",
+     "url": "https://openrouter.ai/api/v1/models/deepseek/deepseek-v4.1-flash/endpoints",
+     "date": "2026-11-23",
+     "read": "full"
+    },
+    {
+     "n": 4,
+     "title": "OpenRouter API models/moonshotai/kimi-k3.1-pro/endpoints",
+     "url": "https://openrouter.ai/api/v1/models/moonshotai/kimi-k3.1-pro/endpoints",
+     "date": "2026-11-23",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "sides": {
+    "H1": "반박"
+   },
+   "side_basis": "같은 모델이라도 속도로 값을 나눠 받는다. 다만 물량 몫은 Kimi K3 22.1%를 빼면 GLM 5.3 1.1%, DeepSeek V4.1 Flash 1.2%, Kimi K3.1 Pro 6.0%로 작다(or-volume-weighted-* 참고).",
+   "note": "1.5배가 여러 사업자에 걸쳐 똑같아 사실상 업계 관행처럼 보인다."
+  },
+  {
+   "id": "or-hyperscaler-premium-on-openrouter",
+   "country": "ZZ",
+   "city": null,
+   "metric": "OpenRouter 에 올라온 하이퍼스케일러 엔드포인트의 출력 단가 ÷ 개발사 정가(또는 중앙값)",
+   "value": 2.2,
+   "unit": "배",
+   "asof": "2026-11-23",
+   "basis": "계산: Kimi K3.1 Pro Amazon Bedrock us-east-1 $22.00 ÷ Moonshot 정가 $10 = 2.2(us-east-2 $20 → 2.0). Kimi K3 Bedrock us-east-1 $16.50 ÷ $15 = 1.1(us-east-2 $15 → 1.0). DeepSeek V4 Pro Azure $3.83 ÷ 중앙값 $2.56 = 1.5. Llama 3.3 70B Bedrock $0.72 ÷ 최저 DeepInfra turbo $0.32 = 2.25. GLM 5.3 Bedrock $5.28 ÷ Z.AI $4.40 = 1.2. 반면 Google Vertex(DeepSeek V4.1 Flash $1.20, gpt-oss-120b $0.36)와 Bedrock(gpt-oss-120b $0.60)은 정가·최빈값 수준.",
+   "definition": "OpenRouter 공개 API 의 사업자 게시가(중개사 집계). 실제 거래 단가·물량 가중 아님. 하이퍼스케일러는 OpenRouter 밖 자사 클라우드 계약(약정 할인)으로 주로 판다.",
+   "quote": null,
+   "sources": [
+    {
+     "n": 1,
+     "title": "OpenRouter API models/moonshotai/kimi-k3.1-pro/endpoints",
+     "url": "https://openrouter.ai/api/v1/models/moonshotai/kimi-k3.1-pro/endpoints",
+     "date": "2026-11-23",
+     "read": "full"
+    },
+    {
+     "n": 2,
+     "title": "OpenRouter API models/moonshotai/kimi-k3/endpoints",
+     "url": "https://openrouter.ai/api/v1/models/moonshotai/kimi-k3/endpoints",
+     "date": "2026-11-23",
+     "read": "full"
+    },
+    {
+     "n": 3,
+     "title": "OpenRouter API models/deepseek/deepseek-v4-pro/endpoints",
+     "url": "https://openrouter.ai/api/v1/models/deepseek/deepseek-v4-pro/endpoints",
+     "date": "2026-11-23",
+     "read": "full"
+    },
+    {
+     "n": 4,
+     "title": "OpenRouter API models/meta-llama/llama-3.3-70b-instruct/endpoints",
+     "url": "https://openrouter.ai/api/v1/models/meta-llama/llama-3.3-70b-instruct/endpoints",
+     "date": "2026-11-23",
+     "read": "full"
+    },
+    {
+     "n": 5,
+     "title": "OpenRouter API models/z-ai/glm-5.3/endpoints",
+     "url": "https://openrouter.ai/api/v1/models/z-ai/glm-5.3/endpoints",
+     "date": "2026-11-23",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "sides": {
+    "H1": "반박",
+    "H3": "양쪽"
+   },
+   "side_basis": "하이퍼스케일러는 정가보다 비싸게 게시하고도 엔드포인트를 유지한다(가격 경쟁 안 함). 다만 OpenRouter 안에서 Bedrock 이 Kimi K3.1 Pro 요청의 0.3%만 가져가 공개 중개 시장에서 물량은 작고, 실제 물량은 클라우드 계약 쪽이라는 H3 의 방식과 맞는다.",
+   "note": "Bedrock 은 미국 동부 두 지역 단가가 10% 다르다."
+  },
+  {
+   "id": "or-promo-discounts-low-share",
+   "country": "ZZ",
+   "city": null,
+   "metric": "판촉 할인으로 최저가를 낸 엔드포인트의 할인율과 물량 몫",
+   "value": 0.834,
+   "unit": "할인율(비율)",
+   "asof": "2026-11-23",
+   "basis": "계산: API 게시가 = 할인 전 정가×(1−discount). Baidu: DeepSeek V4.1 Flash discount 0.834($0.30→$0.0498 입력, $1.20→$0.1992 출력), GLM 5.2 0.865($4.40→$0.594), DeepSeek V4 Pro 0.609. StreamLake 0.51~0.65, Novita 0.2~0.55, DeepInfra 0.25~0.375. 같은 시점 30분 요청 몫: DeepSeek V4.1 Flash 최저가 Baidu 0.1%, GLM 5.2 최저가 0.1%, Qwen3.8-27B 최저가 StreamLake(discount 0.65) 0.2%.",
+   "definition": "OpenRouter 공개 API 의 사업자 게시가(중개사 집계). 실제 거래 단가·물량 가중 아님. 할인율은 OpenRouter 가 엔드포인트별로 게시한 discount 필드.",
+   "quote": null,
+   "sources": [
+    {
+     "n": 1,
+     "title": "OpenRouter API models/deepseek/deepseek-v4.1-flash/endpoints",
+     "url": "https://openrouter.ai/api/v1/models/deepseek/deepseek-v4.1-flash/endpoints",
+     "date": "2026-11-23",
+     "read": "full"
+    },
+    {
+     "n": 2,
+     "title": "OpenRouter API models/z-ai/glm-5.2/endpoints",
+     "url": "https://openrouter.ai/api/v1/models/z-ai/glm-5.2/endpoints",
+     "date": "2026-11-23",
+     "read": "full"
+    },
+    {
+     "n": 3,
+     "title": "OpenRouter API models/deepseek/deepseek-v4-pro/endpoints",
+     "url": "https://openrouter.ai/api/v1/models/deepseek/deepseek-v4-pro/endpoints",
+     "date": "2026-11-23",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H1": "양쪽"
+   },
+   "side_basis": "정가의 15% 수준까지 깎는 판촉이 흔하다는 것은 가격 압력(H1 지지)이지만, 그 최저가가 물량을 거의 못 가져간다(지연시간이 길다: Baidu DeepSeek V4.1 Flash p50 1.2초 대 Together 0.2초)는 것은 가격만으로 물량이 안 움직인다는 반대 증거다.",
+   "note": "물량 몫은 30분 표본 하나라 conf 를 med 로 둔다."
+  },
+  {
+   "id": "or-open-weight-share-tokens-vs-spend",
+   "country": "ZZ",
+   "city": null,
+   "metric": "OpenRouter 유료 물량 중 오픈웨이트의 지출 몫(토큰 몫은 70% 이상)",
+   "value": 0.25,
+   "unit": "비율(약)",
+   "asof": "2026-10",
+   "basis": "원문 '약 4분의 1'. 2026-01 11%에서 올랐고 최근 한 분기 거의 그대로. 토큰 몫은 9/28 주 52%로 떨어졌다가 2주 뒤 70% 이상으로 복귀.",
+   "definition": "OpenRouter 자체 집계(자사 API 를 거친 유료 물량, BYOK·무료·스텔스 제외). 중개사라 단가 하락·물량 증가를 강조할 이해관계가 있다.",
+   "quote": "Open weights take about a quarter of paid spend, up from 11% in January, and that share has barely moved over the last quarter or so.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "OpenRouter, Tokens rose 37% in October (October 2026 data recap)",
+     "url": "https://openrouter.ai/data/october-2026",
+     "date": "2026-11-12",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "sides": {
+    "H1": "지지"
+   },
+   "side_basis": "토큰의 70% 이상을 오픈웨이트가 처리하지만 돈은 4분의 1만 남는다. 토큰당 매출이 폐쇄형의 약 1/6 수준이라는 뜻으로, 오픈웨이트 토큰 재판매의 단위 매출이 얇다는 쪽 증거다.",
+   "note": "지출 몫이 1월 11%에서 25%로 커진 것은 오픈웨이트 쪽 매출 총량이 늘었다는 반대 방향 정보이기도 하다.",
+   "detail": {
+    "spend_share_jan": 0.11,
+    "token_share_week_0928": 0.52,
+    "token_share_mid_oct": ">0.70"
+   }
+  },
+  {
+   "id": "or-together-rank-first-open-weight-oct-2026",
+   "country": "ZZ",
+   "city": null,
+   "metric": "OpenRouter 오픈웨이트 추론 사업자 토큰 처리량 순위에서 Together 의 순위(6월 18위 → 10월 1위)",
+   "value": 1,
+   "unit": "위",
+   "asof": "2026-10",
+   "basis": "OpenRouter 오픈웨이트 모델 토큰 처리량 기준 월간 사업자 순위(BYOK·스텔스 제외). DeepSeek 은 9월 9위 → 10월 2위(V4.1 Flash), InferenceNet 은 10월 4위로 처음 10위 안.",
+   "definition": "OpenRouter 자체 집계(자사 API 를 거친 유료 물량, BYOK·무료·스텔스 제외). 중개사라 단가 하락·물량 증가를 강조할 이해관계가 있다. 순위만 공개하고 사업자별 토큰 수는 공개하지 않았다.",
+   "quote": "Among providers serving open-weight models, Together moved from 18th in June to first in October by total tokens served.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "OpenRouter, Tokens rose 37% in October (October 2026 data recap)",
+     "url": "https://openrouter.ai/data/october-2026",
+     "date": "2026-11-12",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "sides": {
+    "H1": "반박"
+   },
+   "side_basis": "Together 는 주요 모델에서 개발사 정가(DeepSeek V4.1 Flash $1.20, GLM 5.3 $4.40)를 그대로 받는 쪽인데도 1위가 됐다. 같은 날 30분 표본에서도 DeepSeek V4.1 Flash 를 $0.42 의 DeepInfra 보다 3배 가까이 비싸게 팔면서 13.3%를 가져갔다(지연 195ms·302 tps). 물량이 최저가로만 가지 않는다.",
+   "note": "10/28 라우터 변경(속도·안정성 가중) 이후 효과가 일부 섞였을 수 있다.",
+   "detail": {
+    "inferencenet_rank_oct": 4,
+    "deepseek_rank_sep": 9,
+    "deepseek_rank_oct": 2
+   }
+  },
+  {
+   "id": "or-router-shift-from-price-first",
+   "country": "ZZ",
+   "city": null,
+   "metric": "OpenRouter 새 라우터(가격 우선 → 속도·안정성·가격 함께)의 요청당 비용 증가율",
+   "value": 0.06,
+   "unit": "비율",
+   "asof": "2026-10-28",
+   "basis": "OpenRouter 가 옛 라우터와 새 라우터를 3시간마다 번갈아 한 주 동안 돌린 실험. 새 라우터: 첫 토큰 시간 중앙값 −16.9%, 429 를 맞은 요청 몫 약 6% → 약 2.5%, 요청당 비용 +6.0%.",
+   "definition": "OpenRouter 자체 실험(자기 제품 홍보 글). 중개사가 라우팅을 바꾸면 사업자별 물량이 바뀌므로 이 결정 자체가 시장 구조 변수다.",
+   "quote": "Instead of mostly sending traffic to the cheapest provider, the router now weighs speed and reliability alongside price for every request.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "OpenRouter Inferred 06, A new routing engine",
+     "url": "https://openrouter.ai/data/newsletter/a-new-routing-engine",
+     "date": "2026-10-30",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "sides": {
+    "H1": "반박"
+   },
+   "side_basis": "가장 큰 중개 시장이 '최저가로 보내기'를 버리고 속도·안정성에 값을 쳐 주기 시작했다(요청당 6% 비싸져도). 비싸도 빠른 사업자가 물량을 가져갈 구조가 생겼다는 반대 증거다. 다만 원문은 이전까지 가격 우선 라우팅이 사업자들을 '정가 대 실효가 가격 놀음'으로 몰았다고도 적어, 10월 전까지는 범용품식 경쟁이었다는 지지 증거도 된다.",
+   "note": "원문: 오픈웨이트 요청의 4분의 1은 사업자를 직접 지정, 11%는 정렬 방식을 명시(10/28~29). 'Providers can now optimize across multiple dimensions of quality rather than being artificially focused on cost alone (or even driven to playing pricing games with list vs effective price).'",
+   "detail": {
+    "ttft_median_change": -0.169,
+    "share_429_old": 0.06,
+    "share_429_new": 0.025,
+    "pinned_provider_share_open_weight": 0.25,
+    "explicit_sort_share": 0.11
+   }
+  },
+  {
+   "id": "or-cache-hit-rate-agentic",
+   "country": "ZZ",
+   "city": null,
+   "metric": "OpenRouter 에이전트 키의 입력 토큰 캐시 적중률 중앙값(사업자별), 2026-10",
+   "value": 0.9,
+   "unit": "비율(이상)",
+   "asof": "2026-10",
+   "basis": "캐시된 입력 토큰 ÷ 입력 토큰, 에이전트 키 대상, 에이전트 토큰 1조 이상 사업자. 6월 76.1% → 10월 90% 이상. 대부분 사업자 85~97%.",
+   "definition": "OpenRouter 자체 집계(자사 API 를 거친 유료 물량, BYOK·무료·스텔스 제외). 중개사라 단가 하락·물량 증가를 강조할 이해관계가 있다.",
+   "quote": "The median cache hit rate has risen steeply, from 76.1% in June to over 90% in October.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "OpenRouter, Tokens rose 37% in October (October 2026 data recap)",
+     "url": "https://openrouter.ai/data/october-2026",
+     "date": "2026-11-12",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "sides": {
+    "H1": "양쪽"
+   },
+   "side_basis": "캐시 적중이 실효 단가 하락의 한 원인이다(캐시 읽기는 정가보다 훨씬 싸다). 캐시가 데워지면 대화가 그 사업자에 머무르므로(라우터 글) 단순 범용품과 달리 붙잡는 힘이 생긴다.",
+   "note": "실효 단가 $0.084 를 해석할 때 캐시 효과를 따로 빼야 한다.",
+   "detail": {
+    "jun": 0.761,
+    "oct": ">0.90"
+   }
+  },
+  {
+   "id": "galaxy-administered-anchor-deepseek-v4-pro",
+   "country": "ZZ",
+   "city": null,
+   "metric": "DeepSeek V4 Pro 를 OpenRouter 에서 똑같은 값($1.74/$3.48)에 판 사업자 수(2026-07)",
+   "value": 5,
+   "unit": "곳",
+   "asof": "2026-07",
+   "basis": "Galaxy 가 인용한 OpenRouter 사업자 화면(18개 판매자). Weights & Biases, Together, Fireworks, Baseten, Parasail 이 입력 $1.74/출력 $3.48. Kimi K2.6 은 Moonshot 포함 7곳이 $0.95/$4.00, GLM-5.2 는 Z.ai 포함 6곳이 $1.400 이고 6곳이 같은 정가에서 판촉 할인. 같은 DeepSeek 예에서 17개 사업자 호가 범위 $0.435~$1.74(4배).",
+   "definition": "Galaxy(Vikram Singh, Investor) 의견 글. 자료는 OpenRouter 화면·SemiAnalysis·Ornn 지수 인용(2026-07-21 전후 수집). Galaxy 는 연산 선물·온체인 연산 시장을 미는 쪽이라 '토큰은 범용품, 위험 이전은 GPU 시간에서'라는 결론에 이해관계가 있다.",
+   "quote": "five providers (Weights & Biases, Together, Fireworks, Baseten, and Parasail) quote the exact same price: $1.74/$3.48",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Galaxy, When Intelligence Commoditizes, Compute Becomes the Trade (Inference Market (and Micro) Structure)",
+     "url": "https://www.galaxy.com/insights/perspectives/inference-market-and-micro-structure",
+     "date": "2026-08-11",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "sides": {
+    "H1": "양쪽"
+   },
+   "side_basis": "Galaxy 는 이를 '개발사가 정한 관리 가격(administered anchor)에 호가가 모인다'고 해석한다. 가격 수렴은 범용품 신호지만, 수렴점이 경쟁으로 깎인 값이 아니라 개발사 정가다. 원문도 '토큰 시장에는 가격 수렴 장치가 없다(재판매·차익거래 불가)'고 적는다.",
+   "note": "같은 날(2026-11-23) 받은 API 에서도 같은 구조가 이어진다(or-anchor-at-developer-list-price).",
+   "detail": {
+    "kimi_k2_6_hosts_at_anchor": 7,
+    "glm_5_2_hosts_at_anchor": 6,
+    "glm_5_2_promo_hosts": 6,
+    "deepseek_quote_range": "$0.435-$1.74",
+    "deepseek_providers": 17
+   }
+  },
+  {
+   "id": "galaxy-or-router-inverse-price-squared",
+   "country": "ZZ",
+   "city": null,
+   "metric": "OpenRouter 기본 라우터의 물량 배분 가중(2026-07 시점): 1/가격²",
+   "value": null,
+   "unit": "해당 없음",
+   "asof": "2026-07",
+   "basis": "Galaxy 설명: 기본 라우터가 한 모델의 물량을 사업자별 1/가격² 로 나눈다 → 호가를 절반으로 낮추면 물량 몫이 약 4배. 라우티드 토큰의 70% 이상이 CLI·에이전트에서 온다. OpenRouter 는 2026-10-28 이 방식을 속도·안정성·가격을 함께 보는 라우터로 바꿨다(or-router-shift-from-price-first).",
+   "definition": "Galaxy(Vikram Singh, Investor) 의견 글. 자료는 OpenRouter 화면·SemiAnalysis·Ornn 지수 인용(2026-07-21 전후 수집). Galaxy 는 연산 선물·온체인 연산 시장을 미는 쪽이라 '토큰은 범용품, 위험 이전은 GPU 시간에서'라는 결론에 이해관계가 있다.",
+   "quote": "its default router splits a model's traffic across providers weighted by 1/price². Thus, a provider that halves its quote roughly quadruples its share of the flow.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Galaxy, When Intelligence Commoditizes, Compute Becomes the Trade (Inference Market (and Micro) Structure)",
+     "url": "https://www.galaxy.com/insights/perspectives/inference-market-and-micro-structure",
+     "date": "2026-08-11",
+     "read": "full"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "high",
+   "sides": {
+    "H1": "지지"
+   },
+   "side_basis": "10월 전까지 가장 큰 중개 시장이 가격에 제곱으로 물량을 몰아 줬다면 서버리스 토큰 판매는 구조적으로 최저가 경쟁이었다. Galaxy 도 '최저 호가가 먼저 집혀 손실 유인 경쟁이 생길 수 있다'고 적는다.",
+   "note": "11-23 30분 표본에서는 최저가 엔드포인트 몫이 대부분 0.1~0.2%로, 지금은 이 가중이 통하지 않는다(라우터 변경 뒤)."
+  },
+  {
+   "id": "galaxy-price-elasticity",
+   "country": "ZZ",
+   "city": null,
+   "metric": "토큰 가격 10% 인하당 사용량 증가(평균 탄력성)",
+   "value": 0.006,
+   "unit": "비율(0.5~0.7% 가운데)",
+   "asof": "2026-07",
+   "basis": "Galaxy 가 arXiv 2603.21690 을 인용. 10% 인하 → 사용량 0.5~0.7% 증가. 사람 대면 수요는 비탄력, 에이전트 배치 수요는 탄력적. 24시간 배치를 받아들이면 같은 토큰이 절반 값.",
+   "definition": "Galaxy(Vikram Singh, Investor) 의견 글. 자료는 OpenRouter 화면·SemiAnalysis·Ornn 지수 인용(2026-07-21 전후 수집). Galaxy 는 연산 선물·온체인 연산 시장을 미는 쪽이라 '토큰은 범용품, 위험 이전은 GPU 시간에서'라는 결론에 이해관계가 있다. 탄력성 값은 학술 논문 인용(원 논문 미확인).",
+   "quote": "a 10% price cut buys only a 0.5–0.7% bump in usage",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Galaxy, When Intelligence Commoditizes, Compute Becomes the Trade (Inference Market (and Micro) Structure)",
+     "url": "https://www.galaxy.com/insights/perspectives/inference-market-and-micro-structure",
+     "date": "2026-08-11",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H1": "양쪽"
+   },
+   "side_basis": "평균 수요가 가격에 거의 반응하지 않는다면 값을 깎아도 물량이 크게 안 늘어 가격 경쟁 유인이 약하다(반박). 반면 Galaxy 는 '평균 토큰은 비탄력, 한계 토큰은 매우 탄력적'이고 늘어나는 수요가 에이전트라 탄력적이라고 본다(지지).",
+   "note": "원 논문 arXiv 2603.21690 은 열어 보지 않았다.",
+   "detail": {
+    "batch_discount": 0.5
+   }
+  },
+  {
+   "id": "galaxy-deepseek-price-vs-h100-index",
+   "country": "ZZ",
+   "city": null,
+   "metric": "DeepSeek 대표 모델 출력 단가 하락 배수(2025-01 R1 → 2026 V4 Flash) 대 같은 기간 H100 시간당 지수 변화",
+   "value": 7.8,
+   "unit": "배(하락)",
+   "asof": "2026-07",
+   "basis": "계산: $2.19 ÷ $0.28 = 7.8배(원문 '~8×'). 같은 기간 Ornn H100 SXM 지수 $2.34 → $2.74(+17%). 개발사 자체 정가 비교이며 모델 세대가 바뀐 값(같은 모델 아님).",
+   "definition": "Galaxy(Vikram Singh, Investor) 의견 글. 자료는 OpenRouter 화면·SemiAnalysis·Ornn 지수 인용(2026-07-21 전후 수집). Galaxy 는 연산 선물·온체인 연산 시장을 미는 쪽이라 '토큰은 범용품, 위험 이전은 GPU 시간에서'라는 결론에 이해관계가 있다. 단가는 DeepSeek 공식 정가, GPU 값은 Ornn 지수(제3자).",
+   "quote": "DeepSeek's flagship output price fell ~8× since January 2025 (R1 at $2.19/M → V4 Flash at $0.28/M), while the H100 index ended the same window 17% higher",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Galaxy, When Intelligence Commoditizes, Compute Becomes the Trade (Inference Market (and Micro) Structure)",
+     "url": "https://www.galaxy.com/insights/perspectives/inference-market-and-micro-structure",
+     "date": "2026-08-11",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H1": "양쪽"
+   },
+   "side_basis": "GPU 시간값은 올랐는데 토큰값은 8분의 1이 됐다. 다만 Galaxy 는 이를 서빙 효율(MoE·양자화·분리 서빙 등)로 토큰당 원가가 더 빨리 내린 결과로 설명해, '단가가 원가보다 빨리 내린다'를 보여 주지는 않는다.",
+   "note": "토큰당 원가(P2)와 맞대어 봐야 한다.",
+   "detail": {
+    "r1_out": 2.19,
+    "v4_flash_out": 0.28,
+    "h100_jan25": 2.34,
+    "h100_jul26": 2.74
+   }
+  },
+  {
+   "id": "provider-pricepages-match-openrouter",
+   "country": "US",
+   "city": null,
+   "metric": "Together·Fireworks·Baseten 공식 가격표의 GLM-5.3 출력 단가(세 곳 동일, OpenRouter·Z.AI 정가와 같음)",
+   "value": 4.4,
+   "unit": "달러/100만 토큰",
+   "asof": "2026-11-23",
+   "basis": "세 곳 공식 가격표: GLM-5.3 입력 $1.40/출력 $4.40, DeepSeek V4.1 Flash $0.30/$1.20, Kimi K3.1 Pro $2.00/$10.00(세 곳 모두), gpt-oss-120b $0.15/$0.60(Together·Fireworks). OpenRouter 게시가와 같다. DeepInfra 만 다르다: GLM-5.3 정가 $0.90/$4.00 에서 38% 할인 → $0.5625/$2.50, DeepSeek V4.1 Flash 정가 $0.20/$0.60 에서 30% 할인 → $0.14/$0.42(1017 판은 51% 할인 → $0.098/$0.294).",
+   "definition": "사업자 자기 게시 정가(공식 가격표). 실제 계약가는 약정·물량 할인으로 다를 수 있다.",
+   "quote": null,
+   "sources": [
+    {
+     "n": 1,
+     "title": "Together AI Pricing",
+     "url": "https://www.together.ai/pricing",
+     "date": "2026-11-23",
+     "read": "full"
+    },
+    {
+     "n": 2,
+     "title": "Fireworks AI Pricing",
+     "url": "https://fireworks.ai/pricing",
+     "date": "2026-11-23",
+     "read": "full"
+    },
+    {
+     "n": 3,
+     "title": "Baseten Pricing",
+     "url": "https://www.baseten.co/pricing/",
+     "date": "2026-11-23",
+     "read": "full"
+    },
+    {
+     "n": 4,
+     "title": "DeepInfra Pricing",
+     "url": "https://deepinfra.com/pricing",
+     "date": "2026-11-23",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "sides": {
+    "H1": "양쪽"
+   },
+   "side_basis": "미국 3대 독립 사업자가 OpenRouter 밖 직판 가격표에서도 개발사 정가를 그대로 쓴다. 중개 시장만의 현상이 아니라 업계 가격 관행이다. 정가 아래로 깎는 쪽은 DeepInfra 같은 저가 전략 사업자다.",
+   "note": "원본: pricepage-together_ai_pricing.html, pricepage-fireworks_ai_pricing.html, pricepage-baseten_co_pricing.html, pricepage-deepinfra_com_pricing.html(같은 폴더, .txt 글자본 함께).",
+   "detail": {
+    "glm53": {
+     "together": [
+      1.4,
+      4.4
+     ],
+     "fireworks": [
+      1.4,
+      4.4
+     ],
+     "baseten": [
+      1.4,
+      4.4
+     ],
+     "deepinfra_list": [
+      0.9,
+      4
+     ],
+     "deepinfra_promo": [
+      0.5625,
+      2.5
+     ]
+    },
+    "dsv41flash": {
+     "together": [
+      0.3,
+      1.2
+     ],
+     "fireworks": [
+      0.3,
+      1.2
+     ],
+     "baseten": [
+      0.3,
+      1.2
+     ],
+     "deepinfra_list": [
+      0.2,
+      0.6
+     ],
+     "deepinfra_promo": [
+      0.14,
+      0.42
+     ]
+    },
+    "kimi_k31_pro": {
+     "together": [
+      2,
+      10
+     ],
+     "fireworks": [
+      2,
+      10
+     ],
+     "baseten": [
+      2,
+      10
+     ]
+    }
+   }
+  },
+  {
+   "id": "cached-input-price-divergence-glm53",
+   "country": "US",
+   "city": null,
+   "metric": "GLM-5.3 캐시 적중 90% 가정 실효 입력 단가: Baseten 이 Together·Fireworks 보다 낮은 비율",
+   "value": -0.289,
+   "unit": "비율",
+   "asof": "2026-11-23",
+   "basis": "계산: 실효 입력 = 0.1×비캐시 입력 + 0.9×캐시 입력(캐시 적중 90% 는 OpenRouter 10월 에이전트 키 중앙값 '90% 이상'을 가정으로 씀). Together·Fireworks: 0.1×1.40 + 0.9×0.26 = $0.374. Baseten: 0.1×1.40 + 0.9×0.14 = $0.266(−28.9%). DeepInfra(할인가): 0.1×0.5625 + 0.9×0.125 = $0.169(−54.8%). 정가(비캐시 입력·출력)는 Together·Fireworks·Baseten 이 같다.",
+   "definition": "사업자 자기 게시 정가(공식 가격표). 실제 계약가는 약정·물량 할인으로 다를 수 있다. 캐시 적중률은 가정값.",
+   "quote": null,
+   "sources": [
+    {
+     "n": 1,
+     "title": "Together AI Pricing",
+     "url": "https://www.together.ai/pricing",
+     "date": "2026-11-23",
+     "read": "full"
+    },
+    {
+     "n": 2,
+     "title": "Fireworks AI Pricing",
+     "url": "https://fireworks.ai/pricing",
+     "date": "2026-11-23",
+     "read": "full"
+    },
+    {
+     "n": 3,
+     "title": "Baseten Pricing",
+     "url": "https://www.baseten.co/pricing/",
+     "date": "2026-11-23",
+     "read": "full"
+    },
+    {
+     "n": 4,
+     "title": "DeepInfra Pricing",
+     "url": "https://deepinfra.com/pricing",
+     "date": "2026-11-23",
+     "read": "full"
+    },
+    {
+     "n": 5,
+     "title": "OpenRouter October 2026 data recap",
+     "url": "https://openrouter.ai/data/october-2026",
+     "date": "2026-11-12",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H1": "양쪽"
+   },
+   "side_basis": "겉으로 보이는 정가는 같아도 에이전트 작업에서 실제 청구를 좌우하는 캐시 단가에서 값이 갈린다. 가격 경쟁이 정가가 아닌 캐시·등급 같은 덜 보이는 항목으로 옮겨 갔다는 뜻(경쟁은 있다=H1 지지, 정가 수렴만 보고 범용품이라 단정하면 안 된다=주의).",
+   "note": "DeepSeek V4.1 Flash 캐시 입력은 Together·Fireworks $0.006, Baseten $0.007, DeepInfra $0.0042(할인가).",
+   "detail": {
+    "together_cached": 0.26,
+    "fireworks_cached": 0.26,
+    "baseten_cached": 0.14,
+    "deepinfra_cached_promo": 0.125,
+    "eff_in_together": 0.374,
+    "eff_in_baseten": 0.266,
+    "eff_in_deepinfra": 0.169
+   }
+  },
+  {
+   "id": "epoch-price-of-performance-13x",
+   "country": "ZZ",
+   "city": null,
+   "metric": "같은 AI 성능 수준을 얻는 비용의 연간 하락 배수(2023 이후, 5개 벤치마크)",
+   "value": 13,
+   "unit": "배/년",
+   "asof": "2026-09",
+   "basis": "분기당 약 −47% = 연 13배. 게임 퍼즐 39~43%/분기(7~10배/년), 수학 50~52%/분기(16~19배/년). 처음 그 성능에 도달했을 때 분기 −66%(75배/년), 2년 뒤 −32%(4.7배/년)로 느려진다.",
+   "definition": "Epoch AI(비영리 연구소, 제3자 측정). 벤치마크 성능 수준별 최저 비용 추세라 같은 모델의 사업자 간 단가가 아니다. 이해관계 약함.",
+   "quote": "The cost of achieving a given level of AI performance has fallen about 47% per quarter since 2023, or 13× per year.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Epoch AI, The plunging price of thought (Emberson & Roodman)",
+     "url": "https://epoch.ai/publications/the-plunging-price-of-thought",
+     "date": "2026-09-22",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "sides": {
+    "H1": "중립"
+   },
+   "side_basis": "성능 대비 가격 하락은 모델 교체(더 작고 싼 모델이 같은 성능)를 담은 값이라 같은 모델 사업자 마진과 직접 관계가 없다. 다만 오픈 모델 하나의 수명이 짧아 그 모델로 버는 기간이 짧다는 배경 정보다.",
+   "note": "Epoch 는 'SOTA 직후 잠깐 웃돈을 받다가 경쟁·기술로 빠르게 내린다'고 해석한다.",
+   "detail": {
+    "per_quarter": -0.47,
+    "games": "7-10x/yr",
+    "math": "16-19x/yr",
+    "initial": "75x/yr",
+    "after_2y": "4.7x/yr"
+   }
+  },
+  {
+   "id": "epoch-open-weight-api-vs-rented-hw-cost",
+   "country": "ZZ",
+   "city": null,
+   "metric": "오픈웨이트 모델 5개의 API 가격과 Epoch 가 GPU 를 빌려 직접 돌린 비용의 차이(모두 30% 미만)",
+   "value": 0.3,
+   "unit": "비율(상한)",
+   "asof": "2026-09",
+   "basis": "Epoch 가 API 가 없는 오픈 모델 값을 정하려고 GPU 를 빌려 직접 평가(지연을 적당히 두고 비용 효율 최적화)하고, 그 방법을 API 가 있는 오픈 모델 5개로 검증. 다섯 경우 모두 직접 비용과 API 가격 차이가 30% 미만. 차이의 방향(API 가 비싼지)은 원문 이 문장에 없다.",
+   "definition": "Epoch AI(비영리 연구소, 제3자 측정). 벤치마크 성능 수준별 최저 비용 추세라 같은 모델의 사업자 간 단가가 아니다. 이해관계 약함. 모델 이름·사업자·차이의 방향은 본문 이 부분에 없다(부록 미확인).",
+   "quote": "In each of these cases, the discrepancy between our direct costs and API pricing was less than 30%.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Epoch AI, The plunging price of thought (Emberson & Roodman)",
+     "url": "https://epoch.ai/publications/the-plunging-price-of-thought",
+     "date": "2026-09-22",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H1": "지지"
+   },
+   "side_basis": "오픈웨이트 API 가격이 임대 GPU 로 직접 돌린 비용과 30% 안쪽이라면, 서버리스 재판매의 웃돈(마진 여지)이 크지 않다는 제3자 측정이다. 단 직접 비용은 임대 GPU 시간값(임대 사업자 마진 포함)이고, 사업자는 더 싼 자체 GPU·높은 가동률을 쓴다.",
+   "note": "부록에서 모델별 차이와 방향을 찾으면 conf 를 올릴 수 있다.",
+   "detail": {
+    "n_models": 5
+   }
+  },
+  {
+   "id": "arxiv-open-models-algorithmic-3x",
+   "country": "ZZ",
+   "city": null,
+   "metric": "오픈 모델로 경쟁 효과를 통제하고 하드웨어 값 하락을 나눈 알고리즘 효율 향상 속도",
+   "value": 3,
+   "unit": "배/년",
+   "asof": "2025-11",
+   "basis": "Artificial Analysis·Epoch 자료로 만든 벤치마크 비용 자료. 프런티어 모델의 성능 대비 가격 5~10배/년 하락, 오픈 모델만 떼어 하드웨어 값 하락으로 나누면 알고리즘 효율 약 3배/년. 동시에 프런티어 모델을 돌리는 값은 연 3~18배 오른다(큰 모델·추론 토큰 증가).",
+   "definition": "MIT FutureTech 등 학술 연구(제3자). 초록만 읽음.",
+   "quote": "Isolating out open models to control for competition effects and dividing by hardware price declines, we estimate that algorithmic efficiency progress is around 3× per year.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Gundlach et al., The Price of Progress (arXiv 2511.23455) 초록",
+     "url": "https://arxiv.org/abs/2511.23455",
+     "date": "2025-11",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H1": "양쪽"
+   },
+   "side_basis": "저자들이 오픈 모델을 '경쟁 효과를 통제한' 표본으로 쓴다는 것은 오픈 모델 가격이 원가에 붙어 있다(웃돈이 적다)고 본다는 뜻이다(H1 쪽 전제). 성능 대비 가격 하락(5~10배)이 원가 쪽 효율(3배×하드웨어)보다 빠른지는 이 초록만으로는 판정 못 한다.",
+   "note": "본문은 열지 않았다.",
+   "detail": {
+    "frontier_price_perf_decline": "5-10x/yr",
+    "frontier_run_cost_rise": "3-18x/yr"
+   }
+  },
+  {
+   "id": "kimi-k2-6-anchor-jul-vs-nov",
+   "country": "ZZ",
+   "city": null,
+   "metric": "Kimi K2.6 OpenRouter 출력 단가 중앙값 변화(2026-07 앵커 $4.00 → 2026-11-23)",
+   "value": -0.15,
+   "unit": "비율",
+   "asof": "2026-11-23",
+   "basis": "계산: 11-23 출력 중앙값 $3.40 ÷ 7월 앵커 $4.00 − 1 = −15%. 7월(Galaxy 인용)에는 Moonshot 포함 7곳이 $0.95/$4.00. 11-23 에는 엔드포인트 15개·사업자 13곳 중 $4.00 은 Moonshot 직판 하나뿐이고, Parasail·Venice·DeepInfra·Crusoe 는 $3.50, 최저 Baidu $1.64(discount 0.59), Chutes $1.80(int4). Together·Fireworks·Baseten 은 목록에 없다(후속 K3·K3.1 Pro 는 판다).",
+   "definition": "Galaxy 인용값(7월)과 OpenRouter API 게시가(11월)를 데스크가 견준 계산.",
+   "quote": "On Kimi K2.6, seven hosts quote exactly $0.95/$4.00 (including Moonshot itself)",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Galaxy, When Intelligence Commoditizes, Compute Becomes the Trade (Inference Market (and Micro) Structure)",
+     "url": "https://www.galaxy.com/insights/perspectives/inference-market-and-micro-structure",
+     "date": "2026-08-11",
+     "read": "full"
+    },
+    {
+     "n": 2,
+     "title": "OpenRouter API models/moonshotai/kimi-k2.6/endpoints",
+     "url": "https://openrouter.ai/api/v1/models/moonshotai/kimi-k2.6/endpoints",
+     "date": "2026-11-23",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H1": "양쪽"
+   },
+   "side_basis": "후속 모델이 나오자 옛 모델은 정가 앵커가 풀려 15% 내려가고 미국 대형 사업자가 빠졌다(DeepSeek V4 Pro 도 같은 모양). 같은 모델의 단가는 대표 모델일 때 정가에 묶여 있다가 세대가 바뀌면 저가 사업자로 넘어간다 — 모델 수명 안에서는 앵커가 버티고(반박), 수명이 끝나면 범용품처럼 흩어진다(지지).",
+   "note": "Kimi K2.6 의 7월 출력 중앙값은 Galaxy 가 주지 않아 앵커와 비교했다.",
+   "detail": {
+    "jul_anchor": [
+     0.95,
+     4
+    ],
+    "jul_hosts_at_anchor": 7,
+    "nov_median_out": 3.4,
+    "nov_min_out": 1.64,
+    "nov_providers": 13,
+    "nov_hosts_at_anchor": 1
+   }
+  },
+  {
+   "id": "glm-5-2-anchor-stable-jul-nov",
+   "country": "ZZ",
+   "city": null,
+   "metric": "GLM 5.2 를 Z.AI 정가($1.40/$4.40)에 파는 사업자 수, 2026-07 → 2026-11-23",
+   "value": 8,
+   "unit": "곳(11-23)",
+   "asof": "2026-11-23",
+   "basis": "7월 Galaxy: Z.ai 포함 6곳이 $1.400, 6곳이 같은 정가에서 판촉 할인. 11-23 API: 입력 $1.40 인 사업자 8곳(Baseten, Friendli, Mistral, Nebius, Parasail, Together, Venice, Z.AI; 엔드포인트 9개), 판촉 할인 사업자 6곳(Baidu 0.865, StreamLake 0.6, SiliconFlow 0.5, Novita 0.45, DeepInfra 0.25×3 엔드포인트).",
+   "definition": "Galaxy 인용값(7월)과 OpenRouter API 게시가(11월) 비교.",
+   "quote": "on GLM-5.2, six hosts quote exactly $1.400 (including Z.ai) while six more run promotional discounts off that same administered price.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Galaxy, When Intelligence Commoditizes, Compute Becomes the Trade (Inference Market (and Micro) Structure)",
+     "url": "https://www.galaxy.com/insights/perspectives/inference-market-and-micro-structure",
+     "date": "2026-08-11",
+     "read": "full"
+    },
+    {
+     "n": 2,
+     "title": "OpenRouter API models/z-ai/glm-5.2/endpoints",
+     "url": "https://openrouter.ai/api/v1/models/z-ai/glm-5.2/endpoints",
+     "date": "2026-11-23",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "sides": {
+    "H1": "반박"
+   },
+   "side_basis": "후속 GLM 5.3 이 나온 뒤에도 넉 달 동안 정가가 그대로이고 정가를 받는 사업자는 오히려 6곳에서 8곳으로 늘었다. 단가가 경쟁으로 내려가지 않았다. 다만 정가 아래 판촉 할인 사업자도 6곳 그대로다.",
+   "note": "GLM 5.3 도 같은 $1.40/$4.40 정가라 개발사가 세대 간 가격을 유지했다.",
+   "detail": {
+    "jul_at_anchor": 6,
+    "jul_promo": 6,
+    "nov_at_anchor": 8,
+    "nov_promo": 6
+   }
+  },
+  {
+   "id": "deepseek-first-party-peak-offpeak",
+   "country": "CN",
+   "city": null,
+   "metric": "DeepSeek 직판 V4.1 Flash 출력 단가(피크 / 비피크)",
+   "value": 1.2,
+   "unit": "달러/100만 토큰(피크)",
+   "asof": "2026-11-23",
+   "basis": "DeepSeek 공식 가격표: V4.1 Flash(1017) 피크 입력 $0.30(캐시 적중 $0.006)/출력 $1.20, 비피크 절반 $0.15/$0.60. V4 Pro 피크 $1.32/$3.96, 비피크 $0.66/$1.98. 피크 = 평일 01~04시·06~10시 UTC. 2026-08-16 V4 계열 출시와 함께 피크/비피크제 도입, 2026-08-21 V4.1 Flash 출시로 값 인하(변경 기록).",
+   "definition": "개발사 자기 게시 정가. DeepSeek 은 모델 개발사이자 직판 사업자라 제3자 사업자 가격의 기준점을 정한다.",
+   "quote": "To allocate resources more reasonably, we will adopt peak/off-peak pricing, with off-peak prices set at half of the peak-hour prices",
+   "sources": [
+    {
+     "n": 1,
+     "title": "DeepSeek API Docs, Models & Pricing",
+     "url": "https://api-docs.deepseek.com/quick_start/pricing",
+     "date": "2026-11-23",
+     "read": "full"
+    },
+    {
+     "n": 2,
+     "title": "DeepSeek API Docs, Change Log(updates)",
+     "url": "https://api-docs.deepseek.com/updates",
+     "date": "2026-11-23",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "sides": {
+    "H1": "양쪽"
+   },
+   "side_basis": "OpenRouter 의 $0.30/$1.20 앵커는 DeepSeek 피크 정가다. 개발사 자신이 비피크에 절반을 받으므로 앵커 아래 제3자 가격(중앙값 $0.62)은 개발사 비피크가와 비슷하다. 개발사가 시간대로 가격을 나눈다는 것은 수요 관리용 가격 차별(범용품의 단일가와 다름)이기도 하다.",
+   "note": "V4 Pro 피크 출력 $3.96 은 7월 Galaxy 인용 앵커 $3.48 보다 높다. 다만 7월 DeepSeek 직판 값은 Galaxy 가 따로 적지 않아(V4 Pro 최저가였다고만 함) 인상인지 판정 못 함.",
+   "detail": {
+    "v41flash_peak": [
+     0.3,
+     1.2
+    ],
+    "v41flash_offpeak": [
+     0.15,
+     0.6
+    ],
+    "v4pro_peak": [
+     1.32,
+     3.96
+    ],
+    "v4pro_offpeak": [
+     0.66,
+     1.98
+    ],
+    "cache_hit_peak_flash": 0.006
+   }
+  },
+  {
+   "id": "or-volume-weighted-kimi-k3-1-pro",
+   "country": "ZZ",
+   "city": null,
+   "metric": "OpenRouter moonshotai/kimi-k3.1-pro 최근 30분 요청 수 가중 평균 출력 단가(사업자별 물량 반영)",
+   "value": 9.625,
+   "unit": "달러/100만 토큰",
+   "asof": "2026-11-23",
+   "basis": "계산: Σ(엔드포인트별 실효 출력 단가 × 최근 30분 요청 수)/Σ요청 수. 실효 단가=pricing_json 출력 정가×(1−discount_to_user). 요청 수는 OpenRouter 모델 providers 화면 HTML 에 내장된 엔드포인트별 stats.request_count(window_minutes=30, 화면 생성 2026-11-23T07:32Z). 단가가 있는 엔드포인트 24개(요청 88072건) 기준. 단순 중앙값 9.750, 최저 6.200, 최고 20.000. 최저가 엔드포인트 몫 4.6%, 하위 25% 가격(≤9.000) 몫 38.5%, 중앙값 초과 가격 몫 53.6%, 속도·등급 변형(fast·priority·highspeed·prime·turbo) 몫 6.0%(전체 88583건 대비).",
+   "definition": "OpenRouter 화면 내장 자료(중개사 자체 측정)로 30분 창 하나의 요청 건수다. 토큰 수가 아니라 요청 수이고, OpenRouter 를 거친 물량만 잡힌다(사업자 직판·클라우드 계약 물량 제외). 사용자의 사업자 지정·OpenRouter 기본 라우팅(가격·가동률 가중)이 함께 반영된다.",
+   "quote": null,
+   "sources": [
+    {
+     "n": 1,
+     "title": "OpenRouter moonshotai/kimi-k3.1-pro providers 화면(내장 stats)",
+     "url": "https://openrouter.ai/moonshotai/kimi-k3.1-pro/providers",
+     "date": "2026-11-23",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "low",
+   "sides": {
+    "H1": "반박"
+   },
+   "side_basis": "물량 가중 평균($9.63)이 중앙값($9.75)과 거의 같다. 정가 $10 의 Modal·Nebius 가 30%를 가져가고, 38% 판촉 할인한 Decart($6.20)는 4.5%에 그친다.",
+   "note": "OpenRouter 모델 화면에 내장된 최근 30분 요청 수 한 번(2026-11-23 07:3x UTC)의 표본이다. 같은 날 여러 번 받아 무게를 더해야 한다.",
+   "detail": {
+    "snapshot_utc": "2026-11-23T07:32Z",
+    "total_requests_30m": 88583,
+    "simple_median_out": 9.75,
+    "wavg_to_median": 0.987,
+    "share_cheapest_pct": 4.6,
+    "share_bottom_quartile_pct": 38.5,
+    "share_above_median_pct": 53.6,
+    "share_speed_tiers_pct": 6,
+    "top5": [
+     {
+      "provider": "Wafer",
+      "slug": "wafer/us",
+      "eff_out": 8.8,
+      "share_pct": 18.1,
+      "p50_tps": 68,
+      "p50_latency_ms": 598
+     },
+     {
+      "provider": "Modal",
+      "slug": "modal/mxfp4",
+      "eff_out": 10,
+      "share_pct": 17.8,
+      "p50_tps": 84,
+      "p50_latency_ms": 449
+     },
+     {
+      "provider": "Nebius Token Factory",
+      "slug": "nebius/fp4",
+      "eff_out": 10,
+      "share_pct": 12,
+      "p50_tps": 129,
+      "p50_latency_ms": 1195
+     },
+     {
+      "provider": "DigitalOcean",
+      "slug": "digitalocean",
+      "eff_out": 9.5,
+      "share_pct": 5.8,
+      "p50_tps": 105,
+      "p50_latency_ms": 1475
+     },
+     {
+      "provider": "Wafer",
+      "slug": "wafer/mxfp4",
+      "eff_out": 9,
+      "share_pct": 4.9,
+      "p50_tps": 70,
+      "p50_latency_ms": 649
+     }
+    ]
+   }
+  },
+  {
+   "id": "or-volume-weighted-deepseek-v4-1-flash-1017",
+   "country": "ZZ",
+   "city": null,
+   "metric": "OpenRouter DeepSeek V4.1 Flash 1017 최근 30분 요청 수 가중 평균 출력 단가",
+   "value": 0.524,
+   "unit": "달러/100만 토큰",
+   "asof": "2026-11-23",
+   "basis": "계산: Σ(실효 출력 단가×30분 요청 수)/Σ요청 수, 단가가 읽힌 엔드포인트 46개. 전체 30분 요청 2,570,591건(조사 모델 중 최대). 단순 중앙값 $0.61, 비율 0.86. 하위 25% 가격(≤$0.431) 몫 45.7%, 최저가($0.10, Sail Research) 몫 6.7%(두 엔드포인트 합 5.7%+), 중앙값 초과 몫 29.9%. 1위 DeepInfra fp8(정가 $0.60 에서 51% 할인 → $0.294) 19.9%, 2위 DeepSeek 직판(피크 $1.20, 화면 가격 미추출) 12.4%, 3위 Wafer($0.50) 6.2%. Together($1.20) 1.8%, CoreWeave($1.20) 2.3%.",
+   "definition": "OpenRouter 화면 내장 stats(30분 창, 요청 수). OpenRouter 를 거친 물량만. 표본 시각 2026-11-23 07:4x UTC(월요일, DeepSeek 피크 시간대 06~10 UTC 안).",
+   "quote": null,
+   "sources": [
+    {
+     "n": 1,
+     "title": "OpenRouter deepseek/deepseek-v4.1-flash-1017 providers 화면(내장 stats)",
+     "url": "https://openrouter.ai/deepseek/deepseek-v4.1-flash-1017/providers",
+     "date": "2026-11-23",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "low",
+   "sides": {
+    "H1": "양쪽"
+   },
+   "side_basis": "가장 큰 물량 모델에서는 물량이 싼 쪽으로 기운다(1위가 51% 할인한 DeepInfra, 하위 25% 가격이 46%). 반면 정가 그대로인 DeepSeek 직판이 12.4%로 2위라 최저가만 이기는 시장도 아니다.",
+   "note": "OpenRouter 모델 화면에 내장된 최근 30분 요청 수 한 번(2026-11-23 07:3x UTC)의 표본이다. 같은 날 여러 번 받아 무게를 더해야 한다.",
+   "detail": {
+    "total_requests_30m": 2570591,
+    "simple_median_out": 0.61,
+    "share_bottom_quartile_pct": 45.7,
+    "share_cheapest_pct": 6.7,
+    "share_above_median_pct": 29.9,
+    "top": [
+     [
+      "DeepInfra",
+      0.294,
+      19.9
+     ],
+     [
+      "DeepSeek",
+      1.2,
+      12.4
+     ],
+     [
+      "Wafer",
+      0.5,
+      6.2
+     ],
+     [
+      "Nebius",
+      0.72,
+      4.7
+     ],
+     [
+      "Cohere",
+      0.4,
+      4.2
+     ]
+    ]
+   }
+  },
+  {
+   "id": "or-volume-weighted-glm-5-3",
+   "country": "ZZ",
+   "city": null,
+   "metric": "OpenRouter z-ai/glm-5.3 최근 30분 요청 수 가중 평균 출력 단가(사업자별 물량 반영)",
+   "value": 2.734,
+   "unit": "달러/100만 토큰",
+   "asof": "2026-11-23",
+   "basis": "계산: Σ(엔드포인트별 실효 출력 단가 × 최근 30분 요청 수)/Σ요청 수. 실효 단가=pricing_json 출력 정가×(1−discount_to_user). 요청 수는 OpenRouter 모델 providers 화면 HTML 에 내장된 엔드포인트별 stats.request_count(window_minutes=30, 화면 생성 2026-11-23T07:33Z). 단가가 있는 엔드포인트 41개(요청 199382건) 기준. 단순 중앙값 4.200, 최저 1.200, 최고 6.600. 최저가 엔드포인트 몫 1.5%, 하위 25% 가격(≤2.500) 몫 51.6%, 중앙값 초과 가격 몫 21.5%, 속도·등급 변형(fast·priority·highspeed·prime·turbo) 몫 1.1%(전체 219083건 대비).",
+   "definition": "OpenRouter 화면 내장 자료(중개사 자체 측정)로 30분 창 하나의 요청 건수다. 토큰 수가 아니라 요청 수이고, OpenRouter 를 거친 물량만 잡힌다(사업자 직판·클라우드 계약 물량 제외). 사용자의 사업자 지정·OpenRouter 기본 라우팅(가격·가동률 가중)이 함께 반영된다.",
+   "quote": null,
+   "sources": [
+    {
+     "n": 1,
+     "title": "OpenRouter z-ai/glm-5.3 providers 화면(내장 stats)",
+     "url": "https://openrouter.ai/z-ai/glm-5.3/providers",
+     "date": "2026-11-23",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "low",
+   "sides": {
+    "H1": "지지"
+   },
+   "side_basis": "물량 가중 평균($2.73)이 단순 중앙값($4.20)의 65%. 저가 Wafer($1.40) 두 엔드포인트가 32%를 가져간다. 단 Wafer 는 지연시간도 가장 짧은 축이다.",
+   "note": "OpenRouter 모델 화면에 내장된 최근 30분 요청 수 한 번(2026-11-23 07:3x UTC)의 표본이다. 같은 날 여러 번 받아 무게를 더해야 한다.",
+   "detail": {
+    "snapshot_utc": "2026-11-23T07:33Z",
+    "total_requests_30m": 219083,
+    "simple_median_out": 4.2,
+    "wavg_to_median": 0.651,
+    "share_cheapest_pct": 1.5,
+    "share_bottom_quartile_pct": 51.6,
+    "share_above_median_pct": 21.5,
+    "share_speed_tiers_pct": 1.1,
+    "top5": [
+     {
+      "provider": "Wafer",
+      "slug": "wafer/us",
+      "eff_out": 1.4,
+      "share_pct": 22,
+      "p50_tps": 80,
+      "p50_latency_ms": 407
+     },
+     {
+      "provider": "Wafer",
+      "slug": "wafer/fp4",
+      "eff_out": 1.4,
+      "share_pct": 10.1,
+      "p50_tps": 83,
+      "p50_latency_ms": 351
+     },
+     {
+      "provider": "Tenstorrent",
+      "slug": "tenstorrent/fp8",
+      "eff_out": 2.5,
+      "share_pct": 8.3,
+      "p50_tps": 123,
+      "p50_latency_ms": 536
+     },
+     {
+      "provider": "CoreWeave",
+      "slug": "coreweave/nvfp4",
+      "eff_out": 3,
+      "share_pct": 8.1,
+      "p50_tps": 90,
+      "p50_latency_ms": 630
+     },
+     {
+      "provider": "Alibaba Cloud Int.",
+      "slug": "alibaba",
+      "eff_out": null,
+      "share_pct": 6.2,
+      "p50_tps": 61,
+      "p50_latency_ms": 992
+     }
+    ]
+   }
+  }
+ ]
+}

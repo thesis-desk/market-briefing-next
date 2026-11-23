@@ -1,0 +1,838 @@
+{
+ "schema": 1,
+ "bundle": "P5",
+ "title": "반대 증거 — 가설이 틀리는 쪽의 값",
+ "updated_kst": "2026-11-23T16:47:33+09:00",
+ "measure": null,
+ "notes": [
+  "방향(sides)은 AI 의 해석이다.",
+  "누가 잰 값인지(회사 자기 보고·추정·제3자)는 definition 에 밝혔다.",
+  "조사 open-weight-substitution 에서 옮겨 온 기록은 note 끝에 그렇다고 적었다. 값과 출처는 그 조사의 3차 확인을 거친 그대로다."
+ ],
+ "summary": {
+  "records": 21,
+  "with_value": 12,
+  "by_hypothesis": {
+   "H1": {
+    "지지": 4,
+    "반박": 4,
+    "양쪽": 2,
+    "중립": 0
+   },
+   "H2": {
+    "지지": 2,
+    "반박": 5,
+    "양쪽": 4,
+    "중립": 0
+   },
+   "H3": {
+    "지지": 1,
+    "반박": 4,
+    "양쪽": 0,
+    "중립": 0
+   }
+  }
+ },
+ "records": [
+  {
+   "id": "openai-fine-tuning-wind-down",
+   "country": "US",
+   "city": null,
+   "metric": "OpenAI 의 셀프서비스 미세조정 종료",
+   "value": null,
+   "unit": "해당 없음",
+   "asof": "2027-01",
+   "basis": "공식 지원 종료 공지. 2026-05 신규 차단, 2027-01-06 기존 고객도 새 작업 불가",
+   "definition": null,
+   "quote": "Active existing customers will no longer be able to create new fine-tuning jobs on this date.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Deprecations | OpenAI API",
+     "url": "https://developers.openai.com/api/docs/deprecations",
+     "date": "2026-11-20",
+     "read": "full"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "high",
+   "sides": {
+    "H2": "양쪽"
+   },
+   "side_basis": "OpenAI 가 셀프서비스 미세조정을 접는다. 수요가 작다는 신호로도, 맞춤 수요를 오픈웨이트 사업자에게 넘긴다는 신호로도 읽힌다.",
+   "note": "연구소가 특화 수단을 스스로 거둔 사례. 특화 수요가 오픈웨이트 쪽으로 갈 여지를 넓히지만 지출 이동을 직접 보여 주지는 않는다. 이미 만든 모델의 추론은 기반 모델 종료 때까지 유지. 조사 open-weight-substitution 의 W4 기록을 옮겨 왔다."
+  },
+  {
+   "id": "menlo-post-training-holdbacks",
+   "country": "ZZ",
+   "city": null,
+   "metric": "사후 학습이 퍼지지 못하는 이유(Menlo 의 서술)",
+   "value": null,
+   "unit": "해당 없음",
+   "asof": "2026-11-03",
+   "basis": "보고서의 서술",
+   "definition": "Menlo Ventures 의 추정이다. 산출 방법은 확인하지 않았다. Menlo 는 Anthropic 과 Fireworks 양쪽의 주주다.",
+   "quote": "specialized models need constant updates to keep pace with a frontier that moves every few months",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Menlo Ventures — 2026: The State of Enterprise AI",
+     "url": "https://menlovc.com/perspective/2026-the-state-of-enterprise-ai",
+     "date": "2026-11-03",
+     "read": "partial"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H2": "반박"
+   },
+   "side_basis": "특화 모델은 몇 달마다 다시 고쳐야 하고 응용 회사 대부분은 학습시킬 역량이 없다 — 사후 학습 시장이 넓어지는 데 걸리는 조건이다.",
+   "note": "특화 모델은 몇 달마다 움직이는 프론티어를 따라 계속 고쳐야 하고, 응용 회사 대부분은 학습시킬 역량이 없다고 적었다. 조사 open-weight-substitution 의 W5 기록을 옮겨 왔다."
+  },
+  {
+   "id": "a16z-cio-away-from-fine-tuning",
+   "country": "ZZ",
+   "city": null,
+   "metric": "대기업의 미세조정 이탈(a16z CIO 설문)",
+   "value": null,
+   "unit": "해당 없음",
+   "asof": "2026-01",
+   "basis": "2026-01 설문의 서술",
+   "definition": "a16z 의 CIO 설문(대기업 100곳)이다. a16z 는 클로즈드 랩과 오픈 모델 플랫폼 양쪽의 주주다.",
+   "quote": "enterprises have trended away from fine tuning models and instead moved towards prompt engineering and routing across models",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Leaders, gainers and unexpected winners in the enterprise AI arms race",
+     "url": "https://a16z.com/leaders-gainers-and-unexpected-winners-in-the-enterprise-ai-arms-race/",
+     "date": "2026-01-30",
+     "read": "full"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H2": "반박"
+   },
+   "side_basis": "대기업 CIO 설문에서 미세조정에서 멀어진다는 응답이 나왔다.",
+   "note": "Menlo의 후속 학습 채택 6%→10%와 방향이 엇갈린다. 2026년 1월 시점이라 이후 변화는 반영되지 않았다. 조사 open-weight-substitution 의 W5 기록을 옮겨 왔다."
+  },
+  {
+   "id": "decagon-finetune-not-one-time",
+   "country": "US",
+   "city": null,
+   "metric": "미세조정의 유지 부담(Decagon)",
+   "value": null,
+   "unit": "해당 없음",
+   "asof": "2026",
+   "basis": "제3자 요약으로 읽었다",
+   "definition": null,
+   "quote": "They constantly train new models and deprecate old ones as the open source frontier advances",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Decagon: Building Production AI Agents at Enterprise Scale with Open Source Models",
+     "url": "https://www.zenml.io/llmops-database/building-production-ai-agents-at-enterprise-scale-with-open-source-models",
+     "date": null,
+     "read": "partial"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "low",
+   "sides": {
+    "H2": "양쪽"
+   },
+   "side_basis": "미세조정은 한 번으로 끝나지 않는다. 고객에게는 부담이고 사업자에게는 반복 매출이다.",
+   "note": "특화 모델이 낡는다는 주장의 근거이자, 사내 연구팀(Decagon Labs)을 상시 유지해야 한다는 비용 근거. 원 인터뷰는 직접 확인하지 않았다. 조사 open-weight-substitution 의 W5 기록을 옮겨 왔다."
+  },
+  {
+   "id": "lease-end-fine-tuning-calcification",
+   "country": "US",
+   "city": null,
+   "metric": "미세조정에서 에이전트 방식으로 돌아선 사례(Lease End)",
+   "value": null,
+   "unit": "해당 없음",
+   "asof": "2026",
+   "basis": "제3자 요약으로 읽었다",
+   "definition": null,
+   "quote": "fine-tuning locked the team into their specific model rather than providing flexibility",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Lease End: From Fine-Tuning to Agentic RAG: Reducing Technical Debt in Conversational AI for Auto Lease Buyouts",
+     "url": "https://www.zenml.io/llmops-database/from-fine-tuning-to-agentic-rag-reducing-technical-debt-in-conversational-ai-for-auto-lease-buyouts",
+     "date": null,
+     "read": "partial"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "low",
+   "sides": {
+    "H2": "반박"
+   },
+   "side_basis": "미세조정 모델을 접고 범용 모델 기반의 에이전트 방식으로 돌아선 사례다.",
+   "note": "미세조정을 버리고 범용 모델로 돌아간 사례. 미세조정 대상이 공개 가중치였는지는 요약에서 확인되지 않는다(기술 태그는 anthropic·openai). 발표 원본은 확인하지 않았다. 조사 open-weight-substitution 의 W5 기록을 옮겨 왔다."
+  },
+  {
+   "id": "fireworks-eval-build-time",
+   "country": "US",
+   "city": null,
+   "metric": "특화 모델 학습 전에 평가를 만드는 데 걸리는 기간",
+   "value": 3,
+   "unit": "개월(3~6개월의 아래 값)",
+   "asof": "2026-11-17",
+   "basis": "Fireworks 대표의 발언, '함께 일하는 최고 팀' 기준",
+   "definition": "Fireworks 대표가 무대에서 말한 자기 보고 값이다. 감사받지 않았고 자동 자막으로 받아 적었다.",
+   "quote": "the best team we work with take month three to six month to build eval",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Lin Qiao: Why AI Companies Are \"Scaling to Bankruptcy\" | TomorrowX Summit (iConnections, 영상)",
+     "url": "https://www.youtube.com/watch?v=ufMUsXzT7qc",
+     "date": "2026-11-20",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H2": "양쪽"
+   },
+   "side_basis": "학습 전에 평가를 만드는 데만 3~6개월이 걸린다. 진입 장벽이자 한 번 들어온 고객을 묶어 두는 장치다.",
+   "note": "용량 조달과 평가 만들기가 전업 업무가 된다고 했다. Fireworks 는 이를 없앤 상품을 냈다고 주장한다. 조사 open-weight-substitution 의 W5 기록을 옮겨 왔다."
+  },
+  {
+   "id": "deepseek-2025-02-theoretical-cost-profit-margin",
+   "country": "CN",
+   "city": null,
+   "metric": "DeepSeek 자체 서빙(V3/R1, H800)의 하루 이론 원가 대비 이익률",
+   "value": 545,
+   "unit": "%(원가 대비 이익률, 이론값)",
+   "asof": "2025-02",
+   "basis": "회사 공개 계산: 24시간 평균 226.75노드×8 H800×시간당 2달러 = 하루 원가 87,072달러. 전 토큰을 R1 단가(캐시 적중 입력 0.14, 미적중 입력 0.55, 출력 2.19달러/100만)로 매겼다면 하루 매출 562,027달러 → (562,027−87,072)/87,072 = 545%",
+   "definition": "모델 제작사의 자기 공개(GitHub open-infra-index). '모든 토큰을 R1 단가로 받았다면'의 이론값이며 회사 스스로 실제 매출은 훨씬 낮다고 밝힌다(V3 단가가 더 낮음, 웹·앱 무료, 야간 할인). GPU 원가는 임대가 가정(H800 시간당 2달러)이고 소유 설비비·인건비·연구비는 빠졌다.",
+   "quote": "If all tokens were billed at DeepSeek-R1’s pricing (*), the total daily revenue would be $562,027, with a cost profit margin of 545%.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Day 6: One More Thing, DeepSeek-V3/R1 Inference System Overview (deepseek-ai/open-infra-index)",
+     "url": "https://github.com/deepseek-ai/open-infra-index/blob/main/202502OpenSourceWeek/day_6_one_more_thing_deepseekV3R1_inference_system_overview.md",
+     "date": "2025-03-01",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "sides": {
+    "H1": "반박"
+   },
+   "side_basis": "대규모 전문가 병렬·캐시 재사용을 갖춘 서빙이면 공개 단가 기준 토큰 판매의 원가 대비 이익이 크다는 자기 보고. 다만 이론값이고 공개 단가가 사업자 간 경쟁가가 아니라 제작사 자체 단가라 독립 재판매자에게 그대로 옮겨지지 않는다.",
+   "note": "같은 자료에서 계산: 하루 입력 608B(56.3% 캐시 적중)·출력 168B 토큰. 출력 100만 토큰당 원가 약 0.52달러(87,072/168B), 입출력 합계 100만 토큰당 약 0.11달러. 노드당 평균 출력 처리 약 14.8k 토큰/초, 사용자당 출력 속도 20~22 토큰/초. 낮에는 전 노드를 추론에, 밤에는 줄여 연구·학습에 돌림(가동률 관리).",
+   "detail": {
+    "window": "2025-02-27 12:00 ~ 02-28 12:00 (UTC+8)",
+    "peak_nodes": 278,
+    "avg_nodes": 226.75,
+    "gpu_rate_assumed": "H800 2달러/시간",
+    "daily_cost_usd": 87072,
+    "theoretical_daily_revenue_usd": 562027,
+    "tokens": {
+     "input_B": 608,
+     "cache_hit_B": 342,
+     "output_B": 168
+    },
+    "interactivity": "사용자당 평균 출력 20~22 토큰/초",
+    "calc_cost_per_output_mtok": 0.52,
+    "calc_cost_per_total_mtok": 0.112
+   }
+  },
+  {
+   "id": "usagepricing-reseller-catalog-pruning-2026",
+   "country": "US",
+   "city": null,
+   "metric": "추론 재판매자 11곳이 2026년 7~10월 단가표에서 모델을 삭제 — 싼 행이 빠지며 표시 단가 변화 없이 바닥값이 오름",
+   "value": 11,
+   "unit": "곳(7~10월 단가표 모델 삭제한 다중 모델 재판매자)",
+   "asof": "2026-11",
+   "basis": "UsagePricing 단가표 추적(16개 회사). 예: Groq가 Qwen 3.6 27B(0.60/3.00달러) 삭제 → 가장 싼 Qwen 27B가 0.80/4.00달러로 33% 상승. Fireworks 서버리스 9행 삭제(2026-10-22), W&B 28→20, Novita 196→98(86일)",
+   "definition": "제3자 추적(UsagePricing, 가격 책정 자문 사이트). 회사들의 공개 단가표 변화를 관측한 값. 근거 20건, 반례 3건(Baseten은 10월 11→16개로 늘림, DeepSeek은 V4-Pro 폐기를 하루 만에 철회).",
+   "quote": "The removals hit the previous generation of open-weight models and often take the cheapest row, so the floor rises without any listed price changing.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Inference resellers prune the catalog every few weeks (UsagePricing)",
+     "url": "https://www.usagepricing.com/blueprint/trends/inference-catalog-churn",
+     "date": "2026-11",
+     "read": "full"
+    },
+    {
+     "n": 2,
+     "title": "Fireworks AI 2026-10-22: nine serverless models dropped (UsagePricing)",
+     "url": "https://www.usagepricing.com/blueprint/activity/fireworks-ai-2026-10-22-nine-serverless-models-dropped",
+     "date": "2026-10-22",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H1": "양쪽"
+   },
+   "side_basis": "구세대 모델의 싼 행을 지워 바닥값을 올린다 — 재판매자가 단가 하락에 그냥 끌려가지 않고 물건을 바꿔 단가를 지킨다는 점에서 H1 반박. 동시에 구세대 행을 유지할 만큼 마진이 안 남는다는 점에서 H1 지지로도 읽힌다.",
+   "note": "같은 표: Poolside 자체 추론(Laguna) 개시 약 3개월 만에 종료(2026-10), Moonshot이 K2 계열(1M 입력 0.95달러부터)을 닫아 가장 싼 모델이 Kimi K3.1 Pro(2.00/10.00달러)가 됨 — 제작사 자체가 저가 행을 걷어 냄.",
+   "detail": {
+    "groq_qwen27b_floor": {
+     "before": "0.60/3.00",
+     "after": "0.80/4.00",
+     "change": "+33%"
+    },
+    "fireworks_2026_10_22": "서버리스 9행 삭제(Kimi K2.6, K2.7 Code, DeepSeek V4 Pro, GLM 5.2 계열)",
+    "novita": "196(7월)→142→98(2026-10-15)",
+    "wandb": "28→20",
+    "counterexamples": [
+     "Baseten 11→16(10월)",
+     "DeepSeek V4-Pro 폐기 하루 만에 철회"
+    ]
+   }
+  },
+  {
+   "id": "activant-together-fireworks-1b-arr",
+   "country": "US",
+   "city": null,
+   "metric": "독립 추론 사업자 Together AI·Fireworks가 연환산 매출(ARR) 10억 달러를 넘었다는 투자사 정리 + Fireworks 하루 25조 토큰 처리 주장",
+   "value": 1,
+   "unit": "십억 달러(각 사, 초과)",
+   "asof": "2026-08",
+   "basis": "Activant Capital 리서치 글 본문. 각주 출처: Fireworks 'Announcing our Series D and $1B ARR'(2026), Reuters 'Together AI raises $800 million at $8.3 billion valuation'(2026). Fireworks 하루 25조 토큰은 Lin Qiao 발언(회사 주장), OpenRouter 하루 물량의 약 9배라고 Activant 계산",
+   "definition": "투자사(Activant Capital) 글이 회사 발표·보도를 인용한 2차 정리. ARR은 회사 자기 보고. Activant의 해당 회사 투자 여부는 원문에서 확인 못 함.",
+   "quote": "Together AI and Fireworks, both serverless inference providers, have crossed $1 billion in ARR.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Inference is Accelerating (Activant Capital)",
+     "url": "https://www.activantcapital.com/research/inference-is-accelerating",
+     "date": "2026-08-06",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H3": "반박"
+   },
+   "side_basis": "하이퍼스케일러가 오픈웨이트 추론을 묶어 판 해에도 독립 사업자 둘이 연환산 10억 달러를 넘었다 — 자리가 좁혀지지 않았다는 쪽이다. 매출 규모는 마진을 말해 주지 않는다.",
+   "note": "같은 글: 3월 Microsoft가 Fireworks 추론 플랫폼을 Azure AI Foundry에 통합(직접 만들지 않고) — Activant는 이를 '배포를 얻고 고객 관계를 저당 잡힌 것'으로 해석. 기업 물량은 하이퍼스케일러 API에 몰린다는 Activant 문장도 있음(H3 지지). Fireworks 고객으로 Cursor·Perplexity·Notion·Shopify의 미세조정 모델 사용을 든다(H2 지지).",
+   "detail": {
+    "fireworks_tokens_per_day": "25조(회사 주장)",
+    "openrouter_share_of_global_tokens": "5~10%(Activant 추정)",
+    "azure_foundry_fireworks": "2026-03 통합, EU Data Boundary·FedRAMP·PCI 제외",
+    "footnote_sources": [
+     "Fireworks AI, Announcing our Series D and $1B ARR, 2026",
+     "Reuters, Together AI raises $800 million at $8.3 billion valuation, 2026"
+    ]
+   }
+  },
+  {
+   "id": "practitioner-moved-off-fireworks-aws-dedicated-40pct",
+   "country": "US",
+   "city": null,
+   "metric": "사례: 시리즈 B 스타트업이 월 약 8천만 토큰을 넘자 Fireworks 서버리스를 떠나 AWS 전용 배포로 옮김(규모에서 40% 싸다고)",
+   "value": 40,
+   "unit": "%(AWS 전용 배포가 싸다고 한 정도)",
+   "asof": "2026",
+   "basis": "실무자 후기 모음 글 안의 익명 인터뷰 한 건. 같은 글: 하루 1억 토큰 이상·운영 인력이 있으면 자체 vLLM/전용 배포가 유리해진다",
+   "definition": "익명 일화(블로그 필자가 들은 말), 검증 불가. 출처 사이트(Enterprise DNA)는 교육·콘텐츠 사업자로 직접 이해관계는 확인 못 함.",
+   "quote": "they moved off Fireworks after crossing about 80M tokens a month because dedicated deployments on AWS were 40% cheaper at their scale",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Fireworks AI: what practitioners say (Enterprise DNA blog)",
+     "url": "https://enterprisedna.co/resources/blog/practitioner-fireworks-ai",
+     "date": "2026",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "low",
+   "sides": {
+    "H3": "지지",
+    "H2": "양쪽"
+   },
+   "side_basis": "물량이 커진 고객이 독립 사업자 서버리스를 떠나 하이퍼스케일러 전용 배포로 간 사례(H3 지지). 전용 배포 수요가 있다는 점은 H2 지지이나 그 매출이 독립 사업자가 아니라 AWS로 갔다는 점에서 H2의 '독립 사업자 마진' 판단엔 반대.",
+   "note": "같은 글: Fireworks 오픈 모델 단가 대개 100만 토큰당 0.20~0.90달러, 한 팀은 OpenAI 월 4,200달러→Fireworks 1,100달러(일화). 일화라 무게는 낮다.",
+   "detail": {
+    "threshold": "월 약 8천만 토큰",
+    "destination": "AWS 전용 배포",
+    "self_host_breakeven_claim": "하루 1억 토큰 이상 + 운영 인력"
+   }
+  },
+  {
+   "id": "openai-ft-winddown-reason-fewer-use-cases",
+   "country": "US",
+   "city": null,
+   "metric": "OpenAI가 미세조정 종료 이유로 '미세조정이 필요한 사용 사례가 줄었다'고 개발자 메일에 씀",
+   "value": null,
+   "unit": "해당 없음",
+   "asof": "2026-05",
+   "basis": "Tessl 기사가 인용한 OpenAI 개발자 메일 문장(OpenAI 문서 자체에는 이유가 없다)",
+   "definition": "OpenAI 자기 설명(2차 인용). OpenAI는 자사 범용 모델을 팔아야 하는 이해관계가 있다 — '프롬프트가 더 싸고 빠르다'는 자사 신모델 판매와 같은 방향.",
+   "quote": "Prompt-based approaches are now cheaper and faster — as such, we’re seeing fewer use cases that require fine-tuning.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "OpenAI shutting fine-tuning signals for enterprise AI (Tessl)",
+     "url": "https://tessl.io/blog/openai-shutting-fine-tuning-signals-for-enterprise-ai",
+     "date": "2026-05-20",
+     "read": "full"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H2": "반박"
+   },
+   "side_basis": "범용 모델이 지시 따르기에서 좋아져 미세조정 수요가 줄었다는 공급자 쪽 관측. 사후 학습이 마진 자리라는 H2의 수요 쪽 전제를 약하게 한다. 다만 OpenAI 폐쇄 모델 미세조정 이야기이고 오픈웨이트 사후 학습 수요와 같지 않다.",
+   "note": "같은 기사: Google Vertex AI(Gemini)와 Amazon Bedrock(Claude)은 기업용 관리형 미세조정을 계속 제공 — 하이퍼스케일러는 미세조정을 유지(H3 관련).",
+   "detail": {
+    "quoted_also": "Newer base models like GPT-5.5 are much better at following instructions and formats than prior models"
+   }
+  },
+  {
+   "id": "lambda-inference-api-sunset-2025",
+   "country": "US",
+   "city": null,
+   "metric": "Lambda가 서버리스 추론 API와 Lambda Chat을 2025-09-25에 종료",
+   "value": null,
+   "unit": "해당 없음",
+   "asof": "2025-09",
+   "basis": "Lambda 커뮤니티 포럼에서 Lambda 직원 계정이 확인한 문장. 회사는 이유를 밝히지 않았다(포럼 사용자 불만). Sacra 등 제3자는 다년 GPU 계약에 용량을 돌리려는 것이라 해석(search_summary)",
+   "definition": "회사 공지(포럼 답변). 이유는 제3자 해석뿐.",
+   "quote": "Lambda Chat and Lambda Inference / Inference API will be sunset on September 25th.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Sunsetting Chat, Sunsetting Inference? (Lambda DeepTalk forum)",
+     "url": "https://deeptalk.lambda.ai/t/sunsetting-chat-sunsetting-inference/4744",
+     "date": "2025-09-02",
+     "read": "full"
+    },
+    {
+     "n": 2,
+     "title": "Lambda prioritizes multi-year training contracts (Sacra)",
+     "url": "https://sacra.com/chat/h/2c75aedd-8177-4852-9761-f01510e85480/",
+     "date": "2026-05-29",
+     "read": "search_summary"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "high",
+   "sides": {
+    "H1": "지지"
+   },
+   "side_basis": "GPU를 가진 클라우드가 토큰 재판매를 접고 GPU 임대·장기 계약으로 돌아갔다 — 같은 GPU로 서버리스 토큰을 파는 것이 장기 임대보다 낫지 않았다는 정황(H1 지지). 이유가 공식적으로 밝혀지지 않아 무게는 중간.",
+   "note": "실패·철수 사례로 P5 4번에 해당하나 방향은 H1을 지지한다. 가격 전쟁 손실로 문을 닫았다는 직접 보도는 찾지 못했다.",
+   "detail": {
+    "sunset_date": "2025-09-25",
+    "scope": "Lambda Chat + Lambda Inference API"
+   }
+  },
+  {
+   "id": "digitalocean-serverless-deprecates-old-oss-models-dedicated-keeps",
+   "country": "US",
+   "city": null,
+   "metric": "DigitalOcean이 서버리스 추론에서 구세대 오픈 모델 5종을 내리고(2026-11-10) 전용 추론에는 남김",
+   "value": 5,
+   "unit": "개(서버리스에서 내린 오픈 모델)",
+   "asof": "2026-11",
+   "basis": "DigitalOcean 출시 노트. DeepSeek V4 Flash, Llama 4 Maverick, Qwen 3.5 397B, Gemma 4, gpt-oss-20b를 서버리스에서 폐기, 후속 모델(DeepSeek V4.1 Flash, Qwen3.8-Max, GLM-5.3 Flash, gpt-oss-120b)로 이전 권고",
+   "definition": "회사 공지(DigitalOcean, 클라우드·추론 판매자).",
+   "quote": "These models remain available on dedicated inference.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Release Note: deprecate OSS models from Serverless Inference (DigitalOcean)",
+     "url": "https://docs.digitalocean.com/notes/2026/inference-deprecate-oss-models-nov-2026/",
+     "date": "2026-11-10",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "sides": {
+    "H1": "지지",
+    "H2": "지지"
+   },
+   "side_basis": "서버리스 단가표는 최신 모델만 남기는 회전 창이고, 구모델은 고객이 용량을 사는 전용 배포로만 남긴다 — 서버리스의 물량 분산 부담과 전용 배포의 안정 수요가 갈린다는 정황.",
+   "note": "UsagePricing의 재판매자 단가표 정리 흐름(usagepricing-reseller-catalog-pruning-2026)과 같은 방향의 원문 확인 건.",
+   "detail": {
+    "removed": [
+     "DeepSeek V4 Flash",
+     "Llama 4 Maverick 17B 128E Instruct",
+     "Qwen 3.5 397B A17B",
+     "Gemma 4",
+     "gpt-oss-20b"
+    ]
+   }
+  },
+  {
+   "id": "ramp-q4-2025-together-fireworks-share-of-ai-infra-spend",
+   "country": "US",
+   "city": null,
+   "metric": "Ramp 법인카드·청구 데이터: 2025년 4분기 AI 인프라+기반 모델 지출 중 Together AI·Fireworks 각 약 10%, CoreWeave 6%, Nebius 5%, OpenRouter 1% 미만",
+   "value": 10,
+   "unit": "%(Ramp 고객 지출 점유, 각 사)",
+   "asof": "2025-12",
+   "basis": "Ramp Leading Indicators, 2025년 4분기. Ramp 고객의 AI 인프라 지출 3분기 1.3억 → 4분기 2.6억 달러(+100%), 지출 기업 1,900곳. AI 인프라 지출의 80%가 여러 서비스(서버리스·전용·GPU)를 함께 파는 업체로 갔다",
+   "definition": "제3자 거래 데이터(Ramp, 법인카드·지출관리 회사)의 자기 고객 표본. 미국 중소·중견 기업 쪽으로 치우친 표본이며 대기업의 하이퍼스케일러 약정 지출(AWS·Azure·GCP 청구)은 이 분류에 잡히지 않을 가능성이 크다 — 하이퍼스케일러 대비 점유가 아니다.",
+   "quote": "Together AI and Fireworks AI both hold significant market shares, with approximately 10% each of total spending on AI infrastructure or foundation models.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Inside the rapidly growing, and surprisingly narrow, AI infrastructure market (Ramp)",
+     "url": "https://ramp.com/leading-indicators/ai-infrastructure-spending-2026",
+     "date": "2026-02-10",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H3": "반박",
+    "H2": "지지"
+   },
+   "side_basis": "독립 추론 사업자 둘이 데이터센터형 네오클라우드(CoreWeave·Nebius)보다 큰 지출 점유를 갖고 지출이 분기에 두 배 — 독립 사업자 자리가 좁혀지지 않았다는 쪽(H3 반박). 지출 80%가 여러 서비스를 묶어 파는 업체로 간다는 점은 용량·전용 배포를 묶은 쪽에 돈이 간다는 H2와 같은 방향.",
+   "note": "기업당 지출: CoreWeave 170만, Crusoe 250만, Nebius 56만, OpenRouter 6천 달러(고객 700곳). 오픈 모델이 폐쇄 모델을 대체하는 흔적은 없고 보완재로 보인다고 Ramp가 해석.",
+   "detail": {
+    "ai_infra_spend": {
+     "Q3_2025": "1.3억",
+     "Q4_2025": "2.6억"
+    },
+    "fm_spend": {
+     "Q3_2025": "1.9억",
+     "Q4_2025": "4.3억"
+    },
+    "share_q4_2025": {
+     "Together AI": "~10%",
+     "Fireworks AI": "~10%",
+     "CoreWeave": "6%",
+     "Nebius": "5%",
+     "OpenRouter": "<1%"
+    },
+    "multi_service_share": "80%"
+   }
+  },
+  {
+   "id": "vercel-state-of-ai-fine-tuning-rating",
+   "country": "US",
+   "city": null,
+   "metric": "Vercel 앱 개발자 설문: '미세조정이 의미 있는 개선을 준다' 평균 5.3/10, '오픈 모델이 운영에 쓸 만하다' 6.5/10, 6개월 내 공급자 교체 60~65%",
+   "value": 5.3,
+   "unit": "점(10점 만점 평균)",
+   "asof": "2025",
+   "basis": "Vercel State of AI 설문(앱 개발자 대상). 현재 쓰는 LLM 공급자: OpenAI 87%, Anthropic 68%, Google 63%, DeepSeek 29%, xAI 23%, Groq 22%, Meta 12%, Microsoft 10%. 최근 6개월 교체 대상: Google 31%, Anthropic 29%, Groq 11%",
+   "definition": "회사 설문(Vercel, 자사 플랫폼 개발자 쪽으로 치우친 표본 — 응답자 60%가 Vercel에 호스팅). 시점은 화면의 'Q4 2024–Q1 2025' 표기로 추정. 추론 제공자(독립 사업자 대 하이퍼스케일러) 구분 문항은 없다 — Groq만 독립 추론 사업자로 등장.",
+   "quote": "Survey respondents gave an average rating of 5.3 out of 10 when asked if \"Fine tuning provides meaningful improvements\"",
+   "sources": [
+    {
+     "n": 1,
+     "title": "State of AI (Vercel)",
+     "url": "https://vercel.com/state-of-ai",
+     "date": "2025",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H2": "반박"
+   },
+   "side_basis": "앱 개발자가 미세조정의 효과를 10점 만점에 5.3점으로 봤다 — 사후 학습 수요의 깊이에 의문을 던진다. 2025년 설문이라 무게는 낮다.",
+   "note": "오래된 설문(2025년 초)이라 지금 시점 판단에는 약하다. 독립 추론 사업자 대 하이퍼스케일러 사용 비율을 묻는 2026년 설문은 찾지 못했다(VentureBeat 설문 기사는 429로 막힘).",
+   "detail": {
+    "current_providers": {
+     "OpenAI": "87%",
+     "Anthropic": "68%",
+     "Google": "63%",
+     "DeepSeek": "29%",
+     "xAI": "23%",
+     "Groq": "22%",
+     "Meta": "12%",
+     "Microsoft": "10%"
+    },
+    "switched_to": {
+     "Google": "31%",
+     "Anthropic": "29%",
+     "Groq": "11%"
+    },
+    "switched_6mo": "60%(도넛), 본문 65%",
+    "oss_production_ready": 6.5
+   }
+  },
+  {
+   "id": "deepinfra-105m-arr-14x-yoy-22t-tokens-week",
+   "country": "US",
+   "city": null,
+   "metric": "DeepInfra 연환산 매출 1.05억 달러(전년 대비 약 14배), 주당 22조 토큰 처리(5월 이후 3배 이상)",
+   "value": 0.105,
+   "unit": "십억 달러(연환산)",
+   "asof": "2026-10",
+   "basis": "회사 발표를 옮긴 StorageNewsletter 기사. 서버리스 오픈 모델 200개 이상 + 전용 컴퓨트를 함께 판다고 회사가 설명",
+   "definition": "회사 자기 보고(DeepInfra 보도자료). 감사 수치 아님. 독립 추론 사업자로 성장을 알려야 하는 이해관계.",
+   "quote": "reaching over $105 million annualized run-rate, representing nearly 14x Y/Y growth.The company now processes 22 trillion tokens per week, more than tripling its token volume since May.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "DeepInfra Surpasses $100M ARR, Triples Token Volume (StorageNewsletter)",
+     "url": "https://www.storagenewsletter.com/2026/10/05/deepinfra-surpasses-100m-arr-triples-token-volume/",
+     "date": "2026-10-05",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H3": "반박",
+    "H1": "양쪽"
+   },
+   "side_basis": "가장 싼 서버리스 사업자 쪽에 가까운 독립 사업자가 하이퍼스케일러 공세 속에서도 매출 14배·토큰 3배 — 독립 사업자 자리 축소와 반대(H3 반박). 토큰 3배 대비 매출 증가 속도 비교는 시점이 달라 단가 하락 여부를 이 자료만으로 못 정한다.",
+   "note": "계산: 주당 22조 토큰 × 52 ≈ 연 1,144조 토큰, 매출 1.05억 달러로 나누면 100만 토큰당 평균 약 0.09달러(전용 컴퓨트 매출 포함이라 서버리스 단가로 읽으면 안 됨).",
+   "detail": {
+    "tokens_per_week": "22조",
+    "token_growth_since_may": ">3x",
+    "calc_avg_rev_per_mtok": 0.092,
+    "customer_named": "LiveKit"
+   }
+  },
+  {
+   "id": "newcomer-inference-arr-surge-and-margin-skeptic",
+   "country": "US",
+   "city": null,
+   "metric": "독립 추론 사업자 매출 급증(Fireworks ARR 8억 달러, 1년 전 2.5억 / Baseten 2억→6억 한 분기 / Modal 3억)과 마진 회의론 인용",
+   "value": 0.8,
+   "unit": "십억 달러(Fireworks 연환산)",
+   "asof": "2026-05",
+   "basis": "Newcomer 기사. Fireworks는 CEO Lin Qiao가 X에서 밝힌 값, Baseten은 보도(The Information) 인용, Modal은 자금 조달 발표",
+   "definition": "언론(Newcomer) — 회사 발언·보도를 모은 2차 자료. 익명 투자자의 회의론 인용 포함. 기사 제목 'Margin Concerns Fade for Baseten, Fireworks & Others as Revenues Skyrocket'.",
+   "quote": "It seems like VCs are just doing a revenue multiple and are assuming the margin doesn’t matter",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Booming AI revenues boost inference (Newcomer)",
+     "url": "https://newcomer.co/p/booming-ai-revenues-boost-inference",
+     "date": "2026-05-29",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H3": "반박",
+    "H1": "지지"
+   },
+   "side_basis": "독립 사업자 매출이 분기 단위로 몇 배씩 늘어난다 — 하이퍼스케일러에 자리를 빼앗기는 모습이 아니다(H3 반박). 동시에 기사는 GPU를 빌려 쓰는 구조, 비슷한 상품, 가격 따라 고객이 옮겨 다니는 위험, 미세조정까지 범용품화 위험을 적는다(H1 지지).",
+   "note": "기사 문장: Baseten·Fireworks·Modal은 용량을 임대하고, Lambda·Crusoe 같은 네오클라우드는 칩을 소유한다 — 원가 구조 차이. Fireworks는 Cursor 의존이 크다고 적음(고객 집중).",
+   "detail": {
+    "fireworks_arr": {
+     "2025-10": "2.5억",
+     "2026-05": "8억"
+    },
+    "baseten_arr": {
+     "quarter_start": "2억",
+     "reported": "6억"
+    },
+    "modal_arr": "3억",
+    "valuations_reported": {
+     "Baseten": "110억(조달 중)",
+     "Fireworks": "150억(협상)",
+     "Together": "75억(협상)"
+    }
+   }
+  },
+  {
+   "id": "moondream-cloud-shutdown-acquired-prime-intellect",
+   "country": "US",
+   "city": null,
+   "metric": "소형 오픈 비전 모델 제작사 Moondream이 Prime Intellect에 인수되며 자체 추론 클라우드를 2026-11-13 종료",
+   "value": null,
+   "unit": "해당 없음",
+   "asof": "2026-10",
+   "basis": "GeekWire 기사. 인수 조건 비공개, 직원 10명 미만(The Information 인용). 인수자 Prime Intellect는 연환산 매출 1억 달러 이상이라고 밝힌 네오클라우드",
+   "definition": "언론 보도(GeekWire), 회사 발표 인용.",
+   "quote": "Moondream’s own cloud service will shut down Nov. 13, the startup said in a blog post.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Prime Intellect acquires Moondream (GeekWire)",
+     "url": "https://geekwire.com/2026/prime-intellect-acquires-moondream-a-vision-ai-startup-founded-in-seattle-by-aws-vets/",
+     "date": "2026-10-14",
+     "read": "full"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H1": "지지"
+   },
+   "side_basis": "작은 모델 제작사가 자기 추론 서비스를 접고 GPU를 가진 클라우드 쪽으로 흡수 — 모델만으로 추론을 파는 작은 사업자는 버티기 어렵다는 정황. 규모가 작아 무게는 낮다.",
+   "note": "가격 전쟁 손실로 폐업했다는 직접 보도는 찾지 못했다. 같은 축의 사례: Poolside 자체 추론 3개월 만 종료(usagepricing 건), Lambda 추론 API 종료(2025-09).",
+   "detail": {
+    "terms": "비공개",
+    "employees": "<10",
+    "acquirer_arr": ">1억 달러"
+   }
+  },
+  {
+   "id": "galaxy-speed-price-curve",
+   "country": "ZZ",
+   "city": null,
+   "metric": "같은 모델·같은 하드웨어에서 속도별 100만 토큰 값(초당 50 토큰 대 125 토큰)",
+   "value": 4,
+   "unit": "달러/100만 토큰(125 tok/s)",
+   "asof": "2026-07",
+   "basis": "Galaxy 인용: SemiAnalysis InferenceMAX 기준점, 곡선 모양은 예시. 50 tok/s 에서 $0.56, 125 tok/s 에서 $4 → 7.1배. 속도는 배치를 줄여 파는 것이라 GPU 시간당 토큰 수가 줄어든다.",
+   "definition": "Galaxy(Vikram Singh, Investor) 의견 글. 자료는 OpenRouter 화면·SemiAnalysis·Ornn 지수 인용(2026-07-21 전후 수집). Galaxy 는 연산 선물·온체인 연산 시장을 미는 쪽이라 '토큰은 범용품, 위험 이전은 GPU 시간에서'라는 결론에 이해관계가 있다. 기준점은 SemiAnalysis(제3자 측정) 인용.",
+   "quote": "the same model on the same hardware sells for $0.56/M at 50 tok/s but $4/M at 125 tok/s.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Galaxy, When Intelligence Commoditizes, Compute Becomes the Trade (Inference Market (and Micro) Structure)",
+     "url": "https://www.galaxy.com/insights/perspectives/inference-market-and-micro-structure",
+     "date": "2026-08-11",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H1": "반박"
+   },
+   "side_basis": "같은 모델이라도 속도 축에서 7배 가격대가 생긴다. 사업자가 곡선의 다른 점을 골라 차별화할 수 있어 단일 범용품 가격이 아니다. OpenRouter 의 fast 등급 1.5배(or-speed-tier-premium)가 실제 시장의 예.",
+   "note": "'곡선 모양은 예시'라고 원문이 적어 두 점만 쓸 것.",
+   "detail": {
+    "low_speed_price": 0.56,
+    "high_speed_price": 4,
+    "ratio": 7.14
+   }
+  },
+  {
+   "id": "galaxy-host-quality-variance",
+   "country": "ZZ",
+   "city": null,
+   "metric": "같은 가중치를 사업자마다 서빙했을 때 도구 호출 점수 범위",
+   "value": null,
+   "unit": "%",
+   "asof": "2026-07",
+   "basis": "원문: 같은 가중치가 호스트에 따라 도구 호출에서 76~100% 점수. 같은 정가 사업자 5곳 중 3곳은 양자화를 밝히지 않는다.",
+   "definition": "Galaxy(Vikram Singh, Investor) 의견 글. 자료는 OpenRouter 화면·SemiAnalysis·Ornn 지수 인용(2026-07-21 전후 수집). Galaxy 는 연산 선물·온체인 연산 시장을 미는 쪽이라 '토큰은 범용품, 위험 이전은 GPU 시간에서'라는 결론에 이해관계가 있다. 76~100% 의 원 측정자는 원문에서 확인 못 함.",
+   "quote": "identical weights score 76–100% on tool calls depending on the host",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Galaxy, When Intelligence Commoditizes, Compute Becomes the Trade (Inference Market (and Micro) Structure)",
+     "url": "https://www.galaxy.com/insights/perspectives/inference-market-and-micro-structure",
+     "date": "2026-08-11",
+     "read": "full"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H1": "반박"
+   },
+   "side_basis": "같은 모델이라도 서빙 품질이 사업자마다 달라 완전한 동질 상품이 아니다. 싼 호가가 효율인지 품질 저하인지 구별하기 어렵다는 점은 사는 쪽이 검증된 사업자에 웃돈을 낼 이유가 된다.",
+   "note": "같은 모델이라도 서빙 품질이 사업자마다 달라 완전한 동질 상품이 아니다.",
+   "detail": {
+    "score_min": 0.76,
+    "score_max": 1
+   }
+  },
+  {
+   "id": "fireworks-service-tier-price-ladder",
+   "country": "US",
+   "city": null,
+   "metric": "Fireworks 서버리스 등급별 값 차이(같은 모델·같은 엔드포인트)",
+   "value": 1.25,
+   "unit": "배(Priority ÷ Standard)",
+   "asof": "2026-11-23",
+   "basis": "Fireworks 가격표: Priority = Standard×1.25(예 Kimi K3 $3.75/$18.75 대 $3.00/$15.00, GLM 5.3 $1.75/$5.50 대 $1.40/$4.40). Spot = Standard −30%(GLM-5.3 $0.98/$3.08, 처리량이 0 으로 떨어질 수 있음). Batch = −50%. 미국 내 처리(US-only) = +50%. Fast(초당 100 토큰 이상)·Ultra-fast 별도. Baseten 은 Fast 를 GLM-5.3 1.5배($2.10/$6.60), DeepSeek V4.1 Flash 2배($0.60/$2.40)로 받는다.",
+   "definition": "사업자 자기 게시 정가(공식 가격표). 실제 계약가는 약정·물량 할인으로 다를 수 있다.",
+   "quote": "Spot 30% off Standard on best-effort capacity, available for select models only. Throughput can drop to zero, so retry or fall back to Standard.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Fireworks AI Pricing",
+     "url": "https://fireworks.ai/pricing",
+     "date": "2026-11-23",
+     "read": "full"
+    },
+    {
+     "n": 2,
+     "title": "Baseten Pricing",
+     "url": "https://www.baseten.co/pricing/",
+     "date": "2026-11-23",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "sides": {
+    "H1": "반박"
+   },
+   "side_basis": "같은 모델 토큰을 지연·우선순위·지역·가용성 보장으로 쪼개 0.5배~1.5배 이상으로 나눠 판다. 단일 가격 범용품이 아니라 서비스 등급으로 가격 차별을 한다는 증거다.",
+   "note": "등급별 물량 몫은 공개되지 않는다. OpenRouter 30분 표본에서 속도 등급 몫은 Kimi K3 22%, 나머지 모델 1~6%.",
+   "detail": {
+    "priority": 1.25,
+    "spot": 0.7,
+    "batch": 0.5,
+    "us_only": 1.5,
+    "baseten_fast_glm53": 1.5,
+    "baseten_fast_dsv41f": 2
+   }
+  }
+ ]
+}

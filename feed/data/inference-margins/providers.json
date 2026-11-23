@@ -1,0 +1,1569 @@
+{
+ "schema": 1,
+ "bundle": "P3",
+ "title": "사업자 손익 — 추론 플랫폼의 매출·마진·매출 구성·고객",
+ "updated_kst": "2026-11-23T16:47:33+09:00",
+ "measure": null,
+ "notes": [
+  "방향(sides)은 AI 의 해석이다.",
+  "누가 잰 값인지(회사 자기 보고·추정·제3자)는 definition 에 밝혔다.",
+  "조사 open-weight-substitution 에서 옮겨 온 기록은 note 끝에 그렇다고 적었다. 값과 출처는 그 조사의 3차 확인을 거친 그대로다."
+ ],
+ "summary": {
+  "records": 43,
+  "with_value": 35,
+  "by_hypothesis": {
+   "H1": {
+    "지지": 9,
+    "반박": 1,
+    "양쪽": 2,
+    "중립": 5
+   },
+   "H2": {
+    "지지": 16,
+    "반박": 2,
+    "양쪽": 7,
+    "중립": 8
+   },
+   "H3": {
+    "지지": 0,
+    "반박": 0,
+    "양쪽": 1,
+    "중립": 3
+   }
+  }
+ },
+ "records": [
+  {
+   "id": "fireworks-run-rate",
+   "country": "US",
+   "city": null,
+   "metric": "Fireworks AI 의 연환산 매출",
+   "value": 1.5,
+   "unit": "십억 달러",
+   "asof": "2026-09",
+   "basis": "3분기 말, 대표의 발언",
+   "definition": "Fireworks 대표가 무대에서 말한 자기 보고 값이다. 감사받지 않았고 자동 자막으로 받아 적었다.",
+   "quote": "we reached 1.5 billion revenue other than u revenue run rate",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Lin Qiao: Why AI Companies Are \"Scaling to Bankruptcy\" | TomorrowX Summit (iConnections, 영상)",
+     "url": "https://www.youtube.com/watch?v=ufMUsXzT7qc",
+     "date": "2026-11-20",
+     "read": "full"
+    },
+    {
+     "n": 2,
+     "title": "Menlo Ventures — 2026: The State of Enterprise AI",
+     "url": "https://menlovc.com/perspective/2026-the-state-of-enterprise-ai",
+     "date": "2026-11-03",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H2": "지지"
+   },
+   "side_basis": "트래픽 대부분이 맞춤 모델·맞춤 배포인 사업자가 연환산 15억 달러까지 컸다.",
+   "note": "Menlo 보고서는 Fireworks 와 Modal 이 올해 연환산 10억 달러를 넘었다고 적었다. 조사 open-weight-substitution 의 W3 기록을 옮겨 왔다."
+  },
+  {
+   "id": "fireworks-series-d-arr",
+   "country": "US",
+   "city": null,
+   "metric": "Fireworks AI 의 연환산 매출 — 시리즈 D 발표",
+   "value": 1,
+   "unit": "십억 달러",
+   "asof": "2026-07",
+   "basis": "회사 글. 하루 40조 토큰",
+   "definition": "회사가 직접 밝힌 값이다. 제3자 검증은 없다.",
+   "quote": "surpasses $1 billion in annualized revenue run rate and serves more than 40 trillion tokens every day",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Fireworks Raises $1.5 Billion Series D",
+     "url": "https://fireworks.ai/blog/fireworks-series-d-funding",
+     "date": "2026-07-15",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H2": "지지"
+   },
+   "side_basis": "같은 회사의 넉 달 전 값(10억 달러). 맞춤 중심 사업의 증가 속도를 보여 준다.",
+   "note": "TomorrowX 발언(15억 달러)보다 앞선 시점의 회사 공식 수치. 정의는 밝히지 않았다. 조사 open-weight-substitution 의 W3 기록을 옮겨 왔다."
+  },
+  {
+   "id": "fireworks-growth-ex-top-customer",
+   "country": "US",
+   "city": null,
+   "metric": "Fireworks 의 매출 증가 배수 — 최대 고객 제외, 9개월",
+   "value": 13,
+   "unit": "배",
+   "asof": "2026-09",
+   "basis": "대표의 발언. 진행자는 '약 1억 → 13억 달러'로 옮겼다",
+   "definition": "Fireworks 대표가 무대에서 말한 자기 보고 값이다. 감사받지 않았고 자동 자막으로 받아 적었다.",
+   "quote": "we have grown uh in the past nine months this year by 13 times",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Lin Qiao: Why AI Companies Are \"Scaling to Bankruptcy\" | TomorrowX Summit (iConnections, 영상)",
+     "url": "https://www.youtube.com/watch?v=ufMUsXzT7qc",
+     "date": "2026-11-20",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H2": "지지"
+   },
+   "side_basis": "최대 고객을 빼고도 9개월에 13배다. 매출이 한 고객에만 기대지 않는다는 회사 측 주장이다(자기 보고).",
+   "note": "최대 고객은 인수됐다고 했고 그 뒤 고객으로 남았는지는 말하지 않았다. 조사 open-weight-substitution 의 W3 기록을 옮겨 왔다."
+  },
+  {
+   "id": "fireworks-custom-traffic-share",
+   "country": "US",
+   "city": null,
+   "metric": "Fireworks 트래픽 가운데 맞춤 모델·맞춤 배포의 몫",
+   "value": 80,
+   "unit": "%(이상)",
+   "asof": "2026-11-17",
+   "basis": "대표의 발언. 고객 데이터로 학습한 모델과 범용 모델의 전용 배포를 묶은 값",
+   "definition": "Fireworks 대표가 무대에서 말한 자기 보고 값이다. 감사받지 않았고 자동 자막으로 받아 적었다.",
+   "quote": "I think more than 80% of the traffic goes that way",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Lin Qiao: Why AI Companies Are \"Scaling to Bankruptcy\" | TomorrowX Summit (iConnections, 영상)",
+     "url": "https://www.youtube.com/watch?v=ufMUsXzT7qc",
+     "date": "2026-11-20",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H2": "지지",
+    "H1": "지지"
+   },
+   "side_basis": "가장 큰 독립 사업자의 트래픽 80% 이상이 범용 모델의 토큰 재판매가 아니라 맞춤 모델·맞춤 배포다.",
+   "note": "그 부분만 6개월에 5배가 됐다고 했다. 기업 고객의 토큰은 6개월에 12배. 조사 open-weight-substitution 의 W3 기록을 옮겨 왔다.",
+   "detail": {
+    "custom_growth_6m": 5,
+    "enterprise_token_growth_6m": 12
+   }
+  },
+  {
+   "id": "fireworks-specialized-token-share",
+   "country": "US",
+   "city": null,
+   "metric": "Fireworks 토큰 가운데 고객 데이터로 특화한 모델의 몫 — 회사 글",
+   "value": 95,
+   "unit": "%(이상)",
+   "asof": "2026-07",
+   "basis": "시리즈 D 발표",
+   "definition": "회사가 직접 밝힌 값이다. 제3자 검증은 없다.",
+   "quote": "More than 95% of those tokens come from models specialized on customers’ proprietary data and optimized for specific jobs.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Fireworks Raises $1.5 Billion Series D",
+     "url": "https://fireworks.ai/blog/fireworks-series-d-funding",
+     "date": "2026-07-15",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H2": "지지"
+   },
+   "side_basis": "회사 글로는 토큰의 95% 이상이 고객 데이터로 특화한 모델에서 나온다. 무대 발언(80% 초과)과 정의가 다를 수 있다.",
+   "note": "TomorrowX 발언의 \"80% 초과\"와 수치가 다르다(정의 또는 시점 차이). 품질 동등성 근거는 아니어서 H2는 중립. 조사 open-weight-substitution 의 W3 기록을 옮겨 왔다."
+  },
+  {
+   "id": "fireworks-gross-margin",
+   "country": "US",
+   "city": null,
+   "metric": "Fireworks 의 매출총이익률",
+   "value": 50,
+   "unit": "%(약)",
+   "asof": "2026",
+   "basis": "추정. 투자자에게는 60%를 목표로 제시했다고 적었다",
+   "definition": "Sacra 의 추정이다. 회사가 확인한 값이 아니고 게시일이 없어 열람일을 적었다.",
+   "quote": "gross margin sits at approximately 50%, below the 70%-plus typical of subscription software businesses",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Fireworks AI revenue, valuation & funding | Sacra",
+     "url": "https://sacra.com/c/fireworks-ai/",
+     "date": "2026-11-20",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "low",
+   "sides": {
+    "H2": "양쪽"
+   },
+   "side_basis": "맞춤 중심 사업자의 매출총이익률이 약 50%다. 남기는 하지만 소프트웨어(70% 이상)에는 못 미친다. 상품별로 나뉜 값이 아니라 전용 배포가 더 남는지는 이 값으로 알 수 없다.",
+   "note": "GPU를 소유하지 않고 제3자에게서 조달한다는 점도 같은 페이지에 있다. 추정치. 조사 open-weight-substitution 의 W3 기록을 옮겨 왔다."
+  },
+  {
+   "id": "fireworks-own-compute",
+   "country": "US",
+   "city": null,
+   "metric": "Fireworks 의 자체 컴퓨트 계획",
+   "value": null,
+   "unit": "해당 없음",
+   "asof": "2026-11-17",
+   "basis": "대표의 발언. 시점·규모는 말하지 않았다",
+   "definition": "Fireworks 대표가 무대에서 말한 자기 보고 값이다. 감사받지 않았고 자동 자막으로 받아 적었다.",
+   "quote": "I think it's not a question of if, it's a question of when",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Lin Qiao: Why AI Companies Are \"Scaling to Bankruptcy\" | TomorrowX Summit (iConnections, 영상)",
+     "url": "https://www.youtube.com/watch?v=ufMUsXzT7qc",
+     "date": "2026-11-20",
+     "read": "full"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H2": "중립"
+   },
+   "side_basis": "지금은 GPU 를 갖지 않고 조달한 용량에서 돈다. 자체 컴퓨트로 가면 원가 구조가 바뀐다.",
+   "note": "지금은 GPU 를 갖지 않고 조달한 용량·고객 용량·협력사 용량에서 돈다. 조사 open-weight-substitution 의 W3 기록을 옮겨 왔다."
+  },
+  {
+   "id": "together-bookings-2q26",
+   "country": "US",
+   "city": null,
+   "metric": "Together AI 의 연간 수주",
+   "value": 1.15,
+   "unit": "십억 달러",
+   "asof": "2026-06",
+   "basis": "회사가 밝힌 값(TechCrunch). 수주는 다년 약정을 포함할 수 있다",
+   "definition": "회사가 직접 밝힌 값이다. 제3자 검증은 없다.",
+   "quote": "claims annual bookings of over $1.15 billion as of its last quarter",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Neocloud Together AI raises $800M, leaps to $8.3B valuation",
+     "url": "https://techcrunch.com/2026/07/01/neocloud-together-ai-raises-800m-leaps-to-8-3b-valuation",
+     "date": "2026-07-01",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H2": "중립"
+   },
+   "side_basis": "규모는 크지만 GPU 임대가 섞인 수주라 어느 상품에서 돈이 나는지는 가르지 않는다.",
+   "note": "수주(bookings)는 다년 약정을 포함할 수 있어 인식 매출과 다르다. 회사 발표이며 GPU 임대가 섞여 있다. 조사 open-weight-substitution 의 W3 기록을 옮겨 왔다."
+  },
+  {
+   "id": "together-api-share-of-revenue",
+   "country": "US",
+   "city": null,
+   "metric": "Together AI 매출 가운데 오픈 모델 토큰 API 의 몫",
+   "value": 35,
+   "unit": "%",
+   "asof": "2026",
+   "basis": "추정, 30~40%의 가운데 값. 나머지는 GPU 임대",
+   "definition": "Sacra 의 추정이다. 회사가 확인한 값이 아니고 게시일이 없어 열람일을 적었다.",
+   "quote": "accounts for roughly 30–40% of revenue and scales with inference volume",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Together AI revenue, valuation & funding | Sacra",
+     "url": "https://sacra.com/c/together-ai/",
+     "date": "2026-11-20",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "low",
+   "sides": {
+    "H1": "지지",
+    "H2": "양쪽"
+   },
+   "side_basis": "오픈 모델 토큰 API 는 매출의 30~40%이고 나머지는 GPU 임대다(추정). 토큰 재판매가 매출의 중심이 아니다. 다만 나머지가 사후 학습이 아니라 GPU 임대라 H2 를 그대로 받치지는 않는다.",
+   "note": "플랫폼 매출 전체를 오픈웨이트 추론 지출로 읽으면 과대 계상된다. 값은 범위의 중간값이며 원문은 30–40%. 조사 open-weight-substitution 의 W3 기록을 옮겨 왔다."
+  },
+  {
+   "id": "baseten-revenue-20x",
+   "country": "US",
+   "city": null,
+   "metric": "Baseten 의 1년 매출 증가 배수",
+   "value": 20,
+   "unit": "배",
+   "asof": "2026-06",
+   "basis": "시리즈 F 발표. 추론량은 40배. 절대 금액은 밝히지 않았다",
+   "definition": "회사가 직접 밝힌 값이다. 제3자 검증은 없다.",
+   "quote": "Over the last year, our revenue has grown 20x, and inference volume has grown 40x.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Announcing our Series F",
+     "url": "https://baseten.co/blog/announcing-our-series-f/",
+     "date": "2026-06-22",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H2": "지지"
+   },
+   "side_basis": "추론과 후속 학습을 함께 파는 사업자가 1년에 매출 20배를 냈다(자기 보고).",
+   "note": "절대 금액은 공개하지 않았다. 고객으로 Cursor·Notion·Harvey·Abridge 등을 들며 추론과 후속 학습을 함께 판다고 설명. 조사 open-weight-substitution 의 W3 기록을 옮겨 왔다."
+  },
+  {
+   "id": "baseten-arr-sacra-mar26",
+   "country": "US",
+   "city": null,
+   "metric": "Baseten 의 연환산 매출",
+   "value": 0.6,
+   "unit": "십억 달러",
+   "asof": "2026-03",
+   "basis": "추정. 2025-12 는 2억 달러",
+   "definition": "Sacra 의 추정이다. 회사가 확인한 값이 아니고 게시일이 없어 열람일을 적었다.",
+   "quote": "Sacra estimates that Baseten hit $600M in annualized revenue in March 2026",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Baseten revenue, valuation & funding | Sacra",
+     "url": "https://sacra.com/c/baseten/",
+     "date": "2026-11-20",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "low",
+   "sides": {
+    "H2": "중립"
+   },
+   "side_basis": "규모를 보여 주는 추정값이다.",
+   "note": "Sacra 추정치(제3자 리서치, 회사 공시 아님). 페이지에 게시일이 없어 열람일을 적음. 한 분기에 3배라는 수치는 회사가 확인하지 않았다. 조사 open-weight-substitution 의 W3 기록을 옮겨 왔다."
+  },
+  {
+   "id": "modal-run-rate-1b-oct26",
+   "country": "US",
+   "city": null,
+   "metric": "Modal 의 연환산 매출",
+   "value": 1,
+   "unit": "십억 달러",
+   "asof": "2026-10",
+   "basis": "회사 발표의 2차 요약. 약 3억 달러는 코드 실행 샌드박스",
+   "definition": null,
+   "quote": "Modal has crossed $1B in annualized run rate and raised a $750M Series D at a $15.75B post-money valuation",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Modal Hits $1B Run Rate: AI-Native Infrastructure's Breakout Moment",
+     "url": "https://futurumgroup.com/insights/modal-hits-1b-run-rate-ai-native-infrastructures-breakout-moment",
+     "date": "2026-10-15",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "low",
+   "sides": {
+    "H2": "중립"
+   },
+   "side_basis": "연환산 10억 달러 가운데 약 3억 달러가 코드 실행 샌드박스로 모델 추론이 아니다. 어느 상품에서 남는지는 가르지 않는다.",
+   "note": "10억 달러 중 약 3억 달러는 코드 실행 샌드박스로 모델 추론이 아니다. 2차 출처. 조사 open-weight-substitution 의 W3 기록을 옮겨 왔다."
+  },
+  {
+   "id": "applied-compute-arr-100m",
+   "country": "US",
+   "city": null,
+   "metric": "Applied Compute 의 연환산 반복 매출",
+   "value": 0.1,
+   "unit": "십억 달러(초과)",
+   "asof": "2026-11",
+   "basis": "투자 유치 발표. 연구원 지원 매출이 섞여 있다",
+   "definition": "회사가 직접 밝힌 값이다. 제3자 검증은 없다.",
+   "quote": "annualized recurring revenue has topped $100 million",
+   "sources": [
+    {
+     "n": 1,
+     "title": "AI cloud startup Applied Compute raises $350M after reaching key revenue milestone",
+     "url": "https://siliconangle.com/2026/11/03/ai-cloud-startup-applied-compute-raises-350m-after-reaching-key-revenue-milestone/",
+     "date": "2026-11-04",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H2": "지지"
+   },
+   "side_basis": "사후 학습만 하는 회사가 출범 18개월 안에 연환산 1억 달러를 넘겼다. 용역 매출이 섞였다.",
+   "note": "후속 학습 전문 업체로 출범 18개월 미만. 연구원 지원(용역) 매출이 섞여 있어 반복 매출 정의가 불분명하다. 조사 open-weight-substitution 의 W3 기록을 옮겨 왔다."
+  },
+  {
+   "id": "nebius-token-factory-run-rate",
+   "country": "NL",
+   "city": null,
+   "metric": "Nebius Token Factory 의 계약액 증가",
+   "value": null,
+   "unit": "해당 없음",
+   "asof": "2026-09",
+   "basis": "3분기 실적 발표. 전 분기의 17배, 연환산은 '수억 달러대'에 가깝다고만 밝혔다",
+   "definition": "회사가 직접 밝힌 값이다. 제3자 검증은 없다.",
+   "quote": "logging a 17-fold quarter-over-increase in contract value",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Shares of AI cloud operator Nebius drop 16%+ despite strong earnings results",
+     "url": "https://siliconangle.com/?p=854058",
+     "date": "2026-11-12",
+     "read": "full"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H3": "중립"
+   },
+   "side_basis": "클라우드 사업자(네오클라우드)의 추론 상품이 한 분기에 계약액 17배다. 독립 사업자와 같은 시장에 GPU 소유자가 들어온 사례다.",
+   "note": "정확한 매출 수치는 공개하지 않았다. 계약액 기준이라 인식 매출과 다르고, 회사 전체 연환산 64억 달러(검색 요약)에 비하면 작은 부분이다. 조사 open-weight-substitution 의 W3 기록을 옮겨 왔다."
+  },
+  {
+   "id": "menlo-post-training-adoption",
+   "country": "ZZ",
+   "city": null,
+   "metric": "사후 학습을 하는 AI 빌더의 비중",
+   "value": 10,
+   "unit": "%",
+   "asof": "2026",
+   "basis": "Menlo 조사, 2025년 6%",
+   "definition": "Menlo Ventures 의 추정이다. 산출 방법은 확인하지 않았다. Menlo 는 Anthropic 과 Fireworks 양쪽의 주주다.",
+   "quote": "Adoption rose from 6% of AI builders in 2025 to 10% this year, but it remains limited.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Menlo Ventures — 2026: The State of Enterprise AI",
+     "url": "https://menlovc.com/perspective/2026-the-state-of-enterprise-ai",
+     "date": "2026-11-03",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H2": "지지"
+   },
+   "side_basis": "사후 학습을 하는 AI 빌더가 1년에 6%에서 10%로 늘었다. 그 가운데 대부분이 바깥 협력사를 쓴다.",
+   "note": "하는 곳의 91%가 바깥 협력사를 쓴다(인프라 50%, 전문가 데이터·평가 41%, 전문 업체 30%). 조사 open-weight-substitution 의 W3 기록을 옮겨 왔다.",
+   "detail": {
+    "year_ago": 6,
+    "use_outside_partners": 91
+   }
+  },
+  {
+   "id": "ramp-adoption-sep26",
+   "country": "ZZ",
+   "city": null,
+   "metric": "AI 에 돈을 쓰는 기업 가운데 모델 서빙 플랫폼을 쓰는 비율",
+   "value": 6.4,
+   "unit": "%",
+   "asof": "2026-08",
+   "basis": "2026-01 4.5%, 06 5.8%, 07 6.1%",
+   "definition": "Ramp 의 법인카드·청구 자료다. 미국 중소·성장 기업 표본이고 모델 서빙 플랫폼 결제를 오픈 모델 사용의 대리 지표로 썼다.",
+   "quote": "Only 6.4% of AI spending businesses use them and 3.6% of businesses overall",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Cracks in the AI Thesis Part 2",
+     "url": "https://ramp.com/data/ai-index-sept-2026",
+     "date": "2026-09-09",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H2": "중립"
+   },
+   "side_basis": "모델 서빙 플랫폼에 돈을 쓰는 기업은 6.4%다. 시장의 크기를 보여 줄 뿐 어느 상품에서 돈이 나는지는 가르지 않는다.",
+   "note": "4.5%(1월)→5.8%(6월)→6.1%→6.4%로 오르지만 속도가 느리다. Ramp는 실제 채택이 이보다 낮을 것이라고 단서를 단다. 조사 open-weight-substitution 의 W3 기록을 옮겨 왔다.",
+   "detail": {
+    "2026-01": 4.5,
+    "2026-06": 5.8,
+    "2026-07": 6.1
+   }
+  },
+  {
+   "id": "groq-nvidia-nonexclusive-license-2025-12",
+   "country": "US",
+   "city": null,
+   "metric": "엔비디아-Groq 추론 기술 비독점 라이선스·창업자·사장 엔비디아 이동(사업 정리 사례)",
+   "value": null,
+   "unit": "해당 없음",
+   "asof": "2025-12",
+   "basis": "Groq 공식 발표문. 거래 금액은 발표문에 없음(CNBC 200억 달러 보도는 회사 미확인)",
+   "definition": "Groq 자기 발표. 금액 미공개",
+   "quote": "Jonathan Ross, Groq's Founder, Sunny Madra, Groq's President, and other members of the Groq team will join Nvidia ... Groq will continue to operate as an independent company with Simon Edwards stepping into the role of Chief Executive Officer. GroqCloud will continue to operate without interruption.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Groq and Nvidia Enter Non-Exclusive Inference Technology Licensing Agreement",
+     "url": "https://groq.com/newsroom/groq-and-nvidia-enter-non-exclusive-inference-technology-licensing-agreement-to-accelerate-ai-inference-at-global-scale",
+     "date": "2025-12-24",
+     "read": "full"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "high",
+   "sides": {
+    "H1": "양쪽"
+   },
+   "side_basis": "자체 칩 기반 토큰 API 사업자의 핵심 인력·기술이 칩 회사로 넘어가고 GroqCloud 만 남았다. 토큰 API 자체보다 기술 가치가 컸다고 읽을 수 있으나 손익 수치는 없다.",
+   "note": "인수가 아니라 비독점 라이선스+인력 이동 구조. 금액(200억 달러)은 CNBC 보도로만 있고 회사 확인 없음.",
+   "detail": {
+    "reported_price": "CNBC 보도 200억 달러 현금(회사 미확인, search_summary)"
+   }
+  },
+  {
+   "id": "nebius-q3-2026-customer-concentration",
+   "country": "NL",
+   "city": null,
+   "metric": "Nebius 2026년 3분기 매출 중 상위 두 고객 몫",
+   "value": 55,
+   "unit": "% (22%+33%)",
+   "asof": "2026-09",
+   "basis": "분기 매출 대비 두 대형 고객 몫 22%, 33%. 정리 사이트가 회사 분기 자료를 요약한 값",
+   "definition": "Panabee 요약(원 출처는 회사 6-K로 보이나 원문 미확인). 이해관계 없음",
+   "quote": "Customer concentration remained prominent, with two major clients accounting for 22% and 33% of quarterly revenue, respectively.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Nebius Q3 Revenue Surges 571% to $981 Million",
+     "url": "https://www.panabee.com/news/nebius-earnings-q3-2026",
+     "date": "2026-11-12",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H2": "중립"
+   },
+   "side_basis": "회사 전체(대부분 GPU 임대)의 고객 집중이다. 추론 상품만의 집중은 아니어서 H2 를 직접 가르지 못한다.",
+   "note": "Nebius 는 GPU 클라우드 전체 값이며 Token Factory(오픈 모델 추론) 몫은 공개되지 않음. 같은 분기 매출 9.81억 달러 중 3.25억 달러가 일회성 파트너십 매출.",
+   "detail": {
+    "q3_revenue_musd": 980.8,
+    "nonrecurring_partnership_musd": 325.1,
+    "cost_of_revenue_pct": 22,
+    "adj_ebitda_margin_pct": 47
+   }
+  },
+  {
+   "id": "nebius-token-factory-run-rate-2026q3",
+   "country": "NL",
+   "city": null,
+   "metric": "Nebius Token Factory(오픈·맞춤 모델 관리형 추론) 연환산 매출 규모와 수주액 증가",
+   "value": null,
+   "unit": "달러/년(수억 달러대, 정확한 값 미공개)",
+   "asof": "2026-09",
+   "basis": "회사 주주서한 문구 '수억 달러대 연환산에 다가감', 3분기 수주액(contract value) 전 분기 대비 17배. 같은 서한의 회사 전체 ARR 은 64억 달러",
+   "definition": "Nebius 자기 보고(상장사 주주서한, 미감사). 추론 사업 성장을 강조할 이해관계",
+   "quote": "Token Factory, our managed inference platform, is approaching a multi-hundred-million-dollar run rate, with contract value growing 17x quarter-on-quarter in Q3.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Nebius Q3 2026 Letter to Shareholders",
+     "url": "https://assets.nebius.com/assets/51f8e479-732f-4e56-bade-a6bde21024ab/SHL%20%282%29.pdf",
+     "date": "2026-11-12",
+     "read": "full"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "high",
+   "sides": {
+    "H3": "중립",
+    "H2": "중립"
+   },
+   "side_basis": "GPU 클라우드 사업자가 오픈 모델 관리형 추론을 붙여 빠르게 키운다는 값. 회사 전체 ARR 64억 달러 대비 수 % 수준이라 추론 API 가 아직 작은 부분임을 보여 준다.",
+   "note": "Token Factory 단독 매출·마진은 공개 안 함. 서한은 서버리스와 전용 엔드포인트를 나누지 않는다.",
+   "detail": {
+    "company_arr_busd": 6.4,
+    "contract_value_qoq": "17x",
+    "launch": "출시 1년 미만"
+   }
+  },
+  {
+   "id": "nebius-token-factory-upsell-to-dedicated",
+   "country": "NL",
+   "city": null,
+   "metric": "Nebius 고객 확장 경로: Token Factory → 전용 인프라, 사후 학습 → 추론",
+   "value": null,
+   "unit": "해당 없음",
+   "asof": "2026-09",
+   "basis": "주주서한의 고객 확장 경로 서술(정성)",
+   "definition": "Nebius 자기 보고. 플랫폼 묶음 판매를 강조할 이해관계",
+   "quote": "Seeing expansion from every starting point: customers moving from preemptible to reserved capacity, from one GPU generation to the next, and from Token Factory into dedicated infrastructure.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Nebius Q3 2026 Letter to Shareholders",
+     "url": "https://assets.nebius.com/assets/51f8e479-732f-4e56-bade-a6bde21024ab/SHL%20%282%29.pdf",
+     "date": "2026-11-12",
+     "read": "full"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "high",
+   "sides": {
+    "H2": "지지"
+   },
+   "side_basis": "토큰 API 를 입구로 쓰고 전용 인프라·예약 용량으로 넘겨 매출을 키운다는 회사 자기 설명. 사후 학습 고객(Applied Compute, Cursive)이 같은 플랫폼 추론으로 넘어왔다는 서술도 함께 있다.",
+   "note": "같은 서한: 'Post-training ... sells on infrastructure we already run – the training clusters and Token Factory – which is how Applied Compute and Cursive moved from post-training into inference without leaving the platform.' 수치는 없음.",
+   "detail": {
+    "post_training_quote": "Post-training lets customers adapt models to their own data and serve them on Nebius. It sells on infrastructure we already run"
+   }
+  },
+  {
+   "id": "deepinfra-implied-revenue-per-mtok",
+   "country": "US",
+   "city": null,
+   "metric": "DeepInfra 매출÷처리 토큰으로 본 평균 실현 단가",
+   "value": 0.092,
+   "unit": "달러/100만 토큰",
+   "asof": "2026-09",
+   "basis": "계산: 1.05억 달러 ÷ (22조 토큰/주 × 52주 = 1,144조 토큰/년) = 100만 토큰당 약 0.092달러. 입력·출력 토큰 합산, 연환산 매출은 전용 배포 매출도 포함할 수 있어 토큰 단가의 상한에 가깝다",
+   "definition": "데스크 계산. 원 숫자는 회사 자기 보고",
+   "quote": "annualized revenue run rate of more than $105 million ... processing 22 trillion tokens per week",
+   "sources": [
+    {
+     "n": 1,
+     "title": "DeepInfra Surpasses $100 Million ARR And 22 Trillion Tokens Per Week",
+     "url": "https://pulse2.com/deepinfra-surpasses-100-million-arr-and-22-trillion-tokens-per-week/",
+     "date": "2026-09-29",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "low",
+   "sides": {
+    "H1": "지지"
+   },
+   "side_basis": "토큰당 평균 실현 매출이 100만 토큰당 10센트 안팎이면 서버리스 오픈 모델 토큰이 매우 싼 값에 팔리고 있다는 뜻이다. 원가 값이 없어 마진은 판정 못 한다.",
+   "note": "ARR 시점과 주간 토큰 시점이 같다고 가정. 입력 토큰(캐시 포함)이 대부분이면 출력 단가와 직접 비교할 수 없다.",
+   "detail": {
+    "arr_usd": 105000000,
+    "tokens_per_year": 1144000000000000
+   }
+  },
+  {
+   "id": "fireworks-ondemand-gpu-rate-card-2026-11",
+   "country": "US",
+   "city": null,
+   "metric": "Fireworks 전용 배포(On Demand) GPU 한 장 시간당 공개 가격",
+   "value": 8,
+   "unit": "달러/GPU-시간(H100)",
+   "asof": "2026-11",
+   "basis": "공개 가격표: H100 80GB 8.00, H200 8.00, B200 13.00, B300 15.00, GB300 20.00 달러/시간. 서빙·학습 같은 요율, 초 단위 과금. 지역 제한 배포 1.5배. 1년 예약은 더 낮은 요율(값 미공개)",
+   "definition": "Fireworks 자기 공개 가격표(정가). 실제 계약가는 할인 가능",
+   "quote": "One GPU rate card for serving and training. On Demand bills per GPU-second and the Dedicated Training API per GPU-hour, from the same rates.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Fireworks AI Pricing",
+     "url": "https://fireworks.ai/pricing",
+     "date": "2026-11-23",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "sides": {
+    "H2": "지지"
+   },
+   "side_basis": "같은 날 같은 H100 이 DeepInfra 2.90, Together GPU 클러스터 온디맨드 3.99 달러인데 Fireworks 전용 배포 정가는 8.00 달러다. 전용 배포에 GPU 원가 위로 큰 소프트웨어·서비스 가산이 붙어 있다는 정황.",
+   "note": "같은 페이지: 'Fireworks is a first-party provider in Microsoft Foundry, so usage counts toward your Microsoft Azure Consumption Commitment.' (H3 관련: 독립 사업자가 하이퍼스케일러 약정 소진 경로로 판다)",
+   "detail": {
+    "H100": 8,
+    "H200": 8,
+    "B200": 13,
+    "B300": 15,
+    "GB300": 20,
+    "region_restricted_multiplier": 1.5
+   }
+  },
+  {
+   "id": "together-dedicated-vs-cluster-gpu-price-2026-11",
+   "country": "US",
+   "city": null,
+   "metric": "Together 전용 추론(Dedicated Inference) 대 GPU 클러스터 임대 GPU 시간당 값",
+   "value": 5.49,
+   "unit": "달러/GPU-시간(H100 전용 추론 온디맨드)",
+   "asof": "2026-11",
+   "basis": "공개 가격표. 전용 추론: H100 5.49, H200 5.99, B200 9.29, B300 11.49, GB300 NVL72 15.79. GPU 클러스터: H100 선점형 1.99·온디맨드 3.99·예약(91일+) 3.45, H200 2.99/5.99/4.15, B200 4.65/9.29/7.99, B300 5.75/11.49/9.89",
+   "definition": "Together 자기 공개 정가. 예약 전용 추론은 '영업 문의'",
+   "quote": "Most teams start with serverless inference and move to dedicated endpoints at scale.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Together AI Pricing",
+     "url": "https://www.together.ai/pricing",
+     "date": "2026-11-23",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "sides": {
+    "H2": "양쪽"
+   },
+   "side_basis": "H100 은 전용 추론이 클러스터 온디맨드보다 38%, 91일 예약보다 59% 비싸 관리형 가산이 있다. 그러나 H200·B200·B300 은 전용 추론 정가가 클러스터 온디맨드와 같아 최신 칩에서는 전용 추론 가산이 정가상 0 이다.",
+   "note": "계산: H100 5.49/3.99=1.38배, 5.49/3.45=1.59배, 5.49/1.99=2.76배. B200 9.29/9.29=1.0배. 전용 엔드포인트로 옮겨 간다는 문장은 회사 자기 설명.",
+   "detail": {
+    "dedicated": {
+     "H100": 5.49,
+     "H200": 5.99,
+     "B200": 9.29,
+     "B300": 11.49,
+     "GB300_NVL72": 15.79
+    },
+    "cluster_preemptible": {
+     "H100": 1.99,
+     "H200": 2.99,
+     "B200": 4.65,
+     "B300": 5.75
+    },
+    "cluster_ondemand": {
+     "H100": 3.99,
+     "H200": 5.99,
+     "B200": 9.29,
+     "B300": 11.49
+    },
+    "cluster_reserved_91d": {
+     "H100": 3.45,
+     "H200": 4.15,
+     "B200": 7.99,
+     "B300": 9.89
+    }
+   }
+  },
+  {
+   "id": "baseten-dedicated-gpu-price-2026-11",
+   "country": "US",
+   "city": null,
+   "metric": "Baseten 전용 배포 GPU 시간당 공개 가격",
+   "value": 6.5,
+   "unit": "달러/GPU-시간(H100)",
+   "asof": "2026-11",
+   "basis": "공개 가격표(분당 과금): H100 0.10833/분≈6.50/시간, B200 0.16633/분≈9.98/시간, H100 MIG 3.75, A100 4.00",
+   "definition": "Baseten 자기 공개 정가",
+   "quote": "GPU H100 Memory 80 GiB VRAM Per Minute $0.10833 Approx / hour $6.50",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Baseten Pricing",
+     "url": "https://www.baseten.co/pricing/",
+     "date": "2026-11-23",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "sides": {
+    "H2": "지지"
+   },
+   "side_basis": "같은 H100 GPU 임대 시장가(Together 클러스터 3.45~3.99, DeepInfra 2.90)보다 1.6~2.2배 높은 전용 배포 정가. 관리형 추론 가산이 정가에 있다.",
+   "note": "정가이며 대형 고객 계약가는 미공개.",
+   "detail": {
+    "H100": 6.5,
+    "B200": 9.98,
+    "H100_MIG": 3.75,
+    "A100": 4
+   }
+  },
+  {
+   "id": "deepinfra-dedicated-gpu-price-2026-11",
+   "country": "US",
+   "city": null,
+   "metric": "DeepInfra 전용 GPU(자기 모델 배포) 시간당 공개 가격",
+   "value": 2.9,
+   "unit": "달러/GPU-시간(H100)",
+   "asof": "2026-11",
+   "basis": "공개 가격표: A100 1.49, H100 2.90, H200 3.49, B200 4.89, B300 5.89 달러/GPU-시간, 분 단위 과금·주 단위 청구",
+   "definition": "DeepInfra 자기 공개 정가",
+   "quote": "You can deploy your own model on our hardware and pay for uptime. ... H100 80GB $2.90 / GPU-hour",
+   "sources": [
+    {
+     "n": 1,
+     "title": "DeepInfra Pricing",
+     "url": "https://deepinfra.com/pricing",
+     "date": "2026-11-23",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "sides": {
+    "H2": "반박"
+   },
+   "side_basis": "같은 '전용 배포' 상품을 Fireworks(8.00)의 36%, Baseten(6.50)의 45% 값에 판다. 전용 배포도 사업자 간 가격 경쟁이 붙으면 GPU 임대가 수준으로 내려온다는 반대 쪽 정황.",
+   "note": "B200 4.89 는 Fireworks 13.00 의 38%, Together 9.29 의 53%.",
+   "detail": {
+    "A100": 1.49,
+    "H100": 2.9,
+    "H200": 3.49,
+    "B200": 4.89,
+    "B300": 5.89
+   }
+  },
+  {
+   "id": "fireworks-arr-tokens-specialized-share-2026-07",
+   "country": "US",
+   "city": null,
+   "metric": "Fireworks ARR 증가(2025-10→2026-07)와 맞춤(특화) 모델 토큰 몫",
+   "value": 1,
+   "unit": "십억 달러(ARR, '훨씬 넘음'의 하한)",
+   "asof": "2026-07",
+   "basis": "투자사 글: ARR 2.8억 달러(2025-10) → 10억 달러를 훨씬 넘음(2026-07). 일 처리 토큰 15조 → 43조 초과. 토큰의 약 3분의 2가 특화(맞춤) 모델",
+   "definition": "Index Ventures(시리즈 D 공동 주도 투자사)의 자기 투자 발표 글. 투자사 이해관계",
+   "quote": "the company's ARR has grown from $280 million to well over $1 billion, while daily tokens served have nearly tripled, from 15 trillion to more than 43 trillion. Around two-thirds of those tokens now come from specialized models",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Candid with Index: In Conversation with Fireworks' Lin Qiao",
+     "url": "https://www.indexventures.com/perspectives/candid-with-index-in-conversation-with-fireworks-lin-qiao/",
+     "date": "2026-07-16",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "sides": {
+    "H2": "지지"
+   },
+   "side_basis": "토큰의 3분의 2가 고객이 맞춤화한 특화 모델에서 나온다. 범용 공개 모델 그대로의 서버리스가 아니라 고객 데이터를 묶은 쪽으로 물량이 옮겨 간다는 정황(데스크의 '트래픽 80% 이상 맞춤' 값과는 기준이 다름: 토큰 3분의 2).",
+   "note": "SiliconANGLE(2026-07-16)도 연환산 매출 10억 달러 돌파·일 40조 토큰 이상·서버리스와 전용 배포(Deployments) 두 추론 상품을 적음(raw: fireworks-seriesE-siliconangle.html). 시리즈 D 15억 달러, 기업가치 175억 달러.",
+   "detail": {
+    "arr_2025_10_musd": 280,
+    "tokens_per_day_2025_10_trillion": 15,
+    "tokens_per_day_2026_07_trillion": 43,
+    "specialized_token_share": "약 2/3",
+    "series_d_busd": 1.5,
+    "valuation_busd": 17.5
+   }
+  },
+  {
+   "id": "fireworks-implied-revenue-per-mtok-2026-07",
+   "country": "US",
+   "city": null,
+   "metric": "Fireworks ARR÷일 처리 토큰으로 본 평균 실현 매출",
+   "value": 0.064,
+   "unit": "달러/100만 토큰",
+   "asof": "2026-07",
+   "basis": "계산: 10억 달러 ÷ (43조 토큰/일 × 365 = 1.57경 토큰/년) ≈ 100만 토큰당 0.064달러. ARR 은 '10억 달러를 훨씬 넘음'이라 하한, 전용 배포·미세조정 매출이 포함돼 토큰 단가의 상한 성격이 섞임",
+   "definition": "데스크 계산. 원 숫자는 투자사 공개",
+   "quote": "ARR has grown from $280 million to well over $1 billion ... more than 43 trillion",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Candid with Index: In Conversation with Fireworks' Lin Qiao",
+     "url": "https://www.indexventures.com/perspectives/candid-with-index-in-conversation-with-fireworks-lin-qiao/",
+     "date": "2026-07-16",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "low",
+   "sides": {
+    "H1": "양쪽"
+   },
+   "side_basis": "토큰당 평균 매출이 DeepInfra 계산값(약 0.09)과 같은 10센트 이하 대역이다. 처리량 대부분이 싼 입력·캐시 토큰이거나 GPU 시간 과금 전용 배포에 속한다는 뜻일 수 있어 방향은 판정 못 한다.",
+   "note": "DeepInfra 같은 방식 계산(약 0.092)과 견줄 수 있음. 2025-10 값으로는 2.8억 ÷ (15조×365) ≈ 0.051.",
+   "detail": {
+    "calc_2025_10": 0.051
+   }
+  },
+  {
+   "id": "sambanova-intel-acquisition-collapsed-2026",
+   "country": "US",
+   "city": null,
+   "metric": "인텔의 SambaNova 인수(약 16억 달러) 무산 후 3.5억 달러 투자·협력으로 전환",
+   "value": 1.6,
+   "unit": "십억 달러(보도된 인수가, 무산)",
+   "asof": "2026-02",
+   "basis": "전문 조사사 기사: 2026년 1월 인수 협상 결렬, 2월 인텔이 시리즈 F 에 3.5억 달러 투자·다년 협력 계약",
+   "definition": "Jon Peddie Research 기사(제3자). 회사 원문 미확인",
+   "quote": "Prior to the partnership announcement, Intel pursued a full acquisition of SambaNova at a reported valuation of $1.6 billion. Negotiations collapsed without a transaction in January 2026.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Ok, no wedding, but can we still date (Jon Peddie Research)",
+     "url": "https://www.jonpeddie.com/news/ok-no-wedding-but-can-we-still-date/",
+     "date": "2026-02",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H1": "중립"
+   },
+   "side_basis": "자체 칩 추론 클라우드 사업자의 정리 시도 사례. 인수가 16억 달러는 과거 기업가치 대비 낮은 값으로 보도됐으나 손익 수치는 없다.",
+   "note": "SambaNova 는 자체 추론 클라우드와 온프레미스 클러스터를 함께 판다. 인텔 CEO 립부 탄이 SambaNova 회장(협상 회피).",
+   "detail": {
+    "intel_investment_musd": 350,
+    "collapse": "2026-01"
+   }
+  },
+  {
+   "id": "baseten-ceo-own-entire-loop",
+   "country": "US",
+   "city": null,
+   "metric": "Baseten 대표: 추론에서 학습·평가·미세조정까지 전 과정을 갖겠다",
+   "value": null,
+   "unit": "해당 없음",
+   "asof": "2025-09",
+   "basis": "대표 인터뷰 발언(정성)",
+   "definition": "Baseten 대표 자기 발언(PYMNTS 인터뷰). 1.5억 달러 투자 유치 시점",
+   "quote": "For us, inference is one part of AI infrastructure. Beyond that, there's training, evaluation, fine-tuning. We really want to own that entire loop.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Baseten Wants to Be the AWS of AI Inference. It Just Raised $150 Million to Try",
+     "url": "https://www.pymnts.com/?p=3053508",
+     "date": "2025-09-22",
+     "read": "full"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H2": "지지"
+   },
+   "side_basis": "추론 단독이 아니라 사후 학습·미세조정을 묶어 고객을 잡겠다는 경영진 전략 발언. 매출 구성 수치는 아니다.",
+   "note": "같은 기사: 'Our biggest customers five years from now don't exist today.' 기사 날짜는 1.5억 달러 시리즈 D 시점(2025)으로 보이나 원문 날짜 필드 미확인."
+  },
+  {
+   "id": "cerebras-q3-2026-cloud-gross-margin",
+   "country": "US",
+   "city": null,
+   "metric": "Cerebras 클라우드·서비스(추론 임대 중심) 부문 GAAP 매출총이익률",
+   "value": 24.3,
+   "unit": "%",
+   "asof": "2026-09",
+   "basis": "계산: 회사 손익계산서 3분기 클라우드·기타 서비스 매출 141.928백만 달러, 원가 107.425백만 달러 → (141.928−107.425)/141.928 = 24.3%. 9개월 누적 350.732/251.135 → 28.4%. 전년 3분기 38.920/32.610 → 16.2%. 하드웨어 3분기 68.881/61.290 → 11.0%",
+   "definition": "Cerebras 자기 보고(상장사 실적 보도자료, 미감사). GAAP 는 고객 워런트 상각·데이터센터 통과 매출 포함",
+   "quote": "GAAP cloud and other services revenue: Record $141.9 million, up 265% year-over-year ... Core gross margin: 41% up both sequentially and year-over-year",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Cerebras Systems Delivers Record Revenue in Third Quarter 2026, Raises Full-Year Outlook",
+     "url": "https://finviz.com/news/422151/cerebras-systems-delivers-record-revenue-in-third-quarter-2026-raises-full-year-outlook",
+     "date": "2026-11-12",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "sides": {
+    "H1": "중립",
+    "H2": "양쪽"
+   },
+   "side_basis": "자체 칩으로 만든 추론 용량을 대형 고객(OpenAI)에게 전용으로 빌려주는 사업의 GAAP 총이익률이 24% 수준이다. 전용 용량 계약이 매출을 키우지만 마진은 아직 얇다는 반대 쪽 값이기도 하다.",
+   "note": "회사 전체 '코어' 총이익률 41%(조정치), 4분기 가이던스 47~49%. 클라우드 부문만의 코어 마진은 보도자료에 따로 없음. 오픈 모델 토큰 API 매출은 따로 공개 안 함.",
+   "detail": {
+    "q3_cloud_rev_musd": 141.928,
+    "q3_cloud_cost_musd": 107.425,
+    "9m_cloud_gm_pct": 28.4,
+    "q3_2025_cloud_gm_pct": 16.2,
+    "q3_hw_gm_pct": 11,
+    "core_gm_pct": 41,
+    "q4_core_gm_guide": "47-49%",
+    "backlog_busd": 26.1
+   }
+  },
+  {
+   "id": "cerebras-customer-concentration-2026q3",
+   "country": "US",
+   "city": null,
+   "metric": "Cerebras 3분기 매출 중 MBZUAI·OpenAI 몫",
+   "value": 72,
+   "unit": "% (MBZUAI 38 + OpenAI 34)",
+   "asof": "2026-09",
+   "basis": "언론 보도(10-Q 인용으로 보임). 수주잔고 261억 달러 대부분이 OpenAI 계약(NextPlatform 원문)",
+   "definition": "보도 요약. 10-Q 원문은 sec.gov 차단으로 미확인",
+   "quote": "Mohamed bin Zayed University of Artificial Intelligence accounted for 38% and OpenAI for 34%.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Cerebras revenue climbs 55% in Q3 2026 but lands below Wall Street estimates",
+     "url": "https://cryptobriefing.com/cerebras-q3-2026-earnings-revenue-miss/",
+     "date": "2026-11-12",
+     "read": "search_summary"
+    },
+    {
+     "n": 2,
+     "title": "Cerebras Readies CS-5 Systems For 2027 Launch As It Bags Another Hyperscaler",
+     "url": "https://www.nextplatform.com/compute/2026/11/14/cerebras-readies-cs-5-systems-for-2027-launch-as-it-bags-another-hyperscaler/5309932",
+     "date": "2026-11-14",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "low",
+   "sides": {
+    "H2": "반박"
+   },
+   "side_basis": "전용 추론 용량 매출이 두 고객에 70% 넘게 몰려 있다. 전용 배포 매출이 소수 고객 의존이라는 반대 쪽 증거.",
+   "note": "NextPlatform 원문: 'most of its revenue backlog and all of its incremental revenue is coming from that OpenAI deal'. 하드웨어 마진이 낮은 이유로 대표가 초기 고객(G42 추정)과 몇 년 전 맺은 공격적 가격을 들었다고 적음.",
+   "detail": {
+    "backlog_busd": 26.1,
+    "openai_q2_share_pct": 32
+   }
+  },
+  {
+   "id": "modal-run-rate-sandboxes-share-2026-10",
+   "country": "US",
+   "city": null,
+   "metric": "Modal 연환산 매출과 그중 Sandboxes(AI 생성 코드 실행) 몫",
+   "value": 0.3,
+   "unit": "십억 달러(Sandboxes 연환산)",
+   "asof": "2026-10",
+   "basis": "회사 발표를 옮긴 기사: 전체 연환산 10억 달러 초과, Sandboxes 연환산 3억 달러(약 30%). 계산 방식·고객별 매출 미공개. 5월 시리즈 C 때는 연환산 3억 달러 초과",
+   "definition": "Modal 자기 보고(투자 유치 발표). 기사 본문 일부만 공개(나머지 유료·가입 벽)",
+   "quote": "Modal says usage has tripled since then and its Sandboxes product has a $300M run rate.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Modal raises $750M at a $15.75B valuation as run rate tops $1B",
+     "url": "https://runtimewire.com/article/modal-750m-series-d-1b-run-rate",
+     "date": "2026-10-14",
+     "read": "partial"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H2": "중립",
+    "H1": "중립"
+   },
+   "side_basis": "추론 사업자로 묶이는 회사의 매출 30% 가 추론이 아닌 에이전트 코드 실행(CPU 성격)에서 나온다. 돈이 토큰 판매 밖의 인접 상품으로도 옮겨 간다는 정황이나 H1·H2 어느 쪽 직접 증거는 아니다.",
+   "note": "시리즈 D 7.5억 달러, 기업가치 157.5억 달러(Accel 주도). Modal 은 토큰 API 보다 서버리스 GPU 함수(초 단위 과금)가 본업.",
+   "detail": {
+    "total_run_rate_busd": ">1.0",
+    "series_c_run_rate_musd": ">300 (2026-05)",
+    "series_d_musd": 750,
+    "valuation_busd": 15.75
+   }
+  },
+  {
+   "id": "groq-cloud-loss-2025-sacra",
+   "country": "US",
+   "city": null,
+   "metric": "GroqCloud(자체 칩 토큰 API) 2025년 클라우드 매출 대 클라우드 비용",
+   "value": -60,
+   "unit": "% (클라우드 부문 손익률, 대략)",
+   "asof": "2025",
+   "basis": "계산: 정리 사이트가 투자자 문서를 인용한 '클라우드 매출 4,000만 달러 초과, 클라우드 비용 6,400만 달러 초과' → (40−64)/40 ≈ −60%. 두 값 모두 '초과'라 근사. 2025년 매출 목표는 20억 달러 초과 → 5억 달러 초과로 낮췄고, 엔비디아 거래 무렵 연 매출은 약 1억 달러",
+   "definition": "Sacra 추정·정리(원 투자자 문서 미확인). 이해관계 없음",
+   "quote": "Groq's cloud business was operating at a loss in 2025, with investor documents showing more than $40M in cloud revenue against more than $64M in cloud expenses.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Groq revenue, valuation & funding | Sacra",
+     "url": "https://sacra.com/c/groq",
+     "date": "2026-11-23",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "low",
+   "sides": {
+    "H1": "지지"
+   },
+   "side_basis": "오픈 모델 토큰을 서버리스로 파는 GroqCloud 가 비용이 매출의 1.6배로 적자였다. 토큰 되팔기가 마진을 못 남긴다는 쪽 증거(단 자체 칩 감가·용량 부족 영향 포함).",
+   "note": "같은 페이지: 'Groq's annual revenue around the time of the Nvidia transaction was approximately $100 million, well below its earlier $2 billion and revised $500 million 2025 targets'. 원 보도는 The Information 으로 보이나 유료라 미확인.",
+   "detail": {
+    "cloud_rev_musd": ">40",
+    "cloud_cost_musd": ">64",
+    "rev_target_2025": "2B→500M",
+    "annual_rev_at_nvidia_deal_musd": 100
+   }
+  },
+  {
+   "id": "groq-pivot-to-nvidia-neocloud-2026",
+   "country": "US",
+   "city": null,
+   "metric": "Groq 사업 전환: 자체 LPU 추론 → 엔비디아 GPU 기반 네오클라우드(학습·추론)",
+   "value": 3.5,
+   "unit": "십억 달러(2026-08 시리즈 투자 기업가치)",
+   "asof": "2026-08",
+   "basis": "전문지: 3.5억 달러 투자(기업가치 35억 달러), 엔비디아 클라우드 파트너 프로그램 가입, 13개 데이터센터 54MW → 2027년 200MW 초과. 6월 6.5억 달러 유치",
+   "definition": "Groq 발표를 옮긴 기사(Channel Insider, eWeek). 회사 자기 보고",
+   "quote": "Groq spent years selling an alternative to GPU-based AI inference. Its next phase looks very different.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Groq Raises $350M to Expand AI Cloud With NVIDIA Infrastructure",
+     "url": "https://www.channelinsider.com/infrastructure/news-groq-350m-nvidia-ai-neocloud/",
+     "date": "2026-08-19",
+     "read": "full"
+    },
+    {
+     "n": 2,
+     "title": "Groq Raises $650M to Expand AI Inference Cloud After Nvidia Deal",
+     "url": "https://www.eweek.com/news/groq-raises-650m-ai-inference-cloud/",
+     "date": "2026-06-22",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "sides": {
+    "H1": "지지",
+    "H2": "양쪽"
+   },
+   "side_basis": "토큰 API 를 접고 GPU 용량 임대로 옮겼다 — 토큰 재판매보다 용량에 돈이 있다고 본 판단이다(H1 지지). 다만 옮긴 곳이 사후 학습·관리형 배포가 아니라 맨 용량 임대라 H2 의 부가가치 쪽과는 갈린다.",
+   "note": "이전 기업가치와의 비교는 원문에 없어 적지 않음. 원문: 'The new financing will support medium and larger clusters of NVIDIA accelerated computing for training and inference'.",
+   "detail": {
+    "dc_count": 13,
+    "capacity_mw": 54,
+    "target_mw_2027": ">200",
+    "june_round_musd": 650,
+    "aug_round_musd": 350
+   }
+  },
+  {
+   "id": "coreweave-managed-inference-booked-arr-2026q3",
+   "country": "US",
+   "city": null,
+   "metric": "CoreWeave 관리형 추론 플랫폼 수주 기준 ARR",
+   "value": 0.25,
+   "unit": "십억 달러(수주 ARR, 초과)",
+   "asof": "2026-09",
+   "basis": "실적 통화 전사본: 올해 출시한 관리형 추론 플랫폼 수주 ARR 2.5억 달러 초과, 성장은 배정 용량에 막혀 있음(수주잔고에는 미포함). 같은 분기 회사 매출 약 36.6억 달러",
+   "definition": "CoreWeave 경영진 자기 발언(3분기 실적 통화, 공개 전사본). 회사 매출 대비로는 작은 사업",
+   "quote": "Our managed inference platform launched earlier this year has already exceeded $250 million of booked ARR. Growth of this business is constrained primarily by the capacity allocated to it.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "CoreWeave Q3 2026 earnings call transcript (TradingKey)",
+     "url": "https://www.tradingkey.com/news/transcripts/262300233-",
+     "date": "2026-11-10",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "sides": {
+    "H2": "지지",
+    "H3": "중립"
+   },
+   "side_basis": "GPU 클라우드 경영진이 관리형 추론을 '프리미엄 상품'으로 분류하고 용량 배분 대상으로 본다(전용·관리형 쪽에 가산이 있다는 자기 설명). 다만 규모는 분기 매출의 2% 미만.",
+   "note": "CFO(Nitin Agrawal)는 사업을 '장기 계약·관리형 추론 같은 최상층 프리미엄 상품·단기 계약' 셋으로 나누고 '용량을 셋 사이에 수익률로 배분'한다고 말함: 'the premium products in terms of the highest stack services like managed inference'. 같은 통화에서 애널리스트가 단기 계약 메가와트당 연 매출 4,000만 달러 대 장기 2,000만~2,500만 달러를 회사 언급으로 인용.",
+   "detail": {
+    "q3_revenue_busd": 3.66,
+    "short_term_rev_per_mw_musd": 40,
+    "long_term_rev_per_mw_musd": "20-25"
+   }
+  },
+  {
+   "id": "crusoe-managed-inference-tml-concentration-2026-09",
+   "country": "US",
+   "city": null,
+   "metric": "Crusoe 관리형 추론 수주 ARR 와 그중 한 고객(Thinking Machines Lab) 계약 몫",
+   "value": 65,
+   "unit": "% 이하(6,500만 달러 ÷ 1억 달러 초과)",
+   "asof": "2026-09",
+   "basis": "계산: 회사 발표 Thinking Machines Lab 연 6,500만 달러 계약 ÷ 관리형 추론 수주 ARR '1억 달러 초과'(이 계약 포함) → 최대 65%. 전용 B200 'Tailored Deployment'(전용·SLA 엔드포인트)로 오픈 모델(Inkling, GLM 5.2·5.3)과 자체 미세조정 변형을 서빙",
+   "definition": "Crusoe 자기 보도자료. 1억 달러는 하한이라 몫은 상한",
+   "quote": "Thinking Machines Lab joins a roster that has taken Crusoe Managed Inference past $100 million in contracted ARR less than a year from launch.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Thinking Machines Lab Taps Crusoe in $65M Inference Deal",
+     "url": "https://www.crusoe.ai/resources/newsroom/crusoe-thinking-machines-lab-inference-partnership",
+     "date": "2026-09-23",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "sides": {
+    "H2": "양쪽"
+   },
+   "side_basis": "관리형 추론 매출이 전용 배포 + 고객 미세조정 모델로 잡힌다는 점은 H2 와 맞다. 그러나 1년 차 수주의 절반 넘게가 한 고객이라 전용 배포 매출이 소수 고객에 몰린다는 반대 쪽 증거이기도 하다.",
+   "note": "'a $65 million annual agreement to power inference for the lab's open models on Crusoe Cloud ... on a dedicated Tailored Deployment of NVIDIA HGX B200 systems'. 배치 추론(합성 데이터)으로 확장 논의.",
+   "detail": {
+    "tml_annual_musd": 65,
+    "contracted_arr_musd": ">100",
+    "deployment": "dedicated HGX B200 Tailored Deployment"
+   }
+  },
+  {
+   "id": "parasail-seriesa-products-2026-04",
+   "country": "US",
+   "city": null,
+   "metric": "Parasail 상품 구성(서버리스 두 종 + 전용 엔드포인트)과 투자 규모",
+   "value": 32,
+   "unit": "백만 달러(시리즈 A)",
+   "asof": "2026-04",
+   "basis": "전문지 기사: 토큰당 과금 서버리스 두 가지와 전용 엔드포인트. 매출 미공개(회사 주장 일 5,000억 토큰·월 30% 매출 증가는 검색 요약)",
+   "definition": "SiliconANGLE 기사(회사 발표 기반)",
+   "quote": "There are two serverless hosting options that automate much of the work usually involved in managing GPU clusters. Parasail also offers dedicated endpoints, hardware environments that trade off some simplicity for better performance.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Parasail raises $32M for its pay-per-token inference cloud",
+     "url": "https://siliconangle.com/2026-04-15/parasail-raises-32m-pay-per-token-inference-cloud",
+     "date": "2026-04-15",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H1": "중립"
+   },
+   "side_basis": "작은 사업자도 서버리스와 전용 엔드포인트를 함께 판다는 상품 구성 정보일 뿐 손익 증거는 아니다.",
+   "note": "매출·마진 값 없음. 일 처리 토큰·성장률은 search_summary 로만 확인.",
+   "detail": {
+    "tokens_per_day_claim": "5,000억(search_summary)",
+    "mom_revenue_growth_claim": "30%(search_summary)"
+   }
+  },
+  {
+   "id": "octoai-nvidia-acquisition-2024",
+   "country": "US",
+   "city": null,
+   "metric": "엔비디아의 OctoAI(추론 플랫폼) 인수·상용 서비스 종료",
+   "value": 250,
+   "unit": "백만 달러(인수가 상한 보도, 유지 보상 포함)",
+   "asof": "2024-09",
+   "basis": "기사: 엔비디아 지급 총액이 유지 보상 포함 2.5억 달러를 넘을 수 있음(익명 소식통), 연 매출 '높은 한 자릿수 백만 달러'(투자사 Madrona), 상용 서비스 2024-10-31 종료",
+   "definition": "GeekWire 보도(소식통·투자사 발언, CEO 의 LinkedIn 확인). 엔비디아는 논평 안 함",
+   "quote": "Matt McIlwain, managing director at Madrona, an early OctoAI investor, said the company's annual revenue was in the \"significant single-digit millions.\"",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Chip giant Nvidia acquires OctoAI, a Seattle startup that helps companies run AI models",
+     "url": "https://www.geekwire.com/2024/chip-giant-nvidia-acquires-octoai-a-seattle-startup-that-helps-companies-run-ai-models/",
+     "date": "2024-09",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H1": "지지"
+   },
+   "side_basis": "서버리스 오픈 모델 추론을 팔던 사업자가 연 매출 수백만 달러대에서 칩 회사에 팔리고 상용 서비스를 닫았다. 토큰 API 단독 사업의 지속성이 약하다는 정리 사례.",
+   "note": "'OctoAI sent emails to customers informing them that it was winding down the commercial availability of its services, effective Oct. 31'. Lepton AI(2025) 인수는 The Information 보도뿐이라 후보에 넣지 않음.",
+   "detail": {
+    "service_end": "2024-10-31",
+    "annual_revenue": "significant single-digit millions"
+   }
+  },
+  {
+   "id": "sacra-fireworks-margin-mix-path",
+   "country": "US",
+   "city": null,
+   "metric": "Fireworks 매출총이익률 약 50%·목표 60%와 마진 확대 경로(매출 구성 이동)",
+   "value": null,
+   "unit": "해당 없음",
+   "asof": "2026-11",
+   "basis": "정리 사이트 추정 약 50%, 회사가 투자자에게 60% 목표 제시. 마진 확대 경로로 GPU 활용률·블랙웰 효율과 '범용 서버리스에서 전용 배포·미세조정·기업 계약으로의 매출 구성 이동'을 듦",
+   "definition": "Sacra 추정(회사 자기 보고 아님). 데스크 기존 값의 원문 확인",
+   "quote": "a shift in revenue mix toward higher-value dedicated deployments, fine-tuning, and enterprise contracts rather than commodity server",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Fireworks AI revenue, valuation & funding | Sacra",
+     "url": "https://sacra.com/c/fireworks-ai/",
+     "date": "2026-11-23",
+     "read": "full"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H2": "지지",
+    "H1": "지지"
+   },
+   "side_basis": "조사사가 서버리스를 '범용'으로, 전용 배포·미세조정을 '고부가'로 보고 마진 확대가 그쪽 이동에 달렸다고 본다. 회사 원문 수치는 아니다.",
+   "note": "같은 페이지 위험 항목: 'its value proposition narrows to GPU resale economics with 50% gross margins and no durable differentiation.' 과금: 서버리스 토큰당, 미세조정 학습 토큰당, 강화 미세조정 GPU-시간당, 전용 배포 GPU-초/시간당.",
+   "refs": [
+    {
+     "bundle": "P3",
+     "id": "fireworks-gross-margin"
+    }
+   ],
+   "detail": {
+    "target_gm_pct": 60
+   }
+  },
+  {
+   "id": "sacra-together-mix-margin",
+   "country": "US",
+   "city": null,
+   "metric": "Together AI 매출 구성(토큰 API 30~40%, 나머지 GPU 임대)과 매출총이익률 약 45%",
+   "value": 45,
+   "unit": "%",
+   "asof": "2026-11",
+   "basis": "정리 사이트 추정: 토큰 API 매출 30~40%, 학습·미세조정·서빙용 GPU 임대가 더 큰 몫, 이 구성의 총이익률 약 45%. GPU 원가 위에 '작은' 가산",
+   "definition": "Sacra 추정. 데스크 기존 값의 원문 확인(총이익률 45%는 데스크에 없던 값)",
+   "quote": "This allows Together AI to charge a (small) premium over the base cost of the GPU compute itself while still offering cheaper compute than the hyperscalers by ~80%. Sacra estimates Together AI's gross margin at ~45%.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Together AI revenue, valuation & funding | Sacra",
+     "url": "https://sacra.com/c/together-ai/",
+     "date": "2026-11-23",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "med",
+   "sides": {
+    "H2": "양쪽",
+    "H1": "중립"
+   },
+   "side_basis": "매출 대부분이 GPU 임대(전용 용량)에 있다는 점은 H2 의 '매출은 전용 쪽'과 맞지만, 그 구성의 마진이 45%로 소프트웨어보다 낮아 '전용 쪽에 마진이 남는다'는 증거는 아니다.",
+   "note": "같은 Sacra Baseten 페이지는 경쟁 서술로 'Together AI competes on pricing with a low-margin, high-volume token model and dedicated H100/H200 clusters.'라고 적음(raw: sacra-baseten.html).",
+   "detail": {
+    "token_api_share": "30-40%"
+   }
+  },
+  {
+   "id": "baseten-seriesf-growth-posttrain-2026-06",
+   "country": "US",
+   "city": null,
+   "metric": "Baseten 매출 1년 20배·추론 물량 40배, 사후 학습+추론 묶음 판매",
+   "value": 20,
+   "unit": "배(1년 매출 증가)",
+   "asof": "2026-06",
+   "basis": "회사 블로그: 지난 1년 매출 20배, 추론 물량 40배. 매출 증가(20배)가 물량 증가(40배)보다 느림 → 계산: 물량 단위당 매출이 1년에 약 절반(20/40=0.5)",
+   "definition": "Baseten 자기 보고(시리즈 F 15억 달러 발표). 절대 매출 미공개",
+   "quote": "Over the last year, our revenue has grown 20x, and inference volume has grown 40x. ... Baseten has become the partner of choice for companies looking for support with inference and post-training.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Announcing our Series F (Baseten blog)",
+     "url": "https://baseten.co/blog/announcing-our-series-f/",
+     "date": "2026-06-22",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "high",
+   "sides": {
+    "H1": "지지",
+    "H2": "지지"
+   },
+   "side_basis": "물량 단위당 매출이 1년에 절반으로 줄었다(단가 하락이 물량 증가에 상쇄). 회사는 성장을 '사후 학습하고 그 특화 모델을 서빙'하는 묶음으로 설명해 H2 쪽 자기 설명이기도 하다.",
+   "note": "'Our researchers and engineers embed with our customers, post-train and optimize specialized models, and serve those models'. 고객: Cursor, Notion, Lovable, Harvey, HubSpot, OpenEvidence, Abridge, Decagon, Parallel. 상품: Dedicated Inference / Model APIs / Training.",
+   "refs": [
+    {
+     "bundle": "P3",
+     "id": "baseten-revenue-20x"
+    }
+   ],
+   "detail": {
+    "volume_growth": "40x",
+    "revenue_per_volume_change": "약 0.5배(계산)",
+    "round_busd": 1.5
+   }
+  },
+  {
+   "id": "replicate-cloudflare-acquisition-2025-11",
+   "country": "US",
+   "city": null,
+   "metric": "Cloudflare 의 Replicate(모델 배포·추론 플랫폼) 인수(금액 미공개)",
+   "value": null,
+   "unit": "해당 없음",
+   "asof": "2025-11",
+   "basis": "Cloudflare 보도자료: 인수 합의, 5만 개 이상 모델을 Workers AI 로 이전, 맞춤 모델·미세조정 오픈 모델 실행 기능 추가 예정. 금액 미공개",
+   "definition": "Cloudflare 자기 발표(상장사)",
+   "quote": "Cloudflare, Inc. (NYSE: NET) ... today announced it has agreed to acquire Replicate, an AI platform that makes it easy for developers to deploy and run AI models.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Cloudflare to Acquire Replicate to Build the Most Seamless AI Cloud for Developers",
+     "url": "https://www.cloudflare.com/en-gb/press/press-releases/2025/cloudflare-to-acquire-replicate-to-build-the-most-seamless-ai-cloud-for-developers/",
+     "date": "2025-11-17",
+     "read": "full"
+    }
+   ],
+   "value_src": [],
+   "alt": [],
+   "conf": "high",
+   "sides": {
+    "H1": "지지",
+    "H3": "양쪽"
+   },
+   "side_basis": "독립 추론 플랫폼이 큰 플랫폼(엣지 클라우드)에 흡수돼 '여러 기능 중 하나'로 묶였다. 독립 토큰·모델 호스팅 사업의 정리 사례이며, 하이퍼스케일러가 아닌 다른 플랫폼이 묶어 판다는 점에서 H3 와는 방향이 갈린다.",
+   "note": "인수 완료는 Cloudflare 후속 블로그(2025-12-01)로 search_summary 확인. 엔비디아-OctoAI(2024), 엔비디아-Groq 라이선스(2025-12), 인텔-SambaNova 무산(2026-01)과 같은 정리 흐름.",
+   "detail": {
+    "models": "50,000+",
+    "close_expected": "2개월 내"
+   }
+  },
+  {
+   "id": "galaxy-reported-provider-margin-45-50",
+   "country": "ZZ",
+   "city": null,
+   "metric": "추론 사업자가 지금 낸다고 보도된 마진",
+   "value": 0.475,
+   "unit": "비율(45~50% 의 가운데)",
+   "asof": "2026-07",
+   "basis": "원문 '보도된 45–50% 마진'. 출처 주석은 확인 못 함(본문에 보도 출처 미표기 부분). Galaxy 자체 예시(H100 $2.74/시간, 초당 1,000 토큰, $0.90/100만 토큰, 가동률 100%)는 15% 매출총이익률, 손익분기 가동률 85%.",
+   "definition": "Galaxy(Vikram Singh, Investor) 의견 글. 자료는 OpenRouter 화면·SemiAnalysis·Ornn 지수 인용(2026-07-21 전후 수집). Galaxy 는 연산 선물·온체인 연산 시장을 미는 쪽이라 '토큰은 범용품, 위험 이전은 GPU 시간에서'라는 결론에 이해관계가 있다. 45~50%는 Galaxy 가 남의 보도를 옮긴 값이다(원 보도 미확인).",
+   "quote": "the example's 15% gross margin is much thinner than the reported 45–50% margin inference providers run today.",
+   "sources": [
+    {
+     "n": 1,
+     "title": "Galaxy, When Intelligence Commoditizes, Compute Becomes the Trade (Inference Market (and Micro) Structure)",
+     "url": "https://www.galaxy.com/insights/perspectives/inference-market-and-micro-structure",
+     "date": "2026-08-11",
+     "read": "full"
+    }
+   ],
+   "value_src": [
+    1
+   ],
+   "alt": [],
+   "conf": "low",
+   "sides": {
+    "H1": "반박"
+   },
+   "side_basis": "보도된 마진이 45~50%라면 서버리스 추론이 얇은 마진의 범용품이라는 H1 과 어긋난다. 단 서버리스·전용 배포가 섞인 회사 전체 마진일 가능성이 크고 출처가 2차 인용이다.",
+   "note": "P3 갈래가 원 보도를 찾으면 그쪽 값으로 대체할 것. 예시 계산의 가동률 50% 에서는 시간당 −$1.12 적자.",
+   "detail": {
+    "example_gpu_hr": 2.74,
+    "example_tps": 1000,
+    "example_price": 0.9,
+    "example_rev_hr": 3.24,
+    "breakeven_util": 0.85
+   }
+  }
+ ]
+}
