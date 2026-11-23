@@ -8,13 +8,13 @@
    "value": 7,
    "label": "엇갈림",
    "orgs": 44,
-   "items": 151
+   "items": 150
   },
   "market": {
    "value": -8,
    "label": "엇갈림",
    "orgs": 29,
-   "items": 99
+   "items": 98
   },
   "by_group": [
    {
@@ -35,7 +35,7 @@
     "group": "자산운용",
     "ai_tech": -11,
     "ai_tech_orgs": 8,
-    "market": 1,
+    "market": 0,
     "market_orgs": 7
    },
    {
@@ -115,11 +115,11 @@
    "caution": [
     {
      "tag": "밸류에이션",
-     "n": 21
+     "n": 20
     },
     {
      "tag": "투자 회수",
-     "n": 20
+     "n": 19
     },
     {
      "tag": "자금 조달·신용",
@@ -134,16 +134,16 @@
      "n": 8
     },
     {
-     "tag": "수요·채택",
-     "n": 6
-    },
-    {
      "tag": "경쟁·해자",
      "n": 6
     },
     {
+     "tag": "수요·채택",
+     "n": 5
+    },
+    {
      "tag": "정책·지정학",
-     "n": 6
+     "n": 5
     },
     {
      "tag": "전력·공급 제약",
@@ -10266,38 +10266,6 @@
     "basis": "headline_only",
     "tier": "light"
    }
-  },
-  {
-   "id": "boldstart-what-s-in-ai-infra-vc-521",
-   "group": "벤처캐피털",
-   "org": "Ed Sim (boldstart ventures)",
-   "person": "Ed Sim",
-   "kind": "publication",
-   "title": "AI/인프라/VC에서 뜨는 것 #521",
-   "title_orig": "What’s 🔥 in AI/Infra/VC #521",
-   "url": "https://www.whatshot.vc/p/whats-in-aiinfravc-521",
-   "outlet": "What's Hot in AI/Infra/VC (Ed Sim)",
-   "published_kst": "2026-10-24T21:26:29+09:00",
-   "stance": {
-    "ai_tech": 1,
-    "market": null
-   },
-   "args": [
-    "수요·채택",
-    "전력·공급 제약"
-   ],
-   "summary": "AI가 만드는 사이버 위협이 급격히 커지고 있고, 방어도 에이전트와 컴퓨팅을 상시 돌리는 방식으로 가야 한다고 주장한다. 버블 논쟁에서는 AWS 용량이 매진됐다는 Andy Jassy의 말을 믿는다고 밝히고, 자신의 포트폴리오 기업들도 컴퓨팅 부족을 체감한다고 본다. 앞으로 컴퓨팅이 훨씬 더 필요해질 것이라는 입장이다.",
-   "points": [
-    "버블 논쟁에서 저자는 Jassy의 말을 믿으며, 포트폴리오 기업들이 컴퓨팅 확보의 어려움을 몸소 겪고 있다고 본다.",
-    "저자가 인용한 Jassy의 발언에 따르면 데이터센터·전력·메모리 부족은 2027년 이후에도 이어질 수 있다.",
-    "사이버 보안도 갈수록 컴퓨팅 규모가 승패를 가르는 영역이 되고 있다고 본다.",
-    "AI 공격에 맞서려면 방어 쪽도 컴퓨팅을 대규모로 투입해야 한다고 주장한다."
-   ],
-   "judged": {
-    "basis": "full_text",
-    "tier": "standard"
-   },
-   "note": "웹 페이지 본문 기준. 그림 1개 속 글자는 확인하지 못함"
   }
  ]
 }
