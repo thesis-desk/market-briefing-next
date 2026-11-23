@@ -1,8 +1,108 @@
 {
  "schema": 1,
  "month": "2026-11",
- "updated_kst": "2026-11-23T20:19:20+09:00",
+ "updated_kst": "2026-11-23T23:16:46+09:00",
  "items": [
+  {
+   "id": "ubs-house-view-daily-tech-pressures-underline-need-f",
+   "group": "투자은행",
+   "org": "UBS",
+   "person": "Aaron Kreischer",
+   "kind": "publication",
+   "title": "House View Daily | 기술주 압박이 포트폴리오 회복력의 필요성을 부각",
+   "title_orig": "House View Daily | Tech pressures underline need for portfolio resilience",
+   "url": "https://www.ubs.com/content/dam/podcasts/wma/on-air/in-the-now/20261123_HV_Daily.mp3",
+   "outlet": "UBS House View Daily",
+   "published_kst": "2026-11-23T19:47:34+09:00",
+   "stance": {
+    "ai_tech": 0,
+    "market": 0
+   },
+   "args": [
+    "투자 회수",
+    "밸류에이션",
+    "자금 조달·신용",
+    "쏠림"
+   ],
+   "summary": "UBS CIO는 AI 논쟁이 투자 지속 여부에서 주주에게 적정 수익을 낼 수 있는지로 옮겨 가고 있다고 본다. 글로벌 주식을 매력적에서 중립으로 낮춘 판단을 유지하면서도 기본 시나리오는 2027년 이익 증가와 AI 투자 확대로 건설적이라고 한다. 변동성은 높게 유지될 것으로 보며, 분산과 점진적 리밸런싱을 권한다.",
+   "points": [
+    "AI 인프라 투자 지속 가능성과 AI 매출이 투자를 정당화할지에 대한 의문이 기술주 매도를 불렀다.",
+    "적정 수익을 내려면 2030년까지 AI 모델·애플리케이션 연매출이 최소 1.5조 달러가 되어야 한다고 추정한다.",
+    "높은 기대, 집중된 지수, AI 수익화 불확실성 때문에 글로벌 주식 의견을 중립으로 낮췄고 이번 변동성이 그 판단을 뒷받침한다고 본다.",
+    "기본 시나리오는 건설적이지만 단기 상승 촉매는 적고 변동성은 높게 유지될 것으로 본다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "팟캐스트 음성을 음성 인식(Whisper)으로 받아 적은 전사 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
+  },
+  {
+   "id": "tudor-jones-billionaire-paul-tudor-jones-warns-2027-could-be-2",
+   "group": "투자 거장",
+   "org": "Paul Tudor Jones",
+   "person": null,
+   "kind": "report",
+   "title": "억만장자 Paul Tudor Jones, AI와 IPO 물량이 시장에 쏟아지면서 2027년 주식시장이 힘든 해가 될 수 있다고 경고... 지금 노후 자금을 지켜라",
+   "title_orig": "Billionaire Paul Tudor Jones warns 2027 could be a tough year for stocks as AI and IPO supply floods the market. Protect your nest egg now",
+   "url": "https://www.msn.com/en-us/money/top-stocks/billionaire-paul-tudor-jones-warns-2027-could-be-a-tough-year-for-stocks-as-ai-and-ipo-supply-floods-the-market-protect-your-nest-egg-now/ar-AA2i3bRI",
+   "outlet": "Moneywise on MSN",
+   "published_kst": "2026-11-23T14:05:00+09:00",
+   "stance": {
+    "ai_tech": -1,
+    "market": -1
+   },
+   "args": [
+    "쏠림",
+    "밸류에이션",
+    "자금 조달·신용"
+   ],
+   "summary": "Paul Tudor Jones는 2027년 주식시장이 매우 어려울 것이라고 경고했다. AI 투자 자금 조달과 대형 IPO(SpaceX, Anthropic, OpenAI 등)로 주식 공급이 늘어 수급이 나빠질 것으로 보며, 2027년 내내 매도(숏) 포지션을 취하겠다고 밝혔다. 현재 시장을 1999년에 비유했고 2026년 말까지는 강한 마무리 여지도 있다고 본다.",
+   "points": [
+    "2027년은 주식시장에 매우, 매우 어려운 해가 될 것이다.",
+    "AI 설비 구축 자금을 조달하는 기업들과 상장하는 대형 기업들 때문에 투자자 돈을 두고 경쟁하는 주식 물량이 늘어날 것이며, 이것이 주주들에게 더 힘든 환경을 만들 것으로 본다.",
+    "그는 2027년 내내 매도(숏) 포지션을 유지하겠다고 말했다.",
+    "자사주 매입·인수로 시장에서 빠지는 주식 물량과, IPO·추가 공모·보호예수 해제로 시장에 나오는 주식 물량을 함께 추적하며, 이 균형이 투자자에게 점점 불리해지고 있다고 본다.",
+    "SpaceX의 엄청난 기업가치와 Anthropic·OpenAI의 예상되는 공모가 수급 계산을 바꾸고 있으며, 투자자 자금을 구하는 기업이 늘면 높은 주가를 유지하기 어려워질 수 있다.",
+    "현재 시장을 1999년에 비유하며, AI 수혜 기업과 뒤처지는 기업 사이에 간극이 있다고 설명했다. 또한 2026년 말까지는 강한 마무리 여지도 있다고 본다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
+  },
+  {
+   "id": "dalio-i-think-we-re-close-to-that-billionaire-ray-dali",
+   "group": "투자 거장",
+   "org": "Bridgewater 창업자",
+   "person": "Ray Dalio",
+   "kind": "report",
+   "title": "\"우리는 그 시점에 가까이 와 있다고 본다\": 億만장자 Ray Dalio, 부채와 금리 상승이 AI 거품을 터뜨릴 수 있다고 경고... 시장이 무너지기 전에 노후 자금을 지켜라",
+   "title_orig": "I think we’re close to that: Billionaire Ray Dalio warns soaring debt and rates can burst the AI bubble. Fortify your nest egg before markets fall",
+   "url": "https://www.msn.com/en-us/money/investment/i-think-we-re-close-to-that-billionaire-ray-dalio-warns-soaring-debt-and-rates-can-burst-the-ai-bubble-fortify-your-nest-egg-before-markets-fall/ar-AA2i34aQ",
+   "outlet": "Moneywise on MSN",
+   "published_kst": "2026-11-23T13:35:00+09:00",
+   "stance": {
+    "ai_tech": -2,
+    "market": null
+   },
+   "args": [
+    "자금 조달·신용",
+    "금리·거시",
+    "밸류에이션"
+   ],
+   "summary": "Ray Dalio는 포브스 글로벌 CEO 콘퍼런스에서 인공지능을 '전형적인 거품'이라고 규정했다. 부채와 차입 비용 상승이 이 거품을 터뜨릴 수 있으며, 그 시점이 가까이 왔다고 경고했다.",
+   "points": [
+    "Ray Dalio는 10월 7일 싱가포르에서 열린 포브스 글로벌 CEO 콘퍼런스에서 인공지능을 '전형적인 거품'이라고 표현했으며, 부채와 차입 비용 상승이 이 거품을 무너뜨릴 수 있다고 경고했다.",
+    "거품이 터지는 상황에 대해 \"우리는 그 시점에 가까이 와 있다고 생각한다\"고 말했다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
+  },
   {
    "id": "morgan-stanley-stocks-are-serving-up-a-fat-pitch-for-investors",
    "group": "투자은행",
