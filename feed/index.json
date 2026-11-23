@@ -1,7 +1,163 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-23T23:16:46+09:00",
+ "generated_kst": "2026-11-24T02:48:59+09:00",
  "reports": [
+  {
+   "slug": "tomorrowx-2026-mu-2",
+   "type": "interview",
+   "title": "산제이 메로트라·스콧 디보어 (TomorrowX Summit 2026) : SCA 계약은 왜 다른가, 적층 3D DRAM은 언제 오는가",
+   "companies": [
+    {
+     "name": "마이크론",
+     "ticker": null
+    }
+   ],
+   "event": "TomorrowX Summit 2026",
+   "event_date": "2026-11-17",
+   "published_kst": "2026-11-24T02:48:59+09:00",
+   "revised_kst": "2026-11-24T02:48:59+09:00",
+   "revision": 1,
+   "summary": "마이크론 경영진은 이 대담에서 2027년 물량의 75% 판매 완료와 SCA 26건·현금 및 재무 약정 320억 달러를 근거로 이번 사이클이 과거와 다르다고 주장했다. 다만 침체기에 계약이 지켜지는지에 대해서는 take-or-pay와 탄탄한 조건이 있다는 원칙론 외에 보호 범위를 밝히지 않았고, 고객 관계와 메모리의 가치를 주로 들었다. 실적 가시성은 높아졌지만 하방 보호의 크기는 아직 공개되지 않았다고 본다.",
+   "path": "reports/tomorrowx-2026-mu-2.json"
+  },
+  {
+   "slug": "a16z-how-to-win-bots-and-influence-purchases",
+   "type": "article",
+   "title": "a16z : 에이전트는 총비용과 신뢰를 따지는 고객이다, 기계가 읽을 수 있어야 후보에 든다",
+   "companies": [
+    {
+     "name": "Meta",
+     "ticker": null
+    },
+    {
+     "name": "OpenAI",
+     "ticker": null
+    },
+    {
+     "name": "Amazon",
+     "ticker": null
+    },
+    {
+     "name": "Walmart",
+     "ticker": null
+    },
+    {
+     "name": "Shopify",
+     "ticker": null
+    },
+    {
+     "name": "Stripe",
+     "ticker": null
+    },
+    {
+     "name": "Expedia",
+     "ticker": null
+    },
+    {
+     "name": "Booking.com",
+     "ticker": null
+    }
+   ],
+   "published_kst": "2026-11-24T02:40:39+09:00",
+   "revised_kst": "2026-11-24T02:40:39+09:00",
+   "revision": 1,
+   "summary": "쇼핑 에이전트 네 개를 1만 1천여 번 돌린 실험에서 판매자가 바꿀 수 있는 변수가 확인됐다. 기계가 읽는 상품 페이지, 투명한 가격, 비회원 결제가 그것이다. 다만 후보군을 정하는 것은 자체 카탈로그와 제휴·결제 레일이고, 이 문은 Meta·OpenAI·Shopify·Stripe 같은 플랫폼 쪽이 쥐고 있다. 에이전트 지출의 절대 규모가 공개되지 않아 지금은 어느 상장사의 실적 전제도 바꿀 단계가 아니다.",
+   "path": "reports/a16z-how-to-win-bots-and-influence-purchases.json"
+  },
+  {
+   "slug": "nvidia-dev-get-started-with-gpu-accelerated-duckdb-analytics",
+   "type": "article",
+   "title": "NVIDIA Technical Blog : DuckDB에 Sirius 확장을 얹으면 SQL 그대로 GPU 가속, 튜닝한 2-GPU로 3.25~5.50배 빠르고 비용은 최대 79% 낮다",
+   "companies": [
+    {
+     "name": "NVIDIA",
+     "ticker": null
+    },
+    {
+     "name": "DuckLabs",
+     "ticker": null
+    }
+   ],
+   "published_kst": "2026-11-24T02:28:41+09:00",
+   "revised_kst": "2026-11-24T02:28:41+09:00",
+   "revision": 1,
+   "summary": "NVIDIA가 DuckLabs와 함께 GPU SQL 엔진 Sirius를 DuckDB 공식 확장으로 냈다. SQL을 고치지 않고 GPU로 넘기는 경로가 표준 워크플로 안에 들어온 것이 핵심이다. 다만 성능 수치는 NVIDIA와 개발 주체가 직접 잰 값이고, 측정 조건이 GPU 쪽에 유리하며, 지원 범위와 인스턴스 단가가 공개되지 않았다. 그래서 NVIDIA 매출 신호라기보다 CPU가 차지하던 분석 작업을 GPU로 끌어오려는 생태계 포석으로 읽는다(확신 중간).",
+   "path": "reports/nvidia-dev-get-started-with-gpu-accelerated-duckdb-analytics.json"
+  },
+  {
+   "slug": "google-ai-google-search-personal-intelligence-apps",
+   "type": "article",
+   "title": "Google AI 블로그 : 검색이 Wallet·Drive·Gemini 대화까지 읽는 개인 문맥 층이 된다",
+   "companies": [
+    {
+     "name": "Alphabet (Google)",
+     "ticker": null
+    }
+   ],
+   "published_kst": "2026-11-24T02:24:50+09:00",
+   "revised_kst": "2026-11-24T02:24:50+09:00",
+   "revision": 1,
+   "summary": "AI Mode의 개인화 대상이 Gmail·캘린더·포토에서 결제 내역(Wallet), 업무 문서(Drive), Gemini 대화로 넓어지고 Gemini 앱과 검색이 문맥을 서로 나눈다. 검색을 범용 챗봇이 갖기 어려운 개인 데이터 위에 올려 지키려는 방어 수로 읽힌다. 다만 지역·대상·이용률·광고 연계에 관한 숫자나 설명은 없어 실적 영향은 아직 추정할 수 없다.",
+   "path": "reports/google-ai-google-search-personal-intelligence-apps.json"
+  },
+  {
+   "slug": "deepmind-finding-faster-quantum-algorithms-with-agents-and",
+   "type": "article",
+   "title": "Google DeepMind : 형식 검증을 거친 에이전트 팀이 양자 알고리즘의 자원 요구량을 수 배에서 수백 배 줄였다",
+   "companies": [
+    {
+     "name": "Google DeepMind",
+     "ticker": null
+    },
+    {
+     "name": "Google Quantum AI",
+     "ticker": null
+    }
+   ],
+   "published_kst": "2026-11-24T02:23:00+09:00",
+   "revised_kst": "2026-11-24T02:23:00+09:00",
+   "revision": 1,
+   "summary": "Gemini 4 에이전트 팀이 Lean 증명을 붙여 양자 회로를 최적화했다. 핵융합·화학·기초 연산에서 비용을 2.5~290배 줄였다고 밝혔지만, 글 스스로 초기 오류 정정 양자컴퓨터가 감당할 수준에는 아직 못 미친다고 적었다. 투자 관점에서 새로운 것은 양자 실용화 시점보다 '증명으로 검증한 AI 탐색'이라는 연구 방식이며, 비교 기준과 탐색 비용이 공개되지 않아 효과의 크기는 아직 판단하기 이르다.",
+   "path": "reports/deepmind-finding-faster-quantum-algorithms-with-agents-and.json"
+  },
+  {
+   "slug": "20vc-fire-the-bankers-most-vcs-won-t-survive-ai-why-the",
+   "type": "interview",
+   "title": "앤지 미드하 인터뷰 : AI는 에너지 사업이고, 추론은 기능일 뿐이다",
+   "companies": [
+    {
+     "name": "Anthropic",
+     "ticker": null
+    },
+    {
+     "name": "NVIDIA",
+     "ticker": null
+    },
+    {
+     "name": "AMD",
+     "ticker": null
+    },
+    {
+     "name": "Mistral AI",
+     "ticker": null
+    },
+    {
+     "name": "OpenAI",
+     "ticker": null
+    },
+    {
+     "name": "National Compute",
+     "ticker": null
+    }
+   ],
+   "event": "20VC 인터뷰",
+   "event_date": "2026-11-23",
+   "published_kst": "2026-11-24T02:21:05+09:00",
+   "revised_kst": "2026-11-24T02:21:05+09:00",
+   "revision": 1,
+   "summary": "미드하는 연산 병목을 칩이 아니라 전력과 활용률의 문제로 보고, 그 사이를 메우는 조정 계층(풀링·스케줄링·전용 실리콘)에 가치가 몰린다고 주장한다. 독립 추론 사업자와 네오클라우드, 엔비디아 단일 의존 구조에는 불리한 시각이다. 다만 화자가 그 조정 계층을 직접 운영하는 당사자이므로 수치 대부분은 검증되지 않은 자기 주장으로 읽어야 한다.",
+   "path": "reports/20vc-fire-the-bankers-most-vcs-won-t-survive-ai-why-the.json"
+  },
   {
    "slug": "sixsigma-ai-3",
    "type": "article",
@@ -8404,11 +8560,11 @@
   }
  ],
  "street": {
-  "updated_kst": "2026-11-23T23:16:46+09:00",
+  "updated_kst": "2026-11-24T02:35:10+09:00",
   "path": "street.json"
  },
  "calendar": {
-  "updated_kst": "2026-11-23T02:13:11+09:00",
+  "updated_kst": "2026-11-24T02:28:58+09:00",
   "path": "calendar.json"
  },
  "watch": {

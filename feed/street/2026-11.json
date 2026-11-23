@@ -1,8 +1,105 @@
 {
  "schema": 1,
  "month": "2026-11",
- "updated_kst": "2026-11-23T23:16:46+09:00",
+ "updated_kst": "2026-11-24T02:35:10+09:00",
  "items": [
+  {
+   "id": "blackrock-inflation-beyond-the-mideast-energy-shock",
+   "group": "자산운용",
+   "org": "BlackRock",
+   "person": "Esan Kman",
+   "kind": "publication",
+   "title": "인플레이션: 중동 에너지 충격 그 이후",
+   "title_orig": "Inflation: beyond the Mideast energy shock",
+   "url": "https://www.youtube.com/watch?v=-7Hp7CcYTmE",
+   "outlet": "BlackRock (유튜브)",
+   "published_kst": "2026-11-24T01:18:21+09:00",
+   "stance": {
+    "ai_tech": 0,
+    "market": 0
+   },
+   "args": [
+    "금리·거시",
+    "투자 회수"
+   ],
+   "summary": "중동 에너지 충격이 미국 인플레이션에 미친 영향은 정점을 지났다고 보며, 유가 하락과 AI 설비투자 증가세 둔화가 물가 압력을 덜어줄 수 있다고 본다. 다만 임금 상승으로 근원 서비스 물가는 높게 유지되어 전망이 단순하지 않다. 시장이 반영한 최대 3회 금리 인상은 과하다고 보고, 단기·중기 미국 국채를 선호한다.",
+   "points": [
+    "중동 에너지 충격이 미국 인플레이션에 미친 영향은 정점을 지났다고 본다.",
+    "강한 임금 상승이 근원 서비스 물가를 계속 높게 유지시키고 있다.",
+    "에너지 가격 하락과 AI 설비투자 증가세 둔화가 물가 압력 완화에 도움이 될 수 있다고 본다.",
+    "시장이 반영한 최대 3회 연준 금리 인상은 과하며, 실제 인상 횟수는 더 적을 것으로 본다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "유튜브 자동 생성 자막(en) 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
+  },
+  {
+   "id": "blackrock-inflation-how-will-inflation-interest-rates-evol",
+   "group": "자산운용",
+   "org": "BlackRock",
+   "person": null,
+   "kind": "publication",
+   "title": "인플레이션: 물가와 금리는 앞으로 어떻게 전개될까?",
+   "title_orig": "Inflation: How Will Inflation & Interest Rates Evolve From Here?",
+   "url": "https://www.youtube.com/watch?v=UrmMesc5c1c",
+   "outlet": "BlackRock (유튜브)",
+   "published_kst": "2026-11-24T00:26:10+09:00",
+   "stance": {
+    "ai_tech": null,
+    "market": 0
+   },
+   "args": [
+    "금리·거시",
+    "밸류에이션",
+    "자금 조달·신용"
+   ],
+   "summary": "물가는 내년에 둔화하겠지만 연준 목표 2%까지는 내려가지 않을 것이며, 연준이 1~2회 더 인상할 가능성이 있다고 본다. 국채 공급 부담으로 미 10년물 금리는 5% 안팎에 머물 전망이고, 주식은 멀티플 상승 없이 이익 증가에 의존해 괜찮은 수익을 내는 정도다. 채권 비중은 소폭 비중축소 상태지만 신용·증권화 상품 등으로 늘리는 방안을 검토한다.",
+   "points": [
+    "금리를 끌어올리는 주된 요인은 물가보다 정부와 하이퍼스케일러의 채권 공급이며, 미 10년물은 5% 안팎에 머물 것으로 본다.",
+    "S&P 500은 이익이 주가보다 빨리 늘어 PE 멀티플이 크게 낮아졌고, 성장주의 멀티플 압축은 더 컸다.",
+    "금리가 높게 유지되면 주식 수익은 멀티플 확대가 아니라 이익 성장에서 나와야 한다.",
+    "채권 수익률이 주식 기대수익과 경쟁할 만해져 채권 비중을 늘리는 방안을 검토한다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "유튜브 자막(제작자 제공)(en) 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
+  },
+  {
+   "id": "a16z-how-to-win-bots-and-influence-purchases",
+   "group": "벤처캐피털",
+   "org": "Andreessen Horowitz (a16z)",
+   "person": null,
+   "kind": "publication",
+   "title": "봇을 이기고 구매에 영향을 미치는 법",
+   "title_orig": "How to Win Bots and Influence Purchases",
+   "url": "https://www.a16z.news/p/welcome-to-the-b2a-economy-how-agents",
+   "outlet": "a16z",
+   "published_kst": "2026-11-24T00:04:27+09:00",
+   "stance": {
+    "ai_tech": 1,
+    "market": null
+   },
+   "args": [
+    "수요·채택",
+    "경쟁·해자"
+   ],
+   "summary": "a16z는 AI 에이전트가 제품·소프트웨어 구매에 점점 더 큰 영향을 미치는 새 유통 채널이 될 것이라고 본다. 1,270개 프롬프트, 11,307회 에이전트 실행 실험과 YipitData 소비 데이터를 근거로 에이전트에 선택받는 다섯 가지 방법을 제시하고, 에이전트 대상 마케팅·판매를 돕는 스타트업에 큰 기회가 있다고 말한다.",
+   "points": [
+    "에이전트는 가격·리뷰 기준의 비슷한 후보군에서 고르므로, 특정 용도나 페르소나에서 우위를 증명해야 기본 선택을 뒤집을 수 있다.",
+    "에이전트는 배송비·반품·보증까지 포함한 총비용을 계산하는 최적화 주체이며, 동일 가격이면 반품 정책이 좋은 판매처를 고른다.",
+    "에이전트가 읽을 수 있는 웹사이트나 API가 없으면 최종 후보에 들기 어렵다.",
+    "에이전트 지출의 상당 부분이 마켓플레이스와 애그리게이터로 향하며, 이들 플랫폼에서의 노출이 중요하다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "웹 페이지 본문 기준. 그림 26개 속 글자는 확인하지 못함"
+  },
   {
    "id": "ubs-house-view-daily-tech-pressures-underline-need-f",
    "group": "투자은행",
@@ -36,6 +133,30 @@
     "tier": "standard"
    },
    "note": "팟캐스트 음성을 음성 인식(Whisper)으로 받아 적은 전사 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
+  },
+  {
+   "id": "deutsche-bank-deutsche-bank-sees-s-p-500-hitting-9-000-by-end",
+   "group": "투자은행",
+   "org": "Deutsche Bank",
+   "person": null,
+   "kind": "report",
+   "title": "도이체방크, S&P 500 2027년 말 9,000 도달 전망",
+   "title_orig": "Deutsche Bank sees S&P 500 hitting 9,000 by end of 2027",
+   "url": "https://www.marketscreener.com/news/deutsche-bank-sees-s-p-500-hitting-9-000-by-end-of-2027-ce7851dadb8ef623",
+   "outlet": "MarketScreener",
+   "published_kst": "2026-11-23T17:15:00+09:00",
+   "stance": {
+    "ai_tech": 1,
+    "market": 1
+   },
+   "args": [
+    "수요·채택",
+    "투자 회수"
+   ],
+   "judged": {
+    "basis": "headline_only",
+    "tier": "light"
+   }
   },
   {
    "id": "tudor-jones-billionaire-paul-tudor-jones-warns-2027-could-be-2",

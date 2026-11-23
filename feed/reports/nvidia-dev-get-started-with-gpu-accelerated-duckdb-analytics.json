@@ -1,0 +1,327 @@
+{
+ "schema": 1,
+ "slug": "nvidia-dev-get-started-with-gpu-accelerated-duckdb-analytics",
+ "type": "article",
+ "title": "NVIDIA Technical Blog : DuckDB에 Sirius 확장을 얹으면 SQL 그대로 GPU 가속, 튜닝한 2-GPU로 3.25~5.50배 빠르고 비용은 최대 79% 낮다",
+ "summary": "NVIDIA가 DuckLabs와 함께 GPU SQL 엔진 Sirius를 DuckDB 공식 확장으로 냈다. SQL을 고치지 않고 GPU로 넘기는 경로가 표준 워크플로 안에 들어온 것이 핵심이다. 다만 성능 수치는 NVIDIA와 개발 주체가 직접 잰 값이고, 측정 조건이 GPU 쪽에 유리하며, 지원 범위와 인스턴스 단가가 공개되지 않았다. 그래서 NVIDIA 매출 신호라기보다 CPU가 차지하던 분석 작업을 GPU로 끌어오려는 생태계 포석으로 읽는다(확신 중간).",
+ "companies": [
+  {
+   "name": "NVIDIA",
+   "ticker": null
+  },
+  {
+   "name": "DuckLabs",
+   "ticker": null
+  }
+ ],
+ "prev_slug": null,
+ "published_kst": "2026-11-24T02:28:41+09:00",
+ "revised_kst": "2026-11-24T02:28:41+09:00",
+ "revision": 1,
+ "sources": [
+  {
+   "n": 1,
+   "title": "NVIDIA Technical Blog — Get Started with GPU-Accelerated DuckDB Analytics Using the Sirius Core Extension",
+   "url": "https://developer.nvidia.com/blog/get-started-with-gpu-accelerated-duckdb-analytics-using-the-sirius-core-extension",
+   "date": "2026-11-24",
+   "access": "public",
+   "kind": "article",
+   "read": "전문",
+   "note": "웹 페이지 본문 기준(게시 표기 2026-11-23). 그림 2개 속 글자와 수치는 확인하지 못함(캡션만 확인). 따라서 SF100의 실행 시간·비용, SF1K의 비용 절감 폭, 단일 GPU 구성의 수치는 본문에 없어 확인하지 못함."
+  }
+ ],
+ "sections": [
+  {
+   "id": "s1",
+   "h": "주장 한 줄",
+   "layer": "common",
+   "blocks": [
+    {
+     "kind": "fact",
+     "text": "DuckDB 사용자는 INSTALL sirius; LOAD sirius; 두 줄만으로 SQL과 스키마를 그대로 둔 채 지원되는 분석 쿼리를 NVIDIA GPU에서 돌릴 수 있다. 튜닝한 2-GPU 구성은 10TB 규모까지 CPU DuckDB보다 3.25~5.50배 빠르고, 쿼리 시점 컴퓨트 비용은 최대 약 79% 낮다.",
+     "src": 1,
+     "loc": "Accelerate DuckDB queries without rewriting SQL / Compare Sirius GPU and DuckDB CPU benchmark results"
+    },
+    {
+     "kind": "fact",
+     "text": "글쓴이는 세 명이다. NVIDIA 시니어 개발자 애드버킷, NVIDIA 가속 데이터 처리 개발자 관계 책임자(BlazingSQL·Voltron Data 공동창업), 그리고 Sirius를 NVIDIA와 함께 개발한 UW–Madison 조교수다. 글은 설치 안내서 겸 벤치마크 공개 형식이다.",
+     "src": 1,
+     "loc": "About the Authors"
+    }
+   ]
+  },
+  {
+   "id": "s2",
+   "h": "SQL을 고치지 않고 GPU로 넘긴다: DuckDB가 계획을 세우고 Sirius가 통째로 실행",
+   "layer": "common",
+   "blocks": [
+    {
+     "kind": "fact",
+     "items": [
+      "Sirius는 UW–Madison과 NVIDIA가 함께 개발한 오픈소스 GPU 네이티브 SQL 엔진이다. 이번에 NVIDIA와 DuckLabs의 협업으로 DuckDB 코어 확장(core extension)으로 출시됐다.",
+      "DuckDB가 SQL 파싱과 최적화를 맡고, Sirius는 그 결과로 나온 쿼리 계획을 GPU에서 실행한다. 연산자 일부가 아니라 지원되는 쿼리를 통째로 가속하는 방식이다.",
+      "애플리케이션의 SQL 인터페이스는 계속 DuckDB이고, 결과도 같은 연결로 돌아온다. 기존 스크립트와 애플리케이션의 인터페이스가 유지된다.",
+      "지원하지 않는 기능이 들어간 쿼리는 DuckDB CPU 엔진으로 자동으로 돌아간다(fallback).",
+      "별도의 GPU 프로그래밍 API로 옮겨 쓸 필요가 없다."
+     ],
+     "src": 1,
+     "loc": "Accelerate DuckDB queries without rewriting SQL / Understand how Sirius executes queries"
+    },
+    {
+     "kind": "view",
+     "text": "요점은 성능보다 도입 마찰이다. GPU SQL 엔진은 전에도 있었다. 글쓴이 중 한 명이 공동창업한 BlazingSQL도 그 계열이다. 하지만 별도 엔진으로 옮겨 가야 했다. 이번에는 이미 DuckDB를 쓰는 사람의 표준 워크플로 안에 GPU 경로가 들어갔고, 실패해도 CPU로 돌아가므로 시도 비용이 거의 없다.\n\n빠진 것은 '무엇이 지원되는가'다. 글은 지원 기능 목록을 제시하지 않는다. fallback이 쿼리 단위로 일어난다고 읽히므로, 실제 업무 쿼리 중 몇 할이 GPU에서 끝까지 도는지에 따라 체감 효과가 크게 달라진다. 이 비율이 공개되기 전까지는 벤치마크 배수를 실제 업무에 그대로 옮길 수 없다."
+    }
+   ]
+  },
+  {
+   "id": "s3",
+   "h": "쓰는 조건은 가볍다: DuckDB 2.0, 호환 드라이버, 700MB 내려받기",
+   "layer": "common",
+   "blocks": [
+    {
+     "kind": "fact",
+     "items": [
+      "필요한 것은 DuckDB 2.0과 호환 드라이버가 설치된 NVIDIA GPU다.",
+      "확장 크기는 약 700MB다. 코어 확장이 드라이버에 맞는 CUDA 백엔드를 자동으로 고른다. INSTALL은 내려받기, LOAD는 현재 연결에서의 활성화다.",
+      "Sirius는 DuckDB 네이티브 테이블을 읽는다. 예제에서는 생성한 데이터를 CHECKPOINT로 영속화해야 Sirius가 읽을 수 있다. 자체 DuckDB 테이블이나 '지원되는 Parquet 워크플로'에도 같은 방식을 쓸 수 있다.",
+      "예제는 TPC-H 확장으로 만든 sf=0.01 데이터셋에서 lineitem을 반품 플래그별로 집계한다. 글은 이 소규모 예제가 사용법을 보여 주기 위한 것이며 성능 우위를 보여 주려는 것이 아니라고 밝힌다."
+     ],
+     "src": 1,
+     "loc": "Run your first GPU query / Install and load Sirius"
+    },
+    {
+     "kind": "view",
+     "text": "'지원되는 Parquet 워크플로'라는 한정어가 붙어 있고, 예제는 CHECKPOINT로 네이티브 테이블을 만든 뒤에야 돈다. 데이터 레이크의 Parquet를 바로 읽는 일반적인 DuckDB 사용 형태에서 어디까지 GPU로 가는지는 글만으로는 알 수 없다."
+    }
+   ]
+  },
+  {
+   "id": "s4",
+   "h": "10TB까지 3.25~5.50배: 규모가 커질수록 속도 배수는 줄고 비용 우위는 커진다",
+   "layer": "common",
+   "blocks": [
+    {
+     "kind": "fact",
+     "items": [
+      "비교 대상은 CPU 기반 DuckDB다. TPC-H에서 파생한 쿼리를 콜드 런으로 돌렸고, 데이터는 Amazon S3에 두었다.",
+      "규모는 SF100(100GB), SF1K(1TB), SF3K(3TB), SF10K(10TB)다. 총 쿼리 실행 시간과 쿼리 시점 컴퓨트 비용을 기본 설정과 튜닝 설정에서 각각 쟀다.",
+      "고정된(pinned) 개발 빌드를 썼다.",
+      "측정 범위가 다르다. Sirius 시간은 결과 가져오기·내보내기를 제외했고, DuckDB 시간은 CSV 출력을 포함했다.",
+      "컴퓨트 비용은 측정된 인스턴스 실행 시간만 반영했다. 기동, 검증, 스토리지, S3, 유휴 시간은 제외했다.",
+      "본문의 대표 수치(튜닝 설정)는 NVIDIA GPU 2개가 달린 AWS 인스턴스에서 나왔다. SF100·SF10K에서는 단일 GPU 구성도 시험했다. 비교 상대는 '시험한 CPU DuckDB 구성 중 가장 좋은 것'이다. 인스턴스 종류와 단가는 본문에 없다."
+     ],
+     "src": 1,
+     "loc": "Compare Sirius GPU and DuckDB CPU benchmark results"
+    },
+    {
+     "kind": "fact_table",
+     "title": "튜닝한 2-GPU Sirius와 최선의 CPU DuckDB 비교(콜드 런, 총 실행 시간)",
+     "head": [
+      "규모",
+      "CPU DuckDB(초)",
+      "Sirius 2-GPU(초)",
+      "속도 배수",
+      "쿼리 시점 컴퓨트 비용"
+     ],
+     "rows": [
+      [
+       "SF1K(1TB)",
+       "347.3",
+       "63.2",
+       "5.50배(범위 상단과 일치)",
+       "본문에 없음"
+      ],
+      [
+       "SF3K(3TB)",
+       "752.4",
+       "160.6",
+       "4.69배",
+       "약 71% 감소"
+      ],
+      [
+       "SF10K(10TB)",
+       "2,369.4",
+       "729.9",
+       "3.25배",
+       "약 79% 감소"
+      ]
+     ],
+     "note": "SF100 수치와 단일 GPU 구성 수치는 그림 2에만 있어 확인하지 못함.",
+     "src": 1,
+     "loc": "Compare Sirius GPU and DuckDB CPU benchmark results"
+    },
+    {
+     "kind": "calc",
+     "text": "1TB당 처리 시간으로 바꾸면 흐름이 갈린다. Sirius는 SF1K 63.2초 → SF3K 약 53.5초 → SF10K 약 73.0초로, 10TB에서 TB당 시간이 늘어난다. CPU DuckDB는 347.3초 → 약 250.8초 → 약 236.9초로, 규모가 커질수록 TB당 시간이 줄어든다. 속도 배수가 줄어드는 것은 이 두 흐름이 겹친 결과다. 다만 CPU 쪽 비교 상대는 규모마다 '시험한 구성 중 최선'이어서 구성 자체가 바뀌었을 수 있다. 따라서 같은 구성의 효율이 좋아졌다고 단정할 수 없다.",
+     "inputs": [
+      {
+       "name": "SF1K CPU/GPU(초)",
+       "value": "347.3 / 63.2"
+      },
+      {
+       "name": "SF3K CPU/GPU(초)",
+       "value": "752.4 / 160.6"
+      },
+      {
+       "name": "SF10K CPU/GPU(초)",
+       "value": "2,369.4 / 729.9"
+      },
+      {
+       "name": "데이터 크기(TB)",
+       "value": "1 / 3 / 10"
+      }
+     ],
+     "formula": "TB당 초 = 총 실행 시간 ÷ 데이터 크기(TB)"
+    },
+    {
+     "kind": "assumption",
+     "by": "ai",
+     "text": "비용 비교도 실행 시간 비교와 같은 두 구성(튜닝 2-GPU 대 최선의 CPU 구성) 사이에서 했다고 본다. 원문은 이를 명시하지 않는다. '최선'이 시간 기준인지 비용 기준인지도 밝히지 않았다."
+    },
+    {
+     "kind": "calc",
+     "text": "속도 배수와 비용 절감률을 합치면 두 구성의 시간당 인스턴스 단가 비율이 나온다(비용 비교도 같은 두 구성 사이라는 위 가정 아래). GPU 쪽 단가는 SF3K에서 CPU 쪽의 약 1.4배, SF10K에서는 약 0.7배다. 비율이 규모에 따라 바뀌었으므로 어느 한쪽의 인스턴스가 달라졌다고 읽힌다. 원문은 GPU가 2개라는 것만 밝히고 GPU 인스턴스 종류가 규모마다 같은지는 적지 않았다. 그래서 '최선의 CPU 구성'이 더 비싼 인스턴스로 바뀌었는지, GPU 쪽이 더 싼 인스턴스로 바뀌었는지는 가릴 수 없다. 어느 쪽이든 10TB에서 비용 우위가 커진 것은 같은 하드웨어에서 GPU 효율이 좋아진 결과라기보다, 비교하는 구성 조합이 달라진 결과일 가능성이 있다.",
+     "inputs": [
+      {
+       "name": "SF3K 속도 배수",
+       "value": "4.69"
+      },
+      {
+       "name": "SF3K 비용 절감",
+       "value": "약 71%"
+      },
+      {
+       "name": "SF10K 속도 배수",
+       "value": "3.25"
+      },
+      {
+       "name": "SF10K 비용 절감",
+       "value": "약 79%"
+      }
+     ],
+     "formula": "GPU 시간당 단가 ÷ CPU 시간당 단가 = (1 − 비용 절감률) × 속도 배수"
+    },
+    {
+     "kind": "view",
+     "text": "글이 앞세운 수치인 '최대 79% 비용 절감'(AI 요약에 실린 값)은 속도 배수가 가장 낮은 지점(3.25배)에서 나왔다. 위 계산대로라면 비교한 두 구성의 단가 비율이 규모에 따라 달라졌다는 뜻이다. 인스턴스 종류와 단가가 공개되지 않아 검증할 수 없다. 79%를 '규모가 클수록 GPU가 싸다'는 일반 법칙으로 읽지 않는 것이 맞다(확신 중간. 단가 비율은 근사치 두 개로 거꾸로 계산한 값이다).\n\n10TB에서 GPU의 TB당 시간이 늘어나는 이유는 글에 없다. GPU 메모리를 넘는 데이터의 처리나 S3 읽기 병목을 의심할 수 있지만 근거가 없는 추정이다(확신 낮음)."
+    }
+   ]
+  },
+  {
+   "id": "s5",
+   "h": "구성 선택과 튜닝이 결과를 좌우한다: 10TB 기본 설정은 끝나지 않았다",
+   "layer": "common",
+   "blocks": [
+    {
+     "kind": "fact",
+     "items": [
+      "SF100에서는 단일 GPU가 비용이 가장 낮았고, 2-GPU가 실행 시간이 가장 짧았다.",
+      "SF10K에서는 튜닝한 2-GPU가 튜닝한 단일 GPU보다 실행 시간과 비용 모두에서 앞섰다.",
+      "SF10K에서 기본 설정의 2-GPU 구성은 '완료하지 못함(did not finish)'으로 기록됐다. 튜닝한 구성은 729.9초에 끝냈다.",
+      "결과는 쿼리 구조, 데이터셋 크기, 하드웨어, 캐시 상태에 따라 달라질 수 있다."
+     ],
+     "src": 1,
+     "loc": "Compare Sirius GPU and DuckDB CPU benchmark results"
+    },
+    {
+     "kind": "view",
+     "text": "'SQL만 그대로 두면 된다'는 메시지와 '10TB에서는 튜닝하지 않으면 끝나지 않는다'는 결과 사이에 간극이 있다. 소규모에서는 두 줄 설치로 충분하겠지만, 성능 수치가 나온 대규모 구간은 설정 전문성이 필요한 영역이다. 무엇을 튜닝했는지는 저장소의 설정 문서로 넘겨져 있고 본문에는 없다."
+    }
+   ]
+  },
+  {
+   "id": "s6",
+   "h": "근거는 어디서 왔나",
+   "layer": "common",
+   "blocks": [
+    {
+     "kind": "fact",
+     "items": [
+      "벤치마크는 글쓴이 측(NVIDIA와 Sirius 개발진)이 직접 돌린 것이다.",
+      "Sirius 저장소에 벤치마크 실행기, 쿼리 정의, 구성 상세, 설치 안내가 공개돼 있어 자체 하드웨어로 재현할 수 있다고 한다.",
+      "ClickBench에서의 Sirius 성능 글과 DuckDB 측 출시 공지로 가는 링크가 있다. 이 리포트는 그 글들을 열지 않았다."
+     ],
+     "src": 1,
+     "loc": "Compare Sirius GPU and DuckDB CPU benchmark results / Get started with Sirius"
+    },
+    {
+     "kind": "view",
+     "text": "검증할 수 있는 부분은 쿼리 정의, 실행기, 구성이다. 저장소가 공개돼 있다. 검증할 수 없는 부분은 인스턴스 종류와 단가, 시험한 CPU 구성의 수와 종류, 그림 2 속 세부 수치다. 글에는 같은 조건으로 제3자가 낸 결과가 실려 있지 않다."
+    }
+   ]
+  },
+  {
+   "id": "s7",
+   "h": "누가 득을 보나",
+   "layer": "common",
+   "blocks": [
+    {
+     "kind": "fact",
+     "items": [
+      "글이 명시한 당사자는 NVIDIA(GPU·CUDA), DuckLabs(DuckDB 코어 확장으로 공동 출시), UW–Madison(공동 개발)이다.",
+      "시험 환경은 NVIDIA GPU 2개를 단 AWS 인스턴스와 Amazon S3다.",
+      "글은 대체 대상을 'CPU 기반 DuckDB'로만 적는다. 특정 CPU 공급사나 다른 데이터베이스·데이터 웨어하우스 업체는 언급하지 않는다."
+     ],
+     "src": 1,
+     "loc": "본문 전체"
+    }
+   ]
+  },
+  {
+   "id": "s8",
+   "h": "비판적으로 다시 읽기",
+   "layer": "common",
+   "blocks": [
+    {
+     "kind": "view",
+     "items": [
+      "측정 범위가 비대칭이다. Sirius는 결과 가져오기·내보내기를 빼고, DuckDB는 CSV 출력을 넣었다. 결과 집합이 작은 TPC-H 쿼리라 영향은 작을 수 있지만, 방향은 분명히 GPU에 유리하다. 크기는 알 수 없다(확신 중간).",
+      "비용은 실행 중인 인스턴스 시간만 계산했다. GPU 인스턴스의 기동 시간과 유휴 시간을 뺀 비용이다. 상시 띄워 두는 운영에서는 79%가 그대로 유지되지 않을 수 있다.",
+      "'시험한 CPU 구성 중 최선'이 몇 개 중 최선인지 밝히지 않았다. 고정된 개발 빌드라서 정식 배포판의 성능과 같다는 보장도 없다.",
+      "TPC-H 공식 결과가 아니라 'TPC-H에서 파생한 쿼리'다. 지원 기능 목록과 fallback 비율이 없어 실제 업무 쿼리 구성에서의 효과는 추정할 수 없다.",
+      "글쓴이 이해관계: 세 명 중 두 명은 NVIDIA 소속이고, 한 명은 Sirius 공동 개발자다. 글은 GPU 수요를 넓히려는 벤더의 개발자 마케팅이며, 이는 글쓴이 소개에서 확인된다. 그렇다고 수치가 틀렸다는 뜻은 아니다. 다만 조건 선택이 유리한 쪽으로 기울었을 가능성은 감안해야 한다."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s9",
+   "h": "투자자 관점의 정리",
+   "layer": "investor",
+   "blocks": [
+    {
+     "kind": "view",
+     "items": [
+      "확인된 것: GPU 실행 경로가 DuckDB 공식 확장으로 들어왔다. 이것은 NVIDIA가 CPU 영역이던 단일 노드 분석 SQL에서 '코드 재작성' 장벽을 없앴다는 뜻이고, 성능 수치보다 이 유통 경로가 더 확실한 변화다(확신 높음).",
+      "새로 나온 것: 벤더 측 측정 결과다. 1~10TB 범위에서 튜닝 2-GPU가 3.25~5.50배 빠르다. 비용이 공개된 3TB와 10TB에서는 쿼리 시점 컴퓨트 비용이 각각 약 71%, 약 79% 낮다. 다만 속도 배수는 규모가 커질수록 줄고, 10TB의 79% 비용 절감에는 비교하는 인스턴스 조합이 바뀐 효과가 섞였을 가능성이 있다. 'CPU 분석을 GPU가 싸게 대체한다'는 전제는 아직 벤더 자료 하나에 기대고 있다(확신 중간).",
+      "답하지 않은 것: 지원 쿼리 범위와 fallback 비율, 인스턴스 단가, 기본 설정에서의 안정성(10TB 미완료), 정식 빌드 성능. 이 네 가지가 실제 채택률을 가른다.",
+      "실적 추정과 밸류에이션 전제에 주는 뜻: 이 글만으로 NVIDIA의 데이터센터 매출 추정을 바꿀 근거는 없다. 원문에 수요 규모나 채택 수치가 없다. 'GPU 수요가 AI 학습·추론 밖의 범용 데이터 처리로 넓어진다'는 장기 서사를 뒷받침하는 사례 하나로만 다룬다.",
+      "다음에 확인할 것: Sirius 저장소의 재현 결과(특히 제3자 결과), ClickBench 순위와 조건, DuckDB 측 출시 공지에 적힌 지원 범위, 클라우드 사업자의 GPU 인스턴스로 이 워크로드를 돌린 사례."
+     ]
+    },
+    {
+     "kind": "view",
+     "items": [
+      "NVIDIA: 호재, 강도 약함(확신 중간). 근거는 CUDA 기반 실행이 널리 쓰이는 분석 엔진의 기본 워크플로 안에 들어갔고 CPU fallback으로 시도 비용이 낮다는 점이다. 매출 기여 규모는 원문에 근거가 없다. 판정을 바꾸는 조건: 제3자 재현에서 배수·비용 우위가 크게 줄거나, 지원 범위가 좁아 대부분의 쿼리가 CPU로 돌아가면 중립으로 낮춘다.",
+      "DuckLabs: 비상장이라 판정하지 않는다.",
+      "Amazon(AWS): 시험 환경으로만 등장했고 인스턴스 종류·단가가 없다. 중립, 근거 부족.",
+      "CPU 공급사, 다른 분석 데이터베이스·데이터 웨어하우스 업체: 원문에 이름도 수치도 없어 판정하지 않는다. 대체 대상이 'CPU 기반 DuckDB'라는 사실만으로 특정 기업의 피해를 말할 근거는 없다."
+     ]
+    }
+   ]
+  }
+ ],
+ "review": {
+  "draft": {
+   "model": "claude-opus-5-5",
+   "at_kst": "2026-11-24T02:26:39+09:00"
+  },
+  "review": {
+   "model": "claude-opus-5-5",
+   "at_kst": "2026-11-24T02:28:41+09:00",
+   "result": "통과"
+  },
+  "summary": "앞선 검토는 다섯 가지를 고쳤다. 코드 표시를 지웠다. 규모별 단가 비율 변화를 CPU 쪽 인스턴스 탓으로 단정한 대목은 어느 쪽 구성이 바뀌었는지 가릴 수 없다는 서술로 낮췄다. 79%를 제목 수치로 잘못 적은 것을 바로잡았다. SF1K 비용을 일반화한 문장은 공개된 3TB·10TB 값으로 한정했다. TB당 시간 축소를 CPU 효율 개선으로 단정한 대목에는 비교 구성이 바뀌었을 수 있다는 단서를 붙였다. 이번 확인에서 고친 곳의 수치(TB당 시간, 단가 비율 약 1.4배와 0.7배)와 조건을 원문 벤치마크 절과 다시 대조했고, 새 오류나 다른 절과의 어긋남은 없었다.",
+  "history": []
+ }
+}
