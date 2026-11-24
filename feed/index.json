@@ -1,7 +1,27 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-24T08:35:44+09:00",
+ "generated_kst": "2026-11-24T11:21:01+09:00",
  "reports": [
+  {
+   "slug": "openai-introducing-shirudo",
+   "type": "article",
+   "title": "OpenAI : Cisco와 함께, 패치를 배포하는 동안 실행 중인 리눅스를 재시작 없이 막는 '쉴드'를 오픈소스로 내놓는다",
+   "companies": [
+    {
+     "name": "OpenAI",
+     "ticker": null
+    },
+    {
+     "name": "Cisco",
+     "ticker": null
+    }
+   ],
+   "published_kst": "2026-11-24T11:21:01+09:00",
+   "revised_kst": "2026-11-24T11:21:01+09:00",
+   "revision": 1,
+   "summary": "Shirudo는 패치 공백을 eBPF 기반 임시 방어막으로 메우고, 그 방어막을 AI 에이전트가 만들게 하겠다는 방향 선언이다. 공개된 검증은 통제된 시험 하나뿐이고 성능·오탐·상용 모델 수치가 없다. 아직은 투자 판단을 바꿀 사건이 아니라 지켜볼 신호에 가깝다.",
+   "path": "reports/openai-introducing-shirudo.json"
+  },
   {
    "slug": "anthropic-working-with-ai",
    "type": "article",
