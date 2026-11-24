@@ -1,0 +1,277 @@
+{
+ "schema": 1,
+ "slug": "openai-clay-plugins-openai",
+ "type": "article",
+ "title": "OpenAI : Clay는 Codex·ChatGPT 플러그인과 GPT-6 모델 3단 구성으로 영업 업무를 에이전트화한다",
+ "summary": "OpenAI가 고객 사례로 낸 홍보 글이다. 사용량·매출·성과 수치가 하나도 없어 성과를 판단할 근거는 없다. 쓸 만한 정보는 구조 둘뿐이다. 이 고객은 GPT-6 제품군에서 최상위가 아닌 중간 모델을 주력으로 쓰고, 같은 Responses API로 가격대를 넘나들 수 있다는 점을 OpenAI 모델의 매력으로 든다.",
+ "companies": [
+  {
+   "name": "Clay",
+   "ticker": null
+  },
+  {
+   "name": "OpenAI",
+   "ticker": null
+  }
+ ],
+ "prev_slug": null,
+ "published_kst": "2026-11-25T08:16:13+09:00",
+ "revised_kst": "2026-11-25T08:16:13+09:00",
+ "revision": 1,
+ "sources": [
+  {
+   "n": 1,
+   "title": "OpenAI — Clay helps sales teams win with Codex and ChatGPT",
+   "url": "https://openai.com/business/customer-stories/clay-plugins-openai",
+   "date": "2026-11-24",
+   "access": "public",
+   "kind": "article",
+   "read": "전문",
+   "note": "OpenAI 공식 고객 사례 페이지 전문. 발행 주체가 공급사이고, 인용 화자는 고객사 Clay의 Head of AI 한 명뿐이다. 정량 지표가 없다."
+  }
+ ],
+ "sections": [
+  {
+   "id": "s1",
+   "h": "주장 한 줄",
+   "layer": "common",
+   "blocks": [
+    {
+     "kind": "fact",
+     "text": "Clay는 영업팀이 잠재 고객을 조사하고 데이터를 go-to-market(GTM) 플레이로 바꾸도록 돕는다. 이를 위해 Codex·ChatGPT 연동을 고객이 이미 쓰는 도구 안에 넣고, 추론은 GPT-6 모델들에 맡긴다. 이 글은 그 사례를 OpenAI 제품 도입 사례로 제시한다.",
+     "src": 1,
+     "loc": "도입부"
+    },
+    {
+     "kind": "fact",
+     "items": [
+      "Clay의 자기 규정: 자기 학습형 매출 엔진(self-learning revenue engine). 기업·인물 목록을 만들고, 에이전트로 그 레코드를 보강(enrich)해 GTM 플레이에 쓴다.",
+      "원문 분류: 스타트업, 북미, 기술 업종. 사용 제품은 API, Codex, ChatGPT."
+     ],
+     "src": 1,
+     "loc": "도입부"
+    }
+   ]
+  },
+  {
+   "id": "s2",
+   "h": "영업 담당자가 이미 쓰는 도구 안으로 데이터를 가져다 놓는다",
+   "layer": "common",
+   "blocks": [
+    {
+     "kind": "fact",
+     "items": [
+      "Codex 연동: 빌더는 Codex 안에서 GTM 플레이를 만들고 실행한다. 영업 담당자는 계정 조사나 성사시키려는 딜 파악에 쓸 데이터를 받는다.",
+      "담당자들은 자사 시스템의 정보와 공개 데이터셋을 결합해 제품 가치를 고객에게 어떻게 전달할지 정한다.",
+      "ChatGPT 플러그인: 같은 고객 데이터를 ChatGPT 안으로 가져와, 담당자가 ChatGPT를 떠나지 않고 잠재 고객을 조사하게 한다."
+     ],
+     "src": 1,
+     "loc": "Giving sales reps more context to act on"
+    },
+    {
+     "kind": "quote",
+     "speaker": "Jeff Barg",
+     "role": "Head of AI, Clay",
+     "text": "ChatGPT 안의 Clay는 영업 담당자가 팔려는 고객을 더 잘 이해할 방법을 준다. 그 풍부한 맥락을 그들이 이미 일하는 곳으로 가져다 놓는다.",
+     "src": 1,
+     "loc": "도입부"
+    },
+    {
+     "kind": "quote",
+     "speaker": "Jeff Barg",
+     "role": "Head of AI, Clay",
+     "text": "고객들은 영업의 여러 일에 Codex를 쓰는 걸 좋아한다. 가장 뛰어난 영업 담당자가 이것으로 가장 큰 힘을 얻는 걸 봤다.",
+     "src": 1,
+     "loc": "Giving sales reps more context to act on"
+    },
+    {
+     "kind": "view",
+     "text": "성과 근거는 화자의 정성 평가뿐이다. ChatGPT 플러그인이 \"큰 성공\"이었다는 말과 고객들이 Codex를 좋아한다는 말이다. 사용자 수, 활성도, 딜 전환율 같은 수치가 없다. 그래서 이 절에서 읽을 것은 성과가 아니라 배포 경로다. Clay가 자기 화면 대신 ChatGPT·Codex를 영업 담당자의 작업 공간으로 받아들였다는 점이다. 이는 OpenAI 앱이 B2B SaaS의 진입면이 되는 흐름에 맞는 사례이지만, 한 고객의 사례다(확신 낮음)."
+    },
+    {
+     "kind": "view",
+     "text": "\"가장 뛰어난 담당자가 가장 큰 힘을 얻는다\"는 발언은 도구의 효과가 고르게 퍼지지 않는다는 뜻으로도 읽힌다. 전사 좌석 확산보다 상위 사용자 중심의 채택일 가능성이 있다. 원문은 이 점을 더 다루지 않는다."
+    }
+   ]
+  },
+  {
+   "id": "s3",
+   "h": "작업 난이도별로 모델을 나눠 쓰고 같은 API로 묶는다",
+   "layer": "common",
+   "blocks": [
+    {
+     "kind": "fact",
+     "items": [
+      "OpenAI 모델이 Claygent의 조사·자격 판정(qualification)·보강·신호 감지를 처리한다. 사용자의 워크플로 구성을 돕고 다른 Clay 에이전트를 조율하는 에이전트도 OpenAI 모델로 돈다.",
+      "주력 모델은 GPT-6 Sol이다. 어려운 작업에는 GPT-6 Astra, 비용에 민감한 작업에는 GPT-6 Luna를 쓴다.",
+      "이 범위로 백그라운드 조사·카피라이팅부터 사용자와 직접 상호작용하는 에이전트까지 맡는다.",
+      "Responses API 하나로 서로 다른 지능·비용 수준을 같은 인터페이스에서 쓴다."
+     ],
+     "src": 1,
+     "loc": "Matching intelligence and cost to the task"
+    },
+    {
+     "kind": "quote",
+     "speaker": "Jeff Barg",
+     "role": "Head of AI, Clay",
+     "text": "GPT-6 Sol은 GTM 플레이에 아주 좋은 모델이다. 직관이 좋고, 긴 호흡의 결과 중심 GTM 작업을 짤 수 있다.",
+     "orig": "GPT-6 Sol is a really great model for go-to-market plays. It has really good intuition and can build long-horizon, outcome-based go-to-market tasks.",
+     "src": 1,
+     "loc": "Matching intelligence and cost to the task"
+    },
+    {
+     "kind": "quote",
+     "speaker": "Jeff Barg",
+     "role": "Head of AI, Clay",
+     "text": "서로 다른 가격대에 걸쳐 같은 Responses API를 쓸 수 있다는 점이 OpenAI 모델에서 우리에게 매우 매력적이다.",
+     "src": 1,
+     "loc": "Matching intelligence and cost to the task"
+    },
+    {
+     "kind": "view",
+     "text": "이 글에서 가장 쓸모 있는 정보다. 대량 처리가 많은 에이전트 SaaS 고객이 최상위 모델(Astra)이 아니라 중간 모델(Sol)을 주력으로 둔다. 최상위는 어려운 작업에, 저가 모델(Luna)은 비용 민감 작업에 배분한다. OpenAI 입장에서는 고객사 토큰의 대부분이 중간 가격대에서 소화된다는 뜻일 수 있다. 다만 원문은 모델별 호출 비중을 밝히지 않는다(확신 낮음)."
+    },
+    {
+     "kind": "view",
+     "text": "Clay가 OpenAI 모델의 매력으로 따로 든 것은 가격대를 바꿔도 같은 Responses API를 쓸 수 있다는 운영상의 편의다. 원문에는 Sol의 직관과 Astra의 개발 루프 같은 성능 칭찬도 함께 있다. 그래서 성능보다 API 편의를 앞세웠다고 읽을 근거는 없다. 이 편의는 전환 비용으로 작동할 수 있지만, 경쟁사가 비슷한 인터페이스를 갖추면 쉽게 따라잡힌다. 원문은 다른 공급사를 함께 쓰는지, 비교해 봤는지 말하지 않는다."
+    }
+   ]
+  },
+  {
+   "id": "s4",
+   "h": "GPT-6 Astra가 내부 엔지니어링 루프를 닫았다",
+   "layer": "common",
+   "blocks": [
+    {
+     "kind": "fact",
+     "text": "Jeff Barg는 자신이 만든 기능을 손으로 확인하는 데 시간을 많이 썼다. 지금은 그 일의 더 많은 부분을 GPT-6 Astra에 맡긴다.",
+     "src": 1,
+     "loc": "Building end-to-end plays that self-improve over time"
+    },
+    {
+     "kind": "quote",
+     "speaker": "Jeff Barg",
+     "role": "Head of AI, Clay",
+     "text": "GPT-6 Astra는 엔지니어링 과정의 루프를 완전히 닫아서 내가 소프트웨어를 만드는 방식을 바꿨다. Astra가 코드를 쓰고, 테스트를 추가하고, 테스트를 실제로 돌리고, 기능을 시험해 그걸 녹화해 PR에 올린다.",
+     "src": 1,
+     "loc": "Building end-to-end plays that self-improve over time"
+    },
+    {
+     "kind": "view",
+     "text": "한 사람의 개발 경험담이고 팀 단위 생산성 수치는 없다. 의미는 Clay가 GTM 쪽에서 노리는 목표와 겹친다는 데 있다. 실행하고, 결과를 확인하고, 그 결과로 개선하는 루프를 에이전트가 끝까지 닫는다는 목표다. 소프트웨어 개발에서 먼저 이 변화를 겪었으니 영업에도 옮기겠다는 것이 이 글의 서사 구조다."
+    }
+   ]
+  },
+  {
+   "id": "s5",
+   "h": "다음 단계는 음성·인바운드 에이전트·Decisions API",
+   "layer": "common",
+   "blocks": [
+    {
+     "kind": "fact",
+     "items": [
+      "GPT-Live-1은 음성으로 Clay와 Codex를 쓰고, 잠재 고객이 제품을 알아가도록 돕는 수단으로 본다.",
+      "에이전트가 잠재 고객에게 제품·서비스를 보여 주는 인바운드 영업 개발(inbound sales development) 기능을 개발 중이다.",
+      "Decisions API를 모델을 Clay에 통합하고 새 활용처를 여는 또 다른 경로로 본다.",
+      "목표는 GTM 워크플로를 처음부터 끝까지 맡고, 에이전트가 결과에서 배우며 나아지는 것이다. 소프트웨어 엔지니어링에서 일어난 변화를 GTM에도 가져오도록 빌더들을 돕겠다는 것이다."
+     ],
+     "src": 1,
+     "loc": "Building end-to-end plays that self-improve over time"
+    },
+    {
+     "kind": "view",
+     "text": "모두 계획이나 화자의 기대이고 출시 시점이나 조건은 없다. 인바운드 에이전트가 제품을 시연하는 기능은 영업 개발 담당 인력을 직접 대체하는 쪽이다. 실현되면 Clay의 가치 제안이 '담당자 보조'에서 '담당자 대체'로 바뀐다. 진척은 원문에서 확인되지 않는다."
+    }
+   ]
+  },
+  {
+   "id": "s6",
+   "h": "근거는 어디서 왔나",
+   "layer": "common",
+   "blocks": [
+    {
+     "kind": "fact",
+     "items": [
+      "발행 주체는 OpenAI다. 형식은 'OpenAI for Business' 고객 사례 페이지이고, 'Start building with OpenAI'로 이어지는 홍보물이다.",
+      "인용 화자는 Clay의 Head of AI Jeff Barg 한 명이다.",
+      "수치는 하나도 없다. 사용량, 비용 절감, 딜 성사율, 매출 기여 모두 없다."
+     ],
+     "src": 1
+    },
+    {
+     "kind": "view",
+     "text": "독자가 검증할 수 있는 근거는 없다. 남는 것은 고객사 한 사람의 정성적 평가와 제품 구성 설명이다. 다만 Clay 쪽이 실명으로 밝힌 모델 배분(Sol 주력, Astra 고난도, Luna 저가)과 Responses API 선호는 홍보 문구라기보다 구성 사실에 가깝다. 이 부분은 상대적으로 신뢰할 만하다."
+    }
+   ]
+  },
+  {
+   "id": "s7",
+   "h": "누가 득을 보고 누가 손해를 보는가",
+   "layer": "common",
+   "blocks": [
+    {
+     "kind": "fact",
+     "items": [
+      "원문은 득을 보는 쪽과 손해를 보는 쪽을 따로 지목하지 않는다. 글이 소개하는 제품은 OpenAI의 GPT-6 Astra·Sol·Luna, Codex, ChatGPT, Responses API, GPT-Live-1, Decisions API이고, 도입 주체는 Clay다.",
+      "Clay 쪽에서는 영업 담당자, 특히 가장 뛰어난 담당자를 가장 큰 수혜자로 든다.",
+      "손해를 보는 기업이나 업종은 지목하지 않는다."
+     ],
+     "src": 1
+    }
+   ]
+  },
+  {
+   "id": "s8",
+   "h": "비판적으로 다시 읽기",
+   "layer": "common",
+   "blocks": [
+    {
+     "kind": "view",
+     "items": [
+      "이해관계: 공급사가 직접 발행한 홍보물이다. 고객사 측 화자도 공개적으로 공급사를 칭찬하는 자리에 있다. 단점, 비교 대상, 비용 부담, 실패 사례는 구조적으로 빠진다.",
+      "빠진 반대 근거: 다른 모델 공급사를 병행하는지, 모델 비용이 Clay의 매출총이익에서 얼마인지, 플러그인 사용이 Clay 자체 제품 사용을 잠식하는지 알 수 없다.",
+      "주장이 성립하려면 필요한 전제: ChatGPT·Codex 안에서 쓰는 Clay 사용이 Clay의 과금으로 이어져야 한다. 원문은 플러그인의 과금 구조를 말하지 않는다.",
+      "'self-improve'라는 제목과 달리, 에이전트가 결과에서 학습한다는 것은 목표로만 제시된다. 구현 사례는 없다."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s9",
+   "h": "투자자 관점의 정리",
+   "layer": "investor",
+   "blocks": [
+    {
+     "kind": "view",
+     "items": [
+      "확인된 것: 북미 에이전트 SaaS 스타트업 하나가 GPT-6 제품군을 난이도와 비용별 3단으로 나눠 쓰고, 중간 모델을 주력으로 둔다. OpenAI 모델 매출을 추정할 때 '최상위 모델 = 매출 중심'이라는 전제를 경계할 사례다. 다만 고객 하나라서 일반화하기 어렵다(확신 낮음).",
+      "새로 나온 것: GPT-6 Astra·Sol·Luna 계층, GPT-Live-1, Decisions API라는 제품 이름이 고객 사례에서 함께 언급된다. 고객은 모델 성능을 칭찬하면서, 단일 API 아래에서 가격대를 고를 수 있다는 점을 OpenAI 모델의 매력으로 따로 든다. 이는 OpenAI의 B2B 방어 논리 가운데 하나가 플랫폼 일관성일 수 있음을 보여 준다. 고객 하나의 사례다(확신 낮음).",
+      "답하지 않은 것: 사용량, 매출 기여, 비용, 성과 지표, 다른 공급사 병행 여부, 플러그인 과금 구조. 실적 추정이나 밸류에이션 전제에 넣을 숫자가 없다.",
+      "다음에 확인할 것: OpenAI가 GPT-6 계층별 가격과 사용 비중을 공개하는지, ChatGPT·Codex 플러그인 생태계가 파트너 SaaS 매출로 이어진다는 정량 사례가 나오는지, Clay의 인바운드 에이전트 기능이 출시되는지."
+     ]
+    },
+    {
+     "kind": "view",
+     "items": [
+      "OpenAI(비상장): 약한 호재. 에이전트 SaaS 스타트업 고객이 모델 계층 전체와 Codex·ChatGPT 배포 경로를 함께 쓰는 사례다. 공급사 홍보물이고 수치가 없어 강도는 낮다. 다른 고객 사례에서 중간·저가 모델 쏠림이 수치로 확인되면, 고객당 매출 단가 측면에서 판단을 다시 본다.",
+      "Clay(비상장): 중립. 제품 방향은 분명하다. 그러나 성과 근거가 화자의 정성 평가뿐이고, 플러그인 배포가 자체 과금으로 이어지는지 알 수 없다.",
+      "상장 종목: 원문은 상장사나 경쟁 영업 소프트웨어 업체를 거론하지 않는다. 판정할 근거가 없어 판정하지 않는다."
+     ]
+    }
+   ]
+  }
+ ],
+ "review": {
+  "draft": {
+   "model": "claude-opus-5-5",
+   "at_kst": "2026-11-25T08:14:53+09:00"
+  },
+  "review": {
+   "model": "claude-opus-5-5",
+   "at_kst": "2026-11-25T08:16:13+09:00",
+   "result": "통과"
+  },
+  "summary": "앞선 검토는 Responses API의 일관성을 'OpenAI를 고른 이유'로 격상하고 '성능보다'라는 비교를 덧붙인 왜곡을 요약, 모델 계층 절, 투자자 관점 정리에서 모두 'OpenAI 모델의 매력'으로 고쳤다. 이번 확인에서 이 수정과 득실 절, 성과 근거 문장, 종목 판정 문구가 원문과 맞음을 대조했고, 남은 반드시 고칠 사항은 없다.",
+  "history": []
+ }
+}

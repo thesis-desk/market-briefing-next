@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated_kst": "2026-11-25T05:24:57+09:00",
+ "updated_kst": "2026-11-25T08:23:34+09:00",
  "window_days": 14,
  "items_days": 30,
  "index": {
@@ -8,7 +8,7 @@
    "value": 6,
    "label": "엇갈림",
    "orgs": 42,
-   "items": 156
+   "items": 155
   },
   "market": {
    "value": -8,
@@ -42,7 +42,7 @@
     "group": "투자은행",
     "ai_tech": 27,
     "ai_tech_orgs": 7,
-    "market": 31,
+    "market": 30,
     "market_orgs": 7
    },
    {
@@ -56,7 +56,7 @@
     "group": "투자 거장",
     "ai_tech": -35,
     "ai_tech_orgs": 10,
-    "market": -53,
+    "market": -52,
     "market_orgs": 9
    },
    {
@@ -105,9 +105,9 @@
    },
    {
     "week": "2026-11-23",
-    "ai_tech": 8,
+    "ai_tech": 7,
     "ai_tech_orgs": 16,
-    "market": -16,
+    "market": -18,
     "market_orgs": 14
    }
   ],
@@ -115,14 +115,14 @@
    "caution": [
     {
      "tag": "밸류에이션",
-     "n": 21
-    },
-    {
-     "tag": "자금 조달·신용",
-     "n": 18
+     "n": 20
     },
     {
      "tag": "투자 회수",
+     "n": 17
+    },
+    {
+     "tag": "자금 조달·신용",
      "n": 17
     },
     {
@@ -135,7 +135,7 @@
     },
     {
      "tag": "경쟁·해자",
-     "n": 6
+     "n": 5
     },
     {
      "tag": "수요·채택",
@@ -192,6 +192,38 @@
   "method": "기관·인물마다 기간 안 입장 값의 평균을 내고 그 평균들을 다시 평균해 ×50"
  },
  "items": [
+  {
+   "id": "morgan-stanley-can-treasuries-still-protect-your-portfolio",
+   "group": "투자은행",
+   "org": "Morgan Stanley",
+   "person": "Matthew Hornbach",
+   "kind": "publication",
+   "title": "미 국채는 여전히 포트폴리오를 지켜 줄 수 있는가?",
+   "title_orig": "Can Treasuries Still Protect Your Portfolio?",
+   "url": "https://www.morganstanley.com/insights/podcasts/thoughts-on-the-market",
+   "outlet": "Morgan Stanley Thoughts on the Market",
+   "published_kst": "2026-11-25T06:00:00+09:00",
+   "stance": {
+    "ai_tech": 0,
+    "market": 0
+   },
+   "args": [
+    "금리·거시",
+    "투자 회수",
+    "수요·채택"
+   ],
+   "summary": "화자는 성장 우려로 주식이 빠질 때는 미 국채가 다시 헤지 역할을 할 수 있지만, 물가 우려가 원인이면 채권과 주식이 함께 떨어진다고 본다. 기본 시나리오는 침체 없이 10년물 금리가 내년까지 5% 근처에 머무는 것이며, AI 투자가 부진한 경우 금리가 3.5% 근처까지 내려 국채 수익이 커진다고 설명한다. 크로스에셋 전략가는 채권을 헤지로 두면서 주식 비중을 늘리는 쪽을 선호한다.",
+   "points": [
+    "국채는 우려가 성장 둔화일 때 주식 하락의 헤지가 되지만, 물가 우려일 때는 주식과 함께 떨어진다.",
+    "지난주 S&P 500 조정은 AI 트레이드에 대한 의문이 주도했고, 국채는 금리 인상 논의 속에서도 올랐다.",
+    "AI 투자가 기대에 못 미치는 시나리오에서는 연준이 크게 인하하고 10년물 금리가 기본 시나리오보다 약 1.5%p 낮아진다.",
+    "기본 시나리오는 침체 없이 10년물 금리가 내년에도 5% 근처이며, 크로스에셋 전략가는 채권을 헤지로 두며 주식 비중 확대를 선호한다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   }
+  },
   {
    "id": "goldman-what-will-determine-the-durability-of-the-ai-inv",
    "group": "투자은행",

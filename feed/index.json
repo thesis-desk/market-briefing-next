@@ -1,7 +1,95 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-25T05:46:09+09:00",
+ "generated_kst": "2026-11-25T08:46:35+09:00",
  "reports": [
+  {
+   "slug": "tomorrowx-2026-zach-dell-every-energy-company-is-now-an-ai",
+   "type": "interview",
+   "title": "Zach Dell (TomorrowX Summit 2026) : 전자에서 토큰까지의 스펙트럼, 수익률이 먼저인 자본 조달",
+   "companies": [
+    {
+     "name": "Base Power",
+     "ticker": null
+    }
+   ],
+   "event": "TomorrowX Summit 2026",
+   "event_date": "2026-11-17",
+   "published_kst": "2026-11-25T08:35:54+09:00",
+   "revised_kst": "2026-11-25T08:35:54+09:00",
+   "revision": 1,
+   "summary": "Zach Dell은 전력부터 토큰까지를 하나의 가치사슬로 보고, 이 사슬을 수직통합하는 회사가 가장 큰 기업이 된다고 본다. 그 사슬에서 그는 저장장치로 기존 계통의 이용률을 높이는 쪽에 서 있다. 이 대담은 회사 실적이 아니라 세계관과 자본 조달 논리를 확인하는 자료다. 수치 근거가 얇고 진행자가 투자자라는 점을 감안해 읽어야 한다.",
+   "path": "reports/tomorrowx-2026-zach-dell-every-energy-company-is-now-an-ai.json"
+  },
+  {
+   "slug": "tomorrowx-2026-coreweave-s-brannin-mcbee-on-demand-debt-and",
+   "type": "interview",
+   "title": "브래닌 맥비 (TomorrowX Summit 2026) : 계약이 끝난 GPU의 재계약 가격과 부채 조달 구조",
+   "companies": [
+    {
+     "name": "CoreWeave",
+     "ticker": null
+    }
+   ],
+   "event": "TomorrowX Summit 2026",
+   "event_date": "2026-11-17",
+   "published_kst": "2026-11-25T08:31:22+09:00",
+   "revised_kst": "2026-11-25T08:31:22+09:00",
+   "revision": 1,
+   "summary": "CoreWeave 공동창업자는 상각과 부채 상환이 끝난 구형 GPU를 원 계약보다 높은 가격에 다시 빌려주고 있다는 잔존가치 논리로 주가 하락에 맞섰다. 그러나 재계약 가격과 물량, 무담보채 규모처럼 이 논리를 검증할 숫자는 내놓지 않았다. 무담보채가 15%대 수익률에 거래된다는 사실은 시장이 '수주잔고가 부채 전부를 감당한다'는 주장을 아직 할인하고 있다는 신호로 읽힌다.",
+   "path": "reports/tomorrowx-2026-coreweave-s-brannin-mcbee-on-demand-debt-and.json"
+  },
+  {
+   "slug": "together-introducing-preemptible-compute-the-same-compute",
+   "type": "article",
+   "title": "Together AI : 유휴 GPU를 기존 클러스터 안에서 온디맨드의 절반 고정가에 판다",
+   "companies": [
+    {
+     "name": "Together AI",
+     "ticker": null
+    }
+   ],
+   "published_kst": "2026-11-25T08:21:31+09:00",
+   "revised_kst": "2026-11-25T08:21:31+09:00",
+   "revision": 1,
+   "summary": "Together AI가 선점형 노드를 정식 출시했다. 유휴 용량을 온디맨드 요금의 50% 고정가로 기존 클러스터에 붙여 판다. 가동률을 끌어올리는 수익화 장치이면서, 이 회사에 팔리지 않고 남는 용량이 생긴다는 신호다. 다만 남는 용량의 규모, 회수 빈도, 대상 GPU 종류가 빠져 있어 단위 경제성에 미치는 영향은 아직 가늠할 수 없다.",
+   "path": "reports/together-introducing-preemptible-compute-the-same-compute.json"
+  },
+  {
+   "slug": "openai-searching-for-distant-planets-with-astra",
+   "type": "article",
+   "title": "OpenAI : 아마추어 두 명이 Codex·Astra로 공개 망원경 자료를 다시 뒤져 외계행성 후보를 전문가 검증대에 올렸다",
+   "companies": [
+    {
+     "name": "OpenAI",
+     "ticker": null
+    }
+   ],
+   "published_kst": "2026-11-25T08:18:35+09:00",
+   "revised_kst": "2026-11-25T08:18:35+09:00",
+   "revision": 1,
+   "summary": "이 글은 과학적 발견을 보고하지 않는다. AI 도구로 비전문가가 전문가에게 넘길 만한 후보를 만들 수 있다는 사례를 보여 주는 홍보 글이다. 가장 강한 증거는 SETI 연구소 천문학자가 신호 두 개를 독립적으로 재현했다는 점이다. 확정된 행성은 없고, Astra가 무엇인지도 글에 나오지 않는다. 상장 종목의 판단을 바꿀 내용은 없다.",
+   "path": "reports/openai-searching-for-distant-planets-with-astra.json"
+  },
+  {
+   "slug": "openai-clay-plugins-openai",
+   "type": "article",
+   "title": "OpenAI : Clay는 Codex·ChatGPT 플러그인과 GPT-6 모델 3단 구성으로 영업 업무를 에이전트화한다",
+   "companies": [
+    {
+     "name": "Clay",
+     "ticker": null
+    },
+    {
+     "name": "OpenAI",
+     "ticker": null
+    }
+   ],
+   "published_kst": "2026-11-25T08:16:13+09:00",
+   "revised_kst": "2026-11-25T08:16:13+09:00",
+   "revision": 1,
+   "summary": "OpenAI가 고객 사례로 낸 홍보 글이다. 사용량·매출·성과 수치가 하나도 없어 성과를 판단할 근거는 없다. 쓸 만한 정보는 구조 둘뿐이다. 이 고객은 GPT-6 제품군에서 최상위가 아닌 중간 모델을 주력으로 쓰고, 같은 Responses API로 가격대를 넘나들 수 있다는 점을 OpenAI 모델의 매력으로 든다.",
+   "path": "reports/openai-clay-plugins-openai.json"
+  },
   {
    "slug": "tomorrowx-2026-the-new-era-needs-a-new-cloud-digitalocean",
    "type": "interview",
@@ -8964,15 +9052,15 @@
   }
  ],
  "street": {
-  "updated_kst": "2026-11-25T05:24:57+09:00",
+  "updated_kst": "2026-11-25T08:23:34+09:00",
   "path": "street.json"
  },
  "calendar": {
-  "updated_kst": "2026-11-25T02:17:43+09:00",
+  "updated_kst": "2026-11-25T08:21:39+09:00",
   "path": "calendar.json"
  },
  "watch": {
-  "updated_kst": "2026-11-25T02:58:56+09:00",
+  "updated_kst": "2026-11-25T08:46:35+09:00",
   "path": "watch.json"
  },
  "datasets": [
