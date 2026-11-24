@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-24T20:18:35+09:00",
+ "generated_kst": "2026-11-24T20:44:03+09:00",
  "reports": [
   {
    "slug": "sixsigma-ai-4",
@@ -8741,7 +8741,7 @@
   "path": "calendar.json"
  },
  "watch": {
-  "updated_kst": "2026-11-24T17:26:57+09:00",
+  "updated_kst": "2026-11-24T20:44:03+09:00",
   "path": "watch.json"
  },
  "datasets": [
