@@ -1,7 +1,129 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-24T23:23:21+09:00",
+ "generated_kst": "2026-11-25T02:58:56+09:00",
  "reports": [
+  {
+   "slug": "tomorrowx-2026-other",
+   "type": "event",
+   "title": "TomorrowX Summit 2026 (그 밖) : 연산은 내놓는 즉시 팔리지만 돈을 대는 쪽은 방어로 돌아섰다",
+   "companies": [
+    {
+     "name": "스페이스X",
+     "ticker": null
+    }
+   ],
+   "event": "TomorrowX Summit 2026 (그 밖)",
+   "event_date": "2026-11-17",
+   "published_kst": "2026-11-25T02:58:40+09:00",
+   "revised_kst": "2026-11-25T02:58:40+09:00",
+   "revision": 1,
+   "summary": "연산을 파는 쪽(SpaceX·Crusoe·델)은 같은 무대에서 즉시 소진과 원가 우위를 말했다. 돈을 대는 쪽(아폴로·드러켄밀러)은 담보와 자본 보존을 앞세웠다. 판단을 고칠 곳은 수요의 크기가 아니라 위험을 누가 지느냐이며, SpaceX 연산 사업은 규모·원가 주장은 강해졌지만 매출의 질은 답해지지 않았다.",
+   "path": "reports/tomorrowx-2026-other.json"
+  },
+  {
+   "slug": "tomorrowx-2026-software",
+   "type": "event",
+   "title": "TomorrowX Summit 2026 (클라우드·소프트웨어) : 토큰은 자체 모델로 빠지고, 수요는 값을 내려도 늘었다",
+   "companies": [
+    {
+     "name": "TomorrowX Summit 2026",
+     "ticker": null
+    }
+   ],
+   "event": "TomorrowX Summit 2026 (클라우드·소프트웨어)",
+   "event_date": "2026-11-17",
+   "published_kst": "2026-11-25T02:47:13+09:00",
+   "revised_kst": "2026-11-25T02:47:13+09:00",
+   "revision": 1,
+   "summary": "앱·추론 계층 CEO들은 가격을 내리고도 매출이 더 빨리 늘었다고 말했다. 수요가 꺾였다는 시장의 가격과는 맞지 않는다. 다만 큰 사용자들이 쉬운 토큰부터 자체 사후학습 모델로 옮기고 있어(Cognition 30~40%, Perplexity 빠른 답은 거의 전량), 프론티어 랩의 몫은 고난도 작업과 값 쪽으로 좁아지고 있다. 핵심 수치는 대부분 비상장사의 자기 보고라 확신은 중간이다.",
+   "path": "reports/tomorrowx-2026-software.json"
+  },
+  {
+   "slug": "tomorrowx-2026-semis",
+   "type": "event",
+   "title": "TomorrowX Summit 2026 (반도체) : 메모리 부족의 값은 PC·스마트폰이 치르고, 에이전트가 CPU 수요를 되살렸다",
+   "companies": [
+    {
+     "name": "마이크론",
+     "ticker": null
+    }
+   ],
+   "event": "TomorrowX Summit 2026 (반도체)",
+   "event_date": "2026-11-17",
+   "published_kst": "2026-11-25T02:37:51+09:00",
+   "revised_kst": "2026-11-25T02:37:51+09:00",
+   "revision": 1,
+   "summary": "주가가 빠지는 와중에도 반도체 공급사들은 하나같이 수요 변화가 없다고 말했고, 부족은 GPU에서 메모리와 CPU로 번졌다. 둔화 위험은 칩 주문보다 데이터센터 가동 지연·전력·자금조달, 그리고 메모리값을 떠안는 소비자 기기 쪽에서 먼저 드러날 가능성이 크다.",
+   "path": "reports/tomorrowx-2026-semis.json"
+  },
+  {
+   "slug": "pimco-the-credit-market-lens-making-sense-of-diverging",
+   "type": "article",
+   "title": "PIMCO : IG 등급 압축은 AI 발행이 만든 수급 현상이라 끝물이고, HY 하위 등급의 스프레드 확대는 펀더멘털 문제라 이어진다",
+   "companies": [
+    {
+     "name": "Amazon",
+     "ticker": null
+    },
+    {
+     "name": "Alphabet",
+     "ticker": null
+    },
+    {
+     "name": "Meta",
+     "ticker": null
+    },
+    {
+     "name": "NVIDIA",
+     "ticker": null
+    },
+    {
+     "name": "Oracle",
+     "ticker": null
+    }
+   ],
+   "published_kst": "2026-11-25T02:28:32+09:00",
+   "revised_kst": "2026-11-25T02:28:32+09:00",
+   "revision": 1,
+   "summary": "PIMCO는 크레딧 시장의 엇갈림을 두 가지로 설명한다. IG는 하이퍼스케일러의 AI 발행이 AA를 눌러 등급 간 격차가 사라진 수급 현상이고, HY는 CCC 발행사가 재융자 비용에 막힌 신용 문제다. 하이퍼스케일러 AA 채권의 상대가치 회복과 저등급 TMT·소비재 회피라는 방향은 수긍할 만하다. 다만 스프레드 수준이나 기간 같은 수치가 거의 없어 근거의 두께는 얇다.",
+   "path": "reports/pimco-the-credit-market-lens-making-sense-of-diverging.json"
+  },
+  {
+   "slug": "nvidia-dev-qa-how-everstone-brings-where-winds-meet-to-life",
+   "type": "article",
+   "title": "NVIDIA Technical Blog : Everstone은 DLSS 5로 화풍을 지키며 조명·재질을 끌어올렸고, 성능 비용을 감안해 켜고 끄는 선택지로 낸다",
+   "companies": [
+    {
+     "name": "NVIDIA",
+     "ticker": null
+    },
+    {
+     "name": "Everstone Studio",
+     "ticker": null
+    }
+   ],
+   "published_kst": "2026-11-25T02:17:28+09:00",
+   "revised_kst": "2026-11-25T02:17:28+09:00",
+   "revision": 1,
+   "summary": "DLSS 5는 이 인터뷰에서 성능을 벌어 주는 기술이 아니라 GPU 예산을 쓰는 화질 옵션으로 소개됐다. 다만 성능 비용과 화질 개선 모두 수치가 없는 NVIDIA 쪽 홍보성 문답이라, 투자 판단에 쓸 정보는 '도입 방식과 마찰 지점'의 정성적 확인에 그친다.",
+   "path": "reports/nvidia-dev-qa-how-everstone-brings-where-winds-meet-to-life.json"
+  },
+  {
+   "slug": "google-ai-gemini-golden-state",
+   "type": "article",
+   "title": "Google AI 블로그 : 골든스테이트 구단 전체가 Gemini를 팬 경험과 내부 업무에 함께 쓴다",
+   "companies": [
+    {
+     "name": "Alphabet(Google)",
+     "ticker": null
+    }
+   ],
+   "published_kst": "2026-11-25T02:14:17+09:00",
+   "revised_kst": "2026-11-25T02:14:17+09:00",
+   "revision": 1,
+   "summary": "Google이 골든스테이트(워리어스·발키리스·체이스 센터)와의 기존 후원 관계를 Gemini 공식 AI 파트너 계약으로 넓혔다는 발표다. 계약 금액, 배치 규모, 성과 지표가 없어 Alphabet 실적 추정이나 Gemini 기업 수요 판단을 바꿀 정보는 아니다. 스포츠 마케팅 사례 하나로 보는 것이 맞다.",
+   "path": "reports/google-ai-gemini-golden-state.json"
+  },
   {
    "slug": "training-data-openai-s-noam-brown-why-game-theory-didn-t",
    "type": "interview",
@@ -8750,15 +8872,15 @@
   }
  ],
  "street": {
-  "updated_kst": "2026-11-24T23:23:21+09:00",
+  "updated_kst": "2026-11-25T02:23:38+09:00",
   "path": "street.json"
  },
  "calendar": {
-  "updated_kst": "2026-11-24T14:14:14+09:00",
+  "updated_kst": "2026-11-25T02:17:43+09:00",
   "path": "calendar.json"
  },
  "watch": {
-  "updated_kst": "2026-11-24T20:54:41+09:00",
+  "updated_kst": "2026-11-25T02:58:56+09:00",
   "path": "watch.json"
  },
  "datasets": [

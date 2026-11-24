@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated_kst": "2026-11-24T20:54:41+09:00",
+ "updated_kst": "2026-11-25T02:58:56+09:00",
  "unit": "십억 달러",
  "quarters": [
   {
@@ -262,7 +262,11 @@
       "date": "2026-10-29",
       "report": "amazon-3q26-earnings"
      },
-     "next_earnings": null,
+     "next_earnings": {
+      "date": "2027-02-05",
+      "confirmed": false,
+      "period": null
+     },
      "signal": {
       "state": "ok",
       "text": "2027년 증가 예고, 올해 가이던스 유지"
@@ -320,7 +324,11 @@
       "date": "2026-10-28",
       "report": "alphabet-3q26-earnings"
      },
-     "next_earnings": null,
+     "next_earnings": {
+      "date": "2027-02-04",
+      "confirmed": true,
+      "period": null
+     },
      "signal": {
       "state": "ok",
       "text": "2027년 증가 예고, 올해 가이던스 유지"

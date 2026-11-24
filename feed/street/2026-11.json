@@ -1,8 +1,41 @@
 {
  "schema": 1,
  "month": "2026-11",
- "updated_kst": "2026-11-24T23:23:21+09:00",
+ "updated_kst": "2026-11-25T02:23:38+09:00",
  "items": [
+  {
+   "id": "blackstone-nfl-commissioner-roger-goodell-on-the-business-o",
+   "group": "PE·대체투자",
+   "org": "Blackstone",
+   "person": "Ramzi Ramsey, Winfield Sickles",
+   "kind": "publication",
+   "title": "NFL 커미셔너 로저 구델이 말하는 풋볼 사업, 구단 가치평가, 그리고 다음 단계",
+   "title_orig": "NFL Commissioner Roger Goodell on the Business of Football, Franchise Valuations, and What’s Next",
+   "url": "https://www.blackstone.com/insights/article/nfl-commissioner-roger-goodell-on-the-business-of-football-franchise-valuations-and-whats-next",
+   "outlet": "Blackstone Insights",
+   "published_kst": "2026-11-25T01:11:51+09:00",
+   "stance": {
+    "ai_tech": 1,
+    "market": 1
+   },
+   "args": [
+    "수요·채택",
+    "밸류에이션",
+    "투자 회수",
+    "경쟁·해자"
+   ],
+   "summary": "Blackstone의 Ramzi Ramsey는 AI 혁신 속도와 수요가 둔화될 기미가 없다고 보며, 가치가 주로 컴퓨팅·인프라 계층에 쌓이고 있다고 말한다. Winfield Sickles는 나스닥-100 PER이 26배에서 17배로 낮아진 조정을 두고, 40년 투자 경험상 이런 때가 기회이며 건전한 소비 지표도 나왔다고 본다. 다만 단기 변동성과 완충 구간(speed bump)이 있을 수 있음을 함께 인정한다.",
+   "points": [
+    "AI 혁신 속도와 수요는 전혀 둔화되지 않고 있으며, 단기 완충 구간은 있어도 근본 변화는 외면하기 어렵다.",
+    "현 시점 AI 가치는 대부분 컴퓨팅·인프라 계층에 귀속되며, 수요가 공급을 계속 웃돈다.",
+    "모델 계층은 엇갈리고, 오픈소스는 지속 가능한 사업성을 아직 입증하지 못했다.",
+    "기술주 중심 나스닥의 PER이 크게 압축된 것은 의미 있는 밸류에이션 조정이며, 이런 국면이 기회라고 본다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   }
+  },
   {
    "id": "blackrock-ai-financing-new-opportunities-for-fixed-income",
    "group": "자산운용",
@@ -68,6 +101,58 @@
     "tier": "standard"
    },
    "note": "팟캐스트 음성을 음성 인식(Whisper)으로 받아 적은 전사 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
+  },
+  {
+   "id": "morgan-stanley-these-vertical-software-stocks-could-be-ai-s-nex",
+   "group": "투자은행",
+   "org": "Morgan Stanley",
+   "person": null,
+   "kind": "report",
+   "title": "모건스탠리: 버티컬 소프트웨어 종목이 AI의 다음 승자가 될 수 있다",
+   "title_orig": "These Vertical Software Stocks Could Be AI’s Next Winners, Morgan Stanley Says",
+   "url": "https://www.barrons.com/articles/ai-vertical-software-stocks-navan-manhattan-associates-0d67cd2e",
+   "outlet": "Barron's",
+   "published_kst": "2026-11-24T17:27:00+09:00",
+   "stance": {
+    "ai_tech": 1,
+    "market": null
+   },
+   "args": [
+    "수요·채택",
+    "경쟁·해자"
+   ],
+   "judged": {
+    "basis": "headline_only",
+    "tier": "light"
+   }
+  },
+  {
+   "id": "altimeter-brad-gerstner-says-anthropic-will-be-worth-3-tri",
+   "group": "벤처캐피털",
+   "org": "Altimeter Capital",
+   "person": null,
+   "kind": "report",
+   "title": "Brad Gerstner, \"Anthropic은 내년 말까지 3조 달러 가치가 될 것\"… 현실적인가?",
+   "title_orig": "Brad Gerstner Says Anthropic Will Be Worth $3 Trillion by the End of Next Year. Is That Realistic?",
+   "url": "https://247wallst.com/investing/2026/11/24/brad-gerstner-says-anthropic-will-be-worth-3-trillion-by-the-end-of-next-year-is-that-realistic",
+   "outlet": "24/7 Wall St.",
+   "published_kst": "2026-11-24T15:46:00+09:00",
+   "stance": {
+    "ai_tech": 2,
+    "market": null
+   },
+   "args": [
+    "밸류에이션"
+   ],
+   "summary": "Brad Gerstner는 CNBC에서 Anthropic이 내년 말까지 시가총액 3조 달러에 이를 것이라고 말했다. 근거는 선행 매출 10배라는 배수이며, 이는 시장의 우량 기업 상당수보다 훨씬 낮은 수준이라고 주장했다.",
+   "points": [
+    "Anthropic이 내년 말까지 시가총액 3조 달러가 될 것으로 본다. 근거는 선행 매출 10배라는 배수이며, 이는 시장의 우량 기업 상당수가 받는 배수보다 훨씬 낮은 수준이라고 했다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
   },
   {
    "id": "bofa-bofa-s-warning-for-2027-don-t-ignore-hard-landin",
@@ -257,6 +342,41 @@
     "basis": "headline_only",
     "tier": "light"
    }
+  },
+  {
+   "id": "jpmorgan-meta-stock-is-down-24-from-peak-jpmorgan-sees-at",
+   "group": "투자은행",
+   "org": "JPMorgan",
+   "person": null,
+   "kind": "report",
+   "title": "META 주가 고점 대비 24% 하락: JPMorgan은 '매력적인 매수 기회'로 보지만 2027년 지출과 설비투자는 부담으로 남아",
+   "title_orig": "META Stock Is Down 24% From Peak: JPMorgan Sees ‘Attractive Buying Opportunity’ — But 2027 Spending, Capex Remain An Overhang",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/meta-stock-down-24-peak-120852628.html",
+   "outlet": "Yahoo Finance",
+   "published_kst": "2026-11-24T13:08:00+09:00",
+   "stance": {
+    "ai_tech": 1,
+    "market": null
+   },
+   "args": [
+    "밸류에이션",
+    "투자 회수",
+    "수요·채택"
+   ],
+   "summary": "JPMorgan은 Meta 주가가 고점 대비 약 24% 내려 '매력적인 매수 기회'라며 비중확대 의견을 유지했다. 주가가 Muse 출시 이전 수준으로 돌아가 Meta Superintelligence Labs의 모델 진전과 AI 신제품 기회가 밸류에이션에 거의 반영되지 않았다고 본다. 다만 2027년 비용과 설비투자는 부담 요인이라며 목표주가와 EPS 추정치를 낮췄다.",
+   "points": [
+    "Meta 주가가 고점에서 약 24% 하락했으며, JPMorgan은 이를 '매력적인 매수 기회'로 본다. 목표주가는 940달러에서 775달러로 낮췄지만 '비중확대' 의견은 유지했다.",
+    "Meta 주가가 Muse 출시 이전 수준으로 돌아가, Meta Superintelligence Labs의 모델 진전과 새로 나타나는 AI 제품 기회에 대한 평가가 밸류에이션에 거의 반영되어 있지 않다.",
+    "Meta의 3분기 실적과 4분기 전망은 견조하지만, 2027년 비용과 설비투자가 주가를 누르는 부담 요인이라고 평가했다.",
+    "Muse를 비롯한 최근 AI 제품 출시에서 기회를 보지만, 더 높은 비용과 자본 조달을 반영해 이익 추정치를 조정했다.",
+    "2027년 총비용 추정치를 50억 달러 올려 2,220억 달러(전년 대비 25% 증가)로 잡았고, 2027년 설비투자 추정치는 2,550억 달러(전년 대비 78% 증가)로 유지했다.",
+    "2027년과 2028년 GAAP 주당순이익 추정치를 8~9% 낮춰 각각 28.62달러와 32.53달러로 제시했다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
   },
   {
    "id": "pimco-pimco-s-ivascyn-says-ai-disruption-risk-boosts-a",
