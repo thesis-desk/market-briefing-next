@@ -1,20 +1,20 @@
 {
  "schema": 1,
- "updated_kst": "2026-11-24T08:24:09+09:00",
+ "updated_kst": "2026-11-24T20:18:35+09:00",
  "window_days": 14,
  "items_days": 30,
  "index": {
   "ai_tech": {
-   "value": 3,
+   "value": 4,
    "label": "엇갈림",
    "orgs": 43,
-   "items": 148
+   "items": 149
   },
   "market": {
    "value": -8,
    "label": "엇갈림",
    "orgs": 30,
-   "items": 98
+   "items": 99
   },
   "by_group": [
    {
@@ -33,9 +33,9 @@
    },
    {
     "group": "자산운용",
-    "ai_tech": -20,
+    "ai_tech": -21,
     "ai_tech_orgs": 7,
-    "market": 0,
+    "market": -1,
     "market_orgs": 7
    },
    {
@@ -54,7 +54,7 @@
    },
    {
     "group": "투자 거장",
-    "ai_tech": -38,
+    "ai_tech": -35,
     "ai_tech_orgs": 10,
     "market": -54,
     "market_orgs": 8
@@ -105,7 +105,7 @@
    },
    {
     "week": "2026-11-23",
-    "ai_tech": -10,
+    "ai_tech": -7,
     "ai_tech_orgs": 10,
     "market": -17,
     "market_orgs": 9
@@ -115,7 +115,7 @@
    "caution": [
     {
      "tag": "밸류에이션",
-     "n": 22
+     "n": 21
     },
     {
      "tag": "자금 조달·신용",
@@ -123,7 +123,7 @@
     },
     {
      "tag": "투자 회수",
-     "n": 19
+     "n": 18
     },
     {
      "tag": "쏠림",
@@ -131,7 +131,7 @@
     },
     {
      "tag": "금리·거시",
-     "n": 8
+     "n": 9
     },
     {
      "tag": "경쟁·해자",
@@ -139,11 +139,11 @@
     },
     {
      "tag": "수요·채택",
-     "n": 5
+     "n": 4
     },
     {
      "tag": "정책·지정학",
-     "n": 5
+     "n": 4
     },
     {
      "tag": "전력·공급 제약",
@@ -192,6 +192,50 @@
   "method": "기관·인물마다 기간 안 입장 값의 평균을 내고 그 평균들을 다시 평균해 ×50"
  },
  "items": [
+  {
+   "id": "pimco-pimco-s-ivascyn-says-ai-disruption-risk-boosts-a",
+   "group": "자산운용",
+   "org": "PIMCO",
+   "person": null,
+   "kind": "report",
+   "title": "PIMCO의 Ivascyn: AI 혼란 위험이 채권의 매력을 높인다",
+   "title_orig": "Pimco’s Ivascyn Says AI Disruption Risk Boosts Appeal of Bonds",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-24/pimco-s-ivascyn-says-ai-disruption-risk-boosts-appeal-of-bonds",
+   "outlet": "Bloomberg",
+   "published_kst": "2026-11-24T11:30:00+09:00",
+   "stance": {
+    "ai_tech": -1,
+    "market": -1
+   },
+   "args": [
+    "금리·거시"
+   ],
+   "judged": {
+    "basis": "headline_only",
+    "tier": "light"
+   }
+  },
+  {
+   "id": "el-erian-nvidia-is-no-ordinary-company-and-jensen-huang-i",
+   "group": "투자 거장",
+   "org": "Mohamed El-Erian",
+   "person": null,
+   "kind": "report",
+   "title": "엘에리안: 엔비디아는 '평범한 회사가 아니다', 젠슨 황도 '평범한 CEO가 아니다'…다만 애널리스트들은 위험 경고",
+   "title_orig": "Nvidia is ‘no ordinary company’ and Jensen Huang is ‘no ordinary CEO,’ says El-Erian — but analysts warn of risks",
+   "url": "https://www.msn.com/en-us/news/other/nvidia-is-no-ordinary-company-and-jensen-huang-is-no-ordinary-ceo-says-el-erian-but-analysts-warn-of-risks/ar-AA2i6LJH",
+   "outlet": "Benzinga on MSN",
+   "published_kst": "2026-11-24T08:55:46+09:00",
+   "stance": {
+    "ai_tech": 1,
+    "market": null
+   },
+   "args": [],
+   "judged": {
+    "basis": "headline_only",
+    "tier": "light"
+   }
+  },
   {
    "id": "morgan-stanley-from-evs-to-robots-china-s-edge-in-physical-ai",
    "group": "투자은행",
