@@ -1,8 +1,42 @@
 {
  "schema": 1,
  "month": "2026-11",
- "updated_kst": "2026-11-25T02:23:38+09:00",
+ "updated_kst": "2026-11-25T05:24:57+09:00",
  "items": [
+  {
+   "id": "goldman-what-will-determine-the-durability-of-the-ai-inv",
+   "group": "투자은행",
+   "org": "Goldman Sachs",
+   "person": "Chamath Palihapitiya, Eric Sheridan",
+   "kind": "publication",
+   "title": "무엇이 AI 투자 사이클의 지속성을 결정할 것인가?",
+   "title_orig": "What Will Determine the Durability of the AI Investment Cycle?",
+   "url": "https://www.youtube.com/watch?v=XymmJNOQmD8",
+   "outlet": "Goldman Sachs (유튜브)",
+   "published_kst": "2026-11-25T03:47:47+09:00",
+   "stance": {
+    "ai_tech": 0,
+    "market": null
+   },
+   "args": [
+    "투자 회수",
+    "자금 조달·신용",
+    "전력·공급 제약",
+    "수요·채택"
+   ],
+   "summary": "Chamath Palihapitiya는 기업 현장에서 AI의 ROI가 아직 보이지 않고 전력 확보가 어려워 네오클라우드의 장기 고정 부채와 단기 매출 간 불일치가 위험하다고 본다. Eric Sheridan은 현재의 우려를 사이클 후반의 자연스러운 검증 과정으로 보고, 하이퍼스케일러의 투자수익률과 수요는 견조하다고 평가한다. 두 사람 모두 수요·자본·전력이 약해지면 사이클이 꺾일 수 있으나 하이퍼스케일러는 버틸 것이라고 본다.",
+   "points": [
+    "네오클라우드는 단기·투기적 매출에 장기 고정 부채를 안고 있어, 최종 고객의 ROI가 나오지 않으면 가동률 불일치로 취약해진다.",
+    "기업 현장에서 AI 도입은 변화 관리 문제로 확산이 느리고, 실적에서 AI 덕분이라는 설명은 거의 없다.",
+    "Sheridan은 하이퍼스케일러가 최저 기준인 15% 이상의 투자수익률을 쉽게 달성할 수 있다고 본다.",
+    "Sheridan은 사이클을 늦출 요인으로 수요, 자본 접근성, 전력을 꼽으며 현재 수요 신호는 강해지고 있다고 말한다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "유튜브 자막(제작자 제공)(en) 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
+  },
   {
    "id": "blackstone-nfl-commissioner-roger-goodell-on-the-business-o",
    "group": "PE·대체투자",
@@ -103,6 +137,39 @@
    "note": "팟캐스트 음성을 음성 인식(Whisper)으로 받아 적은 전사 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
   },
   {
+   "id": "dimon-worse-than-people-expect-jamie-dimon-s-credit-cr-2",
+   "group": "투자 거장",
+   "org": "JPMorgan CEO",
+   "person": "Jamie Dimon",
+   "kind": "report",
+   "title": "사람들의 예상보다 나쁠 것: Jamie Dimon의 신용 위기 경고가 경종을 울리고 있다 — 닥치기 전에 경기침체에 대비해 재무를 다지는 법",
+   "title_orig": "Worse than people expect: Jamie Dimon’s credit crisis warning is raising alarms — how to recession-proof your finances before it hits",
+   "url": "https://www.msn.com/en-us/money/other/worse-than-people-expect-jamie-dimon-s-credit-crisis-warning-is-raising-alarms-how-to-recession-proof-your-finances-before-it-hits/ar-AA2i970g",
+   "outlet": "Moneywise on MSN",
+   "published_kst": "2026-11-24T19:50:00+09:00",
+   "stance": {
+    "ai_tech": null,
+    "market": -1
+   },
+   "args": [
+    "자금 조달·신용",
+    "금리·거시"
+   ],
+   "summary": "Dimon은 경기침체를 예측하는 것은 아니지만 JPMorgan은 침체와 스태그플레이션에 대비해야 한다고 말했다. 신용 사이클이 오면 레버리지 대출 전반의 손실이 예상보다 클 것이라고 경고했고, 사모신용은 투명성이 낮아 실제 손실보다 예측에 따라 매도가 일어날 것이라고 봤다.",
+   "points": [
+    "Dimon은 미국이 경기침체로 향하고 있는지 예측하기를 거부했다. 어떤 것도 예측하는 것이 아니며, JPMorgan으로서는 경기침체와 스태그플레이션 가능성에 대비해야 한다는 말일 뿐이라고 했다.",
+    "스태그플레이션이 오고 고금리가 더 오래 지속되며 신용 스프레드가 벌어지면, 차환에 나선 레버리지 기업들에 큰 압박과 부담이 될 것이라고 Dimon은 말했다.",
+    "Dimon은 다음 신용 사이클이 오면 레버리지 대출의 손실이 시나리오 대비 사람들의 예상보다 나쁠 것이라고 여러 차례 경고해 왔다.",
+    "주주서한에서 Dimon은 언젠가 신용 사이클이 오면 모든 레버리지 대출 전반의 손실이 예상보다 클 것이라고 밝혔다. 또한 사모신용은 투명성이 높지 않아 사람들이 실제 손실이 아닌 예측에 근거해 매도하게 될 것이라고 말했다.",
+    "Dimon은 경기침체 때 어떤 업종이 가장 큰 타격을 받을지 예측하기 어렵다고 말했다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
+  },
+  {
    "id": "morgan-stanley-these-vertical-software-stocks-could-be-ai-s-nex",
    "group": "투자은행",
    "org": "Morgan Stanley",
@@ -125,6 +192,38 @@
     "basis": "headline_only",
     "tier": "light"
    }
+  },
+  {
+   "id": "ackman-bill-ackman-says-the-u-s-economy-could-be-headed",
+   "group": "투자 거장",
+   "org": "Pershing Square",
+   "person": "Bill Ackman",
+   "kind": "report",
+   "title": "Bill Ackman, 미국 경제가 또 한 번의 침체로 향할 수 있다며 Kevin Warsh의 연준을 탓하다",
+   "title_orig": "Bill Ackman says the U.S. economy could be headed for another recession—and is blaming Kevin Warsh’s Fed",
+   "url": "https://finance.yahoo.com/economy/policy/articles/bill-ackman-says-u-economy-145906658.html",
+   "outlet": "Yahoo Finance",
+   "published_kst": "2026-11-24T15:59:00+09:00",
+   "stance": {
+    "ai_tech": null,
+    "market": -1
+   },
+   "args": [
+    "금리·거시",
+    "투자 회수",
+    "정책·지정학"
+   ],
+   "summary": "Ackman은 채권시장 때문에 금융 여건이 이미 크게 긴축됐으며, 연준이 2% 물가 목표를 고집하며 금리를 올리면 미국과 세계를 침체에 빠뜨릴 것이라고 주장했다. 지정학 리스크, 군비 지출, 탈세계화와 관세, AI 인프라 및 에너지 투자는 2% 목표 설정 당시 없던 요소이므로 3% 물가 목표가 더 현실적이라고 봤다.",
+   "points": [
+    "Ackman은 X에 글을 올려, 채권시장 때문에 금융 여건이 이미 크게 긴축되었고 투자하려는 민간 기업의 차입이 더 비싸졌다고 밝혔다.",
+    "새로운 세계에서는 3% 인플레이션이 더 현실적인 목표이다.",
+    "연준이 물가를 2%로 끌어내리려는 실패할 시도로 계속 금리를 올린다면, 미국과 세계를 침체에 빠뜨릴 것이다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
   },
   {
    "id": "altimeter-brad-gerstner-says-anthropic-will-be-worth-3-tri",
@@ -400,6 +499,39 @@
     "basis": "headline_only",
     "tier": "light"
    }
+  },
+  {
+   "id": "apollo-apollo-flags-looming-debt-reckoning-for-software",
+   "group": "PE·대체투자",
+   "org": "Apollo",
+   "person": null,
+   "kind": "report",
+   "title": "Apollo, 소프트웨어 기업에 닥칠 부채 청산의 순간을 경고",
+   "title_orig": "Apollo Flags Looming Debt Reckoning for Software Companies",
+   "url": "https://www.tradingview.com/news/gurufocus:560d24037094b:0-apollo-flags-looming-debt-reckoning-for-software-companies",
+   "outlet": "TradingView",
+   "published_kst": "2026-11-24T10:34:00+09:00",
+   "stance": {
+    "ai_tech": null,
+    "market": -1
+   },
+   "args": [
+    "자금 조달·신용",
+    "경쟁·해자",
+    "금리·거시"
+   ],
+   "summary": "Apollo는 AI가 전통적 사업 모델을 위협하고 고금리로 부채 부담이 커지면서 미국 소프트웨어 업계의 재무 곤경이 크게 악화할 수 있다고 경고했다. Slok 이코노미스트는 소프트웨어 대출 수익률이 13%를 넘었고 다수 대출이 B-·CCC 등급이라고 짚었다. 2021~2022년에 빌린 부채의 대규모 차환이 2028~2029년에 다가온다고 봤다.",
+   "points": [
+    "Apollo Global Management는 11월 24일(화), 인공지능이 전통적 사업 모델을 위협하고 높은 금리가 부채를 갈수록 비싸게 만들고 있어, 미국 소프트웨어 업계 전반의 재무 곤경이 상당히 악화할 수 있다고 경고했다.",
+    "수석 이코노미스트 Torsten Slok은 소프트웨어 업종 대출의 수익률이 13%를 넘어섰다는 점을 우려스러운 변화로 짚었으며, 이는 차입 기업의 재무 건전성에 대한 우려가 커지고 있음을 반영한다.",
+    "Apollo는 더 큰 문제가 다가오고 있다고 본다. 소프트웨어 기업들이 자금 조달이 상대적으로 쌌던 2021~2022년에 많이 빌렸고, 그 결과 2028년과 2029년에 상당한 규모의 차환 물결이 닥친다는 것이다.",
+    "Slok은 영향을 받는 대출 다수가 B- 또는 CCC의 투기등급이어서 신용 위험이 높다고 지적했다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
   },
   {
    "id": "el-erian-nvidia-is-no-ordinary-company-and-jensen-huang-i",

@@ -1,7 +1,99 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-25T02:58:56+09:00",
+ "generated_kst": "2026-11-25T05:46:09+09:00",
  "reports": [
+  {
+   "slug": "tomorrowx-2026-the-new-era-needs-a-new-cloud-digitalocean",
+   "type": "interview",
+   "title": "패디 스리니바산 DigitalOcean CEO (TomorrowX Summit 2026) : 공급을 넘는 수요와 MW당 1,800만 달러의 플랫폼 수익화",
+   "companies": [
+    {
+     "name": "DigitalOcean",
+     "ticker": null
+    }
+   ],
+   "event": "TomorrowX Summit 2026",
+   "event_date": "2026-11-17",
+   "published_kst": "2026-11-25T05:46:09+09:00",
+   "revised_kst": "2026-11-25T05:46:09+09:00",
+   "revision": 1,
+   "summary": "DigitalOcean은 자신을 GPU 임대형 네오클라우드가 아니라고 규정한다. 그 근거로 소프트웨어 수익화, 낮은 고객 집중도, 장비 금융을 내세우며 수요가 공급을 넘는다고 거듭 말했다. 다만 수급이 풀릴 때 MW당 수익(P)을 지킬 수 있는지는 정성적 설명에 그쳤다. DigitalOcean에는 약한 호재로 보고, 확신은 중간 이하다.",
+   "path": "reports/tomorrowx-2026-the-new-era-needs-a-new-cloud-digitalocean.json"
+  },
+  {
+   "slug": "tomorrowx-2026-why-ai-needs-memory-micron-s-sanjay-mehrotra",
+   "type": "interview",
+   "title": "Micron Sanjay Mehrotra·Scott DeBoer (TomorrowX Summit 2026) : 다년 SCA와 3D DRAM",
+   "companies": [
+    {
+     "name": "Micron",
+     "ticker": null
+    }
+   ],
+   "event": "TomorrowX Summit 2026",
+   "event_date": "2026-11-17",
+   "published_kst": "2026-11-25T05:39:43+09:00",
+   "revised_kst": "2026-11-25T05:39:43+09:00",
+   "revision": 1,
+   "summary": "Micron 경영진은 2027년 물량 75% 판매 완료와 선수 약정 320억 달러가 걸린 다년 SCA를 근거로, 이번 사이클의 가시성이 과거와 다르다고 주장했다. 물량 가시성은 설득력이 있다. 그러나 가격 조항이 제각각인 SCA가 하강기에도 지켜질지에 대해서는 take-or-pay와 탄탄한 조건이 있다고만 했을 뿐 위약 시 처리 같은 집행 조건을 밝히지 않았다. 나머지는 고객 관계와 메모리의 가치라는 논리에 기댔으므로 아직 검증되지 않았다.",
+   "path": "reports/tomorrowx-2026-why-ai-needs-memory-micron-s-sanjay-mehrotra.json"
+  },
+  {
+   "slug": "nvidia-dev-prepare-market-data-for-forecasting-with-nvidia",
+   "type": "article",
+   "title": "NVIDIA Technical Blog : 장중 시장 데이터를 한 번 텐서로 만들어 두면 Megatron Core로 수익률·거래량 예측 모델을 학습할 수 있다",
+   "companies": [
+    {
+     "name": "NVIDIA",
+     "ticker": null
+    }
+   ],
+   "published_kst": "2026-11-25T05:22:02+09:00",
+   "revised_kst": "2026-11-25T05:22:02+09:00",
+   "revision": 1,
+   "summary": "NVIDIA가 Megatron-LM 저장소에 금융 시계열 예측용 데이터 계층(전처리 스크립트, 메모리 맵 로더, 시간 누수 방지 장치)을 붙여 공개하고 그 사용법을 설명한 튜토리얼이다. 성능 수치·고객 사례·비용 근거는 없다. 자본시장 퀀트 연구를 GPU 기반 트랜스포머 학습 스택으로 끌어들이려는 개발자 생태계 작업으로 읽히며, 투자 판단에 주는 정보는 작다(확신 중간).",
+   "path": "reports/nvidia-dev-prepare-market-data-for-forecasting-with-nvidia.json"
+  },
+  {
+   "slug": "openai-ifood",
+   "type": "article",
+   "title": "OpenAI : iFood는 에이전트 자동화의 병목을 모델이 아닌 실행 런타임으로 보고, 1만5천 개 저장소에 REST API 하나로 코딩 에이전트를 돌린다",
+   "companies": [
+    {
+     "name": "iFood",
+     "ticker": null
+    },
+    {
+     "name": "OpenAI",
+     "ticker": null
+    }
+   ],
+   "published_kst": "2026-11-25T05:19:10+09:00",
+   "revised_kst": "2026-11-25T05:19:10+09:00",
+   "revision": 1,
+   "summary": "OpenAI가 낸 고객 사례 홍보 글이다. 새로 얻을 정보는 대기업 고객이 패키지 제품 대신 원시 API 위에 사내 에이전트 런타임을 직접 지었다는 사용 방식에 있다. 공개된 수치(2만5천 건, 270억 토큰, 건당 4센트)를 결합하면 건당 약 100만 토큰, 총지출 약 1천 달러가 나온다. 토큰 사용량은 크지만 OpenAI 매출에서 차지하는 비중은 미미한 단계로 읽힌다.",
+   "path": "reports/openai-ifood.json"
+  },
+  {
+   "slug": "openai-intentful-dots",
+   "type": "article",
+   "title": "OpenAI : 소기업 대표의 dot는 시키기 전에 일을 처리해 성장 업무에 쓸 시간을 만든다",
+   "companies": [
+    {
+     "name": "OpenAI",
+     "ticker": null
+    },
+    {
+     "name": "Intentful",
+     "ticker": null
+    }
+   ],
+   "published_kst": "2026-11-25T05:15:44+09:00",
+   "revised_kst": "2026-11-25T05:15:44+09:00",
+   "revision": 1,
+   "summary": "OpenAI가 고객 사례로 내세운 것은 생산성 수치가 아니라 'dot'가 요청 전에 움직인다는 점이다. 근거는 고객 한 곳의 일화뿐이고 비용·정확도·실패 사례는 없다. 다만 dot가 HubSpot·Google Workspace·Slack·Asana 같은 기존 도구 안에서 일한다는 설계가 드러나, 기존 업무 소프트웨어가 AI 에이전트의 '데이터 원천'으로 남는 그림을 확인시켜 준다.",
+   "path": "reports/openai-intentful-dots.json"
+  },
   {
    "slug": "tomorrowx-2026-other",
    "type": "event",
@@ -8872,7 +8964,7 @@
   }
  ],
  "street": {
-  "updated_kst": "2026-11-25T02:23:38+09:00",
+  "updated_kst": "2026-11-25T05:24:57+09:00",
   "path": "street.json"
  },
  "calendar": {
