@@ -1,8 +1,263 @@
 {
  "schema": 1,
  "month": "2026-11",
- "updated_kst": "2026-11-24T20:18:35+09:00",
+ "updated_kst": "2026-11-24T23:23:21+09:00",
  "items": [
+  {
+   "id": "blackrock-ai-financing-new-opportunities-for-fixed-income",
+   "group": "자산운용",
+   "org": "BlackRock",
+   "person": null,
+   "kind": "publication",
+   "title": "AI 금융: 채권 투자자를 위한 새로운 기회",
+   "title_orig": "AI Financing: New Opportunities for Fixed Income Investors",
+   "url": "https://www.youtube.com/watch?v=hgBsHs133e8",
+   "outlet": "BlackRock (유튜브)",
+   "published_kst": "2026-11-24T23:00:36+09:00",
+   "stance": {
+    "ai_tech": 0,
+    "market": 0
+   },
+   "args": [
+    "자금 조달·신용",
+    "금리·거시"
+   ],
+   "summary": "AI 설비투자를 위한 대규모 자금 조달과 각국 정부의 재정 지출 확대가 겹치며 실질금리가 급등했다고 본다. 이 환경이 채권·고정수익 투자자에게는 소득을 만들 기회라고 주장한다. 또한 유연한 운용으로 투자등급 등 높은 등급으로 옮기면서도 높은 수익률을 유지할 수 있다고 말한다.",
+   "points": [
+    "하이퍼스케일러 설비투자가 2024년 약 1,800억 달러대에서 내년 1조 7천억 달러로 불어날 것으로 예상한다.",
+    "AI 자금 조달과 각국의 재정 지출 확대라는 두 힘이 동시에 작용해 실질금리가 급등했다.",
+    "실질금리 상승 덕분에 등급을 높이면서도 높은 수익률을 유지할 수 있는 기회가 생겼다.",
+    "제약 없는 유연한 운용은 위험을 더 지는 것이 아니라 환경에 맞춰 위험을 줄이는 것이라고 주장한다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "유튜브 영상의 음성을 음성 인식(Whisper)으로 받아 적은 전사 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
+  },
+  {
+   "id": "ubs-house-view-daily-ai-rebound-provides-opportunity",
+   "group": "투자은행",
+   "org": "UBS",
+   "person": "Aaron Kreischer",
+   "kind": "publication",
+   "title": "House View Daily | AI 반등은 집중된 노출을 줄일 기회",
+   "title_orig": "House View Daily | AI rebound provides opportunity to reduce concentrated exposures",
+   "url": "https://www.ubs.com/content/dam/podcasts/wma/on-air/in-the-now/20261124_HV_Daily.mp3",
+   "outlet": "UBS House View Daily",
+   "published_kst": "2026-11-24T20:07:00+09:00",
+   "stance": {
+    "ai_tech": 0,
+    "market": 0
+   },
+   "args": [
+    "쏠림",
+    "투자 회수",
+    "자금 조달·신용",
+    "경쟁·해자"
+   ],
+   "summary": "UBS CIO는 지난주 급락이 AI 투자 구조 자체의 붕괴를 뜻하지는 않는다고 보지만, 기대 수준과 쏠림, AI 투자 수익화의 불확실성 때문에 글로벌·미국 주식을 중립으로 유지한다. 급반등을 기회로 삼아 미국 대형 기술주 쏠림을 줄이고, AI 안에서는 재무가 탄탄하고 수익화 경로가 보이는 플랫폼 위주로 옮기며 채권·금·헤지펀드로 분산하라고 권고한다.",
+   "points": [
+    "지난주 변동성이 AI 투자의 구조적 스토리가 깨졌다는 신호는 아니며, 클라우드 성장과 컴퓨팅 수요는 여전히 뒷받침된다고 본다.",
+    "기대 수준, 시장 주도주 쏠림, AI 수익화 불확실성 때문에 글로벌·미국 주식을 중립으로 유지한다.",
+    "미국 대형 기술주에 이미 크게 노출된 투자자는 강세 구간에서 중복 포지션을 줄이고 수익원을 넓혀야 한다.",
+    "AI 안에서는 투자 재원을 자체 조달할 수 있는 검증된 플랫폼을 선호하고, 차입 기반 용량 공급업체와 자본지출 둔화에 취약한 기업은 경계한다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "팟캐스트 음성을 음성 인식(Whisper)으로 받아 적은 전사 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
+  },
+  {
+   "id": "bofa-bofa-s-warning-for-2027-don-t-ignore-hard-landin",
+   "group": "투자은행",
+   "org": "Bank of America",
+   "person": null,
+   "kind": "report",
+   "title": "Bank of America의 2027년 경고: 경기 경착륙 위험을 무시하지 말 것",
+   "title_orig": "BofA’s warning for 2027: Don’t ignore hard-landing risks",
+   "url": "https://seekingalpha.com/news/4676166-bofas-warning-for-2027-dont-ignore-hard-landing-risks",
+   "outlet": "Seeking Alpha",
+   "published_kst": "2026-11-24T15:12:00+09:00",
+   "stance": {
+    "ai_tech": null,
+    "market": -2
+   },
+   "args": [
+    "금리·거시"
+   ],
+   "judged": {
+    "basis": "headline_only",
+    "tier": "light"
+   }
+  },
+  {
+   "id": "goldman-ai-returns-matter-more-than-nvidia-drama-says-go",
+   "group": "투자은행",
+   "org": "Goldman Sachs",
+   "person": null,
+   "kind": "report",
+   "title": "엔비디아 소동보다 AI 투자수익이 더 중요하다, 골드만삭스의 벨",
+   "title_orig": "AI returns matter more than Nvidia drama, says Goldman’s Bell",
+   "url": "https://www.moneycontrol.com/news/business/markets/ai-returns-matter-more-than-nvidia-drama-says-goldman-s-bell-14088170.html",
+   "outlet": "Moneycontrol",
+   "published_kst": "2026-11-24T14:19:00+09:00",
+   "stance": {
+    "ai_tech": 0,
+    "market": 1
+   },
+   "args": [
+    "투자 회수",
+    "쏠림",
+    "금리·거시",
+    "밸류에이션"
+   ],
+   "summary": "Sharon Bell은 엔비디아 이사회 소동이 AI 트레이드 전망을 바꾸지 않으며, 핵심은 기업들이 막대한 설비투자에서 충분한 수익을 내느냐라고 주장했다. 시장은 설비투자를 정당화할 큰 수익성 개선을 아직 확신하지 못한다고 봤다. 주식 비중확대는 유지하되 변동성에 대비해 최근 채권도 비중확대로 돌려 완충하라고 권했다.",
+   "points": [
+    "AI 트레이드는 기업들이 투입하는 설비투자에서 수익을 낼 수 있는지에 달려 있다.",
+    "수익을 낼 수 있다면 기술 섹터는 시간이 지나며 좋은 성과를 낼 것이고, 그렇지 못하다면 성과가 좋지 않을 것이다. 엔비디아의 경영진 교체는 어느 쪽이든 큰 차이를 만들지 않을 것이라고 했다.",
+    "단일 기업을 둘러싼 시장 변동폭이 큰 것은 미국 시장이 소수 종목에 극단적으로 쏠려 있기 때문이며, 이 때문에 글로벌 투자자들이 분산을 찾게 되었다고 설명했다.",
+    "유럽 주식시장은 이러한 쏠림 구도의 수혜를 입었으며, 이 지역 시장은 AI 트레이드와 상당히 분리되어 분산되어 있다고 평가했다.",
+    "포트폴리오 구성에서는 변동성 확대에 대비해 주식 노출에 채권을 짝지을 것을 권고했다. 변동성은 최근 몇 달간 높아졌고, 인플레이션이 높은 긴축 국면에서 커지는 경향이 있다고 말했다.",
+    "팀이 아주 최근 채권을 비중확대로 돌리면서도 주식 비중확대는 유지했다. 주식 비중확대를 유지하더라도 채권으로 완충해야 하며, 위험을 다소 줄이고 노출을 분산·혼합하라고 말했다.",
+    "유럽 기업들이 수익성 개선이나 구체적 활용 사례를 들어 AI를 더 구체적으로 언급하기 시작했지만, 프로젝트 단위의 세부 수익 회계는 대체로 아직 없다고 했다. 이 설비투자를 정당화하는 데 필요한 막대한 수익성 개선에 대해 시장은 아직 확신하지 못한다고 말했다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
+  },
+  {
+   "id": "burry-michael-burry-says-bear-market-rallies-averaged",
+   "group": "투자 거장",
+   "org": "Michael Burry",
+   "person": null,
+   "kind": "report",
+   "title": "Michael Burry, 1929년과 2000년 폭락 당시 약세장 반등이 평균 22%였다고 말해. Nvidia의 반등이 당신의 노후 자금을 속이고 있는가?",
+   "title_orig": "Michael Burry says bear market rallies averaged 22% during the 1929 and 2000 crashes. Is Nvidia’s bounce back tricking your nest egg?",
+   "url": "https://www.msn.com/en-us/money/top-stocks/michael-burry-says-bear-market-rallies-averaged-22-during-the-1929-and-2000-crashes-is-nvidia-s-bounce-back-tricking-your-nest-egg/ar-AA2i7dno",
+   "outlet": "Moneywise on MSN",
+   "published_kst": "2026-11-24T14:15:00+09:00",
+   "stance": {
+    "ai_tech": -1,
+    "market": -1
+   },
+   "args": [
+    "밸류에이션",
+    "투자 회수",
+    "쏠림"
+   ],
+   "summary": "Burry는 1929~1932년과 2000~2002년 폭락 국면에서 일시적 반등이 평균 22%였지만 결국 추가 하락으로 이어졌다며, 반등에 기대어 포트폴리오가 회복되리라 보는 것을 경계했다. 또 오늘날도 당시처럼 주가 하락을 설명할 직접적인 실적 악화 요인이 없다는 유사성이 있다고 봤다. Nvidia, CoreWeave, Nebius에 대해서는 매도 판단에 필요한 정보를 이미 제공했다고 밝혔다.",
+   "points": [
+    "1929~1932년과 2000~2002년 폭락 기간에는 일시적 회복이 수십 차례 있었지만 결국 추가 손실로 이어졌으며, 그 반등들은 두 기간 모두 평균 22%였다.",
+    "오늘날과 1929년·2000년의 한 가지 유사점은 주가 하락을 설명할 직접적인 실적상의 원인이 없다는 점이다.",
+    "나는 공매도하라고 말하지 않았다. 하지만 매도해야 할 근거가 되는 정보는 제공했다. (Nvidia, CoreWeave, Nebius에 대해 이전에 위험을 경고했다고 주장하며 한 말)"
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
+  },
+  {
+   "id": "deutsche-bank-why-deutsche-bank-sees-the-s-p-500-surging-nearl",
+   "group": "투자은행",
+   "org": "Deutsche Bank",
+   "person": null,
+   "kind": "report",
+   "title": "Deutsche Bank가 S&P 500이 내년 25% 가까이 급등할 것으로 보는 이유",
+   "title_orig": "Why Deutsche Bank sees the S&P 500 surging nearly 25% next year",
+   "url": "https://www.msn.com/en-us/news/other/why-deutsche-bank-sees-the-s-p-500-surging-nearly-25-next-year/ar-AA2i7U0E",
+   "outlet": "Barron's on MSN",
+   "published_kst": "2026-11-24T14:03:00+09:00",
+   "stance": {
+    "ai_tech": 1,
+    "market": 2
+   },
+   "args": [
+    "밸류에이션",
+    "투자 회수",
+    "금리·거시",
+    "수요·채택"
+   ],
+   "summary": "Deutsche Bank는 강한 이익 성장과 AI 투자 테마의 재개를 근거로 S&P 500이 2027년 말 9,000포인트(현 수준 대비 약 25% 상승)에 이를 것으로 본다. 하이퍼스케일러 설비투자 증가세는 정점을 지나 둔화하겠지만 이익 성장은 오히려 가속된다고 보며, 밸류에이션이 최근 몇 년 범위의 바닥에 있다고 평가한다. 금리, 지정학, AI 투자, 중간선거 여파 등은 위험 요인으로 꼽았다.",
+   "points": [
+    "Deutsche Bank 주식 애널리스트들(Binky Chanda 주도)은 강한 이익 성장과 AI 투자 테마의 재개를 배경으로 S&P 500이 2027년 말 9,000포인트까지 오를 것으로 본다. 이는 월가에서 가장 높은 전망이며, 엔비디아 CEO 젠슨 황의 퇴임·복귀와 관련된 최근 시장 혼란에 영향받지 않을 것이라고 은행은 밝혔다.",
+    "Jim Reid(글로벌 매크로·테마 리서치 총괄)는 역사적 선례로 1960년대 초반과 유사점이 있다고 본다. 당시에도 국내 정치·지정학적 사건과 충격으로 조정이 있었지만 주가는 증가하는 이익에 연동되어 있었다.",
+    "Reid는 현재 주가가 연말 이익이 시사하는 수준에 비해 20% 정도 못 미친다고 말했다. 특히 선행 배수 기준 밸류에이션은 최근 몇 년 범위의 바닥에 있으며, 이란 전쟁 저점과 비슷하고 '해방의 날' 저점보다 크게 높지 않다고 했다.",
+    "Deutsche Bank는 내년 이익 성장률을 19%, 주당순이익(EPS)을 430달러로 예상하며, 이는 LSEG 컨센서스보다 약 3달러 높다.",
+    "은행은 메가캡 성장주와 기술주, 금융·산업 업종이 폭넓은 이익 성장을 이끌 것으로 선호하며, 에너지는 원유 가격 하락과 관련된 하방 위험이 있다고 본다.",
+    "Chanda는 하이퍼스케일러의 설비투자 증가세가 정점을 지나 둔화하겠지만, 초점이 채택과 수익화로 옮겨가면서 이들의 이익 성장은 오히려 빨라질 것으로 본다. 하이퍼스케일러는 설비투자 재원 마련을 위해 자사주 매입을 줄였지만, 그 지출의 수혜 기업과 S&P 500의 나머지 기업은 매입을 늘렸고, 그 결과 자사주 매입 증가 속도는 둔화됐으나 규모는 사상 최고라고 했다.",
+    "Chanda는 전망의 위험 요인으로 AI 투자 확대, 지정학, 금리의 꾸준한 상승, 1월 초 민주당 주도 의회가 출범하는 미 중간선거의 여파를 꼽았다.",
+    "은행은 강한 설비투자 사이클과 실질 가처분소득 증가가 노동시장을 안정시키고 인플레이션을 목표 위로 유지해, 연준이 내년까지 완만한 인상 사이클을 이어갈 것으로 본다. 다만 위험은 양방향이어서, AI에 대한 심리 악화 등으로 금융 여건이 급격히 긴축되면 정책금리가 예상보다 낮아질 수 있고, 반대로 노동시장이 타이트해져 임금과 임대료 물가가 오르면 추가 긴축이 필요할 수 있다고 했다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
+  },
+  {
+   "id": "mckinsey-mckinsey-survey-60-of-companies-plan-to-boost-ai",
+   "group": "컨설팅",
+   "org": "McKinsey",
+   "person": null,
+   "kind": "report",
+   "title": "McKinsey 설문: 기업 60%, 내년 AI 지출 확대 계획",
+   "title_orig": "McKinsey survey: 60% of companies plan to boost AI spending next year",
+   "url": "https://cryptobriefing.com/mckinsey-60-percent-companies-boost-ai-spending",
+   "outlet": "Crypto Briefing",
+   "published_kst": "2026-11-24T14:02:00+09:00",
+   "stance": {
+    "ai_tech": 1,
+    "market": null
+   },
+   "args": [
+    "투자 회수",
+    "수요·채택"
+   ],
+   "summary": "McKinsey의 2026 State of AI 설문(경영진 1,719명)에 따르면 조직의 60%가 내년 AI 투자를 늘릴 계획이고, 89%가 최소 한 업무에서 AI를 정기적으로 쓴다. 다만 AI의 EBIT 효과를 인정한 응답자는 37%로 전년과 같고, 약 20%는 토큰 비용 등 운영비 상승이 활용을 제약한다고 답했다. 상위 6%는 워크플로를 재설계하며 더 많이 투자한다고 밝혔다.",
+   "points": [
+    "McKinsey의 2026 State of AI 글로벌 설문에 따르면 조직의 60%가 향후 1년간 AI 투자를 늘릴 것으로 예상한다.",
+    "McKinsey는 2026년 5~6월에 97개국 경영진 1,719명을 대상으로 설문했다.",
+    "조직의 89%가 최소 한 개 업무 부문에서 AI를 정기적으로 사용한다고 답했고, 44%는 전사적으로 AI를 확대 적용 중이라고 답했다(2025년 38%).",
+    "매출 10억 달러 초과 대기업 중 40%가 AI 에이전트를 확대 적용 중이라고 답했으며, 전년의 27%에서 늘었다.",
+    "AI가 EBIT에 영향을 준다고 본 응답자는 37%에 그쳤고, 이는 전년과 같은 비율이다.",
+    "설문에 따르면 AI 운영비는 최대 30배까지 차이 날 수 있는 것으로 알려졌다.",
+    "McKinsey는 기업들이 AI 도입이 무한정 비용이 나가는 상태가 되지 않도록 사용량 경보와 거버넌스 통제를 도입하기 시작했다고 밝혔다.",
+    "McKinsey는 응답자의 약 6%를 고성과 그룹으로 분류했으며, 이들은 EBIT의 5% 이상을 AI 활용에서 얻는다. 이들 기업은 AI에 더 많이 투자하고 기존 프로세스에 도구를 덧붙이는 대신 워크플로를 AI 중심으로 재설계한다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
+  },
+  {
+   "id": "carlyle-no-floor-yet-under-the-ai-trade-says-carlyle-s-j",
+   "group": "PE·대체투자",
+   "org": "Carlyle",
+   "person": null,
+   "kind": "report",
+   "title": "Carlyle의 Jason Thomas: AI 트레이드에는 아직 바닥이 없다",
+   "title_orig": "No floor yet under the AI trade, says Carlyle's Jason Thomas",
+   "url": "https://www.msn.com/en-us/news/other/no-floor-yet-under-the-ai-trade-says-carlyles-jason-thomas/vi-AA2i7siY",
+   "outlet": "CNBC on MSN",
+   "published_kst": "2026-11-24T13:41:32+09:00",
+   "stance": {
+    "ai_tech": -1,
+    "market": null
+   },
+   "args": [
+    "밸류에이션"
+   ],
+   "judged": {
+    "basis": "headline_only",
+    "tier": "light"
+   }
+  },
   {
    "id": "pimco-pimco-s-ivascyn-says-ai-disruption-risk-boosts-a",
    "group": "자산운용",

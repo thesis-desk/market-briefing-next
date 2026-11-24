@@ -1,7 +1,24 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-24T20:54:41+09:00",
+ "generated_kst": "2026-11-24T23:23:21+09:00",
  "reports": [
+  {
+   "slug": "training-data-openai-s-noam-brown-why-game-theory-didn-t",
+   "type": "interview",
+   "title": "노암 브라운 인터뷰 : 게임이론을 버리고 추론에 건 이유, 센토 시기와 RSI",
+   "companies": [
+    {
+     "name": "OpenAI",
+     "ticker": null
+    }
+   ],
+   "event": "Sequoia Capital 포커봇 대회 No Limit 결선 현장 대담(Training Data)",
+   "published_kst": "2026-11-24T23:19:15+09:00",
+   "revised_kst": "2026-11-24T23:19:15+09:00",
+   "revision": 1,
+   "summary": "노암 브라운은 일반지능으로 가는 길이 게임이론이 아니라 '행동하기 전에 생각하는' 추론, 곧 test-time compute 확대였다고 회고한다. 진척은 최근 6개월 오히려 빨라졌고, 병목은 연산과 '모델이 못하는 긴 꼬리'라고 본다. 추론 연산 수요를 떠받치는 근거가 하나 늘었지만, 상장 종목을 직접 판정할 근거는 원문에 없다.",
+   "path": "reports/training-data-openai-s-noam-brown-why-game-theory-didn-t.json"
+  },
   {
    "slug": "sixsigma-ai-4",
    "type": "article",
@@ -8733,7 +8750,7 @@
   }
  ],
  "street": {
-  "updated_kst": "2026-11-24T20:18:35+09:00",
+  "updated_kst": "2026-11-24T23:23:21+09:00",
   "path": "street.json"
  },
  "calendar": {
