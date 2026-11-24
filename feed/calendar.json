@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated_kst": "2026-11-24T02:28:58+09:00",
+ "updated_kst": "2026-11-24T14:14:14+09:00",
  "events": [
   {
    "company": "Bloom Energy",
@@ -1084,14 +1084,14 @@
    "company": "Hewlett Packard Enterprise",
    "ticker": "HPE",
    "type": "earnings",
-   "period": null,
+   "period": "4Q26",
    "date": "2026-11-24",
    "confirmed": true,
    "official": false,
    "source_url": "https://finance.yahoo.com/quote/HPE/",
    "consensus_snapshot": true,
-   "report_slug": null,
-   "status": "scheduled"
+   "report_slug": "hpe-4q26-earnings",
+   "status": "published"
   },
   {
    "company": "Dell Technologies",

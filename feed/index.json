@@ -1,7 +1,25 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-24T11:21:01+09:00",
+ "generated_kst": "2026-11-24T14:29:07+09:00",
  "reports": [
+  {
+   "slug": "hpe-4q26-earnings",
+   "type": "earnings",
+   "title": "Hewlett Packard Enterprise 4Q26 실적발표 : 두 배로 올린 FY27, 하반기에 몰린 성장",
+   "companies": [
+    {
+     "name": "Hewlett Packard Enterprise",
+     "ticker": "HPE"
+    }
+   ],
+   "event": "4Q26 실적 발표",
+   "event_date": "2026-11-23",
+   "published_kst": "2026-11-24T14:25:32+09:00",
+   "revised_kst": "2026-11-24T14:25:32+09:00",
+   "revision": 1,
+   "summary": "4Q26은 EPS와 Cloud & AI 마진이 가이던스를 크게 넘었고 매출은 가이던스 범위의 중상단이었다. FY27 매출 성장 가이던스는 +13~17%에서 +27~35%로 두 배 이상 올라갔다. 다만 성장은 하반기와 AI 서버·Helios에 몰려 있고 Cloud & AI 마진은 18.4%에서 약 14%로 내려간다. FY27은 영업이익 성장률이 매출 성장률을 밑도는 해가 된다.",
+   "path": "reports/hpe-4q26-earnings.json"
+  },
   {
    "slug": "openai-introducing-shirudo",
    "type": "article",
@@ -8687,11 +8705,11 @@
   "path": "street.json"
  },
  "calendar": {
-  "updated_kst": "2026-11-24T02:28:58+09:00",
+  "updated_kst": "2026-11-24T14:14:14+09:00",
   "path": "calendar.json"
  },
  "watch": {
-  "updated_kst": "2026-11-24T08:35:44+09:00",
+  "updated_kst": "2026-11-24T14:29:07+09:00",
   "path": "watch.json"
  },
  "datasets": [
