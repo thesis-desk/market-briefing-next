@@ -1,7 +1,51 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-25T11:49:20+09:00",
+ "generated_kst": "2026-11-25T14:33:43+09:00",
  "reports": [
+  {
+   "slug": "tomorrowx-2026-scott-harrison-from-nightclub-promoter-to",
+   "type": "interview",
+   "title": "스콧 해리슨 (TomorrowX Summit 2026) : 기부금 100% 전달 모델과 센서·AI로 우물 고장 잡기, 그리고 '야망이 부족했다'는 고백",
+   "companies": [
+    {
+     "name": "charity: water",
+     "ticker": null
+    },
+    {
+     "name": "Arm",
+     "ticker": null
+    },
+    {
+     "name": "Google",
+     "ticker": null
+    }
+   ],
+   "event": "TomorrowX Summit 2026",
+   "event_date": "2026-11-17",
+   "published_kst": "2026-11-25T14:33:43+09:00",
+   "revised_kst": "2026-11-25T14:33:43+09:00",
+   "revision": 1,
+   "summary": "charity: water 창업자가 20년간 10억 달러를 모아 2,200만 명에게 물을 공급한 과정과, 해결률이 3% 남짓에 그친다는 반성을 기술·금융 청중에게 호소한 연설이다. 투자 판단을 바꿀 기업 정보는 없다. Arm과의 AI 고장 예측 협업, 데이터센터 물 문제 언급이 IT 쪽과 닿는 접점이지만 규모와 수치가 나오지 않아 종목에 미치는 영향은 무시할 수준으로 본다.",
+   "path": "reports/tomorrowx-2026-scott-harrison-from-nightclub-promoter-to.json"
+  },
+  {
+   "slug": "dell-3q27-earnings",
+   "type": "earnings",
+   "title": "Dell Technologies 3Q27 실적발표 : 가이던스를 크게 넘은 마진, 멈춘 PC",
+   "companies": [
+    {
+     "name": "Dell Technologies",
+     "ticker": "DELL"
+    }
+   ],
+   "event": "3Q27 실적 발표",
+   "event_date": "2026-11-24",
+   "published_kst": "2026-11-25T14:25:20+09:00",
+   "revised_kst": "2026-11-25T14:25:20+09:00",
+   "revision": 1,
+   "summary": "AI 서버 매출 220억 달러와 ISG 영업이익률 17%로 3Q 가이던스를 크게 넘었고, 연간 non-GAAP EPS 가이던스를 29.68달러로 올렸다. 이 값은 발표 후 조회한 FY28 컨센서스(28.48달러)보다 높다. 다만 4Q에는 마진과 EPS가 전분기보다 내려오도록 안내됐고, PC는 사실상 성장이 멈췄으며, 재고와 차입이 함께 커지고 있다.",
+   "path": "reports/dell-3q27-earnings.json"
+  },
   {
    "slug": "tomorrowx-2026-who-pays-for-the-ai-build-out-diameter-and",
    "type": "interview",
@@ -9128,11 +9172,11 @@
   }
  ],
  "street": {
-  "updated_kst": "2026-11-25T11:34:17+09:00",
+  "updated_kst": "2026-11-25T14:29:00+09:00",
   "path": "street.json"
  },
  "calendar": {
-  "updated_kst": "2026-11-25T11:31:33+09:00",
+  "updated_kst": "2026-11-25T14:13:47+09:00",
   "path": "calendar.json"
  },
  "watch": {

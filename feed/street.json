@@ -1,26 +1,26 @@
 {
  "schema": 1,
- "updated_kst": "2026-11-25T11:34:17+09:00",
+ "updated_kst": "2026-11-25T14:29:00+09:00",
  "window_days": 14,
  "items_days": 30,
  "index": {
   "ai_tech": {
-   "value": 6,
+   "value": 5,
    "label": "엇갈림",
-   "orgs": 42,
-   "items": 154
+   "orgs": 41,
+   "items": 153
   },
   "market": {
-   "value": -8,
+   "value": -9,
    "label": "엇갈림",
    "orgs": 30,
-   "items": 105
+   "items": 107
   },
   "by_group": [
    {
     "group": "벤처캐피털",
-    "ai_tech": 43,
-    "ai_tech_orgs": 9,
+    "ai_tech": 42,
+    "ai_tech_orgs": 8,
     "market": -17,
     "market_orgs": 3
    },
@@ -33,16 +33,16 @@
    },
    {
     "group": "자산운용",
-    "ai_tech": -8,
+    "ai_tech": -9,
     "ai_tech_orgs": 6,
-    "market": 15,
+    "market": 14,
     "market_orgs": 6
    },
    {
     "group": "투자은행",
-    "ai_tech": 27,
+    "ai_tech": 26,
     "ai_tech_orgs": 7,
-    "market": 30,
+    "market": 28,
     "market_orgs": 7
    },
    {
@@ -105,10 +105,10 @@
    },
    {
     "week": "2026-11-23",
-    "ai_tech": 7,
-    "ai_tech_orgs": 16,
-    "market": -17,
-    "market_orgs": 14
+    "ai_tech": 9,
+    "ai_tech_orgs": 17,
+    "market": -15,
+    "market_orgs": 16
    }
   ],
   "args": {
@@ -122,16 +122,16 @@
      "n": 17
     },
     {
-     "tag": "자금 조달·신용",
+     "tag": "쏠림",
      "n": 17
     },
     {
-     "tag": "쏠림",
+     "tag": "자금 조달·신용",
      "n": 16
     },
     {
      "tag": "금리·거시",
-     "n": 8
+     "n": 9
     },
     {
      "tag": "경쟁·해자",
@@ -147,13 +147,13 @@
     },
     {
      "tag": "전력·공급 제약",
-     "n": 1
+     "n": 2
     }
    ],
    "optimism": [
     {
      "tag": "수요·채택",
-     "n": 49
+     "n": 48
     },
     {
      "tag": "투자 회수",
@@ -161,7 +161,7 @@
     },
     {
      "tag": "밸류에이션",
-     "n": 24
+     "n": 23
     },
     {
      "tag": "금리·거시",
@@ -173,7 +173,7 @@
     },
     {
      "tag": "자금 조달·신용",
-     "n": 16
+     "n": 17
     },
     {
      "tag": "정책·지정학",
@@ -181,7 +181,7 @@
     },
     {
      "tag": "전력·공급 제약",
-     "n": 12
+     "n": 11
     },
     {
      "tag": "쏠림",
@@ -192,6 +192,40 @@
   "method": "기관·인물마다 기간 안 입장 값의 평균을 내고 그 평균들을 다시 평균해 ×50"
  },
  "items": [
+  {
+   "id": "goldman-how-hedge-funds-are-navigating-stock-market-vola",
+   "group": "투자은행",
+   "org": "Goldman Sachs",
+   "person": "Vincent Lin",
+   "kind": "publication",
+   "title": "헤지펀드는 주식시장 변동성을 어떻게 헤쳐 나가고 있나",
+   "title_orig": "How Hedge Funds Are Navigating Stock Market Volatility",
+   "url": "https://www.goldmansachs.com/insights/the-markets",
+   "outlet": "Goldman Sachs The Markets",
+   "published_kst": "2026-11-25T14:00:00+09:00",
+   "stance": {
+    "ai_tech": -1,
+    "market": -1
+   },
+   "args": [
+    "투자 회수",
+    "쏠림",
+    "금리·거시",
+    "전력·공급 제약"
+   ],
+   "summary": "헤지펀드 고객들은 최근 5주 연속 위험을 줄였고 지난주에는 ETF 공매도를 크게 늘리는 등 심리가 취약하다. AI 서사가 어려워져 AI 인프라 수익의 최고점은 지나갔다는 인식이 많고, 시장은 인프라에서 수익화 단계로 넘어가는 힘든 전환기에 있다고 본다. 그래도 하이퍼스케일러와 헬스케어는 선호하며, 연말은 거시 지표와 연준 행보가 좌우할 것으로 본다.",
+   "points": [
+    "헤지펀드는 위험을 줄이는 한편 지난주에는 ETF 공매도를 크게 늘려 취약한 심리를 드러냈다.",
+    "AI 인프라 투자의 최고 수익 구간은 이미 지났다는 인식이 많고, AI 거래는 수익화 단계로 전환 중이다.",
+    "가계 등 느린 자금의 포지션은 역사적으로 여전히 높은 편이며, 하락장 속에서도 ETF·뮤추얼펀드에 대규모 자금이 유입됐다.",
+    "기술·AI 영역에서는 하이퍼스케일러를 선호하고, 방어주 중에서는 필수소비재보다 헬스케어를 선호한다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "팟캐스트 음성을 음성 인식(Whisper)으로 받아 적은 전사 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
+  },
   {
    "id": "morgan-stanley-want-to-go-on-offense-in-ai-right-now-says-morga",
    "group": "투자은행",
@@ -324,6 +358,83 @@
     "basis": "full_text",
     "tier": "standard"
    }
+  },
+  {
+   "id": "ark-cathie-wood-s-ark-sees-excellent-entry-points-in",
+   "group": "자산운용",
+   "org": "ARK Invest",
+   "person": null,
+   "kind": "report",
+   "title": "Cathie Wood의 ARK, AI에서 '훌륭한 진입 시점' 포착 — '빅 쇼트' Steve Eisman은 Anthropic이나 OpenAI가 무너지면 경기침체 경고",
+   "title_orig": "Cathie Wood’s ARK Sees ‘Excellent Entry Points’ In AI — ‘Big Short’ Steve Eisman Warns Of Recession If Anthropic Or OpenAI Fails",
+   "url": "https://finance.yahoo.com/technology/ai/articles/cathie-wood-ark-sees-excellent-044131684.html",
+   "outlet": "Yahoo Finance",
+   "published_kst": "2026-11-25T00:59:00+09:00",
+   "stance": {
+    "ai_tech": 1,
+    "market": 1
+   },
+   "args": [
+    "수요·채택",
+    "투자 회수",
+    "자금 조달·신용"
+   ],
+   "summary": "ARK의 Brett Winton은 AI 매도세가 실시간 데이터로 뒷받침되지 않으며, 두려워하는 시장은 역사적으로 좋은 진입 시점을 제공했다고 주장했다. 다만 ARK 연구원 Karim Mattar는 Anthropic의 주된 위험으로 수년 단위 컴퓨팅 계약과 실시간 사용량에 의존하는 매출 간의 불일치를 지적했다.",
+   "points": [
+    "ARK 최고미래학자 Brett Winton은 OpenAI와 Anthropic이 규모를 키우면서도 컴퓨팅 파워 1기가와트당 더 많은 수익을 올리고 있다고 말했다. 지난 1년간 두 연구소는 고객 요청 처리에 쓰는 용량을 3배 넘게 늘렸고, 합산 연환산 매출은 약 1,400억 달러로 ARK는 추정했다.",
+    "Winton은 이번 매도세가 실시간 데이터로 뒷받침되지 않는다는 점이 이상하다고 말했다.",
+    "Winton은 기업들이 AI에 쓰는 돈에 대해 더 많은 것을 얻으면서도 전체 지출은 늘리고 있다고 짚었다. 비슷한 결과를 얻는 비용이 하락했음에도 Ramp가 추적한 기업들의 지출은 최근 한 달 연환산 기준 400% 넘게 증가했다.",
+    "Winton은 시장이 자기 그림자도 두려워하는 듯하며, 역사적으로 공포에 질린 시장은 노련한 투자자에게 훌륭한 진입 시점을 제공해 왔고 ARK는 지금도 마찬가지일 것으로 본다고 말했다.",
+    "ARK 연구원 Karim Mattar는 Anthropic의 주된 위험이 컴퓨팅 계약은 수년에 걸쳐 있는 반면 매출은 대체로 실시간 고객 사용량에 달려 있다는 점이라고 말했다."
+   ],
+   "evidence": [
+    {
+     "ko": "Winton은 시장이 자기 그림자도 두려워하는 듯하며, 역사적으로 공포에 질린 시장은 노련한 투자자에게 훌륭한 진입 시점을 제공해 왔고 ARK는 지금도 마찬가지일 것으로 본다고 말했다.",
+     "orig": "\"The market seems to be afraid of its own shadow,\" Winton said. \"Historically, fearful markets have provided savvy investors with excellent entry points. ARK suspects that the same is true today.\""
+    }
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
+  },
+  {
+   "id": "fidelity-s-p-500-correction-is-garden-variety-says-fideli",
+   "group": "자산운용",
+   "org": "Fidelity",
+   "person": null,
+   "kind": "report",
+   "title": "Fidelity \"S&P 500 조정은 흔한 수준\", 12% 하락에도 투자자 동요",
+   "title_orig": "S&P 500 Correction Is “Garden Variety,” Says Fidelity, Even as 12% Drop Rattles Investors",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/p-500-correction-garden-variety-030000665.html",
+   "outlet": "Yahoo Finance",
+   "published_kst": "2026-11-25T00:59:00+09:00",
+   "stance": {
+    "ai_tech": null,
+    "market": 0
+   },
+   "args": [
+    "금리·거시"
+   ],
+   "summary": "Fidelity의 Jurrien Timmer는 S&P 500의 12.3% 조정이 역사적으로 흔한 \"garden variety\" 수준이라고 평가했다. 증시는 약 절반의 시간을 10% 낙폭 상태로 보내며 약세장도 4~5년마다 온다고 설명했다. 다만 실시간으로 체감하는 것은 통계보다 나쁘다고 인정했다.",
+   "points": [
+    "Fidelity의 Jurrien Timmer는 S&P 500의 현재 조정이 역사적 기준으로 평범한 수준(garden variety)이라고 평가했다.",
+    "Timmer에 따르면 주식시장은 시간의 약 절반을 10% 낙폭 상태에서 보내며, 이는 2년에 한 번꼴이다.",
+    "Timmer에 따르면 보통 20% 이상 하락으로 정의되는 약세장은 4~5년마다 반복된다.",
+    "Timmer는 이번 조정이 큰 틀에서 보면 평범한 조정이지만, 실시간으로는 (언제나 그렇듯) 그보다 더 나쁘게 느껴진다고 인정했다."
+   ],
+   "evidence": [
+    {
+     "ko": "Fidelity의 Jurrien Timmer는 S&P 500의 현재 조정이 역사적 기준으로 평범한 수준(garden variety)이라고 평가했다.",
+     "orig": "The S&P 500 correction has deepened to 12.3% below its Oct. 6 intraday high. Fidelity's Jurrien Timmer calls it \"garden variety.\""
+    }
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
   },
   {
    "id": "blackrock-ai-financing-new-opportunities-for-fixed-income",
