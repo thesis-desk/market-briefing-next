@@ -8,7 +8,7 @@
    "value": 6,
    "label": "엇갈림",
    "orgs": 42,
-   "items": 154
+   "items": 153
   },
   "market": {
    "value": -8,
@@ -115,7 +115,7 @@
    "caution": [
     {
      "tag": "밸류에이션",
-     "n": 20
+     "n": 19
     },
     {
      "tag": "투자 회수",
