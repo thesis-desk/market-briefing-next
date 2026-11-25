@@ -1,7 +1,29 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-25T11:25:23+09:00",
+ "generated_kst": "2026-11-25T11:31:33+09:00",
  "reports": [
+  {
+   "slug": "openai-gpt-6-models-demonstrate-intrinsic-protein-design",
+   "type": "article",
+   "title": "OpenAI : 범용 추론 모델이 전용 생물학 모델 없이도 단백질을 설계한다",
+   "companies": [
+    {
+     "name": "OpenAI",
+     "ticker": null
+    },
+    {
+     "name": "Onava",
+     "ticker": null
+    }
+   ],
+   "event": "프리프린트 공개 — GPT-6 as a Universal Foundation Model for Protein Biology",
+   "event_date": "2026-11-24",
+   "published_kst": "2026-11-25T11:31:16+09:00",
+   "revised_kst": "2026-11-25T11:31:16+09:00",
+   "revision": 1,
+   "summary": "OpenAI는 GPT-6 계열이 전용 생물학 모델을 호출하지 않고 추론과 코드만으로 단백질 구조·서열을 설계할 수 있다고 주장하며, 벤치마크 다수에서 전용 모델과 동등하거나 앞선 수치와 실험실 결합 결과를 제시했다. 다만 후보 선별은 여전히 전용 모델에 의존하고 서열→전체 구조 예측은 크게 뒤처져, '전용 모델 대체'보다 '워크플로 일부 흡수 + 자연어 제어'로 읽는 것이 맞다고 본다.",
+   "path": "reports/openai-gpt-6-models-demonstrate-intrinsic-protein-design.json"
+  },
   {
    "slug": "semianalysis-yt-building-a-chip-to-beat-biology-naveen-rao",
    "type": "interview",
@@ -9054,7 +9076,7 @@
   "path": "street.json"
  },
  "calendar": {
-  "updated_kst": "2026-11-25T11:11:36+09:00",
+  "updated_kst": "2026-11-25T11:31:33+09:00",
   "path": "calendar.json"
  },
  "watch": {
