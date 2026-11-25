@@ -8,7 +8,7 @@
    "value": 6,
    "label": "엇갈림",
    "orgs": 42,
-   "items": 155
+   "items": 154
   },
   "market": {
    "value": -8,
@@ -19,7 +19,7 @@
   "by_group": [
    {
     "group": "벤처캐피털",
-    "ai_tech": 44,
+    "ai_tech": 43,
     "ai_tech_orgs": 9,
     "market": -17,
     "market_orgs": 3

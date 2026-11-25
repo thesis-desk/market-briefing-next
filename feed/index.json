@@ -495,24 +495,6 @@
    "path": "reports/big-technology-inside-the-stunning-return-of-jensen-huang.json"
   },
   {
-   "slug": "tomorrowx-2026-mu-2",
-   "type": "interview",
-   "title": "산제이 메로트라·스콧 디보어 (TomorrowX Summit 2026) : SCA 계약은 왜 다른가, 적층 3D DRAM은 언제 오는가",
-   "companies": [
-    {
-     "name": "마이크론",
-     "ticker": null
-    }
-   ],
-   "event": "TomorrowX Summit 2026",
-   "event_date": "2026-11-17",
-   "published_kst": "2026-11-24T02:48:59+09:00",
-   "revised_kst": "2026-11-24T02:48:59+09:00",
-   "revision": 1,
-   "summary": "마이크론 경영진은 이 대담에서 2027년 물량의 75% 판매 완료와 SCA 26건·현금 및 재무 약정 320억 달러를 근거로 이번 사이클이 과거와 다르다고 주장했다. 다만 침체기에 계약이 지켜지는지에 대해서는 take-or-pay와 탄탄한 조건이 있다는 원칙론 외에 보호 범위를 밝히지 않았고, 고객 관계와 메모리의 가치를 주로 들었다. 실적 가시성은 높아졌지만 하방 보호의 크기는 아직 공개되지 않았다고 본다.",
-   "path": "reports/tomorrowx-2026-mu-2.json"
-  },
-  {
    "slug": "a16z-how-to-win-bots-and-influence-purchases",
    "type": "article",
    "title": "a16z : 에이전트는 총비용과 신뢰를 따지는 고객이다, 기계가 읽을 수 있어야 후보에 든다",
@@ -2272,24 +2254,6 @@
    "revision": 1,
    "summary": "오시리의 Anthropic 투자 서사는 데이터가 아니라 창업자 판단에 기댄 사후 회고입니다. 이 대담에는 Anthropic의 사업 수치나 상장 종목 판정에 쓸 근거가 없습니다. 새로 나온 실질 정보는 비상장 라운드에 소액 참여를 여는 Get Access의 구조 정도이며, 배분 규모와 비용이 밝혀지지 않아 평가는 보류합니다.",
    "path": "reports/tomorrowx-2026-guy-oseary-on-backing-anthropic-before-its.json"
-  },
-  {
-   "slug": "tomorrowx-2026-mu",
-   "type": "interview",
-   "title": "산자이 메로트라·스콧 디보어 (TomorrowX Summit 2026) : 5년 SCA의 구속력과 3D 적층 DRAM",
-   "companies": [
-    {
-     "name": "마이크론",
-     "ticker": null
-    }
-   ],
-   "event": "TomorrowX Summit 2026",
-   "event_date": "2026-11-17",
-   "published_kst": "2026-11-19T16:31:52+09:00",
-   "revised_kst": "2026-11-19T16:31:52+09:00",
-   "revision": 1,
-   "summary": "마이크론 경영진은 주가 조정 뒤에도 수요·가격 판단을 바꾸지 않았고, 2027년 물량의 75%가 팔렸다고 확인했다. 26건의 다년 SCA(선급 현금·재무 약정 320억 달러)를 근거로 이번 계약은 과거 LTA와 다르다고 주장했다. 다만 일부 SCA에는 가격 조건이 없어, 이 계약이 지켜 주는 것은 가격보다 물량에 가깝다고 본다. 3D 적층 DRAM(다층 적층의 시장 진입 2028~2029년 전망)은 메모리를 고객 맞춤 부품으로 바꿀 다음 단계로 제시됐다.",
-   "path": "reports/tomorrowx-2026-mu.json"
   },
   {
    "slug": "tomorrowx-2026-travis-kalanick-on-jensen-we-don-t-want-an-ai",
