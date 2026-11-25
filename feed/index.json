@@ -1,7 +1,39 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-25T17:26:44+09:00",
+ "generated_kst": "2026-11-25T20:18:12+09:00",
  "reports": [
+  {
+   "slug": "sixsigma-gpt",
+   "type": "article",
+   "title": "식스시그마 : AI 모델에도 해자는 있다 — 기업 고객의 전환 비용이 앤트로픽 매출의 4분의 3을 지킨다",
+   "companies": [
+    {
+     "name": "Anthropic",
+     "ticker": null
+    },
+    {
+     "name": "OpenAI",
+     "ticker": null
+    },
+    {
+     "name": "Microsoft",
+     "ticker": null
+    },
+    {
+     "name": "JPMorgan Chase",
+     "ticker": null
+    },
+    {
+     "name": "Box",
+     "ticker": null
+    }
+   ],
+   "published_kst": "2026-11-25T20:14:51+09:00",
+   "revised_kst": "2026-11-25T20:14:51+09:00",
+   "revision": 1,
+   "summary": "영상의 논지는 개인 구독자는 쉽게 갈아타도 앤트로픽 매출의 74%를 내는 대형 기업 고객은 재개발·승인 부담 때문에 쉽게 못 떠난다는 것이다. 다만 근거 대부분이 '이탈이 어렵다'는 간접 증거이고 실제 이탈률·재계약 데이터는 없어, 설득력은 중간 정도로 본다.",
+   "path": "reports/sixsigma-gpt.json"
+  },
   {
    "slug": "tomorrowx-2026-scott-harrison-from-nightclub-promoter-to",
    "type": "interview",
@@ -9172,7 +9204,7 @@
   }
  ],
  "street": {
-  "updated_kst": "2026-11-25T14:29:00+09:00",
+  "updated_kst": "2026-11-25T20:18:12+09:00",
   "path": "street.json"
  },
  "calendar": {

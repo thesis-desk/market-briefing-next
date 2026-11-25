@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated_kst": "2026-11-25T14:29:00+09:00",
+ "updated_kst": "2026-11-25T20:18:12+09:00",
  "window_days": 14,
  "items_days": 30,
  "index": {
@@ -8,13 +8,13 @@
    "value": 6,
    "label": "엇갈림",
    "orgs": 40,
-   "items": 150
+   "items": 151
   },
   "market": {
-   "value": -7,
+   "value": -8,
    "label": "엇갈림",
    "orgs": 29,
-   "items": 104
+   "items": 105
   },
   "by_group": [
    {
@@ -40,7 +40,7 @@
    },
    {
     "group": "투자은행",
-    "ai_tech": 25,
+    "ai_tech": 24,
     "ai_tech_orgs": 7,
     "market": 28,
     "market_orgs": 7
@@ -105,7 +105,7 @@
    },
    {
     "week": "2026-11-23",
-    "ai_tech": 9,
+    "ai_tech": 8,
     "ai_tech_orgs": 17,
     "market": -15,
     "market_orgs": 16
@@ -115,23 +115,23 @@
    "caution": [
     {
      "tag": "밸류에이션",
-     "n": 18
+     "n": 19
     },
     {
      "tag": "투자 회수",
-     "n": 16
+     "n": 17
     },
     {
      "tag": "쏠림",
-     "n": 16
+     "n": 17
     },
     {
      "tag": "자금 조달·신용",
-     "n": 15
+     "n": 16
     },
     {
      "tag": "금리·거시",
-     "n": 8
+     "n": 9
     },
     {
      "tag": "경쟁·해자",
@@ -192,6 +192,41 @@
   "method": "기관·인물마다 기간 안 입장 값의 평균을 내고 그 평균들을 다시 평균해 ×50"
  },
  "items": [
+  {
+   "id": "goldman-when-ai-runs-macro-key-risks-to-market-outlook",
+   "group": "투자은행",
+   "org": "Goldman Sachs",
+   "person": "Dominic Wilson, Josh Schiffrin",
+   "kind": "publication",
+   "title": "AI가 거시를 움직일 때: 시장 전망의 핵심 위험",
+   "title_orig": "When AI Runs Macro: Key Risks to Market Outlook",
+   "url": "https://www.youtube.com/watch?v=HNqFDdAgEdI",
+   "outlet": "Goldman Sachs (유튜브)",
+   "published_kst": "2026-11-25T19:45:33+09:00",
+   "stance": {
+    "ai_tech": -1,
+    "market": 0
+   },
+   "args": [
+    "밸류에이션",
+    "투자 회수",
+    "자금 조달·신용",
+    "쏠림",
+    "금리·거시"
+   ],
+   "summary": "골드만삭스 화자들은 AI 테마에 높은 가치가 반영돼 낙관적 시나리오를 흔드는 소식에 취약하며, 투자 증가율 정점·자금 조달·쏠림 위험으로 양방향 변동성이 커졌다고 본다. 기본 시나리오는 완만한 낙관이고 성장은 2%대 초반으로 안정적이지만 하방 위험이 더 커졌다고 경계한다. 연준은 12월 추가 인상을 예상하며 채권(5년물)을 매력적으로 본다.",
+   "points": [
+    "AI 테마에 반영된 가치가 커서 낙관적 이야기를 흔드는 요인에 취약하고, 성장 가속에서 둔화로 넘어가며 양방향 위험이 커진다.",
+    "기본 시나리오는 완만한 낙관이지만, 시장이 민감함을 드러낸 하방 위험을 이전보다 더 우려한다.",
+    "1998년 유추가 더 유용하나 자본 유입이 없고 투자 붐이 지속되며 자본비용 상승과 3~4년 뒤 이익이 우려된다.",
+    "성장은 2%대 초반으로 안정적이나 위험의 기울기가 처음으로 하방이고, 위험은 시장에서 거시로 전달될 가능성이 크다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "유튜브 영상의 음성을 음성 인식(Whisper)으로 받아 적은 전사 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
+  },
   {
    "id": "goldman-how-hedge-funds-are-navigating-stock-market-vola",
    "group": "투자은행",
