@@ -1,8 +1,42 @@
 {
  "schema": 1,
  "month": "2026-11",
- "updated_kst": "2026-11-25T20:18:12+09:00",
+ "updated_kst": "2026-11-25T23:19:25+09:00",
  "items": [
+  {
+   "id": "blackrock-blackrock-s-tony-kim-on-the-next-phase-of-the-ai",
+   "group": "자산운용",
+   "org": "BlackRock",
+   "person": "Tony Kim",
+   "kind": "publication",
+   "title": "BlackRock의 토니 김이 말하는 AI 트레이드의 다음 국면 | Trillions",
+   "title_orig": "BlackRock’s Tony Kim on the Next Phase of the AI Trade | Trillions",
+   "url": "https://www.youtube.com/watch?v=ewhcSnsN9FE",
+   "outlet": "Bloomberg Podcasts (유튜브)",
+   "published_kst": "2026-11-25T20:58:58+09:00",
+   "stance": {
+    "ai_tech": 1,
+    "market": null
+   },
+   "args": [
+    "밸류에이션",
+    "투자 회수",
+    "자금 조달·신용",
+    "수요·채택"
+   ],
+   "summary": "토니 김(BlackRock)은 칩·하드웨어와 하이퍼스케일러가 S&P 대비 할인 거래되는 것은 시장이 AI가 2027년에 정점을 찍고 2028년에 꺾인다고 보기 때문이라고 설명한다. 그는 AI가 계속 성장한다고 믿으며, 자금 조달 우려로 시장이 하락 쪽으로 과잉 반응하고 있다고 본다. 컴퓨트 중심의 1단계에서 애플리케이션 계층으로 넘어가는 다음 국면이 온다고 주장한다.",
+   "points": [
+    "칩·하드웨어 기업들이 S&P 대비 할인 거래되는 것은 시장이 AI가 2027년에 정점이고 2028년에 꺾인다고 보기 때문이다.",
+    "자금 조달 능력에 대한 우려로 시장이 하락 쪽으로 과잉 반응하고 있다고 본다.",
+    "모델 역량이 실물 경제의 채택 속도보다 빠르게 커지고 있으며, 투자 회수는 내년이나 그다음 해에 나타날 수 있다고 본다.",
+    "AI 트레이드는 컴퓨트 중심의 1단계에서 애플리케이션 계층으로 확장되며, 에이전트가 늘수록 컴퓨트 수요는 현재 예상을 크게 웃돌 것이라고 주장한다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "유튜브 자동 생성 자막(en) 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
+  },
   {
    "id": "goldman-when-ai-runs-macro-key-risks-to-market-outlook",
    "group": "투자은행",
