@@ -1,8 +1,42 @@
 {
  "schema": 1,
  "month": "2026-11",
- "updated_kst": "2026-11-26T02:43:38+09:00",
+ "updated_kst": "2026-11-26T05:21:09+09:00",
  "items": [
+  {
+   "id": "el-erian-here-s-why-allianz-s-mohamed-el-erian-thinks-for",
+   "group": "투자 거장",
+   "org": "Mohamed El-Erian",
+   "person": "Mohamed El-Erian",
+   "kind": "publication",
+   "title": "알리안츠의 모하메드 엘에리언이 포워드 가이던스가 문제라고 보는 이유",
+   "title_orig": "Here's why Allianz's Mohamed El-Erian thinks forward guidance is problematic",
+   "url": "https://www.youtube.com/watch?v=1Dh6fw_zSpw",
+   "outlet": "CNBC Television (유튜브)",
+   "published_kst": "2026-11-26T02:57:08+09:00",
+   "stance": {
+    "ai_tech": -1,
+    "market": -1
+   },
+   "args": [
+    "자금 조달·신용",
+    "금리·거시",
+    "정책·지정학",
+    "투자 회수"
+   ],
+   "summary": "엘에리언은 기술주 중심의 시장 기술적 약세가 관세·금융여건 긴축·지정학·엔비디아 조사와 겹쳐 펀더멘털 악화로 번질 수 있다고 우려한다. 기술 부문 자금 조달이 조이면 투자와 성장이 줄 수 있다고 본다. 연준은 인플레이션 때문에 12월 25bp 인상이 불가피하지만 완화적 인상이 될 것이라 보며, 선제 안내(포워드 가이던스)는 문제라고 지적한다.",
+   "points": [
+    "시장의 기술적 약세가 관세·긴축·지정학·엔비디아 조사와 겹쳐 펀더멘털 악화로 번질 수 있는 것이 핵심 우려다.",
+    "기술 부문 자금 조달 여건이 악화되면 투자가 줄고 성장이 둔화될 수 있으며, 엔비디아는 순환 금융 구조에서 핵심 역할을 해왔다.",
+    "인플레이션 수치와 시장 반영 수준을 보면 연준은 12월 9일 25bp 인상을 피하기 어렵다.",
+    "포워드 가이던스는 시장 기대를 고착시켜 연준의 선택지를 좁히므로 워시의 방식이 옳다고 본다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "유튜브 자막(제작자 제공)(en) 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
+  },
   {
    "id": "blackrock-blackrock-s-tony-kim-on-the-next-phase-of-the-ai",
    "group": "자산운용",
@@ -838,6 +872,38 @@
     "tier": "standard"
    },
    "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
+  },
+  {
+   "id": "theory-will-ai-deflate-like-lightbulbs-or-compound-like",
+   "group": "벤처캐피털",
+   "org": "Tomasz Tunguz (Theory Ventures)",
+   "person": "Tomasz Tunguz",
+   "kind": "publication",
+   "title": "AI는 전구처럼 디플레이션될까, 구리처럼 복리로 커질까?",
+   "title_orig": "Will AI Deflate Like Lightbulbs or Compound Like Copper?",
+   "url": "https://tomtunguz.com/jevons-works-on-tokens-not-on-dollars",
+   "outlet": "Tomasz Tunguz",
+   "published_kst": "2026-11-24T09:00:00+09:00",
+   "stance": {
+    "ai_tech": 1,
+    "market": null
+   },
+   "args": [
+    "수요·채택",
+    "투자 회수",
+    "경쟁·해자"
+   ],
+   "summary": "AI 수요의 가격탄력성이 1을 넘어 GPU 임대료가 오르고 토큰 사용량이 비용 하락보다 빨리 늘어, 전구보다 구리에 가까운 양상이라고 본다. Anthropic S-1 수치가 이를 뒷받침하며, 소비는 한계가 없어 보이지만 토큰 가격 디플레이션 폭은 아직 논쟁 중이라고 단서를 단다. 2027년에 지출 대 물량, GPU 임대료, 총마진 등을 지켜보겠다고 한다.",
+   "points": [
+    "GPU 가격은 지금까지 전구보다 구리에 가까운 흐름을 보이며 임대료가 오르고 있다.",
+    "Ramp와 OpenRouter 데이터는 AI 수요의 가격탄력성이 높아 물량 증가가 지출 증가보다 훨씬 크다는 것을 보여 준다.",
+    "Anthropic S-1은 비용 인하 뒤 매출 성장이 급가속해 탄력성이 1을 크게 웃돈다는 반례 아닌 근거를 제공한다.",
+    "소비는 무한해 보이나 토큰 디플레이션 정도는 불확실하며, 가장 가까운 선례는 CPU다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   }
   },
   {
    "id": "el-erian-nvidia-is-no-ordinary-company-and-jensen-huang-i",

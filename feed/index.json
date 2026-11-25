@@ -1,7 +1,45 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-26T02:52:25+09:00",
+ "generated_kst": "2026-11-26T05:21:09+09:00",
  "reports": [
+  {
+   "slug": "nvidia-dev-how-to-run-nvidia-cosmos-3-on-local-ai-devices",
+   "type": "article",
+   "title": "NVIDIA Technical Blog : Cosmos 3 Nano는 가중치를 시스템 RAM에 두면 12GB RTX에서도 돌아간다",
+   "companies": [
+    {
+     "name": "NVIDIA",
+     "ticker": null
+    },
+    {
+     "name": "Hugging Face",
+     "ticker": null
+    }
+   ],
+   "published_kst": "2026-11-26T05:17:40+09:00",
+   "revised_kst": "2026-11-26T05:17:40+09:00",
+   "revision": 1,
+   "summary": "엔비디아가 월드 파운데이션 모델 Cosmos 3 Nano를 12GB VRAM의 RTX 5070에서 돌리는 방법을 공개했다. 대가는 128GB급 시스템 RAM과 720p 8초 남짓한 영상 하나에 40분이 넘는 생성 시간이다. 물리 AI 개발자의 입문 문턱을 소비자용 RTX까지 낮추는 생태계 조치로 보며, 엔비디아 실적에 미칠 영향은 작다고 판단한다.",
+   "path": "reports/nvidia-dev-how-to-run-nvidia-cosmos-3-on-local-ai-devices.json"
+  },
+  {
+   "slug": "sixsigma-ai-3-2",
+   "type": "article",
+   "title": "식스시그마 : 델의 3분기는 AI 서버 주문 둔화가 없음을 보여 줬고, 주가를 끌어내린 것은 실적이 아니라 주문이 끊길 거라는 걱정이다",
+   "companies": [
+    {
+     "name": "Dell Technologies",
+     "ticker": "DELL"
+    }
+   ],
+   "event": "FY27 3분기 실적 발표",
+   "event_date": "2026-11-24",
+   "published_kst": "2026-11-26T05:14:55+09:00",
+   "revised_kst": "2026-11-26T05:14:55+09:00",
+   "revision": 1,
+   "summary": "영상은 델 FY27 3분기(수주잔고 1,323억 달러, 연간 매출 전망 2,020억 달러)를 근거로 주가 하락의 원인을 실적이 아닌 수요 둔화 공포로 본다. 숫자는 이 주장과 맞지만, 그 이익 개선이 가격 인상 덕이라는 점과 AI 서버 마진 구조는 영상에서 충분히 검증되지 않아 확신은 중간이다.",
+   "path": "reports/sixsigma-ai-3-2.json"
+  },
   {
    "slug": "goldman-what-will-determine-the-durability-of-the-ai-inv",
    "type": "article",
@@ -9326,7 +9364,7 @@
   }
  ],
  "street": {
-  "updated_kst": "2026-11-26T02:43:38+09:00",
+  "updated_kst": "2026-11-26T05:21:09+09:00",
   "path": "street.json"
  },
  "calendar": {
