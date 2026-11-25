@@ -1,7 +1,129 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-25T23:33:17+09:00",
+ "generated_kst": "2026-11-26T02:52:25+09:00",
  "reports": [
+  {
+   "slug": "goldman-what-will-determine-the-durability-of-the-ai-inv",
+   "type": "article",
+   "title": "Goldman Sachs : AI 투자 사이클의 위험은 하이퍼스케일러가 아니라 최종 고객 ROI에 묶인 네오클라우드에 몰린다",
+   "companies": [
+    {
+     "name": "Microsoft",
+     "ticker": null
+    },
+    {
+     "name": "Amazon",
+     "ticker": null
+    },
+    {
+     "name": "Alphabet",
+     "ticker": null
+    },
+    {
+     "name": "Meta",
+     "ticker": null
+    },
+    {
+     "name": "NVIDIA",
+     "ticker": null
+    }
+   ],
+   "event": "Goldman Sachs Exchanges (Top of Mind)",
+   "published_kst": "2026-11-26T02:50:00+09:00",
+   "revised_kst": "2026-11-26T02:50:00+09:00",
+   "revision": 1,
+   "summary": "팔리하피티야와 셰리던은 출발점이 다르다. 그런데도 하이퍼스케일러는 둔화를 견디고, 손실은 임차형 네오클라우드와 AI 매출 의존도가 큰 쪽에 몰린다는 결론으로 모인다. 판단을 가르는 것은 앞으로 18개월 안에 대기업 고객의 AI ROI가 실제로 보이느냐다. 두 사람 모두 하이퍼스케일러의 보증 규모, 네오클라우드의 실제 이용률, ROIC 모델의 가정을 숫자로 내놓지 않았다. 그래서 '하이퍼스케일러는 괜찮다'는 결론의 확신은 중간 정도다.",
+   "path": "reports/goldman-what-will-determine-the-durability-of-the-ai-inv.json"
+  },
+  {
+   "slug": "nvidia-dev-whats-new-for-game-developers-ai-animation-and",
+   "type": "article",
+   "title": "NVIDIA Technical Blog : 신경망 렌더링·AI 애니메이션·로컬 추론을 게임 엔진과 개발 도구 안으로 들여보낸다",
+   "companies": [
+    {
+     "name": "NVIDIA",
+     "ticker": null
+    },
+    {
+     "name": "Gaijin Entertainment",
+     "ticker": null
+    },
+    {
+     "name": "Epic Games",
+     "ticker": null
+    }
+   ],
+   "published_kst": "2026-11-26T02:35:18+09:00",
+   "revised_kst": "2026-11-26T02:35:18+09:00",
+   "revision": 1,
+   "summary": "NVIDIA가 게임 개발 도구를 한꺼번에 갱신했다는 개발자 마케팅 글이다. 사용 회사 수, 성능 수치, 매출 연결 같은 정량 근거는 없다. 투자 측면에서 읽을 신호는 세 가지다. RTX Spark라는 이름이 네 개 도구에 동시에 등장했고, Nsight에 AI 에이전트용 MCP 서버가 들어갔으며, Kimodo가 Unreal Engine 5.9 Preview의 guided animation framework에 처음 통합된 모델이 됐다. NVIDIA 실적 추정을 바꿀 내용은 아니다(중립에 가까운 약한 호재, 확신 낮음).",
+   "path": "reports/nvidia-dev-whats-new-for-game-developers-ai-animation-and.json"
+  },
+  {
+   "slug": "anthropic-migrating-api-to-rust",
+   "type": "article",
+   "title": "Anthropic : 코드 작성이 아니라 검증이 병목이다 — 운영 중인 API를 검증기로 삼아 Messages API를 Rust로 옮겼다",
+   "companies": [
+    {
+     "name": "Anthropic",
+     "ticker": null
+    }
+   ],
+   "published_kst": "2026-11-26T02:32:31+09:00",
+   "revised_kst": "2026-11-26T02:32:31+09:00",
+   "revision": 1,
+   "summary": "Anthropic은 운영 중인 Python API를 정답 기준(오라클)으로 삼고, 에이전트가 세 겹의 검증 루프 안에서 차이를 고치게 하는 방식으로 Messages API를 Rust로 옮겼다. 요청당 CPU 약 70% 절감이라는 결과보다, 대형 마이그레이션의 비용 구조가 '작성'에서 '검증 신호 설계'로 옮겨 갔다는 주장이 이 글의 핵심이다. 수치는 모두 회사 내부 자료이고 외부에서 검증할 수 없다.",
+   "path": "reports/anthropic-migrating-api-to-rust.json"
+  },
+  {
+   "slug": "google-research-verifiable-social-reasoning-for-llm",
+   "type": "article",
+   "title": "Google Research : 사용자 말만 듣는 AI 비서는 사회적 판단에서 사용자의 편향을 따라간다",
+   "companies": [
+    {
+     "name": "Google",
+     "ticker": null
+    }
+   ],
+   "published_kst": "2026-11-26T02:28:20+09:00",
+   "revised_kst": "2026-11-26T02:28:20+09:00",
+   "revision": 1,
+   "summary": "구글 리서치는 숨은 동기를 심은 다중 에이전트 시뮬레이션으로 '정답이 있는' 사회적 추론 평가를 만들어 12개 LLM에 적용했다. 그 결과 사용자의 주관적 서술을 거치면 사회적 추론이 크게 어려워진다고 보고했다. 글에는 격차의 크기와 평가한 모델 이름이 없어 경쟁 구도를 읽을 근거는 아니다. 투자 측면의 의미는 상담·동반자형 사용 시장에서 신뢰성 측정의 기준을 구글이 먼저 공개했다는 데 그친다(확신 낮음).",
+   "path": "reports/google-research-verifiable-social-reasoning-for-llm.json"
+  },
+  {
+   "slug": "deepmind-interpreting-mass-spectra-with-google-antigravity",
+   "type": "article",
+   "title": "Google DeepMind : 도메인 스킬을 붙이면 경량 모델도 질량 스펙트럼에서 분자를 프런티어 모델만큼 찾아낸다",
+   "companies": [
+    {
+     "name": "Google",
+     "ticker": null
+    }
+   ],
+   "published_kst": "2026-11-26T02:25:53+09:00",
+   "revised_kst": "2026-11-26T02:25:53+09:00",
+   "revision": 1,
+   "summary": "DeepMind는 공개된 질량분석 도구를 Gemini 에이전트의 스킬로 묶었다. 그 결과 참조 스펙트럼이 공개 라이브러리에 있는 화합물에서는 경량 모델도 약 97% 정확도를 내고 토큰도 덜 쓴다. 다만 이 시험은 이미 답이 있는 쉬운 영역이다. 이 글이 문제로 꼽은 미주석 '암흑 물질'에 대한 근거는 사례 한 건뿐이고, 알파벳 실적에 미칠 영향은 작다고 본다.",
+   "path": "reports/deepmind-interpreting-mass-spectra-with-google-antigravity.json"
+  },
+  {
+   "slug": "semafor-the-case-for-selling-chips-to-china-with-asml-s",
+   "type": "interview",
+   "title": "크리스토프 푸케(ASML CEO) 인터뷰 : EUV 증설 속도와 대중국 수출 통제의 ‘세대 격차’론",
+   "companies": [
+    {
+     "name": "ASML",
+     "ticker": null
+    }
+   ],
+   "event": "Semafor Future Proof 대담",
+   "published_kst": "2026-11-26T02:21:30+09:00",
+   "revised_kst": "2026-11-26T02:21:30+09:00",
+   "revision": 1,
+   "summary": "푸케 CEO는 EUV 공급을 묶는 것이 수요가 아니라 수년짜리 공급망 리드타임이라고 말했다. 또 13년 된 DUV를 중국에 계속 팔아 ‘세대 격차’로 중국의 의존을 유지하는 편이 낫다는 논리를 폈다. ASML의 수요 측 근거는 다시 확인됐지만, 엔비디아 스캔들 이후 커진 통제 강화 논쟁이 가장 큰 변수로 남았다.",
+   "path": "reports/semafor-the-case-for-selling-chips-to-china-with-asml-s.json"
+  },
   {
    "slug": "sixsigma-gpt",
    "type": "article",
@@ -9204,15 +9326,15 @@
   }
  ],
  "street": {
-  "updated_kst": "2026-11-25T23:19:25+09:00",
+  "updated_kst": "2026-11-26T02:43:38+09:00",
   "path": "street.json"
  },
  "calendar": {
-  "updated_kst": "2026-11-25T14:13:47+09:00",
+  "updated_kst": "2026-11-26T02:35:47+09:00",
   "path": "calendar.json"
  },
  "watch": {
-  "updated_kst": "2026-11-25T23:33:17+09:00",
+  "updated_kst": "2026-11-26T02:52:25+09:00",
   "path": "watch.json"
  },
  "datasets": [

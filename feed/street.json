@@ -1,20 +1,20 @@
 {
  "schema": 1,
- "updated_kst": "2026-11-25T23:19:25+09:00",
+ "updated_kst": "2026-11-26T02:43:38+09:00",
  "window_days": 14,
  "items_days": 30,
  "index": {
   "ai_tech": {
    "value": 6,
    "label": "엇갈림",
-   "orgs": 40,
-   "items": 151
+   "orgs": 39,
+   "items": 152
   },
   "market": {
-   "value": -8,
+   "value": -6,
    "label": "엇갈림",
-   "orgs": 29,
-   "items": 105
+   "orgs": 28,
+   "items": 104
   },
   "by_group": [
    {
@@ -26,10 +26,10 @@
    },
    {
     "group": "PE·대체투자",
-    "ai_tech": 14,
-    "ai_tech_orgs": 6,
-    "market": 0,
-    "market_orgs": 4
+    "ai_tech": 17,
+    "ai_tech_orgs": 5,
+    "market": 17,
+    "market_orgs": 3
    },
    {
     "group": "자산운용",
@@ -105,8 +105,8 @@
    },
    {
     "week": "2026-11-23",
-    "ai_tech": 9,
-    "ai_tech_orgs": 17,
+    "ai_tech": 6,
+    "ai_tech_orgs": 18,
     "market": -15,
     "market_orgs": 16
    }
@@ -115,11 +115,11 @@
    "caution": [
     {
      "tag": "밸류에이션",
-     "n": 19
+     "n": 20
     },
     {
      "tag": "투자 회수",
-     "n": 17
+     "n": 19
     },
     {
      "tag": "쏠림",
@@ -260,6 +260,66 @@
     "tier": "standard"
    },
    "note": "유튜브 영상의 음성을 음성 인식(Whisper)으로 받아 적은 전사 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
+  },
+  {
+   "id": "burry-big-short-investor-michael-burry-pinpoints-the-n",
+   "group": "투자 거장",
+   "org": "Michael Burry",
+   "person": null,
+   "kind": "report",
+   "title": "'빅 쇼트' 투자자 Michael Burry, 엔비디아 주식에 다시 베팅할 시점을 짚다",
+   "title_orig": "'Big Short' investor Michael Burry pinpoints the next time he'll be betting against Nvidia stock",
+   "url": "https://www.msn.com/en-us/money/top-stocks/big-short-investor-michael-burry-pinpoints-the-next-time-he-ll-be-betting-against-nvidia-stock/ar-AA2idH0Z",
+   "outlet": "Insider on MSN",
+   "published_kst": "2026-11-25T17:37:13+09:00",
+   "stance": {
+    "ai_tech": -1,
+    "market": null
+   },
+   "args": [
+    "밸류에이션",
+    "투자 회수"
+   ],
+   "summary": "Burry는 젠슨 황의 CEO 복귀가 엔비디아 전망에는 도움이 될 수 있어도 자신의 장기 약세 논리는 바뀌지 않는다고 밝혔다. 시장이 낙관적일 때 주가가 200달러 부근에 이르면 다시 공매도하겠다는 계획이며, 지금은 그 시점이 아니라고 했다. 최근 매수한 저가 장기 콜옵션은 방향을 정하지 않은 채 보유 중이다.",
+   "points": [
+    "시장이 낙관적인 시기에 주가가 주당 200달러 가까이 오르면 엔비디아를 다시 공매도할 계획이며, 그 시점은 지금이 아니다.",
+    "금요일에 매수한 엔비디아 콜옵션을 여전히 보유하고 있다. 크게 외가격인 옵션이라 몇 달러에 샀고 이미 두 배가 되었으나, 이를 어떻게 처리할지는 아직 정하지 않았다.",
+    "평소의 사업 운영 상태가 곧 돌아올 것이라고 본다. 따라서 애초에 젠슨 황의 퇴출을 염두에 두지 않았던 자신의 엔비디아 공매도 논리 전체는 여전히 유효하며, 완전한 힘을 유지하고 있다."
+   ],
+   "evidence": [
+    {
+     "ko": "평소의 사업 운영 상태가 곧 돌아올 것이라고 본다. 따라서 애초에 젠슨 황의 퇴출을 염두에 두지 않았던 자신의 엔비디아 공매도 논리 전체는 여전히 유효하며, 완전한 힘을 유지하고 있다.",
+     "orig": "I believe business as usual will return soon enough,\" Burry wrote. \"Which is to say that the entirety of my Nvidia short thesis, having never contemplated the removal of Jensen in the first place, is still valid, still has legs at full strength."
+    }
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
+  },
+  {
+   "id": "chanos-jim-chanos-says-alphabet-googl-stock-is-the-only",
+   "group": "투자 거장",
+   "org": "Jim Chanos",
+   "person": null,
+   "kind": "report",
+   "title": "짐 챈노스, 알파벳만 AI 투자에 걸맞은 수익을 내는 하이퍼스케일러라고 주장",
+   "title_orig": "Jim Chanos Says Alphabet (GOOGL) Stock Is the Only Hyperscaler Earning Its AI Spend",
+   "url": "https://coincentral.com/jim-chanos-says-alphabet-googl-stock-is-the-only-hyperscaler-earning-its-ai-spend",
+   "outlet": "CoinCentral",
+   "published_kst": "2026-11-25T15:24:00+09:00",
+   "stance": {
+    "ai_tech": -1,
+    "market": null
+   },
+   "args": [
+    "투자 회수"
+   ],
+   "judged": {
+    "basis": "headline_only",
+    "tier": "light"
+   }
   },
   {
    "id": "goldman-how-hedge-funds-are-navigating-stock-market-vola",
