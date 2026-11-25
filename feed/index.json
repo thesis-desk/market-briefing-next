@@ -1,7 +1,23 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-25T11:22:15+09:00",
+ "generated_kst": "2026-11-25T11:25:23+09:00",
  "reports": [
+  {
+   "slug": "semianalysis-yt-building-a-chip-to-beat-biology-naveen-rao",
+   "type": "interview",
+   "title": "Naveen Rao(Unconventional AI) 인터뷰 : 가중치로 프로그래밍하는 추론 칩, 하드웨어 대신 토큰을 판다",
+   "companies": [
+    {
+     "name": "Unconventional AI",
+     "ticker": null
+    }
+   ],
+   "published_kst": "2026-11-25T11:25:23+09:00",
+   "revised_kst": "2026-11-25T11:25:23+09:00",
+   "revision": 1,
+   "summary": "Unconventional AI는 메모리와 연산을 묶어 가중치로 프로그래밍하는 추론 칩을 만들고, 그 칩을 하드웨어가 아닌 토큰으로 팔겠다는 구상을 내놓았다. 다만 근거는 작은 이미지 디퓨전 시제품의 이미지당 900nJ 한 건뿐이다. 언어모델 규모에서 줄/토큰과 증류 품질이 확인되기 전까지는 NVIDIA에 대한 단기 위협으로 보기 어렵다.",
+   "path": "reports/semianalysis-yt-building-a-chip-to-beat-biology-naveen-rao.json"
+  },
   {
    "slug": "tomorrowx-2026-zach-dell-every-energy-company-is-now-an-ai",
    "type": "interview",
