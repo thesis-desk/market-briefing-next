@@ -11221,42 +11221,6 @@
     "tier": "standard"
    },
    "note": "유튜브 자동 생성 자막(en) 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
-  },
-  {
-   "id": "chanos-jim-chanos-spacex-s-40-billion-chip-debt-raises",
-   "group": "투자 거장",
-   "org": "Jim Chanos",
-   "person": null,
-   "kind": "report",
-   "title": "Jim Chanos: SpaceX의 400억 달러 칩 부채, '상당히 중대한 5,000억 달러짜리 질문' 제기",
-   "title_orig": "Jim Chanos: SpaceX’s $40 Billion Chip Debt Raises “a Pretty Material $500B Question”",
-   "url": "https://finance.yahoo.com/markets/stocks/articles/jim-chanos-spacex-40-billion-183136278.html",
-   "outlet": "Yahoo Finance",
-   "published_kst": "2026-10-26T20:31:00+09:00",
-   "stance": {
-    "ai_tech": -1,
-    "market": null
-   },
-   "args": [
-    "투자 회수",
-    "자금 조달·신용"
-   ],
-   "summary": "Chanos는 SpaceX가 2027년에 구축하는 10GW 용량 중 지상 데이터센터 비중이 얼마인지 물으며 이를 약 5,000억 달러 규모의 중대한 문제라고 짚었다. 또한 SpaceX를 '세계 최대 네오클라우드'라고 불렀다. 우주 데이터센터 구상보다 지상 컴퓨팅 임대 사업이 실질이라는 시각을 드러냈다.",
-   "points": [
-    "SpaceX가 2027년에 구축하는 10GW 용량 중 지상 데이터센터가 차지하는 비율이 얼마인지 물었다. 그는 이것이 상당히 중대한 5,000억 달러짜리 질문이라고 말했다.",
-    "지난주 Chanos는 SpaceX를 '세계 최대 네오클라우드'라고 불렀다."
-   ],
-   "evidence": [
-    {
-     "ko": "지난주 Chanos는 SpaceX를 '세계 최대 네오클라우드'라고 불렀다.",
-     "orig": "That's the business behind Chanos calling SpaceX \"the largest global neocloud\" last week."
-    }
-   ],
-   "judged": {
-    "basis": "full_text",
-    "tier": "standard"
-   },
-   "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
   }
  ]
 }
