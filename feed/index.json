@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-25T11:11:36+09:00",
+ "generated_kst": "2026-11-25T11:22:15+09:00",
  "reports": [
   {
    "slug": "tomorrowx-2026-zach-dell-every-energy-company-is-now-an-ai",
@@ -4567,6 +4567,24 @@
    "revision": 1,
    "summary": "3Q26 매출 $3.66B(+58.5%)로 가이던스를 크게 넘겼고, 연간 목표를 올해 네 번째로 올렸으며, 2027년 매출 약 $18.5B·영업이익률 약 49%를 처음 내놓았다. 다만 제품 이연매출이 줄고 재고가 $3.2B로 늘었다. 이번 매출에 이연 해소가 얼마나 기여했는지는 답해지지 않았다.",
    "path": "reports/arista-3q26-earnings.json"
+  },
+  {
+   "slug": "digitalocean-3q26-earnings",
+   "type": "earnings",
+   "title": "DigitalOcean 3Q26 실적발표 : 2027 성장 전망 30%+에서 60%+로, $1B ATM으로 지분 조달 수단 추가",
+   "companies": [
+    {
+     "name": "DigitalOcean",
+     "ticker": "DOCN"
+    }
+   ],
+   "event": "3Q26 실적 발표",
+   "event_date": "2026-11-03",
+   "published_kst": "2026-11-03T21:00:00+09:00",
+   "revised_kst": "2026-11-25T11:22:15+09:00",
+   "revision": 1,
+   "summary": "매출 성장률이 5분기 연속 올라 40%가 됐고, 회사는 2027년 성장 전망을 30%+에서 60%+로 두 배 올렸다. 다만 이번 분기 숫자로 역산한 비AI ARR 성장률은 약 11%다. 2027년 전망은 75MW 증설이 제때 가동되는지, MW당 수율이 유지되는지, 증설 자금을 어떻게 대는지에 달려 있다.",
+   "path": "reports/digitalocean-3q26-earnings.json"
   },
   {
    "slug": "eaton-3q26-earnings",
