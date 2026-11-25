@@ -8,13 +8,13 @@
    "value": 5,
    "label": "엇갈림",
    "orgs": 41,
-   "items": 153
+   "items": 152
   },
   "market": {
    "value": -9,
    "label": "엇갈림",
    "orgs": 30,
-   "items": 107
+   "items": 106
   },
   "by_group": [
    {
@@ -40,7 +40,7 @@
    },
    {
     "group": "투자은행",
-    "ai_tech": 26,
+    "ai_tech": 25,
     "ai_tech_orgs": 7,
     "market": 28,
     "market_orgs": 7
@@ -153,11 +153,11 @@
    "optimism": [
     {
      "tag": "수요·채택",
-     "n": 48
+     "n": 47
     },
     {
      "tag": "투자 회수",
-     "n": 35
+     "n": 34
     },
     {
      "tag": "밸류에이션",
@@ -177,7 +177,7 @@
     },
     {
      "tag": "정책·지정학",
-     "n": 14
+     "n": 13
     },
     {
      "tag": "전력·공급 제약",
