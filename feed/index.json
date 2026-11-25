@@ -1,7 +1,63 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-25T11:31:33+09:00",
+ "generated_kst": "2026-11-25T11:49:20+09:00",
  "reports": [
+  {
+   "slug": "tomorrowx-2026-who-pays-for-the-ai-build-out-diameter-and",
+   "type": "interview",
+   "title": "Diameter·Oaktree 대담 (TomorrowX Summit 2026) : 칩 담보 대출의 부상과 네오클라우드 자본비용 격차",
+   "companies": [
+    {
+     "name": "CoreWeave",
+     "ticker": null
+    },
+    {
+     "name": "Nebius",
+     "ticker": null
+    },
+    {
+     "name": "Meta",
+     "ticker": null
+    },
+    {
+     "name": "Nvidia",
+     "ticker": null
+    },
+    {
+     "name": "Broadcom",
+     "ticker": null
+    },
+    {
+     "name": "SpaceX",
+     "ticker": null
+    }
+   ],
+   "event": "TomorrowX Summit 2026",
+   "event_date": "2026-11-17",
+   "published_kst": "2026-11-25T11:49:20+09:00",
+   "revised_kst": "2026-11-25T11:49:20+09:00",
+   "revision": 1,
+   "summary": "두 크레딧 투자자는 AI 증설 조달의 병목을 돈의 총량보다 포트폴리오 규칙과 자본비용 격차에서 찾는다. 같은 칩을 담보로 잡아도 누가 빌리느냐에 따라 금리가 7.5%에서 15% 이상으로 벌어지는데, 이 구조는 원가 곡선 아래의 대형사에 유리하고 네오클라우드·네오랩에 불리하다. 신용 쪽 기회로는 대형 신용이 보증하는 칩 대출과 회수가치 근처까지 떨어진 전환사채를 꼽았다.",
+   "path": "reports/tomorrowx-2026-who-pays-for-the-ai-build-out-diameter-and.json"
+  },
+  {
+   "slug": "tomorrowx-2026-jack-kokko-ai-is-giving-analysts-superpowers",
+   "type": "interview",
+   "title": "잭 코코 (TomorrowX Summit 2026) : 금융 리서치의 풀스택 AI와 프런티어 모델 수요",
+   "companies": [
+    {
+     "name": "AlphaSense",
+     "ticker": null
+    }
+   ],
+   "event": "TomorrowX Summit 2026",
+   "event_date": "2026-11-17",
+   "published_kst": "2026-11-25T11:39:43+09:00",
+   "revised_kst": "2026-11-25T11:39:43+09:00",
+   "revision": 1,
+   "summary": "AlphaSense CEO 잭 코코는 금융 같은 고난도 용도에는 프런티어 모델이 필수라고 보고, 자사 플랫폼의 토큰 소비가 연초 대비 10배로 늘었다는 수치를 근거로 AI 인프라 투자에 낙관적이다. 다만 기준값과 매출·총이익률이 빠진 자기 플랫폼 수치여서, 추론 수요가 강하다는 방향 신호 이상으로 쓰기는 어렵다.",
+   "path": "reports/tomorrowx-2026-jack-kokko-ai-is-giving-analysts-superpowers.json"
+  },
   {
    "slug": "openai-gpt-6-models-demonstrate-intrinsic-protein-design",
    "type": "article",
@@ -9072,7 +9128,7 @@
   }
  ],
  "street": {
-  "updated_kst": "2026-11-25T08:23:34+09:00",
+  "updated_kst": "2026-11-25T11:34:17+09:00",
   "path": "street.json"
  },
  "calendar": {

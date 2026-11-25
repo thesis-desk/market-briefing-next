@@ -1,8 +1,42 @@
 {
  "schema": 1,
  "month": "2026-11",
- "updated_kst": "2026-11-25T08:23:34+09:00",
+ "updated_kst": "2026-11-25T11:34:17+09:00",
  "items": [
+  {
+   "id": "morgan-stanley-want-to-go-on-offense-in-ai-right-now-says-morga",
+   "group": "투자은행",
+   "org": "Morgan Stanley",
+   "person": "Dan Skelly",
+   "kind": "publication",
+   "title": "지금 AI에 공세를 취해야 한다, Morgan Stanley의 Dan Skelly",
+   "title_orig": "Want to go on offense in AI right now, says Morgan Stanley's Dan Skelly",
+   "url": "https://www.youtube.com/watch?v=HHCdQXwRXyg",
+   "outlet": "CNBC Television (유튜브)",
+   "published_kst": "2026-11-25T10:37:02+09:00",
+   "stance": {
+    "ai_tech": 1,
+    "market": 1
+   },
+   "args": [
+    "투자 회수",
+    "자금 조달·신용",
+    "밸류에이션",
+    "수요·채택"
+   ],
+   "summary": "Dan Skelly는 최근 급락이 포지셔닝 청산, 상관관계 1 수렴, VIX 30%대 후반 등으로 항복(capitulation) 국면이며 6월에 시작된 조정의 막바지라고 본다. 그래서 AI에 공세적으로 나서야 하며, 2027년 설비투자 전망(약 1.5조 달러, 75% 증가)이 현실적이면 반도체·기술 하드웨어·일부 전력주가 매력적이라고 주장한다.",
+   "points": [
+    "헤지펀드 순매수 비중 하락, 상관관계 1 수렴, VIX 급등 등 네 가지 신호로 항복 국면이 왔다고 본다.",
+    "개인투자자 매도까지 나와 포지셔닝이 완전히 정리됐다고 판단한다.",
+    "최근 몇 주는 6월에 시작된 조정의 막바지이므로 AI에 공세적으로 나서야 한다고 주장한다.",
+    "2027년 설비투자가 1.5조 달러에 가깝다면 저배수 반도체와 기술 하드웨어, 일부 전력주가 매력적이라고 본다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "유튜브 자막(제작자 제공)(en) 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
+  },
   {
    "id": "morgan-stanley-can-treasuries-still-protect-your-portfolio",
    "group": "투자은행",
