@@ -5,16 +5,16 @@
  "items_days": 30,
  "index": {
   "ai_tech": {
-   "value": 5,
+   "value": 6,
    "label": "엇갈림",
-   "orgs": 41,
-   "items": 152
+   "orgs": 40,
+   "items": 150
   },
   "market": {
-   "value": -9,
+   "value": -8,
    "label": "엇갈림",
-   "orgs": 30,
-   "items": 106
+   "orgs": 29,
+   "items": 105
   },
   "by_group": [
    {
@@ -26,8 +26,8 @@
    },
    {
     "group": "PE·대체투자",
-    "ai_tech": 5,
-    "ai_tech_orgs": 7,
+    "ai_tech": 14,
+    "ai_tech_orgs": 6,
     "market": 0,
     "market_orgs": 4
    },
@@ -54,10 +54,10 @@
    },
    {
     "group": "투자 거장",
-    "ai_tech": -35,
+    "ai_tech": -34,
     "ai_tech_orgs": 10,
-    "market": -52,
-    "market_orgs": 9
+    "market": -53,
+    "market_orgs": 8
    },
    {
     "group": "중앙은행·국제기구",
@@ -115,23 +115,23 @@
    "caution": [
     {
      "tag": "밸류에이션",
-     "n": 19
+     "n": 18
     },
     {
      "tag": "투자 회수",
-     "n": 17
-    },
-    {
-     "tag": "쏠림",
-     "n": 17
-    },
-    {
-     "tag": "자금 조달·신용",
      "n": 16
     },
     {
+     "tag": "쏠림",
+     "n": 16
+    },
+    {
+     "tag": "자금 조달·신용",
+     "n": 15
+    },
+    {
      "tag": "금리·거시",
-     "n": 9
+     "n": 8
     },
     {
      "tag": "경쟁·해자",
