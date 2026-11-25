@@ -1,7 +1,76 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-26T05:21:09+09:00",
+ "generated_kst": "2026-11-26T08:40:01+09:00",
  "reports": [
+  {
+   "slug": "ark-one-of-tech-s-worst-drawdowns-since-2003-is-the",
+   "type": "article",
+   "title": "ARK Invest : 2003년 이후 최대 기술주 낙폭, Brett는 자금·ARR 모델에 대한 과잉 비관으로, Nick은 신용 위 거래의 취약성으로 읽는다",
+   "companies": [
+    {
+     "name": "NVIDIA",
+     "ticker": null
+    },
+    {
+     "name": "Anthropic",
+     "ticker": null
+    },
+    {
+     "name": "OpenAI",
+     "ticker": null
+    },
+    {
+     "name": "SpaceX",
+     "ticker": null
+    },
+    {
+     "name": "Tesla",
+     "ticker": null
+    }
+   ],
+   "published_kst": "2026-11-26T08:40:01+09:00",
+   "revised_kst": "2026-11-26T08:40:01+09:00",
+   "revision": 1,
+   "summary": "ARK의 Brett는 젠슨 황 복귀에 따른 반등과 그 앞의 낙폭을 함께 오독이라고 본다. 시장이 엔비디아의 금융 지원과 앤트로픽의 분기 순증 ARR 정체를 잘못 가정했다는 것이다. 다만 영상에 새 데이터는 거의 없다. Nick이 제기한 토큰 단가 하락, 경쟁, 신용 위험에 대한 반론도 주장 수준에 머문다. 판단을 가를 지표는 앤트로픽·OpenAI의 분기 순증 매출이 가속하는지다.",
+   "path": "reports/ark-one-of-tech-s-worst-drawdowns-since-2003-is-the.json"
+  },
+  {
+   "slug": "together-introducing-hurdle-run-agent-evals-on-your-api",
+   "type": "article",
+   "title": "Together AI : 코딩 에이전트가 우리 API를 잘 쓰는지 반복 실험으로 재야 하고, Hurdle이 그 실험을 자동화한다",
+   "companies": [
+    {
+     "name": "Together AI",
+     "ticker": null
+    }
+   ],
+   "published_kst": "2026-11-26T08:27:33+09:00",
+   "revised_kst": "2026-11-26T08:27:33+09:00",
+   "revision": 1,
+   "summary": "Together AI가 사내에서 6개월 동안 만든 에이전트 평가 도구 Hurdle을 오픈소스로 공개했다. 도구는 무료지만, 실제 API를 건드리는 평가를 안전하게 돌리려면 Together Sandbox를 거치도록 설계돼 있다. 그래서 '에이전트 경험' 평가를 자사 샌드박스 수요로 잇는 진입로로 읽힌다. 다만 글은 사용법 안내에 머물고, 자사 평가 결과 수치는 본문에 없다. 상장 종목 판정에 쓸 근거는 약하다.",
+   "path": "reports/together-introducing-hurdle-run-agent-evals-on-your-api.json"
+  },
+  {
+   "slug": "latent-space-the-revolution-vs-the-renaissance-thariq",
+   "type": "interview",
+   "title": "타릭 시히파르 인터뷰 : 코딩 에이전트의 ‘르네상스’와 사람이 남는 자리",
+   "companies": [
+    {
+     "name": "OpenAI",
+     "ticker": null
+    },
+    {
+     "name": "Anthropic",
+     "ticker": null
+    }
+   ],
+   "event": "Latent Space 인터뷰(AI Engineer CODE 현장 녹화)",
+   "published_kst": "2026-11-26T08:24:10+09:00",
+   "revised_kst": "2026-11-26T08:24:10+09:00",
+   "revision": 1,
+   "summary": "앤트로픽을 떠나 OpenAI에 합류한 시히파르는 이제 병목이 토큰이나 지능이 아니라 사람이 모델과 일하는 방식이라고 본다. 이 진단이 OpenAI의 Codex 개편 방향을 보여 주는 단서일 수 있다. 다만 근거는 개인 실험이고 수치가 거의 없어 투자 판단에 주는 무게는 작다.",
+   "path": "reports/latent-space-the-revolution-vs-the-renaissance-thariq.json"
+  },
   {
    "slug": "nvidia-dev-how-to-run-nvidia-cosmos-3-on-local-ai-devices",
    "type": "article",
@@ -9364,7 +9433,7 @@
   }
  ],
  "street": {
-  "updated_kst": "2026-11-26T05:21:09+09:00",
+  "updated_kst": "2026-11-26T08:31:20+09:00",
   "path": "street.json"
  },
  "calendar": {

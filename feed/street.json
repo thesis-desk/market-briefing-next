@@ -1,14 +1,14 @@
 {
  "schema": 1,
- "updated_kst": "2026-11-26T05:21:09+09:00",
+ "updated_kst": "2026-11-26T08:31:20+09:00",
  "window_days": 14,
  "items_days": 30,
  "index": {
   "ai_tech": {
-   "value": 7,
+   "value": 5,
    "label": "엇갈림",
    "orgs": 39,
-   "items": 154
+   "items": 152
   },
   "market": {
    "value": -6,
@@ -19,7 +19,7 @@
   "by_group": [
    {
     "group": "벤처캐피털",
-    "ai_tech": 44,
+    "ai_tech": 38,
     "ai_tech_orgs": 8,
     "market": -17,
     "market_orgs": 3
@@ -35,7 +35,7 @@
     "group": "자산운용",
     "ai_tech": -9,
     "ai_tech_orgs": 6,
-    "market": 14,
+    "market": 13,
     "market_orgs": 6
    },
    {
@@ -54,7 +54,7 @@
    },
    {
     "group": "투자 거장",
-    "ai_tech": -35,
+    "ai_tech": -36,
     "ai_tech_orgs": 10,
     "market": -54,
     "market_orgs": 8
@@ -105,8 +105,8 @@
    },
    {
     "week": "2026-11-23",
-    "ai_tech": 7,
-    "ai_tech_orgs": 19,
+    "ai_tech": 3,
+    "ai_tech_orgs": 20,
     "market": -15,
     "market_orgs": 16
    }
@@ -115,7 +115,7 @@
    "caution": [
     {
      "tag": "투자 회수",
-     "n": 20
+     "n": 21
     },
     {
      "tag": "밸류에이션",
@@ -127,19 +127,19 @@
     },
     {
      "tag": "쏠림",
-     "n": 17
+     "n": 16
     },
     {
      "tag": "금리·거시",
      "n": 10
     },
     {
-     "tag": "정책·지정학",
+     "tag": "경쟁·해자",
      "n": 5
     },
     {
-     "tag": "경쟁·해자",
-     "n": 5
+     "tag": "정책·지정학",
+     "n": 4
     },
     {
      "tag": "수요·채택",
@@ -157,7 +157,7 @@
     },
     {
      "tag": "투자 회수",
-     "n": 35
+     "n": 34
     },
     {
      "tag": "밸류에이션",
@@ -173,15 +173,15 @@
     },
     {
      "tag": "자금 조달·신용",
-     "n": 17
+     "n": 16
     },
     {
      "tag": "정책·지정학",
-     "n": 12
+     "n": 11
     },
     {
      "tag": "전력·공급 제약",
-     "n": 11
+     "n": 10
     },
     {
      "tag": "쏠림",
@@ -192,6 +192,77 @@
   "method": "기관·인물마다 기간 안 입장 값의 평균을 내고 그 평균들을 다시 평균해 ×50"
  },
  "items": [
+  {
+   "id": "ark-one-of-tech-s-worst-drawdowns-since-2003-is-the",
+   "group": "자산운용",
+   "org": "ARK Invest",
+   "person": "Brett Winton",
+   "kind": "publication",
+   "title": "2003년 이후 최악의 기술주 낙폭 중 하나, 바닥은 지났나? | The Brainstorm 159",
+   "title_orig": "One Of Tech’s Worst Drawdowns Since 2003. Is The Bottom In? | The Brainstorm 159",
+   "url": "https://www.youtube.com/watch?v=TlQCGSkigmw",
+   "outlet": "ARK Invest (유튜브)",
+   "published_kst": "2026-11-26T07:22:49+09:00",
+   "stance": {
+    "ai_tech": 0,
+    "market": null
+   },
+   "args": [
+    "자금 조달·신용",
+    "수요·채택",
+    "경쟁·해자",
+    "투자 회수"
+   ],
+   "summary": "ARK 패널은 AI 펀더멘털(매출 성장)은 매우 강하지만 시장이 컴퓨트 약정을 매출이 감당할지 의심해 기술주가 2003년 이후 최대 낙폭을 겪었다고 본다. 한 화자는 젠슨 황 복귀의 의미가 과대평가됐고 신용 공급자가 대출을 꺼리는 것이 과도하다고 보는 반면, 다른 화자는 토큰 단가 하락으로 지출이 사용량을 따라가지 못할 수 있고 레버리지 위험을 조심하라고 한다. 전체적으로 장기 기회는 인정하되 단기 변동성과 자금 조달 불확실성을 함께 본다.",
+   "points": [
+    "AI 기업의 매출 등 펀더멘털은 매우 강하지만 시장은 컴퓨트 약정 규모를 미래 매출이 뒷받침하는지 의심하고 있다.",
+    "토큰 사용량은 크게 늘겠지만 모델 비용 하락(디플레이션)으로 실제 지출 증가는 뒤처질 수 있다고 우려한다.",
+    "버블 국면에서는 낙관론자가 레버리지를 독점하는데, 이번에는 신용 공급자가 대출을 꺼려 낙관론자의 차입을 막고 있고 그 비배분은 어리석어 보일 것이라고 주장한다."
+   ],
+   "evidence": [
+    {
+     "ko": "AI 기업의 매출 등 펀더멘털은 매우 강하지만 시장은 컴퓨트 약정 규모를 미래 매출이 뒷받침하는지 의심하고 있다.",
+     "orig": "AI fundamentals are extremely strong. Using a crypto term, pumpamentals, extremely weak, right?"
+    }
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "유튜브 자동 생성 자막(en) 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
+  },
+  {
+   "id": "blackrock-the-future-of-alpha-blackrock-s-2026-global-hedg",
+   "group": "자산운용",
+   "org": "BlackRock",
+   "person": null,
+   "kind": "publication",
+   "title": "알파의 미래 | BlackRock 2026 글로벌 헤지펀드 콘퍼런스",
+   "title_orig": "The Future of Alpha | BlackRock's 2026 Global Hedge Fund Conference",
+   "url": "https://www.youtube.com/watch?v=NzIDzd3XHdA",
+   "outlet": "BlackRock (유튜브)",
+   "published_kst": "2026-11-26T06:11:19+09:00",
+   "stance": {
+    "ai_tech": null,
+    "market": 0
+   },
+   "args": [
+    "쏠림",
+    "금리·거시"
+   ],
+   "summary": "분산투자 수단이 부족하고 상관관계 위험이 과소평가되고 있다고 본다. 반면 종목 간 수익률 격차(분산)가 커져 롱숏 운용사의 알파 기회는 오랜만에 가장 크다고 주장한다. AI는 투자 사이클이 아니라 리서치 생산성을 높이는 도구로 언급하며, 앞으로의 알파는 혁신과 규모가 좌우한다고 본다.",
+   "points": [
+    "분산투자 수단은 부족하지만 롱숏 운용사의 알파 기회는 오랜만에 가장 크다.",
+    "시장 참여자들이 상관관계 위험을 크게 과소평가하고 있다.",
+    "앞으로 종목·자산 간 수익률 격차(분산)가 더 뚜렷해질 것이다.",
+    "AI는 사람을 대체하는 것이 아니라 통찰을 증폭하는 도구이며, 사람과 기계의 결합이 가장 낫다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "유튜브 자동 생성 자막(en) 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
+  },
   {
    "id": "el-erian-here-s-why-allianz-s-mohamed-el-erian-thinks-for",
    "group": "투자 거장",
@@ -225,6 +296,30 @@
     "tier": "standard"
    },
    "note": "유튜브 자막(제작자 제공)(en) 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
+  },
+  {
+   "id": "chamath-cds-don-t-lie-chamath-warns-as-credit-markets-so",
+   "group": "벤처캐피털",
+   "org": "Social Capital",
+   "person": "Chamath Palihapitiya",
+   "kind": "report",
+   "title": "'CDS는 거짓말을 하지 않는다' — Chamath, 신용시장이 AI 지출에 경고음을 내고 있다고 경고",
+   "title_orig": "'CDS don't lie,' Chamath warns as credit markets sound alarm on AI spending",
+   "url": "https://www.msn.com/en-us/news/other/cds-don-t-lie-chamath-warns-as-credit-markets-sound-alarm-on-ai-spending/ar-AA2ieWNu",
+   "outlet": "Benzinga on MSN",
+   "published_kst": "2026-11-25T22:31:31+09:00",
+   "stance": {
+    "ai_tech": -1,
+    "market": null
+   },
+   "args": [
+    "자금 조달·신용",
+    "투자 회수"
+   ],
+   "judged": {
+    "basis": "headline_only",
+    "tier": "light"
+   }
   },
   {
    "id": "blackrock-blackrock-s-tony-kim-on-the-next-phase-of-the-ai",
@@ -11309,39 +11404,6 @@
     "tier": "standard"
    },
    "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
-  },
-  {
-   "id": "morgan-stanley-the-next-stage-of-the-market-correction",
-   "group": "투자은행",
-   "org": "Morgan Stanley",
-   "person": "Mike Wilson",
-   "kind": "publication",
-   "title": "시장 조정의 다음 단계",
-   "title_orig": "The Next Stage of the Market Correction",
-   "url": "https://www.morganstanley.com/insights/podcasts/thoughts-on-the-market",
-   "outlet": "Morgan Stanley Thoughts on the Market",
-   "published_kst": "2026-10-27T05:30:00+09:00",
-   "stance": {
-    "ai_tech": -1,
-    "market": 1
-   },
-   "args": [
-    "투자 회수",
-    "자금 조달·신용",
-    "금리·거시",
-    "정책·지정학"
-   ],
-   "summary": "Mike Wilson은 6월부터 이어진 조정이 막바지 단계이지만 마지막 구간은 불편할 수 있다고 본다. AI 투자 회수와 자금 조달 우려, 중간선거, 유동성 긴축을 세 가지 해소 사건으로 꼽으며, 반도체지수가 11월 중순까지 10~15% 더 하락할 수 있다고 본다. 급락이 오면 위험 회피보다 매수 기회로 보겠다는 입장이다.",
-   "points": [
-    "AI에 대해 투자자들이 자본 수익률, 자본 비용, 신용시장의 자금 조달 능력을 의심하고 있다고 본다.",
-    "반도체지수가 11월 중순까지 10~15% 추가 하락할 것으로 전망한다.",
-    "금융 여건 긴축이 2018년과 비슷하며 가장 중요한 해소 사건이라고 본다.",
-    "조정이 막바지에 있으며 급락이 오면 위험 회피보다 매수 기회로 보겠다고 한다."
-   ],
-   "judged": {
-    "basis": "full_text",
-    "tier": "standard"
-   }
   }
  ]
 }
