@@ -1,7 +1,39 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-26T09:05:43+09:00",
+ "generated_kst": "2026-11-26T09:46:58+09:00",
  "reports": [
+  {
+   "slug": "semianalysis-evaluating-recent-model-releases",
+   "type": "article",
+   "title": "SemiAnalysis : 체감 평판과 달리 프런티어 영역의 지능은 여전히 OpenAI·Anthropic 두 강이고, Gemini 4 Neon의 인기는 말투 덕이다",
+   "companies": [
+    {
+     "name": "OpenAI",
+     "ticker": null
+    },
+    {
+     "name": "Anthropic",
+     "ticker": null
+    },
+    {
+     "name": "Google",
+     "ticker": null
+    },
+    {
+     "name": "Alibaba",
+     "ticker": null
+    },
+    {
+     "name": "Moonshot",
+     "ticker": null
+    }
+   ],
+   "published_kst": "2026-11-26T09:46:58+09:00",
+   "revised_kst": "2026-11-26T09:46:58+09:00",
+   "revision": 1,
+   "summary": "SemiAnalysis는 자체 벤치마크 GDPx로 11월 신모델을 평가하고, GPT-6.2 Astra를 1위로 꼽았다. Gemini 4 Neon의 호평은 지능보다 말투가 만든 것이라고 보며, 같은 점수대에서도 과제당 비용이 몇 배씩 벌어진다는 점을 보여 준다. 방향은 그럴듯하지만 영역당 과제가 20개 안팎이고 평가 대상 연구소와 사업 관계가 있다. 그래서 순위의 세부 차이보다 '비용 대비 점수의 격차'와 '안전 분류기가 영역별 모델 선택을 가른다'는 두 관찰이 더 쓸모 있다.",
+   "path": "reports/semianalysis-evaluating-recent-model-releases.json"
+  },
   {
    "slug": "ark-one-of-tech-s-worst-drawdowns-since-2003-is-the",
    "type": "article",
