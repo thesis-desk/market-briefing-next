@@ -1,7 +1,23 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-26T17:40:42+09:00",
+ "generated_kst": "2026-11-26T20:21:20+09:00",
  "reports": [
+  {
+   "slug": "sixsigma-1-340",
+   "type": "article",
+   "title": "식스시그마 : 마이크론의 1,340억 달러 계약이 다음 가격 하락의 마진 바닥을 높인다",
+   "companies": [
+    {
+     "name": "마이크론",
+     "ticker": null
+    }
+   ],
+   "published_kst": "2026-11-26T20:17:11+09:00",
+   "revised_kst": "2026-11-26T20:17:11+09:00",
+   "revision": 1,
+   "summary": "가격 하한이 있는 장기계약 물량은 최저가에서도 과거 마진율 최고점(61.0%)을 웃돈다는 마이크론의 공시는 하락기 이익 방어 구조로 의미가 있다. 다만 그 계약이 덮는 매출은 전체의 약 4분의 1뿐이고 나머지는 시장가라서, 영상의 결론인 '적자는 없다'는 한 단계 앞서 나갔다. 마이크론에는 호재(확신 중간)이고, 다른 종목은 근거가 없어 판정하지 않는다.",
+   "path": "reports/sixsigma-1-340.json"
+  },
   {
    "slug": "together-distilling-kimi-into-qwen",
    "type": "article",
@@ -9503,7 +9519,7 @@
   }
  ],
  "street": {
-  "updated_kst": "2026-11-26T14:22:07+09:00",
+  "updated_kst": "2026-11-26T20:21:20+09:00",
   "path": "street.json"
  },
  "calendar": {
