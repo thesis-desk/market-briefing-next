@@ -11367,40 +11367,6 @@
     "tier": "standard"
    },
    "note": "유튜브 자동 생성 자막(en) 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
-  },
-  {
-   "id": "goldman-goldman-sachs-chairman-and-ceo-david-solomon-on",
-   "group": "투자은행",
-   "org": "Goldman Sachs",
-   "person": "David Solomon",
-   "kind": "publication",
-   "title": "Goldman Sachs 회장 겸 CEO 데이비드 솔로몬이 말하는 AI: 도입, 책임, 일자리",
-   "title_orig": "Goldman Sachs Chairman and CEO David Solomon on AI: Implementation, Accountability, and Jobs",
-   "url": "https://www.goldmansachs.com/insights/goldman-sachs-exchanges",
-   "outlet": "Goldman Sachs Exchanges",
-   "published_kst": "2026-10-28T04:28:00+09:00",
-   "stance": {
-    "ai_tech": 1,
-    "market": null
-   },
-   "args": [
-    "투자 회수",
-    "수요·채택",
-    "자금 조달·신용",
-    "금리·거시"
-   ],
-   "summary": "솔로몬은 AI가 장기적으로 큰 사회·경제적 이익을 가져올 것이라며 낙관하고, 지속가능성도 장기적으로는 우려하지 않는다고 말한다. 다만 투자 확대 규모는 아무도 모르고 자본비용·금리 상승 속에 어느 시점에 시장 재조정이 올 수 있다고 본다. 일자리는 파괴보다 생산성 향상과 새 일자리 창출 쪽에 더 무게를 두되, 단기 충격에는 정책 대응이 필요할 수 있다고 한다.",
-   "points": [
-    "장기 관점에서 AI 투자 사이클의 지속가능성은 우려하지 않으며, 효과가 온전히 드러나는 데는 10~30년이 걸린다고 본다.",
-    "현재 컴퓨트 수요가 공급을 웃돌지만 인프라 투자 규모가 5조 달러일지 10조 달러일지는 아무도 모른다고 한다.",
-    "자본비용과 금리 상승이 AI 사업 모델을 압박하며, 컴퓨트 수요를 재평가하는 시장 재조정이 어느 시점에 올 것으로 전망한다.",
-    "AI는 일자리를 자동화하고 교란하겠지만 똑똑한 인력의 생산성을 높이고 새 일자리를 만들 것이라며 일자리 종말론보다 대도약 진영에 가깝다고 한다."
-   ],
-   "judged": {
-    "basis": "full_text",
-    "tier": "standard"
-   },
-   "note": "기관이 회차 페이지에 낸 공식 대본(PDF) 기준. 화자 이름이 대본에 적혀 있음"
   }
  ]
 }
