@@ -11367,40 +11367,6 @@
     "tier": "standard"
    },
    "note": "기관이 회차 페이지에 낸 공식 대본(PDF) 기준. 화자 이름이 대본에 적혀 있음"
-  },
-  {
-   "id": "pimco-what-lies-beneath-your-stock-or-bond-index-with",
-   "group": "자산운용",
-   "org": "PIMCO",
-   "person": "Liz Ann Sonders",
-   "kind": "publication",
-   "title": "주식·채권 지수 아래에 숨은 것 — Liz Ann Sonders와 함께",
-   "title_orig": "What Lies Beneath (your stock or bond index) with Liz Ann Sonders",
-   "url": "https://www.youtube.com/watch?v=Vqv7F3Ky9qc",
-   "outlet": "PIMCO (유튜브)",
-   "published_kst": "2026-10-28T00:03:45+09:00",
-   "stance": {
-    "ai_tech": 0,
-    "market": 0
-   },
-   "args": [
-    "쏠림",
-    "투자 회수",
-    "자금 조달·신용",
-    "밸류에이션"
-   ],
-   "summary": "Liz Ann Sonders는 S&P 500이 사실상 AI 베팅으로 변했고 2026년 이익 증가분이 소수 종목에 쏠려 있다고 짚는다. 다만 지금의 약세는 종목별 문제이지 전체의 문제는 아니며, AI 이야기는 끝나지 않고 창작자에서 도입 기업으로 관심이 옮겨 가는 중이라고 본다. 진행자는 하이퍼스케일러의 채권 발행 비중이 커졌으니 신용을 엄선해야 한다고 덧붙인다.",
-   "points": [
-    "S&P 500은 상위 10개 종목이 약 40%를 차지해 사실상 AI에 베팅하는 지수가 되었다.",
-    "2026년 S&P 500 이익 증가 전망의 상당 부분이 엔비디아와 마이크론 두 종목에서 나온다.",
-    "AI 설비투자 호황이라는 이유만으로 관련주를 사는 시기는 지났고, 이제는 투자 여력과 수익화를 종목별로 따져야 한다.",
-    "채권 쪽에서도 하이퍼스케일러 발행 비중이 커져, 주식과 채권에서 AI 노출이 겹치지 않도록 주의해야 한다."
-   ],
-   "judged": {
-    "basis": "full_text",
-    "tier": "standard"
-   },
-   "note": "유튜브 자동 생성 자막(en) 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
   }
  ]
 }
