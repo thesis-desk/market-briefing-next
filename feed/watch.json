@@ -92,13 +92,8 @@
      "id": "hyperscaler-capex-up-in-2027",
      "title": "FCF 마이너스에도 하이퍼스케일러 2027년 CAPEX 증가",
      "statement": "잉여현금흐름이 마이너스여도 주요 하이퍼스케일러는 2027년 CAPEX를 2026년보다 늘리는 계획을 유지할 것이다. 투자 증가율은 둔화할 수 있어도 절대 규모는 줄지 않는다는 주장이다.",
-     "verdict": "mixed",
+     "verdict": "supported",
      "recent": [
-      {
-       "when": "2026-11-19",
-       "daily": true,
-       "verdict": "mixed"
-      },
       {
        "when": "2026-11-20",
        "daily": true,
@@ -133,6 +128,11 @@
        "when": "2026-11-26",
        "daily": true,
        "verdict": "mixed"
+      },
+      {
+       "when": "2026-11-27",
+       "daily": true,
+       "verdict": "supported"
       }
      ]
     }
@@ -525,11 +525,6 @@
      "verdict": "mixed",
      "recent": [
       {
-       "when": "2026-11-20",
-       "daily": true,
-       "verdict": "mixed"
-      },
-      {
        "when": "2026-11-21",
        "daily": true,
        "verdict": "mixed"
@@ -561,6 +556,11 @@
       },
       {
        "when": "2026-11-26",
+       "daily": true,
+       "verdict": "mixed"
+      },
+      {
+       "when": "2026-11-27",
        "daily": true,
        "verdict": "mixed"
       }
@@ -2973,11 +2973,6 @@
      "verdict": "mixed",
      "recent": [
       {
-       "when": "2026-11-20",
-       "daily": true,
-       "verdict": "mixed"
-      },
-      {
        "when": "2026-11-21",
        "daily": true,
        "verdict": "mixed"
@@ -3009,6 +3004,11 @@
       },
       {
        "when": "2026-11-26",
+       "daily": true,
+       "verdict": "mixed"
+      },
+      {
+       "when": "2026-11-27",
        "daily": true,
        "verdict": "mixed"
       }
@@ -3021,11 +3021,6 @@
      "verdict": "mixed",
      "recent": [
       {
-       "when": "2026-11-20",
-       "daily": true,
-       "verdict": "mixed"
-      },
-      {
        "when": "2026-11-21",
        "daily": true,
        "verdict": "supported"
@@ -3057,6 +3052,11 @@
       },
       {
        "when": "2026-11-26",
+       "daily": true,
+       "verdict": "mixed"
+      },
+      {
+       "when": "2026-11-27",
        "daily": true,
        "verdict": "mixed"
       }
