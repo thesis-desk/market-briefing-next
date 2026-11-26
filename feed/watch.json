@@ -92,13 +92,8 @@
      "id": "hyperscaler-capex-up-in-2027",
      "title": "FCF 마이너스에도 하이퍼스케일러 2027년 CAPEX 증가",
      "statement": "잉여현금흐름이 마이너스여도 주요 하이퍼스케일러는 2027년 CAPEX를 2026년보다 늘리는 계획을 유지할 것이다. 투자 증가율은 둔화할 수 있어도 절대 규모는 줄지 않는다는 주장이다.",
-     "verdict": "supported",
+     "verdict": "mixed",
      "recent": [
-      {
-       "when": "2026-11-18",
-       "daily": true,
-       "verdict": "mixed"
-      },
       {
        "when": "2026-11-19",
        "daily": true,
@@ -133,6 +128,11 @@
        "when": "2026-11-25",
        "daily": true,
        "verdict": "supported"
+      },
+      {
+       "when": "2026-11-26",
+       "daily": true,
+       "verdict": "mixed"
       }
      ]
     }
@@ -525,11 +525,6 @@
      "verdict": "mixed",
      "recent": [
       {
-       "when": "2026-11-19",
-       "daily": true,
-       "verdict": "mixed"
-      },
-      {
        "when": "2026-11-20",
        "daily": true,
        "verdict": "mixed"
@@ -561,6 +556,11 @@
       },
       {
        "when": "2026-11-25",
+       "daily": true,
+       "verdict": "mixed"
+      },
+      {
+       "when": "2026-11-26",
        "daily": true,
        "verdict": "mixed"
       }
@@ -2910,11 +2910,6 @@
      "verdict": "mixed",
      "recent": [
       {
-       "when": "2026-11-19",
-       "daily": true,
-       "verdict": "mixed"
-      },
-      {
        "when": "2026-11-20",
        "daily": true,
        "verdict": "mixed"
@@ -2946,6 +2941,11 @@
       },
       {
        "when": "2026-11-25",
+       "daily": true,
+       "verdict": "mixed"
+      },
+      {
+       "when": "2026-11-26",
        "daily": true,
        "verdict": "mixed"
       }
@@ -2955,13 +2955,8 @@
      "id": "memory-contract-price-up-through-2028",
      "title": "메모리 계약가 상승, 2028년 수급 전망까지 꺾이지 않음",
      "statement": "인상 폭은 줄더라도 DRAM 분기 고정가는 전분기 대비 오르는 흐름을 이어 가고, 주요 메모리 업체의 '2028년까지 빠듯한 수급' 판단도 유지될 것이다.",
-     "verdict": "supported",
+     "verdict": "mixed",
      "recent": [
-      {
-       "when": "2026-11-19",
-       "daily": true,
-       "verdict": "supported"
-      },
       {
        "when": "2026-11-20",
        "daily": true,
@@ -2996,6 +2991,11 @@
        "when": "2026-11-25",
        "daily": true,
        "verdict": "supported"
+      },
+      {
+       "when": "2026-11-26",
+       "daily": true,
+       "verdict": "mixed"
       }
      ]
     }
