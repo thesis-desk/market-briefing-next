@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-26T08:40:01+09:00",
+ "generated_kst": "2026-11-26T09:05:43+09:00",
  "reports": [
   {
    "slug": "ark-one-of-tech-s-worst-drawdowns-since-2003-is-the",
@@ -9441,8 +9441,12 @@
   "path": "calendar.json"
  },
  "watch": {
-  "updated_kst": "2026-11-26T02:52:25+09:00",
+  "updated_kst": "2026-11-26T09:05:43+09:00",
   "path": "watch.json"
+ },
+ "market": {
+  "updated_kst": "2026-11-26T09:05:43+09:00",
+  "path": "market.json"
  },
  "datasets": [
   {

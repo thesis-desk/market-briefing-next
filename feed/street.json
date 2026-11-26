@@ -8,7 +8,7 @@
    "value": 5,
    "label": "엇갈림",
    "orgs": 39,
-   "items": 151
+   "items": 150
   },
   "market": {
    "value": -6,
@@ -19,7 +19,7 @@
   "by_group": [
    {
     "group": "벤처캐피털",
-    "ai_tech": 40,
+    "ai_tech": 39,
     "ai_tech_orgs": 8,
     "market": -17,
     "market_orgs": 3
@@ -153,7 +153,7 @@
    "optimism": [
     {
      "tag": "수요·채택",
-     "n": 48
+     "n": 47
     },
     {
      "tag": "투자 회수",

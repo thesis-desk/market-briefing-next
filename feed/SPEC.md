@@ -1,6 +1,6 @@
 # feed 형식 명세
 
-이 사이트의 리포트·금융권 시각·감시 대상을 정적 JSON 파일로 내보낸다. JavaScript 실행이나 로그인 없이 읽을 수 있다.
+이 사이트의 리포트·금융권 시각·감시 대상·시장을 정적 JSON 파일로 내보낸다. JavaScript 실행이나 로그인 없이 읽을 수 있다.
 사이트를 빌드할 때 화면과 같은 원천에서 함께 만들며, 손으로 따로 관리하지 않는다. 자료는 이 사이트에서 밖으로만 나간다.
 
 - 기준 주소: `<사이트 주소>/feed/`
@@ -17,6 +17,7 @@
 | `calendar.json` | 실적·투자자의 날 일정과 대기 목록 |
 | `health.json` | 수집 상태와 놓친 것(`missed`) |
 | `watch.json` | 첫 화면의 감시 대상(AI 설비투자 사이클을 보는 네 갈래의 상태와 그림의 값) |
+| `market.json` | 시장 탭(추세 신호·거시 지표·우선주 괴리율·종목 표) |
 | `data/<id>/` | 조사 자료 묶음. 한 질문을 두고 손으로 모은 기록(화면 없음) |
 | `SPEC.md` | 이 문서 |
 | `QUESTIONS.md` | 판단하기 어려웠던 것 |
@@ -32,7 +33,7 @@
 - 필드 이름은 바꾸지 않는다. 바꿔야 하면 `schema` 번호를 올리고 이 문서의 변경 이력에 적는다. 값의 종류(예: 출처 `kind`)는 늘어날 수 있다.
 - 유료 출처(`access: "paid"`)는 화면과 똑같이 본문을 싣지 않는다. 짧은 인용과 이 사이트의 문장으로 쓴 사실·해석만 나간다. 화면에 없는 것을 feed 에 더 넣지 않는다.
 - 이미지·영상은 파일로 넣지 않는다. 원본 주소와 시각(초, `t`)만 넣는다.
-- 게시 전에 화면의 리포트 수·금융권 항목 수가 feed 의 수와 같은지, 첫 화면 감시 대상의 항목·상태가 `watch.json` 과 같은지 검사한다. 다르면 게시하지 않는다.
+- 게시 전에 화면의 리포트 수·금융권 항목 수가 feed 의 수와 같은지, 첫 화면 감시 대상의 항목·상태가 `watch.json` 과 같은지, 시장 탭의 지수·신호·지표·종목이 `market.json` 과 같은지 검사한다. 다르면 게시하지 않는다.
 
 ## index.json
 
@@ -49,13 +50,15 @@
  ],
  "street": {"updated_kst": "…", "path": "street.json"},
  "calendar": {"updated_kst": "…", "path": "calendar.json"},
- "watch": {"updated_kst": "…", "path": "watch.json"}
+ "watch": {"updated_kst": "…", "path": "watch.json"},
+ "market": {"updated_kst": "…", "path": "market.json"}
 }
 ```
 
 - `generated_kst` 는 빌드 시각이 아니라 **가장 최근에 바뀐 기록의 시각**이다. 내용이 그대로면 이 값도 그대로다.
 - `datasets` 는 조사 자료 묶음의 목록이다: `[{"id": "apac-siting", "path": "data/apac-siting/index.json", "updated_kst": "…"}]`. 묶음이 하나도 없으면 키가 없다. `updated_kst` 는 기록이 아직 없으면 `null`.
 - `watch.updated_kst` 는 감시 대상이 읽는 기록(실적에서 옮긴 분기 값·거시 지표·가격·종목 표) 가운데 가장 최근에 바뀐 시각이다.
+- `market.updated_kst` 는 시장 탭의 기록(추세 신호·거시 지표·우선주 괴리율·종목 표) 가운데 가장 최근에 바뀐 시각이다. 장중·장 마감 뒤 실행마다 바뀐다.
 - `type`: `earnings` | `investor_day` | `interview` | `article` | `event`(행사 정리). 종합(`synthesis`)·조사 리포트(`research`)는 잠가 싣지 않는다.
 - `companies[].ticker` 는 없으면 `null`. `event`·`event_date` 는 있을 때만.
 - `revision` 은 처음 게시할 때 1이다. `revised_kst` 는 고친 적이 없으면 `published_kst` 와 같다.
@@ -284,6 +287,73 @@
   - `trend` 는 화면의 작은 꺾은선 값이고, `trend_step` 은 그 간격(`day` | `week` | `month`)이다.
   - GPU 임대가는 모델 × 채널의 기준가(GPU 한 장 · 시간당 달러)다. 수출물가지수는 한국은행(2020=100), 현물가·고정거래가는 TrendForce, 서버 RDIMM 월간 시세는 CFM 이다. 전체 표는 가격 탭에 있다.
 
+## market.json
+
+시장 탭(`market/`)을 낸다. 값은 `content/market` 의 기록 그대로이고 사이트는 계산하지 않는다(계산은 Python, `docs/areas/market.md`). 구획은 화면 순서대로 넷이고, 기록이 없는 구획은 `null` 이다. 탭의 가격 한 줄은 가격 탭의 요약이라 넣지 않고(GPU 임대가·메모리는 `watch.json` 의 `supply.indicators`), 관심 종목 아래의 관련 자료 목록도 넣지 않는다.
+
+```json
+{
+ "schema": 1, "updated_kst": "…",
+ "trend": {"updated_kst": "…", "rule": {"days": 200, "band_pct": 3, "share_pct": 50, "cost_pct": 0.1}, "labels": {"state": {"stock": "주식", "cash": "현금"}},
+  "assets": [{"id": "sp500", "label": "S&P 500", "source": {"name": "Yahoo Finance", "series": "^GSPC", "url": "…"},
+   "date": "2026-11-25", "close": 7182.78, "from_high_pct": -8.1, "state": "cash", "average": 7352.49, "line": 7573.07, "gap_pct": -5.2,
+   "since": {"date": "2026-11-20", "trade_date": "2026-11-23", "trade_close": 7237.17, "change_pct": -0.8},
+   "turns": [{"date": "…", "to": "stock", "close": 0, "trade_date": "…", "trade_close": 0, "result_pct": null}],
+   "daily": [["2024-11-26", 5987.4, 5612.3, 5444.0]],
+   "backtest": {"from": "1950-10-19", "to": "…", "years": 76.1, "in_stock_pct": 72, "trades_per_year": 1.0,
+                "hold": {"cagr": 8.0, "mdd": -56.8}, "mixed": {…}, "trend": {…}, "cash": "TB3MS"},
+   "sells": {"count": 39, "rebought_higher": 29, "avg_higher": 7.4, "avg_lower": -12.6, "best": -34.3}, "missing": {}}],
+  "missing": {}},
+ "macro": {"updated_kst": "…", "groups": [{"key": "rates", "label": "금리"}],
+  "indicators": [{"id": "us10y", "label": "미국 10년물", "group": "rates", "value": 4.91, "unit": "%", "decimals": 2, "date": "2026-11-24",
+   "change": "bp", "delta": {"d1": -1, "w1": -19, "m1": -9, "m3": 21, "ytd": 73}, "range_52w": {"low": 3.97, "high": 5.31},
+   "weekly": [4.4, …], "home": true, "source": {"name": "FRED", "series": "DGS10", "url": "…"}}],
+  "missing": {}},
+ "pref_gap": {"updated_kst": "…", "rule": {"anchor_days": 365, "daily_days": 500}, "source": {"name": "네이버 금융", "url": "…"},
+  "pairs": [{"id": "samsung", "label": "삼성전자", "common": {"code": "005930", "close": 0, "url": "…"}, "pref": {…},
+   "date": "…", "gap_pct": 21.63, "foreign_pct": {"common": 45.84, "pref": 74.54},
+   "periods": [{"label": "전체", "from": "1990-03-02", "days": 9466, "mean": 33.9, "median": 31.6,
+                "min": {"date": "…", "value": 4.8}, "max": {"date": "…", "value": 78.2}, "pct": 28}],
+   "to_median_pct": 5.8, "anchor": {"date": "…", "gap": 37.46, "common_change": -45.6, "pref_change": -31.9, "beta_pref_change": -40.7},
+   "beta": {"value": 0.858, "from": "…", "to": "…", "days": 1975}, "beta_gap_pct": 31.81,
+   "monthly": [["1990-03", 40.1]], "daily": [["2024-11-26", 18.2, null]], "missing": {}}],
+  "missing": {}},
+ "board": {"updated_kst": "…", "as_of": "2026-11-25", "sectors": [{"key": "hyperscaler", "label": "하이퍼스케일러"}],
+  "fx": {"base": "USD", "rates": {"EUR": {"rate": 0.91675, "date": "…"}}},
+  "companies": [{"id": "microsoft", "name": "마이크로소프트", "ticker": "MSFT", "sector": "hyperscaler", "watch": false, "snapshot_date": "…",
+   "price": {"close": 489.93, "date": "…", "currency": "USD"}, "market_cap": 0, "market_cap_usd": 0,
+   "returns": {"d1": -1.25, "w1": -3.61, "m1": -6.59, "m3": -0.36, "ytd": 1.3}, "from_high_pct": -11.85, "range_52w": {"low": 0, "high": 0},
+   "per": {"ntm": 22.5, "fy0": 24.5, "fy1": 20.2}, "fy": {"fy0_end": "2027-06-30", "fy1_end": "2028-06-30"},
+   "eps": {"fy0": 0, "fy1": 0, "ntm": 0, "growth": 20.97, "currency": "USD"}, "revision": {"basis": "ntm", "d30": 1.74, "d90": 2.01},
+   "revenue": {"growth": 20.72, "psr_ntm": 8.6}, "target": {"mean": 0, "upside": 28.47},
+   "next_earnings": {"date": "2027-01-28", "confirmed": false, "period": null}, "report": "microsoft-1q27-earnings",
+   "weekly": [0, …], "per_history": [["2026-11-12", 23.1]], "missing": {}}]}
+}
+```
+
+- 무엇이 무엇인가: 종가·지표 값·컨센서스(EPS·매출 추정, 목표주가)·외국인 보유 비중·다음 실적일은 원천(야후 파이낸스·FRED·네이버 금융·채권 종가)이 준 사실이다. 수익률·변화·52주 자리·선행 PER·EPS 수정·달러 시가총액·평균·전환선·신호·성적·괴리율·분포·베타는 그 값으로 낸 계산이다(AI 없음). `trend.rule` 의 기간·띠·비중과 괴리율의 견줄 구간·기준점 규칙은 데스크가 정한 가정이다.
+- 이름이 `_pct` 로 끝나는 값과 `returns`·`delta`(`change` 가 `pct` 일 때)·`revision`·`eps.growth`·`revenue.growth`·`target.upside`·`backtest` 의 `cagr`·`mdd`·`sells` 의 평균은 % 단위의 수다(7.4 = 7.4%). `pref_gap` 의 `periods`·`anchor.gap` 도 % 다.
+- 날짜가 붙은 목록은 오래된 것부터다. `trend.assets[].daily` 는 `[거래일, 종가, 평균, 전환선]`, `pref_gap.pairs[].monthly` 는 `[YYYY-MM, 월말 괴리율]`, `daily` 는 `[거래일, 괴리율, 베타만 반영한 괴리율(기준점 앞은 null)]`, `board.companies[].per_history` 는 `[날짜, 선행 PER]` 이다. `weekly` 는 최근 1년의 주간 값이고 마지막이 가장 최근이다(날짜 없이 값만).
+- `trend`
+  - 신호는 장이 끝난 날의 종가로 판정하고 매매는 다음 거래일 종가로 본다. `state`: `stock` | `cash`. `line` 은 종가가 넘어서면 신호가 바뀌는 값이고 `gap_pct` 는 종가의 그 값 대비다.
+  - `since` 는 지금 신호가 시작된 날이고, 매매일이 아직 오지 않았으면 `trade_date`·`trade_close` 가 `null` 이다. 받아 둔 기간에 바뀐 적이 없으면 `since` 가 `null` 이다.
+  - `turns` 는 최근 신호 전환(오래된 것부터 8건까지)이다. `result_pct` 는 매도(`to: cash`) 줄에만 값이 있고 그 뒤 되산 종가 ÷ 매도 종가 − 1(%)이다. 주식으로 바뀐 줄과 아직 되사지 않은 매도는 `null` 이다.
+  - `backtest` 는 신호가 쌓인 기간이 한 해에 못 미치면 `null` 이고 `missing.backtest` 에 이유가 있다.
+  - `backtest` 는 받아 둔 기간 전체에 같은 규칙을 적용한 성적이다. `hold` 전부 보유 · `mixed` (100 − `share_pct`)% 보유 + `share_pct`% 추세 · `trend` 전부 추세. `cash` 는 현금 쪽이 받는 금리 계열(FRED)이다.
+- `macro`
+  - `change` 는 `delta` 의 단위다: `bp` | `pct` | `pt`. `delta` 는 그 기간 전 날짜 이하의 가장 가까운 값과 견준 변화이고 받지 못했으면 `null` 이다.
+  - `source.of`·`source.op` 이 있으면 두 지표로 계산한 값이다(`op`: 차·비율). `bond` 는 AI 발행사 회사채 스프레드 지표에만 있다(ISIN·이표율·만기·만기수익률 `ytm`·남은 만기 `years`·종가를 낸 시장 `venue`).
+  - `home: true` 인 지표는 첫 화면의 거시 한 줄에도 보인다.
+- `pref_gap`
+  - 괴리율은 1 − 우선주 ÷ 보통주(%)다. `periods` 는 전체 · 견줄 구간 · 최근 1년 순서이고 `pct` 는 그 구간에서 괴리율이 지금 값 이하였던 날의 비율이다.
+  - `to_median_pct` 는 보통주가 그대로일 때 괴리율이 견줄 구간(`periods[1]`)의 중앙값으로 돌아가면 우선주의 상대 수익이다. `anchor` 는 최근 `rule.anchor_days` 일 안에서 괴리율이 가장 넓었던 날과 그 뒤의 변화, `beta_gap_pct` 는 그날부터 우선주가 `beta.value` 만큼만 움직였다면의 지금 괴리율이다. 베타를 낼 수 없으면 `beta`·`beta_gap_pct` 가 함께 `null` 이다.
+- `board`
+  - 종목 표의 전 종목이다. `sectors` 가 화면의 묶음 순서다. 시가총액은 그 통화의 금액이고 `market_cap_usd` 는 `fx.rates` 의 환율로 나눈 달러 값이다.
+  - `watch` 는 기본 관심 종목이다. 화면에서 별표로 넣고 뺀 것은 그 브라우저에만 저장되어 여기에 반영되지 않는다.
+  - `per.ntm` 은 종가 ÷ 12개월 선행 EPS(이번·다음 회계연도 추정을 남은 기간으로 섞은 값)다. `revision.basis` 가 `fy1` 이면 EPS 수정이 다음 회계연도 추정 기준이다. `next_earnings.confirmed: false` 는 회사가 확정하기 전 야후가 적은 날짜다.
+  - `report` 는 그 기업의 가장 최근 실적 리포트(`reports/<슬러그>.json`)이고 없으면 `null` 이다.
+- `missing` 은 비워 둔 값의 이유다(키 → 이유 문장). 구획의 `missing` 은 받지 못한 지수·지표·쌍(id → 이유)이고, 줄의 `missing` 은 그 줄에서 비운 칸(필드 이름 → 이유)이다. 비운 값은 `null` 이다.
+
 ## data/<id>/ — 조사 자료 묶음
 
 한 질문을 두고 손으로 모은 기록이다. 화면에는 없고 feed 로만 나간다. 지금은 `apac-siting`(아시아·태평양 AI 컴퓨트 입지 비교), `ai-knowledge-work`(AI 는 코딩을 넘어 범용 지식노동으로 번지는가), `compute-balance`(누가 AI 컴퓨팅을 얼마나 갖고 쓰는가), `online-narratives`(X·Substack 의 글은 주가를 움직이는가), `open-weight-substitution`(오픈웨이트는 클로즈드 모델의 어느 일을 얼마나 가져가는가), `inference-margins`(오픈웨이트 추론을 파는 쪽에서 돈은 어디에 남는가)이다.
@@ -439,3 +509,9 @@
 - `watch.json` 을 더했다. 첫 화면의 감시 대상(네 갈래의 상태·신호·그림의 값·이어진 가설·빈 곳)을 화면과 같은 계산으로 낸다. `index.json` 에 `watch` 를 더했다(기존 키는 그대로).
 - `watch.json` 의 `demand` 에 `tokens`(토큰 수요의 1월 판정)를 더했다. `demand.signals` 에 신호 하나("토큰 1월 판정")가 늘었다. `tokens.rows` 에는 오픈AI 쪽(Codex PR·Homebrew·VS Code·ChatGPT 앱 순위)·구글 쪽(Gemini 코드 리뷰 PR·Gen AI SDK·Gemini CLI·Antigravity·Gemini Code Assist·Gemini 앱 순위)과 앤트로픽 쪽 계열이 짝지어 있고, 줄마다 `measure`(`volume` | `rank`)와 `vendor` 가 있다. `demand` 에 `usage`(알파벳의 모델 API 토큰·Gemini 앱 사용자, 확인용 — `demand.signals` 에는 넣지 않는다)를 더했다. 앱마다 미국 앱스토어 누적 평가 수의 주간 증가 줄(`새 평가/주`)이 있다. `demand` 에 `ramp`(기업 AI 결제 — 회사별 신호가 `demand.signals` 에 늘었다)와 `capacity`(용량 압박, 상태에 넣지 않음)를 더했고, `tokens.rows` 에 OpenRouter 결제액·Ramp 주간 지수 줄과 `group` 이 있다. 기존 키는 그대로다.
 - 조사 `inference-margins`(`data/inference-margins/`)를 더했다. 묶음은 P1 단가(`prices`) · P2 원가(`costs`) · P3 사업자 손익(`providers`) · P4 하이퍼스케일러(`hyperscalers`) · P5 반대 증거(`counter`)이고 가설 셋(H1~H3)은 모두 `판단 보류`다. 기존 키는 그대로다.
+
+### 2026-11-26 — schema 1
+
+바뀐 것
+
+- `market.json` 을 더했다. 시장 탭의 추세 신호·거시 지표·우선주 괴리율·종목 표를 기록 그대로 낸다. `index.json` 에 `market` 을 더했다(기존 키는 그대로).
