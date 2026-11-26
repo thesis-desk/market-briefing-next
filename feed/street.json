@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated_kst": "2026-11-26T08:31:20+09:00",
+ "updated_kst": "2026-11-26T11:21:06+09:00",
  "window_days": 14,
  "items_days": 30,
  "index": {
@@ -8,7 +8,7 @@
    "value": 5,
    "label": "엇갈림",
    "orgs": 39,
-   "items": 150
+   "items": 151
   },
   "market": {
    "value": -6,
@@ -105,7 +105,7 @@
    },
    {
     "week": "2026-11-23",
-    "ai_tech": 3,
+    "ai_tech": 2,
     "ai_tech_orgs": 20,
     "market": -15,
     "market_orgs": 16
@@ -157,11 +157,11 @@
     },
     {
      "tag": "투자 회수",
-     "n": 34
+     "n": 35
     },
     {
      "tag": "밸류에이션",
-     "n": 24
+     "n": 25
     },
     {
      "tag": "금리·거시",
@@ -296,6 +296,42 @@
     "tier": "standard"
    },
    "note": "유튜브 자막(제작자 제공)(en) 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
+  },
+  {
+   "id": "altimeter-altimeter-s-brad-gerstner-says-nvidia-was-priced",
+   "group": "벤처캐피털",
+   "org": "Altimeter Capital",
+   "person": null,
+   "kind": "report",
+   "title": "Altimeter의 Brad Gerstner, 엔비디아는 \"2028·2029년 마이너스 성장\"이 반영된 가격이었다고 말해… 월가는 29% 성장 예상",
+   "title_orig": "Altimeter’s Brad Gerstner Says Nvidia Was Priced for “Negative Growth for 2028 and 2029.” Wall Street Expects 29%",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/altimeter-brad-gerstner-says-nvidia-233902558.html",
+   "outlet": "Yahoo Finance",
+   "published_kst": "2026-11-26T00:39:00+09:00",
+   "stance": {
+    "ai_tech": 1,
+    "market": null
+   },
+   "args": [
+    "밸류에이션",
+    "투자 회수"
+   ],
+   "summary": "Brad Gerstner는 NVIDIA의 멀티플이 2028·2029년 역성장을 반영한 수준이었다고 보고 이를 터무니없다고 평가했다. 시장이 틀렸는지는 카드가 공개될 때까지 기다려야 한다고 덧붙였다.",
+   "points": [
+    "월요일 아침 기준으로 NVIDIA 멀티플에 반영돼 있던 것은 사실상 2028년과 2029년의 마이너스 성장이었으며, 이는 터무니없다고 생각한다.",
+    "투자자들은 카드가 뒤집힐 때까지, 즉 결과가 드러날 때까지 기다려야 할 것이다."
+   ],
+   "evidence": [
+    {
+     "ko": "투자자들은 카드가 뒤집힐 때까지, 즉 결과가 드러날 때까지 기다려야 할 것이다.",
+     "orig": "going to have to wait until the cards are turned over"
+    }
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
   },
   {
    "id": "chamath-cds-don-t-lie-chamath-warns-as-credit-markets-so",
