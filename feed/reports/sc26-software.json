@@ -1,0 +1,935 @@
+{
+ "schema": 1,
+ "slug": "sc26-software",
+ "type": "event",
+ "title": "SC26 (클라우드·소프트웨어) : HPC 매출 성장은 수량이 아니라 단가에서 나왔고, 엔비디아는 칩보다 스케줄러를 먼저 잡았다",
+ "summary": "HPC·AI-Sci 시스템 시장은 출하 수량이 거의 늘지 않았는데도 매출이 20% 가까이 늘었고, 그 증가분의 절반 이상이 델로 갔다. 엔비디아의 과학용 신규 하드웨어는 2027~2028년에야 나오지만, Slurm·CUDA-X·오픈 모델로 워크플로의 길목은 지금 잡고 있다. 반면 Vera Rubin의 에이전트 추론 10배는 잠정치이고 비교 조건이 달라 아직 근거로 쓰기 이르다.",
+ "companies": [
+  {
+   "name": "엔비디아",
+   "ticker": null
+  },
+  {
+   "name": "델",
+   "ticker": null
+  }
+ ],
+ "event": "SC26 (클라우드·소프트웨어)",
+ "event_date": "2026-11-15",
+ "prev_slug": null,
+ "published_kst": "2026-11-27T03:09:28+09:00",
+ "revised_kst": "2026-11-27T03:09:28+09:00",
+ "revision": 1,
+ "sources": [
+  {
+   "n": 1,
+   "title": "Dell Technologies — Dell Technologies Delivers the Trusted Data and AI Infrastructure Foundation Needed to Scale Agentic Enterprise AI",
+   "url": "https://investors.delltechnologies.com/news-events/press-releases/detail/1663/dell-technologies-delivers-the-trusted-data-and-ai-infrastructure-foundation-needed-to-scale-agentic-enterprise-ai",
+   "date": "2026-11-16",
+   "access": "public",
+   "kind": "press_release",
+   "read": "전문"
+  },
+  {
+   "n": 2,
+   "title": "NVIDIA Newsroom — NVIDIA Announces Collaboration With IBM and Fermi National Accelerator Laboratory to Launch Quantum-Classical Codesign Pla",
+   "url": "https://nvidianews.nvidia.com/news/nvidia-announces-collaboration-with-ibm-and-fermi-national-accelerator-laboratory-to-launch-quantum-classical-codesign-platform-plus-error-correction-breakthrough-to-advance-practical-quantum-computing",
+   "date": "2026-11-17",
+   "access": "public",
+   "kind": "press_release",
+   "read": "전문"
+  },
+  {
+   "n": 3,
+   "title": "NVIDIA Newsroom — NVIDIA Sweeps MLPerf Training and Endpoints as Vera Rubin Debuts With Leading Performance",
+   "url": "https://blogs.nvidia.com/blog/mlperf-training-endpoints-vera-rubin",
+   "date": "2026-11-17",
+   "access": "public",
+   "kind": "press_release",
+   "read": "전문"
+  },
+  {
+   "n": 4,
+   "title": "NVIDIA Newsroom — NVIDIA CUDA-X Libraries Give Agents the Tools to Accelerate Scientific Discovery",
+   "url": "https://blogs.nvidia.com/blog/cuda-x-libraries-agents-accelerate-scientific-discovery",
+   "date": "2026-11-17",
+   "access": "public",
+   "kind": "press_release",
+   "read": "전문"
+  },
+  {
+   "n": 5,
+   "title": "NVIDIA Newsroom — NVIDIA DGX Spark Developer Kit Turns a Desk Into a Supercomputing Lab",
+   "url": "https://blogs.nvidia.com/blog/dgx-spark-hpc-developer-kit-sc26",
+   "date": "2026-11-17",
+   "access": "public",
+   "kind": "press_release",
+   "read": "전문"
+  },
+  {
+   "n": 6,
+   "title": "NVIDIA Newsroom — Ian Buck Kicks Off NVIDIA’s Week at SC26 as Science Enters the Age of Agents",
+   "url": "https://blogs.nvidia.com/blog/ian-buck-sc26",
+   "date": "2026-11-17",
+   "access": "public",
+   "kind": "press_release",
+   "read": "전문"
+  },
+  {
+   "n": 7,
+   "title": "NVIDIA Newsroom — NVIDIA Expands Slurm to Bring Quantum Computing Into Supercomputing",
+   "url": "https://blogs.nvidia.com/blog/slurm-quantum-computing-supercomputing",
+   "date": "2026-11-17",
+   "access": "public",
+   "kind": "press_release",
+   "read": "전문"
+  },
+  {
+   "n": 8,
+   "title": "NVIDIA Newsroom — NVIDIA Announces Rubin HPC — A New GPU to Accelerate Agents for Science, Engineering and Analytics",
+   "url": "https://blogs.nvidia.com/blog/rubin-hpc",
+   "date": "2026-11-17",
+   "access": "public",
+   "kind": "press_release",
+   "read": "전문"
+  },
+  {
+   "n": 9,
+   "title": "NVIDIA Newsroom — CUDA at 20: How the Platform Transformed Scientific Computing",
+   "url": "https://blogs.nvidia.com/blog/20-years-cuda",
+   "date": "2026-11-17",
+   "access": "public",
+   "kind": "press_release",
+   "read": "전문"
+  },
+  {
+   "n": 10,
+   "title": "Blocks & Files — Storage News Ticker - 19 November",
+   "url": "https://www.blocksandfiles.com/ai-ml/2026/11/19/storage-news-ticker-19-november/5311097",
+   "date": "2026-11-20",
+   "access": "public",
+   "kind": "article",
+   "read": "전문",
+   "note": "단신 모음. SC26과 직접 이어진 항목(판메네시아, 세라바이트 패널)만 썼다"
+  },
+  {
+   "n": 11,
+   "title": "The Next Platform — Casing The HPC And AI-Sci Market With Hyperion Research",
+   "url": "https://www.nextplatform.com/hpc/2026/11/20/casing-the-hpc-and-ai-sci-market-with-hyperion-research/5311388",
+   "date": "2026-11-21",
+   "access": "public",
+   "kind": "article",
+   "read": "전문",
+   "note": "Hyperion Research SC26 조찬 자료를 매체가 전한 글. 차트 그림은 읽지 못했고 본문에 적힌 수치만 썼다"
+  },
+  {
+   "n": 12,
+   "title": "SiliconANGLE — Nvidia at SC26: Agents are the new scientists, and they need a lab",
+   "url": "https://siliconangle.com/2026/11/17/nvidia-at-sc26-agents-are-the-new-scientists-and-they-need-a-lab",
+   "date": "2026-11-17",
+   "access": "public",
+   "kind": "news",
+   "read": "전문",
+   "note": "언론 보도(애널리스트 기고)"
+  },
+  {
+   "n": 13,
+   "title": "note — NVIDIA's SC26 Talk: What Was Announced for Science Agents?",
+   "url": "https://note.com/prodready_ai/n/necf08a6d166a?hl=en",
+   "date": "2026-11-18",
+   "access": "public",
+   "kind": "news",
+   "read": "전문",
+   "note": "언론 보도"
+  },
+  {
+   "n": 14,
+   "title": "tradersunion — Dell stock falls 3.7% after SC26 platform updates",
+   "url": "https://tradersunion.com/news/companies/show/4341946-dell-stock-falls-3-7percent-to",
+   "date": "2026-11-20",
+   "access": "public",
+   "kind": "news",
+   "read": "전문",
+   "note": "언론 보도. 같은 페이지의 주가 위젯 수치가 본문과 맞지 않는다"
+  },
+  {
+   "n": 15,
+   "title": "Yahoo Finance UK — Q.ANT Unveils NPU Gen 2+: Photonic Fourier Transforms Power Large Language Model",
+   "url": "https://uk.finance.yahoo.com/news/q-ant-unveils-npu-gen-123000832.html",
+   "date": "2026-11-17",
+   "access": "public",
+   "kind": "news",
+   "read": "전문",
+   "note": "언론 보도(유료 보도자료 게재)"
+  },
+  {
+   "n": 16,
+   "title": "storagenewsletter — SC26: MinIO Marks Two Years of AIStor with Innovation, Enterprise AI Momentum, and Global Partnerships",
+   "url": "https://www.storagenewsletter.com/2026/11/20/sc26-minio-marks-two-years-of-aistor-with-innovation-enterprise-ai-momentum-and-global-partnerships",
+   "date": "2026-11-20",
+   "access": "public",
+   "kind": "news",
+   "read": "전문",
+   "note": "언론 보도"
+  },
+  {
+   "n": 17,
+   "title": "storagenewsletter — SC26: Bacula Systems Announces HPCAccelerator 4.0 to Advance Backup Performance and Resilience at Massive File Scale",
+   "url": "https://www.storagenewsletter.com/2026/11/23/sc26-bacula-systems-announces-hpcaccelerator-4-0-to-advance-backup-performance-and-resilience-at-massive-file-scale",
+   "date": "2026-11-23",
+   "access": "public",
+   "kind": "news",
+   "read": "전문",
+   "note": "언론 보도"
+  },
+  {
+   "n": 18,
+   "title": "YAHOO! — Nvidia expands its Vera Rubin platform at SC26 supercomputing conference",
+   "url": "https://tech.yahoo.com/computing/articles/nvidia-expands-vera-rubin-platform-002500489.html",
+   "date": "2026-11-22",
+   "access": "public",
+   "kind": "news",
+   "read": "전문",
+   "note": "언론 보도"
+  },
+  {
+   "n": 19,
+   "title": "en.fnnews.com — Moreh Boosts AI Inference Throughput by Up to 1.66x... Unveils Optimization Technology",
+   "url": "https://en.fnnews.com/news/202611201145235327",
+   "date": "2026-11-20",
+   "access": "public",
+   "kind": "news",
+   "read": "전문",
+   "note": "언론 보도"
+  },
+  {
+   "n": 20,
+   "title": "DigitalToday — More unveils TIDE AI inference framework at SC26",
+   "url": "https://www.digitaltoday.co.kr/en/view/128609/more-unveils-tide-ai-inference-framework-at-sc26",
+   "date": "2026-11-20",
+   "access": "public",
+   "kind": "news",
+   "read": "전문",
+   "note": "언론 보도"
+  },
+  {
+   "n": 21,
+   "title": "International Business Times AU — IQM Quantum Stock Rises 5% From Near 52-Week Low as Finnish Firm Unveils Path to 1,000-Qubit Systems at SC",
+   "url": "https://www.ibtimes.com.au/iqm-quantum-shares-rise-1000-qubit-upgrade-path-1878863",
+   "date": "2026-11-19",
+   "access": "public",
+   "kind": "news",
+   "read": "전문",
+   "note": "언론 보도"
+  },
+  {
+   "n": 22,
+   "title": "eTeknix — NVIDIA Unveils DGX Spark HPC Kit with Four AI Systems",
+   "url": "https://www.eteknix.com/nvidia-unveils-dgx-spark-hpc-kit-with-four-ai-systems",
+   "date": "2026-11-22",
+   "access": "public",
+   "kind": "news",
+   "read": "전문",
+   "note": "언론 보도"
+  },
+  {
+   "n": 23,
+   "title": "DigitalToday — Lablup to showcase integrated AI infrastructure operations technology at U.S. SC26",
+   "url": "https://www.digitaltoday.co.kr/en/view/126671/lablup-to-showcase-integrated-ai-infrastructure-operations-technology-at-us-sc26",
+   "date": "2026-11-17",
+   "access": "public",
+   "kind": "news",
+   "read": "전문",
+   "note": "언론 보도"
+  },
+  {
+   "n": 24,
+   "title": "Quantum Computing Report — Altera, OQC, and NVIDIA Demonstrate Direct-RF FPGA Quantum System Controller Reference Design at SC26",
+   "url": "https://quantumcomputingreport.com/altera-oqc-and-nvidia-demonstrate-direct-rf-fpga-quantum-system-controller-reference-design-at-sc26",
+   "date": "2026-11-17",
+   "access": "public",
+   "kind": "news",
+   "read": "전문",
+   "note": "언론 보도"
+  },
+  {
+   "n": 25,
+   "title": "NVIDIA Newsroom — Merry Making: Play, Build and Create With NVIDIA Technologies This Holiday Season",
+   "url": "https://blogs.nvidia.com/blog/nvidia-technologies-holidays-2026",
+   "date": "2026-11-24",
+   "access": "public",
+   "kind": "press_release",
+   "read": "전문",
+   "note": "SC26과 무관한 연말 소비자 홍보 글이라 쓰지 않았다"
+  },
+  {
+   "n": 26,
+   "title": "데스크 투자 가설 (이 사이트의 가설 탭)",
+   "url": "https://thesis-desk.github.io/market-briefing-next/theses/",
+   "access": "public",
+   "kind": "desk",
+   "read": "요약만",
+   "note": "사실의 근거가 아니라 견줄 기준"
+  }
+ ],
+ "sections": [
+  {
+   "id": "s1",
+   "h": "핵심",
+   "layer": "common",
+   "blocks": [
+    {
+     "kind": "view",
+     "text": "이번 SC26의 클라우드·소프트웨어 쪽 자료로 바꿔야 할 판단은 둘이다. HPC 시스템 시장의 성장은 수량이 아니라 단가에서 나오며 그 몫이 델로 쏠렸다. 그리고 엔비디아는 과학 컴퓨팅 신제품을 2027~2028년에 내는 대신, 지금은 스케줄러·라이브러리·오픈 모델로 워크플로의 길목을 먼저 잡고 있다."
+    },
+    {
+     "kind": "view",
+     "items": [
+      "HPC·AI-Sci 시스템 매출 증가는 수량이 아니라 단가에서 나왔고, 증가분의 절반 이상을 델이 가져갔다 (확신 중간)",
+      "엔비디아가 SC26에서 당장 내놓은 것은 칩이 아니라 길목이다 — 하드웨어는 2027~2028년, 스케줄러·라이브러리·오픈 모델은 지금 (확신 중간)",
+      "온프레미스 AI의 판매 논리가 ‘데이터와 모델을 소유하고 토큰을 줄인다’로 모였다 — 프론티어 API 지출을 겨냥하지만 숫자는 모두 자사 측정이다 (확신 낮음)",
+      "Vera Rubin의 ‘에이전트 추론 전력당 처리량 10배’는 잠정치이고 비교 조건이 다르다 — 첫 토큰 지연은 오히려 두 배다 (확신 중간)"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s2",
+   "h": "HPC·AI-Sci 시스템 매출 증가는 수량이 아니라 단가에서 나왔고, 증가분의 절반 이상을 델이 가져갔다",
+   "layer": "common",
+   "blocks": [
+    {
+     "kind": "fact",
+     "items": [
+      "1H26 온프레미스 HPC·AI-Sci 시스템 매출은 $16.48B로 전년 동기보다 19.9% 늘었다. 같은 기간 전 세계 출하 수량은 4.4% 느는 데 그쳤다.",
+      "매출과 수량의 차이는 시스템당 노드 수 증가, 시스템당 CPU 수의 소폭 증가, 그리고 CPU·GPU·DRAM·플래시 가격 인상에서 나왔다.",
+      "1H26 벤더별 매출: 델 $3.93B(+67.7%)로 처음 1위에 올랐고, HPE는 $3.44B(+1.1%)에 그쳤다. 나머지 OEM·ODM 수십 곳의 합계는 $9.12B(+13.8%)다.",
+      "Hyperion 전망: 2030년 온프레미스 시스템 매출 $54B, 클라우드 HPC·AI-Sci 지출은 약 $30B(2022년 대비 5배 가까이)다. 온프레미스와 클라우드를 합친 인프라 지출은 2022년 $40B 남짓에서 2030년 $135B(약 3.4배)로 늘어난다고 본다."
+     ],
+     "src": 11,
+     "loc": "1H26 매출·벤더 표와 전망 차트 해설"
+    },
+    {
+     "kind": "fact",
+     "text": "매체(The Next Platform)는 부품값 인상이 차이의 더 큰 몫을 차지하지 않았다는 점에 놀랐다고 적었다. 그 까닭으로 HPC 센터가 초기 지출을 줄이려고 CPU·GPU를 한두 세대 늦춰 사고 있을 가능성을 들었고, 최신 GPU는 대부분의 HPC 센터에 너무 귀하고 비싸다고 봤다. 델의 성장이 엔비디아·AMD의 GPU 배정 덕분인지는 말하기 어렵다고 했고, HPE는 CPU 전용 기계를, 델은 가속기 탑재 기계를 더 많이 팔고 있을 수 있다고 추정했다. 온프레미스 매출과 클라우드 임대료 모두 최종 고객에게 전가된 부품값 인상을 포함한다고도 적었다.",
+     "src": 11,
+     "loc": "매출·수량 차이와 델·HPE 해설"
+    },
+    {
+     "kind": "fact",
+     "text": "Dell AI Factory with NVIDIA는 출시 이후 420개 넘는 제품·서비스를 내놓았고, 6,500곳 넘는 고객이 쓰고 있다(2026년 8월 주문 데이터 기준 자사 분석).",
+     "src": 1,
+     "loc": "Why it matters, 각주 1·2"
+    },
+    {
+     "kind": "fact",
+     "text": "보도에 따르면 델 주가는 SC26 발표 뒤 하루 3.7% 내린 $300.85에 거래됐고, 발표일(11/16)에도 5.6% 하락이 보도됐다. 애널리스트 113명 가운데 77명이 매수 의견이며 목표가 중앙값은 $600이다.",
+     "src": 14,
+     "loc": "Highlights, Latest Dell News"
+    },
+    {
+     "kind": "calc",
+     "text": "출하 단위당 매출은 약 14.8% 늘었다. 시장 매출 증가분 약 $2.74B 가운데 델이 약 $1.59B(약 58%)를 가져갔고, HPE는 약 $0.04B, 나머지 업체 합계가 약 $1.11B다. 1H26 매출 비중은 델 약 23.8%, HPE 약 20.9%다.",
+     "inputs": [
+      {
+       "name": "시장 매출 1H26",
+       "value": "$16.48B, +19.9%"
+      },
+      {
+       "name": "출하 수량 증가율",
+       "value": "+4.4%"
+      },
+      {
+       "name": "델 1H26",
+       "value": "$3.93B, +67.7%"
+      },
+      {
+       "name": "HPE 1H26",
+       "value": "$3.44B, +1.1%"
+      },
+      {
+       "name": "나머지 업체 1H26",
+       "value": "$9.12B, +13.8%"
+      }
+     ],
+     "formula": "단위당 매출 = 1.199 ÷ 1.044 − 1; 전년 값 = 올해 값 ÷ (1+증가율); 증가분 = 올해 − 전년"
+    },
+    {
+     "kind": "view",
+     "text": "**왜 그런가.** 예산이 고정된 국립연구소·대학이 많은 HPC 시장에서도 수량은 정체됐는데 매출은 20% 가까이 늘었다. 구매자가 부품값 인상과 더 큰 시스템 구성을 받아들이고 있다는 뜻이다. 단위당 매출 +14.8%에는 시스템당 노드 수 증가(구성 효과)가 섞여 있어 순수 가격 전가 몫은 분리되지 않는다. 그래도 서버 벤더가 원가를 고객에게 넘기고 있다는 방향은 확인된다.\n\n**무엇이 달라지나.** 지금까지 HPC 시장은 HPE(Cray·SGI 계열)가 주도하는 국립연구소 중심 시장으로 읽혔다. 1H26에는 증가분의 약 58%를 델 한 곳이 가져갔다. 시장 성장의 원천이 가속기 탑재 시스템의 단가라면, GPU를 많이 받는 벤더가 시장을 가져간다. 크기는 반기 약 $1.6B의 델 증분이다. 이것이 이어지는지는 2H26 집계가 나오는 ISC27(2027년 6월)에서 확인된다. 확신 중간."
+    },
+    {
+     "kind": "view",
+     "text": "**누구에게 무엇인가.** 델에는 호재다. HPC가 AI 서버와 같은 GPU 공급·원가 전가 구조로 바뀌면 델의 공급망 지위가 그대로 시장 점유율로 이어진다. HPE에는 악재다. 시장이 20% 클 때 1% 성장했다는 것은 가속기 시스템 쪽에서 밀렸다는 뜻일 가능성이 크다. 다만 매체 추정대로 CPU 전용 기계 비중이 높은 탓이라면, 델·HPE·레노버·슈퍼마이크로가 2027년 초부터 출하한다고 보도된 Vera CPU 랙이 HPE의 만회 경로가 될 수 있다. 시장은 행사 기간에 델의 이런 지위를 값으로 쳐주지 않았다(주가 하락 보도). 다만 아래 이유로 행사에 대한 반응이라고 단정하기 어렵다."
+    },
+    {
+     "kind": "view",
+     "text": "**이 주장이 틀리는 경우.** 매출 기준 자료이지 연산량(FP64 flops) 기준이 아니다. 매체도 HPE가 flops로는 여전히 앞설 수 있다고 적었다. 반기 하나의 값이고, 델 성장의 원인(GPU 배정, 제품 구성)은 매체의 추정이다. Hyperion 전망 수치는 서로 더해지지 않는다. 2030년 온프레미스 $54B와 클라우드 약 $30B를 합쳐도 합산 $135B에 못 미쳐 항목 정의가 다른 것으로 보인다. 그래서 전망 수치는 방향으로만 쓴다. 델 주가 보도는 같은 페이지의 위젯이 11/20 종가 $278.17(−11%)을 보여 본문과 맞지 않는다. 같은 페이지에 시장 전반 급락 헤드라인도 있어, 주가 움직임을 SC26 반응으로 읽기 어렵다."
+    }
+   ]
+  },
+  {
+   "id": "s3",
+   "h": "엔비디아가 SC26에서 당장 내놓은 것은 칩이 아니라 길목이다 — 하드웨어는 2027~2028년, 스케줄러·라이브러리·오픈 모델은 지금",
+   "layer": "common",
+   "blocks": [
+    {
+     "kind": "fact",
+     "items": [
+      "Rubin HPC GPU(CUDA 코어 5만 개 이상, Hopper의 약 3배)는 2028년 출시 예정이다. DKRZ가 Vera CPU로 고른 HLRE-5도 2028년 초 가동 예정이다.",
+      "CUDA-X 라이브러리는 1,000개를 넘는다.",
+      "Nemotron for Science는 Nemotron 3.5 Super VL 오픈 모델에 새 화학 오픈 데이터셋과 생명과학·화학용 사후 학습 레시피를 묶었다. DGX Spark, 워크스테이션, 연구소 자체 슈퍼컴퓨터에서 돌릴 수 있다.",
+      "Nsight AI Porting Agent는 WRF 기상 모델의 루틴 하나를 GPU로 옮겨 5배 넘게 빨라졌고, 이 작업에 약 1억 5,000만 토큰이 들었다.",
+      "KTH의 에이전트는 DGX Spark 한 대에서 하룻밤 돌려 망가진 GROMACS 설정 시험 사례의 81%를 고쳤다."
+     ],
+     "src": 6,
+     "loc": "Open Models for Science Agents, CPUs for the Agent Loop, A New GPU for Science"
+    },
+    {
+     "kind": "fact",
+     "items": [
+      "Slurm 확장으로 QPU 제작사는 파일 하나로 모든 슈퍼컴퓨팅 센터에 쓸 단일 인터페이스를 만들 수 있다. QRMI·QDMI 인터페이스를 지원한다.",
+      "Alice & Bob, IBM, IQM, Pasqal, Quantinuum, MQSC가 이 확장을 채택했다. Slurm 26.11은 이달 안에 나온다.",
+      "슈퍼컴퓨팅 센터의 QPU 배치는 지난 5년간 7배 가까이 늘었고, 약 30개 센터가 50개 넘는 QPU를 배치하는 중이다.",
+      "새 TCBP-JOBS 디코더는 업계 표준보다 13,000배 빠르다고 한다. 페르미랩은 CUDA-Q로 보통 5개월 걸릴 연구를 3주에 마쳤다."
+     ],
+     "src": 7,
+     "loc": "본문 첫 문단, Beating the Bottleneck, Orchestrating Resources"
+    },
+    {
+     "kind": "fact",
+     "text": "CUDA 위에서 개발하는 개발자는 1,100만 명이 넘는다.",
+     "src": 9,
+     "loc": "From SC06 to SC26"
+    },
+    {
+     "kind": "fact",
+     "text": "보도에 따르면 Vera CPU 랙은 Vera CPU 192개와 메모리 약 300TB를 수랭 랙 하나에 담았다. 델·HPE·레노버·슈퍼마이크로가 2027년 초부터 출하하고, Fortran 컴파일러 베타도 함께 나왔다. 엔비디아 자체 시험에서 Vera는 OpenFOAM 기류 시뮬레이션에서 x86 대비 성능 1.9배, 전력당 성능 2.4배였다.",
+     "src": 12,
+     "loc": "The news in brief, Theme 3"
+    },
+    {
+     "kind": "fact",
+     "items": [
+      "모레의 TIDE는 H100으로 대형 모델을 추론하고 AMD MI250으로 보조 모델을 학습시키는 구성에서, 같은 GPU를 모두 추론에 쓸 때보다 전체 처리량이 최대 1.22배였다.",
+      "모레는 엔비디아·AMD GPU와 Tenstorrent 칩을 함께 쓰는 데이터센터용 작업 배분 소프트웨어 Token Factory OS를 개발하고 있다."
+     ],
+     "src": 19,
+     "loc": "본문 후반"
+    },
+    {
+     "kind": "quote",
+     "speaker": "조강원",
+     "role": "모레 CEO",
+     "text": "AI 인프라의 경쟁력은 단순히 고성능 GPU를 얼마나 많이 확보하느냐가 아니라, 가진 연산 자원을 얼마나 효율적으로 써서 더 많은 AI 작업을 처리하느냐에 달려 있다.",
+     "src": 19,
+     "loc": "마지막 문단"
+    },
+    {
+     "kind": "fact",
+     "text": "래블업은 Backend.AI로 이기종 가속기를 통합 관리하는 기술을 전시했다. 부스 발표에는 AMD·인텔·엔비디아와 리벨리온·퓨리오사AI·하이퍼엑셀을 포함한 9개 기업·기관이 참여했다.",
+     "src": 23,
+     "loc": "본문"
+    },
+    {
+     "kind": "fact",
+     "text": "IQM은 엔비디아의 Slurm 양자 통합을 지원한다고 발표했다. 이와 별도로 AMD와 함께 IQM의 20큐비트 프로세서와 AMD GPU를 묶은 화학 계산 하이브리드 워크플로를 시연했다.",
+     "src": 21,
+     "loc": "Nvidia and AMD ties"
+    },
+    {
+     "kind": "view",
+     "text": "**왜 그런가.** 이번 엔비디아 과학 컴퓨팅 발표에서 새 칩은 모두 미래 시점이다. Vera CPU 랙은 2027년 초(보도), Rubin HPC와 HLRE-5는 2028년이다. 지금 살 수 있는 하드웨어는 기존 GB10 기반 DGX Spark 4대를 묶은 HPC 개발 키트 정도이고, 그 HPC SDK 플레이북도 아직 ‘곧’이다. 지금 손에 쥐어지는 것은 Slurm 26.11(이달 출시), CUDA-Q QEC 0.9.0, Nemotron for Science, 새 CUDA-X 라이브러리이고 모두 소프트웨어다. 에이전트가 시뮬레이션을 호출해 가설을 시험하는 구조에서는 에이전트가 부를 수 있는 라이브러리가 곧 할 줄 아는 일이다. 대부분의 센터가 이미 쓰는 공개 스케줄러에 QPU 연결 규격을 넣으면, 어떤 큐비트 방식이 이기든 고전 계산과 양자를 묶는 자리에 엔비디아가 선다.\n\n**무엇이 달라지나.** 가속되지 않는 HPC는 x86이 수십 년 차지해 온 영역이었다(SiliconANGLE 기고). 이번에는 레거시 코드를 GPU로 옮기는 에이전트(루틴 하나에 약 1억 5,000만 토큰)와, CPU에 남는 코드를 받아 줄 Vera와 Fortran 컴파일러를 함께 내놨다. 코드가 어느 쪽으로 가든 엔비디아 스택에 남는 구조다. 이 소프트웨어는 대부분 오픈 소스·오픈 모델로 나와 당장의 매출 크기는 가늠할 수 없다. 돈은 2027~2028년 하드웨어 교체 때 들어온다. 확신 중간."
+    },
+    {
+     "kind": "view",
+     "text": "**누구에게 무엇인가.** 엔비디아에는 하드웨어 공백기에도 고객을 묶어 두는 장치다. 양자 하드웨어 업체(IQM·IBM 등)는 HPC 센터에 들어가는 길이 쉬워지는 대신, 오류 정정 디코딩과 스케줄링이라는 고전 계층의 가치를 엔비디아에 넘긴다. 이 편이 읽은 원문 안에서 AMD는 자체 발표 없이 파트너 시연(모레의 MI250, Q.ANT, IQM, 래블업 부스)으로만 나온다. 엔비디아에 맞서는 이기종 오케스트레이션은 모레·래블업 같은 비상장 소프트웨어 회사가 맡고 있다. 가속되지 않는 HPC를 오래 차지해 온 x86 CPU는 Vera가 출하되는 2027년부터 경쟁을 받는다. 다만 이 편의 원문에는 x86 쪽 대응 자료가 없다."
+    },
+    {
+     "kind": "view",
+     "text": "**이 주장이 틀리는 경우.** Slurm과 QRMI·QDMI는 공개·공동체 규격이다. QPU 제작사의 채택이 엔비디아 하드웨어 구매로 이어진다는 보장은 없다. 같은 규격으로 AMD GPU 옆에 QPU를 붙일 수도 있다(IQM의 AMD 시연이 그 예). 성능 수치(Vera 1.9배, 디코더 13,000배, 이식 5배)는 모두 자사 측정이고 측정 조건이 공개되지 않았다. Nsight AI Porting Agent의 제공 방식과 시기, Nemotron for Science의 라이선스 조건도 밝혀지지 않았다. Vera CPU 랙의 사양과 출하 벤더는 언론 보도로만 확인했다."
+    }
+   ]
+  },
+  {
+   "id": "s4",
+   "h": "온프레미스 AI의 판매 논리가 ‘데이터와 모델을 소유하고 토큰을 줄인다’로 모였다 — 프론티어 API 지출을 겨냥하지만 숫자는 모두 자사 측정이다",
+   "layer": "common",
+   "blocks": [
+    {
+     "kind": "fact",
+     "items": [
+      "델 Agentic Data Gateway는 에이전트가 기업 데이터와 맥락에 닿는 통제된 단일 경로를 준다. 자사 내부 시험에서 맥락 재사용으로 토큰 소비가 최대 76% 줄었고 답변 정확도는 60%에서 94%로 올랐다. 시험 조건은 합성 톨게이트 운영 말뭉치, 질문 20개, Nemotron-3-Super-120B였다.",
+      "데이터 오케스트레이션은 LangChain, OpenAI·Codex, Unstructured.io와 통합되며 데이터가 고객 인프라 밖으로 나가지 않는다. OpenAI와 만든 Codex 코드 어시스턴트 레퍼런스 아키텍처는 바로 쓸 수 있다.",
+      "AI Data Platform의 새 기능은 2026년 12월부터 나온다."
+     ],
+     "src": 1,
+     "loc": "Prepare, contextualize and scale data for AI, 각주 3, Availability"
+    },
+    {
+     "kind": "fact",
+     "text": "MinIO는 SC26에서 AIStor Memory를 정식 출시했다. 장기 메모리, 지속 작업공간, 비밀 정보를 기업이 통제하는 인프라에 모아 에이전트가 세션을 넘어 맥락을 유지하게 하며, 응답 품질을 높이면서 지연과 토큰 비용을 줄인다고 내세운다.",
+     "src": 16,
+     "loc": "AIStor Memory"
+    },
+    {
+     "kind": "fact",
+     "items": [
+      "보도(SiliconANGLE 애널리스트 기고)에 따르면 Lila Sciences는 실험 피드백으로 Nemotron을 사후 학습해 양자점 합성 프로토콜 정확도를 61%로 거의 두 배 높였다. GPT-6 Astra(54%)보다 높았고, 추론 비용은 엔비디아가 밝힌 바로 10~20배 낮았다.",
+      "같은 기고에 따르면 Therna는 mRNA 단백질 발현 범위 예측에서 프론티어 모델보다 정확도를 거의 두 배 높였다.",
+      "같은 기고에 따르면 Nemotron 3.5 Super VL은 128GB DGX Spark에서 돌도록 최적화됐다."
+     ],
+     "src": 12,
+     "loc": "Theme 2"
+    },
+    {
+     "kind": "fact",
+     "text": "UC 버클리 Hartwig 그룹은 NVFP4 양자화로 120B급 Nemotron 3 Super를 DGX Spark 한 대에 올려 LoRA 미세조정을 했고, 며칠씩 걸리던 클러스터 대기를 피했다. DGX Spark 4노드 키트는 메모리 512GB로 최대 700B 파라미터 모델을 로컬에서 돌린다.",
+     "src": 5,
+     "loc": "What Researchers Can Do With It, A Supercomputing Lab on Any Desk"
+    },
+    {
+     "kind": "quote",
+     "speaker": "이안 벅",
+     "role": "엔비디아 하이퍼스케일·HPC 부사장",
+     "text": "데이터도 여러분 것이고, 모델도 여러분 것이다.",
+     "orig": "You own your data. You own the model.",
+     "src": 6,
+     "loc": "Open Models for Science Agents"
+    },
+    {
+     "kind": "view",
+     "text": "**왜 그런가.** 서버 벤더(델), 스토리지·데이터 계층(MinIO), 칩·모델 공급자(엔비디아)가 같은 행사에서 같은 말을 했다. 데이터는 고객 인프라에 두고, 오픈 모델을 고객 데이터로 사후 학습하고, 맥락·메모리를 재사용해 토큰을 덜 쓴다는 것이다. 이 논리가 겨냥하는 비용은 프론티어 API의 토큰당 지출이다. 맥락 재사용이 퍼지면 사용자를 빼앗기지 않더라도 작업당 API 호출량이 준다.\n\n**무엇이 달라지나.** 지금까지 특화 모델은 좁은 과학 작업의 이야기였다. 이번에는 데이터 계층 제품이 토큰 절감을 기능으로 팔기 시작했다. 다만 기업 지출 자료가 없어 크기는 가늠할 수 없다. 시점은 델 데이터 플랫폼이 나오는 2026년 12월 이후다. 확신 낮음."
+    },
+    {
+     "kind": "view",
+     "text": "**누구에게 무엇인가.** 델에는 서버에 데이터 플랫폼·관리 소프트웨어를 얹어 파는 근거가 된다. 엔비디아는 오픈 모델로 온프레미스 GPU(DGX Spark부터 랙까지) 수요를 만든다. 프론티어 모델 공급자에게는 작업당 호출량과 가격에 압력이 될 수 있다. 다만 OpenAI는 이미 Codex 레퍼런스 아키텍처로 델의 온프레미스 스택 안에 들어왔다. 프론티어 랩도 이 경로를 따라 들어올 수 있다는 뜻이다."
+    },
+    {
+     "kind": "view",
+     "text": "**이 주장이 틀리는 경우.** 근거 숫자가 모두 판매자 측정이다. 델의 76%는 합성 말뭉치·질문 20개로 한 시험이다. Lila·Therna 사례는 엔비디아 자료가 출처 묶음에 없어 언론 기고로만 확인했고, 10~20배 비용 차이는 엔비디아가 밝힌 값이다. 과학처럼 데이터가 독점·규제 대상이고 실험 피드백이 학습 신호가 되는 분야는 일반 기업 업무와 다르다. 오픈 모델 우위가 일반 기업으로 번진다는 근거는 이번 원문에 없다. 토큰 절감은 단가를 낮춰 사용량을 늘리는 쪽으로 작동할 수도 있다."
+    }
+   ]
+  },
+  {
+   "id": "s5",
+   "h": "Vera Rubin의 ‘에이전트 추론 전력당 처리량 10배’는 잠정치이고 비교 조건이 다르다 — 첫 토큰 지연은 오히려 두 배다",
+   "layer": "common",
+   "blocks": [
+    {
+     "kind": "fact",
+     "items": [
+      "엔비디아는 MLPerf Training v6.1의 모든 벤치마크에서 1위를 했고, 모든 벤치마크에 결과를 낸 유일한 플랫폼이다. Vera Rubin NVL72는 학습에서 GB300 NVL72보다 GPU당 성능이 최대 2배였다.",
+      "DeepSeek-V3 학습에서 Vera Rubin NVL72는 GPU 256개 → 1,024개로 늘릴 때 효율 약 97%를 유지해 학습 시간을 16분에서 약 4분으로 줄였다.",
+      "MLPerf Endpoints 첫 제출에서, Kimi K3 잠정 결과 기준 같은 응답 속도에서 GB300 NVL72보다 전력당 처리량이 10배를 넘었다고 밝혔다. 회사는 Vera Rubin이 사용자를 더 많이 받으면서 더 빨리 응답한다고 적었다."
+     ],
+     "src": 3,
+     "loc": "NVIDIA Sweeps MLPerf Training v6.1, Vera Rubin Leads Agentic Inference"
+    },
+    {
+     "kind": "fact_table",
+     "title": "MLPerf Endpoints v1.0 Kimi K3 비교에 쓰인 두 결과",
+     "head": [
+      "항목",
+      "Vera Rubin NVL72",
+      "GB300 NVL72"
+     ],
+     "rows": [
+      [
+       "가속기 수",
+       "32",
+       "48"
+      ],
+      [
+       "동시 요청 수",
+       "1,024",
+       "48"
+      ],
+      [
+       "첫 토큰 지연(TTFT P90)",
+       "4,673.9 ms",
+       "2,305.1 ms"
+      ],
+      [
+       "시스템 처리량",
+       "41,414.2 tokens/s",
+       "2,210.4 tokens/s"
+      ],
+      [
+       "사용자당 평균 상호작용 속도",
+       "50.4 tokens/s",
+       "56.2 tokens/s"
+      ],
+      [
+       "운전 전력",
+       "100.89 kW",
+       "60 kW"
+      ],
+      [
+       "검증 상태",
+       "MLCommons 검증 대기(잠정, 변경 가능)",
+       "MLCommons 검증 완료"
+      ]
+     ],
+     "note": "비교 기준은 사용자당 평균 상호작용 속도 50 tokens/s 이상에서 kW당 처리량이다.",
+     "src": 3,
+     "loc": "Endpoints 그림 각주"
+    },
+    {
+     "kind": "calc",
+     "text": "kW당 처리량은 Vera Rubin 약 410.5 tokens/s, GB300 약 36.8 tokens/s로 약 11.1배다. 회사가 밝힌 10배는 각주 수치로 재현된다. 가속기 하나당 처리량은 약 1,294 대 약 46 tokens/s(약 28배)이고, 가속기 하나당 전력은 약 3.15kW 대 1.25kW다. GB300 쪽은 가속기 하나당 동시 요청 1개 수준에서 측정된 값이다.",
+     "inputs": [
+      {
+       "name": "VR 처리량",
+       "value": "41,414.2 tokens/s"
+      },
+      {
+       "name": "VR 전력",
+       "value": "100.89 kW"
+      },
+      {
+       "name": "VR 가속기",
+       "value": "32"
+      },
+      {
+       "name": "GB300 처리량",
+       "value": "2,210.4 tokens/s"
+      },
+      {
+       "name": "GB300 전력",
+       "value": "60 kW"
+      },
+      {
+       "name": "GB300 가속기",
+       "value": "48"
+      },
+      {
+       "name": "동시 요청",
+       "value": "VR 1,024 / GB300 48"
+      }
+     ],
+     "formula": "kW당 처리량 = 처리량 ÷ 전력; 가속기당 = 처리량 ÷ 가속기 수, 전력 ÷ 가속기 수"
+    },
+    {
+     "kind": "view",
+     "text": "**왜 그런가.** 10배는 계산상 맞다. 그런데 비교 조건을 사용자당 상호작용 속도 하나로만 맞췄다. GB300 결과는 동시 요청 48개(가속기당 1개)에서, Vera Rubin 결과는 1,024개에서 잰 값이다. GB300의 상호작용 속도는 56.2로 기준 50보다 여유가 있다. 그러나 동시 요청을 더 늘린 GB300 결과가 기준을 만족하는지는 각주로 알 수 없다. 첫 토큰 지연(P90)은 Vera Rubin이 약 4.7초로 GB300의 두 배다. 회사가 쓴 ‘더 빨리 응답한다’는 문구와 같은 각주의 수치가 맞지 않는다. 학습 쪽 2배가 이번 세대 차이의 더 보수적인 기준이다.\n\n**무엇이 달라지나.** 에이전트 추론은 한 작업에 모델 호출이 여러 번 이어진다. 첫 토큰 지연이 두 배가 되면 루프 전체가 느려질 수 있다. 전력이 묶인 데이터센터에서 MW당 토큰 생산이 한 세대에 10배 오른다는 그림은 아직 검증 대기 중인 단일 비교에 기대고 있다. 크기를 가늠하려면 검증된 결과와 GB300의 처리량 최적 지점 결과가 필요하다. 확신 중간."
+    },
+    {
+     "kind": "view",
+     "text": "**누구에게 무엇인가.** 엔비디아에는 교체 수요의 근거다. 10배가 유지되면 전력이 묶인 네오클라우드·하이퍼스케일러는 같은 전력으로 훨씬 많은 에이전트를 받는다. 반대로 구세대 GPU를 임대하는 클라우드에는 Vera Rubin 물량이 풀리는 시점에 구세대 GPU 시간의 가치를 낮추는 압력이 된다. 이번 원문에서 GB300 NVL72 대규모 배치가 확인되는 곳은 1만 개 넘는 GPU를 연결한 람다뿐이다. 코어위브·네비우스는 MLPerf 제출사로만 나온다. 이번 원문에는 임대 단가 변화를 보여 주는 자료도 없다."
+    },
+    {
+     "kind": "view",
+     "text": "**이 주장이 틀리는 경우.** Endpoints는 v1.0의 새 벤치마크이고 Vera Rubin 결과는 동료 검토 뒤 바뀔 수 있다. Kimi K3 같은 새 모델에서 GB300 소프트웨어가 덜 최적화됐을 수 있다. 회사가 말한 소프트웨어 지속 개선은 GB300에도 적용된다. 첫 토큰 지연은 비교 기준이 아니었으므로, 서비스 수준을 첫 토큰 지연으로 맞추면 격차가 줄어들 가능성이 크다. 반대로 SemiAnalysis AgentX, Artificial Analysis AgentPerf 같은 독립 벤치마크에서도 앞선다고 회사가 밝혔지만, 이 편은 그 수치를 읽지 못했다."
+    }
+   ]
+  },
+  {
+   "id": "s6",
+   "h": "데스크 가설에 미치는 영향",
+   "layer": "common",
+   "blocks": [
+    {
+     "kind": "view_table",
+     "head": [
+      "가설",
+      "영향",
+      "근거가 된 시사점",
+      "까닭"
+     ],
+     "rows": [
+      [
+       "메모리 원가 부담, 서버는 전가하고 소비자 기기는 떠안음",
+       "강화(약하게)",
+       "t1",
+       "HPC 시스템의 출하 단위당 매출이 약 14.8% 올랐고, 매체는 부품값 인상이 최종 고객에게 전가된다고 봤다. 델은 +67.7% 성장했다. 다만 노드 수 증가와 섞여 순수 가격 효과는 분리되지 않고, 소비자 기기 쪽은 이 행사와 무관하다."
+      ],
+      [
+       "특화 모델이 늘어도 프론티어 랩의 지출 몫은 유지",
+       "약화(확신 낮음)",
+       "t3",
+       "오픈 모델 사후 학습이 프론티어 모델을 이긴 과학 사례(Lila 61% 대 54%, 엔비디아 기준 추론비용 10~20배 차)가 나왔고, 데이터 계층 제품이 토큰 절감을 기능으로 팔기 시작했다. 다만 지출 자료가 아니고, OpenAI가 델 온프레미스 스택에 들어간 것은 반대 근거다."
+      ],
+      [
+       "GPU 임대 단가 상승, 2027년까지 유지",
+       "엇갈림",
+       "t1, t4",
+       "매체는 최신 GPU가 HPC 센터에 너무 귀하고 비싸다고 봐 공급 부족 쪽이다. 반면 Vera Rubin의 에이전트 추론 전력당 처리량 10배가 검증되면 2027년 이후 구세대 GPU 시간당 가치에 압력이 된다. 다만 이 수치는 잠정이고 비교 조건이 다르다."
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s7",
+   "h": "종목 판정",
+   "layer": "common",
+   "blocks": [
+    {
+     "kind": "view_table",
+     "head": [
+      "종목(묶음)",
+      "판정",
+      "강도",
+      "근거가 된 시사점",
+      "판정을 바꾸는 조건"
+     ],
+     "rows": [
+      [
+       "엔비디아",
+       "호재",
+       "중간(확신 중간)",
+       "t2, t4",
+       "Slurm QPU 통합이 AMD 등 다른 가속기 옆에서도 같은 무게로 쓰이거나, 이기종 오케스트레이션(모레·래블업류)이 대형 고객을 얻으면 약해진다. MLCommons 검증에서 Endpoints 10배가 크게 줄면 t4 근거가 사라진다."
+      ],
+      [
+       "델",
+       "호재",
+       "중간(확신 중간)",
+       "t1, t3",
+       "ISC27(2027년 6월) Hyperion의 2H26 집계에서 1위를 잃거나 성장률이 시장 아래로 내려가면 약해진다. 메모리 원가로 서버 마진 하락을 밝히면 반대다(데스크 메모리 가격 가설에는 피해로 묶여 있다). 행사 주간 주가 하락 보도와 목표가 중앙값 $600이 있지만 보도 내 가격 수치가 엇갈려 반영 정도는 판단을 보류한다."
+      ],
+      [
+       "HPE",
+       "악재",
+       "약(확신 중간)",
+       "t1",
+       "1H26 +1.1%의 원인이 매체 추정대로 CPU 전용 기계 비중이라면, Vera CPU 랙 출하(보도상 2027년 초, HPE 포함)와 2H26 집계에서 회복이 보이면 중립으로 바꾼다."
+      ],
+      [
+       "프론티어 모델 공급자(OpenAI·앤트로픽, 상장 노출은 마이크로소프트·알파벳)",
+       "악재",
+       "약(확신 낮음)",
+       "t3",
+       "Menlo·Ramp 기업 지출에서 프론티어 몫이 유지·상승하거나, OpenAI처럼 온프레미스 스택 안으로 들어가 호출량을 지키면 중립으로 바꾼다."
+      ],
+      [
+       "구세대 GPU 임대 클라우드(코어위브·네비우스 — 원문에는 MLPerf 제출사로만 등장, GB300 보유 규모 미확인)",
+       "중립",
+       "—(확신 낮음)",
+       "t4",
+       "Endpoints 10배가 검증되고, Vera Rubin 물량이 풀리는 시점에 구세대 GPU 임대가 하락이 확인되면 악재로 바꾼다."
+      ],
+      [
+       "IQM",
+       "중립",
+       "—(확신 중간)",
+       "t2",
+       "Slurm 채택으로 HPC 센터 접근은 쉬워졌지만 고전 계층의 가치는 엔비디아가 쥔다. 수주잔고 €102.5M(연초 대비 +52%)가 매출로 넘어가는 속도가 빨라지면 호재로 바꾼다."
+      ],
+      [
+       "AMD",
+       "중립",
+       "—(확신 낮음)",
+       "t2",
+       "이 편의 원문에서는 파트너 시연으로만 나왔다. 엔비디아의 라이브러리·스케줄러 확장은 과학 컴퓨팅의 진입 장벽을 높이지만, 이기종 오케스트레이션이 퍼지면 상쇄된다. AMD 자체 SC26 자료를 보기 전에는 판정을 내리지 않는다."
+      ]
+     ]
+    },
+    {
+     "kind": "view",
+     "items": [
+      "2027년 6월 ISC27 Hyperion 조찬: 2H26 벤더별 매출에서 델이 1위를 지키는지, 시장 매출과 수량 증가율의 차이(1H26 19.9% 대 4.4%)가 유지되는지. 차이가 좁혀지면 t1의 전가 판단을 낮춘다.",
+      "MLCommons의 Vera Rubin Endpoints 검증 결과와 기술 블로그: 검증 뒤에도 kW당 처리량 10배 안팎이 유지되는지, 첫 토큰 지연 조건을 맞춘 비교가 나오는지.",
+      "Slurm 26.11 출시(11월) 뒤 QPU 통합이 엔비디아 외 GPU 환경에서도 쓰이는 사례가 나오는지. 나오면 t2의 엔비디아 고착 효과를 낮춘다.",
+      "델 AI Data Platform 출시(2026년 12월) 뒤 고객 사례에서 토큰 절감률이 자사 시험(최대 76%)과 비슷한지, 다음 실적에서 소프트웨어·서비스 매출을 따로 밝히는지.",
+      "데스크 가설의 Menlo·Ramp 기업 모델 지출에서 프론티어 몫 다음 값: 내려가면 t3를 강화한다."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s8",
+   "h": "발표 목록",
+   "layer": "common",
+   "blocks": [
+    {
+     "kind": "fact_table",
+     "head": [
+      "기업",
+      "발표",
+      "핵심 사양·수치",
+      "시점"
+     ],
+     "rows": [
+      [
+       "델",
+       "AI Data Platform 데이터 오케스트레이션(Agentic Data Gateway 등)",
+       "토큰 최대 −76%, 정확도 60→94%(자사 시험), 벡터 인덱싱 최대 12배",
+       "2026년 12월부터"
+      ],
+      [
+       "델",
+       "Exascale 수랭 스토리지·1U 플랫폼",
+       "2OU 100% 직접 수랭, NVMe 32개; 1U는 랙 유닛당 드라이브 밀도 +67%",
+       "2027년 초(블록은 1H27)"
+      ],
+      [
+       "델",
+       "OpenManage Rack Scale",
+       "최대 10만 대 관리(이전 세대 8,000대 대비)",
+       "출시"
+      ],
+      [
+       "델",
+       "Fabric Manager",
+       "Day-2 운영 노력 최대 −80%(BE Networks 시험)",
+       "출시"
+      ],
+      [
+       "델",
+       "Enterprise SONiC 신규 플랫폼 지원",
+       "Z9964F-ON, NVIDIA Spectrum SN4700",
+       "2027년 1월"
+      ],
+      [
+       "델",
+       "검증 솔루션·서비스 확대",
+       "OpenAI Codex 레퍼런스 아키텍처, XE9785+HGX B300 검증, AI Factory Engineers",
+       "출시~1Q CY27"
+      ],
+      [
+       "엔비디아",
+       "Rubin HPC GPU",
+       "CUDA 코어 5만 개 이상, FP64~FP4, 희소 데이터 가속, 7세대 NVLink",
+       "2028년"
+      ],
+      [
+       "엔비디아",
+       "Vera CPU(DKRZ HLRE-5 채택)·Vera CPU 랙(보도)",
+       "랙당 Vera 192개·메모리 약 300TB(보도)",
+       "HLRE-5 2028년 초, 랙 2027년 초(보도)"
+      ],
+      [
+       "엔비디아",
+       "Nemotron for Science",
+       "Nemotron 3.5 Super VL + 화학 오픈 데이터셋(LitmusBench v0.2, 약 5만 문항 — 보도) + 사후 학습 레시피",
+       "공개"
+      ],
+      [
+       "엔비디아",
+       "CUDA-X 신규 라이브러리",
+       "cuPhoton(EHT 상관 분석 1개월 이상→8분), cuPotential(최대 3배), cuSpa(CPU 대비 900배), Daviator(최대 22배·비용 최대 −75%)",
+       "공개(Daviator는 예정)"
+      ],
+      [
+       "엔비디아",
+       "Slurm 양자 확장",
+       "Alice & Bob·IBM·IQM·Pasqal·Quantinuum·MQSC 채택, QRMI·QDMI 지원",
+       "Slurm 26.11, 11월"
+      ],
+      [
+       "엔비디아·IBM·페르미랩",
+       "양자-고전 공동설계 플랫폼",
+       "DGX B200과 IBM Quantum Nighthawk 연결",
+       "계획(시작일 미공개)"
+      ],
+      [
+       "엔비디아",
+       "TCBP-JOBS 디코더",
+       "최대 13,000배, 연구 계산 12주→45분",
+       "CUDA-Q QEC 0.9.0 출시"
+      ],
+      [
+       "엔비디아",
+       "DGX Spark HPC 개발 키트",
+       "4노드 링, 메모리 512GB, NVMe 16TB(eTeknix는 20TB로 보도), 최대 700B 모델",
+       "판매 중, HPC SDK 플레이북 곧"
+      ],
+      [
+       "엔비디아",
+       "MLPerf Training v6.1·Endpoints 결과",
+       "학습 GPU당 최대 2배, Endpoints kW당 처리량 10배 이상(잠정)",
+       "11월 공개"
+      ],
+      [
+       "엔비디아·람다",
+       "CPO 스위치 배치",
+       "GB300 NVL72 랙 1만+ GPU 연결, 비트 오류·링크 플랩 15배 신뢰성(회사 주장)",
+       "배치"
+      ],
+      [
+       "IBM·리켄",
+       "양자-고전 화학 계산",
+       "단백질-리간드 복합체 최대 12,635개 원자, 고든벨상 최종 후보",
+       "—"
+      ],
+      [
+       "Q.ANT",
+       "NPU Gen 2+(광 DFT)",
+       "AMD GPU와 하이브리드로 LLM 어텐션 대체 시연",
+       "상용 시스템 2H27"
+      ],
+      [
+       "모레",
+       "TIDE 추론 프레임워크",
+       "처리량 최대 1.66배, 보조 모델 학습 시간 최대 3.02배 단축, H100+MI250 구성 1.22배",
+       "공개"
+      ],
+      [
+       "래블업",
+       "Backend.AI 이기종 가속기 통합 운영",
+       "9개 기업·기관 부스 발표(AMD·인텔·엔비디아·리벨리온·퓨리오사AI·하이퍼엑셀 등)",
+       "11/19까지 전시"
+      ],
+      [
+       "MinIO",
+       "AIStor Memory 정식 출시",
+       "에이전트 장기 메모리·지속 작업공간·비밀 정보 통합",
+       "출시"
+      ],
+      [
+       "Bacula Systems",
+       "HPCAccelerator 4.0",
+       "수십억 파일 병렬 백업, BSnapDiff 변경 감지, 체크포인트",
+       "—"
+      ],
+      [
+       "IQM",
+       "Halocene 업그레이드 경로",
+       "150큐비트 → 1,000큐비트 이상, 무중단 교체",
+       "—"
+      ],
+      [
+       "알테라·OQC·엔비디아",
+       "Direct-RF FPGA 양자 제어기 레퍼런스 설계",
+       "Agilex 9 Direct RF, NVQLink로 GPU 연결",
+       "2027년 1월 일반 공개"
+      ],
+      [
+       "판메네시아",
+       "AI 데이터센터용 CXL 장비 수요 확인, 후속 스위치 칩 예고",
+       "PCIe 6.4-CXL 3.2 Fusion Switch 후속",
+       "2027년"
+      ],
+      [
+       "Hyperion Research",
+       "SC26 조찬 시장 자료",
+       "1H26 온프레미스 $16.48B(+19.9%), 수량 +4.4%",
+       "—"
+      ]
+     ],
+     "note": "출처: 델 s1, Rubin HPC s8·s6, Vera s6·s12, Nemotron s6·s12, CUDA-X s4, Slurm·디코더 s7·s2, 공동설계·IBM-리켄 s2, DGX Spark s5·s22, MLPerf s3, 람다 s6·s12, Q.ANT s15, 모레 s19·s20, 래블업 s23, MinIO s16, Bacula s17, IQM s21, 알테라 s24, 판메네시아 s10, Hyperion s11",
+     "src": 1
+    },
+    {
+     "kind": "explain",
+     "text": "이 리포트가 읽지 못한 것: 원천이 막아 본문을 받지 못한 글 11건이 있다. 엔비디아의 Nemotron for Science 보도자료, Vera CPU 랙 발표, 람다 CPO 블로그, MLPerf 기술 블로그는 출처 묶음에 없어 벅의 기조연설 정리(s6)와 언론 보도(s12·s13)로만 확인했다. Hyperion 자료는 차트 그림을 읽지 못해 매체 본문에 적힌 수치만 썼다. 하드웨어 사양·HPC 시스템 수주 등 다른 주제는 SC26의 다른 편이 다루며, 이 편은 그 내용을 짐작으로 채우지 않았다. 행사 기간에 나왔지만 SC26과 무관한 단신(레노버 분기 실적, 화웨이 재판, NetApp 가격 인상 등)과 엔비디아의 연말 소비자 홍보 글(s25)은 다루지 않았다."
+    }
+   ]
+  }
+ ],
+ "review": {
+  "draft": {
+   "model": "claude-opus-5-5",
+   "at_kst": "2026-11-27T03:06:17+09:00"
+  },
+  "review": {
+   "model": "claude-opus-5-5",
+   "at_kst": "2026-11-27T03:09:28+09:00",
+   "result": "통과"
+  },
+  "summary": "앞선 검토의 필수 수정 세 건은 모두 해결됐다. 모레 CEO 발언은 GPU 확보를 부정하지 않는 원래 뜻으로 고쳐졌고, Lila·Therna 사례와 DGX Spark 최적화는 언론 기고(s12)에서 온 내용임을 밝혔으며, Slurm 채택 기관은 원문의 이름 그대로 적었다. 함께 고친 개선 사항(Endpoints 비교 조건, 하드웨어 시점과 x86 영역, 구세대 GPU 임대 클라우드 묶음)도 원문과 맞고 다른 절과 어긋나지 않는다.",
+  "history": []
+ }
+}

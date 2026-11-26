@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated_kst": "2026-11-26T23:37:17+09:00",
+ "updated_kst": "2026-11-27T02:36:29+09:00",
  "window_days": 14,
  "items_days": 30,
  "index": {
@@ -8,13 +8,13 @@
    "value": 5,
    "label": "엇갈림",
    "orgs": 38,
-   "items": 149
+   "items": 148
   },
   "market": {
    "value": -8,
    "label": "엇갈림",
    "orgs": 29,
-   "items": 106
+   "items": 107
   },
   "by_group": [
    {
@@ -192,6 +192,40 @@
   "method": "기관·인물마다 기간 안 입장 값의 평균을 내고 그 평균들을 다시 평균해 ×50"
  },
  "items": [
+  {
+   "id": "ubs-house-view-daily-stocks-remain-volatile-stay-inv",
+   "group": "투자은행",
+   "org": "UBS",
+   "person": "Aaron Kreischer",
+   "kind": "publication",
+   "title": "House View Daily | 주식 변동성 지속: 투자는 유지하되 점검·리밸런싱·재집중",
+   "title_orig": "House View Daily | Stocks remain volatile: Stay invested, but review, rebalance, and refocus",
+   "url": "https://www.ubs.com/content/dam/podcasts/wma/on-air/in-the-now/20261126_HV_Daily.mp3",
+   "outlet": "UBS House View Daily",
+   "published_kst": "2026-11-26T20:33:51+09:00",
+   "stance": {
+    "ai_tech": 0,
+    "market": 0
+   },
+   "args": [
+    "투자 회수",
+    "금리·거시",
+    "쏠림",
+    "정책·지정학"
+   ],
+   "summary": "UBS CIO는 이번 조정을 AI 투자 회수 우려, 긴축, 관세 불확실성, 연말 유동성 부족의 결과로 보며 기초 체력 악화는 아니라고 진단한다. AI 투자 스토리는 훼손되지 않았지만 수익 회수 부담이 커 변동성이 이어질 것으로 보고, 글로벌·미국 주식은 중립을 유지한다. 채권과 원자재를 주식보다 선호하고, 빅테크 쏠림 축소와 재무가 탄탄한 AI 기업 선별을 권한다.",
+   "points": [
+    "이번 조정은 AI 투자 수익 우려, 긴축, 무역 불확실성, 연말 유동성 부족이 반영된 것이지 펀더멘털 전반의 악화는 아니라고 본다.",
+    "AI 투자 스토리는 무너지지 않았으나, 적정 수익을 위해서는 AI 모델·애플리케이션 매출이 4년간 최소 750% 늘어야 한다고 추산한다.",
+    "S&P 500 기본 시나리오 목표는 상승 여력이 크지만 AI 버스트 시 약 20% 하락 가능성도 있어 주식은 중립, 채권·원자재가 더 유리하다고 본다.",
+    "AI 노출에서는 자체 자금으로 투자를 조달할 수 있는 우량 플랫폼을 선호하고, 레버리지 기반 용량 공급업체에는 신중하다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "팟캐스트 음성을 음성 인식(Whisper)으로 받아 적은 전사 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
+  },
   {
    "id": "boe-bank-of-england-sounds-alarm-on-opaque-ai-financ",
    "group": "중앙은행·국제기구",
