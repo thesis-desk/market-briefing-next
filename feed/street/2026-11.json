@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "month": "2026-11",
- "updated_kst": "2026-11-26T11:21:06+09:00",
+ "updated_kst": "2026-11-26T14:22:07+09:00",
  "items": [
   {
    "id": "ark-one-of-tech-s-worst-drawdowns-since-2003-is-the",
@@ -73,6 +73,29 @@
     "tier": "standard"
    },
    "note": "유튜브 자동 생성 자막(en) 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
+  },
+  {
+   "id": "jpmorgan-jpmorgan-predicts-450b-ai-capex-in-2027-and-1-4t",
+   "group": "투자은행",
+   "org": "JPMorgan",
+   "person": null,
+   "kind": "report",
+   "title": "JPMorgan, 2027년 AI 설비투자 4,500억 달러 전망…2028년에는 증가세 정체",
+   "title_orig": "JPMorgan predicts $450B AI capex in 2027 and $1.4T, before leveling off in 2028",
+   "url": "https://www.newsbytesapp.com/news/business/jpmorgan-predicts-450b-ai-capex-in-2027-and-14t-before-leveling-off-in-2028/tldr",
+   "outlet": "NewsBytes",
+   "published_kst": "2026-11-26T04:35:00+09:00",
+   "stance": {
+    "ai_tech": 0,
+    "market": null
+   },
+   "args": [
+    "자금 조달·신용"
+   ],
+   "judged": {
+    "basis": "headline_only",
+    "tier": "light"
+   }
   },
   {
    "id": "el-erian-here-s-why-allianz-s-mohamed-el-erian-thinks-for",
