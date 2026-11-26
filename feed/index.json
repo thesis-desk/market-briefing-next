@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-26T22:35:15+09:00",
+ "generated_kst": "2026-11-26T23:37:50+09:00",
  "reports": [
   {
    "slug": "sixsigma-1-340",
@@ -5882,6 +5882,24 @@
    "path": "reports/isu-petasys-2q26-earnings.json"
   },
   {
+   "slug": "klarna-2q26-earnings",
+   "type": "earnings",
+   "title": "Klarna 2Q26 실적발표 : 볼륨 눈높이는 내리고, 볼륨당 마진은 올렸다",
+   "companies": [
+    {
+     "name": "Klarna",
+     "ticker": "KLAR"
+    }
+   ],
+   "event": "2Q26 실적 발표",
+   "event_date": "2026-08-18",
+   "published_kst": "2026-08-18T21:00:00+09:00",
+   "revised_kst": "2026-11-26T23:37:50+09:00",
+   "revision": 1,
+   "summary": "2Q26은 가이던스 네 항목(GMV·매출·TMD·조정 영업이익)이 모두 상단을 넘었고, TMD가 42% 늘어 순이익 흑자를 이어 갔다. 대신 연간 GMV 가이던스는 독일 소비 둔화와 환율로 내렸고, 매출 가이던스는 여기에 하반기 회계 표시 변경까지 겹쳐 내렸다. TMD는 GMV 대비 1.04%에서 1.09%로 올렸지만, 달러 기준 TMD와 조정 영업이익 가이던스는 5월 가이던스 하한이 함축하던 금액과 거의 같다. 마진 개선은 확인됐지만 이익의 달러 규모는 늘지 않은 분기다.",
+   "path": "reports/klarna-2q26-earnings.json"
+  },
+  {
    "slug": "applied-materials-3q26-earnings",
    "type": "earnings",
    "title": "Applied Materials 3Q26 실적발표 : 장비 성장 전망 재상향, 2028년 출하능력 두 배 준비",
@@ -6242,6 +6260,60 @@
    "path": "reports/softbank-1q27-earnings.json"
   },
   {
+   "slug": "unity-2q26-earnings",
+   "type": "earnings",
+   "title": "Unity Software 2Q26 실적발표 : Vector 23% 가속, GAAP 흑자 시점을 3Q26로 당김",
+   "companies": [
+    {
+     "name": "Unity Software",
+     "ticker": "U"
+    }
+   ],
+   "event": "2Q26 실적 발표",
+   "event_date": "2026-08-06",
+   "published_kst": "2026-08-06T21:00:00+09:00",
+   "revised_kst": "2026-11-26T23:36:31+09:00",
+   "revision": 1,
+   "summary": "Vector가 회사 기대의 두 배 가까운 전분기 대비 23% 성장을 내면서 전략 Grow +63%, 조정 EBITDA 마진 29%로 매출·조정 EBITDA 가이던스 상단을 넘었다(전략 Create는 범위 상단). 3분기에는 전략 매출 +44~47%, 마진 약 33%, GAAP 흑자를 제시해 2분기가 '좋은 한 분기'로 끝나지 않는다는 쪽에 걸었다. 다만 Create 감속, 런타임 데이터 효과의 수치 부재, 구조조정 비용은 확인이 필요하다.",
+   "path": "reports/unity-2q26-earnings.json"
+  },
+  {
+   "slug": "applovin-2q26-earnings",
+   "type": "earnings",
+   "title": "AppLovin 2Q26 실적발표 : 모델 개선 공백에 가이던스 미달, 연산비 늘려 3분기 재가속 예고",
+   "companies": [
+    {
+     "name": "AppLovin",
+     "ticker": "APP"
+    }
+   ],
+   "event": "2Q26 실적 발표",
+   "event_date": "2026-08-05",
+   "published_kst": "2026-08-05T21:00:00+09:00",
+   "revised_kst": "2026-11-26T23:36:23+09:00",
+   "revision": 1,
+   "summary": "2Q26에는 분기 중 모델 개선이 거의 나오지 않았다. 그 결과 매출은 가이던스 중앙을 소폭 밑돌았고, 조정 EBITDA는 범위 하단을 $1M 차이로 놓쳤다. 회사는 분기 직후 배포한 모델 개선과 늘어난 연산비를 3Q 가이던스(매출 전분기 대비 +7~8%, 마진 약 83%)에 반영해 재가속을 예고했다. 쟁점은 두 가지다. 성장 공백이 일시적인가, 그리고 연산비가 계단식으로 오르면서 마진이 어디까지 내려가는가.",
+   "path": "reports/applovin-2q26-earnings.json"
+  },
+  {
+   "slug": "duolingo-2q26-earnings",
+   "type": "earnings",
+   "title": "Duolingo 2Q26 실적발표 : DAU 23%로 가속, AI 원가 하락으로 마진 목표 상향",
+   "companies": [
+    {
+     "name": "Duolingo",
+     "ticker": "DUOL"
+    }
+   ],
+   "event": "2Q26 실적 발표",
+   "event_date": "2026-08-05",
+   "published_kst": "2026-08-05T21:00:00+09:00",
+   "revised_kst": "2026-11-26T23:34:14+09:00",
+   "revision": 1,
+   "summary": "2분기에는 DAU 성장이 가속했고, 오픈소스 모델 전환으로 AI 원가가 떨어져 매출 범위를 그대로 둔 채 연간 조정 EBITDA 마진 목표를 1.5%p 올렸다. 다만 예약매출 성장(연 약 11%)이 매출 성장(약 16%)보다 낮고, 야후 기록상 EPS는 컨센서스를 세 분기 연속 밑돌며 그 폭이 커졌다. 수익화가 DAU를 따라오는지는 아직 확인되지 않았다.",
+   "path": "reports/duolingo-2q26-earnings.json"
+  },
+  {
    "slug": "sandisk-4q26-earnings",
    "type": "earnings",
    "title": "Sandisk 4Q26 실적발표 : 마진 85%, 장기계약이 FY27 비트 절반을 넘다",
@@ -6258,6 +6330,24 @@
    "revision": 1,
    "summary": "4Q26은 매출 89.7억 달러, 비GAAP 매출총이익률 84.6%로 가이던스 상단을 크게 넘겼습니다. 장기계약(NBM)은 고객 8곳으로 늘었고, 분기 뒤 체결분까지 넣은 잔여계약 911억 달러가 FY27 비트의 절반 이상을 묶었습니다. 반면 1Q27 가이던스에서는 가격 상승이 '소폭'으로 줄고 마진이 정체합니다. NBM 마진(약 80%)도 현재 마진보다 낮아, 앞으로는 이익의 가파른 상승보다 지속성에 무게가 실리는 국면입니다.",
    "path": "reports/sandisk-4q26-earnings.json"
+  },
+  {
+   "slug": "shopify-2q26-earnings",
+   "type": "earnings",
+   "title": "Shopify 2Q26 실적발표 : 34% 성장 유지, 3분기 매출총이익 격차 확대",
+   "companies": [
+    {
+     "name": "Shopify",
+     "ticker": "SHOP"
+    }
+   ],
+   "event": "2Q26 실적 발표",
+   "event_date": "2026-08-05",
+   "published_kst": "2026-08-05T21:00:00+09:00",
+   "revised_kst": "2026-11-26T23:36:08+09:00",
+   "revision": 1,
+   "summary": "2Q26 매출은 +34%로 회사 가이던스(20%대 후반)를 넘었고 초과 폭은 1Q보다 커졌다. 영업비용률 34%와 FCF 마진 18%로 비용 레버리지도 확인됐다. 다만 3Q 가이던스에서는 매출과 매출총이익의 성장률 격차가 다시 벌어진다. 이익 성장은 결제 비중 확대에 따른 믹스 압박을 비용 효율로 메우는 구도를 이어 간다.",
+   "path": "reports/shopify-2q26-earnings.json"
   },
   {
    "slug": "sk-telecom-2q26-earnings",
@@ -6332,6 +6422,24 @@
    "path": "reports/arista-2q26-earnings.json"
   },
   {
+   "slug": "pinterest-2q26-earnings",
+   "type": "earnings",
+   "title": "Pinterest 2Q26 실적발표 : 미국·캐나다 18% 재가속, 해외는 급감속",
+   "companies": [
+    {
+     "name": "Pinterest",
+     "ticker": "PINS"
+    }
+   ],
+   "event": "2Q26 실적 발표",
+   "event_date": "2026-08-04",
+   "published_kst": "2026-08-04T21:00:00+09:00",
+   "revised_kst": "2026-11-26T23:27:21+09:00",
+   "revision": 1,
+   "summary": "미국·캐나다 매출이 1Q +13%에서 +18%로 빨라졌습니다. 매출과 조정 EBITDA가 모두 가이던스 상단을 넘었고, 연간 마진 전망은 약 30%로 올랐습니다. 반면 유럽과 기타 지역의 고정환율 성장률은 각각 +7%, +32%로 크게 꺾였습니다. 주식보상비용이 41% 늘어 GAAP 적자도 이어졌습니다. 성장의 질은 개선됐지만 지역 편중과 희석 비용이 남았다고 봅니다.",
+   "path": "reports/pinterest-2q26-earnings.json"
+  },
+  {
    "slug": "spacex-2q26-earnings",
    "type": "earnings",
    "title": "SpaceX 2Q26 실적발표 : AI 부문 EBITDA 흑자 전환, 분기 CAPEX 184억 달러",
@@ -6348,6 +6456,42 @@
    "revision": 1,
    "summary": "AI 클라우드 계약이 한 분기 만에 AI 부문을 EBITDA 흑자로 돌리고 전사 매출 성장률을 92%까지 끌어올렸다. 다만 분기 CAPEX 184억 달러를 영업현금흐름이 감당하지 못해 IPO·채권 자금에 기대고 있다. 연말 ARR 1,000억 달러 목표는 2Q 매출 수준에 3Q 신규 계약을 더해도 절반에 못 미친다. 나머지는 인식 일정이 공개되지 않은 기존 계약의 증가와 Cursor 편입에 달려 있다.",
    "path": "reports/spacex-2q26-earnings.json"
+  },
+  {
+   "slug": "spotify-2q26-earnings",
+   "type": "earnings",
+   "title": "Spotify 2Q26 실적발표 : 가입자 3억 돌파, 신흥시장은 MAU 대신 수익화로",
+   "companies": [
+    {
+     "name": "Spotify",
+     "ticker": "SPOT"
+    }
+   ],
+   "event": "2Q26 실적 발표",
+   "event_date": "2026-08-04",
+   "published_kst": "2026-08-04T21:00:00+09:00",
+   "revised_kst": "2026-11-26T23:33:48+09:00",
+   "revision": 1,
+   "summary": "구독 쪽은 견조했다. 가입자 300M, Premium ARPU +7.4%, 영업이익은 가이던스를 EUR 25M 웃돌았다. 반면 광고는 두 분기째 +3%에 머물렀고 영업비용은 3Q까지 높게 유지된다. 이번 분기에 새로 생긴 변화는 신흥시장 무료 사용자 성장을 일부러 늦추고 전환을 높이는 쪽으로 방향을 튼 것이다.",
+   "path": "reports/spotify-2q26-earnings.json"
+  },
+  {
+   "slug": "upstart-2q26-earnings",
+   "type": "earnings",
+   "title": "Upstart 2Q26 실적발표 : 코어 개인대출 재가속, 담보 상품 적자 급감",
+   "companies": [
+    {
+     "name": "Upstart",
+     "ticker": "UPST"
+    }
+   ],
+   "event": "2Q26 실적 발표",
+   "event_date": "2026-08-04",
+   "published_kst": "2026-08-04T21:00:00+09:00",
+   "revised_kst": "2026-11-26T23:26:30+09:00",
+   "revision": 1,
+   "summary": "코어 개인대출이 전분기 대비 27% 늘고 담보 상품(자동차·주택)의 공헌이익률이 −96%에서 −35%로 줄면서 공헌이익이 사상 최대인 $193M을 기록했고 GAAP 흑자로 돌아왔다. 다만 UMI가 가이던스 전제의 상단(1.50)에 닿았고 7월 실행 증가율이 꺾여 연간 가이던스는 유지에 그쳤다. 하반기는 2Q의 매출 수준을 지키면서 조정 EBITDA 마진을 24% 안팎으로 올려야 하는 구조다.",
+   "path": "reports/upstart-2q26-earnings.json"
   },
   {
    "slug": "wistron-2q26-earnings",
@@ -6582,6 +6726,24 @@
    "revision": 1,
    "summary": "1Q27 매출 732.3B엔으로 분기 최대를 다시 썼고, 상반기 가이던스를 1,620B엔으로 올리면서 하반기는 더 가속한다고 예고했다. 다만 가이던스가 함축하는 2Q 이익률은 1Q보다 낮다. 이익률 개선은 4Q부터 보인다는 가격 조정이 실제로 나타나야 확인된다.",
    "path": "reports/tokyo-electron-1q27-earnings.json"
+  },
+  {
+   "slug": "ch-robinson-2q26-earnings",
+   "type": "earnings",
+   "title": "C.H. Robinson 2Q26 실적발표 : 중간 사이클 마진 도달, 스팟 급등에 총마진 후퇴",
+   "companies": [
+    {
+     "name": "C.H. Robinson",
+     "ticker": "CHRW"
+    }
+   ],
+   "event": "2Q26 실적 발표",
+   "event_date": "2026-07-29",
+   "published_kst": "2026-07-29T21:00:00+09:00",
+   "revised_kst": "2026-11-26T23:27:28+09:00",
+   "revision": 1,
+   "summary": "수요 바닥이 15분기째 이어지는데도 NAST·Global Forwarding이 모두 중간 사이클 영업이익률 목표에 닿았고, 조정 영업이익은 전년 대비 20% 늘었다. 대가도 함께 드러났다. 스팟 운임 급등으로 NAST 총마진이 14.6%에서 13.1%로 내려갔고, 자사주 매입을 부채로 메우면서 레버리지가 올랐으며, 텍사스 배심 평결이라는 새 법적 변수가 생겼다.",
+   "path": "reports/ch-robinson-2q26-earnings.json"
   },
   {
    "slug": "cognizant-2q26-earnings",
@@ -6890,6 +7052,24 @@
    "path": "reports/asml-2q26-earnings.json"
   },
   {
+   "slug": "jpmorgan-2q26-earnings",
+   "type": "earnings",
+   "title": "JPMorgan Chase 2Q26 실적발표 : 예금이 올린 NII, 매출이 끌어올린 비용",
+   "companies": [
+    {
+     "name": "JPMorgan Chase",
+     "ticker": "JPM"
+    }
+   ],
+   "event": "2Q26 실적 발표",
+   "event_date": "2026-07-14",
+   "published_kst": "2026-07-14T21:00:00+09:00",
+   "revised_kst": "2026-11-26T23:27:02+09:00",
+   "revision": 1,
+   "summary": "주식 트레이딩(+86%)과 IB 수수료(+30%)가 이끈 분기로 EPS 6.14달러, ROTCE 23%를 냈다. 예금 잔액 덕에 NII ex-Markets 가이던스를 965억 달러로 올렸고, 매출 연동 비용 때문에 조정 비용 가이던스도 1,075억 달러로 함께 올렸다. CEO 스스로 '거의 최상'이라 부른 환경이므로, 이번 이익 수준은 정점 부근으로 읽는 편이 안전하다.",
+   "path": "reports/jpmorgan-2q26-earnings.json"
+  },
+  {
    "slug": "tcs-1q27-earnings",
    "type": "earnings",
    "title": "TCS 1Q27 실적발표 : 고정환율 성장 0.4%로 둔화, 임금 인상에 마진 24%",
@@ -7070,6 +7250,24 @@
    "path": "reports/isu-petasys-1q26-earnings.json"
   },
   {
+   "slug": "spotify-investor-day-2026",
+   "type": "investor_day",
+   "title": "Spotify 투자자의 날 2026 : 2030년 영업이익률 20% 이상, 초과 현금 주주환원 개시",
+   "companies": [
+    {
+     "name": "Spotify",
+     "ticker": "SPOT"
+    }
+   ],
+   "event": "투자자의 날 2026",
+   "event_date": "2026-05-21",
+   "published_kst": "2026-05-21T21:00:00+09:00",
+   "revised_kst": "2026-11-26T23:26:15+09:00",
+   "revision": 1,
+   "summary": "2030년 목표는 매출 성장률을 직전 3년 실적(CAGR 18%)보다 낮춘 10%대 중반으로 두고, 영업이익률은 12.8%에서 20% 이상으로 올려 그 차이를 메우는 구도다. 성장 동력은 애드온(사용량이 많은 이용자에게 더 받는 상품)에 걸었지만, 숫자로 확인된 것은 Audiobooks+ 하나이고 주주환원·North Star·애드온 가격은 규모와 시점이 빠져 있다.",
+   "path": "reports/spotify-investor-day-2026.json"
+  },
+  {
    "slug": "nvidia-1q27-earnings",
    "type": "earnings",
    "title": "Nvidia 1Q27 실적발표 : 하이퍼스케일 밖에서 커진 성장, 독립 CPU $200억",
@@ -7176,6 +7374,24 @@
    "revision": 1,
    "summary": "1Q26은 매출이 가이던스 상단, GM이 하단에 붙은 정체 분기였고 8인치 환산 웨이퍼당 매출도 제자리였다. 연초 가격 인상의 효과는 2Q26 가이던스(매출 약 +5%, GM 14~16%)부터 나타나는 구조다. 그 사이 CapEx 9억 2,490만 달러와 차입 증가로 순현금이 한 분기에 약 7억 9,000만 달러 줄었다.",
    "path": "reports/hua-hong-1q26-earnings.json"
+  },
+  {
+   "slug": "klarna-1q26-earnings",
+   "type": "earnings",
+   "title": "Klarna 1Q26 실적발표 : 순이익 흑자 전환, 연간 가이던스는 그대로",
+   "companies": [
+    {
+     "name": "Klarna",
+     "ticker": "KLAR"
+    }
+   ],
+   "event": "1Q26 실적 발표",
+   "event_date": "2026-05-14",
+   "published_kst": "2026-05-14T21:00:00+09:00",
+   "revised_kst": "2026-11-26T23:25:19+09:00",
+   "revision": 1,
+   "summary": "1Q26 매출과 TMD가 각각 44% 늘었고 순이익이 흑자로 돌아섰다. 선적립 충당금 부담이 줄면서 TMD/GMV는 직전 분기 약 0.96%에서 약 1.15%로 올랐다. 다만 연간 가이던스를 그대로 둬서 하반기 TMD/GMV는 약 0.98%로 다시 낮아지는 셈이다. 매각이익과 계절적 회수가 이번 분기를 거든 몫도 있어, 개선이 이어질지는 아직 확인되지 않았다.",
+   "path": "reports/klarna-1q26-earnings.json"
   },
   {
    "slug": "quanta-computer-1q26-earnings",
@@ -7466,6 +7682,24 @@
    "path": "reports/sk-telecom-1q26-earnings.json"
   },
   {
+   "slug": "unity-1q26-earnings",
+   "type": "earnings",
+   "title": "Unity Software 1Q26 실적발표 : Vector 15% 네 분기째, GAAP 흑자 시점을 4Q26로 당김",
+   "companies": [
+    {
+     "name": "Unity Software",
+     "ticker": "U"
+    }
+   ],
+   "event": "1Q26 실적 발표",
+   "event_date": "2026-05-07",
+   "published_kst": "2026-05-07T21:00:00+09:00",
+   "revised_kst": "2026-11-26T23:17:07+09:00",
+   "revision": 1,
+   "summary": "전략 매출 +35%, 조정 EBITDA 마진 27%로 1Q26 가이던스 상단을 크게 넘었고, GAAP 순이익 흑자 시점을 2026년 4분기로 앞당겨 제시했다. 다만 ironSource 종료로 보고 매출은 2Q26에 정체한다. 또 Vector의 절대 금액과 연 10억달러 런레이트 목표가 이번에 다시 나오지 않아, 성장의 크기를 외부에서 검증하기는 오히려 어려워졌다.",
+   "path": "reports/unity-1q26-earnings.json"
+  },
+  {
    "slug": "vistra-1q26-earnings",
    "type": "earnings",
    "title": "Vistra 1Q26 실적발표 : 온화한 날씨에도 1분기 최대 EBITDA, 두 번째 투자등급",
@@ -7500,6 +7734,24 @@
    "revision": 1,
    "summary": "1Q26 매출은 전 분기보다 5.4% 줄었습니다. 그래도 매출총이익률 7.6%, 영업이익률 6.3%로 4Q25의 저점에서 반등해 순이익은 전 분기보다 늘었고 1분기 기준 최대를 기록했습니다. 남은 과제는 두 가지입니다. 하나는 4월부터 일부 고객의 메모리를 구매대행으로 돌려 매출에서 빼면서 2Q26부터 매출과 마진율을 이전 분기와 견줄 수 없게 된 점입니다. 다른 하나는 재고가 NT$229bn으로 68% 불어나 순차입이 세 배로 늘어난 운전자본 부담입니다.",
    "path": "reports/wiwynn-1q26-earnings.json"
+  },
+  {
+   "slug": "applovin-1q26-earnings",
+   "type": "earnings",
+   "title": "AppLovin 1Q26 실적발표 : 마진 85% 신고점, 6월 Axon 전면 개방",
+   "companies": [
+    {
+     "name": "AppLovin",
+     "ticker": "APP"
+    }
+   ],
+   "event": "1Q26 실적 발표",
+   "event_date": "2026-05-06",
+   "published_kst": "2026-05-06T21:00:00+09:00",
+   "revised_kst": "2026-11-26T23:17:05+09:00",
+   "revision": 1,
+   "summary": "1분기는 매출(전분기 대비 +11%)과 조정 EBITDA가 모두 가이던스 상단을 넘었고, 마진은 85%로 새 고점을 찍었다. 핵심 변화는 6월 셀프서비스 개방을 앞두고 소비자 버티컬이 4월에 사상 최대 월을 기록한 것이다. 다만 2분기 가이던스(전분기 대비 +4~6%)는 1분기보다 낮게 잡혔다. 소비자 버티컬 규모는 이번에도 수치가 없었고, 직전 분기 57%였던 온보딩 집행 전환율은 이번에 공개되지 않았다.",
+   "path": "reports/applovin-1q26-earnings.json"
   },
   {
    "slug": "amd-1q26-earnings",
@@ -7592,6 +7844,24 @@
    "path": "reports/lumentum-3q26-earnings.json"
   },
   {
+   "slug": "shopify-1q26-earnings",
+   "type": "earnings",
+   "title": "Shopify 1Q26 실적발표 : 성장 34%로 재가속, 매출총이익 격차 축소",
+   "companies": [
+    {
+     "name": "Shopify",
+     "ticker": "SHOP"
+    }
+   ],
+   "event": "1Q26 실적 발표",
+   "event_date": "2026-05-05",
+   "published_kst": "2026-05-05T21:00:00+09:00",
+   "revised_kst": "2026-11-26T23:16:54+09:00",
+   "revision": 1,
+   "summary": "1Q26은 매출 +34%로 4년여 만의 최고 성장, 영업비용 레버리지, 매출과 매출총이익 성장률 격차 축소가 함께 나온 분기다. 2Q 가이던스는 환율 효과가 줄어 20%대 후반으로 둔화를 예고하고, 신용 상품이 이끈 손실률 상승과 에이전틱 거래의 절대 규모 미공개가 남은 물음표다.",
+   "path": "reports/shopify-1q26-earnings.json"
+  },
+  {
    "slug": "super-micro-3q26-earnings",
    "type": "earnings",
    "title": "Super Micro Computer 3Q26 실적발표 : 10%로 돌아온 총마진, 빚으로 메운 운전자본",
@@ -7626,6 +7896,60 @@
    "revision": 1,
    "summary": "1Q26은 조정 EBITDA 4.73억 달러, 조정 FCF 3.50억 달러로 2026 가이던스를 재확인했다. Cornerstone 인수 자금 40억 달러를 규제 승인 전에 조달했고, 2028 주당 FCF 전망을 1월 대비 15~30% 올렸다. 다만 새 데이터센터 PPA는 이번에도 없었다. 전망은 3/31 선도가격 기준이고, 회사가 상방이라 부르는 basis 수렴은 아직 확인되지 않았다.",
    "path": "reports/talen-energy-1q26-earnings.json"
+  },
+  {
+   "slug": "upstart-1q26-earnings",
+   "type": "earnings",
+   "title": "Upstart 1Q26 실적발표 : 다시 코어 개인대출로, 마진은 1분기 바닥론",
+   "companies": [
+    {
+     "name": "Upstart",
+     "ticker": "UPST"
+    }
+   ],
+   "event": "1Q26 실적 발표",
+   "event_date": "2026-05-05",
+   "published_kst": "2026-05-05T21:00:00+09:00",
+   "revised_kst": "2026-11-26T23:16:55+09:00",
+   "revision": 1,
+   "summary": "1Q26은 매출 약 $308M(+44% YoY)으로 연간 가이던스를 재확인했다. 다만 공헌이익률이 50%로 두 분기 연속 내렸고(3Q25 57% → 4Q25 53% → 1Q26 50%) GAAP 적자로 돌아서, 연간 목표 달성은 하반기 마진 회복에 걸렸다. 새 경영진은 성장의 무게를 자동차·주택에서 마진이 높은 코어 개인대출로 옮기고, 자동차·주택은 단위 경제성 개선으로 돌린다고 밝혔다.",
+   "path": "reports/upstart-1q26-earnings.json"
+  },
+  {
+   "slug": "duolingo-1q26-earnings",
+   "type": "earnings",
+   "title": "Duolingo 1Q26 실적발표 : 연간 점추정치 공개, 무료 체험 연장으로 수익화 재설계",
+   "companies": [
+    {
+     "name": "Duolingo",
+     "ticker": "DUOL"
+    }
+   ],
+   "event": "1Q26 실적 발표",
+   "event_date": "2026-05-04",
+   "published_kst": "2026-05-04T21:00:00+09:00",
+   "revised_kst": "2026-11-26T23:13:59+09:00",
+   "revision": 1,
+   "summary": "1분기는 DAU 21% 성장과 조정 EBITDA 마진 약 29%로 계획대로 갔고, 회사는 2026년 목표 범위를 재확인하면서 그 안의 점추정치를 함께 내놓았다. 다만 점추정 예약매출 성장률 10.5%는 범위 하단에 가깝다. 2분기 예약매출은 약 6%로 둔화하고 매출총이익률은 연말 69%로 내려간다. 2026년은 수익화를 DAU와 충돌하지 않는 방식으로 다시 짜는 해이고, 그 성과는 하반기 이후에야 숫자로 확인된다.",
+   "path": "reports/duolingo-1q26-earnings.json"
+  },
+  {
+   "slug": "pinterest-1q26-earnings",
+   "type": "earnings",
+   "title": "Pinterest 1Q26 실적발표 : 리테일러 밖 매출 가속, 전환사채로 자사주 $2B",
+   "companies": [
+    {
+     "name": "Pinterest",
+     "ticker": "PINS"
+    }
+   ],
+   "event": "1Q26 실적 발표",
+   "event_date": "2026-05-04",
+   "published_kst": "2026-05-04T21:00:00+09:00",
+   "revised_kst": "2026-11-26T23:08:06+09:00",
+   "revision": 1,
+   "summary": "1Q26은 매출·조정 EBITDA가 모두 가이던스 상단을 넘었고, 대형 리테일러를 뺀 매출이 4Q25보다 빨라졌다. 다만 비교한 매출 가이던스는 4Q25 콜에서 tvScientific을 빼고 낸 값이다. 회사가 언급한 2월 중순 갱신 가이던스는 출처에 없다. EBITDA 상회에는 캐나다 디지털서비스세 환입이 섞였고, tvScientific 기여와 환입 모두 금액이 공개되지 않았다. 2Q 가이던스는 tvScientific을 한 분기 내내 반영하고도 고정환율 성장률이 1Q와 비슷해 재가속의 근거는 아직 없다. 자본 측면에서는 전환사채 $1B와 보유 현금으로 약 $2B의 자사주를 사 주식 수를 크게 줄였고, 그 대가로 순현금이 얇아졌다.",
+   "path": "reports/pinterest-1q26-earnings.json"
   },
   {
    "slug": "apple-2q26-earnings",
@@ -7808,6 +8132,24 @@
    "path": "reports/amazon-1q26-earnings.json"
   },
   {
+   "slug": "ch-robinson-1q26-earnings",
+   "type": "earnings",
+   "title": "C.H. Robinson 1Q26 실적발표 : 물량 내주고 마진 지켜, 자사주 매입 두 배",
+   "companies": [
+    {
+     "name": "C.H. Robinson",
+     "ticker": "CHRW"
+    }
+   ],
+   "event": "1Q26 실적 발표",
+   "event_date": "2026-04-29",
+   "published_kst": "2026-04-29T21:00:00+09:00",
+   "revised_kst": "2026-11-26T23:06:22+09:00",
+   "revision": 1,
+   "summary": "트럭 스팟 비용이 전년 대비 19% 오른 분기에 NAST 총마진 14.6%를 지켰고, 조정 EPS는 15% 늘었다. 대가로 트럭 물량이 3.5% 줄었다. 따로 자사주 매입을 두 배 넘게 늘리면서 순부채/EBITDA가 1.03배에서 1.32배로 올랐다. 연간 비용 가이던스는 하반기 생산성 개선에 크게 기대고 있어 이것이 남은 확인 과제다.",
+   "path": "reports/ch-robinson-1q26-earnings.json"
+  },
+  {
    "slug": "cognizant-1q26-earnings",
    "type": "earnings",
    "title": "Cognizant 1Q26 실적발표 : 수주 21% 급증, 감원 프로그램으로 마진 가이던스 상향",
@@ -7896,6 +8238,24 @@
    "revision": 1,
    "summary": "매출이 전년 대비 2.3배로 늘었고, 연간 매출 가이던스는 새 하단이 이전 상단을 넘는 수준으로 올라갔다. Oracle의 최대 2.45GW 단독 공급으로 ‘계통 없는 Bloom 단독 데이터센터 전원’이라는 주장이 대형 사례를 얻었다. 다만 수주잔고 수치가 빠졌고 제품 마진이 직전 분기보다 내려, 새 가이던스를 맞추려면 남은 세 분기에 34%대 매출총이익률이 필요하다.",
    "path": "reports/bloom-energy-1q26-earnings.json"
+  },
+  {
+   "slug": "spotify-1q26-earnings",
+   "type": "earnings",
+   "title": "Spotify 1Q26 실적발표 : AI·마케팅 비용 증가로 2Q 이익 후퇴, 광고 회복은 하반기로",
+   "companies": [
+    {
+     "name": "Spotify",
+     "ticker": "SPOT"
+    }
+   ],
+   "event": "1Q26 실적 발표",
+   "event_date": "2026-04-28",
+   "published_kst": "2026-04-28T21:00:00+09:00",
+   "revised_kst": "2026-11-26T23:07:20+09:00",
+   "revision": 1,
+   "summary": "1Q26은 MAU·가입자·매출총이익률이 가이던스를 맞추거나 넘었다. 다만 영업이익 초과분 EUR 55M 중 EUR 49M은 주가 연동 사회보장비용 효과였다. 2Q 영업이익 가이던스(EUR 630M)는 AI 연산·마케팅 비용 증가 때문에 1Q보다 낮다. 광고 매출 성장률은 4Q25 +4%에서 약 +3%로 둔화해, 회복 여부는 여전히 2H26 약속에 걸려 있다.",
+   "path": "reports/spotify-1q26-earnings.json"
   },
   {
    "slug": "celestica-1q26-earnings",
@@ -8130,6 +8490,24 @@
    "revision": 1,
    "summary": "1Q26 매출은 가이던스 안, 총마진은 상단인 53.0%였다. 회사는 2026년 매출 가이던스를 360억~400억 유로로 올리고, 비EUV 전망을 보합에서 성장으로 바꿨다. 다만 2분기 마진 가이던스는 51~52%로 내려가고, FCF는 −26억 유로로 돌아섰으며, 수주 금액은 공개하지 않았다. 숫자로 확인할 수 있는 것은 하반기에 가서야 나온다.",
    "path": "reports/asml-1q26-earnings.json"
+  },
+  {
+   "slug": "jpmorgan-1q26-earnings",
+   "type": "earnings",
+   "title": "JPMorgan Chase 1Q26 실적발표 : 시장·IB가 끌고, G-SIB 자본이 발목",
+   "companies": [
+    {
+     "name": "JPMorgan Chase",
+     "ticker": "JPM"
+    }
+   ],
+   "event": "1Q26 실적 발표",
+   "event_date": "2026-04-14",
+   "published_kst": "2026-04-14T21:00:00+09:00",
+   "revised_kst": "2026-11-26T23:08:50+09:00",
+   "revision": 1,
+   "summary": "시장·IB 수수료가 매출을 10% 끌어올려 EPS가 조회일 기준 컨센서스를 7.8% 웃돌았다. 연간 가이던스 숫자도 모두 유지됐다. 다만 바젤·G-SIB 재제안이 업계 평균과 달리 JPM의 자본 요구를 높이는 쪽으로 나왔다. 이 때문에 초과 자본을 성장에 배치하겠다는 논리와 Markets 대차대조표 확장에 구조적 제약이 생겼다.",
+   "path": "reports/jpmorgan-1q26-earnings.json"
   },
   {
    "slug": "tcs-4q26-earnings",
@@ -8456,6 +8834,24 @@
    "path": "reports/dell-4q26-earnings.json"
   },
   {
+   "slug": "duolingo-4q25-earnings",
+   "type": "earnings",
+   "title": "Duolingo 4Q25 실적발표 : 다시 이용자 성장, 2026년 이익은 정체 감수",
+   "companies": [
+    {
+     "name": "Duolingo",
+     "ticker": "DUOL"
+    }
+   ],
+   "event": "4Q25 실적 발표",
+   "event_date": "2026-02-26",
+   "published_kst": "2026-02-26T21:00:00+09:00",
+   "revised_kst": "2026-11-26T23:06:50+09:00",
+   "revision": 1,
+   "summary": "2025년에 DAU 5천만 명, bookings 10억 달러, 조정 EBITDA 3억 달러를 넘겼다. 하지만 DAU 성장 둔화가 2026년 초까지 이어지자 회사는 수익화 마찰을 덜고 AI 기능을 넓히는 쪽을 택했다. 그 대가로 bookings 성장률을 4Q25 약 24%에서 2026년 10~12%로 낮추고 조정 EBITDA 마진은 약 25%로 잡았다. 이 선택이 맞았는지는 2028년 DAU 1억 명 목표를 향해 DAU가 다시 빨라지는지로 판가름 나며, 이번 콜에서는 아직 그 증거가 나오지 않았다.",
+   "path": "reports/duolingo-4q25-earnings.json"
+  },
+  {
    "slug": "quanta-computer-4q25-earnings",
    "type": "earnings",
    "title": "Quanta Computer 4Q25 실적발표 : 매출 29% 급증 속 총이익률 하락, 원재료 재고 세 배",
@@ -8562,6 +8958,42 @@
    "revision": 1,
    "summary": "2025년 연결 매출 1조 888억 원(+30%), 영업이익 2,047억 원(+101%)으로 최대 실적이다. 이번 자료에서 새로 나온 것은 두 가지다. 10.5K㎡/월을 '27.1Q에 조기 확보하는 추가 투자 검토(기존 계획은 '28.4Q 12.5K)와 2026년 다중적층 매출 비중 31% 전망이다. 다만 4Q25만 떼어 보면 수주잔고 흐름상 별도 매출이 3분기보다 줄었을 가능성이 있고, EPS는 컨센서스를 18.5% 밑돌았다. 추가 투자는 아직 '검토' 단계다.",
    "path": "reports/isu-petasys-4q25-earnings.json"
+  },
+  {
+   "slug": "jpmorgan-investor-day-2026",
+   "type": "investor_day",
+   "title": "JPMorgan Chase 투자자의 날 2026 : 목표는 그대로, 예금 성장 눈높이만 낮췄다",
+   "companies": [
+    {
+     "name": "JPMorgan Chase",
+     "ticker": "JPM"
+    }
+   ],
+   "event": "투자자의 날 2026",
+   "event_date": "2026-02-23",
+   "published_kst": "2026-02-23T21:00:00+09:00",
+   "revised_kst": "2026-11-26T22:55:36+09:00",
+   "revision": 1,
+   "summary": "ROTCE 17%, NII ex-Markets 약 950억 달러, 조정 비용 약 1,050억 달러를 모두 그대로 두고 투자를 계속하겠다는 행사였다. 시장 NII 상향은 대부분 NIR 감소로 상쇄되고, 리테일 예금 성장 전망은 작년의 약 6%에서 한 자릿수 초중반으로 낮아졌다. 그래서 이익 경로를 바꿀 새 재료는 적다.",
+   "path": "reports/jpmorgan-investor-day-2026.json"
+  },
+  {
+   "slug": "klarna-4q25-earnings",
+   "type": "earnings",
+   "title": "Klarna 4Q25 실적발표 : 할부대출 급증이 이익을 뒤로 미뤘다, 은행 고객은 두 배",
+   "companies": [
+    {
+     "name": "Klarna",
+     "ticker": "KLAR"
+    }
+   ],
+   "event": "4Q25 실적 발표",
+   "event_date": "2026-02-19",
+   "published_kst": "2026-02-19T21:00:00+09:00",
+   "revised_kst": "2026-11-26T22:58:05+09:00",
+   "revision": 1,
+   "summary": "GMV와 매출은 가이던스를 넘었다. 그러나 Fair Financing(이자형 할부대출)이 예상보다 빨리 늘면서 충당금을 미리 쌓아야 했고, TMD는 가이던스에 못 미쳤다. 회사는 이를 이익이 뒤로 밀린 시점 효과로 설명하고 TMD 가속을 2026년 하반기로 약속했다. 같은 말이 다음 분기에 또 나오는지가 이 설명을 믿을 수 있는지를 가른다.",
+   "path": "reports/klarna-4q25-earnings.json"
   },
   {
    "slug": "quanta-services-4q25-earnings",
@@ -8726,6 +9158,24 @@
    "path": "reports/nhn-4q25-earnings.json"
   },
   {
+   "slug": "pinterest-4q25-earnings",
+   "type": "earnings",
+   "title": "Pinterest 4Q25 실적발표 : 대형 리테일러 광고 축소, 영업 조직 재편",
+   "companies": [
+    {
+     "name": "Pinterest",
+     "ticker": "PINS"
+    }
+   ],
+   "event": "4Q25 실적 발표",
+   "event_date": "2026-02-12",
+   "published_kst": "2026-02-12T21:00:00+09:00",
+   "revised_kst": "2026-11-26T22:53:51+09:00",
+   "revision": 1,
+   "summary": "사용자와 마진은 견조했지만 관세 압박을 받은 대형 리테일러가 광고비를 줄여 매출 성장이 둔화했다. 1Q26 가이던스는 환율 효과를 빼면 8~11% 성장이고, 회사는 영업 조직 재편과 GPU 투자 때문에 2026년 마진을 사실상 동결했다. 참여와 수익화 사이의 간극을 영업 실행으로 메울 수 있는지가 쟁점으로 남았다.",
+   "path": "reports/pinterest-4q25-earnings.json"
+  },
+  {
    "slug": "softbank-3q26-earnings",
    "type": "earnings",
    "title": "소프트뱅크그룹 3Q26 실적발표 : OpenAI 지분 11% 완납, LTV 20%대 진입",
@@ -8744,6 +9194,24 @@
    "path": "reports/softbank-3q26-earnings.json"
   },
   {
+   "slug": "applovin-4q25-earnings",
+   "type": "earnings",
+   "title": "AppLovin 4Q25 실적발표 : 마진 84%에서 1분기도 순성장, 셀프서비스 광고 개시",
+   "companies": [
+    {
+     "name": "AppLovin",
+     "ticker": "APP"
+    }
+   ],
+   "event": "4Q25 실적 발표",
+   "event_date": "2026-02-11",
+   "published_kst": "2026-02-11T21:00:00+09:00",
+   "revised_kst": "2026-11-26T22:47:03+09:00",
+   "revision": 1,
+   "summary": "4Q25 매출 $1.66B(+66%)와 조정 EBITDA 마진 84%로 성장과 수익성이 함께 정점을 갱신했고, 계절적 비수기인 1분기에도 전분기 대비 5~7% 성장을 가이드했다. 콜의 중심은 Meta·중개 스타트업·AI 위협에 대한 반박이었다. 전자상거래 기여도는 끝내 공개하지 않아, 두 번째 성장축은 아직 회사의 말로만 확인된다.",
+   "path": "reports/applovin-4q25-earnings.json"
+  },
+  {
    "slug": "cisco-2q26-earnings",
    "type": "earnings",
    "title": "Cisco 2Q26 실적발표 : AI 주문 급가속, 메모리 원가에 눌린 마진",
@@ -8760,6 +9228,42 @@
    "revision": 1,
    "summary": "매출·EPS·영업이익률이 모두 가이던스 상단을 넘었고, 하이퍼스케일러 AI 주문이 한 분기 만에 $1.3B에서 $2.1B로 뛰면서 FY26 AI 주문 전망이 $5B 초과로 올라갔다. 반면 메모리 가격 상승과 하드웨어 믹스 때문에 3Q 총마진 가이던스가 2Q보다 약 150bp 낮게 제시됐다. 수요는 확인됐고, 남은 질문은 마진 회복의 속도다.",
    "path": "reports/cisco-2q26-earnings.json"
+  },
+  {
+   "slug": "shopify-4q25-earnings",
+   "type": "earnings",
+   "title": "Shopify 4Q25 실적발표 : 20억 달러 자사주 매입, 에이전틱 커머스 레일 공개",
+   "companies": [
+    {
+     "name": "Shopify",
+     "ticker": "SHOP"
+    }
+   ],
+   "event": "4Q25 실적 발표",
+   "event_date": "2026-02-11",
+   "published_kst": "2026-02-11T21:00:00+09:00",
+   "revised_kst": "2026-11-26T22:52:49+09:00",
+   "revision": 1,
+   "summary": "연 매출 성장률이 26%에서 30%로 다시 빨라졌고 매출 대비 영업비용 비중은 3%p 낮아져 연 FCF 20억 달러를 냈다. 회사는 자사주 매입과 에이전틱 커머스 제품군으로 다음 단계를 선언했다. 다만 매출총이익 성장(+25%)이 매출 성장(+31%)에 못 미친다. 에이전틱 거래는 기존 결제 수익에 얹히는 구조라고만 했고, 증분 규모와 Agentic plan의 과금 방식은 답이 나오지 않았다.",
+   "path": "reports/shopify-4q25-earnings.json"
+  },
+  {
+   "slug": "unity-4q25-earnings",
+   "type": "earnings",
+   "title": "Unity Software 4Q25 실적발표 : Vector가 Grow를 끌기 시작, Create 2년여 만의 최고 성장",
+   "companies": [
+    {
+     "name": "Unity Software",
+     "ticker": "U"
+    }
+   ],
+   "event": "4Q25 실적 발표",
+   "event_date": "2026-02-11",
+   "published_kst": "2026-02-11T21:00:00+09:00",
+   "revised_kst": "2026-11-26T22:55:11+09:00",
+   "revision": 1,
+   "summary": "4Q25는 가이던스 상단을 넘었습니다. Vector가 3분기 연속 전분기 대비 10%대 중반 성장해 Grow 비중 56%가 됐고, 회사는 2026년 말 Vector 연 10억달러 이상 런레이트를 제시했습니다. 다만 1Q26 가이던스를 풀면 비Vector Grow와 Create가 전분기보다 크게 줄어드는 계절 저점이 함축돼 있고, 조정 EBITDA 마진(2025년 22%)과 SBC 비중(21%)이 거의 같아 GAAP 이익 체력은 아직 얇습니다.",
+   "path": "reports/unity-4q25-earnings.json"
   },
   {
    "slug": "vertiv-4q25-earnings",
@@ -8796,6 +9300,42 @@
    "revision": 1,
    "summary": "4Q25는 매출 +4.5%, 가동률 95.7%로 수요가 버텼지만 감가상각이 늘어 GM이 19.2%(−2.8pp)로 내려갔다. 회사는 2026년 감가상각이 약 30% 늘어난다고 예고했고, 1Q26 가이던스도 매출 보합·GM 18~20%다. 매출이 늘어도 이익률은 눌리는 해가 될 가능성이 크다.",
    "path": "reports/smic-4q25-earnings.json"
+  },
+  {
+   "slug": "spotify-4q25-earnings",
+   "type": "earnings",
+   "title": "Spotify 4Q25 실적발표 : 사상 최대 MAU 순증, 1Q 성장 15%로 가속",
+   "companies": [
+    {
+     "name": "Spotify",
+     "ticker": "SPOT"
+    }
+   ],
+   "event": "4Q25 실적 발표",
+   "event_date": "2026-02-10",
+   "published_kst": "2026-02-10T21:00:00+09:00",
+   "revised_kst": "2026-11-26T22:47:16+09:00",
+   "revision": 1,
+   "summary": "4Q25는 매출 +13%, 매출총이익률 33.1%로 모든 핵심 지표가 가이던스를 맞추거나 넘었고, MAU 순증 38M은 분기 사상 최대였다. 1Q26 매출 성장률 가이던스는 미국 가격 인상을 반영해 약 15%로 올라갔다. 다만 4Q 영업이익 초과분 81M 가운데 67M은 주가에 연동된 사회보장비용에서 나왔고, AI 위협론에 대한 경영진의 답은 수치 없이 정성적이었다.",
+   "path": "reports/spotify-4q25-earnings.json"
+  },
+  {
+   "slug": "upstart-4q25-earnings",
+   "type": "earnings",
+   "title": "Upstart 4Q25 실적발표 : 담보대출의 외부 자금화, 마진을 내주고 점유율",
+   "companies": [
+    {
+     "name": "Upstart",
+     "ticker": "UPST"
+    }
+   ],
+   "event": "4Q25 실적 발표",
+   "event_date": "2026-02-10",
+   "published_kst": "2026-02-10T21:00:00+09:00",
+   "revised_kst": "2026-11-26T22:45:48+09:00",
+   "revision": 1,
+   "summary": "2025년 연초 가이던스를 모든 항목에서 넘겼고, 자동차·HELOC가 빠르게 크는 와중에도 재무상태표 대출을 20% 줄여 신상품을 수수료 모델로 옮겼다. 대신 공헌이익률은 57%에서 53%로 내려왔고, 2026년 조정 EBITDA 마진 가이던스(약 21%)도 2025년(22%)보다 낮다. 회사는 이 하락을 의도한 선택이라고 설명했다. 같은 날 CEO 승계가 발표됐다.",
+   "path": "reports/upstart-4q25-earnings.json"
   },
   {
    "slug": "naver-4q25-earnings",
@@ -9176,6 +9716,24 @@
    "path": "reports/celestica-4q25-earnings.json"
   },
   {
+   "slug": "ch-robinson-4q25-earnings",
+   "type": "earnings",
+   "title": "C.H. Robinson 4Q25 실적발표 : 인원 13% 줄이며 마진 확대, 해운 운임이 AGP 끌어내려",
+   "companies": [
+    {
+     "name": "C.H. Robinson",
+     "ticker": "CHRW"
+    }
+   ],
+   "event": "4Q25 실적 발표",
+   "event_date": "2026-01-28",
+   "published_kst": "2026-01-28T21:00:00+09:00",
+   "revised_kst": "2026-11-26T22:44:22+09:00",
+   "revision": 1,
+   "summary": "시장 물동량이 7.6% 줄어든 분기에 트럭 물량을 늘리고 영업이익률(구조조정 제외)을 320bp 넓혔다. 다만 해운 운임 정상화로 전사 AGP는 약 4% 줄었다. 12월 스팟 운임 급등이 1월까지 이어지고 해운 압력도 1분기에 계속된다고 밝혔다. 2026년 EPS 목표 $6를 지킬 수단은 운임 회복이 아니라 하반기에 몰린 생산성 개선이다.",
+   "path": "reports/ch-robinson-4q25-earnings.json"
+  },
+  {
    "slug": "ge-vernova-4q25-earnings",
    "type": "earnings",
    "title": "GE Vernova 4Q25 실적발표 : 가스 계약 83GW·SRA 가격 10~20pt 상승, 해상풍력 정지로 Wind 손실 확대",
@@ -9356,6 +9914,24 @@
    "path": "reports/infosys-3q26-earnings.json"
   },
   {
+   "slug": "jpmorgan-4q25-earnings",
+   "type": "earnings",
+   "title": "JPMorgan Chase 4Q25 실적발표 : 비용은 투자 우선, 카드 금리 상한은 새 위험",
+   "companies": [
+    {
+     "name": "JPMorgan Chase",
+     "ticker": "JPM"
+    }
+   ],
+   "event": "4Q25 실적 발표",
+   "event_date": "2026-01-13",
+   "published_kst": "2026-01-13T21:00:00+09:00",
+   "revised_kst": "2026-11-26T22:46:11+09:00",
+   "revision": 1,
+   "summary": "4Q25는 애플카드 관련 충당금 22억 달러를 빼면 시장·자산관리 수수료가 받친 견조한 분기였다. 2026년 NII ex-Markets 약 950억 달러를 유지하면서 조정 비용을 약 1,050억 달러(약 9% 증가)로 제시해 수익률보다 투자를 앞세웠다. 신용카드 금리 상한과 스테이블코인 이자라는 정책 위험이 새 변수로 떠올랐다.",
+   "path": "reports/jpmorgan-4q25-earnings.json"
+  },
+  {
    "slug": "tcs-3q26-earnings",
    "type": "earnings",
    "title": "TCS 3Q26 실적발표 : AI 매출 연환산 18억 달러 첫 공개, 일회성 비용 빼고 마진 25.2% 방어",
@@ -9519,19 +10095,19 @@
   }
  ],
  "street": {
-  "updated_kst": "2026-11-26T20:21:20+09:00",
+  "updated_kst": "2026-11-26T23:37:17+09:00",
   "path": "street.json"
  },
  "calendar": {
-  "updated_kst": "2026-11-26T22:35:15+09:00",
+  "updated_kst": "2026-11-26T23:14:25+09:00",
   "path": "calendar.json"
  },
  "watch": {
-  "updated_kst": "2026-11-26T22:34:50+09:00",
+  "updated_kst": "2026-11-26T23:17:59+09:00",
   "path": "watch.json"
  },
  "market": {
-  "updated_kst": "2026-11-26T22:34:50+09:00",
+  "updated_kst": "2026-11-26T23:17:59+09:00",
   "path": "market.json"
  },
  "datasets": [

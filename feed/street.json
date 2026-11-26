@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated_kst": "2026-11-26T20:21:20+09:00",
+ "updated_kst": "2026-11-26T23:37:17+09:00",
  "window_days": 14,
  "items_days": 30,
  "index": {
@@ -8,13 +8,13 @@
    "value": 5,
    "label": "엇갈림",
    "orgs": 38,
-   "items": 150
+   "items": 149
   },
   "market": {
    "value": -8,
    "label": "엇갈림",
    "orgs": 29,
-   "items": 105
+   "items": 106
   },
   "by_group": [
    {
@@ -54,7 +54,7 @@
    },
    {
     "group": "투자 거장",
-    "ai_tech": -36,
+    "ai_tech": -37,
     "ai_tech_orgs": 10,
     "market": -54,
     "market_orgs": 8
@@ -107,8 +107,8 @@
     "week": "2026-11-23",
     "ai_tech": -2,
     "ai_tech_orgs": 21,
-    "market": -17,
-    "market_orgs": 17
+    "market": -19,
+    "market_orgs": 18
    }
   ],
   "args": {
@@ -153,7 +153,7 @@
    "optimism": [
     {
      "tag": "수요·채택",
-     "n": 47
+     "n": 46
     },
     {
      "tag": "투자 회수",
@@ -169,7 +169,7 @@
     },
     {
      "tag": "경쟁·해자",
-     "n": 19
+     "n": 18
     },
     {
      "tag": "자금 조달·신용",
@@ -321,6 +321,48 @@
     "basis": "headline_only",
     "tier": "light"
    }
+  },
+  {
+   "id": "chamath-chamath-palihapitiya-says-anthropic-s-valuation",
+   "group": "벤처캐피털",
+   "org": "Social Capital",
+   "person": "Chamath Palihapitiya",
+   "kind": "report",
+   "title": "Chamath Palihapitiya, 시장 위험이 커지는 가운데 \"향후 단기 Anthropic의 밸류에이션은 ANT 주식과 거의 무관\"... \"여전히 얼굴 앞에서 터질 수 있다\"",
+   "title_orig": "Chamath Palihapitiya Says Anthropic’s Valuation in Near-Term Has ‘Mostly Nothing to Do’ With ANT Stock as Market Risks Mount: ‘Things Could Still Rip in Your Face’",
+   "url": "https://www.tradingview.com/news/benzinga:fdca2e5b2094b:0-chamath-palihapitiya-says-anthropic-s-valuation-in-near-term-has-mostly-nothing-to-do-with-ant-stock-as-market-risks-mount-things-could-still-rip-in-your-face",
+   "outlet": "TradingView",
+   "published_kst": "2026-11-26T03:43:00+09:00",
+   "stance": {
+    "ai_tech": null,
+    "market": -1
+   },
+   "args": [
+    "금리·거시",
+    "밸류에이션"
+   ],
+   "summary": "Chamath Palihapitiya는 10년물 금리 상승, 끈적한 인플레이션, 해소되지 않은 전쟁 등 거시 여건이 주식에 나쁘다고 보며, 지금 시장에서 크게 매수 포지션을 잡기는 정당화하기 어렵다고 말했다. 향후 3~4개월 Anthropic의 가치는 Anthropic 자체와 거의 무관하게 움직일 것이며, 엔비디아가 사상 최고 분기에도 하락한 것이 그 예라고 했다. 지금은 위험을 줄일 때이고, 그 뒤 더 싸게 살 기회가 여러 곳에서 나올 것이라고 전망했다.",
+   "points": [
+    "시장을 공매도하기는 어려울 수도 있다. 상황이 여전히 얼굴 앞에서 터질 수 있기 때문이다. 하지만 지금 크게 매수 포지션(롱)을 잡는 것은 정당화하기 어렵다.",
+    "향후 3~4개월 동안 Anthropic의 밸류에이션은 Anthropic 자체와는 거의 아무 상관이 없다.",
+    "엔비디아처럼 막대한 돈을 버는 다른 기업들의 주가도 여전히 하락하고 있다. 엔비디아의 분기 실적에 대해 \"이런 분기는 이전에 본 적이 없는데도 주가는 내렸다\"고 말했다.",
+    "시장은 스스로 오르려고 애쓰는 것처럼 보이지만, 인플레이션은 끈적하고 전쟁을 포함한 외부 여건은 해소되지 않았다. 시장이 한동안 올랐기 때문에 투자자들은 전반적으로 불안해한다.",
+    "지금의 거래 균형은 위험을 더하는 것이 아니라 줄이는 쪽이다. 따라서 훨씬 더 싸게 살 수 있는 기회가 여러 곳에서 나타날 것으로 예상한다.",
+    "10년물 국채금리는 계속 오르고, 변동성은 다소 높으며, 인플레이션은 끈적하다. 이는 주식에 나쁜 요인이다.",
+    "연준 의장 케빈 워시에게는 금리를 내릴 여지가 크지 않다고 본다. 오히려 인상할 것이며, 이는 주식에 나쁘다.",
+    "상원과 의회에 새로운 실력자가 등장해 불확실성이 생기고 있으며, 이 역시 주식에 나쁘다."
+   ],
+   "evidence": [
+    {
+     "ko": "시장을 공매도하기는 어려울 수도 있다. 상황이 여전히 얼굴 앞에서 터질 수 있기 때문이다. 하지만 지금 크게 매수 포지션(롱)을 잡는 것은 정당화하기 어렵다.",
+     "orig": "it is “hard to justify how you get mega super long here,” even though investors may not be able to short the market because “things could still rip in your face.”"
+    }
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
   },
   {
    "id": "el-erian-here-s-why-allianz-s-mohamed-el-erian-thinks-for",
@@ -11359,39 +11401,6 @@
     "tier": "standard"
    },
    "note": "유튜브 자동 생성 자막(en) 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
-  },
-  {
-   "id": "a16z-databricks-the-future-of-the-firm",
-   "group": "벤처캐피털",
-   "org": "Andreessen Horowitz (a16z)",
-   "person": null,
-   "kind": "publication",
-   "title": "Databricks와 기업의 미래",
-   "title_orig": "Databricks & the Future of the Firm",
-   "url": "https://www.a16z.news/p/databricks-and-the-future-of-the",
-   "outlet": "a16z",
-   "published_kst": "2026-10-27T23:02:28+09:00",
-   "stance": {
-    "ai_tech": 1,
-    "market": null
-   },
-   "args": [
-    "수요·채택",
-    "경쟁·해자",
-    "투자 회수"
-   ],
-   "summary": "a16z는 에이전트 자동화와 직원 권한 확대가 기업의 일하는 방식을 바꾸며, 에이전트용 기록 시스템(SoR)을 갖춘 Databricks가 그 기반이 된다고 주장한다. 조정 비용이 줄어 소수 인력으로 더 많은 일을 하게 되고, 모델이 아닌 자사 데이터와 학습 루프가 지속 가능한 해자가 된다고 본다.",
-   "points": [
-    "Databricks에서는 에이전트가 사람보다 많은 쿼리를 내고 매일 1,700만 개가 넘는 데이터베이스를 만들어, 에이전트 수요가 이미 나타나고 있다.",
-    "Databricks는 연환산 매출 70억 달러, 전년 대비 80% 성장, 기업가치 1,900억 달러에 도달했다.",
-    "AI 모델은 모두가 빌려 쓸 수 있으므로, 새 모델이 기업 고유의 정의·권한·사례를 물려받는 구조가 경쟁우위의 기반이다.",
-    "조정 비용이 낮아져 기업은 같은 인원으로 더 많은 일을 하고, 이전에는 성립하지 않던 새 기업이 생길 것이라고 본다."
-   ],
-   "judged": {
-    "basis": "full_text",
-    "tier": "standard"
-   },
-   "note": "웹 페이지 본문 기준. 그림 10개 속 글자는 확인하지 못함"
   }
  ]
 }

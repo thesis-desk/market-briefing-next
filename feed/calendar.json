@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated_kst": "2026-11-26T22:35:15+09:00",
+ "updated_kst": "2026-11-26T23:14:25+09:00",
  "events": [
   {
    "company": "JPMorgan Chase",
@@ -12,8 +12,8 @@
    "official": false,
    "source_url": "https://stockanalysis.com/stocks/jpm/transcripts/364408-q4-2025/",
    "consensus_snapshot": false,
-   "report_slug": null,
-   "status": "queued",
+   "report_slug": "jpmorgan-4q25-earnings",
+   "status": "published",
    "note": "원문이 올라온 것을 보고 넣은 일정"
   },
   {
@@ -26,8 +26,8 @@
    "official": false,
    "source_url": "https://stockanalysis.com/stocks/chrw/transcripts/394407-q4-2025/",
    "consensus_snapshot": false,
-   "report_slug": null,
-   "status": "queued",
+   "report_slug": "ch-robinson-4q25-earnings",
+   "status": "published",
    "note": "원문이 올라온 것을 보고 넣은 일정"
   },
   {
@@ -40,8 +40,8 @@
    "official": false,
    "source_url": "https://stockanalysis.com/stocks/spot/transcripts/409802-q4-2025/",
    "consensus_snapshot": false,
-   "report_slug": null,
-   "status": "queued",
+   "report_slug": "spotify-4q25-earnings",
+   "status": "published",
    "note": "원문이 올라온 것을 보고 넣은 일정"
   },
   {
@@ -54,8 +54,8 @@
    "official": false,
    "source_url": "https://stockanalysis.com/stocks/upst/transcripts/396035-q4-2025/",
    "consensus_snapshot": false,
-   "report_slug": null,
-   "status": "queued",
+   "report_slug": "upstart-4q25-earnings",
+   "status": "published",
    "note": "원문이 올라온 것을 보고 넣은 일정"
   },
   {
@@ -68,8 +68,8 @@
    "official": false,
    "source_url": "https://stockanalysis.com/stocks/app/transcripts/397211-q4-2025/",
    "consensus_snapshot": false,
-   "report_slug": null,
-   "status": "queued",
+   "report_slug": "applovin-4q25-earnings",
+   "status": "published",
    "note": "원문이 올라온 것을 보고 넣은 일정"
   },
   {
@@ -82,8 +82,8 @@
    "official": false,
    "source_url": "https://stockanalysis.com/stocks/shop/transcripts/398721-q4-2025/",
    "consensus_snapshot": false,
-   "report_slug": null,
-   "status": "queued",
+   "report_slug": "shopify-4q25-earnings",
+   "status": "published",
    "note": "원문이 올라온 것을 보고 넣은 일정"
   },
   {
@@ -96,8 +96,8 @@
    "official": false,
    "source_url": "https://stockanalysis.com/stocks/u/transcripts/399989-q4-2025/",
    "consensus_snapshot": false,
-   "report_slug": null,
-   "status": "queued",
+   "report_slug": "unity-4q25-earnings",
+   "status": "published",
    "note": "원문이 올라온 것을 보고 넣은 일정"
   },
   {
@@ -110,8 +110,8 @@
    "official": false,
    "source_url": "https://stockanalysis.com/stocks/pins/transcripts/398957-q4-2025/",
    "consensus_snapshot": false,
-   "report_slug": null,
-   "status": "queued",
+   "report_slug": "pinterest-4q25-earnings",
+   "status": "published",
    "note": "원문이 올라온 것을 보고 넣은 일정"
   },
   {
@@ -124,8 +124,8 @@
    "official": false,
    "source_url": "https://stockanalysis.com/stocks/klar/transcripts/423472-q4-2025/",
    "consensus_snapshot": false,
-   "report_slug": null,
-   "status": "queued",
+   "report_slug": "klarna-4q25-earnings",
+   "status": "published",
    "note": "원문이 올라온 것을 보고 넣은 일정"
   },
   {
@@ -138,8 +138,8 @@
    "official": false,
    "source_url": "https://stockanalysis.com/stocks/jpm/transcripts/388313-investor-day-2026/",
    "consensus_snapshot": false,
-   "report_slug": null,
-   "status": "queued",
+   "report_slug": "jpmorgan-investor-day-2026",
+   "status": "published",
    "note": "원문이 올라온 것을 보고 넣은 일정"
   },
   {
@@ -152,8 +152,8 @@
    "official": false,
    "source_url": "https://stockanalysis.com/stocks/duol/transcripts/396588-q4-2025/",
    "consensus_snapshot": false,
-   "report_slug": null,
-   "status": "queued",
+   "report_slug": "duolingo-4q25-earnings",
+   "status": "published",
    "note": "원문이 올라온 것을 보고 넣은 일정"
   },
   {
@@ -166,8 +166,8 @@
    "official": false,
    "source_url": "https://stockanalysis.com/stocks/jpm/transcripts/415950-q1-2026/",
    "consensus_snapshot": false,
-   "report_slug": null,
-   "status": "queued",
+   "report_slug": "jpmorgan-1q26-earnings",
+   "status": "published",
    "note": "원문이 올라온 것을 보고 넣은 일정"
   },
   {
@@ -180,8 +180,8 @@
    "official": false,
    "source_url": "https://investors.spotify.com/news/news-details/2026/Spotify-Technology-S-A--Releases-Results-for-First-Quarter-2026/default.aspx",
    "consensus_snapshot": false,
-   "report_slug": null,
-   "status": "queued",
+   "report_slug": "spotify-1q26-earnings",
+   "status": "published",
    "note": "원문이 올라온 것을 보고 넣은 일정"
   },
   {
@@ -194,8 +194,8 @@
    "official": false,
    "source_url": "https://stockanalysis.com/stocks/chrw/transcripts/547937-q1-2026/",
    "consensus_snapshot": false,
-   "report_slug": null,
-   "status": "queued",
+   "report_slug": "ch-robinson-1q26-earnings",
+   "status": "published",
    "note": "원문이 올라온 것을 보고 넣은 일정"
   },
   {
@@ -208,8 +208,8 @@
    "official": false,
    "source_url": "https://stockanalysis.com/stocks/duol/transcripts/572318-q1-2026/",
    "consensus_snapshot": false,
-   "report_slug": null,
-   "status": "queued",
+   "report_slug": "duolingo-1q26-earnings",
+   "status": "published",
    "note": "원문이 올라온 것을 보고 넣은 일정"
   },
   {
@@ -222,8 +222,8 @@
    "official": false,
    "source_url": "https://investor.pinterestinc.com/files/doc_earnings/2026/q1/earnings-result/Q126-PressRelease.pdf",
    "consensus_snapshot": false,
-   "report_slug": null,
-   "status": "queued",
+   "report_slug": "pinterest-1q26-earnings",
+   "status": "published",
    "note": "원문이 올라온 것을 보고 넣은 일정"
   },
   {
@@ -236,8 +236,8 @@
    "official": false,
    "source_url": "https://stockanalysis.com/stocks/shop/transcripts/555081-q1-2026/",
    "consensus_snapshot": false,
-   "report_slug": null,
-   "status": "queued",
+   "report_slug": "shopify-1q26-earnings",
+   "status": "published",
    "note": "원문이 올라온 것을 보고 넣은 일정"
   },
   {
@@ -250,8 +250,8 @@
    "official": false,
    "source_url": "https://stockanalysis.com/stocks/upst/transcripts/554660-q1-2026/",
    "consensus_snapshot": false,
-   "report_slug": null,
-   "status": "queued",
+   "report_slug": "upstart-1q26-earnings",
+   "status": "published",
    "note": "원문이 올라온 것을 보고 넣은 일정"
   },
   {
@@ -264,8 +264,8 @@
    "official": false,
    "source_url": "https://investors.applovin.com/news/news-details/2026/AppLovin-Announces-First-Quarter-2026-Financial-Results/default.aspx",
    "consensus_snapshot": false,
-   "report_slug": null,
-   "status": "queued",
+   "report_slug": "applovin-1q26-earnings",
+   "status": "published",
    "note": "원문이 올라온 것을 보고 넣은 일정"
   },
   {
@@ -278,8 +278,8 @@
    "official": false,
    "source_url": "https://investors.unity.com/news/news-details/2026/Unity-Reports-First-Quarter-2026-Financial-Results/default.aspx",
    "consensus_snapshot": false,
-   "report_slug": null,
-   "status": "queued",
+   "report_slug": "unity-1q26-earnings",
+   "status": "published",
    "note": "원문이 올라온 것을 보고 넣은 일정"
   },
   {
@@ -292,8 +292,8 @@
    "official": false,
    "source_url": "https://stockanalysis.com/stocks/klar/transcripts/560262-q1-2026/",
    "consensus_snapshot": false,
-   "report_slug": null,
-   "status": "queued",
+   "report_slug": "klarna-1q26-earnings",
+   "status": "published",
    "note": "원문이 올라온 것을 보고 넣은 일정"
   },
   {
@@ -306,8 +306,8 @@
    "official": false,
    "source_url": "https://stockanalysis.com/stocks/spot/transcripts/665835-investor-day-2026/",
    "consensus_snapshot": false,
-   "report_slug": null,
-   "status": "queued",
+   "report_slug": "spotify-investor-day-2026",
+   "status": "published",
    "note": "원문이 올라온 것을 보고 넣은 일정"
   },
   {
@@ -320,8 +320,8 @@
    "official": false,
    "source_url": "https://stockanalysis.com/stocks/jpm/transcripts/649229-q2-2026/",
    "consensus_snapshot": false,
-   "report_slug": null,
-   "status": "queued",
+   "report_slug": "jpmorgan-2q26-earnings",
+   "status": "published",
    "note": "원문이 올라온 것을 보고 넣은 일정"
   },
   {
@@ -334,8 +334,8 @@
    "official": false,
    "source_url": "https://stockanalysis.com/stocks/chrw/transcripts/657352-q2-2026/",
    "consensus_snapshot": false,
-   "report_slug": null,
-   "status": "queued",
+   "report_slug": "ch-robinson-2q26-earnings",
+   "status": "published",
    "note": "원문이 올라온 것을 보고 넣은 일정"
   },
   {
@@ -502,8 +502,8 @@
    "official": false,
    "source_url": "https://investor.pinterestinc.com/files/doc_earnings/2026/q2/earnings-result/Q2-2026-Press-Release.pdf",
    "consensus_snapshot": false,
-   "report_slug": null,
-   "status": "queued",
+   "report_slug": "pinterest-2q26-earnings",
+   "status": "published",
    "note": "원문이 올라온 것을 보고 넣은 일정"
   },
   {
@@ -530,8 +530,8 @@
    "official": false,
    "source_url": "https://investors.spotify.com/news/news-details/2026/Spotify-Technology-S-A--Releases-Results-for-Second-Quarter-2026/default.aspx",
    "consensus_snapshot": false,
-   "report_slug": null,
-   "status": "queued",
+   "report_slug": "spotify-2q26-earnings",
+   "status": "published",
    "note": "원문이 올라온 것을 보고 넣은 일정"
   },
   {
@@ -544,8 +544,8 @@
    "official": false,
    "source_url": "https://stockanalysis.com/stocks/upst/transcripts/660981-q2-2026/",
    "consensus_snapshot": false,
-   "report_slug": null,
-   "status": "queued",
+   "report_slug": "upstart-2q26-earnings",
+   "status": "published",
    "note": "원문이 올라온 것을 보고 넣은 일정"
   },
   {
@@ -558,8 +558,8 @@
    "official": false,
    "source_url": "https://investors.applovin.com/news/news-details/2026/AppLovin-Announces-Second-Quarter-2026-Financial-Results/default.aspx",
    "consensus_snapshot": false,
-   "report_slug": null,
-   "status": "queued",
+   "report_slug": "applovin-2q26-earnings",
+   "status": "published",
    "note": "원문이 올라온 것을 보고 넣은 일정"
   },
   {
@@ -572,8 +572,8 @@
    "official": false,
    "source_url": "https://stockanalysis.com/stocks/duol/transcripts/660304-q2-2026/",
    "consensus_snapshot": false,
-   "report_slug": null,
-   "status": "queued",
+   "report_slug": "duolingo-2q26-earnings",
+   "status": "published",
    "note": "원문이 올라온 것을 보고 넣은 일정"
   },
   {
@@ -600,8 +600,8 @@
    "official": false,
    "source_url": "https://stockanalysis.com/stocks/shop/transcripts/660732-q2-2026/",
    "consensus_snapshot": false,
-   "report_slug": null,
-   "status": "queued",
+   "report_slug": "shopify-2q26-earnings",
+   "status": "published",
    "note": "원문이 올라온 것을 보고 넣은 일정"
   },
   {
@@ -642,8 +642,8 @@
    "official": false,
    "source_url": "https://investors.unity.com/news/news-details/2026/Unity-Reports-Second-Quarter-2026-Financial-Results/default.aspx",
    "consensus_snapshot": false,
-   "report_slug": null,
-   "status": "queued",
+   "report_slug": "unity-2q26-earnings",
+   "status": "published",
    "note": "원문이 올라온 것을 보고 넣은 일정"
   },
   {
@@ -782,8 +782,8 @@
    "official": false,
    "source_url": "https://stockanalysis.com/stocks/klar/transcripts/638858-q2-2026/",
    "consensus_snapshot": false,
-   "report_slug": null,
-   "status": "queued",
+   "report_slug": "klarna-2q26-earnings",
+   "status": "published",
    "note": "원문이 올라온 것을 보고 넣은 일정"
   },
   {

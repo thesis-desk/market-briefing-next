@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "month": "2026-11",
- "updated_kst": "2026-11-26T20:21:20+09:00",
+ "updated_kst": "2026-11-26T23:37:17+09:00",
  "items": [
   {
    "id": "boe-bank-of-england-sounds-alarm-on-opaque-ai-financ",
@@ -132,6 +132,48 @@
     "basis": "headline_only",
     "tier": "light"
    }
+  },
+  {
+   "id": "chamath-chamath-palihapitiya-says-anthropic-s-valuation",
+   "group": "벤처캐피털",
+   "org": "Social Capital",
+   "person": "Chamath Palihapitiya",
+   "kind": "report",
+   "title": "Chamath Palihapitiya, 시장 위험이 커지는 가운데 \"향후 단기 Anthropic의 밸류에이션은 ANT 주식과 거의 무관\"... \"여전히 얼굴 앞에서 터질 수 있다\"",
+   "title_orig": "Chamath Palihapitiya Says Anthropic’s Valuation in Near-Term Has ‘Mostly Nothing to Do’ With ANT Stock as Market Risks Mount: ‘Things Could Still Rip in Your Face’",
+   "url": "https://www.tradingview.com/news/benzinga:fdca2e5b2094b:0-chamath-palihapitiya-says-anthropic-s-valuation-in-near-term-has-mostly-nothing-to-do-with-ant-stock-as-market-risks-mount-things-could-still-rip-in-your-face",
+   "outlet": "TradingView",
+   "published_kst": "2026-11-26T03:43:00+09:00",
+   "stance": {
+    "ai_tech": null,
+    "market": -1
+   },
+   "args": [
+    "금리·거시",
+    "밸류에이션"
+   ],
+   "summary": "Chamath Palihapitiya는 10년물 금리 상승, 끈적한 인플레이션, 해소되지 않은 전쟁 등 거시 여건이 주식에 나쁘다고 보며, 지금 시장에서 크게 매수 포지션을 잡기는 정당화하기 어렵다고 말했다. 향후 3~4개월 Anthropic의 가치는 Anthropic 자체와 거의 무관하게 움직일 것이며, 엔비디아가 사상 최고 분기에도 하락한 것이 그 예라고 했다. 지금은 위험을 줄일 때이고, 그 뒤 더 싸게 살 기회가 여러 곳에서 나올 것이라고 전망했다.",
+   "points": [
+    "시장을 공매도하기는 어려울 수도 있다. 상황이 여전히 얼굴 앞에서 터질 수 있기 때문이다. 하지만 지금 크게 매수 포지션(롱)을 잡는 것은 정당화하기 어렵다.",
+    "향후 3~4개월 동안 Anthropic의 밸류에이션은 Anthropic 자체와는 거의 아무 상관이 없다.",
+    "엔비디아처럼 막대한 돈을 버는 다른 기업들의 주가도 여전히 하락하고 있다. 엔비디아의 분기 실적에 대해 \"이런 분기는 이전에 본 적이 없는데도 주가는 내렸다\"고 말했다.",
+    "시장은 스스로 오르려고 애쓰는 것처럼 보이지만, 인플레이션은 끈적하고 전쟁을 포함한 외부 여건은 해소되지 않았다. 시장이 한동안 올랐기 때문에 투자자들은 전반적으로 불안해한다.",
+    "지금의 거래 균형은 위험을 더하는 것이 아니라 줄이는 쪽이다. 따라서 훨씬 더 싸게 살 수 있는 기회가 여러 곳에서 나타날 것으로 예상한다.",
+    "10년물 국채금리는 계속 오르고, 변동성은 다소 높으며, 인플레이션은 끈적하다. 이는 주식에 나쁜 요인이다.",
+    "연준 의장 케빈 워시에게는 금리를 내릴 여지가 크지 않다고 본다. 오히려 인상할 것이며, 이는 주식에 나쁘다.",
+    "상원과 의회에 새로운 실력자가 등장해 불확실성이 생기고 있으며, 이 역시 주식에 나쁘다."
+   ],
+   "evidence": [
+    {
+     "ko": "시장을 공매도하기는 어려울 수도 있다. 상황이 여전히 얼굴 앞에서 터질 수 있기 때문이다. 하지만 지금 크게 매수 포지션(롱)을 잡는 것은 정당화하기 어렵다.",
+     "orig": "it is “hard to justify how you get mega super long here,” even though investors may not be able to short the market because “things could still rip in your face.”"
+    }
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
   },
   {
    "id": "el-erian-here-s-why-allianz-s-mohamed-el-erian-thinks-for",
