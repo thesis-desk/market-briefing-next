@@ -1,7 +1,27 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-26T14:22:07+09:00",
+ "generated_kst": "2026-11-26T17:40:42+09:00",
  "reports": [
+  {
+   "slug": "together-distilling-kimi-into-qwen",
+   "type": "article",
+   "title": "Together AI : 큰 모델이 잘하는 좁은 과제는 260달러로 작은 모델에 증류할 수 있다",
+   "companies": [
+    {
+     "name": "Together AI",
+     "ticker": null
+    },
+    {
+     "name": "Moonshot AI",
+     "ticker": null
+    }
+   ],
+   "published_kst": "2026-11-26T17:18:41+09:00",
+   "revised_kst": "2026-11-26T17:18:41+09:00",
+   "revision": 1,
+   "summary": "Qwen3.8-27B의 라오어 실패는 번역 능력이 없어서가 아니라 엉뚱한 언어로 답하는 습관 때문이었고, Kimi 번역 약 3,800건으로 LoRA를 학습하자 교사 점수의 93%까지 올라왔다. 운영 관점의 핵심 교훈은 이웃 능력의 회귀를 막는 데이터 혼합이다. 다만 이 사례는 증류가 가장 싸게 먹히는 조건이고, 학생 모델의 서빙 단가는 글에 없다. 자사 사후학습 상품 홍보 글이라는 점도 감안해야 한다.",
+   "path": "reports/together-distilling-kimi-into-qwen.json"
+  },
   {
    "slug": "sixsigma-sm9q5q2kk2w",
    "type": "article",
@@ -9491,11 +9511,11 @@
   "path": "calendar.json"
  },
  "watch": {
-  "updated_kst": "2026-11-26T09:05:43+09:00",
+  "updated_kst": "2026-11-26T17:40:42+09:00",
   "path": "watch.json"
  },
  "market": {
-  "updated_kst": "2026-11-26T09:05:43+09:00",
+  "updated_kst": "2026-11-26T17:40:42+09:00",
   "path": "market.json"
  },
  "datasets": [
