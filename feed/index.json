@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-28T05:16:29+09:00",
+ "generated_kst": "2026-11-28T08:33:22+09:00",
  "reports": [
   {
    "slug": "semianalysis-trainium3-inferencex",
@@ -10521,15 +10521,15 @@
   "path": "calendar.json"
  },
  "watch": {
-  "updated_kst": "2026-11-27T20:29:34+09:00",
+  "updated_kst": "2026-11-28T08:33:22+09:00",
   "path": "watch.json"
  },
  "market": {
-  "updated_kst": "2026-11-27T20:29:34+09:00",
+  "updated_kst": "2026-11-28T08:33:22+09:00",
   "path": "market.json"
  },
  "prices": {
-  "updated_kst": "2026-11-27T17:31:13+09:00",
+  "updated_kst": "2026-11-28T08:29:15+09:00",
   "path": "prices.json"
  },
  "datasets": [
