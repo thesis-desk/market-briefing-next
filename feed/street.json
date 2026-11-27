@@ -14,7 +14,7 @@
    "value": -8,
    "label": "엇갈림",
    "orgs": 29,
-   "items": 109
+   "items": 107
   },
   "by_group": [
    {
@@ -42,7 +42,7 @@
     "group": "투자은행",
     "ai_tech": 23,
     "ai_tech_orgs": 7,
-    "market": 27,
+    "market": 26,
     "market_orgs": 7
    },
    {
@@ -56,7 +56,7 @@
     "group": "투자 거장",
     "ai_tech": -37,
     "ai_tech_orgs": 10,
-    "market": -54,
+    "market": -53,
     "market_orgs": 8
    },
    {
@@ -11393,44 +11393,6 @@
     "최근 실적은 AI가 이익 성장의 핵심 동력으로 남으리라는 견해와 부합하며, 곧 나올 빅테크 실적이 AI 수요의 지속성과 수익화를 확인해 줄 것이다.",
     "연준이 소폭 긴축하는 동안에도 S&P 500은 6~12개월 계속 오를 것으로 본다.",
     "한국 증시는 메모리·AI 구조적 수요가 받치지만 향후 공급 확대와 변동성 때문에 중립 입장을 유지한다."
-   ],
-   "judged": {
-    "basis": "full_text",
-    "tier": "standard"
-   },
-   "note": "팟캐스트 음성을 음성 인식(Whisper)으로 받아 적은 전사 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
-  },
-  {
-   "id": "ubs-ubs-on-air-paul-donovan-daily-audio-the-fed-mime",
-   "group": "투자은행",
-   "org": "UBS",
-   "person": "Paul Donovan",
-   "kind": "publication",
-   "title": "UBS 온에어: 폴 도노번 데일리 오디오 '연준 – 흉내 대 밈'",
-   "title_orig": "UBS On-Air: Paul Donovan Daily Audio 'The Fed – mime versus meme'",
-   "url": "https://www.ubs.com/content/dam/podcasts/wma/261028-the-fed-mime-versus-meme.mp3",
-   "outlet": "UBS Paul Donovan Daily",
-   "published_kst": "2026-10-28T18:19:38+09:00",
-   "stance": {
-    "ai_tech": null,
-    "market": 0
-   },
-   "args": [
-    "금리·거시",
-    "정책·지정학"
-   ],
-   "summary": "연준이 통제할 수 없는 공급 충격발 일시적 인플레이션에 대응해 금리를 중립 범위 상단까지 올리는 것은 성장 전망을 해치지 않는 상징적 조치라고 본다. 다만 연준이 중립금리를 잘못 판단할 위험과, 시장이 매파적 기조를 유가 충격에 대한 긴축 대응으로 읽을 위험을 함께 짚는다. 중동 전쟁 재개 가능성 등 지정학 위험도 언급한다.",
-   "points": [
-    "현재 인플레이션은 연준이 통제할 수 없는 공급 충격에서 비롯된 일시적 현상으로, 정책 효과가 나오기 전에 사그라든다고 본다.",
-    "연준이 금리를 중립 범위 상단까지만 올리므로 성장 전망은 영향받지 않아야 한다고 본다.",
-    "연준이 중립금리를 잘못 판단하거나, 시장이 매파적 기조를 유가 충격 속 긴축으로 해석하는 것이 두 가지 위험이다.",
-    "금리 인상을 월시 연준의 '밈이 아닌 흉내'에 비유하며, 무언가 하고 있다는 신호를 주고 인플레이션 하락의 공을 챙기게 해 주는 수행적 행위로 본다."
-   ],
-   "evidence": [
-    {
-     "ko": "금리 인상을 월시 연준의 '밈이 아닌 흉내'에 비유하며, 무언가 하고 있다는 신호를 주고 인플레이션 하락의 공을 챙기게 해 주는 수행적 행위로 본다.",
-     "orig": "gesture rate rises, a form of performative art, and in the case of the Walsh Fed, a mime rather than a meme."
-    }
    ],
    "judged": {
     "basis": "full_text",

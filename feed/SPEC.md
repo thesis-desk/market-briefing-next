@@ -18,7 +18,7 @@
 | `health.json` | 수집 상태와 놓친 것(`missed`) |
 | `watch.json` | 첫 화면의 감시 대상(AI 설비투자 사이클을 보는 네 갈래의 상태와 그림의 값) |
 | `market.json` | 시장 탭(추세 신호·거시 지표·우선주 괴리율·종목 표) |
-| `prices.json` | 가격 탭의 GPU 임대가격(채널 기준가·제공자별 값·실거래 지수·계약 기간별 가격) |
+| `prices.json` | 가격 탭의 GPU 임대가격(채널 기준가·제공자별 값·실거래 지수·계약 기간별 가격)과 메모리 가격·재고 |
 | `data/<id>/` | 조사 자료 묶음. 한 질문을 두고 손으로 모은 기록(화면 없음) |
 | `SPEC.md` | 이 문서 |
 | `QUESTIONS.md` | 판단하기 어려웠던 것 |
@@ -34,7 +34,7 @@
 - 필드 이름은 바꾸지 않는다. 바꿔야 하면 `schema` 번호를 올리고 이 문서의 변경 이력에 적는다. 값의 종류(예: 출처 `kind`)는 늘어날 수 있다.
 - 유료 출처(`access: "paid"`)는 화면과 똑같이 본문을 싣지 않는다. 짧은 인용과 이 사이트의 문장으로 쓴 사실·해석만 나간다. 화면에 없는 것을 feed 에 더 넣지 않는다.
 - 이미지·영상은 파일로 넣지 않는다. 원본 주소와 시각(초, `t`)만 넣는다.
-- 게시 전에 화면의 리포트 수·금융권 항목 수가 feed 의 수와 같은지, 첫 화면 감시 대상의 항목·상태가 `watch.json` 과 같은지, 시장 탭의 지수·신호·지표·종목이 `market.json` 과 같은지, 가격 탭의 채널 기준가·제공자 칸·실거래 지수·계약 기간별 칸이 `prices.json` 과 같은지 검사한다. 다르면 게시하지 않는다.
+- 게시 전에 화면의 리포트 수·금융권 항목 수가 feed 의 수와 같은지, 첫 화면 감시 대상의 항목·상태가 `watch.json` 과 같은지, 시장 탭의 지수·신호·지표·종목이 `market.json` 과 같은지, 가격 탭의 GPU 줄(채널 기준가·제공자 칸·실거래 지수·계약 기간별 칸)과 메모리 줄(지수·수출·현물가·회사 재고·월매출)이 `prices.json` 과 같은지 검사한다. 다르면 게시하지 않는다.
 
 ## index.json
 
@@ -273,6 +273,7 @@
 - `financing`
   - `spreads` 는 미국 IG·HY 스프레드다. `value` 는 `unit`(%p), `m1_bp`·`m3_bp` 는 한 달·석 달 변화(bp), `weekly` 는 최근 1년의 주간 값(마지막이 `date`), `pos` 는 52주 범위(`range_52w`) 안의 자리(%)다.
   - `ai_spreads` 는 AI 발행사의 회사채 스프레드로, 발행사마다 채권 하나다. 채권의 독일 거래소 종가로 계산한 만기수익률(`ytm`, %)에서 남은 만기가 같은 미국 국채 수익률을 뺀 값이다. `value` 는 %p 이고 화면은 ×100 해 bp 로 보인다. `url` 은 종가를 받은 곳이다. `reference: true` 인 줄은 표에만 보이는 참고 값이라 `widen_bp` 가 없고 `signal.state` 가 `none` 이며 항목의 `signals`·상태·머리줄의 집계에 들지 않는다. `note` 는 참고로만 두는 까닭이다(일반 회사채가 없어 전환사채로 계산한 발행사).
+  - `cds` 는 AI 발행사의 5년 CDS 로, 참고 값이다: 항목의 `signals`·상태·머리줄의 집계에 들지 않고 문턱값이 없다. 공개 체결 보고에서 계산한 값이고(`market.json` 의 같은 `id` 지표, 계산 방법은 그 절) 유료 호가와 대조하지 않았다. `value` 는 %p 이고 화면은 ×100 해 bp 로 보인다. `trades` 는 `date` 에 쓴 체결 수, `estimated: true` 는 그날 스프레드가 적힌 체결이 없어 선취금에서 되돌린 값이다. `average: true` 는 여러 회사의 부채 가중 평균이다(`trades`·`estimated` 없음). `weekly` 는 기록이 시작된 주부터라 줄마다 길이가 다르다.
   - `fcf` 는 분기 잉여현금흐름이다. `debt` 는 부채 잔액이고, 화면처럼 첫 분기(`start`)와 가장 최근 분기(`end`)만 나간다.
 - `demand`
   - `clouds[].growth` 는 클라우드 사업의 전년 대비 매출 성장률(%)이다. `label` 은 사업 이름이다(마이크로소프트는 Azure 금액을 밝히지 않아 Microsoft Cloud).
@@ -358,7 +359,7 @@
 
 ## prices.json
 
-가격 탭(`prices/`)의 GPU 임대가격을 낸다. 값은 `content/market/prices.json` 의 기록 그대로이고 계산은 Python 이 한다(`docs/areas/prices.md`). 사이트가 내는 계산은 화면과 같은 하나(`traded.items[].vs_neocloud_pct`)뿐이다. 메모리 가격·재고는 아직 넣지 않았다. 기록이 없으면 `gpu` 가 `null` 이다.
+가격 탭(`prices/`)의 GPU 임대가격(`gpu`)과 메모리 가격·재고(`memory`)를 낸다. 값은 `content/market/prices.json` 의 기록 그대로이고 계산은 Python 이 한다(`docs/areas/prices.md`). 사이트가 내는 계산은 화면과 같은 하나(`traded.items[].vs_neocloud_pct`)뿐이다. 기록이 없으면 `gpu`·`memory` 가 `null` 이다. `memory` 의 꼴은 아래에 따로 적었다.
 
 ```json
 {
@@ -403,6 +404,52 @@
 - `external` 은 Silicon Data 의 지수다. 원천의 약관이 값의 재게시를 막아 **값이 없다**(`values: "shape"`). `shape` 는 그림의 세로 자리(0~1)일 뿐이고 가격도 변화율도 되살릴 수 없다. 값이 없는 날은 `null`.
 - `traded` 는 Ornn Compute Price Index 다(가격표가 아니라 네오클라우드에서 체결된 거래의 가격). 원천의 약관이 일별 값의 재게시를 막아 최신 정산값만 싣는다. `value` 를 쓸 때는 `index`·`settled`·`url` 을 함께 적어 인용한다. `shape` 는 `external` 과 같은 뜻이다(값 아님). `vs_neocloud_pct` 는 `value` ÷ 그 모델의 네오클라우드 정가 기준가 − 1 이다.
 - `terms` 는 GetDeploying 의 주간 자료다(CC BY 4.0 — 쓸 때 `source` 의 이름과 라이선스를 밝힌다). 제공자들이 가격표에 내건 값이고 체결가가 아니다. `term`: `on_demand` | `spot` | `r<개월 수>`(예약). `value` 는 제공자마다 한 값으로 줄인 뒤의 중앙값이고, 값을 바꾼 곳이 없어도 제공자가 들어오거나 빠지면 움직인다. 제공자가 `min_providers` 보다 적은 칸은 `thin: true` 이고 `delta`·`vs_on_demand_pct` 가 `null`, `weekly` 가 없다. `terms.models` 에는 `gpu.models` 에 없는 GPU(GB200·GB300)가 있다. 끝나지 않은 주(`week`)의 값은 바뀔 수 있다.
+
+### `memory` — 메모리 가격·재고
+
+가격 탭의 메모리 구획을 화면 순서대로 낸다. 구획의 기록이 없으면 그 키가 `null` 이다(`companies` 는 빈 목록). 디램·낸드 수요 추정(손으로 넣는 데스크 추정)은 넣지 않는다.
+
+```json
+"memory": {
+ "index": {"month": "2026-10", "items": [{"id": "dram", "label": "D램", "unit": "2020=100", "basis": "달러 기준", "source": {…}, "value": 309.97, "month": "2026-10",
+            "delta": {"m1": 0, "m3": 0, "m6": 0, "y1": 0}, "range": {"low": {"value": 0, "month": "…"}, "high": {…}}, "monthly": [["2016-11", 100.2]]}]},
+ "exports": {"month": "2026-10", "items": [{"id": "dram", "label": "D램", "hs": "8542321010", "source": {…}, "month": "2026-10", "usd": 0, "kg": 0, "unit_value": 0,
+            "delta": {"usd": {"m1": 0, …}, "kg": {…}, "unit_value": {…}}, "monthly": [["2016-11", 0, 0]]}]},
+ "tenday": {"source": {…}, "items": [{"id": "memory", "label": "메모리 합계"}], "labels": {"period": {"d10": "1~10일", "d20": "1~20일", "full": "월 전체"}},
+            "latest": {"month": "2026-11", "period": "d20", "through": "2026-11-20"},
+            "periods": [{"month": "…", "period": "d10", "through": "…", "published": "…", "url": "…",
+                         "values": {"memory": {"usd": 0, "unit_value": 0, "yoy": {"usd": 0, "unit_value": 0}, "mom": {…}}}}]},
+ "spot": {"date": "2026-11-26", "items": [{"id": "ddr5-16gb-spot", "label": "DDR5 16Gb 현물", "kind": "spot", "source": {…}, "value": 0, "date": "…", "since": "…",
+           "delta": {"d1": 0, "w1": 0, "m1": 0, "m3": 0, "ytd": 0}, "range_52w": {"low": 0, "high": 0}, "weekly": [0, …]}]},
+ "inventory": {"label": "반도체 제조업", "industry": "C261", "unit": "2020=100", "source": {…}, "month": "2026-09",
+               "latest": {"production": 0, "shipment": 0, "inventory": 0, "production_sa": 0, "shipment_sa": 0, "inventory_sa": 0,
+                          "yoy": {…}, "mom_sa": {…}, "ratio": 54.3, "ratio_prev_year": 0, "gap": -15.2},
+               "gap_range": {"low": {…}, "high": {…}}, "monthly": [["2016-10", 6.4, 21.6, 10.3, -15.2, 54.3]]},
+ "census": {"label": "메모리용 전자집적회로 제조업", "industry": "C26111", "unit": "KRW", "source": {…}, "products": [{"id": "dram", "label": "D램"}], "year": 2024,
+            "years": [{"year": 2024, "total": 0, "finished": 0, "wip": 0, "materials": 0, "finished_yoy_pct": 0, "products": {"dram": 0}}]},
+ "companies": [{"id": "micron", "name": "마이크론", "currency": "USD", "note": "…", "source": {…}, "end": "2026-09-03",
+                "inventory": 0, "days": 0, "finished": 0, "wip": 0, "finished_days": 0, "delta": {"inventory_q1": 0, "days_q1": 0, "finished_days_q1": 0, …},
+                "quarters": [{"start": "…", "end": "…", "inventory": 0, "cogs": 0, "days": 0, "finished": 0, "wip": 0, "finished_days": 0}]}],
+ "revenue": {"source": {…}, "unit": "천 대만달러", "month": "2026-10",
+             "items": [{"id": "nanya", "name": "난야", "code": "2408", "market": "sii", "group": "제조", "month": "…", "revenue": 0,
+                        "mom_pct": 0, "yoy_pct": 0, "yoy_3m_pct": 0, "remark": "…", "remark_ko": "…", "monthly": [["2023-11", 0]]}]},
+ "weeks": {"source": {…}, "labels": {"product": {"dram": "D램"}, "holder": {"supplier": "공급사"}}, "date": "…", "latest": ["<기록 id>"],
+           "records": [{"id": "…", "date": "…", "url": "…", "copies": 2, "product": "dram", "holder": "supplier", "low": 2, "high": 3, "unit": "week",
+                        "normal_low": null, "normal_high": null, "period": "3Q26", "phase": "end", "outlook": false, "attributed_to": ["…"], "quote": "…",
+                        "weeks_low": 2, "weeks_high": 3}]}
+}
+```
+
+- 무엇이 무엇인가: 지수·수출액·중량·현물가·고정거래가·월간 시세·재고 금액·매출은 원천이 준 사실이다. 변화율(`delta`·`_pct`)·kg 당 단가(`unit_value`)·재고율(`ratio`)·재고 순환(`gap`)·재고일수(`days`·`finished_days`)는 그 값으로 낸 계산이다. `tenday` 의 `yoy`·`mom` 과 `revenue` 의 `remark` 는 원천이 낸 값·글 그대로이고, `remark_ko` 는 그 번역(AI)이다. `weeks.records` 는 텔레그램 글의 문장을 옮긴 원문이고 원천마다 재고를 세는 범위가 달라 서로 바로 견주지 않는다.
+- 달마다의 목록은 오래된 달부터다. `index.items[].monthly` 는 `[달, 지수]`, `exports.items[].monthly` 는 `[달, 수출액(달러), 순중량(kg)]`, `inventory.monthly` 는 `[달, 출하 증가율, 재고 증가율, 생산 증가율, 재고 순환, 재고율]`(전년 동월 대비 %, 재고 순환 = 출하 − 재고 증가율), `revenue.items[].monthly` 는 `[달, 매출]` 이다. 받지 못한 달의 값은 `null`.
+- `index` 는 한국은행 수출물가지수(달러 기준, 2020=100), `exports` 는 관세청 품목별 수출입실적이다. `unit_value` 는 수출액 ÷ 순중량(kg 당 달러)이라 제품 구성이 바뀌어도 움직인다.
+- `tenday` 는 수출 10일 잠정치다. `period`: `d10`(1~10일) | `d20`(1~20일) | `full`(월 전체). 값은 그 기간까지의 누적이고 `values` 의 키가 `items[].id` 다. 글이 없던 기간은 빠져 있다.
+- `spot.items[].kind`: `spot` 현물가 | `contract` 고정거래가 | `monthly` 월간 시세. 값은 달러이고 `date` 는 원천 표에 적힌 갱신일이다. 달마다 나오는 값은 `delta.w1` 이 `null` 이다.
+- `inventory` 는 국가데이터처 광업제조업동향조사의 반도체 제조업 지수다(메모리만 뗀 월간 통계는 없다). 재고는 생산자가 가진 완제품만 센다.
+- `census` 는 국내 메모리 연말 재고액(연간, 원)이다. `years[].products` 의 키가 `products[].id` 이고 품목 표가 없는 해는 빈 객체다.
+- `companies` 는 회사 공시의 분기 말 재고다. 금액은 `currency` 단위 그대로이고, `finished`·`wip`(완제품·재공품)는 공시에 구성이 없으면 `null` 이다. `delta` 의 `_q1`·`_y1` 은 전 분기·1년 전 대비(금액은 %, 일수는 일)다.
+- `revenue` 는 대만 메모리 회사의 월매출 공시다(`unit` 단위). `yoy_3m_pct` 는 최근 석 달 합의 전년 대비다.
+- `weeks.latest` 는 보유자·품목마다 가장 최근의 '지금 수준' 기록 id 다. `low`·`high` 는 글에 적힌 값(`unit`: `week` | `day`), `weeks_low`·`weeks_high` 는 주로 맞춘 값, `outlook: true` 는 목표·전망이다. `copies` 는 같은 값을 옮긴 글의 수다.
 
 ## data/<id>/ — 조사 자료 묶음
 
@@ -570,4 +617,5 @@
 
 바뀐 것
 
-- `prices.json` 을 더했다. 가격 탭의 GPU 임대가격(모델 × 채널 기준가와 추이, 제공자별 값, 지역별 값, 묶음 지수, Silicon Data 지수의 모양, Ornn 실거래 지수의 최신 정산값과 모양, GetDeploying 의 계약 기간별 주간 가격)을 기록 그대로 낸다. `index.json` 에 `prices` 를 더했다(기존 키는 그대로). 메모리 가격·재고는 아직 없다.
+- `prices.json` 을 더했다. 가격 탭의 GPU 임대가격(모델 × 채널 기준가와 추이, 제공자별 값, 지역별 값, 묶음 지수, Silicon Data 지수의 모양, Ornn 실거래 지수의 최신 정산값과 모양, GetDeploying 의 계약 기간별 주간 가격)을 기록 그대로 낸다. `index.json` 에 `prices` 를 더했다(기존 키는 그대로).
+- `prices.json` 에 `memory` 를 더했다(기존 키는 그대로). 가격 탭의 메모리 구획 — 수출물가지수, 수출, 10일 잠정치, 현물가·고정거래가·월간 시세, 반도체 재고지수, 국내 메모리 연말 재고액, 회사 분기 재고, 대만 메모리 회사 월매출, 재고 주수 — 을 낸다. 디램·낸드 수요 추정은 넣지 않았다.
