@@ -1,8 +1,75 @@
 {
  "schema": 1,
  "month": "2026-11",
- "updated_kst": "2026-11-27T20:18:05+09:00",
+ "updated_kst": "2026-11-27T23:17:25+09:00",
  "items": [
+  {
+   "id": "ubs-house-view-daily-why-put-cash-to-work-amid-volat",
+   "group": "투자은행",
+   "org": "UBS",
+   "person": "Aaron Kreischer",
+   "kind": "publication",
+   "title": "House View Daily | 변동성 속에서 왜 현금을 투자에 투입해야 하는가",
+   "title_orig": "House View Daily | Why put cash to work amid volatility",
+   "url": "https://www.ubs.com/content/dam/podcasts/wma/on-air/in-the-now/20261127_HV_Daily.mp3",
+   "outlet": "UBS House View Daily",
+   "published_kst": "2026-11-27T21:50:57+09:00",
+   "stance": {
+    "ai_tech": 0,
+    "market": 1
+   },
+   "args": [
+    "투자 회수",
+    "금리·거시",
+    "정책·지정학"
+   ],
+   "summary": "UBS CIO는 AI 설비투자의 지속 가능성과 투자 수익, 미국 경제, 연준 경로에 대한 우려로 변동성이 커졌다고 짚으면서도, 변동성 국면에서 잉여 현금을 놀리는 비용이 크다고 본다. 잉여 현금을 우량 채권과 주식에 투입하길 권하며 채권은 매력적, 주식은 유로존 확대를 선호한다. ECB는 12월 25bp 인상을 예상한다.",
+   "points": [
+    "AI 설비투자의 지속 가능성과 투자 수익에 대한 평가가 최근 2주간 변동성 급등의 원인 중 하나다.",
+    "과도한 현금 보유는 장기 수익률을 깎으므로 단기 지출 자금과 장기 자금을 나눠 잉여 유동성을 투입해야 한다.",
+    "S&P 500이 상승장에서 10% 넘게 조정받은 뒤에는 평균적으로 이후 1년 19%, 2년 28%의 수익이 났다.",
+    "채권 비중을 점검해 늘리고, 주식은 유로존 노출 확대를 선호한다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "팟캐스트 음성을 음성 인식(Whisper)으로 받아 적은 전사 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
+  },
+  {
+   "id": "blackrock-we-will-be-in-a-recession-blackrock-ceo-larry-fi-2",
+   "group": "자산운용",
+   "org": "BlackRock",
+   "person": null,
+   "kind": "report",
+   "title": "우리는 경기침체에 빠질 것이다: BlackRock CEO 래리 핑크, 데이터센터 모라토리엄은 경제 붕괴 위험이라고 경고",
+   "title_orig": "We will be in a recession: BlackRock CEO Larry Fink warns a data center moratorium risks an economic crash",
+   "url": "https://www.msn.com/en-us/money/economy/we-will-be-in-a-recession-blackrock-ceo-larry-fink-warns-a-data-center-moratorium-risks-an-economic-crash/ar-AA2imnGC",
+   "outlet": "Moneywise on MSN",
+   "published_kst": "2026-11-27T13:00:00+09:00",
+   "stance": {
+    "ai_tech": 2,
+    "market": null
+   },
+   "args": [
+    "수요·채택",
+    "전력·공급 제약",
+    "금리·거시",
+    "자금 조달·신용"
+   ],
+   "summary": "Larry Fink는 데이터센터 건설 중단이 시행되면 미국 경기침체가 온다고 경고했고, 데이터센터가 일자리를 늘린다며 지지했다. AI 거품론을 부인하고 공급 부족과 폭발적 수요를 근거로 투자 확대가 더 필요하다고 봤다. 한편 국가부채 급증과 국채 발행 확대로 신용 수요가 커지는 점을 짚고, 성장을 위해 민간 자본을 끌어와야 한다고 했다.",
+   "points": [
+    "이 나라에서 어떤 형태로든 모라토리엄이 시행되면 우리는 경기침체에 빠질 것이다.",
+    "데이터센터는 문제가 아니다. 그 어느 때보다 많은 새 일자리를 만들어 내고 있다.",
+    "AI 개발 속도가 충분히 빠르지 않다고 생각한다. AI 거품은 없으며 오히려 그 반대다. 공급 부족이 있고, 수요는 누구도 예상한 적 없는 속도로 훨씬 빠르게 늘고 있으며, 이는 미국에서만 나타나는 현상이다.",
+    "더 빨리 더 많은 설비 용량을 구축할수록 이를 더 많이 민주화해 모든 사람이 이용할 수 있게 만들 수 있다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
+  },
   {
    "id": "boe-ai-the-opaque-4-trillion-web-of-financing-alarmi",
    "group": "중앙은행·국제기구",
