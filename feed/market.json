@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated_kst": "2026-11-27T20:17:23+09:00",
+ "updated_kst": "2026-11-27T20:29:34+09:00",
  "trend": {
   "updated_kst": "2026-11-27T17:30:56+09:00",
   "rule": {
@@ -15199,7 +15199,7 @@
   "missing": {}
  },
  "cycle": {
-  "updated_kst": "2026-11-27T20:17:23+09:00",
+  "updated_kst": "2026-11-27T20:29:34+09:00",
   "rule": {
    "months": 120,
    "direction_months": 3,
@@ -15264,6 +15264,7 @@
     "side_label": null,
     "stale": false,
     "released": "2026-11-02",
+    "seen": null,
     "range": {
      "low": 46.4,
      "high": 55.6,
@@ -15474,6 +15475,7 @@
     "side_label": null,
     "stale": false,
     "released": "2026-11-02",
+    "seen": null,
     "range": {
      "low": 44.6,
      "high": 57.1,
@@ -15652,6 +15654,7 @@
     "side_label": "증가",
     "stale": false,
     "released": "2026-11-02",
+    "seen": null,
     "range": {
      "low": 43.2,
      "high": 53.4,
@@ -15829,6 +15832,7 @@
     "phase": "downturn",
     "side_label": null,
     "stale": false,
+    "seen": null,
     "range": {
      "low": -8.2,
      "high": 9.5,
@@ -16007,6 +16011,7 @@
     "side_label": "부족",
     "stale": false,
     "released": "2026-11-02",
+    "seen": null,
     "range": {
      "low": 38.7,
      "high": 50,
@@ -16185,6 +16190,7 @@
     "side_label": "상승",
     "stale": false,
     "released": "2026-11-02",
+    "seen": null,
     "range": {
      "low": 48.3,
      "high": 84.6,
@@ -16363,6 +16369,7 @@
     "side_label": null,
     "stale": false,
     "released": "2026-11-04",
+    "seen": null,
     "range": {
      "low": 49.2,
      "high": 56.1,
@@ -16573,6 +16580,7 @@
     "side_label": "상승",
     "stale": false,
     "released": "2026-11-04",
+    "seen": null,
     "range": {
      "low": 53.4,
      "high": 74,
@@ -16750,6 +16758,7 @@
     "phase": "downturn",
     "side_label": null,
     "stale": false,
+    "seen": null,
     "range": {
      "low": -80,
      "high": 35.8,
@@ -17275,6 +17284,7 @@
     "phase": "downturn",
     "side_label": null,
     "stale": false,
+    "seen": null,
     "range": {
      "low": -58.7,
      "high": 48.8,
@@ -17800,6 +17810,7 @@
     "phase": null,
     "side_label": "과반 하락",
     "stale": false,
+    "seen": null,
     "range": {
      "low": 0,
      "high": 100,
@@ -18451,6 +18462,7 @@
     "phase": "downturn",
     "side_label": null,
     "stale": false,
+    "seen": null,
     "range": {
      "low": 97.608,
      "high": 102.884,
@@ -18976,6 +18988,7 @@
     "phase": "expansion",
     "side_label": null,
     "stale": false,
+    "seen": null,
     "range": {
      "low": 92.936,
      "high": 101.409,
@@ -19501,6 +19514,7 @@
     "phase": "contraction",
     "side_label": null,
     "stale": false,
+    "seen": null,
     "range": {
      "low": 85.675,
      "high": 102.492,
@@ -20026,6 +20040,7 @@
     "phase": "expansion",
     "side_label": null,
     "stale": false,
+    "seen": null,
     "range": {
      "low": 92.418,
      "high": 101.692,
@@ -20553,6 +20568,7 @@
     "light": "red",
     "stale": false,
     "released": "2026-11-26",
+    "seen": null,
     "range": {
      "low": 10,
      "high": 41,
@@ -21079,6 +21095,7 @@
     "side_label": null,
     "stale": false,
     "released": "2026-11-26",
+    "seen": null,
     "range": {
      "low": 95.205,
      "high": 105.58,
@@ -21605,6 +21622,7 @@
     "side_label": null,
     "stale": false,
     "released": "2026-11-26",
+    "seen": null,
     "range": {
      "low": 93.785,
      "high": 109.515,
@@ -22131,6 +22149,7 @@
     "side_label": null,
     "stale": false,
     "released": "2026-11-26",
+    "seen": null,
     "range": {
      "low": 30.83,
      "high": 67.84,
@@ -22657,6 +22676,7 @@
     "side_label": "증가",
     "stale": false,
     "released": "2026-11-26",
+    "seen": null,
     "range": {
      "low": -54.47,
      "high": 159.33,
@@ -23184,6 +23204,7 @@
     "side_label": "증가",
     "stale": false,
     "released": "2026-11-26",
+    "seen": null,
     "range": {
      "low": -13.25,
      "high": 62.44,
