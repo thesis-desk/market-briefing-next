@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated_kst": "2026-11-27T14:19:11+09:00",
+ "updated_kst": "2026-11-27T17:19:04+09:00",
  "window_days": 14,
  "items_days": 30,
  "index": {
@@ -8,13 +8,13 @@
    "value": 4,
    "label": "엇갈림",
    "orgs": 38,
-   "items": 145
+   "items": 146
   },
   "market": {
    "value": -8,
    "label": "엇갈림",
    "orgs": 29,
-   "items": 108
+   "items": 109
   },
   "by_group": [
    {
@@ -115,23 +115,23 @@
    "caution": [
     {
      "tag": "밸류에이션",
-     "n": 21
+     "n": 22
     },
     {
      "tag": "투자 회수",
-     "n": 20
+     "n": 21
+    },
+    {
+     "tag": "자금 조달·신용",
+     "n": 17
     },
     {
      "tag": "쏠림",
      "n": 16
     },
     {
-     "tag": "자금 조달·신용",
-     "n": 16
-    },
-    {
      "tag": "금리·거시",
-     "n": 10
+     "n": 11
     },
     {
      "tag": "수요·채택",
@@ -192,6 +192,41 @@
   "method": "기관·인물마다 기간 안 입장 값의 평균을 내고 그 평균들을 다시 평균해 ×50"
  },
  "items": [
+  {
+   "id": "boe-ai-the-opaque-4-trillion-web-of-financing-alarmi",
+   "group": "중앙은행·국제기구",
+   "org": "영란은행",
+   "person": null,
+   "kind": "report",
+   "title": "AI: 중앙은행들을 경악시키는 불투명한 4조 달러 금융망 – 영란은행 경고가 ECB·연준의 우려를 키운다",
+   "title_orig": "AI: The opaque $4 trillion web of financing alarming central banks – BoE warning raises fears at ECB and Fed",
+   "url": "https://en.protothema.gr/2026/11/27/ai-the-opaque-4-trillion-web-of-financing-alarming-central-banks-boe-warning-raises-fears-at-ecb-and-fed",
+   "outlet": "Proto Thema",
+   "published_kst": "2026-11-27T08:54:00+09:00",
+   "stance": {
+    "ai_tech": -1,
+    "market": -1
+   },
+   "args": [
+    "밸류에이션",
+    "자금 조달·신용",
+    "투자 회수",
+    "금리·거시"
+   ],
+   "summary": "영란은행은 반기 금융안정보고서에서 AI 투자 붐에 따른 차입 급증과 복잡한 금융 구조가 금융 시스템 전반으로 위기가 번질 위험을 키운다고 경고했다. 최근 주가 급락에도 기술기업 밸류에이션은 여전히 지나치게 높고 AI 수익 실현에 크게 의존한다고 봤다. 다만 최근 주식시장 혼란이 다른 시장으로 번진 정도는 제한적이었다고 평가했다.",
+   "points": [
+    "영란은행은 반기 금융안정보고서에서, 최근 주식시장이 크게 하락했음에도 기술기업의 밸류에이션이 여전히 지나치게 높고 AI에서 기대되는 이익을 실현할 수 있는지에 크게 의존한다고 밝혔다.",
+    "투자가 점점 \"복잡하고 순환적이며 불투명한\" 방식으로 조달되고 있어, 시장 한 곳의 압력이 다른 곳으로 번질 가능성이 커진다.",
+    "보고서에 따르면 하이퍼스케일러와 금융 시스템 사이의 금융 연결 규모는 약 4조 달러에 이른다.",
+    "영란은행은 최근 주식시장 혼란이 다른 시장으로 번진 정도는 제한적이었다고 판단했다.",
+    "영란은행 부총재 캐서린 브래딕은 AI 밸류에이션이 붕괴하더라도 금융 시스템이 버틸 수 있게 하는 것이 영란은행의 최우선 과제이며, 시장 압력이 은행 시스템으로 번지지 않도록 막아야 한다고 강조했다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
+  },
   {
    "id": "ark-cathie-wood-says-ai-is-early-the-901-billion-bil",
    "group": "자산운용",
@@ -11402,39 +11437,6 @@
     "tier": "standard"
    },
    "note": "팟캐스트 음성을 음성 인식(Whisper)으로 받아 적은 전사 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
-  },
-  {
-   "id": "ackman-bill-ackman-is-permanent-capital-an-investor-s-b",
-   "group": "투자 거장",
-   "org": "Pershing Square",
-   "person": "Bill Ackman",
-   "kind": "publication",
-   "title": "Bill Ackman: 영구 자본이 투자자의 가장 큰 강점인가? | 팟캐스트 | In Good Company",
-   "title_orig": "Bill Ackman: Is Permanent Capital an Investor’s Biggest Edge? | Podcast | In Good Company",
-   "url": "https://www.youtube.com/watch?v=T8nHLUlRGkg",
-   "outlet": "NBIM In Good Company (유튜브)",
-   "published_kst": "2026-10-28T15:00:38+09:00",
-   "stance": {
-    "ai_tech": 1,
-    "market": null
-   },
-   "args": [
-    "수요·채택",
-    "투자 회수",
-    "정책·지정학"
-   ],
-   "summary": "Ackman은 AI 설비투자 확대 발표로 주가가 빠진 Meta, Microsoft, Amazon을 매수했다고 밝히며, 이들이 포트폴리오의 약 3분의 1이라고 말한다. AI가 기업가 정신과 GDP·글로벌 성장의 폭발적 확대를 가져올 수 있다고 보며, 경쟁국 때문에 AI 속도를 늦추기 어렵다고 말한다.",
-   "points": [
-    "설비투자 확대로 실망을 안긴 Meta와 Microsoft를 주가 하락 국면에서 매수했다.",
-    "수요가 막대해 설비투자를 늘린다고 밝힌 기업의 주가가 오히려 하락한 것이 Microsoft 투자의 계기였다.",
-    "이들 AI 관련 종목이 Pershing Square 포트폴리오의 약 3분의 1을 차지한다.",
-    "AI가 기업가 정신과 전 세계 성장의 폭발적 확대를 이끌 수 있다고 본다."
-   ],
-   "judged": {
-    "basis": "full_text",
-    "tier": "standard"
-   },
-   "note": "유튜브 자동 생성 자막(en) 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
   }
  ]
 }
