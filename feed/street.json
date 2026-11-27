@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated_kst": "2026-11-28T02:28:49+09:00",
+ "updated_kst": "2026-11-28T05:16:29+09:00",
  "window_days": 14,
  "items_days": 30,
  "index": {
@@ -8,13 +8,13 @@
    "value": 3,
    "label": "엇갈림",
    "orgs": 38,
-   "items": 148
+   "items": 149
   },
   "market": {
    "value": -8,
    "label": "엇갈림",
    "orgs": 29,
-   "items": 109
+   "items": 110
   },
   "by_group": [
    {
@@ -42,7 +42,7 @@
     "group": "투자은행",
     "ai_tech": 21,
     "ai_tech_orgs": 7,
-    "market": 28,
+    "market": 26,
     "market_orgs": 7
    },
    {
@@ -157,7 +157,7 @@
     },
     {
      "tag": "투자 회수",
-     "n": 32
+     "n": 33
     },
     {
      "tag": "밸류에이션",
@@ -165,7 +165,7 @@
     },
     {
      "tag": "금리·거시",
-     "n": 20
+     "n": 21
     },
     {
      "tag": "경쟁·해자",
@@ -224,6 +224,30 @@
     "tier": "standard"
    },
    "note": "팟캐스트 음성을 음성 인식(Whisper)으로 받아 적은 전사 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
+  },
+  {
+   "id": "deutsche-bank-deutsche-bank-sees-s-p-500-reaching-9-000-by-end",
+   "group": "투자은행",
+   "org": "Deutsche Bank",
+   "person": null,
+   "kind": "report",
+   "title": "도이체방크, 2027년 말 S&P 500 9,000 도달 전망",
+   "title_orig": "Deutsche Bank sees S&P 500 reaching 9,000 by end of 2027",
+   "url": "https://tradersunion.com/news/stocks/show/4449980-deutsche-bank-sp500-9000-2027-forecast",
+   "outlet": "tradersunion",
+   "published_kst": "2026-11-27T20:07:00+09:00",
+   "stance": {
+    "ai_tech": 1,
+    "market": 1
+   },
+   "args": [
+    "투자 회수",
+    "금리·거시"
+   ],
+   "judged": {
+    "basis": "headline_only",
+    "tier": "light"
+   }
   },
   {
    "id": "bofa-bofa-sees-s-p-500-at-7-800-by-end-2027-warns-har",
@@ -11399,85 +11423,6 @@
     "tier": "standard"
    },
    "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
-  },
-  {
-   "id": "ark-anthropic-s-s-1-meta-s-90b-and-elon-s-warning-ca",
-   "group": "자산운용",
-   "org": "ARK Invest",
-   "person": null,
-   "kind": "publication",
-   "title": "Anthropic의 S-1, Meta의 900억 달러, 그리고 일론의 경고 | The Brainstorm 155",
-   "title_orig": "Anthropic’s S-1, Meta’s $90B, And Elon’s Warning Call | The Brainstorm 155",
-   "url": "https://www.youtube.com/watch?v=JHKjP8yIZMg",
-   "outlet": "ARK Invest (유튜브)",
-   "published_kst": "2026-10-29T05:00:30+09:00",
-   "stance": {
-    "ai_tech": 1,
-    "market": null
-   },
-   "args": [
-    "수요·채택",
-    "투자 회수",
-    "자금 조달·신용",
-    "경쟁·해자"
-   ],
-   "summary": "Anthropic S-1에서 확인된 수익성과 현물 컴퓨트 가격 상승을 근거로 AI 수요가 강하다고 본다. 반면 Meta 등 소비자 에이전트는 수익화까지 수년이 걸리고, 거액 자금 조달과 신규 클라우드 업체의 전력 연결 차질이 위험이라고 짚는다.",
-   "points": [
-    "Anthropic S-1은 높은 매출총이익률과 R&D 효율을 갖춘 기업사상 가장 인상적인 12개월 매출 성장을 보여준다.",
-    "기업용과 달리 소비자 에이전트 시장은 수익성을 입증하기까지 수십억 달러를 쓰게 될 것이다.",
-    "컴퓨트 한계 수요가 강해 현물 임대 가격이 계속 오르고 있다.",
-    "수익성이 뚜렷한 한 영역이 스택 전반에서 다른 참여자의 수익 구조를 압박하고 있다."
-   ],
-   "evidence": [
-    {
-     "ko": "수익성이 뚜렷한 한 영역이 스택 전반에서 다른 참여자의 수익 구조를 압박하고 있다.",
-     "orig": "kind of like at all layers of the stack, the compelling returns in this one very pointy part of the market are just squeezing everybody else's economics."
-    }
-   ],
-   "judged": {
-    "basis": "full_text",
-    "tier": "standard"
-   },
-   "note": "유튜브 자동 생성 자막(en) 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
-  },
-  {
-   "id": "damodaran-the-anthropic-prospectus-arrives-my-but-not-the",
-   "group": "투자 거장",
-   "org": "NYU Stern",
-   "person": "Aswath Damodaran",
-   "kind": "publication",
-   "title": "Anthropic 투자설명서 도착: 나의(시장이 아닌) IPO 가치평가!",
-   "title_orig": "The Anthropic Prospectus Arrives: My (but not the) IPO valuation!",
-   "url": "https://aswathdamodaran.blogspot.com/2026/10/the-anthropic-prospectus-arrives-ipo.html",
-   "outlet": "Aswath Damodaran (Musings on Markets)",
-   "published_kst": "2026-10-29T03:07:02+09:00",
-   "stance": {
-    "ai_tech": 0,
-    "market": null
-   },
-   "args": [
-    "밸류에이션",
-    "투자 회수",
-    "자금 조달·신용",
-    "경쟁·해자"
-   ],
-   "summary": "Damodaran은 Anthropic S-1을 바탕으로 낙관적인 시나리오(2036년 매출 1조 달러, 영업마진 27.5%, 자본비용 9.74%)에서 지분가치를 1조 4,750억 달러로 추정하며, 이는 공모가 범위(1.5~2조 달러)의 하단이다. 최악(-3,730억 달러)과 최선(4.04조 달러)의 범위가 매우 넓고, 가격이 가치보다 크게 높으면 매도하지 않고 관망하겠다는 입장이다. 거버넌스 구조는 강하게 비판한다.",
-   "points": [
-    "낙관적 시나리오를 전제로 한 Anthropic 지분가치 추정치는 공모가 범위의 하단에 해당한다.",
-    "수천억 달러 규모의 컴퓨트 약정이 고정비와 부실 위험을 만들지만, 현금 보유와 자본 접근성이 단기적으로 이를 억제한다고 본다.",
-    "IPO 직후 거래는 가치평가가 아니라 가격 결정이며, 공모가가 자신의 추정치를 크게 웃돌면 공매도 없이 관망하겠다고 밝힌다.",
-    "의결권 구조와 공익법인 형태가 일반 투자자의 권한을 크게 약화시킨다고 비판한다."
-   ],
-   "evidence": [
-    {
-     "ko": "의결권 구조와 공익법인 형태가 일반 투자자의 권한을 크게 약화시킨다고 비판한다.",
-     "orig": "the voting structure, with a benefit trust picking the board and the founders controlling 50.1% of voting, no matter how many more shares may be issued in the futur, effectively emasculates public investors."
-    }
-   ],
-   "judged": {
-    "basis": "full_text",
-    "tier": "standard"
-   }
   }
  ]
 }

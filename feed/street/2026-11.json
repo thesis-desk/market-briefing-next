@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "month": "2026-11",
- "updated_kst": "2026-11-28T02:28:49+09:00",
+ "updated_kst": "2026-11-28T05:16:29+09:00",
  "items": [
   {
    "id": "ubs-house-view-daily-why-put-cash-to-work-amid-volat",
@@ -35,6 +35,30 @@
     "tier": "standard"
    },
    "note": "팟캐스트 음성을 음성 인식(Whisper)으로 받아 적은 전사 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
+  },
+  {
+   "id": "deutsche-bank-deutsche-bank-sees-s-p-500-reaching-9-000-by-end",
+   "group": "투자은행",
+   "org": "Deutsche Bank",
+   "person": null,
+   "kind": "report",
+   "title": "도이체방크, 2027년 말 S&P 500 9,000 도달 전망",
+   "title_orig": "Deutsche Bank sees S&P 500 reaching 9,000 by end of 2027",
+   "url": "https://tradersunion.com/news/stocks/show/4449980-deutsche-bank-sp500-9000-2027-forecast",
+   "outlet": "tradersunion",
+   "published_kst": "2026-11-27T20:07:00+09:00",
+   "stance": {
+    "ai_tech": 1,
+    "market": 1
+   },
+   "args": [
+    "투자 회수",
+    "금리·거시"
+   ],
+   "judged": {
+    "basis": "headline_only",
+    "tier": "light"
+   }
   },
   {
    "id": "bofa-bofa-sees-s-p-500-at-7-800-by-end-2027-warns-har",
