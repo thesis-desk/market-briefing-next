@@ -1,20 +1,20 @@
 {
  "schema": 1,
- "updated_kst": "2026-11-27T17:19:04+09:00",
+ "updated_kst": "2026-11-27T20:18:05+09:00",
  "window_days": 14,
  "items_days": 30,
  "index": {
   "ai_tech": {
-   "value": 4,
+   "value": 3,
    "label": "엇갈림",
    "orgs": 38,
-   "items": 146
+   "items": 147
   },
   "market": {
    "value": -8,
    "label": "엇갈림",
    "orgs": 29,
-   "items": 107
+   "items": 108
   },
   "by_group": [
    {
@@ -105,7 +105,7 @@
    },
    {
     "week": "2026-11-23",
-    "ai_tech": -1,
+    "ai_tech": -2,
     "ai_tech_orgs": 21,
     "market": -20,
     "market_orgs": 18
@@ -119,11 +119,11 @@
     },
     {
      "tag": "투자 회수",
-     "n": 21
+     "n": 22
     },
     {
      "tag": "자금 조달·신용",
-     "n": 17
+     "n": 18
     },
     {
      "tag": "쏠림",
@@ -131,15 +131,15 @@
     },
     {
      "tag": "금리·거시",
-     "n": 11
+     "n": 12
+    },
+    {
+     "tag": "정책·지정학",
+     "n": 5
     },
     {
      "tag": "수요·채택",
      "n": 5
-    },
-    {
-     "tag": "정책·지정학",
-     "n": 4
     },
     {
      "tag": "경쟁·해자",
@@ -220,6 +220,45 @@
     "보고서에 따르면 하이퍼스케일러와 금융 시스템 사이의 금융 연결 규모는 약 4조 달러에 이른다.",
     "영란은행은 최근 주식시장 혼란이 다른 시장으로 번진 정도는 제한적이었다고 판단했다.",
     "영란은행 부총재 캐서린 브래딕은 AI 밸류에이션이 붕괴하더라도 금융 시스템이 버틸 수 있게 하는 것이 영란은행의 최우선 과제이며, 시장 압력이 은행 시스템으로 번지지 않도록 막아야 한다고 강조했다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
+  },
+  {
+   "id": "el-erian-mohamed-el-erian-says-nvidia-is-too-big-to-wobbl",
+   "group": "투자 거장",
+   "org": "Mohamed El-Erian",
+   "person": null,
+   "kind": "report",
+   "title": "Mohamed El-Erian, 엔비디아는 '흔들리기엔 너무 크다'… 그러나 고객사의 데이터센터 계획은 그렇지 않다",
+   "title_orig": "Mohamed El-Erian Says Nvidia Is “Too Big to Wobble.” Its Customers’ Data Center Plans Aren’t",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/mohamed-el-erian-says-nvidia-054826457.html",
+   "outlet": "Yahoo Finance",
+   "published_kst": "2026-11-27T06:48:00+09:00",
+   "stance": {
+    "ai_tech": -1,
+    "market": -1
+   },
+   "args": [
+    "자금 조달·신용",
+    "정책·지정학",
+    "금리·거시",
+    "투자 회수"
+   ],
+   "summary": "El-Erian은 정부 정책이 엔비디아를 좌우한다는 해석은 과하다고 봤고, 엔비디아는 무너지지는 않아도 흔들릴 수는 없는 정도로 큰 기업이 아니라고 했다. 연준·의회·안보 규제·신용시장이 데이터센터 구축에 맞서는 2027년 전망이 어렵다는 진행자의 진단에 동의했다. 정부 차입이 줄어 기술 기업 차입 여력을 만들어 주길 기대했지만 금리 상승 없이 그렇게 되지 않았다고 우려했다.",
+   "points": [
+    "정부 정책이 이제 엔비디아를 이끌 것이냐는 질문에, 그것은 지나친 해석이라고 답했다.",
+    "엔비디아는 '망하기엔 너무 큰' 회사가 아니라 단지 '흔들리기엔 너무 큰' 회사라는 점을 우리가 알게 되었다고 말했다.",
+    "정부 차입이 줄어 금리를 밀어 올리지 않고도 기술 기업의 차입이 들어설 여지가 생기길 기대했지만, 그렇게 되지 않았다고 말했다."
+   ],
+   "evidence": [
+    {
+     "ko": "엔비디아는 '망하기엔 너무 큰' 회사가 아니라 단지 '흔들리기엔 너무 큰' 회사라는 점을 우리가 알게 되었다고 말했다.",
+     "orig": "I think we've learned that NVIDIA is too big to wobble, not to fail, simply to wobble."
+    }
    ],
    "judged": {
     "basis": "full_text",

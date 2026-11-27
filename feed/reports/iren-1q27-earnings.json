@@ -16,8 +16,8 @@
  "period_end": "2026-09-30",
  "prev_slug": "iren-4q26-earnings",
  "published_kst": "2026-11-05T21:00:00+09:00",
- "revised_kst": "2026-11-20T23:00:59+09:00",
- "revision": 1,
+ "revised_kst": "2026-11-27T20:14:04+09:00",
+ "revision": 2,
  "sources": [
   {
    "n": 1,
@@ -48,6 +48,76 @@
    "kind": "prior_report",
    "read": "일부",
    "note": "숫자 요약과 다음 분기에 확인할 지표만 이어받음"
+  },
+  {
+   "n": 4,
+   "title": "Earnings Whispers — IREN 1Q27 실적 대 컨센서스",
+   "url": "https://www.earningswhispers.com/epsdetails/IREN/202609",
+   "date": "2026-11-05",
+   "access": "public",
+   "kind": "market_data",
+   "read": "일부",
+   "note": "1Q27 주당 -0.62달러 대 GAAP 컨센서스 -0.49달러(하회). 집계 기준은 Earnings Whispers 표기를 따름 (조회 2026-11-27)"
+  },
+  {
+   "n": 5,
+   "title": "Earnings Whispers — IREN 4Q26 실적 대 컨센서스",
+   "url": "https://www.earningswhispers.com/epsdetails/IREN/202606",
+   "date": "2026-08-27",
+   "access": "public",
+   "kind": "market_data",
+   "read": "일부",
+   "note": "4Q26 주당 -0.82달러 대 non-GAAP 컨센서스 -0.01달러(하회) (조회 2026-11-27)"
+  },
+  {
+   "n": 6,
+   "title": "Earnings Whispers — IREN 3Q26 실적 대 컨센서스",
+   "url": "https://www.earningswhispers.com/epsdetails/IREN/202603",
+   "date": "2026-05-07",
+   "access": "public",
+   "kind": "market_data",
+   "read": "일부",
+   "note": "3Q26 주당 -0.25달러 대 컨센서스 -0.18달러(하회). 컨센서스 기준 표기 없음 (조회 2026-11-27)"
+  },
+  {
+   "n": 7,
+   "title": "Earnings Whispers — IREN 2Q26 실적 대 컨센서스",
+   "url": "https://www.earningswhispers.com/epsdetails/IREN/202512",
+   "date": "2026-02-05",
+   "access": "public",
+   "kind": "market_data",
+   "read": "일부",
+   "note": "2Q26 주당 -0.44달러 대 컨센서스 -0.09달러(하회). 컨센서스 기준 표기 없음 (조회 2026-11-27)"
+  },
+  {
+   "n": 8,
+   "title": "IREN Reports Q1 FY27 Results (GlobeNewswire 보도자료, Wedbush 사본)",
+   "url": "https://investor.wedbush.com/wedbush/article/gnwcq-2026-11-5-iren-reports-q1-fy27-results",
+   "date": "2026-11-05",
+   "access": "public",
+   "kind": "press_release",
+   "read": "전문",
+   "note": "1Q27 순손실 2.63억 달러, 4Q26 순손실 6.84억 달러. 보도자료에 주당 값은 없음 (조회 2026-11-27)"
+  },
+  {
+   "n": 9,
+   "title": "IREN Reports FY26 Results (GlobeNewswire 보도자료, Wedbush 사본)",
+   "url": "https://investor.wedbush.com/wedbush/article/gnwcq-2026-8-27-iren-reports-fy26-results",
+   "date": "2026-08-27",
+   "access": "public",
+   "kind": "press_release",
+   "read": "전문",
+   "note": "4Q26 순손실 6.840억 달러(비현금 손상 4.504억 달러), 3Q26 순손실 2.478억 달러 (조회 2026-11-27)"
+  },
+  {
+   "n": 10,
+   "title": "IREN Reports Q2 FY26 Results (GlobeNewswire 보도자료, Wedbush 사본)",
+   "url": "https://investor.wedbush.com/wedbush/article/gnwcq-2026-2-5-iren-reports-q2-fy26-results",
+   "date": "2026-02-05",
+   "access": "public",
+   "kind": "press_release",
+   "read": "전문",
+   "note": "2Q26 순손실 1.554억 달러, 전환사채 관련 평가손실·전환 유도 비용 합계 2.192억 달러 (조회 2026-11-27)"
   }
  ],
  "sections": [
@@ -408,7 +478,7 @@
     },
     {
      "kind": "fact",
-     "text": "EPS 예상 대비 실제(야후 이력, 조회 2026-11-20): 2026-09-30 분기(1Q27)의 예상치는 -0.665달러인데, 실제치는 아직 스냅샷에 반영되지 않았습니다. 콜에서도 주당순손실을 밝히지 않아 상회·하회를 판단할 수 없습니다. 직전 세 분기는 모두 예상보다 손실이 작았습니다(2025-12-31 -0.0289 대 -0.25, 2026-03-31 -0.1601 대 -0.26, 2026-06-30 -0.2544 대 -0.455). 매출의 컨센서스 대비는 발표 전 스냅샷이 없어 적지 않습니다.",
+     "text": "EPS 예상 대비 실제(야후 이력, 조회 2026-11-20): 2026-09-30 분기(1Q27)의 예상치는 -0.665달러인데, 실제치는 아직 스냅샷에 반영되지 않았습니다. 콜에서도 주당순손실을 밝히지 않았습니다. 회사 보도자료의 1Q27 순손실은 2억 6,300만 달러이고, Earnings Whispers 집계로는 주당 -0.62달러로 GAAP 컨센서스 -0.49달러보다 손실이 컸습니다. 야후 이력에는 직전 세 분기가 모두 예상보다 손실이 작게 적혀 있지만(2025-12-31 -0.0289 대 -0.25, 2026-03-31 -0.1601 대 -0.26, 2026-06-30 -0.2544 대 -0.455), 이 실제 값은 회사가 보고한 순손실(차례로 1억 5,540만·2억 4,780만·6억 8,400만 달러)과 맞지 않아 기준을 확인하지 못했습니다. Earnings Whispers 집계로는 세 분기 모두 컨센서스보다 손실이 컸습니다(차례로 -0.44 대 -0.09, -0.25 대 -0.18, -0.82 대 -0.01달러). 회사 보고 순손실에는 2025-12-31 분기의 전환사채 관련 평가손실과 전환 유도 비용 2억 1,920만 달러, 2026-06-30 분기의 비현금 손상 4억 5,040만 달러가 들어 있습니다. 매출의 컨센서스 대비는 발표 전 스냅샷이 없어 적지 않습니다.",
      "src": 2
     }
    ]
@@ -1191,6 +1261,11 @@
    "result": "통과"
   },
   "summary": "앞선 검토는 한 단계 산수에 그친 calc 블록 두 개를 고쳤습니다. 숫자 요약의 calc는 확신을 밝힌 view로 바꿨고, 부정 절의 calc는 지우고 그 값을 view 문장 괄호로 옮겼습니다. 'Childress 공랭 배치를 2027년 한 해에 걸쳐 분산', 매출 백로그의 정의 유보, Vera Rubin '그해 후반 도착'도 반영했습니다. 이번 확인에서는 고친 수치와 표현을 원문(s1 CFO 준비 발언, Q&A 6)과 직전 분기 리포트(s3)에 대조했고, 되풀이된 다섯 곳도 함께 고쳐진 것을 확인해 새 오류를 찾지 못했습니다.",
-  "history": []
+  "history": [
+   {
+    "at_kst": "2026-11-27T20:14:04+09:00",
+    "text": "야후 EPS 이력이 회사 보고 순손실과 맞지 않음을 밝히고 '세 분기 모두 예상보다 손실이 작았다' 서술 정정"
+   }
+  ]
  }
 }

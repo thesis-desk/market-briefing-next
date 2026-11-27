@@ -17,7 +17,7 @@
 | `calendar.json` | 실적·투자자의 날 일정과 대기 목록 |
 | `health.json` | 수집 상태와 놓친 것(`missed`) |
 | `watch.json` | 첫 화면의 감시 대상(AI 설비투자 사이클을 보는 네 갈래의 상태와 그림의 값) |
-| `market.json` | 시장 탭(추세 신호·거시 지표·우선주 괴리율·종목 표) |
+| `market.json` | 시장 탭(추세 신호·거시 지표·경기 지표·우선주 괴리율·종목 표) |
 | `prices.json` | 가격 탭의 GPU 임대가격(채널 기준가·제공자별 값·실거래 지수·계약 기간별 가격)과 메모리 가격·재고 |
 | `data/<id>/` | 조사 자료 묶음. 한 질문을 두고 손으로 모은 기록(화면 없음) |
 | `SPEC.md` | 이 문서 |
@@ -60,7 +60,7 @@
 - `generated_kst` 는 빌드 시각이 아니라 **가장 최근에 바뀐 기록의 시각**이다. 내용이 그대로면 이 값도 그대로다.
 - `datasets` 는 조사 자료 묶음의 목록이다: `[{"id": "apac-siting", "path": "data/apac-siting/index.json", "updated_kst": "…"}]`. 묶음이 하나도 없으면 키가 없다. `updated_kst` 는 기록이 아직 없으면 `null`.
 - `watch.updated_kst` 는 감시 대상이 읽는 기록(실적에서 옮긴 분기 값·거시 지표·가격·종목 표) 가운데 가장 최근에 바뀐 시각이다.
-- `market.updated_kst` 는 시장 탭의 기록(추세 신호·거시 지표·우선주 괴리율·종목 표) 가운데 가장 최근에 바뀐 시각이다. 장중·장 마감 뒤 실행마다 바뀐다.
+- `market.updated_kst` 는 시장 탭의 기록(추세 신호·거시 지표·경기 지표·우선주 괴리율·종목 표) 가운데 가장 최근에 바뀐 시각이다. 장중·장 마감 뒤 실행마다 바뀐다.
 - `type`: `earnings` | `investor_day` | `interview` | `article` | `event`(행사 정리). 종합(`synthesis`)·조사 리포트(`research`)는 잠가 싣지 않는다.
 - `companies[].ticker` 는 없으면 `null`. `event`·`event_date` 는 있을 때만.
 - `revision` 은 처음 게시할 때 1이다. `revised_kst` 는 고친 적이 없으면 `published_kst` 와 같다.
@@ -312,6 +312,17 @@
    "change": "bp", "delta": {"d1": -1, "w1": -19, "m1": -9, "m3": 21, "ytd": 73}, "range_52w": {"low": 3.97, "high": 5.31},
    "weekly": [4.4, …], "home": true, "source": {"name": "FRED", "series": "DGS10", "url": "…"}}],
   "missing": {}},
+ "cycle": {"updated_kst": "…", "rule": {"months": 120, "direction_months": 3, "stale_months": 3},
+  "labels": {"phase": {"expansion": "확장", "downturn": "둔화", "contraction": "수축", "recovery": "회복"}, "light": {"red": "빨강(과열)"}},
+  "groups": [{"key": "us", "label": "미국 — ISM 과 지역 연은 제조업 지수"}],
+  "indicators": [{"id": "ism-mfg", "label": "ISM 제조업 PMI", "basis": null, "group": "us", "kind": "fact", "period": "2026-10", "value": 55.5,
+   "unit": "", "decimals": 1, "neutral": 50, "delta": {"m1": 1.0, "m3": -0.1, "m6": 2.8, "y1": 6.7}, "trend": 0.57,
+   "side": "above", "side_months": 10, "dir": "up", "run": {"dir": "up", "months": 1}, "phase": "expansion", "side_label": null,
+   "stale": false, "released": "2026-11-02", "range": {"low": 46.4, "high": 55.6, "months": 41}, "monthly": [["2023-06", 46.4]], "home": true,
+   "what": "…", "read": "…", "limit": "…", "source": {"name": "ISM", "series": "제조업 PMI", "url": "…"}}],
+  "charts": [{"id": "us-pmi", "group": "us", "title": "ISM PMI", "of": ["ism-mfg", "ism-mfg-orders", "ism-svc"], "baseline": 50,
+   "overlay": {"label": "필라델피아 반도체 지수 전년 대비", "date": "2026-11-25", "yoy": [["2023-06", 43.2]], "source": {…}}}],
+  "missing": {}},
  "pref_gap": {"updated_kst": "…", "rule": {"anchor_days": 365, "daily_days": 500}, "source": {"name": "네이버 금융", "url": "…"},
   "pairs": [{"id": "samsung", "label": "삼성전자", "common": {"code": "005930", "close": 0, "url": "…"}, "pref": {…},
    "date": "…", "gap_pct": 21.63, "foreign_pct": {"common": 45.84, "pref": 74.54},
@@ -347,6 +358,16 @@
   - `change` 는 `delta` 의 단위다: `bp` | `pct` | `pt`. `delta` 는 그 기간 전 날짜 이하의 가장 가까운 값과 견준 변화이고 받지 못했으면 `null` 이다.
   - `source.of`·`source.op` 이 있으면 두 지표로 계산한 값이다(`op`: 차·비율). `op` 이 `mean` 이면 `of` 의 지표들의 평균이고 `source.weights` 가 있으면 그 순서의 가중 평균이다. `bond` 는 AI 발행사 회사채 스프레드 지표에만 있다(ISIN·이표율·만기·만기수익률 `ytm`·남은 만기 `years`·종가를 낸 시장 `venue`). `cds` 는 AI 발행사 5년 CDS 지표에만 있다(가장 최근 값에 쓴 체결 수 `trades`, 그 가운데 스프레드가 적힌 체결 수 `firm` — 0 이면 선취금에서 되돌린 값 가운데 앞 날의 값에 가까운 것을 쓴 추정이다, 값이 있는 날 수 `days`, 이력의 첫 날 `since`). CDS 값은 공개 체결 보고에서 데스크가 계산한 것이고 단위는 %p 다(1%p = 100bp).
   - `home: true` 인 지표는 첫 화면의 거시 한 줄에도 보인다.
+- `cycle`
+  - 달마다 나오는 경기 지표다. ISM 지수(ISM 의 보도자료), 지역 연은 지수와 OECD 경기선행지수(FRED), 대만 경기지표(국가발전위원회의 공개 파일)는 원천이 준 사실(`kind: fact`)이고, 차(`source.op: minus`)·전년 대비(`source.transform`: `yoy` 전년 같은 달 대비 | `yoy3` 석 달 합의 전년 같은 석 달 대비)·확산지수(`source.op: diffusion` — 17개 나라 가운데 선행지수가 전달보다 오른 나라의 비율)는 계산(`kind: calc`)이다.
+  - `period` 는 기준월(YYYY-MM), `released` 는 원천이 그 값을 낸 날(ISM 보도자료의 발표일, 대만 파일의 수정일. 모르면 없다)이다. `stale: true` 면 기준월이 이번 달보다 `rule.stale_months` 넘게 뒤져 있다.
+  - `delta` 는 1·3·6·12달 전 값과의 차다(단위가 % 인 지표는 %p). `trend` 는 최근 `rule.direction_months` 달 평균 − 그 앞 같은 달 수의 평균이고 방향(`dir`: `up` | `down` | `flat`)을 정한다(없거나 0 이면 전달 대비).
+  - `neutral` 은 기준선이고 `side`(`above` | `below`)는 값이 그 위(같음 포함)인지 아래인지, `side_months` 는 같은 쪽에 이어서 머문 달 수다. `run` 은 전달 대비 같은 방향으로 이어진 달 수다.
+  - `phase` 는 데스크의 규칙으로 적은 국면이다: 기준선 위·오름 `expansion`, 위·내림 `downturn`, 아래·내림 `contraction`, 아래·오름 `recovery`. 국면을 적지 않는 지표(가격·재고·전년 대비·확산지수)는 `null` 이고 `side_label` 에 기준선 위·아래의 이름이 있다. 대만 경기대책신호는 `light`(`blue` | `yellow-blue` | `green` | `yellow-red` | `red`)를 갖는다. 이름은 `labels` 에 있다. 지표를 하나의 점수로 섞지 않는다.
+  - `monthly` 는 `[YYYY-MM, 값]` 오래된 달부터이고 `range` 는 그 기간의 최저·최고와 달 수다.
+  - 확산지수는 `countries`(나라별 선행지수 `value` 와 전달 대비 `m1`), `rising` ÷ `counted`(오른 나라 수 ÷ 견준 나라 수), `absent`(이번 달 값이 없어 빠진 나라)를 갖는다.
+  - `charts` 는 화면의 그림이다: 함께 그리는 지표(`of`)와 굵게 긋는 기준선. `overlay` 는 견줄 주가지수의 월말 종가 전년 대비 `[YYYY-MM, %]` 이고 마지막 달은 `date` 의 종가로 낸 값이다(없으면 `null`).
+  - `what`·`read`·`limit` 는 사람이 적은 설명(무엇을 재나 · 어떻게 읽나 · 한계)이다. `home: true` 인 지표는 첫 화면의 경기 한 줄에도 보인다.
 - `pref_gap`
   - 괴리율은 1 − 우선주 ÷ 보통주(%)다. `periods` 는 전체 · 견줄 구간 · 최근 1년 순서이고 `pct` 는 그 구간에서 괴리율이 지금 값 이하였던 날의 비율이다.
   - `to_median_pct` 는 보통주가 그대로일 때 괴리율이 견줄 구간(`periods[1]`)의 중앙값으로 돌아가면 우선주의 상대 수익이다. `anchor` 는 최근 `rule.anchor_days` 일 안에서 괴리율이 가장 넓었던 날과 그 뒤의 변화, `beta_gap_pct` 는 그날부터 우선주가 `beta.value` 만큼만 움직였다면의 지금 괴리율이다. 베타를 낼 수 없으면 `beta`·`beta_gap_pct` 가 함께 `null` 이다.
@@ -617,5 +638,6 @@
 
 바뀐 것
 
+- `market.json` 에 `cycle` 을 더했다(기존 키는 그대로). 시장 탭의 경기 지표 — ISM PMI, 지역 연은 제조업 지수, OECD 경기선행지수와 확산지수, 대만 경기지표의 월별 값·변화·국면과 그림.
 - `prices.json` 을 더했다. 가격 탭의 GPU 임대가격(모델 × 채널 기준가와 추이, 제공자별 값, 지역별 값, 묶음 지수, Silicon Data 지수의 모양, Ornn 실거래 지수의 최신 정산값과 모양, GetDeploying 의 계약 기간별 주간 가격)을 기록 그대로 낸다. `index.json` 에 `prices` 를 더했다(기존 키는 그대로).
 - `prices.json` 에 `memory` 를 더했다(기존 키는 그대로). 가격 탭의 메모리 구획 — 수출물가지수, 수출, 10일 잠정치, 현물가·고정거래가·월간 시세, 반도체 재고지수, 국내 메모리 연말 재고액, 회사 분기 재고, 대만 메모리 회사 월매출, 재고 주수 — 을 낸다. 디램·낸드 수요 추정은 넣지 않았다.

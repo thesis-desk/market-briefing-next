@@ -16,8 +16,8 @@
  "period_end": "2026-03-31",
  "prev_slug": "shopify-4q25-earnings",
  "published_kst": "2026-05-05T21:00:00+09:00",
- "revised_kst": "2026-11-26T23:16:54+09:00",
- "revision": 1,
+ "revised_kst": "2026-11-27T20:14:06+09:00",
+ "revision": 2,
  "sources": [
   {
    "n": 1,
@@ -48,6 +48,16 @@
    "kind": "prior_report",
    "read": "일부",
    "note": "숫자 요약과 다음 분기에 확인할 지표만 이어받음"
+  },
+  {
+   "n": 4,
+   "title": "StockStory, Shopify's Q4 CY2025: Beats On Revenue, Stock Jumps 10.6%",
+   "url": "https://stockstory.org/us/stocks/nasdaq/shop/news/earnings/shopifys-nasdaqshop-q4-cy2025-beats-on-revenue-stock-jumps-106percent",
+   "date": "2026-02-11",
+   "access": "public",
+   "kind": "news",
+   "read": "전문",
+   "note": "4Q25 GAAP EPS $0.57 대 애널리스트 추정 $0.43(33.9% 상회) (조회 2026-11-27)"
   }
  ],
  "sections": [
@@ -432,7 +442,7 @@
     },
     {
      "kind": "fact",
-     "text": "예상 대비 실제(EPS): 1Q26(2026-03-31 분기) EPS 실제 0.36달러는 예상 0.3316달러를 8.56% 웃돌았다. 직전 4Q25는 0.48달러로 예상 0.5091달러를 5.71% 밑돌았다(야후 파이낸스 'EPS 예상 대비 실제', 조회 2026-11-26).",
+     "text": "예상 대비 실제(EPS): 1Q26(2026-03-31 분기) EPS 실제 0.36달러는 예상 0.3316달러를 8.56% 웃돌았다. 직전 4Q25는 0.48달러로 예상 0.5091달러를 5.71% 밑돌았다(야후 파이낸스 'EPS 예상 대비 실제', 조회 2026-11-26). 야후의 실제 값은 GAAP 희석 EPS가 아니다. 4Q25 GAAP 희석 EPS는 0.57달러로 애널리스트 추정 0.43달러를 웃돌았다(StockStory, 2026-02-11).",
      "src": 2,
      "loc": "EPS 예상 대비 실제"
     },
@@ -1246,6 +1256,11 @@
    "result": "통과"
   },
   "summary": "앞선 검토에서 떨어진 발언을 이어 붙인 인용 세 곳(AI 채널·Catalog, 셋째 원칙·UCP, 엔터프라이즈·전통 브랜드)을 연속 구간의 인용 블록으로 나눴고, 송금 라이선스·MCA 효과·직전 분기 값의 출처 표시도 원문에 맞게 고쳤다. 이번 확인에서 고친 인용과 수치가 원문과 일치함을 대조로 확인했고, 남은 것은 인용 블록 하나의 위치 표시가 바뀐 내용과 맞지 않는 사소한 문제뿐이다.",
-  "history": []
+  "history": [
+   {
+    "at_kst": "2026-11-27T20:14:06+09:00",
+    "text": "야후 4Q25 EPS 0.48달러가 GAAP 희석 EPS(0.57달러)와 다름을 밝히고 '컨센서스 하회' 서술 정정"
+   }
+  ]
  }
 }
