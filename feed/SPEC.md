@@ -1,6 +1,6 @@
 # feed 형식 명세
 
-이 사이트의 리포트·금융권 시각·감시 대상·시장을 정적 JSON 파일로 내보낸다. JavaScript 실행이나 로그인 없이 읽을 수 있다.
+이 사이트의 리포트·금융권 시각·감시 대상·시장·가격을 정적 JSON 파일로 내보낸다. JavaScript 실행이나 로그인 없이 읽을 수 있다.
 사이트를 빌드할 때 화면과 같은 원천에서 함께 만들며, 손으로 따로 관리하지 않는다. 자료는 이 사이트에서 밖으로만 나간다.
 
 - 기준 주소: `<사이트 주소>/feed/`
@@ -18,6 +18,7 @@
 | `health.json` | 수집 상태와 놓친 것(`missed`) |
 | `watch.json` | 첫 화면의 감시 대상(AI 설비투자 사이클을 보는 네 갈래의 상태와 그림의 값) |
 | `market.json` | 시장 탭(추세 신호·거시 지표·우선주 괴리율·종목 표) |
+| `prices.json` | 가격 탭의 GPU 임대가격(채널 기준가·제공자별 값·실거래 지수·계약 기간별 가격) |
 | `data/<id>/` | 조사 자료 묶음. 한 질문을 두고 손으로 모은 기록(화면 없음) |
 | `SPEC.md` | 이 문서 |
 | `QUESTIONS.md` | 판단하기 어려웠던 것 |
@@ -33,7 +34,7 @@
 - 필드 이름은 바꾸지 않는다. 바꿔야 하면 `schema` 번호를 올리고 이 문서의 변경 이력에 적는다. 값의 종류(예: 출처 `kind`)는 늘어날 수 있다.
 - 유료 출처(`access: "paid"`)는 화면과 똑같이 본문을 싣지 않는다. 짧은 인용과 이 사이트의 문장으로 쓴 사실·해석만 나간다. 화면에 없는 것을 feed 에 더 넣지 않는다.
 - 이미지·영상은 파일로 넣지 않는다. 원본 주소와 시각(초, `t`)만 넣는다.
-- 게시 전에 화면의 리포트 수·금융권 항목 수가 feed 의 수와 같은지, 첫 화면 감시 대상의 항목·상태가 `watch.json` 과 같은지, 시장 탭의 지수·신호·지표·종목이 `market.json` 과 같은지 검사한다. 다르면 게시하지 않는다.
+- 게시 전에 화면의 리포트 수·금융권 항목 수가 feed 의 수와 같은지, 첫 화면 감시 대상의 항목·상태가 `watch.json` 과 같은지, 시장 탭의 지수·신호·지표·종목이 `market.json` 과 같은지, 가격 탭의 채널 기준가·제공자 칸·실거래 지수·계약 기간별 칸이 `prices.json` 과 같은지 검사한다. 다르면 게시하지 않는다.
 
 ## index.json
 
@@ -51,7 +52,8 @@
  "street": {"updated_kst": "…", "path": "street.json"},
  "calendar": {"updated_kst": "…", "path": "calendar.json"},
  "watch": {"updated_kst": "…", "path": "watch.json"},
- "market": {"updated_kst": "…", "path": "market.json"}
+ "market": {"updated_kst": "…", "path": "market.json"},
+ "prices": {"updated_kst": "…", "path": "prices.json"}
 }
 ```
 
@@ -354,6 +356,54 @@
   - `report` 는 그 기업의 가장 최근 실적 리포트(`reports/<슬러그>.json`)이고 없으면 `null` 이다.
 - `missing` 은 비워 둔 값의 이유다(키 → 이유 문장). 구획의 `missing` 은 받지 못한 지수·지표·쌍(id → 이유)이고, 줄의 `missing` 은 그 줄에서 비운 칸(필드 이름 → 이유)이다. 비운 값은 `null` 이다.
 
+## prices.json
+
+가격 탭(`prices/`)의 GPU 임대가격을 낸다. 값은 `content/market/prices.json` 의 기록 그대로이고 계산은 Python 이 한다(`docs/areas/prices.md`). 사이트가 내는 계산은 화면과 같은 하나(`traded.items[].vs_neocloud_pct`)뿐이다. 메모리 가격·재고는 아직 넣지 않았다. 기록이 없으면 `gpu` 가 `null` 이다.
+
+```json
+{
+ "schema": 1, "updated_kst": "…",
+ "gpu": {
+  "unit": "USD/GPU·h", "date": "2026-11-27",
+  "channels": [{"key": "hyperscaler", "label": "하이퍼스케일러 정가", "kind": "on_demand"}, {"key": "neocloud", …}, {"key": "marketplace", …}, {"key": "spot", "label": "하이퍼스케일러 스팟", "kind": "spot"}],
+  "models": [{"id": "h100", "label": "H100", "marketplace_discount_pct": -23.2, "spot_discount_pct": -64.3, "spot_discount_base": 8.87}],
+  "providers": [{"id": "verda", "label": "Verda", "channel": "neocloud", "note": "…", "in_reference": true, "list_basis": "min",
+                 "source": {"name": "SkyPilot Catalog", "url": "…", "changed_at": "2026-11-26"}}],
+  "reference": [{"model": "h100", "channel": "neocloud", "value": 3.54, "min": 2.5, "max": 5.99, "providers": 8,
+                 "delta": {"d1": 0, "w1": 0, "m1": 0, "m3": 9.95, "ytd": 0, "y1": 0}, "base_date": "2023-05-07",
+                 "daily": [["2025-11-30", 3.1]], "monthly": [["2023-05", 2.4]]}],
+  "cells": [{"model": "h100", "provider": "verda", "kind": "on_demand", "channel": "neocloud", "median": 5.29, "min": 5.29, "rows": 1, "regions": 1,
+             "date": "2026-11-27", "since": "2026-03-15", "delta": {"d1": 0, "w1": 0, "m1": 0, "m3": 0, "ytd": null},
+             "range_52w": {"low": 2.29, "high": 5.62}, "weekly": [2.29, …]}],
+  "regional": {"regions": [{"key": "na", "label": "북미"}], "base": "na",
+               "rows": [{"model": "h100", "channel": "hyperscaler", "region": "emea", "value": 0, "min": 0, "max": 0, "providers": 2, "rows": 14, "premium_pct": 12.0}]},
+  "indices": [{"id": "all", "label": "종합", "group": "all", "value": 0, "date": "…", "base_date": "…", "delta": {…}, "range_52w": {…}, "monthly": [["2022-10", 100]]}],
+  "external": {"source": {"name": "Silicon Data", "url": "…"}, "values": "shape",
+               "items": [{"model": "h100", "from": "…", "to": "…", "series": [{"channel": "neocloud", "shape": [0.42, null, 0.51]}]}]},
+  "traded": {"source": {"name": "Ornn Data", "url": "…"}, "date": "2026-11-25",
+             "items": [{"model": "h100", "index": "OCPI-H100", "gpu": "H100 SXM", "value": 3.1, "settled": "2026-11-25", "url": "…",
+                        "vs_neocloud_pct": -12.4, "shape": {"from": "…", "to": "…", "values": [0.43, …]}}]},
+  "terms": {"source": {"name": "GetDeploying", "url": "…", "license": "CC BY 4.0", "license_url": "…"}, "week": "2026-11-23", "min_providers": 3,
+            "models": [{"id": "gb200", "label": "GB200"}],
+            "rows": [{"model": "h100", "term": "r12", "label": "12개월 예약", "months": 12, "value": 3.235, "min": 1.7625, "max": 8.031,
+                      "providers": 14, "offerings": 44, "since": "2025-11-24", "thin": false,
+                      "delta": {"w4": 0.78, "w13": 5.92, "w52": 22.6}, "vs_on_demand_pct": -19.81, "weekly": [["2025-11-24", 2.6387]]}]}
+ }
+}
+```
+
+- 무엇이 무엇인가: 제공자 칸(`cells`)·계약 기간별 값(`terms.rows` 의 `value`·`min`·`max`·수)·실거래 지수의 `value` 는 원천이 준 사실이다. 채널 기준가(`reference`)·할인율·지수(`indices`)·변화율(`delta`)·`premium_pct`·`vs_on_demand_pct`·`vs_neocloud_pct` 는 그 값으로 낸 계산이다.
+- 값은 GPU 한 장의 시간당 달러다. 이름이 `_pct` 로 끝나는 값과 `delta` 는 % 단위의 수다. 날짜가 붙은 목록은 오래된 것부터이고 `[날짜 또는 달, 값]` 이다. `weekly` 가 수만 든 목록(`cells`)이면 최근 52주의 주간 값이다.
+- `models` 는 화면에 구획이 있는 GPU 다. `marketplace_discount_pct` 는 마켓플레이스 기준가 ÷ 네오클라우드 정가 기준가 − 1, `spot_discount_pct` 는 하이퍼스케일러 스팟 기준가 ÷ 같은 제공자의 정가 중앙값(`spot_discount_base`) − 1 이다. 견줄 값이 없으면 `null`.
+- `providers[].in_reference` 가 `false` 면 기준가와 지수에 넣지 않는 제공자다. `list_basis` 는 정가 칸에서 기준가가 읽는 값(`min` 가장 싼 지역·구성 | `median` 매물의 중앙값)이고 스팟 칸은 어디서나 중앙값이다. `source.changed_at` 은 공개 가격표가 마지막으로 바뀐 날이다(있는 원천만).
+- `reference` 는 모델 × 채널의 기준가다: 그 채널 제공자 값들의 중앙값(`value`)과 범위·제공자 수. `daily`(최근 1년의 기록이 있는 날)와 `monthly`(처음부터, 값이 변하지 않은 달은 빠져 있다)는 지금 기준가에 그 묶음 지수의 비율을 곱해 거슬러 올라간 달러 값이어서, 제공자가 들어오거나 빠져도 계단이 없는 대신 그때의 가격표와 조금 다를 수 있다. 실제 값은 `cells` 다.
+- `cells[].channel` 은 그 칸이 드는 묶음이다. 하이퍼스케일러가 아닌 곳의 스팟은 `spot-other` 이고 기준가에 들지 않는다. `date` 가 `gpu.date` 보다 앞이면 그 뒤로 받지 못한 것이다.
+- `regional.rows` 는 같은 기준가를 권역마다 따로 낸 값이고 `premium_pct` 는 기준 권역(`base`) 대비다. 권역마다 든 제공자가 달라 차이의 일부는 제공자 구성에서 온다.
+- `indices` 는 여러 모델·채널을 섞은 임대가 지수(`base_date` = 100)다. `group`: `all` | `channel` | `generation` | `model`.
+- `external` 은 Silicon Data 의 지수다. 원천의 약관이 값의 재게시를 막아 **값이 없다**(`values: "shape"`). `shape` 는 그림의 세로 자리(0~1)일 뿐이고 가격도 변화율도 되살릴 수 없다. 값이 없는 날은 `null`.
+- `traded` 는 Ornn Compute Price Index 다(가격표가 아니라 네오클라우드에서 체결된 거래의 가격). 원천의 약관이 일별 값의 재게시를 막아 최신 정산값만 싣는다. `value` 를 쓸 때는 `index`·`settled`·`url` 을 함께 적어 인용한다. `shape` 는 `external` 과 같은 뜻이다(값 아님). `vs_neocloud_pct` 는 `value` ÷ 그 모델의 네오클라우드 정가 기준가 − 1 이다.
+- `terms` 는 GetDeploying 의 주간 자료다(CC BY 4.0 — 쓸 때 `source` 의 이름과 라이선스를 밝힌다). 제공자들이 가격표에 내건 값이고 체결가가 아니다. `term`: `on_demand` | `spot` | `r<개월 수>`(예약). `value` 는 제공자마다 한 값으로 줄인 뒤의 중앙값이고, 값을 바꾼 곳이 없어도 제공자가 들어오거나 빠지면 움직인다. 제공자가 `min_providers` 보다 적은 칸은 `thin: true` 이고 `delta`·`vs_on_demand_pct` 가 `null`, `weekly` 가 없다. `terms.models` 에는 `gpu.models` 에 없는 GPU(GB200·GB300)가 있다. 끝나지 않은 주(`week`)의 값은 바뀔 수 있다.
+
 ## data/<id>/ — 조사 자료 묶음
 
 한 질문을 두고 손으로 모은 기록이다. 화면에는 없고 feed 로만 나간다. 지금은 `apac-siting`(아시아·태평양 AI 컴퓨트 입지 비교), `ai-knowledge-work`(AI 는 코딩을 넘어 범용 지식노동으로 번지는가), `compute-balance`(누가 AI 컴퓨팅을 얼마나 갖고 쓰는가), `online-narratives`(X·Substack 의 글은 주가를 움직이는가), `open-weight-substitution`(오픈웨이트는 클로즈드 모델의 어느 일을 얼마나 가져가는가), `inference-margins`(오픈웨이트 추론을 파는 쪽에서 돈은 어디에 남는가)이다.
@@ -515,3 +565,9 @@
 바뀐 것
 
 - `market.json` 을 더했다. 시장 탭의 추세 신호·거시 지표·우선주 괴리율·종목 표를 기록 그대로 낸다. `index.json` 에 `market` 을 더했다(기존 키는 그대로).
+
+### 2026-11-27 — schema 1
+
+바뀐 것
+
+- `prices.json` 을 더했다. 가격 탭의 GPU 임대가격(모델 × 채널 기준가와 추이, 제공자별 값, 지역별 값, 묶음 지수, Silicon Data 지수의 모양, Ornn 실거래 지수의 최신 정산값과 모양, GetDeploying 의 계약 기간별 주간 가격)을 기록 그대로 낸다. `index.json` 에 `prices` 를 더했다(기존 키는 그대로). 메모리 가격·재고는 아직 없다.
