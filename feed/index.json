@@ -1,7 +1,27 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-27T23:17:25+09:00",
+ "generated_kst": "2026-11-28T02:28:49+09:00",
  "reports": [
+  {
+   "slug": "semianalysis-trainium3-inferencex",
+   "type": "article",
+   "title": "SemiAnalysis : Trainium3는 에이전트 추론의 토큰당 비용에서 GB300을 앞서고, 그 우위는 공급망만이 아니라 마이크로아키텍처에서 나온다",
+   "companies": [
+    {
+     "name": "Amazon (AWS)",
+     "ticker": null
+    },
+    {
+     "name": "Nvidia",
+     "ticker": null
+    }
+   ],
+   "published_kst": "2026-11-28T02:19:33+09:00",
+   "revised_kst": "2026-11-28T02:19:33+09:00",
+   "revision": 1,
+   "summary": "자체 벤치마크(AgentX·UBenchX)로 보면 Trainium3는 대역폭 대비 TCO가 낮아 디코드 중심의 에이전트 추론에서 Vera Rubin 다음으로 토큰당 비용이 좋고, AWS 자체 칩 전략의 근거로는 지금까지 나온 것 중 가장 구체적이다. 다만 마진 비교는 글쓴이의 TCO 모델과 단일 워크로드에 기대고 있고, 프리필 연산량과 MXFP8 전력 제약, 칩 밖 all-to-all의 약점은 그대로 남아 있다. 이 글은 AWS 쪽의 협조와 검증을 받아 작성됐다.",
+   "path": "reports/semianalysis-trainium3-inferencex.json"
+  },
   {
    "slug": "nvidia-dev-how-to-optimize-nvfp4-attention-on-nvidia-rtx",
    "type": "article",
@@ -10493,11 +10513,11 @@
   }
  ],
  "street": {
-  "updated_kst": "2026-11-27T23:17:25+09:00",
+  "updated_kst": "2026-11-28T02:28:49+09:00",
   "path": "street.json"
  },
  "calendar": {
-  "updated_kst": "2026-11-27T02:27:55+09:00",
+  "updated_kst": "2026-11-28T02:20:04+09:00",
   "path": "calendar.json"
  },
  "watch": {

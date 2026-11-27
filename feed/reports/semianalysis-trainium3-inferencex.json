@@ -1,0 +1,456 @@
+{
+ "schema": 1,
+ "slug": "semianalysis-trainium3-inferencex",
+ "type": "article",
+ "title": "SemiAnalysis : Trainium3는 에이전트 추론의 토큰당 비용에서 GB300을 앞서고, 그 우위는 공급망만이 아니라 마이크로아키텍처에서 나온다",
+ "summary": "자체 벤치마크(AgentX·UBenchX)로 보면 Trainium3는 대역폭 대비 TCO가 낮아 디코드 중심의 에이전트 추론에서 Vera Rubin 다음으로 토큰당 비용이 좋고, AWS 자체 칩 전략의 근거로는 지금까지 나온 것 중 가장 구체적이다. 다만 마진 비교는 글쓴이의 TCO 모델과 단일 워크로드에 기대고 있고, 프리필 연산량과 MXFP8 전력 제약, 칩 밖 all-to-all의 약점은 그대로 남아 있다. 이 글은 AWS 쪽의 협조와 검증을 받아 작성됐다.",
+ "companies": [
+  {
+   "name": "Amazon (AWS)",
+   "ticker": null
+  },
+  {
+   "name": "Nvidia",
+   "ticker": null
+  }
+ ],
+ "prev_slug": null,
+ "published_kst": "2026-11-28T02:19:33+09:00",
+ "revised_kst": "2026-11-28T02:19:33+09:00",
+ "revision": 1,
+ "sources": [
+  {
+   "n": 1,
+   "title": "SemiAnalysis — AWS Challenger: Trainium3 Inference and Microarchitecture Deep Dive",
+   "url": "https://newsletter.semianalysis.com/p/trainium3-inferencex",
+   "date": "2026-11-28",
+   "access": "paid",
+   "kind": "article",
+   "read": "전문",
+   "note": "웹 페이지 본문 기준. 그림 53개 속 글자와 수치는 확인하지 못함(캡션만 확인). 따라서 AgentX 곡선의 절대 TCO·처리량 값과 마이크로벤치마크 그래프의 세부 수치는 본문에 적힌 것만 반영했다."
+  }
+ ],
+ "sections": [
+  {
+   "id": "s1",
+   "h": "주장 한 줄",
+   "layer": "common",
+   "blocks": [
+    {
+     "kind": "fact",
+     "text": "Trainium3는 처음부터 타일을 기본 단위로 설계한 ML 전용 구조여서 하드웨어가 물리적으로 예상되는 대로 동작한다. 과거의 약점이던 소프트웨어도 더는 장벽이 아니다. 그 결과 에이전트 추론의 토큰당 TCO에서 GB300과 맞서거나 이기며, 이 우위는 아마존의 저비용 공급망뿐 아니라 마이크로아키텍처 결정에서도 나온다.",
+     "src": 1,
+     "loc": "도입부"
+    },
+    {
+     "kind": "quote",
+     "speaker": "SemiAnalysis",
+     "text": "이 우위는 아마존의 초저가 공급망 때문만이 아니다. 마이크로아키텍처 결정에서도 나온다.",
+     "src": 1,
+     "loc": "도입부"
+    }
+   ]
+  },
+  {
+   "id": "s2",
+   "h": "에이전트 추론의 토큰당 TCO에서 Vera Rubin 다음 자리",
+   "layer": "common",
+   "blocks": [
+    {
+     "kind": "fact",
+     "items": [
+      "AgentX는 실제 코딩 에이전트 세션을 Trainium3 서버에 재생해 측정한 종단간 에이전트 추론 벤치마크다(InferenceXv3).",
+      "Trainium3 PDS + vLLM의 TCO 대비 성능은 p90 interactivity 곡선 전 구간에서 Vera Rubin을 뺀 모든 가속기보다 높다.",
+      "종단간 지연도 곡선 전체에서 경쟁력이 있다. 다만 TTFT는 개선 여지가 남아 있고, 일부 p90 TTFT 구간에서는 GB300에 뒤진다.",
+      "p90 interactivity 135 tok/s/user(OpenRouter에서 흔한 속도)에서 Trainium3 + vLLM의 이익률은 73.5%로 가장 높다. 2위는 GB300 + SGLang의 53%다. 전제는 3년 임대 가격, Z.ai 정가 기준 토큰 가격, 하드웨어 가동률 60%이다."
+     ],
+     "src": 1,
+     "loc": "Trainium’s Superior Inference Performance per Dollar - AgentX"
+    },
+    {
+     "kind": "calc",
+     "text": "같은 토큰 가격(Z.ai 정가)과 같은 가동률을 전제로 두 이익률을 원가 비중으로 바꾸면, 135 tok/s/user에서 Trainium3 + vLLM의 토큰당 원가는 GB300 + SGLang의 약 56%다. 다시 말해 토큰당 원가가 4할 넘게 낮다는 주장이다.",
+     "inputs": [
+      {
+       "name": "Trainium3 + vLLM 이익률",
+       "value": "73.5%"
+      },
+      {
+       "name": "GB300 + SGLang 이익률",
+       "value": "53%"
+      }
+     ],
+     "formula": "(1 − 0.735) ÷ (1 − 0.53) ≈ 0.56"
+    },
+    {
+     "kind": "view",
+     "text": "비교 대상은 하드웨어 한 쌍이 아니라 하드웨어와 서빙 엔진의 조합(vLLM 대 SGLang)이고, 측정점도 interactivity 한 지점이다. 그래서 '원가 56%'는 Trainium3 칩의 고정된 우위가 아니라 이 조건에서 나온 값으로 읽어야 한다. 또 TCO 대비 성능 비교에서 Vera Rubin은 예외로 남았다. 원문은 Trainium3가 Vera Rubin을 뺀 모든 가속기보다 낫다고만 적었고, 이익률 비교에는 Vera Rubin을 넣지 않았다. 따라서 이 우위는 현재 세대 GB300과의 비교로 한정해 읽는 것이 안전하고, 다음 세대와의 격차는 알 수 없다(확신 중간)."
+    }
+   ]
+  },
+  {
+   "id": "s3",
+   "h": "연산량은 6분의 1이지만 대역폭 대비 비용이 싸서 디코드에서 이긴다",
+   "layer": "common",
+   "blocks": [
+    {
+     "kind": "fact_table",
+     "title": "Trainium3와 GB300(Blackwell Ultra) 칩당 비교",
+     "head": [
+      "항목",
+      "Trainium3",
+      "GB300",
+      "Trainium3/GB300"
+     ],
+     "rows": [
+      [
+       "FP4 이론 연산",
+       "2,517 TFLOPS",
+       "15,000 TFLOPS",
+       "17%"
+      ],
+      [
+       "HBM 대역폭",
+       "4.9 TB/s",
+       "8.0 TB/s",
+       "61%"
+      ],
+      [
+       "HBM 용량",
+       "144GB",
+       "288GB(원문은 '절반'으로만 표현)",
+       "50%"
+      ],
+      [
+       "TCO",
+       "—",
+       "—",
+       "약 30%"
+      ]
+     ],
+     "note": "GB300 HBM 용량은 원문이 'GB300 GPU당 용량의 절반'이라고만 적은 데서 역산했다.",
+     "src": 1,
+     "loc": "Trainium’s Superior Inference Performance per Dollar - AgentX"
+    },
+    {
+     "kind": "fact",
+     "items": [
+      "프리필은 연산 제약이라 일부 p90 TTFT 구간에서 GB300에 뒤진다. Trainium이 쓰는 파이프라인 프리필도 대체로 지연보다 처리량에 유리하다.",
+      "디코드는 메모리 대역폭 제약이라 interactivity에서 경쟁력이 더 높다.",
+      "HBM이 GB300의 절반이어도 이 마진을 낸다. 이를 글쓴이의 'Short King' 논지로 설명한다. 추가 HBM 용량은 목표 지연에서 늘어나는 처리량이 비용을 정당화할 때만 의미가 있다는 논지다. 같은 이유로 4-Hi가 업계 전반에서 매력적인 선택지이고, 다음 세대 가속기는 주로 8-Hi를 쓴다고 본다."
+     ],
+     "src": 1,
+     "loc": "Trainium’s Superior Inference Performance per Dollar - AgentX"
+    },
+    {
+     "kind": "view",
+     "text": "표의 비율을 TCO로 나누면 대역폭/TCO는 GB300의 약 2배(61%÷30%), 연산/TCO는 약 0.57배(17%÷30%)다. 디코드 비중이 큰 에이전트 추론, 그중에서도 KV 캐시 재사용으로 프리필 부담이 줄어드는 코딩 세션에서는 Trainium3가 유리하다. 반대로 긴 신규 프롬프트가 많거나 학습처럼 연산 제약인 작업에서는 우위가 뒤집힐 수 있다. 마진 비교의 무게는 결국 워크로드 구성에 달려 있다(확신 중간)."
+    }
+   ]
+  },
+  {
+   "id": "s4",
+   "h": "서빙 소프트웨어가 측정된 칩 토폴로지를 그대로 따른다",
+   "layer": "common",
+   "blocks": [
+    {
+     "kind": "fact",
+     "items": [
+      "한 노드는 16칩이고, 칩마다 NeuronCore 8개가 있으며 두 개씩 HBM 스택 하나를 공유한다. 프리필과 디코드는 서로 다른 노드에서 돌고, 같은 16칩을 다르게 배치한다.",
+      "프리필: 모델 레이어를 16단으로 잘라 칩 하나에 한 단씩 맡기는 파이프라인이다. 한 단 안에서는 칩의 8코어가 청크를 나눠 텐서·전문가 병렬을 모두 칩 안에 둔다. 무거운 교환을 칩 안에 묶으면 단의 병목은 TensorE가 된다.",
+      "디코드: 모델 한 벌을 16칩 128개 NeuronCore 각각을 랭크로 삼아 펼친다(LNC=1). 다중 사용자 GLM-5.3에서는 코어마다 routed expert 2개가 배정된다.",
+      "디코드는 반 칩·한 칩·트레이(2칩)·두 트레이·반 노드·전체 노드의 중첩 그룹을 둔다. 덴스 레이어와 shared expert처럼 작은 교환은 스위치를 거치지 않는 그룹에서 끝낸다. 그러나 activation 수집과 expert 출력 reduce는 128코어 전체에 걸치므로 매 레이어 스위치를 지난다.",
+      "각 NeuronCore가 로컬 HBM을 가진 독립 장치처럼 동작하는 방식은, Nvidia가 CUDA 13.4에서 Rubin 커널을 한 다이의 메모리에 묶는 locality domain을 추가한 것과 같은 방향이라고 본다."
+     ],
+     "src": 1,
+     "loc": "Prefill / Decode"
+    },
+    {
+     "kind": "view",
+     "text": "디코드는 매 레이어 128코어 전체 교환이 스위치를 지나는 구조다. 그래서 칩 밖 all-to-all이 칩 안의 9~10분의 1로 떨어진다는 뒤의 측정은 디코드 성능과 바로 이어진다. 2세대 스위치(Trainium3n)의 all-to-all 2.8배 개선은 큰 메시지 기준이고, 작은 메시지의 all-to-all은 노드·랙 단위에서 소폭 개선에 그친다. 원문은 AgentX를 어느 세대 스위치에서 돌렸는지 따로 밝히지 않았다. 다만 '모든 벤치마크를 gen1 스위치 트레이에서 실행했다'고 적은 점으로 보면 2세대에서 디코드 결과가 나아질 여지는 있다. 작은 메시지 위주의 디코드라면 그 폭은 제한적일 수 있다(추정, 확신 낮음)."
+    }
+   ]
+  },
+  {
+   "id": "s5",
+   "h": "소프트웨어는 더는 장벽이 아니며 프로파일러는 업계 최고라는 주장",
+   "layer": "common",
+   "blocks": [
+    {
+     "kind": "quote",
+     "speaker": "SemiAnalysis",
+     "text": "과거에는 이 때문에 소프트웨어가 엄청난 난제였지만, 이제는 더 이상 그렇지 않다.",
+     "src": 1,
+     "loc": "도입부"
+    },
+    {
+     "kind": "fact",
+     "items": [
+      "Trainium 프로파일러는 업계를 크게 앞서는 최고 수준이다. Anthropic의 성능 엔지니어들이 애용하고, Anthropic 성능 총괄은 Trainium의 성능 분석이 Nvidia GPU보다 훨씬 낫다고 공개적으로 말했다.",
+      "프로파일러의 정밀도를 보이려고 Trainium3 DMA 엔진의 실제 프로파일로 영상을 픽셀 아트로 재현했다. 관련 SKILLS.md는 이달 중 공개할 예정이다.",
+      "NKI는 nisa.exponential에 안정 softmax용 최댓값 빼기, 누적 지수합 계산 같은 FlashAttention 친화 기능을 넣었다. 글쓴이는 이를 사용성 개선으로 평가한다."
+     ],
+     "src": 1,
+     "loc": "Trainium Profiler Fine-grain Accuracy / Transcendental Functions"
+    },
+    {
+     "kind": "view",
+     "text": "'소프트웨어가 더는 문제가 아니다'를 뒷받침하는 직접 증거는 vLLM 위에서 나온 AgentX 결과 하나와 Anthropic 측 평판뿐이다. 범용 개발자가 쓰기 쉬운지는 다루지 않는다. 오히려 본문 곳곳에 사용자가 직접 감당해야 할 부담이 보인다: 양자화를 사용자에게 넘긴 MX 경로, 간접 접근 시 software DGE로 제한되는 점, 아직 최적화 중인 sb2sb collective. 전용 엔지니어링 팀이 있는 대형 고객에게는 맞는 말이지만, 일반 고객으로 넓히면 근거가 약하다(확신 중간)."
+    }
+   ]
+  },
+  {
+   "id": "s6",
+   "h": "작은 메시지에서도 HBM 대역폭을 채우는 데이터 이동 설계",
+   "layer": "common",
+   "blocks": [
+    {
+     "kind": "fact_table",
+     "title": "NeuronCore 1개, 64 KiB 메시지의 HBM 대역폭(디스크립터 방식별)",
+     "head": [
+      "방식",
+      "읽기(load)",
+      "쓰기(store)",
+      "비고"
+     ],
+     "rows": [
+      [
+       "static(사전 컴파일)",
+       "492 GB/s(80%)",
+       "544 GB/s(88.8%)",
+       "약 256 KiB에서 최대치에 근접"
+      ],
+      [
+       "hardware DGE(기본값)",
+       "398 GB/s(65%)",
+       "476 GB/s(77.7%)",
+       "256 KiB 이후 static과 같아짐"
+      ],
+      [
+       "software DGE",
+       "현저히 낮음",
+       "현저히 낮음",
+       "간접 접근(gather/scatter)은 이 방식만 가능"
+      ]
+     ],
+     "src": 1,
+     "loc": "HBM Bandwidth"
+    },
+    {
+     "kind": "fact",
+     "items": [
+      "8코어를 동시에 돌려도 큰 메시지에서 HBM 활용률은 약 3%만 떨어진다.",
+      "글쓴이는 작은 메시지에서 최대 HBM 대역폭 활용에 도달하는 것은 Nvidia GPU에서는 불가능하다고 주장한다.",
+      "DGE는 Nvidia TMA·AMD TDM에 해당한다. TMA는 큰 복사를 빠르게 하는 대신 지연이 크지만, hardware DGE는 software DGE 대비 성능 손해가 없다. 반면 TMA는 gather/scatter를 하지만 최신 DGE도 하지 못한다.",
+      "PSUM 읽기 대역폭: 32 KiB에서 ScalarE 453.9, VectorE 413.9 byte/cycle이다. 약 256 KiB에서 이론치 512 byte/cycle(엔진당 614.4 GB/s)에 근접한다. 두 엔진을 함께 쓰면 손실 없이 1,024 byte/cycle에 이른다.",
+      "같은 LNC 안 두 코어 간 교환: 512B에서 GpSIMD DMA가 메인 DMA보다 지연이 최대 2.6배 낮고, 32 KiB에서 둘이 교차한다. 메인 DMA는 14 MiB에서 572 GB/s로 포화된다. 공유 HBM + 세마포어 방식은 10~20%의 지연 오버헤드가 있다. HBM 쓰기 burst는 32바이트로 추정한다."
+     ],
+     "src": 1,
+     "loc": "HBM Bandwidth / PSUM to SBUF Bandwidth / Intra-Logical NeuronCore Communication"
+    },
+    {
+     "kind": "view",
+     "text": "작은 메시지에서 대역폭을 채우는 성질은 배치가 작은 디코드에 유리하다. 글쓴이의 논리로는 이것이 앞 절의 '대역폭/TCO 2배'를 실제 성능으로 옮기는 고리다. 다만 본문 수치로는 기본값인 hardware DGE가 64 KiB에서 65%(읽기)·77.7%(쓰기)이고, 최대치에 가까워지는 것은 약 256 KiB부터다. 'Nvidia GPU에서는 불가능하다'는 비교도 본문에 Nvidia 쪽 수치가 없어 확인할 수 없다(그림은 확인하지 못함). 반대로 gather/scatter는 software DGE로만 가능하고 그 경로가 크게 느리다. 이는 MoE 토큰 라우팅이나 페이지드 KV 캐시처럼 간접 접근이 많은 커널에서 약점이 될 수 있다. 원문은 이 손실을 실제 워크로드로 재지 않았다(확신 낮음)."
+    }
+   ]
+  },
+  {
+   "id": "s7",
+   "h": "행렬 엔진은 모델대로 움직이지만 저정밀도에서는 전력이 발목을 잡는다",
+   "layer": "common",
+   "blocks": [
+    {
+     "kind": "fact",
+     "items": [
+      "TensorE는 128×128 시스톨릭 배열이다. 이론 모델의 지연은 N+254 사이클인데 실측은 N+393으로 맞아떨어진다(약 140사이클 오버헤드). 개시 간격은 N≥64에서 N+6으로 예측되지만 N=8에서는 30사이클이다.",
+      "지연과 개시 간격 모두 M과 무관하다. 행렬의 M이 작은 LLM 디코드 최적화가 쉬워진다고 본다.",
+      "LoadStationary와 MovingMultiply를 번갈아 실행하는 현실적 조건에서 N=64에 활용률 90%를 넘고, N>128에서 이론치에 근접한다.",
+      "FP8 double row(K=256): 같은 형태 기준으로 N≈96까지는 BF16보다 느리고, N≈256 이후에야 2배 처리량에 이른다. BF16보다 전력 스로틀링이 잦다.",
+      "Trainium3에 새로 들어간 MX 형식: quad-MXFP8은 K=512를 지원한다. 양자화(nisa.quantize_mx)를 TensorE가 아닌 사용자 쪽에 맡기는데, 이는 Nvidia·AMD GPU와 다르다. 4배 처리량은 N>128에서만 나온다.",
+      "Row tiling 모드: N≥128에서 이론상 2배·4배에 근접하고 전체 배열 처리량의 약 90%를 유지한다. 다만 PSUM 용량 때문에 지원하지 않는 형태가 있을 수 있다.",
+      "8코어 전체 가동, (M, N)=(128, 512) 조건: BF16은 최대치 근처, FP8 double row와 MXFP4는 약 90% MFU, MXFP8은 68.6% MFU로 크게 스로틀링된다. 부스트 클럭을 2.4GHz에서 2GHz로 묶으면 MXFP8은 2GHz 기준 84.5% MFU이고, 실질 MFU 개선은 1.9%에 그친다. 글쓴이는 전력 스로틀링을 MXFP8의 핵심 문제로 꼽는다."
+     ],
+     "src": 1,
+     "loc": "Tensor Engine / Double FP8 / Microscaling / Full Chip Performance and Power Throttling"
+    },
+    {
+     "kind": "view",
+     "text": "좋은 점은 작은 M에서도 성능이 떨어지지 않는다는 것으로, 디코드 효율에 직접 이어진다. 나쁜 점은 공칭 연산량을 얻으려면 큰 N이 필요하다는 것이다(FP8 2배는 N≈256, MXFP8 4배는 N>128). MXFP8이 전력 한계로 68.6% MFU에 머무는 것은 클럭을 낮춰도 거의 회복되지 않으므로, 소프트웨어로 풀 수 없는 칩·보드의 전력 설계 문제로 보인다. 이미 6분의 1인 FP4 연산 격차가 MX 경로에서는 실효 기준으로 더 벌어질 수 있다는 뜻이다. 다만 MXFP4는 약 90%로 덜 영향받으므로 FP4 추론 위주라면 손실은 제한적이다(확신 중간)."
+    }
+   ]
+  },
+  {
+   "id": "s8",
+   "h": "통신은 칩 안에서 강하고 칩 밖에서 급감하며, 2세대 스위치가 그 간극을 줄인다",
+   "layer": "common",
+   "blocks": [
+    {
+     "kind": "fact",
+     "items": [
+      "16 MiB 미만 메시지에서 칩 단위(4랭크) collective는 노드(64)·랙(128)·UltraServer(256) 대비 대역폭이 약 1.5~3배다. 나머지 세 규모는 서로 비슷해 랙이 성능 손실 없이 확장되도록 설계됐다고 본다.",
+      "all-to-all은 칩 단위가 노드·랙 단위의 약 9~10배다.",
+      "2노드 비교: 랙 내부와 랙 간 피어 NeuronLink는 비슷하고, NeuronLink는 EFA의 약 1.65배 대역폭을 낸다. all-to-all 최대치는 랙 내부 NeuronLink 31 GB/s, 랙 간 비피어 EFA 8 GB/s다.",
+      "SBUF 간(sb2sb) collective는 약 2 MiB까지만 HBM 간 방식과 같고, 그 위에서는 all-to-all을 빼고 정체한다. 아마존이 최적화 중이라 빠르게 개선될 것으로 기대한다.",
+      "모든 벤치마크는 gen1 스위치 트레이(160레인 Astera Scorpio X, 이중 스위치 평면)에서 실행했다. gen2(Trainium3n)는 320레인 Astera Scorpio X 스위치 8개로 랙 32칩을 단일 평면에 묶는다.",
+      "Trainium3n은 큰 메시지에서 모든 collective의 대역폭을 높이고, all-to-all은 2.8배다. 작은 메시지에서는 랙 안 두 노드 간 all-reduce·reduce-scatter 비용이 노드 내부와 거의 같아진다. UltraServer 전체에서는 두 연산이 gen1보다 약 5분의 1~4분의 1 빠르다. 랙 간 EFA all-to-all은 두 세대가 같고, 랙 내 지연의 약 3배다.",
+      "CollectiveX(더 현실적인 collective 패턴 벤치마크)는 몇 주 안에 공개할 예정이다."
+     ],
+     "src": 1,
+     "loc": "Inter-LNC Collective Communications / Trainium3n"
+    },
+    {
+     "kind": "fact_table",
+     "title": "Gen2 스위치 트레이의 칩 간 경로 4단계(칩 쌍 하나 기준)",
+     "head": [
+      "경로",
+      "대역폭",
+      "지연"
+     ],
+     "rows": [
+      [
+       "같은 트레이 짝(직결)",
+       "약 800 GB/s",
+       "가장 빠름"
+      ],
+      [
+       "같은 랙의 다른 칩(스위치 1홉, 노드·짝홀 무관)",
+       "약 500 GB/s",
+       "작은 메시지 약 4,250사이클"
+      ],
+      [
+       "다른 랙의 같은 번호 칩(케이블 직결)",
+       "약 200 GB/s",
+       "랙 내 1홉과 같음"
+      ],
+      [
+       "다른 랙의 그 밖의 칩(케이블+스위치)",
+       "약 160 GB/s",
+       "약 2배"
+      ]
+     ],
+     "note": "두 노드 사이 16쌍이 동시에 돌면 스위치 용량을 나눠 써 일부 쌍은 최대 5분의 1 떨어진다.",
+     "src": 1,
+     "loc": "UltraServer Rack Scale Cycle Latency and Bandwidth Topology"
+    },
+    {
+     "kind": "view",
+     "text": "칩 안 all-to-all이 노드·랙의 9~10배라는 값은 Trainium3 확장성의 한계를 그대로 보여 준다. 프리필이 전문가 병렬을 칩 안에 가둔 것은 이 한계를 피해 간 설계다. 디코드는 128코어 전체 교환을 피할 수 없으므로 gen2 스위치 보급이 디코드 성능의 다음 단계가 된다. 랙을 넘는 all-to-all은 gen2에서도 개선이 없으므로, 대형 MoE를 한 랙(32칩) 밖으로 펼치는 서빙은 여전히 불리하다고 본다(확신 중간)."
+    }
+   ]
+  },
+  {
+   "id": "s9",
+   "h": "근거는 어디서 왔나",
+   "layer": "common",
+   "blocks": [
+    {
+     "kind": "fact",
+     "items": [
+      "모든 결과는 SemiAnalysis의 마이크로벤치마크 도구 UBenchX와 추론 벤치마크 InferenceX(AgentX 포함)에서 나왔다. 각 장치를 먼저 원리로 모델링한 뒤 측정했다.",
+      "AWS Annapurna Labs 공동창업자, Trainium 수석 아키텍트 등 AWS 팀이 아키텍처를 설명하고 벤치마크 실험을 검증해 줬다고 밝힌다.",
+      "InferenceX와 UBenchX는 GitHub에 공개돼 있다. 글쓴이는 InferenceX가 TPUv7·OpenAI Jalapeño·Nvidia Rubin NVL72·AMD·Trainium3를 모두 다루는 세계 유일의 추론 벤치마크라고 소개한다.",
+      "collective 측정에는 Neuron의 nccom-test를, 알고리즘 선택 설명에는 Neuron 공식 문서를 썼다."
+     ],
+     "src": 1,
+     "loc": "도입부 / Inter-LNC Collective Communications"
+    },
+    {
+     "kind": "explain",
+     "text": "독자가 검증할 수 있는 근거는 공개된 벤치마크 코드, Neuron 문서, nccom-test 결과다. 글쓴이만 가진 근거는 TCO 모델(칩당 TCO가 GB300의 약 30%라는 값, 3년 임대 가격)이고, 이익률 비교의 핵심 입력이 바로 여기에 있다. 이 리포트는 본문만 읽었고 그림 53개의 곡선 값은 확인하지 못했다."
+    }
+   ]
+  },
+  {
+   "id": "s10",
+   "h": "누가 득을 보고 누가 손해를 보는가(글쓴이가 지목한 것)",
+   "layer": "common",
+   "blocks": [
+    {
+     "kind": "fact",
+     "items": [
+      "AWS(Trainium3): 에이전트 추론의 토큰당 TCO에서 Vera Rubin을 뺀 모든 가속기를 앞서고, 135 tok/s/user에서 이익률 73.5%로 1위다.",
+      "Nvidia GB300: 같은 조건에서 이익률 53%로 2위다. 연산 제약인 프리필 탓에 일부 p90 TTFT 구간에서는 Trainium3보다 앞선다. Vera Rubin은 TCO 대비 성능 비교에서 Trainium3가 앞선다고 하지 않은 유일한 예외이고, 135 tok/s/user 이익률 비교에는 나오지 않는다.",
+      "Google TPU: Trainium3와 함께 InferenceX에서 GB300과 맞서거나 이긴다고 한 문장으로만 언급한다.",
+      "HBM: 'Short King' 논지에 따라 4-Hi가 업계 전반에서 매력적이고 다음 세대 가속기는 주로 8-Hi를 쓴다고 본다(특정 공급사는 지목하지 않음).",
+      "Astera Labs: gen1·gen2 스위치 트레이 모두에 Scorpio X 스위치가 들어가고, gen2는 랙당 320레인 스위치 8개다(실적·물량 언급은 없음).",
+      "Anthropic: Trainium 프로파일러를 쓰는 주요 사용자로 언급된다."
+     ],
+     "src": 1
+    }
+   ]
+  },
+  {
+   "id": "s11",
+   "h": "비판적으로 다시 읽기",
+   "layer": "common",
+   "blocks": [
+    {
+     "kind": "view",
+     "items": [
+      "이해관계: AWS 팀이 아키텍처 설명과 벤치마크 검증에 참여했고, 측정 도구(InferenceX·UBenchX)는 글쓴이 자신의 제품이다. 앞으로 나올 CollectiveX와 SKILLS.md 홍보도 섞여 있다. 수치를 조작했다고 볼 근거는 없지만, 어떤 비교를 고르고 어떻게 표현하는지('amazing achievement')에서는 우호적인 쪽으로 기울어 있다.",
+      "전제 의존: 마진 비교는 TCO 모델(칩당 TCO가 GB300의 약 30%), 3년 임대 가격, 가동률 60%, Z.ai 정가에 기댄다. 이 값들이 변하면 두 조합 모두 이익률이 함께 움직이지만, 상대 순위는 사실상 'TCO 30%'라는 단일 추정에 달려 있다. 이 값의 산출 근거는 본문에 없다.",
+      "대표성: 측정점은 한 워크로드(코딩 에이전트 세션 재생)와 한 interactivity 지점(135 tok/s/user)이고, 모델 예로는 GLM-5.3만 나온다. 롱컨텍스트에서 HBM 용량이 절반인 영향, 대형 MoE를 랙 밖으로 펼칠 때의 손실은 마진 계산에서 다루지 않는다.",
+      "빠진 반대 근거: 학습 성능과 Vera Rubin과의 구체적 격차는 없다. Vera Rubin은 TCO 대비 성능 비교에서 예외로 남았는데 135 tok/s/user 이익률 비교에서는 빠져 있다. 그래서 이익률 1위가 Vera Rubin까지 포함한 비교인지 알 수 없다. 각 약점(MXFP8 68.6% MFU, software DGE 경로, sb2sb 정체, 랙 간 all-to-all)이 AgentX 결과에 얼마나 반영됐는지도 연결하지 않았다.",
+      "측정 환경의 어긋남: 마이크로벤치마크는 gen1 스위치 트레이에서 돌렸다. gen2는 collective와 칩 간 경로 지도만 따로 비교했다. 그래서 '현재 배치된 Trainium3 함대'의 성능이 어느 쪽에 가까운지는 알 수 없다."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s12",
+   "h": "작성자의 생각",
+   "layer": "common",
+   "blocks": [
+    {
+     "kind": "view",
+     "items": [
+      "동의하는 부분: 우위의 원천이 '대역폭 대비 비용'이라는 진단은 설득력이 있다. 연산 17%, 대역폭 61%, TCO 30%라는 세 숫자만으로도 디코드에서는 이기고 프리필에서는 진다는 결과가 설명되고, 마이크로벤치마크(작은 메시지의 HBM 활용, 작은 M에서도 유지되는 성능)가 같은 방향을 가리킨다(확신 중간~높음).",
+      "다르게 보는 부분: '공급망만이 아니라 마이크로아키텍처'라는 표제는 절반만 맞다고 본다. 마진 우위를 실제로 떠받치는 것은 TCO 30%라는 비용 구조다. 마이크로아키텍처는 그 싼 대역폭을 낭비 없이 쓰게 해 주는 조건으로 기능한다. 연산·전력·칩 밖 통신에서는 오히려 Nvidia보다 제약이 많다(확신 중간).",
+      "'소프트웨어 장벽 해소'는 Anthropic처럼 커널을 직접 짜는 고객에게 한정해 읽는 것이 맞다고 본다. 양자화를 사용자에게 넘긴 점과 간접 접근의 제약은 범용 고객 확대의 걸림돌로 남는다(확신 중간)."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s13",
+   "h": "투자자 관점의 정리",
+   "layer": "investor",
+   "blocks": [
+    {
+     "kind": "view",
+     "items": [
+      "확인된 것: Trainium3는 디코드 중심 추론에서 대역폭/TCO로 GB300을 앞선다는 것을 공개 벤치마크로 보였다. AWS 자체 칩이 '싸지만 쓰기 어렵다'에서 '특정 워크로드에서는 토큰당 원가가 4할 넘게 낮다'로 옮겨 갔다는 첫 정량 근거다(확신 중간).",
+      "새로 나온 것: gen2 스위치(Trainium3n)의 측정이다. 큰 메시지에서는 모든 collective의 대역폭이 오르고, all-to-all은 2.8배다. 작은 메시지에서는 랙 안 두 노드 간 all-reduce·reduce-scatter 비용이 노드 내부와 거의 같아진다. 반면 all-to-all은 노드·랙 단위에서 소폭 개선에 그치고, 랙 간 EFA all-to-all은 그대로다. 디코드는 한 노드 16칩에서 돈다. 원문은 디코드의 메시지 크기도, 이 개선이 디코드에 얼마나 이어지는지도 재지 않았다. 디코드 교환이 작은 메시지 위주라면 효과는 제한적일 수 있다. 함대 성능의 상향 요인이긴 하나 폭은 열려 있다(확신 낮음~중간).",
+      "답해지지 않은 것: TCO 30%의 근거, 학습 성능, Vera Rubin과의 격차, 현재 배치 함대 중 gen2 비중, MXFP8 전력 제약의 개선 경로. 실적 추정에서 AWS 자체 칩 매출 마진을 올려 잡을 근거는 생겼지만 규모(물량)에 대한 정보는 없다.",
+      "밸류에이션 전제와 위험: Nvidia의 추론 가격 결정력이 '현재 세대 대비 자체 칩' 경쟁에 노출돼 있다는 전제가 강화된다. 다만 Vera Rubin은 Trainium3가 앞선다고 하지 않은 유일한 가속기다. 그래서 위험은 세대 전환이 늦어지는 구간에 집중된다고 본다(확신 중간).",
+      "다음에 확인할 것: 몇 주 안에 공개될 CollectiveX의 Trainium3 결과, InferenceX에서 TTFT·프리필 개선 여부, gen2 랙 기준 AgentX 재측정, Vera Rubin 대비 TCO 곡선의 격차, AWS가 공개하는 Trainium3n 보급 일정."
+     ]
+    },
+    {
+     "kind": "view",
+     "items": [
+      "Amazon(AWS) — 호재, 강도 중간. 에이전트 추론의 토큰당 원가 우위와 Anthropic의 평판은 자체 칩을 통한 추론 마진 확대의 근거다. 이 판정은 학습 성능 열위나 TCO 30% 가정이 흔들린다는 반증, 또는 Vera Rubin 보급으로 우위 구간이 짧아지면 약해진다. 확신 중간.",
+      "Nvidia — 약한 악재, 강도 낮음. 현재 세대 GB300이 추론 원가에서 밀리는 구간이 정량으로 확인됐다. 다만 Vera Rubin은 TCO 대비 성능에서 Trainium3가 앞선다고 하지 않은 예외로 남았고, 프리필·연산 우위도 유지된다. 그래서 구조적 훼손으로 보지는 않는다. Rubin의 TCO 대비 우위가 InferenceX에서 넓게 확인되면 중립으로 바꾼다. 확신 낮음~중간.",
+      "Astera Labs — 약한 호재, 강도 낮음. Trainium3 랙 스위치 트레이에 Scorpio X가 들어가고 gen2는 320레인 스위치 8개를 쓴다. 다만 원문에 물량·가격 정보가 없어 강도를 판단할 수 없다. 확신 낮음.",
+      "HBM 공급사 — 판정하지 않는다. 4-Hi·8-Hi 선호라는 업계 논지만 있고 공급사별 근거가 없다.",
+      "Alphabet(TPU)·AMD — 판정하지 않는다. 벤치마크 목록과 한 문장 언급뿐이어서 근거가 없다.",
+      "주가·배수 자료가 원문에 없어 이미 반영된 정도는 판단하지 않았다."
+     ]
+    }
+   ]
+  }
+ ],
+ "review": {
+  "draft": {
+   "model": "claude-opus-5-5",
+   "at_kst": "2026-11-28T02:15:45+09:00"
+  },
+  "review": {
+   "model": "claude-opus-5-5",
+   "at_kst": "2026-11-28T02:19:33+09:00",
+   "result": "통과"
+  },
+  "summary": "앞선 검토는 원문에 근거가 없던 '디코드는 메시지가 작다'는 단정을 조건문으로 바꿨고, gen2 비교 범위를 'collective와 칩 간 경로 지도'로 바로잡았다. 이번 확인에서 두 수정 모두 원문의 Decode·Trainium3n·UltraServer 절과 맞고, serving-layout 절의 같은 주장과 표현도 어긋나지 않았다.",
+  "history": []
+ }
+}
