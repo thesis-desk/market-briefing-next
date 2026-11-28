@@ -11315,41 +11315,6 @@
     "tier": "standard"
    },
    "note": "유튜브 자동 생성 자막(en) 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
-  },
-  {
-   "id": "ubs-house-view-daily-ai-delivers-despite-volatility",
-   "group": "투자은행",
-   "org": "UBS",
-   "person": "Belinda Ulander",
-   "kind": "publication",
-   "title": "House View Daily | 변동성 속에서도 성과를 내는 AI",
-   "title_orig": "House View Daily | AI delivers despite volatility",
-   "url": "https://www.ubs.com/content/dam/podcasts/wma/on-air/in-the-now/20261029_HV_Daily.mp3",
-   "outlet": "UBS House View Daily",
-   "published_kst": "2026-10-29T20:15:31+09:00",
-   "stance": {
-    "ai_tech": 1,
-    "market": 1
-   },
-   "args": [
-    "투자 회수",
-    "수요·채택",
-    "쏠림",
-    "자금 조달·신용",
-    "금리·거시"
-   ],
-   "summary": "UBS CIO는 클라우드 매출 성장 가속과 AI 제품 수익화 신호를 근거로 AI 기초 체력이 견조하며 AI 트레이드에 대한 건설적 시각을 유지한다고 본다. 하이퍼스케일러와 우량 반도체·하드웨어 기업에 기회가 있다고 보지만, 특화 AI 클라우드의 자금 압박과 집중 포지션은 경계하라고 한다. 연준은 12월과 3월 각 25bp 인상을 예상하며 완만한 긴축이 주식·채권·금에 우호적이라고 본다.",
-   "points": [
-    "클라우드 성장 가속은 하이퍼스케일러가 AI 투자에서 수익을 낼 수 있음을 보여준다.",
-    "AI 지출 증가가 우량 반도체·하드웨어 기업에 유리하고 업종 이익 성장을 이끌 것으로 본다.",
-    "특화 AI 클라우드 업체는 자금 압박과 실행 위험으로 경계가 필요하지만, GPU 임대료 상승은 수요가 강함을 시사한다.",
-    "연준의 점진적 긴축 경로는 주식·채권·금에 우호적인 환경을 유지시킨다고 본다."
-   ],
-   "judged": {
-    "basis": "full_text",
-    "tier": "standard"
-   },
-   "note": "팟캐스트 음성을 음성 인식(Whisper)으로 받아 적은 전사 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
   }
  ]
 }

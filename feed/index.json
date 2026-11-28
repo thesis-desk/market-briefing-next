@@ -1,7 +1,43 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-28T17:32:07+09:00",
+ "generated_kst": "2026-11-28T20:15:05+09:00",
  "reports": [
+  {
+   "slug": "sixsigma-9",
+   "type": "article",
+   "title": "식스시그마 : 안두릴은 기술이 아니라 순서로 이겼다 — 정부 돈보다 먼저 만들고, 소프트웨어에 몰고, 실패 비용을 스스로 진다",
+   "companies": [
+    {
+     "name": "Anduril Industries",
+     "ticker": null
+    },
+    {
+     "name": "Lockheed Martin",
+     "ticker": null
+    },
+    {
+     "name": "Boeing",
+     "ticker": null
+    },
+    {
+     "name": "Northrop Grumman",
+     "ticker": null
+    },
+    {
+     "name": "Meta Platforms",
+     "ticker": null
+    },
+    {
+     "name": "Palantir Technologies",
+     "ticker": null
+    }
+   ],
+   "published_kst": "2026-11-28T20:15:05+09:00",
+   "revised_kst": "2026-11-28T20:15:05+09:00",
+   "revision": 1,
+   "summary": "안두릴의 CCA 양산 계약 수주를 '자기 돈으로 먼저 만드는 제품 회사' 모델의 승리로 읽는 영상이다. 다만 이 모델의 상당 부분은 적자(2026 영업손실 약 12억 달러 전망)와 비상장 자금 조달, 의회 예산 일정에 걸려 있어 아직 증명 단계이며, 상장 전 투자 접근성은 제한적이다.",
+   "path": "reports/sixsigma-9.json"
+  },
   {
    "slug": "semianalysis-trainium3-inferencex",
    "type": "article",
