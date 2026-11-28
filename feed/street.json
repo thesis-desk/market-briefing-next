@@ -1,20 +1,20 @@
 {
  "schema": 1,
- "updated_kst": "2026-11-28T05:16:29+09:00",
+ "updated_kst": "2026-11-28T11:17:37+09:00",
  "window_days": 14,
  "items_days": 30,
  "index": {
   "ai_tech": {
-   "value": 3,
+   "value": 2,
    "label": "엇갈림",
-   "orgs": 38,
+   "orgs": 37,
    "items": 146
   },
   "market": {
    "value": -8,
    "label": "엇갈림",
    "orgs": 29,
-   "items": 108
+   "items": 109
   },
   "by_group": [
    {
@@ -26,8 +26,8 @@
    },
    {
     "group": "PE·대체투자",
-    "ai_tech": 21,
-    "ai_tech_orgs": 4,
+    "ai_tech": 11,
+    "ai_tech_orgs": 3,
     "market": 17,
     "market_orgs": 3
    },
@@ -40,9 +40,9 @@
    },
    {
     "group": "투자은행",
-    "ai_tech": 21,
+    "ai_tech": 20,
     "ai_tech_orgs": 7,
-    "market": 27,
+    "market": 26,
     "market_orgs": 7
    },
    {
@@ -107,7 +107,7 @@
     "week": "2026-11-23",
     "ai_tech": -3,
     "ai_tech_orgs": 22,
-    "market": -17,
+    "market": -18,
     "market_orgs": 18
    }
   ],
@@ -115,11 +115,11 @@
    "caution": [
     {
      "tag": "밸류에이션",
-     "n": 23
+     "n": 24
     },
     {
      "tag": "투자 회수",
-     "n": 23
+     "n": 24
     },
     {
      "tag": "자금 조달·신용",
@@ -127,11 +127,11 @@
     },
     {
      "tag": "쏠림",
-     "n": 17
+     "n": 18
     },
     {
      "tag": "금리·거시",
-     "n": 13
+     "n": 14
     },
     {
      "tag": "정책·지정학",
@@ -161,7 +161,7 @@
     },
     {
      "tag": "밸류에이션",
-     "n": 24
+     "n": 23
     },
     {
      "tag": "금리·거시",
@@ -925,6 +925,43 @@
     "basis": "headline_only",
     "tier": "light"
    }
+  },
+  {
+   "id": "goldman-goldman-sachs-says-it-s-too-early-to-buy-the-ai",
+   "group": "투자은행",
+   "org": "Goldman Sachs",
+   "person": null,
+   "kind": "report",
+   "title": "Goldman Sachs, AI 급락 매수에는 아직 이르다",
+   "title_orig": "Goldman Sachs says it’s too early to buy the AI selloff",
+   "url": "https://cryptobriefing.com/goldman-sachs-too-early-buy-ai-selloff",
+   "outlet": "Crypto Briefing",
+   "published_kst": "2026-11-25T14:39:00+09:00",
+   "stance": {
+    "ai_tech": -1,
+    "market": -1
+   },
+   "args": [
+    "투자 회수",
+    "쏠림",
+    "금리·거시",
+    "밸류에이션"
+   ],
+   "summary": "Goldman Sachs 스트래티지스트들은 AI 하락장에서 저가 매수에 나서기엔 아직 이르다고 본다. 투자자 포지션이 과거 조정기에 비해 여전히 과도하게 쏠려 있어 추가 매도가 나올 수 있다는 것이다. 바닥 신호로 AI 투자의 수익 입증, Fed의 비둘기파 전환, 포지션의 실질적 청산 세 가지를 꼽았고 아직 어느 것도 나타나지 않았다고 봤다.",
+   "points": [
+    "Goldman Sachs는 AI 하락장에서 저가 매수를 노리는 이들에게 '아직은 아니다'라는 메시지를 전한다.",
+    "Goldman의 스트래티지스트들은 시장이 통상 바닥을 알리는 수준에 아직 도달하지 않았다고 말한다. 투자자들이 과거 조정기와 비교해 여전히 지나치게 많이 포지션을 갖고 있어 추가 매도가 나올 수 있다는 것이다.",
+    "Goldman은 시장이 안정을 찾고 있음을 시사할 지표 세 가지를 지켜보고 있다.",
+    "첫째 신호는 AI 지출이 수익으로 이어진다는 증거다. 투자자들은 AI에 쏟아붓는 돈이 이익으로 바뀌고 있다는 긍정적 징후를 원한다.",
+    "둘째 신호는 비둘기파적인 Fed다. Fed가 더 우호적인 금리 기조로 돌아서면 성장주에 대한 압력이 완화될 것이다.",
+    "셋째 신호는 포지션의 실질적인 정리다. Goldman은 투자자 익스포저가 크게 줄어드는, 지속적인 바닥에 앞서 통상 나타나는 항복 매도(capitulation)를 보고 싶어 한다.",
+    "Goldman에 따르면 이 세 가지 신호 중 어느 것도 아직 나타나지 않았다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "기사 본문 기준. 발언은 기사가 전한 내용을 옮긴 것이며 페이지의 메뉴·다른 기사 문구가 섞였을 수 있음"
   },
   {
    "id": "goldman-how-hedge-funds-are-navigating-stock-market-vola",
@@ -11340,46 +11377,6 @@
     "BB·B 스프레드는 안정적인 반면 트리플C 스프레드만 300bp 넘게 확대돼, 저품질 신용에 대한 경고 신호일 수 있다.",
     "시장의 강세는 경기침체가 없었기 때문이며, 이는 AI·에너지 인프라 투자에 크게 기댄다고 본다.",
     "AI·인프라 투자가 의미 있게 약화되면 스프레드가 확대될 수 있으며, 화자는 오랜만에 가장 신중한 상태다."
-   ],
-   "judged": {
-    "basis": "full_text",
-    "tier": "standard"
-   },
-   "note": "유튜브 자동 생성 자막(en) 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
-  },
-  {
-   "id": "gundlach-jeffrey-gundlach-ready-aim-aim-aim-aim-cnbc",
-   "group": "투자 거장",
-   "org": "DoubleLine Capital",
-   "person": "Jeffrey Gundlach",
-   "kind": "publication",
-   "title": "Jeffrey Gundlach: 준비, 조준, 조준, 조준, 조준 | CNBC",
-   "title_orig": "Jeffrey Gundlach: Ready, Aim, Aim, Aim, Aim | CNBC",
-   "url": "https://www.youtube.com/watch?v=RuCjUIjM8mo",
-   "outlet": "DoubleLine (유튜브)",
-   "published_kst": "2026-10-29T08:52:35+09:00",
-   "stance": {
-    "ai_tech": -1,
-    "market": -1
-   },
-   "args": [
-    "자금 조달·신용",
-    "밸류에이션",
-    "금리·거시",
-    "쏠림"
-   ],
-   "summary": "Gundlach는 연준이 행동을 미루고 있어 12월 금리 인상이 필요하다고 본다. AI 및 AI 연관 기업의 대규모 채권 발행에 대한 시장의 신용등급 불신과 스프레드 확대를 위기의 초기 신호로 보고, 주식 비중 30%를 등가중 S&P로만 담는 방어적 배분을 권한다.",
-   "points": [
-    "AI 및 AI 연관 기업의 대규모 채권 발행이 채권시장에서 호응을 얻지 못하고, 시장이 부여된 신용등급을 받아들이지 않고 있다.",
-    "스프레드 확대는 일시적 등락이 아니라 추세의 시작이며, 2006~2007년 서브프라임 BBB 국면을 연상시킨다고 본다.",
-    "국가 부채 증가와 AI 차입 수요가 금리에 실질적 압력을 주고 있다.",
-    "밸류에이션이 매우 높고 채권 스프레드가 벌어지고 있어 주식 비중을 30%로 낮추고 등가중 S&P만 권한다."
-   ],
-   "evidence": [
-    {
-     "ko": "밸류에이션이 매우 높고 채권 스프레드가 벌어지고 있어 주식 비중을 30%로 낮추고 등가중 S&P만 권한다.",
-     "orig": "I don't want all this exposure to the epicenter of the blast radius of the AI uh problems or developing problems."
-    }
    ],
    "judged": {
     "basis": "full_text",

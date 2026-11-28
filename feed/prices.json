@@ -32859,12 +32859,12 @@
       "name": "TrendForce",
       "url": "https://www.trendforce.com/price/dram/dram_spot"
      },
-     "value": 60.567,
+     "value": 60.333,
      "date": "2026-11-27",
      "since": "2026-11-13",
      "delta": {
-      "d1": -0.33,
-      "w1": -0.16,
+      "d1": -0.71,
+      "w1": -0.55,
       "m1": null,
       "m3": null,
       "ytd": null
@@ -32876,7 +32876,7 @@
      "weekly": [
       60.267,
       60.667,
-      60.567
+      60.333
      ]
     },
     {
@@ -32887,24 +32887,24 @@
       "name": "TrendForce",
       "url": "https://www.trendforce.com/price/dram/dram_spot"
      },
-     "value": 76.875,
+     "value": 76.625,
      "date": "2026-11-27",
      "since": "2026-11-13",
      "delta": {
-      "d1": -0.81,
-      "w1": -2.23,
+      "d1": -1.13,
+      "w1": -2.54,
       "m1": null,
       "m3": null,
       "ytd": null
      },
      "range_52w": {
-      "low": 76.875,
+      "low": 76.625,
       "high": 79.5
      },
      "weekly": [
       79.5,
       78.625,
-      76.875
+      76.625
      ]
     },
     {
