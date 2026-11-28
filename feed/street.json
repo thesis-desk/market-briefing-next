@@ -11350,39 +11350,6 @@
     "tier": "standard"
    },
    "note": "팟캐스트 음성을 음성 인식(Whisper)으로 받아 적은 전사 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
-  },
-  {
-   "id": "jpmorgan-sponsors-spreads-and-stress-testing-navigating-2",
-   "group": "투자은행",
-   "org": "JPMorgan",
-   "person": "Brian Trumantozzi",
-   "kind": "publication",
-   "title": "스폰서, 스프레드, 스트레스 테스트: 2026년 금리 재설정 헤쳐나가기",
-   "title_orig": "Sponsors, spreads and stress testing: Navigating 2026’s rate reset",
-   "url": "https://www.youtube.com/watch?v=Eyt4P-NvazY",
-   "outlet": "JPMorgan (유튜브)",
-   "published_kst": "2026-10-29T14:16:51+09:00",
-   "stance": {
-    "ai_tech": 0,
-    "market": -1
-   },
-   "args": [
-    "금리·거시",
-    "자금 조달·신용",
-    "투자 회수"
-   ],
-   "summary": "JPMorgan 레버리지 금융 책임자는 장기 금리 급등과 변동성 확대로 재무·헤징 환경이 달라졌고, 트리플C 스프레드가 300bp 넘게 벌어진 점을 경고 신호로 본다. 현재 시장을 떠받치는 것은 경기침체 부재와 AI·에너지 인프라 투자인데, 이 투자가 꺾이면 스프레드가 더 벌어질 수 있어 그 어느 때보다 신중하다고 말한다.",
-   "points": [
-    "하이일드 금리가 9월 초 이후 100bp 상승했으며, 비침체기에는 보기 드문 움직임이다.",
-    "BB·B 스프레드는 안정적인 반면 트리플C 스프레드만 300bp 넘게 확대돼, 저품질 신용에 대한 경고 신호일 수 있다.",
-    "시장의 강세는 경기침체가 없었기 때문이며, 이는 AI·에너지 인프라 투자에 크게 기댄다고 본다.",
-    "AI·인프라 투자가 의미 있게 약화되면 스프레드가 확대될 수 있으며, 화자는 오랜만에 가장 신중한 상태다."
-   ],
-   "judged": {
-    "basis": "full_text",
-    "tier": "standard"
-   },
-   "note": "유튜브 자동 생성 자막(en) 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
   }
  ]
 }
