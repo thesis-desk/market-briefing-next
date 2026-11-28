@@ -1,7 +1,33 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-28T23:23:31+09:00",
+ "generated_kst": "2026-11-28T23:54:24+09:00",
  "reports": [
+  {
+   "slug": "20vc-why-neo-clouds-are-great-businesses-the-state-of",
+   "type": "interview",
+   "title": "Kush Bavaria(Ornn) 인터뷰 : GPU 가격 상승과 네오클라우드 '집주인' 논리, 컴퓨트 지수·선물 시장",
+   "companies": [
+    {
+     "name": "Ornn",
+     "ticker": null
+    },
+    {
+     "name": "CoreWeave",
+     "ticker": null
+    },
+    {
+     "name": "Nebius",
+     "ticker": null
+    }
+   ],
+   "event": "20VC 인터뷰",
+   "event_date": "2026-11-21",
+   "published_kst": "2026-11-28T23:54:24+09:00",
+   "revised_kst": "2026-11-28T23:54:24+09:00",
+   "revision": 1,
+   "summary": "Ornn CEO Kush Bavaria는 GPU 공급 부족과 임대 가격 상승을 근거로 네오클라우드를 '집주인' 사업으로 보고 CoreWeave 롱을 말했다. 다만 근거는 일화 수준이고, 핵심 위험은 그 자신도 지적한 테넌트(네오랩) 신용이다. 컴퓨트를 원유처럼 지수·선물로 거래하자는 구상은 논리가 서지만, 지수 수치와 거래량은 공개되지 않았다.",
+   "path": "reports/20vc-why-neo-clouds-are-great-businesses-the-state-of.json"
+  },
   {
    "slug": "sources-a-quiet-investor-s-10-billion-bet-on-ai-chips-and",
    "type": "interview",
