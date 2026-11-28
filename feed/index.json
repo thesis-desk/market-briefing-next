@@ -1,7 +1,69 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-28T20:15:05+09:00",
+ "generated_kst": "2026-11-28T22:54:06+09:00",
  "reports": [
+  {
+   "slug": "invest-like-the-best-what-happens-when-the-ai-boom-slows",
+   "type": "interview",
+   "title": "마틴 카사도(a16z) 인터뷰 : 시장이 둔화하면 프런티어 모델은 어떻게 되는가, 진짜 병목은 자본·부채가 아니라 하드웨어·전력이다",
+   "companies": [
+    {
+     "name": "Anthropic",
+     "ticker": null
+    },
+    {
+     "name": "OpenAI",
+     "ticker": null
+    },
+    {
+     "name": "Cursor",
+     "ticker": null
+    },
+    {
+     "name": "SpaceX",
+     "ticker": null
+    },
+    {
+     "name": "Snowflake",
+     "ticker": null
+    }
+   ],
+   "event": "Invest Like the Best 대담 (Martin Casado)",
+   "event_date": "2026-11-04",
+   "published_kst": "2026-11-28T22:54:06+09:00",
+   "revised_kst": "2026-11-28T22:54:06+09:00",
+   "revision": 1,
+   "summary": "카사도는 AI를 ‘자본을 문제에 바로 투입할 수 있게 된 산업혁명’으로 본다. 다만 프런티어 모델의 지배력은 시장이 커지는 동안에만 검증됐고, 둔화 국면에서 어떻게 될지는 모른다고 스스로 인정했다. 투자자가 볼 쟁점은 둘이다. 하나는 모델 수명이 3~6개월이라는 점이 모델 회사 매출의 지속성에 주는 위험이고, 다른 하나는 비투자등급 인프라 업체가 부채를 조달하기 어려워진다는 점이다.",
+   "path": "reports/invest-like-the-best-what-happens-when-the-ai-boom-slows.json"
+  },
+  {
+   "slug": "big-technology-anthropic-s-moment-of-truth-jensen-s-limbo",
+   "type": "interview",
+   "title": "Alex Kantrowitz·Ranjan Roy 대담 : Anthropic 상장의 성적표, 엔비디아 리더십 공백과 시장 급락",
+   "companies": [
+    {
+     "name": "Anthropic",
+     "ticker": null
+    },
+    {
+     "name": "Nvidia",
+     "ticker": null
+    },
+    {
+     "name": "OpenAI",
+     "ticker": null
+    },
+    {
+     "name": "Apple",
+     "ticker": null
+    }
+   ],
+   "published_kst": "2026-11-28T22:44:17+09:00",
+   "revised_kst": "2026-11-28T22:44:17+09:00",
+   "revision": 1,
+   "summary": "두 진행자의 판단은 이렇다. Anthropic 상장은 회사의 자금 조달로는 성공했지만 AI 사업모델의 경제성에는 아무 답도 주지 않았다. 시장의 무게중심은 여전히 엔비디아에 있다. 녹화 뒤 젠슨이 복귀했으므로, 이제 판단을 가르는 것은 리더십이 아니라 엔비디아의 매출 발생 경위와 금융 계약에 대한 의혹이 풀리는지다.",
+   "path": "reports/big-technology-anthropic-s-moment-of-truth-jensen-s-limbo.json"
+  },
   {
    "slug": "sixsigma-9",
    "type": "article",
