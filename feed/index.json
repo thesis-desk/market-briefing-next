@@ -1,7 +1,51 @@
 {
  "schema": 1,
- "generated_kst": "2026-11-28T22:54:06+09:00",
+ "generated_kst": "2026-11-28T23:23:31+09:00",
  "reports": [
+  {
+   "slug": "sources-a-quiet-investor-s-10-billion-bet-on-ai-chips-and",
+   "type": "interview",
+   "title": "Alex Davis(Disruptive) 인터뷰 : 100억 달러 집중 투자 펀드, Groq 잔여 자산으로 만드는 추론 neocloud",
+   "companies": [
+    {
+     "name": "Disruptive",
+     "ticker": null
+    },
+    {
+     "name": "Groq",
+     "ticker": null
+    },
+    {
+     "name": "NVIDIA",
+     "ticker": null
+    },
+    {
+     "name": "Palantir",
+     "ticker": null
+    },
+    {
+     "name": "Anthropic",
+     "ticker": null
+    },
+    {
+     "name": "Anduril",
+     "ticker": null
+    },
+    {
+     "name": "Shield AI",
+     "ticker": null
+    },
+    {
+     "name": "Reflection AI",
+     "ticker": null
+    }
+   ],
+   "published_kst": "2026-11-28T23:20:48+09:00",
+   "revised_kst": "2026-11-28T23:20:48+09:00",
+   "revision": 1,
+   "summary": "Davis는 100억 달러를 '이미 이기고 있는' 비상장 기업 10곳 안팎에 몰겠다는 집중 투자론을 폈다. 컴퓨트 부족은 오래가고 효율화로 풀리지 않는다고 보며, Groq 잔여 자산을 추론 neocloud로 키우겠다고 밝혔다. 상장사에 주는 함의는 약하다. Nvidia에는 소폭 호재이고, 투기적 데이터센터 개발과 레거시 방산 프라임에는 경계 신호 정도다.",
+   "path": "reports/sources-a-quiet-investor-s-10-billion-bet-on-ai-chips-and.json"
+  },
   {
    "slug": "invest-like-the-best-what-happens-when-the-ai-boom-slows",
    "type": "interview",
@@ -10611,7 +10655,7 @@
   }
  ],
  "street": {
-  "updated_kst": "2026-11-28T11:17:37+09:00",
+  "updated_kst": "2026-11-28T23:23:31+09:00",
   "path": "street.json"
  },
  "calendar": {

@@ -1,14 +1,14 @@
 {
  "schema": 1,
- "updated_kst": "2026-11-28T11:17:37+09:00",
+ "updated_kst": "2026-11-28T23:23:31+09:00",
  "window_days": 14,
  "items_days": 30,
  "index": {
   "ai_tech": {
-   "value": 2,
+   "value": 3,
    "label": "엇갈림",
    "orgs": 37,
-   "items": 145
+   "items": 146
   },
   "market": {
    "value": -8,
@@ -19,7 +19,7 @@
   "by_group": [
    {
     "group": "벤처캐피털",
-    "ai_tech": 31,
+    "ai_tech": 38,
     "ai_tech_orgs": 8,
     "market": -17,
     "market_orgs": 3
@@ -105,8 +105,8 @@
    },
    {
     "week": "2026-11-23",
-    "ai_tech": -3,
-    "ai_tech_orgs": 22,
+    "ai_tech": 1,
+    "ai_tech_orgs": 23,
     "market": -18,
     "market_orgs": 18
    }
@@ -153,7 +153,7 @@
    "optimism": [
     {
      "tag": "수요·채택",
-     "n": 44
+     "n": 45
     },
     {
      "tag": "투자 회수",
@@ -169,7 +169,7 @@
     },
     {
      "tag": "경쟁·해자",
-     "n": 19
+     "n": 20
     },
     {
      "tag": "자금 조달·신용",
@@ -192,6 +192,38 @@
   "method": "기관·인물마다 기간 안 입장 값의 평균을 내고 그 평균들을 다시 평균해 ×50"
  },
  "items": [
+  {
+   "id": "boldstart-what-s-in-ai-infra-vc-526",
+   "group": "벤처캐피털",
+   "org": "Ed Sim (boldstart ventures)",
+   "person": "Ed Sim",
+   "kind": "publication",
+   "title": "AI/인프라/VC에서 뜨거운 소식 #526",
+   "title_orig": "What’s 🔥 in AI/Infra/VC #526",
+   "url": "https://www.whatshot.vc/p/whats-in-aiinfravc-526",
+   "outlet": "What's Hot in AI/Infra/VC (Ed Sim)",
+   "published_kst": "2026-11-28T23:00:19+09:00",
+   "stance": {
+    "ai_tech": 2,
+    "market": null
+   },
+   "args": [
+    "수요·채택",
+    "경쟁·해자"
+   ],
+   "summary": "에드 심은 최전선 과학이 전문가와 모델이 주고받는 루프가 되었고, 리만 가설과 양자중력 같은 성과가 나올 만큼 모든 것이 가속 중이라고 본다. 실물 세계 검증이라는 마지막 구간을 먼저 메우는 쪽이 유리하며, 창업자의 야심에는 한계가 없다고 주장한다. 모델 간 전환 비용이 거의 없다는 점도 짚는다.",
+   "points": [
+    "최전선 과학은 이제 전문가와 모델이 함께 도는 루프이며, 올바른 질문을 던지는 도메인 전문성이 핵심이라고 본다.",
+    "7주 만에 논의 주제가 소프트웨어 팩토리에서 리만 가설과 양자중력으로 옮겨갈 만큼 AI 발전이 빠르게 가속되고 있다고 말한다.",
+    "과학에서도 실물 세계 검증이라는 마지막 구간을 먼저 메우는 쪽이 루프를 더 빨리 돌려 우위를 얻는다고 본다.",
+    "모델 사용처를 바꾸는 비용이 사실상 없어 모델 기업 간 경쟁이 치열하다고 시사한다."
+   ],
+   "judged": {
+    "basis": "full_text",
+    "tier": "standard"
+   },
+   "note": "웹 페이지 본문 기준. 그림 3개 속 글자는 확인하지 못함"
+  },
   {
    "id": "ubs-house-view-daily-why-put-cash-to-work-amid-volat",
    "group": "투자은행",
