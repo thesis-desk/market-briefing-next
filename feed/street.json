@@ -8,7 +8,7 @@
    "value": 2,
    "label": "엇갈림",
    "orgs": 37,
-   "items": 146
+   "items": 145
   },
   "market": {
    "value": -8,
@@ -11275,40 +11275,6 @@
     "AI 투자는 금리에 둔감해서 금리 상승의 조정 부담이 AI 밖의 부문으로 넘어간다.",
     "수입 의존, 인프라 병목, 신용 선별이 재배분의 속도와 금리 압박 정도를 좌우한다.",
     "생산성 향상과 공급 능력이 확대되기 전까지 핵심 질문은 AI 붐의 지속 여부가 아니라 누가 자리를 내주고 조정이 질서 있게 이뤄지는가이다."
-   ],
-   "judged": {
-    "basis": "full_text",
-    "tier": "standard"
-   },
-   "note": "유튜브 자동 생성 자막(en) 기준. 화자 표시가 없어 누구의 말인지는 문맥으로 판단했고, 고유명사·수치가 잘못 받아 적혔을 수 있음. 위치는 [분:초]"
-  },
-  {
-   "id": "bridgewater-managing-cio-greg-jensen-shares-our-global-outlo",
-   "group": "PE·대체투자",
-   "org": "Bridgewater Associates",
-   "person": "Greg Jensen",
-   "kind": "publication",
-   "title": "Bridgewater 운용총괄 CIO Greg Jensen이 말하는 글로벌 전망",
-   "title_orig": "Managing CIO Greg Jensen Shares Our Global Outlook",
-   "url": "https://www.youtube.com/watch?v=57XYIdLlUqk",
-   "outlet": "Bridgewater (유튜브)",
-   "published_kst": "2026-10-29T21:46:24+09:00",
-   "stance": {
-    "ai_tech": -1,
-    "market": -1
-   },
-   "args": [
-    "밸류에이션",
-    "투자 회수",
-    "자금 조달·신용",
-    "금리·거시"
-   ],
-   "summary": "Jensen은 AI 설비투자가 전형적인 capex 사이클의 공급 대응 단계에 있다고 본다. 현재 주가는 2028년까지 막대한 이익 성장과 생산성 도약을 전제하는데, 그 조건은 달성하기 어렵다고 말한다. 채권, 통화, 이익 등 시장 전반도 파괴적 변화를 반영하지 않았다고 지적한다.",
-   "points": [
-    "AI 인프라 주가는 작년의 극단적 저평가에서 2028년까지 이익이 크게 늘고 그것이 지속된다는 전제를 반영하는 수준으로 바뀌었다.",
-    "현 가격이 정당화되려면 기업의 추론 비용 지출이 이익 대비 2028년에 약 22%까지 올라야 한다.",
-    "AI 주가를 뒷받침하려면 GDP의 9% 수준 자산 발행이 필요한데, 시장은 이를 반영하지 않고 있다.",
-    "채권·통화·이익 전반에서 시장은 AI와 중상주의가 가져올 파괴적 변화를 가격에 넣지 않았다고 본다."
    ],
    "judged": {
     "basis": "full_text",
